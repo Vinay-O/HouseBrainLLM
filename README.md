@@ -38,16 +38,15 @@ housebrain_v1_1/
 │   └── finetune.py        # Model fine-tuning pipeline
 ├── api/                    # FastAPI server
 │   └── main.py            # REST API endpoints
-├── datasets/              # Training datasets
-│   ├── housebrain_dataset_v1/
-│   ├── housebrain_dataset_v3/
-│   ├── housebrain_dataset_v4_10k/
-│   └── housebrain_dataset_v5_10k/
-├── models/                # Trained models
+├── housebrain_dataset_v5_10k/  # Latest training dataset
 ├── outputs/               # Generated designs
+├── data/                  # Sample data
 ├── generate_dataset.py    # Dataset generator
 ├── finetune_housebrain.py # Training script
+├── finetune_m2pro.py     # M2 Pro training script
 ├── test_housebrain.py     # Demo script
+├── colab_training.ipynb   # Colab training notebook
+├── colab_dataset_generation.ipynb # Colab dataset generation
 └── requirements.txt       # Dependencies
 ```
 
@@ -208,10 +207,8 @@ python finetune_housebrain.py --dataset housebrain_dataset_v5_50k --epochs 3
 
 ### Available Datasets
 
-- **v1**: Basic synthetic data (1K samples)
-- **v3**: Enhanced features (1K samples)
-- **v4_10k**: Large dataset (10K samples)
 - **v5_10k**: Latest version with advanced features (10K samples)
+- **Generate Custom**: Use `generate_dataset.py` for larger datasets
 
 ### Dataset Features
 
