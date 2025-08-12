@@ -1,325 +1,423 @@
-# 🚀 HouseBrain Training Guide
+# 🧠 HouseBrain Training Guide
 
-## Free Training Options for HouseBrain LLM
+**Complete guide for training the HouseBrain LLM on various platforms**
 
-This guide shows you how to train the HouseBrain model using free resources like Google Colab, avoiding memory constraints on your local machine.
+## 📋 Overview
 
-## 📋 **Quick Start**
+This guide covers training the HouseBrain LLM using different platforms and configurations. The training process uses QLoRA (Quantized Low-Rank Adaptation) for efficient fine-tuning of the DeepSeek model.
 
-### 1. Generate 100K Dataset
-```bash
-# Generate 100K synthetic test cases
-python generate_dataset.py --samples 100000 --output housebrain_dataset_v5_100k
-```
+## 🎯 Training Options
 
-### 2. Create Git Repository
-```bash
-# Initialize Git (already done)
-git remote add origin https://github.com/YOUR_USERNAME/HouseBrain.git
-git push -u origin main
-```
+### 1. **Google Colab (Recommended - Free GPU)**
+- **GPU**: T4 (16GB VRAM)
+- **Training Time**: 2-4 hours
+- **Cost**: Free
+- **Best for**: Most users
 
-### 3. Train on Google Colab
-- Upload `colab_training.ipynb` to Google Colab
-- Follow the notebook instructions
-- Download the trained model
+### 2. **Kaggle Notebooks (Alternative - Free GPU)**
+- **GPU**: P100 (16GB VRAM)
+- **Training Time**: 3-5 hours
+- **Cost**: Free
+- **Best for**: Alternative to Colab
 
----
+### 3. **Local Training (M2 Pro)**
+- **GPU**: Apple Silicon MPS
+- **Training Time**: 8-12 hours
+- **Cost**: Free
+- **Best for**: Development and testing
 
-## 🎯 **Option 1: Google Colab (Recommended)**
+## 🚀 Quick Start - Google Colab
 
-### **Advantages:**
-- ✅ **Free GPU** (T4, V100, A100)
-- ✅ **12GB RAM** available
-- ✅ **Easy setup** and download
-- ✅ **No installation** required
-
-### **Steps:**
-
-1. **Go to Google Colab:**
-   - Visit: https://colab.research.google.com/
-   - Sign in with your Google account
-
-2. **Upload the Notebook:**
-   - File → Upload notebook
-   - Select `colab_training.ipynb`
-
-3. **Enable GPU:**
-   - Runtime → Change runtime type
-   - Hardware accelerator: **GPU**
-   - GPU type: **T4** (free) or **V100** (if available)
-
-4. **Clone Your Repository:**
-   ```python
-   !git clone https://github.com/YOUR_USERNAME/HouseBrain.git
-   %cd HouseBrain
-   ```
-
-5. **Upload Dataset:**
-   - Upload your `housebrain_dataset_v5_100k.zip`
-   - Or generate it in Colab
-
-6. **Run Training:**
-   - Execute all cells in the notebook
-   - Training will take 2-4 hours
-
-7. **Download Model:**
-   - Model will be automatically compressed and downloaded
-   - Save to your local machine
-
----
-
-## 🎯 **Option 2: Kaggle Notebooks**
-
-### **Advantages:**
-- ✅ **Free GPU** (P100, V100)
-- ✅ **30GB RAM** available
-- ✅ **Longer runtime** (9 hours)
-- ✅ **Better performance** than Colab
-
-### **Steps:**
-
-1. **Go to Kaggle:**
-   - Visit: https://www.kaggle.com/
-   - Create account (free)
-
-2. **Create New Notebook:**
-   - Notebooks → New Notebook
-   - Copy content from `colab_training.ipynb`
-
-3. **Upload Dataset:**
-   - Add data → Upload dataset
-   - Upload your `housebrain_dataset_v5_100k.zip`
-
-4. **Enable GPU:**
-   - Settings → Accelerator → **GPU**
-
-5. **Run Training:**
-   - Execute all cells
-   - Download model when complete
-
----
-
-## 🎯 **Option 3: Paperspace Gradient**
-
-### **Advantages:**
-- ✅ **Free GPU** (RTX 4000)
-- ✅ **8GB RAM** available
-- ✅ **Jupyter interface**
-- ✅ **Git integration**
-
-### **Steps:**
-
-1. **Go to Paperspace:**
-   - Visit: https://gradient.paperspace.com/
-   - Sign up (free)
-
-2. **Create Notebook:**
-   - Create → Notebook
-   - Choose **Free GPU** instance
-
-3. **Clone Repository:**
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/HouseBrain.git
-   cd HouseBrain
-   ```
-
-4. **Upload Dataset:**
-   - Upload your dataset files
-   - Or generate in notebook
-
-5. **Run Training:**
-   - Execute training cells
-   - Download results
-
----
-
-## 🎯 **Option 4: Local Training (Optimized)**
-
-### **For M2 Pro with Memory Optimization:**
+### Step 1: Prepare Dataset
 
 ```bash
-# Generate smaller dataset for testing
-python generate_dataset.py --samples 10000 --output housebrain_dataset_v5_10k
-
-# Train with minimal memory usage
-python finetune_m2pro.py --dataset housebrain_dataset_v5_10k --no-mps --batch-size 1
+# Generate 50K samples locally
+python generate_dataset.py --samples 50000 --output housebrain_dataset_v5_50k --zip
 ```
 
-### **Memory Optimization Tips:**
-- Use `--no-mps` to disable GPU (CPU only)
-- Set `batch_size=1`
-- Reduce `max_length=512`
-- Use `use_4bit=False`
+### Step 2: Open Colab
 
----
+1. Go to: https://colab.research.google.com/
+2. Create new notebook
+3. Enable GPU: Runtime → Change runtime type → GPU
 
-## 📊 **Dataset Generation**
+### Step 3: Training Code
 
-### **Generate Different Sizes:**
-
-```bash
-# Small dataset (1K samples) - for testing
-python generate_dataset.py --samples 1000 --output housebrain_dataset_v5_1k
-
-# Medium dataset (10K samples) - for local training
-python generate_dataset.py --samples 10000 --output housebrain_dataset_v5_10k
-
-# Large dataset (100K samples) - for Colab training
-python generate_dataset.py --samples 100000 --output housebrain_dataset_v5_100k
-```
-
-### **Dataset Features:**
-- ✅ **Realistic plot dimensions** (1K-10K sqft)
-- ✅ **Multiple architectural styles** (15 styles)
-- ✅ **Global regions** (15 regions)
-- ✅ **Varied room configurations**
-- ✅ **Realistic budgets** ($100K-$2M)
-
----
-
-## 🔄 **Integration Workflow**
-
-### **1. Train on Colab:**
 ```python
-# In Google Colab
-!git clone https://github.com/YOUR_USERNAME/HouseBrain.git
-%cd HouseBrain
-!python generate_dataset.py --samples 100000
-!python finetune_m2pro.py --dataset housebrain_dataset_v5_100k
-```
+# Install dependencies
+!pip install torch transformers datasets accelerate peft bitsandbytes wandb tqdm fastapi uvicorn pydantic
 
-### **2. Download Model:**
-- Download `housebrain-trained-model.zip`
-- Extract to your local machine
+# Clone repository
+!git clone https://github.com/Vinay-O/HouseBrainLLM.git
+%cd HouseBrainLLM
 
-### **3. Test Locally:**
-```bash
-# Extract model
-unzip housebrain-trained-model.zip -d models/
+# Upload dataset
+from google.colab import files
+uploaded = files.upload()
 
-# Test the model
-python test_deepseek.py
+# Extract dataset
+import zipfile
+for filename in uploaded.keys():
+    if filename.endswith('.zip'):
+        with zipfile.ZipFile(filename, 'r') as zip_ref:
+            zip_ref.extractall('.')
 
-# Run API with trained model
-python -m api.main --finetuned-model models/housebrain-colab-trained
-```
+# Start training
+import sys
+sys.path.append('src')
+from housebrain.finetune import FineTuningConfig, HouseBrainFineTuner
 
-### **4. Update Repository:**
-```bash
-# Add trained model
-git add models/housebrain-colab-trained
-git commit -m "Add Colab-trained model"
-git push origin main
-```
-
----
-
-## ⚙️ **Training Configuration**
-
-### **Colab Optimized Config:**
-```python
 config = FineTuningConfig(
     model_name="deepseek-ai/deepseek-coder-6.7b-base",
-    dataset_path="housebrain_dataset_v5_100k",
+    dataset_path="housebrain_dataset_v5_50k",
     output_dir="models/housebrain-colab-trained",
-    max_length=1024,      # Reduced for memory
-    batch_size=2,         # Small batch for free GPU
-    num_epochs=3,         # 3 epochs for good results
-    learning_rate=2e-4,   # Standard learning rate
-    use_4bit=True,        # Enable quantization
-    lora_r=16,           # LoRA rank
-    lora_alpha=32,       # LoRA alpha
+    max_length=1024,
+    batch_size=2,
+    num_epochs=3,
+    learning_rate=2e-4,
+    use_4bit=True,
+    fp16=True,
+    warmup_steps=100,
+    logging_steps=50,
+    save_steps=500,
 )
+
+trainer = HouseBrainFineTuner(config)
+trainer.train()
+
+# Save model
+trainer.save_model()
 ```
 
-### **Local Optimized Config:**
+### Step 4: Download Model
+
 ```python
+# Create zip archive
+import zipfile
+import os
+
+model_dir = "models/housebrain-colab-trained"
+zip_path = "housebrain-model.zip"
+
+with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+    for root, dirs, files in os.walk(model_dir):
+        for file in files:
+            file_path = os.path.join(root, file)
+            arcname = os.path.relpath(file_path, model_dir)
+            zipf.write(file_path, arcname)
+
+# Download
+files.download(zip_path)
+```
+
+## 🖥️ Local Training (M2 Pro)
+
+### Prerequisites
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Verify MPS support
+python -c "import torch; print(f'MPS available: {torch.backends.mps.is_available()}')"
+```
+
+### Training Command
+
+```bash
+# Basic training
+python finetune_housebrain.py --dataset housebrain_dataset_v5_50k --epochs 3
+
+# Advanced options
+python finetune_housebrain.py \
+    --dataset housebrain_dataset_v5_50k \
+    --epochs 3 \
+    --batch-size 1 \
+    --learning-rate 2e-4 \
+    --max-length 1024 \
+    --output-dir models/housebrain-m2pro-trained
+```
+
+### Configuration Options
+
+```python
+# M2 Pro optimized config
 config = FineTuningConfig(
     model_name="deepseek-ai/deepseek-coder-6.7b-base",
-    dataset_path="housebrain_dataset_v5_10k",
-    output_dir="models/housebrain-local-trained",
-    max_length=512,       # Very small for memory
-    batch_size=1,         # Minimal batch size
-    num_epochs=2,         # Fewer epochs
-    use_4bit=False,       # Disable quantization
-    lora_r=8,            # Smaller LoRA
-    lora_alpha=16,       # Smaller alpha
+    dataset_path="housebrain_dataset_v5_50k",
+    output_dir="models/housebrain-m2pro-trained",
+    max_length=1024,
+    batch_size=1,  # Smaller for M2 Pro
+    num_epochs=3,
+    learning_rate=2e-4,
+    use_4bit=False,  # Disable for MPS
+    fp16=False,      # Disable for MPS
+    warmup_steps=50,
+    logging_steps=25,
+    save_steps=250,
 )
 ```
 
+## 📊 Dataset Generation
+
+### Optimal Dataset Size
+
+- **Minimum**: 10K samples
+- **Recommended**: 50K samples
+- **Optimal**: 100K samples
+- **Maximum**: 200K samples (diminishing returns)
+
+### Generation Commands
+
+```bash
+# Quick test (1K samples)
+python generate_dataset.py --samples 1000 --output housebrain_dataset_test --fast
+
+# Standard training (50K samples)
+python generate_dataset.py --samples 50000 --output housebrain_dataset_v5_50k --zip
+
+# Large dataset (100K samples)
+python generate_dataset.py --samples 100000 --output housebrain_dataset_v5_100k --fast --zip
+
+# Custom configuration
+python generate_dataset.py \
+    --samples 75000 \
+    --output housebrain_dataset_custom \
+    --train-ratio 0.9 \
+    --fast \
+    --zip
+```
+
+### Dataset Features
+
+- **Realistic Parameters**: Plot sizes, room dimensions, budgets
+- **Multiple Styles**: 15+ architectural styles
+- **Regional Variations**: US, EU, Asia, Australia
+- **Climate Zones**: Tropical, Subtropical, Temperate, Cold
+- **Material Specifications**: Exterior, roofing, flooring options
+
+## ⚙️ Model Configuration
+
+### Base Models
+
+| Model | Size | VRAM | Quality | Speed |
+|-------|------|------|---------|-------|
+| `deepseek-ai/deepseek-coder-6.7b-base` | 6.7B | 16GB | High | Medium |
+| `deepseek-ai/deepseek-coder-1.3b-base` | 1.3B | 8GB | Medium | Fast |
+| `microsoft/DialoGPT-small` | 117M | 4GB | Low | Very Fast |
+
+### Training Parameters
+
+```python
+# Optimal configuration
+config = FineTuningConfig(
+    # Model
+    model_name="deepseek-ai/deepseek-coder-6.7b-base",
+    
+    # Dataset
+    dataset_path="housebrain_dataset_v5_50k",
+    
+    # Training
+    max_length=1024,
+    batch_size=2,  # Adjust based on VRAM
+    num_epochs=3,
+    learning_rate=2e-4,
+    
+    # Optimization
+    use_4bit=True,  # Enable for CUDA
+    fp16=True,      # Enable for CUDA
+    gradient_accumulation_steps=4,
+    
+    # LoRA
+    lora_r=16,
+    lora_alpha=32,
+    lora_dropout=0.1,
+    
+    # Monitoring
+    warmup_steps=100,
+    logging_steps=50,
+    save_steps=500,
+    eval_steps=500,
+)
+```
+
+## 📈 Performance Monitoring
+
+### Training Metrics
+
+```python
+# Monitor training progress
+trainer = HouseBrainFineTuner(config)
+
+# Training with callbacks
+from transformers import TrainingArguments
+
+training_args = TrainingArguments(
+    output_dir=config.output_dir,
+    num_train_epochs=config.num_epochs,
+    per_device_train_batch_size=config.batch_size,
+    per_device_eval_batch_size=config.batch_size,
+    warmup_steps=config.warmup_steps,
+    weight_decay=0.01,
+    logging_dir=f"{config.output_dir}/logs",
+    logging_steps=config.logging_steps,
+    evaluation_strategy="steps",
+    eval_steps=config.eval_steps,
+    save_strategy="steps",
+    save_steps=config.save_steps,
+    load_best_model_at_end=True,
+    metric_for_best_model="eval_loss",
+    greater_is_better=False,
+    report_to="wandb",  # Optional: Weights & Biases
+)
+
+trainer.train()
+```
+
+### Expected Results
+
+| Metric | Target | Good | Excellent |
+|--------|--------|------|-----------|
+| Training Loss | < 1.0 | < 0.8 | < 0.6 |
+| Validation Loss | < 1.2 | < 1.0 | < 0.8 |
+| Compliance Score | > 60% | > 75% | > 85% |
+| Generation Speed | < 15s | < 10s | < 5s |
+
+## 🔧 Troubleshooting
+
+### Common Issues
+
+#### 1. **Out of Memory (OOM)**
+
+```python
+# Reduce batch size
+config.batch_size = 1
+
+# Enable gradient accumulation
+config.gradient_accumulation_steps = 8
+
+# Use smaller model
+config.model_name = "deepseek-ai/deepseek-coder-1.3b-base"
+```
+
+#### 2. **Slow Training**
+
+```python
+# Enable mixed precision
+config.fp16 = True
+
+# Increase batch size if memory allows
+config.batch_size = 4
+
+# Reduce sequence length
+config.max_length = 512
+```
+
+#### 3. **Poor Model Performance**
+
+```python
+# Increase dataset size
+# Generate 100K+ samples
+
+# Increase training epochs
+config.num_epochs = 5
+
+# Adjust learning rate
+config.learning_rate = 1e-4  # Lower for stability
+```
+
+#### 4. **MPS Issues (Apple Silicon)**
+
+```python
+# Disable 4-bit quantization
+config.use_4bit = False
+
+# Disable fp16
+config.fp16 = False
+
+# Use smaller batch size
+config.batch_size = 1
+```
+
+### Platform-Specific Issues
+
+#### Google Colab
+- **Disconnect**: Save model frequently
+- **GPU Limit**: Use T4, not V100
+- **Memory**: Monitor with `!nvidia-smi`
+
+#### Kaggle
+- **Session Limit**: 9 hours max
+- **GPU**: P100 available
+- **Storage**: 20GB limit
+
+#### Local M2 Pro
+- **MPS**: Ensure PyTorch 2.1+
+- **Memory**: Monitor Activity Monitor
+- **Heat**: Ensure proper cooling
+
+## 📦 Model Deployment
+
+### Save and Load
+
+```python
+# Save trained model
+trainer.save_model("models/housebrain-trained")
+
+# Load for inference
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model = AutoModelForCausalLM.from_pretrained("models/housebrain-trained")
+tokenizer = AutoTokenizer.from_pretrained("models/housebrain-trained")
+```
+
+### Integration
+
+```python
+# Use in HouseBrain LLM
+from src.housebrain.llm import HouseBrainLLM
+
+llm = HouseBrainLLM(finetuned_model_path="models/housebrain-trained")
+result = llm.generate_design(input_data)
+```
+
+## 🎯 Best Practices
+
+### 1. **Dataset Quality**
+- Use realistic parameters
+- Include diverse styles and regions
+- Validate data quality before training
+
+### 2. **Training Strategy**
+- Start with smaller datasets for testing
+- Use validation split for monitoring
+- Save checkpoints frequently
+
+### 3. **Resource Management**
+- Monitor GPU memory usage
+- Use appropriate batch sizes
+- Enable mixed precision when possible
+
+### 4. **Model Evaluation**
+- Test on unseen data
+- Validate architectural compliance
+- Measure generation quality
+
+## 📚 Additional Resources
+
+- **Hugging Face Docs**: https://huggingface.co/docs/transformers/
+- **PEFT Documentation**: https://huggingface.co/docs/peft/
+- **QLoRA Paper**: https://arxiv.org/abs/2305.14314
+- **DeepSeek Models**: https://huggingface.co/deepseek-ai
+
+## 🆘 Support
+
+For training issues:
+1. Check the troubleshooting section
+2. Review error logs
+3. Try with smaller dataset first
+4. Create GitHub issue with details
+
 ---
-
-## 📈 **Expected Results**
-
-### **Training Time:**
-- **Colab T4 GPU:** 2-4 hours (100K samples)
-- **Kaggle P100 GPU:** 1-2 hours (100K samples)
-- **Local M2 Pro:** 8-12 hours (10K samples)
-
-### **Model Performance:**
-- **Compliance Score:** 70-85% (vs 50% baseline)
-- **Design Quality:** Significantly improved
-- **Generation Speed:** 5-10 seconds per design
-
-### **Memory Usage:**
-- **Colab:** 8-10GB RAM, 12GB GPU
-- **Local:** 16GB RAM (CPU only)
-
----
-
-## 🚨 **Troubleshooting**
-
-### **Common Issues:**
-
-1. **Out of Memory:**
-   ```bash
-   # Reduce batch size and sequence length
-   python finetune_m2pro.py --batch-size 1 --max-length 512
-   ```
-
-2. **Colab Disconnects:**
-   - Use Kaggle or Paperspace instead
-   - Save checkpoints frequently
-
-3. **Model Download Fails:**
-   - Use Google Drive for large models
-   - Split into smaller files
-
-4. **Training Too Slow:**
-   - Use smaller dataset for testing
-   - Reduce number of epochs
-
-### **Support:**
-- Check the `test_deepseek.py` for diagnostics
-- Review logs in `models/` directory
-- Use `--test` flag for quick validation
-
----
-
-## 🎉 **Success Metrics**
-
-### **After Training:**
-- ✅ Model generates valid JSON
-- ✅ Designs pass validation
-- ✅ Compliance score > 70%
-- ✅ Generation time < 10 seconds
-- ✅ Memory usage < 8GB
-
-### **Integration Success:**
-- ✅ API serves trained model
-- ✅ Designs are realistic
-- ✅ Cost estimates accurate
-- ✅ Multi-floor support works
-
----
-
-## 📚 **Next Steps**
-
-1. **Train on Colab** with 100K dataset
-2. **Download and test** the model locally
-3. **Integrate with API** for production use
-4. **Fine-tune further** based on results
-5. **Scale to larger models** when budget allows
 
 **Happy Training! 🚀**
