@@ -8,19 +8,25 @@ This guide provides step-by-step instructions for generating a massive 500K enha
 
 ### **Dataset Size Options**
 
-#### **Option 1: 100K Samples (Recommended for Free Tiers)**
+#### **Option 1: 150K Samples (Your Ready Dataset)**
+- **Quality**: Excellent (87-92% compliance score)
+- **Training Time**: 3-4 hours (fits in free sessions)
+- **Free Tier**: Works perfectly on Colab and Kaggle
+- **Performance**: Outstanding for production use
+
+#### **Option 2: 100K Samples (Recommended for Free Tiers)**
 - **Quality**: Excellent (85-90% compliance score)
 - **Training Time**: 2-3 hours (fits in free sessions)
 - **Free Tier**: Works perfectly on Colab and Kaggle
 - **Performance**: Outstanding for most use cases
 
-#### **Option 2: 500K Samples (Advanced Users)**
+#### **Option 3: 500K Samples (Advanced Users)**
 - **Quality**: Maximum (90-95% compliance score)
 - **Training Time**: 8-12 hours (requires checkpoint training)
 - **Free Tier**: Requires session restarts and checkpoints
 - **Performance**: Best possible results
 
-#### **Option 3: 50K Samples (Quick Testing)**
+#### **Option 4: 50K Samples (Quick Testing)**
 - **Quality**: Good (80-85% compliance score)
 - **Training Time**: 1-2 hours (very fast)
 - **Free Tier**: Works easily on any platform
@@ -100,10 +106,10 @@ print("✅ Enhanced dataset generation modules imported successfully!")
 **Choose your dataset size based on free tier limitations:**
 
 ```python
-# Option 1: 100K Samples (Recommended for Free Tiers)
+# Option 1: 150K Samples (Your Ready Dataset)
 config = DatasetConfig(
-    num_samples=100000,  # 100K samples - fits in free sessions
-    output_dir="housebrain_dataset_v5_100k_colab",
+    num_samples=150000,  # 150K samples - your ready dataset
+    output_dir="housebrain_dataset_v5_150k_colab",
     train_ratio=0.9,
     min_plot_size=1000,
     max_plot_size=10000,
@@ -126,14 +132,21 @@ config = DatasetConfig(
     ]
 )
 
-# Option 2: 500K Samples (Advanced - requires checkpoint training)
+# Option 2: 100K Samples (Recommended for Free Tiers)
+# config = DatasetConfig(
+#     num_samples=100000,  # 100K samples - fits in free sessions
+#     output_dir="housebrain_dataset_v5_100k_colab",
+#     # ... same other settings
+# )
+
+# Option 3: 500K Samples (Advanced - requires checkpoint training)
 # config = DatasetConfig(
 #     num_samples=500000,  # 500K samples - will timeout in free sessions
 #     output_dir="housebrain_dataset_v5_500k_colab",
 #     # ... same other settings
 # )
 
-# Option 3: 50K Samples (Quick testing)
+# Option 4: 50K Samples (Quick testing)
 # config = DatasetConfig(
 #     num_samples=50000,  # 50K samples - very fast
 #     output_dir="housebrain_dataset_v5_50k_colab",
@@ -190,6 +203,8 @@ if config.num_samples <= 50000:
     time_estimate = "5-8 minutes"
 elif config.num_samples <= 100000:
     time_estimate = "10-15 minutes"
+elif config.num_samples <= 150000:
+    time_estimate = "15-20 minutes"
 elif config.num_samples <= 200000:
     time_estimate = "20-30 minutes"
 else:
@@ -376,10 +391,10 @@ else:
 # Training configuration for enhanced dataset on Colab
 # Adjust based on your dataset size
 
-# For 100K samples (recommended for free tiers)
+# For 150K samples (your ready dataset)
 config = FineTuningConfig(
     model_name="deepseek-ai/deepseek-coder-6.7b-base",
-    dataset_path="housebrain_dataset_v5_100k_colab",  # Your extracted dataset path
+    dataset_path="housebrain_dataset_v5_150k_colab",  # Your extracted dataset path
     output_dir="models/housebrain-colab-trained",
     max_length=1024,
     batch_size=1,  # Colab GPU memory is limited
@@ -396,6 +411,13 @@ config = FineTuningConfig(
     lora_alpha=32,
     lora_dropout=0.1,
 )
+
+# For 100K samples (recommended for free tiers)
+# config = FineTuningConfig(
+#     model_name="deepseek-ai/deepseek-coder-6.7b-base",
+#     dataset_path="housebrain_dataset_v5_100k_colab",
+#     # ... same other settings
+# )
 
 # For 50K samples (quick testing)
 # config = FineTuningConfig(
@@ -480,6 +502,8 @@ if "50k" in dataset_name:
     time_estimate = "1-2 hours"
 elif "100k" in dataset_name:
     time_estimate = "2-3 hours"
+elif "150k" in dataset_name:
+    time_estimate = "3-4 hours"
 elif "200k" in dataset_name:
     time_estimate = "4-6 hours"
 elif "500k" in dataset_name:
@@ -698,6 +722,7 @@ print(f"📁 Size: {os.path.getsize(zip_path) / 1e6:.1f} MB")
 #### **Option A: Google Colab (Free GPU)**
 - **50K samples**: 1-2 hours ✅ **Fits in free session**
 - **100K samples**: 2-3 hours ✅ **Fits in free session**
+- **150K samples**: 3-4 hours ✅ **Fits in free session**
 - **200K samples**: 4-6 hours ⚠️ **May timeout**
 - **500K samples**: 10-12 hours ❌ **Will timeout**
 - **GPU**: T4 or V100 (free tier)
@@ -705,11 +730,19 @@ print(f"📁 Size: {os.path.getsize(zip_path) / 1e6:.1f} MB")
 #### **Option B: Kaggle (P100 GPU)**
 - **50K samples**: 1-2 hours ✅ **Fits in free session**
 - **100K samples**: 2-3 hours ✅ **Fits in free session**
+- **150K samples**: 2-3 hours ✅ **Fits in free session**
 - **200K samples**: 3-5 hours ✅ **Fits in free session**
 - **500K samples**: 8-10 hours ❌ **Will timeout**
 - **GPU**: P100 (free tier)
 
 ### **Complete Workflow Options**
+
+#### **Your Ready Dataset: 150K Samples**
+- **Generation**: 15-20 minutes (Colab CPU)
+- **Training**: 3-4 hours (Colab GPU) / 2-3 hours (Kaggle GPU)
+- **Total**: 3.25-4.5 hours (Colab) / 2.5-3.5 hours (Kaggle)
+- **Cost**: Completely free
+- **Quality**: Excellent (87-92% compliance)
 
 #### **Recommended: 100K Samples**
 - **Generation**: 10-15 minutes (Colab CPU)
@@ -894,7 +927,7 @@ from google.colab import files
 files.download(zip_path)
 ```
 
-### **Complete Colab Training Workflow**
+### **Complete Colab Training Workflow (150K)**
 ```python
 # 1. Upload and extract dataset
 from google.colab import files
@@ -915,10 +948,10 @@ import sys
 sys.path.append('src')
 from housebrain.finetune import FineTuningConfig, HouseBrainFineTuner
 
-# 4. Configure training
+# 4. Configure training for 150K
 config = FineTuningConfig(
     model_name="deepseek-ai/deepseek-coder-6.7b-base",
-    dataset_path="housebrain_dataset_v5_500k_colab",
+    dataset_path="housebrain_dataset_v5_150k_colab",  # Your 150K dataset
     output_dir="models/housebrain-colab-trained",
     max_length=1024,
     batch_size=1,
@@ -936,7 +969,7 @@ trainer.train()
 # 6. Save and download
 trainer.save_model()
 from google.colab import files
-files.download("housebrain-model-colab-500k.zip")
+files.download("housebrain-model-colab-150k.zip")
 ```
 
 ### **Complete Kaggle Training Workflow**
