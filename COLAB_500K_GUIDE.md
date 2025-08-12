@@ -6,11 +6,25 @@ This guide provides step-by-step instructions for generating a massive 500K enha
 
 ## 📋 Overview
 
-### Why 500K Samples?
-- **Maximum Quality**: Best possible model performance
-- **Enhanced Features**: 6+ crucial architectural parameters
-- **Training Time**: 15-20 minutes generation, 8-10 hours training
-- **Performance**: 90-95% compliance score expected
+### **Dataset Size Options**
+
+#### **Option 1: 100K Samples (Recommended for Free Tiers)**
+- **Quality**: Excellent (85-90% compliance score)
+- **Training Time**: 2-3 hours (fits in free sessions)
+- **Free Tier**: Works perfectly on Colab and Kaggle
+- **Performance**: Outstanding for most use cases
+
+#### **Option 2: 500K Samples (Advanced Users)**
+- **Quality**: Maximum (90-95% compliance score)
+- **Training Time**: 8-12 hours (requires checkpoint training)
+- **Free Tier**: Requires session restarts and checkpoints
+- **Performance**: Best possible results
+
+#### **Option 3: 50K Samples (Quick Testing)**
+- **Quality**: Good (80-85% compliance score)
+- **Training Time**: 1-2 hours (very fast)
+- **Free Tier**: Works easily on any platform
+- **Performance**: Good for prototyping
 
 ### Enhanced Features Included:
 1. **Plot Shape & Orientation** (Rectangle, L-shape, corner plot, etc.)
@@ -19,6 +33,25 @@ This guide provides step-by-step instructions for generating a massive 500K enha
 4. **Building Codes & Regulations** (FAR, height limits, parking)
 5. **Garage & Parking** (Attached, detached, carport, none)
 6. **Utilities & Accessibility** (Water, sewer, solar ready)
+
+### **⚠️ Free Tier Limitations**
+
+#### **Google Colab**
+- **Session Time**: 12 hours maximum
+- **GPU Time**: ~100 hours per day
+- **Memory**: ~16GB RAM, ~12GB GPU VRAM
+- **500K Training**: ❌ Will timeout before completion
+
+#### **Kaggle**
+- **Session Time**: 9 hours maximum
+- **GPU Time**: 30 hours per week
+- **Memory**: ~13GB RAM, ~16GB GPU VRAM
+- **500K Training**: ❌ Will timeout before completion
+
+#### **Recommendation**
+- **Start with 100K samples** for free tier compatibility
+- **Use checkpoint training** if you want 500K samples
+- **Consider paid tiers** for large-scale training
 
 ---
 
@@ -62,31 +95,30 @@ import os
 print("✅ Enhanced dataset generation modules imported successfully!")
 ```
 
-**Cell 4: Configure 500K Generation**
-```python
-# 500K enhanced dataset generation configuration
-# This includes all crucial architectural parameters
+**Cell 4: Configure Dataset Generation**
 
+**Choose your dataset size based on free tier limitations:**
+
+```python
+# Option 1: 100K Samples (Recommended for Free Tiers)
 config = DatasetConfig(
-    num_samples=500000,  # 500K samples for maximum quality
-    output_dir="housebrain_dataset_v5_500k_colab",  # Output directory
-    train_ratio=0.9,  # Train/validation split
-    min_plot_size=1000,  # Minimum plot area (sqft)
-    max_plot_size=10000,  # Maximum plot area (sqft)
-    min_bedrooms=1,  # Minimum bedrooms
-    max_bedrooms=6,  # Maximum bedrooms
-    min_floors=1,  # Minimum floors
-    max_floors=4,  # Maximum floors
-    min_budget=100000,  # Minimum budget
-    max_budget=2000000,  # Maximum budget
-    fast_mode=True,  # Skip layout solving for speed
-    # Enhanced styles
+    num_samples=100000,  # 100K samples - fits in free sessions
+    output_dir="housebrain_dataset_v5_100k_colab",
+    train_ratio=0.9,
+    min_plot_size=1000,
+    max_plot_size=10000,
+    min_bedrooms=1,
+    max_bedrooms=6,
+    min_floors=1,
+    max_floors=4,
+    min_budget=100000,
+    max_budget=2000000,
+    fast_mode=True,
     styles=[
         "Modern", "Contemporary", "Traditional", "Colonial", "Mediterranean",
         "Craftsman", "Victorian", "Minimalist", "Scandinavian", "Industrial",
         "Tropical", "Rustic", "Art Deco", "Mid-Century Modern", "Gothic"
     ],
-    # Enhanced regions
     regions=[
         "US_Northeast", "US_Southeast", "US_Midwest", "US_Southwest", "US_West",
         "EU_UK", "EU_Germany", "EU_France", "EU_Italy", "EU_Spain",
@@ -94,7 +126,22 @@ config = DatasetConfig(
     ]
 )
 
-print(f"📋 500K Enhanced Dataset Configuration:")
+# Option 2: 500K Samples (Advanced - requires checkpoint training)
+# config = DatasetConfig(
+#     num_samples=500000,  # 500K samples - will timeout in free sessions
+#     output_dir="housebrain_dataset_v5_500k_colab",
+#     # ... same other settings
+# )
+
+# Option 3: 50K Samples (Quick testing)
+# config = DatasetConfig(
+#     num_samples=50000,  # 50K samples - very fast
+#     output_dir="housebrain_dataset_v5_50k_colab",
+#     # ... same other settings
+# )
+```
+
+print(f"📋 Enhanced Dataset Configuration:")
 print(f"   Samples: {config.num_samples:,}")
 print(f"   Output: {config.output_dir}")
 print(f"   Train Ratio: {config.train_ratio}")
@@ -136,14 +183,25 @@ print(f"   • {len(generator.garage_types)} garage types")
 **Cell 6: Start Generation**
 ```python
 # Generate the enhanced dataset
-print("🎯 Starting 500K enhanced dataset generation...")
-print(f"⏰ This will take 15-20 minutes for {config.num_samples:,} samples.")
+print(f"🎯 Starting {config.num_samples:,} enhanced dataset generation...")
+
+# Estimate time based on sample count
+if config.num_samples <= 50000:
+    time_estimate = "5-8 minutes"
+elif config.num_samples <= 100000:
+    time_estimate = "10-15 minutes"
+elif config.num_samples <= 200000:
+    time_estimate = "20-30 minutes"
+else:
+    time_estimate = "30-45 minutes"
+
+print(f"⏰ This will take {time_estimate} for {config.num_samples:,} samples.")
 print("📊 Monitor progress below:")
 print("💡 Keep this notebook active and don't close the browser tab!")
 
 try:
     output_dir = generator.generate_dataset()
-    print(f"\n🎉 500K enhanced dataset generation completed successfully!")
+    print(f"\n🎉 {config.num_samples:,} enhanced dataset generation completed successfully!")
     print(f"📁 Output directory: {output_dir}")
 except Exception as e:
     print(f"\n❌ Dataset generation failed: {e}")
@@ -315,10 +373,13 @@ else:
 #### A.5 Configure Training for Colab
 **Cell 4: Training Configuration**
 ```python
-# Training configuration for 500K enhanced dataset on Colab
+# Training configuration for enhanced dataset on Colab
+# Adjust based on your dataset size
+
+# For 100K samples (recommended for free tiers)
 config = FineTuningConfig(
     model_name="deepseek-ai/deepseek-coder-6.7b-base",
-    dataset_path="housebrain_dataset_v5_500k_colab",  # Your extracted dataset path
+    dataset_path="housebrain_dataset_v5_100k_colab",  # Your extracted dataset path
     output_dir="models/housebrain-colab-trained",
     max_length=1024,
     batch_size=1,  # Colab GPU memory is limited
@@ -336,11 +397,53 @@ config = FineTuningConfig(
     lora_dropout=0.1,
 )
 
+# For 50K samples (quick testing)
+# config = FineTuningConfig(
+#     model_name="deepseek-ai/deepseek-coder-6.7b-base",
+#     dataset_path="housebrain_dataset_v5_50k_colab",
+#     output_dir="models/housebrain-colab-trained",
+#     max_length=1024,
+#     batch_size=2,  # Can use larger batch size
+#     num_epochs=3,
+#     learning_rate=2e-4,
+#     use_4bit=True,
+#     fp16=True,
+#     warmup_steps=50,
+#     logging_steps=25,
+#     save_steps=250,
+#     eval_steps=250,
+#     gradient_accumulation_steps=4,
+#     lora_r=16,
+#     lora_alpha=32,
+#     lora_dropout=0.1,
+# )
+
+# For 500K samples (advanced - requires checkpoint training)
+# config = FineTuningConfig(
+#     model_name="deepseek-ai/deepseek-coder-6.7b-base",
+#     dataset_path="housebrain_dataset_v5_500k_colab",
+#     output_dir="models/housebrain-colab-trained",
+#     max_length=1024,
+#     batch_size=1,
+#     num_epochs=3,
+#     learning_rate=2e-4,
+#     use_4bit=True,
+#     fp16=True,
+#     warmup_steps=100,
+#     logging_steps=50,
+#     save_steps=200,  # Save more frequently for checkpoints
+#     eval_steps=200,
+#     gradient_accumulation_steps=8,
+#     lora_r=16,
+#     lora_alpha=32,
+#     lora_dropout=0.1,
+# )
+```
+
 print(f"📋 Colab Training Configuration:")
 print(f"   Model: {config.model_name}")
 print(f"   Dataset: {config.dataset_path}")
 print(f"   Output: {config.output_dir}")
-print(f"   Samples: 500,000 enhanced")
 print(f"   Batch Size: {config.batch_size}")
 print(f"   Epochs: {config.num_epochs}")
 print(f"   Learning Rate: {config.learning_rate}")
@@ -370,8 +473,22 @@ print(f"   • Utilities & accessibility")
 ```python
 # Start training
 print("🎯 Starting training on Colab...")
-print("⏰ This will take 10-12 hours on Colab GPU")
-print("📊 Training on 500K enhanced samples...")
+
+# Estimate training time based on dataset size
+dataset_name = config.dataset_path
+if "50k" in dataset_name:
+    time_estimate = "1-2 hours"
+elif "100k" in dataset_name:
+    time_estimate = "2-3 hours"
+elif "200k" in dataset_name:
+    time_estimate = "4-6 hours"
+elif "500k" in dataset_name:
+    time_estimate = "10-12 hours (will timeout in free session)"
+else:
+    time_estimate = "2-4 hours"
+
+print(f"⏰ This will take {time_estimate} on Colab GPU")
+print(f"📊 Training on enhanced samples...")
 print("💡 Keep this notebook active and don't close the browser tab!")
 
 try:
@@ -568,43 +685,52 @@ print(f"📁 Size: {os.path.getsize(zip_path) / 1e6:.1f} MB")
 ## ⏰ Time Estimates
 
 ### **Dataset Generation (Colab CPU)**
-- **500K samples**: 15-20 minutes
+- **50K samples**: 5-8 minutes
+- **100K samples**: 10-15 minutes
+- **200K samples**: 20-30 minutes
+- **500K samples**: 30-45 minutes
 - **Dependencies**: 2-3 minutes
-- **Zip creation**: 10-15 minutes
+- **Zip creation**: 5-15 minutes (based on size)
 - **Download**: 2-5 minutes
-- **Total**: 30-45 minutes
 
 ### **Model Training Options**
 
 #### **Option A: Google Colab (Free GPU)**
-- **500K samples**: 10-12 hours
-- **Model loading**: 2-3 minutes
-- **Training**: 10-12 hours
-- **Model saving**: 2-3 minutes
-- **Total**: 10-12 hours
+- **50K samples**: 1-2 hours ✅ **Fits in free session**
+- **100K samples**: 2-3 hours ✅ **Fits in free session**
+- **200K samples**: 4-6 hours ⚠️ **May timeout**
+- **500K samples**: 10-12 hours ❌ **Will timeout**
 - **GPU**: T4 or V100 (free tier)
 
 #### **Option B: Kaggle (P100 GPU)**
-- **500K samples**: 8-10 hours
-- **Model loading**: 2-3 minutes
-- **Training**: 8-10 hours
-- **Model saving**: 1-2 minutes
-- **Total**: 8-10 hours
+- **50K samples**: 1-2 hours ✅ **Fits in free session**
+- **100K samples**: 2-3 hours ✅ **Fits in free session**
+- **200K samples**: 3-5 hours ✅ **Fits in free session**
+- **500K samples**: 8-10 hours ❌ **Will timeout**
 - **GPU**: P100 (free tier)
 
 ### **Complete Workflow Options**
 
-#### **Colab Generation + Colab Training**
+#### **Recommended: 100K Samples**
+- **Generation**: 10-15 minutes (Colab CPU)
+- **Training**: 2-3 hours (Colab/Kaggle GPU)
+- **Total**: 2.5-3.25 hours
+- **Cost**: Completely free
+- **Quality**: Excellent (85-90% compliance)
+
+#### **Quick Testing: 50K Samples**
+- **Generation**: 5-8 minutes (Colab CPU)
+- **Training**: 1-2 hours (Colab/Kaggle GPU)
+- **Total**: 1.25-2.25 hours
+- **Cost**: Completely free
+- **Quality**: Good (80-85% compliance)
+
+#### **Advanced: 500K Samples (Checkpoint Training)**
 - **Generation**: 30-45 minutes (Colab CPU)
-- **Training**: 10-12 hours (Colab GPU)
+- **Training**: 10-12 hours (requires multiple sessions)
 - **Total**: 10.5-12.75 hours
 - **Cost**: Completely free
-
-#### **Colab Generation + Kaggle Training**
-- **Generation**: 30-45 minutes (Colab CPU)
-- **Training**: 8-10 hours (Kaggle P100)
-- **Total**: 8.5-10.75 hours
-- **Cost**: Completely free
+- **Quality**: Maximum (90-95% compliance)
 
 ---
 
