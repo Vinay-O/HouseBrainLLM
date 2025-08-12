@@ -231,15 +231,212 @@ https://www.kaggle.com/datasets/YOUR_USERNAME/housebrain-dataset-v5-500k-enhance
 
 ---
 
-## 🧠 Step 3: Train on Kaggle
+## 🧠 Step 3: Train Your Model
 
-### 3.1 Create Kaggle Notebook
+You have two options for training: **Google Colab (Free GPU)** or **Kaggle (P100 GPU)**. Choose based on your preference and time constraints.
+
+---
+
+### **Option A: Train on Google Colab (Recommended for Free Tier)**
+
+#### A.1 Setup Colab for Training
+1. Go to: https://colab.research.google.com/
+2. Create new notebook
+3. **Runtime**: GPU (T4 or V100)
+4. **Language**: Python
+
+#### A.2 Upload Your 500K Dataset
+**Cell 1: Upload Dataset**
+```python
+# Upload your 500K enhanced dataset
+from google.colab import files
+import zipfile
+import os
+
+print("📤 Upload your 500K enhanced dataset zip file...")
+print("💡 Upload: housebrain_dataset_v5_500k_colab.zip")
+
+uploaded = files.upload()
+
+# Extract the dataset
+for filename in uploaded.keys():
+    if filename.endswith('.zip'):
+        print(f"📦 Extracting {filename}...")
+        with zipfile.ZipFile(filename, 'r') as zip_ref:
+            zip_ref.extractall('.')
+        print(f"✅ Dataset extracted successfully!")
+        break
+
+# List extracted files
+print("\n📁 Extracted files:")
+for root, dirs, files in os.walk('.'):
+    if 'housebrain_dataset_v5_500k' in root:
+        print(f"   {root}")
+        for file in files[:5]:  # Show first 5 files
+            print(f"     - {file}")
+        if len(files) > 5:
+            print(f"     ... and {len(files) - 5} more files")
+```
+
+#### A.3 Install Dependencies and Setup
+**Cell 2: Setup Environment**
+```python
+# Install required dependencies
+!pip install torch transformers datasets accelerate peft bitsandbytes wandb tqdm fastapi uvicorn pydantic orjson svgwrite trimesh python-dotenv
+
+# Clone the HouseBrain repository
+!git clone https://github.com/Vinay-O/HouseBrainLLM.git
+%cd HouseBrainLLM
+
+print("✅ Environment setup completed!")
+```
+
+#### A.4 Import Training Modules
+**Cell 3: Import Modules**
+```python
+# Import training modules
+import sys
+sys.path.append('src')
+
+from housebrain.finetune import FineTuningConfig, HouseBrainFineTuner
+import torch
+
+print("✅ Training modules imported successfully!")
+
+# Check GPU
+if torch.cuda.is_available():
+    gpu_name = torch.cuda.get_device_name(0)
+    gpu_memory = torch.cuda.get_device_properties(0).total_memory / 1e9
+    print(f"🚀 GPU: {gpu_name} ({gpu_memory:.1f}GB VRAM)")
+else:
+    print("⚠️  No GPU detected. Training will be very slow on CPU.")
+```
+
+#### A.5 Configure Training for Colab
+**Cell 4: Training Configuration**
+```python
+# Training configuration for 500K enhanced dataset on Colab
+config = FineTuningConfig(
+    model_name="deepseek-ai/deepseek-coder-6.7b-base",
+    dataset_path="housebrain_dataset_v5_500k_colab",  # Your extracted dataset path
+    output_dir="models/housebrain-colab-trained",
+    max_length=1024,
+    batch_size=1,  # Colab GPU memory is limited
+    num_epochs=3,
+    learning_rate=2e-4,
+    use_4bit=True,  # Use 4-bit quantization for memory efficiency
+    fp16=True,  # Use mixed precision training
+    warmup_steps=100,
+    logging_steps=50,
+    save_steps=500,
+    eval_steps=500,
+    gradient_accumulation_steps=8,  # Higher for smaller batch size
+    lora_r=16,
+    lora_alpha=32,
+    lora_dropout=0.1,
+)
+
+print(f"📋 Colab Training Configuration:")
+print(f"   Model: {config.model_name}")
+print(f"   Dataset: {config.dataset_path}")
+print(f"   Output: {config.output_dir}")
+print(f"   Samples: 500,000 enhanced")
+print(f"   Batch Size: {config.batch_size}")
+print(f"   Epochs: {config.num_epochs}")
+print(f"   Learning Rate: {config.learning_rate}")
+print(f"   4-bit Quantization: {config.use_4bit}")
+print(f"   Mixed Precision: {config.fp16}")
+print(f"   LoRA Rank: {config.lora_r}")
+print(f"   LoRA Alpha: {config.lora_alpha}")
+```
+
+#### A.6 Initialize and Start Training
+**Cell 5: Initialize Trainer**
+```python
+# Initialize trainer
+print("🔧 Setting up trainer...")
+trainer = HouseBrainFineTuner(config)
+print("✅ Trainer initialized successfully!")
+print(f"\n📊 Training on enhanced dataset with:")
+print(f"   • Plot shape & orientation")
+print(f"   • Exterior finishes & materials")
+print(f"   • Climate & site conditions")
+print(f"   • Building codes & regulations")
+print(f"   • Garage & parking requirements")
+print(f"   • Utilities & accessibility")
+```
+
+**Cell 6: Start Training**
+```python
+# Start training
+print("🎯 Starting training on Colab...")
+print("⏰ This will take 10-12 hours on Colab GPU")
+print("📊 Training on 500K enhanced samples...")
+print("💡 Keep this notebook active and don't close the browser tab!")
+
+try:
+    trainer.train()
+    print("\n🎉 Training completed successfully!")
+except Exception as e:
+    print(f"\n❌ Training failed: {e}")
+    print("💡 Check GPU memory or reduce batch size")
+```
+
+#### A.7 Save and Download Model
+**Cell 7: Save Model**
+```python
+# Save the trained model
+print("💾 Saving trained model...")
+trainer.save_model()
+print("✅ Model saved successfully!")
+
+# Create zip archive for download
+import zipfile
+import os
+from pathlib import Path
+
+model_dir = Path(config.output_dir)
+zip_path = "housebrain-model-colab-500k.zip"
+
+print(f"📦 Creating zip archive: {zip_path}")
+print("⏰ This may take 2-3 minutes...")
+
+with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+    for root, dirs, files in os.walk(model_dir):
+        for file in files:
+            file_path = os.path.join(root, file)
+            arcname = os.path.relpath(file_path, model_dir)
+            zipf.write(file_path, arcname)
+
+print(f"✅ Zip archive created: {zip_path}")
+print(f"📁 Archive size: {os.path.getsize(zip_path) / 1e6:.1f} MB")
+```
+
+**Cell 8: Download Model**
+```python
+# Download the trained model
+from google.colab import files
+
+print("⬇️  Downloading trained model...")
+print(f"📦 File: {zip_path}")
+print(f"📁 Size: {os.path.getsize(zip_path) / 1e6:.1f} MB")
+print("💡 This may take a few minutes to download...")
+
+files.download(zip_path)
+print("✅ Trained model downloaded successfully!")
+```
+
+---
+
+### **Option B: Train on Kaggle (Alternative)**
+
+#### B.1 Create Kaggle Notebook
 1. Go to: https://www.kaggle.com/
 2. Click "Create" → "New Notebook"
 3. **Accelerator**: GPU (P100)
 4. **Language**: Python
 
-### 3.2 Training Code
+#### B.2 Training Code
 
 **Cell 1: Install Dependencies**
 ```python
@@ -377,16 +574,35 @@ print(f"📁 Size: {os.path.getsize(zip_path) / 1e6:.1f} MB")
 - **Download**: 2-5 minutes
 - **Total**: 30-45 minutes
 
-### **Model Training (Kaggle P100)**
+### **Model Training Options**
+
+#### **Option A: Google Colab (Free GPU)**
+- **500K samples**: 10-12 hours
+- **Model loading**: 2-3 minutes
+- **Training**: 10-12 hours
+- **Model saving**: 2-3 minutes
+- **Total**: 10-12 hours
+- **GPU**: T4 or V100 (free tier)
+
+#### **Option B: Kaggle (P100 GPU)**
 - **500K samples**: 8-10 hours
 - **Model loading**: 2-3 minutes
 - **Training**: 8-10 hours
 - **Model saving**: 1-2 minutes
 - **Total**: 8-10 hours
+- **GPU**: P100 (free tier)
 
-### **Complete Workflow**
-- **Generation**: 30-45 minutes (Colab)
-- **Training**: 8-10 hours (Kaggle)
+### **Complete Workflow Options**
+
+#### **Colab Generation + Colab Training**
+- **Generation**: 30-45 minutes (Colab CPU)
+- **Training**: 10-12 hours (Colab GPU)
+- **Total**: 10.5-12.75 hours
+- **Cost**: Completely free
+
+#### **Colab Generation + Kaggle Training**
+- **Generation**: 30-45 minutes (Colab CPU)
+- **Training**: 8-10 hours (Kaggle P100)
 - **Total**: 8.5-10.75 hours
 - **Cost**: Completely free
 
@@ -435,6 +651,48 @@ config.styles = ["Modern", "Traditional", "Contemporary"]  # Fewer styles
 - **Solution**: Keep browser tab active
 - **Monitor**: Check progress every 15 minutes
 - **Restart**: If needed, restart and continue from checkpoint
+
+### **Colab Training Issues**
+
+#### Out of Memory
+```python
+# Reduce batch size
+config.batch_size = 1
+
+# Use smaller model
+config.model_name = "deepseek-ai/deepseek-coder-1.3b-base"
+
+# Increase gradient accumulation
+config.gradient_accumulation_steps = 16
+```
+
+#### Slow Training
+```python
+# Reduce sequence length
+config.max_length = 512
+
+# Increase gradient accumulation
+config.gradient_accumulation_steps = 16
+
+# Use 4-bit quantization (already enabled)
+config.use_4bit = True
+```
+
+#### Session Timeout
+- **Solution**: Keep browser tab active
+- **Monitor**: Check progress every 30 minutes
+- **Restart**: If needed, restart and continue from checkpoint
+- **Save**: Use save_steps to save checkpoints frequently
+
+#### Dataset Path Issues
+```python
+# Check dataset path
+import os
+print(os.listdir('.'))
+
+# Use correct path
+config.dataset_path = "housebrain_dataset_v5_500k_colab"
+```
 
 ### **Kaggle Issues**
 
@@ -510,7 +768,52 @@ from google.colab import files
 files.download(zip_path)
 ```
 
-### **Complete Kaggle Workflow**
+### **Complete Colab Training Workflow**
+```python
+# 1. Upload and extract dataset
+from google.colab import files
+import zipfile
+uploaded = files.upload()
+for filename in uploaded.keys():
+    if filename.endswith('.zip'):
+        with zipfile.ZipFile(filename, 'r') as zip_ref:
+            zip_ref.extractall('.')
+
+# 2. Setup environment
+!pip install torch transformers datasets accelerate peft bitsandbytes wandb tqdm fastapi uvicorn pydantic
+!git clone https://github.com/Vinay-O/HouseBrainLLM.git
+%cd HouseBrainLLM
+
+# 3. Import modules
+import sys
+sys.path.append('src')
+from housebrain.finetune import FineTuningConfig, HouseBrainFineTuner
+
+# 4. Configure training
+config = FineTuningConfig(
+    model_name="deepseek-ai/deepseek-coder-6.7b-base",
+    dataset_path="housebrain_dataset_v5_500k_colab",
+    output_dir="models/housebrain-colab-trained",
+    max_length=1024,
+    batch_size=1,
+    num_epochs=3,
+    learning_rate=2e-4,
+    use_4bit=True,
+    fp16=True,
+    gradient_accumulation_steps=8,
+)
+
+# 5. Train
+trainer = HouseBrainFineTuner(config)
+trainer.train()
+
+# 6. Save and download
+trainer.save_model()
+from google.colab import files
+files.download("housebrain-model-colab-500k.zip")
+```
+
+### **Complete Kaggle Training Workflow**
 ```python
 # 1. Setup
 !pip install torch transformers datasets accelerate peft bitsandbytes wandb tqdm fastapi uvicorn pydantic
