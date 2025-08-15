@@ -13,7 +13,7 @@ import random
 import math
 from pathlib import Path
 from typing import Dict, List, Any
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, is_dataclass, asdict
 import argparse
 
 # Add src to path
@@ -43,11 +43,12 @@ except ImportError:
     
     def solve_house_layout(input_data):
         # Fallback implementation
+        input_dict = asdict(input_data) if is_dataclass(input_data) else input_data
         return HouseOutput(
-            input=input_data.model_dump(),
+            input=input_dict,
             levels=[],
-            total_area=input_data.basicDetails["totalArea"],
-            construction_cost=int(input_data.basicDetails["budget"] * 0.6),
+            total_area=input_dict["basicDetails"]["totalArea"],
+            construction_cost=int(input_dict["basicDetails"]["budget"] * 0.6),
             materials={},
             render_paths={}
         )
@@ -373,9 +374,10 @@ class HouseBrainDatasetGenerator:
             except Exception as e:
                 output_json = self._create_enhanced_output(house_input, exterior_specs, climate_site, building_codes)
         
+        input_serialized = asdict(house_input) if is_dataclass(house_input) else (house_input.model_dump() if hasattr(house_input, 'model_dump') else house_input)
         return {
             "id": f"HBV5-{sample_id:06d}",
-            "input": house_input.model_dump(),
+            "input": input_serialized,
             "output": output_json,
             "metadata": {
                 "region": random.choice(self.regions),
@@ -389,8 +391,9 @@ class HouseBrainDatasetGenerator:
     
     def _create_enhanced_output(self, house_input: HouseInput, exterior_specs: Dict, climate_site: Dict, building_codes: Dict) -> Dict[str, Any]:
         """Create enhanced output when layout solver fails"""
+        input_serialized = asdict(house_input) if is_dataclass(house_input) else (house_input.model_dump() if hasattr(house_input, 'model_dump') else house_input)
         return {
-            "input": house_input.model_dump(),
+            "input": input_serialized,
             "levels": [],
             "total_area": house_input.basicDetails["totalArea"],
             "construction_cost": int(house_input.basicDetails["budget"] * 0.6),
@@ -410,55 +413,73 @@ class HouseBrainDatasetGenerator:
             }
         }
     
+    def _quality_score(self, sample: Dict[str, Any]) -> float:
+        """Compute a heuristic quality score for gating."""
+        score = 1.0
+        try:
+            inp = sample.get("input", {})
+            out = sample.get("output", {})
+            bd = inp.get("basicDetails", {})
+            if bd.get("bedrooms", 0) <= 0:
+                score -= 0.3
+            if bd.get("totalArea", 0) < 400:
+                score -= 0.2
+            # Penalize missing levels structure
+            if not isinstance(out.get("levels", []), list):
+                score -= 0.2
+            # Penalize weird budget vs area
+            area = bd.get("totalArea", 0)
+            budget = bd.get("budget", 0)
+            if area and budget:
+                cpsf = budget / max(area, 1)
+                if cpsf < 50 or cpsf > 500:
+                    score -= 0.2
+        except Exception:
+            score -= 0.5
+        return max(0.0, min(1.0, score))
+
     def generate_dataset(self):
-        """Generate the complete 500K dataset"""
+        """Generate the dataset with quality gating until target accepted count is reached."""
         print(f"🏗️ Generating {self.config.num_samples:,} enhanced house design samples...")
         output_dir = Path(self.config.output_dir)
         train_dir = output_dir / "train"
         val_dir = output_dir / "validation"
-        
+
         train_dir.mkdir(parents=True, exist_ok=True)
         val_dir.mkdir(parents=True, exist_ok=True)
-        
-        # Generate samples
-        samples = []
-        for i in range(self.config.num_samples):
-            if (i + 1) % 1000 == 0 or (i + 1) == self.config.num_samples:
-                print(f"   Generated {i+1:,}/{self.config.num_samples:,} samples...")
-            
-            sample = self.generate_sample(i + 1)
-            samples.append(sample)
-        
-        # Split into train/validation
-        random.shuffle(samples)
-        split_idx = int(len(samples) * self.config.train_ratio)
-        train_samples = samples[:split_idx]
-        val_samples = samples[split_idx:]
-        
-        # Save training samples
-        print(f"💾 Saving {len(train_samples):,} training samples...")
-        for sample in train_samples:
-            filename = f"{sample['id']}.json"
-            filepath = train_dir / filename
-            with open(filepath, 'w') as f:
+
+        accepted = 0
+        attempts = 0
+        train_target = int(self.config.num_samples * self.config.train_ratio)
+        train_count = 0
+        val_count = 0
+        quality_threshold = 0.6
+
+        while accepted < self.config.num_samples:
+            attempts += 1
+            sample = self.generate_sample(attempts)
+            if self._quality_score(sample) < quality_threshold:
+                continue
+            # Decide split
+            if train_count < train_target:
+                out_path = train_dir / f"{sample['id']}.json"
+                train_count += 1
+            else:
+                out_path = val_dir / f"{sample['id']}.json"
+                val_count += 1
+            with open(out_path, 'w') as f:
                 json.dump(sample, f, indent=2)
-        
-        # Save validation samples
-        print(f"💾 Saving {len(val_samples):,} validation samples...")
-        for sample in val_samples:
-            filename = f"{sample['id']}.json"
-            filepath = val_dir / filename
-            with open(filepath, 'w') as f:
-                json.dump(sample, f, indent=2)
-        
-        # Create dataset info
+            accepted += 1
+            if accepted % 1000 == 0 or accepted == self.config.num_samples:
+                print(f"   Accepted {accepted:,}/{self.config.num_samples:,} (attempts: {attempts:,})")
+
         dataset_info = {
-            "name": "HouseBrain Dataset v5 Enhanced 500K",
-            "version": "5.2",
-            "description": "500K enhanced synthetic architectural dataset with plot shape, exterior finishes, climate, and building codes",
-            "num_samples": self.config.num_samples,
-            "train_samples": len(train_samples),
-            "val_samples": len(val_samples),
+            "name": "HouseBrain Dataset v5 Enhanced",
+            "version": "5.3",
+            "description": "Enhanced synthetic architectural dataset with plot shape, exterior finishes, climate, and building codes",
+            "num_samples": accepted,
+            "train_samples": train_count,
+            "val_samples": val_count,
             "generated_at": "2024-01-01T00:00:00Z",
             "enhanced_features": [
                 "plot_shape_and_orientation",
@@ -479,28 +500,30 @@ class HouseBrainDatasetGenerator:
                 "max_budget": self.config.max_budget,
                 "styles": self.styles,
                 "regions": self.regions,
-                "fast_mode": self.config.fast_mode
+                "fast_mode": self.config.fast_mode,
+                "train_ratio": self.config.train_ratio,
+                "quality_threshold": quality_threshold,
             }
         }
-        
+
         with open(output_dir / "dataset_info.json", 'w') as f:
             json.dump(dataset_info, f, indent=2)
-        
-        print(f"✅ 500K enhanced dataset generated successfully!")
-        print(f"📊 Dataset features: {len(dataset_info['enhanced_features'])} enhanced parameters")
+
+        print(f"✅ Enhanced dataset generated successfully!")
+        print(f"📊 Train: {train_count:,} | Val: {val_count:,} | Attempts: {attempts:,}")
         return output_dir
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate 500K enhanced HouseBrain dataset")
-    parser.add_argument("--samples", type=int, default=500000, help="Number of samples to generate")
-    parser.add_argument("--output", default="housebrain_dataset_v5_500k", help="Output directory")
+    parser = argparse.ArgumentParser(description="Generate enhanced HouseBrain dataset")
+    parser.add_argument("--samples", type=int, default=350000, help="Number of samples to generate")
+    parser.add_argument("--output", default="housebrain_dataset_v5_350k", help="Output directory")
     parser.add_argument("--train-ratio", type=float, default=0.9, help="Train/validation split ratio")
     parser.add_argument("--fast", action="store_true", help="Use fast mode (skip layout solving)")
     parser.add_argument("--zip", action="store_true", help="Create zip archive after generation")
     
     args = parser.parse_args()
     
-    print("🏠 HouseBrain 500K Enhanced Dataset Generator")
+    print("🏠 HouseBrain Enhanced Dataset Generator")
     print("=" * 50)
     
     config = DatasetConfig(

@@ -167,23 +167,20 @@ Think like an experienced architect who has designed hundreds of successful home
         print("✅ Fine-tuned model loaded successfully")
     
     def _create_inference_prompt(self, house_input: HouseInput) -> str:
-        """Create the inference prompt"""
-        prompt = f"""You are HouseBrain, an expert architectural AI that designs residential houses.
-
-Given the following house requirements, generate a complete house design in JSON format:
-
-INPUT:
-{json.dumps(house_input.model_dump(), indent=2)}
-
-Generate a complete house design that matches the HouseOutput schema. The design must be:
-- Functional and practical
-- Code compliant
-- Cost-effective
-- Aesthetically pleasing
-- Optimized for the given plot and requirements
-
-OUTPUT:"""
-        
+        """Create the inference prompt that mirrors the training format."""
+        system = (
+            "You are HouseBrain, an expert architectural AI. "
+            "Generate detailed house designs in JSON format."
+        )
+        user = (
+            "Design a house with these specifications:\n"
+            f"{json.dumps(house_input.model_dump() if hasattr(house_input, 'model_dump') else house_input.__dict__, indent=2)}"
+        )
+        prompt = (
+            f"<|im_start|>system\n{system}\n<|im_end|>\n"
+            f"<|im_start|>user\n{user}\n<|im_end|>\n"
+            f"<|im_start|>assistant\n"
+        )
         return prompt
     
     def _generate_with_model(self, prompt: str) -> str:
@@ -205,10 +202,9 @@ OUTPUT:"""
         
         # Decode response
         response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-        
-        # Extract the generated part
-        response = response[len(prompt):].strip()
-        
+        # Extract the generated part if echo present
+        if response.startswith(prompt):
+            response = response[len(prompt):].strip()
         return response
     
     def _parse_model_response(self, response: str, house_input: HouseInput) -> HouseOutput:

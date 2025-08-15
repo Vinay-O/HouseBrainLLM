@@ -196,6 +196,13 @@ trainer = HouseBrainFineTuner(config)
 trainer.train()
 ```
 
+### Improvements in this version
+
+- Masked SFT loss (train only on assistant JSON)
+- Eval split support with step-wise evaluation
+- Safer dataclass/Pydantic handling for Colab fallbacks
+- Optional dataset quality gating for higher fidelity samples
+
 ### Local Training (M2 Pro)
 
 ```bash

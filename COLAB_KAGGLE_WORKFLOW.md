@@ -12,6 +12,12 @@ This guide provides a complete workflow for generating large datasets on Colab a
 - **Cost**: Completely free
 - **Performance**: Optimal for each task
 
+### What’s improved in this version
+- Masked SFT loss (training focuses on assistant JSON only)
+- Optional sequence packing toggle for better utilization
+- Eval split support when validation/ is present
+- Safer Pydantic/dataclass handling in Colab fallbacks
+
 ### Workflow Steps:
 1. **Generate Dataset on Colab** (this guide)
 2. **Download Dataset** to your computer
