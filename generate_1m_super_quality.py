@@ -537,26 +537,55 @@ class SuperQualityGenerator:
         checks = 0
         inp = sample["input"]
         out = sample["output"]
+        
+        # Reasoning steps check
         steps = inp.get("reasoning_steps", [])
         if isinstance(steps, list) and len(steps) >= self.config.min_reasoning_steps:
             score += 1.0
         checks += 1
+        
+        # Output length check
         out_len = len(json.dumps(out))
         if self.config.min_output_chars <= out_len <= self.config.max_output_chars:
             score += 1.0
         checks += 1
+        
+        # Problem-solution alignment
         if inp.get("problem_type") and len(out.keys()) >= 1:
             score += 1.0
         checks += 1
+        
+        # India-specific validation
         if inp.get("context", {}).get("indian_market"):
             if inp["context"].get("region") and inp["context"].get("climate_zone") in self.config.climate_zones:
                 score += 1.0
         checks += 1
+        
+        # Mathematical sanity checks
         if inp.get("problem_type") == "Optimization" and "costs" in out:
             c = out["costs"]
             if c.get("baseline_inr", 0) > c.get("optimized_inr", 0) > 0:
                 score += 1.0
         checks += 1
+        
+        # Structural engineering validation
+        if inp.get("problem_type") == "Structural_Engineering":
+            if any(key in out for key in ["elements", "design_notes", "safety_factors"]):
+                score += 1.0
+        checks += 1
+        
+        # Sustainability validation
+        if inp.get("problem_type") == "Sustainability_Design":
+            if any(key in out for key in ["measures", "certification", "monitoring"]):
+                score += 1.0
+        checks += 1
+        
+        # Smart home validation
+        if inp.get("problem_type") == "Smart_Home_Integration":
+            if any(key in out for key in ["systems", "integration", "security"]):
+                score += 1.0
+        checks += 1
+        
         return score / max(1, checks)
 
     # ---------- io ----------
@@ -575,31 +604,65 @@ class SuperQualityGenerator:
         dirs = self._ensure_dirs(base, shard_id)
 
         print(f"🎯 Target: {self.config.target_samples:,} samples | India: {int(self.config.india_ratio*100)}% | Q>= {self.config.quality_threshold}")
+        print(f"📊 Problem types: {len(self.config.complexity_levels)} | Building codes: {len(self.config.building_codes)}")
+        print(f"🌍 Indian regions: {len(self.config.regions_india)} | Climate zones: {len(self.config.climate_zones)}")
+        
         pbar = tqdm(total=self.config.target_samples, desc="Generating super-quality samples")
-        while self.accepted < self.config.target_samples:
-            problem = self._generate_problem()
-            solution = self._generate_solution(problem)
-            sample = {"input": problem, "output": solution, "metadata": {"generated_at": datetime.now().isoformat(), "version": "R1_Super_v1.0", "sample_id": f"R1-SUP-{self.generated:07d}"}}
-            self.generated += 1
-            h = self._hash(sample)
-            if h in self.uniques:
-                continue
-            q = self._quality_score(sample)
-            if q < self.config.quality_threshold:
-                continue
-            self.uniques.add(h)
-            subset = dirs["train"] if random.random() < self.config.train_ratio else dirs["val"]
-            with open(subset / f"sample_{self.accepted:07d}.json", "w") as f:
-                json.dump(sample, f, indent=2)
-            self.accepted += 1
-            pbar.update(1)
-            if self.accepted % self.config.shard_size == 0:
-                shard_id += 1
-                dirs = self._ensure_dirs(base, shard_id)
-            if self.accepted % 10000 == 0:
-                rate = self.accepted / max(1, self.generated)
-                print(f"✅ Accepted {self.accepted:,}/{self.config.target_samples:,} | Acceptance rate {rate:.2%}")
-        pbar.close()
+        start_time = datetime.now()
+        
+        try:
+            while self.accepted < self.config.target_samples:
+                problem = self._generate_problem()
+                solution = self._generate_solution(problem)
+                sample = {
+                    "input": problem, 
+                    "output": solution, 
+                    "metadata": {
+                        "generated_at": datetime.now().isoformat(), 
+                        "version": "R1_Super_v1.0", 
+                        "sample_id": f"R1-SUP-{self.generated:07d}",
+                        "problem_type": problem.get("problem_type", "Unknown")
+                    }
+                }
+                self.generated += 1
+                
+                # Deduplication
+                h = self._hash(sample)
+                if h in self.uniques:
+                    continue
+                
+                # Quality gate
+                q = self._quality_score(sample)
+                if q < self.config.quality_threshold:
+                    continue
+                
+                # Accept and save
+                self.uniques.add(h)
+                subset = dirs["train"] if random.random() < self.config.train_ratio else dirs["val"]
+                with open(subset / f"sample_{self.accepted:07d}.json", "w") as f:
+                    json.dump(sample, f, indent=2)
+                self.accepted += 1
+                pbar.update(1)
+                
+                # Rotate shard
+                if self.accepted % self.config.shard_size == 0:
+                    shard_id += 1
+                    dirs = self._ensure_dirs(base, shard_id)
+                
+                # Progress updates
+                if self.accepted % 10000 == 0:
+                    rate = self.accepted / max(1, self.generated)
+                    elapsed = (datetime.now() - start_time).total_seconds() / 3600
+                    eta = (elapsed / self.accepted) * (self.config.target_samples - self.accepted) if self.accepted > 0 else 0
+                    print(f"✅ Accepted {self.accepted:,}/{self.config.target_samples:,} | Rate: {rate:.2%} | Elapsed: {elapsed:.1f}h | ETA: {eta:.1f}h")
+                    
+        except KeyboardInterrupt:
+            print(f"\n⚠️ Generation interrupted. Saved {self.accepted:,} samples.")
+        except Exception as e:
+            print(f"\n❌ Generation failed: {e}")
+            raise
+        finally:
+            pbar.close()
         info = {"name": "housebrain_dataset_r1_super_1M", "version": "R1_Super_v1.0", "total_samples": self.accepted, "train_ratio": self.config.train_ratio, "india_ratio": self.config.india_ratio, "quality_threshold": self.config.quality_threshold, "shard_size": self.config.shard_size, "min_reasoning_steps": self.config.min_reasoning_steps}
         with open(base / "dataset_info.json", "w") as f:
             json.dump(info, f, indent=2)
