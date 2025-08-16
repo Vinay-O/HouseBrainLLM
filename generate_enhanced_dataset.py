@@ -129,8 +129,13 @@ class EnhancedHouseBrainDatasetGenerator:
             for i in range(config["count"]):
                 if allocated_area >= total_area * 0.95:  # Leave 5% for circulation
                     break
+                
+                # Calculate available area for this room
+                available_area = total_area - allocated_area
+                if available_area < config["min"]:
+                    break
                     
-                room_area = random.randint(config["min"], min(config["max"], total_area - allocated_area))
+                room_area = random.randint(config["min"], min(config["max"], available_area))
                 room_name = f"{room_type}_{i+1}" if config["count"] > 1 else room_type
                 
                 rooms.append({
@@ -168,11 +173,14 @@ class EnhancedHouseBrainDatasetGenerator:
         
         features = regional_features.get(region, ["Modern_Design", "Energy_Efficient", "Natural_Lighting"])
         
+        # Ensure we don't try to sample more features than available
+        num_features = min(random.randint(2, 4), len(features))
+        
         return {
             "region": region,
             "climate_zone": climate_zone,
             "architectural_style": style,
-            "regional_features": random.sample(features, random.randint(2, 4)),
+            "regional_features": random.sample(features, num_features),
             "vastu_compliant": random.choice([True, False]),
             "green_building": random.choice([True, False]),
             "solar_panels": random.choice([True, False]),
@@ -239,7 +247,7 @@ class EnhancedHouseBrainDatasetGenerator:
         
         # Budget consistency
         budget = sample["input"]["budget_range"]
-        estimated_cost = plot_area * random.randint(800, 2000)  # Rough estimate
+        estimated_cost = plot_area * 1500  # Fixed estimate for consistency
         if estimated_cost <= budget["max"]:
             score += 1.0
         total_checks += 1
@@ -314,6 +322,8 @@ class EnhancedHouseBrainDatasetGenerator:
                 "sample_id": f"HBV6-ENH-{self.generated_samples:06d}"
             }
         }
+        
+        self.generated_samples += 1
         
         # Calculate quality score
         quality_score = self.calculate_quality_score(sample)
