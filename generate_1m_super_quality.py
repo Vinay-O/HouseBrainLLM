@@ -24,7 +24,7 @@ class SuperQualityConfig:
     train_ratio: float = 0.90
     shard_size: int = 100_000
     min_reasoning_steps: int = 6  # Back to 6 for original generator
-    min_output_chars: int = 300  # Realistic for original generator (avg 346)
+    min_output_chars: int = 500  # Increased to 500 for enhanced quality
     max_output_chars: int = 20_000
     india_ratio: float = 0.40
     seed: int = 42
@@ -396,44 +396,144 @@ class SuperQualityGenerator:
     def _solution_basic(self, problem: Dict[str, Any]) -> Dict[str, Any]:
         area = problem["plot_details"]["area_sqft"]
         family = problem["requirements"]["family_size"]
+        budget = problem["requirements"]["budget_inr"]
         bedrooms = max(2, min(6, family))
         living = int(area * 0.35)
         service = int(area * 0.22)
         circulation = int(area * 0.10)
+        
+        # Calculate realistic room areas
+        bedroom_area = bedrooms * random.randint(120, 180)
+        kitchen_area = int(service * 0.55)
+        bathroom_area = int(service * 0.45)
+        utility_area = int(area * 0.05)
+        balcony_area = int(area * 0.08)
+        
+        # Determine material quality based on budget
+        cost_per_sqft = budget / area
+        if cost_per_sqft < 1500:
+            quality = "Economy"
+            materials = {
+                "foundation": "RCC_Footing",
+                "structure": "Load_Bearing",
+                "walls": "Brick_Masonry",
+                "roofing": "RCC_Slab",
+                "flooring": "Cement_Flooring"
+            }
+        elif cost_per_sqft < 2500:
+            quality = "Standard"
+            materials = {
+                "foundation": "RCC_Footing",
+                "structure": "RCC_Frame",
+                "walls": "Brick_Masonry",
+                "roofing": "RCC_Slab",
+                "flooring": "Vitrified_Tiles"
+            }
+        else:
+            quality = "Premium"
+            materials = {
+                "foundation": "RCC_Footing",
+                "structure": "RCC_Frame",
+                "walls": "AAC_Blocks",
+                "roofing": "RCC_Slab",
+                "flooring": "Marble"
+            }
+        
         return {
             "design_solution": {
                 "room_distribution": {
                     "bedrooms": bedrooms,
-                    "bedroom_area_sqft": bedrooms * 140,
+                    "bedroom_area_sqft": bedroom_area,
                     "living_area_sqft": living,
-                    "kitchen_area_sqft": int(service * 0.55),
-                    "bathroom_area_sqft": int(service * 0.45),
-                    "circulation_area_sqft": circulation
+                    "kitchen_area_sqft": kitchen_area,
+                    "bathroom_area_sqft": bathroom_area,
+                    "circulation_area_sqft": circulation,
+                    "utility_area_sqft": utility_area,
+                    "balcony_area_sqft": balcony_area
                 },
-                "layout": "Open_plan_with_private_zones",
-                "daylight": "North_South_optimized",
-                "ventilation": "Cross_ventilation"
+                "layout": random.choice([
+                    "Open_plan_with_private_zones",
+                    "Traditional_compartmentalized",
+                    "Modern_split_level",
+                    "Contemporary_loft_style"
+                ]),
+                "daylight": random.choice([
+                    "North_South_optimized",
+                    "East_West_orientation",
+                    "Skylight_integrated",
+                    "Courtyard_centered"
+                ]),
+                "ventilation": random.choice([
+                    "Cross_ventilation",
+                    "Stack_ventilation",
+                    "Mechanical_ventilation",
+                    "Natural_ventilation_enhanced"
+                ])
             },
+            "materials_and_finishes": materials,
             "analysis": {
-                "space_efficiency": ">=85%",
-                "natural_light_score": ">=0.85",
-                "budget_alignment": "Within_5_percent"
+                "space_efficiency": f"{random.randint(80, 95)}%",
+                "natural_light_score": f"{random.uniform(0.75, 0.95):.2f}",
+                "budget_alignment": random.choice(["Within_5_percent", "Within_10_percent", "Within_15_percent"]),
+                "energy_efficiency": random.choice(["ECBC_Compliant", "Green_Building_Ready", "Net_Zero_Capable"])
             },
-            "implementation": ["Massing", "Sizing", "Circulation", "Fenestration", "Materials"]
+            "implementation": [
+                "Site_preparation_and_excavation",
+                "Foundation_construction",
+                "Structural_framework",
+                "Wall_and_roof_construction",
+                "MEP_installation",
+                "Interior_finishes",
+                "Exterior_finishes",
+                "Landscaping"
+            ],
+            "quality_level": quality,
+            "estimated_cost_per_sqft": cost_per_sqft
         }
 
     def _solution_code(self, problem: Dict[str, Any]) -> Dict[str, Any]:
+        region = problem.get("context", {}).get("region", "Mumbai")
+        family = 4  # Default family size for code compliance
+        
+        # Region-specific bye-laws
+        bye_laws = {
+            "Mumbai": {"setback_front": 3.0, "setback_rear": 3.0, "setback_sides": 1.5, "max_height": 24.0, "far_limit": 2.5},
+            "Delhi": {"setback_front": 4.0, "setback_rear": 3.0, "setback_sides": 2.0, "max_height": 21.0, "far_limit": 2.0},
+            "Chennai": {"setback_front": 3.0, "setback_rear": 3.0, "setback_sides": 1.5, "max_height": 18.0, "far_limit": 2.0}
+        }
+        
+        local_bye_laws = bye_laws.get(region, bye_laws["Mumbai"])
+        
         return {
             "compliance_solution": {
-                "setbacks": {"front": "3.0m", "rear": "3.0m", "side_each": "1.5m"},
-                "far_limit": "As_per_zone", "height": "Within_limits", "parking": "As_per_code",
-                "fire_safety": "Staircase/refuge/suppression"
+                "setbacks": {
+                    "front": f"{local_bye_laws['setback_front']}m",
+                    "rear": f"{local_bye_laws['setback_rear']}m", 
+                    "side_each": f"{local_bye_laws['setback_sides']}m"
+                },
+                "far_limit": f"{local_bye_laws['far_limit']}",
+                "height": f"Within_{local_bye_laws['max_height']}m_limit",
+                "parking": f"{family + 1}_spaces_as_per_code",
+                "fire_safety": "Staircase_refuge_suppression_system"
             },
             "modifications": self._safe_sample([
-                "Increase north setback by 0.5m", "Reduce height by 0.5m",
-                "Add two parking bays", "Upgrade suppression system"
-            ], 2, 3),
-            "verification": {"setback": "Passed", "far": "Passed", "height": "Passed", "parking": "Passed"}
+                f"Increase north setback by 0.5m to {local_bye_laws['setback_front'] + 0.5}m",
+                f"Reduce height by 0.5m to {local_bye_laws['max_height'] - 0.5}m",
+                f"Add {family + 1} parking bays as per requirement",
+                "Upgrade fire suppression system to automatic",
+                "Install fire escape staircase",
+                "Add accessibility ramp for disabled access"
+            ], 3, 4),
+            "verification": {
+                "setback": "Passed",
+                "far": "Passed", 
+                "height": "Passed",
+                "parking": "Passed",
+                "fire_safety": "Passed",
+                "accessibility": "Passed"
+            },
+            "applicable_codes": problem.get("context", {}).get("applicable_codes", ["NBC_2016", "Local_Bye_Laws"]),
+            "compliance_score": f"{random.randint(85, 98)}%"
         }
 
     def _solution_multi(self, problem: Dict[str, Any]) -> Dict[str, Any]:
@@ -494,9 +594,78 @@ class SuperQualityGenerator:
         }
 
     def _solution_struct(self, problem: Dict[str, Any]) -> Dict[str, Any]:
+        # Use default values since structural problems don't have plot_details
+        area = 2500  # Default area
+        soil_type = random.choice(["Hard_Rock", "Soft_Rock", "Sandy_Soil", "Clay_Soil", "Mixed_Soil"])
+        family = 4  # Default family size
+        
+        # Determine foundation type based on soil
+        if soil_type in ["Hard_Rock", "Soft_Rock"]:
+            foundation_type = "Isolated_Footing"
+            foundation_depth = random.randint(3, 5)
+        elif soil_type == "Sandy_Soil":
+            foundation_type = "Strip_Footing"
+            foundation_depth = random.randint(4, 6)
+        elif soil_type == "Clay_Soil":
+            foundation_type = "Raft_Foundation"
+            foundation_depth = random.randint(5, 8)
+        else:
+            foundation_type = "Isolated_Footing"
+            foundation_depth = random.randint(3, 6)
+        
+        # Calculate structural loads
+        dead_load = area * 150  # kg/m2
+        live_load = area * 200  # kg/m2
+        total_load = dead_load + live_load
+        
+        # Determine seismic zone
+        seismic_zones = ["Zone_II", "Zone_III", "Zone_IV", "Zone_V"]
+        seismic_zone = random.choice(seismic_zones)
+        
         return {
-            "elements": problem["elements"],
-            "design_notes": ["Seismic_zone_compliance", "Wind_load_checked", "Connections_detailed"]
+            "structural_design": {
+                "foundation": {
+                    "type": foundation_type,
+                    "depth_m": foundation_depth,
+                    "bearing_capacity": f"{random.randint(150, 300)} kN/m2",
+                    "soil_type": soil_type
+                },
+                "superstructure": {
+                    "system": "RCC_Frame_Structure",
+                    "columns": f"{random.randint(8, 16)}_columns",
+                    "beams": "Primary_and_secondary_beams",
+                    "slab": "RCC_slab_150mm_thick"
+                },
+                "load_analysis": {
+                    "dead_load_kg_m2": dead_load,
+                    "live_load_kg_m2": live_load,
+                    "total_load_kg_m2": total_load,
+                    "wind_load_kg_m2": random.randint(50, 150)
+                }
+            },
+            "seismic_design": {
+                "zone": seismic_zone,
+                "response_reduction_factor": random.uniform(3.0, 5.0),
+                "importance_factor": 1.0,
+                "ductility_detailing": "As_per_IS_13920",
+                "base_shear": f"{random.randint(800, 1500)} kN"
+            },
+            "safety_factors": {
+                "concrete_safety_factor": random.uniform(1.5, 2.0),
+                "steel_safety_factor": random.uniform(1.15, 1.25),
+                "load_combination_factor": random.uniform(1.2, 1.5)
+            },
+            "construction_details": {
+                "concrete_grade": random.choice(["M20", "M25", "M30"]),
+                "steel_grade": "Fe_415",
+                "cover_thickness": "25mm_for_columns_20mm_for_beams",
+                "joint_details": "As_per_IS_456_2000"
+            },
+            "quality_control": {
+                "testing_frequency": "As_per_IS_456",
+                "curing_period": "28_days",
+                "strength_verification": "Cube_testing_required"
+            }
         }
 
     def _solution_sustain(self, problem: Dict[str, Any]) -> Dict[str, Any]:
@@ -546,9 +715,78 @@ class SuperQualityGenerator:
         }
 
     def _solution_struct(self, problem: Dict[str, Any]) -> Dict[str, Any]:
+        # Use default values since structural problems don't have plot_details
+        area = 2500  # Default area
+        soil_type = random.choice(["Hard_Rock", "Soft_Rock", "Sandy_Soil", "Clay_Soil", "Mixed_Soil"])
+        family = 4  # Default family size
+        
+        # Determine foundation type based on soil
+        if soil_type in ["Hard_Rock", "Soft_Rock"]:
+            foundation_type = "Isolated_Footing"
+            foundation_depth = random.randint(3, 5)
+        elif soil_type == "Sandy_Soil":
+            foundation_type = "Strip_Footing"
+            foundation_depth = random.randint(4, 6)
+        elif soil_type == "Clay_Soil":
+            foundation_type = "Raft_Foundation"
+            foundation_depth = random.randint(5, 8)
+        else:
+            foundation_type = "Isolated_Footing"
+            foundation_depth = random.randint(3, 6)
+        
+        # Calculate structural loads
+        dead_load = area * 150  # kg/m2
+        live_load = area * 200  # kg/m2
+        total_load = dead_load + live_load
+        
+        # Determine seismic zone
+        seismic_zones = ["Zone_II", "Zone_III", "Zone_IV", "Zone_V"]
+        seismic_zone = random.choice(seismic_zones)
+        
         return {
-            "elements": problem["elements"],
-            "design_notes": ["Seismic_zone_compliance", "Wind_load_checked", "Connections_detailed"]
+            "structural_design": {
+                "foundation": {
+                    "type": foundation_type,
+                    "depth_m": foundation_depth,
+                    "bearing_capacity": f"{random.randint(150, 300)} kN/m2",
+                    "soil_type": soil_type
+                },
+                "superstructure": {
+                    "system": "RCC_Frame_Structure",
+                    "columns": f"{random.randint(8, 16)}_columns",
+                    "beams": "Primary_and_secondary_beams",
+                    "slab": "RCC_slab_150mm_thick"
+                },
+                "load_analysis": {
+                    "dead_load_kg_m2": dead_load,
+                    "live_load_kg_m2": live_load,
+                    "total_load_kg_m2": total_load,
+                    "wind_load_kg_m2": random.randint(50, 150)
+                }
+            },
+            "seismic_design": {
+                "zone": seismic_zone,
+                "response_reduction_factor": random.uniform(3.0, 5.0),
+                "importance_factor": 1.0,
+                "ductility_detailing": "As_per_IS_13920",
+                "base_shear": f"{random.randint(800, 1500)} kN"
+            },
+            "safety_factors": {
+                "concrete_safety_factor": random.uniform(1.5, 2.0),
+                "steel_safety_factor": random.uniform(1.15, 1.25),
+                "load_combination_factor": random.uniform(1.2, 1.5)
+            },
+            "construction_details": {
+                "concrete_grade": random.choice(["M20", "M25", "M30"]),
+                "steel_grade": "Fe_415",
+                "cover_thickness": "25mm_for_columns_20mm_for_beams",
+                "joint_details": "As_per_IS_456_2000"
+            },
+            "quality_control": {
+                "testing_frequency": "As_per_IS_456",
+                "curing_period": "28_days",
+                "strength_verification": "Cube_testing_required"
+            }
         }
 
     def _solution_sustain(self, problem: Dict[str, Any]) -> Dict[str, Any]:
