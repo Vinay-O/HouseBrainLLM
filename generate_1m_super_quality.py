@@ -23,8 +23,8 @@ class SuperQualityConfig:
     quality_threshold: float = 0.85  # Optimized for Colab generation
     train_ratio: float = 0.90
     shard_size: int = 100_000
-    min_reasoning_steps: int = 6
-    min_output_chars: int = 200  # Reduced from 1000 to 200 for faster generation
+    min_reasoning_steps: int = 6  # Back to 6 for original generator
+    min_output_chars: int = 300  # Realistic for original generator (avg 346)
     max_output_chars: int = 20_000
     india_ratio: float = 0.40
     seed: int = 42
@@ -596,22 +596,22 @@ class SuperQualityGenerator:
         if inp.get("problem_type") and out:
             score += 1.0
         
-        # Output length check (much more lenient)
+        # Output length check (using config value)
         checks += 1
         out_len = len(json.dumps(out))
-        if out_len >= 100:  # Much lower threshold
+        if self.config.min_output_chars <= out_len <= self.config.max_output_chars:
             score += 1.0
         
-        # Reasoning steps check (more lenient)
+        # Reasoning steps check (using config value)
         checks += 1
         steps = inp.get("reasoning_steps", [])
-        if isinstance(steps, list) and len(steps) >= 3:  # Reduced from 6 to 3
+        if isinstance(steps, list) and len(steps) >= self.config.min_reasoning_steps:
             score += 1.0
         
         # India-specific validation (only when applicable)
         if inp.get("context", {}).get("indian_market"):
             checks += 1
-            if inp["context"].get("region"):
+            if inp["context"].get("region") and inp["context"].get("climate_zone") in self.config.climate_zones:
                 score += 1.0
         
         return score / max(1, checks)
