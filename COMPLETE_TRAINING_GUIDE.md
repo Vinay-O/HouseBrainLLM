@@ -320,6 +320,13 @@ housebrain-trained-model/
 - **Keep laptop plugged in** if using laptop
 - **Monitor periodically** every 30 minutes
 
+### 🌐 Mobile Hotspot Users
+- **Training continues** even if your internet disconnects
+- **Checkpoints are saved** every 1000 steps automatically
+- **Session may timeout** after ~12 hours of inactivity
+- **Use Colab Pro+** for better stability and longer sessions
+- **Consider email notifications** for remote monitoring (see enhanced script)
+
 ### Save Progress
 - **Checkpoints are automatic** every 1000 steps
 - **Logs are saved** to `training_log.txt`
@@ -407,3 +414,48 @@ uploaded = files.upload()
 ```
 
 **That's it! Your HouseBrain model will be training in 8-12 hours! 🚀**
+
+---
+
+## 🌐 Mobile Hotspot Users - Enhanced Setup
+
+### Option 1: Use Enhanced Script with Email Notifications
+
+**For mobile hotspot users who want remote monitoring:**
+
+```python
+# 1. Configure email notifications (optional)
+# Edit colab_proplus_train_with_notifications.py and set:
+# ENABLE_EMAIL = True
+# EMAIL_SENDER = "your_email@gmail.com"
+# EMAIL_PASSWORD = "your_app_password"  # Use Gmail app password
+# EMAIL_RECEIVER = "your_email@gmail.com"
+
+# 2. Run enhanced training script
+!python colab_proplus_train_with_notifications.py
+```
+
+**You'll receive email notifications for:**
+- ✅ Training start
+- ✅ Every checkpoint (every 1000 steps)
+- ✅ Training completion
+- ❌ Any errors that occur
+
+### Option 2: Simple Monitoring (No Email Setup)
+
+**If you don't want to set up email:**
+
+```python
+# Use the simple script - training continues even if you disconnect
+!python colab_proplus_train_simple.py
+
+# When you reconnect, check progress:
+!python monitor_training.py
+```
+
+### Mobile Hotspot Tips:
+- **Colab Pro+ recommended** for better stability
+- **Training continues** even if your internet drops
+- **Checkpoints saved** every 1000 steps automatically
+- **Reconnect later** to check progress and download model
+- **Session timeout** after ~12 hours of inactivity (Pro+ extends this)
