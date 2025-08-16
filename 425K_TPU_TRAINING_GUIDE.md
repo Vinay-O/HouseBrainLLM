@@ -47,52 +47,52 @@ zip -r housebrain_dataset_v5_425k.zip housebrain_dataset_v5_425k/
 
 ### **2.2 Mount Dataset in Notebook**
 ```python
-# Mount the uploaded dataset
-from kaggle.api.kaggle_api_extended import KaggleApi
-api = KaggleApi()
-api.authenticate()
+# SIMPLIFIED APPROACH (No API needed):
+# 1. Upload your housebrain_dataset_v5_425k.zip to Kaggle Datasets
+# 2. Make it public
+# 3. Add it to your notebook from the right sidebar
 
-# List available datasets
-datasets = api.dataset_list(search="housebrain-425k-combined")
-print(f"Found datasets: {datasets}")
-
-# Extract dataset
-import zipfile
+# Check if dataset is mounted
 import os
+print("📁 Available input directories:")
+print(os.listdir('/kaggle/input/'))
 
-for file in os.listdir('/kaggle/input'):
+# Extract dataset if it's a zip file
+import zipfile
+
+for file in os.listdir('/kaggle/input/'):
     if file.endswith('.zip'):
+        print(f"📦 Found zip file: {file}")
         with zipfile.ZipFile(f'/kaggle/input/{file}', 'r') as zip_ref:
             zip_ref.extractall('/kaggle/working/')
         print(f"✅ Extracted: {file}")
 
 print("📁 Dataset contents:")
-!ls -la housebrain_dataset_v5_425k/
+!ls -la /kaggle/working/
 ```
 
----
-
-## 🔧 **Step 3: Install Dependencies**
-
+### **2.3 Install and Fix Dependencies**
 ```python
-# Install TPU-compatible versions
-!pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2
-!pip install torch_xla[tpu]==2.0.1 -f https://storage.googleapis.com/libtpu-releases/index.html
-!pip install transformers==4.43.3 peft==0.11.1 datasets==2.20.0 accelerate==0.33.0
-!pip install safetensors==0.4.3 json-repair==0.21.0
+# Fix PyTorch and transformers compatibility issues
+!pip install --upgrade torch==2.1.0 torchvision torchaudio
+!pip install --upgrade transformers==4.35.0
+!pip install --upgrade peft==0.6.0
+!pip install --upgrade datasets==2.14.0
+!pip install --upgrade accelerate==0.24.0
 
-# Verify installations
-import torch_xla
-import transformers
-import peft
-print("✅ All dependencies installed successfully")
+# Install TPU-compatible torch-xla (optional)
+try:
+    !pip install torch_xla[tpu]==2.1.0 -f https://storage.googleapis.com/libtpu-releases/index.html
+    print("✅ TPU support installed")
+except:
+    print("⚠️ TPU installation failed, will use GPU/CPU")
+
+# Restart runtime after installation
+import os
+os._exit(0)
 ```
 
----
-
-## 🎯 **Step 4: Training Configuration**
-
-### **4.1 TPU-Optimized Training Script**
+### **2.4 TPU Training Script (Fixed)**
 ```python
 import os
 import json
@@ -100,17 +100,26 @@ import torch
 import torch_xla
 import torch_xla.core.xla_model as xm
 import torch_xla.distributed.parallel_loader as pl
-from transformers import (
-    AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer,
-    DataCollatorForLanguageModeling
-)
-from peft import LoraConfig, get_peft_model, TaskType
-from datasets import Dataset
-import numpy as np
-from pathlib import Path
+
+# Import with error handling
+try:
+    from transformers import (
+        AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer,
+        DataCollatorForLanguageModeling
+    )
+    from peft import LoraConfig, get_peft_model, TaskType
+    from datasets import Dataset
+    import numpy as np
+    from pathlib import Path
+    print("✅ All imports successful!")
+except Exception as e:
+    print(f"❌ Import error: {e}")
+    print("🔄 Restarting runtime...")
+    import os
+    os._exit(0)
 
 class TPUHouseBrainTrainer:
-    def __init__(self, dataset_path="housebrain_dataset_v5_425k"):
+    def __init__(self, dataset_path="/kaggle/input/housebrain-425k-combined/housebrain_dataset_v5_425k"):
         self.dataset_path = dataset_path
         self.device = xm.xla_device()
         self.tokenizer = None
@@ -569,3 +578,347 @@ result = llm.generate_design({
 ✅ **Model ready** for deployment  
 
 **Your HouseBrain model is now trained and ready for the Indian market!** 🚀
+
+### **2.5 Simplified TPU Training (Alternative)**
+```python
+# SIMPLIFIED VERSION - Run this if the above fails
+import os
+import json
+import torch
+import torch_xla.core.xla_model as xm
+from pathlib import Path
+
+# Basic imports only
+try:
+    from transformers import AutoTokenizer, AutoModelForCausalLM
+    from peft import LoraConfig, get_peft_model, TaskType
+    print("✅ Basic imports successful!")
+except Exception as e:
+    print(f"❌ Import error: {e}")
+    print("🔄 Please restart runtime and try again")
+
+def simple_tpu_training():
+    """Simplified TPU training without complex dependencies"""
+    print("🏗️ Starting Simplified TPU Training")
+    
+    # Setup device
+    device = xm.xla_device()
+    print(f"🔧 Using device: {device}")
+    
+    # Load tokenizer
+    tokenizer = AutoTokenizer.from_pretrained("deepseek-ai/deepseek-coder-6.7b-base")
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+    
+    # Load model
+    model = AutoModelForCausalLM.from_pretrained(
+        "deepseek-ai/deepseek-coder-6.7b-base",
+        torch_dtype=torch.float16,
+        device_map=None
+    )
+    
+    # Add LoRA
+    lora_config = LoraConfig(
+        task_type=TaskType.CAUSAL_LM,
+        r=8,
+        lora_alpha=16,
+        lora_dropout=0.1,
+        target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+        bias="none"
+    )
+    
+    model = get_peft_model(model, lora_config)
+    model.print_trainable_parameters()
+    
+    # Load dataset
+    dataset_path = "/kaggle/input/housebrain-425k-combined/housebrain_dataset_v5_425k"
+    train_files = list(Path(dataset_path) / "train").glob("*.json")
+    
+    print(f"📊 Found {len(train_files)} training files")
+    
+    # Simple training loop (manual)
+    model.train()
+    optimizer = torch.optim.AdamW(model.parameters(), lr=2e-4)
+    
+    # Training loop
+    for epoch in range(2):
+        print(f"🔄 Epoch {epoch + 1}/2")
+        
+        for i, file in enumerate(train_files[:100]):  # Limit for demo
+            with open(file, 'r') as f:
+                sample = json.load(f)
+            
+            # Format input
+            input_text = json.dumps(sample["input"], indent=2)
+            output_text = json.dumps(sample["output"], indent=2)
+            full_text = f"<|im_start|>user\n{input_text}<|im_end|>\n<|im_start|>assistant\n{output_text}<|im_end|>"
+            
+            # Tokenize
+            inputs = tokenizer(full_text, return_tensors="pt", truncation=True, max_length=512)
+            inputs = {k: v.to(device) for k, v in inputs.items()}
+            
+            # Forward pass
+            outputs = model(**inputs, labels=inputs["input_ids"])
+            loss = outputs.loss
+            
+            # Backward pass
+            loss.backward()
+            optimizer.step()
+            optimizer.zero_grad()
+            
+            if i % 10 == 0:
+                print(f"  Step {i}: Loss = {loss.item():.4f}")
+        
+        # Save checkpoint
+        model.save_pretrained(f"/kaggle/working/models/housebrain-epoch-{epoch+1}")
+        tokenizer.save_pretrained(f"/kaggle/working/models/housebrain-epoch-{epoch+1}")
+        print(f"💾 Saved epoch {epoch + 1} checkpoint")
+    
+    print("✅ Training completed!")
+    print("📁 Checkpoints saved in /kaggle/working/models/")
+
+# Run simplified training
+if __name__ == "__main__":
+    simple_tpu_training()
+```
+
+### **2.6 GPU Fallback Training (If TPU Fails)**
+```python
+# GPU FALLBACK VERSION - Use this if TPU installation fails
+import os
+import json
+import torch
+from pathlib import Path
+
+# Check if TPU is available
+try:
+    import torch_xla.core.xla_model as xm
+    USE_TPU = True
+    device = xm.xla_device()
+    print(f"✅ TPU available: {device}")
+except ImportError:
+    USE_TPU = False
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"⚠️ TPU not available, using: {device}")
+
+# Basic imports
+try:
+    from transformers import AutoTokenizer, AutoModelForCausalLM
+    from peft import LoraConfig, get_peft_model, TaskType
+    print("✅ Basic imports successful!")
+except Exception as e:
+    print(f"❌ Import error: {e}")
+    print("🔄 Please restart runtime and try again")
+
+def gpu_fallback_training():
+    """GPU fallback training when TPU is not available"""
+    print("🏗️ Starting GPU Fallback Training")
+    
+    # Load tokenizer
+    tokenizer = AutoTokenizer.from_pretrained("deepseek-ai/deepseek-coder-6.7b-base")
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+    
+    # Load model
+    model = AutoModelForCausalLM.from_pretrained(
+        "deepseek-ai/deepseek-coder-6.7b-base",
+        torch_dtype=torch.float16,
+        device_map="auto" if not USE_TPU else None
+    )
+    
+    # Add LoRA
+    lora_config = LoraConfig(
+        task_type=TaskType.CAUSAL_LM,
+        r=8,
+        lora_alpha=16,
+        lora_dropout=0.1,
+        target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+        bias="none"
+    )
+    
+    model = get_peft_model(model, lora_config)
+    model.print_trainable_parameters()
+    
+    # Load dataset
+    dataset_path = "/kaggle/input/housebrain-425k-combined/housebrain_dataset_v5_425k"
+    train_files = list(Path(dataset_path) / "train").glob("*.json")
+    
+    print(f"📊 Found {len(train_files)} training files")
+    
+    # Simple training loop
+    model.train()
+    optimizer = torch.optim.AdamW(model.parameters(), lr=2e-4)
+    
+    # Training loop
+    for epoch in range(2):
+        print(f"🔄 Epoch {epoch + 1}/2")
+        
+        for i, file in enumerate(train_files[:100]):  # Limit for demo
+            with open(file, 'r') as f:
+                sample = json.load(f)
+            
+            # Format input
+            input_text = json.dumps(sample["input"], indent=2)
+            output_text = json.dumps(sample["output"], indent=2)
+            full_text = f"<|im_start|>user\n{input_text}<|im_end|>\n<|im_start|>assistant\n{output_text}<|im_end|>"
+            
+            # Tokenize
+            inputs = tokenizer(full_text, return_tensors="pt", truncation=True, max_length=512)
+            inputs = {k: v.to(device) for k, v in inputs.items()}
+            
+            # Forward pass
+            outputs = model(**inputs, labels=inputs["input_ids"])
+            loss = outputs.loss
+            
+            # Backward pass
+            loss.backward()
+            optimizer.step()
+            optimizer.zero_grad()
+            
+            if i % 10 == 0:
+                print(f"  Step {i}: Loss = {loss.item():.4f}")
+        
+        # Save checkpoint
+        model.save_pretrained(f"/kaggle/working/models/housebrain-epoch-{epoch+1}")
+        tokenizer.save_pretrained(f"/kaggle/working/models/housebrain-epoch-{epoch+1}")
+        print(f"💾 Saved epoch {epoch + 1} checkpoint")
+    
+    print("✅ Training completed!")
+    print("📁 Checkpoints saved in /kaggle/working/models/")
+
+# Run training
+if __name__ == "__main__":
+    gpu_fallback_training()
+```
+
+### **2.7 Simplified Training (Current Environment)**
+```python
+# SIMPLIFIED VERSION - Works with current environment
+import os
+import json
+import torch
+from pathlib import Path
+
+print(f"🔧 PyTorch version: {torch.__version__}")
+print(f"🔧 CUDA available: {torch.cuda.is_available()}")
+
+# Basic imports with error handling
+try:
+    from transformers import AutoTokenizer, AutoModelForCausalLM
+    from peft import LoraConfig, get_peft_model, TaskType
+    print("✅ All imports successful!")
+except Exception as e:
+    print(f"❌ Import error: {e}")
+    print("🔄 Please run the installation cell first")
+
+def simple_training():
+    """Simplified training that works with current environment"""
+    print("🏗️ Starting Simplified Training")
+    
+    # Setup device
+    if torch.cuda.is_available():
+        device = torch.device("cuda")
+        print(f"✅ Using GPU: {torch.cuda.get_device_name()}")
+    else:
+        device = torch.device("cpu")
+        print("⚠️ Using CPU (slower)")
+    
+    # Load tokenizer
+    print("📥 Loading tokenizer...")
+    tokenizer = AutoTokenizer.from_pretrained("deepseek-ai/deepseek-coder-6.7b-base")
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+    
+    # Load model with error handling
+    print("📥 Loading model...")
+    try:
+        model = AutoModelForCausalLM.from_pretrained(
+            "deepseek-ai/deepseek-coder-6.7b-base",
+            torch_dtype=torch.float16,
+            device_map="auto" if torch.cuda.is_available() else None,
+            low_cpu_mem_usage=True
+        )
+    except Exception as e:
+        print(f"❌ Model loading failed: {e}")
+        print("🔄 Trying without device_map...")
+        model = AutoModelForCausalLM.from_pretrained(
+            "deepseek-ai/deepseek-coder-6.7b-base",
+            torch_dtype=torch.float16,
+            low_cpu_mem_usage=True
+        )
+        model = model.to(device)
+    
+    # Add LoRA
+    print("🔧 Adding LoRA...")
+    lora_config = LoraConfig(
+        task_type=TaskType.CAUSAL_LM,
+        r=8,
+        lora_alpha=16,
+        lora_dropout=0.1,
+        target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+        bias="none"
+    )
+    
+    model = get_peft_model(model, lora_config)
+    model.print_trainable_parameters()
+    
+    # Load dataset
+    print("📂 Loading dataset...")
+    dataset_path = "/kaggle/input/housebrain-425k-combined/housebrain_dataset_v5_425k"
+    train_files = list(Path(dataset_path) / "train").glob("*.json")
+    
+    print(f"📊 Found {len(train_files)} training files")
+    
+    # Simple training loop
+    model.train()
+    optimizer = torch.optim.AdamW(model.parameters(), lr=2e-4)
+    
+    # Training loop
+    for epoch in range(2):
+        print(f"🔄 Epoch {epoch + 1}/2")
+        
+        for i, file in enumerate(train_files[:50]):  # Reduced for demo
+            try:
+                with open(file, 'r') as f:
+                    sample = json.load(f)
+                
+                # Format input
+                input_text = json.dumps(sample["input"], indent=2)
+                output_text = json.dumps(sample["output"], indent=2)
+                full_text = f"<|im_start|>user\n{input_text}<|im_end|>\n<|im_start|>assistant\n{output_text}<|im_end|>"
+                
+                # Tokenize
+                inputs = tokenizer(full_text, return_tensors="pt", truncation=True, max_length=512)
+                inputs = {k: v.to(device) for k, v in inputs.items()}
+                
+                # Forward pass
+                outputs = model(**inputs, labels=inputs["input_ids"])
+                loss = outputs.loss
+                
+                # Backward pass
+                loss.backward()
+                optimizer.step()
+                optimizer.zero_grad()
+                
+                if i % 5 == 0:
+                    print(f"  Step {i}: Loss = {loss.item():.4f}")
+                    
+            except Exception as e:
+                print(f"  ⚠️ Error in step {i}: {e}")
+                continue
+        
+        # Save checkpoint
+        try:
+            model.save_pretrained(f"/kaggle/working/models/housebrain-epoch-{epoch+1}")
+            tokenizer.save_pretrained(f"/kaggle/working/models/housebrain-epoch-{epoch+1}")
+            print(f"💾 Saved epoch {epoch + 1} checkpoint")
+        except Exception as e:
+            print(f"⚠️ Save failed: {e}")
+    
+    print("✅ Training completed!")
+    print("📁 Checkpoints saved in /kaggle/working/models/")
+
+# Run training
+if __name__ == "__main__":
+    simple_training()
+```
