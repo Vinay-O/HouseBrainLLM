@@ -20,11 +20,11 @@ from tqdm import tqdm
 @dataclass
 class SuperQualityConfig:
     target_samples: int = 1_000_000
-    quality_threshold: float = 0.85  # Optimized for Colab generation
+    quality_threshold: float = 0.90  # Increased to 0.90 for maximum quality
     train_ratio: float = 0.90
     shard_size: int = 100_000
-    min_reasoning_steps: int = 6  # Back to 6 for original generator
-    min_output_chars: int = 500  # Increased to 500 for enhanced quality
+    min_reasoning_steps: int = 8  # Increased to 8 for maximum reasoning depth
+    min_output_chars: int = 800  # Increased to 800 for maximum content richness
     max_output_chars: int = 20_000
     india_ratio: float = 0.40
     seed: int = 42
@@ -149,16 +149,18 @@ class SuperQualityGenerator:
             "requirements": {
                 "family_size": self._rand_range(3, 8),
                 "floors": self._rand_range(1, 4),
-                "budget_inr": self._rand_range(2_000_000, 12_000_000),
+                "budget_inr": self._rand_range(2_000_000, 10_000_000),
                 "lifestyle": random.choice(["Modern", "Traditional", "Minimalist", "Luxury", "Eco_Friendly"])
             },
             "reasoning_steps": [
-                "Calculate minimum room requirements based on family size and lifestyle",
-                "Determine optimal room sizes and proportions",
-                "Plan circulation and connectivity",
-                "Optimize natural light and cross-ventilation",
-                "Ensure budget compliance with material selection",
-                "Iterate layout for efficiency and privacy"
+                "Analyze site conditions including soil type, orientation, and access",
+                "Calculate space requirements based on family size and lifestyle preferences",
+                "Determine optimal room distribution considering privacy and functionality",
+                "Plan circulation patterns for efficient movement between spaces",
+                "Optimize natural light and ventilation based on site orientation",
+                "Select appropriate materials and finishes within budget constraints",
+                "Ensure compliance with local building codes and regulations",
+                "Validate design efficiency and cost-effectiveness through analysis"
             ]
         }
 
@@ -184,12 +186,14 @@ class SuperQualityGenerator:
             ], 2, 5),
             "applicable_codes": self._safe_sample(self.config.building_codes, 4, 7),
             "reasoning_steps": [
-                "Identify all applicable codes",
-                "Compute setbacks, FAR, height and parking",
-                "Verify fire/structural safety and accessibility",
-                "List violations and propose compliant modifications",
-                "Estimate cost/time impact of modifications",
-                "Provide compliance verification plan"
+                "Identify all applicable building codes and regulations for the region and building type",
+                "Calculate setback requirements based on plot size, building height, and zone classification",
+                "Verify floor area ratio (FAR) compliance with local development control regulations",
+                "Check parking requirements and accessibility standards for the building type and size",
+                "Ensure fire safety compliance including escape routes, suppression systems, and refuge areas",
+                "Validate structural safety requirements and seismic design considerations",
+                "Assess environmental compliance including ventilation, natural light, and waste management",
+                "Propose specific modifications and estimate cost implications for achieving full compliance"
             ]
         }
 
@@ -337,11 +341,14 @@ class SuperQualityGenerator:
             "context": {"indian_market": indian, **(self._indian_features() if indian else {})},
             "elements": ["Foundation", "Column", "Beam", "Slab", "Roof"],
             "reasoning_steps": [
-                "Analyze loads and soil conditions",
-                "Design elements with safety factors",
-                "Ensure seismic/wind compliance",
-                "Detail connections and joints",
-                "Validate via structural analysis"
+                "Analyze site conditions and soil properties to determine foundation requirements",
+                "Calculate structural loads including dead loads, live loads, and environmental loads",
+                "Design foundation system based on soil bearing capacity and building loads",
+                "Determine structural system and member sizes considering safety factors and codes",
+                "Perform seismic analysis and design for the specific seismic zone requirements",
+                "Analyze wind loads and lateral stability considering building height and location",
+                "Detail structural connections and joints for optimal load transfer and constructability",
+                "Validate design through structural analysis and ensure compliance with all safety standards"
             ]
         }
 
@@ -352,11 +359,14 @@ class SuperQualityGenerator:
             "goals": ["Energy", "Water", "Materials", "IEQ", "Site", "Waste"],
             "cert_targets": ["LEED_Platinum", "GRIHA_5_Star", "IGBC_Platinum"],
             "reasoning_steps": [
-                "Define goals and certification targets",
-                "Envelope/system efficiency and water strategies",
-                "Material selection and IEQ optimization",
-                "Site sustainability and waste reduction",
-                "Monitoring and verification plan"
+                "Define sustainability goals and certification targets based on project requirements",
+                "Design energy-efficient building envelope with optimal insulation and glazing systems",
+                "Integrate renewable energy systems including solar PV and solar water heating",
+                "Plan water conservation strategies including rainwater harvesting and greywater recycling",
+                "Select sustainable materials with low environmental impact and high durability",
+                "Optimize indoor environmental quality through natural ventilation and daylighting",
+                "Implement site sustainability measures including landscaping and stormwater management",
+                "Establish monitoring and verification systems for ongoing performance assessment"
             ]
         }
 
@@ -366,11 +376,14 @@ class SuperQualityGenerator:
             "context": {"indian_market": indian, **(self._indian_features() if indian else {})},
             "smart_systems": ["Automation", "Security", "Energy", "HVAC", "Lighting", "Entertainment"],
             "reasoning_steps": [
-                "Capture functional requirements",
-                "Design integrated systems and networks",
-                "Plan energy management and controls",
-                "Ensure data security and privacy",
-                "Define maintenance and upgrade roadmap"
+                "Analyze client requirements for smart home functionality and lifestyle integration",
+                "Design integrated smart systems including automation, security, and energy management",
+                "Plan IoT infrastructure with robust wireless networks and connectivity solutions",
+                "Integrate energy management systems for optimal efficiency and cost savings",
+                "Ensure data security and privacy protection for all smart home systems",
+                "Provide user-friendly interfaces and mobile control applications for easy operation",
+                "Design scalable architecture for future technology upgrades and system expansion",
+                "Establish maintenance protocols and support systems for long-term reliability"
             ]
         }
 
@@ -669,16 +682,312 @@ class SuperQualityGenerator:
         }
 
     def _solution_sustain(self, problem: Dict[str, Any]) -> Dict[str, Any]:
+        # Get sustainability goals and targets
+        goals = problem.get("goals", ["Energy", "Water", "Materials", "IEQ", "Site", "Waste"])
+        cert_targets = problem.get("cert_targets", ["LEED_Platinum", "GRIHA_5_Star", "IGBC_Platinum"])
+        target_cert = random.choice(cert_targets)
+        
+        # Calculate energy performance
+        energy_consumption = random.randint(30, 80)  # kWh/m2/year
+        renewable_contribution = random.randint(40, 80)  # %
+        carbon_reduction = random.randint(50, 85)  # %
+        
+        # Water conservation calculations
+        water_consumption = random.randint(80, 150)  # liters/person/day
+        rainwater_harvesting = random.randint(60, 90)  # % of roof area
+        greywater_recycling = random.randint(30, 70)  # % of wastewater
+        
         return {
-            "measures": {"energy": "Efficient_envelope", "water": "RWH+low_flow", "materials": "Low_impact"},
-            "certification": {"target": random.choice(problem["cert_targets"])},
-            "monitoring": "Plan_ready"
+            "sustainability_strategy": {
+                "certification_target": target_cert,
+                "overall_rating": f"{random.randint(85, 98)}%",
+                "implementation_phases": ["Design", "Construction", "Operation", "Monitoring"]
+            },
+            "energy_efficiency": {
+                "building_envelope": {
+                    "insulation": "High_performance_thermal_insulation_R30",
+                    "glazing": "Low_E_double_glazing_U_value_1.8",
+                    "air_tightness": "Airtight_construction_ACH_0.6",
+                    "thermal_bridge": "Minimized_thermal_bridges"
+                },
+                "hvac_systems": {
+                    "system_type": "High_efficiency_VRV_with_heat_recovery",
+                    "efficiency_rating": "SEER_18_plus",
+                    "controls": "Smart_thermostats_with_occupancy_sensing",
+                    "maintenance": "Regular_maintenance_schedule"
+                },
+                "renewable_energy": {
+                    "solar_pv": f"{random.randint(5, 15)}_kW_system",
+                    "solar_water_heating": "Evacuated_tube_collectors",
+                    "contribution": f"{renewable_contribution}%_of_total_energy",
+                    "battery_storage": "Optional_lithium_ion_battery_system"
+                },
+                "performance_metrics": {
+                    "annual_energy_consumption": f"{energy_consumption}_kWh_m2_year",
+                    "energy_savings": f"{random.randint(40, 70)}%_vs_baseline",
+                    "carbon_reduction": f"{carbon_reduction}%_vs_conventional",
+                    "payback_period": f"{random.randint(5, 12)}_years"
+                }
+            },
+            "water_conservation": {
+                "fixtures": {
+                    "toilets": "Dual_flush_ultra_low_flow_4.8L",
+                    "faucets": "Aerated_faucets_2.5L_min",
+                    "showerheads": "Low_flow_showerheads_7.5L_min",
+                    "urinals": "Waterless_urinals"
+                },
+                "rainwater_harvesting": {
+                    "collection_area": f"{rainwater_harvesting}%_of_roof_area",
+                    "storage_capacity": f"{random.randint(20, 50)}_kl_storage_tank",
+                    "filtration": "Multi_stage_filtration_system",
+                    "usage": "Landscaping_and_toilet_flushing"
+                },
+                "greywater_recycling": {
+                    "collection": "Separate_greywater_plumbing",
+                    "treatment": "Biological_treatment_system",
+                    "recycling_rate": f"{greywater_recycling}%_of_wastewater",
+                    "usage": "Landscaping_and_cooling_towers"
+                },
+                "performance_metrics": {
+                    "water_consumption": f"{water_consumption}_liters_person_day",
+                    "water_savings": f"{random.randint(30, 60)}%_vs_conventional",
+                    "rainwater_utilization": f"{random.randint(40, 80)}%_of_landscape_water"
+                }
+            },
+            "sustainable_materials": {
+                "structural_materials": {
+                    "concrete": "Low_carbon_concrete_with_30%_fly_ash",
+                    "steel": "Recycled_steel_with_90%_recycled_content",
+                    "timber": "FSC_certified_sustainable_timber",
+                    "masonry": "Local_clay_bricks_with_low_embodied_energy"
+                },
+                "finishes": {
+                    "flooring": "Bamboo_flooring_or_recycled_tiles",
+                    "paints": "Low_VOC_water_based_paints",
+                    "carpets": "Recycled_content_carpets",
+                    "furniture": "FSC_certified_or_recycled_furniture"
+                },
+                "insulation": {
+                    "wall_insulation": "Recycled_denim_or_cellulose_insulation",
+                    "roof_insulation": "High_performance_rigid_insulation",
+                    "acoustic_insulation": "Recycled_rubber_or_cork"
+                }
+            },
+            "indoor_environmental_quality": {
+                "ventilation": {
+                    "natural_ventilation": "Cross_ventilation_design",
+                    "mechanical_ventilation": "Energy_recovery_ventilation",
+                    "air_filtration": "MERV_13_air_filters",
+                    "fresh_air_rates": "ASHRAE_62.1_compliant"
+                },
+                "daylighting": {
+                    "daylight_factor": f"{random.uniform(2.0, 4.0):.1f}%",
+                    "glare_control": "Automated_shading_systems",
+                    "light_shelves": "Reflective_light_shelves",
+                    "skylights": "Tubular_skylights_for_deep_spaces"
+                },
+                "acoustic_comfort": {
+                    "sound_absorption": "Acoustic_ceiling_tiles_and_wall_panels",
+                    "sound_isolation": "STC_50_plus_wall_assemblies",
+                    "background_noise": "NC_35_or_better"
+                }
+            },
+            "site_sustainability": {
+                "landscaping": {
+                    "native_plants": "90%_native_drought_resistant_plants",
+                    "irrigation": "Drip_irrigation_with_smart_controls",
+                    "green_roof": "Extensive_green_roof_system",
+                    "permeable_surfaces": "Permeable_paving_for_stormwater"
+                },
+                "stormwater_management": {
+                    "retention": "On_site_stormwater_retention",
+                    "infiltration": "Rain_gardens_and_bioswales",
+                    "treatment": "Natural_filtration_systems",
+                    "reuse": "Stormwater_harvesting_for_irrigation"
+                },
+                "heat_island_reduction": {
+                    "cool_roofs": "High_albedo_roof_materials",
+                    "shading": "Deciduous_trees_for_summer_shading",
+                    "pavement": "Light_colored_permeable_pavement"
+                }
+            },
+            "waste_management": {
+                "construction_waste": {
+                    "recycling_target": "90%_construction_waste_recycling",
+                    "separation": "On_site_waste_separation_system",
+                    "documentation": "Waste_management_plan_and_tracking"
+                },
+                "operational_waste": {
+                    "recycling_program": "Comprehensive_recycling_program",
+                    "composting": "On_site_composting_system",
+                    "waste_reduction": "Waste_audit_and_reduction_strategies"
+                }
+            },
+            "monitoring_and_verification": {
+                "energy_monitoring": "Real_time_energy_monitoring_system",
+                "water_monitoring": "Smart_water_metering_and_leak_detection",
+                "indoor_air_quality": "Continuous_IAQ_monitoring",
+                "performance_tracking": "Annual_sustainability_performance_reports"
+            }
         }
 
     def _solution_smarthome(self, problem: Dict[str, Any]) -> Dict[str, Any]:
+        # Get smart systems requirements
+        smart_systems = problem.get("smart_systems", ["Automation", "Security", "Energy", "HVAC", "Lighting", "Entertainment"])
+        
+        # Calculate system specifications
+        total_devices = random.randint(25, 60)
+        network_bandwidth = random.randint(100, 500)  # Mbps
+        energy_savings = random.randint(15, 35)  # %
+        security_level = random.choice(["Basic", "Advanced", "Premium"])
+        
         return {
-            "systems": problem["smart_systems"],
-            "integration": {"iot": "Yes", "security": "Hardened", "apps": "Mobile+Voice"}
+            "smart_home_strategy": {
+                "overall_approach": "Integrated_ecosystem_with_centralized_control",
+                "implementation_phases": ["Infrastructure", "Core_Systems", "Advanced_Features", "Integration"],
+                "scalability": "Modular_design_for_future_expansion",
+                "user_experience": "Intuitive_interface_with_voice_control"
+            },
+            "home_automation": {
+                "lighting_control": {
+                    "system_type": "Zigbee_based_smart_lighting",
+                    "features": ["Dimmer_control", "Color_temperature_adjustment", "Motion_sensing", "Schedule_automation"],
+                    "devices": f"{random.randint(15, 30)}_smart_bulbs_and_switches",
+                    "integration": "Works_with_Google_Home_and_Amazon_Alexa"
+                },
+                "climate_control": {
+                    "hvac_integration": "Smart_thermostat_with_zone_control",
+                    "features": ["Temperature_scheduling", "Occupancy_detection", "Weather_integration", "Energy_optimization"],
+                    "sensors": ["Temperature", "Humidity", "Air_quality", "Occupancy"],
+                    "automation": "Automated_adjustment_based_on_occupancy_and_weather"
+                },
+                "entertainment_systems": {
+                    "audio_distribution": "Multi_zone_audio_system",
+                    "video_management": "Centralized_media_server",
+                    "streaming_integration": "Smart_TV_with_streaming_apps",
+                    "control": "Unified_remote_control_via_mobile_app"
+                }
+            },
+            "security_systems": {
+                "access_control": {
+                    "entry_systems": ["Smart_locks", "Video_doorbell", "Keypad_entry"],
+                    "authentication": ["PIN_codes", "Biometric_scanners", "Mobile_app_access"],
+                    "monitoring": "24_7_remote_monitoring_service",
+                    "notifications": "Instant_alerts_for_unauthorized_access"
+                },
+                "surveillance": {
+                    "cameras": f"{random.randint(4, 12)}_HD_security_cameras",
+                    "coverage": "Complete_property_coverage_with_night_vision",
+                    "storage": "Cloud_and_local_storage_options",
+                    "analytics": "AI_powered_motion_detection_and_face_recognition"
+                },
+                "intrusion_detection": {
+                    "sensors": ["Door_window_sensors", "Motion_detectors", "Glass_break_sensors"],
+                    "alarm_system": "Loud_siren_with_silent_alerts",
+                    "integration": "Connected_to_local_police_station",
+                    "backup": "Battery_backup_for_power_outages"
+                }
+            },
+            "energy_management": {
+                "smart_metering": {
+                    "electricity_monitoring": "Real_time_electricity_consumption_tracking",
+                    "water_monitoring": "Smart_water_meter_with_leak_detection",
+                    "gas_monitoring": "Gas_consumption_tracking_and_safety_alerts",
+                    "analytics": "Usage_patterns_and_optimization_recommendations"
+                },
+                "load_balancing": {
+                    "peak_shaving": "Automatic_load_reduction_during_peak_hours",
+                    "demand_response": "Integration_with_utility_demand_response_programs",
+                    "battery_management": "Smart_battery_charging_and_discharging",
+                    "efficiency": f"{energy_savings}%_energy_savings_through_optimization"
+                },
+                "renewable_integration": {
+                    "solar_monitoring": "Real_time_solar_panel_performance_tracking",
+                    "battery_storage": "Smart_battery_management_system",
+                    "grid_interaction": "Bidirectional_power_flow_with_grid",
+                    "optimization": "AI_optimized_energy_usage_patterns"
+                }
+            },
+            "iot_infrastructure": {
+                "network_setup": {
+                    "wifi_system": f"WiFi_6_mesh_network_with_{network_bandwidth}_Mbps_bandwidth",
+                    "zigbee_network": "Zigbee_3.0_mesh_network_for_smart_devices",
+                    "bluetooth_mesh": "Bluetooth_LE_mesh_for_proximity_devices",
+                    "cellular_backup": "4G_LTE_backup_connection"
+                },
+                "connectivity": {
+                    "device_count": f"Supports_up_to_{total_devices}_smart_devices",
+                    "protocols": ["WiFi", "Zigbee", "Z_Wave", "Bluetooth_LE", "Thread"],
+                    "interoperability": "Cross_platform_device_compatibility",
+                    "reliability": "99.9%_uptime_with_redundant_connections"
+                },
+                "data_management": {
+                    "local_storage": "On_premise_data_storage_for_privacy",
+                    "cloud_backup": "Encrypted_cloud_backup_service",
+                    "edge_computing": "Local_processing_for_fast_response",
+                    "analytics": "AI_powered_data_analytics_and_insights"
+                }
+            },
+            "data_security": {
+                "encryption": {
+                    "data_transmission": "End_to_end_encryption_for_all_communications",
+                    "data_storage": "AES_256_encryption_for_stored_data",
+                    "authentication": "Multi_factor_authentication_for_access",
+                    "privacy": "GDPR_compliant_data_handling"
+                },
+                "access_control": {
+                    "user_management": "Role_based_access_control_system",
+                    "device_authentication": "Secure_device_registration_and_authentication",
+                    "network_security": "Firewall_and_intrusion_detection_system",
+                    "updates": "Automatic_security_updates_and_patches"
+                },
+                "privacy_protection": {
+                    "data_minimization": "Collect_only_necessary_data",
+                    "user_consent": "Explicit_consent_for_data_collection",
+                    "data_retention": "Configurable_data_retention_policies",
+                    "rights_management": "User_rights_to_access_and_delete_data"
+                }
+            },
+            "user_interfaces": {
+                "mobile_app": {
+                    "platforms": ["iOS", "Android"],
+                    "features": ["Remote_control", "Real_time_monitoring", "Automation_setup", "Notifications"],
+                    "usability": "Intuitive_interface_with_voice_commands",
+                    "accessibility": "Accessibility_features_for_disabled_users"
+                },
+                "voice_control": {
+                    "assistants": ["Amazon_Alexa", "Google_Assistant", "Apple_Siri"],
+                    "commands": "Natural_language_voice_commands",
+                    "customization": "Custom_voice_commands_and_routines",
+                    "multi_language": "Support_for_multiple_languages"
+                },
+                "web_interface": {
+                    "dashboard": "Comprehensive_web_dashboard_for_management",
+                    "analytics": "Detailed_analytics_and_reporting",
+                    "configuration": "Advanced_configuration_and_customization",
+                    "remote_access": "Secure_remote_access_from_any_location"
+                }
+            },
+            "maintenance_and_support": {
+                "monitoring": {
+                    "system_health": "Continuous_system_health_monitoring",
+                    "predictive_maintenance": "AI_powered_predictive_maintenance_alerts",
+                    "performance_tracking": "Real_time_performance_metrics",
+                    "troubleshooting": "Automated_troubleshooting_and_diagnostics"
+                },
+                "support_system": {
+                    "technical_support": "24_7_technical_support_service",
+                    "remote_assistance": "Remote_troubleshooting_and_repair",
+                    "warranty": "Extended_warranty_coverage_for_all_components",
+                    "upgrades": "Regular_software_updates_and_feature_upgrades"
+                },
+                "documentation": {
+                    "user_manuals": "Comprehensive_user_manuals_and_guides",
+                    "installation_guides": "Detailed_installation_and_setup_guides",
+                    "troubleshooting_guides": "Step_by_step_troubleshooting_procedures",
+                    "video_tutorials": "Video_tutorials_for_all_features"
+                }
+            }
         }
 
     def _solution_conflict_resolution(self, problem: Dict[str, Any]) -> Dict[str, Any]:
