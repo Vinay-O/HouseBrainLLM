@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
 """
-HouseBrain 1M Super-Quality Reasoning Dataset Generator (R1)
-- Advanced problem types (incl. structural, sustainability, smart home)
-- India-specific features, bye-laws, heritage constraints
-- Comprehensive building code compliance
-- Strict quality gates, deduplication, sharded saving
-- Compatible with current training scripts ({"input":..., "output":...})
+HouseBrain Dataset Generator - Colab Optimized Version
+Optimized for Google Colab with better memory management and progress tracking
 """
 
 import json
@@ -15,17 +11,18 @@ from pathlib import Path
 from typing import Dict, List, Any
 from dataclasses import dataclass, field
 from datetime import datetime
-from tqdm import tqdm
+from tqdm.auto import tqdm
+import gc
 
 @dataclass
-class SuperQualityConfig:
+class ColabDatasetConfig:
     target_samples: int = 1_000_000
-    quality_threshold: float = 0.85  # Optimized for Colab generation
+    quality_threshold: float = 0.85  # Optimized for Colab
     train_ratio: float = 0.90
-    shard_size: int = 100_000
+    shard_size: int = 50_000  # Smaller shards for Colab
     min_reasoning_steps: int = 6
-    min_output_chars: int = 1_000
-    max_output_chars: int = 20_000
+    min_output_chars: int = 800  # Slightly lower for faster generation
+    max_output_chars: int = 15_000
     india_ratio: float = 0.40
     seed: int = 42
 
@@ -57,8 +54,8 @@ class SuperQualityConfig:
     ])
 
 
-class SuperQualityGenerator:
-    def __init__(self, config: SuperQualityConfig):
+class ColabDatasetGenerator:
+    def __init__(self, config: ColabDatasetConfig):
         self.config = config
         random.seed(self.config.seed)
         self.generated = 0
@@ -181,8 +178,8 @@ class SuperQualityGenerator:
                 "Setback_violations", "Floor_area_ratio_exceeded", "Height_restrictions",
                 "Parking_shortage", "Fire_safety_requirements", "Structural_safety",
                 "Accessibility_violations", "Ventilation_insufficient", "Natural_light_insufficient"
-            ], 2, 5),
-            "applicable_codes": self._safe_sample(self.config.building_codes, 4, 7),
+            ], 2, 4),
+            "applicable_codes": self._safe_sample(self.config.building_codes, 4, 6),
             "reasoning_steps": [
                 "Identify all applicable codes",
                 "Compute setbacks, FAR, height and parking",
@@ -206,7 +203,7 @@ class SuperQualityGenerator:
             },
             "reasoning_steps": [
                 "Prioritize constraints and success metrics",
-                "Quantify trade-offs between constraints",
+                "Quantify trade-offs between conflicting constraints",
                 "Develop alternatives and evaluate costs",
                 "Select balanced plan with contingencies",
                 "Define phased implementation and monitoring"
@@ -220,13 +217,13 @@ class SuperQualityGenerator:
                 "problem_type": "Cost_Optimization",
                 "context": {"indian_market": indian, **(self._indian_features() if indian else {})},
                 "plot_area": self._rand_range(2_000, 10_000),
-                "total_budget": self._rand_range(5_000_000, 30_000_000),
+                "total_budget": self._rand_range(5_000_000, 25_000_000),
                 "cost_breakdown": {
-                    "foundation_per_sqft": self._rand_range(800, 1500),
-                    "structure_per_sqft": self._rand_range(1200, 2000),
-                    "finishing_per_sqft": self._rand_range(800, 1800),
-                    "mep_per_sqft": self._rand_range(400, 1000),
-                    "landscaping_per_sqft": self._rand_range(200, 800)
+                    "foundation_per_sqft": self._rand_range(800, 1200),
+                    "structure_per_sqft": self._rand_range(1100, 1800),
+                    "finishes_per_sqft": self._rand_range(800, 1500),
+                    "mep_per_sqft": self._rand_range(400, 800),
+                    "landscaping_per_sqft": self._rand_range(200, 500)
                 },
                 "reasoning_steps": [
                     "Compute baseline construction cost",
@@ -452,7 +449,7 @@ class SuperQualityGenerator:
     def _solution_cost(self, problem: Dict[str, Any]) -> Dict[str, Any]:
         area = problem["plot_area"]
         cb = problem["cost_breakdown"]
-        baseline = area * (cb["foundation_per_sqft"] + cb["structure_per_sqft"] + cb["finishing_per_sqft"] + cb["mep_per_sqft"] + cb["landscaping_per_sqft"]) 
+        baseline = area * (cb["foundation_per_sqft"] + cb["structure_per_sqft"] + cb["finishes_per_sqft"] + cb["mep_per_sqft"] + cb["landscaping_per_sqft"]) 
         optimized = int(baseline * 0.85)
         return {
             "costs": {"baseline_inr": int(baseline), "optimized_inr": optimized, "savings_inr": int(baseline - optimized), "savings_pct": 15},
@@ -478,38 +475,6 @@ class SuperQualityGenerator:
             "targets": problem.get("targets", {}),
             "measures": {"envelope": "Optimized", "controls": "Smart_controls", "commissioning": "Cx_plan"},
             "validation": {"simulation": "OK", "monitoring": "Plan_ready"}
-        }
-
-    def _solution_advanced(self, problem: Dict[str, Any]) -> Dict[str, Any]:
-        return {
-            "strategy": {"success_factors": ["Structure", "Function", "Aesthetics"], "iterations": 3},
-            "feasibility": {"economic": "CBA_positive", "environmental": "Mitigated"}
-        }
-
-    def _solution_math(self, problem: Dict[str, Any]) -> Dict[str, Any]:
-        return {
-            "calculations": problem["calculations"],
-            "results_summary": {"roi": ">18%", "payback_years": 5},
-            "validation": "Cross-checked"
-        }
-
-    def _solution_struct(self, problem: Dict[str, Any]) -> Dict[str, Any]:
-        return {
-            "elements": problem["elements"],
-            "design_notes": ["Seismic_zone_compliance", "Wind_load_checked", "Connections_detailed"]
-        }
-
-    def _solution_sustain(self, problem: Dict[str, Any]) -> Dict[str, Any]:
-        return {
-            "measures": {"energy": "Efficient_envelope", "water": "RWH+low_flow", "materials": "Low_impact"},
-            "certification": {"target": random.choice(problem["cert_targets"])},
-            "monitoring": "Plan_ready"
-        }
-
-    def _solution_smarthome(self, problem: Dict[str, Any]) -> Dict[str, Any]:
-        return {
-            "systems": problem["smart_systems"],
-            "integration": {"iot": "Yes", "security": "Hardened", "apps": "Mobile+Voice"}
         }
 
     def _solution_conflict_resolution(self, problem: Dict[str, Any]) -> Dict[str, Any]:
@@ -558,11 +523,10 @@ class SuperQualityGenerator:
             "monitoring": "Plan_ready"
         }
 
-    def _solution_performance(self, problem: Dict[str, Any]) -> Dict[str, Any]:
+    def _solution_smarthome(self, problem: Dict[str, Any]) -> Dict[str, Any]:
         return {
-            "targets": problem.get("targets", {}),
-            "measures": {"envelope": "Optimized", "controls": "Smart_controls", "commissioning": "Cx_plan"},
-            "validation": {"simulation": "OK", "monitoring": "Plan_ready"}
+            "systems": problem["smart_systems"],
+            "integration": {"iot": "Yes", "security": "Hardened", "apps": "Mobile+Voice"}
         }
 
     def _generate_solution(self, problem: Dict[str, Any]) -> Dict[str, Any]:
@@ -701,6 +665,8 @@ class SuperQualityGenerator:
                 if self.accepted % self.config.shard_size == 0:
                     shard_id += 1
                     dirs = self._ensure_dirs(base, shard_id)
+                    # Memory cleanup for Colab
+                    gc.collect()
                 
                 # Progress updates
                 if self.accepted % 10000 == 0:
@@ -716,26 +682,40 @@ class SuperQualityGenerator:
             raise
         finally:
             pbar.close()
-        info = {"name": "housebrain_dataset_r1_super_1M", "version": "R1_Super_v1.0", "total_samples": self.accepted, "train_ratio": self.config.train_ratio, "india_ratio": self.config.india_ratio, "quality_threshold": self.config.quality_threshold, "shard_size": self.config.shard_size, "min_reasoning_steps": self.config.min_reasoning_steps}
+            
+        info = {
+            "name": "housebrain_dataset_r1_super_1M", 
+            "version": "R1_Super_v1.0", 
+            "total_samples": self.accepted, 
+            "train_ratio": self.config.train_ratio, 
+            "india_ratio": self.config.india_ratio, 
+            "quality_threshold": self.config.quality_threshold, 
+            "shard_size": self.config.shard_size, 
+            "min_reasoning_steps": self.config.min_reasoning_steps,
+            "generated_at": datetime.now().isoformat(),
+            "generation_time_hours": round((datetime.now() - start_time).total_seconds() / 3600, 2)
+        }
         with open(base / "dataset_info.json", "w") as f:
             json.dump(info, f, indent=2)
+
         print("\n🎉 Super-quality dataset generation complete!")
         print(f"📊 Total generated: {self.generated:,}")
         print(f"✅ Accepted: {self.accepted:,}")
         print(f"📁 Saved to: {base}")
+        print(f"⏱️ Generation time: {info['generation_time_hours']} hours")
 
 
 def main():
     import argparse
-    p = argparse.ArgumentParser(description="Generate 1M super-quality reasoning dataset for HouseBrain")
+    p = argparse.ArgumentParser(description="Generate 1M super-quality reasoning dataset for HouseBrain (Colab Optimized)")
     p.add_argument("--output", type=str, default="housebrain_dataset_r1_super_1M")
     p.add_argument("--target", type=int, default=1_000_000)
-    p.add_argument("--quality", type=float, default=0.90)
+    p.add_argument("--quality", type=float, default=0.85)
     p.add_argument("--india", type=float, default=0.40)
-    p.add_argument("--shard", type=int, default=100_000)
+    p.add_argument("--shard", type=int, default=50_000)
     a = p.parse_args()
-    cfg = SuperQualityConfig(target_samples=a.target, quality_threshold=a.quality, india_ratio=a.india, shard_size=a.shard)
-    gen = SuperQualityGenerator(cfg)
+    cfg = ColabDatasetConfig(target_samples=a.target, quality_threshold=a.quality, india_ratio=a.india, shard_size=a.shard)
+    gen = ColabDatasetGenerator(cfg)
     gen.generate(a.output)
 
 if __name__ == "__main__":
