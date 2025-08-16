@@ -13,7 +13,7 @@ from pathlib import Path
 from tqdm.auto import tqdm
 from transformers import (
     AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer,
-    DataCollatorForLanguageModeling
+    default_data_collator
 )
 from peft import LoraConfig, get_peft_model, TaskType
 from datasets import Dataset
@@ -24,10 +24,10 @@ from email.mime.text import MIMEText
 # Configuration
 class TrainingConfig:
     # Model settings
-    MODEL_NAME = "deepseek-ai/deepseek-coder-6.7b-base"
+    MODEL_NAME = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
     
     # A100 optimized settings
-    SEQUENCE_LENGTH = 1024
+    SEQUENCE_LENGTH = 2048
     LORA_R = 16
     LORA_ALPHA = 32
     LORA_DROPOUT = 0.05
@@ -233,17 +233,43 @@ def load_dataset(config):
         for file in tqdm(file_list, desc="Loading samples"):
             with open(file, 'r') as f:
                 sample = json.load(f)
-                # Format for training
-                input_text = json.dumps(sample["input"], separators=(",", ":"))
-                output_text = json.dumps(sample["output"], separators=(",", ":"))
-                full_text = f"<|im_start|>user\n{input_text}<|im_end|>\n<|im_start|>assistant\n{output_text}<|im_end|>"
-                samples.append({"text": full_text})
+                user_text = json.dumps(sample["input"], separators=(",", ":"))
+                assistant_text = json.dumps(sample["output"], separators=(",", ":"))
+                samples.append({"user_text": user_text, "assistant_text": assistant_text})
         return samples
     
     train_samples = load_samples(train_files)
     validation_samples = load_samples(validation_files)
     
     return Dataset.from_list(train_samples), Dataset.from_list(validation_samples)
+
+SYSTEM_PROMPT = (
+    "You are HouseBrain, an expert architectural AI. "
+    "Always produce strictly valid JSON that complies with our schema. "
+    "Ensure NBC 2016 (India) and general code compliance, and keep responses concise."
+)
+
+def build_chat_and_labels(tokenizer, user_text: str, assistant_text: str, max_len: int):
+    eos_id = tokenizer.eos_token_id
+    prompt = (
+        f"<|im_start|>system\n{SYSTEM_PROMPT}<|im_end|>\n"
+        f"<|im_start|>user\n{user_text}<|im_end|>\n"
+        f"<|im_start|>assistant\n"
+    )
+    prompt_ids = tokenizer.encode(prompt, add_special_tokens=False, truncation=True, max_length=max_len - 1)
+    available = max_len - len(prompt_ids) - 1
+    if available <= 0:
+        prompt_ids = prompt_ids[-(max_len - 1):]
+        available = 0
+    answer_ids = tokenizer.encode(assistant_text, add_special_tokens=False, truncation=True, max_length=max(0, available))
+    input_ids = prompt_ids + answer_ids + ([eos_id] if eos_id is not None else [])
+    labels = ([-100] * len(prompt_ids)) + answer_ids + ([eos_id] if eos_id is not None else [])
+    attention_mask = [1] * len(input_ids)
+    return {
+        "input_ids": input_ids,
+        "labels": labels,
+        "attention_mask": attention_mask,
+    }
 
 def create_model_and_tokenizer(config):
     """Create model and tokenizer"""
@@ -277,8 +303,9 @@ def create_model_and_tokenizer(config):
     
     return model, tokenizer
 
+# Note: keep function for compatibility although we now use chat builder
+
 def tokenize_function(examples, tokenizer, max_length):
-    """Tokenize dataset"""
     return tokenizer(
         examples["text"],
         truncation=True,
@@ -309,21 +336,17 @@ def main():
         model, tokenizer = create_model_and_tokenizer(config)
         logger.log("Model and tokenizer loaded successfully")
         
-        # Tokenize datasets
-        def tokenize_train(examples):
-            return tokenize_function(examples, tokenizer, config.SEQUENCE_LENGTH)
-        
-        def tokenize_eval(examples):
-            return tokenize_function(examples, tokenizer, config.SEQUENCE_LENGTH)
-        
-        train_dataset = train_dataset.map(tokenize_train, batched=True)
-        eval_dataset = eval_dataset.map(tokenize_eval, batched=True)
-        
-        # Data collator
-        data_collator = DataCollatorForLanguageModeling(
-            tokenizer=tokenizer,
-            mlm=False
-        )
+        # Tokenize datasets with assistant-only masked loss
+        def to_features(examples):
+            features = {"input_ids": [], "labels": [], "attention_mask": []}
+            for u, a in zip(examples["user_text"], examples["assistant_text"]):
+                item = build_chat_and_labels(tokenizer, u, a, config.SEQUENCE_LENGTH)
+                for k in features.keys():
+                    features[k].append(item[k])
+            return features
+
+        train_dataset = train_dataset.map(to_features, batched=True, remove_columns=["user_text", "assistant_text"])
+        eval_dataset = eval_dataset.map(to_features, batched=True, remove_columns=["user_text", "assistant_text"])
         
         # Training arguments
         training_args = TrainingArguments(
@@ -382,7 +405,7 @@ def main():
             args=training_args,
             train_dataset=train_dataset,
             eval_dataset=eval_dataset,
-            data_collator=data_collator,
+            data_collator=default_data_collator,
             callbacks=[LoggingCallback(logger)]
         )
         
