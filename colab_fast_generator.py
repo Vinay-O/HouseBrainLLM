@@ -142,7 +142,9 @@ class EnhancedFastGenerator:
             "Calculate space requirements based on family needs",
             "Plan optimal room distribution and circulation",
             "Consider natural light and ventilation requirements",
-            "Ensure budget compliance with material selection"
+            "Ensure budget compliance with material selection",
+            "Evaluate construction feasibility and timeline",
+            "Assess environmental impact and sustainability"
         ]
         
         if problem_type == "Code_Compliance":
@@ -150,28 +152,44 @@ class EnhancedFastGenerator:
                 "Check setback requirements and FAR limits",
                 "Verify parking and accessibility standards",
                 "Ensure fire safety compliance",
-                "Validate structural safety requirements"
+                "Validate structural safety requirements",
+                "Review local bye-laws and regulations"
             ])
         elif problem_type == "Structural_Engineering":
             base_steps.extend([
                 "Calculate structural loads and forces",
                 "Design foundation based on soil conditions",
                 "Optimize structural elements for economy",
-                "Ensure seismic design compliance"
+                "Ensure seismic design compliance",
+                "Analyze wind loads and lateral forces",
+                "Design connections and joints"
             ])
         elif problem_type == "Sustainability_Design":
             base_steps.extend([
                 "Design energy-efficient building envelope",
                 "Integrate renewable energy systems",
                 "Plan water conservation strategies",
-                "Select sustainable materials and finishes"
+                "Select sustainable materials and finishes",
+                "Optimize daylighting and natural ventilation",
+                "Calculate carbon footprint and offsets"
             ])
         elif problem_type == "Smart_Home_Integration":
             base_steps.extend([
                 "Design integrated smart systems",
                 "Plan IoT infrastructure and connectivity",
                 "Ensure data security and privacy",
-                "Provide user-friendly control interfaces"
+                "Provide user-friendly control interfaces",
+                "Integrate energy management systems",
+                "Plan for future technology upgrades"
+            ])
+        elif problem_type == "Mathematical_Analysis":
+            base_steps.extend([
+                "Perform structural calculations",
+                "Calculate cost estimates and budgets",
+                "Analyze energy consumption patterns",
+                "Optimize space utilization ratios",
+                "Calculate material quantities",
+                "Perform ROI and payback analysis"
             ])
             
         return base_steps
@@ -297,13 +315,13 @@ class EnhancedFastGenerator:
         # Output richness check
         checks += 1
         out_len = len(json.dumps(out))
-        if out_len >= 300:  # Increased minimum for richer content
+        if out_len >= 600:  # Increased to 600 characters for richer content
             score += 1
         
         # Reasoning steps check
         checks += 1
         steps = inp.get("reasoning_steps", [])
-        if isinstance(steps, list) and len(steps) >= 5:  # More reasoning steps
+        if isinstance(steps, list) and len(steps) >= 7:  # Increased to 7+ reasoning steps
             score += 1
         
         # Problem-specific validation
