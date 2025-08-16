@@ -1,5 +1,5 @@
-# HouseBrain Colab Pro+ Requirements
-# Optimized for A100/V100 training
+# HouseBrain R1 Super-Quality Training Requirements
+# Optimized for Colab Pro+ (A100/V100)
 
 # Core ML libraries
 torch==2.1.0
@@ -11,7 +11,6 @@ accelerate==0.25.0
 datasets==2.15.0
 
 # Training and evaluation
-wandb
 tqdm
 numpy
 scikit-learn
@@ -36,3 +35,7 @@ gradio
 python-dotenv
 pyyaml
 click
+
+# Optional: 4-bit quantization for V100
+# bitsandbytes==0.41.0
+# triton==2.0.0
