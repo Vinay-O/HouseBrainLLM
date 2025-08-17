@@ -188,18 +188,42 @@ def create_model_and_tokenizer(config):
     """Create model and tokenizer with R1 optimizations"""
     print("🤖 Loading DeepSeek-R1-Distill-Qwen-7B model and tokenizer...")
     
+    # First, try to install/upgrade transformers to latest version
+    print("📦 Checking transformers version...")
+    try:
+        import subprocess
+        subprocess.run(["pip", "install", "--upgrade", "transformers"], check=True)
+        print("✅ Transformers upgraded successfully")
+    except Exception as e:
+        print(f"⚠️ Could not upgrade transformers: {e}")
+    
     tokenizer = AutoTokenizer.from_pretrained(config.MODEL_NAME)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
     
-    # Load model with optimizations
-    model = AutoModelForCausalLM.from_pretrained(
-        config.MODEL_NAME,
-        torch_dtype=torch.bfloat16,
-        device_map="auto",
-        trust_remote_code=True,
-        load_in_4bit=False  # Use full precision for better quality
-    )
+    # Load model with optimizations and error handling
+    try:
+        model = AutoModelForCausalLM.from_pretrained(
+            config.MODEL_NAME,
+            torch_dtype=torch.bfloat16,
+            device_map="auto",
+            trust_remote_code=True,
+            load_in_4bit=False  # Use full precision for better quality
+        )
+    except KeyError as e:
+        if "qwen2" in str(e):
+            print("⚠️ KeyError with qwen2 detected. Trying alternative loading method...")
+            # Try loading with different approach
+            model = AutoModelForCausalLM.from_pretrained(
+                config.MODEL_NAME,
+                torch_dtype=torch.bfloat16,
+                device_map="auto",
+                trust_remote_code=True,
+                load_in_4bit=False,
+                ignore_mismatched_sizes=True
+            )
+        else:
+            raise e
     
     # LoRA configuration optimized for R1
     lora_config = LoraConfig(
