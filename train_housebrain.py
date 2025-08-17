@@ -41,12 +41,7 @@ def main():
                        help="Gradient accumulation steps")
     parser.add_argument("--warmup-steps", type=int, default=100, 
                        help="Warmup steps")
-    parser.add_argument("--save-steps", type=int, default=500, 
-                       help="Save checkpoint every N steps")
-    parser.add_argument("--eval-steps", type=int, default=500, 
-                       help="Evaluate every N steps")
-    parser.add_argument("--logging-steps", type=int, default=10, 
-                       help="Log every N steps")
+
     parser.add_argument("--check-only", action="store_true", 
                        help="Only check configuration without training")
     
@@ -65,10 +60,7 @@ def main():
         lora_alpha=args.lora_alpha,
         lora_dropout=args.lora_dropout,
         gradient_accumulation_steps=args.gradient_accumulation,
-        warmup_steps=args.warmup_steps,
-        save_steps=args.save_steps,
-        eval_steps=args.eval_steps,
-        logging_steps=args.logging_steps
+        warmup_steps=args.warmup_steps
     )
     
     # Create fine-tuner
@@ -88,9 +80,6 @@ def main():
         print(f"LoRA dropout: {config.lora_dropout}")
         print(f"Gradient accumulation: {config.gradient_accumulation_steps}")
         print(f"Warmup steps: {config.warmup_steps}")
-        print(f"Save steps: {config.save_steps}")
-        print(f"Eval steps: {config.eval_steps}")
-        print(f"Logging steps: {config.logging_steps}")
         
         # Check if dataset exists
         if os.path.exists(config.dataset_path):
