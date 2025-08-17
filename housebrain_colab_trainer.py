@@ -24,15 +24,28 @@ from datetime import datetime
 
 # Fix dependencies first
 def fix_dependencies():
-    """Fix all dependency conflicts"""
+    """Fix all dependency conflicts and block TF/JAX imports that break NumPy<2."""
     print("🔧 Fixing dependencies...")
     try:
-        # Install compatible versions for DeepSeek R1
+        # Uninstall TensorFlow/JAX to prevent transformers TF integrations from importing
+        subprocess.run([sys.executable, "-m", "pip", "uninstall", "-y",
+                        "tensorflow", "tensorflow-cpu", "tensorflow-gpu",
+                        "tensorflow-decision-forests", "jax", "jaxlib",
+                        "orbax-checkpoint", "optax", "flax", "chex"],
+                       check=False, capture_output=True)
+
+        # Install compatible versions for DeepSeek R1 (NumPy < 2)
         subprocess.run([
             sys.executable, "-m", "pip", "install", "--force-reinstall",
-            "torch==2.1.0", "transformers==4.41.0", "accelerate==0.27.0",
-            "peft==0.8.0", "datasets==2.16.0", "numpy==1.24.3", "tqdm"
+            "numpy==1.26.4", "scipy==1.11.4", "contourpy==1.2.1",
+            "torch==2.1.0", "torchvision==0.16.0", "torchaudio==2.1.0",
+            "transformers==4.41.0", "accelerate==0.27.0",
+            "peft==0.8.0", "datasets==2.16.0", "bitsandbytes", "tqdm"
         ], check=True, capture_output=True)
+
+        # Inhibit TF integration in transformers
+        os.environ["TRANSFORMERS_NO_TF"] = "1"
+        os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
         print("✅ Dependencies fixed!")
         return True
     except Exception as e:
@@ -41,8 +54,10 @@ def fix_dependencies():
 
 # Import after fixing dependencies
 if fix_dependencies():
+    # Ensure env flag carried into current process imports
+    os.environ.setdefault("TRANSFORMERS_NO_TF", "1")
     from transformers import (
-        AutoTokenizer, AutoModelForCausalLM, 
+        AutoTokenizer, AutoModelForCausalLM,
         TrainingArguments, Trainer, DataCollatorForLanguageModeling
     )
     from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
