@@ -1,138 +1,105 @@
-# HouseBrain LLM 🏠🧠
+# HouseBrain LLM v1.1 - AI-Powered Architectural Design System
 
-**Advanced AI for Architectural Design with DeepSeek-R1 Reasoning**
+## 🎯 Project Overview
 
-HouseBrain LLM is a specialized AI model for architectural design, building code compliance, and construction planning. Built on DeepSeek-R1-Distill-Qwen-7B with advanced reasoning capabilities.
+HouseBrain LLM is a revolutionary AI system that generates comprehensive architectural designs with **spatial intelligence**, **geometric precision**, and **2D/3D generation capabilities**. Built specifically for the Indian market with NBC 2016 compliance.
 
 ## 🚀 Key Features
 
-- **Advanced Reasoning**: Step-by-step architectural problem solving
-- **Building Code Compliance**: NBC 2016 (India) and international standards
-- **Mathematical Analysis**: Structural calculations and cost optimization
-- **Multi-Constraint Optimization**: Balancing conflicting requirements
-- **Sustainability Focus**: Energy efficiency and green building expertise
-- **Smart Home Integration**: IoT and automation systems
-- **India-Specific**: Regional climate, materials, and regulatory compliance
+### 🧠 Advanced AI Capabilities
+- **Spatial Intelligence**: Room placement, floor awareness, structural continuity
+- **Geometric Construction**: Exact coordinates, wall assemblies, material specifications
+- **2D/3D Generation**: Direct floor plan and 3D model generation
+- **Technical Depth**: Structural, cost, and energy engineering
+- **India-Specific**: NBC 2016 compliance, regional variations, local materials
 
-## 🎯 Problem Types Supported
+### 📊 Dataset: 1M Super-Quality Reasoning Samples (Augmented v1.1)
+- **Total Samples**: 1,000,000 (900K train, 100K validation)
+- **India Ratio**: 60% | **Quality Threshold**: 85%
+- **Dataset Size**: 43GB (2.9GB compressed)
+- **Geometric Focus**: 74% Geometric_Construction samples
+- **Enhanced Precision**: Units, datum, levels, IFC classes, DXF layers, GUIDs
 
-### **High Priority (45% - 2D/3D Generation Focus)**
-1. **Geometric_Construction** (25%) - Exact coordinates, construction geometry, 2D/3D generation
-2. **Spatial_Floor_Planning** (20%) - Room placement, spatial relationships, multi-floor continuity
+### 🏗️ Problem Types Supported
 
-### **Medium Priority (35% - Technical Foundation)**
-3. **Basic_Design** (10%) - Standard architectural design
-4. **Code_Compliance** (8%) - Building code analysis and compliance
-5. **Multi_Constraint** (8%) - Balancing multiple conflicting requirements
-6. **Optimization** (8%) - Mathematical optimization and analysis
-7. **Structural_Engineering** (12%) - Engineering design and analysis
+**High Priority (74%)**
+- **Geometric_Construction (25%)**: Exact coordinates, wall assemblies, material quantities
+- **Spatial_Floor_Planning (20%)**: Room adjacencies, floor continuity, structural grid
+- **Structural_Engineering (15%)**: Load calculations, foundation design, seismic analysis
+- **Cost_Engineering (14%)**: BOQ, material costs, labor estimates
 
-### **Lower Priority (20% - Reduced Focus)**
-8. **Conflict_Resolution** (5%) - Stakeholder conflict resolution
-9. **Advanced_Reasoning** (5%) - Complex multi-step reasoning
-10. **Mathematical_Analysis** (5%) - Structural and financial calculations
-11. **Sustainability_Design** (3%) - Green building and LEED compliance
-12. **Performance_Optimization** (2%) - Multi-metric performance optimization
-13. **Smart_Home_Integration** (2%) - IoT and automation systems
+**Medium Priority (23%)**
+- **Energy_Engineering (8%)**: Thermal analysis, HVAC design, sustainability
+- **MEP_Design (7%)**: Electrical, plumbing, mechanical systems
+- **Interior_Design (5%)**: Finishes, furniture, lighting design
+- **Landscape_Design (3%)**: Site planning, hardscape, softscape
 
-## 📊 Dataset
+**Lower Priority (3%)**
+- **Sustainability_Design (3%)**: Green building, renewable energy
+- **Smart_Home_Integration (2%)**: IoT, automation, security systems
 
-### Super-Quality Dataset (1M samples)
-- **Total Samples**: 1,000,000
-- **Training**: 900,000 (90%)
-- **Validation**: 100,000 (10%)
-- **India Ratio**: 60%
-- **Quality Threshold**: 85%
-- **Problem Types**: 13 different reasoning categories
+## 🔧 Technical Specifications
+
+### Model Architecture
+- **Base Model**: DeepSeek-R1-Distill-Qwen-7B
+- **Training Method**: LoRA (Low-Rank Adaptation)
+- **Sequence Length**: 4096 tokens
+- **Precision**: BF16 (Brain Float 16)
+
+### Dataset Features
+- **India Ratio**: 60% India-specific content
+- **Quality Threshold**: 85% minimum quality score
 - **Geometric Focus**: 45% spatial and geometric intelligence
 - **2D/3D Ready**: Direct floor plan and model generation
+- **Enhanced Metadata**: Units, datum, levels, IFC classes, DXF layers
 
-## 🏗️ Architecture
+## 📋 Quick Start
 
-- **Base Model**: DeepSeek-R1-Distill-Qwen-7B
-- **Parameters**: 7B (distilled from 671B R1)
-- **Sequence Length**: 2048 (optimized for reasoning)
-- **Training**: LoRA fine-tuning with chat-style formatting
-- **Hardware**: Colab Pro+ (A100 40GB/V100 16GB)
-
-## 🚀 Quick Start
-
-### 1. Generate Dataset
-
+### Generate Dataset
 ```bash
-# Generate 1M super-quality samples (optimized for 2D/3D generation)
-python generate_1m_super_quality.py --target 1000000 --quality 0.85 --india 0.60 --shard 100000
+# Generate 1M super-quality dataset
+python generate_1m_super_quality.py --target 1000000 --quality 0.85 --india 0.60
 
-# Or generate in batches (recommended for local generation)
-python generate_1m_super_quality.py --target 200000 --quality 0.85 --india 0.60 --shard 50000
-# Repeat 5 times to get 1M total
-
-# Local generation on M2 Pro (tested)
-python generate_1m_super_quality.py --target 50000 --quality 0.85 --india 0.60 --shard 5000
-# ~440 samples/minute, 1 hour 53 minutes for 50K samples
+# Generate 10K test dataset
+python generate_1m_super_quality.py --target 10000 --quality 0.85 --india 0.60
 ```
 
-### 2. Train on Colab Pro+
-
-```python
-# Install dependencies
-!pip install torch==2.1.0 transformers==4.36.0 peft==0.7.0 accelerate==0.25.0 datasets==2.15.0 tqdm
-
-# Upload dataset and training script
-from google.colab import files
-uploaded = files.upload()  # Select housebrain_dataset_r1_super_1M.tar.gz and colab_proplus_train_r1_super.py
-
-# Extract and train
-!tar -xzf housebrain_dataset_r1_super_1M.tar.gz
-!python colab_proplus_train_r1_super.py
+### Augment Dataset (v1.1)
+```bash
+# Add precision metadata for 2D/3D generation
+python augment_dataset_v1_1.py --input housebrain_dataset_r1_super_1M \
+    --output housebrain_dataset_r1_super_1M_aug_v1_1 --workers 8
 ```
 
-### 3. Use Trained Model
-
-```python
-from transformers import AutoTokenizer, AutoModelForCausalLM
-from peft import PeftModel
-
-# Load trained model
-base_model = AutoModelForCausalLM.from_pretrained("deepseek-ai/DeepSeek-R1-Distill-Qwen-7B")
-model = PeftModel.from_pretrained(base_model, "housebrain-r1-super-trained/final")
-tokenizer = AutoTokenizer.from_pretrained("housebrain-r1-super-trained/final")
-
-# Generate architectural design
-test_input = {
-    "problem_type": "Structural_Engineering",
-    "context": {"indian_market": True, "region": "Mumbai"},
-    "plot_details": {"area_sqft": 2500, "floors": 3},
-    "requirements": {"budget_inr": 5000000}
-}
-
-input_text = json.dumps(test_input)
-inputs = tokenizer(input_text, return_tensors="pt")
-outputs = model.generate(**inputs, max_length=512, temperature=0.7)
-response = tokenizer.decode(outputs[0], skip_special_tokens=True)
-print(response)
+### Train Model (Colab Pro+)
+```bash
+# Upload to Colab: housebrain_dataset_r1_super_10k_aug.tar.gz
+# Run: python colab_proplus_train_r1_super.py
 ```
 
-## 📁 Project Structure
+## 🎯 What's New in v1.1
 
-```
-housebrain_v1_1/
-├── generate_1m_super_quality.py          # Dataset generator
-├── colab_proplus_train_r1_super.py       # Training script
-├── monitor_training.py                   # Training monitor
-├── resume_training.py                    # Resume training
-├── merge_models.py                       # Model merging
-├── requirements.txt                      # Dependencies
-├── COLAB_PROPLUS_R1_SUPER_GUIDE.md      # Training guide
-├── COMPLETE_TRAINING_GUIDE.md           # Complete guide
-├── FUTURE_ROADMAP.md                    # Future development
-└── src/                                 # Source code
-    └── housebrain/
-        ├── finetune.py                  # Core fine-tuning
-        └── llm.py                       # LLM interface
-```
+### Enhanced Dataset Features
+1. **Units & Datum**: mm units, project origin, north angle
+2. **Floor Levels**: FFL/TOS elevations, floor-to-floor heights
+3. **Element Metadata**: 
+   - Doors: Sill/head heights, frame thickness, swing direction
+   - Windows: Sill/head heights, frame specifications
+   - Walls: Layer assemblies, U-values, material stacks
+   - Stairs: Riser/tread dimensions, handrail heights
+4. **IFC Integration**: Industry Foundation Classes mapping
+5. **DXF Layers**: AutoCAD layer structure with colors/lineweights
+6. **GUIDs**: Deterministic element identification
+7. **2D Dimensions**: Scaffold for precise dimensioning
 
-## 🎯 Performance Expectations
+### Technical Improvements
+- **Spatial Precision**: Exact coordinates for 2D/3D generation
+- **Material Quantities**: Detailed BOQ for cost estimation
+- **Structural Continuity**: Multi-floor awareness
+- **Industry Standards**: IFC/DXF compatibility
+- **Deterministic Output**: Consistent element identification
+
+## 📊 Performance Expectations
 
 ### Before R1 Training
 - Basic architectural generation
@@ -140,91 +107,108 @@ housebrain_v1_1/
 - Surface-level code compliance
 
 ### After R1 Super-Quality Training
-- **Advanced reasoning**: Step-by-step problem solving
-- **Mathematical analysis**: Structural and cost calculations
-- **Code compliance**: Detailed NBC 2016 analysis
-- **Multi-constraint optimization**: Balancing conflicting requirements
-- **Spatial intelligence**: Room placement and spatial relationships
-- **Geometric construction**: Exact coordinates and construction geometry
-- **2D/3D generation**: Direct floor plan and model generation
-- **Material specifications**: Detailed BOQ and cost estimation
+- **Spatial intelligence**: Advanced room placement and floor awareness
+- **Geometric construction**: Exact coordinates and material specifications
+- **2D/3D generation**: Direct floor plan and model creation
+- **Material specifications**: Precise quantities and specifications
+- **India compliance**: NBC 2016 and regional standards
+- **Cost engineering**: Accurate BOQ and cost estimates
 
-### Metrics
-- **Training Loss**: Should decrease from ~3.0 to ~1.5
-- **Validation Loss**: Should stabilize around ~1.8
-- **Reasoning Quality**: 90%+ step-by-step reasoning
-- **Code Compliance**: 95%+ NBC 2016 accuracy
-- **Mathematical Accuracy**: 85%+ calculation correctness
+## 🛠️ Installation & Setup
 
-## 🛠️ Training Configuration
+### Requirements
+```bash
+pip install -r requirements.txt
+```
 
-### Model Settings
-- **Base Model**: `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`
-- **Sequence Length**: 2048 (doubled for R1 reasoning)
-- **LoRA Rank**: 16
-- **LoRA Alpha**: 32
-- **LoRA Dropout**: 0.05
+### Local Generation (M2 Pro)
+- **Performance**: 50K samples generated locally
+- **Ready for**: 1M generation
+- **Optimization**: Local M2 Pro generation
 
-### Training Settings
-- **Batch Size**: 4 (optimized for A100/V100)
-- **Gradient Accumulation**: 8 (effective batch size = 32)
-- **Learning Rate**: 2e-4
-- **Max Steps**: 50,000
-- **Warmup Steps**: 100
-- **Save Steps**: 1,000
-- **Eval Steps**: 500
+### Colab Pro+ Training
+- **Hardware**: A100 40GB or V100 16GB
+- **Training Time**: 8-12 hours for 1M dataset
+- **Memory**: Optimized for Colab Pro+ constraints
 
-### Memory Requirements
-- **Model**: ~14GB (FP16)
-- **Training**: ~18-22GB total
-- **A100 40GB**: ✅ Perfect fit
-- **V100 16GB**: ⚠️ May need 4-bit quantization
+## 📁 Project Structure
+
+```
+housebrain_v1_1/
+├── generate_1m_super_quality.py      # Main dataset generator
+├── augment_dataset_v1_1.py           # Dataset augmentation (v1.1)
+├── colab_proplus_train_r1_super.py   # Training script
+├── colab_setup.py                    # Colab environment setup
+├── COLAB_PROPLUS_R1_SUPER_GUIDE.md   # Detailed training guide
+├── requirements.txt                  # Python dependencies
+└── README.md                         # This file
+
+Datasets:
+├── housebrain_dataset_r1_super_1M/           # Original 1M dataset
+├── housebrain_dataset_r1_super_1M_aug_v1_1/  # Augmented 1M dataset
+└── housebrain_dataset_r1_super_10k_aug.tar.gz # 10K test dataset (32MB)
+```
+
+## 🎯 Use Cases
+
+### Architectural Design
+- Generate complete building designs from requirements
+- Provide exact geometric data for CAD/BIM tools
+- Ensure structural and code compliance
+- Support multi-floor and complex layouts
+
+### Construction Planning
+- Calculate material quantities and costs
+- Generate detailed BOQ (Bill of Quantities)
+- Plan construction sequences
+- Optimize resource allocation
+
+### 2D/3D Generation
+- Direct floor plan generation
+- 3D model creation
+- IFC/DXF export capabilities
+- Industry-standard file formats
+
+## 🔄 Development Workflow
+
+1. **Dataset Generation**: Create high-quality training data
+2. **Augmentation**: Add precision metadata for 2D/3D generation
+3. **Training**: Fine-tune model on Colab Pro+
+4. **Evaluation**: Test on architectural problems
+5. **Integration**: Connect to CAD/BIM tools
+6. **Deployment**: Deploy for real-world use
 
 ## 📚 Documentation
 
-- **[Colab Pro+ Training Guide](COLAB_PROPLUS_R1_SUPER_GUIDE.md)** - Complete training guide
-- **[Complete Training Guide](COMPLETE_TRAINING_GUIDE.md)** - Detailed setup instructions
-- **[Future Roadmap](FUTURE_ROADMAP.md)** - Development plans
-
-## 🔄 Alternative Approaches
-
-### Smaller Dataset Training
-```bash
-# Train with 500K samples for faster iteration
-python generate_1m_super_quality.py --target 500000 --quality 0.92
-```
-
-### Lower Quality Threshold
-```bash
-# Faster generation with 85% quality
-python generate_1m_super_quality.py --quality 0.85
-```
-
-### 4-bit Training (V100)
-```python
-# Enable 4-bit quantization for V100
-load_in_4bit=True
-bnb_4bit_compute_dtype=torch.bfloat16
-```
+- **[Training Guide](COLAB_PROPLUS_R1_SUPER_GUIDE.md)**: Complete Colab Pro+ training instructions
+- **[Dataset Generator](generate_1m_super_quality.py)**: Main dataset generation script
+- **[Augmentation Script](augment_dataset_v1_1.py)**: Dataset enhancement for v1.1
+- **[Training Script](colab_proplus_train_r1_super.py)**: Model training script
 
 ## 🤝 Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Add tests if applicable
+4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
+## 📞 Support
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+For issues or questions:
+- Check the troubleshooting section in the training guide
+- Review error logs carefully
+- Ensure all dependencies are installed
+- Verify dataset integrity
 
-## 🙏 Acknowledgments
+## 🎉 Acknowledgments
 
-- **DeepSeek AI** for the R1 model architecture
-- **Hugging Face** for the transformers library
-- **Google Colab** for the training platform
+- **DeepSeek AI**: For the excellent R1-Distill-Qwen-7B base model
+- **Hugging Face**: For the transformers and peft libraries
+- **Google Colab**: For providing GPU resources for training
 
 ---
 
-**Note**: This training will take 8-12 hours on Colab Pro+. Ensure you have stable internet connection and consider using Colab's "Keep alive" extensions for long training sessions.
+**Ready to revolutionize architectural design with AI! 🏠🧠**
+
+*HouseBrain LLM v1.1 - Where AI meets Architecture*
