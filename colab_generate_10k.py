@@ -22,26 +22,26 @@ def generate_10k_dataset():
     
     # Configuration for 10K generation
     config = SuperQualityConfig()
-    config.TOTAL_SAMPLES = 10000
-    config.OUTPUT_DIR = "housebrain_dataset_r1_super_10k_aug"
-    config.TRAIN_RATIO = 0.9  # 9K train, 1K validation
+    config.target_samples = 10000
+    config.train_ratio = 0.9  # 9K train, 1K validation
     
     # Create generator
     generator = SuperQualityGenerator(config)
     
     # Generate dataset
-    print(f"📊 Generating {config.TOTAL_SAMPLES} samples...")
-    generator.generate_dataset()
+    output_dir = "housebrain_dataset_r1_super_10k_aug"
+    print(f"📊 Generating {config.target_samples} samples...")
+    generator.generate(output_dir)
     
     # Augment the dataset
     print("🔧 Augmenting dataset with geometric metadata...")
-    os.system(f"python augment_dataset_v1_1.py --input {config.OUTPUT_DIR} --output {config.OUTPUT_DIR} --workers 4")
+    os.system(f"python augment_dataset_v1_1.py --input {output_dir} --output {output_dir} --workers 4")
     
     print("✅ 10K dataset generated successfully!")
-    print(f"📁 Output directory: {config.OUTPUT_DIR}")
+    print(f"📁 Output directory: {output_dir}")
     
     # Show dataset info
-    dataset_info_file = Path(config.OUTPUT_DIR) / "dataset_info.json"
+    dataset_info_file = Path(output_dir) / "dataset_info.json"
     if dataset_info_file.exists():
         with open(dataset_info_file, 'r') as f:
             info = json.load(f)
