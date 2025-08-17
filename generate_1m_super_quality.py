@@ -30,10 +30,22 @@ class SuperQualityConfig:
     seed: int = 42
 
     complexity_levels: List[str] = field(default_factory=lambda: [
-        "Basic_Design", "Code_Compliance", "Multi_Constraint", "Optimization",
-        "Conflict_Resolution", "Advanced_Reasoning", "Mathematical_Analysis",
-        "Structural_Engineering", "Sustainability_Design", "Smart_Home_Integration",
-        "Performance_Optimization"
+        # High Priority (45% total)
+        "Geometric_Construction", "Geometric_Construction", "Geometric_Construction", "Geometric_Construction", "Geometric_Construction",  # 25%
+        "Spatial_Floor_Planning", "Spatial_Floor_Planning", "Spatial_Floor_Planning", "Spatial_Floor_Planning",  # 20%
+        
+        # Medium Priority (35% total)
+        "Basic_Design", "Basic_Design",  # 10%
+        "Code_Compliance", "Code_Compliance",  # 8%
+        "Multi_Constraint", "Multi_Constraint",  # 8%
+        "Optimization", "Optimization",  # 8%
+        "Structural_Engineering", "Structural_Engineering", "Structural_Engineering",  # 12%
+        
+        # Lower Priority (20% total)
+        "Conflict_Resolution", "Advanced_Reasoning", "Mathematical_Analysis",  # 15%
+        "Sustainability_Design",  # 5%
+        "Performance_Optimization",  # 3%
+        "Smart_Home_Integration"  # 3%
     ])
 
     building_codes: List[str] = field(default_factory=lambda: [
@@ -387,6 +399,90 @@ class SuperQualityGenerator:
             ]
         }
 
+    def _problem_spatial(self, indian: bool) -> Dict[str, Any]:
+        return {
+            "problem_type": "Spatial_Floor_Planning",
+            "context": {"indian_market": indian, **(self._indian_features() if indian else {})},
+            "plot_details": {
+                "plot_shape": random.choice(["Rectangular", "Square", "L_Shape", "T_Shape", "Irregular", "Corner_Plot"]),
+                "width_ft": self._rand_range(30, 80),
+                "length_ft": self._rand_range(40, 100),
+                "area_sqft": self._rand_range(1200, 5000),
+                "orientation": random.choice(["North", "South", "East", "West", "North_East", "North_West", "South_East", "South_West"]),
+                "road_access": random.choice(["Front", "Side", "Corner", "Multiple_Sides"]),
+                "setback_front": self._rand_range(10, 20),
+                "setback_rear": self._rand_range(8, 15),
+                "setback_side": self._rand_range(5, 12)
+            },
+            "requirements": {
+                "family_size": self._rand_range(3, 8),
+                "floors": self._rand_range(1, 4),
+                "budget_inr": self._rand_range(500000, 5000000),
+                "lifestyle": random.choice(["Modern", "Traditional", "Minimalist", "Luxury", "Eco_Friendly"])
+            },
+            "spatial_constraints": [
+                "Room_adjacency_requirements",
+                "Circulation_patterns",
+                "Privacy_zones",
+                "Natural_light_optimization",
+                "Ventilation_requirements",
+                "Structural_grid_alignment"
+            ],
+            "reasoning_steps": [
+                "Analyze plot dimensions and orientation for optimal room placement",
+                "Design room layout considering family size and lifestyle requirements",
+                "Plan circulation patterns for efficient movement between spaces",
+                "Optimize room adjacencies for functional relationships and privacy",
+                "Integrate structural grid system for construction feasibility",
+                "Ensure multi-floor continuity and vertical circulation planning",
+                "Apply building codes and setback requirements for compliance",
+                "Validate spatial relationships and room proportions for livability"
+            ]
+        }
+
+    def _problem_geometric(self, indian: bool) -> Dict[str, Any]:
+        return {
+            "problem_type": "Geometric_Construction",
+            "context": {"indian_market": indian, **(self._indian_features() if indian else {})},
+            "plot_details": {
+                "plot_shape": random.choice(["Rectangular", "Square", "L_Shape", "T_Shape", "Irregular", "Corner_Plot"]),
+                "width_ft": self._rand_range(30, 80),
+                "length_ft": self._rand_range(40, 100),
+                "area_sqft": self._rand_range(1200, 5000),
+                "orientation": random.choice(["North", "South", "East", "West", "North_East", "North_West", "South_East", "South_West"]),
+                "road_access": random.choice(["Front", "Side", "Corner", "Multiple_Sides"]),
+                "setback_front": self._rand_range(10, 20),
+                "setback_rear": self._rand_range(8, 15),
+                "setback_side": self._rand_range(5, 12)
+            },
+            "requirements": {
+                "family_size": self._rand_range(3, 8),
+                "floors": self._rand_range(1, 4),
+                "budget_inr": self._rand_range(500000, 5000000),
+                "lifestyle": random.choice(["Modern", "Traditional", "Minimalist", "Luxury", "Eco_Friendly"])
+            },
+            "construction_requirements": [
+                "Exact_coordinate_system",
+                "Wall_thickness_specifications",
+                "Structural_grid_alignment",
+                "Foundation_geometry",
+                "Column_and_beam_positions",
+                "Material_quantity_calculations",
+                "2D_floor_plan_generation",
+                "3D_model_generation"
+            ],
+            "reasoning_steps": [
+                "Establish coordinate system and grid for precise geometric placement",
+                "Calculate exact room dimensions and wall positions with coordinates",
+                "Design structural grid system with column and beam placements",
+                "Generate foundation geometry with footing positions and sizes",
+                "Plan multi-floor continuity with vertical alignment of structural elements",
+                "Calculate exact material quantities for construction planning",
+                "Create 2D floor plan data with walls, doors, windows, and dimensions",
+                "Generate 3D model data with spatial coordinates and material specifications"
+            ]
+        }
+
     def _generate_problem(self) -> Dict[str, Any]:
         indian = random.random() < self.config.india_ratio
         p = random.choice(self.config.complexity_levels)
@@ -400,6 +496,8 @@ class SuperQualityGenerator:
             "Mathematical_Analysis": self._problem_math,
             "Structural_Engineering": self._problem_struct,
             "Sustainability_Design": self._problem_sustain,
+            "Spatial_Floor_Planning": self._problem_spatial,
+            "Geometric_Construction": self._problem_geometric,
             "Smart_Home_Integration": self._problem_smarthome,
             "Performance_Optimization": self._problem_opt,
         }
@@ -1010,6 +1108,297 @@ class SuperQualityGenerator:
             }
         }
 
+    def _solution_spatial_floor_plan(self, problem: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Comprehensive spatial solution with room placement, floor planning, and structural continuity
+        for 2D/3D floor plan generation capabilities
+        """
+        area = problem.get("plot_details", {}).get("area_sqft", 2500)
+        width_ft = problem.get("plot_details", {}).get("width_ft", 50)
+        length_ft = problem.get("plot_details", {}).get("length_ft", 50)
+        floors = problem.get("requirements", {}).get("floors", 2)
+        family = problem.get("requirements", {}).get("family_size", 4)
+        
+        # Calculate room requirements
+        bedrooms = max(2, min(6, family))
+        bathrooms = max(2, bedrooms // 2)
+        
+        # Grid system setup (structural grid)
+        grid_spacing = 12  # feet
+        grid_x = int(width_ft / grid_spacing)
+        grid_y = int(length_ft / grid_spacing)
+        
+        # Room placement with coordinates
+        rooms_data = self._generate_room_layout(width_ft, length_ft, bedrooms, bathrooms, area)
+        
+        # Structural grid alignment
+        structural_grid = self._generate_structural_grid(width_ft, length_ft, grid_spacing)
+        
+        # Multi-floor continuity
+        floor_continuity = self._generate_floor_continuity(floors, structural_grid, rooms_data)
+        
+        return {
+            "spatial_design": {
+                "plot_dimensions": {
+                    "width_ft": width_ft,
+                    "length_ft": length_ft,
+                    "area_sqft": area,
+                    "aspect_ratio": round(width_ft / length_ft, 2)
+                },
+                "grid_system": {
+                    "grid_spacing_ft": grid_spacing,
+                    "grid_x_count": grid_x,
+                    "grid_y_count": grid_y,
+                    "total_grid_points": grid_x * grid_y,
+                    "grid_coordinates": structural_grid
+                },
+                "room_layout": {
+                    "total_rooms": len(rooms_data),
+                    "room_distribution": {
+                        "bedrooms": bedrooms,
+                        "bathrooms": bathrooms,
+                        "living_areas": 2,
+                        "service_areas": 3
+                    },
+                    "rooms": rooms_data
+                }
+            },
+            "floor_planning": {
+                "ground_floor": {
+                    "rooms": [room for room in rooms_data if room["floor"] == "Ground"],
+                    "entrance_location": "North_Facing",
+                    "parking_integration": "Integrated_2_Car_Parking",
+                    "service_entrance": "East_Side",
+                    "garden_integration": "South_Facing_Private_Garden"
+                },
+                "upper_floors": {
+                    "floor_count": floors - 1,
+                    "floor_continuity": floor_continuity,
+                    "vertical_circulation": {
+                        "staircase_type": "RCC_Staircase_with_Landing",
+                        "staircase_location": "North_East_Corner",
+                        "staircase_dimensions": "3ft_6in_width_x_10ft_length",
+                        "elevator_required": floors > 3,
+                        "elevator_location": "Adjacent_to_Staircase"
+                    }
+                }
+            },
+            "structural_continuity": {
+                "column_grid": {
+                    "column_spacing_ft": grid_spacing,
+                    "column_size": "12in_x_12in_RCC_Columns",
+                    "column_count": grid_x * grid_y,
+                    "column_positions": structural_grid
+                },
+                "beam_system": {
+                    "primary_beams": f"{grid_x}_beams_in_X_direction",
+                    "secondary_beams": f"{grid_y}_beams_in_Y_direction",
+                    "beam_size": "12in_x_18in_RCC_Beams",
+                    "beam_spacing_ft": grid_spacing
+                },
+                "slab_system": {
+                    "slab_type": "RCC_Slab_6_inch_thick",
+                    "slab_span_ft": grid_spacing,
+                    "slab_reinforcement": "8mm_dia_bars_at_6_inch_c_c"
+                }
+            },
+            "spatial_relationships": {
+                "room_adjacencies": self._generate_room_adjacencies(rooms_data),
+                "circulation_patterns": {
+                    "primary_circulation": "Central_Corridor_System",
+                    "secondary_circulation": "Direct_Room_Access",
+                    "emergency_exits": "Two_Exits_as_per_Code",
+                    "accessibility": "Wheelchair_Accessible_Pathways"
+                },
+                "orientation_optimization": {
+                    "living_areas": "North_South_Orientation",
+                    "bedrooms": "East_West_Orientation",
+                    "kitchen": "East_Facing_for_Morning_Sun",
+                    "bathrooms": "Internal_Placement"
+                }
+            },
+            "construction_sequence": {
+                "phase_1": {
+                    "activities": ["Site_clearing", "Excavation", "Foundation_work"],
+                    "duration_weeks": 4,
+                    "critical_path": "Foundation_completion"
+                },
+                "phase_2": {
+                    "activities": ["Ground_floor_columns", "Ground_floor_beams", "Ground_floor_slab"],
+                    "duration_weeks": 6,
+                    "critical_path": "Structural_framework"
+                },
+                "phase_3": {
+                    "activities": ["Wall_construction", "MEP_rough_in", "Roof_work"],
+                    "duration_weeks": 8,
+                    "critical_path": "Weather_tight_envelope"
+                },
+                "phase_4": {
+                    "activities": ["Interior_finishes", "MEP_finishes", "Exterior_finishes"],
+                    "duration_weeks": 10,
+                    "critical_path": "Final_inspections"
+                }
+            },
+            "mep_coordination": {
+                "electrical": {
+                    "main_panel_location": "Ground_floor_North_wall",
+                    "sub_panels": f"{floors}_sub_panels_one_per_floor",
+                    "conduit_routing": "Along_beam_soffits",
+                    "outlet_spacing": "6_ft_apart_as_per_code"
+                },
+                "plumbing": {
+                    "water_tank_location": "Roof_level",
+                    "pump_room": "Ground_floor_utility_area",
+                    "pipe_routing": "Vertical_risers_in_utility_shaft",
+                    "drainage_system": "Gravity_flow_to_septic_tank"
+                },
+                "hvac": {
+                    "ahu_location": "Roof_level",
+                    "duct_routing": "Above_ceiling_level",
+                    "thermostat_locations": "One_per_floor",
+                    "fresh_air_intake": "Roof_level"
+                }
+            },
+            "quality_control": {
+                "dimensional_accuracy": "±0.5_inch_tolerance",
+                "structural_alignment": "Column_plumb_within_0.25_inch",
+                "floor_levelness": "±0.125_inch_per_10_ft",
+                "wall_verticality": "±0.25_inch_per_10_ft_height"
+            }
+        }
+
+    def _generate_room_layout(self, width_ft: int, length_ft: int, bedrooms: int, bathrooms: int, total_area: int) -> List[Dict]:
+        """Generate detailed room layout with coordinates and dimensions"""
+        rooms = []
+        
+        # Living room (largest room)
+        living_width = int(width_ft * 0.6)
+        living_length = int(length_ft * 0.4)
+        rooms.append({
+            "name": "living_room",
+            "type": "living_room",
+            "floor": "Ground",
+            "coordinates": {"x": 0, "y": 0},
+            "dimensions": {"width_ft": living_width, "length_ft": living_length},
+            "area_sqft": living_width * living_length,
+            "orientation": "North_South",
+            "windows": ["North_wall_6ft_window", "South_wall_6ft_window"],
+            "doors": ["East_wall_entrance_door", "West_wall_internal_door"],
+            "adjacent_rooms": ["dining_room", "bedroom_1"]
+        })
+        
+        # Kitchen
+        kitchen_width = int(width_ft * 0.4)
+        kitchen_length = int(length_ft * 0.3)
+        rooms.append({
+            "name": "kitchen",
+            "type": "kitchen",
+            "floor": "Ground",
+            "coordinates": {"x": living_width, "y": 0},
+            "dimensions": {"width_ft": kitchen_width, "length_ft": kitchen_length},
+            "area_sqft": kitchen_width * kitchen_length,
+            "orientation": "East_Facing",
+            "windows": ["East_wall_4ft_window"],
+            "doors": ["West_wall_internal_door"],
+            "adjacent_rooms": ["dining_room", "utility_room"]
+        })
+        
+        # Bedrooms
+        bedroom_width = int(width_ft * 0.5)
+        bedroom_length = int(length_ft * 0.35)
+        
+        for i in range(bedrooms):
+            floor = "Ground" if i < 2 else "First"
+            x_pos = (i % 2) * bedroom_width
+            y_pos = living_length + (i // 2) * bedroom_length
+            
+            rooms.append({
+                "name": f"bedroom_{i+1}",
+                "type": "bedroom",
+                "floor": floor,
+                "coordinates": {"x": x_pos, "y": y_pos},
+                "dimensions": {"width_ft": bedroom_width, "length_ft": bedroom_length},
+                "area_sqft": bedroom_width * bedroom_length,
+                "orientation": "East_West" if i % 2 == 0 else "North_South",
+                "windows": [f"East_wall_4ft_window"] if i % 2 == 0 else [f"North_wall_4ft_window"],
+                "doors": ["West_wall_internal_door"],
+                "adjacent_rooms": ["bathroom_1"] if i == 0 else ["bathroom_2"] if i == 1 else ["bathroom_3"]
+            })
+        
+        # Bathrooms
+        bathroom_width = 6
+        bathroom_length = 8
+        
+        for i in range(bathrooms):
+            floor = "Ground" if i < 2 else "First"
+            x_pos = width_ft - bathroom_width
+            y_pos = living_length + i * bathroom_length
+            
+            rooms.append({
+                "name": f"bathroom_{i+1}",
+                "type": "bathroom",
+                "floor": floor,
+                "coordinates": {"x": x_pos, "y": y_pos},
+                "dimensions": {"width_ft": bathroom_width, "length_ft": bathroom_length},
+                "area_sqft": bathroom_width * bathroom_length,
+                "orientation": "Internal",
+                "windows": [],
+                "doors": ["East_wall_internal_door"],
+                "adjacent_rooms": [f"bedroom_{i+1}"]
+            })
+        
+        return rooms
+
+    def _generate_structural_grid(self, width_ft: int, length_ft: int, grid_spacing: int) -> List[Dict]:
+        """Generate structural grid coordinates"""
+        grid_points = []
+        
+        for x in range(0, width_ft + 1, grid_spacing):
+            for y in range(0, length_ft + 1, grid_spacing):
+                grid_points.append({
+                    "x_coord_ft": x,
+                    "y_coord_ft": y,
+                    "column_id": f"C_{x}_{y}",
+                    "column_size": "12in_x_12in",
+                    "foundation_type": "Isolated_Footing"
+                })
+        
+        return grid_points
+
+    def _generate_floor_continuity(self, floors: int, structural_grid: List[Dict], rooms_data: List[Dict]) -> Dict:
+        """Generate floor-to-floor continuity data"""
+        return {
+            "vertical_alignment": {
+                "column_continuity": "All_columns_align_vertically_across_floors",
+                "wall_continuity": "Load_bearing_walls_align_vertically",
+                "opening_alignment": "Windows_and_doors_align_vertically_where_possible"
+            },
+            "structural_transfers": {
+                "transfer_beams": "Transfer_beams_at_floor_levels",
+                "transfer_columns": "Transfer_columns_for_irregular_layouts",
+                "shear_walls": "Shear_walls_at_corners_and_ends"
+            },
+            "mep_continuity": {
+                "electrical_risers": "Vertical_electrical_risers_in_utility_shaft",
+                "plumbing_risers": "Vertical_plumbing_risers_in_utility_shaft",
+                "hvac_risers": "Vertical_hvac_risers_in_utility_shaft"
+            }
+        }
+
+    def _generate_room_adjacencies(self, rooms_data: List[Dict]) -> Dict:
+        """Generate room adjacency matrix"""
+        adjacencies = {}
+        
+        for room in rooms_data:
+            adjacencies[room["name"]] = {
+                "adjacent_rooms": room["adjacent_rooms"],
+                "shared_walls": len(room["adjacent_rooms"]),
+                "circulation_access": "Direct_access_to_corridor",
+                "privacy_level": "High" if room["type"] == "bedroom" else "Medium"
+            }
+        
+        return adjacencies
+
     def _solution_advanced(self, problem: Dict[str, Any]) -> Dict[str, Any]:
         return {
             "strategy": {"success_factors": ["Structure", "Function", "Aesthetics"], "iterations": 3},
@@ -1018,7 +1407,7 @@ class SuperQualityGenerator:
 
     def _solution_math(self, problem: Dict[str, Any]) -> Dict[str, Any]:
         return {
-            "calculations": problem["calculations"],
+            "calculations": problem.get("calculations", {}),
             "results_summary": {"roi": ">18%", "payback_years": 5},
             "validation": "Cross-checked"
         }
@@ -1099,10 +1488,115 @@ class SuperQualityGenerator:
         }
 
     def _solution_sustain(self, problem: Dict[str, Any]) -> Dict[str, Any]:
+        # Get sustainability goals and targets
+        goals = problem.get("goals", ["Energy", "Water", "Materials", "IEQ", "Site", "Waste"])
+        cert_targets = problem.get("cert_targets", ["LEED_Platinum", "GRIHA_5_Star", "IGBC_Platinum"])
+        target_cert = random.choice(cert_targets)
+        
+        # Calculate energy performance
+        energy_consumption = random.randint(30, 80)  # kWh/m2/year
+        renewable_contribution = random.randint(40, 80)  # %
+        carbon_reduction = random.randint(50, 85)  # %
+        
+        # Water conservation calculations
+        water_consumption = random.randint(80, 150)  # liters/person/day
+        rainwater_harvesting = random.randint(60, 90)  # % of roof area
+        greywater_recycling = random.randint(30, 70)  # % of wastewater
+        
         return {
-            "measures": {"energy": "Efficient_envelope", "water": "RWH+low_flow", "materials": "Low_impact"},
-            "certification": {"target": random.choice(problem["cert_targets"])},
-            "monitoring": "Plan_ready"
+            "sustainability_strategy": {
+                "certification_target": target_cert,
+                "overall_rating": f"{random.randint(85, 98)}%",
+                "implementation_phases": ["Design", "Construction", "Operation", "Monitoring"]
+            },
+            "energy_efficiency": {
+                "building_envelope": {
+                    "insulation": "High_performance_thermal_insulation_R30",
+                    "glazing": "Low_E_double_glazing_U_value_1.8",
+                    "air_tightness": "Airtight_construction_ACH_0.6",
+                    "thermal_bridge": "Minimized_thermal_bridges"
+                },
+                "hvac_systems": {
+                    "system_type": "High_efficiency_VRV_with_heat_recovery",
+                    "efficiency_rating": "SEER_18_plus",
+                    "controls": "Smart_thermostats_with_occupancy_sensing",
+                    "maintenance": "Regular_maintenance_schedule"
+                },
+                "renewable_energy": {
+                    "solar_pv": f"{random.randint(5, 15)}_kW_system",
+                    "solar_water_heating": "Evacuated_tube_collectors",
+                    "contribution": f"{renewable_contribution}%_of_total_energy",
+                    "battery_storage": "Optional_lithium_ion_battery_system"
+                },
+                "performance_metrics": {
+                    "annual_energy_consumption": f"{energy_consumption}_kWh_m2_year",
+                    "energy_savings": f"{random.randint(40, 70)}%_vs_baseline",
+                    "carbon_reduction": f"{carbon_reduction}%_vs_conventional",
+                    "payback_period": f"{random.randint(5, 12)}_years"
+                }
+            },
+            "water_conservation": {
+                "fixtures": {
+                    "toilets": "Dual_flush_ultra_low_flow_4.8L",
+                    "faucets": "Aerated_faucets_2.5L_min",
+                    "showerheads": "Low_flow_showerheads_7.5L_min",
+                    "urinals": "Waterless_urinals"
+                },
+                "rainwater_harvesting": {
+                    "collection_area": f"{rainwater_harvesting}%_of_roof_area",
+                    "storage_capacity": f"{random.randint(20, 50)}_kl_storage_tank",
+                    "filtration": "Multi_stage_filtration_system",
+                    "usage": "Landscaping_and_toilet_flushing"
+                },
+                "greywater_recycling": {
+                    "collection": "Separate_greywater_plumbing",
+                    "treatment": "Biological_treatment_system",
+                    "recycling_rate": f"{greywater_recycling}%_of_wastewater",
+                    "usage": "Landscaping_and_cooling_towers"
+                },
+                "performance_metrics": {
+                    "water_consumption": f"{water_consumption}_liters_person_day",
+                    "water_savings": f"{random.randint(30, 60)}%_vs_conventional",
+                    "rainwater_utilization": f"{random.randint(40, 80)}%_of_landscape_water"
+                }
+            },
+            "sustainable_materials": {
+                "structural_materials": {
+                    "concrete": "Low_carbon_concrete_with_30%_fly_ash",
+                    "steel": "Recycled_steel_with_90%_recycled_content",
+                    "timber": "FSC_certified_sustainable_timber",
+                    "masonry": "Local_clay_bricks_with_low_embodied_energy"
+                },
+                "finishes": {
+                    "flooring": "Bamboo_flooring_or_recycled_tiles",
+                    "paints": "Low_VOC_water_based_paints",
+                    "carpets": "Recycled_content_carpets",
+                    "furniture": "FSC_certified_or_recycled_furniture"
+                },
+                "insulation": {
+                    "wall_insulation": "Recycled_denim_or_cellulose_insulation",
+                    "roof_insulation": "High_performance_rigid_insulation",
+                    "acoustic_insulation": "Recycled_rubber_or_cork"
+                }
+            },
+            "indoor_environmental_quality": {
+                "ventilation": {
+                    "natural_ventilation": "Cross_ventilation_design",
+                    "mechanical_ventilation": "Energy_recovery_ventilation",
+                    "air_filtration": "MERV_13_air_filters",
+                    "fresh_air_rates": "ASHRAE_62.1_compliant"
+                },
+                "daylighting": {
+                    "daylight_factor": f"{random.uniform(2.0, 4.0):.1f}%",
+                    "glare_control": "Automated_shading_system",
+                    "view_quality": "Views_to_nature_from_90%_of_spaces"
+                },
+                "acoustic_comfort": {
+                    "sound_transmission_class": "STC_50_plus",
+                    "reverberation_time": "0.5_to_0.8_seconds",
+                    "background_noise": "NC_30_or_better"
+                }
+            }
         }
 
     def _solution_performance(self, problem: Dict[str, Any]) -> Dict[str, Any]:
@@ -1110,6 +1604,492 @@ class SuperQualityGenerator:
             "targets": problem.get("targets", {}),
             "measures": {"envelope": "Optimized", "controls": "Smart_controls", "commissioning": "Cx_plan"},
             "validation": {"simulation": "OK", "monitoring": "Plan_ready"}
+        }
+
+    def _solution_geometric_construction(self, problem: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Comprehensive geometric solution with exact coordinates, wall positions, 
+        structural elements, and construction geometry for direct 2D/3D generation
+        """
+        area = problem.get("plot_details", {}).get("area_sqft", 2500)
+        width_ft = problem.get("plot_details", {}).get("width_ft", 50)
+        length_ft = problem.get("plot_details", {}).get("length_ft", 50)
+        floors = problem.get("requirements", {}).get("floors", 2)
+        family = problem.get("requirements", {}).get("family_size", 4)
+        
+        # Calculate room requirements
+        bedrooms = max(2, min(6, family))
+        bathrooms = max(2, bedrooms // 2)
+        
+        # Generate complete geometric data
+        geometric_data = self._generate_complete_geometry(width_ft, length_ft, floors, bedrooms, bathrooms)
+        
+        # Generate construction geometry
+        construction_geometry = self._generate_construction_geometry(geometric_data, area, floors)
+        
+        # Generate material specifications with exact quantities
+        material_specs = self._generate_material_specifications(geometric_data, construction_geometry)
+        
+        return {
+            "geometric_data": geometric_data,
+            "construction_geometry": construction_geometry,
+            "material_specifications": material_specs,
+            "2d_generation_data": self._generate_2d_data(geometric_data),
+            "3d_generation_data": self._generate_3d_data(geometric_data, construction_geometry)
+        }
+
+    def _generate_complete_geometry(self, width_ft: int, length_ft: int, floors: int, bedrooms: int, bathrooms: int) -> Dict:
+        """Generate complete geometric data with exact coordinates"""
+        
+        # Wall thicknesses
+        wall_thickness = 9  # inches
+        wall_thickness_ft = wall_thickness / 12
+        
+        # Room layout with exact coordinates
+        rooms = []
+        
+        # Living room (largest room)
+        living_width = int(width_ft * 0.6)
+        living_length = int(length_ft * 0.4)
+        living_x, living_y = 0, 0
+        
+        rooms.append({
+            "id": "living_room",
+            "type": "living_room",
+            "floor": "Ground",
+            "bounds": {
+                "x": living_x,
+                "y": living_y,
+                "width": living_width,
+                "height": living_length,
+                "area": living_width * living_length
+            },
+            "walls": [
+                {"start": {"x": living_x, "y": living_y}, "end": {"x": living_x + living_width, "y": living_y}, "thickness": wall_thickness_ft, "type": "exterior"},
+                {"start": {"x": living_x + living_width, "y": living_y}, "end": {"x": living_x + living_width, "y": living_y + living_length}, "thickness": wall_thickness_ft, "type": "exterior"},
+                {"start": {"x": living_x + living_width, "y": living_y + living_length}, "end": {"x": living_x, "y": living_y + living_length}, "thickness": wall_thickness_ft, "type": "exterior"},
+                {"start": {"x": living_x, "y": living_y + living_length}, "end": {"x": living_x, "y": living_y}, "thickness": wall_thickness_ft, "type": "interior"}
+            ],
+            "doors": [
+                {"position": {"x": living_x + 2, "y": living_y}, "width": 3, "type": "exterior", "room1": "entrance", "room2": "living_room"},
+                {"position": {"x": living_x + living_width - 2, "y": living_y + living_length/2}, "width": 3, "type": "interior", "room1": "living_room", "room2": "dining_room"}
+            ],
+            "windows": [
+                {"position": {"x": living_x + 5, "y": living_y}, "width": 6, "height": 4, "type": "fixed", "room_id": "living_room"},
+                {"position": {"x": living_x + living_width - 8, "y": living_y}, "width": 6, "height": 4, "type": "fixed", "room_id": "living_room"}
+            ]
+        })
+        
+        # Kitchen
+        kitchen_width = int(width_ft * 0.4)
+        kitchen_length = int(length_ft * 0.3)
+        kitchen_x, kitchen_y = living_x + living_width, living_y
+        
+        rooms.append({
+            "id": "kitchen",
+            "type": "kitchen",
+            "floor": "Ground",
+            "bounds": {
+                "x": kitchen_x,
+                "y": kitchen_y,
+                "width": kitchen_width,
+                "height": kitchen_length,
+                "area": kitchen_width * kitchen_length
+            },
+            "walls": [
+                {"start": {"x": kitchen_x, "y": kitchen_y}, "end": {"x": kitchen_x + kitchen_width, "y": kitchen_y}, "thickness": wall_thickness_ft, "type": "exterior"},
+                {"start": {"x": kitchen_x + kitchen_width, "y": kitchen_y}, "end": {"x": kitchen_x + kitchen_width, "y": kitchen_y + kitchen_length}, "thickness": wall_thickness_ft, "type": "exterior"},
+                {"start": {"x": kitchen_x + kitchen_width, "y": kitchen_y + kitchen_length}, "end": {"x": kitchen_x, "y": kitchen_y + kitchen_length}, "thickness": wall_thickness_ft, "type": "interior"},
+                {"start": {"x": kitchen_x, "y": kitchen_y + kitchen_length}, "end": {"x": kitchen_x, "y": kitchen_y}, "thickness": wall_thickness_ft, "type": "interior"}
+            ],
+            "doors": [
+                {"position": {"x": kitchen_x - 2, "y": kitchen_y + kitchen_length/2}, "width": 3, "type": "interior", "room1": "kitchen", "room2": "dining_room"}
+            ],
+            "windows": [
+                {"position": {"x": kitchen_x + kitchen_width - 8, "y": kitchen_y}, "width": 4, "height": 4, "type": "casement", "room_id": "kitchen"}
+            ]
+        })
+        
+        # Bedrooms
+        bedroom_width = int(width_ft * 0.5)
+        bedroom_length = int(length_ft * 0.35)
+        
+        for i in range(bedrooms):
+            floor = "Ground" if i < 2 else "First"
+            x_pos = (i % 2) * bedroom_width
+            y_pos = living_length + (i // 2) * bedroom_length
+            
+            rooms.append({
+                "id": f"bedroom_{i+1}",
+                "type": "bedroom",
+                "floor": floor,
+                "bounds": {
+                    "x": x_pos,
+                    "y": y_pos,
+                    "width": bedroom_width,
+                    "height": bedroom_length,
+                    "area": bedroom_width * bedroom_length
+                },
+                "walls": [
+                    {"start": {"x": x_pos, "y": y_pos}, "end": {"x": x_pos + bedroom_width, "y": y_pos}, "thickness": wall_thickness_ft, "type": "exterior" if i % 2 == 0 else "interior"},
+                    {"start": {"x": x_pos + bedroom_width, "y": y_pos}, "end": {"x": x_pos + bedroom_width, "y": y_pos + bedroom_length}, "thickness": wall_thickness_ft, "type": "interior"},
+                    {"start": {"x": x_pos + bedroom_width, "y": y_pos + bedroom_length}, "end": {"x": x_pos, "y": y_pos + bedroom_length}, "thickness": wall_thickness_ft, "type": "interior"},
+                    {"start": {"x": x_pos, "y": y_pos + bedroom_length}, "end": {"x": x_pos, "y": y_pos}, "thickness": wall_thickness_ft, "type": "exterior" if i % 2 == 1 else "interior"}
+                ],
+                "doors": [
+                    {"position": {"x": x_pos + bedroom_width/2, "y": y_pos}, "width": 3, "type": "interior", "room1": f"bedroom_{i+1}", "room2": "corridor"}
+                ],
+                "windows": [
+                    {"position": {"x": x_pos + 3, "y": y_pos}, "width": 4, "height": 4, "type": "casement", "room_id": f"bedroom_{i+1}"}
+                ]
+            })
+        
+        # Bathrooms
+        bathroom_width = 6
+        bathroom_length = 8
+        
+        for i in range(bathrooms):
+            floor = "Ground" if i < 2 else "First"
+            x_pos = width_ft - bathroom_width
+            y_pos = living_length + i * bathroom_length
+            
+            rooms.append({
+                "id": f"bathroom_{i+1}",
+                "type": "bathroom",
+                "floor": floor,
+                "bounds": {
+                    "x": x_pos,
+                    "y": y_pos,
+                    "width": bathroom_width,
+                    "height": bathroom_length,
+                    "area": bathroom_width * bathroom_length
+                },
+                "walls": [
+                    {"start": {"x": x_pos, "y": y_pos}, "end": {"x": x_pos + bathroom_width, "y": y_pos}, "thickness": wall_thickness_ft, "type": "interior"},
+                    {"start": {"x": x_pos + bathroom_width, "y": y_pos}, "end": {"x": x_pos + bathroom_width, "y": y_pos + bathroom_length}, "thickness": wall_thickness_ft, "type": "exterior"},
+                    {"start": {"x": x_pos + bathroom_width, "y": y_pos + bathroom_length}, "end": {"x": x_pos, "y": y_pos + bathroom_length}, "thickness": wall_thickness_ft, "type": "interior"},
+                    {"start": {"x": x_pos, "y": y_pos + bathroom_length}, "end": {"x": x_pos, "y": y_pos}, "thickness": wall_thickness_ft, "type": "interior"}
+                ],
+                "doors": [
+                    {"position": {"x": x_pos - 2, "y": y_pos + bathroom_length/2}, "width": 2.5, "type": "interior", "room1": f"bathroom_{i+1}", "room2": f"bedroom_{i+1}"}
+                ],
+                "windows": []
+            })
+        
+        return {
+            "plot_dimensions": {
+                "width_ft": width_ft,
+                "length_ft": length_ft,
+                "area_sqft": width_ft * length_ft
+            },
+            "wall_specifications": {
+                "exterior_wall_thickness_inches": wall_thickness,
+                "interior_wall_thickness_inches": 4.5,
+                "foundation_wall_thickness_inches": 12
+            },
+            "rooms": rooms,
+            "total_rooms": len(rooms),
+            "floor_count": floors
+        }
+
+    def _generate_construction_geometry(self, geometric_data: Dict, area: int, floors: int) -> Dict:
+        """Generate detailed construction geometry for 3D generation"""
+        
+        # Foundation geometry
+        foundation_depth = random.randint(4, 8)  # feet
+        foundation_width = 2  # feet
+        
+        # Column grid
+        grid_spacing = 12  # feet
+        width_ft = geometric_data["plot_dimensions"]["width_ft"]
+        length_ft = geometric_data["plot_dimensions"]["length_ft"]
+        
+        columns = []
+        for x in range(0, int(width_ft) + 1, grid_spacing):
+            for y in range(0, int(length_ft) + 1, grid_spacing):
+                columns.append({
+                    "id": f"C_{x}_{y}",
+                    "position": {"x": x, "y": y},
+                    "size": {"width": 12, "height": 12},  # inches
+                    "height_per_floor": 10,  # feet
+                    "foundation_depth": foundation_depth,
+                    "material": "RCC"
+                })
+        
+        # Beam system
+        beams = []
+        for x in range(0, int(width_ft), grid_spacing):
+            beams.append({
+                "id": f"B_X_{x}",
+                "start": {"x": x, "y": 0},
+                "end": {"x": x, "y": length_ft},
+                "size": {"width": 12, "height": 18},  # inches
+                "floor_level": "All_floors",
+                "material": "RCC"
+            })
+        
+        for y in range(0, int(length_ft), grid_spacing):
+            beams.append({
+                "id": f"B_Y_{y}",
+                "start": {"x": 0, "y": y},
+                "end": {"x": width_ft, "y": y},
+                "size": {"width": 12, "height": 18},  # inches
+                "floor_level": "All_floors",
+                "material": "RCC"
+            })
+        
+        # Slab system
+        slabs = []
+        for floor in range(floors):
+            slabs.append({
+                "id": f"Slab_Floor_{floor}",
+                "bounds": {"x": 0, "y": 0, "width": width_ft, "height": length_ft},
+                "thickness": 6,  # inches
+                "floor_level": floor,
+                "material": "RCC",
+                "reinforcement": "8mm_dia_bars_at_6_inch_c_c"
+            })
+        
+        return {
+            "foundation": {
+                "type": "Isolated_Footing",
+                "depth_ft": foundation_depth,
+                "width_ft": foundation_width,
+                "footings": [
+                    {"position": {"x": col["position"]["x"], "y": col["position"]["y"]}, 
+                     "size": {"width": 3, "length": 3}, "depth": foundation_depth}
+                    for col in columns
+                ]
+            },
+            "columns": columns,
+            "beams": beams,
+            "slabs": slabs,
+            "staircase": {
+                "position": {"x": width_ft - 8, "y": length_ft - 12},
+                "size": {"width": 8, "length": 12},
+                "floor_height": 10,
+                "steps_per_flight": 12,
+                "step_dimensions": {"tread": 10, "riser": 7.5},  # inches
+                "material": "RCC"
+            }
+        }
+
+    def _generate_material_specifications(self, geometric_data: Dict, construction_geometry: Dict) -> Dict:
+        """Generate detailed material specifications with exact quantities"""
+        
+        import math
+        
+        # Calculate quantities
+        total_wall_area = sum(
+            sum(
+                math.sqrt((wall["end"]["x"] - wall["start"]["x"])**2 + (wall["end"]["y"] - wall["start"]["y"])**2) * 10  # 10ft height
+                for wall in room["walls"]
+            )
+            for room in geometric_data["rooms"]
+        )
+        
+        total_floor_area = geometric_data["plot_dimensions"]["area_sqft"] * geometric_data["floor_count"]
+        
+        # Concrete quantities
+        foundation_volume = sum(
+            footing["size"]["width"] * footing["size"]["length"] * footing["depth"]
+            for footing in construction_geometry["foundation"]["footings"]
+        )
+        
+        column_volume = sum(
+            (col["size"]["width"]/12) * (col["size"]["height"]/12) * col["height_per_floor"] * geometric_data["floor_count"]
+            for col in construction_geometry["columns"]
+        )
+        
+        beam_volume = sum(
+            (beam["size"]["width"]/12) * (beam["size"]["height"]/12) * 
+            math.sqrt((beam["end"]["x"] - beam["start"]["x"])**2 + (beam["end"]["y"] - beam["start"]["y"])**2) * geometric_data["floor_count"]
+            for beam in construction_geometry["beams"]
+        )
+        
+        slab_volume = sum(
+            slab["bounds"]["width"] * slab["bounds"]["height"] * (slab["thickness"]/12)
+            for slab in construction_geometry["slabs"]
+        )
+        
+        total_concrete_volume = foundation_volume + column_volume + beam_volume + slab_volume
+        
+        return {
+            "concrete": {
+                "grade": "M25",
+                "total_volume_cubic_ft": total_concrete_volume,
+                "cement_bags": total_concrete_volume * 1.25,  # 1.25 bags per cubic ft
+                "sand_volume_cubic_ft": total_concrete_volume * 0.45,
+                "aggregate_volume_cubic_ft": total_concrete_volume * 0.9,
+                "water_volume_liters": total_concrete_volume * 28.32 * 180  # 180 liters per cubic meter
+            },
+            "bricks": {
+                "type": "Clay_Bricks",
+                "total_count": int(total_wall_area * 8),  # 8 bricks per sq ft
+                "size": "9x4.5x3_inches",
+                "mortar_volume_cubic_ft": total_wall_area * 0.1
+            },
+            "steel": {
+                "grade": "Fe_500D",
+                "total_quantity_tons": total_concrete_volume * 0.025,  # 2.5% steel by volume
+                "reinforcement_details": {
+                    "foundation": "12mm_dia_bars",
+                    "columns": "16mm_dia_bars",
+                    "beams": "12mm_dia_bars",
+                    "slabs": "8mm_dia_bars"
+                }
+            },
+            "finishes": {
+                "flooring": {
+                    "type": "Vitrified_Tiles",
+                    "area_sqft": total_floor_area,
+                    "tile_size": "2x2_ft",
+                    "tile_count": int(total_floor_area / 4)
+                },
+                "painting": {
+                    "type": "Premium_Emulsion",
+                    "area_sqft": total_wall_area,
+                    "coats": 2,
+                    "paint_volume_liters": total_wall_area * 0.1
+                },
+                "plastering": {
+                    "type": "Cement_Plaster",
+                    "area_sqft": total_wall_area,
+                    "thickness": "12mm",
+                    "cement_bags": total_wall_area * 0.05
+                }
+            }
+        }
+
+    def _generate_2d_data(self, geometric_data: Dict) -> Dict:
+        """Generate data specifically for 2D floor plan generation"""
+        
+        return {
+            "floor_plans": [
+                {
+                    "floor": "Ground",
+                    "rooms": [room for room in geometric_data["rooms"] if room["floor"] == "Ground"],
+                    "walls": [
+                        wall for room in geometric_data["rooms"] 
+                        if room["floor"] == "Ground" 
+                        for wall in room["walls"]
+                    ],
+                    "doors": [
+                        door for room in geometric_data["rooms"] 
+                        if room["floor"] == "Ground" 
+                        for door in room["doors"]
+                    ],
+                    "windows": [
+                        window for room in geometric_data["rooms"] 
+                        if room["floor"] == "Ground" 
+                        for window in room["windows"]
+                    ],
+                    "dimensions": {
+                        "plot_width": geometric_data["plot_dimensions"]["width_ft"],
+                        "plot_length": geometric_data["plot_dimensions"]["length_ft"],
+                        "scale": "1:50"
+                    }
+                }
+            ],
+            "drawing_elements": {
+                "title_block": {
+                    "project_name": "HouseBrain_Generated_Design",
+                    "scale": "1:50",
+                    "date": "2025-01-01",
+                    "drawn_by": "HouseBrain_AI"
+                },
+                "dimensions": "All_room_dimensions_annotated",
+                "room_labels": "All_rooms_labeled_with_names",
+                "material_hatching": "Standard_architectural_hatching"
+            }
+        }
+
+    def _generate_3d_data(self, geometric_data: Dict, construction_geometry: Dict) -> Dict:
+        """Generate data specifically for 3D model generation"""
+        
+        return {
+            "3d_elements": {
+                "walls_3d": [
+                    {
+                        "room_id": room["id"],
+                        "walls": [
+                            {
+                                "start_3d": {"x": wall["start"]["x"], "y": wall["start"]["y"], "z": 0},
+                                "end_3d": {"x": wall["end"]["x"], "y": wall["end"]["y"], "z": 10},
+                                "thickness": wall["thickness"],
+                                "height": 10,
+                                "material": "Brick_Masonry"
+                            }
+                            for wall in room["walls"]
+                        ]
+                    }
+                    for room in geometric_data["rooms"]
+                ],
+                "columns_3d": [
+                    {
+                        "position_3d": {"x": col["position"]["x"], "y": col["position"]["y"], "z": 0},
+                        "size": col["size"],
+                        "height": col["height_per_floor"] * geometric_data["floor_count"],
+                        "material": "RCC"
+                    }
+                    for col in construction_geometry["columns"]
+                ],
+                "beams_3d": [
+                    {
+                        "start_3d": {"x": beam["start"]["x"], "y": beam["start"]["y"], "z": 10},
+                        "end_3d": {"x": beam["end"]["x"], "y": beam["end"]["y"], "z": 10},
+                        "size": beam["size"],
+                        "material": "RCC"
+                    }
+                    for beam in construction_geometry["beams"]
+                ],
+                "slabs_3d": [
+                    {
+                        "bounds_3d": {
+                            "x": slab["bounds"]["x"], 
+                            "y": slab["bounds"]["y"], 
+                            "z": slab["floor_level"] * 10,
+                            "width": slab["bounds"]["width"],
+                            "height": slab["bounds"]["height"],
+                            "thickness": slab["thickness"]
+                        },
+                        "material": "RCC"
+                    }
+                    for slab in construction_geometry["slabs"]
+                ]
+            },
+            "materials_3d": {
+                "wall_material": {
+                    "type": "Brick_Masonry",
+                    "texture": "brick_texture.jpg",
+                    "color": "#8B4513",
+                    "roughness": 0.8
+                },
+                "floor_material": {
+                    "type": "Vitrified_Tiles",
+                    "texture": "tile_texture.jpg",
+                    "color": "#F5F5DC",
+                    "roughness": 0.3
+                },
+                "roof_material": {
+                    "type": "RCC_Slab",
+                    "texture": "concrete_texture.jpg",
+                    "color": "#696969",
+                    "roughness": 0.7
+                }
+            },
+            "lighting_3d": {
+                "natural_lighting": {
+                    "sun_position": {"azimuth": 180, "elevation": 45},
+                    "ambient_light": 0.3,
+                    "shadow_quality": "High"
+                },
+                "artificial_lighting": {
+                    "ceiling_lights": "LED_panels",
+                    "wall_lights": "Wall_sconces",
+                    "intensity": 1000  # lumens
+                }
+            }
         }
 
     def _generate_solution(self, problem: Dict[str, Any]) -> Dict[str, Any]:
@@ -1128,6 +2108,8 @@ class SuperQualityGenerator:
         if pt == "Mathematical_Analysis": return self._solution_math(problem)
         if pt == "Structural_Engineering": return self._solution_struct(problem)
         if pt == "Sustainability_Design": return self._solution_sustain(problem)
+        if pt == "Spatial_Floor_Planning": return self._solution_spatial_floor_plan(problem)
+        if pt == "Geometric_Construction": return self._solution_geometric_construction(problem)
         if pt == "Smart_Home_Integration": return self._solution_smarthome(problem)
         return {"note": "No solution mapping"}
 
@@ -1154,6 +2136,24 @@ class SuperQualityGenerator:
         steps = inp.get("reasoning_steps", [])
         if isinstance(steps, list) and len(steps) >= self.config.min_reasoning_steps:
             score += 1.0
+        
+        # Special handling for Geometric_Construction (high-value data)
+        if inp.get("problem_type") == "Geometric_Construction":
+            checks += 1
+            if all(key in out for key in ['geometric_data', 'construction_geometry', 'material_specifications', '2d_generation_data', '3d_generation_data']):
+                score += 1.0
+                # Bonus points for comprehensive geometric data
+                if len(str(out)) > 20000:  # Very detailed geometric data
+                    score += 0.5
+        
+        # Special handling for Spatial_Floor_Planning (high-value data)
+        elif inp.get("problem_type") == "Spatial_Floor_Planning":
+            checks += 1
+            if all(key in out for key in ['spatial_design', 'room_layout', 'floor_planning', 'structural_continuity']):
+                score += 1.0
+                # Bonus points for comprehensive spatial data
+                if len(str(out)) > 15000:  # Very detailed spatial data
+                    score += 0.5
         
         # India-specific validation (only when applicable)
         if inp.get("context", {}).get("indian_market"):

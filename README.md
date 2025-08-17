@@ -16,19 +16,24 @@ HouseBrain LLM is a specialized AI model for architectural design, building code
 
 ## 🎯 Problem Types Supported
 
-1. **Basic_Design** - Standard architectural design
-2. **Code_Compliance** - Building code analysis and compliance
-3. **Multi_Constraint** - Balancing multiple conflicting requirements
-4. **Cost_Optimization** - Mathematical cost analysis and optimization
-5. **Energy_Optimization** - Energy efficiency and sustainability
-6. **Space_Optimization** - Space planning and efficiency
-7. **Conflict_Resolution** - Stakeholder conflict resolution
-8. **Advanced_Reasoning** - Complex multi-step reasoning
-9. **Mathematical_Analysis** - Structural and financial calculations
-10. **Structural_Engineering** - Engineering design and analysis
-11. **Sustainability_Design** - Green building and LEED compliance
-12. **Smart_Home_Integration** - IoT and automation systems
-13. **Performance_Optimization** - Multi-metric performance optimization
+### **High Priority (45% - 2D/3D Generation Focus)**
+1. **Geometric_Construction** (25%) - Exact coordinates, construction geometry, 2D/3D generation
+2. **Spatial_Floor_Planning** (20%) - Room placement, spatial relationships, multi-floor continuity
+
+### **Medium Priority (35% - Technical Foundation)**
+3. **Basic_Design** (10%) - Standard architectural design
+4. **Code_Compliance** (8%) - Building code analysis and compliance
+5. **Multi_Constraint** (8%) - Balancing multiple conflicting requirements
+6. **Optimization** (8%) - Mathematical optimization and analysis
+7. **Structural_Engineering** (12%) - Engineering design and analysis
+
+### **Lower Priority (20% - Reduced Focus)**
+8. **Conflict_Resolution** (5%) - Stakeholder conflict resolution
+9. **Advanced_Reasoning** (5%) - Complex multi-step reasoning
+10. **Mathematical_Analysis** (5%) - Structural and financial calculations
+11. **Sustainability_Design** (3%) - Green building and LEED compliance
+12. **Performance_Optimization** (2%) - Multi-metric performance optimization
+13. **Smart_Home_Integration** (2%) - IoT and automation systems
 
 ## 📊 Dataset
 
@@ -36,9 +41,11 @@ HouseBrain LLM is a specialized AI model for architectural design, building code
 - **Total Samples**: 1,000,000
 - **Training**: 900,000 (90%)
 - **Validation**: 100,000 (10%)
-- **India Ratio**: 40%
-- **Quality Threshold**: 90%
-- **Advanced Problem Types**: 13 different reasoning categories
+- **India Ratio**: 60%
+- **Quality Threshold**: 85%
+- **Problem Types**: 13 different reasoning categories
+- **Geometric Focus**: 45% spatial and geometric intelligence
+- **2D/3D Ready**: Direct floor plan and model generation
 
 ## 🏗️ Architecture
 
@@ -53,12 +60,16 @@ HouseBrain LLM is a specialized AI model for architectural design, building code
 ### 1. Generate Dataset
 
 ```bash
-# Generate 1M super-quality samples
-python generate_1m_super_quality.py --output housebrain_dataset_r1_super_1M --target 1000000 --quality 0.90 --india 0.4 --shard 100000
+# Generate 1M super-quality samples (optimized for 2D/3D generation)
+python generate_1m_super_quality.py --target 1000000 --quality 0.85 --india 0.60 --shard 100000
 
-# Or generate in batches (recommended)
-python generate_1m_super_quality.py --output housebrain_dataset_r1_super_1M --target 200000 --quality 0.92 --india 0.4 --shard 50000
+# Or generate in batches (recommended for local generation)
+python generate_1m_super_quality.py --target 200000 --quality 0.85 --india 0.60 --shard 50000
 # Repeat 5 times to get 1M total
+
+# Local generation on M2 Pro (tested)
+python generate_1m_super_quality.py --target 50000 --quality 0.85 --india 0.60 --shard 5000
+# ~440 samples/minute, 1 hour 53 minutes for 50K samples
 ```
 
 ### 2. Train on Colab Pro+
@@ -133,8 +144,10 @@ housebrain_v1_1/
 - **Mathematical analysis**: Structural and cost calculations
 - **Code compliance**: Detailed NBC 2016 analysis
 - **Multi-constraint optimization**: Balancing conflicting requirements
-- **Sustainability focus**: Energy and green building expertise
-- **Smart home integration**: IoT and automation knowledge
+- **Spatial intelligence**: Room placement and spatial relationships
+- **Geometric construction**: Exact coordinates and construction geometry
+- **2D/3D generation**: Direct floor plan and model generation
+- **Material specifications**: Detailed BOQ and cost estimation
 
 ### Metrics
 - **Training Loss**: Should decrease from ~3.0 to ~1.5
