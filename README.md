@@ -41,10 +41,10 @@ HouseBrain LLM is a revolutionary AI system that generates comprehensive archite
 ## 🔧 Technical Specifications
 
 ### Model Architecture
-- **Base Model**: DeepSeek-R1-Distill-Qwen-7B
+- **Base Model**: DeepSeek-Coder-6.7B-Base (stable, well-supported)
 - **Training Method**: LoRA (Low-Rank Adaptation)
-- **Sequence Length**: 4096 tokens
-- **Precision**: BF16 (Brain Float 16)
+- **Sequence Length**: 2048 tokens
+- **Precision**: FP16/FP32 (auto-detected)
 
 ### Dataset Features
 - **India Ratio**: 60% India-specific content

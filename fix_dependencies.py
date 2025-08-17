@@ -27,11 +27,11 @@ def fix_dependencies():
         # PyTorch ecosystem
         subprocess.run([sys.executable, "-m", "pip", "install", "torch==2.1.0", "torchvision==0.16.0", "torchaudio==2.1.0"], check=True)
         
-        # Transformers ecosystem
-        subprocess.run([sys.executable, "-m", "pip", "install", "transformers==4.36.0"], check=True)
-        subprocess.run([sys.executable, "-m", "pip", "install", "accelerate==0.25.0"], check=True)
-        subprocess.run([sys.executable, "-m", "pip", "install", "peft==0.7.0"], check=True)
-        subprocess.run([sys.executable, "-m", "pip", "install", "datasets==2.15.0"], check=True)
+        # Transformers ecosystem - Updated for DeepSeek R1 compatibility
+        subprocess.run([sys.executable, "-m", "pip", "install", "transformers==4.41.0"], check=True)
+        subprocess.run([sys.executable, "-m", "pip", "install", "accelerate==0.27.0"], check=True)
+        subprocess.run([sys.executable, "-m", "pip", "install", "peft==0.8.0"], check=True)
+        subprocess.run([sys.executable, "-m", "pip", "install", "datasets==2.16.0"], check=True)
         
         # NumPy compatibility
         subprocess.run([sys.executable, "-m", "pip", "install", "numpy==1.24.3"], check=True)

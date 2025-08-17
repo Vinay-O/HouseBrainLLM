@@ -25,7 +25,7 @@ from datetime import datetime
 
 # Configuration for 10K Test
 class TestConfig:
-    MODEL_NAME = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+    MODEL_NAME = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"  # Original choice with reasoning
     DATASET_PATH = "housebrain_dataset_r1_super_10k_aug"
     
     # Test-optimized parameters

@@ -1,51 +1,50 @@
 #!/usr/bin/env python3
 """
-HouseBrain 10K Dataset Generator for Colab
-Generates 10K super-quality samples directly in Colab
+HouseBrain Dataset Generator for Colab
+Generates datasets of various sizes directly in Colab
 
-Usage: python colab_generate_10k.py
+Usage: 
+  python colab_generate_10k.py                    # 10K samples
+  python colab_generate_10k.py --samples 100000   # 100K samples
 """
 
 import os
-import json
-import random
+import sys
+import argparse
 from pathlib import Path
-from datetime import datetime
-import time
 
-# Import the generator from the main script
-from generate_1m_super_quality import SuperQualityGenerator, SuperQualityConfig
+# Add src to path
+sys.path.insert(0, str(Path(__file__).parent / "src"))
 
-def generate_10k_dataset():
-    """Generate 10K dataset for Colab training"""
-    print("🏠 Generating 10K HouseBrain Dataset for Colab...")
+# Use standard generator
+from generate_dataset import generate_dataset, DatasetConfig
+
+def main():
+    """Main generation function"""
+    parser = argparse.ArgumentParser(description="Generate HouseBrain dataset for Colab")
+    parser.add_argument("--samples", type=int, default=10000, help="Number of samples to generate")
+    parser.add_argument("--output", type=str, default="housebrain_dataset_colab", help="Output directory")
+    parser.add_argument("--fast", action="store_true", help="Fast mode (skip layout solving)")
     
-    # Configuration for 10K generation
-    config = SuperQualityConfig()
-    config.target_samples = 10000
-    config.train_ratio = 0.9  # 9K train, 1K validation
+    args = parser.parse_args()
     
-    # Create generator
-    generator = SuperQualityGenerator(config)
+    print(f"🏠 Generating {args.samples} HouseBrain samples for Colab...")
+    
+    # Create configuration
+    config = DatasetConfig(
+        samples=args.samples,
+        train_ratio=0.9,  # 90% train, 10% validation
+        output_dir=args.output,
+        zip_output=False,  # Don't zip in Colab
+        fast_mode=args.fast
+    )
     
     # Generate dataset
-    output_dir = "housebrain_dataset_r1_super_10k_aug"
-    print(f"📊 Generating {config.target_samples} samples...")
-    generator.generate(output_dir)
+    generate_dataset(config)
     
-    # Augment the dataset
-    print("🔧 Augmenting dataset with geometric metadata...")
-    os.system(f"python augment_dataset_v1_1.py --input {output_dir} --output {output_dir} --workers 4")
-    
-    print("✅ 10K dataset generated successfully!")
-    print(f"📁 Output directory: {output_dir}")
-    
-    # Show dataset info
-    dataset_info_file = Path(output_dir) / "dataset_info.json"
-    if dataset_info_file.exists():
-        with open(dataset_info_file, 'r') as f:
-            info = json.load(f)
-        print(f"📊 Dataset info: {info}")
+    print(f"✅ {args.samples} dataset generated successfully!")
+    print(f"📁 Output directory: {args.output}")
+    print(f"🎯 Ready for training!")
 
 if __name__ == "__main__":
-    generate_10k_dataset()
+    main()
