@@ -26,7 +26,7 @@ class AdvancedDatasetConfig:
     target_samples: int = 1_000_000
     quality_threshold: float = 0.90
     train_ratio: float = 0.90
-    shard_size: int = 100_000
+    shard_size: int = 50_000  # Align with 1M super dataset shards
     min_reasoning_steps: int = 8
     min_output_chars: int = 800
     max_output_chars: int = 20_000
@@ -35,24 +35,22 @@ class AdvancedDatasetConfig:
     output_dir: str = "housebrain_advanced_dataset"
     zip_output: bool = False
 
-    # Problem type distribution (matching existing dataset)
-    complexity_levels: List[str] = field(default_factory=lambda: [
-        # High Priority (74% total)
-        "Geometric_Construction", "Geometric_Construction", "Geometric_Construction", "Geometric_Construction", "Geometric_Construction",  # 25%
-        "Spatial_Floor_Planning", "Spatial_Floor_Planning", "Spatial_Floor_Planning", "Spatial_Floor_Planning",  # 20%
-        "Structural_Engineering", "Structural_Engineering", "Structural_Engineering",  # 15%
-        "Cost_Engineering", "Cost_Engineering", "Cost_Engineering", "Cost_Engineering",  # 14%
-        
-        # Medium Priority (23% total)
-        "Energy_Engineering", "Energy_Engineering",  # 8%
-        "MEP_Design", "MEP_Design",  # 7%
-        "Interior_Design",  # 5%
-        "Landscape_Design",  # 3%
-        
-        # Lower Priority (3% total)
-        "Sustainability_Design",  # 3%
-        "Smart_Home_Integration"  # 2%
-    ])
+    # Weighted distribution to match 74/23/3 split exactly
+    # High (74%): GC 25, SFP 20, Structural 15, Cost 14
+    # Medium (23%): Energy 8, MEP 7, Interior 5, Landscape 3
+    # Lower (3%): Sustainability 2, Smart Home 1
+    problem_type_weights: Dict[str, float] = field(default_factory=lambda: {
+        "Geometric_Construction": 0.25,
+        "Spatial_Floor_Planning": 0.20,
+        "Structural_Engineering": 0.15,
+        "Cost_Engineering": 0.14,
+        "Energy_Engineering": 0.08,
+        "MEP_Design": 0.07,
+        "Interior_Design": 0.05,
+        "Landscape_Design": 0.03,
+        "Sustainability_Design": 0.02,
+        "Smart_Home_Integration": 0.01,
+    })
 
 
 # Advanced problem types with detailed reasoning
@@ -357,9 +355,52 @@ def generate_advanced_output(problem_type: str, input_data: Dict[str, Any]) -> D
 
 
 def generate_geometric_data(input_data: Dict[str, Any]) -> Dict[str, Any]:
-    """Generate geometric construction data."""
+    """Generate richer multi-floor geometric construction data."""
     plot = input_data["plot_details"]
-    
+    floors = max(1, int(input_data.get("requirements", {}).get("floors", 1)))
+
+    def make_room(room_id: str, floor_name: str, x: int, y: int, w: int, h: int, exterior: bool) -> Dict[str, Any]:
+        walls = []
+        # four walls rectangle
+        walls.append({"start": {"x": x, "y": y}, "end": {"x": x + w, "y": y}, "thickness": 0.75, "type": "exterior" if exterior else "interior"})
+        walls.append({"start": {"x": x + w, "y": y}, "end": {"x": x + w, "y": y + h}, "thickness": 0.75, "type": "exterior" if exterior else "interior"})
+        walls.append({"start": {"x": x + w, "y": y + h}, "end": {"x": x, "y": y + h}, "thickness": 0.75, "type": "exterior" if exterior else "interior"})
+        walls.append({"start": {"x": x, "y": y + h}, "end": {"x": x, "y": y}, "thickness": 0.75, "type": "exterior" if exterior else "interior"})
+        return {
+            "id": room_id,
+            "type": room_id,
+            "floor": floor_name,
+            "bounds": {"x": x, "y": y, "width": w, "height": h, "area": w * h},
+            "walls": walls,
+            "doors": [{"x": x + w // 2, "y": y, "width": 3}],
+            "windows": [{"x": x + w - 2, "y": y + h // 2, "width": 4}],
+        }
+
+    rooms: List[Dict[str, Any]] = []
+    # generate 6–10 rooms per floor
+    for floor_idx in range(floors):
+        floor_name = "Ground" if floor_idx == 0 else f"Level_{floor_idx+1}"
+        num_rooms = random.randint(6, 10)
+        cursor_x, cursor_y = 0, 0
+        cell_w = max(10, plot["width_ft"] // 6)
+        cell_h = max(10, plot["length_ft"] // 6)
+        for r in range(num_rooms):
+            w = random.randint(cell_w // 2, cell_w)
+            h = random.randint(cell_h // 2, cell_h)
+            rooms.append(make_room(
+                room_id=random.choice(["living_room","kitchen","bedroom","bathroom","dining","study","utility","guest_room"]),
+                floor_name=floor_name,
+                x=cursor_x,
+                y=cursor_y,
+                w=w,
+                h=h,
+                exterior=(cursor_x == 0 or cursor_y == 0)
+            ))
+            cursor_x += w + 2
+            if cursor_x + w > plot["width_ft"]:
+                cursor_x = 0
+                cursor_y += h + 2
+
     return {
         "plot_dimensions": {
             "width_ft": plot["width_ft"],
@@ -371,18 +412,7 @@ def generate_geometric_data(input_data: Dict[str, Any]) -> Dict[str, Any]:
             "interior_wall_thickness_inches": 4.5,
             "foundation_wall_thickness_inches": 12
         },
-        "rooms": [
-            {
-                "id": "living_room",
-                "type": "living_room",
-                "floor": "Ground",
-                "bounds": {"x": 0, "y": 0, "width": 48, "height": 24, "area": 1152},
-                "walls": [
-                    {"start": {"x": 0, "y": 0}, "end": {"x": 48, "y": 0}, "thickness": 0.75, "type": "exterior"},
-                    {"start": {"x": 48, "y": 0}, "end": {"x": 48, "y": 24}, "thickness": 0.75, "type": "exterior"}
-                ]
-            }
-        ],
+        "rooms": rooms,
         "structural_grid": {
             "grid_spacing_ft": 20,
             "column_positions": [[0, 0], [20, 0], [40, 0], [0, 20], [20, 20], [40, 20]],
@@ -552,8 +582,10 @@ def calculate_quality_score(sample: Dict[str, Any]) -> float:
 
 def generate_advanced_sample(config: AdvancedDatasetConfig) -> Optional[Dict[str, Any]]:
     """Generate a single advanced training sample."""
-    # Select problem type
-    problem_type = random.choice(config.complexity_levels)
+    # Select problem type using weighted distribution 74/23/3
+    problem_types = list(config.problem_type_weights.keys())
+    weights = list(config.problem_type_weights.values())
+    problem_type = random.choices(problem_types, weights=weights, k=1)[0]
     
     # Generate input
     input_data = generate_advanced_input(problem_type)
@@ -567,6 +599,11 @@ def generate_advanced_sample(config: AdvancedDatasetConfig) -> Optional[Dict[str
         "output": output_data
     }
     
+    # Enforce hard minimum output length
+    output_len = len(json.dumps(output_data))
+    if output_len < config.min_output_chars:
+        return None
+
     # Calculate quality score
     quality_score = calculate_quality_score(sample)
     
@@ -600,6 +637,7 @@ def generate_advanced_dataset(config: AdvancedDatasetConfig) -> None:
     
     # Generate samples with progress tracking
     all_samples = []
+    seen_hashes = set()
     generated = 0
     accepted = 0
     
@@ -609,6 +647,11 @@ def generate_advanced_dataset(config: AdvancedDatasetConfig) -> None:
             generated += 1
             
             if sample is not None:
+                # Deduplicate using hash of input section
+                sample_hash = hashlib.sha256(json.dumps(sample["input"], sort_keys=True).encode("utf-8")).hexdigest()
+                if sample_hash in seen_hashes:
+                    continue
+                seen_hashes.add(sample_hash)
                 all_samples.append(sample)
                 accepted += 1
                 pbar.update(1)
@@ -653,8 +696,8 @@ def generate_advanced_dataset(config: AdvancedDatasetConfig) -> None:
     
     # Save dataset info
     dataset_info = {
-        "name": "housebrain_advanced_dataset",
-        "version": "Advanced_v1.0",
+        "name": "housebrain_dataset_r1_super_1M",
+        "version": "R1_Super_v1.0",
         "total_samples": len(all_samples),
         "train_ratio": config.train_ratio,
         "india_ratio": config.india_ratio,
