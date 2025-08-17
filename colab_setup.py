@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 HouseBrain Colab Setup Script
-Quick setup for training on Colab Pro+ with 1M dataset
+Quick setup for training on Colab Pro+ with 10K test or 1M full dataset
 """
 
 import os
@@ -47,20 +47,61 @@ def install_dependencies():
     
     print("✅ Dependencies installed successfully!")
 
+def find_dataset():
+    """Find available dataset files"""
+    dataset_files = []
+    
+    # Check for 10K test dataset
+    if Path("housebrain_dataset_r1_super_10k_aug.tar.gz").exists():
+        dataset_files.append("housebrain_dataset_r1_super_10k_aug.tar.gz")
+    
+    # Check for 1M full dataset
+    if Path("housebrain_dataset_r1_super_1M.tar.gz").exists():
+        dataset_files.append("housebrain_dataset_r1_super_1M.tar.gz")
+    
+    # Check for 1M augmented dataset
+    if Path("housebrain_dataset_r1_super_1M_aug_v1_1.tar.gz").exists():
+        dataset_files.append("housebrain_dataset_r1_super_1M_aug_v1_1.tar.gz")
+    
+    return dataset_files
+
 def extract_dataset():
     """Extract the dataset if tar.gz exists"""
-    if Path("housebrain_dataset_r1_super_1M.tar.gz").exists():
-        print("📁 Extracting dataset...")
-        subprocess.check_call(["tar", "-xzf", "housebrain_dataset_r1_super_1M.tar.gz"])
-        print("✅ Dataset extracted successfully!")
-        
-        # Check dataset structure
-        train_files = len(list(Path("housebrain_dataset_r1_super_1M/train").rglob("*.json")))
-        val_files = len(list(Path("housebrain_dataset_r1_super_1M/validation").rglob("*.json")))
-        print(f"📊 Train files: {train_files:,}")
-        print(f"📊 Validation files: {val_files:,}")
+    dataset_files = find_dataset()
+    
+    if not dataset_files:
+        print("⚠️ No dataset files found. Please upload one of:")
+        print("  - housebrain_dataset_r1_super_10k_aug.tar.gz (32MB - test)")
+        print("  - housebrain_dataset_r1_super_1M.tar.gz (2.9GB - full)")
+        print("  - housebrain_dataset_r1_super_1M_aug_v1_1.tar.gz (2.9GB - full augmented)")
+        return None
+    
+    # Use the first available dataset
+    dataset_file = dataset_files[0]
+    print(f"📁 Found dataset: {dataset_file}")
+    
+    # Determine dataset name from file
+    if "10k" in dataset_file:
+        dataset_name = "housebrain_dataset_r1_super_10k_aug"
+        print("🎯 Using 10K test dataset")
+    elif "aug_v1_1" in dataset_file:
+        dataset_name = "housebrain_dataset_r1_super_1M_aug_v1_1"
+        print("🎯 Using 1M augmented dataset (v1.1)")
     else:
-        print("⚠️ Dataset file not found. Please upload housebrain_dataset_r1_super_1M.tar.gz")
+        dataset_name = "housebrain_dataset_r1_super_1M"
+        print("🎯 Using 1M full dataset")
+    
+    print(f"📁 Extracting {dataset_file}...")
+    subprocess.check_call(["tar", "-xzf", dataset_file])
+    print("✅ Dataset extracted successfully!")
+    
+    # Check dataset structure
+    train_files = len(list(Path(f"{dataset_name}/train").rglob("*.json")))
+    val_files = len(list(Path(f"{dataset_name}/validation").rglob("*.json")))
+    print(f"📊 Train files: {train_files:,}")
+    print(f"📊 Validation files: {val_files:,}")
+    
+    return dataset_name
 
 def check_dataset_quality():
     """Check dataset quality and distribution"""
@@ -70,18 +111,55 @@ def check_dataset_quality():
         import json
         from collections import Counter
         
+        # Find the extracted dataset directory
+        possible_dirs = [
+            "housebrain_dataset_r1_super_10k_aug",
+            "housebrain_dataset_r1_super_1M_aug_v1_1", 
+            "housebrain_dataset_r1_super_1M"
+        ]
+        
+        dataset_dir = None
+        for dir_name in possible_dirs:
+            if Path(dir_name).exists():
+                dataset_dir = dir_name
+                break
+        
+        if not dataset_dir:
+            print("❌ No dataset directory found")
+            return
+        
         # Check first few samples
-        train_dir = Path("housebrain_dataset_r1_super_1M/train")
+        train_dir = Path(f"{dataset_dir}/train")
         problem_types = []
         
-        for json_file in list(train_dir.rglob("*.json"))[:100]:  # Check first 100
-            with open(json_file, 'r') as f:
-                data = json.load(f)
-                problem_types.append(data['input']['problem_type'])
+        json_files = list(train_dir.rglob("*.json"))
+        if not json_files:
+            print("❌ No JSON files found in train directory")
+            return
+        
+        # Check first 100 files or all if less than 100
+        check_files = json_files[:min(100, len(json_files))]
+        
+        for json_file in check_files:
+            try:
+                with open(json_file, 'r') as f:
+                    data = json.load(f)
+                    problem_types.append(data['input']['problem_type'])
+            except Exception as e:
+                print(f"⚠️ Error reading {json_file}: {e}")
+                continue
+        
+        if not problem_types:
+            print("❌ No valid problem types found")
+            return
         
         # Count problem types
         counter = Counter(problem_types)
         total = sum(counter.values())
+        
+        if total == 0:
+            print("❌ No problem types found")
+            return
         
         print("📈 Problem type distribution (sample):")
         for pt, count in counter.most_common():
@@ -99,6 +177,25 @@ def check_dataset_quality():
             print("✅ Good geometric focus")
         else:
             print("⚠️ Low geometric focus")
+        
+        # Check for augmented features if using augmented dataset
+        if "aug" in dataset_dir:
+            print("\n🔧 Checking augmented features...")
+            sample_file = json_files[0]
+            with open(sample_file, 'r') as f:
+                sample_data = json.load(f)
+                output = sample_data.get('output', {})
+                
+                has_meta = 'metadata_augmented_v1_1' in output
+                has_levels = 'levels' in output
+                has_2d_dims = 'dimensions_2d' in output
+                
+                print(f"  Units & Datum: {'✅' if has_meta else '❌'}")
+                print(f"  Floor Levels: {'✅' if has_levels else '❌'}")
+                print(f"  2D Dimensions: {'✅' if has_2d_dims else '❌'}")
+                
+                if has_meta and has_levels and has_2d_dims:
+                    print("✅ All v1.1 augmentation features present!")
             
     except Exception as e:
         print(f"❌ Error checking dataset: {e}")
@@ -131,7 +228,7 @@ def main():
     install_dependencies()
     
     # Extract dataset
-    extract_dataset()
+    dataset_name = extract_dataset()
     
     # Check dataset quality
     check_dataset_quality()
@@ -143,6 +240,10 @@ def main():
         print("1. Run: python colab_proplus_train_r1_super.py")
         print("2. Monitor: tail -f training_log_r1_super.txt")
         print("3. Check metrics: cat training_metrics_r1_super.json")
+        
+        if dataset_name and "10k" in dataset_name:
+            print("\n🎯 Using 10K test dataset - perfect for validation!")
+            print("   After successful test, upload 1M dataset for full training.")
     else:
         print("\n❌ Setup incomplete. Please check errors above.")
 

@@ -30,21 +30,47 @@ from datetime import datetime
 # Configuration
 class TrainingConfig:
     MODEL_NAME = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
-    SEQUENCE_LENGTH = 2048  # Doubled for R1 reasoning
-    LORA_R = 16
-    LORA_ALPHA = 32
-    LORA_DROPOUT = 0.05
+    SEQUENCE_LENGTH = 4096  # Increased for better reasoning
+    LORA_R = 64  # Increased for better performance
+    LORA_ALPHA = 128
+    LORA_DROPOUT = 0.1
     LEARNING_RATE = 2e-4
-    BATCH_SIZE = 4  # Optimized for A100/V100
-    GRADIENT_ACCUMULATION = 8
-    WARMUP_STEPS = 100
-    MAX_STEPS = 100000  # Increased for 1M dataset
-    SAVE_STEPS = 2000  # More frequent saves for 1M dataset
+    BATCH_SIZE = 1  # Reduced for memory efficiency
+    GRADIENT_ACCUMULATION = 16  # Increased for effective batch size
+    WARMUP_STEPS = 1000
+    MAX_STEPS = 100000  # For 1M dataset
+    SAVE_STEPS = 2000  # More frequent saves
     EVAL_STEPS = 1000  # More frequent evaluation
     LOGGING_STEPS = 10
-    DATASET_PATH = "housebrain_dataset_r1_super_1M"  # New super-quality dataset
     OUTPUT_DIR = "housebrain-r1-super-trained"
     LOG_FILE = "training_log_r1_super.txt"
+    
+    @classmethod
+    def detect_dataset(cls):
+        """Auto-detect dataset directory and adjust parameters"""
+        possible_dirs = [
+            "housebrain_dataset_r1_super_10k_aug",
+            "housebrain_dataset_r1_super_1M_aug_v1_1", 
+            "housebrain_dataset_r1_super_1M"
+        ]
+        
+        for dir_name in possible_dirs:
+            if Path(dir_name).exists():
+                cls.DATASET_PATH = dir_name
+                print(f"🎯 Detected dataset: {dir_name}")
+                
+                # Adjust parameters for 10K test dataset
+                if "10k" in dir_name:
+                    cls.MAX_STEPS = 1000  # Fewer steps for test
+                    cls.SAVE_STEPS = 200
+                    cls.EVAL_STEPS = 100
+                    print("📊 Using 10K test configuration")
+                else:
+                    print("📊 Using 1M full configuration")
+                
+                return dir_name
+        
+        raise FileNotFoundError("❌ No dataset directory found. Please run colab_setup.py first")
 
 SYSTEM_PROMPT = (
     "You are HouseBrain, an expert architectural AI with advanced reasoning capabilities. "
@@ -224,6 +250,10 @@ def main():
         gpu_info = setup_environment()
         logger.log(f"🚀 Starting HouseBrain R1 Super-Quality training")
         logger.log(f"💻 GPU: {gpu_info['name']} ({gpu_info['memory']:.1f}GB)")
+        
+        # Detect dataset and adjust config
+        config.detect_dataset()
+        logger.log(f"📊 Dataset: {config.DATASET_PATH}")
         
         # Create model and tokenizer
         model, tokenizer = create_model_and_tokenizer(config)
