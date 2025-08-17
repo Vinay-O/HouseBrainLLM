@@ -206,11 +206,22 @@ def setup_training():
     
     # Create output directory
     Path("housebrain-r1-super-trained").mkdir(exist_ok=True)
+    Path("housebrain-10k-test-trained").mkdir(exist_ok=True)
     
-    # Check if training script exists
-    if not Path("colab_proplus_train_r1_super.py").exists():
-        print("❌ Training script not found. Please upload colab_proplus_train_r1_super.py")
+    # Check for training scripts
+    has_10k_script = Path("colab_10k_test_train.py").exists()
+    has_1m_script = Path("colab_proplus_train_r1_super.py").exists()
+    
+    if not has_10k_script and not has_1m_script:
+        print("❌ No training scripts found. Please upload:")
+        print("  - colab_10k_test_train.py (for 10K test)")
+        print("  - colab_proplus_train_r1_super.py (for 1M full training)")
         return False
+    
+    if has_10k_script:
+        print("✅ 10K test training script found")
+    if has_1m_script:
+        print("✅ 1M full training script found")
     
     print("✅ Training environment ready!")
     return True
@@ -237,9 +248,19 @@ def main():
     if setup_training():
         print("\n🎉 Setup complete! Ready for training.")
         print("\n📋 Next steps:")
-        print("1. Run: python colab_proplus_train_r1_super.py")
-        print("2. Monitor: tail -f training_log_r1_super.txt")
-        print("3. Check metrics: cat training_metrics_r1_super.json")
+        
+        has_10k_script = Path("colab_10k_test_train.py").exists()
+        has_1m_script = Path("colab_proplus_train_r1_super.py").exists()
+        
+        if has_10k_script:
+            print("1. For 10K test: python colab_10k_test_train.py")
+            print("2. Monitor: tail -f training_log_10k_test.txt")
+            print("3. Check metrics: cat training_metrics_10k_test.json")
+        
+        if has_1m_script:
+            print("4. For 1M full training: python colab_proplus_train_r1_super.py")
+            print("5. Monitor: tail -f training_log_r1_super.txt")
+            print("6. Check metrics: cat training_metrics_r1_super.json")
         
         if dataset_name and "10k" in dataset_name:
             print("\n🎯 Using 10K test dataset - perfect for validation!")

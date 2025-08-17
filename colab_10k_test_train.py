@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
 """
-HouseBrain Colab Pro+ Training Script (R1 Super-Quality Dataset)
-Optimized for DeepSeek-R1-Distill-Qwen-7B with 1M super-quality reasoning dataset
+HouseBrain 10K Test Training Script
+Optimized for quick validation on 10K augmented dataset
 
-Dataset Features:
-- 1M samples with 74% Geometric_Construction focus
-- 30K+ characters per geometric sample
-- 2D/3D generation ready with exact coordinates
-- India-specific (60%) with NBC 2016 compliance
-- Quality threshold: 0.85
-- 43GB total dataset size
+Purpose: Validate training pipeline before full 1M training
+Dataset: housebrain_dataset_r1_super_10k_aug (9K train, 1K validation)
+Time: ~30-60 minutes on Colab Pro+
 """
 
 import os
@@ -27,32 +23,32 @@ from datasets import Dataset
 import numpy as np
 from datetime import datetime
 
-# Configuration
-class TrainingConfig:
+# Configuration for 10K Test
+class TestConfig:
     MODEL_NAME = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
-    SEQUENCE_LENGTH = 4096  # Increased for better reasoning
-    LORA_R = 64  # Increased for better performance
-    LORA_ALPHA = 128
+    DATASET_PATH = "housebrain_dataset_r1_super_10k_aug"
+    
+    # Test-optimized parameters
+    SEQUENCE_LENGTH = 4096
+    LORA_R = 32  # Reduced for faster training
+    LORA_ALPHA = 64
     LORA_DROPOUT = 0.1
     LEARNING_RATE = 2e-4
-    BATCH_SIZE = 1  # Reduced for memory efficiency
-    GRADIENT_ACCUMULATION = 16  # Increased for effective batch size
-    WARMUP_STEPS = 1000
-    MAX_STEPS = 100000  # For 1M dataset
-    SAVE_STEPS = 2000  # More frequent saves
-    EVAL_STEPS = 1000  # More frequent evaluation
+    BATCH_SIZE = 1
+    GRADIENT_ACCUMULATION = 8  # Reduced for faster iteration
+    WARMUP_STEPS = 100  # Reduced for test
+    MAX_STEPS = 1000  # Quick test run
+    SAVE_STEPS = 200
+    EVAL_STEPS = 100
     LOGGING_STEPS = 10
-    DATASET_PATH = "housebrain_dataset_r1_super_1M_aug_v1_1"  # Full augmented dataset
-    OUTPUT_DIR = "housebrain-r1-super-trained"
-    LOG_FILE = "training_log_r1_super.txt"
     
-
+    OUTPUT_DIR = "housebrain-10k-test-trained"
+    LOG_FILE = "training_log_10k_test.txt"
 
 SYSTEM_PROMPT = (
     "You are HouseBrain, an expert architectural AI with advanced reasoning capabilities. "
     "Always produce strictly valid JSON that complies with our schema. "
     "Ensure NBC 2016 (India) and general code compliance, and provide detailed step-by-step reasoning. "
-    "Focus on complex architectural problem-solving including structural engineering, sustainability, and smart home integration. "
     "Specialize in geometric construction with exact coordinates, spatial floor planning, and 2D/3D generation capabilities."
 )
 
@@ -77,12 +73,12 @@ class SimpleLogger:
         self.metrics.append(metric_entry)
         
     def save_metrics(self):
-        with open("training_metrics_r1_super.json", "w") as f:
+        with open("training_metrics_10k_test.json", "w") as f:
             json.dump(self.metrics, f, indent=2)
 
 def setup_environment():
     """Setup GPU environment and check resources"""
-    print("🔧 Setting up environment...")
+    print("🔧 Setting up environment for 10K test...")
     
     # Check CUDA
     if not torch.cuda.is_available():
@@ -125,12 +121,12 @@ def build_chat_and_labels(tokenizer, user_text: str, assistant_text: str, max_le
     return {"input_ids": full_input_ids, "labels": labels}
 
 def load_dataset(config, tokenizer):
-    """Load and prepare super-quality dataset with chat formatting"""
-    print("📊 Loading super-quality dataset...")
+    """Load and prepare 10K test dataset with chat formatting"""
+    print("📊 Loading 10K test dataset...")
     dataset_path = Path(config.DATASET_PATH)
     
     if not dataset_path.exists():
-        raise FileNotFoundError(f"❌ Dataset not found: {dataset_path}")
+        raise FileNotFoundError(f"❌ 10K dataset not found: {dataset_path}")
     
     # Load from sharded structure
     train_files = []
@@ -185,31 +181,30 @@ def load_dataset(config, tokenizer):
     return train_dataset, eval_dataset
 
 def create_model_and_tokenizer(config):
-    """Create model and tokenizer with R1 optimizations"""
+    """Create model and tokenizer with test optimizations"""
     print("🤖 Loading DeepSeek-R1-Distill-Qwen-7B model and tokenizer...")
     
     tokenizer = AutoTokenizer.from_pretrained(config.MODEL_NAME)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
     
-    # Load model with optimizations
+    # Load model with optimizations for test
     model = AutoModelForCausalLM.from_pretrained(
         config.MODEL_NAME,
         torch_dtype=torch.bfloat16,
         device_map="auto",
         trust_remote_code=True,
-        load_in_4bit=False  # Use full precision for better quality
+        use_cache=False  # Disable for training
     )
     
-    # LoRA configuration optimized for R1
+    # LoRA configuration for test
     lora_config = LoraConfig(
         task_type=TaskType.CAUSAL_LM,
         r=config.LORA_R,
         lora_alpha=config.LORA_ALPHA,
         lora_dropout=config.LORA_DROPOUT,
-        target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+        target_modules=["q_proj", "v_proj"],
         bias="none",
-        inference_mode=False
     )
     
     model = get_peft_model(model, lora_config)
@@ -218,28 +213,26 @@ def create_model_and_tokenizer(config):
     return model, tokenizer
 
 def main():
-    config = TrainingConfig()
+    """Main training function for 10K test"""
+    config = TestConfig()
     logger = SimpleLogger(config.LOG_FILE)
     
     try:
-        # Setup
+        # Setup environment
         gpu_info = setup_environment()
-        logger.log(f"🚀 Starting HouseBrain R1 Super-Quality training")
-        logger.log(f"💻 GPU: {gpu_info['name']} ({gpu_info['memory']:.1f}GB)")
-        logger.log(f"📊 Dataset: {config.DATASET_PATH}")
         
-        # Create model and tokenizer
+        # Create output directory
+        Path(config.OUTPUT_DIR).mkdir(exist_ok=True)
+        
+        # Load model and tokenizer
         model, tokenizer = create_model_and_tokenizer(config)
-        logger.log("✅ Model and tokenizer loaded successfully")
         
         # Load dataset
         train_dataset, eval_dataset = load_dataset(config, tokenizer)
-        logger.log(f"📊 Dataset loaded: {len(train_dataset)} train, {len(eval_dataset)} validation samples")
         
-        # Training arguments optimized for R1
+        # Training arguments for test
         training_args = TrainingArguments(
             output_dir=config.OUTPUT_DIR,
-            overwrite_output_dir=True,
             num_train_epochs=None,
             max_steps=config.MAX_STEPS,
             per_device_train_batch_size=config.BATCH_SIZE,
@@ -255,82 +248,53 @@ def main():
             load_best_model_at_end=True,
             metric_for_best_model="eval_loss",
             greater_is_better=False,
-            fp16=True,
+            bf16=True,
+            gradient_checkpointing=True,
             dataloader_pin_memory=False,
             remove_unused_columns=False,
-            report_to=None,
-            logging_dir="./logs_r1_super",
-            save_total_limit=3,
-            gradient_checkpointing=True,
-            optim="adamw_torch",
-            lr_scheduler_type="cosine",
-            weight_decay=0.01,
-            max_grad_norm=1.0,
-            dataloader_num_workers=2,
-            group_by_length=True,  # Optimize for variable sequence lengths
+            report_to=None,  # Disable wandb for test
         )
         
-        # Custom callback for logging
-        class LoggingCallback:
-            def __init__(self, logger):
-                self.logger = logger
-                
-            def on_log(self, args, state, control, logs=None, **kwargs):
-                if logs:
-                    train_loss = logs.get("loss")
-                    eval_loss = logs.get("eval_loss")
-                    lr = logs.get("learning_rate")
-                    if train_loss is not None or eval_loss is not None:
-                        self.logger.log_metrics(state.global_step, train_loss=train_loss, eval_loss=eval_loss, lr=lr)
-        
-        # Create trainer
+        # Initialize trainer
         trainer = Trainer(
             model=model,
             args=training_args,
             train_dataset=train_dataset,
             eval_dataset=eval_dataset,
             data_collator=default_data_collator,
-            callbacks=[LoggingCallback(logger)]
         )
         
         # Start training
-        logger.log("🚀 Starting training...")
-        logger.log(f"📊 Config: LR={config.LEARNING_RATE}, Batch={config.BATCH_SIZE}, SeqLen={config.SEQUENCE_LENGTH}")
-        logger.log(f"🎯 Target: {config.MAX_STEPS} steps")
+        logger.log(f"🚀 Starting HouseBrain 10K Test Training")
+        logger.log(f"💻 GPU: {gpu_info['name']} ({gpu_info['memory']:.1f}GB)")
+        logger.log(f"📊 Dataset: {config.DATASET_PATH}")
+        logger.log(f"📊 Config: LR={config.LEARNING_RATE}, Batch={config.BATCH_SIZE}, SeqLen={config.SEQUENCE_LENGTH}, GradAccum={config.GRADIENT_ACCUMULATION}")
+        logger.log(f"🎯 Target: {config.MAX_STEPS} steps (quick test)")
         
+        start_time = time.time()
         trainer.train()
+        end_time = time.time()
         
         # Save final model
-        logger.log("✅ Training completed successfully!")
         trainer.save_model(f"{config.OUTPUT_DIR}/final")
         tokenizer.save_pretrained(f"{config.OUTPUT_DIR}/final")
-        logger.log(f"💾 Final model saved to {config.OUTPUT_DIR}/final")
         
-        # Save metrics and summary
+        # Log completion
+        training_time = (end_time - start_time) / 3600  # hours
+        logger.log(f"✅ Training completed in {training_time:.2f} hours")
+        logger.log(f"💾 Model saved to {config.OUTPUT_DIR}/final")
+        
+        # Save metrics
         logger.save_metrics()
         
-        final_loss = trainer.state.log_history[-1].get('loss', 'N/A')
-        best_eval_loss = trainer.state.best_metric
-        total_steps = trainer.state.global_step
-        
-        logger.log("📈 Training Summary:")
-        logger.log(f"   - Total steps: {total_steps}")
-        logger.log(f"   - Final train loss: {final_loss}")
-        logger.log(f"   - Best eval loss: {best_eval_loss}")
-        logger.log(f"   - Training time: {time.time() - trainer.state.start_time:.1f}s")
-        
-        # Performance metrics
-        if hasattr(trainer.state, 'log_history') and trainer.state.log_history:
-            losses = [log.get('loss', 0) for log in trainer.state.log_history if log.get('loss')]
-            if losses:
-                avg_loss = sum(losses) / len(losses)
-                logger.log(f"   - Average train loss: {avg_loss:.4f}")
-        
-        logger.log("🎉 All done! Check the logs and saved model.")
+        print(f"\n🎉 10K Test Training Complete!")
+        print(f"⏱️  Time: {training_time:.2f} hours")
+        print(f"💾 Model: {config.OUTPUT_DIR}/final")
+        print(f"📊 Metrics: training_metrics_10k_test.json")
+        print(f"\n✅ If test successful, proceed with full 1M training!")
         
     except Exception as e:
-        error_msg = f"❌ Training failed: {str(e)}"
-        logger.log(error_msg)
+        logger.log(f"❌ Training failed: {e}")
         raise
 
 if __name__ == "__main__":
