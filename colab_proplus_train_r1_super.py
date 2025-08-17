@@ -2,6 +2,14 @@
 """
 HouseBrain Colab Pro+ Training Script (R1 Super-Quality Dataset)
 Optimized for DeepSeek-R1-Distill-Qwen-7B with 1M super-quality reasoning dataset
+
+Dataset Features:
+- 1M samples with 74% Geometric_Construction focus
+- 30K+ characters per geometric sample
+- 2D/3D generation ready with exact coordinates
+- India-specific (60%) with NBC 2016 compliance
+- Quality threshold: 0.85
+- 43GB total dataset size
 """
 
 import os
@@ -30,9 +38,9 @@ class TrainingConfig:
     BATCH_SIZE = 4  # Optimized for A100/V100
     GRADIENT_ACCUMULATION = 8
     WARMUP_STEPS = 100
-    MAX_STEPS = 50000
-    SAVE_STEPS = 1000
-    EVAL_STEPS = 500
+    MAX_STEPS = 100000  # Increased for 1M dataset
+    SAVE_STEPS = 2000  # More frequent saves for 1M dataset
+    EVAL_STEPS = 1000  # More frequent evaluation
     LOGGING_STEPS = 10
     DATASET_PATH = "housebrain_dataset_r1_super_1M"  # New super-quality dataset
     OUTPUT_DIR = "housebrain-r1-super-trained"
@@ -42,7 +50,8 @@ SYSTEM_PROMPT = (
     "You are HouseBrain, an expert architectural AI with advanced reasoning capabilities. "
     "Always produce strictly valid JSON that complies with our schema. "
     "Ensure NBC 2016 (India) and general code compliance, and provide detailed step-by-step reasoning. "
-    "Focus on complex architectural problem-solving including structural engineering, sustainability, and smart home integration."
+    "Focus on complex architectural problem-solving including structural engineering, sustainability, and smart home integration. "
+    "Specialize in geometric construction with exact coordinates, spatial floor planning, and 2D/3D generation capabilities."
 )
 
 class SimpleLogger:
