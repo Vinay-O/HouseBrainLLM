@@ -184,16 +184,24 @@ def create_model_and_tokenizer(config):
     """Create model and tokenizer with test optimizations"""
     print("🤖 Loading DeepSeek-R1-Distill-Qwen-7B model and tokenizer...")
     
-    # First, try to install/upgrade transformers to latest version
-    print("📦 Checking transformers version...")
+    # Fix transformers version compatibility issue
+    print("📦 Fixing transformers version compatibility...")
     try:
         import subprocess
-        subprocess.run(["pip", "install", "--upgrade", "transformers"], check=True)
-        print("✅ Transformers upgraded successfully")
+        # Install a compatible version that works with the model
+        subprocess.run(["pip", "install", "transformers==4.36.0", "--force-reinstall"], check=True)
+        print("✅ Transformers version fixed successfully")
     except Exception as e:
-        print(f"⚠️ Could not upgrade transformers: {e}")
+        print(f"⚠️ Could not fix transformers: {e}")
     
-    tokenizer = AutoTokenizer.from_pretrained(config.MODEL_NAME)
+    # Try loading tokenizer with error handling
+    try:
+        tokenizer = AutoTokenizer.from_pretrained(config.MODEL_NAME)
+    except Exception as e:
+        print(f"⚠️ Error loading tokenizer: {e}")
+        print("🔄 Trying alternative tokenizer loading...")
+        # Try with trust_remote_code
+        tokenizer = AutoTokenizer.from_pretrained(config.MODEL_NAME, trust_remote_code=True)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
     
