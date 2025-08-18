@@ -51,30 +51,71 @@ def fix_dependencies():
         print(f"❌ Dependency fix failed: {e}")
         return False
 
-# Import after fixing dependencies
-if fix_dependencies():
+# Lazy import holders
+AutoTokenizer = None
+AutoModelForCausalLM = None
+Trainer = None
+DataCollatorForLanguageModeling = None
+TrainingArguments = None
+BitsAndBytesConfig = None
+LoraConfig = None
+get_peft_model = None
+prepare_model_for_kbit_training = None
+Dataset = None
+np = None
+tqdm = None
+
+def _ensure_training_libs_loaded():
+    global AutoTokenizer, AutoModelForCausalLM, Trainer, DataCollatorForLanguageModeling
+    global TrainingArguments, BitsAndBytesConfig, LoraConfig, get_peft_model, prepare_model_for_kbit_training
+    global Dataset, np, tqdm
+
+    if AutoTokenizer is not None:
+        return
+
     # Ensure env flag carried into current process imports
     os.environ.setdefault("TRANSFORMERS_NO_TF", "1")
+
     from transformers import (
-        AutoTokenizer, AutoModelForCausalLM,
-        Trainer, DataCollatorForLanguageModeling,
+        AutoTokenizer as _AutoTokenizer,
+        AutoModelForCausalLM as _AutoModelForCausalLM,
+        Trainer as _Trainer,
+        DataCollatorForLanguageModeling as _DCFLM,
     )
-    # Import TrainingArguments guarded to avoid functorch issue on older torch
+    AutoTokenizer = _AutoTokenizer
+    AutoModelForCausalLM = _AutoModelForCausalLM
+    Trainer = _Trainer
+    DataCollatorForLanguageModeling = _DCFLM
+
+    # Guarded TrainingArguments import
     try:
-        from transformers import TrainingArguments
-    except Exception as _e:
-        # Fallback to a minimal local class to hold arguments when import fails
-        class TrainingArguments:  # type: ignore
+        from transformers import TrainingArguments as _TrainingArguments
+        TrainingArguments = _TrainingArguments
+    except Exception:
+        class _FallbackTrainingArguments:  # type: ignore
             def __init__(self, **kwargs):
                 self.__dict__.update(kwargs)
+        TrainingArguments = _FallbackTrainingArguments
+
     try:
-        from transformers import BitsAndBytesConfig
+        from transformers import BitsAndBytesConfig as _BitsAndBytesConfig
+        BitsAndBytesConfig = _BitsAndBytesConfig
     except Exception:
         BitsAndBytesConfig = None
-    from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
-    from datasets import Dataset
-    import numpy as np
-    from tqdm.auto import tqdm
+
+    from peft import LoraConfig as _LoraConfig, get_peft_model as _get_peft_model, prepare_model_for_kbit_training as _prepare
+    LoraConfig = _LoraConfig
+    get_peft_model = _get_peft_model
+    prepare_model_for_kbit_training = _prepare
+
+    from datasets import Dataset as _Dataset
+    Dataset = _Dataset
+
+    import numpy as _np
+    np = _np
+
+    from tqdm.auto import tqdm as _tqdm
+    tqdm = _tqdm
 
 @dataclass
 class TrainingConfig:
@@ -137,6 +178,7 @@ class HouseBrainTrainer:
     
     def _load_model_and_tokenizer(self):
         """Load model and tokenizer with error handling"""
+        _ensure_training_libs_loaded()
         print(f"🤖 Loading model: {self.config.model_name}")
         
         try:
@@ -228,6 +270,7 @@ class HouseBrainTrainer:
     
     def _load_dataset(self):
         """Load and prepare the dataset"""
+        _ensure_training_libs_loaded()
         print(f"📊 Loading dataset from: {self.config.dataset_path}")
         
         dataset_path = Path(self.config.dataset_path)
@@ -292,6 +335,7 @@ Output: {json.dumps(output_data, indent=2)}"""
     
     def train(self):
         """Main training function"""
+        _ensure_training_libs_loaded()
         print("🚀 Starting HouseBrain training...")
         
         try:
