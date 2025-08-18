@@ -34,13 +34,12 @@ def fix_dependencies():
                         "orbax-checkpoint", "optax", "flax", "chex"],
                        check=False, capture_output=True)
 
-        # Install compatible versions for DeepSeek R1 (NumPy < 2)
+        # Install compatible libs without touching preinstalled torch/transformers in Colab
+        # Keep NumPy < 2 to avoid TF/JAX and some ecosystem issues
         subprocess.run([
-            sys.executable, "-m", "pip", "install", "--force-reinstall",
+            sys.executable, "-m", "pip", "install", "--upgrade", "--no-cache-dir",
             "numpy==1.26.4", "scipy==1.11.4", "contourpy==1.2.1",
-            "torch==2.1.0", "torchvision==0.16.0", "torchaudio==2.1.0",
-            "transformers==4.41.0", "accelerate==0.27.0",
-            "peft==0.8.0", "datasets==2.16.0", "bitsandbytes", "tqdm"
+            "accelerate>=0.27.0", "peft>=0.8.0", "datasets>=2.16.0", "bitsandbytes>=0.43.1", "tqdm"
         ], check=True, capture_output=True)
 
         # Inhibit TF integration in transformers
@@ -58,9 +57,20 @@ if fix_dependencies():
     os.environ.setdefault("TRANSFORMERS_NO_TF", "1")
     from transformers import (
         AutoTokenizer, AutoModelForCausalLM,
-        TrainingArguments, Trainer, DataCollatorForLanguageModeling,
-        BitsAndBytesConfig
+        Trainer, DataCollatorForLanguageModeling,
     )
+    # Import TrainingArguments guarded to avoid functorch issue on older torch
+    try:
+        from transformers import TrainingArguments
+    except Exception as _e:
+        # Fallback to a minimal local class to hold arguments when import fails
+        class TrainingArguments:  # type: ignore
+            def __init__(self, **kwargs):
+                self.__dict__.update(kwargs)
+    try:
+        from transformers import BitsAndBytesConfig
+    except Exception:
+        BitsAndBytesConfig = None
     from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
     from datasets import Dataset
     import numpy as np
@@ -146,19 +156,26 @@ class HouseBrainTrainer:
                 "trust_remote_code": True
             }
 
-            if self.device == "cuda":
+            if self.device == "cuda" and BitsAndBytesConfig is not None:
                 # Use 4-bit quantization to fit 7B models on T4
                 compute_dtype = torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
-                bnb_config = BitsAndBytesConfig(
-                    load_in_4bit=True,
-                    bnb_4bit_quant_type="nf4",
-                    bnb_4bit_use_double_quant=True,
-                    bnb_4bit_compute_dtype=compute_dtype,
-                )
-                model_kwargs.update({
-                    "quantization_config": bnb_config,
-                    "device_map": "auto",
-                })
+                try:
+                    bnb_config = BitsAndBytesConfig(
+                        load_in_4bit=True,
+                        bnb_4bit_quant_type="nf4",
+                        bnb_4bit_use_double_quant=True,
+                        bnb_4bit_compute_dtype=compute_dtype,
+                    )
+                    model_kwargs.update({
+                        "quantization_config": bnb_config,
+                        "device_map": "auto",
+                    })
+                except Exception:
+                    # BitsAndBytes not available; fall back to fp16 without quant
+                    model_kwargs.update({
+                        "torch_dtype": torch.float16,
+                        "device_map": "auto",
+                    })
             else:
                 model_kwargs.update({
                     "torch_dtype": torch.float32,
