@@ -45,6 +45,9 @@ def fix_dependencies():
         # Inhibit TF integration in transformers
         os.environ["TRANSFORMERS_NO_TF"] = "1"
         os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+        # Disable Weights & Biases auto-logging
+        os.environ["WANDB_DISABLED"] = "true"
+        os.environ["HF_HUB_DISABLE_TELEMETRY"] = "1"
         print("✅ Dependencies fixed!")
         return True
     except Exception as e:
