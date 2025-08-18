@@ -150,6 +150,9 @@ class TrainingConfig:
     # Test mode for 10K
     test_mode: bool = False
     max_samples: Optional[int] = None
+    
+    # Memory/throughput options
+    gradient_checkpointing: bool = False
 
 class HouseBrainTrainer:
     """Unified HouseBrain training class"""
@@ -276,6 +279,9 @@ class HouseBrainTrainer:
             return ["q_proj", "k_proj", "v_proj", "o_proj"]
         elif "mistral" in model_name:
             return ["q_proj", "k_proj", "v_proj", "o_proj"]
+        elif "gpt" in model_name:
+            # GPT-2 style attention uses a fused projection module name
+            return ["c_attn"]
         else:
             # Default for unknown models
             return ["q_proj", "v_proj"]
@@ -392,6 +398,9 @@ Output: {json.dumps(output_data, indent=2)}"""
             if effective_ga != self.config.gradient_accumulation_steps:
                 print(f"ℹ️ Adjusting gradient_accumulation_steps {self.config.gradient_accumulation_steps} -> {effective_ga} to ensure progress with {len(self.dataset)} samples")
 
+            # Prefer bf16 on modern GPUs (A100) for speed/stability
+            use_bf16 = self.device == "cuda" and getattr(torch.cuda, "is_bf16_supported", lambda: False)()
+
             training_args = TrainingArguments(
                 output_dir=self.config.output_dir,
                 num_train_epochs=self.config.num_epochs,
@@ -401,12 +410,14 @@ Output: {json.dumps(output_data, indent=2)}"""
                 warmup_steps=self.config.warmup_steps,
                 logging_steps=self.config.logging_steps,
                 save_steps=self.config.save_steps,
-                fp16=self.device == "cuda",
+                fp16=self.device == "cuda" and not use_bf16,
+                bf16=use_bf16,
                 dataloader_drop_last=True,
                 remove_unused_columns=False,
                 report_to=None,  # Disable wandb
                 save_safetensors=True,
-                optim="adamw_torch"
+                optim="adamw_torch",
+                gradient_checkpointing=self.config.gradient_checkpointing,
             )
             
             # Data collator
@@ -456,6 +467,7 @@ def main():
     parser.add_argument("--epochs", type=int, default=2, help="Number of epochs")
     parser.add_argument("--max-length", type=int, help="Max sequence length (tokens)")
     parser.add_argument("--grad-accum-steps", type=int, help="Gradient accumulation steps")
+    parser.add_argument("--grad-checkpointing", action="store_true", help="Enable gradient checkpointing")
     
     args = parser.parse_args()
     
@@ -475,6 +487,8 @@ def main():
         config.max_length = args.max_length
     if args.grad_accum_steps:
         config.gradient_accumulation_steps = args.grad_accum_steps
+    if args.grad_checkpointing:
+        config.gradient_checkpointing = True
     
     # Adjust for test mode
     if args.test:
