@@ -406,6 +406,8 @@ def main():
     parser.add_argument("--max-samples", type=int, help="Maximum samples to use")
     parser.add_argument("--batch-size", type=int, default=1, help="Batch size")
     parser.add_argument("--epochs", type=int, default=2, help="Number of epochs")
+    parser.add_argument("--max-length", type=int, help="Max sequence length (tokens)")
+    parser.add_argument("--grad-accum-steps", type=int, help="Gradient accumulation steps")
     
     args = parser.parse_args()
     
@@ -419,10 +421,21 @@ def main():
         batch_size=args.batch_size,
         num_epochs=args.epochs
     )
+
+    # Optional overrides
+    if args.max_length:
+        config.max_length = args.max_length
+    if args.grad_accum_steps:
+        config.gradient_accumulation_steps = args.grad_accum_steps
     
     # Adjust for test mode
     if args.test:
         config.max_samples = config.max_samples or 1000  # 1K samples for quick test
+        # Faster defaults for smoke tests unless explicitly overridden
+        if not args.max_length:
+            config.max_length = 512
+        if not args.grad_accum_steps:
+            config.gradient_accumulation_steps = 1
         config.save_steps = 100
         config.eval_steps = 50
         print("🧪 Test mode enabled - using reduced dataset")
