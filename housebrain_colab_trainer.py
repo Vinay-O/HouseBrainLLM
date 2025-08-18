@@ -251,6 +251,18 @@ class HouseBrainTrainer:
         except Exception as e:
             print(f"❌ Error loading model: {e}")
             raise
+
+        # Enable TF32 on CUDA for speed without quality loss
+        if self.device == "cuda":
+            try:
+                torch.backends.cuda.matmul.allow_tf32 = True
+                torch.backends.cudnn.allow_tf32 = True
+            except Exception:
+                pass
+            try:
+                torch.set_float32_matmul_precision("high")
+            except Exception:
+                pass
     
     def _get_target_modules(self) -> List[str]:
         """Get LoRA target modules based on model architecture"""
@@ -308,6 +320,34 @@ class HouseBrainTrainer:
         )
         
         print(f"📊 Dataset prepared: {len(self.dataset)} samples")
+
+    def _estimate_effective_ga(self) -> int:
+        """Estimate a gradient accumulation value that guarantees progress."""
+        total_samples = len(self.dataset) if self.dataset is not None else 0
+        per_device = max(1, self.config.batch_size)
+        max_updates = max(1, total_samples // per_device)
+        if max_updates == 0:
+            return 1
+        return min(self.config.gradient_accumulation_steps, max_updates)
+
+    def _warmup_kernels(self):
+        """Optional one-step warmup to compile kernels before training."""
+        if self.model is None or self.tokenizer is None:
+            return
+        try:
+            input_ids = self.tokenizer(
+                "Warmup HouseBrain.",
+                return_tensors="pt",
+                padding=False,
+                truncation=True,
+                max_length=min(64, self.config.max_length),
+            )["input_ids"].to(self.model.device)
+            with torch.no_grad():
+                _ = self.model(input_ids=input_ids)
+            print("🔥 Kernels warmup complete")
+        except Exception as _e:
+            # Warmup is best-effort; ignore failures
+            pass
     
     def _format_sample(self, sample: Dict[str, Any]) -> Dict[str, str]:
         """Format a sample for training"""
@@ -342,13 +382,21 @@ Output: {json.dumps(output_data, indent=2)}"""
             # Load model and data
             self._load_model_and_tokenizer()
             self._load_dataset()
+
+            # Optional warmup to avoid long first-step latency
+            if os.environ.get("HB_WARMUP", "0") == "1":
+                self._warmup_kernels()
             
             # Training arguments
+            effective_ga = self._estimate_effective_ga()
+            if effective_ga != self.config.gradient_accumulation_steps:
+                print(f"ℹ️ Adjusting gradient_accumulation_steps {self.config.gradient_accumulation_steps} -> {effective_ga} to ensure progress with {len(self.dataset)} samples")
+
             training_args = TrainingArguments(
                 output_dir=self.config.output_dir,
                 num_train_epochs=self.config.num_epochs,
                 per_device_train_batch_size=self.config.batch_size,
-                gradient_accumulation_steps=self.config.gradient_accumulation_steps,
+                gradient_accumulation_steps=effective_ga,
                 learning_rate=self.config.learning_rate,
                 warmup_steps=self.config.warmup_steps,
                 logging_steps=self.config.logging_steps,
