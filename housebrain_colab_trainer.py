@@ -58,7 +58,8 @@ if fix_dependencies():
     os.environ.setdefault("TRANSFORMERS_NO_TF", "1")
     from transformers import (
         AutoTokenizer, AutoModelForCausalLM,
-        TrainingArguments, Trainer, DataCollatorForLanguageModeling
+        TrainingArguments, Trainer, DataCollatorForLanguageModeling,
+        BitsAndBytesConfig
     )
     from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
     from datasets import Dataset
@@ -142,10 +143,27 @@ class HouseBrainTrainer:
             
             # Load model with appropriate settings
             model_kwargs = {
-                "torch_dtype": torch.float16 if self.device == "cuda" else torch.float32,
-                "device_map": "auto" if self.device == "cuda" else None,
                 "trust_remote_code": True
             }
+
+            if self.device == "cuda":
+                # Use 4-bit quantization to fit 7B models on T4
+                compute_dtype = torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
+                bnb_config = BitsAndBytesConfig(
+                    load_in_4bit=True,
+                    bnb_4bit_quant_type="nf4",
+                    bnb_4bit_use_double_quant=True,
+                    bnb_4bit_compute_dtype=compute_dtype,
+                )
+                model_kwargs.update({
+                    "quantization_config": bnb_config,
+                    "device_map": "auto",
+                })
+            else:
+                model_kwargs.update({
+                    "torch_dtype": torch.float32,
+                    "device_map": None,
+                })
             
             self.model = AutoModelForCausalLM.from_pretrained(
                 self.config.model_name,
