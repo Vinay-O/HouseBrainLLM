@@ -77,6 +77,15 @@ python augment_dataset_v1_1.py --input housebrain_dataset_r1_super_1M \
 # Run: python colab_proplus_train_r1_super.py
 ```
 
+### Export 2D/3D from model JSON
+```bash
+# 2D DXF (rooms as closed polylines). Use --scale 0.001 if your coords are mm
+python export_dxf.py --input data/sample_output.json --output out/plan.dxf --scale 0.001
+
+# Simple 3D OBJ (rooms extruded to slabs)
+python export_obj.py --input data/sample_output.json --output out/plan.obj --scale 0.001 --height 3.0
+```
+
 ## 🎯 What's New in v1.1
 
 ### Enhanced Dataset Features
