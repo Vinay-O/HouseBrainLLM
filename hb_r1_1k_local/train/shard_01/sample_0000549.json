@@ -1,0 +1,1331 @@
+{
+  "input": {
+    "problem_type": "Geometric_Construction",
+    "context": {
+      "indian_market": true,
+      "problem_type": "Geometric_Construction",
+      "region": "Pune",
+      "climate_zone": "Temperate",
+      "architectural_style": "Vernacular_Indian",
+      "vastu_compliance": false,
+      "nbc_compliance": true,
+      "local_bye_laws": true
+    },
+    "plot_details": {
+      "plot_shape": "Rectangular",
+      "width_ft": 88,
+      "length_ft": 112,
+      "orientation": "South_East",
+      "road_access": "Single_Side",
+      "setback_front": 16,
+      "setback_rear": 15,
+      "setback_side": 11,
+      "area_sqft": 9856
+    },
+    "requirements": {
+      "family_size": 6,
+      "floors": 2,
+      "budget_inr": 9696625,
+      "lifestyle": "Luxury"
+    },
+    "construction_requirements": [
+      "Exact_coordinate_system",
+      "Wall_thickness_specifications",
+      "Structural_grid_alignment",
+      "Foundation_geometry",
+      "Column_and_beam_positions",
+      "Material_quantity_calculations",
+      "2D_floor_plan_generation",
+      "3D_model_generation"
+    ],
+    "reasoning_steps": [
+      "Establish coordinate system and grid for precise geometric placement",
+      "Calculate exact room dimensions and wall positions with coordinates",
+      "Design structural grid system with column and beam placements",
+      "Generate foundation geometry with footing positions and sizes",
+      "Plan multi-floor continuity with vertical alignment of structural elements",
+      "Calculate exact material quantities for construction planning",
+      "Create 2D floor plan data with walls, doors, windows, and dimensions",
+      "Generate 3D model data with spatial coordinates and material specifications"
+    ]
+  },
+  "output": {
+    "geometric_data": {
+      "plot_dimensions": {
+        "width_ft": 88,
+        "length_ft": 112,
+        "area_sqft": 9856
+      },
+      "wall_specifications": {
+        "exterior_wall_thickness_inches": 9,
+        "interior_wall_thickness_inches": 4.5,
+        "foundation_wall_thickness_inches": 12
+      },
+      "rooms": [
+        {
+          "id": "guest_room",
+          "type": "guest_room",
+          "floor": "Ground",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 14,
+            "height": 16,
+            "area": 224
+          },
+          "walls": [
+            {
+              "start": {
+                "x": 0,
+                "y": 0
+              },
+              "end": {
+                "x": 14,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 14,
+                "y": 0
+              },
+              "end": {
+                "x": 14,
+                "y": 16
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 14,
+                "y": 16
+              },
+              "end": {
+                "x": 0,
+                "y": 16
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 0,
+                "y": 16
+              },
+              "end": {
+                "x": 0,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            }
+          ],
+          "doors": [
+            {
+              "x": 7,
+              "y": 0,
+              "width": 3
+            }
+          ],
+          "windows": [
+            {
+              "x": 12,
+              "y": 8,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "floor": "Ground",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 9,
+            "height": 14,
+            "area": 126
+          },
+          "walls": [
+            {
+              "start": {
+                "x": 16,
+                "y": 0
+              },
+              "end": {
+                "x": 25,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 25,
+                "y": 0
+              },
+              "end": {
+                "x": 25,
+                "y": 14
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 25,
+                "y": 14
+              },
+              "end": {
+                "x": 16,
+                "y": 14
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 16,
+                "y": 14
+              },
+              "end": {
+                "x": 16,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            }
+          ],
+          "doors": [
+            {
+              "x": 20,
+              "y": 0,
+              "width": 3
+            }
+          ],
+          "windows": [
+            {
+              "x": 23,
+              "y": 7,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "floor": "Ground",
+          "bounds": {
+            "x": 27,
+            "y": 0,
+            "width": 7,
+            "height": 13,
+            "area": 91
+          },
+          "walls": [
+            {
+              "start": {
+                "x": 27,
+                "y": 0
+              },
+              "end": {
+                "x": 34,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 34,
+                "y": 0
+              },
+              "end": {
+                "x": 34,
+                "y": 13
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 34,
+                "y": 13
+              },
+              "end": {
+                "x": 27,
+                "y": 13
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 27,
+                "y": 13
+              },
+              "end": {
+                "x": 27,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            }
+          ],
+          "doors": [
+            {
+              "x": 30,
+              "y": 0,
+              "width": 3
+            }
+          ],
+          "windows": [
+            {
+              "x": 32,
+              "y": 6,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "floor": "Ground",
+          "bounds": {
+            "x": 36,
+            "y": 0,
+            "width": 10,
+            "height": 13,
+            "area": 130
+          },
+          "walls": [
+            {
+              "start": {
+                "x": 36,
+                "y": 0
+              },
+              "end": {
+                "x": 46,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 46,
+                "y": 0
+              },
+              "end": {
+                "x": 46,
+                "y": 13
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 46,
+                "y": 13
+              },
+              "end": {
+                "x": 36,
+                "y": 13
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 36,
+                "y": 13
+              },
+              "end": {
+                "x": 36,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            }
+          ],
+          "doors": [
+            {
+              "x": 41,
+              "y": 0,
+              "width": 3
+            }
+          ],
+          "windows": [
+            {
+              "x": 44,
+              "y": 6,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "dining",
+          "type": "dining",
+          "floor": "Ground",
+          "bounds": {
+            "x": 48,
+            "y": 0,
+            "width": 7,
+            "height": 17,
+            "area": 119
+          },
+          "walls": [
+            {
+              "start": {
+                "x": 48,
+                "y": 0
+              },
+              "end": {
+                "x": 55,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 55,
+                "y": 0
+              },
+              "end": {
+                "x": 55,
+                "y": 17
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 55,
+                "y": 17
+              },
+              "end": {
+                "x": 48,
+                "y": 17
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 48,
+                "y": 17
+              },
+              "end": {
+                "x": 48,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            }
+          ],
+          "doors": [
+            {
+              "x": 51,
+              "y": 0,
+              "width": 3
+            }
+          ],
+          "windows": [
+            {
+              "x": 53,
+              "y": 8,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "floor": "Ground",
+          "bounds": {
+            "x": 57,
+            "y": 0,
+            "width": 10,
+            "height": 10,
+            "area": 100
+          },
+          "walls": [
+            {
+              "start": {
+                "x": 57,
+                "y": 0
+              },
+              "end": {
+                "x": 67,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 67,
+                "y": 0
+              },
+              "end": {
+                "x": 67,
+                "y": 10
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 67,
+                "y": 10
+              },
+              "end": {
+                "x": 57,
+                "y": 10
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 57,
+                "y": 10
+              },
+              "end": {
+                "x": 57,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            }
+          ],
+          "doors": [
+            {
+              "x": 62,
+              "y": 0,
+              "width": 3
+            }
+          ],
+          "windows": [
+            {
+              "x": 65,
+              "y": 5,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "floor": "Ground",
+          "bounds": {
+            "x": 69,
+            "y": 0,
+            "width": 10,
+            "height": 18,
+            "area": 180
+          },
+          "walls": [
+            {
+              "start": {
+                "x": 69,
+                "y": 0
+              },
+              "end": {
+                "x": 79,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 79,
+                "y": 0
+              },
+              "end": {
+                "x": 79,
+                "y": 18
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 79,
+                "y": 18
+              },
+              "end": {
+                "x": 69,
+                "y": 18
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 69,
+                "y": 18
+              },
+              "end": {
+                "x": 69,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            }
+          ],
+          "doors": [
+            {
+              "x": 74,
+              "y": 0,
+              "width": 3
+            }
+          ],
+          "windows": [
+            {
+              "x": 77,
+              "y": 9,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "floor": "Ground",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 8,
+            "height": 11,
+            "area": 88
+          },
+          "walls": [
+            {
+              "start": {
+                "x": 0,
+                "y": 20
+              },
+              "end": {
+                "x": 8,
+                "y": 20
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 8,
+                "y": 20
+              },
+              "end": {
+                "x": 8,
+                "y": 31
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 8,
+                "y": 31
+              },
+              "end": {
+                "x": 0,
+                "y": 31
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 0,
+                "y": 31
+              },
+              "end": {
+                "x": 0,
+                "y": 20
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            }
+          ],
+          "doors": [
+            {
+              "x": 4,
+              "y": 20,
+              "width": 3
+            }
+          ],
+          "windows": [
+            {
+              "x": 6,
+              "y": 25,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "floor": "Ground",
+          "bounds": {
+            "x": 10,
+            "y": 20,
+            "width": 13,
+            "height": 9,
+            "area": 117
+          },
+          "walls": [
+            {
+              "start": {
+                "x": 10,
+                "y": 20
+              },
+              "end": {
+                "x": 23,
+                "y": 20
+              },
+              "thickness": 0.75,
+              "type": "interior"
+            },
+            {
+              "start": {
+                "x": 23,
+                "y": 20
+              },
+              "end": {
+                "x": 23,
+                "y": 29
+              },
+              "thickness": 0.75,
+              "type": "interior"
+            },
+            {
+              "start": {
+                "x": 23,
+                "y": 29
+              },
+              "end": {
+                "x": 10,
+                "y": 29
+              },
+              "thickness": 0.75,
+              "type": "interior"
+            },
+            {
+              "start": {
+                "x": 10,
+                "y": 29
+              },
+              "end": {
+                "x": 10,
+                "y": 20
+              },
+              "thickness": 0.75,
+              "type": "interior"
+            }
+          ],
+          "doors": [
+            {
+              "x": 16,
+              "y": 20,
+              "width": 3
+            }
+          ],
+          "windows": [
+            {
+              "x": 21,
+              "y": 24,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "dining",
+          "type": "dining",
+          "floor": "Level_2",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 13,
+            "area": 104
+          },
+          "walls": [
+            {
+              "start": {
+                "x": 0,
+                "y": 0
+              },
+              "end": {
+                "x": 8,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 8,
+                "y": 0
+              },
+              "end": {
+                "x": 8,
+                "y": 13
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 8,
+                "y": 13
+              },
+              "end": {
+                "x": 0,
+                "y": 13
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 0,
+                "y": 13
+              },
+              "end": {
+                "x": 0,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            }
+          ],
+          "doors": [
+            {
+              "x": 4,
+              "y": 0,
+              "width": 3
+            }
+          ],
+          "windows": [
+            {
+              "x": 6,
+              "y": 6,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "floor": "Level_2",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 7,
+            "height": 16,
+            "area": 112
+          },
+          "walls": [
+            {
+              "start": {
+                "x": 10,
+                "y": 0
+              },
+              "end": {
+                "x": 17,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 17,
+                "y": 0
+              },
+              "end": {
+                "x": 17,
+                "y": 16
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 17,
+                "y": 16
+              },
+              "end": {
+                "x": 10,
+                "y": 16
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 10,
+                "y": 16
+              },
+              "end": {
+                "x": 10,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            }
+          ],
+          "doors": [
+            {
+              "x": 13,
+              "y": 0,
+              "width": 3
+            }
+          ],
+          "windows": [
+            {
+              "x": 15,
+              "y": 8,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "floor": "Level_2",
+          "bounds": {
+            "x": 19,
+            "y": 0,
+            "width": 9,
+            "height": 18,
+            "area": 162
+          },
+          "walls": [
+            {
+              "start": {
+                "x": 19,
+                "y": 0
+              },
+              "end": {
+                "x": 28,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 28,
+                "y": 0
+              },
+              "end": {
+                "x": 28,
+                "y": 18
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 28,
+                "y": 18
+              },
+              "end": {
+                "x": 19,
+                "y": 18
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 19,
+                "y": 18
+              },
+              "end": {
+                "x": 19,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            }
+          ],
+          "doors": [
+            {
+              "x": 23,
+              "y": 0,
+              "width": 3
+            }
+          ],
+          "windows": [
+            {
+              "x": 26,
+              "y": 9,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "floor": "Level_2",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 11,
+            "height": 12,
+            "area": 132
+          },
+          "walls": [
+            {
+              "start": {
+                "x": 30,
+                "y": 0
+              },
+              "end": {
+                "x": 41,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 41,
+                "y": 0
+              },
+              "end": {
+                "x": 41,
+                "y": 12
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 41,
+                "y": 12
+              },
+              "end": {
+                "x": 30,
+                "y": 12
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 30,
+                "y": 12
+              },
+              "end": {
+                "x": 30,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            }
+          ],
+          "doors": [
+            {
+              "x": 35,
+              "y": 0,
+              "width": 3
+            }
+          ],
+          "windows": [
+            {
+              "x": 39,
+              "y": 6,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "floor": "Level_2",
+          "bounds": {
+            "x": 43,
+            "y": 0,
+            "width": 11,
+            "height": 18,
+            "area": 198
+          },
+          "walls": [
+            {
+              "start": {
+                "x": 43,
+                "y": 0
+              },
+              "end": {
+                "x": 54,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 54,
+                "y": 0
+              },
+              "end": {
+                "x": 54,
+                "y": 18
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 54,
+                "y": 18
+              },
+              "end": {
+                "x": 43,
+                "y": 18
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 43,
+                "y": 18
+              },
+              "end": {
+                "x": 43,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            }
+          ],
+          "doors": [
+            {
+              "x": 48,
+              "y": 0,
+              "width": 3
+            }
+          ],
+          "windows": [
+            {
+              "x": 52,
+              "y": 9,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "floor": "Level_2",
+          "bounds": {
+            "x": 56,
+            "y": 0,
+            "width": 10,
+            "height": 13,
+            "area": 130
+          },
+          "walls": [
+            {
+              "start": {
+                "x": 56,
+                "y": 0
+              },
+              "end": {
+                "x": 66,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 66,
+                "y": 0
+              },
+              "end": {
+                "x": 66,
+                "y": 13
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 66,
+                "y": 13
+              },
+              "end": {
+                "x": 56,
+                "y": 13
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            },
+            {
+              "start": {
+                "x": 56,
+                "y": 13
+              },
+              "end": {
+                "x": 56,
+                "y": 0
+              },
+              "thickness": 0.75,
+              "type": "exterior"
+            }
+          ],
+          "doors": [
+            {
+              "x": 61,
+              "y": 0,
+              "width": 3
+            }
+          ],
+          "windows": [
+            {
+              "x": 64,
+              "y": 6,
+              "width": 4
+            }
+          ]
+        }
+      ],
+      "structural_grid": {
+        "grid_spacing_ft": 20,
+        "column_positions": [
+          [
+            0,
+            0
+          ],
+          [
+            20,
+            0
+          ],
+          [
+            40,
+            0
+          ],
+          [
+            0,
+            20
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            40,
+            20
+          ]
+        ],
+        "beam_positions": [
+          [
+            0,
+            10
+          ],
+          [
+            20,
+            10
+          ],
+          [
+            40,
+            10
+          ]
+        ]
+      },
+      "material_quantities": {
+        "concrete_cum": 45.6,
+        "steel_kg": 2340,
+        "bricks_count": 12500,
+        "cement_bags": 180
+      }
+    },
+    "structural_grid": {
+      "analysis": "Comprehensive structural grid analysis completed",
+      "specifications": "Detailed structural grid specifications provided",
+      "implementation": "Step-by-step structural grid implementation plan",
+      "quality_control": "Quality control measures for structural grid"
+    },
+    "material_quantities": {
+      "analysis": "Comprehensive material quantities analysis completed",
+      "specifications": "Detailed material quantities specifications provided",
+      "implementation": "Step-by-step material quantities implementation plan",
+      "quality_control": "Quality control measures for material quantities"
+    },
+    "2d_floor_plan": {
+      "analysis": "Comprehensive 2d floor plan analysis completed",
+      "specifications": "Detailed 2d floor plan specifications provided",
+      "implementation": "Step-by-step 2d floor plan implementation plan",
+      "quality_control": "Quality control measures for 2d floor plan"
+    },
+    "3d_model_data": {
+      "analysis": "Comprehensive 3d model data analysis completed",
+      "specifications": "Detailed 3d model data specifications provided",
+      "implementation": "Step-by-step 3d model data implementation plan",
+      "quality_control": "Quality control measures for 3d model data"
+    },
+    "metadata_augmented_v1_1": {
+      "units": "mm",
+      "project_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "north_angle_deg": 0.0,
+      "elevation_datum": {
+        "name": "FFL_0",
+        "elevation_mm": 0
+      },
+      "dxf_layers": {
+        "WALLS": {
+          "color": 7,
+          "lineweight": 0.35
+        },
+        "DOORS": {
+          "color": 3,
+          "lineweight": 0.25
+        },
+        "WINDOWS": {
+          "color": 4,
+          "lineweight": 0.25
+        },
+        "COLUMNS": {
+          "color": 2,
+          "lineweight": 0.35
+        },
+        "BEAMS": {
+          "color": 1,
+          "lineweight": 0.35
+        },
+        "DIMENSIONS": {
+          "color": 5,
+          "lineweight": 0.18
+        }
+      },
+      "ifc_classes": {
+        "walls": "IfcWall",
+        "doors": "IfcDoor",
+        "windows": "IfcWindow",
+        "columns": "IfcColumn",
+        "beams": "IfcBeam"
+      },
+      "guids": {
+        "project_guid": "12345678-1234-1234-1234-123456789012",
+        "building_guid": "87654321-4321-4321-4321-210987654321"
+      }
+    }
+  }
+}

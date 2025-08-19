@@ -1,0 +1,157 @@
+{
+  "input": {
+    "problem_type": "Structural_Engineering",
+    "context": {
+      "indian_market": false,
+      "problem_type": "Structural_Engineering",
+      "region": "Africa",
+      "climate_zone": "Temperate",
+      "architectural_style": "Modern"
+    },
+    "plot_details": {
+      "plot_shape": "Square",
+      "width_ft": 105,
+      "length_ft": 93,
+      "orientation": "North",
+      "road_access": "Multiple_Sides",
+      "setback_front": 19,
+      "setback_rear": 13,
+      "setback_side": 7,
+      "area_sqft": 9765
+    },
+    "requirements": {
+      "family_size": 8,
+      "floors": 4,
+      "budget_inr": 534993,
+      "lifestyle": "Minimalist"
+    },
+    "construction_requirements": [
+      "Foundation",
+      "Column",
+      "Beam",
+      "Slab",
+      "Roof",
+      "Wall",
+      "Stair",
+      "Retaining_wall"
+    ],
+    "reasoning_steps": [
+      "Analyze site conditions and soil properties to determine foundation requirements",
+      "Calculate structural loads including dead loads, live loads, and environmental loads",
+      "Design foundation system based on soil bearing capacity and building loads",
+      "Determine structural system and member sizes considering safety factors and codes",
+      "Perform seismic analysis and design for the specific seismic zone requirements",
+      "Analyze wind loads and lateral stability considering building height and location",
+      "Detail structural connections and joints for optimal load transfer and constructability",
+      "Validate design through structural analysis and ensure compliance with all safety standards"
+    ]
+  },
+  "output": {
+    "structural_design": {
+      "foundation": {
+        "type": "Isolated_Footing",
+        "depth_m": 3,
+        "bearing_capacity": "217 kN/m2",
+        "soil_type": "Soft_Rock"
+      },
+      "superstructure": {
+        "system": "RCC_Frame_Structure",
+        "columns": "16_columns",
+        "beams": "Primary_and_secondary_beams",
+        "slab": "RCC_slab_150mm_thick"
+      },
+      "load_analysis": {
+        "dead_load_kg_m2": 375000,
+        "live_load_kg_m2": 500000,
+        "total_load_kg_m2": 875000,
+        "wind_load_kg_m2": 72
+      },
+      "seismic_design": {
+        "zone": "Zone_V",
+        "response_reduction_factor": 3.78,
+        "importance_factor": 1.0,
+        "ductility_detailing": "As_per_IS_13920",
+        "base_shear": "1052 kN"
+      },
+      "safety_factors": {
+        "concrete_safety_factor": 1.77,
+        "steel_safety_factor": 1.17,
+        "load_combination_factor": 1.37
+      }
+    },
+    "seismic_design": {
+      "analysis": "Comprehensive seismic design analysis completed",
+      "specifications": "Detailed seismic design specifications provided",
+      "implementation": "Step-by-step seismic design implementation plan",
+      "quality_control": "Quality control measures for seismic design"
+    },
+    "safety_factors": {
+      "analysis": "Comprehensive safety factors analysis completed",
+      "specifications": "Detailed safety factors specifications provided",
+      "implementation": "Step-by-step safety factors implementation plan",
+      "quality_control": "Quality control measures for safety factors"
+    },
+    "construction_details": {
+      "analysis": "Comprehensive construction details analysis completed",
+      "specifications": "Detailed construction details specifications provided",
+      "implementation": "Step-by-step construction details implementation plan",
+      "quality_control": "Quality control measures for construction details"
+    },
+    "quality_control": {
+      "analysis": "Comprehensive quality control analysis completed",
+      "specifications": "Detailed quality control specifications provided",
+      "implementation": "Step-by-step quality control implementation plan",
+      "quality_control": "Quality control measures for quality control"
+    },
+    "metadata_augmented_v1_1": {
+      "units": "mm",
+      "project_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "north_angle_deg": 0.0,
+      "elevation_datum": {
+        "name": "FFL_0",
+        "elevation_mm": 0
+      },
+      "dxf_layers": {
+        "WALLS": {
+          "color": 7,
+          "lineweight": 0.35
+        },
+        "DOORS": {
+          "color": 3,
+          "lineweight": 0.25
+        },
+        "WINDOWS": {
+          "color": 4,
+          "lineweight": 0.25
+        },
+        "COLUMNS": {
+          "color": 2,
+          "lineweight": 0.35
+        },
+        "BEAMS": {
+          "color": 1,
+          "lineweight": 0.35
+        },
+        "DIMENSIONS": {
+          "color": 5,
+          "lineweight": 0.18
+        }
+      },
+      "ifc_classes": {
+        "walls": "IfcWall",
+        "doors": "IfcDoor",
+        "windows": "IfcWindow",
+        "columns": "IfcColumn",
+        "beams": "IfcBeam"
+      },
+      "guids": {
+        "project_guid": "12345678-1234-1234-1234-123456789012",
+        "building_guid": "87654321-4321-4321-4321-210987654321"
+      }
+    }
+  }
+}

@@ -133,11 +133,11 @@ class TrainingConfig:
     output_dir: str = "housebrain_trained"
     
     # Training parameters
-    max_length: int = 2048
-    batch_size: int = 1
+    max_length: int = 768
+    batch_size: int = 2
     gradient_accumulation_steps: int = 8
     learning_rate: float = 2e-4
-    num_epochs: int = 2
+    num_epochs: int = 1
     warmup_steps: int = 100
     
     # LoRA parameters
@@ -146,9 +146,10 @@ class TrainingConfig:
     lora_dropout: float = 0.1
     
     # Monitoring
-    save_steps: int = 500
-    eval_steps: int = 250
-    logging_steps: int = 10
+    save_steps: int = 2000
+    eval_steps: int = 0
+    logging_steps: int = 25
+    save_total_limit: int = 1
     
     # Test mode for 10K
     test_mode: bool = False
@@ -413,6 +414,7 @@ Output: {json.dumps(output_data, indent=2)}"""
                 warmup_steps=self.config.warmup_steps,
                 logging_steps=self.config.logging_steps,
                 save_steps=self.config.save_steps,
+                save_total_limit=self.config.save_total_limit,
                 fp16=self.device == "cuda" and not use_bf16,
                 bf16=use_bf16,
                 dataloader_drop_last=True,
@@ -471,6 +473,9 @@ def main():
     parser.add_argument("--max-length", type=int, help="Max sequence length (tokens)")
     parser.add_argument("--grad-accum-steps", type=int, help="Gradient accumulation steps")
     parser.add_argument("--grad-checkpointing", action="store_true", help="Enable gradient checkpointing")
+    parser.add_argument("--save-steps", type=int, help="Save checkpoint every N steps")
+    parser.add_argument("--save-total-limit", type=int, help="Max checkpoints to keep")
+    parser.add_argument("--logging-steps", type=int, help="Log every N steps")
     
     args = parser.parse_args()
     
@@ -492,6 +497,12 @@ def main():
         config.gradient_accumulation_steps = args.grad_accum_steps
     if args.grad_checkpointing:
         config.gradient_checkpointing = True
+    if args.save_steps:
+        config.save_steps = args.save_steps
+    if args.save_total_limit:
+        config.save_total_limit = args.save_total_limit
+    if args.logging_steps:
+        config.logging_steps = args.logging_steps
     
     # Adjust for test mode
     if args.test:
@@ -502,7 +513,7 @@ def main():
         if not args.grad_accum_steps:
             config.gradient_accumulation_steps = 1
         config.save_steps = 100
-        config.eval_steps = 50
+        config.eval_steps = 0
         print("🧪 Test mode enabled - using reduced dataset")
     
     # Create and run trainer
