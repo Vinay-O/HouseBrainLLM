@@ -423,6 +423,8 @@ Output: {json.dumps(output_data, indent=2)}"""
                 save_safetensors=True,
                 optim="adamw_torch",
                 gradient_checkpointing=self.config.gradient_checkpointing,
+                **({"evaluation_strategy": "steps", "eval_steps": self.config.eval_steps}
+                   if (getattr(self.config, "eval_steps", 0) or 0) > 0 else {})
             )
             
             # Data collator
@@ -476,6 +478,7 @@ def main():
     parser.add_argument("--save-steps", type=int, help="Save checkpoint every N steps")
     parser.add_argument("--save-total-limit", type=int, help="Max checkpoints to keep")
     parser.add_argument("--logging-steps", type=int, help="Log every N steps")
+    parser.add_argument("--eval-steps", type=int, help="Run evaluation every N steps (0 disables)")
     
     args = parser.parse_args()
     
@@ -503,6 +506,8 @@ def main():
         config.save_total_limit = args.save_total_limit
     if args.logging_steps:
         config.logging_steps = args.logging_steps
+    if args.eval_steps is not None:
+        config.eval_steps = max(0, args.eval_steps)
     
     # Adjust for test mode
     if args.test:
