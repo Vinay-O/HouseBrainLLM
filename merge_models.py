@@ -8,16 +8,13 @@ Merges 6 trained models from parallel training into a single production model:
 - Creates ensemble model with best performance
 """
 
-import os
 import json
 import torch
-import shutil
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List
 import argparse
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from peft import PeftModel, LoraConfig, get_peft_model
-import numpy as np
+from peft import PeftModel
 
 class ModelMerger:
     """Merges multiple trained models into a single model"""
@@ -208,7 +205,7 @@ class ModelMerger:
                 # This is a simplified approach - in practice you'd load the actual args
                 return 1000  # Placeholder
             return 500  # Default
-        except:
+        except Exception:
             return 500
     
     def validate_merged_model(self, test_input: str = "Design a 3-bedroom modern house"):
@@ -231,7 +228,7 @@ class ModelMerger:
                 )
             
             generated_text = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-            print(f"✅ Model validation successful")
+            print("✅ Model validation successful")
             print(f"📝 Sample output: {generated_text[:100]}...")
             
             return True
@@ -297,7 +294,7 @@ def main():
     create_merge_config(valid_models, args.output)
     
     # Merge models
-    merged_model = merger.merge_models(args.output, args.strategy)
+    merger.merge_models(args.output, args.strategy)
     
     # Validate if requested
     if args.validate:

@@ -1,10 +1,9 @@
-from typing import List, Dict, Tuple, Optional
+from typing import List, Dict, Optional
 from .schema import (
     HouseInput, HouseOutput, Level, Room, Stair, RoomType, Rectangle, Point2D, 
-    Door, Window, ArchitecturalStyle
+    Door, Window
 )
 import math
-import random
 from dataclasses import dataclass
 
 

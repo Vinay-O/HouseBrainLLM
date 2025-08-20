@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://housebrain.ai/schemas/housebrain_plan.schema.json",
+  "title": "HouseBrain Architectural Plan",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "units": {"type": "string", "enum": ["mm", "cm"]},
+        "scale": {"type": "number", "minimum": 1},
+        "project": {"type": "string"},
+        "level": {"type": "string"}
+      },
+      "required": ["units", "scale"]
+    },
+    "walls": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "string"},
+          "start": {
+            "type": "array",
+            "items": {"type": "number"},
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "end": {
+            "type": "array",
+            "items": {"type": "number"},
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "type": {"type": "string", "enum": ["exterior", "interior"]},
+          "thickness": {"type": "number", "minimum": 20}
+        },
+        "required": ["id", "start", "end", "type", "thickness"]
+      }
+    },
+    "openings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "string"},
+          "wall_id": {"type": "string"},
+          "type": {"type": "string", "enum": ["door", "window"]},
+          "position": {"type": "number", "minimum": 0, "maximum": 1},
+          "width": {"type": "number", "minimum": 100},
+          "metadata": {"type": "object"}
+        },
+        "required": ["id", "wall_id", "type", "position", "width"]
+      }
+    },
+    "spaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "type": {"type": "string"},
+          "boundary": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {"type": "number"},
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "minItems": 3
+          }
+        },
+        "required": ["id", "name", "boundary"]
+      }
+    }
+  },
+  "required": ["metadata", "walls", "openings", "spaces"]
+}
+
+

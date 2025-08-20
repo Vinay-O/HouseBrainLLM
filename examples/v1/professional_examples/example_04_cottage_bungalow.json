@@ -1,0 +1,369 @@
+{
+  "metadata": {
+    "scale": 100,
+    "units": "mm",
+    "project_name": "Cottage Bungalow",
+    "total_area_sqft": 950,
+    "floors": 1,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "walls": [
+    {
+      "id": "ext_1",
+      "start": [
+        0,
+        0
+      ],
+      "end": [
+        10000,
+        0
+      ],
+      "type": "exterior",
+      "thickness": 200
+    },
+    {
+      "id": "ext_2",
+      "start": [
+        10000,
+        0
+      ],
+      "end": [
+        10000,
+        7000
+      ],
+      "type": "exterior",
+      "thickness": 200
+    },
+    {
+      "id": "ext_3",
+      "start": [
+        10000,
+        7000
+      ],
+      "end": [
+        0,
+        7000
+      ],
+      "type": "exterior",
+      "thickness": 200
+    },
+    {
+      "id": "ext_4",
+      "start": [
+        0,
+        7000
+      ],
+      "end": [
+        0,
+        0
+      ],
+      "type": "exterior",
+      "thickness": 200
+    },
+    {
+      "id": "int_1",
+      "start": [
+        3500,
+        0
+      ],
+      "end": [
+        3500,
+        4500
+      ],
+      "type": "interior",
+      "thickness": 100
+    },
+    {
+      "id": "int_2",
+      "start": [
+        3500,
+        4500
+      ],
+      "end": [
+        7000,
+        4500
+      ],
+      "type": "interior",
+      "thickness": 100
+    },
+    {
+      "id": "int_3",
+      "start": [
+        7000,
+        0
+      ],
+      "end": [
+        7000,
+        7000
+      ],
+      "type": "interior",
+      "thickness": 100
+    }
+  ],
+  "openings": [
+    {
+      "id": "front_door",
+      "wall_id": "ext_1",
+      "type": "door",
+      "position": 0.5,
+      "width": 815,
+      "metadata": {
+        "style": "cottage_entry"
+      }
+    },
+    {
+      "id": "win_living",
+      "wall_id": "ext_1",
+      "type": "window",
+      "position": 0.2,
+      "width": 1000,
+      "metadata": {
+        "style": "cottage_window"
+      }
+    },
+    {
+      "id": "win_dining",
+      "wall_id": "ext_1",
+      "type": "window",
+      "position": 0.8,
+      "width": 800,
+      "metadata": {
+        "style": "cottage_window"
+      }
+    },
+    {
+      "id": "win_kitchen",
+      "wall_id": "ext_2",
+      "type": "window",
+      "position": 0.3,
+      "width": 900,
+      "metadata": {
+        "style": "casement"
+      }
+    },
+    {
+      "id": "win_bed1",
+      "wall_id": "ext_2",
+      "type": "window",
+      "position": 0.8,
+      "width": 1000,
+      "metadata": {
+        "style": "double_hung"
+      }
+    },
+    {
+      "id": "win_bed2",
+      "wall_id": "ext_3",
+      "type": "window",
+      "position": 0.8,
+      "width": 1000,
+      "metadata": {
+        "style": "double_hung"
+      }
+    },
+    {
+      "id": "back_door",
+      "wall_id": "ext_4",
+      "type": "door",
+      "position": 0.7,
+      "width": 815,
+      "metadata": {
+        "style": "back_door"
+      }
+    },
+    {
+      "id": "door_bed1",
+      "wall_id": "int_1",
+      "type": "door",
+      "position": 0.7,
+      "width": 710,
+      "metadata": {
+        "swing": "inward"
+      }
+    },
+    {
+      "id": "door_bed2",
+      "wall_id": "int_2",
+      "type": "door",
+      "position": 0.6,
+      "width": 710,
+      "metadata": {
+        "swing": "inward"
+      }
+    },
+    {
+      "id": "door_bath",
+      "wall_id": "int_3",
+      "type": "door",
+      "position": 0.3,
+      "width": 610,
+      "metadata": {
+        "swing": "outward"
+      }
+    }
+  ],
+  "spaces": [
+    {
+      "id": "living",
+      "name": "Living Room",
+      "type": "living",
+      "boundary": [
+        [
+          0,
+          0
+        ],
+        [
+          3500,
+          0
+        ],
+        [
+          3500,
+          4500
+        ],
+        [
+          0,
+          4500
+        ]
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "type": "kitchen",
+      "boundary": [
+        [
+          0,
+          4500
+        ],
+        [
+          3500,
+          4500
+        ],
+        [
+          3500,
+          7000
+        ],
+        [
+          0,
+          7000
+        ]
+      ]
+    },
+    {
+      "id": "dining",
+      "name": "Dining Nook",
+      "type": "dining",
+      "boundary": [
+        [
+          3500,
+          4500
+        ],
+        [
+          5000,
+          4500
+        ],
+        [
+          5000,
+          7000
+        ],
+        [
+          3500,
+          7000
+        ]
+      ]
+    },
+    {
+      "id": "bedroom_1",
+      "name": "Bedroom 1",
+      "type": "bedroom",
+      "boundary": [
+        [
+          3500,
+          0
+        ],
+        [
+          7000,
+          0
+        ],
+        [
+          7000,
+          4500
+        ],
+        [
+          3500,
+          4500
+        ]
+      ]
+    },
+    {
+      "id": "bedroom_2",
+      "name": "Bedroom 2",
+      "type": "bedroom",
+      "boundary": [
+        [
+          7000,
+          0
+        ],
+        [
+          10000,
+          0
+        ],
+        [
+          10000,
+          4500
+        ],
+        [
+          7000,
+          4500
+        ]
+      ]
+    },
+    {
+      "id": "bathroom",
+      "name": "Bathroom",
+      "type": "bathroom",
+      "boundary": [
+        [
+          5000,
+          4500
+        ],
+        [
+          7000,
+          4500
+        ],
+        [
+          7000,
+          7000
+        ],
+        [
+          5000,
+          7000
+        ]
+      ]
+    },
+    {
+      "id": "utility",
+      "name": "Utility",
+      "type": "utility",
+      "boundary": [
+        [
+          7000,
+          4500
+        ],
+        [
+          10000,
+          4500
+        ],
+        [
+          10000,
+          7000
+        ],
+        [
+          7000,
+          7000
+        ]
+      ]
+    }
+  ]
+}

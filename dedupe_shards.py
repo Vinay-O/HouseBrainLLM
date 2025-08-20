@@ -20,7 +20,6 @@ Usage examples:
 import argparse
 import hashlib
 import json
-import os
 import shutil
 from pathlib import Path
 from typing import Dict, Tuple, Set, List

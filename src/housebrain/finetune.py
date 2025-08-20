@@ -12,8 +12,7 @@ import torch
 import logging
 from pathlib import Path
 from typing import Dict, List, Any, Optional
-from dataclasses import dataclass, field, is_dataclass, asdict
-import random
+from dataclasses import dataclass, is_dataclass, asdict
 
 # Import with fallback for notebook environments
 try:
@@ -159,11 +158,11 @@ class HouseBrainDataset:
                 # Old format
                 project = sample["project"]
                 input_data = project.get("input", {})
-                output_data = project.get("output", {})
+                
             else:
                 # New format (v5)
                 input_data = sample.get("input", {})
-                output_data = sample.get("output", {})
+                # output_data not used downstream
             
             # Extract basic details with fallbacks
             basic_details = input_data.get("basicDetails", {})
@@ -237,8 +236,8 @@ class HouseBrainDataset:
         for sample in train_samples:
             try:
                 input_data = self._convert_to_house_input(sample)
-                output_data = sample.get("output", {})
-                pair = self._create_prompt_and_response(input_data, output_data)
+                # output_data not used downstream
+                pair = self._create_prompt_and_response(input_data, sample.get("output", {}))
                 if pair and pair.get("prompt") and pair.get("response"):
                     pairs.append(pair)
             except Exception as e:
@@ -263,11 +262,11 @@ class HouseBrainDataset:
         for sample in val_samples:
             try:
                 input_data = self._convert_to_house_input(sample)
-                output_data = sample.get("output", {})
-                pair = self._create_prompt_and_response(input_data, output_data)
+                # output_data not used downstream
+                pair = self._create_prompt_and_response(input_data, sample.get("output", {}))
                 if pair:
                     pairs.append(pair)
-            except Exception as e:
+            except Exception:
                 continue
         print(f"📊 Eval dataset prepared: {len(pairs)} samples")
         return Dataset.from_list(pairs)

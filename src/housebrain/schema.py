@@ -1,7 +1,6 @@
-from typing import List, Dict, Optional, Union, Literal
+from typing import List, Dict, Union, Literal
 from pydantic import BaseModel, Field, validator
 from enum import Enum
-import math
 
 
 class RoomType(str, Enum):

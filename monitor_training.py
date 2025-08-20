@@ -37,7 +37,7 @@ def monitor_training():
         with open(metrics_file, 'r') as f:
             metrics = json.load(f)
         
-        print(f"\n📈 Metrics Summary:")
+        print("\n📈 Metrics Summary:")
         if metrics["train_loss"]:
             latest_train = metrics["train_loss"][-1]
             print(f"   Latest Train Loss: {latest_train[1]:.4f} (Step {latest_train[0]})")
@@ -55,7 +55,7 @@ def monitor_training():
     if model_dir.exists():
         checkpoints = list(model_dir.glob("checkpoint-*"))
         if checkpoints:
-            print(f"\n💾 Saved Checkpoints:")
+            print("\n💾 Saved Checkpoints:")
             for checkpoint in sorted(checkpoints):
                 print(f"   {checkpoint.name}")
     

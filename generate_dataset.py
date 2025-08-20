@@ -11,9 +11,8 @@ import argparse
 from typing import Dict, List, Any
 from dataclasses import dataclass
 import zipfile
-from pathlib import Path
 
-from src.housebrain.schema import HouseInput, HouseOutput, RoomType, ArchitecturalStyle
+from src.housebrain.schema import HouseInput, HouseOutput, RoomType
 from src.housebrain.layout import solve_house_layout
 
 
@@ -120,12 +119,11 @@ def generate_sample(config: DatasetConfig) -> Dict[str, Any]:
 
 def _create_basic_output(house_input: HouseInput) -> HouseOutput:
     """Create basic output without layout solving."""
-    from src.housebrain.schema import Level, Room, Point2D, Rectangle, RoomType
+    from src.housebrain.schema import Level, Room, Rectangle
     
     # Create basic rooms
     rooms = []
-    room_types = [RoomType.BEDROOM, RoomType.LIVING_ROOM, RoomType.KITCHEN, RoomType.BATHROOM]
-    
+        
     for i in range(house_input.bedrooms):
         rooms.append(Room(
             type=RoomType.BEDROOM,
@@ -172,7 +170,6 @@ def _create_basic_output(house_input: HouseInput) -> HouseOutput:
 
 def _create_enhanced_output(sample: Dict[str, Any]) -> Dict[str, Any]:
     """Add enhanced features to the output."""
-    input_data = sample["input"]
     output_data = sample["output"]
     
     # Add exterior specifications
@@ -216,8 +213,7 @@ def generate_dataset(config: DatasetConfig) -> None:
     
     # Calculate split
     train_samples = int(config.samples * config.train_ratio)
-    val_samples = config.samples - train_samples
-    
+        
     # Generate samples
     all_samples = []
     for i in range(config.samples):
@@ -260,16 +256,16 @@ def generate_dataset(config: DatasetConfig) -> None:
                     zipf.write(file_path, arcname)
         print(f"Dataset saved as {zip_path}")
     
-    print(f"Dataset generation complete!")
+    print("Dataset generation complete!")
     print(f"Training samples: {len(train_samples_list)}")
     print(f"Validation samples: {len(val_samples_list)}")
     print(f"Output directory: {config.output_dir}")
     
     if not config.zip_output:
-        print(f"\nNext steps:")
+        print("\nNext steps:")
         print(f"1. Upload {config.output_dir} to Colab/Kaggle")
-        print(f"2. Use the training scripts to fine-tune the model")
-        print(f"3. Monitor training progress")
+        print("2. Use the training scripts to fine-tune the model")
+        print("3. Monitor training progress")
 
 
 def main():

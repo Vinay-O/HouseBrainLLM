@@ -1,7 +1,7 @@
 import json
 import os
 from typing import Dict, Any, Optional, List
-from .schema import HouseInput, HouseOutput, ValidationResult
+from .schema import HouseInput, HouseOutput
 from .layout import solve_house_layout
 from .validate import validate_house_design
 

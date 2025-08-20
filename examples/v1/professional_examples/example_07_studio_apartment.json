@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "scale": 100,
+    "units": "mm",
+    "project_name": "Studio Apartment",
+    "total_area_sqft": 650,
+    "floors": 1,
+    "bedrooms": 0,
+    "bathrooms": 1
+  },
+  "walls": [
+    {
+      "id": "ext_1",
+      "start": [
+        0,
+        0
+      ],
+      "end": [
+        8500,
+        0
+      ],
+      "type": "exterior",
+      "thickness": 200
+    },
+    {
+      "id": "ext_2",
+      "start": [
+        8500,
+        0
+      ],
+      "end": [
+        8500,
+        7000
+      ],
+      "type": "exterior",
+      "thickness": 200
+    },
+    {
+      "id": "ext_3",
+      "start": [
+        8500,
+        7000
+      ],
+      "end": [
+        0,
+        7000
+      ],
+      "type": "exterior",
+      "thickness": 200
+    },
+    {
+      "id": "ext_4",
+      "start": [
+        0,
+        7000
+      ],
+      "end": [
+        0,
+        0
+      ],
+      "type": "exterior",
+      "thickness": 200
+    },
+    {
+      "id": "int_1",
+      "start": [
+        6000,
+        0
+      ],
+      "end": [
+        6000,
+        3000
+      ],
+      "type": "interior",
+      "thickness": 100
+    },
+    {
+      "id": "int_2",
+      "start": [
+        6000,
+        3000
+      ],
+      "end": [
+        8500,
+        3000
+      ],
+      "type": "interior",
+      "thickness": 100
+    }
+  ],
+  "openings": [
+    {
+      "id": "entry",
+      "wall_id": "ext_1",
+      "type": "door",
+      "position": 0.2,
+      "width": 815,
+      "metadata": {
+        "style": "apartment_entry"
+      }
+    },
+    {
+      "id": "win_main",
+      "wall_id": "ext_1",
+      "type": "window",
+      "position": 0.7,
+      "width": 2500,
+      "metadata": {
+        "style": "floor_to_ceiling"
+      }
+    },
+    {
+      "id": "win_kitchen",
+      "wall_id": "ext_2",
+      "type": "window",
+      "position": 0.3,
+      "width": 1200,
+      "metadata": {
+        "style": "casement"
+      }
+    },
+    {
+      "id": "win_living",
+      "wall_id": "ext_3",
+      "type": "window",
+      "position": 0.6,
+      "width": 1800,
+      "metadata": {
+        "style": "sliding"
+      }
+    },
+    {
+      "id": "door_bath",
+      "wall_id": "int_1",
+      "type": "door",
+      "position": 0.8,
+      "width": 710,
+      "metadata": {
+        "swing": "inward"
+      }
+    }
+  ],
+  "spaces": [
+    {
+      "id": "main_area",
+      "name": "Living/Sleeping Area",
+      "type": "living",
+      "boundary": [
+        [
+          0,
+          0
+        ],
+        [
+          6000,
+          0
+        ],
+        [
+          6000,
+          7000
+        ],
+        [
+          0,
+          7000
+        ]
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchenette",
+      "type": "kitchen",
+      "boundary": [
+        [
+          6000,
+          0
+        ],
+        [
+          8500,
+          0
+        ],
+        [
+          8500,
+          3000
+        ],
+        [
+          6000,
+          3000
+        ]
+      ]
+    },
+    {
+      "id": "bathroom",
+      "name": "Bathroom",
+      "type": "bathroom",
+      "boundary": [
+        [
+          6000,
+          3000
+        ],
+        [
+          8500,
+          3000
+        ],
+        [
+          8500,
+          7000
+        ],
+        [
+          6000,
+          7000
+        ]
+      ]
+    }
+  ]
+}

@@ -20,7 +20,6 @@ import subprocess
 from pathlib import Path
 from typing import Dict, List, Any, Optional
 from dataclasses import dataclass
-from datetime import datetime
 
 # Fix dependencies first
 def fix_dependencies():
@@ -168,7 +167,7 @@ class HouseBrainTrainer:
         self.tokenizer = None
         self.dataset = None
         
-        print(f"🎯 HouseBrain Trainer initialized")
+        print("🎯 HouseBrain Trainer initialized")
         print(f"📱 Device: {self.device}")
         print(f"📂 Dataset: {config.dataset_path}")
         print(f"🤖 Model: {config.model_name}")

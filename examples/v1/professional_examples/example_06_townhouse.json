@@ -1,0 +1,372 @@
+{
+  "metadata": {
+    "scale": 100,
+    "units": "mm",
+    "project_name": "Urban Townhouse",
+    "total_area_sqft": 1850,
+    "floors": 2,
+    "bedrooms": 3,
+    "bathrooms": 2.5
+  },
+  "walls": [
+    {
+      "id": "ext_1",
+      "start": [
+        0,
+        0
+      ],
+      "end": [
+        8000,
+        0
+      ],
+      "type": "exterior",
+      "thickness": 230
+    },
+    {
+      "id": "ext_2",
+      "start": [
+        8000,
+        0
+      ],
+      "end": [
+        8000,
+        12000
+      ],
+      "type": "exterior",
+      "thickness": 230
+    },
+    {
+      "id": "ext_3",
+      "start": [
+        8000,
+        12000
+      ],
+      "end": [
+        0,
+        12000
+      ],
+      "type": "exterior",
+      "thickness": 230
+    },
+    {
+      "id": "ext_4",
+      "start": [
+        0,
+        12000
+      ],
+      "end": [
+        0,
+        0
+      ],
+      "type": "exterior",
+      "thickness": 230
+    },
+    {
+      "id": "int_1",
+      "start": [
+        0,
+        4000
+      ],
+      "end": [
+        6000,
+        4000
+      ],
+      "type": "interior",
+      "thickness": 115
+    },
+    {
+      "id": "int_2",
+      "start": [
+        6000,
+        0
+      ],
+      "end": [
+        6000,
+        8000
+      ],
+      "type": "interior",
+      "thickness": 115
+    },
+    {
+      "id": "int_3",
+      "start": [
+        0,
+        8000
+      ],
+      "end": [
+        8000,
+        8000
+      ],
+      "type": "interior",
+      "thickness": 115
+    },
+    {
+      "id": "int_4",
+      "start": [
+        4000,
+        8000
+      ],
+      "end": [
+        4000,
+        12000
+      ],
+      "type": "interior",
+      "thickness": 115
+    }
+  ],
+  "openings": [
+    {
+      "id": "front_door",
+      "wall_id": "ext_1",
+      "type": "door",
+      "position": 0.3,
+      "width": 915,
+      "metadata": {
+        "style": "townhouse_entry"
+      }
+    },
+    {
+      "id": "win_living",
+      "wall_id": "ext_1",
+      "type": "window",
+      "position": 0.7,
+      "width": 1500,
+      "metadata": {
+        "style": "bay_window"
+      }
+    },
+    {
+      "id": "win_kitchen",
+      "wall_id": "ext_2",
+      "type": "window",
+      "position": 0.2,
+      "width": 1000,
+      "metadata": {
+        "style": "casement"
+      }
+    },
+    {
+      "id": "win_dining",
+      "wall_id": "ext_2",
+      "type": "window",
+      "position": 0.6,
+      "width": 1200,
+      "metadata": {
+        "style": "double_hung"
+      }
+    },
+    {
+      "id": "win_family",
+      "wall_id": "ext_3",
+      "type": "window",
+      "position": 0.5,
+      "width": 1800,
+      "metadata": {
+        "style": "sliding"
+      }
+    },
+    {
+      "id": "patio_access",
+      "wall_id": "ext_4",
+      "type": "door",
+      "position": 0.8,
+      "width": 1525,
+      "metadata": {
+        "style": "sliding_door"
+      }
+    },
+    {
+      "id": "door_powder",
+      "wall_id": "int_1",
+      "type": "door",
+      "position": 0.8,
+      "width": 610,
+      "metadata": {
+        "swing": "outward"
+      }
+    },
+    {
+      "id": "door_kitchen",
+      "wall_id": "int_2",
+      "type": "door",
+      "position": 0.6,
+      "width": 915,
+      "metadata": {
+        "style": "opening"
+      }
+    },
+    {
+      "id": "stairs_up",
+      "wall_id": "int_3",
+      "type": "door",
+      "position": 0.2,
+      "width": 915,
+      "metadata": {
+        "style": "stair_opening"
+      }
+    }
+  ],
+  "spaces": [
+    {
+      "id": "living",
+      "name": "Living Room",
+      "type": "living",
+      "boundary": [
+        [
+          0,
+          0
+        ],
+        [
+          6000,
+          0
+        ],
+        [
+          6000,
+          4000
+        ],
+        [
+          0,
+          4000
+        ]
+      ]
+    },
+    {
+      "id": "dining",
+      "name": "Dining Area",
+      "type": "dining",
+      "boundary": [
+        [
+          6000,
+          0
+        ],
+        [
+          8000,
+          0
+        ],
+        [
+          8000,
+          8000
+        ],
+        [
+          6000,
+          8000
+        ]
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "type": "kitchen",
+      "boundary": [
+        [
+          0,
+          4000
+        ],
+        [
+          4000,
+          4000
+        ],
+        [
+          4000,
+          8000
+        ],
+        [
+          0,
+          8000
+        ]
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family Room",
+      "type": "family",
+      "boundary": [
+        [
+          0,
+          8000
+        ],
+        [
+          4000,
+          8000
+        ],
+        [
+          4000,
+          12000
+        ],
+        [
+          0,
+          12000
+        ]
+      ]
+    },
+    {
+      "id": "breakfast",
+      "name": "Breakfast Nook",
+      "type": "dining",
+      "boundary": [
+        [
+          4000,
+          8000
+        ],
+        [
+          8000,
+          8000
+        ],
+        [
+          8000,
+          12000
+        ],
+        [
+          4000,
+          12000
+        ]
+      ]
+    },
+    {
+      "id": "powder",
+      "name": "Powder Room",
+      "type": "bathroom",
+      "boundary": [
+        [
+          4000,
+          4000
+        ],
+        [
+          6000,
+          4000
+        ],
+        [
+          6000,
+          6000
+        ],
+        [
+          4000,
+          6000
+        ]
+      ]
+    },
+    {
+      "id": "stairs",
+      "name": "Stairwell",
+      "type": "circulation",
+      "boundary": [
+        [
+          4000,
+          6000
+        ],
+        [
+          6000,
+          6000
+        ],
+        [
+          6000,
+          8000
+        ],
+        [
+          4000,
+          8000
+        ]
+      ]
+    }
+  ]
+}

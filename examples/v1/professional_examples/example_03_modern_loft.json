@@ -1,0 +1,344 @@
+{
+  "metadata": {
+    "scale": 100,
+    "units": "mm",
+    "project_name": "Modern Urban Loft",
+    "total_area_sqft": 1800,
+    "floors": 1,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "walls": [
+    {
+      "id": "ext_1",
+      "start": [
+        0,
+        0
+      ],
+      "end": [
+        15000,
+        0
+      ],
+      "type": "exterior",
+      "thickness": 300
+    },
+    {
+      "id": "ext_2",
+      "start": [
+        15000,
+        0
+      ],
+      "end": [
+        15000,
+        8000
+      ],
+      "type": "exterior",
+      "thickness": 300
+    },
+    {
+      "id": "ext_3",
+      "start": [
+        15000,
+        8000
+      ],
+      "end": [
+        0,
+        8000
+      ],
+      "type": "exterior",
+      "thickness": 300
+    },
+    {
+      "id": "ext_4",
+      "start": [
+        0,
+        8000
+      ],
+      "end": [
+        0,
+        0
+      ],
+      "type": "exterior",
+      "thickness": 300
+    },
+    {
+      "id": "int_1",
+      "start": [
+        10000,
+        0
+      ],
+      "end": [
+        10000,
+        5000
+      ],
+      "type": "interior",
+      "thickness": 90
+    },
+    {
+      "id": "int_2",
+      "start": [
+        10000,
+        5000
+      ],
+      "end": [
+        15000,
+        5000
+      ],
+      "type": "interior",
+      "thickness": 90
+    },
+    {
+      "id": "int_3",
+      "start": [
+        12500,
+        5000
+      ],
+      "end": [
+        12500,
+        8000
+      ],
+      "type": "interior",
+      "thickness": 90
+    }
+  ],
+  "openings": [
+    {
+      "id": "entry",
+      "wall_id": "ext_1",
+      "type": "door",
+      "position": 0.1,
+      "width": 1220,
+      "metadata": {
+        "style": "glass_entry"
+      }
+    },
+    {
+      "id": "win_living_1",
+      "wall_id": "ext_1",
+      "type": "window",
+      "position": 0.4,
+      "width": 3000,
+      "metadata": {
+        "style": "floor_to_ceiling"
+      }
+    },
+    {
+      "id": "win_living_2",
+      "wall_id": "ext_1",
+      "type": "window",
+      "position": 0.8,
+      "width": 2000,
+      "metadata": {
+        "style": "floor_to_ceiling"
+      }
+    },
+    {
+      "id": "win_dining",
+      "wall_id": "ext_2",
+      "type": "window",
+      "position": 0.3,
+      "width": 2500,
+      "metadata": {
+        "style": "floor_to_ceiling"
+      }
+    },
+    {
+      "id": "win_bed1",
+      "wall_id": "ext_2",
+      "type": "window",
+      "position": 0.8,
+      "width": 1500,
+      "metadata": {
+        "style": "casement"
+      }
+    },
+    {
+      "id": "win_bed2",
+      "wall_id": "ext_3",
+      "type": "window",
+      "position": 0.8,
+      "width": 1500,
+      "metadata": {
+        "style": "casement"
+      }
+    },
+    {
+      "id": "win_kitchen",
+      "wall_id": "ext_3",
+      "type": "window",
+      "position": 0.2,
+      "width": 2000,
+      "metadata": {
+        "style": "awning"
+      }
+    },
+    {
+      "id": "door_bed1",
+      "wall_id": "int_1",
+      "type": "door",
+      "position": 0.6,
+      "width": 915,
+      "metadata": {
+        "swing": "inward"
+      }
+    },
+    {
+      "id": "door_bed2",
+      "wall_id": "int_2",
+      "type": "door",
+      "position": 0.7,
+      "width": 915,
+      "metadata": {
+        "swing": "inward"
+      }
+    }
+  ],
+  "spaces": [
+    {
+      "id": "great_room",
+      "name": "Great Room",
+      "type": "living",
+      "boundary": [
+        [
+          0,
+          0
+        ],
+        [
+          10000,
+          0
+        ],
+        [
+          10000,
+          5000
+        ],
+        [
+          6000,
+          5000
+        ],
+        [
+          6000,
+          8000
+        ],
+        [
+          0,
+          8000
+        ]
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "type": "kitchen",
+      "boundary": [
+        [
+          6000,
+          5000
+        ],
+        [
+          10000,
+          5000
+        ],
+        [
+          10000,
+          8000
+        ],
+        [
+          6000,
+          8000
+        ]
+      ]
+    },
+    {
+      "id": "master_bed",
+      "name": "Master Suite",
+      "type": "bedroom",
+      "boundary": [
+        [
+          10000,
+          0
+        ],
+        [
+          15000,
+          0
+        ],
+        [
+          15000,
+          5000
+        ],
+        [
+          10000,
+          5000
+        ]
+      ]
+    },
+    {
+      "id": "bedroom_2",
+      "name": "Bedroom 2",
+      "type": "bedroom",
+      "boundary": [
+        [
+          10000,
+          5000
+        ],
+        [
+          12500,
+          5000
+        ],
+        [
+          12500,
+          8000
+        ],
+        [
+          10000,
+          8000
+        ]
+      ]
+    },
+    {
+      "id": "master_bath",
+      "name": "Master Bath",
+      "type": "bathroom",
+      "boundary": [
+        [
+          13000,
+          0
+        ],
+        [
+          15000,
+          0
+        ],
+        [
+          15000,
+          3000
+        ],
+        [
+          13000,
+          3000
+        ]
+      ]
+    },
+    {
+      "id": "guest_bath",
+      "name": "Guest Bath",
+      "type": "bathroom",
+      "boundary": [
+        [
+          12500,
+          5000
+        ],
+        [
+          15000,
+          5000
+        ],
+        [
+          15000,
+          8000
+        ],
+        [
+          12500,
+          8000
+        ]
+      ]
+    }
+  ]
+}

@@ -5,7 +5,6 @@ Easily resume HouseBrain training from the latest checkpoint
 """
 
 import os
-import glob
 from pathlib import Path
 
 def find_latest_checkpoint():

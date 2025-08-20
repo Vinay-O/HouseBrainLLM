@@ -1,5 +1,5 @@
-from typing import List, Dict, Tuple, Optional
-from .schema import HouseOutput, Level, Room, Stair, RoomType, Rectangle, Point2D, ValidationResult
+from typing import List, Tuple
+from .schema import HouseOutput, Level, Room, RoomType, Rectangle, ValidationResult
 import math
 
 
@@ -101,7 +101,7 @@ class HouseValidator:
             
             # Check stair proportions
             if stair.length < stair.width * 2:
-                warnings.append(f"Stair may be too short for comfortable use")
+                warnings.append("Stair may be too short for comfortable use")
                 score -= 5
         
         return errors, warnings, score

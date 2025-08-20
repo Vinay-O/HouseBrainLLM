@@ -1,0 +1,703 @@
+{
+  "metadata": {
+    "project_name": "example_05_luxury_villa v2",
+    "units": "mm"
+  },
+  "levels": [
+    {
+      "id": "L1",
+      "name": "Level 1",
+      "elevation_mm": 0
+    }
+  ],
+  "walls": [
+    {
+      "id": "ext_1",
+      "level_id": "L1",
+      "start": [
+        0,
+        0
+      ],
+      "end": [
+        18000,
+        0
+      ],
+      "type": "exterior",
+      "thickness": 250,
+      "height": 3000,
+      "load_bearing": true
+    },
+    {
+      "id": "ext_2",
+      "level_id": "L1",
+      "start": [
+        18000,
+        0
+      ],
+      "end": [
+        18000,
+        12000
+      ],
+      "type": "exterior",
+      "thickness": 250,
+      "height": 3000,
+      "load_bearing": true
+    },
+    {
+      "id": "ext_3",
+      "level_id": "L1",
+      "start": [
+        18000,
+        12000
+      ],
+      "end": [
+        0,
+        12000
+      ],
+      "type": "exterior",
+      "thickness": 250,
+      "height": 3000,
+      "load_bearing": true
+    },
+    {
+      "id": "ext_4",
+      "level_id": "L1",
+      "start": [
+        0,
+        12000
+      ],
+      "end": [
+        0,
+        0
+      ],
+      "type": "exterior",
+      "thickness": 250,
+      "height": 3000,
+      "load_bearing": true
+    },
+    {
+      "id": "int_1",
+      "level_id": "L1",
+      "start": [
+        6000,
+        0
+      ],
+      "end": [
+        6000,
+        8000
+      ],
+      "type": "interior",
+      "thickness": 150,
+      "height": 2700,
+      "load_bearing": false
+    },
+    {
+      "id": "int_2",
+      "level_id": "L1",
+      "start": [
+        6000,
+        8000
+      ],
+      "end": [
+        12000,
+        8000
+      ],
+      "type": "interior",
+      "thickness": 150,
+      "height": 2700,
+      "load_bearing": false
+    },
+    {
+      "id": "int_3",
+      "level_id": "L1",
+      "start": [
+        12000,
+        0
+      ],
+      "end": [
+        12000,
+        12000
+      ],
+      "type": "interior",
+      "thickness": 150,
+      "height": 2700,
+      "load_bearing": false
+    },
+    {
+      "id": "int_4",
+      "level_id": "L1",
+      "start": [
+        0,
+        8000
+      ],
+      "end": [
+        6000,
+        8000
+      ],
+      "type": "interior",
+      "thickness": 150,
+      "height": 2700,
+      "load_bearing": false
+    },
+    {
+      "id": "int_5",
+      "level_id": "L1",
+      "start": [
+        9000,
+        8000
+      ],
+      "end": [
+        9000,
+        12000
+      ],
+      "type": "interior",
+      "thickness": 150,
+      "height": 2700,
+      "load_bearing": false
+    },
+    {
+      "id": "int_6",
+      "level_id": "L1",
+      "start": [
+        15000,
+        8000
+      ],
+      "end": [
+        15000,
+        12000
+      ],
+      "type": "interior",
+      "thickness": 150,
+      "height": 2700,
+      "load_bearing": false
+    },
+    {
+      "id": "int_7",
+      "level_id": "L1",
+      "start": [
+        3000,
+        8000
+      ],
+      "end": [
+        3000,
+        12000
+      ],
+      "type": "interior",
+      "thickness": 150,
+      "height": 2700,
+      "load_bearing": false
+    }
+  ],
+  "openings": [
+    {
+      "id": "grand_entry",
+      "level_id": "L1",
+      "wall_id": "ext_1",
+      "type": "door",
+      "position": 0.5,
+      "width": 1830,
+      "height": 2100,
+      "sill_height": 0,
+      "head_height": 2100,
+      "frame_depth": 100,
+      "frame_width": 50,
+      "mullion_pattern": "none",
+      "handing": "RHR",
+      "swing": "in"
+    },
+    {
+      "id": "win_living_1",
+      "level_id": "L1",
+      "wall_id": "ext_1",
+      "type": "window",
+      "position": 0.2,
+      "width": 2500,
+      "height": 2100,
+      "sill_height": 900,
+      "head_height": 2100,
+      "frame_depth": 100,
+      "frame_width": 50,
+      "mullion_pattern": "none",
+      "window_operation": "fixed"
+    },
+    {
+      "id": "win_living_2",
+      "level_id": "L1",
+      "wall_id": "ext_1",
+      "type": "window",
+      "position": 0.8,
+      "width": 2000,
+      "height": 2100,
+      "sill_height": 900,
+      "head_height": 2100,
+      "frame_depth": 100,
+      "frame_width": 50,
+      "mullion_pattern": "none",
+      "window_operation": "fixed"
+    },
+    {
+      "id": "win_master",
+      "level_id": "L1",
+      "wall_id": "ext_2",
+      "type": "window",
+      "position": 0.3,
+      "width": 2500,
+      "height": 2100,
+      "sill_height": 900,
+      "head_height": 2100,
+      "frame_depth": 100,
+      "frame_width": 50,
+      "mullion_pattern": "none",
+      "window_operation": "fixed"
+    },
+    {
+      "id": "win_dining",
+      "level_id": "L1",
+      "wall_id": "ext_2",
+      "type": "window",
+      "position": 0.7,
+      "width": 2000,
+      "height": 2100,
+      "sill_height": 900,
+      "head_height": 2100,
+      "frame_depth": 100,
+      "frame_width": 50,
+      "mullion_pattern": "none",
+      "window_operation": "casement_left_out"
+    },
+    {
+      "id": "win_kitchen",
+      "level_id": "L1",
+      "wall_id": "ext_3",
+      "type": "window",
+      "position": 0.2,
+      "width": 1800,
+      "height": 2100,
+      "sill_height": 900,
+      "head_height": 2100,
+      "frame_depth": 100,
+      "frame_width": 50,
+      "mullion_pattern": "none",
+      "window_operation": "fixed"
+    },
+    {
+      "id": "win_family",
+      "level_id": "L1",
+      "wall_id": "ext_3",
+      "type": "window",
+      "position": 0.5,
+      "width": 3000,
+      "height": 2100,
+      "sill_height": 900,
+      "head_height": 2100,
+      "frame_depth": 100,
+      "frame_width": 50,
+      "mullion_pattern": "none",
+      "window_operation": "fixed"
+    },
+    {
+      "id": "win_study",
+      "level_id": "L1",
+      "wall_id": "ext_3",
+      "type": "window",
+      "position": 0.8,
+      "width": 1500,
+      "height": 2100,
+      "sill_height": 900,
+      "head_height": 2100,
+      "frame_depth": 100,
+      "frame_width": 50,
+      "mullion_pattern": "none",
+      "window_operation": "double_hung"
+    },
+    {
+      "id": "patio_doors",
+      "level_id": "L1",
+      "wall_id": "ext_4",
+      "type": "door",
+      "position": 0.4,
+      "width": 2440,
+      "height": 2100,
+      "sill_height": 0,
+      "head_height": 2100,
+      "frame_depth": 100,
+      "frame_width": 50,
+      "mullion_pattern": "none",
+      "handing": "RHR",
+      "swing": "in"
+    },
+    {
+      "id": "door_study",
+      "level_id": "L1",
+      "wall_id": "int_1",
+      "type": "door",
+      "position": 0.8,
+      "width": 915,
+      "height": 2100,
+      "sill_height": 0,
+      "head_height": 2100,
+      "frame_depth": 100,
+      "frame_width": 50,
+      "mullion_pattern": "none",
+      "handing": "RHR",
+      "swing": "in"
+    },
+    {
+      "id": "door_powder",
+      "level_id": "L1",
+      "wall_id": "int_2",
+      "type": "door",
+      "position": 0.2,
+      "width": 710,
+      "height": 2100,
+      "sill_height": 0,
+      "head_height": 2100,
+      "frame_depth": 100,
+      "frame_width": 50,
+      "mullion_pattern": "none",
+      "handing": "RHR",
+      "swing": "out"
+    },
+    {
+      "id": "door_master",
+      "level_id": "L1",
+      "wall_id": "int_3",
+      "type": "door",
+      "position": 0.4,
+      "width": 915,
+      "height": 2100,
+      "sill_height": 0,
+      "head_height": 2100,
+      "frame_depth": 100,
+      "frame_width": 50,
+      "mullion_pattern": "none",
+      "handing": "RHR",
+      "swing": "in"
+    },
+    {
+      "id": "door_guest1",
+      "level_id": "L1",
+      "wall_id": "int_5",
+      "type": "door",
+      "position": 0.6,
+      "width": 815,
+      "height": 2100,
+      "sill_height": 0,
+      "head_height": 2100,
+      "frame_depth": 100,
+      "frame_width": 50,
+      "mullion_pattern": "none",
+      "handing": "RHR",
+      "swing": "in"
+    },
+    {
+      "id": "door_guest2",
+      "level_id": "L1",
+      "wall_id": "int_6",
+      "type": "door",
+      "position": 0.6,
+      "width": 815,
+      "height": 2100,
+      "sill_height": 0,
+      "head_height": 2100,
+      "frame_depth": 100,
+      "frame_width": 50,
+      "mullion_pattern": "none",
+      "handing": "RHR",
+      "swing": "in"
+    }
+  ],
+  "spaces": [
+    {
+      "id": "foyer",
+      "name": "Grand Foyer",
+      "type": "entrance",
+      "level_id": "L1",
+      "boundary": [
+        [
+          6000,
+          0
+        ],
+        [
+          9000,
+          0
+        ],
+        [
+          9000,
+          3000
+        ],
+        [
+          6000,
+          3000
+        ]
+      ],
+      "ceiling_height": 2700,
+      "finish_schedule": {
+        "floor": "wood",
+        "wall": "paint",
+        "ceiling": "gyp"
+      },
+      "occupancy_load": 2,
+      "egress_required": false
+    },
+    {
+      "id": "living",
+      "name": "Living Room",
+      "type": "living",
+      "level_id": "L1",
+      "boundary": [
+        [
+          0,
+          0
+        ],
+        [
+          6000,
+          0
+        ],
+        [
+          6000,
+          8000
+        ],
+        [
+          0,
+          8000
+        ]
+      ],
+      "ceiling_height": 2700,
+      "finish_schedule": {
+        "floor": "wood",
+        "wall": "paint",
+        "ceiling": "gyp"
+      },
+      "occupancy_load": 2,
+      "egress_required": false
+    },
+    {
+      "id": "study",
+      "name": "Study",
+      "type": "office",
+      "level_id": "L1",
+      "boundary": [
+        [
+          9000,
+          0
+        ],
+        [
+          12000,
+          0
+        ],
+        [
+          12000,
+          4000
+        ],
+        [
+          9000,
+          4000
+        ]
+      ],
+      "ceiling_height": 2700,
+      "finish_schedule": {
+        "floor": "wood",
+        "wall": "paint",
+        "ceiling": "gyp"
+      },
+      "occupancy_load": 2,
+      "egress_required": false
+    },
+    {
+      "id": "dining",
+      "name": "Formal Dining",
+      "type": "dining",
+      "level_id": "L1",
+      "boundary": [
+        [
+          12000,
+          0
+        ],
+        [
+          18000,
+          0
+        ],
+        [
+          18000,
+          8000
+        ],
+        [
+          12000,
+          8000
+        ]
+      ],
+      "ceiling_height": 2700,
+      "finish_schedule": {
+        "floor": "wood",
+        "wall": "paint",
+        "ceiling": "gyp"
+      },
+      "occupancy_load": 2,
+      "egress_required": false
+    },
+    {
+      "id": "kitchen",
+      "name": "Gourmet Kitchen",
+      "type": "kitchen",
+      "level_id": "L1",
+      "boundary": [
+        [
+          0,
+          8000
+        ],
+        [
+          3000,
+          8000
+        ],
+        [
+          3000,
+          12000
+        ],
+        [
+          0,
+          12000
+        ]
+      ],
+      "ceiling_height": 2700,
+      "finish_schedule": {
+        "floor": "wood",
+        "wall": "paint",
+        "ceiling": "gyp"
+      },
+      "occupancy_load": 2,
+      "egress_required": false
+    },
+    {
+      "id": "family",
+      "name": "Family Room",
+      "type": "family",
+      "level_id": "L1",
+      "boundary": [
+        [
+          3000,
+          8000
+        ],
+        [
+          9000,
+          8000
+        ],
+        [
+          9000,
+          12000
+        ],
+        [
+          3000,
+          12000
+        ]
+      ],
+      "ceiling_height": 2700,
+      "finish_schedule": {
+        "floor": "wood",
+        "wall": "paint",
+        "ceiling": "gyp"
+      },
+      "occupancy_load": 2,
+      "egress_required": false
+    },
+    {
+      "id": "master_suite",
+      "name": "Master Suite",
+      "type": "bedroom",
+      "level_id": "L1",
+      "boundary": [
+        [
+          12000,
+          8000
+        ],
+        [
+          18000,
+          8000
+        ],
+        [
+          18000,
+          12000
+        ],
+        [
+          12000,
+          12000
+        ]
+      ],
+      "ceiling_height": 2700,
+      "finish_schedule": {
+        "floor": "wood",
+        "wall": "paint",
+        "ceiling": "gyp"
+      },
+      "occupancy_load": 2,
+      "egress_required": false
+    },
+    {
+      "id": "guest_bed_1",
+      "name": "Guest Bedroom 1",
+      "type": "bedroom",
+      "level_id": "L1",
+      "boundary": [
+        [
+          9000,
+          8000
+        ],
+        [
+          12000,
+          8000
+        ],
+        [
+          12000,
+          12000
+        ],
+        [
+          9000,
+          12000
+        ]
+      ],
+      "ceiling_height": 2700,
+      "finish_schedule": {
+        "floor": "wood",
+        "wall": "paint",
+        "ceiling": "gyp"
+      },
+      "occupancy_load": 2,
+      "egress_required": true
+    },
+    {
+      "id": "guest_bed_2",
+      "name": "Guest Bedroom 2",
+      "type": "bedroom",
+      "level_id": "L1",
+      "boundary": [
+        [
+          15000,
+          8000
+        ],
+        [
+          18000,
+          8000
+        ],
+        [
+          18000,
+          12000
+        ],
+        [
+          15000,
+          12000
+        ]
+      ],
+      "ceiling_height": 2700,
+      "finish_schedule": {
+        "floor": "wood",
+        "wall": "paint",
+        "ceiling": "gyp"
+      },
+      "occupancy_load": 2,
+      "egress_required": true
+    }
+  ],
+  "stairs": [],
+  "electrical": {},
+  "schedules": {}
+}

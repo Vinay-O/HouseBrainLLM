@@ -1,3 +1,44 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+.DS_Store
+
+# Training outputs (models, adapters, wandb)
+hb_r1_s*/
+hb_v2_s*/
+wandb/
+*.pt
+*.ckpt
+*.safetensors
+
+# Generated datasets/shards
+hb_r1_shard_*/
+hb_v2_shard_*/
+professional_sample.json/
+professional_sample/
+data/generated*/
+
+# Generated exports and renders
+out/
+out_*/
+out-v2/
+out_v2/
+check_out/
+check_out*/
+check_out_plan/
+
+# Archives and logs
+*.tar.gz
+*.zip
+*.log
+
+# Local env/config
+.env
+.venv/
+venv/
+node_modules/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -289,3 +330,30 @@ ENV/
 .local/
 local/
 housebrain_dataset_v6_1M.tar.gz
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+
+# Virtual env
+.venv/
+
+# Large datasets and archives
+*.tar.gz
+*dataset*/
+outputs/
+
+# Local logs
+*.log
+
+# OS
+.DS_Store
+
+# Build artifacts
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# Demo folders
+demos/

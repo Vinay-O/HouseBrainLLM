@@ -6,7 +6,6 @@ Matches the sophistication of the existing 1M dataset.
 """
 
 import json
-import os
 import random
 import argparse
 import hashlib
@@ -16,8 +15,6 @@ from pathlib import Path
 from datetime import datetime
 from tqdm import tqdm
 
-from src.housebrain.schema import HouseInput, HouseOutput, RoomType, ArchitecturalStyle
-from src.housebrain.layout import solve_house_layout
 
 
 @dataclass
@@ -633,7 +630,6 @@ def generate_advanced_dataset(config: AdvancedDatasetConfig) -> None:
     
     # Calculate split
     train_samples = int(config.target_samples * config.train_ratio)
-    val_samples = config.target_samples - train_samples
     
     # Generate samples with progress tracking
     all_samples = []
@@ -664,7 +660,7 @@ def generate_advanced_dataset(config: AdvancedDatasetConfig) -> None:
             if generated > config.target_samples * 10:  # Max 10x generation attempts
                 break
     
-    print(f"🎉 Super-quality dataset generation complete!")
+    print("🎉 Super-quality dataset generation complete!")
     print(f"📊 Total generated: {generated}")
     print(f"✅ Accepted: {len(all_samples)}")
     
@@ -711,7 +707,7 @@ def generate_advanced_dataset(config: AdvancedDatasetConfig) -> None:
     with open(info_file, 'w') as f:
         json.dump(dataset_info, f, indent=2)
     
-    print(f"✅ Advanced dataset generated successfully!")
+    print("✅ Advanced dataset generated successfully!")
     print(f"📁 Output directory: {config.output_dir}")
     print(f"📊 Dataset info: {dataset_info}")
 

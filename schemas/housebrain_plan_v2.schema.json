@@ -1,0 +1,159 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://housebrain.ai/schemas/housebrain_plan_v2.schema.json",
+  "title": "HouseBrain Plan v2",
+  "type": "object",
+  "required": ["metadata", "levels", "walls", "openings", "spaces"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["units", "project_name"],
+      "properties": {
+        "project_name": {"type": "string"},
+        "units": {"type": "string", "enum": ["mm", "inch"]},
+        "true_north_deg": {"type": "number"},
+        "climate_zone": {"type": "string"},
+        "codes": {
+          "type": "object",
+          "properties": {
+            "nbc_version": {"type": "string"},
+            "local_amendments": {"type": "string"}
+          }
+        }
+      }
+    },
+    "levels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "elevation_mm"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "elevation_mm": {"type": "number"}
+        }
+      }
+    },
+    "walls": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "start", "end", "type", "thickness", "height"],
+        "properties": {
+          "id": {"type": "string"},
+          "level_id": {"type": "string"},
+          "start": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}},
+          "end": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}},
+          "type": {"type": "string", "enum": ["exterior", "interior", "plumbing"]},
+          "thickness": {"type": "number"},
+          "height": {"type": "number"},
+          "load_bearing": {"type": "boolean"},
+          "fire_rating": {"type": "string"},
+          "layers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["material", "thickness"],
+              "properties": {
+                "material": {"type": "string"},
+                "thickness": {"type": "number"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "openings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "wall_id", "type", "position", "width", "height"],
+        "properties": {
+          "id": {"type": "string"},
+          "level_id": {"type": "string"},
+          "wall_id": {"type": "string"},
+          "type": {"type": "string", "enum": ["door", "window"]},
+          "position": {"type": "number", "minimum": 0, "maximum": 1},
+          "width": {"type": "number"},
+          "height": {"type": "number"},
+          "sill_height": {"type": "number"},
+          "head_height": {"type": "number"},
+          "handing": {"type": "string", "enum": ["LHR", "RHR", "LHF", "RHF"]},
+          "swing": {"type": "string", "enum": ["in", "out"]},
+          "window_operation": {"type": "string", "enum": [
+            "fixed", "casement_left_out", "casement_right_out", "awning_top_out", "hopper_bottom_in",
+            "slider_left", "slider_right", "double_hung"
+          ]},
+          "frame_depth": {"type": "number"},
+          "frame_width": {"type": "number"},
+          "mullion_pattern": {"type": "string"}
+        }
+      }
+    },
+    "spaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "type", "boundary", "level_id"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "type": {"type": "string"},
+          "level_id": {"type": "string"},
+          "boundary": {
+            "type": "array",
+            "minItems": 3,
+            "items": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}}
+          },
+          "ceiling_height": {"type": "number"},
+          "finish_schedule": {
+            "type": "object",
+            "properties": {
+              "floor": {"type": "string"},
+              "wall": {"type": "string"},
+              "ceiling": {"type": "string"}
+            }
+          },
+          "occupancy_load": {"type": "number"},
+          "egress_required": {"type": "boolean"}
+        }
+      }
+    },
+    "stairs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["start", "end", "width", "riser_height", "tread_depth"],
+        "properties": {
+          "start": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}},
+          "end": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}},
+          "width": {"type": "number"},
+          "riser_height": {"type": "number"},
+          "tread_depth": {"type": "number"},
+          "flights": {"type": "integer"},
+          "landings": {"type": "integer"},
+          "headroom": {"type": "number"}
+        }
+      }
+    },
+    "electrical": {
+      "type": "object",
+      "properties": {
+        "outlets": {"type": "array", "items": {"type": "object"}},
+        "switches": {"type": "array", "items": {"type": "object"}},
+        "fixtures": {"type": "array", "items": {"type": "object"}},
+        "circuits": {"type": "array", "items": {"type": "object"}}
+      }
+    },
+    "schedules": {
+      "type": "object",
+      "properties": {
+        "door_schedule": {"type": "array", "items": {"type": "object"}},
+        "window_schedule": {"type": "array", "items": {"type": "object"}},
+        "room_finish_schedule": {"type": "array", "items": {"type": "object"}}
+      }
+    }
+  }
+}
+
+

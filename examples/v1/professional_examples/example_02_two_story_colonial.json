@@ -1,0 +1,418 @@
+{
+  "metadata": {
+    "scale": 100,
+    "units": "mm",
+    "project_name": "Two Story Colonial",
+    "total_area_sqft": 2400,
+    "floors": 2,
+    "bedrooms": 4,
+    "bathrooms": 3
+  },
+  "walls": [
+    {
+      "id": "ext_1",
+      "start": [
+        0,
+        0
+      ],
+      "end": [
+        14000,
+        0
+      ],
+      "type": "exterior",
+      "thickness": 230
+    },
+    {
+      "id": "ext_2",
+      "start": [
+        14000,
+        0
+      ],
+      "end": [
+        14000,
+        10000
+      ],
+      "type": "exterior",
+      "thickness": 230
+    },
+    {
+      "id": "ext_3",
+      "start": [
+        14000,
+        10000
+      ],
+      "end": [
+        0,
+        10000
+      ],
+      "type": "exterior",
+      "thickness": 230
+    },
+    {
+      "id": "ext_4",
+      "start": [
+        0,
+        10000
+      ],
+      "end": [
+        0,
+        0
+      ],
+      "type": "exterior",
+      "thickness": 230
+    },
+    {
+      "id": "int_1",
+      "start": [
+        4000,
+        0
+      ],
+      "end": [
+        4000,
+        6000
+      ],
+      "type": "interior",
+      "thickness": 115
+    },
+    {
+      "id": "int_2",
+      "start": [
+        4000,
+        6000
+      ],
+      "end": [
+        10000,
+        6000
+      ],
+      "type": "interior",
+      "thickness": 115
+    },
+    {
+      "id": "int_3",
+      "start": [
+        10000,
+        0
+      ],
+      "end": [
+        10000,
+        10000
+      ],
+      "type": "interior",
+      "thickness": 115
+    },
+    {
+      "id": "int_4",
+      "start": [
+        0,
+        6000
+      ],
+      "end": [
+        4000,
+        6000
+      ],
+      "type": "interior",
+      "thickness": 115
+    },
+    {
+      "id": "int_5",
+      "start": [
+        7000,
+        6000
+      ],
+      "end": [
+        7000,
+        10000
+      ],
+      "type": "interior",
+      "thickness": 115
+    }
+  ],
+  "openings": [
+    {
+      "id": "door_main",
+      "wall_id": "ext_1",
+      "type": "door",
+      "position": 0.5,
+      "width": 1220,
+      "metadata": {
+        "style": "entry_with_sidelights"
+      }
+    },
+    {
+      "id": "win_living_1",
+      "wall_id": "ext_1",
+      "type": "window",
+      "position": 0.2,
+      "width": 1800,
+      "metadata": {
+        "style": "bay_window"
+      }
+    },
+    {
+      "id": "win_living_2",
+      "wall_id": "ext_1",
+      "type": "window",
+      "position": 0.8,
+      "width": 1200,
+      "metadata": {
+        "style": "double_hung"
+      }
+    },
+    {
+      "id": "win_dining",
+      "wall_id": "ext_2",
+      "type": "window",
+      "position": 0.3,
+      "width": 1500,
+      "metadata": {
+        "style": "casement"
+      }
+    },
+    {
+      "id": "win_kitchen",
+      "wall_id": "ext_3",
+      "type": "window",
+      "position": 0.2,
+      "width": 1200,
+      "metadata": {
+        "style": "double_hung"
+      }
+    },
+    {
+      "id": "win_family",
+      "wall_id": "ext_3",
+      "type": "window",
+      "position": 0.8,
+      "width": 1800,
+      "metadata": {
+        "style": "sliding"
+      }
+    },
+    {
+      "id": "patio_door",
+      "wall_id": "ext_4",
+      "type": "door",
+      "position": 0.7,
+      "width": 1830,
+      "metadata": {
+        "style": "sliding_patio"
+      }
+    },
+    {
+      "id": "door_powder",
+      "wall_id": "int_1",
+      "type": "door",
+      "position": 0.8,
+      "width": 610,
+      "metadata": {
+        "swing": "outward"
+      }
+    },
+    {
+      "id": "door_kitchen",
+      "wall_id": "int_2",
+      "type": "door",
+      "position": 0.3,
+      "width": 915,
+      "metadata": {
+        "style": "no_door_opening"
+      }
+    },
+    {
+      "id": "door_family",
+      "wall_id": "int_5",
+      "type": "door",
+      "position": 0.5,
+      "width": 915,
+      "metadata": {
+        "swing": "inward"
+      }
+    }
+  ],
+  "spaces": [
+    {
+      "id": "foyer",
+      "name": "Foyer",
+      "type": "entrance",
+      "boundary": [
+        [
+          4000,
+          0
+        ],
+        [
+          6000,
+          0
+        ],
+        [
+          6000,
+          2000
+        ],
+        [
+          4000,
+          2000
+        ]
+      ]
+    },
+    {
+      "id": "living",
+      "name": "Living Room",
+      "type": "living",
+      "boundary": [
+        [
+          0,
+          0
+        ],
+        [
+          4000,
+          0
+        ],
+        [
+          4000,
+          6000
+        ],
+        [
+          0,
+          6000
+        ]
+      ]
+    },
+    {
+      "id": "dining",
+      "name": "Dining Room",
+      "type": "dining",
+      "boundary": [
+        [
+          10000,
+          0
+        ],
+        [
+          14000,
+          0
+        ],
+        [
+          14000,
+          6000
+        ],
+        [
+          10000,
+          6000
+        ]
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "type": "kitchen",
+      "boundary": [
+        [
+          4000,
+          6000
+        ],
+        [
+          7000,
+          6000
+        ],
+        [
+          7000,
+          10000
+        ],
+        [
+          4000,
+          10000
+        ]
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family Room",
+      "type": "family",
+      "boundary": [
+        [
+          7000,
+          6000
+        ],
+        [
+          14000,
+          6000
+        ],
+        [
+          14000,
+          10000
+        ],
+        [
+          7000,
+          10000
+        ]
+      ]
+    },
+    {
+      "id": "powder",
+      "name": "Powder Room",
+      "type": "bathroom",
+      "boundary": [
+        [
+          6000,
+          0
+        ],
+        [
+          10000,
+          0
+        ],
+        [
+          10000,
+          3000
+        ],
+        [
+          6000,
+          3000
+        ]
+      ]
+    },
+    {
+      "id": "utility",
+      "name": "Utility Room",
+      "type": "utility",
+      "boundary": [
+        [
+          0,
+          6000
+        ],
+        [
+          4000,
+          6000
+        ],
+        [
+          4000,
+          8000
+        ],
+        [
+          0,
+          8000
+        ]
+      ]
+    },
+    {
+      "id": "pantry",
+      "name": "Pantry",
+      "type": "storage",
+      "boundary": [
+        [
+          0,
+          8000
+        ],
+        [
+          4000,
+          8000
+        ],
+        [
+          4000,
+          10000
+        ],
+        [
+          0,
+          10000
+        ]
+      ]
+    }
+  ]
+}

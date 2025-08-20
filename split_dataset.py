@@ -7,8 +7,6 @@ Splits large datasets into smaller parts for parallel training.
 import os
 import shutil
 import argparse
-from pathlib import Path
-from typing import List
 
 
 def split_dataset(source_dir: str, output_dir: str, splits: int) -> None:
