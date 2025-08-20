@@ -399,9 +399,14 @@ def generate_synthetic_v2(out_dir: str, n: int = 100) -> None:
 if __name__ == "__main__":
     import argparse
     ap = argparse.ArgumentParser(description="Generate synthetic HouseBrain v2 plans")
-    ap.add_argument("--out", required=True)
-    ap.add_argument("--num", type=int, default=100)
+    # Support both canonical flags and common aliases used in docs/Colab
+    ap.add_argument("--out", dest="out")
+    ap.add_argument("--out_dir", dest="out")
+    ap.add_argument("--num", type=int, dest="num", default=100)
+    ap.add_argument("--n", type=int, dest="num")
     args = ap.parse_args()
+    if not args.out:
+        ap.error("--out (or --out_dir) is required")
     generate_synthetic_v2(args.out, args.num)
 
 
