@@ -300,10 +300,20 @@ class HouseBrainTrainer:
         
         # Load training data
         train_data = []
-        train_path = dataset_path / "train"
         
-        json_files = list(train_path.glob("**/*.json"))
-        print(f"📄 Found {len(json_files)} training files")
+        # Look for files directly in the dataset directory (v2 format)
+        json_files = list(dataset_path.glob("*.json"))
+        
+        # If no files found directly, try train subdirectory (old format)
+        if not json_files:
+            train_path = dataset_path / "train"
+            if train_path.exists():
+                json_files = list(train_path.glob("*.json"))
+                print(f"📄 Found {len(json_files)} training files in train/ subdirectory")
+            else:
+                print(f"📄 No JSON files found in {dataset_path} or {train_path}")
+        else:
+            print(f"📄 Found {len(json_files)} training files directly in dataset directory")
         
         # Limit for test mode
         if self.config.test_mode and self.config.max_samples:
@@ -360,11 +370,21 @@ class HouseBrainTrainer:
     
     def _format_sample(self, sample: Dict[str, Any]) -> Dict[str, str]:
         """Format a sample for training"""
-        input_data = sample.get("input", {})
-        output_data = sample.get("output", {})
-        
-        # Create formatted prompt
-        prompt = f"""You are HouseBrain, an expert architectural AI. Generate a detailed house design based on the requirements.
+        # Check if this is v2 format (has metadata, walls, spaces, etc.)
+        if "metadata" in sample and "walls" in sample and "spaces" in sample:
+            # This is v2 format - create a simple prompt for v2 data
+            prompt = f"""You are HouseBrain v2. Generate a complete HouseBrain Plan v2 JSON based on the requirements.
+
+Requirements: Create a professional architectural plan with proper metadata, walls, spaces, openings, electrical, and schedules.
+
+Output: {json.dumps(sample, indent=2)}"""
+        else:
+            # This is old format with input/output
+            input_data = sample.get("input", {})
+            output_data = sample.get("output", {})
+            
+            # Create formatted prompt
+            prompt = f"""You are HouseBrain, an expert architectural AI. Generate a detailed house design based on the requirements.
 
 Input: {json.dumps(input_data, indent=2)}
 
