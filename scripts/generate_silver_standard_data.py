@@ -122,11 +122,10 @@ def generate_and_refine_example(llm: HouseBrainLLM, scenario: str, few_shot_exam
     if not initial_response:
         return None
 
-    initial_json_str = json.dumps(extract_json_from_response(initial_response))
-    if not initial_json_str or initial_json_str == "null":
-        print("  ❌ Could not extract initial JSON. Skipping.")
-        return None
+    initial_json = extract_json_from_response(initial_response)
+    initial_json_str = json.dumps(initial_json)
 
+    # --- Critique and Refine ---
     print("  -> Critiquing initial draft...")
     critique_prompt = CRITIQUE_PROMPT_TEMPLATE.format(instruction=scenario, generated_json=initial_json_str)
     critique = call_ollama(llm, critique_prompt, system_prompt="You are a world-class architectural design reviewer.")
@@ -144,32 +143,39 @@ def generate_and_refine_example(llm: HouseBrainLLM, scenario: str, few_shot_exam
         return None
 
     refined_json = extract_json_from_response(refined_response)
-    if not refined_json:
-        print("  ❌ Could not extract refined JSON. Skipping.")
-        return None
+    if refined_json:
+        print("  -> Validating FINAL REFINED design...")
+        try:
+            house_output = HouseOutput.model_validate(refined_json)
+            validation_result = validate_house_design(house_output)
+            if validation_result.is_valid:
+                print("  ✅ Refined design is valid! Using it.")
+                scratchpad_match = re.search(r"<scratchpad>(.*?)</scratchpad>", refined_response, re.DOTALL)
+                scratchpad = scratchpad_match.group(1).strip() if scratchpad_match else "Refinement reasoning not captured."
+                return {"prompt": scenario, "scratchpad": scratchpad, "output": refined_json}
+            else:
+                print(f"  ❌ Refined design failed validation: {validation_result.errors}")
+        except Exception as e:
+            print(f"  ❌ Refined design raised Pydantic exception: {e}")
 
-    print("  -> Validating final refined design...")
-    try:
-        house_output = HouseOutput.model_validate(refined_json)
-        validation_result = validate_house_design(house_output)
-        if not validation_result.is_valid:
-            print(f"  ❌ Final design failed validation: {validation_result.errors}")
-            # Optionally save the failed attempt for debugging
-            return None
-    except Exception as e:
-        print(f"  ❌ Pydantic validation failed with an exception: {e}")
-        return None
+    # --- Fallback to Initial Draft ---
+    print("  -> FALLING BACK: Validating INITIAL draft...")
+    if initial_json:
+        try:
+            house_output = HouseOutput.model_validate(initial_json)
+            validation_result = validate_house_design(house_output)
+            if validation_result.is_valid:
+                print("  ✅ Initial draft is valid! Using it as fallback.")
+                scratchpad_match = re.search(r"<scratchpad>(.*?)</scratchpad>", initial_response, re.DOTALL)
+                scratchpad = scratchpad_match.group(1).strip() if scratchpad_match else "Initial reasoning not captured."
+                return {"prompt": scenario, "scratchpad": scratchpad, "output": initial_json}
+            else:
+                print(f"  ❌ Initial draft also failed validation: {validation_result.errors}")
+        except Exception as e:
+            print(f"  ❌ Initial draft also raised Pydantic exception: {e}")
 
-    print("  ✅ Design generated, refined, and validated successfully!")
-    # We need to extract the scratchpad from the refinement response
-    scratchpad_match = re.search(r"<scratchpad>(.*?)</scratchpad>", refined_response, re.DOTALL)
-    scratchpad = scratchpad_match.group(1).strip() if scratchpad_match else "Refinement reasoning not captured."
-
-    return {
-        "prompt": scenario,
-        "scratchpad": scratchpad,
-        "output": refined_json,
-    }
+    print("  🔴 Both refined and initial drafts failed. Skipping scenario.")
+    return None
 
 
 def main():
