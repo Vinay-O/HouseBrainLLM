@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 HouseBrain Silver Standard Data Generator
-Generates a larger, high-quality dataset using an automated generate-and-refine loop.
-The base LLM generates a draft, critiques it, and then creates a final, validated version.
+Generates a larger, high-quality dataset by prompting an LLM for architecturally
+sound designs and validating them against the HouseBrain schema.
 """
 import json
 import os
@@ -26,71 +26,14 @@ OLLAMA_API_URL = "http://localhost:11434/api/generate"
 MODEL_NAME = "deepseek-coder:6.7b-instruct"
 GENERATION_TIMEOUT = 400
 
-# --- Prompt Templates ---
-CRITIQUE_PROMPT_TEMPLATE = """
-You are an expert architectural design reviewer. Your task is to analyze the provided JSON output for a house design.
-The design was generated based on the following instruction:
----
-INSTRUCTION:
-{instruction}
----
-
-Here is the generated JSON to review:
----
-GENERATED JSON:
-{generated_json}
----
-
-Critically evaluate the design based on the following criteria:
-1.  **Adherence to Instruction:** Does the design meet all explicit requirements (e.g., plot size, number of rooms, Vastu compliance, facing)?
-2.  **Architectural Soundness:** Are the room placements logical? Is circulation efficient? Are wall placements realistic? Are dimensions practical for an Indian context?
-3.  **Vastu Compliance:** If requested, is Vastu followed correctly? (e.g., Kitchen in SE, Master Bedroom in SW, Pooja in NE).
-4.  **Technical Correctness:** Is the JSON schema likely valid? Are there any obvious errors like overlapping walls or impossible dimensions?
-
-Provide your critique as a concise list of flaws and suggestions for improvement. Be specific. If the design is good, state that and suggest minor refinements.
-
-CRITIQUE:
-"""
-
-REFINE_PROMPT_TEMPLATE = """
-You are a master architect tasked with refining a house design based on a critique.
-
-Original Instruction:
----
-{instruction}
----
-
-Original (flawed) JSON design:
----
-{generated_json}
----
-
-Critique and Suggestions for Improvement:
----
-{critique}
----
-
-Your task is to generate a new, corrected, and improved JSON output that addresses all points in the critique.
-Do not repeat the original mistakes. Produce a complete, valid JSON object that represents the final, superior design.
-The final output must be only the JSON object enclosed in ```json ... ```.
-
-### Reasoning for Refinement:
-<scratchpad>
-I will now incorporate the feedback from the critique. The main points to address are: {critique_summary}. I will adjust the wall coordinates, change room boundaries, and ensure all constraints from the original instruction are met in this new version.
-</scratchpad>
-
-### Refined Response:
-```json
-"""
-
-def call_ollama(llm: HouseBrainLLM, prompt: str, system_prompt: Optional[str] = None) -> Optional[str]:
+def call_ollama(llm: HouseBrainLLM, prompt: str) -> Optional[str]:
     """Sends a prompt to the Ollama API and returns the raw response string."""
     try:
         response = requests.post(
             OLLAMA_API_URL,
             json={
                 "model": MODEL_NAME,
-                "system": system_prompt if system_prompt else llm.system_prompt,
+                "system": llm.system_prompt,
                 "prompt": prompt,
                 "stream": False,
             },
@@ -114,72 +57,40 @@ def extract_json_from_response(response_text: str) -> Optional[Dict]:
     print("  ❌ Could not find a JSON block in the response.")
     return None
 
-def generate_and_refine_example(llm: HouseBrainLLM, scenario: str, few_shot_examples: str) -> Optional[Dict]:
-    """Runs the full generate -> critique -> refine -> validate loop."""
-    print(f"\n-> Generating initial draft for: '{scenario}'")
-    initial_prompt = f"{few_shot_examples}\n\n---\n\n### Instruction:\n{scenario}\n\n### Reasoning:"
-    initial_response = call_ollama(llm, initial_prompt)
-    if not initial_response:
+def generate_and_validate_example(llm: HouseBrainLLM, scenario: str, few_shot_examples: str) -> Optional[Dict]:
+    """
+    Generates a single design and validates it. If valid, returns the example.
+    This simplified approach is more robust than the critique/refine loop.
+    """
+    print(f"\n-> Generating design for: '{scenario}'")
+    prompt = f"{few_shot_examples}\n\n---\n\n### Instruction:\n{scenario}\n\n### Reasoning:"
+    response_text = call_ollama(llm, prompt)
+    if not response_text:
         return None
 
-    initial_json = extract_json_from_response(initial_response)
-    initial_json_str = json.dumps(initial_json)
-
-    # --- Critique and Refine ---
-    print("  -> Critiquing initial draft...")
-    critique_prompt = CRITIQUE_PROMPT_TEMPLATE.format(instruction=scenario, generated_json=initial_json_str)
-    critique = call_ollama(llm, critique_prompt, system_prompt="You are a world-class architectural design reviewer.")
-    if not critique:
-        print("  ❌ Critique generation failed. Skipping.")
-        return None
-    print(f"  Critique received: {critique[:150]}...")
-
-    print("  -> Refining design based on critique...")
-    critique_summary = critique.split('\n')[0] # Use the first line of the critique for the scratchpad
-    refine_prompt = REFINE_PROMPT_TEMPLATE.format(instruction=scenario, generated_json=initial_json_str, critique=critique, critique_summary=critique_summary)
-    refined_response = call_ollama(llm, refine_prompt)
-    if not refined_response:
-        print("  ❌ Refinement generation failed. Skipping.")
+    # --- Extract and Validate ---
+    generated_json = extract_json_from_response(response_text)
+    if not generated_json:
         return None
 
-    refined_json = extract_json_from_response(refined_response)
-    if refined_json:
-        print("  -> Validating FINAL REFINED design...")
-        try:
-            house_output = HouseOutput.model_validate(refined_json)
-            validation_result = validate_house_design(house_output)
-            if validation_result.is_valid:
-                print("  ✅ Refined design is valid! Using it.")
-                scratchpad_match = re.search(r"<scratchpad>(.*?)</scratchpad>", refined_response, re.DOTALL)
-                scratchpad = scratchpad_match.group(1).strip() if scratchpad_match else "Refinement reasoning not captured."
-                return {"prompt": scenario, "scratchpad": scratchpad, "output": refined_json}
-            else:
-                print(f"  ❌ Refined design failed validation: {validation_result.errors}")
-        except Exception as e:
-            print(f"  ❌ Refined design raised Pydantic exception: {e}")
-
-    # --- Fallback to Initial Draft ---
-    print("  -> FALLING BACK: Validating INITIAL draft...")
-    if initial_json:
-        try:
-            house_output = HouseOutput.model_validate(initial_json)
-            validation_result = validate_house_design(house_output)
-            if validation_result.is_valid:
-                print("  ✅ Initial draft is valid! Using it as fallback.")
-                scratchpad_match = re.search(r"<scratchpad>(.*?)</scratchpad>", initial_response, re.DOTALL)
-                scratchpad = scratchpad_match.group(1).strip() if scratchpad_match else "Initial reasoning not captured."
-                return {"prompt": scenario, "scratchpad": scratchpad, "output": initial_json}
-            else:
-                print(f"  ❌ Initial draft also failed validation: {validation_result.errors}")
-        except Exception as e:
-            print(f"  ❌ Initial draft also raised Pydantic exception: {e}")
-
-    print("  🔴 Both refined and initial drafts failed. Skipping scenario.")
-    return None
+    try:
+        house_output = HouseOutput.model_validate(generated_json)
+        validation_result = validate_house_design(house_output)
+        if validation_result.is_valid:
+            print("  ✅ Design is valid! Saving.")
+            scratchpad_match = re.search(r"<scratchpad>(.*?)</scratchpad>", response_text, re.DOTALL)
+            scratchpad = scratchpad_match.group(1).strip() if scratchpad_match else "Reasoning not captured."
+            return {"prompt": scenario, "scratchpad": scratchpad, "output": generated_json}
+        else:
+            print(f"  ❌ Design failed validation: {validation_result.errors}")
+            return None
+    except Exception as e:
+        print(f"  ❌ Design raised Pydantic exception: {e}")
+        return None
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate SILVER standard data for HouseBrain using a generate-and-refine loop.")
+    parser = argparse.ArgumentParser(description="Generate SILVER standard data for HouseBrain using a direct generate-and-validate approach.")
     parser.add_argument("--output-dir", type=str, default="data/training/silver_standard", help="Directory to save the generated files.")
     parser.add_argument("--num-examples", type=int, default=100, help="Number of examples to generate.")
     parser.add_argument("--examples-dir", type=str, default="data/training/gold_standard", help="Directory of gold examples for few-shot prompting.")
@@ -194,22 +105,31 @@ def main():
 
     existing_files = list(output_path.glob("*.json"))
     start_index = len(existing_files)
-    scenarios_to_run = [s for s in ARCHITECTURAL_SCENARIOS * (args.num_examples // len(ARCHITECTURAL_SCENARIOS) + 1)][start_index:args.num_examples]
-
+    # Cycle through the scenarios to generate the desired number of examples
+    scenarios_to_run = [s for s in ARCHITECTURAL_SCENARIOS * (args.num_examples // len(ARCHITECTURAL_SCENARIOS) + 1)]
+    
     generated_count = 0
-    pbar = tqdm(scenarios_to_run, desc="Generating Silver Standard Data")
-    for scenario in pbar:
-        example = generate_and_refine_example(llm, scenario, few_shot_prompt_string)
-        if example:
-            file_index = start_index + generated_count + 1
-            scenario_slug = scenario.lower().replace(" ", "_").replace(",", "")[:50]
-            file_path = output_path / f"{file_index:04d}_{scenario_slug}.json"
+    with tqdm(total=args.num_examples, desc="Generating Silver Standard Data") as pbar:
+        while generated_count < args.num_examples:
+            # This loop ensures we keep trying scenarios until we have enough successful examples
+            if not scenarios_to_run:
+                 # Refill scenarios if we run out, to keep trying
+                scenarios_to_run = ARCHITECTURAL_SCENARIOS * (args.num_examples // len(ARCHITECTURAL_SCENARIOS) + 1)
+            
+            scenario = scenarios_to_run.pop(0)
+            
+            example = generate_and_validate_example(llm, scenario, few_shot_prompt_string)
+            if example:
+                file_index = start_index + generated_count + 1
+                scenario_slug = scenario.lower().replace(" ", "_").replace(",", "")[:50]
+                file_path = output_path / f"{file_index:04d}_{scenario_slug}.json"
 
-            with open(file_path, "w", encoding="utf-8") as f:
-                json.dump(example, f, indent=2)
+                with open(file_path, "w", encoding="utf-8") as f:
+                    json.dump(example, f, indent=2)
 
-            generated_count += 1
-            pbar.set_postfix({"saved": generated_count})
+                generated_count += 1
+                pbar.update(1)
+                pbar.set_postfix({"saved": generated_count})
 
     print(f"\n🎉 Generation complete. Saved {generated_count} new silver-standard examples.")
 
