@@ -135,4 +135,4 @@ if __name__ == "__main__":
         print("  list    - List all available checkpoints")
         print("  status  - Check current training status")
         print()
-        print("Example: python resume_training.py resume")
+        print("Example: python resume_training.py resume")\n

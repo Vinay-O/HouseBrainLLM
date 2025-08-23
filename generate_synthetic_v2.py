@@ -407,6 +407,4 @@ if __name__ == "__main__":
     args = ap.parse_args()
     if not args.out:
         ap.error("--out (or --out_dir) is required")
-    generate_synthetic_v2(args.out, args.num)
-
-
+    generate_synthetic_v2(args.out, args.num)\n

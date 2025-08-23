@@ -109,6 +109,4 @@ def polygons_bbox(polys: List[List[Tuple[float, float]]]) -> Tuple[float, float,
         for x, y in poly:
             xs.append(x)
             ys.append(y)
-    return (min(xs), min(ys), max(xs), max(ys)) if xs and ys else (0.0, 0.0, 0.0, 0.0)
-
-
+    return (min(xs), min(ys), max(xs), max(ys)) if xs and ys else (0.0, 0.0, 0.0, 0.0)\n

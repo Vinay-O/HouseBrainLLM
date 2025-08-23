@@ -10,7 +10,6 @@ from .schema import (
     Door, Window, ArchitecturalStyle, Orientation, ValidationResult
 )
 from .layout import solve_house_layout, LayoutSolver
-from .validate import validate_house_design, HouseValidator
 from .llm import generate_house_design, HouseBrainLLM
 
 __version__ = "1.1.0"
@@ -24,9 +23,6 @@ __all__ = [
     
     # Layout functionality
     "solve_house_layout", "LayoutSolver",
-    
-    # Validation functionality
-    "validate_house_design", "HouseValidator",
     
     # LLM functionality
     "generate_house_design", "HouseBrainLLM",

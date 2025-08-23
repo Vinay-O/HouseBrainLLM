@@ -40,10 +40,10 @@ drive.mount('/content/drive')
 We use the enhanced v2 generator `generate_synthetic_v2.py` (metadata, wall layers, openings, optional stairs, basic electrical, schedules).
 
 ```python
-!python generate_synthetic_v2.py --out_dir /content/HouseBrainLLM/hb_v2_shard_01 --n 50000
-!python generate_synthetic_v2.py --out_dir /content/HouseBrainLLM/hb_v2_shard_02 --n 50000
-!python generate_synthetic_v2.py --out_dir /content/HouseBrainLLM/hb_v2_shard_03 --n 50000
-!python generate_synthetic_v2.py --out_dir /content/HouseBrainLLM/hb_v2_shard_04 --n 50000
+!python generate_synthetic_v2.py --out_dir /content/HouseBrainLLM/hb_v2_shard_01 --n 100000
+!python generate_synthetic_v2.py --out_dir /content/HouseBrainLLM/hb_v2_shard_02 --n 100000
+!python generate_synthetic_v2.py --out_dir /content/HouseBrainLLM/hb_v2_shard_03 --n 100000
+!python generate_synthetic_v2.py --out_dir /content/HouseBrainLLM/hb_v2_shard_04 --n 100000
 ```
 
 Optional: copy shards to Drive for safekeeping
@@ -66,7 +66,7 @@ Estimated time per 50k shard: ~4.25 hours on A100 40GB (based on ~8.5h for 100k)
 %env HB_WARMUP=1
 !python housebrain_colab_trainer.py \
   --dataset /content/HouseBrainLLM/hb_v2_shard_0X \
-  --max-samples 50000 \
+  --max-samples 100000 \
   --output /content/hb_v2_s0X \
   --model "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B" \
   --batch-size 2 --grad-accum-steps 8 --epochs 1 --max-length 768 \

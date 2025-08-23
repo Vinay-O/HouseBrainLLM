@@ -1,0 +1,78 @@
+{
+  "prompt": "A 3BHK design for an irregularly shaped (trapezoidal) plot in Kolkata, maximizing usable space.",
+  "scratchpad": "This is a challenging prompt. The key is maximizing usable, rectangular space within a non-rectangular (trapezoidal) boundary. The strategy is to align the main house block with one of the longer parallel sides of the trapezoid. The leftover triangular or odd-shaped spaces can be used for non-essential functions like landscaping, car parking, or utility areas, thus maximizing the efficiency of the main built-up area. I will assume a single-floor 3BHK plan. The main rectangular block will contain the living/dining, kitchen, and bedrooms. I will follow Vastu, placing the kitchen in the SE and master bedroom in the SW of this rectangular block. The odd spaces will be cleverly integrated as balconies, garden pockets, or service areas.",
+  "output": {
+    "metadata": {
+      "project_name": "Kolkata Trapezoidal Plot House",
+      "units": "mm"
+    },
+    "levels": [
+      {
+        "id": "L0",
+        "name": "Ground Floor",
+        "elevation_mm": 0
+      }
+    ],
+    "walls": [
+      {
+        "id": "W_EXT_1", "start": [0, 0], "end": [15000, 3000], "type": "exterior", "thickness": 230, "height": 3000, "level_id": "L0"
+      },
+      {
+        "id": "W_EXT_2", "start": [15000, 3000], "end": [12000, 18000], "type": "exterior", "thickness": 230, "height": 3000, "level_id": "L0"
+      },
+      {
+        "id": "W_EXT_3", "start": [12000, 18000], "end": [2000, 16000], "type": "exterior", "thickness": 230, "height": 3000, "level_id": "L0"
+      },
+      {
+        "id": "W_EXT_4", "start": [2000, 16000], "end": [0, 0], "type": "exterior", "thickness": 230, "height": 3000, "level_id": "L0"
+      },
+      {
+        "id": "W_INT_1", "start": [2500, 14000], "end": [10000, 15000], "type": "interior", "thickness": 115, "height": 3000, "level_id": "L0"
+      }
+    ],
+    "openings": [
+      {
+        "id": "D_MAIN", "wall_id": "W_EXT_4", "type": "door", "position": 0.5, "width": 1200, "height": 2100, "level_id": "L0"
+      }
+    ],
+    "spaces": [
+      {
+        "id": "LIVING_AREA",
+        "name": "Living and Dining",
+        "type": "living_room",
+        "level_id": "L0",
+        "boundary": [
+          [2615, 8000],
+          [9000, 8500],
+          [8500, 13000],
+          [2715, 12500]
+        ]
+      },
+      {
+        "id": "KITCHEN",
+        "name": "Kitchen",
+        "type": "kitchen",
+        "level_id": "L0",
+        "boundary": [
+          [9115, 4000],
+          [13000, 4500],
+          [12500, 9000],
+          [9215, 8500]
+        ]
+      },
+      {
+        "id": "MASTER_BED",
+        "name": "Master Bedroom",
+        "type": "master_bedroom",
+        "level_id": "L0",
+        "boundary": [
+          [1115, 2000],
+          [5000, 2500],
+          [4500, 7000],
+          [1215, 6500]
+        ]
+      }
+    ],
+    "stairs": []
+  }
+}

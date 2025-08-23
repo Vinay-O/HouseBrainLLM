@@ -31,6 +31,4 @@ def generate_housebrain_output(input_payload: Dict[str, Any], scenario_id: str =
     ex = load_scenario(scenario_id)
     # Replace input with provided payload so downstream sees the same interface
     ex["input"] = input_payload
-    return ex
-
-
+    return ex\n

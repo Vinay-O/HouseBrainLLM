@@ -125,4 +125,4 @@ def plot_metrics():
 if __name__ == "__main__":
     monitor_training()
     print("\n" + "=" * 50)
-    print("To plot metrics, run: plot_metrics()")
+    print("To plot metrics, run: plot_metrics()")\n

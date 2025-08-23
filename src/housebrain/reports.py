@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Dict, Any, List, Tuple
+from typing import Dict, Any, List
 
 
 def poly_area(points: List[List[float]]) -> float:
@@ -71,7 +71,7 @@ def write_boq(input_path: str, output_path: str) -> None:
     print(f"✅ BoQ report written to {output_path}")
 
 
-def write_index_html(out_dir: str, base_name: str, modes: List[str]) -> None:
+def write_index_html(out_dir: str, base_name: str, modes: List[str], has_3d: bool = False) -> None:
     # Generate a simple index HTML linking to SVGs and glTF files per mode
     out = Path(out_dir)
     lines: List[str] = []
@@ -82,14 +82,15 @@ def write_index_html(out_dir: str, base_name: str, modes: List[str]) -> None:
     lines.append(f"<h1>{base_name}</h1>")
     for m in modes:
         svg = f"{base_name}_{m}.svg"
-        gltf = f"{base_name}_{m}.gltf"
-        lines.append(f"<h2>{m.upper()}</h2>")
-        lines.append("<div class='grid'>")
-        lines.append(f"<div><h3>SVG</h3><iframe src='{svg}'></iframe></div>")
-        lines.append(f"<div><h3>glTF</h3><p><a href='{gltf}'>{gltf}</a></p></div>")
-        lines.append("</div>")
+        lines.append(f"<h2>{m.upper()} Plan (SVG)</h2>")
+        lines.append(f"<div><iframe src='{svg}'></iframe></div>")
+    
+    if has_3d:
+        gltf = f"{base_name}_3d.gltf"
+        lines.append(f"<h2>3D Model (glTF)</h2>")
+        lines.append(f"<p><a href='{gltf}'>Download {gltf}</a></p>")
+        lines.append(f"<p><i>Hint: Drag and drop the .gltf file into an online viewer like https://gltf-viewer.donmccurdy.com/</i></p>")
+
     lines.append("</body></html>")
     (out / "index.html").write_text("\n".join(lines), encoding="utf-8")
     print(f"✅ HTML index written to {out/'index.html'}")
-
-

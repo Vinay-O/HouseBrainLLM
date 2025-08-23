@@ -146,5 +146,3 @@ if __name__ == "__main__":
     ap.add_argument("--output", required=True)
     args = ap.parse_args()
     house_to_plan(args.input, args.output)
-
-

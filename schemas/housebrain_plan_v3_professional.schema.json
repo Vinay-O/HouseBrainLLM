@@ -1,0 +1,596 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://housebrain.ai/schemas/housebrain_plan_v3_professional.schema.json",
+  "title": "HouseBrain Professional Plan v3 - Architect-Level Schema",
+  "type": "object",
+  "required": ["metadata", "levels", "walls", "openings", "spaces", "structural", "mep_systems"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["units", "project_name", "architect", "project_info"],
+      "properties": {
+        "project_name": {"type": "string"},
+        "architect": {"type": "string"},
+        "project_number": {"type": "string"},
+        "client": {"type": "string"},
+        "site_address": {"type": "string"},
+        "units": {"type": "string", "enum": ["mm", "inch", "feet"]},
+        "drawing_scale": {"type": "string", "default": "1:100"},
+        "true_north_deg": {"type": "number"},
+        "magnetic_declination": {"type": "number"},
+        "climate_zone": {"type": "string"},
+        "seismic_zone": {"type": "string"},
+        "wind_zone": {"type": "string"},
+        "project_info": {
+          "type": "object",
+          "properties": {
+            "project_type": {"type": "string", "enum": ["residential", "commercial", "mixed_use"]},
+            "building_height": {"type": "number"},
+            "construction_type": {"type": "string", "enum": ["Type_I", "Type_II", "Type_III", "Type_IV", "Type_V"]},
+            "occupancy_classification": {"type": "string"},
+            "total_area": {"type": "number"},
+            "number_of_units": {"type": "integer"},
+            "parking_spaces": {"type": "integer"}
+          }
+        },
+        "codes": {
+          "type": "object",
+          "properties": {
+            "building_code": {"type": "string", "default": "IBC 2021"},
+            "energy_code": {"type": "string", "default": "IECC 2021"},
+            "plumbing_code": {"type": "string", "default": "IPC 2021"},
+            "mechanical_code": {"type": "string", "default": "IMC 2021"},
+            "electrical_code": {"type": "string", "default": "NEC 2020"},
+            "fire_code": {"type": "string", "default": "IFC 2021"},
+            "accessibility": {"type": "string", "default": "ADA 2010"},
+            "local_amendments": {"type": "array", "items": {"type": "string"}}
+          }
+        }
+      }
+    },
+    "site": {
+      "type": "object",
+      "properties": {
+        "boundary": {
+          "type": "array",
+          "items": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}}
+        },
+        "setbacks": {
+          "type": "object",
+          "properties": {
+            "front": {"type": "number"},
+            "rear": {"type": "number"},
+            "left": {"type": "number"},
+            "right": {"type": "number"}
+          }
+        },
+        "topography": {
+          "type": "object",
+          "properties": {
+            "elevation_points": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "x": {"type": "number"},
+                  "y": {"type": "number"},
+                  "elevation": {"type": "number"}
+                }
+              }
+            },
+            "contour_lines": {"type": "array"},
+            "drainage_direction": {"type": "string"},
+            "soil_type": {"type": "string"}
+          }
+        },
+        "utilities": {
+          "type": "object",
+          "properties": {
+            "water_main": {"type": "object"},
+            "sewer_main": {"type": "object"},
+            "gas_main": {"type": "object"},
+            "electrical_service": {"type": "object"},
+            "telecom": {"type": "object"}
+          }
+        }
+      }
+    },
+    "levels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "elevation_mm"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "elevation_mm": {"type": "number"},
+          "level_type": {"type": "string", "enum": ["basement", "crawl_space", "ground", "upper", "roof", "penthouse"]},
+          "floor_to_floor_height": {"type": "number"},
+          "structural_height": {"type": "number"},
+          "ceiling_height": {"type": "number"}
+        }
+      }
+    },
+    "walls": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "geometry", "type", "construction"],
+        "properties": {
+          "id": {"type": "string"},
+          "level_id": {"type": "string"},
+          "geometry": {
+            "type": "object",
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "type": {"const": "straight"},
+                  "start": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}},
+                  "end": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}}
+                }
+              },
+              {
+                "type": "object", 
+                "properties": {
+                  "type": {"const": "curved"},
+                  "center": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}},
+                  "radius": {"type": "number"},
+                  "start_angle": {"type": "number"},
+                  "end_angle": {"type": "number"}
+                }
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "type": {"const": "complex"},
+                  "path": {
+                    "type": "array",
+                    "items": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}}
+                  }
+                }
+              }
+            ]
+          },
+          "type": {"type": "string", "enum": ["exterior", "interior", "shear", "bearing", "curtain", "retaining"]},
+          "construction": {
+            "type": "object",
+            "properties": {
+              "assembly_id": {"type": "string"},
+              "total_thickness": {"type": "number"},
+              "height": {"type": "number"},
+              "layers": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["material", "thickness"],
+                  "properties": {
+                    "material": {"type": "string"},
+                    "thickness": {"type": "number"},
+                    "function": {"type": "string", "enum": ["structure", "insulation", "air_barrier", "vapor_barrier", "finish"]},
+                    "r_value": {"type": "number"},
+                    "fire_rating": {"type": "string"}
+                  }
+                }
+              },
+              "load_bearing": {"type": "boolean"},
+              "fire_rating": {"type": "string"},
+              "sound_rating": {"type": "string"},
+              "thermal_resistance": {"type": "number"}
+            }
+          },
+          "structural_properties": {
+            "type": "object",
+            "properties": {
+              "design_loads": {
+                "type": "object",
+                "properties": {
+                  "dead_load": {"type": "number"},
+                  "live_load": {"type": "number"},
+                  "wind_load": {"type": "number"},
+                  "seismic_load": {"type": "number"}
+                }
+              },
+              "reinforcement": {"type": "object"},
+              "connections": {"type": "array"}
+            }
+          }
+        }
+      }
+    },
+    "openings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "wall_id", "type", "position", "dimensions"],
+        "properties": {
+          "id": {"type": "string"},
+          "level_id": {"type": "string"},
+          "wall_id": {"type": "string"},
+          "type": {"type": "string", "enum": ["door", "window", "curtain_wall", "storefront", "skylight", "louver"]},
+          "position": {"type": "number", "minimum": 0, "maximum": 1},
+          "dimensions": {
+            "type": "object",
+            "properties": {
+              "width": {"type": "number"},
+              "height": {"type": "number"},
+              "depth": {"type": "number"},
+              "sill_height": {"type": "number"},
+              "head_height": {"type": "number"}
+            }
+          },
+          "performance": {
+            "type": "object",
+            "properties": {
+              "u_factor": {"type": "number"},
+              "shgc": {"type": "number"},
+              "vt": {"type": "number"},
+              "air_leakage": {"type": "number"},
+              "water_resistance": {"type": "string"},
+              "structural_rating": {"type": "string"},
+              "security_rating": {"type": "string"}
+            }
+          },
+          "operation": {
+            "type": "object",
+            "properties": {
+              "operation_type": {"type": "string", "enum": [
+                "fixed", "casement_left_out", "casement_right_out", "awning_top_out", 
+                "hopper_bottom_in", "slider_left", "slider_right", "double_hung", 
+                "single_hung", "tilt_turn", "folding", "pivot"
+              ]},
+              "handing": {"type": "string", "enum": ["LHR", "RHR", "LHF", "RHF"]},
+              "swing": {"type": "string", "enum": ["in", "out", "none"]},
+              "automation": {"type": "boolean"}
+            }
+          },
+          "frame": {
+            "type": "object",
+            "properties": {
+              "material": {"type": "string"},
+              "finish": {"type": "string"},
+              "depth": {"type": "number"},
+              "width": {"type": "number"},
+              "thermal_break": {"type": "boolean"}
+            }
+          },
+          "glazing": {
+            "type": "object",
+            "properties": {
+              "type": {"type": "string"},
+              "number_of_panes": {"type": "integer"},
+              "gas_fill": {"type": "string"},
+              "coatings": {"type": "array", "items": {"type": "string"}},
+              "mullion_pattern": {"type": "string"},
+              "grid_pattern": {"type": "string"}
+            }
+          },
+          "hardware": {
+            "type": "object",
+            "properties": {
+              "lockset": {"type": "string"},
+              "hinges": {"type": "string"},
+              "operators": {"type": "string"},
+              "weatherstripping": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "spaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "type", "boundary", "level_id"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "number": {"type": "string"},
+          "type": {"type": "string"},
+          "level_id": {"type": "string"},
+          "boundary": {
+            "type": "array",
+            "minItems": 3,
+            "items": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}}
+          },
+          "area": {"type": "number"},
+          "volume": {"type": "number"},
+          "occupancy": {
+            "type": "object",
+            "properties": {
+              "classification": {"type": "string"},
+              "occupant_load": {"type": "number"},
+              "load_factor": {"type": "number"}
+            }
+          },
+          "architectural": {
+            "type": "object",
+            "properties": {
+              "ceiling_height": {"type": "number"},
+              "ceiling_type": {"type": "string"},
+              "floor_finish": {"type": "string"},
+              "wall_finish": {"type": "string"},
+              "ceiling_finish": {"type": "string"},
+              "base_finish": {"type": "string"}
+            }
+          },
+          "accessibility": {
+            "type": "object",
+            "properties": {
+              "ada_compliant": {"type": "boolean"},
+              "clear_floor_space": {"type": "number"},
+              "maneuvering_clearance": {"type": "object"}
+            }
+          },
+          "egress": {
+            "type": "object",
+            "properties": {
+              "required": {"type": "boolean"},
+              "exits": {"type": "array", "items": {"type": "string"}},
+              "travel_distance": {"type": "number"},
+              "exit_width": {"type": "number"}
+            }
+          }
+        }
+      }
+    },
+    "structural": {
+      "type": "object",
+      "properties": {
+        "foundation": {
+          "type": "object",
+          "properties": {
+            "type": {"type": "string", "enum": ["slab_on_grade", "crawl_space", "basement", "pile", "caisson"]},
+            "depth": {"type": "number"},
+            "width": {"type": "number"},
+            "reinforcement": {"type": "object"},
+            "soil_bearing": {"type": "number"},
+            "waterproofing": {"type": "boolean"}
+          }
+        },
+        "framing": {
+          "type": "object",
+          "properties": {
+            "system": {"type": "string", "enum": ["wood_frame", "steel_frame", "concrete", "masonry", "hybrid"]},
+            "member_sizes": {"type": "object"},
+            "spacing": {"type": "object"},
+            "connections": {"type": "array"}
+          }
+        },
+        "beams": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {"type": "string"},
+              "start": {"type": "array"},
+              "end": {"type": "array"},
+              "size": {"type": "string"},
+              "material": {"type": "string"},
+              "load_capacity": {"type": "number"}
+            }
+          }
+        },
+        "columns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {"type": "string"},
+              "location": {"type": "array"},
+              "size": {"type": "string"},
+              "material": {"type": "string"},
+              "load_capacity": {"type": "number"},
+              "base_connection": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "mep_systems": {
+      "type": "object",
+      "properties": {
+        "hvac": {
+          "type": "object",
+          "properties": {
+            "system_type": {"type": "string"},
+            "equipment": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {"type": "string"},
+                  "type": {"type": "string"},
+                  "location": {"type": "array"},
+                  "capacity": {"type": "number"},
+                  "efficiency": {"type": "number"}
+                }
+              }
+            },
+            "ductwork": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {"type": "string"},
+                  "path": {"type": "array"},
+                  "size": {"type": "string"},
+                  "airflow": {"type": "number"}
+                }
+              }
+            },
+            "zones": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {"type": "string"},
+                  "spaces": {"type": "array", "items": {"type": "string"}},
+                  "load_calculations": {"type": "object"}
+                }
+              }
+            }
+          }
+        },
+        "plumbing": {
+          "type": "object",
+          "properties": {
+            "fixtures": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {"type": "string"},
+                  "type": {"type": "string"},
+                  "location": {"type": "array"},
+                  "water_consumption": {"type": "number"},
+                  "ada_compliant": {"type": "boolean"}
+                }
+              }
+            },
+            "supply_lines": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {"type": "string"},
+                  "path": {"type": "array"},
+                  "pipe_size": {"type": "string"},
+                  "material": {"type": "string"},
+                  "flow_rate": {"type": "number"}
+                }
+              }
+            },
+            "waste_lines": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {"type": "string"},
+                  "path": {"type": "array"},
+                  "pipe_size": {"type": "string"},
+                  "slope": {"type": "number"}
+                }
+              }
+            },
+            "water_heater": {
+              "type": "object",
+              "properties": {
+                "location": {"type": "array"},
+                "capacity": {"type": "number"},
+                "efficiency": {"type": "number"},
+                "fuel_type": {"type": "string"}
+              }
+            }
+          }
+        },
+        "electrical": {
+          "type": "object",
+          "properties": {
+            "service": {
+              "type": "object",
+              "properties": {
+                "amperage": {"type": "number"},
+                "voltage": {"type": "number"},
+                "phases": {"type": "integer"},
+                "meter_location": {"type": "array"}
+              }
+            },
+            "panels": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {"type": "string"},
+                  "location": {"type": "array"},
+                  "amperage": {"type": "number"},
+                  "circuits": {"type": "array"}
+                }
+              }
+            },
+            "outlets": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {"type": "string"},
+                  "location": {"type": "array"},
+                  "type": {"type": "string"},
+                  "circuit": {"type": "string"},
+                  "gfci": {"type": "boolean"},
+                  "afci": {"type": "boolean"}
+                }
+              }
+            },
+            "lighting": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {"type": "string"},
+                  "location": {"type": "array"},
+                  "fixture_type": {"type": "string"},
+                  "wattage": {"type": "number"},
+                  "control": {"type": "string"}
+                }
+              }
+            },
+            "low_voltage": {
+              "type": "object",
+              "properties": {
+                "data_outlets": {"type": "array"},
+                "security_system": {"type": "object"},
+                "fire_alarm": {"type": "object"},
+                "audio_video": {"type": "object"}
+              }
+            }
+          }
+        },
+        "fire_protection": {
+          "type": "object",
+          "properties": {
+            "sprinkler_system": {
+              "type": "object",
+              "properties": {
+                "required": {"type": "boolean"},
+                "type": {"type": "string"},
+                "coverage": {"type": "array"}
+              }
+            },
+            "smoke_detection": {"type": "array"},
+            "egress_lighting": {"type": "array"},
+            "fire_extinguishers": {"type": "array"}
+          }
+        }
+      }
+    },
+    "energy_model": {
+      "type": "object",
+      "properties": {
+        "building_envelope": {
+          "type": "object",
+          "properties": {
+            "overall_u_factor": {"type": "number"},
+            "air_leakage_rate": {"type": "number"},
+            "window_to_wall_ratio": {"type": "number"}
+          }
+        },
+        "hvac_efficiency": {"type": "number"},
+        "lighting_power_density": {"type": "number"},
+        "renewable_energy": {"type": "object"},
+        "eui_target": {"type": "number"},
+        "energy_cost_index": {"type": "number"}
+      }
+    },
+    "construction_documents": {
+      "type": "object",
+      "properties": {
+        "drawing_list": {"type": "array"},
+        "specification_sections": {"type": "array"},
+        "details": {"type": "array"},
+        "schedules": {"type": "object"},
+        "material_selections": {"type": "object"}
+      }
+    }
+  }
+}

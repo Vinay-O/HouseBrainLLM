@@ -102,7 +102,7 @@ class CADRenderer:
         # Calculate room center and dimensions
         xs = [p[0] for p in sp.boundary]
         ys = [p[1] for p in sp.boundary]
-        cx, cy = sum(xs) / len(xs), sum(ys) / len(ys)
+        _cx, _cy = sum(xs) / len(xs), sum(ys) / len(ys)
         minx, maxx = min(xs), max(xs)
         miny, maxy = min(ys), max(ys)
         w_mm = maxx - minx
@@ -477,8 +477,8 @@ class CADRenderer:
             
         xs = [p[0] for p in all_points]
         ys = [p[1] for p in all_points]
-        minx, maxx = min(xs), max(xs)
-        miny, maxy = min(ys), max(ys)
+        _minx, maxx = min(xs), max(xs)
+        miny, _maxy = min(ys), max(ys)
         
         # HORIZONTAL CHAINED DIMENSIONS (bottom of plan)
         # Find all unique X coordinates of walls/openings
@@ -685,8 +685,6 @@ class CADRenderer:
             y += minor_grid_mm
         
         # Draw major grid lines (structural grid)
-        grid_labels_x = []
-        grid_labels_y = []
         
         x = grid_min_x
         grid_letter = ord('A')
@@ -724,7 +722,7 @@ class CADRenderer:
         
         # Add grid legend/note
         grid_legend_x, grid_legend_y = width - 200, 50
-        svg.append(f"<g id='grid-legend'>")
+        svg.append("<g id='grid-legend'>")
         svg.append(f"<rect x='{grid_legend_x-10}' y='{grid_legend_y-10}' width='180' height='60' fill='white' stroke='#666' stroke-width='1' opacity='0.9'/>")
         svg.append(f"<text x='{grid_legend_x}' y='{grid_legend_y+5}' class='label' font-size='9' font-weight='bold'>STRUCTURAL GRID</text>")
         svg.append(f"<line x1='{grid_legend_x}' y1='{grid_legend_y+12}' x2='{grid_legend_x+30}' y2='{grid_legend_y+12}' class='grid-major'/>")
@@ -732,11 +730,11 @@ class CADRenderer:
         svg.append(f"<line x1='{grid_legend_x}' y1='{grid_legend_y+25}' x2='{grid_legend_x+30}' y2='{grid_legend_y+25}' class='grid-minor'/>")
         svg.append(f"<text x='{grid_legend_x+35}' y='{grid_legend_y+29}' class='sub' font-size='7'>Minor: 1.2m</text>")
         svg.append(f"<text x='{grid_legend_x}' y='{grid_legend_y+42}' class='sub' font-size='6'>Grid: A-1, B-2, C-3...</text>")
-        svg.append(f"</g>")
+        svg.append("</g>")
         
         # Add material legend
         mat_legend_x, mat_legend_y = width - 200, 140
-        svg.append(f"<g id='material-legend'>")
+        svg.append("<g id='material-legend'>")
         svg.append(f"<rect x='{mat_legend_x-10}' y='{mat_legend_y-10}' width='180' height='85' fill='white' stroke='#666' stroke-width='1' opacity='0.9'/>")
         svg.append(f"<text x='{mat_legend_x}' y='{mat_legend_y+5}' class='label' font-size='9' font-weight='bold'>MATERIALS</text>")
         
@@ -754,7 +752,7 @@ class CADRenderer:
         svg.append(f"<rect x='{mat_legend_x}' y='{mat_legend_y+54}' width='{sample_size}' height='{sample_size}' fill='url(#tile)' stroke='#666' stroke-width='0.5'/>")
         svg.append(f"<text x='{mat_legend_x+18}' y='{mat_legend_y+63}' class='sub' font-size='7'>Ceramic Tile</text>")
         
-        svg.append(f"</g>")
+        svg.append("</g>")
 
     def _line_dir(self, a: Tuple[float, float], b: Tuple[float, float]) -> Tuple[float, float, float]:
         dx = b[0] - a[0]
@@ -959,7 +957,7 @@ class CADRenderer:
                 pts_t = [T(x, y) for x, y in sp.boundary]
                 d = "M " + " L ".join(f"{x:.1f} {y:.1f}" for x, y in pts_t) + " Z"
                 name_lower = (sp.name or "").lower()
-                space_type = (sp.type or "").lower()
+                (sp.type or "").lower()
                 
                 # Apply appropriate material patterns based on room function
                 if any(k in name_lower for k in ["bath", "toilet", "wash", "wc", "powder"]):
@@ -1108,7 +1106,6 @@ class CADRenderer:
             else:  # window
                 # Professional window symbol with operation (fixed/casement/awning/slider/double_hung)
                 sill_depth = 4.0
-                frame_width = 1.5
                 h = self._clamp(0.9 * thickness_px, 8.0, 16.0)
                 operation = str(op.metadata.get("window_operation", "fixed"))
                 svg.append(f"<g transform='translate({X1:.1f},{Y1:.1f}) rotate({angle:.1f})'>")
@@ -1727,7 +1724,7 @@ class CADRenderer:
         """Add legend for code compliance symbols."""
         legend_x, legend_y = 50, 50
         
-        svg.append(f"<g id='compliance-legend'>")
+        svg.append("<g id='compliance-legend'>")
         svg.append(f"<rect x='{legend_x-10}' y='{legend_y-10}' width='200' height='120' fill='white' stroke='#333' stroke-width='1' opacity='0.95'/>")
         svg.append(f"<text x='{legend_x}' y='{legend_y+5}' class='label' font-size='10' font-weight='bold'>CODE COMPLIANCE</text>")
         
@@ -1759,7 +1756,7 @@ class CADRenderer:
         svg.append(f"<text x='{legend_x}' y='{legend_y+100}' class='sub' font-size='7' font-style='italic'>Per NBC 2016 &amp; Accessibility</text>")
         svg.append(f"<text x='{legend_x}' y='{legend_y+110}' class='sub' font-size='7' font-style='italic'>Standards for Design</text>")
         
-        svg.append(f"</g>")
+        svg.append("</g>")
 
 
 def export_plan_svg(input_path: str, output_path: str, width: int = 1800, height: int = 1200, sheet_mode: str = "floor") -> None:
@@ -1782,5 +1779,3 @@ if __name__ == "__main__":
     ap.add_argument("--mode", default="floor", choices=["floor", "rcp", "power", "plumbing"])
     args = ap.parse_args()
     export_plan_svg(args.input, args.output, args.width, args.height, args.mode)
-
-

@@ -1,0 +1,684 @@
+{
+  "metadata": {
+    "schema_version": "v3_professional",
+    "project_name": "Minimalist Single Story Residence",
+    "project_id": "MSS-2024-003",
+    "architect": "HouseBrain AI Architect", 
+    "client": "Minimalist Design Validation",
+    "project_date": "2024-01-17",
+    "design_phase": "Schematic Design",
+    "building_classification": "Class 1a - Single Dwelling",
+    "climate_zone": "Zone 5 - Cool Temperate",
+    "site_area": 800.0,
+    "site_coordinates": {
+      "latitude": 41.8781,
+      "longitude": -87.6298
+    },
+    "design_criteria": {
+      "architectural_style": "Minimalist Modern",
+      "sustainability_rating": "Passive House Standard",
+      "accessibility_compliance": "Full Universal Design",
+      "energy_efficiency": "Net Positive Energy"
+    }
+  },
+  
+  "input": {
+    "plot": {
+      "area": 800.0,
+      "dimensions": {
+        "width": 32.0,
+        "depth": 25.0
+      },
+      "orientation": "south_east",
+      "setbacks": {
+        "front": 8.0,
+        "rear": 5.0,
+        "left": 4.0,
+        "right": 4.0
+      },
+      "constraints": [
+        "Flat building site",
+        "Mature trees along northern boundary",
+        "Quiet residential street",
+        "Underground services available"
+      ]
+    },
+    "requirements": {
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "living_areas": ["great_room", "study"],
+      "service_areas": ["kitchen", "laundry", "storage"],
+      "outdoor_areas": ["courtyard", "garden"],
+      "special_features": [
+        "Open plan living",
+        "Maximum natural light",
+        "Indoor-outdoor connection",
+        "Passive solar design",
+        "Flexible spaces",
+        "Aging-in-place design"
+      ]
+    },
+    "design_preferences": {
+      "architectural_style": "minimalist_modern",
+      "materials": ["concrete", "glass", "steel", "natural_timber"],
+      "color_palette": "monochromatic_warm",
+      "sustainability": "very_high",
+      "technology_integration": "minimal_invisible"
+    }
+  },
+  
+  "geometry": {
+    "levels": [
+      {
+        "id": "ground",
+        "name": "Ground Floor",
+        "elevation": 0.0,
+        "floor_to_ceiling": 3.6,
+        "area": 220.0
+      }
+    ],
+    
+    "spaces": [
+      {
+        "id": "entry",
+        "level": "ground",
+        "name": "Entry",
+        "type": "circulation", 
+        "area": 12.0,
+        "boundary": [[8000, 5000], [12000, 5000], [12000, 8000], [8000, 8000]],
+        "ceiling_height": 3.6,
+        "floor_finish": "polished_concrete",
+        "features": ["skylight", "built_in_storage", "level_entry"]
+      },
+      {
+        "id": "great_room",
+        "level": "ground",
+        "name": "Great Room",
+        "type": "living",
+        "area": 85.0,
+        "boundary": [[12000, 5000], [24000, 5000], [24000, 15000], [12000, 15000]],
+        "ceiling_height": 3.6,
+        "floor_finish": "polished_concrete",
+        "features": [
+          "open_plan_living_dining_kitchen",
+          "floor_to_ceiling_windows",
+          "sliding_doors_to_courtyard",
+          "exposed_concrete_ceiling",
+          "minimal_fixed_furniture"
+        ]
+      },
+      {
+        "id": "master_bedroom",
+        "level": "ground",
+        "name": "Master Bedroom",
+        "type": "bedroom",
+        "area": 28.0,
+        "boundary": [[2000, 5000], [8000, 5000], [8000, 10000], [2000, 10000]],
+        "ceiling_height": 3.0,
+        "floor_finish": "engineered_timber",
+        "features": [
+          "walk_in_robe",
+          "direct_garden_access",
+          "north_facing_windows",
+          "minimal_built_ins"
+        ]
+      },
+      {
+        "id": "master_ensuite",
+        "level": "ground",
+        "name": "Master Ensuite",
+        "type": "bathroom",
+        "area": 12.0,
+        "boundary": [[2000, 10000], [8000, 10000], [8000, 13000], [2000, 13000]],
+        "ceiling_height": 3.0,
+        "floor_finish": "large_format_tile",
+        "features": [
+          "freestanding_bath",
+          "glass_shower_enclosure",
+          "floating_vanity",
+          "skylight",
+          "radiant_floor_heating"
+        ]
+      },
+      {
+        "id": "guest_bedroom",
+        "level": "ground",
+        "name": "Guest Bedroom / Study",
+        "type": "bedroom",
+        "area": 20.0,
+        "boundary": [[2000, 15000], [8000, 15000], [8000, 20000], [2000, 20000]],
+        "ceiling_height": 3.0,
+        "floor_finish": "engineered_timber",
+        "features": [
+          "flexible_use_space",
+          "built_in_desk_wall",
+          "murphy_bed_option",
+          "garden_views"
+        ]
+      },
+      {
+        "id": "guest_bathroom",
+        "level": "ground",
+        "name": "Guest Bathroom",
+        "type": "bathroom",
+        "area": 8.0,
+        "boundary": [[8000, 15000], [12000, 15000], [12000, 18000], [8000, 18000]],
+        "ceiling_height": 3.0,
+        "floor_finish": "large_format_tile",
+        "features": [
+          "walk_in_shower",
+          "wall_hung_vanity",
+          "concealed_storage",
+          "natural_ventilation"
+        ]
+      },
+      {
+        "id": "laundry",
+        "level": "ground", 
+        "name": "Laundry",
+        "type": "utility",
+        "area": 6.0,
+        "boundary": [[8000, 18000], [12000, 18000], [12000, 20000], [8000, 20000]],
+        "ceiling_height": 3.0,
+        "floor_finish": "large_format_tile",
+        "features": [
+          "concealed_storage",
+          "fold_down_ironing_board",
+          "external_access",
+          "built_in_cabinetry"
+        ]
+      },
+      {
+        "id": "storage",
+        "level": "ground",
+        "name": "Storage",
+        "type": "storage",
+        "area": 8.0,
+        "boundary": [[12000, 18000], [16000, 18000], [16000, 20000], [12000, 20000]],
+        "ceiling_height": 3.0,
+        "floor_finish": "polished_concrete",
+        "features": [
+          "mechanical_services",
+          "general_storage",
+          "wine_storage",
+          "seasonal_items"
+        ]
+      },
+      {
+        "id": "carport",
+        "level": "ground",
+        "name": "Carport",
+        "type": "parking",
+        "area": 25.0,
+        "boundary": [[18000, 18000], [24000, 18000], [24000, 23000], [18000, 23000]],
+        "ceiling_height": 2.4,
+        "floor_finish": "exposed_aggregate",
+        "features": [
+          "open_structure",
+          "integrated_storage",
+          "electric_vehicle_charging",
+          "green_roof_option"
+        ]
+      },
+      {
+        "id": "courtyard",
+        "level": "ground",
+        "name": "Central Courtyard",
+        "type": "outdoor",
+        "area": 45.0,
+        "boundary": [[24000, 8000], [30000, 8000], [30000, 18000], [24000, 18000]],
+        "ceiling_height": 0.0,
+        "floor_finish": "natural_stone_paving",
+        "features": [
+          "water_feature",
+          "integrated_seating",
+          "fire_pit",
+          "native_plantings",
+          "privacy_screening"
+        ]
+      }
+    ],
+    
+    "walls": [
+      {
+        "id": "north_wall",
+        "type": "exterior",
+        "geometry": {
+          "type": "straight",
+          "start": [0, 0],
+          "end": [32000, 0]
+        },
+        "construction": {
+          "total_thickness": 300,
+          "height": 3600,
+          "materials": ["insulated_concrete_form", "internal_insulation", "plasterboard"],
+          "thermal_rating": "R6.0",
+          "thermal_mass": "high"
+        },
+        "features": ["minimal_openings", "thermal_mass_wall"]
+      },
+      {
+        "id": "south_wall",
+        "type": "exterior",
+        "geometry": {
+          "type": "straight",
+          "start": [0, 25000],
+          "end": [32000, 25000]
+        },
+        "construction": {
+          "total_thickness": 300,
+          "height": 3600,
+          "materials": ["insulated_concrete_form", "internal_insulation", "plasterboard"],
+          "thermal_rating": "R6.0",
+          "thermal_mass": "high"
+        },
+        "features": ["large_glazed_openings", "passive_solar_orientation"]
+      },
+      {
+        "id": "east_wall",
+        "type": "exterior",
+        "geometry": {
+          "type": "straight",
+          "start": [0, 0],
+          "end": [0, 25000]
+        },
+        "construction": {
+          "total_thickness": 300,
+          "height": 3600,
+          "materials": ["insulated_concrete_form", "internal_insulation", "timber_cladding"],
+          "thermal_rating": "R6.0"
+        },
+        "features": ["natural_timber_cladding", "morning_sun_protection"]
+      },
+      {
+        "id": "west_wall",
+        "type": "exterior",
+        "geometry": {
+          "type": "straight",
+          "start": [32000, 0],
+          "end": [32000, 25000]
+        },
+        "construction": {
+          "total_thickness": 300,
+          "height": 3600,
+          "materials": ["insulated_concrete_form", "internal_insulation", "render_finish"],
+          "thermal_rating": "R6.0"
+        },
+        "features": ["afternoon_sun_control", "minimal_west_glazing"]
+      }
+    ],
+    
+    "openings": [
+      {
+        "id": "front_entry",
+        "type": "door",
+        "subtype": "pivot",
+        "wall_id": "south_wall",
+        "position": {
+          "center": [10000, 25000],
+          "width": 1200,
+          "height": 2400
+        },
+        "properties": {
+          "material": "steel_framed_glass",
+          "operation": "pivot",
+          "glazing": "triple_glazed",
+          "thermal_rating": "U0.8",
+          "accessibility": "zero_threshold"
+        },
+        "features": ["hidden_hardware", "minimal_frame", "integrated_handle"]
+      },
+      {
+        "id": "great_room_south",
+        "type": "window",
+        "subtype": "floor_to_ceiling_sliding",
+        "wall_id": "south_wall",
+        "position": {
+          "center": [18000, 25000],
+          "width": 8000,
+          "height": 3000
+        },
+        "properties": {
+          "glazing": "triple_glazed_low_e",
+          "frame": "thermally_broken_steel",
+          "operation": "sliding_stacking",
+          "thermal_rating": "U0.8",
+          "solar_heat_gain": "optimized"
+        },
+        "features": [
+          "minimal_sightlines",
+          "integrated_insect_screens",
+          "automated_blinds",
+          "level_threshold"
+        ]
+      },
+      {
+        "id": "master_bedroom_east",
+        "type": "window",
+        "subtype": "clerestory",
+        "wall_id": "east_wall",
+        "position": {
+          "center": [0, 7500],
+          "width": 4000,
+          "height": 600
+        },
+        "properties": {
+          "glazing": "triple_glazed",
+          "frame": "steel_minimal",
+          "operation": "fixed",
+          "thermal_rating": "U0.8",
+          "privacy": "high_level_glazing"
+        },
+        "features": ["north_light_capture", "privacy_maintained", "natural_ventilation"]
+      },
+      {
+        "id": "courtyard_connection",
+        "type": "door",
+        "subtype": "sliding_wall",
+        "wall_id": "courtyard_wall",
+        "position": {
+          "center": [24000, 12000],
+          "width": 6000,
+          "height": 3000
+        },
+        "properties": {
+          "glazing": "triple_glazed",
+          "frame": "steel_minimal",
+          "operation": "sliding_disappearing",
+          "thermal_rating": "U0.8",
+          "weatherproofing": "high_performance"
+        },
+        "features": [
+          "wall_disappears_completely",
+          "seamless_indoor_outdoor",
+          "integrated_structure",
+          "hidden_tracks"
+        ]
+      }
+    ],
+    
+    "structural": {
+      "foundation": {
+        "type": "insulated_concrete_slab",
+        "depth": 200,
+        "insulation": "perimeter_and_underslab",
+        "thermal_breaks": "continuous",
+        "waterproofing": "full_membrane"
+      },
+      "frame": {
+        "type": "insulated_concrete_form",
+        "wall_system": "ICF_walls",
+        "roof_system": "concrete_slab_with_green_roof",
+        "thermal_bridging": "eliminated"
+      },
+      "roof": {
+        "type": "flat_concrete_slab",
+        "insulation": "above_deck_R8.0",
+        "waterproofing": "single_membrane",
+        "drainage": "internal_box_gutters",
+        "features": ["green_roof_sections", "solar_panel_areas"]
+      }
+    }
+  },
+  
+  "mep_systems": {
+    "electrical": {
+      "main_board": {
+        "location": [14000, 19000],
+        "rating": "single_phase_80A",
+        "safety_switches": ["RCD", "AFCI"],
+        "smart_meter": true,
+        "backup_battery": "Tesla_Powerwall_2"
+      },
+      "circuits": [
+        {
+          "id": "led_lighting",
+          "type": "lighting",
+          "rating": "6A",
+          "areas": ["all_spaces"],
+          "features": ["daylight_sensors", "occupancy_sensors", "dimming_control"]
+        },
+        {
+          "id": "efficient_appliances",
+          "type": "power",
+          "rating": "16A",
+          "areas": ["kitchen", "laundry"],
+          "features": ["energy_monitoring", "load_management"]
+        }
+      ],
+      "renewable_energy": {
+        "solar_system": {
+          "capacity": "8kW",
+          "panels": "roof_integrated",
+          "inverter": "micro_inverters",
+          "monitoring": "real_time"
+        },
+        "battery_storage": {
+          "capacity": "13.5kWh",
+          "type": "lithium_ion",
+          "backup_capability": "essential_circuits"
+        }
+      }
+    },
+    
+    "plumbing": {
+      "water_supply": {
+        "connection": "mains_water",
+        "filtration": "whole_house_filter",
+        "hot_water": "heat_pump_system",
+        "circulation": "pump_controlled"
+      },
+      "drainage": {
+        "stormwater": "integrated_detention_tank",
+        "sewer": "gravity_connection",
+        "greywater": "treatment_and_reuse"
+      },
+      "water_efficiency": {
+        "rainwater_harvesting": {
+          "tank_capacity": "10000L",
+          "uses": ["all_non_potable_uses"]
+        },
+        "greywater_system": {
+          "treatment": "biological_treatment",
+          "reuse": ["toilet_flushing", "irrigation"]
+        }
+      }
+    },
+    
+    "hvac": {
+      "system_type": "passive_house_ventilation",
+      "heat_recovery": {
+        "system": "ERV_heat_recovery_ventilation",
+        "efficiency": "95_percent",
+        "fresh_air": "continuous_supply"
+      },
+      "heating_cooling": {
+        "primary": "passive_solar_thermal_mass",
+        "backup": "mini_split_heat_pump",
+        "zones": [
+          {
+            "name": "living_zone",
+            "areas": ["great_room", "entry"],
+            "capacity": "2kW"
+          },
+          {
+            "name": "bedroom_zone",
+            "areas": ["master_bedroom", "guest_bedroom"],
+            "capacity": "1.5kW"
+          }
+        ]
+      },
+      "controls": {
+        "system": "smart_zoning",
+        "sensors": ["temperature", "humidity", "air_quality"],
+        "automation": "occupancy_based"
+      }
+    }
+  },
+  
+  "sustainability": {
+    "energy": {
+      "target": "net_positive_energy",
+      "passive_design": {
+        "orientation": "optimized_solar_access",
+        "thermal_mass": "high_performance_concrete",
+        "insulation": "continuous_R6_walls_R8_roof",
+        "glazing": "triple_glazed_throughout",
+        "airtightness": "0.6_ACH50_blower_door"
+      },
+      "renewable_systems": {
+        "solar_PV": "8kW_roof_integrated",
+        "battery_storage": "13.5kWh_lithium",
+        "solar_hot_water": "heat_pump_system"
+      }
+    },
+    "water": {
+      "target": "water_neutral",
+      "harvesting": {
+        "rainwater": "10000L_underground_tank",
+        "stormwater": "on_site_detention_infiltration"
+      },
+      "recycling": {
+        "greywater": "biological_treatment_reuse",
+        "blackwater": "composting_toilet_option"
+      },
+      "efficiency": {
+        "fixtures": "WELS_6_star_rating",
+        "landscaping": "native_drought_tolerant"
+      }
+    },
+    "materials": {
+      "embodied_carbon": "low_carbon_concrete",
+      "recycled_content": "recycled_steel_framing",
+      "local_sourcing": "timber_within_500km",
+      "durability": "100_year_design_life",
+      "end_of_life": "design_for_disassembly"
+    },
+    "certifications": {
+      "passive_house": "certified",
+      "living_building": "targeted",
+      "green_star": "6_star"
+    }
+  },
+  
+  "compliance": {
+    "building_codes": {
+      "primary": "National_Construction_Code_2022",
+      "energy": "10_star_equivalent_passive_house",
+      "accessibility": "AS1428_full_compliance",
+      "structural": "AS1170_AS3600_AS1720",
+      "fire": "standard_residential"
+    },
+    "planning_permits": {
+      "required": false,
+      "reason": "complying_development",
+      "setbacks": "compliant",
+      "height": "single_story_compliant"
+    },
+    "environmental": {
+      "BASIX": "exceeds_requirements",
+      "stormwater": "on_site_detention",
+      "landscaping": "native_species_only"
+    }
+  },
+  
+  "cost_estimate": {
+    "construction_cost": 520000,
+    "cost_per_sqm": 2365,
+    "cost_breakdown": {
+      "passive_house_construction": 420000,
+      "renewable_energy_systems": 45000,
+      "water_systems": 25000,
+      "high_performance_windows": 65000,
+      "professional_fees": 35000,
+      "preliminaries": 30000
+    },
+    "life_cycle_costs": {
+      "energy_bills": "net_positive_income",
+      "water_bills": "minimal",
+      "maintenance": "low",
+      "payback_period": "8_years"
+    }
+  },
+  
+  "performance_targets": {
+    "energy": {
+      "heating_demand": "15_kWh_per_sqm_per_year",
+      "cooling_demand": "15_kWh_per_sqm_per_year", 
+      "primary_energy": "120_kWh_per_sqm_per_year",
+      "renewable_generation": "150_kWh_per_sqm_per_year"
+    },
+    "comfort": {
+      "overheating": "less_than_10_percent_year",
+      "air_quality": "CO2_below_1000ppm",
+      "humidity": "30_to_70_percent",
+      "acoustics": "excellent_sound_insulation"
+    },
+    "durability": {
+      "design_life": "100_years",
+      "maintenance": "minimal_first_25_years",
+      "adaptability": "universal_design_aging_in_place"
+    }
+  },
+  
+  "render_metadata": {
+    "camera_views": [
+      {
+        "name": "South Elevation",
+        "position": [16000, 35000, 2000],
+        "target": [16000, 25000, 1800],
+        "type": "exterior",
+        "features": ["passive_solar_design", "minimal_facade"]
+      },
+      {
+        "name": "Great Room Interior",
+        "position": [15000, 10000, 1600],
+        "target": [20000, 10000, 1600],
+        "type": "interior",
+        "features": ["open_plan", "natural_light", "minimal_design"]
+      },
+      {
+        "name": "Central Courtyard",
+        "position": [27000, 13000, 1600],
+        "target": [25000, 13000, 1600],
+        "type": "outdoor",
+        "features": ["water_feature", "native_plants", "privacy"]
+      },
+      {
+        "name": "Master Bedroom",
+        "position": [5000, 7500, 1600],
+        "target": [6000, 7500, 1600],
+        "type": "interior",
+        "features": ["natural_materials", "garden_views", "serenity"]
+      }
+    ],
+    "lighting_scenarios": [
+      {
+        "name": "Winter Solstice",
+        "time": "12:00",
+        "season": "winter",
+        "weather": "clear",
+        "solar_angle": "low"
+      },
+      {
+        "name": "Summer Evening",
+        "time": "19:00",
+        "season": "summer",
+        "artificial_lighting": "minimal"
+      },
+      {
+        "name": "Overcast Day",
+        "time": "14:00",
+        "weather": "overcast",
+        "lighting": "natural_diffused"
+      }
+    ],
+    "material_quality": "photorealistic",
+    "render_resolution": "4K",
+    "post_processing": [
+      "natural_color_grading",
+      "subtle_ambient_occlusion",
+      "realistic_material_aging"
+    ]
+  }
+}

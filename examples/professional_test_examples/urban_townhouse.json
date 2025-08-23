@@ -1,0 +1,611 @@
+{
+  "metadata": {
+    "schema_version": "v3_professional",
+    "project_name": "Contemporary Urban Townhouse",
+    "project_id": "UT-2024-002", 
+    "architect": "HouseBrain AI Architect",
+    "client": "Urban Development Validation",
+    "project_date": "2024-01-16",
+    "design_phase": "Concept Design",
+    "building_classification": "Class 1a - Attached Dwelling",
+    "climate_zone": "Zone 2 - Warm Temperate",
+    "site_area": 280.0,
+    "site_coordinates": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    "design_criteria": {
+      "architectural_style": "Contemporary Urban",
+      "sustainability_rating": "LEED Gold",
+      "accessibility_compliance": "ADA Basic",
+      "energy_efficiency": "High Performance"
+    }
+  },
+  
+  "input": {
+    "plot": {
+      "area": 280.0,
+      "dimensions": {
+        "width": 14.0,
+        "depth": 20.0
+      },
+      "orientation": "north",
+      "setbacks": {
+        "front": 3.0,
+        "rear": 4.0,
+        "left": 0.0,
+        "right": 0.0
+      },
+      "constraints": [
+        "Narrow urban lot",
+        "Shared side walls",
+        "Height restriction - 3 stories max",
+        "Street parking only"
+      ]
+    },
+    "requirements": {
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "living_areas": ["living_dining", "family"],
+      "service_areas": ["kitchen", "laundry"],
+      "outdoor_areas": ["courtyard", "roof_deck"],
+      "special_features": [
+        "Maximized natural light",
+        "Flexible living spaces",
+        "Rooftop terrace",
+        "Integrated storage",
+        "Home office space"
+      ]
+    },
+    "design_preferences": {
+      "architectural_style": "contemporary_urban",
+      "materials": ["steel", "glass", "concrete", "recycled_brick"],
+      "color_palette": "neutral_modern",
+      "sustainability": "medium_high",
+      "technology_integration": "standard_smart"
+    }
+  },
+  
+  "geometry": {
+    "levels": [
+      {
+        "id": "ground",
+        "name": "Ground Floor",
+        "elevation": 0.0,
+        "floor_to_ceiling": 3.0,
+        "area": 85.0
+      },
+      {
+        "id": "first",
+        "name": "First Floor", 
+        "elevation": 3.0,
+        "floor_to_ceiling": 2.7,
+        "area": 85.0
+      },
+      {
+        "id": "second",
+        "name": "Second Floor",
+        "elevation": 5.7,
+        "floor_to_ceiling": 2.7,
+        "area": 75.0
+      },
+      {
+        "id": "roof",
+        "name": "Roof Deck",
+        "elevation": 8.4,
+        "floor_to_ceiling": 0.0,
+        "area": 45.0
+      }
+    ],
+    
+    "spaces": [
+      {
+        "id": "ground_entry",
+        "level": "ground",
+        "name": "Entry Hall",
+        "type": "circulation",
+        "area": 8.0,
+        "boundary": [[3000, 3000], [6000, 3000], [6000, 6000], [3000, 6000]],
+        "ceiling_height": 3.0,
+        "floor_finish": "polished_concrete",
+        "features": ["skylight_above", "coat_storage", "bike_storage"]
+      },
+      {
+        "id": "ground_living",
+        "level": "ground",
+        "name": "Living/Dining",
+        "type": "living",
+        "area": 42.0,
+        "boundary": [[6000, 3000], [14000, 3000], [14000, 10000], [6000, 10000]],
+        "ceiling_height": 3.0,
+        "floor_finish": "engineered_hardwood",
+        "features": ["open_plan", "sliding_doors_to_courtyard", "built_in_storage"]
+      },
+      {
+        "id": "ground_kitchen",
+        "level": "ground", 
+        "name": "Kitchen",
+        "type": "kitchen",
+        "area": 16.0,
+        "boundary": [[6000, 10000], [14000, 10000], [14000, 14000], [6000, 14000]],
+        "ceiling_height": 3.0,
+        "floor_finish": "large_format_tile",
+        "features": ["island_bench", "pantry_storage", "breakfast_bar"]
+      },
+      {
+        "id": "ground_powder",
+        "level": "ground",
+        "name": "Powder Room",
+        "type": "bathroom",
+        "area": 3.0,
+        "boundary": [[3000, 6000], [6000, 6000], [6000, 8000], [3000, 8000]],
+        "ceiling_height": 2.7,
+        "floor_finish": "porcelain_tile",
+        "features": ["concealed_cistern", "compact_layout"]
+      },
+      {
+        "id": "ground_laundry",
+        "level": "ground",
+        "name": "Laundry",
+        "type": "utility",
+        "area": 6.0,
+        "boundary": [[3000, 8000], [6000, 8000], [6000, 11000], [3000, 11000]],
+        "ceiling_height": 2.7,
+        "floor_finish": "waterproof_tile",
+        "features": ["built_in_storage", "hanging_space", "external_access"]
+      },
+      {
+        "id": "ground_courtyard",
+        "level": "ground",
+        "name": "Rear Courtyard",
+        "type": "outdoor",
+        "area": 25.0,
+        "boundary": [[6000, 14000], [14000, 14000], [14000, 20000], [6000, 20000]],
+        "ceiling_height": 0.0,
+        "floor_finish": "composite_decking",
+        "features": ["private_outdoor_space", "integrated_planters", "outdoor_dining"]
+      },
+      
+      {
+        "id": "first_master",
+        "level": "first",
+        "name": "Master Bedroom",
+        "type": "bedroom",
+        "area": 22.0,
+        "boundary": [[3000, 3000], [10000, 3000], [10000, 7500], [3000, 7500]],
+        "ceiling_height": 2.7,
+        "floor_finish": "engineered_hardwood",
+        "features": ["walk_in_robe", "private_balcony", "north_facing"]
+      },
+      {
+        "id": "first_ensuite",
+        "level": "first",
+        "name": "Master Ensuite",
+        "type": "bathroom", 
+        "area": 8.0,
+        "boundary": [[10000, 3000], [14000, 3000], [14000, 6000], [10000, 6000]],
+        "ceiling_height": 2.7,
+        "floor_finish": "porcelain_tile",
+        "features": ["shower_niche", "floating_vanity", "skylight"]
+      },
+      {
+        "id": "first_study",
+        "level": "first",
+        "name": "Study/Home Office",
+        "type": "office",
+        "area": 12.0,
+        "boundary": [[3000, 7500], [8000, 7500], [8000, 10500], [3000, 10500]],
+        "ceiling_height": 2.7,
+        "floor_finish": "engineered_hardwood",
+        "features": ["built_in_desk", "storage_wall", "good_natural_light"]
+      },
+      {
+        "id": "first_family",
+        "level": "first",
+        "name": "Family Area",
+        "type": "living",
+        "area": 20.0,
+        "boundary": [[8000, 6000], [14000, 6000], [14000, 13000], [8000, 13000]],
+        "ceiling_height": 2.7,
+        "floor_finish": "engineered_hardwood",
+        "features": ["flexible_space", "built_in_entertainment", "balcony_access"]
+      },
+      {
+        "id": "first_balcony",
+        "level": "first",
+        "name": "Front Balcony",
+        "type": "outdoor",
+        "area": 12.0,
+        "boundary": [[8000, 13000], [14000, 13000], [14000, 16000], [8000, 16000]],
+        "ceiling_height": 0.0,
+        "floor_finish": "composite_decking",
+        "features": ["street_views", "privacy_screens", "integrated_planters"]
+      },
+      
+      {
+        "id": "second_bed2",
+        "level": "second",
+        "name": "Bedroom 2",
+        "type": "bedroom",
+        "area": 18.0,
+        "boundary": [[3000, 3000], [9000, 3000], [9000, 6000], [3000, 6000]],
+        "ceiling_height": 2.7,
+        "floor_finish": "engineered_hardwood",
+        "features": ["built_in_robe", "good_cross_ventilation"]
+      },
+      {
+        "id": "second_bed3",
+        "level": "second",
+        "name": "Bedroom 3",
+        "type": "bedroom",
+        "area": 16.0,
+        "boundary": [[9000, 3000], [14000, 3000], [14000, 6500], [9000, 6500]],
+        "ceiling_height": 2.7,
+        "floor_finish": "engineered_hardwood",
+        "features": ["built_in_robe", "corner_windows"]
+      },
+      {
+        "id": "second_bathroom",
+        "level": "second",
+        "name": "Main Bathroom",
+        "type": "bathroom",
+        "area": 10.0,
+        "boundary": [[3000, 6000], [9000, 6000], [9000, 8500], [3000, 8500]],
+        "ceiling_height": 2.7,
+        "floor_finish": "porcelain_tile",
+        "features": ["bath_and_shower", "linen_storage", "natural_ventilation"]
+      },
+      {
+        "id": "second_void",
+        "level": "second",
+        "name": "Stair Void",
+        "type": "circulation",
+        "area": 8.0,
+        "boundary": [[9000, 6500], [14000, 6500], [14000, 9000], [9000, 9000]],
+        "ceiling_height": 2.7,
+        "floor_finish": "none",
+        "features": ["double_height_space", "natural_light_well"]
+      },
+      
+      {
+        "id": "roof_deck",
+        "level": "roof",
+        "name": "Roof Deck",
+        "type": "outdoor",
+        "area": 45.0,
+        "boundary": [[3000, 3000], [14000, 3000], [14000, 12000], [3000, 12000]],
+        "ceiling_height": 0.0,
+        "floor_finish": "composite_decking",
+        "features": ["360_degree_views", "outdoor_kitchen", "green_roof_sections", "water_feature"]
+      }
+    ],
+    
+    "walls": [
+      {
+        "id": "party_wall_left",
+        "type": "party",
+        "geometry": {
+          "type": "straight",
+          "start": [0, 0],
+          "end": [0, 20000]
+        },
+        "construction": {
+          "total_thickness": 200,
+          "height": 8400,
+          "materials": ["concrete_block", "fire_rating", "acoustic_insulation"],
+          "fire_rating": "FRL120",
+          "acoustic_rating": "Rw50"
+        }
+      },
+      {
+        "id": "party_wall_right",
+        "type": "party",
+        "geometry": {
+          "type": "straight",
+          "start": [14000, 0],
+          "end": [14000, 20000]
+        },
+        "construction": {
+          "total_thickness": 200,
+          "height": 8400,
+          "materials": ["concrete_block", "fire_rating", "acoustic_insulation"],
+          "fire_rating": "FRL120",
+          "acoustic_rating": "Rw50"
+        }
+      },
+      {
+        "id": "front_wall",
+        "type": "exterior",
+        "geometry": {
+          "type": "straight",
+          "start": [0, 0],
+          "end": [14000, 0]
+        },
+        "construction": {
+          "total_thickness": 180,
+          "height": 8400,
+          "materials": ["steel_frame", "insulation", "fiber_cement_cladding"],
+          "thermal_rating": "R2.5"
+        },
+        "features": ["feature_cladding", "integrated_planters"]
+      },
+      {
+        "id": "rear_wall",
+        "type": "exterior",
+        "geometry": {
+          "type": "straight",
+          "start": [0, 20000],
+          "end": [14000, 20000]
+        },
+        "construction": {
+          "total_thickness": 180,
+          "height": 8400,
+          "materials": ["steel_frame", "insulation", "recycled_brick"],
+          "thermal_rating": "R2.5"
+        },
+        "features": ["large_openings", "privacy_screening"]
+      }
+    ],
+    
+    "openings": [
+      {
+        "id": "front_door",
+        "type": "door",
+        "subtype": "entry",
+        "wall_id": "front_wall",
+        "position": {
+          "center": [4500, 0],
+          "width": 900,
+          "height": 2100
+        },
+        "properties": {
+          "material": "steel_framed_glass",
+          "operation": "hinged",
+          "glazing": "clear_glass_panels",
+          "security": "multi_point_lock",
+          "thermal_rating": "U2.0"
+        },
+        "features": ["video_intercom", "side_panels"]
+      },
+      {
+        "id": "living_sliding_door",
+        "type": "door",
+        "subtype": "sliding",
+        "wall_id": "rear_wall",
+        "position": {
+          "center": [10000, 20000],
+          "width": 3600,
+          "height": 2400
+        },
+        "properties": {
+          "glazing": "double_glazed",
+          "frame": "aluminum",
+          "operation": "sliding_stacking",
+          "thermal_rating": "U2.2",
+          "accessibility": "level_threshold"
+        },
+        "features": ["integrated_flyscreen", "security_locks"]
+      },
+      {
+        "id": "front_windows",
+        "type": "window",
+        "subtype": "awning",
+        "wall_id": "front_wall",
+        "position": {
+          "center": [10000, 0],
+          "width": 2400,
+          "height": 1800
+        },
+        "properties": {
+          "glazing": "double_glazed_low_e",
+          "frame": "aluminum",
+          "operation": "awning",
+          "thermal_rating": "U2.0",
+          "privacy": "frosted_lower_panel"
+        },
+        "features": ["integrated_blinds", "security_screens"]
+      }
+    ],
+    
+    "stairs": [
+      {
+        "id": "main_stair",
+        "type": "straight_run_with_landing",
+        "levels": ["ground", "first", "second", "roof"],
+        "geometry": {
+          "start_point": [4000, 11000],
+          "end_point": [7000, 14000],
+          "width": 900,
+          "rise": 180,
+          "going": 250,
+          "step_count": 48
+        },
+        "construction": {
+          "structure": "steel_stringers",
+          "treads": "hardwood_timber",
+          "risers": "closed_steel",
+          "handrail": "steel_with_timber_top",
+          "balustrade": "steel_balusters"
+        },
+        "features": ["space_efficient_design", "under_stair_storage", "natural_lighting"]
+      }
+    ],
+    
+    "structural": {
+      "foundation": {
+        "type": "concrete_slab_on_ground",
+        "depth": 150,
+        "reinforcement": "mesh_reinforcement",
+        "insulation": "perimeter_insulation"
+      },
+      "frame": {
+        "type": "lightweight_steel_frame",
+        "floor_system": "steel_joists_with_concrete_topping",
+        "wall_system": "steel_stud_framing",
+        "roof_system": "steel_truss_concrete_roof_deck"
+      }
+    }
+  },
+  
+  "mep_systems": {
+    "electrical": {
+      "main_board": {
+        "location": [3000, 9000],
+        "rating": "single_phase_63A",
+        "safety_switches": ["RCD", "MCB"],
+        "smart_meter": true
+      },
+      "circuits": [
+        {
+          "id": "lighting_general",
+          "type": "lighting",
+          "rating": "10A",
+          "areas": ["all_internal_spaces"]
+        },
+        {
+          "id": "power_general",
+          "type": "power",
+          "rating": "16A", 
+          "areas": ["all_areas"],
+          "features": ["USB_charging_points"]
+        }
+      ],
+      "smart_home": {
+        "automation_system": "basic_wifi_controlled",
+        "features": ["lighting_dimming", "security_system", "climate_control"]
+      }
+    },
+    
+    "plumbing": {
+      "water_supply": {
+        "connection": "mains_water",
+        "pressure": "mains_pressure",
+        "hot_water": "continuous_flow_gas"
+      },
+      "drainage": {
+        "stormwater": "gravity_to_street",
+        "sewer": "gravity_connection"
+      }
+    },
+    
+    "hvac": {
+      "system_type": "split_system_air_conditioning",
+      "zones": [
+        {
+          "name": "ground_floor",
+          "areas": ["ground_living", "ground_kitchen"],
+          "capacity": "5kW"
+        },
+        {
+          "name": "first_floor",
+          "areas": ["first_master", "first_family"],
+          "capacity": "4kW"
+        },
+        {
+          "name": "second_floor",
+          "areas": ["second_bed2", "second_bed3"],
+          "capacity": "3kW"
+        }
+      ],
+      "ventilation": "natural_cross_ventilation",
+      "controls": "programmable_thermostat"
+    }
+  },
+  
+  "sustainability": {
+    "energy": {
+      "solar_system": {
+        "capacity": "6kW",
+        "location": "roof_deck",
+        "battery_storage": "optional_10kWh"
+      },
+      "energy_rating": "7_star_equivalent",
+      "efficient_appliances": "5_star_minimum"
+    },
+    "water": {
+      "rainwater_harvesting": {
+        "tank_capacity": "2000L",
+        "uses": ["toilet_flushing", "garden_irrigation"]
+      },
+      "water_efficient_fixtures": "WELS_3_star_minimum"
+    },
+    "materials": {
+      "recycled_content": "recycled_brick_feature_walls",
+      "local_materials": "locally_sourced_timber",
+      "low_voc_finishes": "throughout"
+    }
+  },
+  
+  "compliance": {
+    "building_codes": {
+      "primary": "National_Construction_Code_2022",
+      "local": "Urban_Design_Guidelines",
+      "accessibility": "Basic_Access_Provisions",
+      "energy": "6_star_energy_rating",
+      "structural": "AS1170_AS1720"
+    },
+    "planning_permits": {
+      "required": true,
+      "status": "in_progress",
+      "considerations": ["streetscape_compatibility", "privacy_requirements", "height_limits"]
+    },
+    "fire_safety": {
+      "egress": "protected_egress_path",
+      "smoke_detection": "interconnected_system",
+      "fire_resistance": "standard_construction"
+    }
+  },
+  
+  "cost_estimate": {
+    "construction_cost": 685000,
+    "cost_per_sqm": 2740,
+    "breakdown": {
+      "structure_frame": 120000,
+      "roofing": 35000,
+      "external_walls": 85000,
+      "internal_fit_out": 185000,
+      "services_mep": 95000,
+      "external_works": 25000,
+      "preliminaries": 65000,
+      "contractor_margin": 75000
+    }
+  },
+  
+  "render_metadata": {
+    "camera_views": [
+      {
+        "name": "Street View",
+        "position": [20000, -5000, 4000],
+        "target": [7000, 0, 3000],
+        "type": "exterior"
+      },
+      {
+        "name": "Ground Floor Living",
+        "position": [10000, 6500, 1600],
+        "target": [11000, 7500, 1600],
+        "type": "interior"
+      },
+      {
+        "name": "Roof Deck View",
+        "position": [8500, 7500, 8600],
+        "target": [9500, 8500, 8600],
+        "type": "outdoor"
+      }
+    ],
+    "lighting_scenarios": [
+      {
+        "name": "Morning Light",
+        "time": "09:00",
+        "season": "spring",
+        "weather": "clear"
+      },
+      {
+        "name": "Evening Ambience",
+        "time": "19:00",
+        "artificial_lighting": true
+      }
+    ],
+    "material_quality": "high",
+    "render_resolution": "2K"
+  }
+}

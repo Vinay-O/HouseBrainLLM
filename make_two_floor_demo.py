@@ -106,6 +106,4 @@ if __name__ == "__main__":
     plan = make_two_floor_demo()
     out_path = out_dir / "two_floor_demo.json"
     out_path.write_text(json.dumps(plan, indent=2), encoding="utf-8")
-    print(f"✅ Wrote {out_path}")
-
-
+    print(f"✅ Wrote {out_path}")\n

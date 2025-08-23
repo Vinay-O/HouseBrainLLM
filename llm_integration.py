@@ -328,4 +328,4 @@ def generate_cost_from_plan_or_requirements(data: Dict[str, Any]) -> Dict[str, A
 def generate_interior_design_recommendations(requirements: Dict[str, Any]) -> Dict[str, Any]:
     """Convenience function for interior design"""
     llm = get_llm_instance()
-    return llm.generate_interior_design(requirements)
+    return llm.generate_interior_design(requirements)\n

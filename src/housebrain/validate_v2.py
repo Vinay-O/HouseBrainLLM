@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from typing import Dict, Any, List, Tuple
 
-from jsonschema import validate as jsonschema_validate, Draft7Validator
+from jsonschema import Draft7Validator
 
 
 def load_schema() -> Dict[str, Any]:
@@ -109,5 +109,3 @@ if __name__ == "__main__":
             print(" -", e)
     else:
         print("✅ Validation passed")
-
-
