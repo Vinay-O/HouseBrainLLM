@@ -1,0 +1,207 @@
+{
+  "prompt": "Design a traditional Tamil Nadu-style 2BHK villa for a 30x60 feet east-facing plot in Chennai (600001), suitable for a hot and humid climate.",
+  "output": {
+    "input": {
+      "plot_dimensions": {
+        "length": 60.0,
+        "width": 30.0
+      },
+      "style": "Traditional Tamil Nadu",
+      "architecture": "Vernacular",
+      "pin_code": "600001",
+      "plot_shape": "rectangle",
+      "num_floors": 1,
+      "bhks": "2BHK"
+    },
+    "levels": [
+      {
+        "level_name": "ground_floor",
+        "level_number": 0,
+        "rooms": [
+          {
+            "id": "verandah_01",
+            "type": "entrance",
+            "bounds": {
+              "x": 1.0,
+              "y": 1.0,
+              "width": 28.0,
+              "height": 8.0
+            },
+            "doors": [
+              {
+                "position": {
+                  "x": 15.0,
+                  "y": 9.0
+                },
+                "width": 4.0,
+                "to_room": "living_room_01"
+              }
+            ],
+            "windows": []
+          },
+          {
+            "id": "living_room_01",
+            "type": "living_room",
+            "bounds": {
+              "x": 1.0,
+              "y": 9.0,
+              "width": 18.0,
+              "height": 20.0
+            },
+            "doors": [
+              {
+                "position": {
+                  "x": 10.0,
+                  "y": 29.0
+                },
+                "width": 3.5,
+                "to_room": "master_bedroom_01"
+              },
+              {
+                "position": {
+                  "x": 19.0,
+                  "y": 18.0
+                },
+                "width": 3.5,
+                "to_room": "kitchen_01"
+              }
+            ],
+            "windows": [
+              {
+                "position": {
+                  "x": 1.0,
+                  "y": 15.0
+                },
+                "width": 8.0
+              }
+            ]
+          },
+          {
+            "id": "kitchen_01",
+            "type": "kitchen",
+            "bounds": {
+              "x": 19.0,
+              "y": 9.0,
+              "width": 10.0,
+              "height": 12.0
+            },
+            "doors": [],
+            "windows": [
+              {
+                "position": {
+                  "x": 29.0,
+                  "y": 14.0
+                },
+                "width": 5.0
+              }
+            ]
+          },
+          {
+            "id": "master_bedroom_01",
+            "type": "master_bedroom",
+            "bounds": {
+              "x": 1.0,
+              "y": 29.0,
+              "width": 18.0,
+              "height": 15.0
+            },
+            "doors": [
+              {
+                "position": {
+                  "x": 19.0,
+                  "y": 36.0
+                },
+                "width": 3.0,
+                "to_room": "master_bath_01"
+              }
+            ],
+            "windows": [
+              {
+                "position": {
+                  "x": 1.0,
+                  "y": 35.0
+                },
+                "width": 8.0
+              }
+            ]
+          },
+          {
+            "id": "master_bath_01",
+            "type": "bathroom",
+            "bounds": {
+              "x": 19.0,
+              "y": 29.0,
+              "width": 10.0,
+              "height": 8.0
+            },
+            "doors": [],
+            "windows": []
+          },
+          {
+            "id": "bedroom_02",
+            "type": "bedroom",
+            "bounds": {
+              "x": 1.0,
+              "y": 44.0,
+              "width": 18.0,
+              "height": 15.0
+            },
+            "doors": [
+              {
+                "position": {
+                  "x": 19.0,
+                  "y": 51.0
+                },
+                "width": 3.0,
+                "to_room": "common_bath_01"
+              }
+            ],
+            "windows": [
+              {
+                "position": {
+                  "x": 1.0,
+                  "y": 51.0
+                },
+                "width": 8.0
+              }
+            ]
+          },
+          {
+            "id": "common_bath_01",
+            "type": "bathroom",
+            "bounds": {
+              "x": 19.0,
+              "y": 44.0,
+              "width": 10.0,
+              "height": 8.0
+            },
+            "doors": [],
+            "windows": []
+          }
+        ],
+        "stairs": []
+      }
+    ],
+    "total_area": 1750.0,
+    "construction_cost": 3150000.0,
+    "architectural_features": [
+      "Traditional sloping roof",
+      "Central courtyard for ventilation",
+      "Ornate wooden pillars in verandah"
+    ],
+    "vastu_compliance": {
+      "is_compliant": true,
+      "score": 95,
+      "recommendations": "Perfectly aligned with Vastu principles for an east-facing plot. Kitchen is ideally placed in the South-East."
+    },
+    "sustainability_features": {
+      "has_solar_panels": true,
+      "has_rainwater_harvesting": true,
+      "green_building_certification": "IGBC Green Homes"
+    },
+    "render_paths": {
+      "floor_plan_2d": "renders/gold_standard_05/2d_plan.svg",
+      "model_3d": "renders/gold_standard_05/model.gltf"
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "prompt": "Design a compact and efficient, Vastu-compliant 3BHK single-story house for a 25x45 feet north-facing plot in Pune (411001).",
+  "output": {
+    "input": {
+      "plot_dimensions": { "length": 45.0, "width": 25.0 },
+      "style": "Modern Compact",
+      "architecture": "Minimalist",
+      "pin_code": "411001",
+      "plot_shape": "rectangle",
+      "num_floors": 1,
+      "bhks": "3BHK"
+    },
+    "levels": [
+      {
+        "level_name": "ground_floor",
+        "level_number": 0,
+        "rooms": [
+          {
+            "id": "living_dining_01",
+            "type": "living_room",
+            "bounds": { "x": 1.0, "y": 1.0, "width": 12.0, "height": 20.0 },
+            "doors": [
+              { "position": { "x": 13.0, "y": 10.0 }, "width": 3.0, "to_room": "kitchen_01" }
+            ],
+            "windows": [
+              { "position": { "x": 1.0, "y": 8.0 }, "width": 8.0 }
+            ]
+          },
+          {
+            "id": "kitchen_01",
+            "type": "kitchen",
+            "bounds": { "x": 13.0, "y": 1.0, "width": 11.0, "height": 10.0 },
+            "doors": [],
+            "windows": [
+              { "position": { "x": 24.0, "y": 5.0 }, "width": 5.0 }
+            ]
+          },
+          {
+            "id": "master_bedroom_01",
+            "type": "master_bedroom",
+            "bounds": { "x": 1.0, "y": 21.0, "width": 12.0, "height": 14.0 },
+            "doors": [
+               { "position": { "x": 13.0, "y": 28.0 }, "width": 3.0, "to_room": "master_bath_01" }
+            ],
+            "windows": [
+               { "position": { "x": 1.0, "y": 27.0 }, "width": 6.0 }
+            ]
+          },
+          {
+            "id": "master_bath_01",
+            "type": "bathroom",
+            "bounds": { "x": 13.0, "y": 21.0, "width": 6.0, "height": 7.0 },
+            "doors": [],
+            "windows": []
+          },
+          {
+            "id": "bedroom_02",
+            "type": "bedroom",
+            "bounds": { "x": 1.0, "y": 35.0, "width": 12.0, "height": 9.0 },
+            "doors": [],
+            "windows": [
+              { "position": { "x": 1.0, "y": 39.0 }, "width": 6.0 }
+            ]
+          },
+          {
+            "id": "bedroom_03",
+            "type": "bedroom",
+            "bounds": { "x": 13.0, "y": 28.0, "width": 11.0, "height": 9.0 },
+            "doors": [],
+            "windows": []
+          },
+          {
+            "id": "common_bath_01",
+            "type": "bathroom",
+            "bounds": { "x": 13.0, "y": 37.0, "width": 6.0, "height": 7.0 },
+            "doors": [],
+            "windows": []
+          }
+        ],
+        "stairs": []
+      }
+    ],
+    "total_area": 1100.0,
+    "construction_cost": 1980000.0,
+    "architectural_features": [
+      "Combined living and dining area to save space",
+      "Efficient layout with minimal corridor space"
+    ],
+    "vastu_compliance": {
+      "is_compliant": true,
+      "score": 88,
+      "recommendations": "North entrance is ideal. Pooja room can be added in the North-East corner of the living room."
+    },
+    "sustainability_features": {
+      "has_solar_panels": false,
+      "has_rainwater_harvesting": true,
+      "green_building_certification": "Not applicable"
+    },
+    "render_paths": {
+      "floor_plan_2d": "renders/gold_standard_03/2d_plan.svg",
+      "model_3d": "renders/gold_standard_03/model.gltf"
+    }
+  }
+}

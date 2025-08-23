@@ -1,0 +1,136 @@
+{
+  "prompt": "Design a coastal-style 1BHK villa for a 25x50 feet plot in Mumbai (400001), designed to maximize sea breeze and natural light.",
+  "output": {
+    "input": {
+      "plot_dimensions": {
+        "length": 50.0,
+        "width": 25.0
+      },
+      "style": "Modern Coastal",
+      "architecture": "Coastal",
+      "pin_code": "400001",
+      "plot_shape": "rectangle",
+      "num_floors": 1,
+      "bhks": "1BHK"
+    },
+    "levels": [
+      {
+        "level_name": "ground_floor",
+        "level_number": 0,
+        "rooms": [
+          {
+            "id": "living_room_01",
+            "type": "living_room",
+            "bounds": {
+              "x": 1.0,
+              "y": 1.0,
+              "width": 23.0,
+              "height": 20.0
+            },
+            "doors": [
+              {
+                "position": {
+                  "x": 12.0,
+                  "y": 21.0
+                },
+                "width": 4.0,
+                "to_room": "bedroom_01"
+              }
+            ],
+            "windows": [
+              {
+                "position": {
+                  "x": 1.0,
+                  "y": 10.0
+                },
+                "width": 10.0
+              },
+              {
+                "position": {
+                  "x": 24.0,
+                  "y": 10.0
+                },
+                "width": 10.0
+              }
+            ]
+          },
+          {
+            "id": "kitchenette_01",
+            "type": "kitchen",
+            "bounds": {
+              "x": 1.0,
+              "y": 21.0,
+              "width": 10.0,
+              "height": 10.0
+            },
+            "doors": [],
+            "windows": []
+          },
+          {
+            "id": "bedroom_01",
+            "type": "bedroom",
+            "bounds": {
+              "x": 1.0,
+              "y": 31.0,
+              "width": 15.0,
+              "height": 18.0
+            },
+            "doors": [
+              {
+                "position": {
+                  "x": 16.0,
+                  "y": 39.0
+                },
+                "width": 3.0,
+                "to_room": "bathroom_01"
+              }
+            ],
+            "windows": [
+              {
+                "position": {
+                  "x": 1.0,
+                  "y": 39.0
+                },
+                "width": 8.0
+              }
+            ]
+          },
+          {
+            "id": "bathroom_01",
+            "type": "bathroom",
+            "bounds": {
+              "x": 16.0,
+              "y": 31.0,
+              "width": 8.0,
+              "height": 10.0
+            },
+            "doors": [],
+            "windows": []
+          }
+        ],
+        "stairs": []
+      }
+    ],
+    "total_area": 1200.0,
+    "construction_cost": 2400000.0,
+    "architectural_features": [
+      "Large, openable windows and sliding glass doors",
+      "Light and airy color palette",
+      "Balcony designed for cross-ventilation"
+    ],
+    "vastu_compliance": {
+      "is_compliant": true,
+      "score": 88,
+      "recommendations": "Excellent layout for a coastal property. East-facing entrance is highly auspicious."
+    },
+    "sustainability_features": {
+      "has_solar_panels": true,
+      "has_rainwater_harvesting": false,
+      "green_building_certification": "Not applicable"
+    },
+    "render_paths": {
+      "floor_plan_2d": "renders/gold_standard_10/2d_plan.svg",
+      "model_3d": "renders/gold_standard_10/model.gltf"
+    }
+  }
+}

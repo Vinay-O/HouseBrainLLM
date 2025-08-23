@@ -1,0 +1,88 @@
+{
+  "prompt": "Design a Chettinad-style 5BHK mansion for a 70x100 feet plot in Madurai (625001), featuring a grand central courtyard and ornate woodwork.",
+  "output": {
+    "input": {
+      "plot_dimensions": { "length": 100.0, "width": 70.0 },
+      "style": "Chettinad Mansion",
+      "architecture": "Traditional Courtyard",
+      "pin_code": "625001",
+      "plot_shape": "rectangle",
+      "num_floors": 2,
+      "bhks": "5BHK"
+    },
+    "levels": [
+      {
+        "level_name": "ground_floor",
+        "level_number": 0,
+        "rooms": [
+          {
+            "id": "central_courtyard_01",
+            "type": "utility",
+            "bounds": { "x": 20.0, "y": 25.0, "width": 30.0, "height": 30.0 },
+            "doors": [], "windows": []
+          },
+          {
+            "id": "living_room_01",
+            "type": "living_room",
+            "bounds": { "x": 1.0, "y": 1.0, "width": 68.0, "height": 24.0 },
+            "doors": [], "windows": []
+          },
+          {
+            "id": "kitchen_dining_01",
+            "type": "kitchen",
+            "bounds": { "x": 50.0, "y": 25.0, "width": 19.0, "height": 30.0 },
+            "doors": [], "windows": []
+          },
+          {
+            "id": "guest_bedroom_01",
+            "type": "bedroom",
+            "bounds": { "x": 1.0, "y": 25.0, "width": 19.0, "height": 30.0 },
+            "doors": [], "windows": []
+          },
+          {
+            "id": "stairwell_01",
+            "type": "stairwell",
+            "bounds": { "x": 1.0, "y": 55.0, "width": 19.0, "height": 20.0 },
+            "doors": [], "windows": []
+          }
+        ],
+        "stairs": [
+           { "id": "main_stairs_up", "type": "U_shaped", "floor_from": 0, "floor_to": 1, "bounds": { "x": 2.0, "y": 56.0, "width": 17.0, "height": 18.0 } }
+        ]
+      },
+      {
+        "level_name": "first_floor",
+        "level_number": 1,
+        "rooms": [
+          { "id": "master_bedroom_01", "type": "master_bedroom", "bounds": { "x": 1.0, "y": 1.0, "width": 34.0, "height": 30.0 }, "doors": [], "windows": [] },
+          { "id": "bedroom_02", "type": "bedroom", "bounds": { "x": 35.0, "y": 1.0, "width": 34.0, "height": 30.0 }, "doors": [], "windows": [] },
+          { "id": "bedroom_03", "type": "bedroom", "bounds": { "x": 1.0, "y": 31.0, "width": 34.0, "height": 30.0 }, "doors": [], "windows": [] },
+          { "id": "bedroom_04", "type": "bedroom", "bounds": { "x": 35.0, "y": 31.0, "width": 34.0, "height": 30.0 }, "doors": [], "windows": [] },
+          { "id": "stairwell_02", "type": "stairwell", "bounds": { "x": 1.0, "y": 61.0, "width": 19.0, "height": 20.0 }, "doors": [], "windows": [] }
+        ],
+        "stairs": []
+      }
+    ],
+    "total_area": 9500.0,
+    "construction_cost": 19000000.0,
+    "architectural_features": [
+      "Grand central courtyard with elaborately carved wooden pillars",
+      "Ornate Chettinad-style main door",
+      "Athangudi tile flooring"
+    ],
+    "vastu_compliance": {
+      "is_compliant": true,
+      "score": 96,
+      "recommendations": "A masterpiece of Vastu design. The central Brahmasthan is perfectly located, ensuring positive energy flow."
+    },
+    "sustainability_features": {
+      "has_solar_panels": true,
+      "has_rainwater_harvesting": true,
+      "green_building_certification": "IGBC Green Homes (Gold)"
+    },
+    "render_paths": {
+      "floor_plan_2d": "renders/gold_standard_18/2d_plan.svg",
+      "model_3d": "renders/gold_standard_18/model.gltf"
+    }
+  }
+}

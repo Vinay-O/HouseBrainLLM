@@ -1,5 +1,267 @@
 {
   "prompt": "A 3BHK duplex for a 30x50 feet west-facing corner plot in Bangalore, with a home office and excellent natural light.",
-  "scratchpad": "The user wants a G+1 (duplex) 3BHK on a 1500 sq ft (30x50) west-facing corner plot in Bangalore. This is a great plot, as a corner plot allows for openings on two sides (West and likely North or South). I'll assume North and West roads. Key requirements: home office and natural light. Ground Floor: With a West-facing plot, the entrance can be in the West. I'll place the living room in the NE to take advantage of the corner and get light from two sides. The kitchen can be in the SE. The staircase can go in the south. I'll add one bedroom on the ground floor. First Floor: I'll place the Master Bedroom in the SW (Vastu), and the third bedroom in the NW. The home office can be a dedicated room, or part of a family lounge on the first floor. I'll make it a separate room in the SE on the first floor, ensuring it gets good light. The design will feature large windows, especially on the North and East walls, to maximize daylight. The plot is ~9144mm x 15240mm.",
-  "output": "{\"metadata\":{\"project_name\":\"Bangalore Corner Plot Duplex\",\"units\":\"mm\"},\"levels\":[{\"id\":\"L0\",\"name\":\"Ground Floor\",\"elevation_mm\":0},{\"id\":\"L1\",\"name\":\"First Floor\",\"elevation_mm\":3000}],\"walls\":[{\"id\":\"GF_W_EXT_W\",\"start\":[0,0],\"end\":[0,15240],\"type\":\"exterior\",\"thickness\":230,\"height\":3000,\"level_id\":\"L0\"},{\"id\":\"GF_W_EXT_N\",\"start\":[0,15240],\"end\":[9144,15240],\"type\":\"exterior\",\"thickness\":230,\"height\":3000,\"level_id\":\"L0\"},{\"id\":\"FF_W_EXT_W\",\"start\":[0,0],\"end\":[0,15240],\"type\":\"exterior\",\"thickness\":230,\"height\":3000,\"level_id\":\"L1\"},{\"id\":\"FF_W_EXT_N\",\"start\":[0,15240],\"end\":[9144,15240],\"type\":\"exterior\",\"thickness\":230,\"height\":3000,\"level_id\":\"L1\"}],\"openings\":[{\"id\":\"GF_D_MAIN\",\"wall_id\":\"GF_W_EXT_W\",\"type\":\"door\",\"position\":0.3,\"width\":1200,\"height\":2100,\"level_id\":\"L0\"},{\"id\":\"GF_W_LIVING_N\",\"wall_id\":\"GF_W_EXT_N\",\"type\":\"window\",\"position\":0.5,\"width\":2400,\"height\":1500,\"sill_height\":900,\"level_id\":\"L0\"}],\"spaces\":[{\"id\":\"GF_LIVING_NE\",\"name\":\"Living Room\",\"type\":\"living_room\",\"level_id\":\"L0\",\"boundary\":[[4615,8000],[9029,8000],[9029,15125],[4615,15125]]},{\"id\":\"GF_KITCHEN_SE\",\"name\":\"Kitchen\",\"type\":\"kitchen\",\"level_id\":\"L0\",\"boundary\":[[4615,115],[9029,115],[9029,7885],[4615,7885]]},{\"id\":\"GF_BED_1\",\"name\":\"Guest Bedroom\",\"type\":\"bedroom\",\"level_id\":\"L0\",\"boundary\":[[115,115],[4500,115],[4500,7885],[115,7885]]},{\"id\":\"FF_MASTER_BED_SW\",\"name\":\"Master Bedroom\",\"type\":\"master_bedroom\",\"level_id\":\"L1\",\"boundary\":[[115,115],[4500,115],[4500,7885],[115,7885]]},{\"id\":\"FF_BED_2_NW\",\"name\":\"Bedroom 2\",\"type\":\"bedroom\",\"level_id\":\"L1\",\"boundary\":[[115,8000],[4500,8000],[4500,15125],[115,15125]]},{\"id\":\"FF_OFFICE_SE\",\"name\":\"Home Office\",\"type\":\"study\",\"level_id\":\"L1\",\"boundary\":[[4615,115],[9029,115],[9029,7885],[4615,7885]]}],\"stairs\":[{\"id\":\"STAIR_GF_FF\",\"level_id\":\"L0\",\"start\":[8000,7000],\"end\":[5000,7000],\"width\":1000,\"riser_height\":190,\"tread_depth\":250}]}"
+  "output": {
+    "metadata": {
+      "project_name": "Bangalore Corner Plot Duplex",
+      "units": "mm"
+    },
+    "levels": [
+      {
+        "id": "L0",
+        "name": "Ground Floor",
+        "elevation_mm": 0
+      },
+      {
+        "id": "L1",
+        "name": "First Floor",
+        "elevation_mm": 3000
+      }
+    ],
+    "walls": [
+      {
+        "id": "GF_W_EXT_W",
+        "start": [
+          0,
+          0
+        ],
+        "end": [
+          0,
+          15240
+        ],
+        "type": "exterior",
+        "thickness": 230,
+        "height": 3000,
+        "level_id": "L0"
+      },
+      {
+        "id": "GF_W_EXT_N",
+        "start": [
+          0,
+          15240
+        ],
+        "end": [
+          9144,
+          15240
+        ],
+        "type": "exterior",
+        "thickness": 230,
+        "height": 3000,
+        "level_id": "L0"
+      },
+      {
+        "id": "FF_W_EXT_W",
+        "start": [
+          0,
+          0
+        ],
+        "end": [
+          0,
+          15240
+        ],
+        "type": "exterior",
+        "thickness": 230,
+        "height": 3000,
+        "level_id": "L1"
+      },
+      {
+        "id": "FF_W_EXT_N",
+        "start": [
+          0,
+          15240
+        ],
+        "end": [
+          9144,
+          15240
+        ],
+        "type": "exterior",
+        "thickness": 230,
+        "height": 3000,
+        "level_id": "L1"
+      }
+    ],
+    "openings": [
+      {
+        "id": "GF_D_MAIN",
+        "wall_id": "GF_W_EXT_W",
+        "type": "door",
+        "position": 0.3,
+        "width": 1200,
+        "height": 2100,
+        "level_id": "L0"
+      },
+      {
+        "id": "GF_W_LIVING_N",
+        "wall_id": "GF_W_EXT_N",
+        "type": "window",
+        "position": 0.5,
+        "width": 2400,
+        "height": 1500,
+        "sill_height": 900,
+        "level_id": "L0"
+      }
+    ],
+    "spaces": [
+      {
+        "id": "GF_LIVING_NE",
+        "name": "Living Room",
+        "type": "living_room",
+        "level_id": "L0",
+        "boundary": [
+          [
+            4615,
+            8000
+          ],
+          [
+            9029,
+            8000
+          ],
+          [
+            9029,
+            15125
+          ],
+          [
+            4615,
+            15125
+          ]
+        ]
+      },
+      {
+        "id": "GF_KITCHEN_SE",
+        "name": "Kitchen",
+        "type": "kitchen",
+        "level_id": "L0",
+        "boundary": [
+          [
+            4615,
+            115
+          ],
+          [
+            9029,
+            115
+          ],
+          [
+            9029,
+            7885
+          ],
+          [
+            4615,
+            7885
+          ]
+        ]
+      },
+      {
+        "id": "GF_BED_1",
+        "name": "Guest Bedroom",
+        "type": "bedroom",
+        "level_id": "L0",
+        "boundary": [
+          [
+            115,
+            115
+          ],
+          [
+            4500,
+            115
+          ],
+          [
+            4500,
+            7885
+          ],
+          [
+            115,
+            7885
+          ]
+        ]
+      },
+      {
+        "id": "FF_MASTER_BED_SW",
+        "name": "Master Bedroom",
+        "type": "master_bedroom",
+        "level_id": "L1",
+        "boundary": [
+          [
+            115,
+            115
+          ],
+          [
+            4500,
+            115
+          ],
+          [
+            4500,
+            7885
+          ],
+          [
+            115,
+            7885
+          ]
+        ]
+      },
+      {
+        "id": "FF_BED_2_NW",
+        "name": "Bedroom 2",
+        "type": "bedroom",
+        "level_id": "L1",
+        "boundary": [
+          [
+            115,
+            8000
+          ],
+          [
+            4500,
+            8000
+          ],
+          [
+            4500,
+            15125
+          ],
+          [
+            115,
+            15125
+          ]
+        ]
+      },
+      {
+        "id": "FF_OFFICE_SE",
+        "name": "Home Office",
+        "type": "study",
+        "level_id": "L1",
+        "boundary": [
+          [
+            4615,
+            115
+          ],
+          [
+            9029,
+            115
+          ],
+          [
+            9029,
+            7885
+          ],
+          [
+            4615,
+            7885
+          ]
+        ]
+      }
+    ],
+    "stairs": [
+      {
+        "id": "STAIR_GF_FF",
+        "level_id": "L0",
+        "start": [
+          8000,
+          7000
+        ],
+        "end": [
+          5000,
+          7000
+        ],
+        "width": 1000,
+        "riser_height": 190,
+        "tread_depth": 250
+      }
+    ]
+  }
 }

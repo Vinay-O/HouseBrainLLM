@@ -1,0 +1,139 @@
+{
+  "prompt": "Design a contemporary 2BHK villa for a 35x55 feet plot in a gated community in Mumbai (400001), focusing on luxury materials and a compact footprint.",
+  "output": {
+    "input": {
+      "plot_dimensions": {
+        "length": 55.0,
+        "width": 35.0
+      },
+      "style": "Contemporary Luxury",
+      "architecture": "Modern",
+      "pin_code": "400001",
+      "plot_shape": "rectangle",
+      "num_floors": 2,
+      "bhks": "2BHK"
+    },
+    "levels": [
+      {
+        "level_name": "ground_floor",
+        "level_number": 0,
+        "rooms": [
+          {
+            "id": "living_dining_01",
+            "type": "living_room",
+            "bounds": {
+              "x": 1.0,
+              "y": 1.0,
+              "width": 33.0,
+              "height": 25.0
+            },
+            "doors": [],
+            "windows": []
+          },
+          {
+            "id": "kitchen_01",
+            "type": "kitchen",
+            "bounds": {
+              "x": 1.0,
+              "y": 26.0,
+              "width": 16.0,
+              "height": 15.0
+            },
+            "doors": [],
+            "windows": []
+          },
+          {
+            "id": "stairwell_01",
+            "type": "stairwell",
+            "bounds": {
+              "x": 17.0,
+              "y": 26.0,
+              "width": 17.0,
+              "height": 15.0
+            },
+            "doors": [],
+            "windows": []
+          }
+        ],
+        "stairs": [
+          {
+            "id": "main_stairs_up",
+            "type": "U_shaped",
+            "floor_from": 0,
+            "floor_to": 1,
+            "bounds": {
+              "x": 18.0,
+              "y": 27.0,
+              "width": 15.0,
+              "height": 13.0
+            }
+          }
+        ]
+      },
+      {
+        "level_name": "first_floor",
+        "level_number": 1,
+        "rooms": [
+          {
+            "id": "master_bedroom_01",
+            "type": "master_bedroom",
+            "bounds": {
+              "x": 1.0,
+              "y": 1.0,
+              "width": 33.0,
+              "height": 20.0
+            },
+            "doors": [],
+            "windows": []
+          },
+          {
+            "id": "bedroom_02",
+            "type": "bedroom",
+            "bounds": {
+              "x": 1.0,
+              "y": 21.0,
+              "width": 16.0,
+              "height": 20.0
+            },
+            "doors": [],
+            "windows": []
+          },
+          {
+            "id": "stairwell_02",
+            "type": "stairwell",
+            "bounds": {
+              "x": 17.0,
+              "y": 21.0,
+              "width": 17.0,
+              "height": 15.0
+            },
+            "doors": [],
+            "windows": []
+          }
+        ],
+        "stairs": []
+      }
+    ],
+    "total_area": 2800.0,
+    "construction_cost": 6160000.0,
+    "architectural_features": [
+      "Double-height living area",
+      "Italian marble flooring",
+      "Private terrace for the master bedroom"
+    ],
+    "vastu_compliance": {
+      "is_compliant": true,
+      "score": 80,
+      "recommendations": "North-facing entrance is good. The master bedroom should ideally be in the South-West."
+    },
+    "sustainability_features": {
+      "has_solar_panels": true,
+      "has_rainwater_harvesting": false,
+      "green_building_certification": "Not applicable"
+    },
+    "render_paths": {
+      "floor_plan_2d": "renders/gold_standard_12/2d_plan.svg",
+      "model_3d": "renders/gold_standard_12/model.gltf"
+    }
+  }
+}

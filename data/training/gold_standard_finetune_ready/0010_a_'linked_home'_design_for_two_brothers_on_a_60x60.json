@@ -1,5 +1,242 @@
 {
   "prompt": "A 'linked home' design for two brothers on a 60x60 plot, with two distinct 3BHK units connected by a common area.",
-  "scratchpad": "This is a fascinating design problem for a large 3600 sq ft (60x60) plot. The goal is to create two distinct but connected 3BHK homes. This requires careful zoning. I will design this as three primary blocks: House A, House B, and a central Common Block. House A and House B will be mirrored G+1 structures, each containing a living area, kitchen, and 3 bedrooms. The central Common Block will be a single-story structure with a shared family lounge, maybe a small gym or entertainment room, that physically links the two homes. This provides a buffer and a meeting point. Each house will have its own private entrance and garden space, but also direct access to the common block. Vastu principles can be applied to each unit individually. The plot is ~18288mm x 18288mm.",
-  "output": "{\"metadata\":{\"project_name\":\"Linked Family Homes\",\"units\":\"mm\"},\"levels\":[{\"id\":\"L0\",\"name\":\"Ground Floor\",\"elevation_mm\":0},{\"id\":\"L1\",\"name\":\"First Floor\",\"elevation_mm\":3200}],\"walls\":[{\"id\":\"GF_A_W_1\",\"start\":[0,0],\"end\":[8000,0],\"type\":\"exterior\",\"thickness\":230,\"height\":3200,\"level_id\":\"L0\"},{\"id\":\"GF_B_W_1\",\"start\":[10288,0],\"end\":[18288,0],\"type\":\"exterior\",\"thickness\":230,\"height\":3200,\"level_id\":\"L0\"},{\"id\":\"GF_COMMON_W_1\",\"start\":[8000,0],\"end\":[10288,0],\"type\":\"exterior\",\"thickness\":230,\"height\":3200,\"level_id\":\"L0\"}],\"openings\":[{\"id\":\"GF_A_D_MAIN\",\"wall_id\":\"GF_A_W_1\",\"type\":\"door\",\"position\":0.5,\"width\":1200,\"height\":2100,\"level_id\":\"L0\"},{\"id\":\"GF_B_D_MAIN\",\"wall_id\":\"GF_B_W_1\",\"type\":\"door\",\"position\":0.5,\"width\":1200,\"height\":2100,\"level_id\":\"L0\"}],\"spaces\":[{\"id\":\"HOUSE_A_LIVING\",\"name\":\"House A - Living\",\"type\":\"living_room\",\"level_id\":\"L0\",\"boundary\":[[115,115],[7885,115],[7885,9000],[115,9000]]},{\"id\":\"HOUSE_B_LIVING\",\"name\":\"House B - Living\",\"type\":\"living_room\",\"level_id\":\"L0\",\"boundary\":[[10303,115],[18173,115],[18173,9000],[10303,9000]]},{\"id\":\"COMMON_LOUNGE\",\"name\":\"Common Lounge\",\"type\":\"family_room\",\"level_id\":\"L0\",\"boundary\":[[8115,115],[10173,115],[10173,18173],[8115,18173]]},{\"id\":\"HOUSE_A_FF_BED\",\"name\":\"House A - Bedroom\",\"type\":\"bedroom\",\"level_id\":\"L1\",\"boundary\":[[115,115],[7885,115],[7885,9000],[115,9000]]},{\"id\":\"HOUSE_B_FF_BED\",\"name\":\"House B - Bedroom\",\"type\":\"bedroom\",\"level_id\":\"L1\",\"boundary\":[[10303,115],[18173,115],[18173,9000],[10303,9000]]}],\"stairs\":[{\"id\":\"STAIR_A\",\"level_id\":\"L0\",\"start\":[7000,8000],\"end\":[7000,12000],\"width\":1000,\"riser_height\":180,\"tread_depth\":250},{\"id\":\"STAIR_B\",\"level_id\":\"L0\",\"start\":[11288,8000],\"end\":[11288,12000],\"width\":1000,\"riser_height\":180,\"tread_depth\":250}]}"
+  "output": {
+    "metadata": {
+      "project_name": "Linked Family Homes",
+      "units": "mm"
+    },
+    "levels": [
+      {
+        "id": "L0",
+        "name": "Ground Floor",
+        "elevation_mm": 0
+      },
+      {
+        "id": "L1",
+        "name": "First Floor",
+        "elevation_mm": 3200
+      }
+    ],
+    "walls": [
+      {
+        "id": "GF_A_W_1",
+        "start": [
+          0,
+          0
+        ],
+        "end": [
+          8000,
+          0
+        ],
+        "type": "exterior",
+        "thickness": 230,
+        "height": 3200,
+        "level_id": "L0"
+      },
+      {
+        "id": "GF_B_W_1",
+        "start": [
+          10288,
+          0
+        ],
+        "end": [
+          18288,
+          0
+        ],
+        "type": "exterior",
+        "thickness": 230,
+        "height": 3200,
+        "level_id": "L0"
+      },
+      {
+        "id": "GF_COMMON_W_1",
+        "start": [
+          8000,
+          0
+        ],
+        "end": [
+          10288,
+          0
+        ],
+        "type": "exterior",
+        "thickness": 230,
+        "height": 3200,
+        "level_id": "L0"
+      }
+    ],
+    "openings": [
+      {
+        "id": "GF_A_D_MAIN",
+        "wall_id": "GF_A_W_1",
+        "type": "door",
+        "position": 0.5,
+        "width": 1200,
+        "height": 2100,
+        "level_id": "L0"
+      },
+      {
+        "id": "GF_B_D_MAIN",
+        "wall_id": "GF_B_W_1",
+        "type": "door",
+        "position": 0.5,
+        "width": 1200,
+        "height": 2100,
+        "level_id": "L0"
+      }
+    ],
+    "spaces": [
+      {
+        "id": "HOUSE_A_LIVING",
+        "name": "House A - Living",
+        "type": "living_room",
+        "level_id": "L0",
+        "boundary": [
+          [
+            115,
+            115
+          ],
+          [
+            7885,
+            115
+          ],
+          [
+            7885,
+            9000
+          ],
+          [
+            115,
+            9000
+          ]
+        ]
+      },
+      {
+        "id": "HOUSE_B_LIVING",
+        "name": "House B - Living",
+        "type": "living_room",
+        "level_id": "L0",
+        "boundary": [
+          [
+            10303,
+            115
+          ],
+          [
+            18173,
+            115
+          ],
+          [
+            18173,
+            9000
+          ],
+          [
+            10303,
+            9000
+          ]
+        ]
+      },
+      {
+        "id": "COMMON_LOUNGE",
+        "name": "Common Lounge",
+        "type": "family_room",
+        "level_id": "L0",
+        "boundary": [
+          [
+            8115,
+            115
+          ],
+          [
+            10173,
+            115
+          ],
+          [
+            10173,
+            18173
+          ],
+          [
+            8115,
+            18173
+          ]
+        ]
+      },
+      {
+        "id": "HOUSE_A_FF_BED",
+        "name": "House A - Bedroom",
+        "type": "bedroom",
+        "level_id": "L1",
+        "boundary": [
+          [
+            115,
+            115
+          ],
+          [
+            7885,
+            115
+          ],
+          [
+            7885,
+            9000
+          ],
+          [
+            115,
+            9000
+          ]
+        ]
+      },
+      {
+        "id": "HOUSE_B_FF_BED",
+        "name": "House B - Bedroom",
+        "type": "bedroom",
+        "level_id": "L1",
+        "boundary": [
+          [
+            10303,
+            115
+          ],
+          [
+            18173,
+            115
+          ],
+          [
+            18173,
+            9000
+          ],
+          [
+            10303,
+            9000
+          ]
+        ]
+      }
+    ],
+    "stairs": [
+      {
+        "id": "STAIR_A",
+        "level_id": "L0",
+        "start": [
+          7000,
+          8000
+        ],
+        "end": [
+          7000,
+          12000
+        ],
+        "width": 1000,
+        "riser_height": 180,
+        "tread_depth": 250
+      },
+      {
+        "id": "STAIR_B",
+        "level_id": "L0",
+        "start": [
+          11288,
+          8000
+        ],
+        "end": [
+          11288,
+          12000
+        ],
+        "width": 1000,
+        "riser_height": 180,
+        "tread_depth": 250
+      }
+    ]
+  }
 }

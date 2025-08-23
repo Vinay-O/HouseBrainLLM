@@ -1,5 +1,267 @@
 {
   "prompt": "A G+1 4BHK for a south-facing 35x55 plot in Hyderabad, with a large kitchen and utility area.",
-  "scratchpad": "The user wants a G+1 4BHK on a ~1925 sq ft (35x55) south-facing plot in Hyderabad. South-facing plots are challenging due to heat gain and Vastu. Key requests: 4BHK, large kitchen/utility. Ground Floor: To counter the south sun, I will place a verandah or carport at the front. The main entrance can be in the south-east. The living room will be in the NE, and the large kitchen/utility in the SE. A guest bedroom can be placed in the NW. The staircase should be in a southern or western position. First Floor: The master bedroom must be in the SW. The other two bedrooms can be placed in the NW and NE. The south-facing walls should have fewer and smaller windows, protected by deep overhangs or 'chajjas'. The plot is ~10668mm x 16764mm.",
-  "output": "{\"metadata\":{\"project_name\":\"Hyderabad South-Facing G+1\",\"units\":\"mm\"},\"levels\":[{\"id\":\"L0\",\"name\":\"Ground Floor\",\"elevation_mm\":0},{\"id\":\"L1\",\"name\":\"First Floor\",\"elevation_mm\":3000}],\"walls\":[{\"id\":\"GF_W_EXT_S\",\"start\":[0,0],\"end\":[10668,0],\"type\":\"exterior\",\"thickness\":230,\"height\":3000,\"level_id\":\"L0\"},{\"id\":\"FF_W_EXT_S\",\"start\":[0,0],\"end\":[10668,0],\"type\":\"exterior\",\"thickness\":230,\"height\":3000,\"level_id\":\"L1\"},{\"id\":\"GF_W_EXT_N\",\"start\":[0,16764],\"end\":[10668,16764],\"type\":\"exterior\",\"thickness\":230,\"height\":3000,\"level_id\":\"L0\"},{\"id\":\"FF_W_EXT_N\",\"start\":[0,16764],\"end\":[10668,16764],\"type\":\"exterior\",\"thickness\":230,\"height\":3000,\"level_id\":\"L1\"}],\"openings\":[{\"id\":\"GF_D_MAIN\",\"wall_id\":\"GF_W_EXT_S\",\"type\":\"door\",\"position\":0.8,\"width\":1200,\"height\":2100,\"level_id\":\"L0\"},{\"id\":\"FF_W_MBED_S\",\"wall_id\":\"FF_W_EXT_S\",\"type\":\"window\",\"position\":0.2,\"width\":1200,\"height\":1200,\"sill_height\":900,\"level_id\":\"L1\"}],\"spaces\":[{\"id\":\"GF_LIVING_NE\",\"name\":\"Living Room\",\"type\":\"living_room\",\"level_id\":\"L0\",\"boundary\":[[5400,8500],[10553,8500],[10553,16649],[5400,16649]]},{\"id\":\"GF_KITCHEN_UTILITY_SE\",\"name\":\"Large Kitchen & Utility\",\"type\":\"kitchen\",\"level_id\":\"L0\",\"boundary\":[[5400,115],[10553,115],[10553,8385],[5400,8385]]},{\"id\":\"GF_GUEST_BED_NW\",\"name\":\"Guest Bedroom\",\"type\":\"bedroom\",\"level_id\":\"L0\",\"boundary\":[[115,8500],[5285,8500],[5285,16649],[115,16649]]},{\"id\":\"FF_MASTER_BED_SW\",\"name\":\"Master Bedroom\",\"type\":\"master_bedroom\",\"level_id\":\"L1\",\"boundary\":[[115,115],[5285,115],[5285,8385],[115,8385]]},{\"id\":\"FF_BED_2_NW\",\"name\":\"Bedroom 2\",\"type\":\"bedroom\",\"level_id\":\"L1\",\"boundary\":[[115,8500],[5285,8500],[5285,16649],[115,16649]]},{\"id\":\"FF_BED_3_NE\",\"name\":\"Bedroom 3\",\"type\":\"bedroom\",\"level_id\":\"L1\",\"boundary\":[[5400,8500],[10553,8500],[10553,16649],[5400,16649]]}],\"stairs\":[{\"id\":\"STAIR_GF_FF\",\"level_id\":\"L0\",\"start\":[1000,7000],\"end\":[4000,7000],\"width\":1000,\"riser_height\":190,\"tread_depth\":250}]}"
+  "output": {
+    "metadata": {
+      "project_name": "Hyderabad South-Facing G+1",
+      "units": "mm"
+    },
+    "levels": [
+      {
+        "id": "L0",
+        "name": "Ground Floor",
+        "elevation_mm": 0
+      },
+      {
+        "id": "L1",
+        "name": "First Floor",
+        "elevation_mm": 3000
+      }
+    ],
+    "walls": [
+      {
+        "id": "GF_W_EXT_S",
+        "start": [
+          0,
+          0
+        ],
+        "end": [
+          10668,
+          0
+        ],
+        "type": "exterior",
+        "thickness": 230,
+        "height": 3000,
+        "level_id": "L0"
+      },
+      {
+        "id": "FF_W_EXT_S",
+        "start": [
+          0,
+          0
+        ],
+        "end": [
+          10668,
+          0
+        ],
+        "type": "exterior",
+        "thickness": 230,
+        "height": 3000,
+        "level_id": "L1"
+      },
+      {
+        "id": "GF_W_EXT_N",
+        "start": [
+          0,
+          16764
+        ],
+        "end": [
+          10668,
+          16764
+        ],
+        "type": "exterior",
+        "thickness": 230,
+        "height": 3000,
+        "level_id": "L0"
+      },
+      {
+        "id": "FF_W_EXT_N",
+        "start": [
+          0,
+          16764
+        ],
+        "end": [
+          10668,
+          16764
+        ],
+        "type": "exterior",
+        "thickness": 230,
+        "height": 3000,
+        "level_id": "L1"
+      }
+    ],
+    "openings": [
+      {
+        "id": "GF_D_MAIN",
+        "wall_id": "GF_W_EXT_S",
+        "type": "door",
+        "position": 0.8,
+        "width": 1200,
+        "height": 2100,
+        "level_id": "L0"
+      },
+      {
+        "id": "FF_W_MBED_S",
+        "wall_id": "FF_W_EXT_S",
+        "type": "window",
+        "position": 0.2,
+        "width": 1200,
+        "height": 1200,
+        "sill_height": 900,
+        "level_id": "L1"
+      }
+    ],
+    "spaces": [
+      {
+        "id": "GF_LIVING_NE",
+        "name": "Living Room",
+        "type": "living_room",
+        "level_id": "L0",
+        "boundary": [
+          [
+            5400,
+            8500
+          ],
+          [
+            10553,
+            8500
+          ],
+          [
+            10553,
+            16649
+          ],
+          [
+            5400,
+            16649
+          ]
+        ]
+      },
+      {
+        "id": "GF_KITCHEN_UTILITY_SE",
+        "name": "Large Kitchen & Utility",
+        "type": "kitchen",
+        "level_id": "L0",
+        "boundary": [
+          [
+            5400,
+            115
+          ],
+          [
+            10553,
+            115
+          ],
+          [
+            10553,
+            8385
+          ],
+          [
+            5400,
+            8385
+          ]
+        ]
+      },
+      {
+        "id": "GF_GUEST_BED_NW",
+        "name": "Guest Bedroom",
+        "type": "bedroom",
+        "level_id": "L0",
+        "boundary": [
+          [
+            115,
+            8500
+          ],
+          [
+            5285,
+            8500
+          ],
+          [
+            5285,
+            16649
+          ],
+          [
+            115,
+            16649
+          ]
+        ]
+      },
+      {
+        "id": "FF_MASTER_BED_SW",
+        "name": "Master Bedroom",
+        "type": "master_bedroom",
+        "level_id": "L1",
+        "boundary": [
+          [
+            115,
+            115
+          ],
+          [
+            5285,
+            115
+          ],
+          [
+            5285,
+            8385
+          ],
+          [
+            115,
+            8385
+          ]
+        ]
+      },
+      {
+        "id": "FF_BED_2_NW",
+        "name": "Bedroom 2",
+        "type": "bedroom",
+        "level_id": "L1",
+        "boundary": [
+          [
+            115,
+            8500
+          ],
+          [
+            5285,
+            8500
+          ],
+          [
+            5285,
+            16649
+          ],
+          [
+            115,
+            16649
+          ]
+        ]
+      },
+      {
+        "id": "FF_BED_3_NE",
+        "name": "Bedroom 3",
+        "type": "bedroom",
+        "level_id": "L1",
+        "boundary": [
+          [
+            5400,
+            8500
+          ],
+          [
+            10553,
+            8500
+          ],
+          [
+            10553,
+            16649
+          ],
+          [
+            5400,
+            16649
+          ]
+        ]
+      }
+    ],
+    "stairs": [
+      {
+        "id": "STAIR_GF_FF",
+        "level_id": "L0",
+        "start": [
+          1000,
+          7000
+        ],
+        "end": [
+          4000,
+          7000
+        ],
+        "width": 1000,
+        "riser_height": 190,
+        "tread_depth": 250
+      }
+    ]
+  }
 }

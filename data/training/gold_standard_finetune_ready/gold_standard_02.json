@@ -1,0 +1,304 @@
+{
+  "prompt": "Design a spacious, Vastu-compliant 4BHK G+1 duplex house for a 35x60 feet west-facing plot in Bangalore (560001).",
+  "output": {
+    "input": {
+      "plot_dimensions": {
+        "length": 60.0,
+        "width": 35.0
+      },
+      "style": "Contemporary Duplex",
+      "architecture": "Modern",
+      "pin_code": "560001",
+      "plot_shape": "rectangle",
+      "num_floors": 2,
+      "bhks": "4BHK"
+    },
+    "levels": [
+      {
+        "level_name": "ground_floor",
+        "level_number": 0,
+        "rooms": [
+          {
+            "id": "living_room_01",
+            "type": "living_room",
+            "bounds": {
+              "x": 1.0,
+              "y": 1.0,
+              "width": 18.0,
+              "height": 20.0
+            },
+            "doors": [
+              {
+                "position": {
+                  "x": 19.0,
+                  "y": 10.0
+                },
+                "width": 4.0,
+                "to_room": "dining_room_01"
+              }
+            ],
+            "windows": [
+              {
+                "position": {
+                  "x": 1.0,
+                  "y": 8.0
+                },
+                "width": 10.0
+              }
+            ]
+          },
+          {
+            "id": "dining_room_01",
+            "type": "dining_room",
+            "bounds": {
+              "x": 19.0,
+              "y": 1.0,
+              "width": 15.0,
+              "height": 12.0
+            },
+            "doors": [
+              {
+                "position": {
+                  "x": 19.0,
+                  "y": 13.0
+                },
+                "width": 3.5,
+                "to_room": "kitchen_01"
+              }
+            ],
+            "windows": []
+          },
+          {
+            "id": "kitchen_01",
+            "type": "kitchen",
+            "bounds": {
+              "x": 19.0,
+              "y": 13.0,
+              "width": 15.0,
+              "height": 12.0
+            },
+            "doors": [],
+            "windows": [
+              {
+                "position": {
+                  "x": 34.0,
+                  "y": 18.0
+                },
+                "width": 6.0
+              }
+            ]
+          },
+          {
+            "id": "guest_bedroom_01",
+            "type": "bedroom",
+            "bounds": {
+              "x": 1.0,
+              "y": 21.0,
+              "width": 18.0,
+              "height": 15.0
+            },
+            "doors": [
+              {
+                "position": {
+                  "x": 10.0,
+                  "y": 36.0
+                },
+                "width": 3.0,
+                "to_room": "guest_bath_01"
+              }
+            ],
+            "windows": [
+              {
+                "position": {
+                  "x": 1.0,
+                  "y": 28.0
+                },
+                "width": 8.0
+              }
+            ]
+          },
+          {
+            "id": "guest_bath_01",
+            "type": "bathroom",
+            "bounds": {
+              "x": 1.0,
+              "y": 36.0,
+              "width": 8.0,
+              "height": 8.0
+            },
+            "doors": [],
+            "windows": []
+          },
+          {
+            "id": "stairwell_01",
+            "type": "stairwell",
+            "bounds": {
+              "x": 19.0,
+              "y": 25.0,
+              "width": 15.0,
+              "height": 15.0
+            },
+            "doors": [],
+            "windows": []
+          }
+        ],
+        "stairs": [
+          {
+            "id": "main_stairs",
+            "type": "U_shaped",
+            "floor_from": 0,
+            "floor_to": 1,
+            "bounds": {
+              "x": 20.0,
+              "y": 26.0,
+              "width": 13.0,
+              "height": 13.0
+            }
+          }
+        ]
+      },
+      {
+        "level_name": "first_floor",
+        "level_number": 1,
+        "rooms": [
+          {
+            "id": "master_bedroom_01",
+            "type": "master_bedroom",
+            "bounds": {
+              "x": 1.0,
+              "y": 1.0,
+              "width": 18.0,
+              "height": 20.0
+            },
+            "doors": [
+              {
+                "position": {
+                  "x": 19.0,
+                  "y": 10.0
+                },
+                "width": 3.5,
+                "to_room": "master_bath_01"
+              }
+            ],
+            "windows": [
+              {
+                "position": {
+                  "x": 1.0,
+                  "y": 8.0
+                },
+                "width": 10.0
+              }
+            ]
+          },
+          {
+            "id": "master_bath_01",
+            "type": "bathroom",
+            "bounds": {
+              "x": 19.0,
+              "y": 1.0,
+              "width": 15.0,
+              "height": 12.0
+            },
+            "doors": [],
+            "windows": []
+          },
+          {
+            "id": "bedroom_02",
+            "type": "bedroom",
+            "bounds": {
+              "x": 1.0,
+              "y": 21.0,
+              "width": 18.0,
+              "height": 15.0
+            },
+            "doors": [
+              {
+                "position": {
+                  "x": 10.0,
+                  "y": 36.0
+                },
+                "width": 3.0,
+                "to_room": "common_bath_01"
+              }
+            ],
+            "windows": [
+              {
+                "position": {
+                  "x": 1.0,
+                  "y": 28.0
+                },
+                "width": 8.0
+              }
+            ]
+          },
+          {
+            "id": "bedroom_03",
+            "type": "bedroom",
+            "bounds": {
+              "x": 19.0,
+              "y": 13.0,
+              "width": 15.0,
+              "height": 12.0
+            },
+            "doors": [],
+            "windows": [
+              {
+                "position": {
+                  "x": 34.0,
+                  "y": 18.0
+                },
+                "width": 6.0
+              }
+            ]
+          },
+          {
+            "id": "common_bath_01",
+            "type": "bathroom",
+            "bounds": {
+              "x": 1.0,
+              "y": 36.0,
+              "width": 8.0,
+              "height": 8.0
+            },
+            "doors": [],
+            "windows": []
+          },
+          {
+            "id": "stairwell_02",
+            "type": "stairwell",
+            "bounds": {
+              "x": 19.0,
+              "y": 25.0,
+              "width": 15.0,
+              "height": 15.0
+            },
+            "doors": [],
+            "windows": []
+          }
+        ],
+        "stairs": []
+      }
+    ],
+    "total_area": 3800.0,
+    "construction_cost": 7220000.0,
+    "architectural_features": [
+      "Double-height living room",
+      "Family lounge on the first floor",
+      "Attached balconies for all bedrooms"
+    ],
+    "vastu_compliance": {
+      "is_compliant": true,
+      "score": 92,
+      "recommendations": "Excellent Vastu compliance. Stairs are correctly placed. Master bedroom in South-West on the first floor is ideal."
+    },
+    "sustainability_features": {
+      "has_solar_panels": true,
+      "has_rainwater_harvesting": true,
+      "green_building_certification": "GRIHA 5-star"
+    },
+    "render_paths": {
+      "floor_plan_2d": "renders/gold_standard_02/2d_plan.svg",
+      "model_3d": "renders/gold_standard_02/model.gltf"
+    }
+  }
+}

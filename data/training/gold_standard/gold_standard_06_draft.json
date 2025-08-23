@@ -1,0 +1,82 @@
+{
+  "prompt": "Design a modern, tech-focused 5BHK G+1 villa for a 50x80 feet west-facing plot in Bangalore (560001), featuring smart home integrations.",
+  "output": {
+    "input": {
+      "plot_dimensions": { "length": 80.0, "width": 50.0 },
+      "style": "Modern Tech Villa",
+      "architecture": "Contemporary",
+      "pin_code": "560001",
+      "plot_shape": "rectangle",
+      "num_floors": 2,
+      "bhks": "5BHK"
+    },
+    "levels": [
+      {
+        "level_name": "ground_floor",
+        "level_number": 0,
+        "rooms": [
+          {
+            "id": "living_room_01",
+            "type": "living_room",
+            "bounds": { "x": 1.0, "y": 1.0, "width": 25.0, "height": 30.0 },
+            "doors": [], "windows": []
+          },
+          {
+            "id": "kitchen_dining_01",
+            "type": "kitchen",
+            "bounds": { "x": 26.0, "y": 1.0, "width": 23.0, "height": 20.0 },
+            "doors": [], "windows": []
+          },
+          {
+            "id": "guest_bedroom_01",
+            "type": "bedroom",
+            "bounds": { "x": 1.0, "y": 31.0, "width": 25.0, "height": 20.0 },
+            "doors": [], "windows": []
+          },
+          {
+            "id": "stairwell_01",
+            "type": "stairwell",
+            "bounds": { "x": 26.0, "y": 21.0, "width": 23.0, "height": 15.0 },
+            "doors": [], "windows": []
+          }
+        ],
+        "stairs": [
+          { "id": "main_stairs_up", "type": "L_shaped", "floor_from": 0, "floor_to": 1, "bounds": { "x": 27.0, "y": 22.0, "width": 21.0, "height": 13.0 } }
+        ]
+      },
+      {
+        "level_name": "first_floor",
+        "level_number": 1,
+        "rooms": [
+          { "id": "master_bedroom_01", "type": "master_bedroom", "bounds": { "x": 1.0, "y": 1.0, "width": 25.0, "height": 30.0 }, "doors": [], "windows": [] },
+          { "id": "bedroom_02", "type": "bedroom", "bounds": { "x": 26.0, "y": 1.0, "width": 23.0, "height": 20.0 }, "doors": [], "windows": [] },
+          { "id": "bedroom_03", "type": "bedroom", "bounds": { "x": 1.0, "y": 31.0, "width": 25.0, "height": 20.0 }, "doors": [], "windows": [] },
+          { "id": "bedroom_04", "type": "bedroom", "bounds": { "x": 26.0, "y": 21.0, "width": 23.0, "height": 20.0 }, "doors": [], "windows": [] },
+          { "id": "stairwell_02", "type": "stairwell", "bounds": { "x": 26.0, "y": 41.0, "width": 23.0, "height": 15.0 }, "doors": [], "windows": [] }
+        ],
+        "stairs": []
+      }
+    ],
+    "total_area": 6200.0,
+    "construction_cost": 12400000.0,
+    "architectural_features": [
+      "Floor-to-ceiling glass walls",
+      "Integrated smart home system (lighting, climate, security)",
+      "Rooftop terrace with solar panels"
+    ],
+    "vastu_compliance": {
+      "is_compliant": true,
+      "score": 80,
+      "recommendations": "West-facing entrance can be challenging. A strong Vastu correction is needed at the entrance. Room placements are generally good."
+    },
+    "sustainability_features": {
+      "has_solar_panels": true,
+      "has_rainwater_harvesting": true,
+      "green_building_certification": "LEED Platinum (projected)"
+    },
+    "render_paths": {
+      "floor_plan_2d": "renders/gold_standard_06/2d_plan.svg",
+      "model_3d": "renders/gold_standard_06/model.gltf"
+    }
+  }
+}

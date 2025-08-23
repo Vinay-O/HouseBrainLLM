@@ -1,144 +1,111 @@
 #!/usr/bin/env python3
 import argparse
 import os
-from pathlib import Path
 import torch
 from datasets import load_dataset
-from peft import LoraConfig, get_peft_model
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, TrainingArguments
-from trl import SFTTrainer, DataCollatorForCompletionOnlyLM
-from tqdm import tqdm
+from transformers import (
+    AutoModelForCausalLM,
+    AutoTokenizer,
+    BitsAndBytesConfig,
+    TrainingArguments,
+)
+from peft import LoraConfig, PeftModel
+from trl import SFTTrainer
+import json
 
+# Fine-tuning script for HouseBrain LLM
 
-def format_dataset_entry(example):
-    """
-    Formats a single dataset entry into the required prompt structure.
-    This function will be applied to the dataset before training.
-    """
-    text = (
-        f"### Instruction:\n{example['prompt']}\n\n"
-        f"### Reasoning:\n{example['scratchpad']}\n\n"
-        f"### Response:\n```json\n{example['output']}\n```"
-    )
-    return {"text": text}
+def format_dataset_entry(entry):
+    """Converts a dataset entry into the required prompt-completion format."""
+    prompt = entry["prompt"]
+    completion = json.dumps(entry["output"], indent=2)
+    # This is a standard format for many instruction-following models
+    return {"text": f"<s>[INST] {prompt} [/INST]\n{completion} </s>"}
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Fine-tune a model with specific architect-grade examples.")
-    parser.add_argument("--model_id", type=str, default="deepseek-ai/deepseek-coder-6.7b-instruct", help="The Hugging Face model ID to fine-tune.")
-    parser.add_argument("--dataset_path", type=str, default="data/training/indian_residential", help="Path to the training dataset directory.")
-    parser.add_argument("--output_dir", type=str, default="models/housebrain-deepseek-v1-finetuned", help="Directory to save the fine-tuned model.")
-    parser.add_argument("--epochs", type=int, default=3, help="Number of training epochs.")
-    parser.add_argument("--batch_size", type=int, default=1, help="Training batch size per device.")
-    parser.add_argument("--learning_rate", type=float, default=2e-4, help="Learning rate.")
-    parser.add_argument("--use_4bit", action="store_true", help="Enable 4-bit quantization for memory saving.")
+    parser = argparse.ArgumentParser(description="Fine-tune a model for HouseBrain.")
+    parser.add_argument("--dataset-path", type=str, default="data/training/gold_standard", help="Path to the training dataset.")
+    parser.add_argument("--base-model", type=str, default="meta-llama/Llama-2-7b-chat-hf", help="Base model ID from Hugging Face.")
+    parser.add_argument("--new-model", type=str, default="housebrain-llama2-7b-v0.1", help="Name for the new fine-tuned model.")
+    parser.add_argument("--epochs", type=int, default=10, help="Number of training epochs.")
+    parser.add_argument("--batch-size", type=int, default=1, help="Training batch size.")
     args = parser.parse_args()
 
-    print("Starting fine-tuning process with the following configuration:")
-    print(f"  Model ID: {args.model_id}")
-    print(f"  Dataset Path: {args.dataset_path}")
-    print(f"  Output Directory: {args.output_dir}")
-    print(f"  Epochs: {args.epochs}")
-    print(f"  Batch Size: {args.batch_size}")
-    print(f"  Learning Rate: {args.learning_rate}")
-    print(f"  Use 4-bit Quantization: {args.use_4bit}")
-
-
-    # --- Step 1: Loading and Formatting Dataset ---
-    # Construct a glob pattern to load all JSON files in the specified directory
-    data_files = str(Path(args.dataset_path) / "*.json")
-    dataset = load_dataset("json", data_files=data_files, split="train")
-
-    # Apply formatting to the dataset to create the 'text' column
-    dataset = dataset.map(format_dataset_entry)
-    print(f"Loaded and formatted {len(dataset)} examples from {args.dataset_path}")
-    print("\n--- Example formatted prompt ---")
-    print(dataset[0]['text'])
-    print("------------------------------------")
-
-
-    # --- Step 2: Loading Tokenizer and Base Model ---
-    print("\n--- Step 2: Loading Tokenizer and Base Model ---")
+    # --- 1. Load Dataset ---
+    # Use glob to load all JSON files in the directory
+    dataset = load_dataset("json", data_files=os.path.join(args.dataset_path, "*.json"), split="train")
     
-    bnb_config = None
-    if args.use_4bit:
-        print("Using 4-bit quantization (BitsAndBytes) to reduce memory usage.")
-        bnb_config = BitsAndBytesConfig(
-            load_in_4bit=True,
-            bnb_4bit_quant_type="nf4",
-            bnb_4bit_compute_dtype=torch.bfloat16,
-            bnb_4bit_use_double_quant=False,
-        )
-    else:
-        bnb_config = None
+    # Format the dataset
+    formatted_dataset = dataset.map(format_dataset_entry, remove_columns=dataset.column_names)
 
-    tokenizer = AutoTokenizer.from_pretrained(args.model_id, trust_remote_code=True)
-    # Set a padding token if one isn't already set
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
+    # --- 2. Configure Quantization (for memory efficiency) ---
+    bnb_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=torch.float16,
+        bnb_4bit_use_double_quant=True,
+    )
 
-
+    # --- 3. Load Base Model ---
     model = AutoModelForCausalLM.from_pretrained(
-        args.model_id,
+        args.base_model,
         quantization_config=bnb_config,
-        device_map="auto", # Automatically map model layers to available devices
-        trust_remote_code=True,
+        device_map="auto", # Automatically use GPU if available
+        trust_remote_code=True
     )
     model.config.use_cache = False
-    
-    # --- 3. Configure LoRA ---
-    print("\n--- Step 3: Configuring LoRA (Low-Rank Adaptation) ---")
+
+    # --- 4. Load Tokenizer ---
+    tokenizer = AutoTokenizer.from_pretrained(args.base_model, trust_remote_code=True)
+    tokenizer.pad_token = tokenizer.eos_token # Set padding token
+
+    # --- 5. Configure LoRA (Parameter-Efficient Fine-Tuning) ---
     lora_config = LoraConfig(
-        r=16,
-        lora_alpha=32,
-        lora_dropout=0.05,
+        lora_alpha=16,
+        lora_dropout=0.1,
+        r=64,
         bias="none",
         task_type="CAUSAL_LM",
-        target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj'] # Specific to Llama/Mistral/DeepSeek arch
     )
-    model = get_peft_model(model, lora_config)
-    print("LoRA configured. Trainable parameters:")
-    model.print_trainable_parameters()
 
-    # --- 4. Set Training Arguments ---
-    print("\n--- Step 4: Setting Training Arguments ---")
+    # --- 6. Set Training Arguments ---
     training_arguments = TrainingArguments(
-        output_dir=args.output_dir,
+        output_dir=f"./models/{args.new_model}",
         num_train_epochs=args.epochs,
         per_device_train_batch_size=args.batch_size,
         gradient_accumulation_steps=1,
         optim="paged_adamw_32bit",
-        learning_rate=args.learning_rate,
-        lr_scheduler_type="cosine",
-        save_strategy="epoch",
-        logging_steps=2,
-        fp16=False, # Set to True if not using 4-bit
-        bf16=True if args.use_4bit else False, # Required for 4-bit
+        learning_rate=2e-4,
+        weight_decay=0.001,
+        fp16=True,
         max_grad_norm=0.3,
+        max_steps=-1,
         warmup_ratio=0.03,
         group_by_length=True,
+        lr_scheduler_type="constant",
         report_to="tensorboard"
     )
 
-    print("\n--- Step 5: Initializing SFTTrainer and Starting Training ---")
+    # --- 7. Initialize Trainer ---
     trainer = SFTTrainer(
         model=model,
-        train_dataset=dataset,
+        train_dataset=formatted_dataset,
         peft_config=lora_config,
         dataset_text_field="text",
-        max_seq_length=4096, # Increased for potentially longer examples
+        max_seq_length=4096, # Set a sequence length that can handle the schema + output
         tokenizer=tokenizer,
         args=training_arguments,
+        packing=False,
     )
 
-    print("Starting training... This may take a significant amount of time.")
+    # --- 8. Start Fine-Tuning ---
     trainer.train()
 
-    # --- 6. Save Final Model ---
-    print("\n--- Step 6: Saving Final Fine-Tuned Model ---")
-    final_save_path = os.path.join(args.output_dir, "final_model")
-    trainer.save_model(final_save_path)
-    print(f"✅ Training complete. Final model saved to: {final_save_path}")
+    # --- 9. Save the Fine-Tuned Model ---
+    trainer.model.save_pretrained(f"models/{args.new_model}-final")
+    
+    print(f"✅ Fine-tuning complete. Model saved to models/{args.new_model}-final")
 
 if __name__ == "__main__":
     main()

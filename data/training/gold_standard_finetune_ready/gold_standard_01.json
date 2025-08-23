@@ -1,0 +1,186 @@
+{
+  "prompt": "Design a modern, Vastu-compliant 2BHK single-story house for a 30x50 feet east-facing plot in Mumbai (400001).",
+  "output": {
+    "input": {
+      "plot_dimensions": {
+        "length": 50.0,
+        "width": 30.0
+      },
+      "style": "Modern Indian",
+      "architecture": "Contemporary",
+      "pin_code": "400001",
+      "plot_shape": "rectangle",
+      "num_floors": 1,
+      "bhks": "2BHK"
+    },
+    "levels": [
+      {
+        "level_name": "ground_floor",
+        "level_number": 0,
+        "rooms": [
+          {
+            "id": "living_room_01",
+            "type": "living_room",
+            "bounds": {
+              "x": 1.0,
+              "y": 1.0,
+              "width": 14.0,
+              "height": 18.0
+            },
+            "doors": [
+              {
+                "position": {
+                  "x": 15.0,
+                  "y": 9.0
+                },
+                "width": 3.5,
+                "to_room": "kitchen_01"
+              },
+              {
+                "position": {
+                  "x": 7.0,
+                  "y": 19.0
+                },
+                "width": 3.5,
+                "to_room": "master_bedroom_01"
+              }
+            ],
+            "windows": [
+              {
+                "position": {
+                  "x": 1.0,
+                  "y": 8.0
+                },
+                "width": 8.0
+              }
+            ]
+          },
+          {
+            "id": "kitchen_01",
+            "type": "kitchen",
+            "bounds": {
+              "x": 15.0,
+              "y": 1.0,
+              "width": 14.0,
+              "height": 10.0
+            },
+            "doors": [],
+            "windows": [
+              {
+                "position": {
+                  "x": 29.0,
+                  "y": 4.0
+                },
+                "width": 5.0
+              }
+            ]
+          },
+          {
+            "id": "master_bedroom_01",
+            "type": "master_bedroom",
+            "bounds": {
+              "x": 1.0,
+              "y": 19.0,
+              "width": 14.0,
+              "height": 15.0
+            },
+            "doors": [
+              {
+                "position": {
+                  "x": 15.0,
+                  "y": 26.0
+                },
+                "width": 3.0,
+                "to_room": "bathroom_01"
+              }
+            ],
+            "windows": [
+              {
+                "position": {
+                  "x": 1.0,
+                  "y": 25.0
+                },
+                "width": 6.0
+              }
+            ]
+          },
+          {
+            "id": "bathroom_01",
+            "type": "bathroom",
+            "bounds": {
+              "x": 15.0,
+              "y": 19.0,
+              "width": 7.0,
+              "height": 8.0
+            },
+            "doors": [],
+            "windows": []
+          },
+          {
+            "id": "bedroom_02",
+            "type": "bedroom",
+            "bounds": {
+              "x": 1.0,
+              "y": 34.0,
+              "width": 14.0,
+              "height": 15.0
+            },
+            "doors": [
+              {
+                "position": {
+                  "x": 15.0,
+                  "y": 41.0
+                },
+                "width": 3.0,
+                "to_room": "bathroom_02"
+              }
+            ],
+            "windows": [
+              {
+                "position": {
+                  "x": 1.0,
+                  "y": 41.0
+                },
+                "width": 6.0
+              }
+            ]
+          },
+          {
+            "id": "bathroom_02",
+            "type": "bathroom",
+            "bounds": {
+              "x": 15.0,
+              "y": 34.0,
+              "width": 7.0,
+              "height": 8.0
+            },
+            "doors": [],
+            "windows": []
+          }
+        ],
+        "stairs": []
+      }
+    ],
+    "total_area": 1450.0,
+    "construction_cost": 2610000.0,
+    "architectural_features": [
+      "Open-plan living and dining area",
+      "Large windows for natural light",
+      "Private balcony for master bedroom"
+    ],
+    "vastu_compliance": {
+      "is_compliant": true,
+      "score": 85,
+      "recommendations": "Main entrance is well-placed. Kitchen in South-East is excellent. Consider shifting master bedroom to South-West for optimal energy."
+    },
+    "sustainability_features": {
+      "has_solar_panels": true,
+      "has_rainwater_harvesting": true,
+      "green_building_certification": "LEED Gold (projected)"
+    },
+    "render_paths": {
+      "floor_plan_2d": "renders/gold_standard_01/2d_plan.svg",
+      "model_3d": "renders/gold_standard_01/model.gltf"
+    }
+  }
+}
