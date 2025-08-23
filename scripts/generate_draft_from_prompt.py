@@ -57,7 +57,7 @@ def call_ollama(prompt: str, model: str) -> Optional[str]:
     payload = { "model": model, "stream": False, "prompt": prompt }
     logger.info(f"Sending request to Ollama with model '{model}'...")
     try:
-        response = requests.post(url, json=payload, timeout=600) # 10-minute timeout for complex generation
+        response = requests.post(url, json=payload, timeout=1800) # 30-minute timeout for complex generation
         response.raise_for_status()
         return response.json().get("response")
     except requests.exceptions.RequestException as e:
