@@ -92,46 +92,48 @@ def generate_and_validate_example(llm: HouseBrainLLM, scenario: str, few_shot_ex
 def main():
     parser = argparse.ArgumentParser(description="Generate SILVER standard data for HouseBrain using a direct generate-and-validate approach.")
     parser.add_argument("--output-dir", type=str, default="data/training/silver_standard", help="Directory to save the generated files.")
-    parser.add_argument("--num-examples", type=int, default=100, help="Number of examples to generate.")
+    parser.add_argument("--num-examples", type=int, default=100, help="Total number of examples to generate across all workers.")
     parser.add_argument("--examples-dir", type=str, default="data/training/gold_standard", help="Directory of gold examples for few-shot prompting.")
+    parser.add_argument("--num-workers", type=int, default=1, help="The total number of parallel workers.")
+    parser.add_argument("--worker-id", type=int, default=0, help="The ID of this worker (0-based).")
     args = parser.parse_args()
 
     output_path = Path(args.output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
-    print(f"Saving generated files to: {output_path.resolve()}")
+    print(f"[Worker {args.worker_id}/{args.num_workers}] Saving generated files to: {output_path.resolve()}")
 
     llm = HouseBrainLLM(model_name=MODEL_NAME)
     few_shot_prompt_string = load_few_shot_examples(args.examples_dir)
 
-    existing_files = list(output_path.glob("*.json"))
-    start_index = len(existing_files)
-    # Cycle through the scenarios to generate the desired number of examples
-    scenarios_to_run = [s for s in ARCHITECTURAL_SCENARIOS * (args.num_examples // len(ARCHITECTURAL_SCENARIOS) + 1)]
+    # Determine the slice of scenarios this worker is responsible for
+    all_scenarios = [s for s in ARCHITECTURAL_SCENARIOS * (args.num_examples // len(ARCHITECTURAL_SCENARIOS) + 1)]
+    examples_per_worker = args.num_examples // args.num_workers
+    start = args.worker_id * examples_per_worker
+    end = start + examples_per_worker
+    if args.worker_id == args.num_workers - 1:
+        end = args.num_examples # Ensure the last worker gets any remainder
     
+    scenarios_to_run = all_scenarios[start:end]
+    
+    # Adjust file naming to be unique per worker to avoid collisions
+    file_start_index = start
+
     generated_count = 0
-    with tqdm(total=args.num_examples, desc="Generating Silver Standard Data") as pbar:
-        while generated_count < args.num_examples:
-            # This loop ensures we keep trying scenarios until we have enough successful examples
-            if not scenarios_to_run:
-                 # Refill scenarios if we run out, to keep trying
-                scenarios_to_run = ARCHITECTURAL_SCENARIOS * (args.num_examples // len(ARCHITECTURAL_SCENARIOS) + 1)
-            
-            scenario = scenarios_to_run.pop(0)
-            
-            example = generate_and_validate_example(llm, scenario, few_shot_prompt_string)
-            if example:
-                file_index = start_index + generated_count + 1
-                scenario_slug = scenario.lower().replace(" ", "_").replace(",", "")[:50]
-                file_path = output_path / f"{file_index:04d}_{scenario_slug}.json"
+    pbar = tqdm(scenarios_to_run, desc=f"Worker {args.worker_id} Generating Data", position=args.worker_id)
+    for i, scenario in enumerate(pbar):
+        example = generate_and_validate_example(llm, scenario, few_shot_prompt_string)
+        if example:
+            file_index = file_start_index + i
+            scenario_slug = scenario.lower().replace(" ", "_").replace(",", "")[:50]
+            file_path = output_path / f"{file_index:04d}_{scenario_slug}.json"
 
-                with open(file_path, "w", encoding="utf-8") as f:
-                    json.dump(example, f, indent=2)
+            with open(file_path, "w", encoding="utf-8") as f:
+                json.dump(example, f, indent=2)
 
-                generated_count += 1
-                pbar.update(1)
-                pbar.set_postfix({"saved": generated_count})
+            generated_count += 1
+            pbar.set_postfix({"saved": generated_count})
 
-    print(f"\n🎉 Generation complete. Saved {generated_count} new silver-standard examples.")
+    print(f"\n🎉 [Worker {args.worker_id}] Generation complete. Saved {generated_count} new examples.")
 
 if __name__ == "__main__":
     main()
