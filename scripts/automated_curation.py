@@ -37,7 +37,8 @@ def automated_curation_pipeline(
     prompt: str,
     output_dir: Path,
     max_retries: int,
-    model: str
+    model: str,
+    repair_model: str
 ):
     """
     Manages the full Generate -> Analyze -> Repair loop.
@@ -112,7 +113,7 @@ def automated_curation_pipeline(
                     "--error-file", str(error_file_for_repair),
                     "--prompt-file", str(prompt_file),
                     "--output-file", str(repaired_draft_file),
-                    "--model", model
+                    "--model", repair_model
                 ],
                 f"Repair attempt {i+1} failed."
             )
