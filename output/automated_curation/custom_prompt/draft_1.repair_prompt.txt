@@ -1,0 +1,83 @@
+
+You are an expert AI architect specializing in fixing flawed building plan data.
+The following JSON draft was generated to satisfy a user's request, but it failed validation against the required Pydantic schema.
+
+Your task is to meticulously correct the JSON to fix *only the specific errors listed below*.
+You must adhere to the original design intent described in the user's prompt as closely as possible.
+Do not add, remove, or significantly change architectural elements unless it's necessary to resolve a validation error.
+The final output must be a single, complete, and valid JSON object that strictly follows the provided schema.
+
+---
+**Specific Instructions:**
+
+REPAIR HINT: The `total_area` field must be the sum of the areas of all rooms across all `levels`. Recalculate this value precisely and update the field. Also ensure the `input.basicDetails.totalArea` field matches this new value if it exists.
+
+REPAIR HINT: The error indicates a missing or malformed `input` object. Ensure the `input` object and its nested fields (`basicDetails`, `plot`, `roomBreakdown`) are present and correctly structured according to the schema.
+---
+**Original User Prompt:**
+A modern, single-story 3BHK house for a 50x80 feet plot. It must feature an open-plan kitchen and living area, a dedicated home office, and be Vastu-compliant with a North-facing entrance.
+---
+**Flawed JSON Draft:**
+```json
+{
+  "layout": "single-story",
+  "plot_size": {
+    "length": 50,
+    "width": 80
+  },
+  "rooms": 3,
+  "features": [
+    "open-plan kitchen and living area",
+    "dedicated home office"
+  ],
+  "Vastu_compliance": true,
+  "entrance_direction": "North-facing"
+}
+```
+---
+**Validation Errors to Fix:**
+```json
+{
+  "errors": [
+    "Location: 'input', Message: Field required",
+    "Location: 'levels', Message: Field required",
+    "Location: 'total_area', Message: Field required",
+    "Location: 'construction_cost', Message: Field required"
+  ]
+}
+```
+---
+**Pydantic Schema for Reference:**
+```python
+class HouseOutput(BaseModel):
+    input: HouseInput
+    levels: List[Level] = Field(..., description="Multi-floor house design")
+    total_area: float = Field(..., description="Total built area in sqft")
+    construction_cost: float = Field(..., description="Estimated construction cost")
+    materials: Dict[str, float] = Field(default_factory=dict, description="Material requirements")
+    render_paths: Dict[str, str] = Field(default_factory=dict, description="Paths to generated renders")
+    
+    @validator('levels')
+    def validate_levels(cls, v):
+        if not v:
+            raise ValueError("At least one level must be defined")
+        
+        # Check level numbers are sequential
+        level_numbers = [level.level_number for level in v]
+        if level_numbers != list(range(min(level_numbers), max(level_numbers) + 1)):
+            raise ValueError("Level numbers must be sequential")
+        
+        return v
+    
+    @validator('total_area')
+    def validate_total_area(cls, v, values):
+        if 'levels' in values:
+            calculated_area = sum(sum(room.bounds.area for room in level.rooms) for level in values['levels'])
+            if abs(v - calculated_area) > 50:  # Allow 50 sqft tolerance
+                raise ValueError(f"Total area mismatch. Calculated: {calculated_area}, Provided: {v}")
+        return v
+
+```
+---
+
+Now, provide the corrected and complete JSON object.

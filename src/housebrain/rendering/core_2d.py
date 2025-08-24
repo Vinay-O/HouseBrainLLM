@@ -2,7 +2,7 @@ from __future__ import annotations
 import math
 import sys
 from pathlib import Path
-from typing import Dict, Any, List, Tuple
+from typing import Dict, Any, List, Tuple, Union
 import logging
 
 # Add the src directory to the Python path
@@ -82,134 +82,199 @@ class Professional2DRenderer:
         # 3. Process doors and windows
         self._process_openings(level)
     
-    def _find_closest_wall_segment(self, point: Point2D, room_id: str, adjacent_room_id: str = None) -> Tuple[str, float] | None:
-        """
-        Finds the closest wall segment to a given point.
+    @staticmethod
+    def _get_room_edges(room: Room) -> List[Tuple[Tuple[float, float], Tuple[float, float]]]:
+        """Returns a list of canonical edges for a room's bounding box."""
+        b = room.bounds
+        points = [
+            (b.x, b.y), (b.x + b.width, b.y),
+            (b.x + b.width, b.y + b.height), (b.x, b.y + b.height)
+        ]
+        edges = []
+        for i in range(4):
+            p1 = points[i]
+            p2 = points[(i + 1) % 4]
+            edge = tuple(sorted((p1, p2)))  # Canonical representation
+            edges.append(edge)
+        return edges
 
-        For doors, it looks for a wall shared between room_id and adjacent_room_id.
-        For windows, it looks for an exterior wall of room_id.
+    def _find_wall_from_edge(self, edge: Tuple[Tuple[float, float], Tuple[float, float]]) -> Dict | None:
+        """Finds a wall in self.walls that corresponds to a given geometric edge."""
+        edge_mm = tuple(sorted(((edge[0][0] * self.ft_to_mm, edge[0][1] * self.ft_to_mm),
+                                (edge[1][0] * self.ft_to_mm, edge[1][1] * self.ft_to_mm))))
+        
+        tolerance = 1.0 # mm
+        for wall in self.walls:
+            wall_edge = tuple(sorted((wall['start'], wall['end'])))
+            
+            dist1 = math.hypot(wall_edge[0][0] - edge_mm[0][0], wall_edge[0][1] - edge_mm[0][1])
+            dist2 = math.hypot(wall_edge[1][0] - edge_mm[1][0], wall_edge[1][1] - edge_mm[1][1])
 
-        Returns: A tuple of (wall_id, position_along_wall) or None if not found.
+            if dist1 < tolerance and dist2 < tolerance:
+                return wall
+        return None
+
+    def _find_host_wall_for_opening(
+        self,
+        opening: Union[Door, Window],
+        level: Level
+    ) -> Tuple[Dict, float] | None:
         """
-        candidate_walls = []
+        Determines the correct host wall for a door or window and its position along it.
+        This new method uses topology (shared walls) instead of just proximity.
+        """
+        all_rooms_by_id = {room.id: room for room in level.rooms}
         
-        # This is a simplification. A robust solution would use a spatial index (e.g., quadtree)
-        # and a more complex geometric analysis to find which rooms an edge belongs to.
-        # For now, we find walls that are "close" to the room's boundary.
+        target_edge = None
         
-        # Find the room's bounds to narrow down the search
-        target_room = next((r for r in self.plan.levels[0].rooms if r.id == room_id), None)
-        if not target_room:
+        # --- 1. Identify the correct geometric edge for the opening ---
+        if isinstance(opening, Door):
+            room1 = all_rooms_by_id.get(opening.room1)
+            room2 = all_rooms_by_id.get(opening.room2)
+            if not room1 or not room2:
+                logging.warning(f"Door {opening.position} references non-existent room.")
+                return None
+            
+            edges1 = set(self._get_room_edges(room1))
+            edges2 = set(self._get_room_edges(room2))
+            
+            shared_edges = edges1.intersection(edges2)
+            if not shared_edges:
+                logging.warning(f"Door between {opening.room1} and {opening.room2} has no shared wall.")
+                return None
+            target_edge = shared_edges.pop()
+
+        elif isinstance(opening, Window):
+            room = all_rooms_by_id.get(opening.room_id)
+            if not room:
+                logging.warning(f"Window {opening.position} references non-existent room.")
+                return None
+            
+            room_edges = self._get_room_edges(room)
+            other_rooms = [r for r in level.rooms if r.id != room.id]
+            
+            exterior_edges = []
+            for edge in room_edges:
+                is_exterior = True
+                for other_room in other_rooms:
+                    if edge in self._get_room_edges(other_room):
+                        is_exterior = False
+                        break
+                if is_exterior:
+                    exterior_edges.append(edge)
+
+            if not exterior_edges:
+                logging.warning(f"Window in {opening.room_id} has no exterior wall.")
+                return None
+            
+            # Find the closest exterior edge to the window's position
+            min_dist_sq = float('inf')
+            best_edge = None
+            px = opening.position.x
+            py = opening.position.y
+
+            for edge in exterior_edges:
+                p1, p2 = edge
+                dist_sq = self._point_segment_dist_sq((px, py), p1, p2)
+                if dist_sq < min_dist_sq:
+                    min_dist_sq = dist_sq
+                    best_edge = edge
+            target_edge = best_edge
+            
+        if not target_edge:
+            return None
+            
+        # --- 2. Find the Wall Dictionary corresponding to the edge ---
+        wall = self._find_wall_from_edge(target_edge)
+        if not wall:
+            logging.warning(f"Could not find wall object for edge {target_edge}")
             return None
 
-        px, py = point.x * self.ft_to_mm, point.y * self.ft_to_mm
-        min_dist = float('inf')
-        best_wall = None
+        # --- 3. Project the opening's point onto the wall to get its fractional position ---
+        w_start_ft = (wall['start'][0] / self.ft_to_mm, wall['start'][1] / self.ft_to_mm)
+        w_end_ft = (wall['end'][0] / self.ft_to_mm, wall['end'][1] / self.ft_to_mm)
         
-        for wall in self.walls:
-            w_start = wall['start']
-            w_end = wall['end']
-            
-            # Vector from wall start to end
-            wx, wy = w_end[0] - w_start[0], w_end[1] - w_start[1]
-            
-            # Vector from wall start to point
-            px_rel, py_rel = px - w_start[0], py - w_start[1]
-            
-            dot_product = px_rel * wx + py_rel * wy
-            len_sq = wx*wx + wy*wy
-            
-            if len_sq == 0: # Should not happen for a valid wall
-                continue
-                
-            t = max(0, min(1, dot_product / len_sq))
-            
-            # Closest point on the line segment
-            closest_x = w_start[0] + t * wx
-            closest_y = w_start[1] + t * wy
-            
-            # Distance from point to the wall segment
-            dist_sq = (px - closest_x)**2 + (py - closest_y)**2
-            
-            if dist_sq < min_dist:
-                # Check if this wall is a plausible candidate for the room.
-                # This is a heuristic: we check if the wall's midpoint is near the room's boundary.
-                wall_mid_x = (w_start[0] + w_end[0]) / 2
-                wall_mid_y = (w_start[1] + w_end[1]) / 2
-                
-                room_b = target_room.bounds
-                room_b_mm = {
-                    'x': room_b.x * self.ft_to_mm,
-                    'y': room_b.y * self.ft_to_mm,
-                    'width': room_b.width * self.ft_to_mm,
-                    'height': room_b.height * self.ft_to_mm,
-                }
-                
-                # Check if the wall's midpoint lies on one of the room's four edges (with a tolerance)
-                tolerance = 10.0 # mm
-                on_horizontal = (abs(wall_mid_y - room_b_mm['y']) < tolerance or abs(wall_mid_y - (room_b_mm['y'] + room_b_mm['height'])) < tolerance) and \
-                                (room_b_mm['x'] - tolerance <= wall_mid_x <= room_b_mm['x'] + room_b_mm['width'] + tolerance)
-                on_vertical = (abs(wall_mid_x - room_b_mm['x']) < tolerance or abs(wall_mid_x - (room_b_mm['x'] + room_b_mm['width'])) < tolerance) and \
-                              (room_b_mm['y'] - tolerance <= wall_mid_y <= room_b_mm['y'] + room_b_mm['height'] + tolerance)
-
-                if on_horizontal or on_vertical:
-                    min_dist = dist_sq
-                    # Position is the fractional distance 't' along the wall
-                    best_wall = (wall['id'], t)
-
-        # We accept a match if it's very close to the point (e.g., within ~6 inches)
-        if min_dist < (150.0)**2:
-             return best_wall
+        wx, wy = w_end_ft[0] - w_start_ft[0], w_end_ft[1] - w_start_ft[1]
+        px_rel, py_rel = opening.position.x - w_start_ft[0], opening.position.y - w_start_ft[1]
         
-        return None
+        len_sq = wx*wx + wy*wy
+        if len_sq == 0: return None
+        
+        t = (px_rel * wx + py_rel * wy) / len_sq
+        position_on_wall = max(0, min(1, t)) # Clamp to [0, 1]
+
+        return wall, position_on_wall
+
+    @staticmethod
+    def _point_segment_dist_sq(p, a, b):
+        """Calculates the squared distance from point p to line segment ab."""
+        px, py = p
+        ax, ay = a
+        bx, by = b
+
+        # Vector from a to b
+        ab_x, ab_y = bx - ax, by - ay
+        # Vector from a to p
+        ap_x, ap_y = px - ax, py - ay
+
+        ab_len_sq = ab_x*ab_x + ab_y*ab_y
+        if ab_len_sq == 0:
+            return ap_x*ap_x + ap_y*ap_y
+
+        t = (ap_x * ab_x + ap_y * ab_y) / ab_len_sq
+        t = max(0, min(1, t)) # Clamp to segment
+
+        closest_x = ax + t * ab_x
+        closest_y = ay + t * ab_y
+        
+        return (px - closest_x)**2 + (py - closest_y)**2
+
 
     def _process_openings(self, level: Level):
         """Processes doors and windows, mapping them to inferred walls."""
         opening_id_counter = 0
+        
+        # Create a set of processed opening positions to avoid duplicates
+        # (e.g., a door defined in two adjacent rooms)
+        processed_positions = set()
+
+        all_openings = []
         for room in level.rooms:
-            # Process doors associated with this room
-            for door in room.doors or []:
-                # Doors are often listed in both rooms they connect. We only process them once.
-                if any(o.get('metadata', {}).get('original_id') == door.position for o in self.openings):
-                    continue
+            for door in room.doors:
+                all_openings.append(door)
+            for window in room.windows:
+                all_openings.append(window)
 
-                wall_info = self._find_closest_wall_segment(door.position, door.room1, door.room2)
-                if wall_info:
-                    wall_id, position_on_wall = wall_info
-                    self.openings.append({
-                        "id": f"D{opening_id_counter}",
-                        "wall_id": wall_id,
-                        "type": "door",
-                        "position": position_on_wall,
-                        "width": door.width * self.ft_to_mm,
-                        "metadata": {
-                            "swing": "in", # Default, can be refined
-                            "handing": "RHR", # Default
-                            "original_id": door.position # To prevent duplicates
-                        }
-                    })
-                    opening_id_counter += 1
-                else:
-                    logging.warning(f"Could not find a wall for door at ({door.position.x}, {door.position.y})")
+        for opening in all_openings:
+            pos_tuple = (opening.position.x, opening.position.y)
+            if pos_tuple in processed_positions:
+                continue
+            
+            processed_positions.add(pos_tuple)
 
-            # Process windows
-            for window in room.windows or []:
-                wall_info = self._find_closest_wall_segment(window.position, window.room_id)
-                if wall_info:
-                    wall_id, position_on_wall = wall_info
-                    self.openings.append({
-                        "id": f"W{opening_id_counter}",
-                        "wall_id": wall_id,
-                        "type": "window",
-                        "position": position_on_wall,
-                        "width": window.width * self.ft_to_mm,
-                        "metadata": {
-                           "window_operation": "fixed" # Default
-                        }
-                    })
-                    opening_id_counter += 1
+            wall_info = self._find_host_wall_for_opening(opening, level)
+            
+            if wall_info:
+                wall, position_on_wall = wall_info
+                
+                if isinstance(opening, Door):
+                    op_type = "door"
+                    op_id = f"D{opening_id_counter}"
                 else:
-                     logging.warning(f"Could not find a wall for window at ({window.position.x}, {window.position.y})")
+                    op_type = "window"
+                    op_id = f"W{opening_id_counter}"
+                
+                self.openings.append({
+                    "id": op_id,
+                    "wall_id": wall['id'],
+                    "type": op_type,
+                    "position": position_on_wall,
+                    "width": opening.width * self.ft_to_mm,
+                })
+                opening_id_counter += 1
+            else:
+                op_type = "Door" if isinstance(opening, Door) else "Window"
+                logging.warning(f"Could not find a host wall for {op_type} at ({opening.position.x}, {opening.position.y})")
 
     def _line_dir(self, a: Tuple[float, float], b: Tuple[float, float]) -> Tuple[float, float, float]:
         dx = b[0] - a[0]
@@ -501,8 +566,8 @@ class Professional2DRenderer:
             "<defs>",
             "<style>",
             "/* Professional Line Weight Hierarchy (CAD Standard) */",
-            ".wall-exterior { fill: #111; opacity: 1.0; stroke: #000; stroke-width: 2.5; }",
-            ".wall-interior { fill: #111; opacity: 1.0; stroke: #000; stroke-width: 1.8; }",
+            ".wall-exterior { fill: #333; stroke: #333; stroke-width: 0.5; }",
+            ".wall-interior { fill: #555; stroke: #555; stroke-width: 0.5; }",
             ".door { stroke: #8B4513; stroke-width: 1.2; fill: none; }",
             ".door-swing { stroke: #8B4513; stroke-width: 0.8; fill: none; stroke-dasharray: 3,1; }",
             ".window { stroke: #0066CC; stroke-width: 1.2; fill: white; stroke-opacity: 0.9; }",
@@ -511,7 +576,14 @@ class Professional2DRenderer:
             ".dim { stroke: #111; stroke-width: 0.75; fill: none; }",
             ".dimtxt { font-family: Arial, Helvetica, sans-serif; font-size: 10px; fill: #111; paint-order: stroke fill; stroke: #fff; stroke-width: 2px; }",
             ".roomfill { fill: #F8F8F8; }",
+            ".stair-tread { stroke: #999; stroke-width: 0.8; }",
+            ".stair-arrow { stroke: #333; stroke-width: 1.5; marker-end: url(#arrowhead); }",
+            ".stair-arrow-head { fill: #333; }",
+            ".fixture { stroke: #333; stroke-width: 1; }",
             "</style>",
+            "<marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='3.5' orient='auto'>",
+            "  <polygon points='0 0, 10 3.5, 0 7'/>",
+            "</marker>",
             "</defs>",
             f"<rect width='{width}' height='{height}' fill='white'/>",
         ]
@@ -610,8 +682,9 @@ class Professional2DRenderer:
             for (sx1, sy1), (sx2, sy2) in spans:
                 X1, Y1 = T(sx1, sy1)
                 X2, Y2 = T(sx2, sy2)
-                thickness = outer_wall_px if wll["type"] == "exterior" else inner_wall_px
-                d = self._wall_strip((X1, Y1), (X2, Y2), thickness)
+                # The thickness is now based on the real-world mm value, scaled to the drawing
+                thickness_px = wll["thickness"] * s
+                d = self._wall_strip((X1, Y1), (X2, Y2), thickness_px)
                 if d:
                     klass = f"wall-{wll['type']}"
                     svg.append(f"<path d='{d}' class='{klass}'/>")
@@ -629,10 +702,12 @@ class Professional2DRenderer:
             X2, Y2 = T(ox2, oy2)
             angle = math.degrees(math.atan2(Y2 - Y1, X2 - X1))
             length = math.hypot(X2 - X1, Y2 - Y1)
-            thickness_px = outer_wall_px if wll["type"] == "exterior" else inner_wall_px
+            thickness_px = wll["thickness"] * s
             
             if op['type'] == 'door':
-                h = max(6.0, min(12.0, 0.9 * thickness_px))
+                # Frame thickness is a fraction of the wall thickness
+                frame_h = max(2.0, min(8.0, 0.1 * thickness_px))
+                
                 # Defaults because schema does not support this yet
                 handing = "RHR" 
                 swing_dir = "in"
@@ -645,7 +720,7 @@ class Professional2DRenderer:
                 svg.append(f"<g transform='translate({inner_tx:.1f},0) scale({inner_sx},1)'>")
                 
                 # Door leaf
-                svg.append(f"<rect x='0' y='-{h/4:.1f}' width='{length:.1f}' height='{h/2:.1f}' class='door'/>")
+                svg.append(f"<rect x='0' y='-{frame_h:.1f}' width='{length:.1f}' height='{frame_h*2:.1f}' class='door'/>")
                 
                 # Swing arc
                 swing_radius = length
@@ -657,12 +732,13 @@ class Professional2DRenderer:
                 svg.append("</g></g>") # Close transforms
 
             elif op['type'] == 'window':
-                h = max(8.0, min(16.0, 0.9 * thickness_px))
+                # Window sits in the middle of the wall thickness
                 svg.append(f"<g transform='translate({X1:.1f},{Y1:.1f}) rotate({angle:.1f})'>")
-                # Window frame
-                svg.append(f"<rect x='0' y='-{h/2:.1f}' width='{length:.1f}' height='{h:.1f}' class='window'/>")
-                # Center mullion
-                svg.append(f"<line x1='{length/2:.1f}' y1='-{h/2:.1f}' x2='{length/2:.1f}' y2='{h/2:.1f}' stroke='#0066CC' stroke-width='1.0'/>")
+                # Window frame/sill
+                svg.append(f"<rect x='0' y='-{thickness_px/2:.1f}' width='{length:.1f}' height='{thickness_px:.1f}' class='window-sill'/>")
+                # Glass pane
+                svg.append(f"<line x1='0' y1='0' x2='{length:.1f}' y2='0' stroke='#88CCFF' stroke-width='{max(1, 0.3*thickness_px)}' />")
+                
                 svg.append("</g>")
 
         svg.append("</g>")

@@ -43,19 +43,19 @@
           "type": "entrance",
           "bounds": { "x": 15, "y": 72, "width": 10, "height": 8 },
           "doors": [
-            {"position": {"x": 20, "y": 72}, "width": 4, "type": "exterior", "room1": "external", "room2": "entrance_foyer_0"},
-            {"position": {"x": 25, "y": 72}, "width": 3, "room1": "entrance_foyer_0", "room2": "living_room_0"}
+            {"position": {"x": 20, "y": 80}, "width": 4, "type": "exterior", "room1": "external", "room2": "entrance_foyer_0"},
+            {"position": {"x": 20, "y": 72}, "width": 3, "room1": "entrance_foyer_0", "room2": "living_room_0"}
           ]
         },
         {
           "id": "living_room_0",
           "type": "living_room",
-          "bounds": { "x": 0, "y": 30, "width": 25, "height": 30 },
+          "bounds": { "x": 0, "y": 22, "width": 18, "height": 38 },
           "windows": [
-            {"position": {"x": 0, "y": 45}, "width": 8, "height": 6, "room_id": "living_room_0"}
+            {"position": {"x": 0, "y": 41}, "width": 8, "height": 6, "room_id": "living_room_0"}
           ],
           "doors": [
-            {"position": {"x": 25, "y": 45}, "width": 3, "room1": "living_room_0", "room2": "dining_room_0"}
+            {"position": {"x": 25, "y": 41}, "width": 5, "room1": "living_room_0", "room2": "dining_room_0"}
           ]
         },
         {
@@ -66,15 +66,15 @@
             {"position": {"x": 9, "y": 0}, "width": 6, "height": 5, "room_id": "guest_bedroom_0"}
           ],
           "doors": [
-            {"position": {"x": 18, "y": 7.5}, "width": 3, "room1": "guest_bedroom_0", "room2": "living_room_0"}
+            {"position": {"x": 13.5, "y": 15}, "width": 3, "room1": "guest_bedroom_0", "room2": "living_room_0"}
           ]
         },
         {
           "id": "guest_bath_0",
           "type": "bathroom",
-          "bounds": { "x": 0, "y": 15, "width": 18, "height": 7 },
+          "bounds": { "x": 0, "y": 15, "width": 9, "height": 7 },
           "doors": [
-            {"position": {"x": 9, "y": 15}, "width": 2.5, "room1": "guest_bedroom_0", "room2": "guest_bath_0"}
+            {"position": {"x": 9, "y": 18.5}, "width": 2.5, "room1": "guest_bedroom_0", "room2": "guest_bath_0"}
           ]
         },
         {
@@ -93,7 +93,12 @@
         {
           "id": "stairwell_0",
           "type": "stairwell",
-          "bounds": { "x": 18, "y": 15, "width": 7, "height": 15 }
+          "bounds": { "x": 18, "y": 22, "width": 7, "height": 18 }
+        },
+        {
+            "id": "powder_room_0",
+            "type": "half_bath",
+            "bounds": {"x": 15, "y": 60, "width": 10, "height": 12}
         }
       ],
       "stairs": [
@@ -116,7 +121,9 @@
           "type": "master_bedroom",
           "bounds": { "x": 0, "y": 40, "width": 25, "height": 20 },
           "doors": [
-            {"position": {"x": 25, "y": 50}, "width": 3, "room1": "master_bedroom_1", "room2": "upper_lounge_1"}
+            {"position": {"x": 25, "y": 50}, "width": 3, "room1": "master_bedroom_1", "room2": "upper_lounge_1"},
+            {"position": {"x": 7.5, "y": 60}, "width": 2.5, "room1": "master_bedroom_1", "room2": "master_bath_1"},
+            {"position": {"x": 7.5, "y": 72}, "width": 5, "type": "sliding", "room1": "master_bedroom_1", "room2": "master_balcony_1"}
           ],
           "windows": [
             {"position": {"x": 0, "y": 50}, "width": 8, "height": 6, "room_id": "master_bedroom_1"}
@@ -125,34 +132,26 @@
         {
           "id": "master_bath_1",
           "type": "bathroom",
-          "bounds": { "x": 0, "y": 60, "width": 15, "height": 12 },
-           "doors": [
-            {"position": {"x": 7.5, "y": 60}, "width": 2.5, "room1": "master_bedroom_1", "room2": "master_bath_1"}
-          ]
+          "bounds": { "x": 0, "y": 60, "width": 15, "height": 12 }
         },
         {
           "id": "master_balcony_1",
           "type": "balcony",
-          "bounds": { "x": 0, "y": 72, "width": 15, "height": 8 },
-           "doors": [
-            {"position": {"x": 7.5, "y": 72}, "width": 5, "type": "sliding", "room1": "master_bedroom_1", "room2": "master_balcony_1"}
-          ]
+          "bounds": { "x": 0, "y": 72, "width": 15, "height": 8 }
         },
         {
           "id": "bedroom_2_1",
           "type": "bedroom",
           "bounds": { "x": 0, "y": 0, "width": 18, "height": 15 },
           "doors": [
-            {"position": {"x": 18, "y": 7.5}, "width": 3, "room1": "bedroom_2_1", "room2": "upper_lounge_1"}
+            {"position": {"x": 18, "y": 7.5}, "width": 3, "room1": "bedroom_2_1", "room2": "upper_lounge_1"},
+            {"position": {"x": 9, "y": 15}, "width": 2.5, "room1": "bedroom_2_1", "room2": "bedroom_2_bath_1"}
           ]
         },
         {
           "id": "bedroom_2_bath_1",
           "type": "bathroom",
-          "bounds": { "x": 0, "y": 15, "width": 18, "height": 7 },
-           "doors": [
-            {"position": {"x": 9, "y": 15}, "width": 2.5, "room1": "bedroom_2_1", "room2": "bedroom_2_bath_1"}
-          ]
+          "bounds": { "x": 0, "y": 15, "width": 18, "height": 7 }
         },
         {
           "id": "home_theater_1",

@@ -5,6 +5,8 @@ import sys
 from pathlib import Path
 from typing import List
 
+from pydantic import ValidationError
+
 # Add the src directory to the Python path
 sys.path.append(str(Path(__file__).parent.parent))
 
@@ -18,7 +20,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 
-def run_pipeline(input_path: Path, output_dir: Path, formats: List[str]):
+def run_pipeline(input_path: Path, output_dir: Path, formats: List[str], validate_only: bool, error_file: Path):
     """
     Main pipeline function to load, validate, and render a house plan.
     """
@@ -47,10 +49,30 @@ def run_pipeline(input_path: Path, output_dir: Path, formats: List[str]):
 
     except json.JSONDecodeError:
         logger.error(f"Error: Invalid JSON in file: {input_path}", exc_info=True)
-        return
+        sys.exit(1)
+    except ValidationError as e:
+        logger.error(f"Validation failed for {input_path.name}")
+        if error_file:
+            # Manually format errors to ensure they are JSON serializable
+            error_list = []
+            for error in e.errors():
+                # error is a dictionary. We want to make it a flat string for the LLM.
+                msg = error.get('msg', 'Validation error')
+                loc = " -> ".join(map(str, error.get('loc', ())))
+                error_list.append(f"Location: '{loc}', Message: {msg}")
+
+            with open(error_file, 'w') as f:
+                # Dump the simplified list of strings
+                json.dump({"errors": error_list}, f, indent=2)
+            logger.info(f"Validation error details saved to {error_file}")
+        sys.exit(1) # Exit with an error code to signal failure
     except Exception as e:
-        logger.error(f"An error occurred during validation: {e}", exc_info=True)
-        return
+        logger.error(f"An unexpected error occurred during validation: {e}", exc_info=True)
+        sys.exit(1)
+
+    if validate_only:
+        logger.info("Validation only mode is active. Exiting successfully.")
+        return # Exit successfully after validation
 
     # --- 2. Create Output Directory ---
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -95,14 +117,26 @@ def main():
         "--formats",
         nargs='+',
         choices=['2d', '3d'],
-        default=['2d', '3d'],
-        help="List of output formats to generate. Can be '2d', '3d', or both. Defaults to both."
+        default=['2d'],
+        help="List of output formats to generate. Can be '2d', '3d', or both. Defaults to '2d'."
+    )
+    parser.add_argument(
+        "--validate-only",
+        action="store_true",
+        help="If set, run only the validation step and exit."
+    )
+    parser.add_argument(
+        "--error-file",
+        type=str,
+        default=None,
+        help="Path to save the validation error report if validation fails."
     )
     
     args = parser.parse_args()
 
     input_path = Path(args.input)
     output_dir = Path(args.output_dir)
+    error_path = Path(args.error_file) if args.error_file else None
 
     if not input_path.exists():
         logger.error(f"Error: Input file not found at {input_path}")
@@ -120,7 +154,7 @@ def main():
         #     logger.error(f"Failed to run migration script: {e}")
         #     return
 
-    run_pipeline(input_path, output_dir, args.formats)
+    run_pipeline(input_path, output_dir, args.formats, args.validate_only, error_path)
 
 if __name__ == "__main__":
     # This allows running the script directly for a quick test
