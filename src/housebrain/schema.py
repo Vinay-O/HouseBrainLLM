@@ -19,6 +19,13 @@ class RoomType(str, Enum):
     STAIRWELL = "stairwell"
     CORRIDOR = "corridor"
     ENTRANCE = "entrance"
+    COURTYARD = "courtyard"
+    VERANDAH = "verandah"
+    BALCONY = "balcony"
+    PARKING = "parking"
+    GARDEN = "garden"
+    SITOUT = "sitout"
+    POOJA_ROOM = "pooja_room"
 
 
 class ArchitecturalStyle(str, Enum):

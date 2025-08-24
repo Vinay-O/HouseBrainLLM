@@ -54,7 +54,8 @@ Create a JSON object that represents the house plan. This JSON object must be **
 def call_ollama(prompt: str, model: str) -> Optional[str]:
     """Sends a request to the Ollama API."""
     url = "http://localhost:11434/api/generate"
-    payload = { "model": model, "stream": False, "prompt": prompt }
+    # Hint to Ollama/models to return JSON only when possible.
+    payload = { "model": model, "stream": False, "prompt": prompt, "format": "json" }
     logger.info(f"Sending request to Ollama with model '{model}'...")
     try:
         response = requests.post(url, json=payload, timeout=1800) # 30-minute timeout for complex generation
@@ -65,11 +66,38 @@ def call_ollama(prompt: str, model: str) -> Optional[str]:
         return None
 
 def extract_json_from_response(raw_text: str) -> str:
-    """Extracts a JSON object from a markdown block or raw string."""
-    match = re.search(r"```(json)?\s*(\{.*?\})\s*```", raw_text, re.DOTALL)
-    if match:
-        return match.group(2)
-    # Fallback for raw JSON output
+    """Extracts a JSON object from a markdown block or raw string.
+
+    Strategy:
+    1) Prefer fenced code blocks (```json ... ``` or ``` ... ```)
+    2) If not found, attempt to find the largest balanced JSON object by brace matching
+    3) Fallback: return stripped raw text
+    """
+    # 1) Fenced block with optional language tag
+    fenced_matches = list(re.finditer(r"```(?:json|jsonc)?\s*(\{[\s\S]*?\})\s*```", raw_text, re.IGNORECASE))
+    if fenced_matches:
+        # Choose the longest fenced JSON block to maximize chance of completeness
+        longest = max(fenced_matches, key=lambda m: len(m.group(1)))
+        return longest.group(1)
+
+    # 2) Brace matching to find a valid JSON object substring
+    start_indices = [i for i, ch in enumerate(raw_text) if ch == '{']
+    for start in start_indices:
+        depth = 0
+        for end in range(start, len(raw_text)):
+            ch = raw_text[end]
+            if ch == '{':
+                depth += 1
+            elif ch == '}':
+                depth -= 1
+                if depth == 0:
+                    candidate = raw_text[start:end+1]
+                    try:
+                        json.loads(candidate)
+                        return candidate
+                    except Exception:
+                        pass
+    # 3) Fallback for raw JSON output or otherwise
     return raw_text.strip()
 
 def main():
