@@ -1,44 +1,39 @@
 #!/bin/bash
 
 # ==============================================================================
-# HouseBrain Local Pipeline Smoke Test
+# HouseBrain Local Pipeline Smoke Test (Consolidated Version)
 # ==============================================================================
 #
-# This script runs a single, quick test of the automated curation pipeline
-# to catch basic errors (e.g., missing files, TypeErrors) before committing
-# and pushing code. It's a safety check to ensure the core logic is functional.
-#
-# It uses a simple prompt and a locally available Ollama model.
+# This script runs a single, quick test of the new self-contained assembly line.
 #
 # Usage:
 #   ./test_pipeline_locally.sh
 #
 # ==============================================================================
 
-set -e # Exit immediately if a command exits with a non-zero status.
-set -o pipefail # The return value of a pipeline is the status of the last command to exit with a non-zero status.
+set -e 
+set -o pipefail
 
-echo "--- Starting HouseBrain Local Pipeline Smoke Test ---"
+echo "--- Starting HouseBrain Local Consolidated Assembly Line Test ---"
 
 # --- Configuration ---
-# You can change this to any model you have available locally with 'ollama list'
-# Using a smaller model like llama3:8b can make the test faster.
-TEST_MODEL="qwen3:30b" 
+TEST_MODEL="llama3" 
 TEST_PROMPT="A simple, one-story, 2-bedroom, 1-bathroom rectangular house on a 30x50 feet plot."
-OUTPUT_DIR="output/local_test_run"
+OUTPUT_DIR="output/local_consolidated_test"
+RUN_NAME="local_consolidated_llama3_test"
 
 # --- Test Execution ---
 echo "Using model: $TEST_MODEL"
 echo "Using output directory: $OUTPUT_DIR"
-echo "Running automated_curation.py..."
+echo "Running the Consolidated Assembly Line..."
 
-python scripts/automated_curation.py \
+python scripts/run_complete_assembly_line.py \
     --prompt "$TEST_PROMPT" \
     --output-dir "$OUTPUT_DIR" \
+    --run-name "$RUN_NAME" \
     --model "$TEST_MODEL" \
-    --repair-model "$TEST_MODEL" \
     --max-retries 1
 
 echo ""
-echo "--- ✅ Local Pipeline Smoke Test Completed Successfully ---"
+echo "--- ✅ Local Consolidated Assembly Line Test Completed ---"
 echo "NOTE: This only confirms the script runs. Architectural quality depends on the model's performance."
