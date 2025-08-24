@@ -82,7 +82,7 @@ def main():
         "--input",
         type=str,
         # Make input optional for easy testing
-        default="data/test_cases/multi_floor_perfect.json",
+        default="data/gold_standard/gold_standard_22_curated_llama_3.json",
         help="Path to the input HouseBrain JSON file."
     )
     parser.add_argument(
