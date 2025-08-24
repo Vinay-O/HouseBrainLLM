@@ -1,145 +1,135 @@
 import argparse
 import json
 import logging
-import requests
-import sys
 import re
+import sys
 from pathlib import Path
 from typing import Optional
 
-# --- Pre-computation Setup ---
-SRC_PATH = Path(__file__).resolve().parent.parent / "src"
-sys.path.insert(0, str(SRC_PATH))
+# --- Add project root to sys.path ---
+project_root = Path(__file__).parent.parent
+sys.path.append(str(project_root))
+
+from src.housebrain.schema import HouseOutput
+
 
 # --- Logging Configuration ---
 logging.basicConfig(level=logging.INFO, format="%(message)s", stream=sys.stdout)
 logger = logging.getLogger(__name__)
 
-def load_schema_string() -> str:
-    """Loads the Pydantic schema file as a string."""
-    try:
-        # Assuming the schema is now in a more standard location
-        with open(SRC_PATH / "housebrain" / "schemas" / "house_schema.py", "r") as f:
-            return f.read()
-    except FileNotFoundError:
-        # Fallback to the old location for compatibility
-        try:
-            with open(SRC_PATH / "housebrain" / "schema.py", "r") as f:
-                return f.read()
-        except FileNotFoundError:
-            logger.error("Could not find the schema definition file.")
-            sys.exit(1)
-
-SCHEMA_PY_STRING = load_schema_string()
-
-PROMPT_TEMPLATE = """You are an expert Indian architect AI. Your task is to generate a complete, valid, and architecturally sound house design in JSON format based on a user request.
-
-**User Request:**
-{scenario}
-
-**Your Task:**
-Create a JSON object that represents the house plan. This JSON object must be **100% compliant** with the following Pydantic schema definition. You must invent all necessary details, including coordinates, areas, and costs, to create a complete and valid design.
-
-**TARGET PYDANTIC SCHEMA DEFINITION:**
-```python
-{schema_definition}
-```
-
-**Instructions:**
-1.  Adhere strictly to all data types, required fields, and `Enum` values specified in the schema.
-2.  Ensure all coordinates and dimensions are plausible and geometrically consistent.
-3.  Your output must be **ONLY the valid JSON object**, enclosed in a markdown block. Do not include any other text, explanations, or apologies.
-"""
 
 def call_ollama(prompt: str, model: str) -> Optional[str]:
     """Sends a request to the Ollama API."""
+    import requests  # Import locally for Colab compatibility
     url = "http://localhost:11434/api/generate"
     # Hint to Ollama/models to return JSON only when possible.
     payload = { "model": model, "stream": False, "prompt": prompt, "format": "json" }
-    logger.info(f"Sending request to Ollama with model '{model}'...")
     try:
-        response = requests.post(url, json=payload, timeout=1800) # 30-minute timeout for complex generation
+        response = requests.post(url, json=payload, timeout=1800) # 30 min timeout
         response.raise_for_status()
-        return response.json().get("response")
+        return response.json().get("response", "")
     except requests.exceptions.RequestException as e:
-        logger.error(f"Ollama request failed: {e}")
+        logger.error(f"Error calling Ollama API: {e}")
         return None
 
 def extract_json_from_response(raw_text: str) -> str:
-    """Extracts a JSON object from a markdown block or raw string.
-
-    Strategy:
-    1) Prefer fenced code blocks (```json ... ``` or ``` ... ```)
-    2) If not found, attempt to find the largest balanced JSON object by brace matching
-    3) Fallback: return stripped raw text
     """
-    # 1) Fenced block with optional language tag
-    fenced_matches = list(re.finditer(r"```(?:json|jsonc)?\s*(\{[\s\S]*?\})\s*```", raw_text, re.IGNORECASE))
-    if fenced_matches:
-        # Choose the longest fenced JSON block to maximize chance of completeness
-        longest = max(fenced_matches, key=lambda m: len(m.group(1)))
-        return longest.group(1)
+    Extracts a JSON object from a potentially messy string.
+    Tries to find a JSON object within ```json ... ```,
+    then falls back to the largest balanced '{...}' block.
+    """
+    # 1. Prioritize JSON within markdown code blocks
+    match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", raw_text, re.DOTALL)
+    if match:
+        return match.group(1)
 
-    # 2) Brace matching to find a valid JSON object substring
-    start_indices = [i for i, ch in enumerate(raw_text) if ch == '{']
-    for start in start_indices:
-        depth = 0
-        for end in range(start, len(raw_text)):
-            ch = raw_text[end]
-            if ch == '{':
-                depth += 1
-            elif ch == '}':
-                depth -= 1
-                if depth == 0:
-                    candidate = raw_text[start:end+1]
-                    try:
-                        json.loads(candidate)
-                        return candidate
-                    except Exception:
-                        pass
-    # 3) Fallback for raw JSON output or otherwise
-    return raw_text.strip()
+    # 2. Fallback: Find the largest valid JSON object in the string
+    best_json = ""
+    max_len = 0
+    stack = []
+    start_index = -1
+
+    for i, char in enumerate(raw_text):
+        if char == '{':
+            if not stack:
+                start_index = i
+            stack.append('{')
+        elif char == '}':
+            if stack:
+                stack.pop()
+                if not stack and start_index != -1:
+                    # Found a complete, balanced JSON object
+                    candidate = raw_text[start_index : i + 1]
+                    if len(candidate) > max_len:
+                        try:
+                            json.loads(candidate) # Check if it's valid
+                            best_json = candidate
+                            max_len = len(candidate)
+                        except json.JSONDecodeError:
+                            continue # Not a valid JSON, keep searching
+    
+    if best_json:
+        return best_json
+
+    # 3. If no JSON is found, return the raw text for debugging
+    return raw_text
+
+
+def generate_and_save_draft(prompt: str, model: str, output_file: Path):
+    """Generates a draft using Ollama and saves it."""
+    logger.info(f"Sending request to Ollama with model '{model}'...")
+    raw_response = call_ollama(prompt, model)
+
+    if not raw_response:
+        logger.error("Failed to get a response from Ollama.")
+        return
+
+    json_str = extract_json_from_response(raw_response)
+
+    try:
+        # Validate that the extracted string is valid JSON
+        parsed_json = json.loads(json_str)
+        
+        # Save the clean, valid JSON
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+        with open(output_file, "w") as f:
+            json.dump(parsed_json, f, indent=2)
+        logger.info(f"✅ Successfully generated and saved valid JSON to {output_file}")
+
+    except json.JSONDecodeError:
+        logger.error("Response was not valid JSON. Saving raw response for debugging.")
+        error_file = output_file.with_suffix(f"{output_file.suffix}.raw_error.txt")
+        error_file.parent.mkdir(parents=True, exist_ok=True)
+        with open(error_file, "w") as f:
+            f.write(raw_response)
+        logger.info(f"Raw response saved to {error_file}")
+
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate a single 'best effort' draft for a training example.")
-    parser.add_argument("--scenario", type=str, required=True, help="The design scenario prompt.")
-    parser.add_argument("--output-file", type=str, required=True, help="Path to save the generated draft.")
-    parser.add_argument("--model", type=str, default="deepseek-r1:8b", help="The Ollama model to use.")
+    parser = argparse.ArgumentParser(description="Generate a draft house plan using a local LLM.")
+    parser.add_argument("--model", type=str, required=True, help="Ollama model to use (e.g., 'llama3').")
+    
+    prompt_group = parser.add_mutually_exclusive_group(required=True)
+    prompt_group.add_argument("--scenario", type=str, help="A short text description of the house plan to generate.")
+    prompt_group.add_argument("--prompt-file", type=str, help="Path to a text file containing the full prompt.")
+
+    parser.add_argument("--output-file", type=str, required=True, help="Path to save the output JSON file.")
+
     args = parser.parse_args()
 
-    logger.info(f"Generating a draft for scenario: '{args.scenario}'")
-
-    full_prompt = PROMPT_TEMPLATE.format(
-        scenario=args.scenario,
-        schema_definition=SCHEMA_PY_STRING
-    )
-
-    raw_response = call_ollama(full_prompt, args.model)
-
-    if raw_response:
+    if args.prompt_file:
         try:
-            json_content = extract_json_from_response(raw_response)
-            # Validate if it's valid JSON before saving
-            json.loads(json_content)
-
-            output_path = Path(args.output_file)
-            output_path.parent.mkdir(parents=True, exist_ok=True)
-            with open(output_path, "w") as f:
-                # Save the extracted JSON content directly
-                f.write(json_content)
-            logger.info(f"✅ Successfully extracted and saved valid JSON draft to {args.output_file}")
-        except json.JSONDecodeError:
-            logger.error("Response was not valid JSON. Saving raw response for debugging.")
-            # Save raw response if JSON parsing fails
-            output_path = Path(args.output_file + ".raw_error.txt")
-            output_path.parent.mkdir(parents=True, exist_ok=True)
-            with open(output_path, "w") as f:
-                f.write(raw_response)
-            logger.info(f"Raw response saved to {output_path}")
-        except Exception as e:
-            logger.error(f"Failed to save the draft: {e}")
+            prompt = Path(args.prompt_file).read_text()
+        except FileNotFoundError:
+            logger.error(f"Error: Prompt file not found at {args.prompt_file}")
+            sys.exit(1)
     else:
-        logger.error("Failed to get a response from the model.")
+        prompt = args.scenario
+
+    output_path = Path(args.output_file)
+    
+    logger.info(f"Generating a draft for scenario: '{args.scenario or 'from file'}'")
+    generate_and_save_draft(prompt, args.model, output_path)
 
 if __name__ == "__main__":
     main()
