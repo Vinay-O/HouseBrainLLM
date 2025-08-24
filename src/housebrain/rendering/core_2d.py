@@ -234,6 +234,150 @@ class Professional2DRenderer:
         dy = a[1] - py * off
         return f"M {ax:.1f} {ay:.1f} L {bx:.1f} {by:.1f} L {cx:.1f} {cy:.1f} L {dx:.1f} {dy:.1f} Z"
 
+    def _mm_to_feet_inches_str(self, mm: float) -> str:
+        """Convert millimeters to feet and inches string format."""
+        if mm < 0:
+            return "-" + self._mm_to_feet_inches_str(abs(mm))
+        inches = mm / 25.4
+        feet = int(inches // 12)
+        remaining_inches = inches % 12
+        
+        if feet > 0:
+            return f"{feet}'-{remaining_inches:.0f}\""
+        else:
+            return f"{remaining_inches:.1f}\""
+            
+    def _add_chained_dimensions(self, svg: List[str], T, margin: float):
+        """Add chained dimensioning system for the building exterior."""
+        if not self.walls:
+            return
+
+        all_points = []
+        for w in self.walls:
+            all_points.extend([w["start"], w["end"]])
+
+        minx = min(p[0] for p in all_points)
+        miny = min(p[1] for p in all_points)
+        maxx = max(p[0] for p in all_points)
+        maxy = max(p[1] for p in all_points)
+        
+        # --- HORIZONTAL CHAINED DIMENSIONS (Bottom of plan) ---
+        x_points = sorted(list(set(p[0] for p in all_points)))
+        y_dim_line_world = miny - 600 # 600mm below the building
+        TY_DIM = T(0, y_dim_line_world)[1]
+        
+        for i in range(len(x_points) - 1):
+            x1, x2 = x_points[i], x_points[i+1]
+            dim_mm = x2 - x1
+            if dim_mm < 50: continue # Skip tiny dimensions
+            
+            TX1, _ = T(x1, miny)
+            TX2, _ = T(x2, miny)
+            
+            # Dimension line segment
+            svg.append(f"<line x1='{TX1:.1f}' y1='{TY_DIM:.1f}' x2='{TX2:.1f}' y2='{TY_DIM:.1f}' class='dim'/>")
+            # Extension lines from building to dimension line
+            svg.append(f"<line x1='{TX1:.1f}' y1='{T(x1, miny)[1]:.1f}' x2='{TX1:.1f}' y2='{TY_DIM + 5:.1f}' class='dim'/>")
+            svg.append(f"<line x1='{TX2:.1f}' y1='{T(x2, miny)[1]:.1f}' x2='{TX2:.1f}' y2='{TY_DIM + 5:.1f}' class='dim'/>")
+            # Dimension text
+            dim_text = self._mm_to_feet_inches_str(dim_mm)
+            text_x = (TX1 + TX2) / 2
+            svg.append(f"<text x='{text_x:.1f}' y='{TY_DIM - 8:.1f}' class='dimtxt' text-anchor='middle'>{dim_text}</text>")
+            
+        # Overall Horizontal Dimension
+        TX1, _ = T(minx, miny)
+        TX2, _ = T(maxx, miny)
+        TY_OVERALL = TY_DIM + 40
+        svg.append(f"<line x1='{TX1:.1f}' y1='{TY_OVERALL:.1f}' x2='{TX2:.1f}' y2='{TY_OVERALL:.1f}' class='dim'/>")
+        svg.append(f"<line x1='{TX1:.1f}' y1='{T(minx, miny)[1]:.1f}' x2='{TX1:.1f}' y2='{TY_OVERALL + 5:.1f}' class='dim'/>")
+        svg.append(f"<line x1='{TX2:.1f}' y1='{T(maxx, miny)[1]:.1f}' x2='{TX2:.1f}' y2='{TY_OVERALL + 5:.1f}' class='dim'/>")
+        dim_text = self._mm_to_feet_inches_str(maxx - minx)
+        svg.append(f"<text x='{(TX1 + TX2) / 2:.1f}' y='{TY_OVERALL - 8:.1f}' class='dimtxt' text-anchor='middle'>{dim_text}</text>")
+
+        # --- VERTICAL CHAINED DIMENSIONS (Left of plan) ---
+        y_points = sorted(list(set(p[1] for p in all_points)))
+        x_dim_line_world = minx - 600 # 600mm left of the building
+        TX_DIM = T(x_dim_line_world, 0)[0]
+        
+        for i in range(len(y_points) - 1):
+            y1, y2 = y_points[i], y_points[i+1]
+            dim_mm = y2 - y1
+            if dim_mm < 50: continue
+
+            _, TY1 = T(minx, y1)
+            _, TY2 = T(minx, y2)
+            
+            svg.append(f"<line x1='{TX_DIM:.1f}' y1='{TY1:.1f}' x2='{TX_DIM:.1f}' y2='{TY2:.1f}' class='dim'/>")
+            svg.append(f"<line x1='{T(minx, y1)[0]:.1f}' y1='{TY1:.1f}' x2='{TX_DIM - 5:.1f}' y2='{TY1:.1f}' class='dim'/>")
+            svg.append(f"<line x1='{T(minx, y2)[0]:.1f}' y1='{TY2:.1f}' x2='{TX_DIM - 5:.1f}' y2='{TY2:.1f}' class='dim'/>")
+            dim_text = self._mm_to_feet_inches_str(dim_mm)
+            text_y = (TY1 + TY2) / 2
+            svg.append(f"<text transform='translate({TX_DIM - 8:.1f}, {text_y:.1f}) rotate(-90)' class='dimtxt' text-anchor='middle'>{dim_text}</text>")
+
+        # Overall Vertical Dimension
+        _, TY1 = T(minx, miny)
+        _, TY2 = T(minx, maxy)
+        TX_OVERALL = TX_DIM - 40
+        svg.append(f"<line x1='{TX_OVERALL:.1f}' y1='{TY1:.1f}' x2='{TX_OVERALL:.1f}' y2='{TY2:.1f}' class='dim'/>")
+        svg.append(f"<line x1='{T(minx, miny)[0]:.1f}' y1='{TY1:.1f}' x2='{TX_OVERALL - 5:.1f}' y2='{TY1:.1f}' class='dim'/>")
+        svg.append(f"<line x1='{T(minx, maxy)[0]:.1f}' y1='{TY2:.1f}' x2='{TX_OVERALL - 5:.1f}' y2='{TY2:.1f}' class='dim'/>")
+        dim_text = self._mm_to_feet_inches_str(maxy - miny)
+        svg.append(f"<text transform='translate({TX_OVERALL - 8:.1f}, {(TY1+TY2)/2:.1f}) rotate(-90)' class='dimtxt' text-anchor='middle'>{dim_text}</text>")
+
+    def _add_room_details(self, svg: List[str], T):
+        """Adds fixtures, furniture, and technical annotations to each room."""
+        
+        # Add a new layer group for fixtures
+        svg.append("<g id='fixtures'>")
+
+        for sp in self.spaces:
+            if not sp["boundary"] or len(sp["boundary"]) < 3:
+                continue
+            
+            # --- 1. Calculate Room Geometry ---
+            xs = [p[0] for p in sp["boundary"]]
+            ys = [p[1] for p in sp["boundary"]]
+            minx, maxx = min(xs), max(xs)
+            miny, maxy = min(ys), max(ys)
+            cx = (minx + maxx) / 2
+            cy = (miny + maxy) / 2
+            w_mm = maxx - minx
+            h_mm = maxy - miny
+            
+            CX, CY = T(cx, cy)
+            
+            # --- 2. Add Fixtures based on Room Type ---
+            space_type = sp["type"].lower()
+            
+            # Simple furniture/fixture placeholders
+            if space_type == "kitchen":
+                # Countertop
+                svg.append(f"<rect x='{T(minx, maxy - 600)[0]:.1f}' y='{T(minx, maxy - 600)[1]:.1f}' width='{w_mm*self.s:.1f}' height='{600*self.s:.1f}' fill='none' stroke='#aaa' stroke-width='1'/>")
+                # Sink
+                svg.append(f"<rect x='{T(cx - 300, maxy - 450)[0]:.1f}' y='{T(cx - 300, maxy - 450)[1]:.1f}' width='{600*self.s:.1f}' height='{300*self.s:.1f}' fill='white' stroke='#333' stroke-width='1'/>")
+            elif space_type == "bathroom":
+                # Toilet
+                svg.append(f"<circle cx='{T(minx + 400, miny + 400)[0]:.1f}' cy='{T(minx + 400, miny + 400)[1]:.1f}' r='{200*self.s:.1f}' class='fixture' fill='white'/>")
+                # Sink
+                svg.append(f"<rect x='{T(maxx - 800, miny + 200)[0]:.1f}' y='{T(maxx - 800, miny + 200)[1]:.1f}' width='{600*self.s:.1f}' height='{400*self.s:.1f}' fill='white' class='fixture'/>")
+            elif "bedroom" in space_type:
+                 # Bed (Queen size ~ 5'x6.6' -> 1524mm x 2032mm)
+                bed_w, bed_h = 1524 * self.s, 2032 * self.s
+                svg.append(f"<rect x='{CX - bed_w/2:.1f}' y='{CY - bed_h/2:.1f}' width='{bed_w:.1f}' height='{bed_h:.1f}' fill='none' stroke='#888' stroke-width='1.5'/>")
+                # Pillow
+                svg.append(f"<rect x='{CX - bed_w/2 + 5:.1f}' y='{CY - bed_h/2 + 5:.1f}' width='{bed_w - 10:.1f}' height='{bed_h * 0.2:.1f}' fill='none' stroke='#aaa' stroke-width='1'/>")
+
+            # --- 3. Add Technical Annotations ---
+            
+            # Area calculation
+            area_m2 = (w_mm / 1000) * (h_mm / 1000)
+            area_sqft = area_m2 * 10.7639
+            
+            # Update main label with area
+            svg.append(f"<text x='{CX:.1f}' y='{CY:.1f}' class='sub' text-anchor='middle'>{area_sqft:.0f} sq ft</text>")
+
+        svg.append("</g>") # Close fixtures group
+
     def _opening_span(self, wall: Dict, opening: Dict) -> Tuple[Tuple[float, float], Tuple[float, float]]:
         ux, uy, L = self._line_dir(wall["start"], wall["end"])
         oL = opening["width"]
@@ -289,11 +433,20 @@ class Professional2DRenderer:
         w = max(1.0, maxx - minx)
         h = max(1.0, maxy - miny)
         margin = 80.0
-        sx = (width - margin * 2) / w
-        sy = (height - margin * 2) / h
+        
+        # Increase margin dynamically to make space for dimensions
+        # Check if dimensions will be added. For now, we assume they always are.
+        margin_x_left = 180.0
+        margin_x_right = 80.0
+        margin_y_top = 80.0
+        margin_y_bottom = 180.0
+
+        sx = (width - margin_x_left - margin_x_right) / w
+        sy = (height - margin_y_top - margin_y_bottom) / h
         s = min(sx, sy)
-        tx = margin - minx * s
-        ty = margin + maxy * s
+        self.s = s # Store scale factor for use in other methods
+        tx = margin_x_left - minx * s
+        ty = margin_y_top + maxy * s
 
         def T(x: float, y: float) -> Tuple[float, float]:
             return (x * s + tx, -y * s + ty)
@@ -421,6 +574,14 @@ class Professional2DRenderer:
              cy = sum(p[1] for p in sp["boundary"]) / len(sp["boundary"])
              CX, CY = T(cx, cy)
              svg.append(f"<text x='{CX:.1f}' y='{CY-10:.1f}' class='label' text-anchor='middle' font-weight='bold'>{sp['name']}</text>")
+        svg.append("</g>")
+
+        # Render Room Details (Fixtures, internal annotations)
+        self._add_room_details(svg, T)
+
+        # Render Dimensions
+        svg.append("<g id='dimensions'>")
+        self._add_chained_dimensions(svg, T, margin)
         svg.append("</g>")
 
 
