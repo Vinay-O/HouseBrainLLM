@@ -22,7 +22,7 @@ Your task is to meticulously correct the JSON to fix *only the specific errors l
 You must adhere to the original design intent described in the user's prompt as closely as possible.
 Do not add, remove, or significantly change architectural elements unless it's necessary to resolve a validation error.
 The final output must be a single, complete, and valid JSON object that strictly follows the provided schema.
-
+{expert_hints}
 ---
 **Original User Prompt:**
 {original_prompt}
@@ -46,22 +46,24 @@ The final output must be a single, complete, and valid JSON object that strictly
 Now, provide the corrected and complete JSON object.
 """
 
+# A dictionary of expert hints to inject based on error messages
 REPAIR_HINTS = {
-    "total_area": (
-        "REPAIR HINT: The `total_area` field must be the sum of the areas of all rooms "
-        "across all `levels`. Recalculate this value precisely and update the field. "
-        "Also ensure the `input.basicDetails.totalArea` field matches this new value if it exists."
-    ),
-    "overlap": (
-        "REPAIR HINT: The error indicates that two rooms are overlapping. "
-        "Carefully review the `bounds` (x, y, width, height) of the specified rooms "
-        "and adjust them so they no longer intersect. Do not change the overall plot dimensions."
-    ),
-    "input": (
-        "REPAIR HINT: The error indicates a missing or malformed `input` object. "
-        "Ensure the `input` object and its nested fields (`basicDetails`, `plot`, `roomBreakdown`) "
-        "are present and correctly structured according to the schema."
-    )
+    "Field required": {
+        "trigger_text": "Field required",
+        "hint": "\n**Expert Hint:** The draft is missing one or more fundamental keys required by the schema. Ensure the final JSON object includes all necessary fields like `input`, `levels`, `total_area`, etc., at the correct hierarchy."
+    },
+    "total_area": {
+        "trigger_text": "total_area",
+        "hint": "\n**Expert Hint:** The `total_area` value seems incorrect. Recalculate the sum of all room areas across all levels and update the `total_area` field to match. Also ensure the `input.basicDetails.totalArea` is consistent."
+    },
+    "overlap": {
+        "trigger_text": "overlap",
+        "hint": "\n**Expert Hint:** Two or more rooms are overlapping. Review the `bounds` (x, y, width, height) of the mentioned rooms and adjust them so they are adjacent but do not intersect."
+    },
+    "Door": {
+         "trigger_text": "Door",
+         "hint": "\n**Expert Hint:** There is a problem with a Door's placement. A door must connect two rooms that share a wall. Check the `room1` and `room2` fields and the `bounds` of those rooms to ensure they are adjacent. Adjust the door's `position` to be on the shared boundary."
+    }
 }
 
 
@@ -69,6 +71,23 @@ def get_schema_definition():
     """Extracts the HouseOutput schema definition as a string."""
     from inspect import getsource
     return getsource(HouseOutput)
+
+def generate_expert_hints(error_json: str) -> str:
+    """Analyzes errors and generates contextual hints."""
+    hints_to_add = set()
+    errors_data = json.loads(error_json)
+    error_messages = " ".join(errors_data.get("errors", []))
+
+    for key, hint_data in REPAIR_HINTS.items():
+        if hint_data["trigger_text"] in error_messages:
+            hints_to_add.add(hint_data["hint"])
+    
+    if not hints_to_add:
+        return ""
+        
+    header = "\n\n--- Expert Hints to Guide Your Repair ---"
+    return header + "".join(hints_to_add)
+
 
 def repair_draft(
     draft_path: Path,
@@ -88,7 +107,7 @@ def repair_draft(
         with open(draft_path, 'r') as f:
             flawed_json_str = f.read()
         
-        with open(error_path, 'r') as f:
+        with open(error_path, 'r', encoding='utf-8') as f:
             errors_str = f.read()
             # Also load as JSON to inspect errors for hints
             errors_json = json.loads(errors_str)
@@ -103,30 +122,16 @@ def repair_draft(
     # --- 2. Construct the repair prompt ---
     schema_def = get_schema_definition()
     
-    # Add contextual hints for common, difficult errors
-    final_prompt = REPAIR_PROMPT_TEMPLATE
-    injected_hints = ""
-    error_text_for_prompt = json.dumps(errors_json, indent=2)
+    # --- Generate contextual hints based on the errors ---
+    expert_hints = generate_expert_hints(errors_str)
 
-    if "total_area" in error_text_for_prompt.lower():
-        injected_hints += f"\n{REPAIR_HINTS['total_area']}\n"
-    if "overlap" in error_text_for_prompt.lower():
-        injected_hints += f"\n{REPAIR_HINTS['overlap']}\n"
-    if "'input'" in error_text_for_prompt.lower(): # Check for the key 'input'
-        injected_hints += f"\n{REPAIR_HINTS['input']}\n"
-
-    if injected_hints:
-        final_prompt = final_prompt.replace(
-            "---",
-            f"---\n**Specific Instructions:**\n{injected_hints}---",
-            1  # Replace only the first occurrence
-        )
-
-    repair_prompt = final_prompt.format(
+    # --- Construct the full prompt for the repair model ---
+    repair_prompt = REPAIR_PROMPT_TEMPLATE.format(
         original_prompt=original_prompt,
         flawed_json=flawed_json_str,
-        validation_errors=error_text_for_prompt,
-        schema_definition=schema_def
+        validation_errors=errors_str,
+        schema_definition=schema_def,
+        expert_hints=expert_hints
     )
 
     # Save the full repair prompt for debugging
@@ -150,7 +155,7 @@ def main():
     parser.add_argument("--error-file", type=str, required=True, help="Path to the JSON file containing validation errors.")
     parser.add_argument("--prompt-file", type=str, required=True, help="Path to the file containing the original user prompt.")
     parser.add_argument("--output-file", type=str, required=True, help="Path to save the repaired JSON file.")
-    parser.add_argument("--model", type=str, default="llama3", help="Name of the Ollama model to use for repair.")
+    parser.add_argument("--model", type=str, default="llama3", help="Name of the Ollama model to use for the repair.")
     
     args = parser.parse_args()
 
