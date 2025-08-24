@@ -4,6 +4,7 @@ import subprocess
 import sys
 from pathlib import Path
 import shutil
+import hashlib
 
 # --- Logging Configuration ---
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -38,7 +39,8 @@ def automated_curation_pipeline(
     output_dir: Path,
     max_retries: int,
     model: str,
-    repair_model: str
+    repair_model: str,
+    run_name: str | None = None
 ):
     """
     Manages the full Generate -> Analyze -> Repair loop.
@@ -46,16 +48,22 @@ def automated_curation_pipeline(
     logger.info("--- Starting Automated Curation Pipeline ---")
 
     # --- Setup working directory and paths ---
-    run_id = Path(prompt).stem if Path(prompt).exists() else "custom_prompt"
+    if run_name:
+        # Sanitize run_name to be a valid directory name
+        sanitized_run_name = "".join(c for c in run_name if c.isalnum() or c in (' ', '_', '-')).rstrip()
+        run_id = sanitized_run_name.replace(' ', '_')
+    else:
+        # If no run_name is provided, create one from a hash of the prompt
+        prompt_hash = hashlib.sha1(prompt.encode()).hexdigest()[:10]
+        run_id = f"prompt_{prompt_hash}"
+
     work_dir = output_dir / run_id
     work_dir.mkdir(parents=True, exist_ok=True)
     
+    # The 'prompt' argument is now always treated as text content.
     prompt_file = work_dir / "prompt.txt"
-    if Path(prompt).exists():
-        shutil.copy(prompt, prompt_file)
-    else:
-        with open(prompt_file, 'w') as f:
-            f.write(prompt)
+    with open(prompt_file, 'w', encoding='utf-8') as f:
+        f.write(prompt)
 
     draft_file = work_dir / "draft_0.json"
     error_file = work_dir / "errors_0.json"
@@ -140,6 +148,12 @@ def main():
         help="A string containing the design prompt, or a path to a .txt file with the prompt."
     )
     parser.add_argument(
+        "--run-name",
+        type=str,
+        default=None,
+        help="Optional unique name for this run, used for the output folder."
+    )
+    parser.add_argument(
         "--output-dir",
         type=str,
         default="output/automated_curation",
@@ -173,7 +187,8 @@ def main():
         output_dir=Path(args.output_dir),
         max_retries=args.max_retries,
         model=args.model,
-        repair_model=repair_model
+        repair_model=repair_model,
+        run_name=args.run_name
     )
 
 if __name__ == "__main__":
