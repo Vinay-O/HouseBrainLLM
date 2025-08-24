@@ -168,8 +168,8 @@ class Professional2DRenderer:
         opening_id_counter = 0
         for room in level.rooms:
             # Process doors associated with this room
-            for door in room.doors:
-                 # Doors are often listed in both rooms they connect. We only process them once.
+            for door in room.doors or []:
+                # Doors are often listed in both rooms they connect. We only process them once.
                 if any(o.get('metadata', {}).get('original_id') == door.position for o in self.openings):
                     continue
 
@@ -193,7 +193,7 @@ class Professional2DRenderer:
                     logging.warning(f"Could not find a wall for door at ({door.position.x}, {door.position.y})")
 
             # Process windows
-            for window in room.windows:
+            for window in room.windows or []:
                 wall_info = self._find_closest_wall_segment(window.position, window.room_id)
                 if wall_info:
                     wall_id, position_on_wall = wall_info
@@ -404,7 +404,7 @@ class Professional2DRenderer:
         svg.append(f"<line x1='10' y1='100' x2='{block_w-10}' y2='100' stroke='#333' stroke-width='0.5'/>")
         svg.append(f"<text x='15' y='118' class='label' font-size='9'>SCALE: As Noted</text>")
         svg.append(f"<text x='150' y='118' class='label' font-size='9'>DRAWN BY: HB-AI</text>")
-        svg.append(f"<text x='{block_w-15}' y='118' class='label' font-size='12' font-weight='bold' text-anchor='end'>A-101</text>")
+        svg.append(f"<text x='{block_w-15}' y='118' class='label' font-size='12' font-weight='bold' text-anchor='end'>A-{101 + self.level_to_render_idx}</text>")
         
         svg.append("</g>")
 
@@ -445,29 +445,37 @@ class Professional2DRenderer:
             ys = [p[1] for p in stair_room["boundary"]]
             minx, maxx = min(xs), max(xs)
             miny, maxy = min(ys), max(ys)
+            cx = (minx + maxx) / 2
+            cy = (miny + maxy) / 2
             
             # Draw treads
-            treads = 12
-            if (maxx - minx) < (maxy - miny): # Vertical stairwell
+            treads = 16 # More realistic number for a 10ft ceiling
+            is_vertical = (maxx - minx) < (maxy - miny)
+            
+            if is_vertical: # Vertical stairwell
                 for i in range(1, treads):
                     y = miny + (i * (maxy - miny) / treads)
                     X1, Y1 = T(minx + 50, y)
                     X2, Y2 = T(maxx - 50, y)
-                    svg.append(f"<line x1='{X1:.1f}' y1='{Y1:.1f}' x2='{X2:.1f}' y2='{Y2:.1f}' stroke='#888' stroke-width='1'/>")
+                    svg.append(f"<line x1='{X1:.1f}' y1='{Y1:.1f}' x2='{X2:.1f}' y2='{Y2:.1f}' class='stair-tread'/>")
                 # Arrow UP
-                AX, AY = T((minx+maxx)/2, miny + (maxy-miny)*0.25)
-                svg.append(f"<path d='M {AX:.1f} {AY:.1f} l 0 -15 l -5 5 l 5 -5 l 5 5' stroke='#111' stroke-width='1.5' fill='none'/>")
-                svg.append(f"<text x='{AX+8:.1f}' y='{AY-8:.1f}' class='sub' font-size='9'>UP</text>")
+                AX_start, AY_start = T(cx, maxy - 500)
+                AX_end, AY_end = T(cx, miny + 500)
+                svg.append(f"<line x1='{AX_start:.1f}' y1='{AY_start:.1f}' x2='{AX_end:.1f}' y2='{AY_end:.1f}' class='stair-arrow'/>")
+                svg.append(f"<polygon points='{AX_end-4},{AY_end+8} {AX_end+4},{AY_end+8} {AX_end},{AY_end}' class='stair-arrow-head'/>")
+                svg.append(f"<text x='{AX_start + 8:.1f}' y='{AY_start - 8:.1f}' class='sub' font-size='9'>UP</text>")
             else: # Horizontal stairwell
                 for i in range(1, treads):
                     x = minx + (i * (maxx-minx) / treads)
                     X1, Y1 = T(x, miny + 50)
                     X2, Y2 = T(x, maxy - 50)
-                    svg.append(f"<line x1='{X1:.1f}' y1='{Y1:.1f}' x2='{X2:.1f}' y2='{Y2:.1f}' stroke='#888' stroke-width='1'/>")
+                    svg.append(f"<line x1='{X1:.1f}' y1='{Y1:.1f}' x2='{X2:.1f}' y2='{Y2:.1f}' class='stair-tread'/>")
                  # Arrow UP
-                AX, AY = T(minx + (maxx-minx)*0.25, (miny+maxy)/2)
-                svg.append(f"<path d='M {AX:.1f} {AY:.1f} l -15 0 l 5 -5 l -5 5 l 5 5' stroke='#111' stroke-width='1.5' fill='none'/>")
-                svg.append(f"<text x='{AX-20:.1f}' y='{AY+4:.1f}' class='sub' font-size='9'>UP</text>")
+                AX_start, AY_start = T(maxx - 500, cy)
+                AX_end, AY_end = T(minx + 500, cy)
+                svg.append(f"<line x1='{AX_start:.1f}' y1='{AY_start:.1f}' x2='{AX_end:.1f}' y2='{AY_end:.1f}' class='stair-arrow'/>")
+                svg.append(f"<polygon points='{AX_end+8},{AY_end-4} {AX_end+8},{AY_end+4} {AX_end},{AY_end}' class='stair-arrow-head'/>")
+                svg.append(f"<text x='{AX_start + 8:.1f}' y='{AY_start - 12:.1f}' class='sub' font-size='9'>UP</text>")
 
         svg.append("</g>")
 
@@ -625,8 +633,9 @@ class Professional2DRenderer:
             
             if op['type'] == 'door':
                 h = max(6.0, min(12.0, 0.9 * thickness_px))
-                handing = op['metadata'].get("handing", "RHR").upper()
-                swing_dir = op['metadata'].get("swing", "in").lower()
+                # Defaults because schema does not support this yet
+                handing = "RHR" 
+                swing_dir = "in"
                 
                 hinge_at_end = handing.startswith("R")
                 
