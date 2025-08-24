@@ -16,9 +16,10 @@ class Professional2DRenderer:
     It infers wall layouts from room boundaries.
     """
 
-    def __init__(self, house_plan: HouseOutput, sheet_mode: str = "floor"):
+    def __init__(self, house_plan: HouseOutput, sheet_mode: str = "floor", level_to_render_idx: int = 0):
         self.plan = house_plan
         self.sheet_mode = sheet_mode
+        self.level_to_render_idx = level_to_render_idx
         self.walls: List[Dict] = []
         self.openings: List[Dict] = []
         self.spaces: List[Dict] = []
@@ -26,9 +27,9 @@ class Professional2DRenderer:
         # Conversion factor from feet (schema) to mm (legacy renderer logic)
         self.ft_to_mm = 304.8
 
-        # Process the first level for now
-        if self.plan.levels:
-            self._process_level(self.plan.levels[0])
+        # Process the specified level
+        if self.plan.levels and len(self.plan.levels) > self.level_to_render_idx:
+            self._process_level(self.plan.levels[self.level_to_render_idx])
 
     def _process_level(self, level: Level):
         """Infers walls and populates internal structures from a Level object."""
@@ -417,6 +418,58 @@ class Professional2DRenderer:
         svg.append(f"<text x='0' y='{-na_size-8}' text-anchor='middle' class='label' font-weight='bold' font-size='14'>N</text>")
         svg.append("</g>")
 
+    def _add_stairs(self, svg: List[str], T):
+        """Draws staircases on the plan."""
+        svg.append("<g id='stairs'>")
+        # Access the stairs from the specific level being rendered.
+        current_level_number = self.plan.levels[self.level_to_render_idx].level_number
+        current_level_stairs = self.plan.levels[self.level_to_render_idx].stairs
+        
+        for stair in current_level_stairs:
+            # We only draw the stair representation on its starting floor.
+            if stair.floor_from != current_level_number:
+                continue
+
+            pos = (stair.position.x * self.ft_to_mm, stair.position.y * self.ft_to_mm)
+            w = stair.width * self.ft_to_mm
+            l = stair.length * self.ft_to_mm
+            
+            # For simplicity, we assume stairs are axis-aligned and find the nearest stairwell room boundary.
+            # A more robust solution would use rotation.
+            stair_room = next((s for s in self.spaces if s["type"] == "stairwell"), None)
+            if not stair_room:
+                continue # Cannot draw stairs without a stairwell
+
+            # Simplified: Assume stair aligns with the shorter dimension of the stairwell
+            xs = [p[0] for p in stair_room["boundary"]]
+            ys = [p[1] for p in stair_room["boundary"]]
+            minx, maxx = min(xs), max(xs)
+            miny, maxy = min(ys), max(ys)
+            
+            # Draw treads
+            treads = 12
+            if (maxx - minx) < (maxy - miny): # Vertical stairwell
+                for i in range(1, treads):
+                    y = miny + (i * (maxy - miny) / treads)
+                    X1, Y1 = T(minx + 50, y)
+                    X2, Y2 = T(maxx - 50, y)
+                    svg.append(f"<line x1='{X1:.1f}' y1='{Y1:.1f}' x2='{X2:.1f}' y2='{Y2:.1f}' stroke='#888' stroke-width='1'/>")
+                # Arrow UP
+                AX, AY = T((minx+maxx)/2, miny + (maxy-miny)*0.25)
+                svg.append(f"<path d='M {AX:.1f} {AY:.1f} l 0 -15 l -5 5 l 5 -5 l 5 5' stroke='#111' stroke-width='1.5' fill='none'/>")
+                svg.append(f"<text x='{AX+8:.1f}' y='{AY-8:.1f}' class='sub' font-size='9'>UP</text>")
+            else: # Horizontal stairwell
+                for i in range(1, treads):
+                    x = minx + (i * (maxx-minx) / treads)
+                    X1, Y1 = T(x, miny + 50)
+                    X2, Y2 = T(x, maxy - 50)
+                    svg.append(f"<line x1='{X1:.1f}' y1='{Y1:.1f}' x2='{X2:.1f}' y2='{Y2:.1f}' stroke='#888' stroke-width='1'/>")
+                 # Arrow UP
+                AX, AY = T(minx + (maxx-minx)*0.25, (miny+maxy)/2)
+                svg.append(f"<path d='M {AX:.1f} {AY:.1f} l -15 0 l 5 -5 l -5 5 l 5 5' stroke='#111' stroke-width='1.5' fill='none'/>")
+                svg.append(f"<text x='{AX-20:.1f}' y='{AY+4:.1f}' class='sub' font-size='9'>UP</text>")
+
+        svg.append("</g>")
 
     def _opening_span(self, wall: Dict, opening: Dict) -> Tuple[Tuple[float, float], Tuple[float, float]]:
         ux, uy, L = self._line_dir(wall["start"], wall["end"])
@@ -619,6 +672,9 @@ class Professional2DRenderer:
         # Render Room Details (Fixtures, internal annotations)
         self._add_room_details(svg, T)
 
+        # Render Stairs
+        self._add_stairs(svg, T)
+
         # Render Dimensions
         svg.append("<g id='dimensions'>")
         self._add_chained_dimensions(svg, T, margin)
@@ -634,17 +690,25 @@ class Professional2DRenderer:
 
 def render_2d_plan(house_plan: HouseOutput, output_dir: Path, base_filename: str):
     """
-    High-level function to generate and save 2D floor plans.
+    High-level function to generate and save 2D floor plans for each level.
     """
     logger = logging.getLogger(__name__)
-    renderer = Professional2DRenderer(house_plan)
-    
-    # For now, just a basic render
-    svg_content = renderer.render()
-    
-    output_path = output_dir / f"{base_filename}_2d_floor_plan.svg"
-    try:
-        output_path.write_text(svg_content, encoding="utf-8")
-        logger.info(f"✅ Successfully rendered 2D plan to {output_path.resolve()}")
-    except Exception as e:
-        logger.error(f"❌ Failed to write 2D plan SVG: {e}", exc_info=True)
+
+    if not house_plan.levels:
+        logger.warning("No levels found in the house plan. Nothing to render.")
+        return
+
+    for i, level in enumerate(house_plan.levels):
+        logger.info(f"Rendering Level {level.level_number}...")
+        
+        # Pass the full plan, but also the index of the level to render
+        renderer = Professional2DRenderer(house_plan, level_to_render_idx=i)
+        
+        svg_content = renderer.render()
+        
+        output_path = output_dir / f"{base_filename}_level_{level.level_number}.svg"
+        try:
+            output_path.write_text(svg_content, encoding="utf-8")
+            logger.info(f"✅ Successfully rendered Level {level.level_number} to {output_path.resolve()}")
+        except Exception as e:
+            logger.error(f"❌ Failed to write SVG for Level {level.level_number}: {e}", exc_info=True)
