@@ -71,8 +71,8 @@ def automated_curation_pipeline(
         ],
         "Initial draft generation failed."
     )
-    if not gen_success:
-        logger.error("Pipeline cannot continue. Exiting.")
+    if not gen_success or not draft_file.exists():
+        logger.error("Initial draft generation failed to produce an output file. Pipeline cannot continue. Exiting.")
         return
 
     # --- 2. Analysis and Repair Loop ---
