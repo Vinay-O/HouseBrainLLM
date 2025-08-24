@@ -81,7 +81,8 @@ def main():
     parser.add_argument(
         "--input",
         type=str,
-        required=True,
+        # Make input optional for easy testing
+        default="data/migrated_gold_standard/migrated_0001_a_vastu-compliant_2bhk_for_a_small_25x40_feet_east.json",
         help="Path to the input HouseBrain JSON file."
     )
     parser.add_argument(
@@ -105,9 +106,22 @@ def main():
 
     if not input_path.exists():
         logger.error(f"Error: Input file not found at {input_path}")
-        return
+        logger.error("Attempting to run migration script...")
+        try:
+            from scripts.migrate_legacy_data import main as migrate_main
+            logger.info("Running migration...")
+            migrate_main()
+            if not input_path.exists():
+                 logger.error("Migration complete, but test file still not found. Please check paths.")
+                 return
+            logger.info("Migration successful, retrying pipeline.")
+        except Exception as e:
+            logger.error(f"Failed to run migration script: {e}")
+            return
 
     run_pipeline(input_path, output_dir, args.formats)
 
 if __name__ == "__main__":
+    # This allows running the script directly for a quick test
+    # without needing to pass command-line arguments.
     main()
