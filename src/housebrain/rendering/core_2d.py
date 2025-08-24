@@ -378,6 +378,46 @@ class Professional2DRenderer:
 
         svg.append("</g>") # Close fixtures group
 
+    def _add_title_block(self, svg: List[str], width: int, height: int):
+        """Adds a professional title block to the bottom right of the sheet."""
+        block_x = width - 350
+        block_y = height - 150
+        block_w = 330
+        block_h = 130
+        
+        svg.append(f"<g id='title-block' transform='translate({block_x}, {block_y})'>")
+        svg.append(f"<rect x='0' y='0' width='{block_w}' height='{block_h}' fill='white' stroke='#333' stroke-width='1.5'/>")
+        
+        # Main Title
+        svg.append(f"<text x='{block_w/2}' y='30' class='label' font-size='16' font-weight='bold' text-anchor='middle'>ARCHITECTURAL FLOOR PLAN</text>")
+        
+        # Project Info
+        svg.append(f"<line x1='10' y1='50' x2='{block_w-10}' y2='50' stroke='#333' stroke-width='0.5'/>")
+        svg.append(f"<text x='15' y='68' class='label' font-size='10'>PROJECT:</text>")
+        svg.append(f"<text x='100' y='68' class='label' font-size='10' font-weight='bold'>HouseBrain AI Residence</text>")
+        
+        svg.append(f"<text x='15' y='88' class='label' font-size='10'>CLIENT:</text>")
+        svg.append(f"<text x='100' y='88' class='label' font-size='10'>[Client Name]</text>")
+
+        # Drawing Info
+        svg.append(f"<line x1='10' y1='100' x2='{block_w-10}' y2='100' stroke='#333' stroke-width='0.5'/>")
+        svg.append(f"<text x='15' y='118' class='label' font-size='9'>SCALE: As Noted</text>")
+        svg.append(f"<text x='150' y='118' class='label' font-size='9'>DRAWN BY: HB-AI</text>")
+        svg.append(f"<text x='{block_w-15}' y='118' class='label' font-size='12' font-weight='bold' text-anchor='end'>A-101</text>")
+        
+        svg.append("</g>")
+
+    def _add_north_arrow(self, svg: List[str], width: int, height: int):
+        """Adds a North arrow to the top right."""
+        NAx, NAy = width - 100, 100
+        na_size = 30
+        svg.append(f"<g id='north-arrow' transform='translate({NAx},{NAy})'>")
+        svg.append(f"<circle cx='0' cy='0' r='{na_size}' fill='white' stroke='#333' stroke-width='1'/>")
+        svg.append(f"<polygon points='0,{-na_size+5} {na_size/4},0 0,{na_size-15} {-na_size/4},0' fill='#333'/>")
+        svg.append(f"<text x='0' y='{-na_size-8}' text-anchor='middle' class='label' font-weight='bold' font-size='14'>N</text>")
+        svg.append("</g>")
+
+
     def _opening_span(self, wall: Dict, opening: Dict) -> Tuple[Tuple[float, float], Tuple[float, float]]:
         ux, uy, L = self._line_dir(wall["start"], wall["end"])
         oL = opening["width"]
@@ -583,6 +623,10 @@ class Professional2DRenderer:
         svg.append("<g id='dimensions'>")
         self._add_chained_dimensions(svg, T, margin)
         svg.append("</g>")
+
+        # Add Title Block and North Arrow
+        self._add_north_arrow(svg, width, height)
+        self._add_title_block(svg, width, height)
 
 
         svg.append("</svg>")
