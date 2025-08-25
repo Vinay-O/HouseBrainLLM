@@ -1,0 +1,309 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Industrial, triplex 6BHK villa. for a 40x60 feet plot. with a large garden. with servant's quarters.",
+      "totalArea": 1728
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 0,
+      "type": "ground_floor",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 20
+      },
+      "rooms": [
+        {
+          "id": "garden_0",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 16
+          },
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 20,
+              "height": 4,
+              "elevation": 3
+            },
+            {
+              "id": "w2",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 20,
+              "height": 4,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "servant_quarter_0",
+          "type": "servant_quarter",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 20,
+            "height": 4
+          },
+          "doors": [
+            {
+              "id": "d1",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "garden_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "type": "first_floor",
+      "bounds": {
+        "x": 0,
+        "y": 20,
+        "width": 40,
+        "height": 20
+      },
+      "rooms": [
+        {
+          "id": "bedroom_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 13,
+            "height": 8
+          },
+          "doors": [
+            {
+              "id": "d2",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "living_room_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 13,
+            "y": 20,
+            "width": 13,
+            "height": 8
+          },
+          "doors": [
+            {
+              "id": "d3",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "living_room_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 26,
+            "y": 20,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "id": "d4",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "bedroom_0"
+            },
+            {
+              "id": "d5",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "bedroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w5",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 7,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "type": "second_floor",
+      "bounds": {
+        "x": 0,
+        "y": 40,
+        "width": 40,
+        "height": 20
+      },
+      "rooms": [
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 13,
+            "height": 8
+          },
+          "doors": [
+            {
+              "id": "d6",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "bedroom_5"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w6",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 13,
+            "y": 40,
+            "width": 13,
+            "height": 8
+          },
+          "doors": [
+            {
+              "id": "d7",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "bedroom_5"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w7",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 26,
+            "y": 40,
+            "width": 14,
+            "height": 8
+          },
+          "doors": [
+            {
+              "id": "d8",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "bedroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w8",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 7,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_5",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 48,
+            "width": 26,
+            "height": 12
+          },
+          "doors": [
+            {
+              "id": "d9",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "bedroom_4"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w9",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 13,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "total_area": 1728,
+  "construction_cost": 259200.0,
+  "materials": {},
+  "render_paths": {}
+}

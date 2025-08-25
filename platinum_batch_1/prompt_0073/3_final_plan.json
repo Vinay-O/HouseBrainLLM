@@ -1,0 +1,502 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Contemporary, split-level 6BHK cottage. for a corner plot. with a spacious balcony for each bedroom. with a rooftop terrace. and be Vastu-compliant.",
+      "totalArea": 1445
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_0",
+          "type": "entrance",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 3,
+            "height": 6
+          },
+          "doors": [
+            {
+              "id": "d1",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 2,
+              "connecting_room_id": "living_room_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 3,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "id": "d2",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "entrance_0"
+            },
+            {
+              "id": "d3",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "dining_room_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 4,
+              "height": 4,
+              "elevation": 8
+            }
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 3,
+            "y": 8,
+            "width": 9,
+            "height": 5
+          },
+          "doors": [
+            {
+              "id": "d4",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "living_room_0"
+            },
+            {
+              "id": "d5",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 2,
+              "connecting_room_id": "kitchen_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w2",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 4,
+              "height": 4,
+              "elevation": 13
+            }
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 8,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            {
+              "id": "d6",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 2,
+              "connecting_room_id": "dining_room_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 4,
+              "height": 4,
+              "elevation": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1a_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "id": "d7",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "balcony_1a_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 4,
+              "height": 4,
+              "elevation": 12
+            }
+          ]
+        },
+        {
+          "id": "balcony_1a_0",
+          "type": "balcony",
+          "bounds": {
+            "x": 8,
+            "y": 3,
+            "width": 4,
+            "height": 9
+          },
+          "doors": [
+            {
+              "id": "d8",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 2,
+              "connecting_room_id": "bedroom_1a_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_1b_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "id": "d9",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "balcony_1b_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w5",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 4,
+              "height": 4,
+              "elevation": 24
+            }
+          ]
+        },
+        {
+          "id": "balcony_1b_0",
+          "type": "balcony",
+          "bounds": {
+            "x": 8,
+            "y": 15,
+            "width": 4,
+            "height": 9
+          },
+          "doors": [
+            {
+              "id": "d10",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 2,
+              "connecting_room_id": "bedroom_1b_0"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_2a_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "id": "d11",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "balcony_2a_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w6",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 4,
+              "height": 4,
+              "elevation": 12
+            }
+          ]
+        },
+        {
+          "id": "balcony_2a_0",
+          "type": "balcony",
+          "bounds": {
+            "x": 8,
+            "y": 3,
+            "width": 4,
+            "height": 9
+          },
+          "doors": [
+            {
+              "id": "d12",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 2,
+              "connecting_room_id": "bedroom_2a_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2b_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "id": "d13",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "balcony_2b_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w7",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 4,
+              "height": 4,
+              "elevation": 24
+            }
+          ]
+        },
+        {
+          "id": "balcony_2b_0",
+          "type": "balcony",
+          "bounds": {
+            "x": 8,
+            "y": 15,
+            "width": 4,
+            "height": 9
+          },
+          "doors": [
+            {
+              "id": "d14",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 2,
+              "connecting_room_id": "bedroom_2b_0"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "master_bedroom_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 4,
+            "y": 0,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            {
+              "id": "d15",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "master_bathroom_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w8",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 4,
+              "height": 4,
+              "elevation": 16
+            },
+            {
+              "id": "w9",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 4,
+              "height": 4,
+              "elevation": 28
+            }
+          ]
+        },
+        {
+          "id": "master_bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 8,
+            "height": 16
+          },
+          "doors": [
+            {
+              "id": "d16",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 2,
+              "connecting_room_id": "master_bedroom_0"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 4,
+      "rooms": [
+        {
+          "id": "office_0",
+          "type": "office",
+          "bounds": {
+            "x": 2,
+            "y": 0,
+            "width": 14,
+            "height": 8
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w10",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 4,
+              "height": 4,
+              "elevation": 8
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "id": "d17",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "guest_bathroom_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w11",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 4,
+              "height": 4,
+              "elevation": 12
+            }
+          ]
+        },
+        {
+          "id": "guest_bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "id": "d18",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 2,
+              "connecting_room_id": "guest_bedroom_0"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 5,
+      "rooms": [
+        {
+          "id": "roof_deck_0",
+          "type": "roof_deck",
+          "bounds": {
+            "x": 1,
+            "y": 0,
+            "width": 26,
+            "height": 4
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "total_area": 1445,
+  "construction_cost": 216750.0,
+  "materials": {},
+  "render_paths": {}
+}

@@ -1,0 +1,138 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Minimalist, split-level studio apartment farmhouse. for a 100x100 feet plot. with a library. to be wheelchair accessible. for a joint family.",
+      "totalArea": 2825
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 1,
+      "name": "Main Floor",
+      "rooms": [
+        {
+          "id": "studio_0",
+          "type": "studio",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 45,
+            "height": 25
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "studio_0",
+              "room2": "entrance_2"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "library_1",
+          "type": "library",
+          "bounds": {
+            "x": 53,
+            "y": 5,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "library_1",
+              "room2": "common_area_3"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w2",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "entrance_2",
+          "type": "entrance",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "name": "Upper Level",
+      "rooms": [
+        {
+          "id": "common_area_3",
+          "type": "common_area",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 45,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "accessible_bathroom_4",
+          "type": "accessible_bathroom",
+          "bounds": {
+            "x": 53,
+            "y": 5,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "total_area": 2825,
+  "construction_cost": 423750.0,
+  "materials": {},
+  "render_paths": {}
+}

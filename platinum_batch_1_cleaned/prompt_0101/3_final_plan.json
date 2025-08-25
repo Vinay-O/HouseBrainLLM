@@ -1,0 +1,123 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Bohemian, triplex 1BHK house. with a total area of 800 sqft. with a large garden.",
+      "totalArea": 1248
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 0,
+      "description": "Ground Floor - Garden",
+      "rooms": [
+        {
+          "id": "garden_0",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 20
+          },
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 8,
+              "height": 4,
+              "elevation": 0
+            },
+            {
+              "id": "w2",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 8,
+              "height": 4,
+              "elevation": 20
+            }
+          ],
+          "doors": []
+        }
+      ],
+      "doors": []
+    },
+    {
+      "level_number": 1,
+      "description": "First Floor - Living Room",
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 2,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "living_room_1",
+              "room2": "bedroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 6,
+              "height": 4,
+              "elevation": 16
+            }
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "id": "d2",
+          "wall_index": 0,
+          "position": 0.5,
+          "width": 3,
+          "connecting_room_id": "garden_0"
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "description": "Second Floor - Bedroom",
+      "rooms": [
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 3,
+            "y": 1,
+            "width": 14,
+            "height": 16
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 18
+            }
+          ]
+        }
+      ],
+      "doors": []
+    }
+  ],
+  "total_area": 1248,
+  "construction_cost": 187200.0,
+  "materials": {},
+  "render_paths": {}
+}

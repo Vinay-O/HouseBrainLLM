@@ -1,0 +1,343 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Art Deco, two-story 6BHK bungalow. for a 80x100 feet plot. with a two-car garage. with a large garden. with a dedicated home office. with a North-facing entrance. designed for a family of four.",
+      "totalArea": 12712
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 0,
+      "name": "ground_floor",
+      "rooms": [
+        {
+          "id": "entrance_hall_0",
+          "type": "entrance_hall",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "id": "d1",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 4,
+              "connecting_room_id": "garage_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 6,
+              "height": 4,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 84,
+            "y": 0,
+            "width": 36,
+            "height": 12
+          },
+          "doors": [
+            {
+              "id": "d2",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 8,
+              "connecting_room_id": null
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 68,
+            "height": 12
+          },
+          "doors": [
+            {
+              "id": "d3",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 4,
+              "connecting_room_id": "home_office_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w2",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 8,
+              "height": 4,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "garden_0",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 100,
+            "height": 88
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "home_office_0",
+          "type": "home_office",
+          "bounds": {
+            "x": 34,
+            "y": 16,
+            "width": 22,
+            "height": 12
+          },
+          "doors": [
+            {
+              "id": "d4",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "living_room_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 6,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "name": "first_floor",
+      "rooms": [
+        {
+          "id": "bedroom_0_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 34,
+            "y": 0,
+            "width": 22,
+            "height": 18
+          },
+          "doors": [
+            {
+              "id": "d5",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "bathroom_0_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 6,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 56,
+            "y": 0,
+            "width": 22,
+            "height": 18
+          },
+          "doors": [
+            {
+              "id": "d6",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "bathroom_1_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w5",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 6,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 78,
+            "y": 0,
+            "width": 22,
+            "height": 18
+          },
+          "doors": [
+            {
+              "id": "d7",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "bathroom_2_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w6",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 6,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "master_bedroom_1",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 32,
+            "height": 18
+          },
+          "doors": [
+            {
+              "id": "d8",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "master_bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w7",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 8,
+              "height": 4,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "bathroom_0_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 78,
+            "y": 18,
+            "width": 14,
+            "height": 6
+          },
+          "doors": [
+            {
+              "id": "d9",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 2,
+              "connecting_room_id": "bedroom_0_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 56,
+            "y": 18,
+            "width": 14,
+            "height": 6
+          },
+          "doors": [
+            {
+              "id": "d10",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 2,
+              "connecting_room_id": "bedroom_1_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 34,
+            "y": 18,
+            "width": 14,
+            "height": 6
+          },
+          "doors": [
+            {
+              "id": "d11",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 2,
+              "connecting_room_id": "bedroom_2_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "master_bathroom_1",
+          "type": "master_bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 18,
+            "width": 32,
+            "height": 6
+          },
+          "doors": [
+            {
+              "id": "d12",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 2,
+              "connecting_room_id": "master_bedroom_1"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "total_area": 12712,
+  "construction_cost": 1906800.0,
+  "materials": {},
+  "render_paths": {}
+}

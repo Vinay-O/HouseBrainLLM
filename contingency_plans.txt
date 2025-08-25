@@ -1,0 +1,37 @@
+Here are the contingency plans for the HouseBrain data generation pipeline if the current approach continues to fail.
+
+---
+### Plan B: The "Validator as a Repairman" Pipeline
+---
+This is an evolution of our current "self-correction" idea but makes it far more robust. Instead of one quick repair attempt, we treat the LLM's output as a "draft" that we iteratively fix.
+
+1.  **Generate and Save the Draft**: Run the generator as we do now, but if validation fails, we **save the broken JSON file** instead of discarding it.
+2.  **Create a Dedicated Validation Script**: We write a separate script (`fix_plan.py`) that reads a broken plan file.
+3.  **Targeted Micro-Fixes**: The script tries to validate the plan. When it catches a `ValidationError`, it doesn't just give up. It identifies the *exact* error (e.g., "Door is missing `room2`") and then sends a very small, targeted request back to the LLM.
+    *   **Example Prompt**: *"Here is a single door object from a house plan: `{'position': {...}, 'room1': 'living_room_0'}`. It is invalid because the `room2` field is missing. This door is in the `living_room_0` which has an exterior wall. Correct this object by adding a valid `room2` (perhaps `exterior_0`?) and return ONLY the corrected JSON for the door."*
+4.  **Iterate until Valid**: The script would loop—fix one error, try to validate again, and repeat—until the entire plan is valid.
+
+**Why this is better**: Asking the LLM to make a tiny, focused fix is a much easier and more reliable task than asking it to generate a huge, perfect structure from scratch.
+
+---
+### Plan C: Deconstruct the Generation Process (The Assembly Line)
+---
+This is a complete redesign of the generation process. Instead of one model doing one giant task, we use the model for several small, simple tasks and assemble the results ourselves. This mirrors how a person would work.
+
+1.  **Stage 1: Generate Only the Layout**. The LLM is prompted to return only the `levels` and `rooms` with their `bounds`. This is a relatively simple JSON structure that is very unlikely to fail validation. We save this `layout.json`.
+2.  **Stage 2: Generate Only the Doors**. We feed the `layout.json` back to the LLM. The prompt is now much simpler: *"Here is a JSON file describing room layouts. Your only job is to return a JSON **list of Door objects** to connect these rooms logically."* We save this as `doors.json`.
+3.  **Stage 3: Generate Only the Windows**. We do the same as above, but for windows. *"Here is a JSON file describing room layouts. Your only job is to return a JSON **list of Window objects** to be placed on exterior walls."* We save this as `windows.json`.
+4.  **Stage 4: Final Assembly**. A simple, definitive Python script reads `layout.json`, `doors.json`, and `windows.json`. It then programmatically inserts the doors and windows into the correct rooms in the layout file, creating the final, valid `HouseOutput.json`.
+
+**Why this is better**: Each individual LLM task is drastically simplified. The cognitive load on the model is lower, making it far more likely to produce a correct, simple list of doors than it is to produce a perfectly structured, deeply nested object with rooms, doors, and windows all at once. The final assembly is done with code, which is 100% reliable.
+
+---
+### Plan D: Learn From Success (Few-Shot Prompting)
+---
+This strategy can be combined with either Plan B or C. It directly uses the **100+ valid plans we've already successfully generated** to teach the model.
+
+1.  **Create a "Golden Examples" File**: We hand-pick 3 to 5 of our best, most complex, successfully generated plans.
+2.  **Inject into the Prompt**: We modify our prompts to include these full JSON examples at the beginning.
+3.  **Instruct the Model to Mimic**: The final instruction becomes: *"You must generate a new plan based on the user's request. The final JSON structure, field names, and logic **must strictly follow the format of the 'Perfect Examples'** provided above."*
+
+**Why this is better**: Models are excellent at pattern matching. Showing it several complete, perfect examples ("few-shot prompting") is often more effective than just giving it written instructions. It gives the model a much stronger template to follow.

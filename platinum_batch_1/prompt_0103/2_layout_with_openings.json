@@ -1,0 +1,196 @@
+{
+  "levels": [
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 1,
+            "y": 1,
+            "width": 20,
+            "height": 14
+          },
+          "doors": [
+            {
+              "id": "d1",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "kitchen_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 21,
+            "y": 1,
+            "width": 9,
+            "height": 8
+          },
+          "doors": [
+            {
+              "id": "d2",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "living_room_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w2",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 1,
+            "y": 15,
+            "width": 14,
+            "height": 6
+          },
+          "doors": [
+            {
+              "id": "d3",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 4,
+              "height": 3,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 15,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "id": "d4",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "bedroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 3,
+              "height": 2,
+              "elevation": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "studio_0",
+          "type": "studio",
+          "bounds": {
+            "x": 5,
+            "y": 1,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "id": "d5",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "balcony_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w5",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 4,
+              "height": 3,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "balcony_0",
+          "type": "balcony",
+          "bounds": {
+            "x": 26,
+            "y": 5,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "id": "d6",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 2,
+              "connecting_room_id": "studio_0"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garden_0",
+          "type": "garden",
+          "bounds": {
+            "x": 1,
+            "y": 20,
+            "width": 38,
+            "height": 20
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

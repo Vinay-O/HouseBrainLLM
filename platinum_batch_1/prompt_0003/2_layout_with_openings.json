@@ -1,0 +1,217 @@
+{
+  "levels": [
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "north_entry_0",
+          "type": "north_entry",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 60,
+            "height": 10
+          },
+          "doors": [
+            {
+              "id": "d1",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "living_room_2"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "servants_quarter_1",
+          "type": "servants_quarter",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 30,
+            "height": 18
+          },
+          "doors": [
+            {
+              "id": "d2",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "living_room_2"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w2",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 3,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "living_room_2",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 60,
+            "height": 14
+          },
+          "doors": [
+            {
+              "id": "d3",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "kitchen_3"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 6,
+              "height": 4,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "kitchen_3",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 24,
+            "width": 30,
+            "height": 8
+          },
+          "doors": [
+            {
+              "id": "d4",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "servants_quarter_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 3,
+              "height": 2,
+              "elevation": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 18
+          },
+          "doors": [
+            {
+              "id": "d5",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "bedroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w5",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "height": 4,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 30,
+            "height": 18
+          },
+          "doors": [
+            {
+              "id": "d6",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "master_bedroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w6",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 3,
+              "height": 4,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "master_bedroom_2",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 30,
+            "height": 18
+          },
+          "doors": [
+            {
+              "id": "d7",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "bedroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w7",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "height": 4,
+              "elevation": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

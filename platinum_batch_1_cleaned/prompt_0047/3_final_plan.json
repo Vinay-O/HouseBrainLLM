@@ -1,0 +1,199 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Minimalist, penthouse 2BHK villa. for a corner plot. with servant's quarters. with a private gym. featuring floor-to-ceiling windows. and be Vastu-compliant.",
+      "totalArea": 795
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 1,
+            "y": 1,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "width": 4,
+              "type": "interior",
+              "room1": "living_room_1",
+              "room2": "balcony_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 20,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "balcony_1",
+          "type": "balcony",
+          "bounds": {
+            "x": 18,
+            "y": 6,
+            "width": 4,
+            "height": 9
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w2",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 4,
+              "height": 6,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1a",
+          "type": "bedroom",
+          "bounds": {
+            "x": 23,
+            "y": 1,
+            "width": 8,
+            "height": 15
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_1a",
+              "room2": "bathroom_1a"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 8,
+              "height": 4,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1b",
+          "type": "bedroom",
+          "bounds": {
+            "x": 1,
+            "y": 16,
+            "width": 12,
+            "height": 9
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_1b",
+              "room2": "bathroom_1b"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 12,
+              "height": 6,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1a",
+          "type": "bathroom",
+          "bounds": {
+            "x": 27,
+            "y": 8,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "bathroom_1b",
+          "type": "bathroom",
+          "bounds": {
+            "x": 9,
+            "y": 25,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "servants_quarters_1",
+          "type": "storage",
+          "bounds": {
+            "x": 25,
+            "y": 14,
+            "width": 7,
+            "height": 13
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "servants_quarters_1",
+              "room2": "gym_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w7",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 7,
+              "height": 4,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "gym_1",
+          "type": "gym",
+          "bounds": {
+            "x": 2,
+            "y": 27,
+            "width": 20,
+            "height": 5
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w8",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 20,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "total_area": 795,
+  "construction_cost": 119250.0,
+  "materials": {},
+  "render_paths": {}
+}

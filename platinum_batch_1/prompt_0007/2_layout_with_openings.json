@@ -1,0 +1,162 @@
+{
+  "levels": [
+    {
+      "level_number": 0,
+      "name": "First Floor",
+      "rooms": [
+        {
+          "id": "garage_0",
+          "type": "two_car_garage",
+          "bounds": {
+            "x": 1,
+            "y": 1,
+            "width": 24,
+            "height": 8
+          },
+          "doors": [
+            {
+              "id": "d1",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 6,
+              "connecting_room_id": "servants_quarter_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "servants_quarter_0",
+          "type": "servant_quarters",
+          "bounds": {
+            "x": 26,
+            "y": 1,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "id": "d2",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "garage_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 4,
+              "height": 4,
+              "elevation": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "name": "Second Floor",
+      "rooms": [
+        {
+          "id": "studio_0",
+          "type": "eco_studio",
+          "bounds": {
+            "x": 2,
+            "y": 2,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "id": "d3",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "studio_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w2",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 6,
+              "height": 4,
+              "elevation": 8
+            }
+          ]
+        },
+        {
+          "id": "studio_1",
+          "type": "eco_studio",
+          "bounds": {
+            "x": 19,
+            "y": 2,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "id": "d4",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "studio_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 6,
+              "height": 4,
+              "elevation": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "name": "Third Floor",
+      "rooms": [
+        {
+          "id": "studio_2",
+          "type": "eco_studio",
+          "bounds": {
+            "x": 3,
+            "y": 2,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 6,
+              "height": 4,
+              "elevation": 8
+            }
+          ]
+        },
+        {
+          "id": "swimming_pool",
+          "type": "swimming_pool",
+          "bounds": {
+            "x": 19,
+            "y": 2,
+            "width": 16,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

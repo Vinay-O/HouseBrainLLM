@@ -1,0 +1,227 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Scandinavian, G+2 3BHK farmhouse. for a 40x60 feet plot. with an open-plan kitchen and living area.",
+      "totalArea": 1048
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 0,
+      "description": "Ground floor",
+      "rooms": [
+        {
+          "id": "open_plan_0",
+          "type": "open_plan",
+          "bounds": {
+            "x": 1,
+            "y": 1,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "open_plan_0",
+              "room2": "garage_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 1,
+              "position": 0.25,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            },
+            {
+              "id": "w2",
+              "wall_index": 2,
+              "position": 0.75,
+              "width": 5,
+              "height": 4,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 21,
+            "y": 1,
+            "width": 14,
+            "height": 10
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_1_0",
+              "room2": "open_plan_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 36,
+            "y": 1,
+            "width": 18,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "description": "First floor",
+      "rooms": [
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 1,
+            "y": 11,
+            "width": 14,
+            "height": 10
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_2_1",
+              "room2": "bedroom_3_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 11,
+            "width": 14,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w5",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "master_bedroom_1",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 31,
+            "y": 11,
+            "width": 14,
+            "height": 10
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "master_bedroom_1",
+              "room2": "master_bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w6",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "description": "Second floor",
+      "rooms": [
+        {
+          "id": "study_room_2",
+          "type": "study_room",
+          "bounds": {
+            "x": 7,
+            "y": 21,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w7",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 4,
+              "height": 3,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "balcony_2",
+          "type": "balcony",
+          "bounds": {
+            "x": 15,
+            "y": 21,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "balcony_2",
+              "room2": "study_room_2"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "total_area": 1048,
+  "construction_cost": 157200.0,
+  "materials": {},
+  "render_paths": {}
+}

@@ -1,0 +1,222 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Art Deco, two-story 2BHK townhouse. for a 60x90 feet plot. with a spacious balcony for each bedroom. featuring floor-to-ceiling windows. with a focus on natural light and ventilation.",
+      "totalArea": 1062
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 0,
+      "description": "First Floor",
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 1,
+            "y": 1,
+            "width": 26,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "living_room_0",
+              "room2": "entryway_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 8,
+              "height": 8,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 27,
+            "y": 1,
+            "width": 9,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "dining_room_0",
+              "room2": "kitchen_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w2",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 6,
+              "height": 8,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 36,
+            "y": 1,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "kitchen_0",
+              "room2": "pantry_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 6,
+              "height": 8,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "powder_room_0",
+          "type": "powder_room",
+          "bounds": {
+            "x": 48,
+            "y": 3,
+            "width": 4,
+            "height": 5
+          },
+          "windows": [],
+          "doors": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "description": "Second Floor",
+      "rooms": [
+        {
+          "id": "bedroom_0_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 2,
+            "y": 10,
+            "width": 13,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_0_1",
+              "room2": "balcony_0_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 13,
+              "height": 8,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 10,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_1_1",
+              "room2": "balcony_1_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w5",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 12,
+              "height": 8,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "balcony_0_1",
+          "type": "balcony",
+          "bounds": {
+            "x": 2,
+            "y": 17,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "balcony_1_1",
+          "type": "balcony",
+          "bounds": {
+            "x": 16,
+            "y": 17,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "description": "Roof Terrace",
+      "rooms": [
+        {
+          "id": "terrace_0",
+          "type": "terrace",
+          "bounds": {
+            "x": 1,
+            "y": 23,
+            "width": 58,
+            "height": 7
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "total_area": 1062,
+  "construction_cost": 159300.0,
+  "materials": {},
+  "render_paths": {}
+}

@@ -1,0 +1,196 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Art Deco, G+1 1BHK villa. for a 40x60 feet plot. with a rooftop terrace. with a large garden. with servant's quarters.",
+      "totalArea": 1855
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 0,
+      "name": "ground_floor",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 10
+      },
+      "rooms": [
+        {
+          "id": "garden_0",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 10,
+              "height": 4,
+              "elevation": 2
+            }
+          ],
+          "doors": []
+        },
+        {
+          "id": "servants_quarter_0",
+          "type": "storage",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "servants_quarter_0",
+              "room2": "entrance_hall"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w2",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "name": "first_floor",
+      "bounds": {
+        "x": 0,
+        "y": 10,
+        "width": 40,
+        "height": 15
+      },
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "living_room_1",
+              "room2": "entrance_hall"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_1",
+              "room2": "master_bathroom"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "master_bathroom",
+          "type": "master_bathroom",
+          "bounds": {
+            "x": 23,
+            "y": 10,
+            "width": 17,
+            "height": 15
+          },
+          "windows": [
+            {
+              "id": "w5",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 3,
+              "height": 4,
+              "elevation": 2
+            }
+          ],
+          "doors": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "name": "rooftop",
+      "bounds": {
+        "x": 0,
+        "y": 25,
+        "width": 40,
+        "height": 15
+      },
+      "rooms": [
+        {
+          "id": "terrace_2",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 40,
+            "height": 15
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "terrace_2",
+              "room2": "staircase"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "total_area": 1855,
+  "construction_cost": 278250.0,
+  "materials": {},
+  "render_paths": {}
+}

@@ -1,0 +1,116 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Scandinavian, penthouse studio apartment townhouse. for a 30x40 feet plot. with a home theater. with a library.",
+      "totalArea": 1285
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "studio_0",
+          "type": "studio",
+          "bounds": {
+            "x": 1,
+            "y": 1,
+            "width": 39,
+            "height": 27
+          },
+          "doors": [
+            {
+              "id": "d1",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "home_theater_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 6,
+              "height": 4,
+              "elevation": 2
+            },
+            {
+              "id": "w2",
+              "wall_index": 2,
+              "position": 0.9,
+              "width": 5,
+              "height": 3,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "home_theater_1",
+          "type": "home_theater",
+          "bounds": {
+            "x": 4,
+            "y": 30,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "id": "d2",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "studio_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 4,
+              "height": 6,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "library_2",
+          "type": "library",
+          "bounds": {
+            "x": 22,
+            "y": 30,
+            "width": 17,
+            "height": 8
+          },
+          "doors": [
+            {
+              "id": "d3",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "connecting_room_id": "studio_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 6,
+              "height": 4,
+              "elevation": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "total_area": 1285,
+  "construction_cost": 192750.0,
+  "materials": {},
+  "render_paths": {}
+}

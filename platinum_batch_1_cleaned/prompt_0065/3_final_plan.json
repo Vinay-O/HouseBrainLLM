@@ -1,0 +1,341 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Scandinavian, duplex 2BHK villa. for a 30x40 feet plot. with a dedicated home office. with a rooftop terrace.",
+      "totalArea": 811
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 1,
+            "y": 1,
+            "width": 14,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "living_room_1",
+              "room2": "home_office_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 4,
+              "height": 3,
+              "elevation": 2
+            },
+            {
+              "id": "w2",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 4,
+              "height": 3,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "home_office_1",
+          "type": "study",
+          "bounds": {
+            "x": 16,
+            "y": 1,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 4,
+              "height": 3,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 1,
+            "y": 9,
+            "width": 7,
+            "height": 5
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "kitchen_1",
+              "room2": "dining_room_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "height": 2,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "dining_room_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 9,
+            "y": 9,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w5",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "height": 2,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 9,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_1_1",
+              "room2": "bathroom_1_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w6",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "height": 2,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "toilet_1_1",
+          "type": "toilet",
+          "bounds": {
+            "x": 23,
+            "y": 9,
+            "width": 2,
+            "height": 5
+          },
+          "windows": [],
+          "doors": []
+        },
+        {
+          "id": "bathroom_1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 9,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "living_room_2",
+          "type": "living_room",
+          "bounds": {
+            "x": 1,
+            "y": 1,
+            "width": 14,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "living_room_2",
+              "room2": "bedroom_2_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w7",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 4,
+              "height": 3,
+              "elevation": 2
+            },
+            {
+              "id": "w8",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 4,
+              "height": 3,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 1,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w9",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 3,
+              "height": 3,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "toilet_2_1",
+          "type": "toilet",
+          "bounds": {
+            "x": 23,
+            "y": 1,
+            "width": 2,
+            "height": 8
+          },
+          "windows": [],
+          "doors": []
+        },
+        {
+          "id": "bathroom_2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 1,
+            "width": 4,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bathroom_2_1",
+              "room2": "bedroom_2_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 9,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_2_2",
+              "room2": "bathroom_2_2"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w10",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 3,
+              "height": 2,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "toilet_2_2",
+          "type": "toilet",
+          "bounds": {
+            "x": 23,
+            "y": 15,
+            "width": 2,
+            "height": 5
+          },
+          "windows": [],
+          "doors": []
+        },
+        {
+          "id": "bathroom_2_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "roof_terrace",
+          "type": "roof_terrace",
+          "bounds": {
+            "x": 1,
+            "y": 24,
+            "width": 30,
+            "height": 7
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "total_area": 811,
+  "construction_cost": 121650.0,
+  "materials": {},
+  "render_paths": {}
+}

@@ -1,0 +1,390 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Brutalist, penthouse 4BHK farmhouse. for a 30x50 feet plot. with an open-plan kitchen and living area. with a North-facing entrance.",
+      "totalArea": 3925
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 0,
+      "name": "Ground Floor",
+      "rooms": [
+        {
+          "id": "north_entrance_0",
+          "type": "north_facing_entrance",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 10
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "north_entrance_0",
+              "room2": "hallway_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "garage_0",
+              "room2": "side_yard_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "utility_0",
+              "room2": "hallway_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "powder_room_0",
+          "type": "powder_room",
+          "bounds": {
+            "x": 15,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "powder_room_0",
+              "room2": "hallway_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway_0",
+          "type": "hallway",
+          "bounds": {
+            "x": 30,
+            "y": 25,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "hallway_0",
+              "room2": "staircase_0"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "name": "First Floor",
+      "rooms": [
+        {
+          "id": "open_plan_living_kitchen_1",
+          "type": "open_plan_living_kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "open_plan_living_kitchen_1",
+              "room2": "hallway_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "dining_room_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "dining_room_1",
+              "room2": "hallway_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w2",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom_1",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "guest_bedroom_1",
+              "room2": "guest_bath_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "guest_bath_1",
+          "type": "guest_bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 45,
+            "width": 15,
+            "height": 5
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "guest_bath_1",
+              "room2": "hallway_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "master_bedroom_1",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 45,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "master_bedroom_1",
+              "room2": "master_bath_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "master_bath_1",
+          "type": "master_bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 60,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "master_bath_1",
+              "room2": "hallway_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway_1",
+          "type": "hallway",
+          "bounds": {
+            "x": 30,
+            "y": 45,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "hallway_1",
+              "room2": "staircase_1"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "name": "Second Floor",
+      "rooms": [
+        {
+          "id": "bedroom_2a_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_2a_2",
+              "room2": "bathroom_2a_2"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w5",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2a_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2b_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_2b_2",
+              "room2": "bathroom_2b_2"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w6",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2b_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 15,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "staircase_2",
+          "type": "staircase",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "total_area": 3925,
+  "construction_cost": 588750.0,
+  "materials": {},
+  "render_paths": {}
+}

@@ -1,0 +1,211 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Brutalist, single-story 2BHK villa. with a total area of 1500 sqft. with a spacious balcony for each bedroom. with servant's quarters. for a joint family. for a luxury segment.",
+      "totalArea": 708
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 1,
+            "y": 1,
+            "width": 25,
+            "height": 7
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "living_room_0",
+              "room2": "bedroom_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 6,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "balcony_0",
+          "type": "balcony",
+          "bounds": {
+            "x": 26,
+            "y": 1,
+            "width": 9,
+            "height": 7
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "balcony_0",
+              "room2": "bedroom_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 1,
+            "y": 8,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_0",
+              "room2": "bathroom_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w2",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 4,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "balcony_1",
+          "type": "balcony",
+          "bounds": {
+            "x": 13,
+            "y": 8,
+            "width": 9,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "balcony_1",
+              "room2": "bedroom_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 2,
+            "y": 16,
+            "width": 13,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_1",
+              "room2": "bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 4,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "balcony_2",
+          "type": "balcony",
+          "bounds": {
+            "x": 16,
+            "y": 16,
+            "width": 9,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "balcony_2",
+              "room2": "bedroom_2"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 14,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "kitchen_0",
+              "room2": "servants_quarters_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 3,
+              "height": 4,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "servants_quarters_0",
+          "type": "storage",
+          "bounds": {
+            "x": 1,
+            "y": 24,
+            "width": 15,
+            "height": 6
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w5",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 3,
+              "height": 4,
+              "elevation": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "total_area": 708,
+  "construction_cost": 106200.0,
+  "materials": {},
+  "render_paths": {}
+}

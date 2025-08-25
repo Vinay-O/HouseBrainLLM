@@ -1,0 +1,284 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Chettinad-style, G+2 2BHK farmhouse. for a 30x50 feet plot. with a swimming pool. with a home theater. with a large garden.",
+      "totalArea": 1905
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 0,
+      "name": "Ground Floor",
+      "rooms": [
+        {
+          "id": "garden_0",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 8,
+              "height": 4
+            }
+          ]
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "living_room_0",
+              "room2": "garden_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w2",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 5,
+              "height": 4
+            }
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "dining_room_0",
+              "room2": "kitchen_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 5,
+              "height": 4
+            }
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 23,
+            "width": 15,
+            "height": 7
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "kitchen_0",
+              "room2": "bedroom_1_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_1_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 23,
+            "width": 15,
+            "height": 7
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_1_0",
+              "room2": "staircase_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase_0",
+          "type": "staircase",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 15,
+            "height": 2
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "staircase_0",
+              "room2": "bedroom_2_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "swimming_pool_0",
+          "type": "swimming_pool",
+          "bounds": {
+            "x": 15,
+            "y": 30,
+            "width": 15,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "name": "First Floor",
+      "rooms": [
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 7
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_2_1",
+              "room2": "staircase_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_3_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 7
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_3_1",
+              "room2": "home_theater_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "home_theater_1",
+          "type": "home_theater",
+          "bounds": {
+            "x": 0,
+            "y": 7,
+            "width": 30,
+            "height": 14
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "home_theater_1",
+              "room2": "staircase_2"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase_1",
+          "type": "staircase",
+          "bounds": {
+            "x": 0,
+            "y": 21,
+            "width": 15,
+            "height": 2
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "staircase_1",
+              "room2": "bedroom_3_2"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "name": "Second Floor",
+      "rooms": [
+        {
+          "id": "terrace_2",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 7
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "staircase_2",
+          "type": "staircase",
+          "bounds": {
+            "x": 0,
+            "y": 7,
+            "width": 15,
+            "height": 2
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "staircase_2",
+              "room2": "terrace"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "total_area": 1905,
+  "construction_cost": 285750.0,
+  "materials": {},
+  "render_paths": {}
+}

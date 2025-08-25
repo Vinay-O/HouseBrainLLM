@@ -1,0 +1,259 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Eco-friendly, two-story 2BHK farmhouse. for a 30x40 feet plot. with a rooftop terrace.",
+      "totalArea": 858
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 1,
+            "y": 1,
+            "width": 14,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "living_room_1",
+              "room2": "bedroom_1_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 1,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w2",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 3,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 1,
+            "y": 9,
+            "width": 14,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_1_2",
+              "room2": "bathroom_1_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 26,
+            "y": 1,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "bathroom_1_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 1,
+            "y": 17,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            {
+              "width": 2,
+              "type": "interior",
+              "room1": "bathroom_1_2",
+              "room2": "bedroom_1_1"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "living_room_2",
+          "type": "living_room",
+          "bounds": {
+            "x": 1,
+            "y": 1,
+            "width": 14,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "living_room_2",
+              "room2": "bedroom_2_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 1,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w5",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 3,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 1,
+            "y": 9,
+            "width": 14,
+            "height": 8
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_2_2",
+              "room2": "bathroom_2_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w6",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 26,
+            "y": 1,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 1,
+            "y": 17,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            {
+              "width": 2,
+              "type": "interior",
+              "room1": "bathroom_2_2",
+              "room2": "bedroom_2_1"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "rooftop",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "total_area": 858,
+  "construction_cost": 128700.0,
+  "materials": {},
+  "render_paths": {}
+}

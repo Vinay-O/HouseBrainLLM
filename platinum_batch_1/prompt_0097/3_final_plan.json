@@ -1,0 +1,347 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Modern, split-level 3BHK townhouse. for a 100x100 feet plot. with a rooftop terrace. with a large garden. with a two-car garage.",
+      "totalArea": 6200
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 0,
+      "description": "Ground Floor - Garage and Garden",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 20
+      },
+      "rooms": [
+        {
+          "id": "garden_0",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 20
+          },
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 30,
+              "height": 4,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 50,
+            "height": 16
+          },
+          "doors": [
+            {
+              "id": "d1",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 10,
+              "connecting_room_id": "street"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w2",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 10,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "description": "First Floor - Living Room and Bedrooms",
+      "bounds": {
+        "x": 0,
+        "y": 20,
+        "width": 100,
+        "height": 20
+      },
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "id": "d2",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 4,
+              "connecting_room_id": "bedroom_1a_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 8,
+              "height": 4,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1a_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "id": "d3",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 4,
+              "connecting_room_id": "living_room_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 8,
+              "height": 4,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1b_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "id": "d4",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 4,
+              "connecting_room_id": "bedroom_1c_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w5",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 8,
+              "height": 4,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1c_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 60,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "id": "d5",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 4,
+              "connecting_room_id": "bedroom_1b_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w6",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 8,
+              "height": 4,
+              "elevation": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "description": "Second Floor - Bathrooms and Utility",
+      "bounds": {
+        "x": 0,
+        "y": 40,
+        "width": 100,
+        "height": 20
+      },
+      "rooms": [
+        {
+          "id": "bathroom_2a_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 20,
+            "height": 10
+          },
+          "windows": [
+            {
+              "id": "w7",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 4,
+              "height": 3,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2b_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 40,
+            "width": 20,
+            "height": 10
+          },
+          "windows": [
+            {
+              "id": "w8",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 4,
+              "height": 3,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "utility_2_1",
+          "type": "utility",
+          "bounds": {
+            "x": 40,
+            "y": 40,
+            "width": 20,
+            "height": 10
+          },
+          "windows": [
+            {
+              "id": "w9",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 4,
+              "height": 3,
+              "elevation": 2
+            }
+          ]
+        },
+        {
+          "id": "balcony_2_1",
+          "type": "balcony",
+          "bounds": {
+            "x": 60,
+            "y": 40,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "id": "d6",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 4,
+              "connecting_room_id": "bedroom_1c_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w10",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 8,
+              "height": 3,
+              "elevation": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "description": "Rooftop - Terrace",
+      "bounds": {
+        "x": 0,
+        "y": 60,
+        "width": 100,
+        "height": 20
+      },
+      "rooms": [
+        {
+          "id": "terrace_3",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 60,
+            "width": 100,
+            "height": 20
+          },
+          "doors": [
+            {
+              "id": "d7",
+              "wall_index": 3,
+              "position": 0.5,
+              "width": 6,
+              "connecting_room_id": "staircase"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w11",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 30,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "total_area": 6200,
+  "construction_cost": 930000.0,
+  "materials": {},
+  "render_paths": {}
+}

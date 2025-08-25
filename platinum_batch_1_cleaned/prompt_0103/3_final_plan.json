@@ -1,0 +1,181 @@
+{
+  "input": {
+    "basicDetails": {
+      "prompt": "Design a Colonial, penthouse studio apartment apartment. for a 30x40 feet plot. with a large garden. as a bachelor pad.",
+      "totalArea": 1628
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "levels": [
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 1,
+            "y": 1,
+            "width": 20,
+            "height": 14
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "living_room_1",
+              "room2": "kitchen_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 5,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 21,
+            "y": 1,
+            "width": 9,
+            "height": 8
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w2",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 3,
+              "height": 4,
+              "elevation": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 1,
+            "y": 15,
+            "width": 14,
+            "height": 6
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "bedroom_1",
+              "room2": "bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "wall_index": 0,
+              "position": 0.5,
+              "width": 4,
+              "height": 3,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 15,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [],
+          "windows": [
+            {
+              "id": "w4",
+              "wall_index": 1,
+              "position": 0.5,
+              "width": 3,
+              "height": 2,
+              "elevation": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "studio_0",
+          "type": "studio",
+          "bounds": {
+            "x": 5,
+            "y": 1,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "width": 3,
+              "type": "interior",
+              "room1": "studio_0",
+              "room2": "balcony_0"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w5",
+              "wall_index": 2,
+              "position": 0.5,
+              "width": 4,
+              "height": 3,
+              "elevation": 1
+            }
+          ]
+        },
+        {
+          "id": "balcony_0",
+          "type": "balcony",
+          "bounds": {
+            "x": 26,
+            "y": 5,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garden_0",
+          "type": "garden",
+          "bounds": {
+            "x": 1,
+            "y": 20,
+            "width": 38,
+            "height": 20
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "total_area": 1628,
+  "construction_cost": 244200.0,
+  "materials": {},
+  "render_paths": {}
+}
