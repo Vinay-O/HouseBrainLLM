@@ -1,0 +1,48 @@
+Project Log: HouseBrain AI Architect
+===================================
+
+This document serves as a persistent brain for the HouseBrain AI Architect project, tracking our goals, progress, decisions, and next steps.
+
+---
+
+### Project Goal
+
+To create a specialized, fine-tuned AI model named the "HouseBrain Architect." This model will be an expert at a single task: taking a user's natural language prompt (e.g., "a modern 3BHK house...") and generating a complete, valid, and high-quality architectural plan in a single step, conforming to our specific `HouseOutput` JSON schema.
+
+---
+
+### Current Status
+
+**Date:** 2024-08-25
+
+We have successfully built and debugged the initial data generation pipeline. We have a working Python script (`run_complete_assembly_line.py`) and a Google Colab notebook (`data_generation_colab.ipynb`) that can use a powerful, general-purpose model (`mixtral:instruct`) to generate high-quality, validated architectural plans.
+
+**The immediate next step is for the user to run the `data_generation_colab.ipynb` notebook in Google Colab to generate our initial "platinum" dataset.**
+
+---
+
+### Project History & Key Decisions
+
+1.  **Initial Problem:** Attempts to run the generation pipeline on the local machine failed.
+2.  **Debugging Journey:**
+    *   Initially, we encountered a `file not found` error. We diagnosed this as a working directory issue and fixed it by changing the directory before executing the script.
+    *   Next, we hit a `connection refused` error. We identified that the local Ollama server was not running.
+    *   After starting Ollama, the script began to run but then `timed out`. We diagnosed that the `mixtral:instruct` model (26GB) was too large to run efficiently on the local machine.
+3.  **Strategic Pivot: Pipeline Validation:**
+    *   **Decision:** To separate "code validation" from "quality generation," we decided to test the pipeline with a smaller, faster model.
+    *   **Action:** We modified `test_pipeline_mixtral.sh` to use `llama3:instruct` (4.7GB).
+    *   **Result:** The pipeline ran successfully from end to end, but as expected, the final output failed schema validation. This was a **successful test**, proving the code works and that a small model is insufficient for quality.
+4.  **Moving to the Cloud for Quality:**
+    *   **Decision:** The best way to run the large, high-quality `mixtral:instruct` model is in a GPU-powered environment. We chose Google Colab as the most efficient tool for this.
+    *   **Action:** We configured the `data_generation_colab.ipynb` notebook to use the `mixtral:instruct` model.
+    *   **Outcome:** The notebook is now ready to generate our "platinum" dataset. Any data produced by this notebook is considered our highest quality tier, as it must pass strict validation before being saved.
+
+---
+
+### The Long-Term Plan
+
+Once we have generated a sufficient dataset (e.g., 10,000+ examples), our plan is as follows:
+
+1.  **Fine-Tuning:** We will use our platinum dataset to fine-tune a new, specialized model. This will train a base model to become an expert specifically at generating `HouseBrain` plans.
+2.  **Evaluation:** We will use a portion of our generated data (a "gold" or "test" set) to rigorously evaluate the performance of our new fine-tuned model.
+3.  **Integration:** The final, fine-tuned "HouseBrain Architect" model will be integrated into a simplified, single-step production pipeline, making it highly efficient.
