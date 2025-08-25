@@ -1,4 +1,4 @@
-from typing import List, Dict, Union, Literal
+from typing import List, Dict, Union, Literal, Optional
 from pydantic import BaseModel, Field, validator
 from enum import Enum
 
@@ -86,12 +86,22 @@ class Window(BaseModel):
     room_id: str = Field(..., description="Room ID")
 
 
+class Furniture(BaseModel):
+    id: str = Field(..., description="Unique identifier for the furniture item.")
+    type: str = Field(..., description="Type of furniture (e.g., 'bed', 'sofa', 'dining_table').")
+    center: Point2D = Field(..., description="The center point of the furniture item within the room's coordinate system.")
+    width: float = Field(..., gt=0, description="Width of the furniture item in feet.")
+    height: float = Field(..., gt=0, description="Height (depth) of the furniture item in feet.")
+    angle: float = Field(0.0, description="Rotation angle of the furniture in degrees.")
+
+
 class Room(BaseModel):
     id: str = Field(..., description="Unique room identifier")
     type: RoomType
     bounds: Rectangle
     doors: List[Door] = Field(default_factory=list)
     windows: List[Window] = Field(default_factory=list)
+    furniture: Optional[List[Furniture]] = Field([], description="List of furniture items in the room.")
     features: List[str] = Field(default_factory=list, description="Special features like fireplace, built-ins")
     
     @validator('bounds')

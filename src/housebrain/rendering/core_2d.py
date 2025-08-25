@@ -444,6 +444,44 @@ class Professional2DRenderer:
 
         svg.append("</g>") # Close fixtures group
 
+    def _add_furniture(self, svg: List[str], T):
+        """Adds furniture items to the SVG."""
+        svg.append("<g id='furniture'>")
+        for sp in self.spaces:
+            if not sp["boundary"] or len(sp["boundary"]) < 3:
+                continue
+            
+            # --- 1. Calculate Room Geometry ---
+            xs = [p[0] for p in sp["boundary"]]
+            ys = [p[1] for p in sp["boundary"]]
+            minx, maxx = min(xs), max(xs)
+            miny, maxy = min(ys), max(ys)
+            cx = (minx + maxx) / 2
+            cy = (miny + maxy) / 2
+            w_mm = maxx - minx
+            h_mm = maxy - miny
+            
+            CX, CY = T(cx, cy)
+
+            for furniture_item in sp.get("furniture", []):
+                # Center of furniture relative to the SVG canvas origin (top-left)
+                center_x_abs = furniture_item.center.x * self.s + CX
+                center_y_abs = (self.drawing_size - furniture_item.center.y) * self.s + CY
+
+                width = furniture_item.width * self.s
+                height = furniture_item.height * self.s
+
+                # Top-left corner for the rect element
+                rect_x = center_x_abs - width / 2
+                rect_y = center_y_abs - height / 2
+
+                transform = f"rotate({-furniture_item.angle}, {center_x_abs}, {center_y_abs})"
+                
+                svg.append(
+                    f"<rect x='{rect_x:.1f}' y='{rect_y:.1f}' width='{width:.1f}' height='{height:.1f}' class='furniture' transform='{transform}'/>"
+                )
+        svg.append("</g>")
+
     def _add_title_block(self, svg: List[str], width: int, height: int):
         """Adds a professional title block to the bottom right of the sheet."""
         block_x = width - 350
@@ -580,6 +618,7 @@ class Professional2DRenderer:
             ".stair-arrow { stroke: #333; stroke-width: 1.5; marker-end: url(#arrowhead); }",
             ".stair-arrow-head { fill: #333; }",
             ".fixture { stroke: #333; stroke-width: 1; }",
+            ".furniture { fill: #FFD700; stroke: #FFD700; stroke-width: 1; }", # Gold color for furniture
             "</style>",
             "<marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='3.5' orient='auto'>",
             "  <polygon points='0 0, 10 3.5, 0 7'/>",
@@ -756,6 +795,9 @@ class Professional2DRenderer:
 
         # Render Room Details (Fixtures, internal annotations)
         self._add_room_details(svg, T)
+
+        # Render Furniture
+        self._add_furniture(svg, T)
 
         # Render Stairs
         self._add_stairs(svg, T)
