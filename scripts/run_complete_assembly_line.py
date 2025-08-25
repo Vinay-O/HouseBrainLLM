@@ -9,10 +9,15 @@ import json
 from inspect import getsource
 import urllib.request
 import hashlib
+from pydantic import BaseModel
+from typing import Optional
 
 # --- Add Project Root to Path ---
+# This ensures that the script can be run from anywhere and still find the src module
+import sys
+from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from src.housebrain.schema import HouseOutput
+from src.housebrain.schema import HouseOutput, RoomType
 
 # --- Logging Configuration ---
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -22,7 +27,7 @@ logger = logging.getLogger(__name__)
 def get_schema_definition() -> str:
     return getsource(HouseOutput)
 
-def extract_json_from_response(response_text: str) -> str | None:
+def extract_json_from_response(response_text: str) -> Optional[str]:
     try:
         start_index = response_text.find('{')
         if start_index == -1: return None
@@ -34,7 +39,8 @@ def extract_json_from_response(response_text: str) -> str | None:
     except Exception:
         return None
 
-def call_ollama(model_name: str, prompt: str) -> str | None:
+def call_ollama(model_name: str, prompt: str) -> Optional[str]:
+    logger.info(f"Sending prompt of length {len(prompt)} to model {model_name}...")
     url = "http://localhost:11434/api/generate"
     data = {"model": model_name, "prompt": prompt, "stream": False, "format": "json"}
     encoded_data = json.dumps(data).encode('utf-8')
@@ -48,8 +54,14 @@ def call_ollama(model_name: str, prompt: str) -> str | None:
                     logger.error("Ollama API returned an empty response.")
                     return None
                 return response_text
+    except urllib.error.HTTPError as e:
+        # This is the new, more detailed error logging
+        error_content = e.read().decode('utf-8')
+        logger.error(f"HTTP Error from Ollama API: {e.code} {e.reason}")
+        logger.error(f"Ollama response: {error_content}")
+        return None
     except Exception as e:
-        logger.error(f"Error calling Ollama API: {e}")
+        logger.error(f"An unexpected error occurred calling Ollama API: {e}")
         return None
 
 def generate_and_save_draft(prompt: str, output_file: Path, model: str, wrap_in_levels: bool = False):
@@ -76,82 +88,10 @@ def generate_and_save_draft(prompt: str, output_file: Path, model: str, wrap_in_
     logger.error("Failed to generate a valid JSON draft.")
     return False
 
-# --- Prompt Templates ---
-STAGE_1_PROMPT_TEMPLATE = """You are an expert AI architect. Generate ONLY the high-level geometric layout for a house.
-Focus ONLY on `levels` and `rooms` with `id`, `type` (using snake_case like 'living_room'), and non-overlapping `bounds`.
-DO NOT include doors or windows yet.
-Your output must be a single JSON object with a root "levels" key.
+# --- Basic Prompt Templates (reverted) ---
+STAGE_1_PROMPT_TEMPLATE = "Generate a JSON layout for the following prompt, focusing on levels and rooms. User prompt: {user_prompt}"
+STAGE_2_PROMPT_TEMPLATE = "Add doors and windows to the following JSON layout. Existing layout: {existing_layout}. Original prompt: {user_prompt}"
 
-**Golden Example of room structure (without doors/windows):**
-```json
-{{
-  "id": "living_room_0",
-  "type": "living_room",
-  "bounds": {{"x": 1, "y": 1, "width": 14, "height": 18}}
-}}
-```
----
-**Schema Reference:**
-```python
-{schema_definition}
-```
----
-**User Prompt:**
-{user_prompt}
----
-Generate the JSON for the house layout."""
-
-STAGE_2_PROMPT_TEMPLATE = """You are an expert AI architect. Add doors and windows to a pre-existing house layout.
-- Use snake_case for room `type` (e.g., 'master_bedroom').
-- Doors and windows MUST be complete JSON objects, not just strings.
-- Ensure doors connect adjacent rooms and windows are on exterior walls.
-- DO NOT change the existing `id`, `type`, or `bounds`.
-Your output must be a single JSON object containing ONLY the `levels` key.
-
-**Golden Example of a perfect room with openings:**
-```json
- "rooms": [
-    {{
-      "id": "living_room_0",
-      "type": "living_room",
-      "bounds": {{"x": 1, "y": 1, "width": 14, "height": 18}},
-      "doors": [
-        {{
-          "id": "d1",
-          "wall_index": 2,
-          "position": 0.5,
-          "width": 3,
-          "connecting_room_id": "kitchen_0"
-        }}
-      ],
-      "windows": [
-        {{
-          "id": "w1",
-          "wall_index": 0,
-          "position": 0.5,
-          "width": 5,
-          "height": 4,
-          "elevation": 3
-        }}
-      ]
-    }}
-]
-```
----
-**Schema Reference:**
-```python
-{schema_definition}
-```
----
-**Existing House Layout:**
-```json
-{existing_layout}
-```
----
-**Original User Prompt:**
-{user_prompt}
----
-Now, add the doors and windows to the layout, following the format of the Golden Example exactly."""
 
 # --- Stage Functions ---
 def run_stage_with_retry(stage_function, max_retries, *args):
@@ -163,16 +103,14 @@ def run_stage_with_retry(stage_function, max_retries, *args):
 
 def stage_1_layout(prompt, output_file, model):
     logger.info("--- Stage 1: Generating Layout ---")
-    schema_def = get_schema_definition()
-    generation_prompt = STAGE_1_PROMPT_TEMPLATE.format(schema_definition=schema_def, user_prompt=prompt)
+    generation_prompt = STAGE_1_PROMPT_TEMPLATE.format(user_prompt=prompt)
     return generate_and_save_draft(prompt=generation_prompt, output_file=output_file, model=model, wrap_in_levels=True)
 
 def stage_2_openings(layout_file, prompt, output_file, model):
     logger.info("--- Stage 2: Adding Openings ---")
     with open(layout_file, 'r', encoding='utf-8') as f:
         layout_content = f.read()
-    schema_def = get_schema_definition()
-    generation_prompt = STAGE_2_PROMPT_TEMPLATE.format(schema_definition=schema_def, existing_layout=layout_content, user_prompt=prompt)
+    generation_prompt = STAGE_2_PROMPT_TEMPLATE.format(existing_layout=layout_content, user_prompt=prompt)
     return generate_and_save_draft(prompt=generation_prompt, output_file=output_file, model=model, wrap_in_levels=True)
 
 def stage_3_finalize(layout_file, prompt, output_file):
@@ -234,7 +172,7 @@ def validate_stage_1_output(file_to_validate):
         return False
 
 # --- Main Orchestrator ---
-def assembly_line_pipeline(prompt: str, output_dir: Path, model: str, run_name: str | None = None, max_retries: int = 3):
+def assembly_line_pipeline(prompt: str, output_dir: Path, model: str, run_name: Optional[str] = None, max_retries: int = 3):
     logger.info("--- Starting Architect's Assembly Line ---")
     work_dir = None
     try:
