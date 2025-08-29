@@ -1,0 +1,117 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {
+        "room_id": "entrance_hallway",
+        "description": "An inviting entrance hall that leads to the open-plan living and kitchen area.",
+        "dimensions": {"length": 8, "width": 5},
+        "vastu_compliance": true
+      },
+      {
+        "room_id": "living_kitchen_area",
+        "description": "Contemporary open-plan space combining living room and kitchen, featuring modern finishes and integrated lighting.",
+        "dimensions": {"area": 350},
+        "vastu_compliance": true,
+        "adjacent_to": ["entrance_hallway"]
+      },
+      {
+        "room_id": "dining_area",
+        "description": "A dining area seamlessly integrated with the living space, adhering to Vastu guidelines for seating arrangements.",
+        "dimensions": {"area": 120},
+        "vastu_compliance": true,
+        "adjacent_to": ["living_kitchen_area"]
+      },
+      {
+        "room_id": "bathroom_gf",
+        "description": "A guest bathroom on the ground floor, ensuring privacy and convenience.",
+        "dimensions": {"area": 50},
+        "vastu_compliance": false,
+        "adjacent_to": ["entrance_hallway"]
+      },
+      {
+        "room_id": "bedroom_1",
+        "description": "A master bedroom on the ground floor with an ensuite bathroom, designed for privacy and relaxation.",
+        "dimensions": {"area": 200},
+        "vastu_compliance": true,
+        "adjacent_to": ["entrance_hallway"]
+      }
+    ],
+    "openings": [
+      {
+        "type": "main_door",
+        "description": "A modern, secure main entrance door positioned in the east facing direction for positive energy.",
+        "direction": "east"
+      },
+      {
+        "type": "window",
+        "description": "Large windows in living and kitchen area to maximize natural light according to Vastu principles.",
+        "location": "living_kitchen_area"
+      },
+      {
+        "type": "door",
+        "description": "Interior door connecting the entrance hallway with the living and dining areas, ensuring smooth flow.",
+        "location": "entrance_hallway"
+      }
+    ]
+  },
+  {
+    "level_id": "first_floor",
+    "rooms": [
+      {
+        "room_id": "bedroom_2",
+        "description": "Well-lit bedroom on the first floor with access to a balcony, adhering to Vastu guidelines.",
+        "dimensions": {"area": 180},
+        "vastu_compliance": true,
+        "adjacent_to": ["living_kitchen_area"]
+      },
+      {
+        "room_id": "bedroom_3",
+        "description": "Cozy bedroom on the first floor designed for relaxation and privacy.",
+        "dimensions": {"area": 160},
+        "vastu_compliance": true,
+        "adjacent_to": ["living_kitchen_area"]
+      },
+      {
+        "room_id": "bedroom_4",
+        "description": "Additional bedroom ensuring ample space, placed in alignment with Vastu principles.",
+        "dimensions": {"area": 160},
+        "vastu_compliance": true,
+        "adjacent_to": ["living_kitchen_area"]
+      },
+      {
+        "room_id": "bedroom_5",
+        "description": "A bedroom on the first floor that maintains a serene atmosphere, adhering to Vastu norms.",
+        "dimensions": {"area": 160},
+        "vastu_compliance": true,
+        "adjacent_to": ["living_kitchen_area"]
+      },
+      {
+        "room_id": "bedroom_6",
+        "description": "The final bedroom on the first floor designed for a peaceful retreat.",
+        "dimensions": {"area": 160},
+        "vastu_compliance": true,
+        "adjacent_to": ["living_kitchen_area"]
+      },
+      {
+        "room_id": "bathroom_ff",
+        "description": "A full bathroom on the first floor ensuring convenience for all residents, with Vastu considerations for placement.",
+        "dimensions": {"area": 60},
+        "vastu_compliance": false,
+        "adjacent_to": ["bedroom_2", "bedroom_3"]
+      }
+    ],
+    "openings": [
+      {
+        "type": "balcony",
+        "description": "Balconies adjoining bedrooms, designed to enhance natural ventilation and lighting per Vastu.",
+        "location": ["bedroom_2", "bedroom_3", "bedroom_4"]
+      },
+      {
+        "type": "window",
+        "description": "Windows in all bedrooms to maximize daylight and positive energy according to Vastu guidelines.",
+        "location": "first_floor"
+      }
+    ]
+  }
+]}

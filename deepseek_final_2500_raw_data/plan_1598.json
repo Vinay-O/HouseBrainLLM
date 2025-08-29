@@ -1,0 +1,191 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 180.0,
+      "style": "Experimental Geodesic"
+    },
+    "plot": {
+      "width": 4.0,
+      "depth": 15.0,
+      "orientation": "Diagonal to Prevailing Winds",
+      "climate": "Continental with Harsh Winters"
+    },
+    "roomBreakdown": [
+      {
+        "type": "sunken_living_room",
+        "area": 24.0
+      },
+      {
+        "type": "kitchen",
+        "area": 20.0
+      },
+      {
+        "type": "game_room",
+        "area": 16.0
+      },
+      {
+        "type": "bedroom",
+        "area": 12.0
+      },
+      {
+        "type": "bedroom",
+        "area": 12.0
+      },
+      {
+        "type": "bathroom",
+        "area": 8.0
+      },
+      {
+        "type": "green_wall",
+        "area": 28.0
+      },
+      {
+        "type": "outdoor_entertaining",
+        "area": 20.0
+      }
+    ]
+  },
+  "total_area": 180.0,
+  "construction_cost": 324000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "sunken_living",
+          "type": "sunken_living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            "north_exterior",
+            "east_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "outdoor_entertain",
+          "type": "outdoor_entertaining",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            "north_glass"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "kitchen_main",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            "west_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "green_wall_north",
+          "type": "green_wall",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 4,
+            "height": 7
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "game_room_top",
+          "type": "game_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            "south_hall"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 4,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [
+            "north_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 7,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [
+            "north_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom_top",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 2,
+            "height": 4
+          },
+          "doors": [
+            "west_hall"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 2,
+      "totalArea": 800,
+      "style": "Colonial"
+    },
+    "plot": {
+      "shape": "corner",
+      "orientation": "North-facing entrance"
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "count": 1
+      },
+      {
+        "type": "gym",
+        "count": 1
+      },
+      {
+        "type": "home_office",
+        "count": 1
+      },
+      {
+        "type": "rooftop_terrace",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 128000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "gym",
+          "type": "gym",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "staircase",
+          "type": "staircase",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "rooftop_terrace",
+          "type": "terrace",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

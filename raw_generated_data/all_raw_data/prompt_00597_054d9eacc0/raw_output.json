@@ -1,0 +1,127 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "Master_Bedroom",
+          "area_sqft": 350,
+          "location": "southwest",
+          "opening_directions": ["north", "east"],
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "Guest_Room_1",
+          "area_sqft": 200,
+          "location": "northeast",
+          "opening_directions": ["south", "west"],
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "Guest_Room_2",
+          "area_sqft": 180,
+          "location": "northwest",
+          "opening_directions": ["east"],
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "Living_Room",
+          "area_sqft": 350,
+          "location": "south",
+          "opening_directions": ["north", "east"],
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "Kitchen",
+          "area_sqft": 120,
+          "location": "east",
+          "opening_directions": ["west"],
+          "vastu_compliance": true
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "direction": "north",
+          "connected_to": "Living_Room"
+        },
+        {
+          "type": "window",
+          "direction": "east",
+          "area_sqft": 30,
+          "connected_to": "Master_Bedroom"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "Study_Room",
+          "area_sqft": 150,
+          "location": "southwest",
+          "opening_directions": ["north", "east"],
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "Guest_Bathroom_1",
+          "area_sqft": 80,
+          "location": "northeast",
+          "opening_directions": ["west"],
+          "vastu_compliance": true
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "direction": "east",
+          "connected_to": "Study_Room"
+        },
+        {
+          "type": "window",
+          "direction": "south",
+          "area_sqft": 20,
+          "connected_to": "Guest_Bathroom_1"
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_type": "Master_Bathroom",
+          "area_sqft": 90,
+          "location": "southwest",
+          "opening_directions": ["north", "east"],
+          "vastu_compliance": true
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "direction": "east",
+          "area_sqft": 20,
+          "connected_to": "Master_Bathroom"
+        }
+      ]
+    },
+    {
+      "level_id": "basement",
+      "rooms": [
+        {
+          "room_type": "Garage",
+          "area_sqft": 400,
+          "location": "north",
+          "vastu_compliance": true
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "direction": "west",
+          "connected_to": "Garage"
+        }
+      ]
+    }
+  ]
+}

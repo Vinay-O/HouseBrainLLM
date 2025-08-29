@@ -1,0 +1,252 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1500,
+      "style": "Malwa Traditional"
+    },
+    "plot": {
+      "area": 1500,
+      "shape": "narrow_rectangle",
+      "location": "tier2_city_center",
+      "frontage": "dual",
+      "constraints": [
+        "mature_trees",
+        "crowded",
+        "corner"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "area": 120
+      },
+      {
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "type": "workshop",
+        "area": 300
+      },
+      {
+        "type": "pavilion",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "type": "veranda",
+        "area": 380
+      }
+    ]
+  },
+  "total_area": 1500.0,
+  "construction_cost": 2250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "north_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 5
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "east"
+          ]
+        },
+        {
+          "id": "east_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 25,
+            "y": 5,
+            "width": 5,
+            "height": 40
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": [
+            "north",
+            "east",
+            "south"
+          ]
+        },
+        {
+          "id": "south_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 45,
+            "width": 30,
+            "height": 5
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "south",
+            "east"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "north_to_veranda",
+            "east_to_courtyard",
+            "south_to_workshop"
+          ],
+          "windows": [
+            "west"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 5,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "north_to_courtyard",
+            "east_to_veranda"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 5,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "west_to_courtyard",
+            "south_to_bath"
+          ],
+          "windows": [
+            "north",
+            "east"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "north_to_bedroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "west_to_bath",
+            "south_to_veranda"
+          ],
+          "windows": [
+            "east"
+          ]
+        },
+        {
+          "id": "workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 5,
+            "y": 30,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "north_to_living",
+            "east_to_veranda",
+            "south_to_veranda"
+          ],
+          "windows": [
+            "west"
+          ]
+        },
+        {
+          "id": "pavilion",
+          "type": "pavilion",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            "east_to_courtyard"
+          ],
+          "windows": [
+            "north",
+            "south",
+            "west"
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 5,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "living",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["open-plan", "Chettinad-style decor"],
+          "connected_to": ["kitchen", "dining_area"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["open-plan", "modular storage", "gas stove", "sink"],
+          "connected_to": ["living_room", "dining_area"]
+        },
+        {
+          "room_id": "dining_area",
+          "type": "dining",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["open-plan", "dining table for four"],
+          "connected_to": ["kitchen", "living_room"]
+        },
+        {
+          "room_id": "home_office",
+          "type": "office",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["dedicated space", "work desk", "storage"],
+          "connected_to": ["living_room"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "dimensions": {"length": 14, "width": 12},
+          "features": ["king bed", "wardrobe", "attached bathroom"],
+          "connected_to": ["upper_level"]
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "bathroom",
+          "dimensions": {"length": 8, "width": 6},
+          "features": ["shower", "toilet", "sink"],
+          "connected_to": ["bedroom_1"]
+        },
+        {
+          "room_id": "staircase",
+          "type": "staircase",
+          "dimensions": {"length": 5, "width": 4},
+          "features": ["access to upper level"],
+          "connected_to": ["ground_floor", "upper_level"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": {"length": 3, "width": 7},
+          "location": "front of the house"
+        },
+        {
+          "opening_id": "living_window_1",
+          "type": "window",
+          "dimensions": {"length": 4, "width": 4},
+          "location": "living room - front"
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimensions": {"length": 4, "width": 4},
+          "location": "kitchen"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_level",
+      "rooms": [
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["twin beds", "wardrobe"],
+          "connected_to": ["upper_level"]
+        },
+        {
+          "room_id": "bathroom_2",
+          "type": "bathroom",
+          "dimensions": {"length": 8, "width": 6},
+          "features": ["shower", "toilet", "sink"],
+          "connected_to": ["bedroom_2"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "upper_window",
+          "type": "window",
+          "dimensions": {"length": 4, "width": 4},
+          "location": "bedroom - front"
+        }
+      ]
+    }
+  ]}

@@ -1,0 +1,275 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 1200,
+      "style": "Traditional Craftsman"
+    },
+    "plot": {
+      "description": "Rocky outcrop spanning a ravine with natural stone formations in a tropical monsoon climate, adjacent to a highway",
+      "contours": "Steep, following the natural ravine and rock formations",
+      "orientation": "Bridge house oriented to maximize cross-ventilation and minimize highway noise exposure"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "area": 300,
+        "description": "Double-height library with spiral staircase and reading nooks"
+      },
+      {
+        "type": "bedroom",
+        "area": 180,
+        "description": "Minimalist master bedroom with built-in storage"
+      },
+      {
+        "type": "kitchen",
+        "area": 120,
+        "description": "Compact galley kitchen with locally-sourced stone countertops"
+      },
+      {
+        "type": "bathroom",
+        "area": 80,
+        "description": "Efficient wet room with natural ventilation"
+      },
+      {
+        "type": "living",
+        "area": 220,
+        "description": "Open living area with views of the ravine"
+      },
+      {
+        "type": "utility",
+        "area": 60,
+        "description": "Multi-purpose utility/storage space"
+      },
+      {
+        "type": "deck",
+        "area": 240,
+        "description": "Wraparound deck for outdoor living and monsoon protection"
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 195000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "library_lower",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 8,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "size": "medium"
+            },
+            {
+              "wall": "east",
+              "position": 7.5,
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "deck_lower",
+          "type": "deck",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 23,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 11.5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "library_upper",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "size": "medium"
+            },
+            {
+              "wall": "east",
+              "position": 4,
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 2.5,
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "living",
+          "type": "living",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 2.5,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "deck_upper",
+          "type": "deck",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 23,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 11.5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

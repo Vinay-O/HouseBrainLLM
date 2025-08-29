@@ -1,0 +1,88 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Entrance Hall",
+          "dimensions": {"length": 10, "width": 8},
+          "description": "A welcoming entrance area with minimalist decor and natural lighting."
+        },
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 15, "width": 12},
+          "description": "An open space designed for relaxation, featuring a central minimalist seating arrangement."
+        },
+        {
+          "room_name": "Dining Area",
+          "dimensions": {"length": 10, "width": 8},
+          "description": "Adjacent to the living room, ensuring ease of movement between dining and social spaces."
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 12, "width": 9},
+          "description": "Functional kitchen space with modern minimalist appliances and storage solutions."
+        },
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": {"length": 14, "width": 10},
+          "description": "Spacious bedroom offering privacy and a view. Compliant with Vastu principles for restful energy."
+        },
+        {
+          "room_name": "Additional Bedroom",
+          "dimensions": {"length": 12, "width": 8},
+          "description": "Room designed for the children or guest, integrating natural light for a peaceful environment."
+        },
+        {
+          "room_name": "Bathroom",
+          "dimensions": {"length": 7, "width": 5},
+          "description": "Well-ventilated bathroom with modern fixtures and minimalistic design."
+        },
+        {
+          "room_name": "Servant's Quarters",
+          "dimensions": {"length": 10, "width": 8},
+          "description": "Compact space for domestic help ensuring privacy while maintaining close proximity to essential facilities."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Main Entrance",
+          "location": "North",
+          "description": "An inviting main door aligned with Vastu principles."
+        },
+        {
+          "opening_type": "Windows",
+          "details": [
+            {
+              "room": "Living Room",
+              "direction": "South-East",
+              "size": {"height": 4, "width": 5}
+            },
+            {
+              "room": "Master Bedroom",
+              "direction": "North-East",
+              "size": {"height": 3, "width": 4}
+            }
+          ],
+          "description": "Strategically placed for optimal natural light and ventilation."
+        },
+        {
+          "opening_type": "Doorways",
+          "details": [
+            {
+              "room": "Entrance Hall",
+              "destination": "Living Room",
+              "size": {"height": 7, "width": 3}
+            },
+            {
+              "room": "Kitchen",
+              "destination": "Dining Area",
+              "size": {"height": 6.5, "width": 2.8}
+            }
+          ],
+          "description": "Doorways are designed to ensure smooth transitions between spaces."
+        }
+      ]
+    }
+  ]
+}

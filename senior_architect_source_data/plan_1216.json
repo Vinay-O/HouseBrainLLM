@@ -1,0 +1,220 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1200.0,
+      "style": "Ultra-Modern Minimalist"
+    },
+    "plot": {
+      "topography": "Elevated platform above wetlands",
+      "climate": "Continental with harsh winters",
+      "orientation": "East-west linear",
+      "noise_sources": [
+        "Highway"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "studio",
+        "count": 1
+      },
+      {
+        "type": "telecommuting_pod",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 385000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "south_entrance",
+            "to_studio",
+            "to_hall"
+          ],
+          "windows": [
+            "north_window_wall",
+            "south_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_living_room"
+          ],
+          "windows": [
+            "north_window_wall",
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 12,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 32,
+            "y": 18,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "telecommuting_pod",
+          "type": "telecommuting_pod",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 22,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 24,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            "to_kitchen",
+            "to_bedroom_1",
+            "to_bathroom_1",
+            "to_utility",
+            "to_telecommuting_pod",
+            "to_bedroom_2",
+            "to_bathroom_2",
+            "to_living_room"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"name": "Living Room", "dimensions": {"width": 20, "length": 30}, "adjacent_rooms": ["Dining Area"], "features": ["large window for Vastu east exposure"]},
+        {"name": "Dining Area", "dimensions": {"width": 15, "length": 25}, "adjacent_rooms": ["Living Room"], "features": []},
+        {"name": "Master Bedroom", "dimensions": {"width": 15, "length": 20}, "adjacent_rooms": [], "features": ["south facing window for Vastu"]},
+        {"name": "Guest Bedroom", "dimensions": {"width": 12, "length": 18}, "adjacent_rooms": [], "features": []},
+        {"name": "Bathroom (Ground Floor)", "dimensions": {"width": 8, "length": 10}, "adjacent_rooms": ["Master Bedroom"], "features": []}
+      ],
+      "openings": [
+        {"type": "Entrance", "location": "north", "description": "Main entry with vestibule for security and energy flow"},
+        {"type": "Balcony", "location": "east living room", "description": "Provides natural light and ventilation following Vastu guidelines"},
+        {"type": "Service Entrance", "location": "west", "description": "Dedicated entrance to servant's quarters"}
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {"name": "Kitchen", "dimensions": {"width": 15, "length": 20}, "adjacent_rooms": ["Servant's Quarters"], "features": ["south facing as per Vastu for fire and cooking"]},
+        {"name": "Bedroom", "dimensions": {"width": 12, "length": 18}, "adjacent_rooms": [], "features": []},
+        {"name": "Bathroom (First Floor)", "dimensions": {"width": 8, "length": 10}, "adjacent_rooms": ["Kitchen"], "features": []},
+        {"name": "Servant's Quarters", "dimensions": {"width": 12, "length": 15}, "adjacent_rooms": ["Kitchen"], "features": ["compact design to optimize space"]}
+      ],
+      "openings": [
+        {"type": "Rooftop Terrace Access", "location": "central staircase area", "description": "Accessible via a compact central staircase leading to the rooftop terrace"}
+      ]
+    },
+    {
+      "level_id": "rooftop",
+      "rooms": [
+        {"name": "Terrace", "dimensions": {"width": 50, "length": 80}, "adjacent_rooms": [], "features": ["open space for relaxation and solar panels placement"] }
+      ],
+      "openings": []
+    },
+    {
+      "level_id": "courtyard",
+      "rooms": [
+        {"name": "Courtyard", "dimensions": {"width": 10, "length": 15}, "adjacent_rooms": ["Living Room", "Dining Area"], "features": ["central courtyard for natural light and ventilation as per Vastu"]}
+      ],
+      "openings": []
+    }
+  ]
+}

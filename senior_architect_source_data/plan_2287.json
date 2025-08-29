@@ -1,0 +1,314 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 120.0,
+      "style": "Scandinavian Hygge"
+    },
+    "plot": {
+      "width": 4.0,
+      "depth": 15.0
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 24.0
+      },
+      {
+        "type": "kitchen",
+        "area": 12.0
+      },
+      {
+        "type": "dining_room",
+        "area": 12.0
+      },
+      {
+        "type": "bathroom",
+        "area": 6.0
+      },
+      {
+        "type": "bedroom",
+        "area": 16.0
+      },
+      {
+        "type": "bedroom",
+        "area": 16.0
+      },
+      {
+        "type": "office",
+        "area": 18.0
+      },
+      {
+        "type": "darkroom",
+        "area": 8.0
+      },
+      {
+        "type": "utility",
+        "area": 8.0
+      }
+    ]
+  },
+  "total_area": 120.0,
+  "construction_cost": 216000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry",
+          "type": "entryway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 2,
+            "height": 2
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 2,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2,
+              "type": "large"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_ground",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 2,
+            "height": 3
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 2,
+            "y": 14,
+            "width": 2,
+            "height": 3
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase",
+          "type": "staircase",
+          "bounds": {
+            "x": 2,
+            "y": 0,
+            "width": 2,
+            "height": 2
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2,
+              "type": "large"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 4,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2,
+              "type": "large"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_upper",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 2,
+            "height": 3
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "darkroom",
+          "type": "darkroom",
+          "bounds": {
+            "x": 2,
+            "y": 8,
+            "width": 2,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "stair_landing",
+          "type": "hallway",
+          "bounds": {
+            "x": 2,
+            "y": 12,
+            "width": 2,
+            "height": 3
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 1,
+              "type": "skylight"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "office",
+          "type": "office",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 4.5
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2,
+              "type": "large"
+            },
+            {
+              "wall": "south",
+              "position": 2,
+              "type": "skylight"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

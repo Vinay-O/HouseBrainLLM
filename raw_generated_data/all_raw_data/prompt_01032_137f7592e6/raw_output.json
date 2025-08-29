@@ -1,0 +1,120 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["floor-to-ceiling windows", "wheelchair accessible entrance"],
+          "connected_to": ["dining_room", "kitchen", "garden"]
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["large windows for garden view"],
+          "connected_to": ["kitchen", "living_room"]
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 15, "width": 10 },
+          "features": ["modular kitchen with island", "wheelchair accessible"],
+          "connected_to": ["dining_room", "utility_room"]
+        },
+        {
+          "room_type": "utility_room",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["wheelchair accessible"],
+          "connected_to": ["kitchen"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["floor-to-ceiling windows", "wheelchair accessible bathroom"],
+          "connected_to": ["bathroom"]
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["wheelchair accessible"],
+          "connected_to": ["bedroom"]
+        },
+        {
+          "room_type": "garden",
+          "dimensions": { "length": 50, "width": 30 },  "accessibility_features": ["ramp for wheelchair access"]  },
+        {
+          "room_type": "study_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["natural lighting", "wheelchair accessible"],
+          "connected_to": ["living_room"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "main_entrance",
+          "dimensions": { "length": 4, "width": 8 },
+          "features": ["wheelchair ramp", "grand entrance with large wooden door"]
+        },
+        {
+          "type": "window",
+          "dimensions": { "length": 6, "width": 6 },
+          "location": "living_room",
+          "features": ["floor-to-ceiling"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom_2",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["balcony with garden view", "wheelchair accessible bathroom"],
+          "connected_to": ["bathroom_2"]
+        },
+        {
+          "room_type": "bathroom_2",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["wheelchair accessible"],
+          "connected_to": ["bedroom_2"]
+        },
+        {
+          "room_type": "bedroom_3",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["balcony", "wheelchair accessible bathroom"],
+          "connected_to": ["bathroom_3"]
+        },
+        {
+          "room_type": "bathroom_3",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["wheelchair accessible"],
+          "connected_to": ["bedroom_3"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "balcony",
+          "location": "bedroom_2",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["wheelchair accessible"]
+        },
+        {
+          "type": "balcony",
+          "location": "bedroom_3",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["wheelchair accessible"]
+        }
+      ]
+    }
+  ],
+  "accessibility_features": {
+    "ramps": ["main entrance", "garden access"],
+    "door_widths": 3.5,
+    "bathroom_features": ["grab bars", "wheel-in showers"]
+  },
+  "vastu_compliance": {
+    "kitchen_position": "south-east",
+    "bedrooms_position": "north-west",
+    "living_room_position": "north-east"
+  }
+}

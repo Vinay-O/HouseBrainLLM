@@ -1,0 +1,319 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 4,
+      "totalArea": 3200,
+      "style": "Alpine Chalet"
+    },
+    "plot": {
+      "topography": "desert plateau",
+      "climate": "alpine with heavy snow loads",
+      "orientation": "diagonal to prevailing winds"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "area": 600
+      },
+      {
+        "type": "recording_studio",
+        "area": 400
+      },
+      {
+        "type": "mechanical_room",
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "living_room",
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "area": 150
+      },
+      {
+        "type": "bathroom",
+        "area": 150
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1280000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "mechanical_01",
+          "type": "mechanical_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage_01",
+          "type": "garage",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "library_01",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 15,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "studio_01",
+          "type": "recording_studio",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "living_01",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_01",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_01",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "bedroom_01",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_02",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_02",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

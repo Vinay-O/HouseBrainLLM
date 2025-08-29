@@ -1,0 +1,333 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 3000,
+      "style": "Contemporary"
+    },
+    "plot": {
+      "orientation": "south",
+      "view": "garden",
+      "location": "heritage city",
+      "size": 3000,
+      "constraints": "strict building regulations, heritage compliance"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "area": 400
+      },
+      {
+        "type": "master_bedroom",
+        "area": 350
+      },
+      {
+        "type": "guest_bedroom",
+        "area": 250
+      },
+      {
+        "type": "living_room",
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "area": 250
+      },
+      {
+        "type": "dining_room",
+        "area": 200
+      },
+      {
+        "type": "study_nook",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 150
+      },
+      {
+        "type": "utility",
+        "area": 100
+      },
+      {
+        "type": "staircase",
+        "area": 200
+      },
+      {
+        "type": "terrace",
+        "area": 500
+      }
+    ]
+  },
+  "total_area": 2900.0,
+  "construction_cost": 870000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "main_gate"
+          ],
+          "windows": [],
+          "features": [
+            "water fountain",
+            "copper planters"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 25,
+            "height": 16
+          },
+          "doors": [
+            "to_courtyard",
+            "to_dining"
+          ],
+          "windows": [
+            "south_garden_view"
+          ],
+          "features": [
+            "high ceilings",
+            "teak wood flooring"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 16,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_living",
+            "to_kitchen"
+          ],
+          "windows": [
+            "south_garden_view"
+          ],
+          "features": [
+            "built-in seating"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 16,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_dining",
+            "to_utility"
+          ],
+          "windows": [
+            "north_ventilation"
+          ],
+          "features": [
+            "copper sink",
+            "water filtration system"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 45,
+            "y": 16,
+            "width": 5,
+            "height": 12
+          },
+          "doors": [
+            "to_kitchen"
+          ],
+          "windows": [],
+          "features": [
+            "copper water storage tank",
+            "greywater system"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_courtyard"
+          ],
+          "windows": [
+            "east_lightwell"
+          ],
+          "features": [
+            "built-in wardrobe",
+            "humidity-resistant walls"
+          ]
+        },
+        {
+          "id": "guest_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_guest_bedroom"
+          ],
+          "windows": [
+            "skylight"
+          ],
+          "features": [
+            "water-efficient fixtures",
+            "natural stone"
+          ]
+        },
+        {
+          "id": "staircase",
+          "type": "staircase",
+          "bounds": {
+            "x": 15,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            "skylight"
+          ],
+          "features": [
+            "teak wood treads",
+            "steel railing"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_terrace"
+          ],
+          "windows": [
+            "south_garden_view",
+            "west_private"
+          ],
+          "features": [
+            "walk-in closet",
+            "humidity-controlled environment"
+          ]
+        },
+        {
+          "id": "master_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_bedroom"
+          ],
+          "windows": [
+            "skylight"
+          ],
+          "features": [
+            "copper fixtures",
+            "steam shower"
+          ]
+        },
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            "to_staircase"
+          ],
+          "windows": [
+            "north_light",
+            "south_garden_view"
+          ],
+          "features": [
+            "floor-to-ceiling shelves",
+            "reading nooks",
+            "climate control"
+          ]
+        },
+        {
+          "id": "study_nook",
+          "type": "study",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            "south_garden_view"
+          ],
+          "features": [
+            "built-in desk",
+            "soundproofing"
+          ]
+        },
+        {
+          "id": "terrace",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 40,
+            "height": 10
+          },
+          "doors": [
+            "from_bedroom"
+          ],
+          "windows": [],
+          "features": [
+            "privacy screens",
+            "copper planters",
+            "rainwater harvesting"
+          ]
+        }
+      ]
+    }
+  ]
+}

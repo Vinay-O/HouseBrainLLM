@@ -1,0 +1,358 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 1,
+      "totalArea": 2500,
+      "style": "Traditional Kashmiri with coastal adaptations"
+    },
+    "plot": {
+      "width": 25,
+      "depth": 100,
+      "orientation": "south",
+      "location": "Nellore coastal plains",
+      "notes": "Elongated railway-side plot requiring noise buffering and salt air corrosion resistance"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 6,
+        "notes": "Family bedrooms + seasonal worker accommodation"
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "notes": "Includes external access for workers"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "notes": "Traditional kitchen with dining area"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "notes": "Main family gathering space"
+      },
+      {
+        "type": "workshop",
+        "count": 1,
+        "notes": "Pottery workshop with kiln and drying areas"
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "notes": "Central angan with tulsi platform"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "notes": "Solar water heating and storage"
+      }
+    ]
+  },
+  "total_area": 2500.0,
+  "construction_cost": 625000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "family_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "family_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "worker_quarters_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 80,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "worker_quarters_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 90,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "main_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "id": "secondary_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 15,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "id": "worker_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 80,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            },
+            {
+              "wall": "north",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 7,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 18,
+            "y": 15,
+            "width": 7,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 3
+            },
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "id": "pottery_workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 18,
+            "y": 60,
+            "width": 7,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 3
+            },
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 18,
+            "y": 80,
+            "width": 7,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 25,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12
+            },
+            {
+              "wall": "south",
+              "position": 12
+            },
+            {
+              "wall": "east",
+              "position": 15
+            },
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

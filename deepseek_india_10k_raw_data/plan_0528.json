@@ -1,0 +1,296 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 2000,
+      "style": "Kashmiri Wooden Heritage"
+    },
+    "plot": {
+      "type": "inner",
+      "size": "2000 sq ft",
+      "location": "Bangalore IT corridor",
+      "challenges": [
+        "privacy",
+        "monsoon flooding",
+        "waterlogging"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "courtyard",
+        "area": 400,
+        "level": 0
+      },
+      {
+        "type": "production_space",
+        "area": 600,
+        "level": 2
+      },
+      {
+        "type": "home_spa",
+        "area": 200,
+        "level": 1
+      },
+      {
+        "type": "step_well",
+        "area": 150,
+        "level": 0
+      }
+    ]
+  },
+  "total_area": 2000.0,
+  "construction_cost": 7500000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard_center",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "step_well_entrance",
+          "type": "step_well",
+          "bounds": {
+            "x": 30,
+            "y": 5,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "living_heritage",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "dining_traditional",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "id": "kitchen_craft",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            },
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ]
+        },
+        {
+          "id": "spa_ayurvedic",
+          "type": "home_spa",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ]
+        },
+        {
+          "id": "light_well_1",
+          "type": "light_well",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "production_terrace",
+          "type": "production_space",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 20
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "wind_tower",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "water_tank",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

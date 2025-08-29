@@ -1,0 +1,107 @@
+{"levels": [
+    {
+        "level_id": "ground_floor",
+        "rooms": [
+            {
+                "name": "Entrance Hall",
+                "size": {"width": 15, "depth": 12},
+                "orientation": "north",
+                "description": "North-facing entrance as per Vastu principles with reception area and small vestibule."
+            },
+            {
+                "name": "Living Area",
+                "size": {"width": 30, "length": 20},
+                "adjacent_rooms": ["Dining Area", "Kitchen"],
+                "description": "Open-plan living area merging with dining area for spacious atmosphere and natural light."
+            },
+            {
+                "name": "Dining Area",
+                "size": {"width": 15, "depth": 10},
+                "adjacent_rooms": ["Living Area"],
+                "description": "Separate dining space within open plan area."
+            },
+            {
+                "name": "Open-Plan Kitchen",
+                "size": {"width": 20, "length": 12},
+                "adjacent_rooms": ["Living Area", "Dining Area"],
+                "description": "Open layout integrated with living and dining areas ensuring easy movement and ventilation."
+            },
+            {
+                "name": "Master Bedroom",
+                "size": {"width": 15, "depth": 14},
+                "orientation": "east",
+                "description": "Spacious master bedroom on the upper level."
+            },
+            {
+                "name": "Guest Bedroom",
+                "size": {"width": 12, "depth": 10},
+                "orientation": "west",
+                "description": "Separate guest room for visitors."
+            },
+            {
+                "name": "Servants Quarters",
+                "size": {"width": 10, "depth": 8},
+                "location": "rear side of the villa",
+                "description": "Dedicated servant quarters located at the rear."
+            }
+        ],
+        "openings": [
+            {
+                "type": "Entrance Door",
+                "location": "north_facing",
+                "size": {"width": 3, "height": 7},
+                "description": "Main entrance door aligning with Vastu guidelines."
+            },
+            {
+                "type": "Window",
+                "location": "living_area",
+                "size": {"width": 4, "height": 6},
+                "description": "Large windows in the living area to allow ample natural light."
+            }
+        ]
+    },
+    {
+        "level_id": "upper_floor",
+        "rooms": [
+            {
+                "name": "Master Bedroom",
+                "size": {"width": 15, "depth": 14},
+                "orientation": "east",
+                "description": "Spacious master bedroom with an attached ensuite bathroom."
+            },
+            {
+                "name": "Ensuite Bathroom",
+                "size": {"width": 8, "depth": 6},
+                "attached_to": "Master Bedroom",
+                "description": "Private en-suite bathroom for the master bedroom."
+            }
+        ],
+        "openings": [
+            {
+                "type": "Window",
+                "location": "master_bedroom",
+                "size": {"width": 4, "height": 6},
+                "description": "Optimized window placement following Vastu and Art Deco aesthetics."
+            }
+        ]
+    },
+    {
+        "level_id": "lower_floor",
+        "rooms": [
+            {
+                "name": "Guest Bedroom",
+                "size": {"width": 12, "depth": 10},
+                "orientation": "west",
+                "description": "Compact guest bedroom space."
+            }
+        ],
+        "openings": [
+            {
+                "type": "Window",
+                "location": "guest_bedroom",
+                "size": {"width": 3.5, "height": 5.5},
+                "description": "Balanced window design for adequate light and air circulation."
+            }
+        ]
+    }
+]}

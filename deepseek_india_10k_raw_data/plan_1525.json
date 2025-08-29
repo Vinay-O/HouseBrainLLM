@@ -1,0 +1,678 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 4800,
+      "style": "Andhra Traditional with Local Stone and Lime"
+    },
+    "plot": {
+      "width": 60,
+      "height": 80,
+      "orientation": "west",
+      "location": "Haridwar pilgrimage site, temple vicinity",
+      "challenges": [
+        "flooding and waterlogging during monsoons"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "accessible": true
+      },
+      {
+        "type": "bedroom",
+        "count": 3,
+        "accessible": true
+      },
+      {
+        "type": "accessible_bathroom",
+        "count": 2
+      },
+      {
+        "type": "puja_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "storytelling_area",
+        "count": 1
+      },
+      {
+        "type": "courtyard",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 4800.0,
+  "construction_cost": 8640000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 30
+              },
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 40
+              },
+              "to_room": "dining_room"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 30
+              },
+              "to_room": "storytelling_area"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 20
+              },
+              "to_room": "passage"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "tulsi_platform",
+            "rangoli_floor_patterns",
+            "light_well"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 30
+              },
+              "to_room": "central_courtyard"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 30
+              },
+              "to_room": "main_entrance"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 20
+              },
+              "to_room": "puja_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 25
+              },
+              "facing": "west"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 40
+              },
+              "facing": "north"
+            }
+          ],
+          "features": [
+            "universal_accessibility",
+            "rangoli_floor_patterns"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 10
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 10
+              },
+              "facing": "west"
+            }
+          ],
+          "features": [
+            "traditional_decor",
+            "rangoli_floor_patterns"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 10
+              },
+              "to_room": "passage"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "to_room": "accessible_bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 0
+              },
+              "facing": "south"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 5
+              },
+              "facing": "east"
+            }
+          ],
+          "features": [
+            "universal_accessibility",
+            "rangoli_floor_patterns"
+          ]
+        },
+        {
+          "id": "accessible_bathroom_1",
+          "type": "accessible_bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "to_room": "master_bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 5
+              },
+              "facing": "east"
+            }
+          ],
+          "features": [
+            "roll_in_shower",
+            "grab_bars",
+            "accessible_fixtures"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 10
+              },
+              "to_room": "passage"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 0
+              },
+              "facing": "south"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 10
+              },
+              "facing": "east"
+            }
+          ],
+          "features": [
+            "universal_accessibility",
+            "rangoli_floor_patterns"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 10
+              },
+              "to_room": "passage"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 45,
+                "y": 0
+              },
+              "facing": "south"
+            },
+            {
+              "position": {
+                "x": 45,
+                "y": 10
+              },
+              "facing": "east"
+            }
+          ],
+          "features": [
+            "universal_accessibility",
+            "rangoli_floor_patterns"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 45,
+                "y": 10
+              },
+              "to_room": "passage"
+            },
+            {
+              "position": {
+                "x": 60,
+                "y": 10
+              },
+              "to_room": "accessible_bathroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 52,
+                "y": 0
+              },
+              "facing": "south"
+            },
+            {
+              "position": {
+                "x": 60,
+                "y": 5
+              },
+              "facing": "east"
+            }
+          ],
+          "features": [
+            "universal_accessibility",
+            "rangoli_floor_patterns"
+          ]
+        },
+        {
+          "id": "accessible_bathroom_2",
+          "type": "accessible_bathroom",
+          "bounds": {
+            "x": 55,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 55,
+                "y": 5
+              },
+              "to_room": "bedroom_3"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 60,
+                "y": 5
+              },
+              "facing": "east"
+            }
+          ],
+          "features": [
+            "roll_in_shower",
+            "grab_bars",
+            "accessible_fixtures"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 50
+              },
+              "to_room": "dining_room"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 40
+              },
+              "to_room": "passage"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 50
+              },
+              "facing": "west"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 60
+              },
+              "facing": "north"
+            }
+          ],
+          "features": [
+            "universal_accessibility",
+            "rangoli_floor_patterns"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 40,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 50
+              },
+              "to_room": "kitchen"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 40
+              },
+              "to_room": "central_courtyard"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 50
+              },
+              "to_room": "passage"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 40,
+                "y": 50
+              },
+              "facing": "east"
+            }
+          ],
+          "features": [
+            "universal_accessibility",
+            "rangoli_floor_patterns"
+          ]
+        },
+        {
+          "id": "storytelling_area",
+          "type": "storytelling_area",
+          "bounds": {
+            "x": 40,
+            "y": 40,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 50
+              },
+              "to_room": "dining_room"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 30
+              },
+              "to_room": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 60,
+                "y": 50
+              },
+              "facing": "east"
+            }
+          ],
+          "features": [
+            "amphitheater_seating",
+            "rangoli_floor_patterns",
+            "light_well"
+          ]
+        },
+        {
+          "id": "passage",
+          "type": "passage",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 30
+              },
+              "to_room": "central_courtyard"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 20
+              },
+              "to_room": "central_courtyard"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 30
+              },
+              "to_room": "central_courtyard"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 40
+              },
+              "to_room": "central_courtyard"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 25
+              },
+              "to_room": "master_bedroom"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 20
+              },
+              "to_room": "bedroom_1"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 20
+              },
+              "to_room": "bedroom_2"
+            },
+            {
+              "position": {
+                "x": 45,
+                "y": 20
+              },
+              "to_room": "bedroom_3"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 40
+              },
+              "to_room": "kitchen"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 40
+              },
+              "to_room": "dining_room"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "universal_accessibility",
+            "rangoli_floor_patterns"
+          ]
+        },
+        {
+          "id": "main_entrance",
+          "type": "entrance",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 30
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "ramp_access",
+            "covered_porch"
+          ]
+        }
+      ]
+    }
+  ]
+}

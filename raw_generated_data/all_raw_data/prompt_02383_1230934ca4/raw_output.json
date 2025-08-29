@@ -1,0 +1,99 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": {"length": 4.5, "width": 3.5},
+          "features": ["Vastu-optimized orientation", " ensuite bathroom"],
+          "adjacencies": ["Open Lounge"]
+        },
+        {
+          "room_name": "Bedroom 2",
+          "dimensions": {"length": 4.0, "width": 3.0},
+          "features": ["Facing north as per Vastu norms"],
+          "adjacencies": ["Master Bedroom", "Study Room"]
+        },
+        {
+          "room_name": "Bedroom 3",
+          "dimensions": {"length": 4.0, "width": 3.0},
+          "features": ["Minimalist design with ample ventilation"],
+          "adjacencies": []
+        },
+        {
+          "room_name": "Study Room",
+          "dimensions": {"length": 3.5, "width": 2.8},
+          "features": ["Natural light optimized", "sound insulation"],
+          "adjacencies": ["Bedroom 2"]
+        },
+        {
+          "room_name": "Home Theater",
+          "dimensions": {"length": 6.0, "width": 4.5},
+          "features": [
+            "Acoustic treatment", 
+            "Large screen projection area", 
+            "Modern sound system"
+          ],
+          "adjacencies": ["Open Lounge"]
+        },
+        {
+          "room_name": "Open Lounge",
+          "dimensions": {"length": 8.0, "width": 5.0},
+          "features": [
+            "Multipurpose space",
+            "Seating area",
+            "Connects to kitchen and dining"
+          ],
+          "adjacencies": ["Master Bedroom", "Home Theater", "Dining Area"]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 3.5, "width": 3.0},
+          "features": ["Efficient layout", "Ventilation compliant with Vastu"],
+          "adjacencies": ["Open Lounge"]
+        },
+        {
+          "room_name": "Dining Area",
+          "dimensions": {"length": 4.0, "width": 3.5},
+          "features": ["Spacious seating", "Natural lighting"],
+          "adjacencies": ["Open Lounge"]
+        },
+        {
+          "room_name": "Guest Bedroom",
+          "dimensions": {"length": 4.2, "width": 3.2},
+          "features": ["Comfortable with modern amenities", "Vastu-compliant location"],
+          "adjacencies": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entry",
+          "type": "door",
+          "dimensions": {"height": 2.1, "width": 0.9},
+          "location": "north-west corner"
+        },
+        {
+          "opening_id": "patio_door",
+          "type": "door",
+          "dimensions": {"height": 2.1, "width": 0.9},
+          "location": "south-east corner"
+        },
+        {
+          "opening_id": "balcony_window",
+          "type": "window",
+          "dimensions": {"height": 1.5, "width": 1.5},
+          "location": "east side of Master Bedroom"
+        }
+      ],
+      "facilities": [
+        {
+          "facility_name": "Rooftop Terrace",
+          "description": "A modern terrace with retractable awning, lounge seating and landscaping that adheres to Vastu principles.",
+          "dimensions": {"length": 10.0, "width": 6.0},
+          "access_points": ["Open Lounge", "Home Theater"]
+        }
+      ]
+    }
+  ]
+}

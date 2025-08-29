@@ -1,0 +1,114 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "Living_Dining",
+          "shape": "rectangle",
+          "dimensions": {
+            "length": 15,
+            "width": 12
+          },
+          "orientation": "west-facing"
+        },
+        {
+          "room_id": "Kitchen",
+          "shape": "square",
+          "dimensions": {
+            "length": 8,
+            "width": 8
+          },
+          "orientation": "east-facing",
+          "features": ["modular_kitchen", "gas_stove"]
+        },
+        {
+          "room_id": "Bedroom",
+          "shape": "rectangle",
+          "dimensions": {
+            "length": 12,
+            "width": 10
+          },
+          "orientation": "north-east-facing"
+        },
+        {
+          "room_id": "Bathroom",
+          "shape": "square",
+          "dimensions": {
+            "length": 5,
+            "width": 5
+          }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "Main_Entrance",
+          "type": "door",
+          "orientation": "west-facing"
+        },
+        {
+          "opening_id": "French_Doors_Balcony",
+          "type": "window",
+          "orientation": "north-east-facing",
+          "features": ["balcony"]
+        }
+      ],
+      "vaastu_compliance": [
+        {
+          "feature": "Bedroom_NE",
+          "description": "Bedroom placed in North-East direction as per Vastu principles for positive energy flow"
+        },
+        {
+          "feature": "Kitchen_East",
+          "description": "Kitchen placed in East direction, considered auspicious for cooking"
+        }
+      ],
+      "local_norms_compliance": [
+        {
+          "norm": "Slope_Roof",
+          "description": "Traditional sloping roof design with local materials to suit Kerala climate"
+        },
+        {
+          "norm": "Open_Courtyard",
+          "description": "Incorporated a small courtyard in the center as per traditional Nalukettu style"
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_id": "Staircase_Access",
+          "type": "stairs",
+          "orientation": "west-facing"
+        },
+        {
+          "opening_id": "Terrace_Door",
+          "type": "door",
+          "features": ["access_to_terrace"]
+        }
+      ],
+      "features": [
+        {
+          "feature_id": "Outdoor_Sitting",
+          "description": "Space for outdoor seating with a view"
+        },
+        {
+          "feature_id": "Dry_Zone",
+          "description": "Designated area for drying clothes or other items"
+        }
+      ]
+    }
+  ],
+  "design_notes": [
+    {
+      "note": "Budget-friendly design using locally sourced materials like laterite stone and wood.",
+      "details": ["Sloping roof with local tiles", "Open courtyard to reduce air conditioning needs"]
+    },
+    {
+      "note": "West-facing plot addressed by placing living areas towards the west for optimal evening sunlight exposure",
+      "details": ["Living room designed to capture sunset views"]
+    }
+  ]
+}

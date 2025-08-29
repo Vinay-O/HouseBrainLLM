@@ -1,0 +1,77 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance",
+          "dimensions": { "length": 2.5, "width": 1.5 },
+          "position": { "orientation": "north" }
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 4, "width": 3.5 },
+          "features": ["minimalist_sofa", "coffee_table"]
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 3.5, "width": 2.5 },
+          "features": ["modular_cabinets", "induction_stove"],
+          "position": { "relative_to_entrance": "southeast" }
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 4, "width": 3.5 },
+          "features": ["minimalist_bed", "wardrobe"]
+        },
+        {
+          "room_type": "home_theater",
+          "dimensions": { "length": 3.5, "width": 2.5 },
+          "features": ["projector", "sound_system", "seating_area"]
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": { "length": 2.5, "width": 1.8 },
+          "features": ["shower", "toilet", "sink"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "position": { "from": "entrance", "to": "living_room" }
+        },
+        {
+          "type": "window",
+          "position": { "in": "living_room", "orientation": "east" }
+        },
+        {
+          "type": "window",
+          "position": { "in": "bedroom", "orientation": "north" }
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_type": "study_room",
+          "dimensions": { "length": 3, "width": 2.5 },
+          "features": ["desk", "bookshelf"]
+        },
+        {
+          "room_type": "guest_bedroom",
+          "dimensions": { "length": 3.5, "width": 2.8 },
+          "features": ["minimalist_bed", "wardrobe"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "staircase",
+          "position": { "from": "ground_floor_living_room", "to": "upper_floor_study_room" }
+        },
+        {
+          "type": "window",
+          "position": { "in": "guest_bedroom", "orientation": "west" }
+        }
+      ]
+    }
+  ]}

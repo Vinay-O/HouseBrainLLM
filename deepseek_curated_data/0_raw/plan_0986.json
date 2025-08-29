@@ -1,0 +1,179 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 800.0,
+      "style": "Traditional Kerala Nalukettu"
+    },
+    "plot": {
+      "shape": "irregular",
+      "description": "Irregular plot shape requiring adaptive design"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 200.0,
+        "description": "Master bedroom with attached bathroom and wheelchair accessible features"
+      },
+      {
+        "type": "living_room",
+        "area": 250.0,
+        "description": "Spacious living area with traditional Kerala elements and floor-to-ceiling windows"
+      },
+      {
+        "type": "kitchen",
+        "area": 150.0,
+        "description": "Open kitchen with accessible counters and traditional Kerala-style design"
+      },
+      {
+        "type": "bathroom",
+        "area": 100.0,
+        "description": "Wheelchair accessible bathroom with grab bars and roll-in shower"
+      },
+      {
+        "type": "utility",
+        "area": 100.0,
+        "description": "Utility/Storage space"
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 1600000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "sliding",
+              "width": 36,
+              "position": "north_wall"
+            },
+            {
+              "type": "standard",
+              "width": 32,
+              "position": "east_wall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "width": 300,
+              "position": "south_wall"
+            },
+            {
+              "type": "floor_to_ceiling",
+              "width": 200,
+              "position": "west_wall"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "width": 32,
+              "position": "south_wall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "width": 180,
+              "position": "east_wall"
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "wide",
+              "width": 36,
+              "position": "north_wall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "width": 240,
+              "position": "west_wall"
+            },
+            {
+              "type": "floor_to_ceiling",
+              "width": 120,
+              "position": "south_wall"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "wide",
+              "width": 36,
+              "position": "west_wall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "width": 48,
+              "position": "north_wall"
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "width": 32,
+              "position": "south_wall"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

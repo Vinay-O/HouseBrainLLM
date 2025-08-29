@@ -1,0 +1,602 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 4200,
+      "style": "Heritage Art Deco with Maritime and Regional Traditions"
+    },
+    "plot": {
+      "shape": "rectangular",
+      "orientation": "north",
+      "location": "waterfront backwater, Calicut",
+      "environmentalFactors": [
+        "desert sandstorms",
+        "extreme heat",
+        "cold winters"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 400,
+        "level": 0
+      },
+      {
+        "type": "kitchen",
+        "area": 250,
+        "level": 0
+      },
+      {
+        "type": "dining_room",
+        "area": 300,
+        "level": 0
+      },
+      {
+        "type": "pottery_workshop",
+        "area": 500,
+        "level": 0
+      },
+      {
+        "type": "master_bedroom",
+        "area": 350,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 250,
+        "level": 1,
+        "count": 3
+      },
+      {
+        "type": "study",
+        "area": 200,
+        "level": 1
+      },
+      {
+        "type": "bathroom",
+        "area": 120,
+        "level": 0,
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "area": 120,
+        "level": 1,
+        "count": 3
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 3150000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_entrance",
+          "type": "entrance",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 8,
+            "y": 8,
+            "width": 24,
+            "height": 24
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12
+            },
+            {
+              "wall": "south",
+              "position": 12
+            },
+            {
+              "wall": "east",
+              "position": 12
+            },
+            {
+              "wall": "west",
+              "position": 12
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "chabutra_platform",
+          "type": "gathering_space",
+          "bounds": {
+            "x": 16,
+            "y": 32,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            },
+            {
+              "wall": "east",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "type": "jalousie"
+            },
+            {
+              "wall": "west",
+              "position": 8,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            },
+            {
+              "wall": "west",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "type": "jalousie"
+            },
+            {
+              "wall": "east",
+              "position": 8,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 32,
+            "y": 16,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 8,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_01",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_02",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 24,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "pottery_workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 32,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 8
+            },
+            {
+              "wall": "east",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 8,
+              "type": "jalousie"
+            },
+            {
+              "wall": "west",
+              "position": 8,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "kiln_area",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 48,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "drying_area",
+          "type": "utility",
+          "bounds": {
+            "x": 8,
+            "y": 48,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "pavilion_01",
+          "type": "pavilion",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 16,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "type": "arched"
+            },
+            {
+              "wall": "east",
+              "position": 8,
+              "type": "arched"
+            },
+            {
+              "wall": "west",
+              "position": 8,
+              "type": "arched"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "type": "jalousie"
+            },
+            {
+              "wall": "west",
+              "position": 8,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_01",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "type": "jalousie"
+            },
+            {
+              "wall": "east",
+              "position": 8,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_02",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 32,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 8,
+              "type": "jalousie"
+            },
+            {
+              "wall": "west",
+              "position": 8,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_03",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 32,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 8,
+              "type": "jalousie"
+            },
+            {
+              "wall": "east",
+              "position": 8,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 16,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "type": "jalousie"
+            },
+            {
+              "wall": "east",
+              "position": 8,
+              "type": "jalousie"
+            },
+            {
+              "wall": "west",
+              "position": 8,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_03",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_04",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 24,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_05",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 16,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "pavilion_02",
+          "type": "pavilion",
+          "bounds": {
+            "x": 16,
+            "y": 32,
+            "width": 16,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 8,
+              "type": "arched"
+            },
+            {
+              "wall": "east",
+              "position": 8,
+              "type": "arched"
+            },
+            {
+              "wall": "west",
+              "position": 8,
+              "type": "arched"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

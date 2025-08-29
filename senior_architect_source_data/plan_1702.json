@@ -1,0 +1,658 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 2800,
+      "style": "Earthship"
+    },
+    "plot": {
+      "shape": "Cul-de-sac",
+      "orientation": "Diagonal to prevailing winds",
+      "climate": "Continental with harsh winters"
+    },
+    "roomBreakdown": [
+      {
+        "type": "sunken_living_room",
+        "area": 400
+      },
+      {
+        "type": "library",
+        "area": 350
+      },
+      {
+        "type": "study",
+        "area": 200
+      },
+      {
+        "type": "kitchen",
+        "area": 250
+      },
+      {
+        "type": "dining_room",
+        "area": 200
+      },
+      {
+        "type": "master_bedroom",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "sauna",
+        "area": 120
+      },
+      {
+        "type": "mechanical_room",
+        "area": 180
+      },
+      {
+        "type": "garage",
+        "area": 400
+      }
+    ]
+  },
+  "total_area": 2800.0,
+  "construction_cost": 560000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "sunken_living_room",
+          "type": "sunken_living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "to_room": "staircase_hall"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 20
+              },
+              "to_room": "library"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "length": 10,
+              "type": "double_glazed_thermal"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 15
+              },
+              "length": 10,
+              "type": "double_glazed_thermal"
+            }
+          ]
+        },
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 17.5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "to_room": "sunken_living_room"
+            },
+            {
+              "position": {
+                "x": 37.5,
+                "y": 10
+              },
+              "to_room": "study"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 37.5,
+                "y": 5
+              },
+              "length": 10,
+              "type": "double_glazed_thermal"
+            }
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 37.5,
+            "y": 0,
+            "width": 12.5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 37.5,
+                "y": 10
+              },
+              "to_room": "library"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 5
+              },
+              "length": 10,
+              "type": "double_glazed_thermal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "staircase_hall",
+          "type": "hall",
+          "bounds": {
+            "x": 17.5,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 17.5,
+                "y": 5
+              },
+              "to_room": "sunken_living_room"
+            },
+            {
+              "position": {
+                "x": 22.5,
+                "y": 10
+              },
+              "to_room": "kitchen"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 0
+              },
+              "to_room": "entry_foyer"
+            }
+          ],
+          "windows": [],
+          "stairs": {
+            "direction": "down",
+            "to_level": -1
+          }
+        },
+        {
+          "id": "entry_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 17.5,
+            "y": -10,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 0
+              },
+              "to_room": "staircase_hall"
+            },
+            {
+              "position": {
+                "x": 17.5,
+                "y": -5
+              },
+              "to_room": "garage"
+            },
+            {
+              "position": {
+                "x": 22.5,
+                "y": -10
+              },
+              "to_room": "exterior_main"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": -10,
+            "width": 17.5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 17.5,
+                "y": -5
+              },
+              "to_room": "entry_foyer"
+            },
+            {
+              "position": {
+                "x": 8.75,
+                "y": -10
+              },
+              "length": 8,
+              "type": "garage_door"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 22.5,
+            "y": 0,
+            "width": 12.5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 22.5,
+                "y": 5
+              },
+              "to_room": "staircase_hall"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 5
+              },
+              "to_room": "dining_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 27.5,
+                "y": 0
+              },
+              "length": 7.5,
+              "type": "double_glazed_thermal"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 5
+              },
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 42.5,
+                "y": 0
+              },
+              "length": 10,
+              "type": "double_glazed_thermal"
+            }
+          ]
+        },
+        {
+          "id": "mechanical_room",
+          "type": "mechanical_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 17.5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 17.5,
+                "y": 5
+              },
+              "to_room": "staircase_hall"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 10
+              },
+              "to_room": "upper_hall"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 20
+              },
+              "to_room": "master_bath"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "length": 10,
+              "type": "double_glazed_thermal"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 15
+              },
+              "length": 10,
+              "type": "double_glazed_thermal"
+            }
+          ]
+        },
+        {
+          "id": "master_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 6.67
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 20
+              },
+              "to_room": "master_bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 23.33
+              },
+              "length": 5,
+              "type": "double_glazed_thermal"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 17.5,
+            "height": 13.33
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 6.67
+              },
+              "to_room": "upper_hall"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 23.75,
+                "y": 0
+              },
+              "length": 10,
+              "type": "double_glazed_thermal"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 13.33,
+            "width": 17.5,
+            "height": 13.33
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 20
+              },
+              "to_room": "upper_hall"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 23.75,
+                "y": 13.33
+              },
+              "length": 10,
+              "type": "double_glazed_thermal"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32.5,
+            "y": 0,
+            "width": 17.5,
+            "height": 6.67
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 32.5,
+                "y": 3.33
+              },
+              "to_room": "upper_hall"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 41.25,
+                "y": 0
+              },
+              "length": 5,
+              "type": "double_glazed_thermal"
+            }
+          ]
+        },
+        {
+          "id": "sauna",
+          "type": "sauna",
+          "bounds": {
+            "x": 32.5,
+            "y": 6.67,
+            "width": 17.5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 32.5,
+                "y": 16.67
+              },
+              "to_room": "upper_hall"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 41.25,
+                "y": 6.67
+              },
+              "length": 15,
+              "type": "panoramic_thermal"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 16.67
+              },
+              "length": 10,
+              "type": "panoramic_thermal"
+            }
+          ]
+        },
+        {
+          "id": "upper_hall",
+          "type": "hall",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 17.5,
+            "height": 6.67
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 23.33
+              },
+              "to_room": "master_bedroom"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 20
+              },
+              "to_room": "bedroom_3"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 6.67
+              },
+              "to_room": "bedroom_2"
+            },
+            {
+              "position": {
+                "x": 32.5,
+                "y": 23.33
+              },
+              "to_room": "bathroom_2"
+            },
+            {
+              "position": {
+                "x": 32.5,
+                "y": 16.67
+              },
+              "to_room": "sauna"
+            },
+            {
+              "position": {
+                "x": 24.375,
+                "y": 26.67
+              },
+              "to_room": "stairs"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "stairs",
+          "type": "stairs",
+          "bounds": {
+            "x": 24.375,
+            "y": 26.67,
+            "width": 5,
+            "height": 3.33
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 24.375,
+                "y": 26.67
+              },
+              "to_room": "upper_hall"
+            }
+          ],
+          "windows": [],
+          "stairs": {
+            "direction": "down",
+            "to_level": 0
+          }
+        }
+      ]
+    }
+  ]
+}

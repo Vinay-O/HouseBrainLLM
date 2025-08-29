@@ -1,0 +1,164 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {
+        "room_id": "entrance_hall",
+        "description": "Small entrance hall near the front door with a waiting area and coat closet.",
+        "dimensions": {"length": 4.5, "width": 3.0},
+        "furnishings": ["coat_rack", "small_table"]
+      },
+      {
+        "room_id": "living_room",
+        "description": "Open plan living room with access to the central courtyard via French doors.",
+        "dimensions": {"length": 6.5, "width": 4.0},
+        "furnishings": ["sofa", "coffee_table", "TV_stand"]
+      },
+      {
+        "room_id": "dining_area",
+        "description": "Dining area adjacent to the living room with space for a dining table.",
+        "dimensions": {"length": 3.5, "width": 2.5},
+        "furnishings": ["dining_table", "chairs"]
+      },
+      {
+        "room_id": "kitchen",
+        "description": "Compact but fully functional kitchen with open counter space and island.",
+        "dimensions": {"length": 4.0, "width": 3.5},
+        "furnishings": ["sink", "refrigerator", "oven"]
+      },
+      {
+        "room_id": "service_area",
+        "description": "Small service area for storage and utilities, including a utility room and pantry.",
+        "dimensions": {"length": 2.0, "width": 3.5},
+        "furnishings": ["storage_cabinets"]
+      },
+      {
+        "room_id": "swimming_pool_area",
+        "description": "Dedicated space for the swimming pool with surrounding deck and seating.",
+        "dimensions": {"length": 8.0, "width": 4.0},
+        "furnishings": ["deck_chairs", "umbrella"]
+      },
+      {
+        "room_id": "central_courtyard",
+        "description": "Open central courtyard designed for natural light and ventilation.",
+        "dimensions": {"length": 5.0, "width": 4.0},
+        "furnishings": ["water_feature", "planters"]
+      },
+      {
+        "room_id": "guest_room",
+        "description": "Guest bedroom with a spacious balcony overlooking the courtyard.",
+        "dimensions": {"length": 3.5, "width": 3.5},
+        "balcony": {"size": {"length": 4.0, "width": 2.0}},
+        "furnishings": ["bed", "wardrobe"]
+      },
+      {
+        "room_id": "master_bedroom",
+        "description": "Master bedroom with private balcony offering a serene view.",
+        "dimensions": {"length": 4.5, "width": 3.5},
+        "balcony": {"size": {"length": 3.5, "width": 2.0}},
+        "furnishings": ["bed", "wardrobe", "study_table"]
+      }
+    ],
+    "openings": [
+      {
+        "opening_id": "front_door",
+        "type": "door",
+        "location": "entrance_hall",
+        "direction": "north",
+        "dimensions": {"height": 2.1, "width": 0.9},
+        "description": "Main entrance door providing entry into the house."
+      },
+      {
+        "opening_id": "back_door",
+        "type": "door",
+        "location": "service_area",
+        "direction": "south",
+        "dimensions": {"height": 2.1, "width": 0.9},
+        "description": "Secondary entrance door for service entry."
+      },
+      {
+        "opening_id": "front_window",
+        "type": "window",
+        "location": "living_room",
+        "direction": "east",
+        "dimensions": {"height": 1.5, "width": 0.8},
+        "description": "Window providing natural light."
+      },
+      {
+        "opening_id": "courtyard_window",
+        "type": "window",
+        "location": "kitchen",
+        "direction": "south",
+        "dimensions": {"height": 1.5, "width": 0.8},
+        "description": "Window overlooking the central courtyard."
+      }
+    ]
+  },
+  {
+    "level_id": "upper_floor",
+    "rooms": [
+      {
+        "room_id": "hallway_upper",
+        "description": "Hall connecting bedrooms and the upper-level living areas.",
+        "dimensions": {"length": 3.0, "width": 1.5}
+      },
+      {
+        "room_id": "bedroom_2",
+        "description": "Additional bedroom with a balcony overlooking the courtyard for privacy.",
+        "dimensions": {"length": 4.0, "width": 3.0},
+        "balcony": {"size": {"length": 3.5, "width": 1.8}},
+        "furnishings": ["bed", "wardrobe"]
+      },
+      {
+        "room_id": "study",
+        "description": "Home office/study area designed for concentration and work.",
+        "dimensions": {"length": 4.0, "width": 3.5},
+        "furnishings": ["desk", "chair", "bookshelf"]
+      }
+    ],
+    "openings": [
+      {
+        "opening_id": "upper_window",
+        "type": "window",
+        "location": "bedroom_2",
+        "direction": "west",
+        "dimensions": {"height": 1.5, "width": 0.8},
+        "description": "Window providing ventilation and natural light."
+      },
+      {
+        "opening_id": "upper_door",
+        "type": "door",
+        "location": "hallway_upper",
+        "direction": "north",
+        "dimensions": {"height": 2.1, "width": 0.9},
+        "description": "Door connecting hallway to additional rooms."
+      }
+    ]
+  },
+  {
+    "level_id": "lower_level",
+    "rooms": [
+      {
+        "room_id": "garage",
+        "description": "Garage with space for two vehicles, including storage and utility access.",
+        "dimensions": {"length": 6.0, "width": 4.5}
+      },
+      {
+        "room_id": "basement_storage",
+        "description": "Storage area in the basement for extra storage and utilities.",
+        "dimensions": {"length": 3.0, "width": 4.0},
+        "furnishings": ["shelving_units"]
+      }
+    ],
+    "openings": [
+      {
+        "opening_id": "lower_door",
+        "type": "door",
+        "location": "garage",
+        "direction": "east",
+        "dimensions": {"height": 2.1, "width": 0.9},
+        "description": "Door connecting the garage to the house."
+      }
+    ]
+  }
+]}

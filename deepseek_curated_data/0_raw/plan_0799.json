@@ -1,0 +1,291 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 2000,
+      "style": "Contemporary"
+    },
+    "plot": {
+      "orientation": "North-facing entrance"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1,
+        "area": 250,
+        "description": "Master bedroom with attached spacious balcony"
+      },
+      {
+        "type": "gym",
+        "count": 1,
+        "area": 200,
+        "description": "Private home gym"
+      },
+      {
+        "type": "swimming_pool",
+        "count": 1,
+        "area": 400,
+        "description": "Outdoor swimming pool"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 300,
+        "description": "Open plan living area"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 150,
+        "description": "Modern kitchenette"
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 120,
+        "description": "Ensuite and guest bathroom"
+      },
+      {
+        "type": "balcony",
+        "count": 1,
+        "area": 100,
+        "description": "Spacious bedroom balcony"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 80,
+        "description": "Laundry and storage"
+      }
+    ]
+  },
+  "total_area": 2000.0,
+  "construction_cost": 400000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance",
+          "type": "entrance",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 28,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 14
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 26,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bathroom_guest",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 26,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 12,
+            "y": 34,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "swimming_pool",
+          "type": "swimming_pool",
+          "bounds": {
+            "x": 20,
+            "y": 26,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bedroom_balcony",
+          "type": "balcony",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "gym",
+          "type": "gym",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            },
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bathroom_ensuite",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "closet",
+          "type": "closet",
+          "bounds": {
+            "x": 20,
+            "y": 28,
+            "width": 10,
+            "height": 7
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

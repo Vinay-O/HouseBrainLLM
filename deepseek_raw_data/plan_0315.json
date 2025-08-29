@@ -1,0 +1,168 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 1200,
+      "style": "Minimalist"
+    },
+    "plot": {
+      "width": 30,
+      "height": 40
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1,
+        "level": 1,
+        "area": 180
+      },
+      {
+        "type": "balcony",
+        "count": 1,
+        "level": 1,
+        "area": 80
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "level": 0,
+        "area": 300
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "level": 0,
+        "area": 150
+      },
+      {
+        "type": "swimming_pool",
+        "count": 1,
+        "level": -1,
+        "area": 300
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 216000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            },
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "kitchen_area",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "bedroom_balcony",
+          "type": "balcony",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "pool",
+          "type": "swimming_pool",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

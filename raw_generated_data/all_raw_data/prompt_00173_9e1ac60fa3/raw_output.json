@@ -1,0 +1,161 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "position": { "x": 0, "y": 0 },
+          "features": ["wardrobe", "attached bathroom"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "position": { "x": 12, "y": 0 },
+          "features": ["wardrobe", "attached bathroom"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "position": { "x": 24, "y": 0 },
+          "features": ["wardrobe", "attached bathroom"]
+        },
+        {
+          "room_id": "living_room",
+          "type": "living room",
+          "dimensions": { "length": 15, "width": 12 },
+          "position": { "x": 0, "y": 10 },
+          "features": ["sofa", "TV unit", "dining area"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": { "length": 12, "width": 9 },
+          "position": { "x": 15, "y": 10 },
+          "features": ["modular", "pantry"]
+        },
+        {
+          "room_id": "home_office",
+          "type": "office",
+          "dimensions": { "length": 8, "width": 7 },
+          "position": { "x": 24, "y": 10 },
+          "features": ["workstation", "storage"]
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "bathroom",
+          "dimensions": { "length": 5, "width": 4 },
+          "position": { "x": 0, "y": 20 },
+          "features": ["shower", "toilet"]
+        },
+        {
+          "room_id": "bathroom_2",
+          "type": "bathroom",
+          "dimensions": { "length": 5, "width": 4 },
+          "position": { "x": 12, "y": 20 },
+          "features": ["shower", "toilet"]
+        },
+        {
+          "room_id": "bathroom_3",
+          "type": "bathroom",
+          "dimensions": { "length": 5, "width": 4 },
+          "position": { "x": 24, "y": 20 },
+          "features": ["shower", "toilet"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 7 },
+          "position": { "x": -1, "y": 5 },
+          "direction": "north"
+        },
+        {
+          "opening_id": "back_entrance",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 7 },
+          "position": { "x": 36, "y": 5 },
+          "direction": "south"
+        },
+        {
+          "opening_id": "front_window_living",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 4 },
+          "position": { "x": 0, "y": 15 },
+          "direction": "north"
+        },
+        {
+          "opening_id": "front_window_bedroom_1",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 4 },
+          "position": { "x": 0, "y": 5 },
+          "direction": "north"
+        },
+        {
+          "opening_id": "front_window_bedroom_2",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 4 },
+          "position": { "x": 12, "y": 5 },
+          "direction": "north"
+        },
+        {
+          "opening_id": "front_window_bedroom_3",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 4 },
+          "position": { "x": 24, "y": 5 },
+          "direction": "north"
+        },
+        {
+          "opening_id": "back_window_living",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 4 },
+          "position": { "x": 10, "y": 25 },
+          "direction": "south"
+        },
+        {
+          "opening_id": "back_window_kitchen",
+          "type": "window",
+          "dimensions": { "length": 3, "width": 3 },
+          "position": { "x": 17, "y": 20 },
+          "direction": "south"
+        },
+        {
+          "opening_id": "back_window_home_office",
+          "type": "window",
+          "dimensions": { "length": 3, "width": 3 },
+          "position": { "x": 25, "y": 15 },
+          "direction": "south"
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_id": "staircase",
+          "type": "staircase",
+          "dimensions": { "length": 3, "width": 2 },
+          "position": { "x": 0, "y": 0 },
+          "direction": "north"
+        }
+      ]
+    }
+  ],
+  "features": {
+    "natural_light": true,
+    "ventilation": true,
+    "luxury_segment": true
+  },
+  "vastu_compliance": {
+    "bedrooms_north_west": true,
+    "kitchen_south_east": true,
+    "living_room_center": true,
+    "toilet_separate": true
+  }
+}

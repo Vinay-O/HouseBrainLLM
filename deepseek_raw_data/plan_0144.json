@@ -1,0 +1,335 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 3200.0,
+      "style": "Industrial"
+    },
+    "plot": {
+      "width": 80,
+      "height": 100
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "garage",
+        "count": 1
+      },
+      {
+        "type": "servant_quarters",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "width": 16,
+              "position": "front"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "sliding",
+              "width": 3,
+              "position": "front"
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "width": 8,
+              "position": "rear"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "width": 3,
+              "position": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "width": 6,
+              "position": "side"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "width": 3,
+              "position": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "width": 8,
+              "position": "rear"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "wheelchair",
+              "width": 3.5,
+              "position": "hall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "width": 10,
+              "position": "rear"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "wheelchair",
+              "width": 3.5,
+              "position": "hall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "width": 10,
+              "position": "rear"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "wheelchair",
+              "width": 3.5,
+              "position": "hall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "width": 10,
+              "position": "rear"
+            }
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 60,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "wheelchair",
+              "width": 3.5,
+              "position": "hall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "width": 12,
+              "position": "rear"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "wheelchair",
+              "width": 3.5,
+              "position": "hall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "width": 4,
+              "position": "side"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "wheelchair",
+              "width": 3.5,
+              "position": "hall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "width": 4,
+              "position": "side"
+            }
+          ]
+        },
+        {
+          "id": "primary_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 60,
+            "y": 40,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "wheelchair",
+              "width": 3.5,
+              "position": "primary_bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "width": 5,
+              "position": "side"
+            }
+          ]
+        },
+        {
+          "id": "servant_quarters",
+          "type": "servant_quarters",
+          "bounds": {
+            "x": 0,
+            "y": 50,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "width": 3,
+              "position": "side"
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "width": 6,
+              "position": "rear"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

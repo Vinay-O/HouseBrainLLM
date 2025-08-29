@@ -1,0 +1,200 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Chettinad with local limestone"
+    },
+    "plot": {
+      "size": 5000,
+      "orientation": "north",
+      "location": "heritage city",
+      "restrictions": "strict building regulations, maximum height restrictions"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "area": 120
+      },
+      {
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "type": "workshop",
+        "area": 300
+      },
+      {
+        "type": "courtyard",
+        "area": 300
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 11,
+            "height": 13.64
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6.82,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 31,
+            "y": 15,
+            "width": 11,
+            "height": 13.64
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 6.82,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "size": 6
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "size": 6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

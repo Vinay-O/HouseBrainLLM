@@ -1,0 +1,76 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall & Living Area",
+          "dimensions": {"length": 20, "width": 15},
+          "description": "A spacious entrance hall integrated with a living area to welcome natural light. Features large windows and French doors facing the garden for improved ventilation.",
+          "function": "Reception / Living Space"
+        },
+        {
+          "name": "Dining Room",
+          "dimensions": {"length": 15, "width": 12},
+          "description": "Adjacent to the living area with an open layout to foster social interaction and natural lighting from clerestory windows.",
+          "function": "Dining Area"
+        },
+        {
+          "name": "Kitchen & Servant's Quarters Access",
+          "dimensions": {"length": 20, "width": 15},
+          "description": "Well-equipped kitchen designed with energy efficiency in mind. The layout includes a dedicated area leading to the servant's quarters, ensuring privacy and functional space.",
+          "function": "Culinary Space / Servants"
+        },
+        {
+          "name": "Library",
+          "dimensions": {"length": 15, "width": 10},
+          "description": "A quiet nook with ample shelving for books. Large windows ensure natural light and an inviting ambience.",
+          "function": "Study/Library"
+        },
+        {
+          "name": "Servant's Quarters",
+          "dimensions": {"length": 15, "width": 10},
+          "description": "A compact living space designed for the servants with basic amenities, strategically located to maintain privacy yet accessible.",
+          "function": "Accommodation"
+        },
+        {
+          "name": "Home Office",
+          "dimensions": {"length": 12, "width": 10},
+          "description": "A dedicated office space that benefits from north-facing windows and natural light, promoting a focused work environment. Vastu alignment considered for energy flow.",
+          "function": "Work"
+        }
+      ],
+      "openings": [
+        {
+          "type": "Main Entrance",
+          "location": {"x": 10, "y": 0},
+          "description": "Double door entrance with a vestibule to maintain privacy and security."
+        },
+        {
+          "type": "Window",
+          "location": {"room": "Entrance Hall & Living Area", "side": "east"},
+          "dimensions": {"height": 5, "width": 3},
+          "description": "Large casement window for optimal daylight entry."
+        },
+        {
+          "type": "Door",
+          "location": {"room": "Dining Room", "side": "north"},
+          "dimensions": {"height": 7, "width": 3},
+          "description": "Sliding door connecting dining area with outdoor patio."
+        },
+        {
+          "type": "Window",
+          "location": {"room": "Library", "side": "south"},
+          "dimensions": {"height": 5, "width": 2.5},
+          "description": "Sun-facing window providing natural light and inspiration."
+        },
+        {
+          "type": "Door",
+          "location": {"room": "Kitchen & Servant's Quarters Access", "side": "west"},
+          "dimensions": {"height": 7, "width": 3},
+          "description": "Functional door for service access."
+        }
+      ]
+    }
+  ]
+}

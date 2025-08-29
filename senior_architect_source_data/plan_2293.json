@@ -1,0 +1,358 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Bauhaus Functional"
+    },
+    "plot": {
+      "size": 12000,
+      "terrain": "Former industrial site with concrete foundations, natural contours",
+      "climate": "Mediterranean dry summers",
+      "noiseSources": [
+        "Highway"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "study",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "garage",
+        "count": 1
+      },
+      {
+        "type": "meditation_pavilion",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 2850000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "garage_01",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "wall": "north"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_01",
+          "type": "utility",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "east"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "wine_cellar_01",
+          "type": "storage",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_01",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "wall": "south"
+            },
+            {
+              "type": "interior",
+              "wall": "east"
+            }
+          ],
+          "windows": [
+            {
+              "type": "large_fixed",
+              "wall": "south"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_01",
+          "type": "kitchen",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "wall": "north"
+            }
+          ]
+        },
+        {
+          "id": "dining_01",
+          "type": "dining_room",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "wall": "south"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_01",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "wall": "east"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_01",
+          "type": "bathroom",
+          "bounds": {
+            "x": 6,
+            "y": 8,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "study_01",
+          "type": "study",
+          "bounds": {
+            "x": 10,
+            "y": 8,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "wall": "west"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_bedroom_01",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "wall": "east"
+            }
+          ]
+        },
+        {
+          "id": "primary_bath_01",
+          "type": "bathroom",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "skylight",
+              "wall": "roof"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_02",
+          "type": "bedroom",
+          "bounds": {
+            "x": 14,
+            "y": 0,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "wall": "west"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_02",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "site_features": [
+    {
+      "type": "meditation_pavilion",
+      "bounds": {
+        "x": 25,
+        "y": 10,
+        "width": 6,
+        "height": 6
+      },
+      "description": "Open-air pavilion with reflecting pool and water wall for sound masking"
+    },
+    {
+      "type": "earth_berm",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 30,
+        "height": 25
+      },
+      "description": "Earth-sheltered design on north and east sides for thermal insulation and highway noise isolation"
+    }
+  ]
+}

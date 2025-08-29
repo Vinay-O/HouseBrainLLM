@@ -1,0 +1,90 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 20, "width": 15 },
+          "purpose": "common_area"
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "purpose": "common_area"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "utility",
+          "features": ["modular", "island"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 15, "width": 14 },
+          "purpose": "private",
+          "features": ["attached_bathroom"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 14, "width": 13 },
+          "purpose": "private"
+        },
+        {
+          "room_id": "home_office",
+          "dimensions": { "length": 10, "width": 10 },
+          "purpose": "workspace"
+        },
+        {
+          "room_id": "bathroom_1",
+          "dimensions": { "length": 8, "width": 6 },
+          "purpose": "utility"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "location": "front_facade"
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "location": "living_room",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 16, "width": 14 },
+          "purpose": "private"
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 15, "width": 13 },
+          "purpose": "private"
+        },
+        {
+          "room_id": "bathroom_2",
+          "dimensions": { "length": 8, "width": 6 },
+          "purpose": "utility"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "first_floor_window",
+          "type": "window",
+          "location": "bedroom_3",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "design_style": "brutalist",
+  "plot_dimensions": { "length": 80, "width": 50 },
+  "features": ["concrete_facade", "minimalist_design"]
+}

@@ -1,0 +1,214 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 800,
+      "style": "Punjabi Farmhouse"
+    },
+    "plot": {
+      "orientation": "east",
+      "size": 800,
+      "location": "riverfront",
+      "specialConditions": [
+        "flood zone",
+        "prevailing winds",
+        "noise pollution"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "area": 120
+      },
+      {
+        "type": "master_bedroom",
+        "area": 150
+      },
+      {
+        "type": "bedroom",
+        "area": 120
+      },
+      {
+        "type": "art_gallery",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "type": "utility",
+        "area": 70
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 320000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "north_entrance",
+            "to_kitchen",
+            "to_gallery"
+          ],
+          "windows": [
+            "east_window_wall"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_living",
+            "to_utility"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "art_gallery_0",
+          "type": "art_gallery",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            "to_living"
+          ],
+          "windows": [
+            "skylight_north",
+            "skylight_south"
+          ]
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "to_kitchen",
+            "exterior_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            "exterior_door"
+          ],
+          "windows": [
+            "high_vent_window"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom_1",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "east_balcony_door",
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        },
+        {
+          "id": "hallway_1",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 25,
+            "height": 2
+          },
+          "doors": [
+            "to_master",
+            "to_bedroom",
+            "to_bath",
+            "stairs"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

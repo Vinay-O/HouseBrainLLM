@@ -1,0 +1,96 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "area": 250,
+          "features": ["floor-to-ceiling windows", "vastu-compliant layout"],
+          "adjacent_to": ["dining_room", "kitchen"]
+        },
+        {
+          "room_type": "dining_room",
+          "area": 180,
+          "features": ["natural light"],
+          "adjacent_to": ["living_room", "kitchen"]
+        },
+        {
+          "room_type": "kitchen",
+          "area": 200,
+          "features": ["energy-efficient appliances", "ventilation"],
+          "adjacent_to": ["dining_room", "servant_quarters"]
+        },
+        {
+          "room_type": "bedroom",
+          "subtype": "master",
+          "area": 350,
+          "features": ["walk-in closet", "attached bathroom with vastu-compliant layout"],
+          "adjacent_to": ["balcony", "living_room"]
+        },
+        {
+          "room_type": "bedroom",
+          "subtype": "standard",
+          "area": 250,
+          "features": ["attached bathroom"],
+          "adjacent_to": ["living_room", "balcony"]
+        },
+        {
+          "room_type": "servant_quarters",
+          "area": 180,
+          "features": ["basic amenities", "separate entrance"],
+          "adjacent_to": ["kitchen"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "floor-to-ceiling windows",
+          "location": "living_room, dining_room, bedrooms"
+        },
+        {
+          "type": "doors",
+          "location": "all rooms, with vastu-compliant orientation"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_level",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "subtype": "standard",
+          "area": 250,
+          "features": ["attached bathroom"],
+          "adjacent_to": ["balcony", "study_room"]
+        },
+        {
+          "room_type": "study_room",
+          "area": 180,
+          "features": ["natural light", "quiet location"],
+          "adjacent_to": ["bedroom"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "floor-to-ceiling windows",
+          "location": "study_room, bedroom"
+        },
+        {
+          "type": "doors",
+          "location": "all rooms, with vastu-compliant orientation"
+        }
+      ]
+    }
+  ],
+  "features": {
+    "eco_friendly": [
+      "solar panels",
+      "rainwater harvesting",
+      "energy-efficient lighting and appliances",
+      "natural ventilation and cooling",
+      "native plants in landscaping"
+    ],
+    "split_level": true,
+    "total_area": 2500
+  }
+}

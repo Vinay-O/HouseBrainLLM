@@ -1,0 +1,161 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "width": 15, "length": 20 },
+          "features": ["wheelchair_accessible", "large_entrance"],
+          "position": { "from": "left", "to": "front" }
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "width": 15, "length": 20 },
+          "features": ["wheelchair_accessible", "adjacent_to_kitchen"],
+          "position": { "from": "left", "to": "front" }
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "width": 15, "length": 20 },
+          "features": ["wheelchair_accessible", "modular"],
+          "position": { "from": "left", "to": "rear" }
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "width": 15, "length": 20 },
+          "features": ["wheelchair_accessible", "master_bedroom"],
+          "position": { "from": "right", "to": "front" }
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "width": 15, "length": 20 },
+          "features": ["wheelchair_accessible", "guest_bedroom"],
+          "position": { "from": "right", "to": "rear" }
+        },
+        {
+          "room_id": "bathroom_1",
+          "dimensions": { "width": 8, "length": 8 },
+          "features": ["wheelchair_accessible", "shower"],
+          "position": { "adjacent_to": "bedroom_1" }
+        },
+        {
+          "room_id": "bathroom_2",
+          "dimensions": { "width": 8, "length": 8 },
+          "features": ["wheelchair_accessible", "shower"],
+          "position": { "adjacent_to": "bedroom_2" }
+        },
+        {
+          "room_id": "staircase",
+          "dimensions": { "width": 5, "length": 10 },
+          "features": ["wheelchair_accessible", "wide_steps"],
+          "position": { "from": "front", "to": "back" }
+        },
+        {
+          "room_id": "pool_area",
+          "dimensions": { "width": 12, "length": 20 },
+          "features": ["wheelchair_accessible", "outdoor"],
+          "position": { "outside": true }
+        },
+        {
+          "room_id": "terrace",
+          "dimensions": { "width": 30, "length": 40 },
+          "features": ["wheelchair_accessible", "rooftop"],
+          "position": { "above": "top_floor" }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "front_entrance",
+          "type": "door",
+          "dimensions": { "width": 4, "height": 8 },
+          "position": { "from": "front", "to": "left" }
+        },
+        {
+          "opening_id": "back_exit",
+          "type": "door",
+          "dimensions": { "width": 4, "height": 8 },
+          "position": { "from": "back", "to": "right" }
+        },
+        {
+          "opening_id": "pool_access",
+          "type": "gate",
+          "dimensions": { "width": 6, "height": 8 },
+          "position": { "outside": true }
+        },
+        {
+          "opening_id": "terrace_access",
+          "type": "staircase",
+          "dimensions": { "width": 5, "length": 10 },
+          "features": ["wheelchair_accessible", "outdoor"],
+          "position": { "above": "top_floor" }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "width": 15, "length": 20 },
+          "features": ["wheelchair_accessible", "guest_bedroom"],
+          "position": { "from": "left", "to": "front" }
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "width": 15, "length": 20 },
+          "features": ["wheelchair_accessible", "guest_bedroom"],
+          "position": { "from": "left", "to": "rear" }
+        },
+        {
+          "room_id": "bathroom_3",
+          "dimensions": { "width": 8, "length": 8 },
+          "features": ["wheelchair_accessible", "shower"],
+          "position": { "adjacent_to": "bedroom_3" }
+        },
+        {
+          "room_id": "bathroom_4",
+          "dimensions": { "width": 8, "length": 8 },
+          "features": ["wheelchair_accessible", "shower"],
+          "position": { "adjacent_to": "bedroom_4" }
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "width": 10, "length": 12 },
+          "features": ["wheelchair_accessible", "quiet_space"],
+          "position": { "from": "right", "to": "front" }
+        },
+        {
+          "room_id": "balcony",
+          "dimensions": { "width": 10, "length": 12 },
+          "features": ["wheelchair_accessible", "outdoor"],
+          "position": { "outside": true }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "front_entrance_upper",
+          "type": "door",
+          "dimensions": { "width": 4, "height": 8 },
+          "position": { "from": "front", "to": "left" }
+        },
+        {
+          "opening_id": "back_exit_upper",
+          "type": "door",
+          "dimensions": { "width": 4, "height": 8 },
+          "position": { "from": "back", "to": "right" }
+        }
+      ]
+    }
+  ],
+  "features": {
+    "style": "Mediterranean",
+    "wheelchair_accessibility": true,
+    "budget": "tight",
+    "rooftop_terrace": true,
+    "swimming_pool": true
+  },
+  "dimensions": {
+    "plot_size": { "width": 100, "length": 100 }
+  }
+}

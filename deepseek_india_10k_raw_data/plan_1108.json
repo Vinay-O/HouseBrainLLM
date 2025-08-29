@@ -1,0 +1,575 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 5200,
+      "style": "Contemporary Art Deco Mumbai with Maritime Influences"
+    },
+    "plot": {
+      "size": 2.0,
+      "orientation": "West-facing for evening breeze capture",
+      "type": "Agricultural conversion in Guntur belt",
+      "heritageZones": "Protected zone compliance addressed"
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_clinic",
+        "area": 400,
+        "level": 0
+      },
+      {
+        "type": "consultation",
+        "area": 200,
+        "level": 0
+      },
+      {
+        "type": "living_room",
+        "area": 450,
+        "level": 0
+      },
+      {
+        "type": "kitchen",
+        "area": 300,
+        "level": 0
+      },
+      {
+        "type": "dining_room",
+        "area": 250,
+        "level": 0
+      },
+      {
+        "type": "courtyard",
+        "area": 600,
+        "level": 0
+      },
+      {
+        "type": "master_bedroom",
+        "area": 400,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 300,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 300,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 300,
+        "level": 1
+      },
+      {
+        "type": "guest_house",
+        "area": 800,
+        "level": 0
+      },
+      {
+        "type": "earth_sheltered",
+        "area": 500,
+        "level": -1
+      }
+    ]
+  },
+  "total_area": 5200.0,
+  "construction_cost": 1560000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "storage_basement",
+          "type": "earth_sheltered",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12.5,
+              "leads_to": "staircase"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5,
+              "leads_to": "exterior"
+            },
+            {
+              "wall": "north",
+              "position": 5,
+              "leads_to": "main_courtyard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "main_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15,
+              "leads_to": "entrance_foyer"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "leads_to": "home_clinic"
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "leads_to": "living_room"
+            },
+            {
+              "wall": "north",
+              "position": 15,
+              "leads_to": "dining_room"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "home_clinic",
+          "type": "home_clinic",
+          "bounds": {
+            "x": 30,
+            "y": 8,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10,
+              "leads_to": "main_courtyard"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "leads_to": "consultation"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10,
+              "height": 1.2,
+              "operable": true
+            }
+          ]
+        },
+        {
+          "id": "consultation_room",
+          "type": "consultation",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "leads_to": "home_clinic"
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "leads_to": "waiting_area"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10,
+              "height": 1.2,
+              "operable": true
+            }
+          ]
+        },
+        {
+          "id": "waiting_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5,
+              "leads_to": "consultation_room"
+            },
+            {
+              "wall": "south",
+              "position": 5,
+              "leads_to": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "height": 1.5,
+              "operable": true
+            }
+          ]
+        },
+        {
+          "id": "living_room_main",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 28,
+            "width": 15,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "leads_to": "main_courtyard"
+            },
+            {
+              "wall": "east",
+              "position": 15,
+              "leads_to": "dining_room"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7.5,
+              "height": 2.0,
+              "operable": true
+            },
+            {
+              "wall": "north",
+              "position": 7.5,
+              "height": 2.0,
+              "operable": true
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 15,
+            "y": 28,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "leads_to": "main_courtyard"
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "leads_to": "living_room_main"
+            },
+            {
+              "wall": "east",
+              "position": 7.5,
+              "leads_to": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "height": 1.8,
+              "operable": true
+            }
+          ]
+        },
+        {
+          "id": "kitchen_main",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 28,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7.5,
+              "leads_to": "dining_room"
+            },
+            {
+              "wall": "north",
+              "position": 7.5,
+              "leads_to": "service_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "height": 1.2,
+              "operable": true
+            }
+          ]
+        },
+        {
+          "id": "service_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 30,
+            "y": 48,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "leads_to": "kitchen_main"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_house",
+          "type": "guest_house",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10,
+              "leads_to": "exterior_guest_entry"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "height": 1.5,
+              "operable": true
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "height": 1.5,
+              "operable": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 28,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "leads_to": "upper_corridor"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7.5,
+              "height": 1.8,
+              "operable": true
+            },
+            {
+              "wall": "north",
+              "position": 7.5,
+              "height": 1.8,
+              "operable": true
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 28,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "leads_to": "upper_corridor"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "height": 1.5,
+              "operable": true
+            },
+            {
+              "wall": "north",
+              "position": 7.5,
+              "height": 1.5,
+              "operable": true
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 28,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "leads_to": "upper_corridor"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "height": 1.5,
+              "operable": true
+            },
+            {
+              "wall": "north",
+              "position": 7.5,
+              "height": 1.5,
+              "operable": true
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 48,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "leads_to": "upper_corridor"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7.5,
+              "height": 1.5,
+              "operable": true
+            },
+            {
+              "wall": "east",
+              "position": 7.5,
+              "height": 1.5,
+              "operable": true
+            }
+          ]
+        },
+        {
+          "id": "upper_corridor",
+          "type": "corridor",
+          "bounds": {
+            "x": 0,
+            "y": 48,
+            "width": 45,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "leads_to": "master_bedroom"
+            },
+            {
+              "wall": "south",
+              "position": 22.5,
+              "leads_to": "bedroom_2"
+            },
+            {
+              "wall": "south",
+              "position": 37.5,
+              "leads_to": "bedroom_3"
+            },
+            {
+              "wall": "north",
+              "position": 7.5,
+              "leads_to": "bedroom_4"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 22.5,
+              "height": 2.0,
+              "operable": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

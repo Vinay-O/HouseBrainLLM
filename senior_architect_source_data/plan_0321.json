@@ -1,0 +1,332 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 10000,
+      "style": "Tamil Brahmin Agraharam Adaptive Reuse"
+    },
+    "plot": {
+      "orientation": "east",
+      "size": 10000,
+      "constraints": [
+        "dense_metropolitan",
+        "high_water_table",
+        "monsoon_water_management"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "puja_room",
+        "count": 1,
+        "specialFeatures": [
+          "brass_fittings",
+          "east_facing"
+        ]
+      },
+      {
+        "type": "workshop",
+        "count": 1,
+        "specialFeatures": [
+          "pottery",
+          "crafts"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "count": 3
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      }
+    ]
+  },
+  "total_area": 8500.0,
+  "construction_cost": 2125000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 12
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 20,
+            "height": 22
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 11
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 28,
+            "y": 12,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 8
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 40,
+            "y": 12,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 22,
+            "height": 18
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 11
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 11
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 25,
+            "height": 22
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 12
+            }
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 18,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "terrace",
+          "type": "terrace",
+          "bounds": {
+            "x": 33,
+            "y": 18,
+            "width": 17,
+            "height": 22
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 8
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

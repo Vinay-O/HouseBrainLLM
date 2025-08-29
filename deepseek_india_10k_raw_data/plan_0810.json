@@ -1,0 +1,658 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 2800,
+      "style": "Tribal Adivasi Courtyard"
+    },
+    "plot": {
+      "shape": "rectangular",
+      "width": 40,
+      "depth": 35,
+      "orientation": "north_south",
+      "location": "Amritsar forest clearing",
+      "eco_zone": true,
+      "earthquake_zone": true
+    },
+    "roomBreakdown": [
+      {
+        "type": "prayer_room",
+        "area": 300,
+        "level": 0
+      },
+      {
+        "type": "courtyard",
+        "area": 400,
+        "level": 0
+      },
+      {
+        "type": "heritage_library",
+        "area": 300,
+        "level": 0
+      },
+      {
+        "type": "master_bedroom",
+        "area": 250,
+        "level": 0
+      },
+      {
+        "type": "bedroom",
+        "area": 200,
+        "level": 0,
+        "count": 3
+      },
+      {
+        "type": "kitchen",
+        "area": 180,
+        "level": 0
+      },
+      {
+        "type": "dining_room",
+        "area": 200,
+        "level": 0
+      },
+      {
+        "type": "bathroom",
+        "area": 100,
+        "level": 0,
+        "count": 3
+      },
+      {
+        "type": "stepwell",
+        "area": 150,
+        "level": 0
+      },
+      {
+        "type": "verandah",
+        "area": 300,
+        "level": 0
+      }
+    ]
+  },
+  "total_area": 2800.0,
+  "construction_cost": 560000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 17.5
+              },
+              "to_room": "north_verandah"
+            },
+            {
+              "position": {
+                "x": 17.5,
+                "y": 25
+              },
+              "to_room": "east_verandah"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 17.5
+              },
+              "to_room": "south_verandah"
+            },
+            {
+              "position": {
+                "x": 17.5,
+                "y": 10
+              },
+              "to_room": "west_verandah"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "rainwater_harvesting",
+            "carved_sandstone_pillars",
+            "traditional_motifs"
+          ]
+        },
+        {
+          "id": "prayer_room_west",
+          "type": "prayer_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 17.5
+              },
+              "to_room": "west_verandah"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 17.5
+              },
+              "orientation": "west"
+            }
+          ],
+          "features": [
+            "meditation_space",
+            "religious_symbols",
+            "thick_walls"
+          ]
+        },
+        {
+          "id": "heritage_library_north",
+          "type": "heritage_library",
+          "bounds": {
+            "x": 10,
+            "y": 25,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 25
+              },
+              "to_room": "north_verandah"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 35
+              },
+              "orientation": "north"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 35
+              },
+              "orientation": "north"
+            }
+          ],
+          "features": [
+            "temperature_controlled_storage",
+            "manuscript_preservation",
+            "reading_area"
+          ]
+        },
+        {
+          "id": "master_bedroom_east",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 20
+              },
+              "to_room": "east_verandah"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 25
+              },
+              "orientation": "east"
+            }
+          ],
+          "features": [
+            "private_access",
+            "thick_walls",
+            "thermal_mass"
+          ]
+        },
+        {
+          "id": "bedroom1_east",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 10
+              },
+              "to_room": "east_verandah"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 10
+              },
+              "orientation": "east"
+            }
+          ],
+          "features": [
+            "thick_walls",
+            "thermal_mass"
+          ]
+        },
+        {
+          "id": "bedroom2_south",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "to_room": "south_verandah"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 20,
+                "y": 0
+              },
+              "orientation": "south"
+            }
+          ],
+          "features": [
+            "thick_walls",
+            "thermal_mass"
+          ]
+        },
+        {
+          "id": "bedroom3_south",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 27.5,
+                "y": 10
+              },
+              "to_room": "south_verandah"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 27.5,
+                "y": 0
+              },
+              "orientation": "south"
+            }
+          ],
+          "features": [
+            "thick_walls",
+            "thermal_mass"
+          ]
+        },
+        {
+          "id": "kitchen_south",
+          "type": "kitchen",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12.5,
+                "y": 10
+              },
+              "to_room": "south_verandah"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 12.5,
+                "y": 0
+              },
+              "orientation": "south"
+            }
+          ],
+          "features": [
+            "eco_friendly_materials",
+            "traditional_stove"
+          ]
+        },
+        {
+          "id": "dining_room_west",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 30
+              },
+              "to_room": "west_verandah"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 30
+              },
+              "orientation": "west"
+            }
+          ],
+          "features": [
+            "family_dining",
+            "natural_lighting"
+          ]
+        },
+        {
+          "id": "bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 7.5
+              },
+              "to_room": "west_verandah"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "water_conservation",
+            "natural_ventilation"
+          ]
+        },
+        {
+          "id": "bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 7.5
+              },
+              "to_room": "west_verandah"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "water_conservation",
+            "natural_ventilation"
+          ]
+        },
+        {
+          "id": "bathroom3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 2.5
+              },
+              "to_room": "east_verandah"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "water_conservation",
+            "natural_ventilation"
+          ]
+        },
+        {
+          "id": "stepwell_corner",
+          "type": "stepwell",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "rainwater_harvesting",
+            "traditional_design",
+            "groundwater_recharge"
+          ]
+        },
+        {
+          "id": "north_verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 10,
+            "y": 25,
+            "width": 20,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 27.5
+              },
+              "to_room": "central_courtyard"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 30
+              },
+              "to_room": "heritage_library_north"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "carved_pillars",
+            "shaded_walkway"
+          ]
+        },
+        {
+          "id": "east_verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 30,
+            "y": 5,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 32.5,
+                "y": 25
+              },
+              "to_room": "central_courtyard"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 10
+              },
+              "to_room": "bedroom1_east"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 20
+              },
+              "to_room": "master_bedroom_east"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 2.5
+              },
+              "to_room": "bathroom3"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "carved_pillars",
+            "shaded_walkway",
+            "passive_solar"
+          ]
+        },
+        {
+          "id": "south_verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 20,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 2.5
+              },
+              "to_room": "central_courtyard"
+            },
+            {
+              "position": {
+                "x": 12.5,
+                "y": 5
+              },
+              "to_room": "kitchen_south"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "to_room": "bedroom2_south"
+            },
+            {
+              "position": {
+                "x": 27.5,
+                "y": 5
+              },
+              "to_room": "bedroom3_south"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "carved_pillars",
+            "shaded_walkway"
+          ]
+        },
+        {
+          "id": "west_verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 17.5
+              },
+              "to_room": "central_courtyard"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 17.5
+              },
+              "to_room": "prayer_room_west"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 30
+              },
+              "to_room": "dining_room_west"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "to_room": "bathroom1"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "to_room": "bathroom2"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "carved_pillars",
+            "shaded_walkway",
+            "privacy_screening"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 192,
+      "style": "Postmodern Eclectic"
+    },
+    "plot": {
+      "width": 4,
+      "depth": 24,
+      "climate": "alpine with heavy snow loads",
+      "orientation": "south-facing"
+    },
+    "roomBreakdown": [
+      {
+        "type": "workshop",
+        "area": 48
+      },
+      {
+        "type": "garage",
+        "area": 24
+      },
+      {
+        "type": "living_room",
+        "area": 32
+      },
+      {
+        "type": "kitchen",
+        "area": 16
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 24
+      },
+      {
+        "type": "guest_bedroom",
+        "area": 24
+      },
+      {
+        "type": "bathroom",
+        "area": 12
+      },
+      {
+        "type": "guest_bathroom",
+        "area": 12
+      }
+    ]
+  },
+  "total_area": 192.0,
+  "construction_cost": 576000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "position": {
+                "x": 0,
+                "y": 3
+              },
+              "size": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 4,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 6
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 0,
+                "y": 9
+              },
+              "size": 2
+            }
+          ]
+        },
+        {
+          "id": "bathroom_guest",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 2,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 19
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "operable",
+              "position": {
+                "x": 0,
+                "y": 20
+              },
+              "size": 1
+            }
+          ]
+        },
+        {
+          "id": "mechanical_geothermal",
+          "type": "utility",
+          "bounds": {
+            "x": 2,
+            "y": 18,
+            "width": 2,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 19
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 0
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "large_fixed",
+              "position": {
+                "x": 0,
+                "y": 4
+              },
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 8
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "operable",
+              "position": {
+                "x": 0,
+                "y": 9
+              },
+              "size": 2
+            }
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 12
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "operable",
+              "position": {
+                "x": 0,
+                "y": 14
+              },
+              "size": 2
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 19
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "operable",
+              "position": {
+                "x": 0,
+                "y": 20
+              },
+              "size": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

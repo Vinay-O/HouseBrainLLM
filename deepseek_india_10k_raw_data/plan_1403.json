@@ -1,0 +1,386 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 8,
+      "floors": 3,
+      "totalArea": 5200,
+      "style": "Desert Fort Architecture"
+    },
+    "plot": {
+      "shape": "Irregular Corner Plot",
+      "slope": "Mountain Slope",
+      "frontage": "Dual Street",
+      "challenges": [
+        "Flooding",
+        "Waterlogging",
+        "Steep Terrain"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 8,
+        "purpose": "Family and Seasonal Workers"
+      },
+      {
+        "type": "study_room",
+        "count": 1,
+        "purpose": "Competitive Exam Preparation"
+      },
+      {
+        "type": "otla",
+        "count": 1,
+        "purpose": "Traditional Sit-out with Swing"
+      }
+    ]
+  },
+  "total_area": 5200.0,
+  "construction_cost": 1560000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "purpose": "Flood-Resistant Plinth, Utilities, and Seasonal Worker Accommodation",
+      "elevation": 1.5,
+      "rooms": [
+        {
+          "id": "worker_dormitory_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "worker_dormitory_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 25,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "drainage_cistern",
+          "type": "utility",
+          "bounds": {
+            "x": 18,
+            "y": 25,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "purpose": "Main Family Living, Sacred Entrance, and Otla",
+      "elevation": 3.5,
+      "rooms": [
+        {
+          "id": "sacred_entrance",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Kolam Threshold Design"
+          ]
+        },
+        {
+          "id": "otla_sitout",
+          "type": "living_room",
+          "bounds": {
+            "x": 6,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4
+            },
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "features": [
+            "Traditional Jhula (Swing)",
+            "Jaali Screens"
+          ]
+        },
+        {
+          "id": "great_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 8
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 8
+            },
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "features": [
+            "High Ceiling",
+            "Thermal Mass Walls"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "features": [
+            "Courtyard Ventilation"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 16,
+            "y": 10,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "features": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "purpose": "Private Family Bedrooms and Study",
+      "elevation": 6.5,
+      "rooms": [
+        {
+          "id": "primary_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "features": [
+            "Jharokha Window",
+            "Winter Solar Gain"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            },
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "study_room",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "features": [
+            "Acoustic Insulation",
+            "North-Light Window"
+          ]
+        }
+      ]
+    }
+  ]
+}

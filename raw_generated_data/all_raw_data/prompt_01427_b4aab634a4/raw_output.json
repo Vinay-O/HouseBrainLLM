@@ -1,0 +1,167 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 20 },
+          "features": ["open_plan", "natural_light", "ventilation"],
+          "connections": ["kitchen", "dining_area"]
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "square",
+          "dimensions": { "length": 12, "width": 12 },
+          "features": ["open_plan", "modern_appliances"],
+          "connections": ["living_room", "dining_area"]
+        },
+        {
+          "room_id": "dining_area",
+          "shape": "rectangle",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["adjacent_to_kitchen"],
+          "connections": ["kitchen", "living_room"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["balcony_access", "natural_light"],
+          "connections": ["balcony_1"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "shape": "rectangle",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["balcony_access", "natural_light"],
+          "connections": ["balcony_2"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "shape": "rectangle",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["balcony_access", "natural_light"],
+          "connections": ["balcony_3"]
+        },
+        {
+          "room_id": "study_room",
+          "shape": "square",
+          "dimensions": { "length": 8, "width": 8 },
+          "features": ["quiet_space", "natural_light"],
+          "connections": []
+        },
+        {
+          "room_id": "bathroom_1",
+          "shape": "rectangle",
+          "dimensions": { "length": 6, "width": 5 },
+          "features": ["modern_fixtures"],
+          "connections": ["bedroom_1"]
+        },
+        {
+          "room_id": "bathroom_2",
+          "shape": "rectangle",
+          "dimensions": { "length": 6, "width": 5 },
+          "features": ["modern_fixtures"],
+          "connections": ["bedroom_2"]
+        },
+        {
+          "room_id": "bathroom_3",
+          "shape": "rectangle",
+          "dimensions": { "length": 6, "width": 5 },
+          "features": ["modern_fixtures"],
+          "connections": ["bedroom_3"]
+        },
+        {
+          "room_id": "guest_toilet",
+          "shape": "square",
+          "dimensions": { "length": 5, "width": 5 },
+          "features": ["modern_fixtures"],
+          "connections": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "location": "front",
+          "dimensions": { "length": 8, "width": 3 },
+          "features": ["grand_entry"]
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "location": "back",
+          "dimensions": { "length": 7, "width": 3 },
+          "features": ["garden_access"]
+        },
+        {
+          "opening_id": "balcony_1",
+          "type": "balcony",
+          "location": "bedroom_1",
+          "dimensions": { "length": 8, "width": 4 }
+        },
+        {
+          "opening_id": "balcony_2",
+          "type": "balcony",
+          "location": "bedroom_2",
+          "dimensions": { "length": 8, "width": 4 }
+        },
+        {
+          "opening_id": "balcony_3",
+          "type": "balcony",
+          "location": "bedroom_3",
+          "dimensions": { "length": 8, "width": 4 }
+        },
+        {
+          "opening_id": "window_living_room",
+          "type": "window",
+          "location": "living_room",
+          "dimensions": { "length": 5, "width": 4 },
+          "features": ["natural_light"]
+        },
+        {
+          "opening_id": "window_kitchen",
+          "type": "window",
+          "location": "kitchen",
+          "dimensions": { "length": 5, "width": 4 },
+          "features": ["ventilation", "natural_light"]
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_4",
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["balcony_access", "natural_light"],
+          "connections": ["balcony_4"]
+        },
+        {
+          "room_id": "study_room_upper",
+          "shape": "square",
+          "dimensions": { "length": 8, "width": 8 },
+          "features": ["quiet_space", "natural_light"],
+          "connections": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony_4",
+          "type": "balcony",
+          "location": "bedroom_4",
+          "dimensions": { "length": 8, "width": 4 }
+        },
+        {
+          "opening_id": "window_bedroom_4",
+          "type": "window",
+          "location": "bedroom_4",
+          "dimensions": { "length": 5, "width": 4 },
+          "features": ["natural_light"]
+        }
+      ]
+    }
+  ]
+}

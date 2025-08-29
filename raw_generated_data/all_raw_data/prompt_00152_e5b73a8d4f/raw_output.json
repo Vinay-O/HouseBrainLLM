@@ -1,0 +1,89 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": {"length": 16, "width": 12},
+          "location": {"x": 5, "y": 10}
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {"length": 8, "width": 8},
+          "location": {"x": 30, "y": 40}
+        },
+        {
+          "room_type": "bathroom_1",
+          "dimensions": {"length": 6, "width": 5},
+          "location": {"x": 22, "y": 40}
+        },
+        {
+          "room_type": "bedroom_1",
+          "dimensions": {"length": 12, "width": 10},
+          "location": {"x": 30, "y": 5}
+        },
+        {
+          "room_type": "servant_quarters",
+          "dimensions": {"length": 8, "width": 6},
+          "location": {"x": 42, "y": 10}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "room_id": "living_room",
+          "location": {"x": 5.5, "y": 8},
+          "direction": "west"
+        },
+        {
+          "opening_type": "window",
+          "room_id": "bedroom_1",
+          "location": {"x": 32, "y": 7},
+          "direction": "south"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bathroom_2",
+          "dimensions": {"length": 6, "width": 5},
+          "location": {"x": 30, "y": 40}
+        },
+        {
+          "room_type": "bedroom_2",
+          "dimensions": {"length": 12, "width": 10},
+          "location": {"x": 30, "y": 5}
+        },
+        {
+          "room_type": "home_office",
+          "dimensions": {"length": 10, "width": 8},
+          "location": {"x": 10, "y": 22}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "window",
+          "room_id": "bedroom_2",
+          "location": {"x": 34, "y": 8},
+          "direction": "east"
+        },
+        {
+          "opening_type": "door",
+          "room_id": "home_office",
+          "location": {"x": 10.5, "y": 23},
+          "direction": "north"
+        }
+      ]
+    }
+  ],
+  "open_spaces": [
+    {
+      "space_type": "central_courtyard",
+      "dimensions": {"length": 8, "width": 8},
+      "location": {"x": 16, "y": 20}
+    }
+  ]
+}

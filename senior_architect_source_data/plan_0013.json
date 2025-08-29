@@ -1,0 +1,510 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 800,
+      "style": "Malwa Traditional"
+    },
+    "plot": {
+      "shape": "Irregular Cul-de-sac",
+      "area": 800,
+      "location": "Heritage City",
+      "constraints": [
+        "Strict Building Regulations",
+        "Limited Street Frontage",
+        "Heat Resistance Required",
+        "Sacred Tulsi Platform Mandatory"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4,
+        "area": 180
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "area": 90
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 70
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 60
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 30
+      },
+      {
+        "type": "guest_space",
+        "count": 1,
+        "area": 80
+      },
+      {
+        "type": "outdoor",
+        "count": 1,
+        "area": 170
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 1440000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "main_entry",
+              "position": {
+                "x": 4,
+                "y": 0
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 8,
+                "y": 6
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "jalousie",
+              "position": {
+                "x": 22,
+                "y": 6
+              },
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "guest_room_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 8,
+                "y": 11
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "jalousie",
+              "position": {
+                "x": 4,
+                "y": 16
+              },
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 8,
+                "y": 19
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "ventilation",
+              "position": {
+                "x": 4,
+                "y": 22
+              },
+              "size": 1
+            }
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 8,
+            "y": 12,
+            "width": 7,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 8,
+                "y": 17
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "jalousie",
+              "position": {
+                "x": 15,
+                "y": 17
+              },
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "dining_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 15,
+            "y": 12,
+            "width": 7,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 15,
+                "y": 17
+              }
+            },
+            {
+              "type": "external",
+              "position": {
+                "x": 18.5,
+                "y": 22
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "jalousie",
+              "position": {
+                "x": 22,
+                "y": 17
+              },
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "outdoor",
+          "bounds": {
+            "x": 22,
+            "y": 0,
+            "width": 18,
+            "height": 22
+          },
+          "doors": [
+            {
+              "type": "external",
+              "position": {
+                "x": 22,
+                "y": 11
+              }
+            },
+            {
+              "type": "external",
+              "position": {
+                "x": 18.5,
+                "y": 22
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 12,
+                "y": 6
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "jalousie",
+              "position": {
+                "x": 6,
+                "y": 12
+              },
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 6,
+                "y": 15
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "ventilation",
+              "position": {
+                "x": 3,
+                "y": 18
+              },
+              "size": 1
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 6,
+            "y": 12,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 12,
+                "y": 15
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "jalousie",
+              "position": {
+                "x": 9,
+                "y": 18
+              },
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 22,
+                "y": 5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "jalousie",
+              "position": {
+                "x": 17,
+                "y": 10
+              },
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 17,
+                "y": 14
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "ventilation",
+              "position": {
+                "x": 14.5,
+                "y": 18
+              },
+              "size": 1
+            }
+          ]
+        },
+        {
+          "id": "utility_1",
+          "type": "utility",
+          "bounds": {
+            "x": 17,
+            "y": 10,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 22,
+                "y": 14
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "ventilation",
+              "position": {
+                "x": 19.5,
+                "y": 18
+              },
+              "size": 1
+            }
+          ]
+        },
+        {
+          "id": "terrace_1",
+          "type": "outdoor",
+          "bounds": {
+            "x": 22,
+            "y": 0,
+            "width": 18,
+            "height": 22
+          },
+          "doors": [
+            {
+              "type": "external",
+              "position": {
+                "x": 22,
+                "y": 11
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "materials": {
+    "primary": "Local Red Kota Stone",
+    "secondary": "Terracotta Tiles & Lime Plaster",
+    "roofing": "Mangalore Tiles",
+    "special": "Heat-Resistant Stone for West-Facing Walls"
+  },
+  "special_features": [
+    {
+      "name": "Sacred Tulsi Platform",
+      "location": {
+        "level": 0,
+        "bounds": {
+          "x": 25,
+          "y": 5,
+          "width": 2,
+          "height": 2
+        }
+      }
+    },
+    {
+      "name": "Therapeutic Swimming Pool with Natural Filtration",
+      "location": {
+        "level": 0,
+        "bounds": {
+          "x": 30,
+          "y": 0,
+          "width": 8,
+          "height": 10
+        }
+      }
+    },
+    {
+      "name": "Smart Home Technology Integration",
+      "description": "Energy-efficient lighting, climate control, and security systems"
+    },
+    {
+      "name": "Traditional Jaali Work",
+      "description": "For ventilation and aesthetic appeal on street-facing facade"
+    }
+  ]
+}

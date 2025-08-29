@@ -1,0 +1,179 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Traditional Craftsman"
+    },
+    "plot": {
+      "topography": "Elevated platform above wetlands",
+      "climate": "Desert with extreme temperatures",
+      "privacy_requirements": "High privacy from neighboring properties"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_pod",
+        "description": "Main living and gathering space with high ceilings and thermal chimney"
+      },
+      {
+        "type": "sleeping_pod",
+        "description": "Primary bedroom with murphy bed system and natural ventilation"
+      },
+      {
+        "type": "guest_pod",
+        "description": "Convertible guest room with murphy bed and thermal chimney"
+      },
+      {
+        "type": "bath_pod",
+        "description": "Bathroom with natural ventilation system"
+      },
+      {
+        "type": "utility_pod",
+        "description": "Compact kitchen and storage space"
+      },
+      {
+        "type": "connector",
+        "description": "Covered walkway between pods following natural contours"
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 285000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_pod",
+          "type": "living_room",
+          "bounds": {
+            "x": 15,
+            "y": 25,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            "south_entrance",
+            "north_connector"
+          ],
+          "windows": [
+            "east_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "sleeping_pod",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 30,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "west_connector"
+          ],
+          "windows": [
+            "north_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "guest_pod",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "east_connector"
+          ],
+          "windows": [
+            "north_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "bath_pod",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 10,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "north_connector"
+          ],
+          "windows": [
+            "east_vent_window"
+          ]
+        },
+        {
+          "id": "utility_pod",
+          "type": "kitchen",
+          "bounds": {
+            "x": 10,
+            "y": 5,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "east_connector"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "north_connector",
+          "type": "hallway",
+          "bounds": {
+            "x": 25,
+            "y": 30,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            "south_living",
+            "north_bath"
+          ],
+          "windows": []
+        },
+        {
+          "id": "east_connector",
+          "type": "hallway",
+          "bounds": {
+            "x": 15,
+            "y": 40,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "west_guest",
+            "east_utility"
+          ],
+          "windows": []
+        },
+        {
+          "id": "west_connector",
+          "type": "hallway",
+          "bounds": {
+            "x": 35,
+            "y": 25,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "east_living",
+            "west_sleeping"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

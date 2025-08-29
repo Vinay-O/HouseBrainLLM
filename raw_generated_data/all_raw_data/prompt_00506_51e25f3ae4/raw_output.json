@@ -1,0 +1,78 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {
+        "name": "Lobby and Living Area",
+        "dimensions": {"length": "20ft", "width": "15ft"},
+        "features": ["open space", "Brutalist concrete walls", "exposed structural elements"],
+        "adjacent_to": ["garage entrance"]
+      },
+      {
+        "name": "Studio Apartment Main Hallway",
+        "dimensions": {"length": "25ft", "width": "10ft"},
+        "features": ["central corridor", "Brutalist design influences"],
+        "adjacent_to": ["bedroom 1", "bedroom 2", "kitchen-dining area"]
+      },
+      {
+        "name": "Kitchen-Dining Area",
+        "dimensions": {"length": "15ft", "width": "10ft"},
+        "features": ["open kitchen layout", "Brutalist concrete finishes", "dining space"],
+        "adjacent_to": ["studio apartment main hallway"]
+      },
+      {
+        "name": "Garage",
+        "dimensions": {"area": "600sqft"},
+        "features": ["two-car capacity", "reinforced concrete flooring"],
+        "adjacent_to": ["lobby"]
+      }
+    ],
+    "openings": [
+      {
+        "name": "Main Entrance",
+        "location": "north facade",
+        "dimensions": {"width": "4ft", "height": "7ft"}
+      },
+      {
+        "name": "Balcony Door",
+        "location": "east side of bedroom 1",
+        "dimensions": {"width": "3ft", "height": "6.5ft"}
+      }
+    ]
+  },
+  {
+    "level_id": "first_floor",
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "dimensions": {"length": "15ft", "width": "12ft"},
+        "features": ["spacious balcony (west facing)", "Brutalist concrete detailing"],
+        "adjacent_to": ["studio apartment main hallway"]
+      },
+      {
+        "name": "Bedroom 2",
+        "dimensions": {"length": "15ft", "width": "12ft"},
+        "features": ["spacious balcony (west facing)", "Brutalist design elements"],
+        "adjacent_to": ["studio apartment main hallway"]
+      },
+      {
+        "name": "Bathroom and Service Area",
+        "dimensions": {"area": "150sqft"},
+        "features": ["multiple water closets", "service area", "Brutalist finishes"],
+        "adjacent_to": ["Bedroom 1", "Bedroom 2"]
+      }
+    ],
+    "openings": [
+      {
+        "name": "Balcony Access Door",
+        "location": "west side of Bedroom 1",
+        "dimensions": {"width": "3ft", "height": "6.5ft"}
+      },
+      {
+        "name": "Balcony Access Door",
+        "location": "west side of Bedroom 2",
+        "dimensions": {"width": "3ft", "height": "6.5ft"}
+      }
+    ]
+  }
+]}

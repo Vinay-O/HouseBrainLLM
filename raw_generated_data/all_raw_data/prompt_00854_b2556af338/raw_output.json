@@ -1,0 +1,74 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_hall",
+          "description": "Large entrance hall with Vastu-compliant placement near the main gate. Natural light through openings.",
+          "dimensions": {"length": 10, "width": 8},
+          "adjacencies": ["living_room", "garage"]
+        },
+        {
+          "room_id": "living_room",
+          "description": "Open space living area with Kerala-style design elements and wooden detailing. Adjoining the entrance hall.",
+          "dimensions": {"length": 15, "width": 12},
+          "adjacencies": ["entrance_hall", "dining_area"]
+        },
+        {
+          "room_id": "dining_area",
+          "description": "Dedicated dining area with ample seating and a view of the garden.",
+          "dimensions": {"length": 10, "width": 8},
+          "adjacencies": ["living_room", "kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "description": "Functional kitchen space with traditional Kerala-style layout, including an outdoor prep area adjacent to the garden.",
+          "dimensions": {"length": 12, "width": 8},
+          "adjacencies": ["dining_area", "utility_room"]
+        },
+        {
+          "room_id": "bathroom",
+          "description": "Well-ventilated bathroom with water-saving fixtures and natural light from adjacent openings.",
+          "dimensions": {"length": 6, "width": 5},
+          "adjacencies": ["living_room", "utility_room"]
+        },
+        {
+          "room_id": "garage",
+          "description": "Spacious two-car garage integrated into the design with direct access to the main road. Complies with local building norms.",
+          "dimensions": {"length": 20, "width": 12},
+          "adjacencies": ["entrance_hall"]
+        },
+        {
+          "room_id": "home_office",
+          "description": "Dedicated home office designed for a quiet and productive environment. Windows ensure natural light in accordance with Vastu.",
+          "dimensions": {"length": 10, "width": 8},
+          "adjacencies": ["living_room"]
+        },
+        {
+          "room_id": "storage",
+          "description": "Storage space for miscellaneous items, strategically placed to maintain balance per Vastu guidelines.",
+          "dimensions": {"length": 6, "width": 5},
+          "adjacencies": ["kitchen", "utility_room"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_door",
+          "description": "Main entrance door facing east to welcome positive energy. Vastu compliant.",
+          "dimensions": {"height": 7, "width": 3}
+        },
+        {
+          "opening_id": "front_window",
+          "description": "Large windows in the living room and home office for ample natural light.",
+          "dimensions": {"height": 4, "width": 6}
+        },
+        {
+          "opening_id": "garage_door",
+          "description": "Heavy-duty garage door with automatic closing mechanism for ease of use.",
+          "dimensions": {"height": 7, "width": 8}
+        }
+      ]
+    }
+  ]
+}

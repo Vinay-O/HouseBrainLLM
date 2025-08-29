@@ -1,0 +1,103 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": {"length": 20, "width": 15},
+          "features": ["floor-to-ceiling windows", "vastu-compliant layout"],
+          "adjacent_to": ["dining_room", "entrance"]
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["adjacent kitchen", "natural light"],
+          "adjacent_to": ["kitchen", "living_room"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["modern appliances", "storage space"],
+          "adjacent_to": ["dining_room", "utility_room"]
+        },
+        {
+          "room_id": "master_bedroom",
+          "dimensions": {"length": 20, "width": 18},
+          "features": ["attached bathroom", "walk-in closet", "balcony"],
+          "adjacent_to": ["bathroom", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["attached bathroom", "study area"],
+          "adjacent_to": ["bathroom", "living_room"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "dimensions": {"length": 14, "width": 13},
+          "features": ["shared bathroom"],
+          "adjacent_to": ["bathroom", "living_room"]
+        },
+        {
+          "room_id": "swimming_pool",
+          "dimensions": {"length": 25, "width": 10},
+          "features": ["outdoor seating area", "vastu-compliant placement"],
+          "adjacent_to": ["garden"]
+        },
+        {
+          "room_id": "private_gym",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["modern equipment", "ventilation"],
+          "adjacent_to": ["bedroom_3", "swimming_pool"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "entrance",
+          "type": "main door",
+          "dimensions": {"length": 8, "width": 4},
+          "features": ["wooden door", "vastu-compliant direction"]
+        },
+        {
+          "opening_id": "french_windows",
+          "type": "windows",
+          "count": 4,
+          "features": ["floor-to-ceiling", "energy-efficient glass"],
+          "adjacent_to": ["living_room", "dining_room"]
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_4",
+          "dimensions": {"length": 18, "width": 16},
+          "features": ["attached bathroom", "balcony"],
+          "adjacent_to": ["bathroom"]
+        },
+        {
+          "room_id": "bedroom_5",
+          "dimensions": {"length": 16, "width": 14},
+          "features": ["shared bathroom"],
+          "adjacent_to": ["bathroom"]
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["natural light", "quiet location"],
+          "adjacent_to": ["bedroom_5"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony_door",
+          "type": "door",
+          "count": 2,
+          "features": ["French doors", "access to balcony"],
+          "adjacent_to": ["bedroom_4", "study_room"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "orientation": "north_east"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 8, "width": 7 },
+          "orientation": "southeast",
+          "features": ["gas_stove", "sink", "cabinet_storage"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 12, "width": 10 },
+          "orientation": "southwest"
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 10, "width": 9 },
+          "orientation": "northwest"
+        },
+        {
+          "room_id": "home_theater",
+          "dimensions": { "length": 10, "width": 8 }
+        },
+        {
+          "room_id": "garage_1",
+          "dimensions": { "length": 4, "width": 2.5 },
+          "features": ["automatic_door"]
+        },
+        {
+          "room_id": "garage_2",
+          "dimensions": { "length": 4, "width": 2.5 },
+          "features": ["automatic_door"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "orientation": "north",
+          "dimensions": { "length": 3, "height": 7 }
+        },
+        {
+          "opening_id": "back_garden_access",
+          "orientation": "south",
+          "dimensions": { "length": 2.5, "height": 6 }
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "feature_id": "home_theater",
+      "description": "A dedicated home theater room with soundproofing and seating for 6-8 people."
+    },
+    {
+      "feature_id": "garage",
+      "description": "Two-car garage with automatic doors and storage space above."
+    }
+  ],
+  "vastu_compliance": [
+    {
+      "guideline": "The main entrance should be on the north or east side.",
+      "status": "complied"
+    },
+    {
+      "guideline": "Kitchen should be in the southeast direction.",
+      "status": "complied"
+    }
+  ],
+  "building_norms_compliance": [
+    {
+      "norm": "Minimum room dimensions for a bedroom (100 sq ft)",
+      "status": "complied"
+    },
+    {
+      "norm": "Parking requirement for residential buildings",
+      "status": "complied"
+    }
+  ]
+}

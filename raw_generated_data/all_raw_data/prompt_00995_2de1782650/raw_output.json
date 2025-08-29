@@ -1,0 +1,104 @@
+{  
+  "levels": [  
+    {  
+      "level_id": "ground_floor",  
+      "rooms": [
+        {
+          "name": "Entrance Hall",
+          "dimensions": {"length": 6, "width": 4},
+          "adjacent_rooms": ["Living Area"],
+          "vastu": "North"
+        },
+        {
+          "name": "Open-Plan Kitchen and Living Area",
+          "dimensions": {"length": 15, "width": 10},
+          "openings": [
+            {  
+              "type": "window", "direction": "east", "size": {"height": 5, "width": 3}  
+            }
+          ],
+          "vastu": "south-east"
+        },
+        {
+          "name": "Master Bedroom",
+          "dimensions": {"length": 8, "width": 6},
+          "adjacent_rooms": ["Guest Bedroom"],
+          "vastu": "north-west"
+        },
+        {
+          "name": "Guest Bedroom",
+          "dimensions": {"length": 7, "width": 5},
+          "adjacent_rooms": [],
+          "vastu": "north-east"
+        },
+        {
+          "name": "Servant's Quarters",
+          "dimensions": {"length": 6, "width": 4},
+          "adjacent_rooms": [],
+          "vastu": "south-west"
+        }
+      ],
+      "openings": [
+        {  
+          "type": "door", "direction": "north", "size": {"height": 7, "width": 3}  
+        },
+        {  
+          "type": "window", "direction": "west", "size": {"height": 5, "width": 2.5}
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "name": "Bedroom 3",
+          "dimensions": {"length": 8, "width": 6},
+          "vastu": "north-west"
+        },
+        {
+          "name": "Bedroom 4",
+          "dimensions": {"length": 7, "width": 5},
+          "vastu": "south-east"
+        },
+        {
+          "name": "Home Theater",
+          "dimensions": {"length": 10, "width": 8},
+          "vastu": "west",
+          "special_features": ["soundproofing", "projector screen", "seating area"]
+        }
+      ],
+      "openings": [
+        {  
+          "type": "door", "direction": "east", "size": {"height": 7, "width": 3}  
+        },
+        {  
+          "type": "window", "direction": "north", "size": {"height": 5, "width": 2.5}
+        }
+      ]
+    },
+    {
+      "level_id": "split_level",
+      "rooms": [
+        {
+          "name": "Bedroom 5 (Split Level)",
+          "dimensions": {"length": 8, "width": 6},
+          "vastu": "north-west"
+        },
+        {
+          "name": "Study/Office",
+          "dimensions": {"length": 6, "width": 4},
+          "adjacent_rooms": ["Master Bedroom"],
+          "vastu": "north-east"
+        }
+      ],
+      "openings": [
+        {  
+          "type": "door", "direction": "south", "size": {"height": 7, "width": 3}  
+        },
+        {  
+          "type": "window", "direction": "west", "size": {"height": 5, "width": 2.5}
+        }
+      ]
+    }
+  ]
+}

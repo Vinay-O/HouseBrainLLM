@@ -1,0 +1,683 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 8,
+      "floors": 3,
+      "totalArea": 7500,
+      "style": "Andhra Traditional"
+    },
+    "plot": {
+      "width": 25,
+      "length": 100,
+      "orientation": "north",
+      "location": "Vrindavan",
+      "constraints": [
+        "railway-side",
+        "elongated"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "count": 2,
+        "purpose": "Separate dietary needs"
+      },
+      {
+        "type": "bedroom",
+        "count": 8,
+        "purpose": "Joint family accommodation"
+      },
+      {
+        "type": "heritage_library",
+        "count": 1,
+        "purpose": "Temperature-controlled manuscript storage"
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "purpose": "Family worship"
+      },
+      {
+        "type": "living_room",
+        "count": 2,
+        "purpose": "Formal and informal gathering"
+      },
+      {
+        "type": "dining_room",
+        "count": 2,
+        "purpose": "Family meals"
+      },
+      {
+        "type": "utility_room",
+        "count": 2,
+        "purpose": "Household chores"
+      },
+      {
+        "type": "storage",
+        "count": 3,
+        "purpose": "General storage"
+      },
+      {
+        "type": "terrace_garden",
+        "count": 1,
+        "purpose": "Organic kitchen garden with companion planting"
+      },
+      {
+        "type": "green_roof",
+        "count": 1,
+        "purpose": "Drought-resistant local plants"
+      },
+      {
+        "type": "bathroom",
+        "count": 6,
+        "purpose": "Family use"
+      }
+    ]
+  },
+  "total_area": 7500.0,
+  "construction_cost": 3375000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_entrance",
+          "type": "foyer",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 12.5,
+                "y": 0
+              },
+              "material": "wood",
+              "style": "carved_with_metalwork"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "formal_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 12.5,
+                "y": 8
+              },
+              "material": "wood",
+              "style": "carved"
+            }
+          ],
+          "windows": [
+            {
+              "location": {
+                "x": 5,
+                "y": 28
+              },
+              "material": "wood",
+              "style": "traditional"
+            },
+            {
+              "location": {
+                "x": 20,
+                "y": 28
+              },
+              "material": "wood",
+              "style": "traditional"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_veg",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 28,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 12,
+                "y": 35
+              },
+              "material": "wood",
+              "style": "simple"
+            }
+          ],
+          "windows": [
+            {
+              "location": {
+                "x": 6,
+                "y": 43
+              },
+              "material": "wood",
+              "style": "traditional"
+            }
+          ]
+        },
+        {
+          "id": "dining_veg",
+          "type": "dining_room",
+          "bounds": {
+            "x": 12,
+            "y": 28,
+            "width": 13,
+            "height": 15
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 12,
+                "y": 35
+              },
+              "material": "wood",
+              "style": "simple"
+            },
+            {
+              "location": {
+                "x": 18,
+                "y": 43
+              },
+              "material": "wood",
+              "style": "simple"
+            }
+          ],
+          "windows": [
+            {
+              "location": {
+                "x": 18,
+                "y": 43
+              },
+              "material": "wood",
+              "style": "traditional"
+            }
+          ]
+        },
+        {
+          "id": "utility_1",
+          "type": "utility_room",
+          "bounds": {
+            "x": 0,
+            "y": 43,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 8,
+                "y": 48
+              },
+              "material": "wood",
+              "style": "simple"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_1",
+          "type": "storage",
+          "bounds": {
+            "x": 8,
+            "y": 43,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 8,
+                "y": 48
+              },
+              "material": "wood",
+              "style": "simple"
+            },
+            {
+              "location": {
+                "x": 16,
+                "y": 48
+              },
+              "material": "wood",
+              "style": "simple"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 16,
+            "y": 43,
+            "width": 9,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 16,
+                "y": 48
+              },
+              "material": "wood",
+              "style": "carved"
+            }
+          ],
+          "windows": [
+            {
+              "location": {
+                "x": 20,
+                "y": 53
+              },
+              "material": "wood",
+              "style": "traditional"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 12,
+                "y": 10
+              },
+              "material": "wood",
+              "style": "carved"
+            }
+          ],
+          "windows": [
+            {
+              "location": {
+                "x": 6,
+                "y": 20
+              },
+              "material": "wood",
+              "style": "traditional"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 13,
+            "height": 20
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 12,
+                "y": 10
+              },
+              "material": "wood",
+              "style": "carved"
+            },
+            {
+              "location": {
+                "x": 25,
+                "y": 10
+              },
+              "material": "wood",
+              "style": "carved"
+            }
+          ],
+          "windows": [
+            {
+              "location": {
+                "x": 18,
+                "y": 20
+              },
+              "material": "wood",
+              "style": "traditional"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 6,
+                "y": 25
+              },
+              "material": "wood",
+              "style": "simple"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 6,
+            "y": 20,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 6,
+                "y": 25
+              },
+              "material": "wood",
+              "style": "simple"
+            },
+            {
+              "location": {
+                "x": 12,
+                "y": 25
+              },
+              "material": "wood",
+              "style": "simple"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "heritage_library",
+          "type": "heritage_library",
+          "bounds": {
+            "x": 12,
+            "y": 20,
+            "width": 13,
+            "height": 33
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 12,
+                "y": 36
+              },
+              "material": "wood",
+              "style": "carved"
+            }
+          ],
+          "windows": [
+            {
+              "location": {
+                "x": 18,
+                "y": 53
+              },
+              "material": "wood",
+              "style": "traditional"
+            },
+            {
+              "location": {
+                "x": 25,
+                "y": 36
+              },
+              "material": "wood",
+              "style": "traditional"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 12,
+                "y": 10
+              },
+              "material": "wood",
+              "style": "carved"
+            }
+          ],
+          "windows": [
+            {
+              "location": {
+                "x": 6,
+                "y": 20
+              },
+              "material": "wood",
+              "style": "traditional"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 13,
+            "height": 20
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 12,
+                "y": 10
+              },
+              "material": "wood",
+              "style": "carved"
+            },
+            {
+              "location": {
+                "x": 25,
+                "y": 10
+              },
+              "material": "wood",
+              "style": "carved"
+            }
+          ],
+          "windows": [
+            {
+              "location": {
+                "x": 18,
+                "y": 20
+              },
+              "material": "wood",
+              "style": "traditional"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 6,
+                "y": 25
+              },
+              "material": "wood",
+              "style": "simple"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_4",
+          "type": "bathroom",
+          "bounds": {
+            "x": 6,
+            "y": 20,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 6,
+                "y": 25
+              },
+              "material": "wood",
+              "style": "simple"
+            },
+            {
+              "location": {
+                "x": 12,
+                "y": 25
+              },
+              "material": "wood",
+              "style": "simple"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen_special",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 20,
+            "width": 13,
+            "height": 15
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 12,
+                "y": 27
+              },
+              "material": "wood",
+              "style": "simple"
+            }
+          ],
+          "windows": [
+            {
+              "location": {
+                "x": 18,
+                "y": 35
+              },
+              "material": "wood",
+              "style": "traditional"
+            }
+          ]
+        },
+        {
+          "id": "informal_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 12,
+            "y": 35,
+            "width": 13,
+            "height": 18
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 12,
+                "y": 44
+              },
+              "material": "wood",
+              "style": "carved"
+            }
+          ],
+          "windows": [
+            {
+              "location": {
+                "x": 18,
+                "y": 53
+              },
+              "material": "wood",
+              "style": "traditional"
+            },
+            {
+              "location": {
+                "x": 25,
+                "y": 44
+              },
+              "material": "wood",
+              "style": "traditional"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "terrace_garden",
+          "type": "terrace_garden",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 100
+          },
+          "doors": [
+            {
+              "location": {
+                "x": 12,
+                "y": 0
+              },
+              "material": "wood",
+              "style": "simple"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "green_roof",
+          "type": "green_roof",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 100
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

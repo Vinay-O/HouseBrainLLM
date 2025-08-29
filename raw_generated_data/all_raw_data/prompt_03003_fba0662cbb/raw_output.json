@@ -1,0 +1,55 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {"room_type": "entrance_hall", "area_sqft": 80},
+      {"room_type": "living_room", "area_sqft": 120, "features": ["modern decor"]},
+      {"room_type": "dining_area", "area_sqft": 60, "adjacent_to": "kitchen"},
+      {"room_type": "home_office", "area_sqft": 100, "facing_direction": "north", "vastu_compliant": true},
+      {"room_type": "utility_room", "area_sqft": 40}
+    ],
+    "openings": [
+      {"opening_type": "entrance", "location": "front"},
+      {"opening_type": "windows", "location": "living room, home_office"},
+      {"opening_type": "doors", "location": "all rooms"}
+    ]
+  },
+  {
+    "level_id": "first_floor",
+    "rooms": [
+      {"room_type": "bedroom_master", "area_sqft": 120, "facing_direction": "east", "vastu_compliant": true},
+      {"room_type": "bedroom", "area_sqft": 80},
+      {"room_type": "bedroom", "area_sqft": 80},
+      {"room_type": "bedroom", "area_sqft": 60},
+      {"room_type": "bathroom", "area_sqft": 40, "adjacent_to": "bedrooms"}
+    ],
+    "openings": [
+      {"opening_type": "windows", "location": "all bedrooms"},
+      {"opening_type": "doors", "location": "between rooms"}
+    ]
+  },
+  {
+    "level_id": "second_floor",
+    "rooms": [
+      {"room_type": "bedroom", "area_sqft": 80},
+      {"room_type": "bedroom", "area_sqft": 80},
+      {"room_type": "dressing_room", "area_sqft": 40, "adjacent_to": "bedroom"},
+      {"room_type": "home_theater", "area_sqft": 150, "features": ["soundproofing"]},
+      {"room_type": "bathroom", "area_sqft": 30}
+    ],
+    "openings": [
+      {"opening_type": "windows", "location": "all rooms"},
+      {"opening_type": "doors", "location": "between rooms"}
+    ]
+  },
+  {
+    "level_id": "rooftop",
+    "rooms": [
+      {"room_type": "terrace", "area_sqft": 200, "features": ["sunrise view", "open space"]}
+    ],
+    "openings": [
+      {"opening_type": "entrance", "location": "via second_floor"},
+      {"opening_type": "windows", "location": "none"}
+    ]
+  }
+]}

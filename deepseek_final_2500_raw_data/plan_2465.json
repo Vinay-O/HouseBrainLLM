@@ -1,0 +1,330 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2400,
+      "style": "Neo-Classical"
+    },
+    "plot": {
+      "description": "Forest clearing with mature oak trees in an alpine climate with heavy snow loads, spanning a ravine with east-west linear orientation.",
+      "size": "1 acre",
+      "topography": "Ravine",
+      "climate": "Alpine with heavy snow loads"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "area": 600,
+        "description": "Double-height library with spiral staircase and green walls with integrated irrigation"
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 350,
+        "description": "Main bedroom with aging-in-place modifications and pet-friendly features"
+      },
+      {
+        "type": "guest_bedroom",
+        "area": 250,
+        "description": "Secondary bedroom with pet considerations"
+      },
+      {
+        "type": "kitchen",
+        "area": 300,
+        "description": "Efficient kitchen design with budget-conscious appliances"
+      },
+      {
+        "type": "living_room",
+        "area": 400,
+        "description": "Open living space with Neo-Classical elements"
+      },
+      {
+        "type": "bathroom",
+        "area": 150,
+        "description": "Accessible bathroom with aging-in-place features"
+      },
+      {
+        "type": "utility",
+        "area": 150,
+        "description": "Laundry and mechanical room with pet washing station"
+      },
+      {
+        "type": "entry",
+        "area": 200,
+        "description": "Grand entrance with Neo-Classical columns and symmetry"
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_hall",
+          "type": "entry",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 10,
+                "y": 0
+              }
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 5,
+                "y": 0
+              }
+            },
+            {
+              "type": "fixed",
+              "position": {
+                "x": 15,
+                "y": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 10
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "picture",
+              "position": {
+                "x": 35,
+                "y": 0
+              }
+            },
+            {
+              "type": "picture",
+              "position": {
+                "x": 35,
+                "y": 20
+              }
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 50,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "position": {
+                "x": 60,
+                "y": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 50,
+                "y": 20
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 60,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 60,
+                "y": 20
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "operable",
+              "position": {
+                "x": 65,
+                "y": 15
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 50,
+            "height": 30
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 25
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "picture",
+              "position": {
+                "x": 25,
+                "y": 30
+              }
+            },
+            {
+              "type": "picture",
+              "position": {
+                "x": 25,
+                "y": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 50,
+                "y": 10
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "position": {
+                "x": 60,
+                "y": 0
+              }
+            },
+            {
+              "type": "casement",
+              "position": {
+                "x": 60,
+                "y": 20
+              }
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 50,
+                "y": 30
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "position": {
+                "x": 60,
+                "y": 20
+              }
+            },
+            {
+              "type": "casement",
+              "position": {
+                "x": 60,
+                "y": 40
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 1,
+      "totalArea": 600,
+      "style": "Colonial Farmhouse"
+    },
+    "plot": {
+      "shape": "irregular",
+      "description": "Irregular plot shape requiring creative room placement"
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "area": 600,
+        "description": "Combined living, sleeping, and kitchen area in one open space"
+      },
+      {
+        "type": "library",
+        "area": 120,
+        "description": "Dedicated library space with shelving"
+      },
+      {
+        "type": "bathroom",
+        "area": 60,
+        "description": "Full bathroom with shower"
+      }
+    ]
+  },
+  "total_area": 600.0,
+  "construction_cost": 108000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "studio_main",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6,
+              "size": "floor_to_ceiling"
+            },
+            {
+              "wall": "north",
+              "position": 18,
+              "size": "floor_to_ceiling"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 24,
+            "y": 12,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 3
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

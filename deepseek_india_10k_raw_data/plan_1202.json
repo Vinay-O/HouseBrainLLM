@@ -1,0 +1,609 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 4200,
+      "style": "Tamil Brahmin Agraharam Heritage"
+    },
+    "plot": {
+      "shape": "rectangular",
+      "width": 60,
+      "length": 70,
+      "orientation": "east_west_axis",
+      "location": "Calicut",
+      "context": "IT_park_adjacent",
+      "challenges": [
+        "monsoon_flooding",
+        "waterlogging"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 400,
+        "level": 0
+      },
+      {
+        "type": "puja_room",
+        "area": 120,
+        "level": 0
+      },
+      {
+        "type": "dining_room",
+        "area": 250,
+        "level": 0
+      },
+      {
+        "type": "kitchen",
+        "area": 200,
+        "level": 0
+      },
+      {
+        "type": "bedroom",
+        "area": 300,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 300,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 300,
+        "level": 1
+      },
+      {
+        "type": "artist_studio",
+        "area": 500,
+        "level": 0
+      },
+      {
+        "type": "workshop",
+        "area": 450,
+        "level": 0
+      },
+      {
+        "type": "storage",
+        "area": 150,
+        "level": 0
+      },
+      {
+        "type": "courtyard",
+        "area": 600,
+        "level": 0
+      },
+      {
+        "type": "jhula_pavilion",
+        "area": 150,
+        "level": 0
+      },
+      {
+        "type": "earth_sheltered_space",
+        "area": 300,
+        "level": -1
+      },
+      {
+        "type": "green_roof",
+        "area": 800,
+        "level": 2
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 10500000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "earth_sheltered_storage",
+          "type": "earth_sheltered_space",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 17
+              },
+              "direction": "north",
+              "leads_to": "staircase"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "artist_studio",
+          "type": "artist_studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 20
+              },
+              "direction": "south",
+              "leads_to": "courtyard"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 10
+              },
+              "direction": "east",
+              "leads_to": "workshop"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 10
+              },
+              "direction": "west"
+            },
+            {
+              "position": {
+                "x": 12,
+                "y": 0
+              },
+              "direction": "north"
+            }
+          ]
+        },
+        {
+          "id": "workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 10
+              },
+              "direction": "west",
+              "leads_to": "artist_studio"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 20
+              },
+              "direction": "south",
+              "leads_to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 0
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 45,
+                "y": 10
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 20,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 20
+              },
+              "direction": "north",
+              "leads_to": "artist_studio"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 20
+              },
+              "direction": "north",
+              "leads_to": "workshop"
+            },
+            {
+              "position": {
+                "x": 22,
+                "y": 45
+              },
+              "direction": "south",
+              "leads_to": "living_room"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "jhula_pavilion",
+          "type": "jhula_pavilion",
+          "bounds": {
+            "x": 15,
+            "y": 25,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 45,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 22,
+                "y": 45
+              },
+              "direction": "north",
+              "leads_to": "courtyard"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 52
+              },
+              "direction": "west",
+              "leads_to": "puja_room"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 52
+              },
+              "direction": "east",
+              "leads_to": "dining_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 17,
+                "y": 60
+              },
+              "direction": "south"
+            },
+            {
+              "position": {
+                "x": 27,
+                "y": 60
+              },
+              "direction": "south"
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 0,
+            "y": 45,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 52
+              },
+              "direction": "east",
+              "leads_to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 45
+              },
+              "direction": "north"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 35,
+            "y": 45,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 52
+              },
+              "direction": "west",
+              "leads_to": "living_room"
+            },
+            {
+              "position": {
+                "x": 42,
+                "y": 60
+              },
+              "direction": "south",
+              "leads_to": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 42,
+                "y": 45
+              },
+              "direction": "north"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 60,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 42,
+                "y": 60
+              },
+              "direction": "north",
+              "leads_to": "dining_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 65
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "storage_ground",
+          "type": "storage",
+          "bounds": {
+            "x": 50,
+            "y": 60,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 50,
+                "y": 65
+              },
+              "direction": "west",
+              "leads_to": "kitchen"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 20
+              },
+              "direction": "south",
+              "leads_to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 10
+              },
+              "direction": "west"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 20
+              },
+              "direction": "south",
+              "leads_to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 0
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 10
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 50,
+                "y": 20
+              },
+              "direction": "south",
+              "leads_to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 45,
+                "y": 0
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 60,
+                "y": 10
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "corridor",
+          "type": "corridor",
+          "bounds": {
+            "x": 10,
+            "y": 20,
+            "width": 40,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 20
+              },
+              "direction": "north",
+              "leads_to": "bedroom_1"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 20
+              },
+              "direction": "north",
+              "leads_to": "bedroom_2"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 20
+              },
+              "direction": "north",
+              "leads_to": "bedroom_3"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 25
+              },
+              "direction": "south",
+              "leads_to": "staircase"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "green_roof",
+          "type": "green_roof",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 60,
+            "height": 70
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

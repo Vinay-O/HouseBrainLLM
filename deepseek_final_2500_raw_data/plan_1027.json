@@ -1,0 +1,384 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 800,
+      "style": "Goan Portuguese with Tropical Adaptations"
+    },
+    "plot": {
+      "orientation": "north",
+      "area": 800,
+      "location": "secure gated community"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3,
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "area": 60
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 80
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 40
+      },
+      {
+        "type": "staircase",
+        "count": 1,
+        "area": 40
+      },
+      {
+        "type": "balcony",
+        "count": 2,
+        "area": 60
+      },
+      {
+        "type": "verandah",
+        "count": 1,
+        "area": 60
+      },
+      {
+        "type": "garden",
+        "count": 1,
+        "area": 60
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 1920000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "grandparents_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "north_wall_door"
+          ],
+          "windows": [
+            "east_wall_window"
+          ],
+          "features": [
+            "elderly_accessible",
+            "zero_threshold_shower",
+            "grab_bars",
+            "non_slip_flooring",
+            "emergency_call_button",
+            "acoustic_insulation"
+          ]
+        },
+        {
+          "id": "bathroom_ground",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "west_wall_door"
+          ],
+          "windows": [],
+          "features": [
+            "elderly_accessible",
+            "walk_in_shower",
+            "grab_bars",
+            "non_slip_tiles"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "north_entrance_door",
+            "south_wall_door_to_verandah"
+          ],
+          "windows": [
+            "north_wall_window",
+            "east_wall_window"
+          ],
+          "features": [
+            "acoustic_insulation",
+            "ceiling_fan",
+            "large_open_plan"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "west_wall_door"
+          ],
+          "windows": [
+            "south_wall_window"
+          ],
+          "features": [
+            "compact_design",
+            "breakfast_counter",
+            "acoustic_insulation"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 22,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            "west_wall_door"
+          ],
+          "windows": [
+            "south_wall_window"
+          ],
+          "features": [
+            "open_to_living",
+            "acoustic_insulation"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 32,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "west_wall_door"
+          ],
+          "windows": [],
+          "features": [
+            "stacked_washer_dryer",
+            "storage"
+          ]
+        },
+        {
+          "id": "staircase",
+          "type": "staircase",
+          "bounds": {
+            "x": 32,
+            "y": 20,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "west_wall_door"
+          ],
+          "windows": [
+            "north_wall_vent_window"
+          ],
+          "features": [
+            "well_lit",
+            "handrails_both_sides"
+          ]
+        },
+        {
+          "id": "verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 0,
+            "y": 27,
+            "width": 20,
+            "height": 8
+          },
+          "doors": [
+            "north_wall_door_from_living"
+          ],
+          "windows": [],
+          "features": [
+            "covered_outdoor_space",
+            "privacy_screen_walls",
+            "ceiling_fan"
+          ]
+        },
+        {
+          "id": "garden",
+          "type": "garden",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "native_drought_tolerant_plants",
+            "shaded_seating",
+            "privacy_hedges"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "south_wall_door_to_balcony"
+          ],
+          "windows": [
+            "north_wall_window",
+            "east_wall_window"
+          ],
+          "features": [
+            "walk_in_closet",
+            "acoustic_insulation",
+            "ceiling_fan"
+          ]
+        },
+        {
+          "id": "bathroom_master",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "west_wall_door"
+          ],
+          "windows": [
+            "north_wall_vent_window"
+          ],
+          "features": [
+            "double_vanity",
+            "rain_shower",
+            "acoustic_insulation"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "south_wall_door_to_balcony"
+          ],
+          "windows": [
+            "north_wall_window",
+            "east_wall_window"
+          ],
+          "features": [
+            "built_in_study_desk",
+            "acoustic_insulation",
+            "ceiling_fan"
+          ]
+        },
+        {
+          "id": "bathroom_upper",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "west_wall_door"
+          ],
+          "windows": [
+            "north_wall_vent_window"
+          ],
+          "features": [
+            "acoustic_insulation",
+            "skylight"
+          ]
+        },
+        {
+          "id": "balcony_master",
+          "type": "balcony",
+          "bounds": {
+            "x": 0,
+            "y": 22,
+            "width": 15,
+            "height": 6
+          },
+          "doors": [
+            "north_wall_door_from_master"
+          ],
+          "windows": [],
+          "features": [
+            "privacy_screen_walls",
+            "planter_boxes"
+          ]
+        },
+        {
+          "id": "balcony_bed2",
+          "type": "balcony",
+          "bounds": {
+            "x": 0,
+            "y": 28,
+            "width": 15,
+            "height": 6
+          },
+          "doors": [
+            "north_wall_door_from_bed2"
+          ],
+          "windows": [],
+          "features": [
+            "privacy_screen_walls",
+            "planter_boxes"
+          ]
+        }
+      ]
+    }
+  ]
+}

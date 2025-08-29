@@ -1,0 +1,79 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "living_room",
+          "dimensions": {"width": 20, "depth": 30},
+          "location": [15, 20],
+          "windows": ["north", "east"],
+          "doorways": [{"direction": "south", "leads_to": "courtyard"}]
+        },
+        {
+          "name": "kitchen",
+          "dimensions": {"width": 15, "depth": 20},
+          "location": [35, 20],
+          "windows": ["north"],
+          "doorways": [{"direction": "west", "leads_to": "living_room"}]
+        },
+        {
+          "name": "bathroom",
+          "dimensions": {"width": 8, "depth": 10},
+          "location": [35, 40],
+          "windows": ["north"],
+          "doorways": [{"direction": "south", "leads_to": "bedroom"}]
+        },
+        {
+          "name": "bedroom",
+          "dimensions": {"width": 20, "depth": 30},
+          "location": [55, 40],
+          "windows": ["east"],
+          "doorways": [{"direction": "south", "leads_to": "courtyard"}]
+        },
+        {
+          "name": "servant_quarters",
+          "dimensions": {"width": 12, "depth": 15},
+          "location": [70, 80],
+          "windows": ["north"],
+          "doorways": [{"direction": "west", "leads_to": "courtyard"}]
+        },
+        {
+          "name": "garage",
+          "dimensions": {"width": 20, "depth": 40},
+          "location": [55, 60],
+          "windows": ["north"],
+          "doorways": [{"direction": "south", "leads_to": "outside"}]
+        }
+      ],
+      "openings": [
+        {
+          "name": "courtyard",
+          "dimensions": {"width": 30, "depth": 40},
+          "location": [55, 20],
+          "trees_plants": ["neem", "mango"],
+          "water_feature": {"type": "small_fountain", "location": [65, 30]}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "name": "study_room",
+          "dimensions": {"width": 15, "depth": 20},
+          "location": [15, 20],
+          "windows": ["north", "west"],
+          "doorways": [{"direction": "east", "leads_to": "balcony"}]
+        },
+        {
+          "name": "balcony",
+          "dimensions": {"width": 30, "depth": 10},
+          "location": [45, 20],
+          "railing_type": "wooden_lattice"
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

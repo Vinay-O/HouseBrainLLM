@@ -1,0 +1,61 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_hall",
+          "type": "hall",
+          "dimensions": {"length": 8.0, "width": 4.0},
+          "orientation": "north"
+        },
+        {
+          "room_id": "living_room",
+          "type": "lounge",
+          "dimensions": {"length": 12.0, "width": 10.0},
+          "orientation": "east"
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": {"length": 8.0, "width": 6.0},
+          "orientation": "south",
+          "features": ["open_plan", "indoor_outdoor_flow"]
+        },
+        {
+          "room_id": "home_theater",
+          "type": "entertainment_room",
+          "dimensions": {"length": 10.0, "width": 8.0},
+          "orientation": "west"
+        },
+        {
+          "room_id": "master_bedroom",
+          "type": "bedroom",
+          "dimensions": {"length": 6.0, "width": 4.5},
+          "orientation": "north-east",
+          "features": ["en-suite", "private_balcony"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "entrance_hall_living_room",
+          "type": "door",
+          "dimensions": {"width": 2.0, "height": 2.2},
+          "orientation": "east"
+        },
+        {
+          "opening_id": "living_room_kitchen",
+          "type": "sliding_door",
+          "dimensions": {"width": 3.0, "height": 2.1},
+          "orientation": "south"
+        },
+        {
+          "opening_id": "kitchen_home_theater",
+          "type": "sliding_window",
+          "dimensions": {"width": 1.5, "height": 1.8},
+          "orientation": "west"
+        }
+      ]
+    }
+  ]
+}

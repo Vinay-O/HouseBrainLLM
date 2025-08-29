@@ -1,0 +1,67 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "Master_Bedroom",
+          "location": "North-East",
+          "dimensions": "15x12 feet",
+          "windows": ["East", "North"]
+        },
+        {
+          "room_type": "Bedroom_2",
+          "location": "South-West",
+          "dimensions": "10x12 feet",
+          "windows": ["West"]
+        },
+        {
+          "room_type": "Bedroom_3",
+          "location": "South-East",
+          "dimensions": "10x12 feet",
+          "windows": ["East", "South"]
+        },
+        {
+          "room_type": "Living_Room",
+          "location": "North-West",
+          "dimensions": "15x18 feet",
+          "windows": ["West", "North"],
+          "doors": [{"position": "West"}]
+        },
+        {
+          "room_type": "Kitchen",
+          "location": "South-East (adjacent to Bedroom 3)",
+          "dimensions": "10x12 feet",
+          "windows": ["East"]
+        },
+        {
+          "room_type": "Dining_Room",
+          "location": "North-West (between Living Room and Kitchen)",
+          "dimensions": "15x12 feet",
+          "windows": ["West"],
+          "doors": [{"position": "South"}]
+        },
+        {
+          "room_type": "Servant_Quarters",
+          "location": "South (adjacent to Bedroom 2 and 3)",
+          "dimensions": "10x15 feet",
+          "windows": ["South"]
+        }
+      ],
+      "openings": [
+        {"opening_type": "Front_Gate", "position": "North"}
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "Rooftop_Terrace",
+          "dimensions": "30x40 feet",
+          "features": ["Patio_Seating_Area", "Garden"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

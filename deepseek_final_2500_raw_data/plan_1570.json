@@ -1,0 +1,215 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 720,
+      "style": "Traditional Craftsman"
+    },
+    "plot": {
+      "location": "flood-prone riverside desert",
+      "climate": "extreme temperatures",
+      "orientation": "diagonal to prevailing winds, passive solar"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "type": "kitchen",
+        "area": 100
+      },
+      {
+        "type": "living_room",
+        "area": 200
+      },
+      {
+        "type": "darkroom",
+        "area": 80
+      },
+      {
+        "type": "entry",
+        "area": 60
+      },
+      {
+        "type": "storage",
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 720.0,
+  "construction_cost": 185000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry",
+          "type": "entry",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 3
+            },
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 6,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            },
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 14,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "position": 7,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "darkroom",
+          "type": "darkroom",
+          "bounds": {
+            "x": 8,
+            "y": 18,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 3
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage",
+          "type": "storage",
+          "bounds": {
+            "x": 16,
+            "y": 18,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 3
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Farmhouse Modern"
+    },
+    "plot": {
+      "topography": "sunken courtyard",
+      "climate": "continental with harsh winters"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "area": 400,
+        "description": "Primary scholarly space with built-in shelving"
+      },
+      {
+        "type": "game_room",
+        "area": 300,
+        "description": "Recreation space with built-in arcade cabinets"
+      },
+      {
+        "type": "study",
+        "area": 200,
+        "description": "Private research pod with reading nook"
+      },
+      {
+        "type": "kitchen",
+        "area": 200,
+        "description": "Modern farmhouse kitchen with island"
+      },
+      {
+        "type": "living_room",
+        "area": 300,
+        "description": "Central gathering space opening to courtyard"
+      },
+      {
+        "type": "bedroom",
+        "area": 250,
+        "description": "Master bedroom with ensuite"
+      },
+      {
+        "type": "bedroom",
+        "area": 150,
+        "description": "Guest bedroom"
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 540000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "to_room": "library"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "to_room": "living_room"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "to_room": "study"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "library_pod",
+          "type": "library",
+          "bounds": {
+            "x": 25,
+            "y": 35,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10,
+              "to_room": "courtyard"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "to_room": "game_room"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "game_room_pod",
+          "type": "game_room",
+          "bounds": {
+            "x": 45,
+            "y": 35,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10,
+              "to_room": "library"
+            },
+            {
+              "wall": "south",
+              "position": 7,
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "living_room_pod",
+          "type": "living_room",
+          "bounds": {
+            "x": 45,
+            "y": 15,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10,
+              "to_room": "courtyard"
+            },
+            {
+              "wall": "north",
+              "position": 7,
+              "to_room": "game_room"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7,
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_pod",
+          "type": "kitchen",
+          "bounds": {
+            "x": 60,
+            "y": 15,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10,
+              "to_room": "living_room"
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "to_room": "bedroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 70,
+            "y": 15,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6,
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "study_pod",
+          "type": "study",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7,
+              "to_room": "courtyard"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "to_room": "bedroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6,
+              "to_room": "study"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6,
+              "size": "large"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

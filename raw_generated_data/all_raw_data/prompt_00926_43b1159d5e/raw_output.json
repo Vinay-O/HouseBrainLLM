@@ -1,0 +1,81 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_dining",
+          "type": "combined_living_and_dining",
+          "dimensions": { "length": 4.5, "width": 6.0 },
+          "features": ["bohemian_decor", "central_courtyard_access"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "modular_kitchen",
+          "dimensions": { "length": 3.0, "width": 4.0 },
+          "features": ["gas_stove", "sink", "cabinet_storage"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "master_bedroom",
+          "dimensions": { "length": 4.0, "width": 5.0 },
+          "features": ["wardrobe", "attached_bathroom"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "guest_bedroom",
+          "dimensions": { "length": 3.5, "width": 4.5 },
+          "features": ["wardrobe", "shared_bathroom"]
+        },
+        {
+          "room_id": "central_courtyard",
+          "type": "open_space",
+          "dimensions": { "length": 3.0, "width": 3.0 },
+          "features": ["garden_seating", "water_feature"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 1.2, "width": 2.0 },
+          "location": "front_facade"
+        },
+        {
+          "opening_id": "courtyard_access",
+          "type": "archway",
+          "dimensions": { "height": 2.5 },
+          "location": "living_dining_to_courtyard"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "study_loft",
+          "type": "loft_space",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["work_desks", "reading_nook"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "loft_window",
+          "type": "window",
+          "dimensions": { "length": 1.2, "width": 1.5 },
+          "location": "study_loft_to_courtyard"
+        }
+      ]
+    }
+  ],
+  "special_features": {
+    "vastu_compliance": true,
+    "bohemian_elements": ["colorful_textiles", "eclectic_furniture", "plants"],
+    "sustainability": ["natural_ventilation", "rainwater_harvesting"]
+  },
+  "building_norms": {
+    "corner_plot": true,
+    "setback_compliance": true
+  }
+}

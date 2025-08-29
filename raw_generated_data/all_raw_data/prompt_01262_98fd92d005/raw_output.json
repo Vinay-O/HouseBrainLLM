@@ -1,0 +1,164 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+          {
+              "name": "Entrance Hall and Lobby",
+              "dimensions": {"width": 20, "length": 30},
+              "description": "A spacious foyer leading to the living spaces with an open-plan design that respects Vastu principles by aligning entry towards the east.",
+              "vastu_compliance": true
+          },
+          {
+              "name": "Living Room",
+              "dimensions": {"width": 25, "length": 35},
+              "description": "A large area for social gatherings with natural light from south-facing windows and an adjoining balcony.",
+              "vastu_compliance": true,
+              "balcony_access": true
+          },
+          {
+              "name": "Dining Room",
+              "dimensions": {"width": 20, "length": 25},
+              "description": "Separate dining space adjacent to the living room that integrates a balcony for fresh air.",
+              "vastu_compliance": true,
+              "balcony_access": true
+          },
+          {
+              "name": "Guest Bedroom",
+              "dimensions": {"width": 15, "length": 20},
+              "description": "A guest bedroom designed with privacy in mind, featuring a balcony facing east for natural light.",
+              "vastu_compliance": true,
+              "balcony_access": true
+          },
+          {
+              "name": "Master Bedroom",
+              "dimensions": {"width": 20, "length": 25},
+              "description": "An expansive master bedroom with an attached balcony for relaxation and adherence to Vastu guidelines.",
+              "vastu_compliance": true,
+              "balcony_access": true
+          },
+          {
+              "name": "Study/Library",
+              "dimensions": {"width": 15, "length": 20},
+              "description": "A quiet study area that can double as a library space with views of the garden.",
+              "vastu_compliance": false,
+              "balcony_access": false
+          },
+          {
+              "name": "Family Room/Playroom",
+              "dimensions": {"width": 20, "length": 25},
+              "description": "Multipurpose room for family activities that can be used for play or as an extra living space.",
+              "vastu_compliance": false,
+              "balcony_access": false
+          },
+          {
+              "name": "Utility/Service Area",
+              "dimensions": {"width": 10, "length": 15},
+              "description": "A compact area for laundry, storage and service functions.",
+              "vastu_compliance": false,
+              "balcony_access": false
+          }
+      ],
+      "openings": [
+          {
+              "name": "Front Entrance",
+              "type": "Door",
+              "location": "north_west_corner"
+          },
+          {
+              "name": "Balconies",
+              "type": "Window/Exterior",
+              "description": "Each bedroom features an attached balcony to ensure ample ventilation and natural light.",
+              "locations": ["guest_bedroom", "master_bedroom"]
+          },
+          {
+              "name": "South Facing Window",
+              "type": "Window",
+              "location": "living_room"
+          },
+          {
+              "name": "Rooftop Terrace Access",
+              "type": "Staircase",
+              "description": "A staircase leading from the ground floor to the rooftop terrace.",
+              "location": "central_area"
+          }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+          {
+              "name": "Bedroom 2",
+              "dimensions": {"width": 20, "length": 25},
+              "description": "Additional bedroom with a private balcony that overlooks the garden area.",
+              "vastu_compliance": true,
+              "balcony_access": true
+          },
+          {
+              "name": "Bedroom 3",
+              "dimensions": {"width": 20, "length": 25},
+              "description": "Another bedroom with a balcony, ensuring privacy and ample sunlight.",
+              "vastu_compliance": true,
+              "balcony_access": true
+          },
+          {
+              "name": "Bedroom 4",
+              "dimensions": {"width": 20, "length": 25},
+              "description": "Additional bedroom space with a small balcony for relaxation.",
+              "vastu_compliance": true,
+              "balcony_access": true
+          },
+          {
+              "name": "Bedroom 5",
+              "dimensions": {"width": 20, "length": 25},
+              "description": "Final bedroom of the upper floor with a balcony offering views.",
+              "vastu_compliance": true,
+              "balcony_access": true
+          },
+          {
+              "name": "Balcony Connect",
+              "dimensions": {"width": 5, "length": 15},
+              "description": "Connective walkway linking the bedrooms with their respective balconies.",
+              "vastu_compliance": false,
+              "balcony_access": true
+          }
+      ],
+      "openings": [
+          {
+              "name": "Upper Floor Staircase",
+              "type": "Staircase",
+              "location": "east_side"
+          },
+          {
+              "name": "Balcony Openings",
+              "type": "Window/Exterior",
+              "description": "Each bedroom's balcony is individually designed for optimum natural light and ventilation.",
+              "locations": ["bedroom_2", "bedroom_3", "bedroom_4", "bedroom_5"]
+          }
+      ]
+    },
+    {
+      "level_id": "roof_top",
+      "rooms": [
+          {
+              "name": "Rooftop Terrace",
+              "dimensions": {"width": 40, "length": 60},
+              "description": "An expansive terrace offering panoramic views of the surroundings with space for a swimming pool area and relaxation zones.",
+              "vastu_compliance": false,
+              "balcony_access": false
+          }
+      ],
+      "openings": [
+          {
+              "name": "Rooftop Staircase",
+              "type": "Staircase",
+              "location": "central_area"
+          },
+          {
+              "name": "Swimming Pool Area",
+              "type": "Pool",
+              "description": "A dedicated swimming pool area integrated into the rooftop terrace design.",
+              "dimensions": {"width": 20, "length": 40}
+          }
+      ]
+    }
+]}

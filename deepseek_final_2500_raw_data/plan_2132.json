@@ -1,0 +1,240 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Industrial Loft"
+    },
+    "plot": {
+      "width": 30,
+      "depth": 40,
+      "orientation": "south",
+      "climate": "tropical with monsoons",
+      "hazards": [
+        "wildfire"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "area": 300
+      },
+      {
+        "type": "pottery_studio",
+        "area": 300
+      },
+      {
+        "type": "living_room",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 5
+              },
+              "type": "interior",
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 20
+              },
+              "type": "exterior",
+              "to_room": "rooftop_deck"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 10
+              },
+              "type": "fixed",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "pottery_studio",
+          "type": "pottery_studio",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 15
+              },
+              "type": "interior",
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 22.5,
+                "y": 20
+              },
+              "type": "exterior",
+              "to_room": "utility_area"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 10
+              },
+              "type": "fixed",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 25
+              },
+              "type": "interior",
+              "to_room": "bedroom"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 20
+              },
+              "type": "interior",
+              "to_room": "kitchen"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 30
+              },
+              "type": "exterior",
+              "to_room": "main_entry"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 30
+              },
+              "type": "sliding_glass",
+              "size": "extra_large"
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 30
+              },
+              "type": "interior",
+              "to_room": "bathroom"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 25
+              },
+              "type": "interior",
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 30
+              },
+              "type": "sliding_glass",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 30,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 35
+              },
+              "type": "interior",
+              "to_room": "bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 22.5,
+                "y": 40
+              },
+              "type": "operable",
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

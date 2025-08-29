@@ -1,0 +1,120 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "dimensions": {"width": 12, "length": 10},
+          "description": "A welcoming entrance hall that opens into a central courtyard.",
+          "adjacencies": ["courtyard", "living_area"]
+        },
+        {
+          "room_type": "living_room_kitchen",
+          "dimensions": {"width": 20, "length": 15},
+          "description": "An open-plan living area integrated with the kitchen. Designed for social gatherings and dining.",
+          "adjacencies": ["entrance_hall", "courtyard"]
+        },
+        {
+          "room_type": "dining_area",
+          "dimensions": {"width": 10, "length": 12},
+          "description": "A dedicated space for formal dining, adjacent to the living_kitchen.",
+          "adjacencies": ["living_room_kitchen", "courtyard"]
+        },
+        {
+          "room_type": "home_office",
+          "dimensions": {"width": 8, "length": 10},
+          "description": "A quiet home office space with soundproofing and natural light access, oriented per Vastu for concentration.",
+          "adjacencies": ["living_room_kitchen", "entrance_hall"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"width": 12, "length": 15},
+          "description": "One of the primary bedrooms with a private balcony facing the courtyard.",
+          "adjacencies": ["bathroom", "closet"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"width": 12, "length": 15},
+          "description": "Second bedroom oriented to ensure positive energy flow according to Vastu.",
+          "adjacencies": ["bathroom", "storage_area"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"width": 12, "length": 15},
+          "description": "Third bedroom designed for relaxation and meditation space, with ample sunlight.",
+          "adjacencies": ["balcony", "closet"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"width": 12, "length": 15},
+          "description": "Fourth bedroom providing a quiet retreat with east-facing exposure for morning light.",
+          "adjacencies": ["bathroom", "storage_area"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"width": 12, "length": 15},
+          "description": "Fifth bedroom with modern finishes and enhanced ventilation in line with local norms.",
+          "adjacencies": ["closet", "balcony"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"width": 12, "length": 15},
+          "description": "Sixth bedroom incorporating traditional Mediterranean elements and Vastu-compliant orientation.",
+          "adjacencies": ["bathroom", "storage_area"]
+        },
+        {
+          "room_type": "master_suite",
+          "dimensions": {"width": 14, "length": 18},
+          "description": "A master suite with an en-suite bathroom, walk-in closet, and private balcony.",
+          "adjacencies": ["bathroom", "walk_in_closet"]
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": {"width": 6, "length": 8},
+          "description": "Shared bathroom facilities, positioned to ensure privacy and adherence to building codes.",
+          "adjacencies": ["bedrooms", "master_suite"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "entrance",
+          "location": {"axis": "north"},
+          "dimensions": {"width": 4, "height": 7},
+          "description": "Primary entrance aligned with Vastu principles."
+        },
+        {
+          "opening_type": "windows",
+          "location": {"axis": "east"},
+          "dimensions": {"width": 3, "height": 5},
+          "description": "Large windows in the living area and bedrooms to maximize natural light."
+        },
+        {
+          "opening_type": "courtyard_access",
+          "location": {"axis": "central"},
+          "dimensions": {"width": 8, "height": 10},
+          "description": "Open courtyard access from multiple rooms for ventilation and social interaction."
+        },
+        {
+          "opening_type": "balcony_door",
+          "location": {"axis": "south"},
+          "dimensions": {"width": 4, "height": 6},
+          "description": "Balconies attached to bedrooms offering scenic views of the courtyard."
+        }
+      ]
+    }
+  ],
+  "vastu_considerations": {
+    "orientation": {
+      "entrance": "north",
+      "living_room": "east",
+      "kitchen": "south-east",
+      "bedrooms": "west"
+    },
+    "courtyard": "central, open, and inviting to enhance airflow and energy circulation."
+  },
+  "building_norms": {
+    "plot_dimensions": {"width": 30, "length": 50},
+    "minimum_open_space": {"area": 200}
+  }
+}

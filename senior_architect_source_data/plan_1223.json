@@ -1,0 +1,182 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 2400,
+      "style": "Tropical Modernist"
+    },
+    "plot": {
+      "environment": "Forest clearing with mature oak trees in a desert with extreme temperatures",
+      "orientation": "North-facing for consistent light"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "details": "Chef's kitchen with wood-fired oven"
+      },
+      {
+        "type": "primary_bedroom",
+        "details": "Retired artist couple's suite"
+      },
+      {
+        "type": "guest_bedroom",
+        "details": "Guest bedroom"
+      },
+      {
+        "type": "studio",
+        "details": "Art studio with north light"
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 875000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 18
+          },
+          "doors": [
+            "entry_door_north",
+            "door_to_kitchen",
+            "door_to_studio"
+          ],
+          "windows": [
+            "curved_window_north",
+            "window_east",
+            "window_west"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 18
+          },
+          "doors": [
+            "door_to_living_room",
+            "door_to_dining"
+          ],
+          "windows": [
+            "window_north",
+            "window_south"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "door_to_kitchen",
+            "door_to_terrace"
+          ],
+          "windows": [
+            "curved_window_north",
+            "window_east"
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "door_to_living_room",
+            "door_to_bathroom"
+          ],
+          "windows": [
+            "window_north",
+            "window_east"
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 18,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "door_to_primary_bedroom"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 18,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_north"
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 47,
+            "y": 18,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        },
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 34,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            "door_to_living_room",
+            "door_to_terrace"
+          ],
+          "windows": [
+            "full_curved_window_north",
+            "window_east",
+            "window_west"
+          ]
+        }
+      ]
+    }
+  ]
+}

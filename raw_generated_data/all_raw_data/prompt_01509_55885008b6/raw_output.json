@@ -1,0 +1,57 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {
+        "room_type": "living_area",
+        "description": "Spacious open-plan living area with integrated Scandinavian aesthetics, featuring clean lines and natural materials.",
+        "dimensions_sqft": 300,
+        "accessibility": true,
+        "adjacent_rooms": ["kitchen", "entrance_hall"]
+      },
+      {
+        "room_type": "open_plan_kitchen",
+        "description": "Open-plan kitchen adjoining the living area, designed with modern Scandinavian functionality and ample storage.",
+        "dimensions_sqft": 200,
+        "accessibility": true,
+        "adjacent_rooms": ["living_area", "dining_area"]
+      },
+      {
+        "room_type": "dining_area",
+        "description": "Dedicated dining area integrated within the open-plan layout, with space for wheelchair maneuverability.",
+        "dimensions_sqft": 100,
+        "accessibility": true,
+        "adjacent_rooms": ["open_plan_kitchen"]
+      },
+      {
+        "room_type": "entrance_hall",
+        "description": "Accessible entrance hall leading directly into the living area, designed to be wide for wheelchair access.",
+        "dimensions_sqft": 50,
+        "accessibility": true
+      }
+    ],
+    "openings": [
+      {
+        "opening_type": "front_door",
+        "location": "north",
+        "description": "Primary entrance door with automatic opening mechanism to aid accessibility."
+      },
+      {
+        "opening_type": "back_door",
+        "location": "south",
+        "description": "Secondary access door, integrated into open-plan layout for emergency exits."
+      }
+    ],
+    "split_level_details": {
+      "level_difference": 5,
+      "ramp_locations": [
+        {"from": "entrance_hall", "to": "living_area"},
+        {"from": "kitchen", "to": "dining_area"}
+      ]
+    },
+    "vastu_considerations": {
+      "plot_direction": "west_facing",
+      "correction": "Incorporate east-facing windows in living and dining areas to balance energy."
+    }
+  }
+]}

@@ -1,0 +1,625 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 2800,
+      "style": "Heritage-Inspired Kashmiri with Modern Elements"
+    },
+    "plot": {
+      "shape": "Rectangle",
+      "area": 87120,
+      "width": 198,
+      "height": 440,
+      "orientation": "North-South",
+      "frontage": [
+        198,
+        440
+      ],
+      "location": "Hyderabad, Tech Hub",
+      "terrain": "Desert",
+      "water_scarcity": true,
+      "corner_plot": true,
+      "dual_street_frontage": true
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 120
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "baithak",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 1000
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "storage",
+        "count": 1,
+        "area": 80
+      },
+      {
+        "type": "verandah",
+        "count": 1,
+        "area": 500
+      }
+    ]
+  },
+  "total_area": 2800.0,
+  "construction_cost": 560000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard_center",
+          "type": "courtyard",
+          "bounds": {
+            "x": 60,
+            "y": 120,
+            "width": 80,
+            "height": 80
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 160
+              },
+              "to_room": "verandah_north"
+            },
+            {
+              "position": {
+                "x": 100,
+                "y": 120
+              },
+              "to_room": "verandah_east"
+            },
+            {
+              "position": {
+                "x": 140,
+                "y": 160
+              },
+              "to_room": "verandah_south"
+            },
+            {
+              "position": {
+                "x": 100,
+                "y": 200
+              },
+              "to_room": "verandah_west"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Traditional Brass Water Storage",
+            "Pergola Shading",
+            "Vine Trellises",
+            "Drought-Tolerant Plants",
+            "Permeable Pavers"
+          ]
+        },
+        {
+          "id": "verandah_north",
+          "type": "verandah",
+          "bounds": {
+            "x": 60,
+            "y": 80,
+            "width": 80,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 100
+              },
+              "to_room": "bedroom_1"
+            },
+            {
+              "position": {
+                "x": 100,
+                "y": 80
+              },
+              "to_room": "courtyard_center"
+            },
+            {
+              "position": {
+                "x": 140,
+                "y": 100
+              },
+              "to_room": "bedroom_2"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Kashmiri Wooden Columns",
+            "Traditional Jali Screens"
+          ]
+        },
+        {
+          "id": "verandah_east",
+          "type": "verandah",
+          "bounds": {
+            "x": 140,
+            "y": 120,
+            "width": 40,
+            "height": 80
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 160,
+                "y": 120
+              },
+              "to_room": "courtyard_center"
+            },
+            {
+              "position": {
+                "x": 160,
+                "y": 160
+              },
+              "to_room": "baithak"
+            },
+            {
+              "position": {
+                "x": 160,
+                "y": 200
+              },
+              "to_room": "utility_room"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Kashmiri Wooden Columns",
+            "Traditional Jali Screens"
+          ]
+        },
+        {
+          "id": "verandah_south",
+          "type": "verandah",
+          "bounds": {
+            "x": 60,
+            "y": 200,
+            "width": 80,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 220
+              },
+              "to_room": "kitchen"
+            },
+            {
+              "position": {
+                "x": 100,
+                "y": 200
+              },
+              "to_room": "courtyard_center"
+            },
+            {
+              "position": {
+                "x": 140,
+                "y": 220
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Kashmiri Wooden Columns",
+            "Traditional Jali Screens"
+          ]
+        },
+        {
+          "id": "verandah_west",
+          "type": "verandah",
+          "bounds": {
+            "x": 20,
+            "y": 120,
+            "width": 40,
+            "height": 80
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 120
+              },
+              "to_room": "courtyard_center"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 160
+              },
+              "to_room": "entry_foyer"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 200
+              },
+              "to_room": "bathroom_2"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Kashmiri Wooden Columns",
+            "Traditional Jali Screens",
+            "Main Entry Gate"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 40,
+            "width": 40,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 60
+              },
+              "to_room": "verandah_north"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 60
+              },
+              "to_room": "bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 40
+              },
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 40
+              },
+              "size": "large"
+            }
+          ],
+          "features": [
+            "Built-in Wardrobes",
+            "Kashmiri Wooden Ceiling"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 20,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 60
+              },
+              "to_room": "bedroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 10,
+                "y": 40
+              },
+              "size": "small"
+            }
+          ],
+          "features": [
+            "Solar Water Heater Connection",
+            "Water-Efficient Fixtures"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 140,
+            "y": 40,
+            "width": 40,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 140,
+                "y": 60
+              },
+              "to_room": "verandah_north"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 150,
+                "y": 40
+              },
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 170,
+                "y": 40
+              },
+              "size": "large"
+            }
+          ],
+          "features": [
+            "Built-in Wardrobes",
+            "Kashmiri Wooden Ceiling"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 180,
+            "y": 40,
+            "width": 20,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 180,
+                "y": 60
+              },
+              "to_room": "bedroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 190,
+                "y": 40
+              },
+              "size": "small"
+            }
+          ],
+          "features": [
+            "Solar Water Heater Connection",
+            "Water-Efficient Fixtures"
+          ]
+        },
+        {
+          "id": "baithak",
+          "type": "baithak",
+          "bounds": {
+            "x": 140,
+            "y": 160,
+            "width": 40,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 140,
+                "y": 180
+              },
+              "to_room": "verandah_east"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 150,
+                "y": 160
+              },
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 170,
+                "y": 160
+              },
+              "size": "large"
+            }
+          ],
+          "features": [
+            "Low Seating Platforms",
+            "Traditional Kashmiri Carpets",
+            "Brass Hookah Centerpiece"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 140,
+            "y": 200,
+            "width": 40,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 140,
+                "y": 220
+              },
+              "to_room": "verandah_east"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 150,
+                "y": 200
+              },
+              "size": "medium"
+            }
+          ],
+          "features": [
+            "Solar Inverter",
+            "Water Pump",
+            "Security System Panel",
+            "Copper Pipe Solar Heating Manifold"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 200,
+            "width": 40,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 220
+              },
+              "to_room": "verandah_south"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 200
+              },
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 200
+              },
+              "size": "large"
+            }
+          ],
+          "features": [
+            "Wood-Fired Chulah",
+            "Modern Appliances",
+            "Brass Utensil Storage",
+            "Efficient Ventilation"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 100,
+            "y": 200,
+            "width": 40,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 100,
+                "y": 200
+              },
+              "to_room": "verandah_south"
+            },
+            {
+              "position": {
+                "x": 100,
+                "y": 240
+              },
+              "to_room": "entry_foyer"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 110,
+                "y": 200
+              },
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 130,
+                "y": 200
+              },
+              "size": "large"
+            }
+          ],
+          "features": [
+            "Kashmiri Wooden Furniture",
+            "Traditional Rugs"
+          ]
+        },
+        {
+          "id": "entry_foyer",
+          "type": "storage",
+          "bounds": {
+            "x": 20,
+            "y": 240,
+            "width": 80,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 240
+              },
+              "to_room": "verandah_west"
+            },
+            {
+              "position": {
+                "x": 100,
+                "y": 240
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Secure Main Entry",
+            "Shoe Rack",
+            "Coat Storage"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 1800.0,
+      "style": "Organic Architecture"
+    },
+    "plot": {
+      "terrain": "sloping vineyard",
+      "climate": "coastal with salt air exposure"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "darkroom",
+        "count": 1
+      },
+      {
+        "type": "fitness_room",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 1
+      },
+      {
+        "type": "deck",
+        "count": 2
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 432000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "fitness_room_0",
+          "type": "fitness_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 7.5
+              },
+              "to_room": "deck_0"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "type": "triple_glazed_argon"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 15
+              },
+              "type": "triple_glazed_argon"
+            }
+          ]
+        },
+        {
+          "id": "storage_0",
+          "type": "storage",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "to_room": "fitness_room_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "deck_0",
+          "type": "deck",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 7.5
+              },
+              "to_room": "kitchen_1"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 15
+              },
+              "to_room": "deck_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "type": "triple_glazed_argon"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "type": "triple_glazed_argon"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "to_room": "living_room_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 0
+              },
+              "type": "triple_glazed_argon"
+            }
+          ]
+        },
+        {
+          "id": "darkroom_1",
+          "type": "darkroom",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 12.5
+              },
+              "to_room": "kitchen_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 21
+              },
+              "to_room": "bathroom_1_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 15
+              },
+              "type": "triple_glazed_argon"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 21
+              },
+              "type": "triple_glazed_argon"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 7,
+            "height": 7
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "bedroom_1_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 22,
+            "y": 15,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 22,
+                "y": 21
+              },
+              "to_room": "bathroom_1_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 29.5,
+                "y": 15
+              },
+              "type": "triple_glazed_argon"
+            },
+            {
+              "position": {
+                "x": 37,
+                "y": 21
+              },
+              "type": "triple_glazed_argon"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 22,
+            "width": 7,
+            "height": 7
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "deck_1",
+          "type": "deck",
+          "bounds": {
+            "x": 0,
+            "y": 27,
+            "width": 30,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

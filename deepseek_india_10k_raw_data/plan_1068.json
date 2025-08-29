@@ -1,0 +1,289 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 3200,
+      "style": "Luxury Artisan-Crafted Linear Pavilion"
+    },
+    "plot": {
+      "location": "Kochi backwaters, waterfront",
+      "terrain": "flat",
+      "orientation": "west-facing",
+      "constraints": [
+        "mountain landslide",
+        "heavy snow load"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "primary_suite",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "festival_kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "veranda",
+        "count": 1
+      },
+      {
+        "type": "light_well",
+        "count": 2
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1120000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "primary_suite",
+          "type": "primary_suite",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "door_suite_veranda"
+          ],
+          "windows": [
+            "window_suite_west"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "door_bed1_veranda"
+          ],
+          "windows": [
+            "window_bed1_west"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 36,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "door_bed2_veranda"
+          ],
+          "windows": [
+            "window_bed2_west"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 52,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "door_bed3_veranda"
+          ],
+          "windows": [
+            "window_bed3_west"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 16,
+            "width": 4,
+            "height": 8
+          },
+          "doors": [
+            "door_bath1_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 36,
+            "y": 16,
+            "width": 4,
+            "height": 8
+          },
+          "doors": [
+            "door_bath2_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 56,
+            "y": 16,
+            "width": 4,
+            "height": 8
+          },
+          "doors": [
+            "door_bath3_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "main_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 24,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            "door_kitchen_dining",
+            "door_kitchen_veranda"
+          ],
+          "windows": [
+            "window_kitchen_west",
+            "window_kitchen_lightwell"
+          ]
+        },
+        {
+          "id": "festival_kitchen",
+          "type": "festival_kitchen",
+          "bounds": {
+            "x": 32,
+            "y": 24,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "door_festival_veranda",
+            "door_festival_exterior"
+          ],
+          "windows": [
+            "window_festival_west",
+            "window_festival_lightwell"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 52,
+            "y": 24,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "door_living_veranda",
+            "door_living_dining"
+          ],
+          "windows": [
+            "window_living_west",
+            "window_living_lightwell"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 36,
+            "y": 40,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "door_dining_veranda",
+            "door_dining_living",
+            "door_dining_kitchen"
+          ],
+          "windows": [
+            "window_dining_west"
+          ]
+        },
+        {
+          "id": "veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 56,
+            "width": 68,
+            "height": 12
+          },
+          "doors": [
+            "door_veranda_primary",
+            "door_veranda_bed1",
+            "door_veranda_bed2",
+            "door_veranda_bed3",
+            "door_veranda_kitchen",
+            "door_veranda_festival",
+            "door_veranda_living",
+            "door_veranda_dining"
+          ],
+          "windows": []
+        },
+        {
+          "id": "light_well_1",
+          "type": "light_well",
+          "bounds": {
+            "x": 20,
+            "y": 40,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "light_well_2",
+          "type": "light_well",
+          "bounds": {
+            "x": 44,
+            "y": 40,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

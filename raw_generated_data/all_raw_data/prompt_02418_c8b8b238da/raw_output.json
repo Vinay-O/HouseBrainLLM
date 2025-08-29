@@ -1,0 +1,83 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_hall",
+          "description": "North-facing entrance with Vastu-compliant reception area and foyer. Features a transitional space with ample natural light from the north, providing an inviting welcome.",
+          "dimensions": { "width": 5, "length": 6 },
+          "adjacencies": ["living_area", "kitchen"]
+        },
+        {
+          "room_id": "living_area",
+          "description": "Open-plan living area adjoining the kitchen and dining space. Features comfortable seating arrangements, traditional Kerala-style decor, and adequate natural lighting.",
+          "dimensions": { "width": 8, "length": 10 },
+          "adjacencies": ["entrance_hall", "kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "description": "Open-plan kitchen integrated with the living area. Equipped with modern amenities while retaining traditional elements like wooden fixtures and tiled surfaces.",
+          "dimensions": { "width": 4, "length": 6 },
+          "adjacencies": ["living_area"]
+        },
+        {
+          "room_id": "dining_area",
+          "description": "Dedicated dining space within the living area. Designed for flexibility in seating and hosting gatherings.",
+          "dimensions": { "width": 4, "length": 5 },
+          "adjacencies": ["living_area"]
+        },
+        {
+          "room_id": "library",
+          "description": "A quiet, well-lit library space located near the living area. Designed for reading and study with comfortable seating and adjustable lighting.",
+          "dimensions": { "width": 3, "length": 4 },
+          "adjacencies": ["living_area"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "description": "North-facing entrance door adhering to Vastu principles. Large, inviting threshold with decorative arches.",
+          "dimensions": { "width": 2, "height": 4 },
+          "adjacencies": ["outside"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom1",
+          "description": "Spacious bedroom with a dedicated balcony offering views of the landscape. Incorporates traditional Kerala architectural elements and ample natural lighting.",
+          "dimensions": { "width": 5, "length": 7 },
+          "adjacencies": ["bathroom"]
+        },
+        {
+          "room_id": "bedroom2",
+          "description": "Second bedroom with its own balcony for personal outdoor space. Emphasizes privacy and serenity.",
+          "dimensions": { "width": 5, "length": 7 },
+          "adjacencies": ["bathroom"]
+        },
+        {
+          "room_id": "common_bathroom",
+          "description": "Bathroom shared between the two bedrooms, designed with efficient space utilization and traditional finishes.",
+          "dimensions": { "width": 3, "length": 4 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony1",
+          "description": "Balcony adjoining bedroom1 providing an open view and fresh air.",
+          "dimensions": { "width": 2, "height": 3 },
+          "adjacencies": ["bedroom1"]
+        },
+        {
+          "opening_id": "balcony2",
+          "description": "Balcony adjoining bedroom2 offering outdoor space for relaxation.",
+          "dimensions": { "width": 2, "height": 3 },
+          "adjacencies": ["bedroom2"]
+        }
+      ]
+    }
+  ]
+}

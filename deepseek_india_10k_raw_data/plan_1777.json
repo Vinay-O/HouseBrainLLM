@@ -1,0 +1,253 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 2400,
+      "style": "Traditional Bengali-Nawabi Fusion"
+    },
+    "plot": {
+      "shape": "Rectangular",
+      "area": 3600,
+      "orientation": "East-West for Vastu compliance and evening breeze capture",
+      "location": "Heritage bungalow restoration site, Lucknow nawabi area",
+      "constraints": "Urban noise pollution, heavy monsoon, universal accessibility requirement"
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "specialAttributes": [
+          "Universal accessibility",
+          "West-facing for breeze"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "count": 2,
+        "specialAttributes": [
+          "Family bedrooms"
+        ]
+      },
+      {
+        "type": "guest_house",
+        "count": 1,
+        "specialAttributes": [
+          "Separate entrance for privacy"
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "specialAttributes": [
+          "Central gathering space"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "specialAttributes": [
+          "Vastu-compliant SE position"
+        ]
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "specialAttributes": [
+          "Vastu-compliant NE position"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "specialAttributes": [
+          "Universal accessibility in master suite"
+        ]
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 4320000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            "main_entrance_east",
+            "to_verandah_west"
+          ],
+          "windows": [
+            "north_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "master_bedroom_0",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_verandah_west",
+            "to_bathroom"
+          ],
+          "windows": [
+            "west_window_breeze"
+          ]
+        },
+        {
+          "id": "bedroom_1_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_2_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "west_window_breeze"
+          ]
+        },
+        {
+          "id": "guest_house_0",
+          "type": "guest_house",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "separate_entrance_north"
+          ],
+          "windows": [
+            "west_window_breeze",
+            "south_window"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_courtyard",
+            "service_entry"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "puja_room_0",
+          "type": "puja_room",
+          "bounds": {
+            "x": 15,
+            "y": 35,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_courtyard"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "bathroom_1_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 35,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "from_master_bedroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 35,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "from_corridor"
+          ],
+          "windows": []
+        },
+        {
+          "id": "verandah_0",
+          "type": "verandah",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 10,
+            "height": 40
+          },
+          "doors": [
+            "from_living_room",
+            "from_master_bedroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "courtyard_0",
+          "type": "courtyard",
+          "bounds": {
+            "x": 25,
+            "y": 45,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "from_kitchen",
+            "from_puja_room"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

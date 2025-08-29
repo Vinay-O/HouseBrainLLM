@@ -1,0 +1,126 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": {"length": 20, "width": 15},
+          "adjacent_to": ["dining_area"],
+          "notes": "Centrally located for social interactions. Incorporates large windows and glass panels to maximize natural light."
+        },
+        {
+          "room_type": "dining_area",
+          "dimensions": {"length": 12, "width": 10},
+          "adjacent_to": ["kitchen", "living_room"],
+          "notes": "Open concept dining area integrated with the living room; features ample seating and a view to outdoor space."
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {"length": 12, "width": 8},
+          "adjacent_to": ["dining_area", "service_courtyard"],
+          "notes": "Efficient layout with modular cabinetry and modern appliances; includes an island counter."
+        },
+        {
+          "room_type": "bedroom_1",
+          "dimensions": {"length": 16, "width": 12},
+          "balcony": true,
+          "adjacent_to": ["corridor"],
+          "notes": "Located in the east-facing side to harness morning sunlight as per Vastu principles; spacious balcony for relaxation."
+        },
+        {
+          "room_type": "bedroom_2",
+          "dimensions": {"length": 16, "width": 12},
+          "balcony": true,
+          "adjacent_to": ["corridor"],
+          "notes": "North-facing bedroom with a balcony providing cooling breezes and privacy."
+        },
+        {
+          "room_type": "bedroom_3",
+          "dimensions": {"length": 16, "width": 12},
+          "balcony": true,
+          "adjacent_to": ["corridor"],
+          "notes": "West-facing bedroom with a balcony for afternoon sun; designed to maintain privacy."
+        },
+        {
+          "room_type": "bedroom_4",
+          "dimensions": {"length": 16, "width": 12},
+          "balcony": true,
+          "adjacent_to": ["corridor"],
+          "notes": "South-facing bedroom with a balcony; optimal sunlight exposure and cross ventilation."
+        },
+        {
+          "room_type": "bedroom_5",
+          "dimensions": {"length": 16, "width": 12},
+          "balcony": true,
+          "adjacent_to": ["corridor"],
+          "notes": "Second-floor adjacent bedroom option on ground floor with a balcony; designed for additional family member or guest."
+        },
+        {
+          "room_type": "bedroom_6",
+          "dimensions": {"length": 16, "width": 12},
+          "balcony": true,
+          "adjacent_to": ["corridor"],
+          "notes": "Provides flexible sleeping arrangement; can be used as a guest bedroom or office."
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": {"length": 8, "width": 6},
+          "water_fittings": ["toilet", "sink", "shower"],
+          "adjacent_to": ["bedrooms"],
+          "notes": "Modern bathroom design with sufficient storage and water-saving fixtures."
+        },
+        {
+          "room_type": "corridor",
+          "dimensions": {"length": 40, "width": 4},
+          "adjacent_to": ["living_room", "kitchen", "dining_area", "bedrooms"],
+          "notes": "Central circulation space connecting all areas; designed with Vastu principles for smooth flow."
+        },
+        {
+          "room_type": "service_courtyard",
+          "dimensions": {"length": 15, "width": 10},
+          "adjacent_to": ["kitchen", "utility_room"],
+          "notes": "Functional outdoor space for utilities and domestic chores; maintains privacy with boundary walls."
+        },
+        {
+          "room_type": "utility_room",
+          "dimensions": {"length": 8, "width": 6},
+          "adjacent_to": ["service_courtyard"],
+          "notes": "Contains laundry, storage, and other household functions; integrated into the plan for convenience."
+        }
+      ],
+      "openings": [
+        {
+          "type": "main_entrance",
+          "location": "north_side",
+          "dimensions": {"width": 6, "height": 7},
+          "notes": "Prominent entrance aligned with Vastu guidelines to welcome positive energy."
+        },
+        {
+          "type": "backdoor",
+          "location": "south_side",
+          "dimensions": {"width": 4, "height": 5.5},
+          "notes": "Service entrance providing access to the service courtyard and utility room."
+        },
+        {
+          "type": "balcony_access",
+          "location": "east_side",
+          "dimensions": {"width": 6, "height": 7},
+          "notes": "Balcony entrances from multiple bedrooms; designed for privacy and natural ventilation."
+        },
+        {
+          "type": "roof_opening",
+          "location": "center_top",
+          "dimensions": {"width": 10, "height": 8},
+          "notes": "Access to the rooftop terrace; facilitates movement between ground floor and terrace."
+        }
+      ]
+    }
+  ],
+  "vastu_considerations": {
+    "entrance_direction": "north",
+    "positive_energy_flow": true,
+    "balcony_alignment": "east, north, west, south for balanced sunlight exposure",
+    "roof_terraced_design": "ensures additional outdoor space and energy positivity"
+  }
+}

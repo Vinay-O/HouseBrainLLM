@@ -1,0 +1,192 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 1800.0,
+      "style": "Industrial Loft"
+    },
+    "plot": {
+      "shape": "triangular",
+      "climate": "desert_extreme_temperatures",
+      "contours": "natural"
+    },
+    "roomBreakdown": [
+      {
+        "type": "chefs_kitchen",
+        "features": [
+          "wood_fired_oven"
+        ]
+      },
+      {
+        "type": "green_wall",
+        "features": [
+          "integrated_irrigation"
+        ]
+      },
+      {
+        "type": "construction",
+        "features": [
+          "earthquake_resistant",
+          "stacked_modular_units"
+        ]
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 324000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "kitchen_dining",
+          "type": "chefs_kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "large"
+            }
+          ],
+          "features": [
+            "wood_fired_oven"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": "medium"
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "green_wall_1",
+          "type": "green_wall",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "integrated_irrigation"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "medium"
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "medium"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": "small"
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "green_wall_2",
+          "type": "green_wall",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "integrated_irrigation"
+          ]
+        }
+      ]
+    }
+  ]
+}

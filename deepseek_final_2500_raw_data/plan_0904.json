@@ -1,0 +1,220 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 3000,
+      "style": "Assamese Traditional with Bamboo Integration"
+    },
+    "plot": {
+      "orientation": "east",
+      "location": "coastal",
+      "size": 3000,
+      "features": [
+        "sea breeze access",
+        "flood risk"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "otla_sitout",
+        "area": 200,
+        "level": 0
+      },
+      {
+        "type": "living_room",
+        "area": 300,
+        "level": 1
+      },
+      {
+        "type": "kitchen",
+        "area": 150,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 200,
+        "level": 1
+      },
+      {
+        "type": "bathroom",
+        "area": 100,
+        "level": 1
+      },
+      {
+        "type": "basement_storage",
+        "area": 250,
+        "level": -1
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 288000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "basement_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12.5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "otla_sitout",
+          "type": "outdoor",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "support_pillars",
+          "type": "structural",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 13.33
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

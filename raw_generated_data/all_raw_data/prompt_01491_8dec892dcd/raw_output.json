@@ -1,0 +1,146 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_foyer",
+          "dimensions": { "length": 10, "width": 6 },
+          "purpose": "foyer",
+          "features": ["Bohemian decor", "art gallery wall"]
+        },
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 20, "width": 15 },
+          "purpose": "living room",
+          "features": ["open-plan design", "fireplace", "multi-functional seating area"],
+          "connected_to": ["kitchen", "dining_area", "library"]
+        },
+        {
+          "room_id": "dining_area",
+          "dimensions": { "length": 15, "width": 12 },
+          "purpose": "dining area",
+          "features": ["extendable table", "bar counter"],
+          "connected_to": ["kitchen", "living_room"]
+        },
+        {
+          "room_id": "open_plan_kitchen",
+          "dimensions": { "length": 18, "width": 12 },
+          "purpose": "kitchen",
+          "features": ["modular cabinets", "island counter", "high-end appliances"],
+          "connected_to": ["dining_area", "living_room"]
+        },
+        {
+          "room_id": "library",
+          "dimensions": { "length": 15, "width": 12 },
+          "purpose": "library",
+          "features": ["floor-to-ceiling bookshelves", "reading nook", "skylight"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 18, "width": 15 },
+          "purpose": "master bedroom",
+          "features": ["walk-in closet", "private balcony"],
+          "connected_to": ["master_bathroom"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 15, "width": 12 },
+          "purpose": "guest bedroom",
+          "features": ["en-suite bathroom", "study area"],
+          "connected_to": ["guest_bathroom"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 15, "width": 12 },
+          "purpose": "bedroom",
+          "features": ["en-suite bathroom", "balcony"],
+          "connected_to": ["bathroom_3"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 15, "width": 12 },
+          "purpose": "bedroom",
+          "features": ["en-suite bathroom", "balcony"],
+          "connected_to": ["bathroom_4"]
+        },
+        {
+          "room_id": "central_courtyard",
+          "dimensions": { "length": 15, "width": 15 },
+          "purpose": "courtyard",
+          "features": ["water feature", "outdoor seating", "vertical garden"],
+          "accessed_by": ["living_room", "dining_area", "library"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "location": "front of the apartment",
+          "dimensions": { "length": 8, "width": 4 }
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "location": "living room",
+          "dimensions": { "length": 10, "width": 6 },
+          "features": ["floor-to-ceiling", "sliding"]
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "location": "kitchen",
+          "dimensions": { "length": 8, "width": 4 },
+          "features": ["ventilation", "natural light"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_5",
+          "dimensions": { "length": 18, "width": 15 },
+          "purpose": "master bedroom",
+          "features": ["walk-in closet", "private balcony"],
+          "connected_to": ["master_bathroom"]
+        },
+        {
+          "room_id": "bedroom_6",
+          "dimensions": { "length": 15, "width": 12 },
+          "purpose": "guest bedroom",
+          "features": ["en-suite bathroom", "study area"],
+          "connected_to": ["guest_bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "first_floor_entrance",
+          "type": "door",
+          "location": "top of the stairs",
+          "dimensions": { "length": 8, "width": 4 }
+        },
+        {
+          "opening_id": "first_floor_window",
+          "type": "window",
+          "location": "bedroom_5",
+          "dimensions": { "length": 10, "width": 6 },
+          "features": ["floor-to-ceiling", "sliding"]
+        }
+      ]
+    }
+  ],
+  "plot_orientation": "west-facing",
+  "design_style": "Bohemian",
+  "vuastu_principles": [
+    "Central courtyard for positive energy flow",
+    "North-east direction for entrance and living room",
+    "Kitchen in the south-east direction",
+    "Bedrooms in the south-west and north-west directions"
+  ],
+  "local_building_normes": [
+    "Compliance with FAR (Floor Area Ratio) regulations",
+    "Adequate open space and ventilation",
+    "Provision for fire safety measures"
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Bauhaus Functional"
+    },
+    "plot": {
+      "orientation": "Diagonal to prevailing winds",
+      "climate": "Temperate Maritime",
+      "noiseConsiderations": "Highway noise mitigation"
+    },
+    "roomBreakdown": [
+      {
+        "type": "game_room",
+        "description": "Built-in arcade cabinets and seating area"
+      },
+      {
+        "type": "sunken_courtyard",
+        "description": "Central outdoor space for gathering"
+      },
+      {
+        "type": "glass_connection",
+        "description": "Glazed corridor linking pavilion wings"
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 385000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "wing_a_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            "corridor_door_1"
+          ],
+          "windows": [
+            "north_window_1"
+          ]
+        },
+        {
+          "id": "wing_a_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            "corridor_door_2"
+          ],
+          "windows": [
+            "north_window_2"
+          ]
+        },
+        {
+          "id": "wing_a_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "corridor_door_3"
+          ],
+          "windows": []
+        },
+        {
+          "id": "glass_corridor_1",
+          "type": "corridor",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 8,
+            "height": 18
+          },
+          "doors": [
+            "courtyard_door_1",
+            "pavilion_door_1"
+          ],
+          "windows": [
+            "east_glazing_1",
+            "west_glazing_1"
+          ]
+        },
+        {
+          "id": "sunken_courtyard",
+          "type": "outdoor",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 28
+          },
+          "doors": [
+            "courtyard_door_1",
+            "courtyard_door_2"
+          ],
+          "windows": []
+        },
+        {
+          "id": "glass_corridor_2",
+          "type": "corridor",
+          "bounds": {
+            "x": 40,
+            "y": 10,
+            "width": 8,
+            "height": 18
+          },
+          "doors": [
+            "courtyard_door_2",
+            "pavilion_door_2"
+          ],
+          "windows": [
+            "east_glazing_2",
+            "west_glazing_2"
+          ]
+        },
+        {
+          "id": "wing_b_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 48,
+            "y": 0,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            "corridor_door_4"
+          ],
+          "windows": [
+            "south_window_1"
+          ]
+        },
+        {
+          "id": "wing_b_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 48,
+            "y": 14,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            "corridor_door_5",
+            "patio_door"
+          ],
+          "windows": [
+            "south_window_2",
+            "west_window_1"
+          ]
+        },
+        {
+          "id": "wing_b_game_room",
+          "type": "game_room",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 16,
+            "height": 28
+          },
+          "doors": [
+            "corridor_door_6"
+          ],
+          "windows": [
+            "south_window_3"
+          ]
+        },
+        {
+          "id": "mechanical_room",
+          "type": "utility",
+          "bounds": {
+            "x": 60,
+            "y": 28,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "exterior_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

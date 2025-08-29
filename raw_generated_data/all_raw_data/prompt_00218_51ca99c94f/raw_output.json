@@ -1,0 +1,93 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "library",
+          "dimensions": { "length": 4.5, "width": 3.8 },
+          "location": { "x_min": 0, "y_min": 2, "x_max": 4.5, "y_max": 5.8 },
+          "orientation": "north_east",
+          "features": ["built-in_shelves", "large_window"],
+          "accessibility": ["living_room"]
+        },
+        {
+          "room_id": "home_office",
+          "dimensions": { "length": 4, "width": 3.5 },
+          "location": { "x_min": 4.5, "y_min": 2, "x_max": 8.5, "y_max": 5.5 },
+          "orientation": "north",
+          "features": ["ergonomic_furniture", "natural_light"],
+          "accessibility": ["living_room"]
+        },
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 6, "width": 5 },
+          "location": { "x_min": 0, "y_min": 0, "x_max": 6, "y_max": 5 },
+          "orientation": "east",
+          "features": ["high_ceiling", "large_balcony"],
+          "accessibility": ["bedroom_1", "bedroom_2", "kitchen"]
+        },
+        {
+          "room_id": "dining_area",
+          "dimensions": { "length": 4, "width": 3.5 },
+          "location": { "x_min": 6, "y_min": 0, "x_max": 10, "y_max": 3.5 },
+          "orientation": "south_east",
+          "features": ["large_window", "outdoor_access"],
+          "accessibility": ["kitchen", "living_room"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 4, "width": 3.5 },
+          "location": { "x_min": 10, "y_min": 0, "x_max": 14, "y_max": 3.5 },
+          "orientation": "south",
+          "features": ["modular_cabinets", "breakfast_bar"],
+          "accessibility": ["dining_area", "utility_room"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 4.5, "width": 4 },
+          "location": { "x_min": 0, "y_min": 6, "x_max": 4.5, "y_max": 10 },
+          "orientation": "west",
+          "features": ["walk_in_closet", "balcony_access"],
+          "accessibility": ["bathroom_1", "living_room"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 4.5, "width": 4 },
+          "location": { "x_min": 4.5, "y_min": 6, "x_max": 9, "y_max": 10 },
+          "orientation": "west",
+          "features": ["built_in_wardrobes", "balcony_access"],
+          "accessibility": ["bathroom_2", "living_room"]
+        },
+        {
+          "room_id": "utility_room",
+          "dimensions": { "length": 3, "width": 2.5 },
+          "location": { "x_min": 9, "y_min": 6, "x_max": 12, "y_max": 8.5 },
+          "orientation": "north_west",
+          "features": ["washing_machine", "storage"],
+          "accessibility": ["kitchen"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "location": { "x_min": 0, "y_min": 0, "x_max": 1, "y_max": 2 },
+          "orientation": "north"
+        },
+        {
+          "opening_id": "balcony_access_1",
+          "type": "door",
+          "location": { "x_min": 4.5, "y_min": 6, "x_max": 5, "y_max": 7 },
+          "orientation": "west"
+        },
+        {
+          "opening_id": "balcony_access_2",
+          "type": "door",
+          "location": { "x_min": 9, "y_min": 6, "x_max": 9.5, "y_max": 7 },
+          "orientation": "west"
+        }
+      ]
+    }
+  ]
+}

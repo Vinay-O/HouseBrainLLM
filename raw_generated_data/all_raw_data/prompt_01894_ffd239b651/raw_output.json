@@ -1,0 +1,110 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall",
+          "description": "A welcoming area with a built-in storage unit and decorative elements. Placed near the main door following Vastu principles to promote positive energy.",
+          "area_sqft": 80
+        },
+        {
+          "name": "Living Room",
+          "description": "Modern open space with high ceilings and ample natural light; oriented east-west for balanced sunlight as per Vastu. Ideal for social gatherings and relaxation.",
+          "area_sqft": 200,
+          "adjacent_rooms": ["Dining Area", "Kitchen"]
+        },
+        {
+          "name": "Dining Area",
+          "description": "Connected to the living room, featuring a large dining table designed with Indian aesthetics while ensuring comfortable space for family meals. Consider natural light and ventilation.",
+          "area_sqft": 100,
+          "adjacent_rooms": ["Living Room", "Kitchen"]
+        },
+        {
+          "name": "Kitchen",
+          "description": "Modern kitchen layout following Vastu, with functional cabinetry and appliances placed in a U-shaped or L-shaped configuration. Preferably placed near the north-east corner to harness positive energy.",
+          "area_sqft": 120,
+          "adjacent_rooms": ["Living Room", "Dining Area"]
+        },
+        {
+          "name": "Master Bedroom",
+          "description": "Spacious bedroom designed with modern finishes and ample storage, oriented towards the south or west to promote a calm atmosphere. A private balcony overlooks the garden for relaxation.",
+          "area_sqft": 220,
+          "adjacent_rooms": ["En-suite Bathroom"]
+        },
+        {
+          "name": "En-suite Bathroom",
+          "description": "Modern bathroom attached to the master bedroom, with a walk-in shower and sufficient space following Vastu guidelines. Located adjacent to the bedroom for privacy.",
+          "area_sqft": 50,
+          "adjacent_rooms": ["Master Bedroom"]
+        },
+        {
+          "name": "Study/Workspace",
+          "description": "A dedicated space for work or study, with good lighting and minimal distractions. Can be placed near the master bedroom or living area, ensuring a quiet environment.",
+          "area_sqft": 80,
+          "adjacent_rooms": ["Master Bedroom", "Living Room"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "Main Door",
+          "description": "The main entrance is designed to face the east as per Vastu principles for positive energy and auspicious beginnings. It leads directly to the Entrance Hall.",
+          "location": "East side of ground floor"
+        },
+        {
+          "type": "Windows",
+          "description": "Large windows are strategically placed in the living room, master bedroom, and kitchen areas for maximum natural light and ventilation, aligning with Vastu recommendations for the east-west orientation.",
+          "locations": ["Living Room", "Master Bedroom", "Kitchen"]
+        },
+        {
+          "type": "Balcony/Veranda",
+          "description": "A balcony adjacent to the master bedroom offers a view of the garden and ensures proper ventilation. It is designed with modern railings and integrated seating.",
+          "location": "North side near Master Bedroom"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "name": "Guest Bedroom",
+          "description": "A comfortable guest bedroom with sufficient storage, oriented to receive natural light. Placed on the upper level for privacy.",
+          "area_sqft": 160,
+          "adjacent_rooms": ["Bathroom"]
+        },
+        {
+          "name": "Bathroom",
+          "description": "Guest bathroom ensuring adequate space and ventilation, following Vastu principles with essential fixtures arranged to maintain a balanced flow.",
+          "area_sqft": 40,
+          "adjacent_rooms": ["Guest Bedroom"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "Balcony",
+          "description": "Balcony overlooking the large garden, providing fresh air and natural light to the guest bedroom. Designed with modern railings.",
+          "location": "South side near Guest Bedroom"
+        },
+        {
+          "type": "Windows",
+          "description": "Large windows in the guest bedroom and bathroom to ensure proper ventilation and adherence to Vastu principles.",
+          "locations": ["Guest Bedroom", "Bathroom"]
+        }
+      ]
+    }
+  ],
+  "garden": {
+    "total_area_sqft": 200,
+    "description": "A spacious, landscaped garden with a mix of local flora, seating areas, and pathways. Designed to complement the building's modern architecture while enhancing environmental quality.",
+    "features": [
+      {
+        "feature": "Central Pond",
+        "description": "A small water feature placed centrally to enhance tranquility."
+      },
+      {
+        "feature": "Walking Pathways",
+        "description": "Curved pathways for leisurely strolls, connecting different parts of the garden."
+      }
+    ]
+  }
+}

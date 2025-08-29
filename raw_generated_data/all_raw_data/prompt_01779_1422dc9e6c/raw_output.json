@@ -1,0 +1,72 @@
+{ 
+  "levels": [
+    {
+      "level_id": "garage_level",
+      "rooms": [],
+      "openings": [
+        { "opening_type": "car_entry", "dimensions": {"width": 12, "height": 8} },
+        { "opening_type": "main_door", "dimensions": {"width": 3.5, "height": 7}}
+      ]
+    },
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Entrance Hall",
+          "area_sqft": 200,
+          "adjacent_rooms": ["Living Room", "Dining Area"],
+          "vastu_notes": "Positioned in the northeast for auspicious entry."
+        },
+        {
+          "room_name": "Living Room",
+          "area_sqft": 300,
+          "features": ["modern furniture", "large windows facing north-east", "ambient lighting"],
+          "adjacent_rooms": ["Dining Area", "Kitchen"]
+        },
+        {
+          "room_name": "Dining Area",
+          "area_sqft": 200,
+          "adjacent_rooms": ["Living Room", "Kitchen"],
+          "vastu_notes": "Placed in the east to maintain balance and energy."
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 250,
+          "features": ["modular kitchen layout", "ample storage", "modern appliances"],
+          "adjacent_rooms": ["Dining Area"]
+        }
+      ],
+      "openings": [
+        { "opening_type": "balcony", "dimensions": {"width": 8, "height": 6}, "orientation": "north" },
+        { "opening_type": "staircase", "dimensions": {"width": 4, "depth": 3} }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "area_sqft": 350,
+          "features": [" ensuite bathroom", "walk-in closet", "private balcony"],
+          "vastu_notes": "Aligned with the north-west for calm energy."
+        },
+        {
+          "room_name": "Bedroom 2",
+          "area_sqft": 300,
+          "features": ["adjacent shared bathroom"],
+          "vastu_notes": "Positioned in the west for stability."
+        },
+        {
+          "room_name": "Study/Workspace",
+          "area_sqft": 150,
+          "features": ["ample natural light", "soundproofing"],
+          "vastu_notes": "Located towards the south-east to harness creativity and learning."
+        }
+      ],
+      "openings": [
+        { "opening_type": "balcony", "dimensions": {"width": 6, "height": 4} },
+        { "opening_type": "staircase", "dimensions": {"width": 3.5, "depth": 2.5} }
+      ]
+    }
+  ]
+}

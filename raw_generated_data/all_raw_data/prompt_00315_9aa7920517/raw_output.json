@@ -1,0 +1,105 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "Living Room",
+          "dimensions": { "length": 5.0, "width": 4.5 },
+          "features": ["floor-to-ceiling windows", "access to central courtyard"],
+          "accessibility": true
+        },
+        {
+          "room_id": "dining_room",
+          "type": "Dining Room",
+          "dimensions": { "length": 3.8, "width": 3.0 },
+          "features": ["adjacent to kitchen", "natural light"],
+          "accessibility": true
+        },
+        {
+          "room_id": "kitchen",
+          "type": "Kitchen",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["modular design", "breakfast counter"],
+          "accessibility": true
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "Bedroom",
+          "dimensions": { "length": 4.2, "width": 3.8 },
+          "features": ["spacious balcony", "floor-to-ceiling windows"],
+          "accessibility": true
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "Bedroom",
+          "dimensions": { "length": 4.0, "width": 3.6 },
+          "features": ["spacious balcony", "floor-to-ceiling windows"],
+          "accessibility": true
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "Entrance",
+          "dimensions": { "width": 1.2, "height": 2.4 },
+          "direction": "north"
+        },
+        {
+          "opening_id": "courtyard_access",
+          "type": "Door",
+          "dimensions": { "width": 1.5, "height": 2.0 },
+          "room_id": "living_room"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "type": "Bedroom",
+          "dimensions": { "length": 4.5, "width": 4.0 },
+          "features": ["spacious balcony", "floor-to-ceiling windows"],
+          "accessibility": true
+        },
+        {
+          "room_id": "bedroom_4",
+          "type": "Bedroom",
+          "dimensions": { "length": 4.3, "width": 3.8 },
+          "features": ["spacious balcony", "floor-to-ceiling windows"],
+          "accessibility": true
+        },
+        {
+          "room_id": "bedroom_5",
+          "type": "Bedroom",
+          "dimensions": { "length": 4.1, "width": 3.7 },
+          "features": ["spacious balcony", "floor-to-ceiling windows"],
+          "accessibility": true
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase",
+          "type": "Staircase",
+          "dimensions": { "width": 1.2, "height": 3.0 },
+          "direction": "vertical"
+        }
+      ]
+    }
+  ],
+  "central_courtyard": {
+    "dimensions": { "length": 4.0, "width": 3.5 },
+    "features": ["open-air space", "natural light and ventilation"]
+  },
+  "accessibility_features": [
+    "ramps for wheelchair access",
+    "wide doorways and hallways",
+    "grab bars in bathrooms"
+  ],
+  "vastu_compliance": {
+    "direction": "north-east",
+    "features": ["central courtyard", "bedrooms in south-west direction"]
+  }
+}

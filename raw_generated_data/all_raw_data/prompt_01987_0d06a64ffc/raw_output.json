@@ -1,0 +1,101 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": {"length": 12, "width": 8},
+          "adjacent_rooms": ["dining_area", "kitchen", "balcony"]
+        },
+        {
+          "room_type": "dining_area",
+          "dimensions": {"length": 8, "width": 6},
+          "adjacent_rooms": ["living_room", "open_kitchen_space"]
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {"length": 10, "width": 7},
+          "adjacent_rooms": ["dining_area", "service_courtyard"]
+        },
+        {
+          "room_type": "service_courtyard",
+          "dimensions": {"area": 20},
+          "adjacent_rooms": ["kitchen", "balcony"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "main_entrance",
+          "location": {"x": 2, "y": 10}
+        },
+        {
+          "opening_type": "back_door",
+          "location": {"x": 40, "y": 60}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom_1",
+          "dimensions": {"length": 10, "width": 8},
+          "balcony": true,
+          "adjacent_rooms": ["hallway"]
+        },
+        {
+          "room_type": "bedroom_2",
+          "dimensions": {"length": 9, "width": 7},
+          "balcony": true,
+          "adjacent_rooms": ["hallway"]
+        },
+        {
+          "room_type": "bedroom_3",
+          "dimensions": {"length": 10, "width": 8},
+          "balcony": true,
+          "adjacent_rooms": ["bathroom", "closet"]
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": {"area": 15}
+        },
+        {
+          "room_type": "hallway",
+          "dimensions": {"length": 12, "width": 3},
+          "adjacent_rooms": ["bedroom_1", "bedroom_2"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "location": {"x": 5, "y": 20}
+        },
+        {
+          "opening_type": "front_door",
+          "location": {"x": 15, "y": 5}
+        }
+      ]
+    }
+  ],
+  "vastu_considerations": {
+    "entrance_alignment": "south_east",
+    "positive_energy_flow": true,
+    "water_feature_placement": "north_east"
+  },
+  "mediterranean_elements": {
+    "architectural_style": "Mediterranean",
+    "exterior_materials": ["terra_cotta", "stone"],
+    "roofing": "low-pitched",
+    "balcony_design": "spacious with stone balustrades"
+  },
+  "plot_dimensions": {"length": 60, "width": 40},
+  "local_building_norms": {
+    "maximum_occupancy": 4,
+    "minimum_space_requirements": {
+      "bedroom": 80,
+      "kitchen": 150,
+      "bathroom": 50
+    }
+  }
+}

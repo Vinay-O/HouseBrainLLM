@@ -1,0 +1,233 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Earthship"
+    },
+    "plot": {
+      "terrain": "sloping_vineyard",
+      "climate": "temperate_maritime",
+      "noise_sources": [
+        "highway"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "telecommuting_pod",
+        "count": 1
+      },
+      {
+        "type": "greenhouse",
+        "count": 1
+      },
+      {
+        "type": "pet_room",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "great_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            "north_entrance",
+            "to_kitchen",
+            "to_greenhouse"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_great_room",
+            "to_pantry"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "greenhouse",
+          "type": "greenhouse",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_great_room"
+          ],
+          "windows": [
+            "south_glazing"
+          ]
+        },
+        {
+          "id": "mechanical_room",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "exterior_access"
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 35,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "vehicle_entry"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            "to_hallway",
+            "to_bathroom"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_suite"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 15,
+            "height": 14
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 14,
+            "width": 15,
+            "height": 14
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "telecommuting_pod",
+          "type": "office",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "pet_room",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 18,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 18,
+            "width": 7,
+            "height": 10
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

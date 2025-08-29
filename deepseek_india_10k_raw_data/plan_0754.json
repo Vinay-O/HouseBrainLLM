@@ -1,0 +1,446 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Modern Indian Contemporary with traditional element fusion"
+    },
+    "plot": {
+      "location": "Srinagar Dal lake forest clearing",
+      "orientation": "south",
+      "eco_sensitive": true,
+      "noise_pollution": "urban traffic and construction"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "garage",
+        "count": 1
+      },
+      {
+        "type": "garden",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 768000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "internal",
+              "position": 10,
+              "connects_to": "utility_0"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "climate_control",
+            "vintage_car_collection"
+          ]
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "internal",
+              "position": 6,
+              "connects_to": "garage_0"
+            },
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "features": [
+            "storage",
+            "laundry"
+          ]
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 28,
+            "height": 24
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 14
+            },
+            {
+              "wall": "internal",
+              "position": 14,
+              "connects_to": "dining_0"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7,
+              "width": 4
+            },
+            {
+              "wall": "south",
+              "position": 21,
+              "width": 4
+            }
+          ],
+          "features": [
+            "mandana_floor_pattern",
+            "natural_stone_foundation"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 28,
+            "y": 12,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "internal",
+              "position": 8,
+              "connects_to": "dining_0"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 8,
+              "width": 4
+            }
+          ],
+          "features": [
+            "modern_appliances",
+            "traditional_storage"
+          ]
+        },
+        {
+          "id": "dining_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 28,
+            "y": 24,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "internal",
+              "position": 8,
+              "connects_to": "living_room_0"
+            },
+            {
+              "wall": "internal",
+              "position": 8,
+              "connects_to": "kitchen_0"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 8,
+              "width": 4
+            }
+          ],
+          "features": [
+            "mandana_floor_pattern"
+          ]
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 44,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "features": [
+            "water_efficient_fixtures"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "width": 4
+            },
+            {
+              "wall": "south",
+              "position": 15,
+              "width": 4
+            }
+          ],
+          "features": [
+            "walk_in_closet",
+            "private_balcony"
+          ]
+        },
+        {
+          "id": "bathroom_1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "width": 3
+            }
+          ],
+          "features": [
+            "natural_lighting",
+            "private_en_suite"
+          ]
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "width": 4
+            },
+            {
+              "wall": "south",
+              "position": 15,
+              "width": 4
+            }
+          ],
+          "features": [
+            "future_nursery_ready"
+          ]
+        },
+        {
+          "id": "bathroom_1_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 12,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "width": 3
+            }
+          ],
+          "features": [
+            "shared_family_bathroom"
+          ]
+        },
+        {
+          "id": "bedroom_3_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "width": 4
+            },
+            {
+              "wall": "north",
+              "position": 15,
+              "width": 4
+            }
+          ],
+          "features": [
+            "flexible_use_space"
+          ]
+        },
+        {
+          "id": "study_nook_1",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 16,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "width": 3
+            }
+          ],
+          "features": [
+            "home_office_space"
+          ]
+        },
+        {
+          "id": "bathroom_1_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 16,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "features": [
+            "guest_bathroom"
+          ]
+        }
+      ]
+    }
+  ],
+  "site_features": [
+    {
+      "type": "garden",
+      "location": "perimeter",
+      "features": [
+        "traditional_beekeeping_integration",
+        "native_plants",
+        "south_facing_solar_optimization"
+      ]
+    },
+    {
+      "type": "construction",
+      "features": [
+        "cyclone_resistant",
+        "reinforced_traditional_techniques",
+        "natural_stone_foundation",
+        "noise_pollution_barrier"
+      ]
+    }
+  ]
+}

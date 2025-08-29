@@ -1,0 +1,150 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_foyer",
+          "type": "foyer",
+          "dimensions": { "length": 12, "width": 8 },
+          "features": ["wooden flooring", "minimalist decor"]
+        },
+        {
+          "room_id": "living_room",
+          "type": "living room",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["scandinavian furniture", "large windows for natural light"],
+          "adjacent_to": ["dining_area", "kitchen"]
+        },
+        {
+          "room_id": "dining_area",
+          "type": "dining room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["wooden dining table", "pendant lighting"],
+          "adjacent_to": ["kitchen", "living_room"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["modular kitchen with island", "stainless steel appliances"],
+          "adjacent_to": ["dining_area", "utility_room"]
+        },
+        {
+          "room_id": "utility_room",
+          "type": "utility room",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["washing machine", "storage space"],
+          "adjacent_to": ["kitchen", "bathrooms"]
+        },
+        {
+          "room_id": "master_bedroom",
+          "type": "bedroom (master)",
+          "dimensions": { "length": 20, "width": 16 },
+          "features": ["king-size bed", "walk-in closet", "attached bathroom"],
+          "adjacent_to": ["terrace"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom (second)",
+          "dimensions": { "length": 15, "width": 14 },
+          "features": ["queen-size bed", "attached bathroom"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "bedroom (third)",
+          "dimensions": { "length": 15, "width": 14 },
+          "features": ["queen-size bed", "shared bathroom"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "study_room",
+          "type": "study room",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["work desk", "bookshelf"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "size": { "height": 8, "width": 4 },
+          "direction": "north"
+        },
+        {
+          "opening_id": "garden_access",
+          "type": "door",
+          "size": { "height": 7, "width": 3.5 },
+          "direction": "east"
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "size": { "height": 6, "width": 4 },
+          "count": 2
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_4",
+          "type": "bedroom (fourth)",
+          "dimensions": { "length": 15, "width": 14 },
+          "features": ["queen-size bed", "attached bathroom"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "bedroom_5",
+          "type": "bedroom (fifth)",
+          "dimensions": { "length": 16, "width": 14 },
+          "features": ["king-size bed", "walk-in closet", "attached bathroom"],
+          "adjacent_to": ["terrace"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase_access",
+          "type": "staircase",
+          "direction": "south"
+        }
+      ]
+    },
+    {
+      "level_id": "basement",
+      "rooms": [
+        {
+          "room_id": "garage",
+          "type": "garage",
+          "dimensions": { "length": 25, "width": 15 },
+          "features": ["space for two cars", "storage room"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "basement_entrance",
+          "type": "door",
+          "size": { "height": 8, "width": 4 },
+          "direction": "south"
+        }
+      ]
+    }
+  ],
+  "outdoor_features": {
+    "garden": {
+      "area": 500,
+      "features": ["lawn", "outdoor seating", "small pond"]
+    },
+    "terrace": {
+      "area": 300,
+      "features": ["outdoor furniture", "barbecue area"]
+    }
+  },
+  "design_features": {
+    "style": "Scandinavian",
+    "materials": ["light wood", "white walls", "black accents"],
+    "vastu_compliance": true
+  }
+}

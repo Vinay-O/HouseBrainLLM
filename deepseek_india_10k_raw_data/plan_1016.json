@@ -1,0 +1,395 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 2500,
+      "style": "Traditional Courtyard"
+    },
+    "plot": {
+      "width": 25,
+      "depth": 100,
+      "cornerPlot": true,
+      "dualFrontage": true,
+      "location": "Allahabad confluence, railway-side",
+      "challenges": [
+        "mountain landslide",
+        "heavy snow load"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "puja_room",
+        "requirements": [
+          "brass fittings",
+          "marble flooring"
+        ]
+      },
+      {
+        "type": "games_room",
+        "requirements": [
+          "chess",
+          "carrom",
+          "regional games"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "requirements": [
+          "aging grandparents care"
+        ]
+      }
+    ],
+    "materials": {
+      "primary": [
+        "Himalayan stone",
+        "slate"
+      ],
+      "foundation": "natural stone with traditional techniques",
+      "sourcing": "local within 50km radius",
+      "roof": "green roof with local drought-resistant plants"
+    }
+  },
+  "total_area": 2500.0,
+  "construction_cost": 3750000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 30,
+            "width": 15,
+            "height": 40
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12.5
+            },
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 12.5
+            },
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 10,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "grandparent_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 70,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "grandparent_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 70,
+            "width": 8,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "caregiver_room",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 77.5,
+            "width": 8,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 20,
+            "y": 70,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2.5
+            }
+          ]
+        },
+        {
+          "id": "staircase",
+          "type": "staircase",
+          "bounds": {
+            "x": 20,
+            "y": 85,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "master_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 7.5,
+            "width": 10,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "games_room",
+          "type": "games_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12.5
+            },
+            {
+              "wall": "east",
+              "position": 12.5
+            },
+            {
+              "wall": "west",
+              "position": 12.5
+            }
+          ]
+        },
+        {
+          "id": "terrace",
+          "type": "terrace",
+          "bounds": {
+            "x": 5,
+            "y": 40,
+            "width": 15,
+            "height": 40
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase",
+          "type": "staircase",
+          "bounds": {
+            "x": 20,
+            "y": 85,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

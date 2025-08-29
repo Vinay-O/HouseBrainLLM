@@ -1,0 +1,132 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 750.0,
+      "style": "Traditional Craftsman"
+    },
+    "plot": {
+      "orientation": "north",
+      "climate": "tropical with monsoons",
+      "size": "compact urban balcony conversion"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "description": "Chef's kitchen with wood-fired oven"
+      },
+      {
+        "type": "office",
+        "description": "Mezzanine office for minimalist work"
+      },
+      {
+        "type": "bedroom",
+        "description": "Minimalist master bedroom"
+      },
+      {
+        "type": "bathroom",
+        "description": "Compact full bathroom"
+      },
+      {
+        "type": "living_room",
+        "description": "Open living space"
+      }
+    ]
+  },
+  "total_area": 750.0,
+  "construction_cost": 187500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "front_door_north"
+          ],
+          "windows": [
+            "north_window_large",
+            "east_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "door_to_living"
+          ],
+          "windows": [
+            "north_window_kitchen"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "vent_window"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "door_to_stairs"
+          ],
+          "windows": [
+            "north_window_bedroom",
+            "skylight"
+          ]
+        },
+        {
+          "id": "office_mezzanine",
+          "type": "office",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 5
+          },
+          "doors": [],
+          "windows": [
+            "north_window_office",
+            "skylight_office"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 3000,
+      "style": "Bengali Traditional with Curved Rooflines"
+    },
+    "plot": {
+      "orientation": "south",
+      "view": "garden",
+      "size": 3000,
+      "type": "gated_community",
+      "amenities": [
+        "shared_pool",
+        "playground",
+        "clubhouse",
+        "security_gate"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 400
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 200
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 450
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "baithak",
+        "count": 1,
+        "area": 180
+      },
+      {
+        "type": "wine_cellar",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "garage",
+        "count": 2,
+        "area": 400
+      },
+      {
+        "type": "expansion_area",
+        "count": 1,
+        "area": 700
+      }
+    ]
+  },
+  "total_area": 3000.0,
+  "construction_cost": 1050000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [
+            "main_entry",
+            "dining_room",
+            "baithak",
+            "corridor"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "living_room",
+            "kitchen",
+            "corridor"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "dining_room",
+            "utility",
+            "garage"
+          ],
+          "windows": [
+            "east_wall_window"
+          ]
+        },
+        {
+          "id": "baithak_0",
+          "type": "baithak",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "living_room",
+            "garden"
+          ],
+          "windows": [
+            "south_wall_window",
+            "east_wall_window"
+          ]
+        },
+        {
+          "id": "primary_bedroom_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "corridor",
+            "bathroom"
+          ],
+          "windows": [
+            "south_wall_window",
+            "east_wall_window"
+          ]
+        },
+        {
+          "id": "primary_bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "primary_bedroom"
+          ],
+          "windows": [
+            "north_wall_window"
+          ]
+        },
+        {
+          "id": "guest_bedroom_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "corridor",
+            "bathroom"
+          ],
+          "windows": [
+            "south_wall_window",
+            "west_wall_window"
+          ]
+        },
+        {
+          "id": "guest_bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 65,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "guest_bedroom",
+            "corridor"
+          ],
+          "windows": [
+            "north_wall_window"
+          ]
+        },
+        {
+          "id": "utility_room_0",
+          "type": "utility",
+          "bounds": {
+            "x": 45,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "kitchen",
+            "corridor"
+          ],
+          "windows": [
+            "north_wall_window"
+          ]
+        },
+        {
+          "id": "wine_cellar_0",
+          "type": "wine_cellar",
+          "bounds": {
+            "x": 45,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "corridor"
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 55,
+            "y": 25,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "kitchen",
+            "exterior"
+          ],
+          "windows": []
+        },
+        {
+          "id": "expansion_area_0",
+          "type": "expansion_area",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 40,
+            "height": 20
+          },
+          "doors": [
+            "corridor"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

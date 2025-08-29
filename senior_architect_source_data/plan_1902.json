@@ -1,0 +1,268 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 2400.0,
+      "style": "Mid-Century Modern"
+    },
+    "plot": {
+      "location": "Flood-prone riverside",
+      "climate": "Mediterranean dry summers",
+      "orientation": "Diagonal to prevailing winds",
+      "features": [
+        "Bioswales for stormwater management",
+        "Winter solar gain maximization"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_brewery",
+        "description": "Temperature-controlled home brewery"
+      },
+      {
+        "type": "music_studio",
+        "description": "Acoustically treated performance space"
+      },
+      {
+        "type": "listening_lounge",
+        "description": "Dedicated music listening area"
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_storage",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_brewery",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6,
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "size": "large"
+            },
+            {
+              "wall": "north",
+              "position": 8,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "listening_lounge",
+          "type": "living_room",
+          "bounds": {
+            "x": 16,
+            "y": 12,
+            "width": 16,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 8,
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 8,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "music_studio",
+          "type": "other",
+          "bounds": {
+            "x": 16,
+            "y": 12,
+            "width": 16,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 8,
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

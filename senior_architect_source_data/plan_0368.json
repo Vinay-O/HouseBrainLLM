@@ -1,0 +1,345 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 800,
+      "style": "Goan Portuguese with Tropical Adaptations"
+    },
+    "plot": {
+      "shape": "Cul-de-sac",
+      "area": 800,
+      "location": "Secure Gated Community",
+      "amenities": [
+        "Shared Pool",
+        "Gardens",
+        "Play Area",
+        "Clubhouse"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "area": 180
+      },
+      {
+        "type": "living_room",
+        "area": 200
+      },
+      {
+        "type": "kitchen",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "type": "otla",
+        "area": 80
+      },
+      {
+        "type": "wine_cellar",
+        "area": 60
+      },
+      {
+        "type": "utility",
+        "area": 60
+      },
+      {
+        "type": "circulation",
+        "area": 60
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 1760000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "otla",
+          "type": "porch",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 8
+              },
+              "type": "main_entry",
+              "material": "Solid Wood",
+              "opens_to": "living_room"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Traditional Sit-out",
+            "Terracotta Tiles",
+            "Low Seating Wall"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 8
+              },
+              "type": "internal",
+              "material": "Solid Wood",
+              "opens_to": "otla"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 13
+              },
+              "type": "internal",
+              "material": "Solid Wood",
+              "opens_to": "master_bedroom"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 13
+              },
+              "type": "internal",
+              "material": "Solid Wood",
+              "opens_to": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 18
+              },
+              "type": "double_glazed",
+              "material": "UPVC",
+              "orientation": "North"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 18
+              },
+              "type": "double_glazed",
+              "material": "UPVC",
+              "orientation": "North"
+            }
+          ],
+          "features": [
+            "Open Plan",
+            "Universal Accessibility",
+            "High Ceilings",
+            "Noise-Reducing Drywall"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 23
+              },
+              "type": "internal",
+              "material": "Solid Wood",
+              "opens_to": "living_room"
+            },
+            {
+              "position": {
+                "x": 12,
+                "y": 23
+              },
+              "type": "internal",
+              "material": "Solid Wood",
+              "opens_to": "bathroom"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 6,
+                "y": 30
+              },
+              "type": "double_glazed",
+              "material": "UPVC",
+              "orientation": "South"
+            }
+          ],
+          "features": [
+            "Walk-in Closet (Future)",
+            "Universal Accessibility",
+            "Noise-Reducing Drywall"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 18,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12,
+                "y": 21
+              },
+              "type": "internal",
+              "material": "Solid Wood",
+              "opens_to": "master_bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 16,
+                "y": 24
+              },
+              "type": "double_glazed",
+              "material": "UPVC",
+              "orientation": "East"
+            }
+          ],
+          "features": [
+            "Universal Design",
+            "Zero-Threshold Shower",
+            "Grab Bars"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 13
+              },
+              "type": "internal",
+              "material": "Solid Wood",
+              "opens_to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 26,
+                "y": 18
+              },
+              "type": "double_glazed",
+              "material": "UPVC",
+              "orientation": "North"
+            }
+          ],
+          "features": [
+            "Compact Efficient Layout",
+            "Open to Living",
+            "Universal Accessibility"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 18,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 21
+              },
+              "type": "internal",
+              "material": "Solid Wood",
+              "opens_to": "kitchen"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Stackable W/D",
+            "Storage"
+          ]
+        },
+        {
+          "id": "wine_cellar",
+          "type": "storage",
+          "bounds": {
+            "x": 26,
+            "y": 18,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 26,
+                "y": 21
+              },
+              "type": "internal",
+              "material": "Solid Wood",
+              "opens_to": "kitchen"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Traditional Laterite Stone Cooling",
+            "Climate Controlled"
+          ]
+        },
+        {
+          "id": "future_expansion",
+          "type": "void",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "Pre-plumbed",
+            "Pre-wired",
+            "Designed for Future Second Floor Addition"
+          ]
+        }
+      ]
+    }
+  ]
+}

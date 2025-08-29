@@ -1,0 +1,272 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2400.0,
+      "style": "Urban Townhouse"
+    },
+    "plot": {
+      "topography": "desert plateau",
+      "orientation": "south-facing for solar gain",
+      "climate": "desert with extreme temperatures"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "gym",
+        "count": 1
+      },
+      {
+        "type": "yoga_studio",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "outdoor_pool",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "sliding_glass",
+              "to": "outdoor_deck"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "large_fixed",
+              "size": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "double_hung",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "standard",
+              "to": "exterior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "gym_0",
+          "type": "gym",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "sliding_glass",
+              "to": "outdoor_deck"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "large_fixed",
+              "size": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "pocket",
+              "to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "double_hung",
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "sliding_glass",
+              "to": "balcony"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "large_fixed",
+              "size": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "sliding_glass",
+              "to": "balcony"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "large_fixed",
+              "size": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "pocket",
+              "to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "double_hung",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "yoga_studio_1",
+          "type": "yoga_studio",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 35,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "sliding_glass",
+              "to": "balcony"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "large_fixed",
+              "size": "floor_to_ceiling"
+            },
+            {
+              "wall": "north",
+              "type": "large_fixed",
+              "size": "floor_to_ceiling"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

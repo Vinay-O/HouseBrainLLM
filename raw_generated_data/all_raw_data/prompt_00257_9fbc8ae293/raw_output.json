@@ -1,0 +1,171 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": {
+            "length": 5.0,
+            "width": 4.0
+          },
+          "features": ["floor-to-ceiling windows", "central courtyard access"],
+          "position": {
+            "adjacent_to": ["dining_room", "kitchen", "central_courtyard"]
+          }
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": {
+            "length": 3.5,
+            "width": 3.0
+          },
+          "features": ["large window overlooking courtyard"],
+          "position": {
+            "adjacent_to": ["kitchen", "living_room"]
+          }
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {
+            "length": 4.0,
+            "width": 3.5
+          },
+          "features": ["modular storage", "island counter"],
+          "position": {
+            "adjacent_to": ["dining_room", "servant_quarters", "utility_room"]
+          }
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {
+            "length": 4.5,
+            "width": 4.0
+          },
+          "features": ["walk-in closet", "private balcony"],
+          "position": {
+            "adjacent_to": ["bathroom"]
+          }
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": {
+            "length": 3.0,
+            "width": 2.5
+          },
+          "features": ["modern fixtures", "natural light"],
+          "position": {
+            "adjacent_to": ["bedroom"]
+          }
+        },
+        {
+          "room_type": "servant_quarters",
+          "dimensions": {
+            "length": 3.0,
+            "width": 2.5
+          },
+          "features": ["private bathroom", "storage space"],
+          "position": {
+            "adjacent_to": ["utility_room"]
+          }
+        },
+        {
+          "room_type": "utility_room",
+          "dimensions": {
+            "length": 3.0,
+            "width": 2.5
+          },
+          "features": ["laundry area", "storage"],
+          "position": {
+            "adjacent_to": ["kitchen", "servant_quarters"]
+          }
+        },
+        {
+          "room_type": "study_room",
+          "dimensions": {
+            "length": 3.0,
+            "width": 2.5
+          },
+          "features": ["natural light", "quiet location"],
+          "position": {
+            "adjacent_to": ["living_room"]
+          }
+        },
+        {
+          "room_type": "central_courtyard",
+          "dimensions": {
+            "length": 6.0,
+            "width": 5.0
+          },
+          "features": ["open-air space", "landscaping", "seating area"],
+          "position": {
+            "adjacent_to": ["living_room", "dining_room"]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "type": "main_entrance",
+          "dimensions": {
+            "width": 1.2
+          },
+          "direction": "north"
+        },
+        {
+          "type": "back_entrance",
+          "dimensions": {
+            "width": 0.9
+          },
+          "direction": "south"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "dimensions": {
+            "length": 4.5,
+            "width": 4.0
+          },
+          "features": ["walk-in closet", "private balcony"],
+          "position": {
+            "adjacent_to": ["bathroom"]
+          }
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": {
+            "length": 3.0,
+            "width": 2.5
+          },
+          "features": ["modern fixtures", "natural light"],
+          "position": {
+            "adjacent_to": ["bedroom"]
+          }
+        },
+        {
+          "room_type": "study_room",
+          "dimensions": {
+            "length": 3.0,
+            "width": 2.5
+          },
+          "features": ["natural light", "quiet location"],
+          "position": {
+            "adjacent_to": ["bedroom"]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "type": "balcony",
+          "dimensions": {
+            "width": 1.5
+          },
+          "direction": "east"
+        }
+      ]
+    }
+  ]
+}

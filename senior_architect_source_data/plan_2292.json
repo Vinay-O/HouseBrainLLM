@@ -1,0 +1,135 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 640,
+      "style": "Deconstructivist"
+    },
+    "plot": {
+      "location": "Urban rooftop",
+      "climate": "Humid subtropical",
+      "orientation": "Diagonal to prevailing winds"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 120,
+        "description": "Master bedroom with integrated pet area and large window for cross-ventilation"
+      },
+      {
+        "type": "kitchen",
+        "area": 160,
+        "description": "Chef's kitchen with wood-fired oven, concrete countertops, and optimized workspace"
+      },
+      {
+        "type": "living_room",
+        "area": 180,
+        "description": "Open living space with diagonal orientation for wind capture and natural light optimization"
+      },
+      {
+        "type": "bathroom",
+        "area": 60,
+        "description": "Compact wet room with ventilation skylight and moisture-resistant finishes"
+      },
+      {
+        "type": "utility",
+        "area": 120,
+        "description": "Multi-purpose space for laundry, storage, and pet care with earth-sheltered walls"
+      }
+    ]
+  },
+  "total_area": 640.0,
+  "construction_cost": 128000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "entry_door",
+            "kitchen_door"
+          ],
+          "windows": [
+            "north_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 10,
+            "height": 16
+          },
+          "doors": [
+            "living_door",
+            "utility_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "living_door"
+          ],
+          "windows": [
+            "south_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 16,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "skylight_window"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 18,
+            "y": 16,
+            "width": 4,
+            "height": 8
+          },
+          "doors": [
+            "kitchen_door"
+          ],
+          "windows": [
+            "vent_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 1200.0,
+      "style": "Japanese Zen"
+    },
+    "plot": {
+      "slope": "terraced_mountain",
+      "climate": "coastal_salt_air",
+      "hazard_zone": "wildfire"
+    },
+    "roomBreakdown": [
+      {
+        "type": "game_room",
+        "description": "Built-in arcade cabinets and lounge area"
+      },
+      {
+        "type": "bedroom",
+        "description": "Master bedroom with minimalist design"
+      },
+      {
+        "type": "bedroom",
+        "description": "Guest bedroom/home office"
+      },
+      {
+        "type": "kitchen",
+        "description": "Compact, efficient layout"
+      },
+      {
+        "type": "living_room",
+        "description": "Open plan with tatami mat area"
+      },
+      {
+        "type": "bathroom",
+        "description": "Full bathroom with natural materials"
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 285000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "game_room",
+          "type": "game_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "width": 8
+            }
+          ]
+        },
+        {
+          "id": "garage_mech",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "width": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "width": 12
+            },
+            {
+              "wall": "west",
+              "position": 7,
+              "width": 6
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "width": 6
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "width": 8
+            },
+            {
+              "wall": "south",
+              "position": 7,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 6,
+              "width": 8
+            },
+            {
+              "wall": "south",
+              "position": 7,
+              "width": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

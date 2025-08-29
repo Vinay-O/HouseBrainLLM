@@ -1,0 +1,167 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Geodesic Dome"
+    },
+    "plot": {
+      "shape": "circular",
+      "orientation": "east-west",
+      "climate": "humid subtropical",
+      "views": "360-degree"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 300
+      },
+      {
+        "type": "kitchen",
+        "area": 150
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "utility",
+        "area": 50
+      },
+      {
+        "type": "pool",
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 216000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "entry_door",
+            "patio_door"
+          ],
+          "windows": [
+            "north_window",
+            "south_window",
+            "east_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "living_room_door"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 13.33
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 15,
+            "height": 13.33
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "north_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "vent_window"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 25,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pool",
+          "type": "pool",
+          "bounds": {
+            "x": -5,
+            "y": -10,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

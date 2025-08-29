@@ -1,0 +1,282 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2850.0,
+      "style": "Art Deco Revival"
+    },
+    "plot": {
+      "shape": "circular",
+      "orientation": "south",
+      "climate": "alpine with heavy snow loads"
+    },
+    "roomBreakdown": [
+      {
+        "id": "home_office",
+        "type": "home_office",
+        "description": "Private office with separate entrance for remote work"
+      },
+      {
+        "id": "hydroponic_wall",
+        "type": "other",
+        "description": "Vertical hydroponic garden wall"
+      }
+    ],
+    "specialFeatures": [
+      "triple-glazed windows with argon fill",
+      "south-facing for solar gain",
+      "prefabricated modular assembly"
+    ]
+  },
+  "total_area": 2850.0,
+  "construction_cost": 855000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "location": "north"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed",
+              "orientation": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "garage",
+              "location": "north"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "east"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed",
+              "orientation": "south",
+              "size": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 12,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed",
+              "orientation": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 27,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed",
+              "orientation": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hydroponic_wall",
+          "type": "other",
+          "bounds": {
+            "x": 45,
+            "y": 12,
+            "width": 5,
+            "height": 25
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed",
+              "orientation": "south",
+              "size": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed",
+              "orientation": "south",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "north"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed",
+              "orientation": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 18,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed",
+              "orientation": "south",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "library",
+          "type": "other",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "north"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed",
+              "orientation": "south",
+              "size": "large"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

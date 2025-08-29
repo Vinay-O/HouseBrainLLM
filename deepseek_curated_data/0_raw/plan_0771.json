@@ -1,0 +1,318 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 3000,
+      "style": "Traditional Kerala Nalukettu"
+    },
+    "plot": {
+      "shape": "rectangle",
+      "width": 50,
+      "length": 60
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 400
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "kitchen",
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "area": 150
+      },
+      {
+        "type": "gym",
+        "area": 300
+      },
+      {
+        "type": "garden",
+        "area": 1200
+      },
+      {
+        "type": "courtyard",
+        "area": 450
+      }
+    ]
+  },
+  "total_area": 3000.0,
+  "construction_cost": 675000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            },
+            {
+              "wall": "east",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 22.5
+            },
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            },
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 10,
+            "width": 7.5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3.75
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 2.5
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 42.5,
+            "y": 10,
+            "width": 7.5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3.75
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 2.5
+            }
+          ]
+        },
+        {
+          "id": "garden",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 50,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 25
+            },
+            {
+              "wall": "west",
+              "position": 15
+            },
+            {
+              "wall": "east",
+              "position": 15
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            },
+            {
+              "wall": "east",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 22.5
+            },
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "gym",
+          "type": "gym",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            },
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "open_terrace",
+          "type": "terrace",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

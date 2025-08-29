@@ -1,0 +1,265 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 3200,
+      "style": "Mid-Century Modern"
+    },
+    "plot": {
+      "shoreline_length": 50,
+      "climate": "Mediterranean"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "workshop",
+        "count": 1
+      },
+      {
+        "type": "home_office",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "garage",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 960000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_north",
+            "window_east"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_north",
+            "window_west"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 21,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 41,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            "garage_door",
+            "door_to_garage"
+          ],
+          "windows": [
+            "window_south"
+          ],
+          "features": [
+            "hydraulic_car_lift"
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 30,
+            "y": 30,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "separate_entrance",
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_south",
+            "window_west"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 14,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "door_to_dining"
+          ],
+          "windows": [
+            "window_south"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "door_to_hall",
+            "patio_door"
+          ],
+          "windows": [
+            "window_north",
+            "window_south"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 35,
+            "y": 14,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "door_to_hall",
+            "door_to_kitchen"
+          ],
+          "windows": [
+            "window_south"
+          ]
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 55,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            "garage_door",
+            "door_to_workshop"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 45,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [],
+          "features": [
+            "geothermal_system"
+          ]
+        },
+        {
+          "id": "hall",
+          "type": "hall",
+          "bounds": {
+            "x": 21,
+            "y": 10,
+            "width": 28,
+            "height": 4
+          },
+          "doors": [
+            "door_bed1",
+            "door_bed2",
+            "door_bath1",
+            "door_bath2",
+            "door_office",
+            "door_utility",
+            "door_living",
+            "door_dining"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

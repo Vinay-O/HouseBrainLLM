@@ -1,0 +1,387 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 8,
+      "floors": 2,
+      "totalArea": 15000,
+      "style": "Heritage Restoration"
+    },
+    "plot": {
+      "size": 2,
+      "location": "Mumbai Suburban",
+      "type": "Agricultural Conversion"
+    },
+    "roomBreakdown": [
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 600
+      },
+      {
+        "type": "kitchen",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "count": 8,
+        "area": 1200
+      },
+      {
+        "type": "living_room",
+        "count": 2,
+        "area": 400
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "guest_house",
+        "count": 1,
+        "area": 500
+      },
+      {
+        "type": "verandah",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "water_storage",
+        "count": 1,
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 15000.0,
+  "construction_cost": 6750000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_entrance",
+          "type": "entrance",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": []
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 40,
+            "height": 30
+          },
+          "doors": [
+            "north",
+            "south",
+            "east",
+            "west"
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen_veg",
+          "type": "kitchen",
+          "bounds": {
+            "x": 5,
+            "y": 15,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "east"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "kitchen_nonveg",
+          "type": "kitchen",
+          "bounds": {
+            "x": 83,
+            "y": 15,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 45,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "living_main",
+          "type": "living_room",
+          "bounds": {
+            "x": 45,
+            "y": 45,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 70,
+            "y": 45,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "east"
+          ]
+        },
+        {
+          "id": "verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 100,
+            "height": 5
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north"
+          ]
+        },
+        {
+          "id": "guest_house",
+          "type": "guest_house",
+          "bounds": {
+            "x": 0,
+            "y": 65,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            "east"
+          ],
+          "windows": [
+            "north",
+            "south",
+            "west"
+          ]
+        },
+        {
+          "id": "water_storage",
+          "type": "water_storage",
+          "bounds": {
+            "x": 80,
+            "y": 65,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 15,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "east"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 15,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 65,
+            "y": 15,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "bedroom_5",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 32,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "south",
+            "east"
+          ]
+        },
+        {
+          "id": "bedroom_6",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 32,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "south",
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "bedroom_7",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 32,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "south",
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "bedroom_8",
+          "type": "bedroom",
+          "bounds": {
+            "x": 65,
+            "y": 32,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "south",
+            "west"
+          ]
+        },
+        {
+          "id": "living_upper",
+          "type": "living_room",
+          "bounds": {
+            "x": 25,
+            "y": 50,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north"
+          ]
+        }
+      ]
+    }
+  ]
+}

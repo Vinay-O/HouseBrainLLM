@@ -1,0 +1,514 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 8,
+      "floors": 1,
+      "totalArea": 4200,
+      "style": "Heritage-inspired Colonial British Bungalow"
+    },
+    "plot": {
+      "size": 2,
+      "location": "Agra monument city",
+      "terrain": "desert",
+      "water_scarcity": true
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4,
+        "purpose": "Family bedrooms"
+      },
+      {
+        "type": "bedroom",
+        "count": 4,
+        "purpose": "Seasonal worker accommodation"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "purpose": "Main living area"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "purpose": "Main kitchen"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "purpose": "Secondary kitchen for workers"
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "purpose": "Family bathrooms"
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "purpose": "Worker bathrooms"
+      },
+      {
+        "type": "meditation_room",
+        "count": 1,
+        "purpose": "Meditation pavilion"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "purpose": "Greywater recycling system"
+      },
+      {
+        "type": "storage",
+        "count": 2,
+        "purpose": "Farm equipment and supplies"
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 1050000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_entrance",
+          "type": "entrance",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": "south",
+              "type": "main_door"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "veranda_wrap",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 70,
+            "height": 60
+          },
+          "doors": [
+            {
+              "position": "north",
+              "type": "sliding_doors"
+            },
+            {
+              "position": "east",
+              "type": "sliding_doors"
+            },
+            {
+              "position": "south",
+              "type": "sliding_doors"
+            },
+            {
+              "position": "west",
+              "type": "sliding_doors"
+            }
+          ],
+          "windows": [
+            {
+              "position": "north",
+              "type": "jalousie"
+            },
+            {
+              "position": "east",
+              "type": "jalousie"
+            },
+            {
+              "position": "south",
+              "type": "jalousie"
+            },
+            {
+              "position": "west",
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "chabutra_platform",
+          "type": "outdoor",
+          "bounds": {
+            "x": 50,
+            "y": 50,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            {
+              "position": "north",
+              "type": "french_doors"
+            },
+            {
+              "position": "east",
+              "type": "french_doors"
+            },
+            {
+              "position": "south",
+              "type": "french_doors"
+            },
+            {
+              "position": "west",
+              "type": "french_doors"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room_main",
+          "type": "living_room",
+          "bounds": {
+            "x": 15,
+            "y": 5,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": "north",
+              "type": "double_doors"
+            },
+            {
+              "position": "south",
+              "type": "single_door"
+            }
+          ],
+          "windows": [
+            {
+              "position": "east",
+              "type": "bay_window"
+            },
+            {
+              "position": "west",
+              "type": "bay_window"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_main",
+          "type": "kitchen",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": "east",
+              "type": "single_door"
+            }
+          ],
+          "windows": [
+            {
+              "position": "north",
+              "type": "casement"
+            },
+            {
+              "position": "south",
+              "type": "casement"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_workers",
+          "type": "kitchen",
+          "bounds": {
+            "x": 55,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": "west",
+              "type": "single_door"
+            }
+          ],
+          "windows": [
+            {
+              "position": "north",
+              "type": "casement"
+            },
+            {
+              "position": "south",
+              "type": "casement"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_family_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 15,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": "east",
+              "type": "single_door"
+            }
+          ],
+          "windows": [
+            {
+              "position": "north",
+              "type": "double_hung"
+            },
+            {
+              "position": "south",
+              "type": "double_hung"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_family_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 27,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": "east",
+              "type": "single_door"
+            }
+          ],
+          "windows": [
+            {
+              "position": "north",
+              "type": "double_hung"
+            },
+            {
+              "position": "south",
+              "type": "double_hung"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_workers_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": "west",
+              "type": "single_door"
+            }
+          ],
+          "windows": [
+            {
+              "position": "north",
+              "type": "double_hung"
+            },
+            {
+              "position": "south",
+              "type": "double_hung"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_workers_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 27,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": "west",
+              "type": "single_door"
+            }
+          ],
+          "windows": [
+            {
+              "position": "north",
+              "type": "double_hung"
+            },
+            {
+              "position": "south",
+              "type": "double_hung"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_family_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 5,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": "south",
+              "type": "single_door"
+            }
+          ],
+          "windows": [
+            {
+              "position": "north",
+              "type": "transom"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_family_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 49,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": "north",
+              "type": "single_door"
+            }
+          ],
+          "windows": [
+            {
+              "position": "south",
+              "type": "transom"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_workers",
+          "type": "bathroom",
+          "bounds": {
+            "x": 42,
+            "y": 5,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": "south",
+              "type": "single_door"
+            }
+          ],
+          "windows": [
+            {
+              "position": "north",
+              "type": "transom"
+            }
+          ]
+        },
+        {
+          "id": "meditation_pavilion",
+          "type": "meditation_room",
+          "bounds": {
+            "x": 30,
+            "y": 50,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": "north",
+              "type": "sliding_doors"
+            },
+            {
+              "position": "south",
+              "type": "sliding_doors"
+            }
+          ],
+          "windows": [
+            {
+              "position": "east",
+              "type": "floor_to_ceiling"
+            },
+            {
+              "position": "west",
+              "type": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "utility_greywater",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 5,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": "south",
+              "type": "double_doors"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_1",
+          "type": "storage",
+          "bounds": {
+            "x": 5,
+            "y": 39,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": "east",
+              "type": "double_doors"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_2",
+          "type": "storage",
+          "bounds": {
+            "x": 55,
+            "y": 39,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": "west",
+              "type": "double_doors"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

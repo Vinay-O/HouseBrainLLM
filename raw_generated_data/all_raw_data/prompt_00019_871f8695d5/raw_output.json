@@ -1,0 +1,158 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "position": { "x": 0, "y": 0 }
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "position": { "x": 15, "y": 0 }
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 10, "width": 9 },
+          "position": { "x": 27, "y": 0 }
+        },
+        {
+          "room_type": "library",
+          "dimensions": { "length": 12, "width": 10 },
+          "position": { "x": 0, "y": 15 }
+        },
+        {
+          "room_type": "bedroom",
+          "bedroom_number": 1,
+          "dimensions": { "length": 14, "width": 12 },
+          "position": { "x": 0, "y": 25 }
+        },
+        {
+          "room_type": "bedroom",
+          "bedroom_number": 2,
+          "dimensions": { "length": 14, "width": 12 },
+          "position": { "x": 14, "y": 25 }
+        },
+        {
+          "room_type": "bathroom",
+          "associated_room": "bedroom_1",
+          "dimensions": { "length": 6, "width": 5 },
+          "position": { "x": 0, "y": 37 }
+        },
+        {
+          "room_type": "bathroom",
+          "associated_room": "bedroom_2",
+          "dimensions": { "length": 6, "width": 5 },
+          "position": { "x": 14, "y": 37 }
+        },
+        {
+          "room_type": "swimming_pool",
+          "dimensions": { "length": 10, "width": 8 },
+          "position": { "x": 25, "y": 25 }
+        },
+        {
+          "room_type": "courtyard",
+          "dimensions": { "length": 8, "width": 8 },
+          "position": { "x": 10, "y": 10 }
+        },
+        {
+          "room_type": "staircase",
+          "accesses": ["ground_floor", "first_floor"],
+          "dimensions": { "length": 5, "width": 5 },
+          "position": { "x": 20, "y": 30 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "main_entrance",
+          "position": { "x": 10, "y": 40 },
+          "dimensions": { "width": 6, "height": 10 }
+        },
+        {
+          "opening_type": "window",
+          "associated_room": "living_room",
+          "position": { "x": 5, "y": 5 },
+          "dimensions": { "width": 3, "height": 4 }
+        },
+        {
+          "opening_type": "window",
+          "associated_room": "library",
+          "position": { "x": 2, "y": 17 },
+          "dimensions": { "width": 5, "height": 6 }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "bedroom_number": 3,
+          "dimensions": { "length": 14, "width": 12 },
+          "position": { "x": 0, "y": 5 }
+        },
+        {
+          "room_type": "bedroom",
+          "bedroom_number": 4,
+          "dimensions": { "length": 14, "width": 12 },
+          "position": { "x": 14, "y": 5 }
+        },
+        {
+          "room_type": "bathroom",
+          "associated_room": "bedroom_3",
+          "dimensions": { "length": 6, "width": 5 },
+          "position": { "x": 0, "y": 17 }
+        },
+        {
+          "room_type": "bathroom",
+          "associated_room": "bedroom_4",
+          "dimensions": { "length": 6, "width": 5 },
+          "position": { "x": 14, "y": 17 }
+        },
+        {
+          "room_type": "study_room",
+          "dimensions": { "length": 8, "width": 8 },
+          "position": { "x": 25, "y": 5 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "window",
+          "associated_room": "bedroom_3",
+          "position": { "x": 2, "y": 10 },
+          "dimensions": { "width": 3, "height": 4 }
+        },
+        {
+          "opening_type": "window",
+          "associated_room": "study_room",
+          "position": { "x": 27, "y": 10 },
+          "dimensions": { "width": 3, "height": 4 }
+        }
+      ]
+    }
+  ],
+  "accessibility_features": [
+    {
+      "feature_type": "ramp",
+      "location": "main_entrance",
+      "description": "Wheelchair-accessible ramp at the main entrance"
+    },
+    {
+      "feature_type": "wide_doors",
+      "location": "all_rooms",
+      "description": "Wider door frames for wheelchair access"
+    }
+  ],
+  "vastu_compliance": [
+    {
+      "principle": "direction",
+      "description": "Main entrance facing west as per client's request"
+    },
+    {
+      "principle": "courtyard_placement",
+      "description": "Central courtyard to balance energies"
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 13500,
+      "style": "Colonial British Bungalow with Haveli Courtyards"
+    },
+    "plot": {
+      "width": 100,
+      "height": 150,
+      "location": "Bareilly, Coastal Beachside",
+      "constraints": "Flooding and waterlogging during monsoons"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 600
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "bedroom",
+        "count": 4,
+        "area": 2000
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "area": 400
+      },
+      {
+        "type": "production_space",
+        "count": 1,
+        "area": 2000
+      },
+      {
+        "type": "courtyard",
+        "count": 3,
+        "area": 3000
+      },
+      {
+        "type": "veranda",
+        "count": 2,
+        "area": 1200
+      },
+      {
+        "type": "storage",
+        "count": 2,
+        "area": 400
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "cooling_chamber",
+        "count": 1,
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 13500.0,
+  "construction_cost": 4050000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 60,
+            "height": 10
+          },
+          "doors": [
+            "south_entrance"
+          ],
+          "windows": [
+            "south_facing"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            "to_veranda",
+            "to_courtyard1"
+          ],
+          "windows": [
+            "south_facing",
+            "east_facing"
+          ]
+        },
+        {
+          "id": "courtyard_1",
+          "type": "courtyard",
+          "bounds": {
+            "x": 40,
+            "y": 10,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "from_living",
+            "to_bed1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 60,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_courtyard1",
+            "to_bath1"
+          ],
+          "windows": [
+            "east_facing",
+            "north_facing"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 60,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "from_bed1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 70,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_courtyard1"
+          ],
+          "windows": [
+            "north_facing"
+          ]
+        },
+        {
+          "id": "courtyard_2",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 30,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "from_kitchen",
+            "to_bed3"
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "to_courtyard2",
+            "to_utility"
+          ],
+          "windows": [
+            "west_facing"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 50,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "from_kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_courtyard2",
+            "to_bath3"
+          ],
+          "windows": [
+            "south_facing"
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "from_bed3"
+          ],
+          "windows": []
+        },
+        {
+          "id": "production_space",
+          "type": "production_space",
+          "bounds": {
+            "x": 30,
+            "y": 45,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            "main_entry",
+            "to_storage"
+          ],
+          "windows": [
+            "south_facing",
+            "east_facing"
+          ]
+        },
+        {
+          "id": "storage_1",
+          "type": "storage",
+          "bounds": {
+            "x": 60,
+            "y": 45,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "from_production"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 60,
+            "y": 60,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_veranda2",
+            "to_bath4"
+          ],
+          "windows": [
+            "east_facing",
+            "north_facing"
+          ]
+        },
+        {
+          "id": "bathroom_4",
+          "type": "bathroom",
+          "bounds": {
+            "x": 75,
+            "y": 60,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "from_bed4"
+          ],
+          "windows": []
+        },
+        {
+          "id": "veranda_2",
+          "type": "veranda",
+          "bounds": {
+            "x": 75,
+            "y": 70,
+            "width": 25,
+            "height": 10
+          },
+          "doors": [
+            "to_bed4",
+            "to_courtyard3"
+          ],
+          "windows": [
+            "north_facing"
+          ]
+        },
+        {
+          "id": "courtyard_3",
+          "type": "courtyard",
+          "bounds": {
+            "x": 75,
+            "y": 80,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            "from_veranda2"
+          ],
+          "windows": []
+        },
+        {
+          "id": "cooling_chamber",
+          "type": "cooling_chamber",
+          "bounds": {
+            "x": 0,
+            "y": 65,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "external_access"
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_2",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 75,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "external_access"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

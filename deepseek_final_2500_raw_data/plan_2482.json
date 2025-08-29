@@ -1,0 +1,441 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 3,
+      "totalArea": 4800,
+      "style": "Alpine Chalet"
+    },
+    "plot": {
+      "description": "Forest clearing with mature oak trees in a humid subtropical climate, east-west linear orientation",
+      "size": 2.0,
+      "terrain": "clearing",
+      "climate": "humid subtropical"
+    },
+    "roomBreakdown": [
+      {
+        "type": "sunken_living_room",
+        "area": 600,
+        "level": 0,
+        "description": "Sunken living room with triple-glazed argon-filled windows overlooking the forest"
+      },
+      {
+        "type": "pottery_studio",
+        "area": 450,
+        "level": 0,
+        "description": "Professional pottery studio with kiln ventilation and natural north light"
+      },
+      {
+        "type": "master_suite",
+        "area": 550,
+        "level": 1,
+        "description": "Luxury master suite with walk-in closet and spa bathroom"
+      },
+      {
+        "type": "guest_suite",
+        "area": 400,
+        "level": 1,
+        "description": "Guest suite for international visitors with ensuite bathroom"
+      },
+      {
+        "type": "library_study",
+        "area": 300,
+        "level": 1,
+        "description": "Quiet library/study with built-in shelving and fireplace"
+      },
+      {
+        "type": "kitchen",
+        "area": 400,
+        "level": 0,
+        "description": "Gourmet kitchen with professional appliances and pantry"
+      },
+      {
+        "type": "dining_room",
+        "area": 350,
+        "level": 0,
+        "description": "Formal dining room with views of oak trees"
+      },
+      {
+        "type": "garage",
+        "area": 600,
+        "level": -1,
+        "description": "3-car garage with electric vehicle charging and storage"
+      },
+      {
+        "type": "bedroom",
+        "area": 250,
+        "level": 2,
+        "description": "Additional bedroom with balcony access"
+      },
+      {
+        "type": "bedroom",
+        "area": 250,
+        "level": 2,
+        "description": "Additional bedroom with balcony access"
+      },
+      {
+        "type": "media_room",
+        "area": 350,
+        "level": -1,
+        "description": "Home theater/media room with soundproofing"
+      },
+      {
+        "type": "wine_cellar",
+        "area": 200,
+        "level": -1,
+        "description": "Temperature-controlled wine cellar"
+      },
+      {
+        "type": "utility_room",
+        "area": 200,
+        "level": -1,
+        "description": "Laundry and utility room with storage"
+      }
+    ]
+  },
+  "total_area": 4800.0,
+  "construction_cost": 3840000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "elevation": -8.0,
+      "description": "Flood-resistant lower level with garage, media room, wine cellar, and utilities",
+      "rooms": [
+        {
+          "id": "garage_1",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "location": "north",
+              "size": "double"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "media_room_1",
+          "type": "media_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west",
+              "size": "standard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "wine_cellar_1",
+          "type": "wine_cellar",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "east",
+              "size": "standard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room_1",
+          "type": "utility_room",
+          "bounds": {
+            "x": 35,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "east",
+              "size": "standard"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "elevation": 0.0,
+      "description": "Main entry level with sunken living room, pottery studio, kitchen, and dining",
+      "rooms": [
+        {
+          "id": "sunken_living_1",
+          "type": "sunken_living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "north",
+              "size": "double"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "location": "south",
+              "size": "large"
+            },
+            {
+              "type": "triple_glazed_argon",
+              "location": "east",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pottery_studio_1",
+          "type": "pottery_studio",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 30
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "location": "north",
+              "size": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "location": "north",
+              "size": "large"
+            },
+            {
+              "type": "ventilation",
+              "location": "ceiling",
+              "size": "custom"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west",
+              "size": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "location": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dining_room_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west",
+              "size": "double"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "location": "south",
+              "size": "large"
+            },
+            {
+              "type": "triple_glazed_argon",
+              "location": "east",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "elevation": 8.0,
+      "description": "Upper sleeping level with master suite, guest suite, and library",
+      "rooms": [
+        {
+          "id": "master_suite_1",
+          "type": "master_suite",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "south",
+              "size": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "location": "south",
+              "size": "large"
+            },
+            {
+              "type": "triple_glazed_argon",
+              "location": "east",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "guest_suite_1",
+          "type": "guest_suite",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 25
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "south",
+              "size": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "location": "south",
+              "size": "medium"
+            },
+            {
+              "type": "triple_glazed_argon",
+              "location": "west",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "library_study_1",
+          "type": "library_study",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "south",
+              "size": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "location": "south",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "elevation": 16.0,
+      "description": "Top level with additional bedrooms and balconies",
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "location": "south",
+              "size": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "location": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "location": "south",
+              "size": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "location": "south",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

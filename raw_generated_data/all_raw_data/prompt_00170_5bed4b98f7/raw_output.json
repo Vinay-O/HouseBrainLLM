@@ -1,0 +1,108 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "area": 300,
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 20 },
+          "features": ["open_plan", "furnished"]
+        },
+        {
+          "room_id": "dining_area",
+          "area": 150,
+          "shape": "square",
+          "dimensions": { "length": 12.25, "width": 12.25 },
+          "features": ["adjacent_to_kitchen", "dining_table"]
+        },
+        {
+          "room_id": "kitchen",
+          "area": 200,
+          "shape": "rectangle",
+          "dimensions": { "length": 10, "width": 20 },
+          "features": ["open_plan", "modular_kitchen"]
+        },
+        {
+          "room_id": "home_office",
+          "area": 200,
+          "shape": "rectangle",
+          "dimensions": { "length": 10, "width": 20 },
+          "features": ["workstation", "storage"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "area": 350,
+          "shape": "rectangle",
+          "dimensions": { "length": 17.5, "width": 20 },
+          "features": ["attached_bathroom", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "area": 300,
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 20 },
+          "features": ["attached_bathroom", "wardrobe"]
+        },
+        {
+          "room_id": "swimming_pool",
+          "area": 250,
+          "shape": "rectangle",
+          "dimensions": { "length": 20, "width": 12.5 },
+          "features": ["outdoor", "decorative"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 7 },
+          "location": "front"
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimensions": { "length": 3, "width": 4 },
+          "location": "back"
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 5 },
+          "location": "side"
+        },
+        {
+          "opening_id": "bedroom_1_window",
+          "type": "window",
+          "dimensions": { "length": 3, "width": 4 },
+          "location": "back"
+        },
+        {
+          "opening_id": "bedroom_2_window",
+          "type": "window",
+          "dimensions": { "length": 3, "width": 4 },
+          "location": "side"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "area": 300,
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 20 },
+          "features": ["attached_bathroom", "wardrobe"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "bedroom_3_window",
+          "type": "window",
+          "dimensions": { "length": 3, "width": 4 },
+          "location": "front"
+        }
+      ]
+    }
+  ] }

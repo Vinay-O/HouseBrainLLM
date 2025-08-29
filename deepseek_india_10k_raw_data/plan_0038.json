@@ -1,0 +1,405 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 5,
+      "floors": 3,
+      "totalArea": 4200,
+      "style": "Indo-Islamic fusion with Mughal arch influences"
+    },
+    "plot": {
+      "type": "corner plot with dual street frontage",
+      "heritageSite": true,
+      "floodProne": true
+    },
+    "roomBreakdown": [
+      {
+        "type": "courtyard",
+        "count": 3
+      },
+      {
+        "type": "bedroom",
+        "count": 5
+      },
+      {
+        "type": "bathroom",
+        "count": 6
+      },
+      {
+        "type": "study",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "puja_room",
+        "count": 1
+      },
+      {
+        "type": "caregiver_room",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 7560000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "north_street_door",
+            "east_street_door"
+          ],
+          "windows": [],
+          "features": [
+            "sacred_kolam_threshold",
+            "central_fountain",
+            "Mughal_arches"
+          ]
+        },
+        {
+          "id": "grandparents_bedroom_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_courtyard"
+          ],
+          "windows": [
+            "north_facing"
+          ],
+          "features": [
+            "accessible_bathroom",
+            "emergency_call"
+          ]
+        },
+        {
+          "id": "caregiver_room_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "east_facing"
+          ],
+          "features": [
+            "adjacent_to_elderly_bedroom"
+          ]
+        },
+        {
+          "id": "puja_room_0",
+          "type": "puja_room",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_courtyard"
+          ],
+          "windows": [
+            "east_facing"
+          ],
+          "features": [
+            "traditional_niche"
+          ]
+        },
+        {
+          "id": "bathroom_0_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 10,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "to_grandparents_bedroom"
+          ],
+          "windows": [],
+          "features": [
+            "accessible_design"
+          ]
+        },
+        {
+          "id": "storage_0",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [],
+          "features": [
+            "matka_water_cooling",
+            "surahi_storage"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "central_courtyard_1",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "from_stairs"
+          ],
+          "windows": [],
+          "features": [
+            "wind_tower_base",
+            "water_channel"
+          ]
+        },
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_terrace",
+            "to_courtyard"
+          ],
+          "windows": [
+            "north_facing",
+            "west_facing"
+          ],
+          "features": [
+            "Mughal_arch_openings",
+            "jali_screens"
+          ]
+        },
+        {
+          "id": "dining_room_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "to_kitchen",
+            "to_courtyard"
+          ],
+          "windows": [
+            "west_facing"
+          ],
+          "features": []
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_dining",
+            "to_utility"
+          ],
+          "windows": [
+            "east_facing"
+          ],
+          "features": [
+            "traditional_chulha",
+            "modern_amenities"
+          ]
+        },
+        {
+          "id": "bathroom_1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [],
+          "features": []
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 8,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_courtyard"
+          ],
+          "windows": [
+            "east_facing",
+            "south_facing"
+          ],
+          "features": [
+            "built-in_storage"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "study_room_2",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_terrace"
+          ],
+          "windows": [
+            "north_facing",
+            "west_facing"
+          ],
+          "features": [
+            "soundproofing",
+            "built-in_desk",
+            "natural_lighting"
+          ]
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_terrace"
+          ],
+          "windows": [
+            "north_facing",
+            "east_facing"
+          ],
+          "features": [
+            "walk-in_closet"
+          ]
+        },
+        {
+          "id": "bedroom_2_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 15,
+            "height": 13
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "west_facing",
+            "south_facing"
+          ],
+          "features": []
+        },
+        {
+          "id": "bathroom_2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [],
+          "features": []
+        },
+        {
+          "id": "bathroom_2_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 23,
+            "y": 15,
+            "width": 7,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [],
+          "features": []
+        },
+        {
+          "id": "thermal_chimney_2",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 5,
+            "height": 25
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "thermal_draft_tower",
+            "connected_to_courtyards"
+          ]
+        }
+      ]
+    }
+  ]
+}

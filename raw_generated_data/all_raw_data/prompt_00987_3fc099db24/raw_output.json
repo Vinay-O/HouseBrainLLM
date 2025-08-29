@@ -1,0 +1,96 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_hall",
+          "type": "entrance hall",
+          "description": "A welcoming entrance with a reception area designed to align with Vastu principles, featuring natural lighting and minimalistic Mediterranean accents.",
+          "dimensions": { "length": 10, "width": 8 }
+        },
+        {
+          "room_id": "living_room",
+          "type": "living room",
+          "description": "A spacious living area incorporating Mediterranean design elements such as terracotta tiles and wooden accents. This area is oriented to the south for maximum sunlight.",
+          "dimensions": { "length": 16, "width": 12 }
+        },
+        {
+          "room_id": "dining_room",
+          "type": "dining room",
+          "description": "A Mediterranean styled dining space with an adjoining open kitchen. The layout facilitates easy flow and social gatherings.",
+          "dimensions": { "length": 10, "width": 8 }
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "description": "The modern kitchen integrates local design norms with Mediterranean features, providing ample storage and an island counter. Positioned for efficient workflow.",
+          "dimensions": { "length": 12, "width": 10 }
+        },
+        {
+          "room_id": "bathroom",
+          "type": "bathroom",
+          "description": "A functional bathroom on the ground floor with Vastu compliant placement relative to other spaces.",
+          "dimensions": { "length": 6, "width": 5 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "front_door",
+          "type": "door",
+          "description": "Main entrance door aligned with Vastu principles for positive energy flow."
+        },
+        {
+          "opening_id": "balcony1",
+          "type": "balcony",
+          "description": "Spacious balcony attached to the living room, offering a Mediterranean outlook and ample sunlight.",
+          "location": "east"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom1",
+          "type": "bedroom",
+          "description": "A private bedroom featuring a spacious balcony with Mediterranean design elements. The room is oriented to the north-west for tranquility and effective sunlight.",
+          "dimensions": { "length": 14, "width": 12 },
+          "balcony": {
+            "size": { "length": 8, "width": 4 },
+            "orientation": "south-east"
+          }
+        },
+        {
+          "room_id": "bathroom1",
+          "type": "bathroom",
+          "description": "Bedroom bathroom designed for privacy and comfort with Vastu-aligned placement.",
+          "dimensions": { "length": 6, "width": 5 }
+        },
+        {
+          "room_id": "bedroom2",
+          "type": "bedroom",
+          "description": "Additional bedroom incorporating a spacious balcony for fresh air and Mediterranean aesthetics. The room is positioned to maximize ventilation.",
+          "dimensions": { "length": 14, "width": 12 },
+          "balcony": {
+            "size": { "length": 8, "width": 4 },
+            "orientation": "south-west"
+          }
+        },
+        {
+          "room_id": "bathroom2",
+          "type": "bathroom",
+          "description": "Secondary bathroom designed with local building norms and Vastu principles in mind.",
+          "dimensions": { "length": 6, "width": 5 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase",
+          "type": "staircase",
+          "description": "A well-designed staircase connecting ground floor to the first floor, ensuring safety and ease of movement."
+        }
+      ]
+    }
+  ]
+}

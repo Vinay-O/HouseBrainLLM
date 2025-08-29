@@ -1,0 +1,108 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "size_sqft": 120,
+          "location": [50, 50],
+          "orientation": "north"
+        },
+        {
+          "room_type": "bedroom",
+          "size_sqft": 120,
+          "location": [50, 200],
+          "orientation": "northeast"
+        },
+        {
+          "room_type": "bedroom",
+          "size_sqft": 120,
+          "location": [300, 50],
+          "orientation": "east"
+        },
+        {
+          "room_type": "living_room",
+          "size_sqft": 160,
+          "location": [50, 400],
+          "orientation": "west"
+        },
+        {
+          "room_type": "kitchen",
+          "size_sqft": 80,
+          "location": [270, 300],
+          "orientation": "southwest"
+        },
+        {
+          "room_type": "home_office",
+          "size_sqft": 100,
+          "location": [50, 300],
+          "orientation": "south"
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "from_room": "bedroom",
+          "to_location": [60, 250]
+        },
+        {
+          "type": "window",
+          "location": [310, 70],
+          "orientation": "east"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "size_sqft": 120,
+          "location": [50, 50],
+          "orientation": "north"
+        },
+        {
+          "room_type": "bedroom",
+          "size_sqft": 120,
+          "location": [300, 50],
+          "orientation": "east"
+        },
+        {
+          "room_type": "bedroom",
+          "size_sqft": 120,
+          "location": [300, 250],
+          "orientation": "southeast"
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "location": [60, 70],
+          "orientation": "north"
+        },
+        {
+          "type": "staircase_exit",
+          "from_level": "ground_floor",
+          "to_location": [250, 480]
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "type": "door",
+          "location": [350, 10],
+          "orientation": "south"
+        },
+        {
+          "type": "window",
+          "location": [280, 40],
+          "orientation": "west"
+        }
+      ]
+    }
+  ]
+}

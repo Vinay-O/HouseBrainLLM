@@ -1,0 +1,274 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 1500,
+      "style": "Bengali Traditional with Curved Rooflines"
+    },
+    "plot": {
+      "shape": "narrow rectangle",
+      "location": "cul-de-sac",
+      "area": 1500,
+      "constraints": [
+        "shared boundary walls",
+        "monsoon water management",
+        "crowded urban area"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "covered_parking",
+        "area": 300,
+        "level": 0
+      },
+      {
+        "type": "living_room",
+        "area": 200,
+        "level": 1
+      },
+      {
+        "type": "kitchen",
+        "area": 120,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 180,
+        "level": 1
+      },
+      {
+        "type": "bathroom",
+        "area": 80,
+        "level": 1
+      },
+      {
+        "type": "utility_space",
+        "area": 120,
+        "level": 0
+      }
+    ]
+  },
+  "total_area": 1000.0,
+  "construction_cost": 180000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "parking_1",
+          "type": "covered_parking",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "size": 8
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "parking_2",
+          "type": "covered_parking",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "position": {
+                "x": 10,
+                "y": 7.5
+              },
+              "size": 8
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_space",
+          "type": "utility_space",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 20,
+                "y": 6
+              },
+              "size": 3
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 0
+              },
+              "size": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "size": 3
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 10
+              },
+              "size": 4
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 10
+              },
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 20,
+                "y": 6
+              },
+              "size": 3
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 0
+              },
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 7.5,
+                "y": 10
+              },
+              "size": 3
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 16
+              },
+              "size": 4
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 16
+              },
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 15,
+                "y": 14
+              },
+              "size": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 19,
+                "y": 10
+              },
+              "size": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "special_features": [
+    "curved bengali roof with chhatris",
+    "rainwater harvesting system",
+    "LED lighting throughout",
+    "shared boundary wall integration",
+    "monsoon-optimized drainage"
+  ]
+}

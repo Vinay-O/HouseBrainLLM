@@ -1,0 +1,275 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 1800.0,
+      "style": "Industrial Loft"
+    },
+    "plot": {
+      "shape": "elongated rectangle",
+      "orientation": "east-west linear",
+      "climate": "humid subtropical",
+      "adjacency": "railway",
+      "constraints": [
+        "privacy from neighbors",
+        "budget-conscious",
+        "home-based business",
+        "geothermal system"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "sunken_living_room",
+        "area": 300.0
+      },
+      {
+        "type": "home_office",
+        "area": 200.0
+      },
+      {
+        "type": "kitchen",
+        "area": 150.0
+      },
+      {
+        "type": "dining_room",
+        "area": 120.0
+      },
+      {
+        "type": "master_bedroom",
+        "area": 250.0
+      },
+      {
+        "type": "bedroom",
+        "area": 180.0
+      },
+      {
+        "type": "home_spa",
+        "area": 200.0
+      },
+      {
+        "type": "bathroom",
+        "area": 100.0
+      },
+      {
+        "type": "utility_room",
+        "area": 100.0
+      },
+      {
+        "type": "entryway",
+        "area": 100.0
+      },
+      {
+        "type": "storage",
+        "area": 100.0
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 324000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "sunken_living_room",
+          "type": "sunken_living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "entryway",
+            "dining_room"
+          ],
+          "windows": [
+            "west_wall"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "sunken_living_room",
+            "kitchen"
+          ],
+          "windows": [
+            "east_wall"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "dining_room",
+            "utility_room"
+          ],
+          "windows": [
+            "east_wall"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility_room",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 5,
+            "height": 12
+          },
+          "doors": [
+            "kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "entryway",
+          "type": "entryway",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "exterior",
+            "sunken_living_room"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": [
+            "west_wall"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "hallway",
+            "home_spa"
+          ],
+          "windows": [
+            "east_wall"
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": [
+            "west_wall"
+          ]
+        },
+        {
+          "id": "home_spa",
+          "type": "home_spa",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "master_bedroom",
+            "bathroom"
+          ],
+          "windows": [
+            "east_wall"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 10,
+            "height": 7
+          },
+          "doors": [
+            "home_spa",
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 20,
+            "height": 5
+          },
+          "doors": [
+            "home_office",
+            "master_bedroom",
+            "bedroom",
+            "bathroom",
+            "stairs"
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 22,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

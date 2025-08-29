@@ -1,0 +1,130 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "type": "kitchen",
+          "area_sqft": 120,
+          "shape": "rectangle",
+          "dimensions": { "length_ft": 12, "width_ft": 10 },
+          "features": ["open_plan", "modular_cabinetry", "island_counter"],
+          "positioning": "north_east"  },
+        {
+          "type": "living_room",
+          "area_sqft": 300,
+          "shape": "irregular",
+          "dimensions": { "length_ft": 25, "width_ft": 12 },
+          "features": ["open_plan", "floor_to_ceiling_windows", "balcony_access"],
+          "positioning": "central"
+        },
+        {
+          "type": "bedroom",
+          "area_sqft": 200,
+          "shape": "square",
+          "dimensions": { "length_ft": 14, "width_ft": 14 },
+          "features": ["attached_bathroom", "walk_in_closet"],
+          "positioning": "south"
+        },
+        {
+          "type": "bedroom",
+          "area_sqft": 200,
+          "shape": "square",
+          "dimensions": { "length_ft": 14, "width_ft": 14 },
+          "features": ["attached_bathroom", "walk_in_closet"],
+          "positioning": "north"
+        },
+        {
+          "type": "bedroom",
+          "area_sqft": 200,
+          "shape": "rectangle",
+          "dimensions": { "length_ft": 15, "width_ft": 13.33 },
+          "features": ["attached_bathroom", "balcony"],
+          "positioning": "east"
+        },
+        {
+          "type": "bedroom",
+          "area_sqft": 200,
+          "shape": "rectangle",
+          "dimensions": { "length_ft": 15, "width_ft": 13.33 },
+          "features": ["attached_bathroom", "balcony"],
+          "positioning": "west"
+        },
+        {
+          "type": "bedroom",
+          "area_sqft": 200,
+          "shape": "rectangle",
+          "dimensions": { "length_ft": 15, "width_ft": 13.33 },
+          "features": ["attached_bathroom", "balcony"],
+          "positioning": "south_east"
+        },
+        {
+          "type": "dining_room",
+          "area_sqft": 120,
+          "shape": "rectangle",
+          "dimensions": { "length_ft": 15, "width_ft": 8 },
+          "features": ["open_plan", "adjacent_to_kitchen"],
+          "positioning": "north"
+        },
+        {
+          "type": "study_room",
+          "area_sqft": 80,
+          "shape": "square",
+          "dimensions": { "length_ft": 9, "width_ft": 9 },
+          "features": ["quiet_area", "natural_light"],
+          "positioning": "south_east"
+        },
+        {
+          "type": "utility_room",
+          "area_sqft": 50,
+          "shape": "rectangle",
+          "dimensions": { "length_ft": 10, "width_ft": 5 },
+          "features": ["wash_area", "storage"],
+          "positioning": "north_east"
+        }
+      ],
+      "openings": [
+        {
+          "type": "entrance",
+          "dimensions": { "length_ft": 6, "width_ft": 3 },
+          "direction": "main_gate",
+          "features": ["double_door", "foyer"]
+        },
+        {
+          "type": "balcony",
+          "dimensions": { "length_ft": 10, "width_ft": 4 },
+          "access_from": "living_room",
+          "features": ["outdoor_seating", "glass_railing"]
+        },
+        {
+          "type": "rooftop_terrace_access",
+          "dimensions": { "length_ft": 6, "width_ft": 3 },
+          "access_from": "living_room",
+          "features": ["staircase", "skylight"]
+        }
+      ]
+    }
+  ],
+  "additional_features": {
+    "rooftop_terrace": {
+      "area_sqft": 200,
+      "features": [
+        "outdoor_kitchen",
+        "dining_area",
+        "lounge_space",
+        "swimming_pool",
+        "green_roof"
+      ]
+    },
+    "building_materials": {
+      "walls": "light_colored_plaster",
+      "floors": "polished_concrete_or_wood",
+      "ceilings": "high_with_exposed_beams"
+    },
+    "sustainability_features": [
+      "energy_efficient_appliances",
+      "natural_ventilation",
+      "rainwater_harvesting"
+    ]
+  }
+}

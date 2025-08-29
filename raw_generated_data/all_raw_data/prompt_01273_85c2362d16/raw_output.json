@@ -1,0 +1,155 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "living",
+          "area": 300,
+          "shape": "rectangle"
+        },
+        {
+          "room_id": "kitchen",
+          "type": "open_plan_kitchen",
+          "area": 250,
+          "adjacent_to": ["living_room", "dining_area"]
+        },
+        {
+          "room_id": "dining_area",
+          "type": "dining",
+          "area": 180,
+          "adjacent_to": ["kitchen", "living_room"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "master_bedroom",
+          "area": 350,
+          "features": ["attached_bathroom", "wardrobe", "balcony"],
+          "adjacent_to": ["bathroom_1"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "guest_bedroom",
+          "area": 300,
+          "features": ["attached_bathroom"],
+          "adjacent_to": ["bathroom_2"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "children_bedroom",
+          "area": 300,
+          "features": ["shared_bathroom", "study_area"],
+          "adjacent_to": ["bathroom_3"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "type": "guest_bedroom",
+          "area": 250,
+          "features": ["attached_bathroom"],
+          "adjacent_to": ["bathroom_4"]
+        },
+        {
+          "room_id": "study_room",
+          "type": "study",
+          "area": 180
+        },
+        {
+          "room_id": "pantry",
+          "type": "pantry",
+          "area": 80,
+          "adjacent_to": ["kitchen"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "entry",
+          "dimensions": { "width": 4, "height": 7 },
+          "direction": "north"
+        },
+        {
+          "opening_id": "backyard_access",
+          "type": "exit",
+          "dimensions": { "width": 3.5, "height": 6.5 }
+        },
+        {
+          "opening_id": "living_room_window_1",
+          "type": "window",
+          "room_id": "living_room",
+          "dimensions": { "width": 4, "height": 4 },
+          "direction": "east"
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "room_id": "kitchen",
+          "dimensions": { "width": 3, "height": 3.5 }
+        },
+        {
+          "opening_id": "bedroom_1_balcony",
+          "type": "balcony",
+          "room_id": "bedroom_1",
+          "dimensions": { "width": 4, "length": 5 }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "terrace",
+          "type": "terrace",
+          "area": 800
+        },
+        {
+          "room_id": "study_room_2",
+          "type": "study",
+          "area": 150,
+          "adjacent_to": ["bedroom_3"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "terrace_access",
+          "type": "staircase",
+          "dimensions": { "width": 4, "length": 10 }
+        },
+        {
+          "opening_id": "terrace_window_1",
+          "type": "window",
+          "room_id": "terrace",
+          "dimensions": { "width": 5, "height": 5 },
+          "direction": "west"
+        }
+      ]
+    }
+  ],
+  "additional_features": {
+    "parking": {
+      "type": "carport",
+      "capacity": 2,
+      "location": "east_side"
+    },
+    "garden": {
+      "area": 500,
+      "location": "backyard"
+    },
+    "water_body": {
+      "type": "pond",
+      "area": 100,
+      "location": "north_east"
+    }
+  },
+  "vastu_compliance": {
+    "kitchen_position": "southeast",
+    "bedrooms_direction": ["south", "west"],
+    "living_room_direction": "north",
+    "toilet_bathroom_direction": "northwest"
+  },
+  "local_building_norm_compliance": {
+    "setback_compliance": true,
+    "floor_space_index_compliance": true,
+    "height_restriction_compliance": true
+  }
+}

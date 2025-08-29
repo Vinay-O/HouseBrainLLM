@@ -1,0 +1,114 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "description": "Spacious Scandinavian design living room with natural light and minimalistic decor.",
+          "dimensions_sqft": 350,
+          "adjacencies": ["dining_area", "kitchen"],
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "dining_area",
+          "description": "Open dining space integrated with the living room, ideal for Scandinavian aesthetics.",
+          "dimensions_sqft": 150,
+          "adjacencies": ["living_room", "kitchen"],
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "kitchen",
+          "description": "Modern kitchen designed with clean lines and high functionality, incorporating Scandinavian style.",
+          "dimensions_sqft": 200,
+          "adjacencies": ["dining_area", "living_room"],
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "guest_room",
+          "description": "Guest bedroom with minimalist Scandinavian design and natural ventilation.",
+          "dimensions_sqft": 180,
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "servants_quarters",
+          "description": "Servant's quarters located in the ground floor ensuring privacy, functionality and Vastu alignment.",
+          "dimensions_sqft": 150,
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "storage",
+          "description": "Utility storage area with integrated cabinetry following Scandinavian design principles.",
+          "dimensions_sqft": 50,
+          "vastu_compliance": false
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "entrance",
+          "description": "Main entrance designed to welcome positive energy, aligned with Vastu.",
+          "location": "front"
+        },
+        {
+          "opening_type": "windows",
+          "description": "Large windows installed to maximize natural light and ensure proper ventilation throughout the house.",
+          "locations": ["living_room", "kitchen", "guest_room"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "master_bedroom",
+          "description": "Spacious master bedroom with a private ensuite bathroom, Scandinavian minimalism, and ample natural light.",
+          "dimensions_sqft": 350,
+          "adjacencies": ["guest_room", "utility_room"],
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "bedroom",
+          "description": "Additional bedroom with serene design following Scandinavian style, designed for family use.",
+          "dimensions_sqft": 220,
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "bedroom",
+          "description": "Third bedroom offering privacy and comfort with a Scandinavian layout.",
+          "dimensions_sqft": 200,
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "bedroom",
+          "description": "Fourth bedroom designed for additional family members or guests, with clean lines and natural light.",
+          "dimensions_sqft": 180,
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "private_gym",
+          "description": "Fully-equipped private gym area integrated within the home, designed in a Scandinavian style with ample space for exercise equipment.",
+          "dimensions_sqft": 200,
+          "vastu_compliance": false
+        },
+        {
+          "room_type": "bathroom",
+          "description": "Ensuite bathroom adjacent to master bedroom.",
+          "dimensions_sqft": 50,
+          "vastu_compliance": true
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "balcony",
+          "description": "Balconies for bedrooms ensuring privacy and a connection with nature, aligned with Vastu.",
+          "locations": ["master_bedroom", "bedroom"]
+        },
+        {
+          "opening_type": "skylight",
+          "description": "Skylights installed to enhance natural light in interior spaces, promoting a Scandinavian ambience.",
+          "location": "central"
+        }
+      ]
+    }
+  ]
+}

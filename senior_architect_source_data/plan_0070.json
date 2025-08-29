@@ -1,0 +1,416 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 5000,
+      "style": "Colonial Bungalow"
+    },
+    "plot": {
+      "shape": "Rectangle",
+      "area": 5000,
+      "location": "Industrial city outskirts",
+      "notes": "Cul-de-sac, pollution concerns, height restrictions"
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "area": 350
+      },
+      {
+        "type": "bedroom",
+        "count": 3,
+        "area": 900
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 1200
+      }
+    ]
+  },
+  "total_area": 3650.0,
+  "construction_cost": 912500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 30,
+            "height": 40
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 15
+            },
+            {
+              "wall": "east",
+              "position": 20
+            },
+            {
+              "wall": "south",
+              "position": 15
+            },
+            {
+              "wall": "west",
+              "position": 20
+            }
+          ],
+          "windows": [],
+          "notes": "Open to sky (angan), temperature regulation, organic kitchen garden beds, composting area"
+        },
+        {
+          "id": "living_room_north",
+          "type": "living_room",
+          "bounds": {
+            "x": 15,
+            "y": 55,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10,
+              "to": "central_courtyard"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "to": "verandah"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "notes": "High ceilings, period moldings, double-glazed windows for pollution"
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 35,
+            "y": 55,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "to": "central_courtyard"
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "to": "living_room_north"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 50,
+            "y": 55,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7.5,
+              "to": "dining_room"
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "to": "utility"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "notes": "Access to kitchen garden, advanced air filtration"
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 50,
+            "y": 40,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "to": "kitchen"
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "master_bedroom_west",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 15,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 12.5,
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 12.5
+            },
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "notes": "Walk-in closet, ensuite bathroom"
+        },
+        {
+          "id": "bedroom_southwest",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "to": "corridor_south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_southeast",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10,
+              "to": "corridor_south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "study_east",
+          "type": "study",
+          "bounds": {
+            "x": 55,
+            "y": 15,
+            "width": 15,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 12.5,
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "east",
+              "position": 12.5
+            },
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5,
+              "to": "corridor_south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "corridor_south",
+          "type": "corridor",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 25,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12.5,
+              "to": "central_courtyard"
+            },
+            {
+              "wall": "west",
+              "position": 12.5,
+              "to": "bedroom_southwest"
+            },
+            {
+              "wall": "east",
+              "position": 12.5,
+              "to": "bedroom_southeast"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "verandah_north",
+          "type": "verandah",
+          "bounds": {
+            "x": 15,
+            "y": 75,
+            "width": 50,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 25,
+              "to": "living_room_north"
+            }
+          ],
+          "windows": [],
+          "notes": "Wraparound colonial verandah, main entrance"
+        }
+      ]
+    }
+  ],
+  "notes": "Economical luxury achieved through efficient layout and material choices. Central courtyard (angan) provides light, ventilation, and natural cooling, mitigating pollution and heat. Colonial Bungalow style with verandahs, high ceilings, and deep overhangs. Advanced security system integrated throughout. Organic kitchen garden and composting in courtyard. Single story to respect height restrictions."
+}

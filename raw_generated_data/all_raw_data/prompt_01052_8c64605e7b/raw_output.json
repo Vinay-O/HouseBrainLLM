@@ -1,0 +1,146 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["modern_cabinets", "granite_countertops", "island"]
+        },
+        {
+          "room_id": "dining_room",
+          "type": "dining_room",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["dining_table_for_8", "chandelier", "access_to_kitchen"]
+        },
+        {
+          "room_id": "living_room",
+          "type": "living_room",
+          "dimensions": { "length": 16, "width": 20 },
+          "features": ["sofa_set_for_8", "TV_unit", "fireplace"]
+        },
+        {
+          "room_id": "powder_room",
+          "type": "bathroom",
+          "dimensions": { "length": 5, "width": 4 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "height": 10, "width": 3.5 },
+          "location": "front"
+        },
+        {
+          "opening_id": "garden_access",
+          "type": "door",
+          "dimensions": { "height": 7, "width": 4 },
+          "location": "back"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_level",
+      "rooms": [
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "dimensions": { "length": 16, "width": 14 },
+          "features": ["king_size_bed", "walk_in_closet", "private_balcony"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "dimensions": { "length": 15, "width": 13 },
+          "features": ["queen_size_bed", "wardrobe", "private_balcony"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["twin_beds", "wardrobe", "private_balcony"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "type": "bedroom",
+          "dimensions": { "length": 15, "width": 13 },
+          "features": ["queen_size_bed", "wardrobe", "private_balcony"]
+        },
+        {
+          "room_id": "bedroom_5",
+          "type": "bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["twin_beds", "wardrobe", "private_balcony"]
+        },
+        {
+          "room_id": "bedroom_6",
+          "type": "bedroom",
+          "dimensions": { "length": 15, "width": 13 },
+          "features": ["queen_size_bed", "wardrobe", "private_balcony"]
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "bathroom",
+          "dimensions": { "length": 8, "width": 7 },
+          "features": ["shower", "bathtub", "double_sink"]
+        },
+        {
+          "room_id": "bathroom_2",
+          "type": "bathroom",
+          "dimensions": { "length": 8, "width": 7 },
+          "features": ["shower", "single_sink"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase_access",
+          "type": "stairs",
+          "location": "near_entrance"
+        },
+        {
+          "opening_id": "window_1",
+          "type": "window",
+          "dimensions": { "height": 8, "width": 5 },
+          "features": ["floor_to_ceiling"]
+        }
+      ]
+    },
+    {
+      "level_id": "garden_level",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_id": "garden_gate",
+          "type": "gate",
+          "location": "front"
+        }
+      ]
+    }
+  ],
+  "features": {
+    "garden": {
+      "area": 500,
+      "features": ["lawn", "outdoor_furniture", "barbecue_area"]
+    },
+    "balconies": {
+      "count": 6,
+      "size_per_balcony": { "length": 8, "width": 4 }
+    },
+    "windows": {
+      "type": "floor_to_ceiling",
+      "count": 12
+    },
+    "vasthu_compliance": {
+      "kitchen_position": "southeast",
+      "bedrooms_position": "southwest_northeast"
+    }
+  },
+  "building_norm_compliance": {
+    "setback": true,
+    "height_restrictions": true,
+    "fire_safety": true
+  }
+}

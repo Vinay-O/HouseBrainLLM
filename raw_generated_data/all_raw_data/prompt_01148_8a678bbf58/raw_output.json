@@ -1,0 +1,100 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": {"length": 16, "width": 20},
+          "features": ["floor-to-ceiling windows", "Art Deco decor"],
+          "position": {"adjacent_to": ["central_courtyard"], "direction": "north"}
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["natural light", "ventilation"],
+          "position": {"adjacent_to": ["central_courtyard"], "direction": "east"}
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["ventilation", "storage"],
+          "position": {"adjacent_to": ["dining_room"], "direction": "south"}
+        },
+        {
+          "room_id": "master_bedroom",
+          "dimensions": {"length": 16, "width": 18},
+          "features": ["floor-to-ceiling windows", "attached_bathroom"],
+          "position": {"adjacent_to": ["central_courtyard"], "direction": "west"}
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": {"length": 14, "width": 14},
+          "features": ["natural light", "attached_bathroom"],
+          "position": {"adjacent_to": ["central_courtyard"], "direction": "north"}
+        },
+        {
+          "room_id": "bedroom_3",
+          "dimensions": {"length": 14, "width": 14},
+          "features": ["natural light", "attached_bathroom"],
+          "position": {"adjacent_to": ["central_courtyard"], "direction": "east"}
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": {"length": 14, "width": 14},
+          "features": ["natural light", "attached_bathroom"],
+          "position": {"adjacent_to": ["central_courtyard"], "direction": "south"}
+        },
+        {
+          "room_id": "two_car_garage",
+          "dimensions": {"length": 20, "width": 15},
+          "features": ["storage", "access_from_side"],
+          "position": {"adjacent_to": ["bedroom_4"], "direction": "west"}
+        },
+        {
+          "room_id": "central_courtyard",
+          "dimensions": {"length": 20, "width": 20},
+          "features": ["open_space", "garden"],
+          "position": {"centered": true}
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": {"length": 8, "width": 4},
+          "position": {"facing": "north"}
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimensions": {"length": 10, "width": 6},
+          "position": {"room": "living_room", "direction": "west"}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "study_room",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["natural light", "ventilation"],
+          "position": {"adjacent_to": ["central_courtyard"], "direction": "north"}
+        },
+        {
+          "room_id": "guest_bedroom",
+          "dimensions": {"length": 14, "width": 12},
+          "features": ["attached_bathroom", "balcony"],
+          "position": {"adjacent_to": ["central_courtyard"], "direction": "east"}
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "study_window",
+          "type": "window",
+          "dimensions": {"length": 8, "width": 5},
+          "position": {"room": "study_room", "direction": "east"}
+        }
+      ]
+    }
+  ]}

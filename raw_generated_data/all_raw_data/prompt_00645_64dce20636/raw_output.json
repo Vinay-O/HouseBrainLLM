@@ -1,0 +1,121 @@
+{
+  "levels": [
+    {
+      "level_id": "ground",
+      "rooms": [
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["gas_stove", "sink", "cabinets"],
+          "accessibility": true
+        },
+        {
+          "room_id": "dining_room",
+          "type": "dining_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["dining_table", "chairs"]
+        },
+        {
+          "room_id": "living_room",
+          "type": "living_room",
+          "dimensions": { "length": 15, "width": 14 },
+          "features": ["sofa_set", "tv_unit", "coffee_table"]
+        },
+        {
+          "room_id": "library",
+          "type": "library",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["bookshelves", "reading_chair", "study_desks"]
+        },
+        {
+          "room_id": "master_bedroom",
+          "type": "bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["king_size_bed", "wardrobe", "attached_bathroom"],
+          "accessibility": true
+        },
+        {
+          "room_id": "guest_bedroom",
+          "type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["queen_size_bed", "wardrobe", "attached_bathroom"]
+        },
+        {
+          "room_id": "maids_room",
+          "type": "bedroom",
+          "dimensions": { "length": 12, "width": 8 },
+          "features": ["single_bed", "wardrobe", "attached_bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entry",
+          "type": "entry",
+          "dimensions": { "length": 3, "width": 7 },
+          "direction": "north"
+        },
+        {
+          "opening_id": "back_entry",
+          "type": "entry",
+          "dimensions": { "length": 3, "width": 7 }
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 4 },
+          "room": "kitchen"
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimensions": { "length": 6, "width": 6 },
+          "room": "living_room"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["king_size_bed", "wardrobe", "attached_bathroom"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["king_size_bed", "wardrobe", "attached_bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony_1",
+          "type": "balcony",
+          "dimensions": { "length": 5, "width": 3 },
+          "room": "bedroom_1"
+        },
+        {
+          "opening_id": "balcony_2",
+          "type": "balcony",
+          "dimensions": { "length": 5, "width": 3 },
+          "room": "bedroom_2"
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_id": "terrace",
+          "type": "terrace",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["outdoor_furniture", "barbecue_grill"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

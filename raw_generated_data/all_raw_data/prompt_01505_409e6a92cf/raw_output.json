@@ -1,0 +1,83 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["wheelchair_accessible", "large_windows"],
+          "position": "front"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["modular_kitchen", "wheelchair_accessible"],
+          "position": "rear_left"
+        },
+        {
+          "room_id": "bedroom",
+          "dimensions": { "length": 20, "width": 16 },
+          "features": ["wheelchair_accessible", "walk_in_closet"],
+          "position": "front_right"
+        },
+        {
+          "room_id": "private_gym",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["gym_equipment", "wheelchair_accessible"],
+          "position": "rear_right"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "dimensions": { "length": 4, "width": 8 },
+          "features": ["wheelchair_ramp", "bohemian_style_doors"]
+        },
+        {
+          "opening_id": "garden_access",
+          "dimensions": { "length": 6, "width": 6 },
+          "features": ["french_windows", "access_to_garden"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["wheelchair_accessible", "large_windows"],
+          "position": "front"
+        }
+      ],
+      "openings": []
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_id": "meditation_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["wheelchair_accessible", "large_windows"],
+          "position": "front"
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "garden": {
+    "dimensions": { "length": 80, "width": 50 },
+    "features": ["bohemian_landscaping", "outdoor_seating"]
+  },
+  "accessibility": {
+    "wheelchair_ramp": true,
+    "wide_doors": true,
+    "adjustable_height_features": true
+  },
+  "vastu_compliance": {
+    "entrance_direction": "north",
+    "kitchen_position": "southeast",
+    "bedroom_position": "southwest"
+  }
+}

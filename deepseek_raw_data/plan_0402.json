@@ -1,0 +1,216 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 2500.0,
+      "style": "Brutalist"
+    },
+    "plot": {
+      "width": 100,
+      "height": 100
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 300.0
+      },
+      {
+        "type": "living_room",
+        "area": 400.0
+      },
+      {
+        "type": "kitchen",
+        "area": 200.0
+      },
+      {
+        "type": "bathroom",
+        "area": 100.0
+      },
+      {
+        "type": "gym",
+        "area": 300.0
+      },
+      {
+        "type": "courtyard",
+        "area": 1200.0
+      }
+    ]
+  },
+  "total_area": 2500.0,
+  "construction_cost": 300000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 25,
+            "y": 25,
+            "width": 50,
+            "height": 50
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 25
+            },
+            {
+              "wall": "south",
+              "position": 25
+            },
+            {
+              "wall": "east",
+              "position": 25
+            },
+            {
+              "wall": "west",
+              "position": 25
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 50
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5
+            },
+            {
+              "wall": "east",
+              "position": 25
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12.5
+            },
+            {
+              "wall": "west",
+              "position": 12.5
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 50,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5
+            },
+            {
+              "wall": "east",
+              "position": 12.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12.5
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 75,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 12.5
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 75,
+            "y": 0,
+            "width": 25,
+            "height": 50
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5
+            },
+            {
+              "wall": "west",
+              "position": 25
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12.5
+            },
+            {
+              "wall": "east",
+              "position": 12.5
+            }
+          ]
+        },
+        {
+          "id": "gym",
+          "type": "gym",
+          "bounds": {
+            "x": 75,
+            "y": 50,
+            "width": 25,
+            "height": 50
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5
+            },
+            {
+              "wall": "west",
+              "position": 12.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12.5
+            },
+            {
+              "wall": "east",
+              "position": 12.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

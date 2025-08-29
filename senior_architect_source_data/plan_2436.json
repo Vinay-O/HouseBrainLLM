@@ -1,0 +1,332 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2800,
+      "style": "Deconstructivist"
+    },
+    "plot": {
+      "location": "Alpine riverside",
+      "climate": "Heavy snow loads",
+      "floodRisk": "High"
+    },
+    "roomBreakdown": [
+      {
+        "type": "yoga_studio",
+        "area": 400,
+        "features": [
+          "heated_floors",
+          "south_glass_wall"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "area": 300,
+        "features": [
+          "accessible_bathroom"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "area": 250,
+        "features": []
+      },
+      {
+        "type": "kitchen",
+        "area": 200,
+        "features": [
+          "thermal_mass_wall"
+        ]
+      },
+      {
+        "type": "living_room",
+        "area": 350,
+        "features": [
+          "south_glass_wall",
+          "thermal_mass_floor"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "area": 150,
+        "features": [
+          "accessible"
+        ]
+      },
+      {
+        "type": "utility",
+        "area": 150,
+        "features": []
+      },
+      {
+        "type": "glass_connector",
+        "area": 1000,
+        "features": [
+          "flood_resistant"
+        ]
+      }
+    ]
+  },
+  "total_area": 2800.0,
+  "construction_cost": 785000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "pilotis_base",
+          "type": "foundation",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 80,
+            "height": 35
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "yoga_studio",
+          "type": "yoga_studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "full_height"
+            }
+          ]
+        },
+        {
+          "id": "glass_connector_1",
+          "type": "connector",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "full_height"
+            },
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "full_height"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 25,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 12.5,
+              "size": "full_height"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 14,
+            "width": 25,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 12.5,
+              "size": "standard"
+            }
+          ]
+        },
+        {
+          "id": "glass_connector_2",
+          "type": "connector",
+          "bounds": {
+            "x": 55,
+            "y": 0,
+            "width": 10,
+            "height": 22
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 11
+            },
+            {
+              "wall": "west",
+              "position": 11
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "full_height"
+            },
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "full_height"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 65,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 65,
+            "y": 15,
+            "width": 15,
+            "height": 7
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 12.5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "standard"
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 32.5,
+            "width": 20,
+            "height": 2.5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 22,
+            "width": 12,
+            "height": 13
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

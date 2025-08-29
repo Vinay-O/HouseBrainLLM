@@ -1,0 +1,57 @@
+{  
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "dimensions": {"length": 8, "width": 6},
+          "description": "Open space with reception area and storage. Designed to ensure smooth flow according to Vastu principles by orienting entrance in the north-east direction."
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": {"length": 12, "width": 10},
+          "description": "Mediterranean style living room with open space for family gatherings. Features natural ventilation and daylight through large windows oriented east to catch morning light."
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {"length": 8, "width": 6},
+          "description": "Modern kitchen with efficient work triangle layout, positioned in the southeast corner for balanced energy. Utilizes cost-effective local materials."
+        },
+        {
+          "room_type": "servant_quarters",
+          "dimensions": {"length": 10, "width": 8},
+          "description": "Separate servant's quarters integrated into ground floor with essential facilities and access to service balcony."
+        },
+        {
+          "room_type": "balcony",
+          "dimensions": {"length": 4, "width": 6},
+          "description": "Adjacent to the living room for relaxation. Features cost-effective design elements in Mediterranean style."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "entrance_door",
+          "location": "north-east",
+          "dimensions": {"height": 7, "width": 3},
+          "description": "Main entrance door ensuring Vastu compliance with north-east alignment."
+        },
+        {
+          "opening_type": "windows",
+          "locations": [
+            {"room": "living_room", "direction": "east"},
+            {"room": "kitchen", "direction": "south"}
+          ],
+          "dimensions": {"height": 4, "width": 3},
+          "description": "Windows placed to maximize natural light and ventilation."
+        },
+        {
+          "opening_type": "balcony_door",
+          "location": "living_room",
+          "dimensions": {"height": 6, "width": 3.5},
+          "description": "Connects living room with balcony."
+        }
+      ]
+    }
+  ]
+}

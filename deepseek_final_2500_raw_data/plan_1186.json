@@ -1,0 +1,202 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Experimental A-Frame with Japanese Zen"
+    },
+    "plot": {
+      "shape": "Elongated Rectangle",
+      "orientation": "East-West Linear",
+      "climate": "Desert with Extreme Temperatures",
+      "adjacency": "Railway"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "meditation_pavilion",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 285000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_ramp",
+          "type": "corridor",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 40
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 20,
+              "type": "sliding",
+              "material": "aluminum"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10,
+              "type": "pocket",
+              "material": "wood"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "type": "triple_glazed_argon",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5,
+              "type": "pocket",
+              "material": "wood"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "type": "triple_glazed_argon",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5,
+              "type": "standard",
+              "material": "wood"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "type": "triple_glazed_argon",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4,
+              "type": "pocket",
+              "material": "wood"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "type": "triple_glazed_argon",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "meditation_pavilion",
+          "type": "other",
+          "bounds": {
+            "x": 30,
+            "y": 8,
+            "width": 10,
+            "height": 32
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 16,
+              "type": "sliding",
+              "material": "glass"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "type": "triple_glazed_argon",
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "position": 5,
+              "type": "triple_glazed_argon",
+              "size": "large"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

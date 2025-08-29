@@ -1,0 +1,178 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Deconstructivist"
+    },
+    "plot": {
+      "description": "Windswept coastal bluff in a desert with extreme temperatures, neighboring properties present."
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "description": "Private sanctuaries with north-facing windows for consistent, soft light."
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "description": "Includes a main bathroom and an ensuite for the primary bedroom."
+      },
+      {
+        "type": "sauna",
+        "count": 1,
+        "description": "Featuring panoramic, north-facing windows for views and light."
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Open-plan kitchen integrated with the living area."
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Open-plan living area with a north-facing aspect."
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "description": "Houses battery storage and inverter for the wind turbine system."
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 288000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            "entry_door"
+          ],
+          "windows": [
+            "north_window_wall"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        },
+        {
+          "id": "bedroom_2_primary",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "bathroom_2_ensuite",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_door"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        },
+        {
+          "id": "sauna",
+          "type": "sauna",
+          "bounds": {
+            "x": 35,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "north_panoramic_window"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            "external_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

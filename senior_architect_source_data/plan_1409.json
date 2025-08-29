@@ -1,0 +1,369 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2400,
+      "style": "Prairie"
+    },
+    "plot": {
+      "shape": "elongated_rectangle",
+      "orientation": "south_facing",
+      "climate": "tropical_monsoon",
+      "adjacency": "railway"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "specialFeatures": [
+          "chef_kitchen",
+          "wood_fired_oven"
+        ]
+      },
+      {
+        "type": "office",
+        "specialFeatures": [
+          "mezzanine",
+          "home_business"
+        ]
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entryway",
+          "type": "entryway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 4,
+                "y": 0
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 24,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 8,
+                "y": 10
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "large_prairie",
+              "position": {
+                "x": 16,
+                "y": 0
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "chefs_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 32,
+                "y": 8
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "position": {
+                "x": 40,
+                "y": 0
+              },
+              "orientation": "south"
+            }
+          ],
+          "special_features": [
+            "wood_fired_oven",
+            "island"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 32,
+            "y": 16,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 32,
+                "y": 23
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "position": {
+                "x": 40,
+                "y": 30
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 8,
+                "y": 10
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "position": {
+                "x": 8,
+                "y": 24
+              },
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 24,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 8,
+                "y": 29
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "high_vent",
+              "position": {
+                "x": 4,
+                "y": 34
+              },
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "laundry_mudroom",
+          "type": "utility",
+          "bounds": {
+            "x": 16,
+            "y": 20,
+            "width": 16,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 24,
+                "y": 20
+              }
+            },
+            {
+              "type": "exterior",
+              "position": {
+                "x": 24,
+                "y": 30
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 16
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "large_prairie",
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "orientation": "south"
+            },
+            {
+              "type": "casement",
+              "position": {
+                "x": 0,
+                "y": 8
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 6
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "high_vent",
+              "position": {
+                "x": 26,
+                "y": 0
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "walk_in_closet",
+          "type": "closet",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 18
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mezzanine_office",
+          "type": "office",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 16,
+            "height": 30
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 32,
+                "y": 15
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "large_prairie",
+              "position": {
+                "x": 40,
+                "y": 0
+              },
+              "orientation": "south"
+            },
+            {
+              "type": "clerestory",
+              "position": {
+                "x": 40,
+                "y": 30
+              },
+              "orientation": "north"
+            }
+          ],
+          "special_features": [
+            "open_to_below",
+            "view_to_living_room"
+          ]
+        }
+      ]
+    }
+  ]
+}

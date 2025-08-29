@@ -1,0 +1,313 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 7500,
+      "style": "Traditional Kerala Nalukettu"
+    },
+    "plot": {
+      "width": 25,
+      "depth": 100,
+      "orientation": "east",
+      "location": "Allahabad confluence, railway-side"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "home_office",
+        "count": 2
+      },
+      {
+        "type": "puja_room",
+        "count": 1
+      },
+      {
+        "type": "meditation_pavilion",
+        "count": 1
+      },
+      {
+        "type": "courtyard",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 7500.0,
+  "construction_cost": 3375000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "earth_sheltered_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            "north_entry",
+            "south_to_courtyard"
+          ],
+          "windows": [
+            "east_window_1",
+            "east_window_2"
+          ]
+        },
+        {
+          "id": "earth_utility",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "west_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "earth_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 10,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "east_door"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "nalukettu_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 25,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "north_to_dining",
+            "south_to_living",
+            "east_to_meditation",
+            "west_to_office"
+          ],
+          "windows": []
+        },
+        {
+          "id": "main_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            "south_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "dining_hall",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            "north_door",
+            "east_to_courtyard"
+          ],
+          "windows": [
+            "west_window"
+          ]
+        },
+        {
+          "id": "home_office_1",
+          "type": "home_office",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            "east_to_courtyard"
+          ],
+          "windows": [
+            "west_window",
+            "north_window"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 20,
+            "y": 40,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            "west_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "water_feature_meditation",
+          "type": "meditation_pavilion",
+          "bounds": {
+            "x": 5,
+            "y": 45,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "west_to_courtyard"
+          ],
+          "windows": [
+            "east_window_row",
+            "north_window_row"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 60,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            "south_door"
+          ],
+          "windows": [
+            "east_window",
+            "west_window",
+            "north_window"
+          ]
+        },
+        {
+          "id": "master_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 80,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            "south_door"
+          ],
+          "windows": [
+            "west_vent"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 60,
+            "width": 13,
+            "height": 20
+          },
+          "doors": [
+            "north_door"
+          ],
+          "windows": [
+            "east_window",
+            "west_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 80,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            "north_door"
+          ],
+          "windows": [
+            "east_vent"
+          ]
+        },
+        {
+          "id": "home_office_2",
+          "type": "home_office",
+          "bounds": {
+            "x": 5,
+            "y": 80,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "west_door",
+            "east_door"
+          ],
+          "windows": [
+            "north_window_row",
+            "south_window_row"
+          ]
+        }
+      ]
+    }
+  ]
+}

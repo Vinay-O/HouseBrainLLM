@@ -1,0 +1,176 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 2000.0,
+      "style": "Industrial"
+    },
+    "plot": {
+      "width": 100.0,
+      "height": 100.0
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 300.0
+      },
+      {
+        "type": "kitchen",
+        "area": 150.0
+      },
+      {
+        "type": "bedroom",
+        "area": 250.0
+      },
+      {
+        "type": "bathroom",
+        "area": 100.0
+      },
+      {
+        "type": "gym",
+        "area": 200.0
+      }
+    ]
+  },
+  "total_area": 2000.0,
+  "construction_cost": 240000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 20.0,
+            "y": 30.0,
+            "width": 20.0,
+            "height": 15.0
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 40.0,
+            "y": 30.0,
+            "width": 15.0,
+            "height": 10.0
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 5.0
+            }
+          ]
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40.0,
+            "y": 40.0,
+            "width": 10.0,
+            "height": 10.0
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5.0
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "gym_0",
+          "type": "gym",
+          "bounds": {
+            "x": 20.0,
+            "y": 0.0,
+            "width": 20.0,
+            "height": 15.0
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20.0,
+            "y": 30.0,
+            "width": 25.0,
+            "height": 10.0
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12.5
+            },
+            {
+              "wall": "east",
+              "position": 5.0
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45.0,
+            "y": 30.0,
+            "width": 10.0,
+            "height": 10.0
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5.0
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

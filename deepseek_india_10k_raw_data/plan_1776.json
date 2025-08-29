@@ -1,0 +1,262 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 2000,
+      "style": "Heritage Haveli"
+    },
+    "plot": {
+      "orientation": "east",
+      "location": "Surat diamond district",
+      "notes": "Penthouse terrace, east-facing sunrise alignment, termite and pest control using traditional methods"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "courtyard",
+        "count": 3,
+        "area": 600
+      },
+      {
+        "type": "meditation_pavilion",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 150
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "future_expansion",
+        "count": 1,
+        "area": 250
+      }
+    ]
+  },
+  "total_area": 2000.0,
+  "construction_cost": 850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            "north_archway",
+            "south_archway",
+            "east_archway",
+            "west_archway"
+          ],
+          "windows": [],
+          "notes": "Central courtyard with water feature, greywater recycling for irrigation and cleaning"
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            "main_courtyard"
+          ],
+          "windows": [
+            "east_window"
+          ],
+          "notes": "Heritage brick archways with lime mortar joints, east-facing for sunrise"
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "main_courtyard"
+          ],
+          "windows": [
+            "east_window"
+          ],
+          "notes": "Future family expansion ready"
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 30,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "secondary_courtyard"
+          ],
+          "windows": [
+            "east_window"
+          ],
+          "notes": "Future family expansion ready"
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "service_courtyard"
+          ],
+          "windows": [
+            "east_window"
+          ],
+          "notes": "Eco-friendly construction, greywater system connected"
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "service_courtyard"
+          ],
+          "windows": [],
+          "notes": "Greywater recycling system"
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "service_courtyard"
+          ],
+          "windows": [],
+          "notes": "Greywater recycling system"
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "service_courtyard"
+          ],
+          "windows": [],
+          "notes": "Greywater recycling and storage system"
+        },
+        {
+          "id": "service_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 15
+          },
+          "doors": [
+            "kitchen",
+            "bathroom_1",
+            "bathroom_2",
+            "utility"
+          ],
+          "windows": [],
+          "notes": "Service courtyard for utilities and greywater system"
+        },
+        {
+          "id": "secondary_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 50,
+            "y": 40,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "guest_bedroom",
+            "meditation_pavilion"
+          ],
+          "windows": [],
+          "notes": "Secondary courtyard with garden views"
+        },
+        {
+          "id": "meditation_pavilion",
+          "type": "meditation_pavilion",
+          "bounds": {
+            "x": 70,
+            "y": 40,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "secondary_courtyard"
+          ],
+          "windows": [
+            "east_window",
+            "garden_view_window"
+          ],
+          "notes": "Pavilion with water features and garden views, east-facing for sunrise meditation"
+        },
+        {
+          "id": "future_expansion",
+          "type": "future_expansion",
+          "bounds": {
+            "x": 70,
+            "y": 15,
+            "width": 15,
+            "height": 25
+          },
+          "doors": [],
+          "windows": [],
+          "notes": "Flexible space for future family needs, earthquake-resistant construction with flexible joints"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,549 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Traditional Chettinad with Jaipur influences"
+    },
+    "plot": {
+      "shape": "Rectangular",
+      "slope": "Mountain slope",
+      "location": "Jaipur old city, inner plot",
+      "challenges": [
+        "Sloping terrain",
+        "Coastal cyclone protection"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 180
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 80
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "home_office",
+        "count": 1,
+        "area": 80
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "area": 40
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "storage",
+        "count": 1,
+        "area": 60
+      },
+      {
+        "type": "verandah",
+        "count": 1,
+        "area": 40
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 1920000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 0
+              },
+              "to": "exterior"
+            },
+            {
+              "position": {
+                "x": 4,
+                "y": 5
+              },
+              "to": "living_room"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Sacred threshold design (Kolam)",
+            "Traditional columns"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 16,
+            "height": 12.5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 0
+              },
+              "to": "entrance_verandah"
+            },
+            {
+              "position": {
+                "x": 16,
+                "y": 6
+              },
+              "to": "courtyard"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 6
+              },
+              "to": "bedroom_1"
+            },
+            {
+              "position": {
+                "x": 8,
+                "y": 12.5
+              },
+              "to": "dining_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 12,
+                "y": 0
+              },
+              "length": 4,
+              "to": "exterior"
+            }
+          ],
+          "features": [
+            "Athangudi tile flooring",
+            "Traditional lime plaster walls"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": -12,
+            "y": 5,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "to": "living_room"
+            },
+            {
+              "position": {
+                "x": -12,
+                "y": 8
+              },
+              "to": "bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": -12,
+                "y": 2
+              },
+              "length": 4,
+              "to": "exterior"
+            }
+          ],
+          "features": [
+            "Built-in storage",
+            "Athangudi tiles"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": -12,
+            "y": 0,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 2.5
+              },
+              "to": "bedroom_1"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Copper water storage",
+            "Traditional brass fixtures"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 17.5,
+            "width": 12,
+            "height": 8.5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 8,
+                "y": 0
+              },
+              "to": "living_room"
+            },
+            {
+              "position": {
+                "x": 12,
+                "y": 4
+              },
+              "to": "courtyard"
+            },
+            {
+              "position": {
+                "x": 6,
+                "y": 8.5
+              },
+              "to": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 4
+              },
+              "length": 4,
+              "to": "exterior"
+            }
+          ],
+          "features": [
+            "Athangudi tile flooring",
+            "Traditional wood furniture"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 17.5,
+            "width": 10,
+            "height": 8.5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 4
+              },
+              "to": "dining_room"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 4
+              },
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 8.5
+              },
+              "length": 4,
+              "to": "exterior"
+            }
+          ],
+          "features": [
+            "Stone countertops",
+            "Organic kitchen garden access",
+            "Traditional companion planting beds"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 22,
+            "y": 5,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "to": "courtyard"
+            },
+            {
+              "position": {
+                "x": 12,
+                "y": 8
+              },
+              "to": "bathroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 12,
+                "y": 2
+              },
+              "length": 4,
+              "to": "exterior"
+            }
+          ],
+          "features": [
+            "Built-in storage",
+            "Athangudi tiles"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 34,
+            "y": 5,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 2.5
+              },
+              "to": "bedroom_2"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Copper water storage",
+            "Traditional brass fixtures"
+          ]
+        },
+        {
+          "id": "home_office_pod",
+          "type": "home_office",
+          "bounds": {
+            "x": 22,
+            "y": 15,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 3
+              },
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 4,
+                "y": 6
+              },
+              "length": 4,
+              "to": "exterior"
+            },
+            {
+              "position": {
+                "x": 8,
+                "y": 3
+              },
+              "length": 4,
+              "to": "exterior"
+            }
+          ],
+          "features": [
+            "Soundproofing",
+            "Video conferencing setup",
+            "Separate AC unit"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 3
+              },
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 3,
+                "y": 6
+              },
+              "length": 2,
+              "to": "exterior"
+            }
+          ],
+          "features": [
+            "Traditional altar",
+            "Brass lamps",
+            "Marble flooring"
+          ]
+        },
+        {
+          "id": "water_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 30,
+            "y": 21,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 3,
+                "y": 0
+              },
+              "to": "courtyard"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Copper water tank with traditional designs",
+            "Filtration system"
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 16,
+            "y": 5,
+            "width": 16,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "to": "living_room"
+            },
+            {
+              "position": {
+                "x": 8,
+                "y": 10
+              },
+              "to": "dining_room"
+            },
+            {
+              "position": {
+                "x": 16,
+                "y": 5
+              },
+              "to": "kitchen"
+            },
+            {
+              "position": {
+                "x": 16,
+                "y": 5
+              },
+              "to": "bedroom_2"
+            },
+            {
+              "position": {
+                "x": 8,
+                "y": 0
+              },
+              "to": "home_office_pod"
+            },
+            {
+              "position": {
+                "x": 14,
+                "y": 0
+              },
+              "to": "puja_room"
+            },
+            {
+              "position": {
+                "x": 14,
+                "y": 10
+              },
+              "to": "water_storage"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Central open space",
+            "Athangudi tile patterns",
+            "Traditional plants",
+            "Water feature"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 3,
+      "totalArea": 7200,
+      "style": "Scandinavian Hygge"
+    },
+    "plot": {
+      "type": "desert_plateau",
+      "climate": "temperate_maritime",
+      "orientation": "south"
+    },
+    "roomBreakdown": [
+      {
+        "type": "yoga_studio",
+        "features": [
+          "heated_floors",
+          "panoramic_views"
+        ]
+      },
+      {
+        "type": "guest_suite",
+        "features": [
+          "private_bath",
+          "panoramic_views"
+        ]
+      },
+      {
+        "type": "solar_array",
+        "features": [
+          "battery_storage"
+        ]
+      }
+    ]
+  },
+  "total_area": 7200.0,
+  "construction_cost": 4320000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_hall",
+          "type": "entry_hall",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "main_entry"
+          ],
+          "windows": []
+        },
+        {
+          "id": "great_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 25,
+            "height": 30
+          },
+          "doors": [
+            "to_patio"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_pantry"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "guest_suite_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "east_wall_window"
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "garage_door"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            "to_balcony"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "from_bedroom"
+          ],
+          "windows": [
+            "east_wall_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "family_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 65,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "east_wall_window"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "yoga_studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 30
+          },
+          "doors": [
+            "to_terrace"
+          ],
+          "windows": [
+            "south_wall_window",
+            "east_wall_window",
+            "west_wall_window"
+          ]
+        },
+        {
+          "id": "mechanical_room",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "access_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "roof_terrace",
+          "type": "deck",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 40,
+            "height": 20
+          },
+          "doors": [
+            "from_studio"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

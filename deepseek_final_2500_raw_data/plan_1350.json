@@ -1,0 +1,303 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2200.0,
+      "style": "Earthship"
+    },
+    "plot": {
+      "shape": "circular",
+      "orientation": "diagonal to prevailing winds",
+      "climate": "alpine with heavy snow loads"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "home_theater",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 1
+      },
+      {
+        "type": "greenhouse",
+        "count": 1
+      },
+      {
+        "type": "deck",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 485000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "greenhouse_entrance",
+          "type": "greenhouse",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "wall": "north",
+              "position": 10.0
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_glass",
+              "wall": "south",
+              "position": 5.0,
+              "size": 5.0
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "east",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_glass",
+              "wall": "south",
+              "position": 10.0,
+              "size": 8.0
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "north",
+              "position": 6.0
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_glass",
+              "wall": "east",
+              "position": 6.0,
+              "size": 4.0
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 15,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "west",
+              "position": 6.0
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_glass",
+              "wall": "south",
+              "position": 7.0,
+              "size": 5.0
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 27,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "north",
+              "position": 4.0
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_cistern",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "east",
+              "position": 7.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "east",
+              "position": 5.0
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "home_theater",
+          "type": "home_theater",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [],
+          "features": [
+            "fiber_optic_star_ceiling"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 5,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "west",
+              "position": 6.0
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_glass",
+              "wall": "north",
+              "position": 6.0,
+              "size": 4.0
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 17,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "south",
+              "position": 4.0
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "deck",
+          "type": "deck",
+          "bounds": {
+            "x": 5,
+            "y": 17,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "wall": "north",
+              "position": 10.0
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

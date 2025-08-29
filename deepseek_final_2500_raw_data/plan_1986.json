@@ -1,0 +1,190 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Ultra-Modern Minimalist"
+    },
+    "plot": {
+      "orientation": "east-west",
+      "climate": "alpine_heavy_snow",
+      "features": [
+        "compact_urban_balcony",
+        "L_shape_wrap_garden"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "purpose": "master and guest accommodation"
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "purpose": "en-suite and guest"
+      },
+      {
+        "type": "music_room",
+        "count": 1,
+        "purpose": "acoustically isolated music space"
+      },
+      {
+        "type": "fitness_room",
+        "count": 1,
+        "purpose": "wellness and exercise"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "purpose": "open plan living"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "purpose": "modern kitchen with greywater system"
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 285000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 16
+          },
+          "doors": [
+            "south_glass_wall",
+            "east_garden_access"
+          ],
+          "windows": [
+            "north_full_height",
+            "west_panoramic"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "living_room_access"
+          ],
+          "windows": [
+            "south_above_counter"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "living_room_access",
+            "east_garden"
+          ],
+          "windows": [
+            "north_clerestory"
+          ]
+        },
+        {
+          "id": "master_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 14,
+            "y": 16,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "master_bedroom_access"
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 24,
+            "y": 12,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            "east_entry",
+            "bathroom_access"
+          ],
+          "windows": [
+            "south_vertical"
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 36,
+            "y": 12,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "guest_bedroom_access",
+            "hall_access"
+          ],
+          "windows": []
+        },
+        {
+          "id": "fitness_room",
+          "type": "fitness_room",
+          "bounds": {
+            "x": 0,
+            "y": 28,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            "garden_access",
+            "living_room_access"
+          ],
+          "windows": [
+            "east_full_glass",
+            "south_operable"
+          ]
+        },
+        {
+          "id": "music_room",
+          "type": "music_room",
+          "bounds": {
+            "x": 16,
+            "y": 28,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "soundproof_door"
+          ],
+          "windows": [
+            "acoustic_double_glazed"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{ "levels": [ {
+      "level_id": "ground_floor",
+      "rooms": [
+          {
+              "room_id": "living_area",
+              "shape": "rectangle",
+              "dimensions": {
+                  "length": 20,
+                  "width": 15
+              },
+              "features": ["open_plan", "high_ceiling"]
+          },
+          {
+              "room_id": "bedroom",
+              "shape": "square",
+              "dimensions": {
+                  "length": 15,
+                  "width": 15
+              },
+              "features": ["wardrobe", "balcony_access"]
+          },
+          {
+              "room_id": "kitchen",
+              "shape": "rectangle",
+              "dimensions": {
+                  "length": 12,
+                  "width": 10
+              },
+              "features": ["open_plan", "modular_storage"]
+          },
+          {
+              "room_id": "garage",
+              "shape": "rectangle",
+              "dimensions": {
+                  "length": 20,
+                  "width": 10
+              },
+              "features": ["two_car", "automated_door"]
+          }
+      ],
+      "openings": [
+          {
+              "opening_id": "main_entrance",
+              "type": "door",
+              "dimensions": {
+                  "length": 3.5,
+                  "width": 1
+              },
+              "location": "front"
+          },
+          {
+              "opening_id": "balcony_door",
+              "type": "door",
+              "dimensions": {
+                  "length": 2.5,
+                  "width": 1
+              },
+              "location": "bedroom"
+          },
+          {
+              "opening_id": "kitchen_window",
+              "type": "window",
+              "dimensions": {
+                  "length": 3,
+                  "width": 2
+              },
+              "location": "kitchen"
+          }
+      ],
+      "additional_features": [
+          "colonial_architecture",
+          "vastu_compliant_layout",
+          "two_car_garage",
+          "open_plan_kitchen_and_living_area"
+      ]
+    } ] }

@@ -1,0 +1,111 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "area_sqft": 300,
+          "location": { "x_min": 10, "y_min": 10, "x_max": 70, "y_max": 40 },
+          "windows": ["north", "east"],
+          "doorways": [{"side": "south", "to_balcony": true}]
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 150,
+          "location": { "x_min": 75, "y_min": 20, "x_max": 110, "y_max": 40 },
+          "windows": ["south"],
+          "doorways": [{"side": "east", "to_dining_room": true}]
+        },
+        {
+          "room_name": "Dining Room",
+          "area_sqft": 200,
+          "location": { "x_min": 115, "y_min": 10, "x_max": 165, "y_max": 40 },
+          "windows": ["east"],
+          "doorways": [{"side": "west", "to_kitchen": true}]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "balcony",
+          "area_sqft": 120,
+          "location": { "x_min": 75, "y_min": 45, "x_max": 165, "y_max": 60 }
+        },
+        {
+          "opening_type": "garage",
+          "area_sqft": 250,
+          "location": { "x_min": 10, "y_min": 45, "x_max": 70, "y_max": 80 }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom (BHK-1)",
+          "area_sqft": 250,
+          "location": { "x_min": 10, "y_min": 10, "x_max": 80, "y_max": 40 },
+          "windows": ["east", "south"],
+          "doorways": [{"side": "north", "to_balcony": true}]
+        },
+        {
+          "room_name": "Bedroom-2 (BHK-2)",
+          "area_sqft": 180,
+          "location": { "x_min": 90, "y_min": 15, "x_max": 140, "y_max": 40 },
+          "windows": ["south"],
+          "doorways": [{"side": "north", "to_balcony": true}]
+        },
+        {
+          "room_name": "Bedroom-3 (BHK-3)",
+          "area_sqft": 180,
+          "location": { "x_min": 90, "y_min": 45, "x_max": 140, "y_max": 70 },
+          "windows": ["south"],
+          "doorways": [{"side": "north", "to_balcony": true}]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "balcony",
+          "area_sqft": 120,
+          "location": { "x_min": 85, "y_min": 5, "x_max": 140, "y_max": 15 }
+        },
+        {
+          "opening_type": "balcony",
+          "area_sqft": 120,
+          "location": { "x_min": 90, "y_min": 75, "x_max": 140, "y_max": 85 }
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_name": "Bedroom-4 (BHK-4)",
+          "area_sqft": 170,
+          "location": { "x_min": 20, "y_min": 15, "x_max": 90, "y_max": 45 },
+          "windows": ["south", "east"],
+          "doorways": [{"side": "north", "to_balcony": true}]
+        },
+        {
+          "room_name": "Bedroom-5 (BHK-5)",
+          "area_sqft": 170,
+          "location": { "x_min": 95, "y_min": 20, "x_max": 145, "y_max": 45 },
+          "windows": ["south"],
+          "doorways": [{"side": "north", "to_balcony": true}]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "balcony",
+          "area_sqft": 120,
+          "location": { "x_min": 95, "y_min": 50, "x_max": 145, "y_max": 60 }
+        },
+        {
+          "opening_type": "terrace",
+          "area_sqft": 300,
+          "location": { "x_min": 20, "y_min": 50, "x_max": 145, "y_max": 80 }
+        }
+      ]
+    }
+  ]
+}

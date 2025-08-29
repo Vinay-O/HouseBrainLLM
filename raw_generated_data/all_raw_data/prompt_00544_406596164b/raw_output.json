@@ -1,0 +1,74 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "living",
+          "shape": "irregular",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["open-plan", "central courtyard access"],
+          "position": { "orientation": "north-west" }
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "shape": "irregular",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["open-plan", "adjacent to living room"],
+          "position": { "orientation": "north-east" }
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "shape": "rectangular",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wardrobe", "attached bathroom"],
+          "position": { "orientation": "south-west" }
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "shape": "rectangular",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wardrobe", "attached bathroom"],
+          "position": { "orientation": "south-east" }
+        },
+        {
+          "room_id": "courtyard",
+          "type": "open space",
+          "shape": "square",
+          "dimensions": { "length": 6, "width": 6 },
+          "features": ["central location", "garden area"],
+          "position": { "orientation": "center" }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 7 },
+          "position": { "orientation": "north", "adjacent_to": "living_room" }
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimensions": { "length": 2, "width": 4 },
+          "position": { "orientation": "east", "adjacent_to": "kitchen" }
+        },
+        {
+          "opening_id": "bedroom_1_window",
+          "type": "window",
+          "dimensions": { "length": 2, "width": 4 },
+          "position": { "orientation": "south", "adjacent_to": "bedroom_1" }
+        },
+        {
+          "opening_id": "bedroom_2_window",
+          "type": "window",
+          "dimensions": { "length": 2, "width": 4 },
+          "position": { "orientation": "west", "adjacent_to": "bedroom_2" }
+        }
+      ]
+    }
+  ]
+}

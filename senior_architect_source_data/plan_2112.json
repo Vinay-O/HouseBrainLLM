@@ -1,0 +1,279 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 2200,
+      "style": "Traditional Craftsman"
+    },
+    "plot": {
+      "topography": "desert plateau",
+      "orientation": "diagonal to prevailing winds",
+      "climate": "alpine with heavy snow loads",
+      "hazards": "wildfire zone"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 450
+      },
+      {
+        "type": "kitchen",
+        "area": 250
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "sauna",
+        "area": 150
+      },
+      {
+        "type": "performance_space",
+        "area": 600
+      },
+      {
+        "type": "mechanical",
+        "area": 250
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 685000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "performance_space",
+          "type": "performance_space",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            },
+            {
+              "wall": "north",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 8
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": 10
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            },
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4,
+              "size": 6
+            },
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 55,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 55,
+            "y": 8,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4,
+              "size": 6
+            },
+            {
+              "wall": "north",
+              "position": 4,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "sauna",
+          "type": "sauna",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": 12
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "size": 8
+            },
+            {
+              "wall": "west",
+              "position": 5,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "mechanical",
+          "type": "mechanical",
+          "bounds": {
+            "x": 45,
+            "y": 20,
+            "width": 18,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 9
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

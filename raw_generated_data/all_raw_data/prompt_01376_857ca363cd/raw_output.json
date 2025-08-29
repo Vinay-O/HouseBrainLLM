@@ -1,0 +1,139 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_foyer",
+          "dimensions": { "width": 10, "length": 8 },
+          "purpose": "foyer",
+          "accessibility_features": ["ramp", "wide_doors"]
+        },
+        {
+          "room_id": "living_room",
+          "dimensions": { "width": 20, "length": 15 },
+          "purpose": "living room",
+          "features": ["wheelchair_accessible", "minimalist_furniture"],
+          "openings": ["sliding_doors_to_balcony"]
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "width": 15, "length": 12 },
+          "purpose": "dining room",
+          "features": ["wheelchair_accessible", "modular_furniture"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "width": 15, "length": 12 },
+          "purpose": "kitchen",
+          "features": ["wheelchair_accessible", "modern_appliances", "island_counter"],
+          "openings": ["window_to_swimming_pool"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "width": 20, "length": 15 },
+          "purpose": "master bedroom",
+          "features": ["wheelchair_accessible", "walk_in_closet", "private_balcony"],
+          "openings": ["window_to_swimming_pool"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "width": 15, "length": 12 },
+          "purpose": "guest bedroom",
+          "features": ["wheelchair_accessible", "attached_bathroom"],
+          "openings": ["window_to_garden"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "width": 15, "length": 12 },
+          "purpose": "guest bedroom",
+          "features": ["wheelchair_accessible", "attached_bathroom"],
+          "openings": ["window_to_garden"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "width": 4, "height": 7 },
+          "accessibility_features": ["ramp", "wide_doors"]
+        },
+        {
+          "opening_id": "swimming_pool_access",
+          "type": "gate",
+          "dimensions": { "width": 6, "height": 6 },
+          "features": ["wheelchair_accessible"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "width": 20, "length": 15 },
+          "purpose": "bedroom",
+          "features": ["wheelchair_accessible", "walk_in_closet", "private_balcony"],
+          "openings": ["window_to_swimming_pool"]
+        },
+        {
+          "room_id": "bedroom_5",
+          "dimensions": { "width": 15, "length": 12 },
+          "purpose": "bedroom",
+          "features": ["wheelchair_accessible", "attached_bathroom"],
+          "openings": ["window_to_garden"]
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "width": 15, "length": 12 },
+          "purpose": "study room",
+          "features": ["wheelchair_accessible", "minimalist_furniture"],
+          "openings": ["window_to_garden"]
+        }
+      ],
+      "openings": []
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_id": "terrace",
+          "dimensions": { "width": 30, "length": 25 },
+          "purpose": "terrace",
+          "features": ["wheelchair_accessible", "outdoor_furniture"],
+          "openings": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "terrace_staircase",
+          "type": "staircase",
+          "dimensions": { "width": 4, "length": 10 },
+          "accessibility_features": ["wheelchair_accessible"]
+        }
+      ]
+    }
+  ],
+  "outdoor_features": [
+    {
+      "feature_id": "swimming_pool",
+      "dimensions": { "width": 25, "length": 40 },
+      "features": ["wheelchair_accessible_ramps", "minimalist_design"]
+    },
+    {
+      "feature_id": "garden",
+      "dimensions": { "width": 15, "length": 30 },
+      "features": ["wheelchair_accessible_paths", "native_plants"]
+    }
+  ],
+  "vasthu_compliance": [
+    {
+      "principle": "direction",
+      "implementation": "Bedrooms and study rooms are arranged in the northwest direction for positive energy flow."
+    },
+    {
+      "principle": "space_organization",
+      "implementation": "The swimming pool is placed in the northeast direction as per Vastu principles for water elements."
+    }
+  ]
+}

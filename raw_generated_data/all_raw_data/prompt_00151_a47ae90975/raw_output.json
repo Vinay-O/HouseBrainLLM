@@ -1,0 +1,78 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Entrance Hall",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["natural lighting", "indirect lighting"]
+        },
+        {
+          "room_name": "Living Room",
+          "dimensions": { "length": 25, "width": 15 },
+          "features": ["floor-to-ceiling windows", "large open space", "ventilation"],
+          "opening_accessories": [
+            {"type": "window", "position": "north", "size": "full"},
+            {"type": "sliding_door", "position": "west", "size": "medium"}
+          ]
+        },
+        {
+          "room_name": "Dining Room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["direct access to kitchen", "natural lighting"],
+          "opening_accessories": [
+            {"type": "window", "position": "south", "size": "medium"}
+          ]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": { "length": 15, "width": 8 },
+          "features": ["modern appliances", "separate cooking area"]
+        }
+      ],
+      "openings": [
+        {"type": "door", "from_room": "Entrance Hall", "to_room": "Living Room"},
+        {"type": "window", "position": "east"}
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": { "length": 18, "width": 12 },
+          "features": ["ensuite bathroom", "floor-to-ceiling windows", "balcony"],
+          "opening_accessories": [
+            {"type": "window", "position": "north", "size": "full"},
+            {"type": "sliding_door", "position": "east", "size": "medium"}
+          ]
+        },
+        {
+          "room_name": "Second Bedroom",
+          "dimensions": { "length": 15, "width": 10 },
+          "features": ["ensuite bathroom", "floor-to-ceiling windows", "balcony"],
+          "opening_accessories": [
+            {"type": "window", "position": "south", "size": "full"},
+            {"type": "sliding_door", "position": "west", "size": "medium"}
+          ]
+        }
+      ],
+      "openings": []
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_name": "Servant's Quarters",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["simple design", "natural lighting"],
+          "opening_accessories": [{"type": "window", "position": "north", "size": "medium"}]
+        }
+      ],
+      "openings": [
+        {"type": "staircase", "from_level": "first_floor", "to_level": "second_floor"}
+      ]
+    }
+  ]
+}

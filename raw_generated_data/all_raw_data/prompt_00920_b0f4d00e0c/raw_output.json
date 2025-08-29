@@ -1,0 +1,139 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["sofa", "TV unit", "coffee table"],
+          "position": {"direction": "north"}
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["dining table", "chairs"],
+          "position": {"adjacent_to": "kitchen"}
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["modular_kitchen", "gas_stove", "sink"],
+          "position": {"direction": "southeast"}
+        },
+        {
+          "room_id": "master_bedroom",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["double_bed", "wardrobe", "attached_bathroom"],
+          "position": {"direction": "southwest"}
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["single_bed", "wardrobe", "attached_bathroom"],
+          "position": {"direction": "northwest"}
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["desk", "chair", "bookshelf"],
+          "position": {"adjacent_to": "master_bedroom"}
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": {"length": 8, "width": 4},
+          "position": {"direction": "north"}
+        },
+        {
+          "opening_id": "garden_access",
+          "type": "door",
+          "dimensions": {"length": 6, "width": 4},
+          "position": {"adjacent_to": "living_room"}
+        },
+        {
+          "opening_id": "terrace_access",
+          "type": "staircase",
+          "dimensions": {"length": 5, "width": 3},
+          "position": {"adjacent_to": "dining_room"}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": {"length": 14, "width": 12},
+          "features": ["double_bed", "wardrobe", "attached_bathroom"],
+          "position": {"direction": "southwest"}
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": {"length": 13, "width": 10},
+          "features": ["single_bed", "wardrobe", "attached_bathroom"],
+          "position": {"direction": "northwest"}
+        },
+        {
+          "room_id": "guest_room",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["double_bed", "wardrobe", "attached_bathroom"],
+          "position": {"direction": "northeast"}
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony_access",
+          "type": "door",
+          "dimensions": {"length": 8, "width": 4},
+          "position": {"adjacent_to": "bedroom_3"}
+        },
+        {
+          "opening_id": "terrace_stairs",
+          "type": "staircase",
+          "dimensions": {"length": 5, "width": 3},
+          "position": {"adjacent_to": "guest_room"}
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_5",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["single_bed", "wardrobe", "attached_bathroom"],
+          "position": {"direction": "southwest"}
+        },
+        {
+          "room_id": "bedroom_6",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["single_bed", "wardrobe", "attached_bathroom"],
+          "position": {"direction": "northwest"}
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "terrace_access",
+          "type": "door",
+          "dimensions": {"length": 8, "width": 4},
+          "position": {"adjacent_to": "bedroom_5"}
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_id": "terrace_entrance",
+          "type": "door",
+          "dimensions": {"length": 8, "width": 4},
+          "position": {"direction": "north"}
+        }
+      ],
+      "features": ["outdoor_furniture", "barbecue_area"]
+    }
+  ]
+}

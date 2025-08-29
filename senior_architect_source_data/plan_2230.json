@@ -1,0 +1,174 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 600,
+      "style": "Neo-Classical"
+    },
+    "plot": {
+      "orientation": "north",
+      "climate": "alpine",
+      "constraints": [
+        "heavy snow loads",
+        "compact urban balcony",
+        "partially underground"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "fitness_room",
+        "area": 150,
+        "description": "Home gym with space for weights, yoga, and cardio equipment"
+      },
+      {
+        "type": "wellness_room",
+        "area": 120,
+        "description": "Sauna, cold plunge pool, and meditation space"
+      },
+      {
+        "type": "pottery_studio",
+        "area": 180,
+        "description": "Studio with kilns, worktables, and clay storage"
+      },
+      {
+        "type": "bedroom",
+        "area": 100,
+        "description": "Master bedroom with minimal furnishings"
+      },
+      {
+        "type": "bathroom",
+        "area": 50,
+        "description": "Full bathroom with shower"
+      }
+    ]
+  },
+  "total_area": 600.0,
+  "construction_cost": 285000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "pottery_studio",
+          "type": "pottery_studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "wellness_room",
+          "type": "wellness_room",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "fitness_room",
+          "type": "fitness_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

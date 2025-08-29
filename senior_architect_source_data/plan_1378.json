@@ -1,0 +1,324 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2200.0,
+      "style": "Art Deco Revival"
+    },
+    "plot": {
+      "width": 25,
+      "depth": 22,
+      "orientation": "south",
+      "climate": "alpine with heavy snow loads",
+      "landscaping": "low-maintenance"
+    },
+    "roomBreakdown": [
+      {
+        "type": "atrium",
+        "area": 120.0
+      },
+      {
+        "type": "kitchen",
+        "area": 350.0
+      },
+      {
+        "type": "dining_room",
+        "area": 200.0
+      },
+      {
+        "type": "living_room",
+        "area": 300.0
+      },
+      {
+        "type": "bedroom",
+        "area": 250.0,
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "area": 150.0,
+        "count": 2
+      },
+      {
+        "type": "spa",
+        "area": 280.0
+      },
+      {
+        "type": "utility",
+        "area": 100.0
+      },
+      {
+        "type": "storage",
+        "area": 100.0
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 825000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "central_atrium",
+          "type": "atrium",
+          "bounds": {
+            "x": 8,
+            "y": 6,
+            "width": 9,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4.5
+            },
+            {
+              "wall": "south",
+              "position": 4.5
+            },
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4.5,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "main_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "formal_dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 17,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "main_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "home_spa",
+          "type": "spa",
+          "bounds": {
+            "x": 17,
+            "y": 12,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3,
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 13,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 19,
+            "y": 10,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3,
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 6,
+            "y": 10,
+            "width": 7,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 3.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_room",
+          "type": "storage",
+          "bounds": {
+            "x": 13,
+            "y": 10,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 3
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

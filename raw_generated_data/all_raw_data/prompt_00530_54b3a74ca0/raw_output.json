@@ -1,0 +1,99 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 5.0, "width": 4.0 },
+          "features": ["open_plan", "natural_light"]
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 3.5, "width": 3.0 },
+          "features": ["open_plan", "modular"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["wardrobe", "natural_ventilation"]
+        },
+        {
+          "room_type": "garage",
+          "dimensions": { "length": 6.0, "width": 3.0 },
+          "capacity": 2
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["adjacent_to_kitchen"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "main_entrance",
+          "dimensions": { "width": 1.2, "height": 2.4 },
+          "orientation": "north"
+        },
+        {
+          "type": "window",
+          "room": "living_room",
+          "dimensions": { "width": 1.5, "height": 1.8 }
+        },
+        {
+          "type": "window",
+          "room": "bedroom",
+          "dimensions": { "width": 1.2, "height": 1.5 }
+        },
+        {
+          "type": "ventilation",
+          "room": "kitchen",
+          "type_of_ventilation": "exhaust_fan"
+        }
+      ],
+      "additional_features": [
+        {
+          "feature_type": "staircase",
+          "orientation": "southeast",
+          "material": "concrete"
+        },
+        {
+          "feature_type": "courtyard",
+          "size": "small",
+          "purpose": "natural_light_and_ventilation"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["wardrobe", "balcony"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "room": "bedroom",
+          "dimensions": { "width": 1.2, "height": 1.5 }
+        },
+        {
+          "type": "balcony_door",
+          "room": "bedroom",
+          "dimensions": { "width": 1.2, "height": 2.4 }
+        }
+      ]
+    }
+  ],
+  "plot_characteristics": {
+    "plot_type": "corner_plot",
+    "orientation": "north_east"
+  },
+  "design_principles": {
+    "vastu_compliance": true,
+    "natural_light": true,
+    "ventilation": true
+  }
+}

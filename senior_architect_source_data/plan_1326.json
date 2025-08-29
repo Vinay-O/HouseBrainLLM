@@ -1,0 +1,166 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Experimental Curved Shell with Japanese Zen"
+    },
+    "plot": {
+      "shoreline_length": 50,
+      "climate": "alpine_heavy_snow",
+      "noise_source": "highway"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "area": 250
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "utility",
+        "area": 150
+      },
+      {
+        "type": "brewery",
+        "area": 500
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 875000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "main_entry",
+            "to_kitchen",
+            "to_brewery"
+          ],
+          "windows": [
+            "north_curved_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12.5,
+            "height": 20
+          },
+          "doors": [
+            "to_living_room",
+            "to_utility"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "brewery",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            "to_living_room",
+            "exterior_access"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32.5,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32.5,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 42.5,
+            "y": 0,
+            "width": 7.5,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_core",
+          "type": "utility",
+          "bounds": {
+            "x": 42.5,
+            "y": 10,
+            "width": 7.5,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

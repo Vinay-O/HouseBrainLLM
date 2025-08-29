@@ -1,0 +1,405 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 4500,
+      "style": "Andhra Traditional"
+    },
+    "plot": {
+      "area": 10000,
+      "orientation": "north",
+      "frontage": "limited"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 600
+      },
+      {
+        "type": "kitchen",
+        "area": 400
+      },
+      {
+        "type": "dining_room",
+        "area": 350
+      },
+      {
+        "type": "bedroom",
+        "area": 350
+      },
+      {
+        "type": "bedroom",
+        "area": 350
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 500
+      },
+      {
+        "type": "study",
+        "area": 250
+      },
+      {
+        "type": "puja_room",
+        "area": 150
+      },
+      {
+        "type": "courtyard",
+        "area": 800
+      },
+      {
+        "type": "chabutra",
+        "area": 200
+      },
+      {
+        "type": "utility",
+        "area": 150
+      },
+      {
+        "type": "passage",
+        "area": 350
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 13500000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "chabutra_entrance",
+          "type": "chabutra",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "foyer",
+          "type": "passage",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            },
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 30,
+            "width": 30,
+            "height": 40
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            },
+            {
+              "wall": "north",
+              "position": 15
+            },
+            {
+              "wall": "east",
+              "position": 20
+            },
+            {
+              "wall": "west",
+              "position": 20
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2.5
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 50,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2.5
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 30,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 45,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 2.5
+            }
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 35,
+            "y": 50,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 35,
+            "y": 60,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 70,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 70,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 85,
+            "width": 15,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5
+            },
+            {
+              "wall": "east",
+              "position": 2.5
+            }
+          ]
+        },
+        {
+          "id": "passage_1",
+          "type": "passage",
+          "bounds": {
+            "x": 5,
+            "y": 30,
+            "width": 30,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "passage_2",
+          "type": "passage",
+          "bounds": {
+            "x": 5,
+            "y": 65,
+            "width": 30,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 15
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

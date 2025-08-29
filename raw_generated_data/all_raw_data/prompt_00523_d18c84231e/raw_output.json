@@ -1,0 +1,94 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "dimensions": [12, 15],
+          "position": {"x": 5, "y": 5},
+          "vastu_rating": "good"
+        },
+        {
+          "room_name": "Dining Room",
+          "dimensions": [10, 10],
+          "position": {"x": 20, "y": 5},
+          "vastu_rating": "average"
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": [8, 10],
+          "position": {"x": 35, "y": 5},
+          "vastu_rating": "good"
+        },
+        {
+          "room_name": "Bedroom_1 (Master)",
+          "dimensions": [12, 12],
+          "position": {"x": 5, "y": 25},
+          "vastu_rating": "excellent"
+        },
+        {
+          "room_name": "Bathroom",
+          "dimensions": [8, 6],
+          "position": {"x": 5, "y": 39},
+          "vastu_rating": "good"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "room_name": "Living Room",
+          "dimensions": [4, 6],
+          "position": {"x": 5, "y": 10}
+        },
+        {
+          "opening_type": "Door",
+          "room_name": "Kitchen",
+          "dimensions": [3, 7],
+          "position": {"x": 38, "y": 12}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Bedroom_2 (Secondary)",
+          "dimensions": [10, 10],
+          "position": {"x": 5, "y": 5},
+          "vastu_rating": "good"
+        },
+        {
+          "room_name": "Study",
+          "dimensions": [8, 10],
+          "position": {"x": 20, "y": 5},
+          "vastu_rating": "average"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "room_name": "Bedroom_2 (Secondary)",
+          "dimensions": [4, 6],
+          "position": {"x": 5, "y": 10}
+        },
+        {
+          "opening_type": "Balcony",
+          "room_name": "Study",
+          "dimensions": [8, 5],
+          "position": {"x": 20, "y": 15}
+        }
+      ]
+    }
+  ],
+  "central_courtyard": {
+    "dimensions": [10, 10],
+    "position": {"x": 25, "y": 30},
+    "level_id": ["ground_floor", "first_floor"]
+  },
+  "vastu_compliance_notes": [
+    "Master bedroom positioned in the south-east for positive energy.",
+    "Kitchen aligned in the south-west to encourage fire and earth elements.",
+    "Open spaces (courtyard) strategically placed as per Vastu principles for natural light and ventilation."
+  ]
+}

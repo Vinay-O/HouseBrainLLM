@@ -1,0 +1,84 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall",
+          "area_sqft": 200,
+          "description": "Large entrance hall with eco-friendly lighting and natural ventilation. Vastu compliant entry.",
+          "adjacent_to": ["Main Corridor", "Lobby"]
+        },
+        {
+          "name": "Living Room",
+          "area_sqft": 300,
+          "description": "Open living area with sustainable materials, natural light, and integrated home theater space. West-facing windows for Vastu.",
+          "adjacent_to": ["Dining Area", "Home Office"]
+        },
+        {
+          "name": "Dining Area",
+          "area_sqft": 150,
+          "description": "Modern dining area adjoining the living room with eco-friendly finishes.",
+          "adjacent_to": ["Kitchen", "Living Room"]
+        },
+        {
+          "name": "Kitchen",
+          "area_sqft": 200,
+          "description": "Fully equipped kitchen with energy-efficient appliances and sustainable design elements.",
+          "adjacent_to": ["Dining Area", "Guest Bathroom"]
+        },
+        {
+          "name": "Guest Bathroom",
+          "area_sqft": 80,
+          "description": "Accessible guest bathroom with water-saving fixtures.",
+          "adjacent_to": ["Kitchen"]
+        },
+        {
+          "name": "Home Office",
+          "area_sqft": 150,
+          "description": "Dedicated home office space with natural light and soundproofing to maintain focus.",
+          "adjacent_to": ["Living Room", "Private Studio"]
+        },
+        {
+          "name": "Private Studio",
+          "area_sqft": 300,
+          "description": "Studio apartment area combining bedroom, living, and work spaces optimized for luxury living with eco-friendly design principles. West-facing windows ensure proper ventilation.",
+          "adjacent_to": ["Home Office", "Master Bathroom"]
+        },
+        {
+          "name": "Master Bedroom",
+          "area_sqft": 250,
+          "description": "Luxurious master bedroom integrated within the studio, featuring sustainable materials and natural light.",
+          "adjacent_to": ["Private Studio"]
+        },
+        {
+          "name": "Master Bathroom",
+          "area_sqft": 100,
+          "description": "Modern master bathroom with eco-friendly fixtures and efficient water usage.",
+          "adjacent_to": ["Private Studio", "Guest Bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "Door",
+          "location": "Entrance Hall to Main Corridor"
+        },
+        {
+          "type": "Window",
+          "location": "Living Room West-facing Wall",
+          "features": ["Natural light", "Ventilation"]
+        },
+        {
+          "type": "Window",
+          "location": "Home Office East-facing Wall",
+          "features": ["Natural light"]
+        },
+        {
+          "type": "Garage Door",
+          "location": "Vehicle Entrance",
+          "description": "Two-car garage access with eco-friendly design, including electric vehicle charging station."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 2200,
+      "style": "Prairie"
+    },
+    "plot": {
+      "description": "Forest clearing with mature oak trees in a continental climate with harsh winters",
+      "orientation": "South-facing for solar gain"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "area": 250
+      },
+      {
+        "type": "living_room",
+        "area": 400
+      },
+      {
+        "type": "dining_room",
+        "area": 200
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "study",
+        "area": 150
+      },
+      {
+        "type": "mudroom",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "wine_cellar",
+        "area": 200
+      },
+      {
+        "type": "tasting_room",
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 440000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "dining_room_north",
+            "mudroom_east"
+          ],
+          "windows": [
+            "living_south1",
+            "living_south2"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "living_room_west",
+            "kitchen_east"
+          ],
+          "windows": [
+            "dining_south1",
+            "dining_south2"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "dining_room_west",
+            "mudroom_south"
+          ],
+          "windows": [
+            "kitchen_south1",
+            "kitchen_south2"
+          ]
+        },
+        {
+          "id": "mudroom",
+          "type": "mudroom",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "kitchen_north",
+            "garage_east",
+            "exterior_south"
+          ],
+          "windows": []
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 16,
+            "height": 18
+          },
+          "doors": [
+            "hallway_south"
+          ],
+          "windows": [
+            "primary_south1",
+            "primary_south2"
+          ]
+        },
+        {
+          "id": "bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 20,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            "hallway_south"
+          ],
+          "windows": [
+            "bed1_south1",
+            "bed1_south2"
+          ]
+        },
+        {
+          "id": "bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 28,
+            "y": 20,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            "hallway_south"
+          ],
+          "windows": [
+            "bed2_south1",
+            "bed2_south2"
+          ]
+        },
+        {
+          "id": "bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 34,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "hallway_north"
+          ],
+          "windows": [
+            "bath1_north"
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 28,
+            "y": 34,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "hallway_north"
+          ],
+          "windows": [
+            "study_north"
+          ]
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 16,
+            "y": 30,
+            "width": 24,
+            "height": 4
+          },
+          "doors": [
+            "primary_bedroom_north",
+            "bedroom1_north",
+            "bedroom2_north",
+            "bathroom1_south",
+            "study_south",
+            "living_room_east"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "wine_cellar",
+          "type": "wine_cellar",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "tasting_room_east"
+          ],
+          "windows": []
+        },
+        {
+          "id": "tasting_room",
+          "type": "tasting_room",
+          "bounds": {
+            "x": 20,
+            "y": 5,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "wine_cellar_west",
+            "stairs_up"
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_room",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

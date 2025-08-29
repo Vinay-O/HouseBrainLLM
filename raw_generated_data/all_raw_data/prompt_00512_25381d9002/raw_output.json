@@ -1,0 +1,95 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "area_sqft": 150,
+          "features": ["wheelchair_accessible", "floor_to_ceiling_windows"]
+        },
+        {
+          "room_type": "living_room",
+          "area_sqft": 300,
+          "features": ["floor_to_ceiling_windows", "open_plan_layout"],
+          "connections": ["entrance_hall", "dining_area"]
+        },
+        {
+          "room_type": "dining_area",
+          "area_sqft": 200,
+          "features": ["large_window", "natural_lighting"],
+          "connections": ["living_room", "kitchen"]
+        },
+        {
+          "room_type": "kitchen",
+          "area_sqft": 150,
+          "features": ["modern_appliances", "wheelchair_accessible"],
+          "connections": ["dining_area"]
+        },
+        {
+          "room_type": "guest_bathroom",
+          "area_sqft": 80,
+          "features": ["wheelchair_accessible", "vastu_compliant_layout"],
+          "connections": ["entrance_hall"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "location": "living_room_to_dining_area"
+        },
+        {
+          "opening_type": "window",
+          "location": "living_room_main_window"
+        },
+        {
+          "opening_type": "glass_sliding_door",
+          "location": "kitchen_to_dining_area"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "master_bedroom",
+          "area_sqft": 300,
+          "features": ["en_suite_bathroom", "floor_to_ceiling_windows"],
+          "connections": ["hallway"]
+        },
+        {
+          "room_type": "bedroom_2",
+          "area_sqft": 250,
+          "features": ["floor_to_ceiling_windows", "wheelchair_accessible_en_suit"],
+          "connections": ["hallway"]
+        },
+        {
+          "room_type": "bedroom_3",
+          "area_sqft": 250,
+          "features": ["large_window", "natural_lighting"],
+          "connections": ["hallway"]
+        },
+        {
+          "room_type": "common_bathroom",
+          "area_sqft": 120,
+          "features": ["wheelchair_accessible", "vastu_compliant_layout"],
+          "connections": ["bedroom_2", "bedroom_3"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "location": "master_bedroom_to_hallway"
+        },
+        {
+          "opening_type": "floor_to_ceiling_window",
+          "location": "master_bedroom_main_window"
+        },
+        {
+          "opening_type": "window",
+          "location": "bedroom_3_window"
+        }
+      ]
+    }
+  ]
+}

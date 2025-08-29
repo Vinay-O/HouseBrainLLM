@@ -1,0 +1,215 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 1800,
+      "style": "Prairie Style"
+    },
+    "plot": {
+      "description": "Forest clearing with mature oak trees in a temperate maritime climate",
+      "orientation": "South-facing for solar gain"
+    },
+    "roomBreakdown": [
+      {
+        "type": "sunken_living_room",
+        "area": 300
+      },
+      {
+        "type": "library",
+        "area": 400
+      },
+      {
+        "type": "home_office",
+        "area": 200
+      },
+      {
+        "type": "kitchen",
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "area": 250
+      },
+      {
+        "type": "bathroom",
+        "area": 150
+      },
+      {
+        "type": "entry",
+        "area": 100
+      },
+      {
+        "type": "utility",
+        "area": 100
+      },
+      {
+        "type": "deck",
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 450000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "sunken_living",
+          "type": "sunken_living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "living_to_entry",
+            "living_to_library"
+          ],
+          "windows": [
+            "living_south_window1",
+            "living_south_window2"
+          ],
+          "flooring": "cork",
+          "finishes": "bamboo"
+        },
+        {
+          "id": "entry",
+          "type": "entry",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "main_entry",
+            "entry_to_living"
+          ],
+          "windows": [
+            "entry_window"
+          ],
+          "flooring": "cork",
+          "finishes": "bamboo"
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "office_separate_entry",
+            "office_to_main"
+          ],
+          "windows": [
+            "office_window"
+          ],
+          "flooring": "cork",
+          "finishes": "bamboo"
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "utility_door"
+          ],
+          "windows": [],
+          "flooring": "concrete",
+          "finishes": "painted_drywall"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "library_to_upper",
+            "library_spiral_access"
+          ],
+          "windows": [
+            "library_south_window1",
+            "library_south_window2"
+          ],
+          "flooring": "cork",
+          "finishes": "bamboo",
+          "double_height": true
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "kitchen_to_dining"
+          ],
+          "windows": [
+            "kitchen_window"
+          ],
+          "flooring": "cork",
+          "finishes": "bamboo"
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "bedroom_door"
+          ],
+          "windows": [
+            "bedroom_window"
+          ],
+          "flooring": "cork",
+          "finishes": "bamboo"
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 35,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "bathroom_door"
+          ],
+          "windows": [
+            "bathroom_window"
+          ],
+          "flooring": "tile",
+          "finishes": "bamboo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 2400,
+      "style": "Organic Architecture"
+    },
+    "plot": {
+      "slope": "sloping_vineyard",
+      "orientation": "east_west_linear",
+      "climate": "continental_harsh_winters"
+    },
+    "roomBreakdown": [
+      {
+        "type": "sunken_living_room",
+        "area": 350
+      },
+      {
+        "type": "kitchen",
+        "area": 300
+      },
+      {
+        "type": "observatory",
+        "area": 150
+      },
+      {
+        "type": "dining_room",
+        "area": 200
+      },
+      {
+        "type": "master_bedroom",
+        "area": 250
+      },
+      {
+        "type": "bedroom",
+        "area": 180
+      },
+      {
+        "type": "bedroom",
+        "area": 180
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "utility",
+        "area": 80
+      },
+      {
+        "type": "entry",
+        "area": 90
+      },
+      {
+        "type": "hallway",
+        "area": 120
+      },
+      {
+        "type": "thermal_chimney",
+        "area": 50
+      },
+      {
+        "type": "deck",
+        "area": 250
+      },
+      {
+        "type": "patio",
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 432000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "sunken_living_0",
+          "type": "sunken_living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 17.5
+          },
+          "doors": [
+            "dining_room"
+          ],
+          "windows": [
+            "south_large"
+          ]
+        },
+        {
+          "id": "dining_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "living_room",
+            "deck"
+          ],
+          "windows": [
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "deck_0",
+          "type": "deck",
+          "bounds": {
+            "x": 30,
+            "y": 5,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "dining_room"
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry_0",
+          "type": "entry",
+          "bounds": {
+            "x": 0,
+            "y": 17.5,
+            "width": 10,
+            "height": 7.5
+          },
+          "doors": [
+            "exterior_north",
+            "living_stairs"
+          ],
+          "windows": []
+        },
+        {
+          "id": "patio_0",
+          "type": "patio",
+          "bounds": {
+            "x": 10,
+            "y": 17.5,
+            "width": 10,
+            "height": 7.5
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 10,
+            "height": 7.5
+          },
+          "doors": [
+            "exterior_east"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "dining_stairs",
+            "deck"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "observatory_1",
+          "type": "observatory",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            "retractable_dome"
+          ]
+        },
+        {
+          "id": "chimney_1",
+          "type": "thermal_chimney",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_2",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 16.67
+          },
+          "doors": [
+            "hall"
+          ],
+          "windows": [
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "bedroom1_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 18
+          },
+          "doors": [
+            "hall"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "bedroom2_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 16.67,
+            "width": 15,
+            "height": 13.33
+          },
+          "doors": [
+            "hall"
+          ],
+          "windows": [
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "bath1_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 18,
+            "width": 5,
+            "height": 7
+          },
+          "doors": [
+            "hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bath2_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 18,
+            "width": 5,
+            "height": 7
+          },
+          "doors": [
+            "hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hall_2",
+          "type": "hallway",
+          "bounds": {
+            "x": 15,
+            "y": 7,
+            "width": 10,
+            "height": 11
+          },
+          "doors": [
+            "master",
+            "bedroom1",
+            "bedroom2",
+            "bath1",
+            "bath2",
+            "stairs"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

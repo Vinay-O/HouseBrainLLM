@@ -1,0 +1,351 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 3200,
+      "style": "Tropical Modernist"
+    },
+    "plot": {
+      "size": 20000,
+      "location": "rural estate",
+      "climate": "temperate maritime"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4,
+        "area": 400
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "area": 200
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "area": 80
+      },
+      {
+        "type": "storage",
+        "count": 1,
+        "area": 60
+      },
+      {
+        "type": "garage",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "atrium",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 60
+      },
+      {
+        "type": "powder_room",
+        "count": 1,
+        "area": 20
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 4800000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "atrium_center",
+          "type": "atrium",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "north_wing_door",
+            "south_wing_door",
+            "east_wing_door",
+            "west_wing_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room_north",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "atrium_north_door"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "dining_room_north",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "atrium_northeast_door"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_north",
+          "type": "kitchen",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "dining_room_door",
+            "utility_door"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "kitchen_door",
+            "garage_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 50,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "utility_door",
+            "exterior_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "primary_bedroom_south",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 40,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "atrium_south_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "primary_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 40,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_door"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "bedroom2_south",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 40,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "atrium_southeast_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 40,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_door"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "study_west",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "atrium_west_door"
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "storage_west",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "atrium_southwest_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom3_east",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 30,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "atrium_east_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bathroom3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_door",
+            "powder_door"
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "powder_room",
+          "type": "powder_room",
+          "bounds": {
+            "x": 50,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bathroom_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

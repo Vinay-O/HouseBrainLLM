@@ -1,0 +1,73 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Entrance Hall",
+          "dimensions": {"length": 5.0, "width": 4.0},
+          "adjacencies": ["Living Room", "Kitchen", "Courtyard"],
+          "features": ["Vastu compliant orientation", "North facing window"]
+        },
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 7.5, "width": 6.0},
+          "adjacencies": ["Entrance Hall", "Master Bedroom"],
+          "features": ["Scandinavian minimalism", "Large south-facing window"]
+        },
+        {
+          "room_name": "Dining Area",
+          "dimensions": {"length": 4.5, "width": 3.5},
+          "adjacencies": ["Kitchen", "Living Room"],
+          "features": ["Cozy lighting", "Vastu oriented seating arrangement"]
+        },
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": {"length": 6.0, "width": 4.5},
+          "adjacencies": ["Living Room", "Guest Bedrooms"],
+          "features": ["En-suite bathroom", "North-east facing window for positive energy"]
+        },
+        {
+          "room_name": "Guest Bedroom",
+          "dimensions": {"length": 5.0, "width": 4.0},
+          "adjacencies": ["Master Bedroom"],
+          "features": ["Compact design", "East facing window"]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 4.0, "width": 3.5},
+          "adjacencies": ["Dining Area", "Courtyard", "Storage"],
+          "features": ["Modern Scandinavian kitchen", "Efficient work triangle"]
+        },
+        {
+          "room_name": "Storage",
+          "dimensions": {"length": 2.0, "width": 1.5},
+          "adjacencies": ["Kitchen"],
+          "features": ["Cabinetry", "Hidden storage"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "Door",
+          "location": "Entrance Hall - main door",
+          "direction": "north"
+        },
+        {
+          "type": "Window",
+          "location": "Living Room south wall",
+          "dimensions": {"height": 1.8, "width": 0.6}
+        },
+        {
+          "type": "Window",
+          "location": "Master Bedroom north-east corner",
+          "dimensions": {"height": 1.5, "width": 0.5}
+        },
+        {
+          "type": "Balcony Door",
+          "location": "Courtyard access",
+          "direction": "south-west"
+        }
+      ]
+    }
+  ]
+}

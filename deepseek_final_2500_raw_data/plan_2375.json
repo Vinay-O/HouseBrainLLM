@@ -1,0 +1,175 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Scandinavian Hygge-inspired Experimental Prototype"
+    },
+    "plot": {
+      "topography": "Elevated platform above wetlands",
+      "climate": "Tropical with monsoons",
+      "orientation": "Diagonal to prevailing winds"
+    },
+    "roomBreakdown": [
+      {
+        "type": "workspace",
+        "area": 300
+      },
+      {
+        "type": "living_area",
+        "area": 400
+      },
+      {
+        "type": "indoor_pool",
+        "area": 600
+      },
+      {
+        "type": "glass_connection",
+        "area": 200
+      },
+      {
+        "type": "mechanical",
+        "area": 150
+      },
+      {
+        "type": "entry",
+        "area": 150
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 675000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "workspace_north",
+          "type": "workspace",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "south_connection"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "glass_connection_ns",
+          "type": "glass_connection",
+          "bounds": {
+            "x": 15,
+            "y": 5,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "north_door",
+            "south_door"
+          ],
+          "windows": [
+            "east_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "living_area",
+          "type": "living_area",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "north_connection",
+            "south_patio",
+            "west_pool"
+          ],
+          "windows": [
+            "south_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "glass_connection_ew",
+          "type": "glass_connection",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "east_door",
+            "west_door"
+          ],
+          "windows": [
+            "north_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "indoor_pool",
+          "type": "indoor_pool",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 40
+          },
+          "doors": [
+            "east_connection",
+            "south_pet"
+          ],
+          "windows": [
+            "north_window",
+            "south_window",
+            "east_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "mechanical_room",
+          "type": "mechanical",
+          "bounds": {
+            "x": 25,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "north_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry_pavilion",
+          "type": "entry",
+          "bounds": {
+            "x": 25,
+            "y": 30,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "north_door",
+            "east_entry",
+            "south_pet"
+          ],
+          "windows": [
+            "north_window",
+            "south_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

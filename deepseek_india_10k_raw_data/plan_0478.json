@@ -1,0 +1,392 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 8,
+      "floors": 1,
+      "totalArea": 4500,
+      "style": "Traditional Chettinad with Mangalore coastal heritage"
+    },
+    "plot": {
+      "width": 60,
+      "height": 75,
+      "orientation": "north"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "count": 6,
+        "area": 720
+      },
+      {
+        "type": "bathroom",
+        "count": 8,
+        "area": 320
+      },
+      {
+        "type": "heritage_library",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "veranda",
+        "count": 1,
+        "area": 600
+      },
+      {
+        "type": "courtyard",
+        "count": 2,
+        "area": 400
+      },
+      {
+        "type": "seasonal_worker_accommodation",
+        "count": 1,
+        "area": 600
+      },
+      {
+        "type": "storage",
+        "count": 2,
+        "area": 200
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 1350000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 60,
+            "height": 10
+          },
+          "doors": [
+            "north_entrance"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_veranda",
+            "to_dining",
+            "to_courtyard1"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_living",
+            "to_kitchen",
+            "to_veranda"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "main_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 45,
+            "y": 10,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "to_dining",
+            "to_utility"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 45,
+            "y": 25,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "to_kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "family_bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 30,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "to_veranda",
+            "to_bathroom1"
+          ],
+          "windows": [
+            "west_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 5,
+            "y": 45,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            "to_bedroom1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "family_bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 17,
+            "y": 30,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "to_veranda",
+            "to_bathroom2"
+          ],
+          "windows": [
+            "east_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 23,
+            "y": 45,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            "to_bedroom2"
+          ],
+          "windows": []
+        },
+        {
+          "id": "family_bedroom3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 29,
+            "y": 30,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "to_veranda",
+            "to_bathroom3"
+          ],
+          "windows": [
+            "west_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 45,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            "to_bedroom3"
+          ],
+          "windows": []
+        },
+        {
+          "id": "heritage_library",
+          "type": "heritage_library",
+          "bounds": {
+            "x": 41,
+            "y": 30,
+            "width": 14,
+            "height": 15
+          },
+          "doors": [
+            "to_veranda",
+            "to_manuscript_storage"
+          ],
+          "windows": [
+            "east_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "manuscript_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 41,
+            "y": 45,
+            "width": 7,
+            "height": 5
+          },
+          "doors": [
+            "to_library"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom4",
+          "type": "bathroom",
+          "bounds": {
+            "x": 48,
+            "y": 45,
+            "width": 7,
+            "height": 5
+          },
+          "doors": [
+            "to_library"
+          ],
+          "windows": []
+        },
+        {
+          "id": "courtyard1",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 50,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "from_living"
+          ],
+          "windows": []
+        },
+        {
+          "id": "seasonal_accommodation",
+          "type": "seasonal_worker_accommodation",
+          "bounds": {
+            "x": 30,
+            "y": 50,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            "to_veranda",
+            "to_bathroom5",
+            "to_bathroom6"
+          ],
+          "windows": [
+            "east_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom5",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 70,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            "to_accommodation"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom6",
+          "type": "bathroom",
+          "bounds": {
+            "x": 36,
+            "y": 70,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            "to_accommodation"
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_room",
+          "type": "storage",
+          "bounds": {
+            "x": 42,
+            "y": 70,
+            "width": 13,
+            "height": 5
+          },
+          "doors": [
+            "to_accommodation"
+          ],
+          "windows": []
+        },
+        {
+          "id": "courtyard2",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 55,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Traditional Colonial British Bungalow with Linear Pavilion"
+    },
+    "plot": {
+      "location": "Gorakhpur Rural Center",
+      "heritageSite": true,
+      "challenges": [
+        "Desert Sandstorms",
+        "Extreme Heat"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4,
+        "purpose": "Nuclear family and elderly parents"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "purpose": "Family gathering"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "purpose": "Organic cooking"
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "purpose": "Family use"
+      },
+      {
+        "type": "veranda",
+        "count": 2,
+        "purpose": "Period colonial feature and cooling"
+      },
+      {
+        "type": "terrace",
+        "count": 1,
+        "purpose": "Garden and water harvesting"
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 1620000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "front_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 60,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 30,
+              "connects_to": "exterior"
+            },
+            {
+              "wall": "north",
+              "position": 30,
+              "connects_to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 15
+            },
+            {
+              "wall": "west",
+              "position": 45
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15,
+              "connects_to": "front_veranda"
+            },
+            {
+              "wall": "north",
+              "position": 15,
+              "connects_to": "rear_veranda"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "connects_to": "bedroom_1"
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "connects_to": "bedroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 20
+            },
+            {
+              "wall": "west",
+              "position": 20
+            }
+          ]
+        },
+        {
+          "id": "rear_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 60,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 30,
+              "connects_to": "living_room"
+            },
+            {
+              "wall": "north",
+              "position": 30,
+              "connects_to": "kitchen_garden"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 15
+            },
+            {
+              "wall": "west",
+              "position": 45
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7.5,
+              "connects_to": "living_room"
+            },
+            {
+              "wall": "east",
+              "position": 7.5,
+              "connects_to": "bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": -15,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "connects_to": "living_room"
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "connects_to": "bathroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7.5,
+              "connects_to": "rear_veranda"
+            },
+            {
+              "wall": "east",
+              "position": 7.5,
+              "connects_to": "bathroom_3"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": -15,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "connects_to": "rear_veranda"
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "connects_to": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 10,
+            "width": 10,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5,
+              "connects_to": "bedroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": -25,
+            "y": 10,
+            "width": 10,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5,
+              "connects_to": "bedroom_2"
+            }
+          ],
+          "windows": [
+            "none"
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 25,
+            "width": 10,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5,
+              "connects_to": "bedroom_3"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10,
+              "connects_to": "rear_veranda"
+            },
+            {
+              "wall": "north",
+              "position": 10,
+              "connects_to": "kitchen_garden"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "kitchen_garden",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 55,
+            "width": 60,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 30,
+              "connects_to": "rear_veranda"
+            }
+          ],
+          "windows": [
+            "none"
+          ]
+        }
+      ]
+    }
+  ]
+}

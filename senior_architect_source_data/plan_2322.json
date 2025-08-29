@@ -1,0 +1,148 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 450,
+      "style": "Contemporary Glass Box"
+    },
+    "plot": {
+      "climate": "alpine with heavy snow loads",
+      "orientation": "diagonal to prevailing winds"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 120,
+        "purpose": "guest accommodation"
+      },
+      {
+        "type": "darkroom",
+        "area": 80,
+        "purpose": "film photography"
+      },
+      {
+        "type": "living_room",
+        "area": 150,
+        "purpose": "main living space"
+      },
+      {
+        "type": "kitchen",
+        "area": 60,
+        "purpose": "compact cooking"
+      },
+      {
+        "type": "bathroom",
+        "area": 40,
+        "purpose": "basic facilities"
+      }
+    ]
+  },
+  "total_area": 450.0,
+  "construction_cost": 285000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_space",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "main_entry"
+          ],
+          "windows": [
+            "north_glass_wall",
+            "south_glass_wall"
+          ],
+          "features": [
+            "phase_change_materials",
+            "glass_connections"
+          ]
+        },
+        {
+          "id": "kitchenette",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 4,
+            "height": 10
+          },
+          "doors": [
+            "to_living_space"
+          ],
+          "windows": [
+            "east_window"
+          ],
+          "features": [
+            "compact_appliances",
+            "phase_change_materials"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 19,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "to_living_space"
+          ],
+          "windows": [
+            "east_window"
+          ],
+          "features": [
+            "phase_change_materials",
+            "built_in_storage"
+          ]
+        },
+        {
+          "id": "darkroom",
+          "type": "darkroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "to_living_space"
+          ],
+          "windows": [],
+          "features": [
+            "light_sealing",
+            "film_processing_equipment",
+            "ventilation"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            "to_living_space"
+          ],
+          "windows": [],
+          "features": [
+            "compact_fixtures",
+            "ventilation"
+          ]
+        }
+      ]
+    }
+  ]
+}

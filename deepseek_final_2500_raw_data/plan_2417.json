@@ -1,0 +1,186 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Mid-Century Modern"
+    },
+    "plot": {
+      "topography": "Elevated platform above wetlands",
+      "climate": "Desert with extreme temperatures"
+    },
+    "roomBreakdown": [
+      {
+        "type": "telecommuting_pod",
+        "features": [
+          "Video conferencing setup",
+          "Acoustic insulation"
+        ]
+      },
+      {
+        "type": "living_room",
+        "features": [
+          "Radiant floor heating",
+          "Floor-to-ceiling windows"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "features": [
+          "Minimalist cabinetry",
+          "Energy-efficient appliances"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "features": [
+          "Radiant floor heating",
+          "Private patio access"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "features": [
+          "Wet room design",
+          "Natural ventilation"
+        ]
+      },
+      {
+        "type": "utility",
+        "features": [
+          "Solar collector system",
+          "Heat exchange unit"
+        ]
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 285000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 16
+          },
+          "doors": [
+            "south_patio_door",
+            "north_hall_door"
+          ],
+          "windows": [
+            "east_window_wall",
+            "west_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "west_hall_door"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 36,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "west_hall_door",
+            "south_patio_door"
+          ],
+          "windows": [
+            "east_window",
+            "north_window"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 36,
+            "y": 14,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "north_hall_door"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        },
+        {
+          "id": "telecommuting_pod",
+          "type": "telecommuting_pod",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "east_hall_door"
+          ],
+          "windows": [
+            "north_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 12,
+            "y": 16,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "east_hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 16,
+            "height": 4
+          },
+          "doors": [
+            "main_entry",
+            "living_room_door",
+            "kitchen_door",
+            "bedroom_door",
+            "bathroom_door",
+            "pod_door",
+            "utility_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

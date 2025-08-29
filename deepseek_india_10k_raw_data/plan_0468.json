@@ -1,0 +1,348 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 4200,
+      "style": "Contemporary Chettinad-Nawabi Fusion"
+    },
+    "plot": {
+      "slope": "mountain",
+      "orientation": "west",
+      "challenges": [
+        "slope",
+        "air_pollution"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "prayer_room",
+        "count": 2
+      },
+      {
+        "type": "meditation_room",
+        "count": 1
+      },
+      {
+        "type": "pottery_workshop",
+        "count": 1
+      },
+      {
+        "type": "kiln_room",
+        "count": 1
+      },
+      {
+        "type": "drying_area",
+        "count": 1
+      },
+      {
+        "type": "waste_management_room",
+        "count": 1
+      },
+      {
+        "type": "air_filtration_room",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 10500000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 8
+          },
+          "doors": [
+            "main_entrance"
+          ],
+          "windows": [
+            "west_veranda_windows"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 8,
+            "width": 24,
+            "height": 20
+          },
+          "doors": [
+            "to_veranda",
+            "to_dining"
+          ],
+          "windows": [
+            "west_living_windows"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 32,
+            "y": 8,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "to_living",
+            "to_kitchen"
+          ],
+          "windows": [
+            "west_dining_windows"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 32,
+            "y": 24,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            "to_dining",
+            "to_utility"
+          ],
+          "windows": [
+            "north_kitchen_window"
+          ]
+        },
+        {
+          "id": "utility_waste_room",
+          "type": "waste_management_room",
+          "bounds": {
+            "x": 48,
+            "y": 24,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            "to_kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pottery_workshop",
+          "type": "pottery_workshop",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_courtyard",
+            "to_drying"
+          ],
+          "windows": [
+            "north_workshop_windows"
+          ]
+        },
+        {
+          "id": "drying_area",
+          "type": "drying_area",
+          "bounds": {
+            "x": 20,
+            "y": 36,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_workshop"
+          ],
+          "windows": [
+            "east_drying_windows"
+          ]
+        },
+        {
+          "id": "kiln_room",
+          "type": "kiln_room",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            "to_workshop"
+          ],
+          "windows": []
+        },
+        {
+          "id": "air_filtration_room",
+          "type": "air_filtration_room",
+          "bounds": {
+            "x": 48,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 48,
+            "y": 8,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "to_veranda"
+          ],
+          "windows": [
+            "west_guest_windows"
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            "to_workshop",
+            "to_living"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "upper_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 6
+          },
+          "doors": [
+            "to_bedrooms"
+          ],
+          "windows": [
+            "west_upper_veranda_windows"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 8,
+            "y": 6,
+            "width": 16,
+            "height": 20
+          },
+          "doors": [
+            "to_veranda",
+            "to_bath"
+          ],
+          "windows": [
+            "west_master_windows"
+          ]
+        },
+        {
+          "id": "master_prayer",
+          "type": "prayer_room",
+          "bounds": {
+            "x": 24,
+            "y": 6,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_master"
+          ],
+          "windows": [
+            "east_prayer_window"
+          ]
+        },
+        {
+          "id": "meditation_room",
+          "type": "meditation_room",
+          "bounds": {
+            "x": 36,
+            "y": 6,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_veranda"
+          ],
+          "windows": [
+            "east_meditation_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 8,
+            "y": 26,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "to_veranda",
+            "to_bath"
+          ],
+          "windows": [
+            "west_bedroom2_windows"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 24,
+            "y": 18,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "to_veranda",
+            "to_bath"
+          ],
+          "windows": [
+            "east_bedroom3_windows"
+          ]
+        },
+        {
+          "id": "family_prayer_room",
+          "type": "prayer_room",
+          "bounds": {
+            "x": 40,
+            "y": 18,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "to_veranda"
+          ],
+          "windows": [
+            "east_family_prayer_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

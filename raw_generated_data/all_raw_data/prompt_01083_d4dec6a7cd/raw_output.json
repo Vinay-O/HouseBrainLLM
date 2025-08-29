@@ -1,0 +1,106 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "position": { "direction": "North" }
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "adjacent_to": ["living_room"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["granite countertops", "modular storage"],
+          "position": { "direction": "Southeast" }
+        },
+        {
+          "room_id": "master_bedroom",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["attached bathroom", "wardrobe"],
+          "position": { "direction": "Southwest" }
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 13, "width": 10 },
+          "features": ["attached bathroom"]
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 10, "width": 9 }
+        },
+        {
+          "room_id": " guest_bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["attached bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "position": { "direction": "North" }
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "position": { "direction": "South" }
+        },
+        {
+          "opening_id": "windows_living",
+          "type": "window",
+          "count": 3,
+          "position": { "direction": "East" }
+        },
+        {
+          "opening_id": "windows_dining",
+          "type": "window",
+          "count": 2,
+          "position": { "direction": "North" }
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["attached bathroom", "balcony"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["attached bathroom"]
+        },
+        {
+          "room_id": "staircase",
+          "type": "common_area",
+          "dimensions": { "length": 6, "width": 4 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony_doors_3",
+          "type": "door",
+          "room_id": "bedroom_3"
+        },
+        {
+          "opening_id": "windows_3",
+          "type": "window",
+          "count": 2,
+          "room_id": "bedroom_3"
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "features": ["outdoor seating", "green space"],
+      "dimensions": { "length": 40, "width": 30 }
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 800,
+      "style": "Gujarati Pol with Modern Sustainable"
+    },
+    "plot": {
+      "orientation": "north",
+      "area": 800,
+      "constraints": [
+        "high_water_table",
+        "seismic_zone"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "level": 0
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "level": 0
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "level": 0
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "level": 0
+      },
+      {
+        "type": "bathroom",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "type": "study_area",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "type": "play_area",
+        "count": 1,
+        "level": 0
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 1920000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_porch",
+          "type": "porch",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 4,
+            "y": 4,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6
+            },
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 16,
+            "y": 4,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 16,
+            "y": 14,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 4,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 3
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 3
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "adventure_play_area",
+          "type": "play_area",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "staircase",
+          "type": "staircase",
+          "bounds": {
+            "x": 4,
+            "y": 0,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 4,
+            "y": 4,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6
+            },
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 4,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 14,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 4,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 3
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "study_area",
+          "type": "study_area",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "id": "terrace",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 24,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase_top",
+          "type": "staircase",
+          "bounds": {
+            "x": 4,
+            "y": 0,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

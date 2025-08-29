@@ -1,0 +1,58 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "dimensions": [15, 20],
+          "location": {"x": 0, "y": 0},
+          "features": ["Open-plan", "Windows for natural light"]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": [10, 20],
+          "location": {"x": 15, "y": 0},
+          "features": ["Integrated with Living Room", "Vastu compliant"]
+        },
+        {
+          "room_name": "Bedroom 1 (Master)",
+          "dimensions": [10, 15],
+          "location": {"x": 0, "y": 20},
+          "features": ["Attached bathroom", "Private terrace access"]
+        },
+        {
+          "room_name": "Bedroom 2",
+          "dimensions": [10, 15],
+          "location": {"x": 10, "y": 20},
+          "features": ["Shared bathroom with Bedroom 3"]
+        },
+        {
+          "room_name": "Bedroom 3",
+          "dimensions": [10, 15],
+          "location": {"x": 20, "y": 20},
+          "features": ["Shared bathroom with Bedroom 2"]
+        },
+        {
+          "room_name": "Servant's Quarters",
+          "dimensions": [8, 10],
+          "location": {"x": 25, "y": 30},
+          "features": []
+        }
+      ],
+      "openings": [
+        {
+          "type": "Window",
+          "size": [4, 5],
+          "location": {"room": "Living Room", "position": "north"}
+        },
+        {
+          "type": "Door",
+          "size": [3, 7],
+          "location": {"room": "Kitchen", "position": "southwest"},
+          "features": ["Vastu compliant"]
+        }
+      ]
+    }
+  ]
+}

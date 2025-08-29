@@ -1,0 +1,175 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "kitchen_1",
+          "type": "kitchen",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["gas_stove", "sink", "cabinet_storage"]
+        },
+        {
+          "room_id": "dining_area_1",
+          "type": "dining_area",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["dining_table", "chairs"]
+        },
+        {
+          "room_id": "living_room_1",
+          "type": "living_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["sofa", "tv_unit", "coffee_table"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["king_size_bed", "wardrobe", "attached_bathroom"]
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "bathroom",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["shower", "toilet", "sink"]
+        },
+        {
+          "room_id": "staircase_1",
+          "type": "staircase",
+          "dimensions": { "length": 5, "width": 3 },
+          "features": ["wooden_handrail", "ceramic_tiles"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "front_door_1",
+          "type": "door",
+          "dimensions": { "length": 7, "width": 3 },
+          "location": { "room_id": "living_room_1", "side": "front" }
+        },
+        {
+          "opening_id": "back_door_1",
+          "type": "door",
+          "dimensions": { "length": 7, "width": 3 },
+          "location": { "room_id": "kitchen_1", "side": "back" }
+        },
+        {
+          "opening_id": "window_1",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "location": { "room_id": "bedroom_1", "side": "front" }
+        },
+        {
+          "opening_id": "window_2",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "location": { "room_id": "living_room_1", "side": "back" }
+        },
+        {
+          "opening_id": "window_3",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "location": { "room_id": "dining_area_1", "side": "right" }
+        },
+        {
+          "opening_id": "window_4",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "location": { "room_id": "kitchen_1", "side": "left" }
+        },
+        {
+          "opening_id": "window_5",
+          "type": "window",
+          "dimensions": { "length": 3, "width": 3 },
+          "location": { "room_id": "bathroom_1", "side": "front" }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["king_size_bed", "wardrobe", "attached_bathroom"]
+        },
+        {
+          "room_id": "bathroom_2",
+          "type": "bathroom",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["shower", "toilet", "sink"]
+        },
+        {
+          "room_id": "study_room_1",
+          "type": "study_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["desk", "chair", "bookshelf"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "window_6",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "location": { "room_id": "bedroom_2", "side": "front" }
+        },
+        {
+          "opening_id": "window_7",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "location": { "room_id": "study_room_1", "side": "back" }
+        },
+        {
+          "opening_id": "window_8",
+          "type": "window",
+          "dimensions": { "length": 3, "width": 3 },
+          "location": { "room_id": "bathroom_2", "side": "front" }
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "type": "bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["king_size_bed", "wardrobe", "attached_bathroom"]
+        },
+        {
+          "room_id": "bathroom_3",
+          "type": "bathroom",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["shower", "toilet", "sink"]
+        },
+        {
+          "room_id": "library_1",
+          "type": "library",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["bookshelves", "reading_area", "desk"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "window_9",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "location": { "room_id": "bedroom_3", "side": "front" }
+        },
+        {
+          "opening_id": "window_10",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "location": { "room_id": "library_1", "side": "back" }
+        },
+        {
+          "opening_id": "window_11",
+          "type": "window",
+          "dimensions": { "length": 3, "width": 3 },
+          "location": { "room_id": "bathroom_3", "side": "front" }
+        }
+      ]
+    }
+  ]
+}

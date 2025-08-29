@@ -1,0 +1,99 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "Living Room",
+          "dimensions": { "length": 4.5, "width": 6.0 },
+          "features": ["Open plan", "High ceiling", "Skylight"],
+          "position": {"x_min": 0, "y_min": 0, "x_max": 4.5, "y_max": 6.0}
+        },
+        {
+          "room_type": "Dining Area",
+          "dimensions": { "length": 3.5, "width": 4.0 },
+          "features": ["Adjacent to kitchen", "Outdoor access"],
+          "position": {"x_min": 4.5, "y_min": 0, "x_max": 8.0, "y_max": 4.0}
+        },
+        {
+          "room_type": "Kitchen",
+          "dimensions": { "length": 3.5, "width": 4.0 },
+          "features": ["Open plan", "Island counter"],
+          "position": {"x_min": 8.0, "y_min": 0, "x_max": 11.5, "y_max": 4.0}
+        },
+        {
+          "room_type": "Bedroom",
+          "dimensions": { "length": 3.5, "width": 4.0 },
+          "features": ["Wardrobe", "Private balcony"],
+          "position": {"x_min": 0, "y_min": 6.0, "x_max": 3.5, "y_max": 10.0}
+        },
+        {
+          "room_type": "Bedroom",
+          "dimensions": { "length": 3.5, "width": 4.0 },
+          "features": ["Wardrobe", "En-suite bathroom"],
+          "position": {"x_min": 3.5, "y_min": 6.0, "x_max": 7.0, "y_max": 10.0}
+        },
+        {
+          "room_type": "Bedroom",
+          "dimensions": { "length": 4.5, "width": 4.0 },
+          "features": ["Wardrobe", "En-suite bathroom"],
+          "position": {"x_min": 7.0, "y_min": 6.0, "x_max": 11.5, "y_max": 10.0}
+        },
+        {
+          "room_type": "Bedroom",
+          "dimensions": { "length": 4.5, "width": 4.0 },
+          "features": ["Wardrobe", "En-suite bathroom"],
+          "position": {"x_min": 11.5, "y_min": 6.0, "x_max": 16.0, "y_max": 10.0}
+        }
+      ],
+      "openings": [
+        {
+          "type": "Main Entrance",
+          "dimensions": { "width": 1.2, "height": 2.4 },
+          "position": {"x": 2.5, "y": 0}
+        },
+        {
+          "type": "French Doors",
+          "dimensions": { "width": 1.8, "height": 2.4 },
+          "position": {"x": 6.0, "y": 2.0},
+          "opens_to": "Dining Area"
+        },
+        {
+          "type": "Balcony Door",
+          "dimensions": { "width": 1.5, "height": 2.4 },
+          "position": {"x": 2.0, "y": 8.0},
+          "opens_to": "Bedroom"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "Study Room",
+          "dimensions": { "length": 3.5, "width": 4.0 },
+          "features": ["Workstation", "Bookshelf"],
+          "position": {"x_min": 0, "y_min": 10.0, "x_max": 3.5, "y_max": 14.0}
+        },
+        {
+          "room_type": "Guest Bedroom",
+          "dimensions": { "length": 3.5, "width": 4.0 },
+          "features": ["Wardrobe", "Attached bathroom"],
+          "position": {"x_min": 3.5, "y_min": 10.0, "x_max": 7.0, "y_max": 14.0}
+        },
+        {
+          "room_type": "Rooftop Terrace",
+          "dimensions": { "length": 8.0, "width": 6.0 },
+          "features": ["Outdoor furniture", "Greenery"],
+          "position": {"x_min": 7.0, "y_min": 10.0, "x_max": 15.0, "y_max": 16.0}
+        }
+      ],
+      "openings": [
+        {
+          "type": "Staircase",
+          "dimensions": { "width": 1.2, "height": 3.0 },
+          "position": {"x": 5.0, "y": 10.0},
+          "connects_to": "ground_floor"
+        }
+      ]
+    }
+  ]}

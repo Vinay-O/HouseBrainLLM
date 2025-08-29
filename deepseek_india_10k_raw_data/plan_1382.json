@@ -1,0 +1,379 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 5000,
+      "style": "Punjabi Farmhouse with Rural Sikh Architecture"
+    },
+    "plot": {
+      "width": 25,
+      "length": 100,
+      "orientation": "West-facing",
+      "location": "Mumbai suburban railway-side"
+    },
+    "roomBreakdown": [
+      {
+        "type": "courtyard",
+        "count": 3
+      },
+      {
+        "type": "workshop",
+        "count": 1
+      },
+      {
+        "type": "studio",
+        "count": 1
+      },
+      {
+        "type": "study_room",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 4
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "storage",
+        "count": 2
+      },
+      {
+        "type": "verandah",
+        "count": 2
+      }
+    ]
+  },
+  "total_area": 5000.0,
+  "construction_cost": 1875000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 20,
+            "width": 15,
+            "height": 30
+          },
+          "doors": [
+            "north_verandah_door",
+            "south_verandah_door",
+            "living_room_door",
+            "dining_room_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "north_verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 5,
+            "height": 30
+          },
+          "doors": [
+            "main_courtyard_door"
+          ],
+          "windows": [
+            "north_facing_window"
+          ]
+        },
+        {
+          "id": "south_verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 5,
+            "height": 30
+          },
+          "doors": [
+            "main_courtyard_door"
+          ],
+          "windows": [
+            "south_facing_window"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 50,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "main_courtyard_door",
+            "entrance_door"
+          ],
+          "windows": [
+            "west_facing_window"
+          ]
+        },
+        {
+          "id": "workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            "side_entry_door"
+          ],
+          "windows": [
+            "north_facing_window",
+            "east_facing_window"
+          ]
+        },
+        {
+          "id": "traditional_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "workshop_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "flood_shelter",
+          "type": "storage",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "external_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            "workshop_door",
+            "bathroom_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "ground_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "utility_courtyard_door"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 12,
+            "height": 30
+          },
+          "doors": [
+            "terrace_door"
+          ],
+          "windows": [
+            "north_facing_window",
+            "west_facing_window",
+            "courtyard_facing_window"
+          ]
+        },
+        {
+          "id": "study_room",
+          "type": "study_room",
+          "bounds": {
+            "x": 12,
+            "y": 20,
+            "width": 8,
+            "height": 15
+          },
+          "doors": [
+            "terrace_door"
+          ],
+          "windows": [
+            "west_facing_window",
+            "courtyard_facing_window"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 35,
+            "width": 8,
+            "height": 15
+          },
+          "doors": [
+            "terrace_door"
+          ],
+          "windows": [
+            "west_facing_window",
+            "courtyard_facing_window"
+          ]
+        },
+        {
+          "id": "upper_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 50,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "studio_door",
+            "study_room_door",
+            "master_bedroom_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 50,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            "terrace_door"
+          ],
+          "windows": [
+            "north_facing_window",
+            "courtyard_facing_window"
+          ]
+        },
+        {
+          "id": "bedroom3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 50,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            "terrace_door"
+          ],
+          "windows": [
+            "south_facing_window",
+            "courtyard_facing_window"
+          ]
+        },
+        {
+          "id": "bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 65,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "terrace_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 65,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "terrace_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 5,
+            "y": 65,
+            "width": 7,
+            "height": 10
+          },
+          "doors": [
+            "dining_room_door"
+          ],
+          "windows": [
+            "west_facing_window"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 12,
+            "y": 65,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "kitchen_door",
+            "terrace_door"
+          ],
+          "windows": [
+            "west_facing_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

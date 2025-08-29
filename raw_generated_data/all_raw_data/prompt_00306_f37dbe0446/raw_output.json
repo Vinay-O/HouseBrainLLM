@@ -1,0 +1,87 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "area_sqft": 400,
+          "dimensions_ft": [25, 16],
+          "features": ["large windows for natural light", "open-to-sky skylight"],
+          "vastu_adherence": true
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 200,
+          "dimensions_ft": [20, 10],
+          "features": ["scandinavian design elements", "large windows with views of the garden"],
+          "vastu_adherence": true
+        },
+        {
+          "room_name": "Dining Room",
+          "area_sqft": 150,
+          "dimensions_ft": [18, 8.3],
+          "features": ["connected to kitchen for convenience", "large glass doors leading to balcony"],
+          "vastu_adherence": true
+        },
+        {
+          "room_name": "Master Bedroom",
+          "area_sqft": 200,
+          "dimensions_ft": [20, 10],
+          "features": ["private balcony with seating area", "large windows for natural light"],
+          "vastu_adherence": true
+        },
+        {
+          "room_name": "Bedroom 2",
+          "area_sqft": 150,
+          "dimensions_ft": [18, 8.3],
+          "features": ["private balcony", "large windows for natural light"],
+          "vastu_adherence": true
+        },
+        {
+          "room_name": "Bedroom 3",
+          "area_sqft": 150,
+          "dimensions_ft": [18, 8.3],
+          "features": ["private balcony", "large windows for natural light"],
+          "vastu_adherence": true
+        },
+        {
+          "room_name": "Bedroom 4",
+          "area_sqft": 150,
+          "dimensions_ft": [18, 8.3],
+          "features": ["private balcony", "large windows for natural light"],
+          "vastu_adherence": true
+        },
+        {
+          "room_name": "Bathroom (attached to Master Bedroom)",
+          "area_sqft": 75,
+          "dimensions_ft": [10, 7.5],
+          "features": ["modern scandinavian design", "large skylight"],
+          "vastu_adherence": true
+        },
+        {
+          "room_name": "Bathroom (shared)",
+          "area_sqft": 75,
+          "dimensions_ft": [10, 7.5],
+          "features": ["modern scandinavian design", "large windows for ventilation"],
+          "vastu_adherence": true
+        },
+        {
+          "room_name": "Laundry Room",
+          "area_sqft": 50,
+          "dimensions_ft": [10, 5],
+          "features": [],
+          "vastu_adherence": true
+        }
+      ],
+      "openings": [
+        { "type": "door", "location": "Living Room to Dining Room" },
+        { "type": "window", "room_name": "Kitchen", "orientation": "east" },
+        { "type": "balcony", "connected_room": "Master Bedroom" },
+        { "type": "balcony", "connected_room": "Bedroom 2" },
+        { "type": "balcony", "connected_room": "Bedroom 3" },
+        { "type": "balcony", "connected_room": "Bedroom 4" }
+      ]
+    }
+  ]
+}

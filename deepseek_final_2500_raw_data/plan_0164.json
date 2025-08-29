@@ -1,0 +1,293 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 800,
+      "style": "Kashmiri Wooden Architecture with Modern Innovation"
+    },
+    "plot": {
+      "shape": "corner_plot",
+      "area": 800,
+      "frontage": "dual",
+      "region": "arid_desert",
+      "constraints": [
+        "water_scarcity",
+        "flood_risk",
+        "earthquake_risk",
+        "heritage_proximity"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "specialAttributes": [
+          "elderly_accessible"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "specialAttributes": [
+          "water_efficient"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "specialAttributes": [
+          "water_recycling"
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "specialAttributes": [
+          "open_plan"
+        ]
+      },
+      {
+        "type": "home_theater",
+        "count": 1,
+        "specialAttributes": [
+          "acoustic_design"
+        ]
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 275000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "elevation": 1.2,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            },
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "specialAttributes": [
+            "elderly_accessible",
+            "LED_lighting"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7
+            },
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "specialAttributes": [
+            "elderly_accessible",
+            "LED_lighting"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ],
+          "windows": [],
+          "specialAttributes": [
+            "water_efficient",
+            "LED_lighting"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 18,
+            "y": 14,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ],
+          "windows": [],
+          "specialAttributes": [
+            "water_efficient",
+            "LED_lighting"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 6,
+            "y": 14,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "specialAttributes": [
+            "water_recycling",
+            "LED_lighting"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 22,
+            "width": 24,
+            "height": 18
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            },
+            {
+              "wall": "west",
+              "position": 9
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12
+            },
+            {
+              "wall": "east",
+              "position": 9
+            },
+            {
+              "wall": "south",
+              "position": 6
+            },
+            {
+              "wall": "south",
+              "position": 18
+            }
+          ],
+          "specialAttributes": [
+            "open_plan",
+            "carved_sandstone_pillars",
+            "LED_lighting"
+          ]
+        },
+        {
+          "id": "home_theater",
+          "type": "home_theater",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [],
+          "specialAttributes": [
+            "acoustic_design",
+            "soundproofing",
+            "LED_lighting"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 12,
+            "y": 40,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "specialAttributes": [
+            "water_harvesting",
+            "solar_power",
+            "LED_lighting"
+          ]
+        }
+      ]
+    }
+  ]
+}

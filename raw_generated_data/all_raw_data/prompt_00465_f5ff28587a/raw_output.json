@@ -1,0 +1,72 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "area_sqft": 600,
+          "features": ["floor_to_ceiling_windows", "natural_light"],
+          "location": {"north_east_corner": true}
+        },
+        {
+          "room_type": "kitchen",
+          "area_sqft": 250,
+          "features": ["natural_ventilation"]
+        },
+        {
+          "room_type": "bedroom",
+          "area_sqft": 400,
+          "features": ["floor_to_ceiling_windows", "natural_light"],
+          "location": {"south_west_corner": true}
+        },
+        {
+          "room_type": "bathroom",
+          "area_sqft": 150
+        },
+        {
+          "room_type": "private_gym",
+          "area_sqft": 250,
+          "features": ["natural_light", "ventilation"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "location": {"living_room_to_kitchen": true}
+        },
+        {
+          "opening_type": "window",
+          "area_sqft": 20,
+          "room_id": "living_room"
+        },
+        {
+          "opening_type": "window",
+          "area_sqft": 15,
+          "room_id": "bedroom"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "balcony",
+          "area_sqft": 200,
+          "features": ["natural_light", "ventilation"]
+        },
+        {
+          "room_type": "utility_room",
+          "area_sqft": 150
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "window",
+          "area_sqft": 25,
+          "room_id": "balcony"
+        }
+      ]
+    }
+  ]
+}

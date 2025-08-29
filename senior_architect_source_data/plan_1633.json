@@ -1,0 +1,230 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1400,
+      "style": "Traditional Craftsman"
+    },
+    "plot": {
+      "location": "suburban cul-de-sac",
+      "climate": "continental with harsh winters",
+      "contours": "natural slopes",
+      "privacy_requirements": "high from neighbors"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 100
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "observatory",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 50
+      },
+      {
+        "type": "atrium",
+        "count": 1,
+        "area": 400
+      }
+    ]
+  },
+  "total_area": 1400.0,
+  "construction_cost": 280000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "atrium_center",
+          "type": "atrium",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "north_wing_door",
+            "south_wing_door",
+            "east_wing_door",
+            "west_wing_door"
+          ],
+          "windows": [
+            "atrium_skylight"
+          ]
+        },
+        {
+          "id": "living_room_north",
+          "type": "living_room",
+          "bounds": {
+            "x": 15,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "atrium_north_door"
+          ],
+          "windows": [
+            "living_north_window",
+            "living_east_window"
+          ]
+        },
+        {
+          "id": "kitchen_east",
+          "type": "kitchen",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "atrium_east_door",
+            "dining_door"
+          ],
+          "windows": [
+            "kitchen_east_window"
+          ]
+        },
+        {
+          "id": "dining_east",
+          "type": "dining_room",
+          "bounds": {
+            "x": 40,
+            "y": 27,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "kitchen_door"
+          ],
+          "windows": [
+            "dining_east_window"
+          ]
+        },
+        {
+          "id": "primary_bedroom_south",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "atrium_south_door",
+            "bath1_door"
+          ],
+          "windows": [
+            "bedroom_south_window",
+            "bedroom_west_window"
+          ]
+        },
+        {
+          "id": "bath1_south",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "primary_bed_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom2_west",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "atrium_west_door",
+            "bath2_door"
+          ],
+          "windows": [
+            "bedroom2_west_window",
+            "bedroom2_north_window"
+          ]
+        },
+        {
+          "id": "bath2_west",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 27,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "bedroom2_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_west",
+          "type": "utility",
+          "bounds": {
+            "x": 8,
+            "y": 27,
+            "width": 7,
+            "height": 8
+          },
+          "doors": [
+            "utility_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "observatory_nw",
+          "type": "observatory",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "observatory_door"
+          ],
+          "windows": [
+            "retractable_dome"
+          ]
+        }
+      ]
+    }
+  ]
+}

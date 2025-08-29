@@ -1,0 +1,301 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Traditional Gujarati Pol"
+    },
+    "plot": {
+      "type": "agricultural_conversion",
+      "size": 2,
+      "location": "Warangal heritage center",
+      "orientation": "east_facing"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3,
+        "specialAttributes": [
+          "universal_accessibility"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "specialAttributes": [
+          "universal_accessibility",
+          "zero_waste_systems"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "specialAttributes": [
+          "zero_waste_systems"
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "community_courtyard",
+        "count": 1
+      },
+      {
+        "type": "storytelling_amphitheater",
+        "count": 1
+      },
+      {
+        "type": "utility_room",
+        "count": 1,
+        "specialAttributes": [
+          "waste_segregation",
+          "recycling"
+        ]
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 324000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "community_courtyard",
+          "type": "community_courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 30
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "storytelling_amphitheater",
+          "type": "storytelling_amphitheater",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 7.5
+              },
+              "to_room": "community_courtyard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 30
+              },
+              "to_room": "community_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 36
+              },
+              "to_room": "community_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 27.5,
+                "y": 30
+              },
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 37.5
+              },
+              "to_room": "community_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 42.5,
+                "y": 30
+              },
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 45,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 45
+              },
+              "to_room": "community_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 52.5
+              },
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 45,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 22.5,
+                "y": 45
+              },
+              "to_room": "community_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 52.5
+              },
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 45,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 50
+              },
+              "to_room": "community_courtyard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 45,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 50
+              },
+              "to_room": "community_courtyard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility_room",
+          "bounds": {
+            "x": 30,
+            "y": 55,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 55
+              },
+              "to_room": "community_courtyard"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

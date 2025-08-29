@@ -1,0 +1,375 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 5000,
+      "style": "Art Deco Mumbai with maritime influences and heritage restoration"
+    },
+    "plot": {
+      "width": 50,
+      "length": 50,
+      "orientation": "north-facing main entrance",
+      "location": "Allahabad confluence"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Heritage brick archways with lime mortar joints, traditional mandana floor patterns"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Premium finishes with Art Deco elements"
+      },
+      {
+        "type": "bedroom",
+        "count": 4,
+        "description": "Guest accommodation for business partners with heritage details"
+      },
+      {
+        "type": "bathroom",
+        "count": 5,
+        "description": "Luxury finishes with traditional elements"
+      },
+      {
+        "type": "home_spa",
+        "count": 1,
+        "description": "Traditional massage and ayurvedic treatments area"
+      },
+      {
+        "type": "courtyard",
+        "count": 2,
+        "description": "Passive cooling and greywater recycling for irrigation/cleaning"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "description": "Greywater recycling system"
+      }
+    ]
+  },
+  "total_area": 5000.0,
+  "construction_cost": 1250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "hallway",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "description": "Grand north-facing entrance with heritage brick archway and mandana floor pattern"
+        },
+        {
+          "id": "main_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "description": "Spacious living area with Art Deco details, lime mortar joints, and cross-ventilation"
+        },
+        {
+          "id": "guest_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 8,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "description": "Guest bedroom with heritage brick features and maritime-inspired decor"
+        },
+        {
+          "id": "courtyard_1",
+          "type": "courtyard",
+          "bounds": {
+            "x": 37,
+            "y": 8,
+            "width": 13,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [],
+          "description": "Central courtyard for passive cooling and greywater irrigation system"
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 28,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "description": "Open plan kitchen with dining area, Art Deco finishes"
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 28,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "description": "Greywater recycling system for garden irrigation and courtyard cleaning"
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 28,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "description": "Guest bathroom with traditional elements"
+        },
+        {
+          "id": "home_spa",
+          "type": "home_spa",
+          "bounds": {
+            "x": 38,
+            "y": 28,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "description": "Traditional massage and ayurvedic treatment space with serene ambiance"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "description": "Master bedroom with heritage details and views of the confluence"
+        },
+        {
+          "id": "guest_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "description": "Guest bedroom with Art Deco elements and cross-ventilation"
+        },
+        {
+          "id": "guest_bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 8,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "description": "Guest bedroom with maritime influences and traditional patterns"
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 23,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "description": "Ensuite bathroom to master bedroom"
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 23,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "description": "Shared bathroom for guest bedrooms"
+        },
+        {
+          "id": "courtyard_2",
+          "type": "courtyard",
+          "bounds": {
+            "x": 28,
+            "y": 23,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [],
+          "description": "Upper level courtyard for enhanced passive cooling and light well"
+        },
+        {
+          "id": "terrace",
+          "type": "outdoor",
+          "bounds": {
+            "x": 40,
+            "y": 23,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "description": "Rooftop terrace with views of the Allahabad confluence"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_hall",
+          "description": "Minimalist entrance with a reception area and storage space. Features natural light, minimalistic decor, following Vastu by orienting the door to the east for auspicious entry.",
+          "area_sqm": 12,
+          "furniture": ["entry table", "decorative vase"],
+          "access": "entrance",
+          "vastu_details": {
+            "door_orientation": "east"
+          }
+        },
+        {
+          "room_id": "living_room",
+          "description": "Open-plan living area integrated with kitchen, designed for a bachelor pad. Features exposed brickwork and glass panels to allow ample natural light.",
+          "area_sqm": 40,
+          "furniture": ["sofa set", "coffee table"],
+          "amenities": ["open-plan kitchen integration"]
+        },
+        {
+          "room_id": "kitchen",
+          "description": "Minimalist, open concept kitchen integrated with the living area. Equipped with essential modern appliances and ample workspace.",
+          "area_sqm": 15,
+          "furniture": ["counter", "small island"],
+          "amenities": ["modern appliances", "compact storage"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "description": "Spacious bedroom with a spacious balcony for relaxation. Features built-in wardrobes and minimal decor.",
+          "area_sqm": 25,
+          "furniture": ["queen-size bed", "wardrobe"],
+          "balcony": {
+            "area_sqm": 6,
+            "orientation": "north-east"
+          }
+        },
+        {
+          "room_id": "bedroom_2",
+          "description": "Second bedroom with a spacious balcony for a bachelor pad, designed to provide privacy and personal space.",
+          "area_sqm": 25,
+          "furniture": ["double bed", "wardrobe"],
+          "balcony": {
+            "area_sqm": 6,
+            "orientation": "south-east"
+          }
+        },
+        {
+          "room_id": "bathroom",
+          "description": "Functional, minimalist bathroom with essentials.",
+          "area_sqm": 8,
+          "furniture": ["toilet", "sink", "shower unit"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "front_door",
+          "dimensions_cm": [100, 210],
+          "material": "glass reinforced concrete",
+          "vastu_alignment": "east"
+        },
+        {
+          "opening_type": "window",
+          "dimensions_cm": [80, 150],
+          "material": "aluminum frame with glass panels",
+          "location": "bedroom_1 balcony",
+          "vastu_alignment": "north-east"
+        },
+        {
+          "opening_type": "window",
+          "dimensions_cm": [80, 150],
+          "material": "aluminum frame with glass panels",
+          "location": "bedroom_2 balcony",
+          "vastu_alignment": "south-east"
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "description": "Rooftop terrace featuring a minimalist design with greenery and seating areas. Provides an outdoor living space for relaxation and social gatherings.",
+      "area_sqm": 50,
+      "features": ["green wall", "outdoor seating"],
+      "vastu_details": {
+        "orientation": "south-west",
+        "elements": "water feature recommended"
+      }
+    },
+    {
+      "level_id": "balcony_spaces",
+      "description": "Each bedroom has a dedicated balcony space designed for relaxation and minimalistic outdoor living.",
+      "bedrooms": [
+        {"room_id": "bedroom_1", "balcony_area_sqm": 6},
+        {"room_id": "bedroom_2", "balcony_area_sqm": 6}
+      ]
+    }
+  ]
+}

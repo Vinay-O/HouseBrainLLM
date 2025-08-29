@@ -1,0 +1,191 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 800,
+      "style": "Assamese Traditional with Bamboo Integration"
+    },
+    "plot": {
+      "orientation": "south",
+      "area": 800,
+      "view": "garden",
+      "context": "dense metropolitan apartment conversion"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "purpose": "Master bedroom for retired couple and guest bedroom for visiting children"
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "purpose": "Ensuite for master bedroom and shared bathroom with universal accessibility"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "purpose": "Compact efficient kitchen"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "purpose": "Open plan living and dining area"
+      },
+      {
+        "type": "pavilion",
+        "count": 1,
+        "purpose": "Traditional yoga and meditation pavilion"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "purpose": "Rainwater harvesting system and storage"
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 144000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_dining",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "north_entrance",
+            "to_kitchen",
+            "to_bedroom1",
+            "to_pavilion"
+          ],
+          "windows": [
+            "south_window1",
+            "south_window2"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "to_living",
+            "to_utility"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_master",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "to_living",
+            "to_bath1"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom_master",
+          "type": "bathroom",
+          "bounds": {
+            "x": 14,
+            "y": 16,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "to_bedroom1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_guest",
+          "type": "bedroom",
+          "bounds": {
+            "x": 22,
+            "y": 16,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_living",
+            "to_bath2"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom_shared",
+          "type": "bathroom",
+          "bounds": {
+            "x": 22,
+            "y": 28,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "to_bedroom2",
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 12,
+            "height": 6
+          },
+          "doors": [
+            "to_kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "yoga_pavilion",
+          "type": "pavilion",
+          "bounds": {
+            "x": 0,
+            "y": 28,
+            "width": 22,
+            "height": 12
+          },
+          "doors": [
+            "to_living",
+            "garden_access"
+          ],
+          "windows": [
+            "south_window1",
+            "south_window2",
+            "east_window",
+            "west_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

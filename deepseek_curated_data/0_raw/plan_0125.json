@@ -1,0 +1,266 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 3800,
+      "style": "Art Deco"
+    },
+    "plot": {
+      "shape": "irregular",
+      "description": "Irregular plot with varying boundaries, designed to maximize space and views."
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4,
+        "description": "Spacious bedrooms with Art Deco details and en-suite facilities"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Grand living area with high ceilings and geometric patterns"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Modern kitchen with dining area and Art Deco fixtures"
+      },
+      {
+        "type": "gym",
+        "count": 1,
+        "description": "Private fitness area with mirrored walls and premium equipment"
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "description": "Central open-air courtyard with decorative paving and seating"
+      }
+    ]
+  },
+  "total_area": 3800.0,
+  "construction_cost": 836000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            "main_entry"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 25,
+            "height": 18
+          },
+          "doors": [
+            "to_foyer",
+            "to_courtyard"
+          ],
+          "windows": [
+            "north_wall"
+          ]
+        },
+        {
+          "id": "dining_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_foyer",
+            "to_utility"
+          ],
+          "windows": [
+            "east_wall"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 37,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "west_wall",
+            "south_wall"
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 18,
+            "width": 20,
+            "height": 22
+          },
+          "doors": [
+            "from_living",
+            "from_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 37,
+            "y": 14,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "to_guest_bed",
+            "to_gym",
+            "to_courtyard",
+            "stairs"
+          ],
+          "windows": []
+        },
+        {
+          "id": "gym",
+          "type": "gym",
+          "bounds": {
+            "x": 45,
+            "y": 14,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "west_wall"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 18,
+            "height": 16
+          },
+          "doors": [
+            "to_upper_hall"
+          ],
+          "windows": [
+            "north_wall",
+            "east_wall"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "to_upper_hall"
+          ],
+          "windows": [
+            "north_wall"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "to_upper_hall"
+          ],
+          "windows": [
+            "north_wall"
+          ]
+        },
+        {
+          "id": "family_lounge",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 25,
+            "height": 14
+          },
+          "doors": [
+            "to_upper_hall",
+            "to_balcony"
+          ],
+          "windows": [
+            "south_wall",
+            "overlook_courtyard"
+          ]
+        },
+        {
+          "id": "upper_hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 25,
+            "y": 16,
+            "width": 10,
+            "height": 14
+          },
+          "doors": [
+            "to_all_rooms",
+            "stairs"
+          ],
+          "windows": [
+            "overlook_courtyard"
+          ]
+        },
+        {
+          "id": "balcony",
+          "type": "balcony",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 25,
+            "height": 8
+          },
+          "doors": [
+            "from_lounge"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

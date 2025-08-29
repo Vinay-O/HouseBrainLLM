@@ -1,0 +1,308 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Desert Contemporary"
+    },
+    "plot": {
+      "shoreline_length": 50,
+      "climate": "Mediterranean",
+      "orientation": "north"
+    },
+    "roomBreakdown": []
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1850000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "storm_shelter",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "to": "stairwell",
+              "type": "solid_core"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_room",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 15,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "to": "stairwell",
+              "type": "solid_core"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "stairwell",
+          "type": "hallway",
+          "bounds": {
+            "x": 15,
+            "y": 5,
+            "width": 5,
+            "height": 18
+          },
+          "doors": [
+            {
+              "to": "storm_shelter",
+              "type": "solid_core"
+            },
+            {
+              "to": "mechanical_room",
+              "type": "solid_core"
+            },
+            {
+              "to": "upper_hall",
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "to": "upper_hall",
+              "type": "wide_opening"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "floor_to_ceiling"
+            },
+            {
+              "wall": "east",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "to": "upper_hall",
+              "type": "standard"
+            },
+            {
+              "to": "dining_area",
+              "type": "wide_opening"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "dining_area",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "to": "upper_hall",
+              "type": "standard"
+            },
+            {
+              "to": "kitchen",
+              "type": "wide_opening"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "to": "upper_hall",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 15,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "to": "primary_bedroom",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 29,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "to": "upper_hall",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 29,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "to": "upper_hall",
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "upper_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 16,
+            "y": 23,
+            "width": 16,
+            "height": 18
+          },
+          "doors": [
+            {
+              "to": "living_room",
+              "type": "wide_opening"
+            },
+            {
+              "to": "kitchen",
+              "type": "standard"
+            },
+            {
+              "to": "dining_area",
+              "type": "standard"
+            },
+            {
+              "to": "primary_bedroom",
+              "type": "standard"
+            },
+            {
+              "to": "guest_bedroom",
+              "type": "standard"
+            },
+            {
+              "to": "guest_bath",
+              "type": "standard"
+            },
+            {
+              "to": "stairwell",
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "infinity_pool",
+          "type": "outdoor",
+          "bounds": {
+            "x": -8,
+            "y": 0,
+            "width": 8,
+            "height": 15
+          },
+          "doors": [
+            {
+              "to": "living_room",
+              "type": "sliding_glass"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

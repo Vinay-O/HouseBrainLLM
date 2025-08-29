@@ -1,0 +1,363 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 2000,
+      "style": "Heritage-inspired Punjabi farmhouse with rural Sikh architectural elements"
+    },
+    "plot": {
+      "location": "Moradabad",
+      "orientation": "South-facing for solar optimization",
+      "challenges": [
+        "Monsoon flooding and waterlogging"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "puja_room",
+        "count": 1
+      },
+      {
+        "type": "handloom_workshop",
+        "count": 1
+      },
+      {
+        "type": "artist_studio",
+        "count": 1
+      },
+      {
+        "type": "craft_workshop",
+        "count": 1
+      },
+      {
+        "type": "terrace",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2000.0,
+  "construction_cost": 450000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_courtyard",
+          "type": "other",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [],
+          "description": "Traditional Punjabi courtyard with local stone inlay patterns, raised platform for seating, and integrated waste segregation stations"
+        },
+        {
+          "id": "craft_workshop_ground",
+          "type": "workshop",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "large"
+            }
+          ],
+          "description": "Ground floor workshop with brass tool storage, south-facing windows for optimal daylight, and traditional ventilation"
+        },
+        {
+          "id": "storage_ground",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "description": "Recycling and material storage with organized segregation system"
+        },
+        {
+          "id": "bathroom_ground",
+          "type": "bathroom",
+          "bounds": {
+            "x": 10,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 3,
+              "size": "small"
+            }
+          ],
+          "description": "Half bathroom with brass fixtures and water-efficient fixtures"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_dining",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 12,
+              "size": "large"
+            },
+            {
+              "wall": "north",
+              "position": 12,
+              "size": "medium"
+            }
+          ],
+          "description": "Open living and dining area with traditional light well, local stone flooring, and brass decorative elements"
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7,
+              "size": "medium"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": "medium"
+            }
+          ],
+          "description": "Kitchen with composting station, recycled brass utensils storage, and south-facing windows"
+        },
+        {
+          "id": "puja_room",
+          "type": "other",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 15,
+            "height": 9
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4,
+              "size": "small"
+            }
+          ],
+          "description": "Dedicated prayer room with marble flooring, brass fittings, and traditional Sikh architectural elements"
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": "medium"
+            }
+          ],
+          "description": "Master bedroom with traditional jali screens, built-in storage, and south-facing orientation"
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7,
+              "size": "medium"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": "medium"
+            }
+          ],
+          "description": "Secondary bedroom with traditional ventilation and natural lighting"
+        },
+        {
+          "id": "artist_studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "medium"
+            }
+          ],
+          "description": "Artist studio with north light optimization, material storage, and brass tool racks"
+        },
+        {
+          "id": "handloom_workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7,
+              "size": "large"
+            },
+            {
+              "wall": "north",
+              "position": 7,
+              "size": "large"
+            }
+          ],
+          "description": "Handloom weaving workshop with natural lighting, yarn storage, and traditional ventilation system"
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "penthouse_terrace",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 20
+            }
+          ],
+          "windows": [],
+          "description": "Penthouse terrace with solar panels, rainwater harvesting system, traditional light wells, monsoon drainage solutions, and outdoor workspace with brass fittings"
+        }
+      ]
+    }
+  ]
+}

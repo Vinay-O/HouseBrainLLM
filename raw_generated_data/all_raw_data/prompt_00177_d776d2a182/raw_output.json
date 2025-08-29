@@ -1,0 +1,39 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {"room_type": "entrance", "dimensions": {"length": 10, "width": 8}},
+      {"room_type": "living_room", "dimensions": {"length": 15, "width": 12}},
+      {"room_type": "kitchen", "dimensions": {"length": 10, "width": 8}, "adjacent_to": "utility_room"},
+      {"room_type": "dining_area", "dimensions": {"length": 6, "width": 6}},
+      {"room_type": "bedroom", "dimensions": {"length": 12, "width": 10}, "balcony": true},
+      {"room_type": "bathroom", "dimensions": {"length": 5, "width": 4}}
+    ],
+    "openings": [
+      {"opening_type": "entrance_door", "position": "front"},
+      {"opening_type": "windows", "positions": ["living_room", "kitchen"]},
+      {"opening_type": "balcony_door", "positions": ["bedroom"]}
+    ]
+  },
+  {
+    "level_id": "first_floor",
+    "rooms": [
+      {"room_type": "entrance_hall", "dimensions": {"length": 8, "width": 6}},
+      {"room_type": "bedroom", "dimensions": {"length": 12, "width": 10}, "balcony": true},
+      {"room_type": "bathroom", "dimensions": {"length": 5, "width": 4}}
+    ],
+    "openings": [
+      {"opening_type": "staircase", "position": "corner"},
+      {"opening_type": "windows", "positions": ["bedroom"]}
+    ]
+  },
+  {
+    "level_id": "rooftop",
+    "rooms": [
+      {"room_type": "terrace", "dimensions": {"length": 25, "width": 20}}
+    ],
+    "openings": [
+      {"opening_type": "access_hatch", "position": "center"}
+    ]
+  }
+]}

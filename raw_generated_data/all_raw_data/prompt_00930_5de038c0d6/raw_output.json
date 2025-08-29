@@ -1,0 +1,126 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 12, "width": 14 },
+          "purpose": "common_area",
+          "features": ["natural_light", "ventilation"],
+          "adjacent_to": ["dining_room", "kitchen", "bedroom_1"]
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 9, "width": 10 },
+          "purpose": "dining_area",
+          "features": ["natural_light"],
+          "adjacent_to": ["living_room", "kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 9, "width": 10 },
+          "purpose": "kitchen",
+          "features": ["ventilation", "natural_light"],
+          "adjacent_to": ["dining_room", "utilities"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 12, "width": 14 },
+          "purpose": "bedroom",
+          "features": ["natural_light", "ventilation"],
+          "adjacent_to": ["living_room", "bathroom_1"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 10, "width": 12 },
+          "purpose": "bedroom",
+          "features": ["natural_light"],
+          "adjacent_to": ["home_theater", "bathroom_2"]
+        },
+        {
+          "room_id": "home_theater",
+          "dimensions": { "length": 10, "width": 10 },
+          "purpose": "entertainment",
+          "features": ["soundproofing"],
+          "adjacent_to": ["bedroom_2"]
+        },
+        {
+          "room_id": "bathroom_1",
+          "dimensions": { "length": 5, "width": 6 },
+          "purpose": "bathroom",
+          "features": [],
+          "adjacent_to": ["bedroom_1"]
+        },
+        {
+          "room_id": "bathroom_2",
+          "dimensions": { "length": 5, "width": 6 },
+          "purpose": "bathroom",
+          "features": [],
+          "adjacent_to": ["bedroom_2"]
+        },
+        {
+          "room_id": "utilities",
+          "dimensions": { "length": 8, "width": 10 },
+          "purpose": "utility_room",
+          "features": ["ventilation"],
+          "adjacent_to": ["kitchen"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "direction": "north_east",
+          "size": { "length": 3, "width": 7 }
+        },
+        {
+          "opening_id": "living_room_window_1",
+          "type": "window",
+          "direction": "east",
+          "size": { "length": 4, "width": 5 }
+        },
+        {
+          "opening_id": "living_room_window_2",
+          "type": "window",
+          "direction": "north",
+          "size": { "length": 4, "width": 5 }
+        },
+        {
+          "opening_id": "dining_room_window",
+          "type": "window",
+          "direction": "east",
+          "size": { "length": 3, "width": 4 }
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "direction": "south",
+          "size": { "length": 3, "width": 5 }
+        },
+        {
+          "opening_id": "bedroom_1_window",
+          "type": "window",
+          "direction": "west",
+          "size": { "length": 4, "width": 6 }
+        },
+        {
+          "opening_id": "bedroom_2_window",
+          "type": "window",
+          "direction": "north",
+          "size": { "length": 4, "width": 5 }
+        },
+        {
+          "opening_id": "home_theater_window",
+          "type": "window",
+          "direction": "east",
+          "size": { "length": 3, "width": 4 }
+        },
+        {
+          "opening_id": "utilities_ventilation",
+          "type": "vent",
+          "direction": "south_east",
+          "size": { "length": 1, "width": 2 }
+        }
+      ]
+    }
+  ] }

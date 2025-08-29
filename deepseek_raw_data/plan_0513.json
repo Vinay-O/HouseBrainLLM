@@ -1,0 +1,198 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Eco-friendly"
+    },
+    "plot": {
+      "length": 80,
+      "width": 50
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "count": 1,
+        "description": "Open-plan living, dining, and sleeping area"
+      },
+      {
+        "type": "home_office",
+        "count": 1,
+        "description": "Dedicated workspace with sound insulation"
+      },
+      {
+        "type": "gym",
+        "count": 1,
+        "description": "Private fitness area with equipment space"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Efficient kitchen with energy-efficient appliances"
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "description": "Water-saving fixtures and natural ventilation"
+      },
+      {
+        "type": "garden",
+        "count": 1,
+        "description": "Large outdoor garden space for relaxation"
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "studio_main",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 40
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_pane",
+              "wall": "east",
+              "position": 10,
+              "size": 8
+            },
+            {
+              "type": "double_pane",
+              "wall": "west",
+              "position": 10,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "double_pane",
+              "wall": "north",
+              "position": 8,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "ventilation",
+              "wall": "north",
+              "position": 10,
+              "size": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "double_pane",
+              "wall": "south",
+              "position": 10,
+              "size": 6
+            },
+            {
+              "type": "double_pane",
+              "wall": "east",
+              "position": 12,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "gym",
+          "type": "gym",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "double_pane",
+              "wall": "south",
+              "position": 10,
+              "size": 8
+            },
+            {
+              "type": "double_pane",
+              "wall": "west",
+              "position": 12,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "ventilation",
+              "wall": "north",
+              "position": 10,
+              "size": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

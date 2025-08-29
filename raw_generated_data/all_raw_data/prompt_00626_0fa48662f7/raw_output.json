@@ -1,0 +1,122 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall",
+          "area": 100,
+          "location": "north"
+        },
+        {
+          "name": "Living Room",
+          "area": 300,
+          "location": "northeast"
+        },
+        {
+          "name": "Kitchen",
+          "area": 150,
+          "location": "east"
+        },
+        {
+          "name": "Dining Area",
+          "area": 200,
+          "location": "southeast"
+        },
+        {
+          "name": "Bedroom",
+          "area": 300,
+          "location": "southwest"
+        },
+        {
+          "name": "Bathroom",
+          "area": 100,
+          "location": "west"
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "from_room": "Entrance Hall",
+          "to_area": "Living Room"
+        },
+        {
+          "type": "window",
+          "room": "Living Room",
+          "direction": "northwest"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "name": "Pooja Room",
+          "area": 100,
+          "location": "northeast"
+        },
+        {
+          "name": "Study Room",
+          "area": 250,
+          "location": "northwest"
+        },
+        {
+          "name": "Guest Bedroom",
+          "area": 300,
+          "location": "southwest"
+        },
+        {
+          "name": "Guest Bathroom",
+          "area": 100,
+          "location": "west"
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "room": "Pooja Room",
+          "direction": "east"
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "name": "Terrace Garden",
+          "area": 500,
+          "location": "center"
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "central_courtyard": {
+    "description": "A central courtyard surrounded by the first floor rooms, providing natural light and ventilation.",
+    "size": {
+      "diameter": 25
+    },
+    "features": [
+      {
+        "name": "Water Feature",
+        "type": "Fountain"
+      }
+    ]
+  },
+  "garden": {
+    "description": "A large garden surrounding the house, with a mix of native plants and ornamental trees.",
+    "size": {
+      "area": 1500
+    },
+    "features": [
+      {
+        "name": "Bamboo Grove",
+        "location": "south"
+      },
+      {
+        "name": "Fruit Trees",
+        "types": ["Mango", "Guava"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,495 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 3,
+      "totalArea": 4500,
+      "style": "Scandinavian Hygge"
+    },
+    "plot": {
+      "topography": "desert plateau",
+      "orientation": "diagonal to prevailing winds",
+      "climate": "tropical with monsoons"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4
+      },
+      {
+        "type": "bathroom",
+        "count": 4
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "study",
+        "count": 1
+      },
+      {
+        "type": "media_room",
+        "count": 1
+      },
+      {
+        "type": "gym",
+        "count": 1
+      },
+      {
+        "type": "garage",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 3850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10,
+              "type": "overhead"
+            },
+            {
+              "wall": "north",
+              "position": 10,
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4,
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "gym_0",
+          "type": "gym",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6,
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "type": "fixed",
+              "size": "large"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "entry_1",
+          "type": "foyer",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4,
+              "type": "exterior"
+            },
+            {
+              "wall": "north",
+              "position": 4,
+              "type": "interior"
+            },
+            {
+              "wall": "east",
+              "position": 4,
+              "type": "interior"
+            },
+            {
+              "wall": "west",
+              "position": 4,
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 8,
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "type": "casement",
+              "size": "medium"
+            },
+            {
+              "wall": "west",
+              "position": 8,
+              "type": "casement",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dining_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7,
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6,
+              "type": "sliding",
+              "size": "extra_large"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "type": "picture",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "sunken_living_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 30,
+            "height": 24
+          },
+          "floor_height": -0.5,
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15,
+              "type": "interior"
+            },
+            {
+              "wall": "east",
+              "position": 12,
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 15,
+              "type": "floor_to_ceiling",
+              "size": "extra_large"
+            },
+            {
+              "wall": "west",
+              "position": 12,
+              "type": "floor_to_ceiling",
+              "size": "extra_large"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "primary_bed_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 18,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 9,
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 9,
+              "type": "picture",
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 8,
+              "type": "casement",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "primary_bath_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5,
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "type": "casement",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7,
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7,
+              "type": "casement",
+              "size": "medium"
+            },
+            {
+              "wall": "east",
+              "position": 6,
+              "type": "casement",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 14,
+            "y": 16,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4,
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "type": "casement",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 22,
+            "y": 16,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7,
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7,
+              "type": "casement",
+              "size": "medium"
+            },
+            {
+              "wall": "west",
+              "position": 7,
+              "type": "casement",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "study_2",
+          "type": "study",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6,
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "type": "casement",
+              "size": "medium"
+            },
+            {
+              "wall": "east",
+              "position": 6,
+              "type": "picture",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "media_room_2",
+          "type": "media_room",
+          "bounds": {
+            "x": 22,
+            "y": 28,
+            "width": 14,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7,
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "type": "fixed",
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "name": "Cantilevered Infinity Pool",
+      "description": "30ft cantilevered infinity pool extending from the main level, oriented towards the panoramic views."
+    },
+    {
+      "name": "Solar Panel Array with Battery Storage",
+      "description": "Extensive rooftop solar array with integrated battery storage system for complete energy independence."
+    },
+    {
+      "name": "Earthquake-Resistant Construction",
+      "description": "Structure built with base isolators and a reinforced concrete moment-resisting frame designed for seismic activity."
+    },
+    {
+      "name": "Hygge-Inspired Interior",
+      "description": "Interiors featuring warm wood finishes, a neutral color palette, textured textiles, and a central fireplace for cozy comfort."
+    },
+    {
+      "name": "Monsoon Climate Design",
+      "description": "Deep overhangs, diagonal orientation to prevailing winds, and strategic landscaping for passive cooling and rain protection."
+    }
+  ]
+}

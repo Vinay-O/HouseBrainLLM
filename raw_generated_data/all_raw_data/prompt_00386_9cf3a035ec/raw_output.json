@@ -1,0 +1,149 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 12, "width": 8 },
+          "position": { "x": 5, "y": 5 },
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 7, "width": 6 },
+          "position": { "x": 10, "y": 12 },
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": { "length": 9, "width": 7 },
+          "position": { "x": 35, "y": 8 },
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "garage",
+          "dimensions": { "length": 10, "width": 6 },
+          "position": { "x": 45, "y": 20 }
+        },
+        {
+          "room_type": "private_gym",
+          "dimensions": { "length": 8, "width": 6 },
+          "position": { "x": 37, "y": 19 }
+        },
+        {
+          "room_type": "master_bedroom",
+          "dimensions": { "length": 10, "width": 8 },
+          "position": { "x": 25, "y": 5 }
+        },
+        {
+          "room_type": "bedroom_2",
+          "dimensions": { "length": 9, "width": 7 },
+          "position": { "x": 15, "y": 10 }
+        },
+        {
+          "room_type": "balcony_master",
+          "dimensions": { "length": 4, "width": 6 },
+          "position": { "x": 30, "y": 2 },
+          "bedroom_associated": "master_bedroom"
+        },
+        {
+          "room_type": "balcony_2",
+          "dimensions": { "length": 4, "width": 5 },
+          "position": { "x": 18, "y": 7 },
+          "bedroom_associated": "bedroom_2"
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "location": { "x": 34.5, "y": 10.5 },
+          "connects_to": ["master_bedroom", "balcony_master"]
+        },
+        {
+          "type": "window",
+          "location": { "x": 27, "y": 6 },
+          "size": { "length": 3, "width": 1 }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom_3",
+          "dimensions": { "length": 9, "width": 7 },
+          "position": { "x": 15, "y": 2 }
+        },
+        {
+          "room_type": "bedroom_4",
+          "dimensions": { "length": 8, "width": 6 },
+          "position": { "x": 25, "y": 9 }
+        },
+        {
+          "room_type": "balcony_3",
+          "dimensions": { "length": 4, "width": 5 },
+          "position": { "x": 18, "y": 4.5 },
+          "bedroom_associated": "bedroom_3"
+        },
+        {
+          "room_type": "balcony_4",
+          "dimensions": { "length": 4, "width": 6 },
+          "position": { "x": 29, "y": 10.5 },
+          "bedroom_associated": "bedroom_4"
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "location": { "x": 32.5, "y": 10.5 },
+          "connects_to": ["balcony_4", "bedroom_4"]
+        },
+        {
+          "type": "window",
+          "location": { "x": 27, "y": 6 },
+          "size": { "length": 3, "width": 1 }
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom_5",
+          "dimensions": { "length": 9, "width": 7 },
+          "position": { "x": 15, "y": 2 }
+        },
+        {
+          "room_type": "bedroom_6",
+          "dimensions": { "length": 8, "width": 6 },
+          "position": { "x": 25, "y": 9 }
+        },
+        {
+          "room_type": "balcony_5",
+          "dimensions": { "length": 4, "width": 5 },
+          "position": { "x": 18, "y": 4.5 },
+          "bedroom_associated": "bedroom_5"
+        },
+        {
+          "room_type": "balcony_6",
+          "dimensions": { "length": 4, "width": 6 },
+          "position": { "x": 29, "y": 10.5 },
+          "bedroom_associated": "bedroom_6"
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "location": { "x": 32.5, "y": 10.5 },
+          "connects_to": ["balcony_6", "bedroom_6"]
+        },
+        {
+          "type": "window",
+          "location": { "x": 27, "y": 6 },
+          "size": { "length": 3, "width": 1 }
+        }
+      ]
+    }
+  ]
+}

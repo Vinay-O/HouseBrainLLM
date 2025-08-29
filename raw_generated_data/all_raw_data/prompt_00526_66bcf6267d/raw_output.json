@@ -1,0 +1,241 @@
+{"levels": [ {
+    "level_id": "ground_floor",
+    "rooms": [
+        {
+            "room_id": "living_room",
+            "type": "living",
+            "dimensions": { "length": 6.0, "width": 4.5 },
+            "position": { "x_min": 0, "x_max": 6.0, "y_min": 0, "y_max": 4.5 },
+            "adjacent_rooms": ["open_plan_kitchen", "bedroom_1", "entrance"]
+        },
+        {
+            "room_id": "dining_area",
+            "type": "dining",
+            "dimensions": { "length": 3.0, "width": 2.5 },
+            "position": { "x_min": 6.0, "x_max": 9.0, "y_min": 0, "y_max": 2.5 },
+            "adjacent_rooms": ["open_plan_kitchen", "living_room"]
+        },
+        {
+            "room_id": "open_plan_kitchen",
+            "type": "kitchen",
+            "dimensions": { "length": 4.0, "width": 3.0 },
+            "position": { "x_min": 9.0, "x_max": 13.0, "y_min": 0, "y_max": 3.0 },
+            "adjacent_rooms": ["dining_area", "utility"]
+        },
+        {
+            "room_id": "bedroom_1",
+            "type": "bedroom",
+            "dimensions": { "length": 4.5, "width": 4.0 },
+            "position": { "x_min": 0, "x_max": 4.5, "y_min": 4.5, "y_max": 8.5 },
+            "adjacent_rooms": ["living_room", "bathroom_1"]
+        },
+        {
+            "room_id": "bedroom_2",
+            "type": "bedroom",
+            "dimensions": { "length": 4.0, "width": 3.8 },
+            "position": { "x_min": 4.5, "x_max": 8.5, "y_min": 4.5, "y_max": 8.3 },
+            "adjacent_rooms": ["corridor", "bathroom_2"]
+        },
+        {
+            "room_id": "bedroom_3",
+            "type": "bedroom",
+            "dimensions": { "length": 3.5, "width": 4.0 },
+            "position": { "x_min": 8.5, "x_max": 12.0, "y_min": 4.5, "y_max": 8.5 },
+            "adjacent_rooms": ["corridor", "bathroom_3"]
+        },
+        {
+            "room_id": "bedroom_4",
+            "type": "bedroom",
+            "dimensions": { "length": 3.0, "width": 3.5 },
+            "position": { "x_min": 12.0, "x_max": 15.0, "y_min": 4.5, "y_max": 8.0 },
+            "adjacent_rooms": ["corridor", "bathroom_4"]
+        },
+        {
+            "room_id": "bedroom_5",
+            "type": "bedroom",
+            "dimensions": { "length": 3.0, "width": 4.0 },
+            "position": { "x_min": 12.0, "x_max": 15.0, "y_min": 8.5, "y_max": 12.5 },
+            "adjacent_rooms": ["corridor", "bathroom_5"]
+        },
+        {
+            "room_id": "library",
+            "type": "library",
+            "dimensions": { "length": 3.0, "width": 4.0 },
+            "position": { "x_min": 12.0, "x_max": 15.0, "y_min": 8.5, "y_max": 12.5 },
+            "adjacent_rooms": ["corridor"]
+        },
+        {
+            "room_id": "utility",
+            "type": "utility",
+            "dimensions": { "length": 3.0, "width": 2.5 },
+            "position": { "x_min": 13.0, "x_max": 16.0, "y_min": 0, "y_max": 2.5 },
+            "adjacent_rooms": ["open_plan_kitchen", "bathroom_5"]
+        },
+        {
+            "room_id": "corridor",
+            "type": "corridor",
+            "dimensions": { "length": 16.0, "width": 1.0 },
+            "position": { "x_min": 0, "x_max": 16.0, "y_min": 8.5, "y_max": 9.5 },
+            "adjacent_rooms": ["bedroom_2", "bedroom_3", "bedroom_4", "bedroom_5"]
+        },
+        {
+            "room_id": "entrance",
+            "type": "entrance",
+            "dimensions": { "length": 1.8, "width": 1.8 },
+            "position": { "x_min": -0.2, "x_max": 1.6, "y_min": -0.2, "y_max": 1.6 },
+            "adjacent_rooms": ["living_room"]
+        }
+    ],
+    "openings": [
+        {
+            "opening_id": "main_entrance",
+            "type": "door",
+            "position": { "x": 0.7, "y": 0.7 },
+            "dimensions": { "width": 1.2, "height": 2.4 }
+        },
+        {
+            "opening_id": "living_to_kitchen",
+            "type": "passage",
+            "position": { "x": 6.0, "y": 2.25 },
+            "dimensions": { "width": 1.8, "height": 2.4 }
+        },
+        {
+            "opening_id": "living_to_bedroom1",
+            "type": "door",
+            "position": { "x": 2.25, "y": 4.5 },
+            "dimensions": { "width": 1.2, "height": 2.4 }
+        },
+        {
+            "opening_id": "bedroom1_to_bathroom1",
+            "type": "door",
+            "position": { "x": 4.5, "y": 6.0 },
+            "dimensions": { "width": 0.9, "height": 2.1 }
+        },
+        {
+            "opening_id": "bedroom2_to_bathroom2",
+            "type": "door",
+            "position": { "x": 6.5, "y": 6.0 },
+            "dimensions": { "width": 0.9, "height": 2.1 }
+        },
+        {
+            "opening_id": "bedroom3_to_bathroom3",
+            "type": "door",
+            "position": { "x": 10.5, "y": 6.0 },
+            "dimensions": { "width": 0.9, "height": 2.1 }
+        },
+        {
+            "opening_id": "bedroom4_to_bathroom4",
+            "type": "door",
+            "position": { "x": 14.0, "y": 6.5 },
+            "dimensions": { "width": 0.9, "height": 2.1 }
+        },
+        {
+            "opening_id": "bedroom5_to_bathroom5",
+            "type": "door",
+            "position": { "x": 14.0, "y": 10.0 },
+            "dimensions": { "width": 0.9, "height": 2.1 }
+        },
+        {
+            "opening_id": "library_to_corridor",
+            "type": "door",
+            "position": { "x": 13.5, "y": 9.0 },
+            "dimensions": { "width": 1.2, "height": 2.4 }
+        },
+        {
+            "opening_id": "corridor_to_bedroom2",
+            "type": "door",
+            "position": { "x": 5.5, "y": 9.0 },
+            "dimensions": { "width": 1.2, "height": 2.4 }
+        },
+        {
+            "opening_id": "corridor_to_bedroom3",
+            "type": "door",
+            "position": { "x": 9.5, "y": 9.0 },
+            "dimensions": { "width": 1.2, "height": 2.4 }
+        },
+        {
+            "opening_id": "corridor_to_bedroom4",
+            "type": "door",
+            "position": { "x": 13.5, "y": 7.0 },
+            "dimensions": { "width": 1.2, "height": 2.4 }
+        },
+        {
+            "opening_id": "corridor_to_bedroom5",
+            "type": "door",
+            "position": { "x": 13.5, "y": 9.0 },
+            "dimensions": { "width": 1.2, "height": 2.4 }
+        },
+        {
+            "opening_id": "kitchen_to_utility",
+            "type": "door",
+            "position": { "x": 13.5, "y": 1.0 },
+            "dimensions": { "width": 0.9, "height": 2.1 }
+        },
+        {
+            "opening_id": "living_to_dining",
+            "type": "passage",
+            "position": { "x": 4.5, "y": 1.8 },
+            "dimensions": { "width": 1.8, "height": 2.4 }
+        },
+        {
+            "opening_id": "dining_to_kitchen",
+            "type": "passage",
+            "position": { "x": 9.0, "y": 1.5 },
+            "dimensions": { "width": 1.8, "height": 2.4 }
+        },
+        {
+            "opening_id": "window_living",
+            "type": "window",
+            "position": { "x": 3.0, "y": 2.25 },
+            "dimensions": { "width": 1.2, "height": 1.8 }
+        },
+        {
+            "opening_id": "window_dining",
+            "type": "window",
+            "position": { "x": 7.5, "y": 1.25 },
+            "dimensions": { "width": 1.2, "height": 1.8 }
+        },
+        {
+            "opening_id": "window_kitchen",
+            "type": "window",
+            "position": { "x": 10.0, "y": 1.5 },
+            "dimensions": { "width": 1.2, "height": 1.8 }
+        },
+        {
+            "opening_id": "window_bedroom1",
+            "type": "window",
+            "position": { "x": 2.0, "y": 6.5 },
+            "dimensions": { "width": 1.2, "height": 1.8 }
+        },
+        {
+            "opening_id": "window_bedroom2",
+            "type": "window",
+            "position": { "x": 5.0, "y": 6.5 },
+            "dimensions": { "width": 1.2, "height": 1.8 }
+        },
+        {
+            "opening_id": "window_bedroom3",
+            "type": "window",
+            "position": { "x": 9.0, "y": 6.5 },
+            "dimensions": { "width": 1.2, "height": 1.8 }
+        },
+        {
+            "opening_id": "window_bedroom4",
+            "type": "window",
+            "position": { "x": 13.0, "y": 6.5 },
+            "dimensions": { "width": 1.2, "height": 1.8 }
+        },
+        {
+            "opening_id": "window_bedroom5",
+            "type": "window",
+            "position": { "x": 14.0, "y": 10.0 },
+            "dimensions": { "width": 1.2, "height": 1.8 }
+        },
+        {
+            "opening_id": "window_library",
+            "type": "window",
+            "position": { "x": 13.5, "y": 10.0 },
+            "dimensions": { "width": 1.2, "height": 1.8 }
+        }
+    ]
+} ] }

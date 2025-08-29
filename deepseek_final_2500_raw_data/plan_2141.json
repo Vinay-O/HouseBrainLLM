@@ -1,0 +1,293 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2850,
+      "style": "Ultra-Modern Minimalist"
+    },
+    "plot": {
+      "shape": "circular",
+      "orientation": "north-facing",
+      "climate": "humid subtropical"
+    },
+    "roomBreakdown": [
+      {
+        "type": "yoga_studio",
+        "count": 1,
+        "specialFeatures": [
+          "heated_floors"
+        ]
+      },
+      {
+        "type": "green_wall",
+        "count": 4,
+        "specialFeatures": [
+          "integrated_irrigation"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "count": 2,
+        "specialFeatures": [
+          "aging_in_place_modifications"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "specialFeatures": [
+          "aging_in_place_modifications"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "specialFeatures": [
+          "open_plan"
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "specialFeatures": [
+          "open_plan"
+        ]
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "specialFeatures": []
+      },
+      {
+        "type": "storage",
+        "count": 1,
+        "specialFeatures": []
+      }
+    ]
+  },
+  "total_area": 2850.0,
+  "construction_cost": 427500.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "storage"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_room",
+          "type": "storage",
+          "bounds": {
+            "x": 5,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "utility_room"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "yoga_studio",
+          "type": "yoga_studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "kitchen"
+            },
+            {
+              "type": "interior",
+              "to_room": "primary_bedroom"
+            },
+            {
+              "type": "interior",
+              "to_room": "guest_bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "primary_bathroom"
+            },
+            {
+              "type": "interior",
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "primary_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "primary_bedroom"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 25,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "guest_bathroom"
+            },
+            {
+              "type": "interior",
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "guest_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 25,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "guest_bedroom"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

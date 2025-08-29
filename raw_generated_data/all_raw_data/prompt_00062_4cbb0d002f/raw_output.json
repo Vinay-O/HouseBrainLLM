@@ -1,0 +1,131 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "description": "Open concept living area with integrated kitchen and dining space, designed in Chettinad style featuring traditional motifs and intricate carvings.",
+          "dimensions": {"length": 20, "width": 15},
+          "features": ["fireplace", "large windows"],
+          "adjacent_rooms": ["kitchen", "dining"]
+        },
+        {
+          "room_id": "kitchen",
+          "description": "Fully equipped modern kitchen integrated with the living area, featuring traditional Chettinad accents.",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["modern appliances", "storage cabinets"],
+          "adjacent_rooms": ["living_room"]
+        },
+        {
+          "room_id": "dining",
+          "description": "Dedicated dining area within the living zone with traditional decor and ample seating.",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["wooden table", "ornate chandeliers"],
+          "adjacent_rooms": ["living_room"]
+        },
+        {
+          "room_id": "home_office",
+          "description": "Dedicated home office space with minimalistic design and soundproofing, located near the living area for easy access.",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["quiet zone", "built-in shelves"],
+          "adjacent_rooms": []
+        },
+        {
+          "room_id": "guest_room",
+          "description": "Guest room designed with a bed, wardrobe and traditional decorative elements.",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["en-suite bathroom", "wardrobe"],
+          "adjacent_rooms": []
+        },
+        {
+          "room_id": "bathroom",
+          "description": "Guest en-suite bathroom with modern fixtures and traditional tilework.",
+          "dimensions": {"length": 8, "width": 5},
+          "features": ["tiled floor", "modern fixtures"],
+          "adjacent_rooms": ["guest_room"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "front_door",
+          "description": "Large entrance door with traditional wooden carvings leading directly into the living area.",
+          "location": "north",
+          "size": {"width": 8, "height": 10}
+        },
+        {
+          "opening_id": "backdoor",
+          "description": "Secondary entrance to connect with the garden and outdoor space.",
+          "location": "south",
+          "size": {"width": 6, "height": 7}
+        },
+        {
+          "opening_id": "window_garden_view",
+          "description": "Large window in living area offering view of the garden.",
+          "location": "east",
+          "size": {"width": 10, "height": 12}
+        }
+      ],
+      "external_spaces": [
+        {
+          "space_id": "garden",
+          "description": "Expansive garden with traditional landscaping elements, water features and seating areas.",
+          "dimensions": {"length": 60, "width": 90},
+          "features": ["water fountain", "benches"]
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "master_bedroom",
+          "description": "Spacious master bedroom with Chettinad style decor, featuring a balcony overlooking the garden.",
+          "dimensions": {"length": 16, "width": 12},
+          "features": ["balcony", "built-in wardrobe"],
+          "adjacent_rooms": []
+        },
+        {
+          "room_id": " ensuite_bathroom",
+          "description": "Modern ensuite bathroom for master bedroom with traditional touches.",
+          "dimensions": {"length": 8, "width": 6},
+          "features": ["tiled floor", "modern fixtures"],
+          "adjacent_rooms": ["master_bedroom"]
+        },
+        {
+          "room_id": "home_theater",
+          "description": "Dedicated home theater room with soundproofing and ambient lighting.",
+          "dimensions": {"length": 14, "width": 12},
+          "features": ["soundproof walls", "projector screen"],
+          "adjacent_rooms": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase",
+          "description": "Sturdy staircase connecting ground and upper floors with traditional design.",
+          "location": "central",
+          "size": {"width": 4, "height": 12}
+        },
+        {
+          "opening_id": "upper_floor_window",
+          "description": "Window offering a scenic view of the surrounding landscape.",
+          "location": "west",
+          "size": {"width": 10, "height": 8}
+        }
+      ]
+    }
+  ],
+  "design_principles": {
+    "style": "Chettinad",
+    "vastu": {
+      "entrance_alignment": "north-east",
+      "room_orientation": "optimized for natural light and ventilation"
+    },
+    "building_norms": [
+      "compliance with local zoning laws",
+      "adequate setbacks from plot boundaries",
+      "provision of emergency exits in each floor"
+    ]
+  }
+}

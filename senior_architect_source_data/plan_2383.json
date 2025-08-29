@@ -1,0 +1,163 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Prairie"
+    },
+    "plot": {
+      "shape": "elongated_rectangle",
+      "orientation": "diagonal_to_winds",
+      "climate": "alpine_heavy_snow",
+      "adjacency": "railway"
+    },
+    "roomBreakdown": [
+      {
+        "type": "artist_studio",
+        "requirements": [
+          "north_clerestory_windows"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "requirements": [
+          "cross_ventilation"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "requirements": [
+          "composting_toilet"
+        ]
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 675000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "pod1_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "south_connection",
+            "east_exterior"
+          ],
+          "windows": [
+            "south_large",
+            "north_clerestory"
+          ]
+        },
+        {
+          "id": "pod1_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            "west_connection"
+          ],
+          "windows": [
+            "south_standard"
+          ]
+        },
+        {
+          "id": "pod2_studio",
+          "type": "artist_studio",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 18,
+            "height": 22
+          },
+          "doors": [
+            "west_connection",
+            "east_exterior"
+          ],
+          "windows": [
+            "north_clerestory_large",
+            "south_standard"
+          ]
+        },
+        {
+          "id": "pod3_bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 14,
+            "height": 16
+          },
+          "doors": [
+            "west_connection",
+            "east_exterior"
+          ],
+          "windows": [
+            "south_large",
+            "north_standard"
+          ]
+        },
+        {
+          "id": "pod3_bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 64,
+            "y": 0,
+            "width": 14,
+            "height": 16
+          },
+          "doors": [
+            "west_connection",
+            "east_exterior"
+          ],
+          "windows": [
+            "south_large",
+            "north_standard"
+          ]
+        },
+        {
+          "id": "pod4_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 78,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "west_connection"
+          ],
+          "windows": [
+            "south_vent"
+          ]
+        },
+        {
+          "id": "pod4_mech",
+          "type": "utility",
+          "bounds": {
+            "x": 78,
+            "y": 12,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "west_connection"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

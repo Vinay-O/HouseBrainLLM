@@ -1,0 +1,179 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "Living Room",
+          "dimensions": { "length": 12, "width": 10 },
+          "orientation": "North"
+        },
+        {
+          "room_id": "dining_room",
+          "type": "Dining Room",
+          "dimensions": { "length": 10, "width": 9 },
+          "adjacent_to": ["living_room"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "Kitchen",
+          "dimensions": { "length": 10, "width": 8 },
+          "orientation": "East",
+          "features": ["modular", "gas_stove", "sink"],
+          "adjacent_to": ["dining_room"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "Bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "orientation": "North-East",
+          "features": ["attached_bathroom", "wardrobe"],
+          "adjacent_to": ["living_room"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "Bedroom",
+          "dimensions": { "length": 11, "width": 9 },
+          "orientation": "East",
+          "features": ["attached_bathroom", "wardrobe"],
+          "adjacent_to": ["living_room"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "Bedroom",
+          "dimensions": { "length": 10, "width": 9 },
+          "orientation": "South-East",
+          "features": ["attached_bathroom", "wardrobe"],
+          "adjacent_to": ["living_room"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "type": "Bedroom",
+          "dimensions": { "length": 10, "width": 8 },
+          "orientation": "South",
+          "features": ["attached_bathroom", "wardrobe"],
+          "adjacent_to": ["living_room"]
+        },
+        {
+          "room_id": "bedroom_5",
+          "type": "Bedroom",
+          "dimensions": { "length": 10, "width": 8 },
+          "orientation": "West",
+          "features": ["attached_bathroom", "wardrobe"],
+          "adjacent_to": ["living_room"]
+        },
+        {
+          "room_id": "home_office",
+          "type": "Home Office",
+          "dimensions": { "length": 8, "width": 7 },
+          "orientation": "North-West",
+          "features": ["workstation", "storage"],
+          "adjacent_to": ["living_room"]
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "Bathroom",
+          "dimensions": { "length": 5, "width": 4 },
+          "adjacent_to": ["bedroom_1"]
+        },
+        {
+          "room_id": "bathroom_2",
+          "type": "Bathroom",
+          "dimensions": { "length": 5, "width": 4 },
+          "adjacent_to": ["bedroom_2"]
+        },
+        {
+          "room_id": "bathroom_3",
+          "type": "Bathroom",
+          "dimensions": { "length": 5, "width": 4 },
+          "adjacent_to": ["bedroom_3"]
+        },
+        {
+          "room_id": "bathroom_4",
+          "type": "Bathroom",
+          "dimensions": { "length": 5, "width": 4 },
+          "adjacent_to": ["bedroom_4"]
+        },
+        {
+          "room_id": "bathroom_5",
+          "type": "Bathroom",
+          "dimensions": { "length": 5, "width": 4 },
+          "adjacent_to": ["bedroom_5"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "Entrance",
+          "orientation": "North",
+          "dimensions": { "length": 3, "width": 7 },
+          "features": ["double_doors", "covered"]
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "Window",
+          "room": "living_room",
+          "orientation": "North",
+          "dimensions": { "length": 4, "width": 4 }
+        },
+        {
+          "opening_id": "bedroom_1_window",
+          "type": "Window",
+          "room": "bedroom_1",
+          "orientation": "East",
+          "dimensions": { "length": 3, "width": 3 }
+        },
+        {
+          "opening_id": "bedroom_2_window",
+          "type": "Window",
+          "room": "bedroom_2",
+          "orientation": "East",
+          "dimensions": { "length": 3, "width": 3 }
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "Window",
+          "room": "kitchen",
+          "orientation": "East",
+          "dimensions": { "length": 4, "width": 3 }
+        },
+        {
+          "opening_id": "home_office_window",
+          "type": "Window",
+          "room": "home_office",
+          "orientation": "North-West",
+          "dimensions": { "length": 2.5, "width": 2.5 }
+        },
+        {
+          "opening_id": "dining_room_window",
+          "type": "Window",
+          "room": "dining_room",
+          "orientation": "West",
+          "dimensions": { "length": 3, "width": 3 }
+        },
+        {
+          "opening_id": "bedroom_5_window",
+          "type": "Window",
+          "room": "bedroom_5",
+          "orientation": "West",
+          "dimensions": { "length": 3, "width": 3 }
+        },
+        {
+          "opening_id": "bedroom_4_window",
+          "type": "Window",
+          "room": "bedroom_4",
+          "orientation": "South",
+          "dimensions": { "length": 3, "width": 3 }
+        },
+        {
+          "opening_id": "bedroom_3_window",
+          "type": "Window",
+          "room": "bedroom_3",
+          "orientation": "South-East",
+          "dimensions": { "length": 3, "width": 3 }
+        }
+      ]
+    }
+  ]
+}

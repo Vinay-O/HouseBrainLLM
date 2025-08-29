@@ -1,0 +1,104 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 4.0, "width": 5.0 },
+          "features": ["art_deco_elements", "vastu_compliant"],
+          "position": { "direction": "north" }
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 3.5, "width": 4.0 },
+          "features": ["modern_appliances", "vastu_compliant"],
+          "position": { "direction": "southeast" }
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 4.5, "width": 5.0 },
+          "features": ["art_deco_elements", "vastu_compliant"],
+          "position": { "direction": "southwest" }
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": { "length": 2.5, "width": 3.0 },
+          "features": ["modern_fixtures", "vastu_compliant"],
+          "position": { "direction": "northeast" }
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["art_deco_elements", "vastu_compliant"],
+          "position": { "direction": "east" }
+        }
+      ],
+      "openings": [
+        {
+          "type": "entrance",
+          "dimensions": { "length": 2.0, "width": 1.0 },
+          "position": { "direction": "north" }
+        },
+        {
+          "type": "window",
+          "dimensions": { "length": 1.5, "width": 1.5 },
+          "position": { "direction": "east", "room": "living_room" }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 4.5, "width": 5.0 },
+          "features": ["art_deco_elements", "vastu_compliant"],
+          "position": { "direction": "southwest" }
+        },
+        {
+          "room_type": "study_room",
+          "dimensions": { "length": 3.0, "width": 4.0 },
+          "features": ["art_deco_elements", "vastu_compliant"],
+          "position": { "direction": "northwest" }
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": { "length": 2.5, "width": 3.0 },
+          "features": ["modern_fixtures", "vastu_compliant"],
+          "position": { "direction": "northeast" }
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "dimensions": { "length": 1.5, "width": 1.5 },
+          "position": { "direction": "east", "room": "bedroom" }
+        },
+        {
+          "type": "balcony",
+          "dimensions": { "length": 3.0, "width": 2.0 },
+          "position": { "direction": "south", "room": "study_room" }
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_type": "rooftop_terrace",
+          "dimensions": { "length": 8.0, "width": 6.0 },
+          "features": ["art_deco_elements", "vastu_compliant"],
+          "position": { "direction": "open" }
+        }
+      ],
+      "openings": [
+        {
+          "type": "staircase",
+          "dimensions": { "length": 1.5, "width": 0.8 },
+          "position": { "direction": "south" }
+        }
+      ]
+    }
+  ]
+}

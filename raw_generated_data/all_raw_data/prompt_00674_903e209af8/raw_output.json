@@ -1,0 +1,117 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room_1",
+          "type": "Living Room",
+          "dimensions": [20, 15],
+          "features": ["open_plan", "central_courtyard_access"]
+        },
+        {
+          "room_id": "kitchen_1",
+          "type": "Kitchen",
+          "dimensions": [15, 12],
+          "features": ["open_plan", "modular_kitchen", "dining_area"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "Bedroom",
+          "dimensions": [18, 15],
+          "features": ["attached_bathroom", "balcony", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "Bedroom",
+          "dimensions": [16, 14],
+          "features": ["attached_bathroom", "balcony", "wardrobe"]
+        },
+        {
+          "room_id": "library",
+          "type": "Library",
+          "dimensions": [15, 12],
+          "features": ["bookshelves", "reading_area", "natural_light"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "Bedroom",
+          "dimensions": [14, 13],
+          "features": ["attached_bathroom", "balcony", "wardrobe"]
+        },
+        {
+          "room_id": "central_courtyard",
+          "type": "Central Courtyard",
+          "dimensions": [20, 20],
+          "features": ["open_space", "garden", "seating_area"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "Entrance",
+          "dimensions": [8, 10],
+          "direction": "North"
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "Window",
+          "dimensions": [6, 6],
+          "room_id": "living_room_1",
+          "direction": "East"
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "Window",
+          "dimensions": [5, 5],
+          "room_id": "kitchen_1",
+          "direction": "West"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor_1",
+      "rooms": [
+        {
+          "room_id": "bedroom_4",
+          "type": "Bedroom",
+          "dimensions": [16, 15],
+          "features": ["attached_bathroom", "balcony", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_5",
+          "type": "Bedroom",
+          "dimensions": [14, 13],
+          "features": ["attached_bathroom", "balcony", "wardrobe"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "bedroom_4_window",
+          "type": "Window",
+          "dimensions": [6, 6],
+          "room_id": "bedroom_4",
+          "direction": "North"
+        },
+        {
+          "opening_id": "bedroom_5_window",
+          "type": "Window",
+          "dimensions": [5, 5],
+          "room_id": "bedroom_5",
+          "direction": "South"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor_2",
+      "rooms": [
+        {
+          "room_id": "terrace",
+          "type": "Terrace",
+          "dimensions": [30, 25],
+          "features": ["open_space", "seating_area", "garden"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

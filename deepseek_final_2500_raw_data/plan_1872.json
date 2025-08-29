@@ -1,0 +1,321 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 2850,
+      "style": "Mediterranean Villa"
+    },
+    "plot": {
+      "size": 20000,
+      "location": "rural",
+      "climate": "tropical with monsoons"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "area": 600
+      },
+      {
+        "type": "study",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 400
+      },
+      {
+        "type": "bedroom",
+        "area": 400
+      },
+      {
+        "type": "bedroom",
+        "area": 400
+      },
+      {
+        "type": "bedroom",
+        "area": 400
+      },
+      {
+        "type": "living_room",
+        "area": 450
+      },
+      {
+        "type": "kitchen",
+        "area": 200
+      },
+      {
+        "type": "sauna",
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 2850.0,
+  "construction_cost": 855000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "library_pod",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 10
+              },
+              "to_room": "study_pod"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 20
+              },
+              "to_outdoor": "garden"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "length": 10
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 15
+              },
+              "length": 10
+            }
+          ]
+        },
+        {
+          "id": "study_pod",
+          "type": "study",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "to_room": "library_pod"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 7.5
+              },
+              "to_room": "living_pod"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 10,
+                "y": 15
+              },
+              "length": 10
+            }
+          ]
+        },
+        {
+          "id": "living_pod",
+          "type": "living_room",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 25,
+            "height": 18
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 9
+              },
+              "to_room": "study_pod"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 9
+              },
+              "to_room": "kitchen_pod"
+            },
+            {
+              "position": {
+                "x": 12.5,
+                "y": 18
+              },
+              "to_outdoor": "terrace"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "length": 15
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 18
+              },
+              "length": 15
+            }
+          ]
+        },
+        {
+          "id": "kitchen_pod",
+          "type": "kitchen",
+          "bounds": {
+            "x": 75,
+            "y": 0,
+            "width": 15,
+            "height": 13.3
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 6.65
+              },
+              "to_room": "living_pod"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 6.65
+              },
+              "to_room": "bedroom_wing"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 0
+              },
+              "length": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_wing",
+          "type": "bedroom",
+          "bounds": {
+            "x": 90,
+            "y": 0,
+            "width": 40,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "to_room": "kitchen_pod"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 10
+              },
+              "to_outdoor": "garden"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "to_outdoor": "garden"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 10
+              },
+              "to_outdoor": "garden"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "length": 30
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 10
+              },
+              "length": 30
+            }
+          ]
+        },
+        {
+          "id": "sauna_pod",
+          "type": "sauna",
+          "bounds": {
+            "x": 50,
+            "y": 18,
+            "width": 15,
+            "height": 6.67
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 0
+              },
+              "to_outdoor": "terrace"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "length": 15
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 6.67
+              },
+              "length": 15
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 0
+              },
+              "length": 6.67
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

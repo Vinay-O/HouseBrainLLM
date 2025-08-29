@@ -1,0 +1,94 @@
+{ "levels": [ {
+    "level_id": "ground_floor",
+    "rooms": [
+      {
+        "room_id": "living_room",
+        "dimensions": { "length": 20, "width": 16 },
+        "position": { "x_min": 0, "y_min": 0, "x_max": 20, "y_max": 16 },
+        "accessibility_features": ["ramp_access", "wide_doors"]
+      },
+      {
+        "room_id": "kitchen",
+        "dimensions": { "length": 15, "width": 14 },
+        "position": { "x_min": 20, "y_min": 0, "x_max": 35, "y_max": 14 },
+        "accessibility_features": ["lowered_cabinets", "wheelchair_turning_space"]
+      },
+      {
+        "room_id": "bedroom",
+        "dimensions": { "length": 20, "width": 16 },
+        "position": { "x_min": 35, "y_min": 0, "x_max": 55, "y_max": 16 },
+        "accessibility_features": ["ramp_access", "wide_doors"]
+      },
+      {
+        "room_id": "bathroom",
+        "dimensions": { "length": 12, "width": 10 },
+        "position": { "x_min": 55, "y_min": 0, "x_max": 67, "y_max": 10 },
+        "accessibility_features": ["grab_bars", "wheelchair_accessible_shower"]
+      },
+      {
+        "room_id": "private_gym",
+        "dimensions": { "length": 20, "width": 15 },
+        "position": { "x_min": 67, "y_min": 0, "x_max": 87, "y_max": 15 },
+        "accessibility_features": ["adjustable_equipment", "wide_aisles"]
+      },
+      {
+        "room_id": "dining_area",
+        "dimensions": { "length": 12, "width": 10 },
+        "position": { "x_min": 87, "y_min": 0, "x_max": 99, "y_max": 10 }
+      },
+      {
+        "room_id": "study_room",
+        "dimensions": { "length": 12, "width": 10 },
+        "position": { "x_min": 87, "y_min": 10, "x_max": 99, "y_max": 20 }
+      }
+    ],
+    "openings": [
+      {
+        "opening_id": "main_entrance",
+        "type": "door",
+        "dimensions": { "width": 4, "height": 8 },
+        "position": { "x": 10, "y": 8 },
+        "accessibility_features": ["ramp", "wide_doors"]
+      },
+      {
+        "opening_id": "living_room_window",
+        "type": "window",
+        "dimensions": { "width": 6, "height": 6 },
+        "position": { "x": 10, "y": 8 }
+      },
+      {
+        "opening_id": "kitchen_window",
+        "type": "window",
+        "dimensions": { "width": 6, "height": 6 },
+        "position": { "x": 32.5, "y": 7 }
+      },
+      {
+        "opening_id": "bedroom_window",
+        "type": "window",
+        "dimensions": { "width": 6, "height": 6 },
+        "position": { "x": 47.5, "y": 8 }
+      },
+      {
+        "opening_id": "bathroom_window",
+        "type": "window",
+        "dimensions": { "width": 4, "height": 4 },
+        "position": { "x": 61, "y": 5 }
+      },
+      {
+        "opening_id": "gym_entrance",
+        "type": "door",
+        "dimensions": { "width": 3.5, "height": 8 },
+        "position": { "x": 76.5, "y": 7.5 }
+      }
+    ],
+    "accessibility_features": ["wide_corridors", "non_slip_flooring"],
+    "vastu_compliance": {
+      "directions": {
+        "north": ["living_room", "study_room"],
+        "east": ["kitchen"],
+        "south": ["bedroom"],
+        "west": ["bathroom"]
+      },
+      "materials": ["light_colored_flooring", "natural_stone_countertops"]
+    }
+  }] }

@@ -1,0 +1,73 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance hall",
+          "description": "A welcoming entrance with built-in storage and space for guest seating.",
+          "dimensions": {"length": 10, "width": 6},
+          "vastu_compatibility": true
+        },
+        {
+          "room_type": "living room",
+          "description": "Spacious living area adjoining the balcony overlooking a landscaped garden.",
+          "dimensions": {"length": 15, "width": 12},
+          "vastu_compatibility": true,
+          "balcony_attached": true
+        },
+        {
+          "room_type": "dining area",
+          "description": "Dining space adjacent to the kitchen for easy serving during meal times.",
+          "dimensions": {"length": 8, "width": 8},
+          "vastu_compatibility": true
+        },
+        {
+          "room_type": "kitchen",
+          "description": "Fully equipped modern kitchen with ample counter space and integrated storage.",
+          "dimensions": {"length": 10, "width": 8},
+          "vastu_compatibility": true,
+          "open_connections": ["dining area"]
+        },
+        {
+          "room_type": "bedroom_1",
+          "description": "Master bedroom with a private balcony and an attached en-suite bathroom.",
+          "dimensions": {"length": 12, "width": 10},
+          "vastu_compatibility": true,
+          "balcony_attached": true
+        },
+        {
+          "room_type": "bedroom_2",
+          "description": "Additional bedroom designed as a flexible space with private balcony and shared bathroom.",
+          "dimensions": {"length": 12, "width": 10},
+          "vastu_compatibility": true,
+          "balcony_attached": true
+        },
+        {
+          "room_type": "bathroom",
+          "description": "Shared bathroom for the second bedroom with ensuite accessibility and modern fixtures.",
+          "dimensions": {"length": 6, "width": 5},
+          "vastu_compatibility": false,
+          "shared_with": ["bedroom_2"]
+        },
+        {
+          "room_type": "private gym",
+          "description": "Dedicated space for fitness and exercise equipment ensuring privacy and sound insulation.",
+          "dimensions": {"length": 12, "width": 10},
+          "vastu_compatibility": true,
+          "secluded_area": true
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "main entrance",
+          "description": "Wide door with modern security features.",
+          "dimensions": {"height": 7, "width": 3}
+        },
+        {
+          "opening_type": "balcony access",
+          "description": "Direct access to balconies from bedrooms and living area.",
+          "dimensions": {"height": 4, "width": 6}
+        }
+      ]
+    }
+]}

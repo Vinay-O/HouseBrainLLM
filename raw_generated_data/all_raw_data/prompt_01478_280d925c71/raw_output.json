@@ -1,0 +1,136 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["natural_light", "ventilation"],
+          "position": { "x_min": 0, "x_max": 15, "y_min": 0, "y_max": 12 }
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["modular_kitchen", "ventilation"],
+          "position": { "x_min": 15, "x_max": 25, "y_min": 0, "y_max": 8 }
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["natural_light"],
+          "position": { "x_min": 25, "x_max": 35, "y_min": 0, "y_max": 8 }
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["attached_bathroom", "natural_light", "ventilation"],
+          "position": { "x_min": 0, "x_max": 15, "y_min": 8, "y_max": 20 }
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["attached_bathroom", "natural_light", "ventilation"],
+          "position": { "x_min": 15, "x_max": 25, "y_min": 8, "y_max": 16 }
+        },
+        {
+          "room_id": "servant_quarters",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["attached_bathroom", "natural_light"],
+          "position": { "x_min": 25, "x_max": 35, "y_min": 8, "y_max": 16 }
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["natural_light"],
+          "position": { "x_min": 25, "x_max": 35, "y_min": 16, "y_max": 24 }
+        },
+        {
+          "room_id": "swimming_pool",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["outdoor"],
+          "position": { "x_min": 35, "x_max": 45, "y_min": 0, "y_max": 24 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 6.5, "width": 3 },
+          "position": { "x": 0, "y": 12 }
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "dimensions": { "length": 6.5, "width": 3 },
+          "position": { "x": 45, "y": 0 }
+        },
+        {
+          "opening_id": "front_window_living_room",
+          "type": "window",
+          "dimensions": { "length": 6, "width": 4 },
+          "position": { "x_range": [0, 15], "y": 12 }
+        },
+        {
+          "opening_id": "back_window_bedroom_1",
+          "type": "window",
+          "dimensions": { "length": 6, "width": 4 },
+          "position": { "x_range": [0, 15], "y": 20 }
+        },
+        {
+          "opening_id": "side_window_kitchen",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 3 },
+          "position": { "x": 20, "y_range": [0, 8] }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["attached_bathroom", "natural_light", "ventilation"],
+          "position": { "x_min": 0, "x_max": 15, "y_min": 24, "y_max": 36 }
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["attached_bathroom", "natural_light", "ventilation"],
+          "position": { "x_min": 15, "x_max": 25, "y_min": 24, "y_max": 32 }
+        },
+        {
+          "room_id": "balcony",
+          "dimensions": { "length": 20, "width": 8 },
+          "features": ["outdoor_seating", "natural_light"],
+          "position": { "x_min": 25, "x_max": 45, "y_min": 24, "y_max": 32 }
+        },
+        {
+          "room_id": "terrace",
+          "dimensions": { "length": 30, "width": 8 },
+          "features": ["outdoor_seating", "natural_light"],
+          "position": { "x_min": 5, "x_max": 35, "y_min": 32, "y_max": 40 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "bedroom_3_window",
+          "type": "window",
+          "dimensions": { "length": 6, "width": 4 },
+          "position": { "x_range": [0, 15], "y": 36 }
+        },
+        {
+          "opening_id": "bedroom_4_window",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 3 },
+          "position": { "x": 20, "y_range": [24, 32] }
+        },
+        {
+          "opening_id": "terrace_access",
+          "type": "door",
+          "dimensions": { "length": 6.5, "width": 3 },
+          "position": { "x": 20, "y": 32 }
+        }
+      ]
+    }
+  ]}

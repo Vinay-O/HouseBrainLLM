@@ -1,0 +1,113 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "area": 300,
+          "shape": "rectangular",
+          "features": ["sofa", "TV unit", "dining table"],
+          "position": {
+            "adjacent_to": ["kitchen", "bedroom"],
+            "faces": "garden"
+          }
+        },
+        {
+          "room_id": "kitchen",
+          "area": 150,
+          "shape": "L-shaped",
+          "features": ["modular cabinets", "cooking range", "sink"],
+          "position": {
+            "adjacent_to": ["living_room", "bedroom"],
+            "faces": "garden"
+          }
+        },
+        {
+          "room_id": "bedroom",
+          "area": 300,
+          "shape": "square",
+          "features": ["double bed", "wardrobe", "en-suite bathroom"],
+          "position": {
+            "adjacent_to": ["living_room", "kitchen"],
+            "faces": "garden"
+          }
+        },
+        {
+          "room_id": "home_office",
+          "area": 150,
+          "shape": "rectangular",
+          "features": ["desk", "chair", "bookshelf"],
+          "position": {
+            "adjacent_to": "bedroom",
+            "faces": "garden"
+          }
+        },
+        {
+          "room_id": "swimming_pool",
+          "area": 150,
+          "shape": "rectangular",
+          "features": ["pool", "deck"],
+          "position": {
+            "adjacent_to": "garden",
+            "faces": "garden"
+          }
+        },
+        {
+          "room_id": "bathroom",
+          "area": 100,
+          "shape": "rectangular",
+          "features": ["shower", "toilet", "sink"],
+          "position": {
+            "adjacent_to": "bedroom"
+          }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "size": "double door",
+          "position": {
+            "faces": "north"
+          }
+        },
+        {
+          "opening_id": "garden_access",
+          "type": " sliding doors",
+          "size": "large",
+          "position": {
+            "faces": "south"
+          }
+        },
+        {
+          "opening_id": "bedroom_window",
+          "type": "window",
+          "size": "large",
+          "position": {
+            "faces": "east"
+          }
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "size": "medium",
+          "position": {
+            "faces": "west"
+          }
+        }
+      ],
+      "additional_features": [
+        {
+          "feature_id": "garden",
+          "type": "outdoor space",
+          "area": 400,
+          "features": ["lawn", "seating area"]
+        },
+        {
+          "feature_id": "swimming_pool",
+          "type": "outdoor feature",
+          "area": 150
+        }
+      ]
+    }
+  ]}

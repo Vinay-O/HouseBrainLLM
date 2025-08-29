@@ -1,0 +1,274 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1500,
+      "style": "Assamese Traditional with Contemporary"
+    },
+    "plot": {
+      "shape": "Cul-de-sac",
+      "size": 1500,
+      "constraints": [
+        "Heritage regulations",
+        "High water table"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "home_office",
+        "count": 1
+      },
+      {
+        "type": "cooling_chamber",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1450.0,
+  "construction_cost": 290000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "x": 2,
+              "y": 12,
+              "to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 6,
+              "width": 3
+            },
+            {
+              "x": 12,
+              "y": 6,
+              "width": 3
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 12,
+              "to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "x": 15,
+              "y": 6,
+              "width": 3
+            },
+            {
+              "x": 27,
+              "y": 6,
+              "width": 3
+            }
+          ]
+        },
+        {
+          "id": "main_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 8,
+              "y": 15,
+              "to": "corridor"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 22,
+            "y": 12,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 22,
+              "y": 15,
+              "to": "corridor"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 8,
+            "y": 12,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 12,
+              "to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "x": 8,
+              "y": 24,
+              "width": 5
+            },
+            {
+              "x": 17,
+              "y": 24,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 22,
+            "width": 30,
+            "height": 18
+          },
+          "doors": [
+            {
+              "x": 10,
+              "y": 22,
+              "to": "corridor"
+            },
+            {
+              "x": 20,
+              "y": 22,
+              "to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 30,
+              "width": 8
+            },
+            {
+              "x": 11,
+              "y": 40,
+              "width": 8
+            },
+            {
+              "x": 22,
+              "y": 40,
+              "width": 8
+            }
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 30,
+              "y": 7,
+              "to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "x": 30,
+              "y": 3,
+              "width": 4
+            },
+            {
+              "x": 41,
+              "y": 3,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "cooling_chamber",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 30,
+              "y": 20,
+              "to": "corridor"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "corridor",
+          "type": "corridor",
+          "bounds": {
+            "x": 8,
+            "y": 22,
+            "width": 14,
+            "height": 2
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "area_sqft": 450,
+          "location": { "relative_to_entry": "south" },
+          "features": ["high ceilings", "wooden flooring"]
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 200,
+          "location": { "relative_to_living_room": "west" },
+          "features": ["gas stove", "chimney", "adequate ventilation"],
+          "vastu_notes": "aligned with Vastu principles for cooking area"
+        },
+        {
+          "room_name": "Home Theater",
+          "area_sqft": 300,
+          "location": { "relative_to_living_room": "east" },
+          "features": ["soundproofing", "projector and screen", "comfortable seating"]
+        },
+        {
+          "room_name": "Bedroom_1 (Primary)",
+          "area_sqft": 450,
+          "location": { "relative_to_entry": "north-east"},
+          "features": ["ensuite bathroom", "wardrobe"],
+          "vastu_notes": "aligned with Vastu principles for primary bedroom"
+        },
+        {
+          "room_name": "Bedroom_2 (Guest)",
+          "area_sqft": 300,
+          "location": { "relative_to_primary_bedroom": "south-west"},
+          "features": ["wardrobe"],
+          "vastu_notes": "aligned with Vastu principles for secondary bedroom"
+        },
+        {
+          "room_name": "Bathroom_1 (Primary)",
+          "area_sqft": 150,
+          "location": { "relative_to_primary_bedroom": "south-east"},
+          "features": ["shower", "bath tub"],
+          "vastu_notes": "aligned with Vastu principles for primary bathroom"
+        },
+        {
+          "room_name": "Bathroom_2 (Guest)",
+          "area_sqft": 150,
+          "location": { "relative_to_guest_bedroom": "south-west"},
+          "features": ["shower"],
+          "vastu_notes": "aligned with Vastu principles for secondary bathroom"
+        },
+        {
+          "room_name": "Dining Room",
+          "area_sqft": 200,
+          "location": { "relative_to_kitchen": "east" }
+        },
+        {
+          "room_name": "Garden",
+          "area_sqft": 650,
+          "location": {"relative_to_entry": "north"}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "location": { "relative_to_living_room": "west" },
+          "orientation": "south-west"
+        },
+        {
+          "opening_type": "window",
+          "location": {"relative_to_home_theater": "north"},
+          "orientation": "east"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Roof Top Terrace",
+          "area_sqft": 600,
+          "location": {"relative_to_primary_bedroom": "up"},
+          "features": ["benches", "umbrella stand"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

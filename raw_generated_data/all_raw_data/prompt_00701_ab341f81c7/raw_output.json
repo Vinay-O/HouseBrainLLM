@@ -1,0 +1,82 @@
+{"levels": [
+  {
+    "level_id": "garage",
+    "rooms": [
+      {
+        "room_name": " Garage Parking Area",
+        "dimensions": {"length": 6.0, "width": 4.0},
+        "function": "Parking"
+      },
+      {
+        "room_name": "Utility Space",
+        "dimensions": {"length": 3.0, "width": 2.5},
+        "function": "Storage for Tools and Equipment"
+      }
+    ],
+    "openings": [
+      {"type": "Entrance", "location": "Front"}
+    ]
+  },
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {
+        "room_name": "Living Room",
+        "dimensions": {"length": 5.0, "width": 4.0},
+        "function": "Social Space"
+      },
+      {
+        "room_name": "Dining Area",
+        "dimensions": {"length": 3.0, "width": 3.0},
+        "function": "Meal Preparation and Eating"
+      },
+      {
+        "room_name": "Kitchen",
+        "dimensions": {"length": 4.0, "width": 3.0},
+        "function": "Culinary Activities"
+      },
+      {
+        "room_name": "Master Bedroom",
+        "dimensions": {"length": 5.0, "width": 4.0},
+        "function": "Sleeping Area",
+        "extra_features": ["En-suite Bathroom", "Walk-in closet"]
+      },
+      {
+        "room_name": "Guest Bedroom",
+        "dimensions": {"length": 4.0, "width": 3.5},
+        "function": "Sleeping Area"
+      }
+    ],
+    "openings": [
+      {"type": "Main Entrance", "location": "Front"},
+      {"type": "Window", "location": "Living Room"},
+      {"type": "Doorway", "location": "Kitchen to Dining Area"}
+    ]
+  },
+  {
+    "level_id": "upper_floor",
+    "rooms": [
+      {
+        "room_name": "Balcony/Deck",
+        "dimensions": {"length": 3.0, "width": 2.5},
+        "function": "Outdoor Relaxation"
+      }
+    ],
+    "openings": [
+      {"type": "Staircase", "location": "Between Ground Floor and Upper Floor"}
+    ]
+  },
+  {
+    "level_id": "roof_deck",
+    "rooms": [
+      {
+        "room_name": "Rooftop Terrace",
+        "dimensions": {"length": 4.0, "width": 3.5},
+        "function": "Leisure Space"
+      }
+    ],
+    "openings": [
+      {"type": "Ladder Access", "location": "Upper Floor to Roof Deck"}
+    ]
+  }
+]}

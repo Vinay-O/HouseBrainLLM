@@ -1,0 +1,138 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 80,
+      "style": "Art Deco Revival"
+    },
+    "plot": {
+      "width": 4,
+      "depth": 20,
+      "orientation": "north",
+      "climate": "tropical with monsoons",
+      "constraints": [
+        "narrow urban infill",
+        "privacy from neighbors",
+        "budget-conscious"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "roomType": "bedroom",
+        "area": 12,
+        "description": "Minimalist sleeping area with built-in storage"
+      },
+      {
+        "roomType": "bathroom",
+        "area": 6,
+        "description": "Compact wet room with greywater collection system"
+      },
+      {
+        "roomType": "home_spa",
+        "area": 15,
+        "description": "Private relaxation space with massage tables and tropical ambiance"
+      },
+      {
+        "roomType": "living_kitchen",
+        "area": 47,
+        "description": "Open-plan living, dining and kitchen area with curved north-facing glazing"
+      }
+    ]
+  },
+  "total_area": 80.0,
+  "construction_cost": 128000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_kitchen",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 11.75
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2,
+              "length": 3.5
+            }
+          ]
+        },
+        {
+          "id": "home_spa",
+          "type": "other",
+          "bounds": {
+            "x": 0,
+            "y": 11.75,
+            "width": 2,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 1
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 1,
+              "length": 0.5
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 2,
+            "y": 11.75,
+            "width": 2,
+            "height": 3
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 2,
+            "y": 14.75,
+            "width": 2,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 1
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 1,
+              "length": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

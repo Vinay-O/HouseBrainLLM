@@ -1,0 +1,79 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wardrobe", "attached bathroom"]
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["modular kitchen", "gas stove", "sink"]
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["sofa set", "TV unit", "dining table"]
+        },
+        {
+          "room_type": "gym",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["treadmill", "weight bench", "yoga mat area"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "entrance",
+          "dimensions": { "length": 3, "width": 7 },
+          "material": "wooden door"
+        },
+        {
+          "opening_type": "window",
+          "dimensions": { "length": 4, "width": 4 },
+          "location": "living room",
+          "material": "glass with wooden frame"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wardrobe", "attached bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "balcony",
+          "dimensions": { "length": 8, "width": 6 },
+          "material": "glass railing"
+        }
+      ]
+    }
+  ],
+  "outdoor_features": {
+    "garden": true,
+    "parking": {
+      "type": "carport",
+      "capacity": 1
+    }
+  },
+  "design_notes": {
+    "style": "Mediterranean",
+    "budget_friendly": true,
+    "vastu_compliance": {
+      "kitchen_position": "southeast",
+      "bedroom_direction": "southwest",
+      "gym_location": "north"
+    }
+  },
+  "plot_dimensions": {
+    "length": 40,
+    "width": 30
+  }
+}

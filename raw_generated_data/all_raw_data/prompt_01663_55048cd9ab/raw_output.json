@@ -1,0 +1,123 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "description": "Central minimalist living space with open-plan design, large windows for natural light from the west-facing plot. Designed to be wheelchair accessible with wide doorways and low thresholds.",
+          "dimensions": {
+            "length_ft": 30,
+            "width_ft": 20
+          },
+          "accessibility_features": ["wide_door", "low_thresholds"],
+          "vastu_elements": {
+            "direction": "west",
+            "elements": ["fire", "air"]
+          }
+        },
+        {
+          "room_id": "kitchen",
+          "description": "Modern minimalist kitchen integrated into the living area. Features open shelving, energy-efficient appliances and wheelchair accessible worktop heights.",
+          "dimensions": {
+            "length_ft": 15,
+            "width_ft": 10
+          },
+          "accessibility_features": ["wheelchair_accessible_cabinets", "low_counters"],
+          "vastu_elements": {
+            "direction": "south",
+            "elements": ["fire"]
+          }
+        },
+        {
+          "room_id": "bedroom_1",
+          "description": "Spacious bedroom with a dedicated balcony overlooking the west side of the plot. Minimalist interior, wheelchair accessible design and ample natural light.",
+          "dimensions": {
+            "length_ft": 20,
+            "width_ft": 15
+          },
+          "balcony": {
+            "orientation": "west",
+            "dimensions": {
+              "length_ft": 10,
+              "width_ft": 6
+            }
+          },
+          "accessibility_features": ["wide_door", "low_thresholds"],
+          "vastu_elements": {
+            "direction": "north",
+            "elements": ["earth", "water"]
+          }
+        },
+        {
+          "room_id": "bedroom_2",
+          "description": "Second bedroom with a private balcony, designed for wheelchair accessibility and minimalist aesthetic.",
+          "dimensions": {
+            "length_ft": 18,
+            "width_ft": 14
+          },
+          "balcony": {
+            "orientation": "west",
+            "dimensions": {
+              "length_ft": 8,
+              "width_ft": 5
+            }
+          },
+          "accessibility_features": ["wide_door", "low_thresholds"],
+          "vastu_elements": {
+            "direction": "north_east",
+            "elements": ["air"]
+          }
+        },
+        {
+          "room_id": "bathroom",
+          "description": "Wheelchair accessible bathroom with grab bars, roll-in shower and minimalist fixtures.",
+          "dimensions": {
+            "length_ft": 10,
+            "width_ft": 8
+          },
+          "accessibility_features": ["grab_bars", "roll_in_shower"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entry",
+          "description": "Main entrance door designed for wheelchair accessibility. Large glass panel to allow ample natural light while ensuring privacy.",
+          "dimensions": {
+            "width_ft": 4,
+            "height_ft": 7
+          },
+          "location": "south_west_corner"
+        },
+        {
+          "opening_id": "side_door",
+          "description": "Secondary entrance door for emergency exits and wheelchair access to the balcony areas.",
+          "dimensions": {
+            "width_ft": 3,
+            "height_ft": 7
+          },
+          "location": "west_side"
+        }
+      ],
+      "exterior_features": [
+        {
+          "feature_id": "swimming_pool",
+          "description": "Outdoor swimming pool integrated into the design with an accessible ramp and safety railings for wheelchair users.",
+          "dimensions": {
+            "length_ft": 20,
+            "width_ft": 10
+          },
+          "location": "south_east_corner"
+        }
+      ]
+    }
+  ],
+  "building_norms": {
+    "plot_dimensions": {
+      "length_ft": 80,
+      "width_ft": 50
+    },
+    "zoning_requirements": "Single-story residential villa",
+    "vastu_compliance": true
+  }
+}

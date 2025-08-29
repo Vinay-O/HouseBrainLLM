@@ -1,0 +1,90 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance hall",
+          "dimensions": {"length": 6.0, "width": 4.0},
+          "adjacencies": ["living room", "kitchen"],
+          "vastu_alignment": "north-east"
+        },
+        {
+          "room_type": "living room",
+          "dimensions": {"length": 8.0, "width": 6.0},
+          "facing_direction": "south-west",
+          "natural_light": true,
+          "adjacencies": ["entrance hall", "dining area"]
+        },
+        {
+          "room_type": "dining area",
+          "dimensions": {"length": 4.0, "width": 3.5},
+          "facing_direction": "south-west",
+          "adjacencies": ["living room"],
+          "vastu_alignment": "north-west"
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {"length": 6.0, "width": 4.0},
+          "adjacencies": ["entrance hall", "service area"],
+          "facing_direction": "south-east",
+          "natural_light": true,
+          "ventilation": "cross ventilation"
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"length": 5.0, "width": 4.0},
+          "adjacencies": ["central courtyard"],
+          "facing_direction": "north-east",
+          "natural_light": true,
+          "vastu_alignment": "east"
+        },
+        {
+          "room_type": "library",
+          "dimensions": {"length": 5.5, "width": 4.0},
+          "adjacencies": ["central courtyard", "bedroom"],
+          "facing_direction": "north-west",
+          "natural_light": true,
+          "ventilation": "cross ventilation"
+        },
+        {
+          "room_type": "service area",
+          "dimensions": {"length": 3.5, "width": 2.5},
+          "adjacencies": ["kitchen", "storage room"],
+          "facing_direction": "south-east",
+          "vastu_alignment": "west"
+        },
+        {
+          "room_type": "storage room",
+          "dimensions": {"length": 3.0, "width": 2.0},
+          "adjacencies": ["service area"],
+          "facing_direction": "south-west"
+        }
+      ],
+      "openings": [
+        {
+          "type": "entrance door",
+          "location": "north side",
+          "dimensions": {"height": 7.0, "width": 1.2}
+        },
+        {
+          "type": "large window",
+          "location": "east facade",
+          "dimensions": {"height": 2.5, "width": 4.0},
+          "allows_natural_light": true
+        },
+        {
+          "type": "ventilation window",
+          "location": "west facade",
+          "dimensions": {"height": 1.8, "width": 3.0}
+        },
+        {
+          "type": "door",
+          "location": "south facade",
+          "dimensions": {"height": 7.0, "width": 1.2},
+          "leads_to": "central courtyard"
+        }
+      ]
+    }
+  ]
+}

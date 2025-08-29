@@ -1,0 +1,304 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Scandinavian Hygge-inspired Experimental Prototype"
+    },
+    "plot": {
+      "location": "Desert Plateau",
+      "climate": "Humid Subtropical",
+      "topography": "Flat with Panoramic Views",
+      "orientation": "Diagonal to Prevailing Winds"
+    },
+    "roomBreakdown": [
+      {
+        "type": "mezzanine_office",
+        "area": 400
+      },
+      {
+        "type": "pottery_studio",
+        "area": 600
+      },
+      {
+        "type": "library",
+        "area": 500
+      },
+      {
+        "type": "reading_nook",
+        "area": 200
+      },
+      {
+        "type": "kitchen",
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "area": 150
+      },
+      {
+        "type": "mechanical_room",
+        "area": 150
+      },
+      {
+        "type": "entry",
+        "area": 100
+      },
+      {
+        "type": "storage",
+        "area": 200
+      },
+      {
+        "type": "outdoor_deck",
+        "area": 600
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 960000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry",
+          "type": "entry",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_room",
+          "type": "mechanical_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_ground",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "pottery_studio",
+          "type": "pottery_studio",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 25,
+            "height": 24
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12
+            },
+            {
+              "wall": "east",
+              "position": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12
+            },
+            {
+              "wall": "west",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "reading_nook",
+          "type": "reading_nook",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "storage_upper",
+          "type": "storage",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "mezzanine_office",
+          "type": "mezzanine_office",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 15
+            },
+            {
+              "wall": "south",
+              "position": 15
+            },
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

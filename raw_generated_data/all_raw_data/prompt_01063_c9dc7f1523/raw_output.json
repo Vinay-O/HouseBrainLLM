@@ -1,0 +1,123 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 15, "width": 20 },
+          "position": { "x": 0, "y": 0 }
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": { "length": 12, "width": 14 },
+          "position": { "x": 20, "y": 0 }
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 12, "width": 15 },
+          "position": { "x": 34, "y": 0 }
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 16, "width": 14 },
+          "position": { "x": 0, "y": 20 }
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 16, "width": 14 },
+          "position": { "x": 30, "y": 20 }
+        },
+        {
+          "room_type": "garage",
+          "dimensions": { "length": 20, "width": 15 },
+          "position": { "x": 0, "y": 40 }
+        },
+        {
+          "room_type": "courtyard",
+          "dimensions": { "length": 30, "width": 40 },
+          "position": { "x": 25, "y": 40 }
+        },
+        {
+          "room_type": "staircase",
+          "dimensions": { "length": 8, "width": 6 },
+          "position": { "x": 15, "y": 30 }
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "from_room": "living_room",
+          "to_room": "dining_room"
+        },
+        {
+          "type": "door",
+          "from_room": "dining_room",
+          "to_room": "kitchen"
+        },
+        {
+          "type": "door",
+          "from_room": "living_room",
+          "to_room": "bedroom"
+        },
+        {
+          "type": "door",
+          "from_room": "courtyard",
+          "to_room": "staircase"
+        },
+        {
+          "type": "window",
+          "in_room": "kitchen",
+          "position": { "x": 45, "y": 0 }
+        },
+        {
+          "type": "window",
+          "in_room": "bedroom",
+          "position": { "x": 16, "y": 32 }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 16, "width": 14 },
+          "position": { "x": 0, "y": 20 }
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 16, "width": 14 },
+          "position": { "x": 30, "y": 20 }
+        },
+        {
+          "room_type": "study_room",
+          "dimensions": { "length": 12, "width": 15 },
+          "position": { "x": 60, "y": 20 }
+        },
+        {
+          "room_type": "balcony",
+          "dimensions": { "length": 30, "width": 40 },
+          "position": { "x": 25, "y": 40 }
+        },
+        {
+          "room_type": "staircase",
+          "dimensions": { "length": 8, "width": 6 },
+          "position": { "x": 15, "y": 30 }
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "from_room": "staircase",
+          "to_room": "bedroom"
+        },
+        {
+          "type": "door",
+          "from_room": "staircase",
+          "to_room": "study_room"
+        }
+      ]
+    }
+  ]
+}

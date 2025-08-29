@@ -1,0 +1,204 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 1800.0,
+      "style": "Bauhaus Functional A-Frame"
+    },
+    "plot": {
+      "size": 20000.0,
+      "location": "desert",
+      "climate": "extreme temperatures"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 400.0
+      },
+      {
+        "type": "kitchen",
+        "area": 200.0
+      },
+      {
+        "type": "bedroom",
+        "area": 250.0
+      },
+      {
+        "type": "bedroom",
+        "area": 250.0
+      },
+      {
+        "type": "bathroom",
+        "area": 100.0
+      },
+      {
+        "type": "utility",
+        "area": 100.0
+      },
+      {
+        "type": "telecommuting_pod",
+        "area": 300.0
+      },
+      {
+        "type": "entryway",
+        "area": 100.0
+      },
+      {
+        "type": "storage",
+        "area": 100.0
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 450000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entryway",
+          "type": "entryway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "main_entry"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "entryway_door"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "living_room_door"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "kitchen_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_ground",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "entryway_door"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "telecommuting_pod",
+          "type": "telecommuting_pod",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 30,
+            "height": 10
+          },
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "panoramic"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

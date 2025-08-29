@@ -1,0 +1,486 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 2500,
+      "style": "Colonial British Bungalow"
+    },
+    "plot": {
+      "width": 50,
+      "length": 50,
+      "type": "corner",
+      "location": "Leh high altitude"
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "description": "For parents with attached bathroom"
+      },
+      {
+        "type": "bedroom",
+        "count": 2,
+        "description": "For children"
+      },
+      {
+        "type": "guest_bedroom",
+        "count": 1,
+        "description": "For visiting elderly parents with attached bathroom"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Main living area opening to veranda"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Traditional kitchen with pantry"
+      },
+      {
+        "type": "home_office",
+        "count": 1,
+        "description": "Soundproof pod for video conferencing"
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "description": "Central angan with tulsi platform"
+      },
+      {
+        "type": "veranda",
+        "count": 2,
+        "description": "Period verandas on two sides"
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "description": "Including two attached to bedrooms"
+      }
+    ]
+  },
+  "total_area": 2500.0,
+  "construction_cost": 375000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "veranda_front",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 8
+          },
+          "doors": [
+            {
+              "x": 25,
+              "y": 8,
+              "to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "x": 10,
+              "y": 0,
+              "width": 5
+            },
+            {
+              "x": 35,
+              "y": 0,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "veranda_side",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 8,
+            "height": 42
+          },
+          "doors": [
+            {
+              "x": 8,
+              "y": 25,
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 15,
+              "width": 5
+            },
+            {
+              "x": 0,
+              "y": 35,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 8,
+            "width": 22,
+            "height": 18
+          },
+          "doors": [
+            {
+              "x": 25,
+              "y": 8,
+              "to": "veranda_front"
+            },
+            {
+              "x": 30,
+              "y": 26,
+              "to": "courtyard"
+            },
+            {
+              "x": 8,
+              "y": 20,
+              "to": "master_bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "x": 15,
+              "y": 8,
+              "width": 8
+            },
+            {
+              "x": 30,
+              "y": 15,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 8,
+            "y": 26,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "x": 8,
+              "y": 32,
+              "to": "living_room"
+            },
+            {
+              "x": 22,
+              "y": 32,
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "x": 11,
+              "y": 26,
+              "width": 6
+            },
+            {
+              "x": 8,
+              "y": 29,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "master_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 8,
+            "y": 38,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "x": 16,
+              "y": 44,
+              "to": "master_bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "x": 8,
+              "y": 42,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "children_bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 8,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "x": 30,
+              "y": 14,
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "x": 35,
+              "y": 8,
+              "width": 5
+            },
+            {
+              "x": 42,
+              "y": 12,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "children_bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 42,
+            "y": 8,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "x": 42,
+              "y": 14,
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "x": 45,
+              "y": 8,
+              "width": 4
+            },
+            {
+              "x": 50,
+              "y": 12,
+              "width": 3
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 12,
+            "height": 18
+          },
+          "doors": [
+            {
+              "x": 30,
+              "y": 29,
+              "to": "courtyard"
+            },
+            {
+              "x": 42,
+              "y": 29,
+              "to": "guest_bathroom"
+            }
+          ],
+          "windows": [
+            {
+              "x": 35,
+              "y": 20,
+              "width": 6
+            },
+            {
+              "x": 42,
+              "y": 25,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "guest_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 42,
+            "y": 20,
+            "width": 8,
+            "height": 18
+          },
+          "doors": [
+            {
+              "x": 42,
+              "y": 29,
+              "to": "guest_bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "x": 45,
+              "y": 20,
+              "width": 4
+            },
+            {
+              "x": 50,
+              "y": 25,
+              "width": 3
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 22,
+            "y": 38,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "x": 22,
+              "y": 44,
+              "to": "courtyard"
+            },
+            {
+              "x": 36,
+              "y": 44,
+              "to": "utility"
+            }
+          ],
+          "windows": [
+            {
+              "x": 25,
+              "y": 38,
+              "width": 8
+            },
+            {
+              "x": 36,
+              "y": 45,
+              "width": 4
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 36,
+            "y": 38,
+            "width": 14,
+            "height": 6
+          },
+          "doors": [
+            {
+              "x": 36,
+              "y": 41,
+              "to": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "x": 45,
+              "y": 38,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 36,
+            "y": 44,
+            "width": 14,
+            "height": 6
+          },
+          "doors": [
+            {
+              "x": 36,
+              "y": 47,
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "x": 40,
+              "y": 44,
+              "width": 6
+            },
+            {
+              "x": 50,
+              "y": 47,
+              "width": 3
+            }
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 22,
+            "y": 20,
+            "width": 18,
+            "height": 18
+          },
+          "doors": [
+            {
+              "x": 30,
+              "y": 20,
+              "to": "living_room"
+            },
+            {
+              "x": 22,
+              "y": 29,
+              "to": "master_bedroom"
+            },
+            {
+              "x": 30,
+              "y": 38,
+              "to": "children_bedroom1"
+            },
+            {
+              "x": 40,
+              "y": 38,
+              "to": "children_bedroom2"
+            },
+            {
+              "x": 40,
+              "y": 20,
+              "to": "guest_bedroom"
+            },
+            {
+              "x": 22,
+              "y": 38,
+              "to": "kitchen"
+            },
+            {
+              "x": 40,
+              "y": 38,
+              "to": "home_office"
+            }
+          ],
+          "windows": [],
+          "special_features": [
+            "tulsi_platform"
+          ]
+        }
+      ]
+    }
+  ]
+}

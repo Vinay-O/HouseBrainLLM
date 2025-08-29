@@ -1,0 +1,39 @@
+{"levels": [
+    {
+        "level_id": "ground_floor",
+        "rooms": [
+            {"room_id": "entrance_hallway", "dimensions": {"length": 10, "width": 8}},
+            {"room_id": "living_area", "dimensions": {"length": 25, "width": 20}, "description": "Open-plan kitchen and living area fused together"},
+            {"room_id": "dining_room", "dimensions": {"length": 15, "width": 12}},
+            {"room_id": "multipurpose_room", "dimensions": {"length": 20, "width": 18}, "description": "Study or guest room"},
+            {"room_id": "garage1", "dimensions": {"length": 20, "width": 10}}
+        ],
+        "openings": [
+            {"opening_id": "front_door", "location": "entrance_hallway"},
+            {"opening_id": "back_door", "location": "living_area"}
+        ]
+    },
+    {
+        "level_id": "first_floor",
+        "rooms": [
+            {"room_id": "master_bedroom", "dimensions": {"length": 18, "width": 16}, "description": "includes ensuite bathroom"},
+            {"room_id": "bedroom2", "dimensions": {"length": 15, "width": 12}},
+            {"room_id": "bedroom3", "dimensions": {"length": 14, "width": 10}},
+            {"room_id": "bathroom1", "dimensions": {"length": 8, "width": 6}, "description": " ensuite for master bedroom"}
+        ],
+        "openings": [
+            {"opening_id": "balcony_access", "location": "master_bedroom"}
+        ]
+    },
+    {
+        "level_id": "second_floor",
+        "rooms": [
+            {"room_id": "loft_room", "dimensions": {"length": 20, "width": 16}, "description": "Additional open space for activities"},
+            {"room_id": "bedroom4", "dimensions": {"length": 12, "width": 10}},
+            {"room_id": "storage_area", "dimensions": {"length": 15, "width": 8}}
+        ],
+        "openings": [
+            {"opening_id": "light_well", "location": "loft_room"}
+        ]
+    }
+]}

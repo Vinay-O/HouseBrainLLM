@@ -1,0 +1,174 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 20 },
+          "orientation": "north",
+          "features": ["floor-to-ceiling windows", "central courtyard access"]
+        },
+        {
+          "room_id": "dining_room",
+          "shape": "square",
+          "dimensions": { "length": 15, "width": 15 },
+          "orientation": "east",
+          "features": ["floor-to-ceiling windows", "adjacent to kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "rectangle",
+          "dimensions": { "length": 12, "width": 10 },
+          "orientation": "south",
+          "features": ["floor-to-ceiling windows", "modular storage", "gas stove", "sink"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 15 },
+          "orientation": "west",
+          "features": ["floor-to-ceiling windows", "walk-in closet", "attached bathroom"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 15 },
+          "orientation": "north",
+          "features": ["floor-to-ceiling windows", "wardrobe", "attached bathroom"]
+        },
+        {
+          "room_id": "study_room",
+          "shape": "square",
+          "dimensions": { "length": 8, "width": 8 },
+          "orientation": "east",
+          "features": ["floor-to-ceiling windows", "work desk", "bookshelf"]
+        },
+        {
+          "room_id": "central_courtyard",
+          "shape": "square",
+          "dimensions": { "length": 10, "width": 10 },
+          "orientation": "center",
+          "features": ["open space", "garden", "seating area"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 3.5, "width": 1 },
+          "location": "north side of living room"
+        },
+        {
+          "opening_id": "living_dining",
+          "type": "archway",
+          "dimensions": { "length": 4, "width": 2.5 },
+          "location": "between living room and dining room"
+        },
+        {
+          "opening_id": "dining_kitchen",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 1 },
+          "location": "between dining room and kitchen"
+        },
+        {
+          "opening_id": "bedroom_1_bath",
+          "type": "door",
+          "dimensions": { "length": 2.5, "width": 0.8 },
+          "location": "attached to bedroom 1"
+        },
+        {
+          "opening_id": "bedroom_2_bath",
+          "type": "door",
+          "dimensions": { "length": 2.5, "width": 0.8 },
+          "location": "attached to bedroom 2"
+        },
+        {
+          "opening_id": "courtyard_access",
+          "type": "archway",
+          "dimensions": { "length": 4, "width": 3 },
+          "location": "between living room and central courtyard"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "living_room_upper",
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 20 },
+          "orientation": "north",
+          "features": ["floor-to-ceiling windows", "central courtyard view"]
+        },
+        {
+          "room_id": "dining_room_upper",
+          "shape": "square",
+          "dimensions": { "length": 15, "width": 15 },
+          "orientation": "east",
+          "features": ["floor-to-ceiling windows", "adjacent to kitchen"]
+        },
+        {
+          "room_id": "kitchen_upper",
+          "shape": "rectangle",
+          "dimensions": { "length": 12, "width": 10 },
+          "orientation": "south",
+          "features": ["floor-to-ceiling windows", "modular storage", "gas stove", "sink"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 15 },
+          "orientation": "west",
+          "features": ["floor-to-ceiling windows", "walk-in closet", "attached bathroom"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 15 },
+          "orientation": "north",
+          "features": ["floor-to-ceiling windows", "wardrobe", "attached bathroom"]
+        },
+        {
+          "room_id": "study_room_upper",
+          "shape": "square",
+          "dimensions": { "length": 8, "width": 8 },
+          "orientation": "east",
+          "features": ["floor-to-ceiling windows", "work desk", "bookshelf"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase",
+          "type": "staircase",
+          "dimensions": { "length": 4, "width": 1.5 },
+          "location": "near main entrance"
+        },
+        {
+          "opening_id": "living_dining_upper",
+          "type": "archway",
+          "dimensions": { "length": 4, "width": 2.5 },
+          "location": "between living room and dining room on upper floor"
+        },
+        {
+          "opening_id": "dining_kitchen_upper",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 1 },
+          "location": "between dining room and kitchen on upper floor"
+        },
+        {
+          "opening_id": "bedroom_3_bath_upper",
+          "type": "door",
+          "dimensions": { "length": 2.5, "width": 0.8 },
+          "location": "attached to bedroom 3 on upper floor"
+        },
+        {
+          "opening_id": "bedroom_4_bath_upper",
+          "type": "door",
+          "dimensions": { "length": 2.5, "width": 0.8 },
+          "location": "attached to bedroom 4 on upper floor"
+        }
+      ]
+    }
+  ]
+}

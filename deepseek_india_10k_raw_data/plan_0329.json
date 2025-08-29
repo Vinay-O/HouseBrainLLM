@@ -1,0 +1,247 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 1200,
+      "style": "Colonial British Bungalow"
+    },
+    "plot": {
+      "location": "Vrindavan",
+      "area": 1200,
+      "orientation": "south"
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "area": 180
+      },
+      {
+        "type": "bedroom",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 80
+      },
+      {
+        "type": "veranda",
+        "count": 2,
+        "area": 160
+      },
+      {
+        "type": "guest_house",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 160
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 300000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "north_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 8
+          },
+          "doors": [
+            "main_entrance"
+          ],
+          "windows": [
+            "north_window_1",
+            "north_window_2"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_veranda",
+            "to_courtyard"
+          ],
+          "windows": [
+            "south_window_1",
+            "south_window_2"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_courtyard"
+          ],
+          "windows": [
+            "south_window_3"
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 23,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "from_living",
+            "from_kitchen",
+            "to_guest"
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_house",
+          "type": "guest_house",
+          "bounds": {
+            "x": 30,
+            "y": 23,
+            "width": 10,
+            "height": 16
+          },
+          "doors": [
+            "guest_entrance",
+            "to_courtyard"
+          ],
+          "windows": [
+            "guest_window_1",
+            "guest_window_2"
+          ]
+        },
+        {
+          "id": "cooling_chamber",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 23,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "access_hatch"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_window_4",
+            "south_window_5"
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_window_6"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 27,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "south_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 8,
+            "y": 12,
+            "width": 27,
+            "height": 8
+          },
+          "doors": [
+            "from_hall"
+          ],
+          "windows": [
+            "south_veranda_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

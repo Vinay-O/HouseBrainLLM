@@ -1,0 +1,147 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 750,
+      "style": "Japanese Zen Curved Shell"
+    },
+    "plot": {
+      "elevation": "Elevated platform above wetlands",
+      "climate": "Tropical with monsoons",
+      "privacy_considerations": "Earth-sheltered design and strategic window placement for privacy from neighbors",
+      "wind_orientation": "Diagonal to prevailing winds"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "type": "bathroom",
+        "area": 80
+      },
+      {
+        "type": "kitchen",
+        "area": 100
+      },
+      {
+        "type": "living_room",
+        "area": 200
+      },
+      {
+        "type": "office",
+        "area": 120
+      },
+      {
+        "type": "darkroom",
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 750.0,
+  "construction_cost": 187500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "entry_door",
+            "door_to_office",
+            "door_to_kitchen"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "office",
+          "type": "office",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "door_to_living_room"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 15,
+            "height": 6.67
+          },
+          "doors": [
+            "door_to_living_room",
+            "door_to_bathroom"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 8,
+            "height": 6.67
+          },
+          "doors": [
+            "door_to_kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 16.67,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "door_to_darkroom"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "darkroom",
+          "type": "darkroom",
+          "bounds": {
+            "x": 15,
+            "y": 16.67,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "door_to_bedroom"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 800,
+      "style": "Deconstructivist"
+    },
+    "plot": {
+      "description": "Windswept coastal bluff in an alpine climate with heavy snow loads, south-facing for solar gain"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 120,
+        "level": 0
+      },
+      {
+        "type": "living_room",
+        "area": 180,
+        "level": 0
+      },
+      {
+        "type": "kitchen",
+        "area": 100,
+        "level": 0
+      },
+      {
+        "type": "bathroom",
+        "area": 60,
+        "level": 0
+      },
+      {
+        "type": "sauna",
+        "area": 80,
+        "level": 1
+      },
+      {
+        "type": "mechanical",
+        "area": 60,
+        "level": 0
+      },
+      {
+        "type": "entry",
+        "area": 60,
+        "level": 0
+      },
+      {
+        "type": "storage",
+        "area": 140,
+        "level": 0
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 320000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry",
+          "type": "entry",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 3
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 6,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": 10
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 21,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "fixtures": [
+            "composting_toilet"
+          ]
+        },
+        {
+          "id": "mechanical",
+          "type": "mechanical",
+          "bounds": {
+            "x": 18,
+            "y": 10,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 3
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage",
+          "type": "storage",
+          "bounds": {
+            "x": 24,
+            "y": 10,
+            "width": 7,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "sauna",
+          "type": "sauna",
+          "bounds": {
+            "x": 6,
+            "y": 12,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": 12
+            },
+            {
+              "wall": "east",
+              "position": 6,
+              "size": 4
+            },
+            {
+              "wall": "west",
+              "position": 6,
+              "size": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

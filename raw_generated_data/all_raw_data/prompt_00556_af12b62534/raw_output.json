@@ -1,0 +1,82 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "area_sqft": 600,
+          "location": {"x": 50, "y": 10},
+          "adjacent_rooms": ["Kitchen", "Dining Area"]
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 300,
+          "location": {"x": 25, "y": 60},
+          "open_plan": true
+        },
+        {
+          "room_name": "Dining Area",
+          "area_sqft": 400,
+          "location": {"x": 80, "y": 70},
+          "adjacent_rooms": ["Living Room"]
+        },
+        {
+          "room_name": "Master Bedroom",
+          "area_sqft": 600,
+          "location": {"x": 250, "y": 10}
+        },
+        {
+          "room_name": "Bedroom 2",
+          "area_sqft": 400,
+          "location": {"x": 380, "y": 70},
+          "adjacent_rooms": ["Master Bedroom"]
+        },
+        {
+          "room_name": "Bedroom 3",
+          "area_sqft": 400,
+          "location": {"x": 250, "y": 130}
+        },
+        {
+          "room_name": "Bathroom 1",
+          "area_sqft": 100,
+          "location": {"x": 400, "y": 70},
+          "adjacent_rooms": ["Bedroom 2", "Bedroom 3"]
+        },
+        {
+          "room_name": "Private Gym",
+          "area_sqft": 500,
+          "location": {"x": 10, "y": 250}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Door",
+          "from_room": "Living Room",
+          "to_room": "Dining Area"
+        },
+        {
+          "opening_type": "Window",
+          "room_name": "Master Bedroom",
+          "direction": "East"
+        },
+        {
+          "opening_type": "Window",
+          "room_name": "Bedroom 2",
+          "direction": "North-East"
+        }
+      ]
+    },
+    {
+      "level_id": "lower_level",
+      "rooms": [
+        {
+          "room_name": "Garden Area",
+          "area_sqft": 1200,
+          "location": {"x": 50, "y": -30}
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

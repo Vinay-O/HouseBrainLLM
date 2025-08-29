@@ -1,0 +1,80 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Lobby",
+          "description": "North-facing entrance with a welcoming foyer and integrated storage for coats and shoes.",
+          "dimensions_m2": 20,
+          "direction": "north"
+        },
+        {
+          "name": "Living Area",
+          "description": "Bohemian-inspired living space with open-plan layout merging kitchen, dining, and lounge areas; large windows allow natural light.",
+          "dimensions_m2": 60,
+          "adjacent_to": ["Courtyard", "Kitchen"],
+          "directions": ["east", "west"]
+        },
+        {
+          "name": "Open-Plan Kitchen",
+          "description": "Modern yet Bohemian kitchen with an open layout, connected to the dining/lounge area; equipped with ample counter space and natural ventilation.",
+          "dimensions_m2": 40,
+          "adjacent_to": ["Living Area"]
+        },
+        {
+          "name": "Dining Area",
+          "description": "Integrated into the living space for informal gatherings, adjacent to kitchen.",
+          "dimensions_m2": 15,
+          "adjacent_to": ["Living Area", "Kitchen"]
+        },
+        {
+          "name": "Master Bedroom",
+          "description": "Spacious master bedroom with private bathroom; located on the eastern side of the courtyard to benefit from morning light, adhering to Vastu principles.",
+          "dimensions_m2": 35,
+          "directions": ["east"],
+          "private_bathroom": true
+        },
+        {
+          "name": "Guest Bedroom",
+          "description": "Cozy guest bedroom with shared facilities; positioned on the western side for balance.",
+          "dimensions_m2": 25,
+          "directions": ["west"]
+        },
+        {
+          "name": "Kids' Bedroom",
+          "description": "Safe and inviting kids' room located centrally to encourage supervision while maintaining privacy.",
+          "dimensions_m2": 25
+        },
+        {
+          "name": "Servants Quarters",
+          "description": "Compact living area for staff with essential amenities; positioned away from main residential areas yet easily accessible, ensuring adherence to local norms.",
+          "dimensions_m2": 30,
+          "privacy_level": "low"
+        },
+        {
+          "name": "Utility Room",
+          "description": "Small room containing laundry and storage facilities adjacent to the kitchen.",
+          "dimensions_m2": 10
+        }
+      ],
+      "openings": [
+        {
+          "type": "Window",
+          "location": "Living Area & Master Bedroom",
+          "description": "Large windows for ample natural light while ensuring privacy through strategic placements."
+        },
+        {
+          "type": "Door",
+          "location": "Entrance Lobby to Living Area",
+          "description": "Primary access door from the entrance lobby connecting to main living spaces."
+        },
+        {
+          "type": "Courtyard Access",
+          "location": "Between Living Area and Courtyard",
+          "description": "Transitional space leading into the central courtyard, promoting natural ventilation and light."
+        }
+      ]
+    }
+  ]
+}

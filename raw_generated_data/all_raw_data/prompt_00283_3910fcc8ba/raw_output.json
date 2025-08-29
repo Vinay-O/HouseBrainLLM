@@ -1,0 +1,68 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 15, "width": 12},
+          "location": {"x": 0, "y": 0}
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 14, "width": 8},
+          "location": {"x": 15, "y": 3}
+        },
+        {
+          "room_name": "Bedroom_1",
+          "dimensions": {"length": 10, "width": 12},
+          "location": {"x": 27, "y": 0}
+        },
+        {
+          "room_name": "Bathroom_1",
+          "dimensions": {"length": 6, "width": 5},
+          "location": {"x": 38, "y": 6}
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "position": {"x": 14.9, "y": 7},
+          "to_room": "Kitchen"
+        },
+        {
+          "type": "window",
+          "position": {"x": -0.5, "y": 6},
+          "orientation": "north"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Bedroom_2",
+          "dimensions": {"length": 10, "width": 12},
+          "location": {"x": 0, "y": 0}
+        },
+        {
+          "room_name": "Bathroom_2",
+          "dimensions": {"length": 6, "width": 5},
+          "location": {"x": 13, "y": 7}
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "position": {"x": -0.5, "y": 6},
+          "orientation": "north"
+        },
+        {
+          "type": "door",
+          "position": {"x": 12.9, "y": 7},
+          "to_room": "Bathroom_2"
+        }
+      ]
+    }
+  ]
+}

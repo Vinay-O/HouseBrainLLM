@@ -1,0 +1,248 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "High-Tech Architecture"
+    },
+    "plot": {
+      "description": "Forest clearing with mature oak trees",
+      "climate": "Continental with harsh winters",
+      "orientation": "North-facing for consistent light"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "description": "Chef's kitchen with wood-fired oven"
+      },
+      {
+        "type": "bedroom",
+        "description": "Primary bedroom for tech entrepreneur"
+      },
+      {
+        "type": "bathroom",
+        "description": "Accessible bathroom"
+      },
+      {
+        "type": "living_room",
+        "description": "Open living space"
+      },
+      {
+        "type": "utility",
+        "description": "Mechanical room for earth-sheltered systems"
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 675000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 7.5,
+              "to_room": "glass_link_1"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": 10
+            }
+          ]
+        },
+        {
+          "id": "glass_link_1",
+          "type": "corridor",
+          "bounds": {
+            "x": 20,
+            "y": 5,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "x": 0,
+              "y": 2.5,
+              "to_room": "kitchen_1"
+            },
+            {
+              "x": 5,
+              "y": 2.5,
+              "to_room": "living_room_1"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": 5
+            },
+            {
+              "wall": "south",
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 0,
+              "y": 7.5,
+              "to_room": "glass_link_1"
+            },
+            {
+              "x": 25,
+              "y": 7.5,
+              "to_room": "glass_link_2"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": 20
+            }
+          ]
+        },
+        {
+          "id": "glass_link_2",
+          "type": "corridor",
+          "bounds": {
+            "x": 50,
+            "y": 5,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "x": 0,
+              "y": 2.5,
+              "to_room": "living_room_1"
+            },
+            {
+              "x": 5,
+              "y": 2.5,
+              "to_room": "bedroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": 5
+            },
+            {
+              "wall": "south",
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 55,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 0,
+              "y": 7.5,
+              "to_room": "glass_link_2"
+            },
+            {
+              "x": 15,
+              "y": 7.5,
+              "to_room": "bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": 10
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 70,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 0,
+              "y": 5,
+              "to_room": "bedroom_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_1",
+          "type": "utility",
+          "bounds": {
+            "x": 70,
+            "y": 10,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "x": 0,
+              "y": 2.5,
+              "to_room": "corridor_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "corridor_1",
+          "type": "corridor",
+          "bounds": {
+            "x": 55,
+            "y": 15,
+            "width": 15,
+            "height": 5
+          },
+          "doors": [
+            {
+              "x": 7.5,
+              "y": 0,
+              "to_room": "bedroom_1"
+            },
+            {
+              "x": 7.5,
+              "y": 5,
+              "to_room": "utility_1"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

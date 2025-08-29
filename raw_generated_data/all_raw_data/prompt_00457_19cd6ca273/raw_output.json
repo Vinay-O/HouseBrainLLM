@@ -1,0 +1,35 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"name": "entrance_hall", "area_sqm": 10, "vastu_adherence": true},
+        {"name": "living_room", "area_sqm": 30, "vastu_adherence": true},
+        {"name": "dining_area", "area_sqm": 20, "vastu_adherence": true},
+        {"name": "kitchen", "area_sqm": 15, "vastu_adherence": true},
+        {"name": "guest_bathroom", "area_sqm": 6, "vastu_adherence": true},
+        {"name": "home_office", "area_sqm": 20, "vastu_adherence": false}
+      ],
+      "openings": [
+        {"type": "door", "from_room": "entrance_hall", "to_room": "living_room"},
+        {"type": "window", "room": "living_room", "view_direction": "southwest"},
+        {"type": "window", "room": "dining_area", "view_direction": "north"},
+        {"type": "window", "room": "kitchen", "view_direction": "east"}
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {"name": "bedroom_1", "area_sqm": 20, "vastu_adherence": true},
+        {"name": "bedroom_2", "area_sqm": 20, "vastu_adherence": true},
+        {"name": "bedroom_3", "area_sqm": 15, "vastu_adherence": true},
+        {"name": "bathroom_1", "area_sqm": 8, "vastu_adherence": true},
+        {"name": "home_theater", "area_sqm": 25, "vastu_adherence": false}
+      ],
+      "openings": [
+        {"type": "window", "room": "bedroom_1", "view_direction": "north"},
+        {"type": "balcony_door", "from_room": "home_theater", "to_room": "balcony"}
+      ]
+    }
+  ]
+}

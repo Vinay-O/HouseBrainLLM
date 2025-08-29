@@ -1,0 +1,91 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 15, "width": 20 },
+          "features": ["sofa", "TV unit", "dining table"]
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 12, "width": 15 },
+          "features": ["modular kitchen", "pantry", "breakfast counter"]
+        },
+        {
+          "room_type": "master_bedroom",
+          "dimensions": { "length": 18, "width": 16 },
+          "features": ["king bed", "wardrobe", "attached bathroom"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["queen bed", "wardrobe", "shared bathroom"]
+        },
+        {
+          "room_type": "study_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["desk", " bookshelf", "ergonomic chair"]
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": { "length": 8, "width": 7 },
+          "features": ["shower", " toilet", "sink"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "entrance",
+          "dimensions": { "length": 4, "width": 8 },
+          "direction": "north"
+        },
+        {
+          "opening_type": "window",
+          "dimensions": { "length": 5, "width": 5 },
+          "room": "living_room",
+          "direction": "east"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["queen bed", "wardrobe", "attached bathroom"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 13, "width": 11 },
+          "features": ["twin beds", "wardrobe", "shared bathroom"]
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": { "length": 8, "width": 7 },
+          "features": ["shower", "toilet", "sink"]
+        },
+        {
+          "room_type": "balcony",
+          "dimensions": { "length": 10, "width": 6 },
+          "features": ["outdoor seating", "potted plants"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "window",
+          "dimensions": { "length": 5, "width": 5 },
+          "room": "bedroom",
+          "direction": "west"
+        },
+        {
+          "opening_type": "door",
+          "dimensions": { "length": 3, "width": 7 },
+          "room": "balcony",
+          "direction": "south"
+        }
+      ]
+    }
+  ]
+}

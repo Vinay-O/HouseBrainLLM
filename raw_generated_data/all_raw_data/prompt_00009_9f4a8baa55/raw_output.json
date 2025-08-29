@@ -1,0 +1,114 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 12, "width": 8},
+          "orientation": "West",
+          "features": ["North-facing window"]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 9, "width": 6},
+          "orientation": "South-East",
+          "features": []
+        },
+        {
+          "room_name": "Dining Room",
+          "dimensions": {"length": 10, "width": 6},
+          "orientation": "East",
+          "features": ["South-facing window"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "Entrance",
+          "location": "North",
+          "details": []
+        },
+        {
+          "type": "Window",
+          "location": "West",
+          "details": {"purpose": "Living Room"}
+        },
+        {
+          "type": "Window",
+          "location": "South-East",
+          "details": {"purpose": "Kitchen"}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": {"length": 12, "width": 9},
+          "orientation": "North-East",
+          "features": []
+        },
+        {
+          "room_name": "Bedroom 2",
+          "dimensions": {"length": 10, "width": 7},
+          "orientation": "East",
+          "features": []
+        },
+        {
+          "room_name": "Bathroom 1",
+          "dimensions": {"length": 6, "width": 4},
+          "orientation": "South-East",
+          "features": []
+        }
+      ],
+      "openings": [
+        {
+          "type": "Window",
+          "location": "North-East",
+          "details": {"purpose": "Master Bedroom"}
+        },
+        {
+          "type": "Window",
+          "location": "East",
+          "details": {"purpose": "Bedroom 2"}
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_name": "Private Gym",
+          "dimensions": {"length": 14, "width": 8},
+          "orientation": "West",
+          "features": []
+        },
+        {
+          "room_name": "Bedroom 3",
+          "dimensions": {"length": 9, "width": 6},
+          "orientation": "North-West",
+          "features": []
+        },
+        {
+          "room_name": "Bathroom 2",
+          "dimensions": {"length": 5, "width": 4},
+          "orientation": "South-West",
+          "features": []
+        }
+      ],
+      "openings": [
+        {
+          "type": "Window",
+          "location": "West",
+          "details": {"purpose": "Private Gym"}
+        },
+        {
+          "type": "Window",
+          "location": "North-West",
+          "details": {"purpose": "Bedroom 3"}
+        }
+      ]
+    }
+  ]
+}

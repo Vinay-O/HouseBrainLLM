@@ -1,0 +1,305 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 2400,
+      "style": "Bauhaus Functional"
+    },
+    "plot": {
+      "slope": 30,
+      "climate": "Humid Subtropical",
+      "orientation": "South"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "music_studio",
+        "count": 1
+      },
+      {
+        "type": "telecommuting_pod",
+        "count": 1
+      },
+      {
+        "type": "atrium",
+        "count": 1
+      },
+      {
+        "type": "garage",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "wall": "north"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "music_studio_0",
+          "type": "music_studio",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "wall": "south",
+              "to": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_0_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "east",
+              "to": "hall"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_0_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 47,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "west",
+              "to": "hall"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "atrium_1",
+          "type": "atrium",
+          "bounds": {
+            "x": 15,
+            "y": 12,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "wall": "south",
+              "to": "exterior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "wall": "south",
+              "to": "exterior"
+            },
+            {
+              "type": "standard",
+              "wall": "east",
+              "to": "atrium"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 27,
+            "width": 15,
+            "height": 13
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "east",
+              "to": "atrium"
+            },
+            {
+              "type": "pet_door",
+              "wall": "south",
+              "to": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "telecommuting_pod_1",
+          "type": "telecommuting_pod",
+          "bounds": {
+            "x": 35,
+            "y": 12,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "west",
+              "to": "atrium"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 22,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "west",
+              "to": "hall"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 47,
+            "y": 22,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "west",
+              "to": "hall"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 47,
+            "y": 12,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "west",
+              "to": "hall"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

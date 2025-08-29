@@ -1,0 +1,84 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 15, "width": 20},
+          "features": ["floor_to_ceiling_windows", "central_courtyard_access"]
+        },
+        {
+          "room_name": "Dining Room",
+          "dimensions": {"length": 12, "width": 14},
+          "features": ["adjacent_to_kitchen"]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 10, "width": 12},
+          "features": []
+        },
+        {
+          "room_name": "Guest Bedroom",
+          "dimensions": {"length": 12, "width": 12},
+          "features": ["floor_to_ceiling_windows"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "location": {"x": 5, "y": 7},
+          "description": "Main Entrance to Living Room"
+        },
+        {
+          "opening_type": "window",
+          "location": {"x": 18, "y": 30},
+          "description": "Floor-to-ceiling window for the living room overlooking central courtyard."
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": {"length": 14, "width": 15},
+          "features": ["floor_to_ceiling_windows", "private_bathroom"]
+        },
+        {
+          "room_name": "Bedroom 2",
+          "dimensions": {"length": 12, "width": 12},
+          "features": ["floor_to_ceiling_windows", "shared_bathroom"]
+        },
+        {
+          "room_name": "Bedroom 3",
+          "dimensions": {"length": 12, "width": 12},
+          "features": ["floor_to_ceiling_windows", "shared_bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "location": {"x": 5, "y": 7},
+          "description": "Staircase to the rooftop terrace"
+        },
+        {
+          "opening_type": "window",
+          "location": {"x": 18, "y": 30},
+          "description": "Floor-to-ceiling window for Master Bedroom overlooking central courtyard."
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [
+        {
+          "room_name": "Patio Area",
+          "dimensions": {"length": 10, "width": 25},
+          "features": ["floor_to_ceiling_windows", "pool"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

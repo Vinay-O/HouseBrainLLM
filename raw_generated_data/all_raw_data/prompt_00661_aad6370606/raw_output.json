@@ -1,0 +1,83 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": {
+            "width": "40 ft",
+            "length": "30 ft"
+          },
+          "adjacent_rooms": ["open_plan_kitchen"],
+          "description": "Open-plan living area with wheelchair accessible entrances and ample circulation space, large windows for natural light."
+        },
+        {
+          "room_id": "open_plan_kitchen",
+          "dimensions": {
+            "width": "20 ft",
+            "length": "30 ft"
+          },
+          "adjacent_rooms": ["living_room"],
+          "description": "Contemporary open kitchen integrated with living area; includes wide counters and lower cabinets for wheelchair access."
+        },
+        {
+          "room_id": "bedroom",
+          "dimensions": {
+            "width": "20 ft",
+            "length": "20 ft"
+          },
+          "adjacent_rooms": [],
+          "description": "Private bedroom designed with Vastu alignment, ensuring the bed is not placed in the direct line of entry for energy flow."
+        },
+        {
+          "room_id": "bathroom",
+          "dimensions": {
+            "width": "10 ft",
+            "length": "12 ft"
+          },
+          "adjacent_rooms": ["bedroom"],
+          "description": "Wheelchair accessible bathroom with grab bars and non-slip surfaces, designed according to Vastu norms."
+        },
+        {
+          "room_id": "closet_area",
+          "dimensions": {
+            "width": "5 ft",
+            "length": "10 ft"
+          },
+          "adjacent_rooms": ["bedroom"],
+          "description": "Compact storage closet integrated within the bedroom area for efficient space utilization."
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entry",
+          "location": "front_door",
+          "dimensions": {
+            "width": "4 ft",
+            "height": "7 ft"
+          },
+          "description": "Wheelchair accessible entry with a ramp, aligned with Vastu principles to ensure positive energy flow."
+        },
+        {
+          "opening_id": "secondary_entry",
+          "location": "side_door",
+          "dimensions": {
+            "width": "3.5 ft",
+            "height": "6.5 ft"
+          },
+          "description": "Secondary entrance providing emergency access, designed with accessibility in mind."
+        },
+        {
+          "opening_id": "balcony_entry",
+          "location": "bedroom_balcony",
+          "dimensions": {
+            "width": "3 ft",
+            "height": "6 ft"
+          },
+          "description": "Small balcony attached to the bedroom, offering a private outdoor space."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "description": "Large open living space with floor-to-ceiling windows to maximize natural light and view, aligned east-west according to Vastu principles.",
+          "dimensions": {"width": 20, "length": 15},
+          "adjacent_rooms": ["dining_area", "kitchen"]
+        },
+        {
+          "room_id": "dining_area",
+          "description": "Spacious dining area with an adjoining open kitchen; designed for comfortable family gatherings.",
+          "dimensions": {"width": 12, "length": 10},
+          "adjacent_rooms": ["living_room"]
+        },
+        {
+          "room_id": "kitchen",
+          "description": "Modern kitchen with state-of-the-art appliances and ample storage, optimized for workflow.",
+          "dimensions": {"width": 14, "length": 8}
+        },
+        {
+          "room_id": "master_bedroom",
+          "description": "Private master bedroom featuring floor-to-ceiling windows, south-facing as per Vastu, with built-in wardrobes and a walk-in closet.",
+          "dimensions": {"width": 16, "length": 14},
+          "amenities": ["en-suite_bathroom", "closet"]
+        },
+        {
+          "room_id": "second_bedroom",
+          "description": "Guest bedroom designed with ample natural light and storage space, north-facing to ensure positive energy flow.",
+          "dimensions": {"width": 14, "length": 12},
+          "amenities": ["wardrobe_space", "alcove"]
+        },
+        {
+          "room_id": "en_suite_bathroom",
+          "description": "Luxurious en-suite bathroom for master bedroom with modern fixtures and natural stone finishes.",
+          "dimensions": {"width": 8, "length": 6}
+        },
+        {
+          "room_id": "private_gym",
+          "description": "Dedicated private gym area featuring a mirrored wall, integrated sound system, and high ceiling to promote an energetic atmosphere.",
+          "dimensions": {"width": 10, "length": 12},
+          "amenities": ["treadmill", "weight_area"]
+        },
+        {
+          "room_id": "utility_room",
+          "description": "Functional storage space for household items, cleaning supplies, and maintenance equipment.",
+          "dimensions": {"width": 6, "length": 8}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "location": "between living_room and dining_area",
+          "description": "Large sliding glass door to seamlessly connect the spaces."
+        },
+        {
+          "opening_type": "door",
+          "location": "between kitchen and dining_area",
+          "description": "Sliding door to maximize space utilization."
+        },
+        {
+          "opening_type": "window",
+          "location": "living_room",
+          "description": "Floor-to-ceiling windows offering unobstructed views and ample natural light."
+        },
+        {
+          "opening_type": "door",
+          "location": "between living_room and master_bedroom",
+          "description": "Private door ensuring separation while allowing connectivity."
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [
+        {
+          "room_id": "terrace_garden",
+          "description": "Rooftop terrace garden designed as a serene retreat with indigenous plantings and water features, following Chettinad style aesthetics.",
+          "dimensions": {"width": 40, "length": 60},
+          "amenities": ["furniture_area", "water_feature"]
+        },
+        {
+          "room_id": "open_space",
+          "description": "Multipurpose open space on the terrace for yoga or meditation sessions in natural surroundings.",
+          "dimensions": {"width": 20, "length": 30}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "location": "rooftop_terrace to ground_floor",
+          "description": "Sturdy staircase with guardrails for safe access."
+        },
+        {
+          "opening_type": "balcony_door",
+          "location": "terrace_garden",
+          "description": "Large sliding door connecting the terrace garden to the interior living area."
+        }
+      ]
+    }
+  ]
+}

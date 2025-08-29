@@ -1,0 +1,71 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Open-plan Kitchen & Living Area",
+          "description": "A spacious area combining the kitchen and living space. Designed with minimalist aesthetics and ample natural light, incorporating large windows facing east (according to Vastu) to harness morning sunlight.",
+          "area_sqft": 400
+        },
+        {
+          "name": "Master Bedroom",
+          "description": "An airy bedroom featuring a walk-in closet and adjacent bathroom. Placed in the north-east corner for positive energy flow.",
+          "area_sqft": 250,
+          "features": [
+            {"feature_name": "Walk-in Closet"},
+            {"feature_name": "Private Bathroom"}
+          ]
+        },
+        {
+          "name": "Guest Bedroom",
+          "description": "A comfortable, minimalist guest room with access to the living area. Designed to promote peaceful energy.",
+          "area_sqft": 200
+        },
+        {
+          "name": "Home Theater",
+          "description": "A dedicated home theater space within the ground floor, designed with acoustic panels and ambient lighting for a cinematic experience. Placed in the south-west corner as per Vastu to balance entertainment energy.",
+          "area_sqft": 150,
+          "features": [
+            {"feature_name": "Acoustic Panels"},
+            {"feature_name": "Ambient Lighting"}
+          ]
+        },
+        {
+          "name": "Utility Room",
+          "description": "A compact utility space for storage, laundry and other household needs. Positioned near the kitchen to ensure convenience.",
+          "area_sqft": 50
+        }
+      ],
+      "openings": [
+        {
+          "type": "Window",
+          "location": "Open-plan Kitchen & Living Area",
+          "orientation": "East"
+        },
+        {
+          "type": "Door",
+          "location": "Master Bedroom",
+          "direction": "North-East to Open-plan Kitchen & Living Area"
+        },
+        {
+          "type": "Door",
+          "location": "Guest Bedroom",
+          "direction": "South-West to Open-plan Kitchen & Living Area"
+        }
+      ]
+    }
+  ],
+  "building_details": {
+    "plot_size_sqft": 8000,
+    "design_style": "Minimalist",
+    "structure": "G+1 2BHK Cottage",
+    "vastu_alignment": {
+      "entrance_direction": "East",
+      "positive_zones": [
+        {"zone_name": "Master Bedroom", "position": "North-East"},
+        {"zone_name": "Open-plan Kitchen & Living Area", "position": "East"}
+      ]
+    }
+  }
+}

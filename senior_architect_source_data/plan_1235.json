@@ -1,0 +1,400 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 4,
+      "totalArea": 3200,
+      "style": "Industrial Loft"
+    },
+    "plot": {
+      "description": "Forest clearing with mature oak trees in a Mediterranean dry summers climate",
+      "orientation": "North-facing for consistent light"
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_theater",
+        "description": "With fiber optic star ceiling"
+      },
+      {
+        "type": "accessible_bathroom",
+        "description": "Wheelchair accessible"
+      },
+      {
+        "type": "pet_area",
+        "description": "Dedicated space for pets"
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 785000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_level",
+          "type": "entryway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "type": "main_entry"
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "type": "interior",
+              "to_room": "elevator_shaft"
+            }
+          ],
+          "windows": [],
+          "description": "Wheelchair accessible entrance with ramp, polished concrete floor"
+        },
+        {
+          "id": "elevator_shaft",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5,
+              "type": "interior",
+              "to_room": "entry_level"
+            }
+          ],
+          "windows": [],
+          "description": "Wheelchair accessible elevator serving all floors"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_dining",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "type": "interior",
+              "to_room": "kitchen"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "type": "interior",
+              "to_room": "elevator_shaft"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "type": "floor_to_ceiling",
+              "description": "Panoramic forest views"
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "type": "floor_to_ceiling",
+              "description": "Panoramic forest views"
+            }
+          ],
+          "description": "Open plan living and dining area with exposed steel beams, reclaimed oak flooring"
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5,
+              "type": "interior",
+              "to_room": "living_dining"
+            },
+            {
+              "wall": "south",
+              "position": 5,
+              "type": "interior",
+              "to_room": "elevator_shaft"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "type": "standard",
+              "description": "View to clearing"
+            }
+          ],
+          "description": "Industrial kitchen with concrete countertops, stainless steel appliances"
+        },
+        {
+          "id": "pet_area",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5,
+              "type": "interior",
+              "to_room": "kitchen"
+            },
+            {
+              "wall": "east",
+              "position": 2.5,
+              "type": "exterior",
+              "description": "Pet door to exterior run"
+            }
+          ],
+          "windows": [],
+          "description": "Dedicated pet area with washing station, feeding area, and direct exterior access"
+        },
+        {
+          "id": "elevator_shaft",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5,
+              "type": "interior",
+              "to_room": "living_dining"
+            }
+          ],
+          "windows": [],
+          "description": "Elevator shaft continuation"
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "type": "interior",
+              "to_room": "master_bath"
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "type": "interior",
+              "to_room": "elevator_shaft"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "type": "floor_to_ceiling",
+              "description": "Panoramic forest views"
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "type": "floor_to_ceiling",
+              "description": "Panoramic forest views"
+            }
+          ],
+          "description": "Master bedroom with exposed brick feature wall, oak flooring"
+        },
+        {
+          "id": "master_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5,
+              "type": "interior",
+              "to_room": "master_bedroom"
+            },
+            {
+              "wall": "south",
+              "position": 5,
+              "type": "interior",
+              "to_room": "elevator_shaft"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "type": "standard",
+              "description": "North light"
+            }
+          ],
+          "description": "Wheelchair accessible bathroom with zero-threshold shower, natural stone tiles"
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5,
+              "type": "interior",
+              "to_room": "master_bath"
+            },
+            {
+              "wall": "east",
+              "position": 2.5,
+              "type": "interior",
+              "to_room": "elevator_shaft"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "type": "standard",
+              "description": "Forest view"
+            }
+          ],
+          "description": "Guest bedroom/second bedroom with oak flooring"
+        },
+        {
+          "id": "elevator_shaft",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5,
+              "type": "interior",
+              "to_room": "master_bath"
+            }
+          ],
+          "windows": [],
+          "description": "Elevator shaft continuation"
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "home_theater",
+          "type": "entertainment",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "type": "interior",
+              "to_room": "elevator_shaft"
+            }
+          ],
+          "windows": [],
+          "description": "Home theater with tiered seating, acoustic wall treatments, and fiber optic star ceiling"
+        },
+        {
+          "id": "roof_terrace",
+          "type": "outdoor",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5,
+              "type": "exterior",
+              "to_room": "home_theater"
+            }
+          ],
+          "windows": [],
+          "description": "Accessible rooftop terrace with 360-degree panoramic views, shaded seating area"
+        },
+        {
+          "id": "elevator_shaft",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5,
+              "type": "interior",
+              "to_room": "home_theater"
+            }
+          ],
+          "windows": [],
+          "description": "Elevator shaft termination"
+        }
+      ]
+    }
+  ]
+}

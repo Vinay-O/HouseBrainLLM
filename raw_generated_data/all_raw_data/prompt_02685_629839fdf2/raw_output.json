@@ -1,0 +1,43 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {"name": "entrance lobby", "dimensions": "8x10 feet"},
+      {"name": "living room", "dimensions": "15x20 feet"},
+      {"name": "dining area", "dimensions": "12x15 feet"},
+      {"name": "kitchen", "dimensions": "10x12 feet", "features": ["gas stove", "sink"]},
+      {"name": "guest bathroom", "dimensions": "6x8 feet"}
+    ],
+    "openings": [
+      {"type": "door", "location": "entrance", "width": 3, "height": 7},
+      {"type": "window", "location": "living room", "count": 2},
+      {"type": "door", "location": "kitchen to dining area", "width": 3, "height": 7}
+    ]
+  },
+  {
+    "level_id": "first_floor",
+    "rooms": [
+      {"name": "master bedroom", "dimensions": "15x20 feet", "features": [" ensuite bathroom"]},
+      {"name": "bedroom 2", "dimensions": "12x15 feet"},
+      {"name": "bedroom 3", "dimensions": "10x12 feet"},
+      {"name": "study/library", "dimensions": "14x16 feet", "features": ["shelving", "reading area"]},
+      {"name": "balcony", "dimensions": "5x8 feet"}
+    ],
+    "openings": [
+      {"type": "window", "location": "bedroom 2 and 3", "count": 2},
+      {"type": "door", "location": "study to balcony", "width": 3, "height": 7}
+    ]
+  },
+  {
+    "level_id": "second_floor",
+    "rooms": [
+      {"name": "bedroom 4", "dimensions": "10x12 feet"},
+      {"name": "bedroom 5", "dimensions": "8x10 feet"},
+      {"name": "open terrace", "dimensions": "20x25 feet"}
+    ],
+    "openings": [
+      {"type": "balcony door", "location": "open terrace access", "width": 3, "height": 7},
+      {"type": "window", "location": "bedrooms", "count": 2}
+    ]
+  }
+]}

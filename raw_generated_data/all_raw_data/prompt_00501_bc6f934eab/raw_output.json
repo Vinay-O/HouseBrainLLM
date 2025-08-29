@@ -1,0 +1,58 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 20 },
+          "features": ["concrete floors", "exposed brick walls", "large windows", "skylight"],
+          "connected_to": ["bedroom", "kitchen", "central_courtyard"]
+        },
+        {
+          "room_id": "bedroom",
+          "shape": "square",
+          "dimensions": { "length": 12, "width": 12 },
+          "features": ["concrete floors", "exposed brick walls", "large window"],
+          "connected_to": ["living_room", "bathroom"]
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "rectangle",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["concrete floors", "exposed brick walls", "large window"],
+          "connected_to": ["living_room"]
+        },
+        {
+          "room_id": "bathroom",
+          "shape": "rectangle",
+          "dimensions": { "length": 6, "width": 5 },
+          "features": ["concrete floors", "exposed brick walls", "skylight"],
+          "connected_to": ["bedroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "central_courtyard",
+          "shape": "square",
+          "dimensions": { "length": 8, "width": 8 },
+          "features": ["concrete floors", "exposed brick walls", "skylight"]
+        }
+      ],
+      "additional_features": [
+        {
+          "feature_id": "brutalist_facade",
+          "description": "Exposed concrete and raw materials for a Brutalist aesthetic"
+        },
+        {
+          "feature_id": "vastu_compliance",
+          "description": "Vastu principles applied to room placement and orientation"
+        }
+      ],
+      "plot_dimensions": { "length": 40, "width": 30 },
+      "style": "Brutalist",
+      "courtyard_position": "central"
+    }
+  ]
+}

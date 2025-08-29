@@ -1,0 +1,510 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 1800,
+      "style": "Craftsman"
+    },
+    "plot": {
+      "slope": "sunken_courtyard",
+      "orientation": "south",
+      "climate": "mediterranean_dry_summers"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 300,
+        "level": 0,
+        "sunken": true
+      },
+      {
+        "type": "kitchen",
+        "area": 200,
+        "level": 1
+      },
+      {
+        "type": "dining_room",
+        "area": 180,
+        "level": 1
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 250,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 200,
+        "level": 1,
+        "murphy_bed": true
+      },
+      {
+        "type": "studio",
+        "area": 300,
+        "level": 1
+      },
+      {
+        "type": "bathroom",
+        "area": 100,
+        "level": 1
+      },
+      {
+        "type": "bathroom",
+        "area": 80,
+        "level": 0
+      },
+      {
+        "type": "utility",
+        "area": 90,
+        "level": 0
+      },
+      {
+        "type": "courtyard",
+        "area": 300,
+        "level": -1,
+        "exterior": true
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 495000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "elevation": -4.0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "to_id": "exterior"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "to_id": "staircase"
+            }
+          ],
+          "windows": [],
+          "exterior": true,
+          "features": [
+            "drought_tolerant_landscaping",
+            "rainwater_harvesting"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "elevation": 0.0,
+      "rooms": [
+        {
+          "id": "sunken_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "to_id": "staircase"
+            },
+            {
+              "wall": "south",
+              "position": 15,
+              "to_id": "utility_room"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "position": 20,
+              "size": "large"
+            }
+          ],
+          "features": [
+            "sunken",
+            "phase_change_materials",
+            "exposed_wood_beams"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5,
+              "to_id": "sunken_living"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "flood_resistant_finishes"
+          ]
+        },
+        {
+          "id": "bathroom_lower",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 2.5,
+              "to_id": "sunken_living"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "accessible_design"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "elevation": 4.0,
+      "rooms": [
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6,
+              "to_id": "dining_room"
+            },
+            {
+              "wall": "east",
+              "position": 6,
+              "to_id": "staircase"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3,
+              "size": "medium"
+            },
+            {
+              "wall": "south",
+              "position": 9,
+              "size": "medium"
+            }
+          ],
+          "features": [
+            "craftsman_cabinetry",
+            "passive_solar_design"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 13,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6.5,
+              "to_id": "kitchen"
+            },
+            {
+              "wall": "east",
+              "position": 6,
+              "to_id": "staircase"
+            },
+            {
+              "wall": "south",
+              "position": 6.5,
+              "to_id": "studio"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3,
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "large"
+            }
+          ],
+          "features": [
+            "open_to_living_below",
+            "art_display_walls"
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "to_id": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "large"
+            }
+          ],
+          "features": [
+            "walk_in_closet",
+            "phase_change_materials"
+          ]
+        },
+        {
+          "id": "guest_room",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 12,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5,
+              "to_id": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3,
+              "size": "medium"
+            },
+            {
+              "wall": "south",
+              "position": 7,
+              "size": "medium"
+            }
+          ],
+          "features": [
+            "murphy_bed_system",
+            "flexible_space"
+          ]
+        },
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 12,
+            "y": 12,
+            "width": 13,
+            "height": 13
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6.5,
+              "to_id": "dining_room"
+            },
+            {
+              "wall": "west",
+              "position": 6.5,
+              "to_id": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "size": "large"
+            },
+            {
+              "wall": "north",
+              "position": 9,
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "position": 6.5,
+              "size": "large"
+            }
+          ],
+          "features": [
+            "north_light_window",
+            "sink",
+            "storage_walls"
+          ]
+        },
+        {
+          "id": "bathroom_upper",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 24,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4,
+              "to_id": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "size": "small"
+            }
+          ],
+          "features": [
+            "accessible_shower",
+            "natural_ventilation"
+          ]
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 8,
+            "y": 24,
+            "width": 17,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4,
+              "to_id": "primary_bedroom"
+            },
+            {
+              "wall": "west",
+              "position": 12,
+              "to_id": "guest_room"
+            },
+            {
+              "wall": "south",
+              "position": 8.5,
+              "to_id": "studio"
+            },
+            {
+              "wall": "east",
+              "position": 4,
+              "to_id": "bathroom_upper"
+            },
+            {
+              "wall": "east",
+              "position": 12,
+              "to_id": "staircase"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "art_gallery_space",
+            "built_in_bench"
+          ]
+        },
+        {
+          "id": "staircase",
+          "type": "staircase",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 5,
+            "height": 32
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 16,
+              "to_id": "dining_room"
+            },
+            {
+              "wall": "west",
+              "position": 8,
+              "to_id": "kitchen"
+            },
+            {
+              "wall": "west",
+              "position": 28,
+              "to_id": "hallway"
+            },
+            {
+              "wall": "south",
+              "position": 2.5,
+              "to_id": "courtyard"
+            },
+            {
+              "wall": "north",
+              "position": 2.5,
+              "to_id": "sunken_living"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 16,
+              "size": "clerestory"
+            }
+          ],
+          "features": [
+            "open_risers",
+            "craftsman_railing"
+          ]
+        }
+      ]
+    }
+  ]
+}

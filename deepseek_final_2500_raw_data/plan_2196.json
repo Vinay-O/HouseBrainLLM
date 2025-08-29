@@ -1,0 +1,221 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 1850,
+      "style": "Japanese Zen"
+    },
+    "plot": {
+      "description": "Elevated platform above wetlands in a tropical monsoon climate, south-facing for solar gain"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "purpose": "Primary suite and guest accommodation"
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "purpose": "Ensuite and guest bathroom"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "purpose": "Main living space opening to courtyard"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "purpose": "Open kitchen with dining area"
+      },
+      {
+        "type": "atrium",
+        "count": 1,
+        "purpose": "Central courtyard for light and ventilation"
+      },
+      {
+        "type": "fitness_room",
+        "count": 1,
+        "purpose": "Yoga and wellness space"
+      },
+      {
+        "type": "darkroom",
+        "count": 1,
+        "purpose": "Film photography development"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "purpose": "Mechanical and storage"
+      }
+    ]
+  },
+  "total_area": 1850.0,
+  "construction_cost": 425500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "atrium",
+          "type": "atrium",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "north_wing_door",
+            "south_wing_door",
+            "east_wing_door",
+            "west_wing_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "atrium_door",
+            "main_entry"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "atrium_door"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "atrium_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            "east_wall_window"
+          ]
+        },
+        {
+          "id": "primary_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "atrium_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            "east_wall_window"
+          ]
+        },
+        {
+          "id": "guest_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_door",
+            "hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "fitness_room",
+          "type": "fitness_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "atrium_door"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "darkroom",
+          "type": "darkroom",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "utility_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "darkroom_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

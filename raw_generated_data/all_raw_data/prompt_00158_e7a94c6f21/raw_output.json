@@ -1,0 +1,65 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "dimensions": [15, 20],
+          "features": ["Floor-to-ceiling windows"]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": [10, 12],
+          "features": []
+        },
+        {
+          "room_name": "Dining Room",
+          "dimensions": [15, 15],
+          "features": ["Floor-to-ceiling windows"]
+        },
+        {
+          "room_name": "Library",
+          "dimensions": [10, 12],
+          "features": []
+        }
+      ],
+      "openings": [
+        {"type": "door", "location": "Living Room to Dining Room"},
+        {"type": "window", "location": "Kitchen"}
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": [15, 20],
+          "features": ["Floor-to-ceiling windows"]
+        },
+        {
+          "room_name": "Bedroom_2",
+          "dimensions": [12, 15],
+          "features": []
+        }
+      ],
+      "openings": [
+        {"type": "door", "location": "Master Bedroom to Balcony"},
+        {"type": "window", "location": "Bedroom_2"}
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_name": "Home Office",
+          "dimensions": [15, 15],
+          "features": ["Floor-to-ceiling windows"]
+        }
+      ],
+      "openings": [
+        {"type": "window", "location": "Home Office"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 800,
+      "style": "Kashmiri Wooden Architecture"
+    },
+    "plot": {
+      "orientation": "south",
+      "view": "garden and river",
+      "specialConsiderations": [
+        "flood risk",
+        "noise pollution",
+        "earthquake resistance"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "area": 180
+      },
+      {
+        "type": "guest_bedroom",
+        "area": 150
+      },
+      {
+        "type": "living_room",
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "type": "home_theater",
+        "area": 130
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "main_entry"
+          ],
+          "windows": [
+            "south_large",
+            "east_small"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_dining"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_view",
+            "east_view"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 12,
+            "width": 13,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_view",
+            "west_view"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 8,
+            "height": 7.5
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "vent_window"
+          ]
+        },
+        {
+          "id": "home_theater",
+          "type": "media_room",
+          "bounds": {
+            "x": 25,
+            "y": 7.5,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "soundproof_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 10,
+            "height": 2
+          },
+          "doors": [
+            "to_living",
+            "to_kitchen",
+            "to_bedrooms",
+            "to_bath_theater"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

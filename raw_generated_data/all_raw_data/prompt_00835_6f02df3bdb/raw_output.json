@@ -1,0 +1,87 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_porch",
+          "type": "porch",
+          "dimensions": { "length": 8, "width": 4 },
+          "accessibility": true,
+          "vastu": "north-east"
+        },
+        {
+          "room_id": "living_room",
+          "type": "living room",
+          "dimensions": { "length": 16, "width": 12 },
+          "accessibility": true
+        },
+        {
+          "room_id": "dining_room",
+          "type": "dining room",
+          "dimensions": { "length": 12, "width": 10 }
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["modular", "gas_stove", "water_purifier"],
+          "vastu": "south-east"
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["wardrobe", "balcony"],
+          "accessibility": true
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "bathroom",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["wheelchair_accessible_shower", "grab_bars"],
+          "associated_with": "bedroom_1"
+        },
+        {
+          "room_id": "home_office",
+          "type": "home office",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["ergonomic_furniture", "high_speed_internet"]
+        },
+        {
+          "room_id": "home_theater",
+          "type": "home theater",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["projector_screen", "surround_sound"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 3.5, "width": 1 },
+          "accessibility": true
+        },
+        {
+          "opening_id": "garage_entry",
+          "type": "double door",
+          "dimensions": { "length": 8, "width": 2.5 }
+        }
+      ]
+    }
+  ],
+  "features": {
+    "garage": {
+      "type": "two-car garage",
+      "location": "ground_floor",
+      "accessibility": true
+    },
+    "outdoor": {
+      "courtyard": true,
+      "garden": true
+    },
+    "architectural_style": "Chettinad",
+    "total_area": 1000,
+    "unit": "sqft"
+  }
+}

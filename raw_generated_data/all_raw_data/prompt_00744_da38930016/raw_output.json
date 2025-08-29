@@ -1,0 +1,132 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "purpose": "common_area"
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 10, "width": 9 },
+          "purpose": "common_area"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 8 },
+          "features": ["modular", "gas_stove", "sink"],
+          "purpose": "utility"
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["attached_bathroom", "wardrobe"],
+          "purpose": "private"
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 13, "width": 11 },
+          "features": ["attached_bathroom", "wardrobe"],
+          "purpose": "private"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 3.5, "width": 2.5 }
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 2 }
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 3 }
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 2.5 }
+        }
+      ],
+      "special_features": [
+        {
+          "feature_id": "solar_panels",
+          "description": "On the rooftop terrace"
+        },
+        {
+          "feature_id": "rainwater_harvesting",
+          "description": "System integrated near the backyard"
+        },
+        {
+          "feature_id": "indoor_garden",
+          "description": "Small garden area adjacent to the dining room"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["attached_bathroom", "balcony"],
+          "purpose": "private"
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 13, "width": 12 },
+          "features": ["attached_bathroom", "wardrobe"],
+          "purpose": "private"
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 10, "width": 9 },
+          "purpose": "common_area"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "bedroom_3_window",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 2.5 }
+        },
+        {
+          "opening_id": "bedroom_4_window",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 3 }
+        },
+        {
+          "opening_id": "study_room_window",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 2.5 }
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_id": "terrace_access",
+          "type": "staircase",
+          "description": "Access from upper floor"
+        }
+      ],
+      "special_features": [
+        {
+          "feature_id": "outdoor_seating",
+          "description": "Space for seating and relaxation"
+        },
+        {
+          "feature_id": "green_roof",
+          "description": "Partial green roofing with plants"
+        }
+      ]
+    }
+  ]
+}

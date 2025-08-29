@@ -1,0 +1,339 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 2400,
+      "style": "Andhra Traditional with Nainital Heritage"
+    },
+    "plot": {
+      "length": 60,
+      "width": 40,
+      "orientation": "south"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 180
+      },
+      {
+        "type": "bedroom",
+        "count": 4,
+        "area": 960
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "area": 240
+      },
+      {
+        "type": "office",
+        "count": 2,
+        "area": 240
+      },
+      {
+        "type": "monsoon_retreat",
+        "count": 1,
+        "area": 160
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 120
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 7200000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "main_entry_south"
+          ],
+          "windows": [
+            "jaali_north"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 6,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "to_foyer",
+            "to_dining",
+            "to_office1"
+          ],
+          "windows": [
+            "jaali_south",
+            "jaali_east"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 6,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_living",
+            "to_kitchen"
+          ],
+          "windows": [
+            "jaali_west"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 18,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_dining",
+            "to_utility"
+          ],
+          "windows": [
+            "jaali_west"
+          ]
+        },
+        {
+          "id": "office_1",
+          "type": "office",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_living"
+          ],
+          "windows": [
+            "jaali_east"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 38,
+            "y": 18,
+            "width": 2,
+            "height": 12
+          },
+          "doors": [
+            "to_kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "monsoon_retreat",
+          "type": "monsoon_retreat",
+          "bounds": {
+            "x": 0,
+            "y": 26,
+            "width": 20,
+            "height": 14
+          },
+          "doors": [
+            "to_garden_north"
+          ],
+          "windows": [
+            "jaali_east",
+            "jaali_west"
+          ]
+        },
+        {
+          "id": "underground_cooling",
+          "type": "storage",
+          "bounds": {
+            "x": 20,
+            "y": 26,
+            "width": 20,
+            "height": 14
+          },
+          "doors": [
+            "hatch_access"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 14,
+            "height": 16
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "jaali_east",
+            "jaali_south"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 14,
+            "y": 0,
+            "width": 14,
+            "height": 16
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "jaali_south",
+            "jaali_west"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "jaali_south",
+            "jaali_west"
+          ]
+        },
+        {
+          "id": "office_2",
+          "type": "office",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "jaali_east"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 16,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 28,
+            "y": 16,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "family_hall",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 16,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            "to_bedrooms",
+            "to_office"
+          ],
+          "windows": [
+            "jaali_north"
+          ]
+        },
+        {
+          "id": "solar_water_tank",
+          "type": "utility",
+          "bounds": {
+            "x": 36,
+            "y": 16,
+            "width": 4,
+            "height": 12
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

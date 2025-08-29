@@ -1,0 +1,148 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_foyer",
+          "area": 50,
+          "shape": "rectangular",
+          "dimensions": { "length": 5, "width": 10 },
+          "features": ["wooden flooring", "minimalist decor"],
+          "position": { "x_min": 0, "x_max": 5, "y_min": 0, "y_max": 10 }
+        },
+        {
+          "room_id": "living_room",
+          "area": 200,
+          "shape": "rectangular",
+          "dimensions": { "length": 10, "width": 20 },
+          "features": ["wooden flooring", "minimalist decor"],
+          "position": { "x_min": 5, "x_max": 15, "y_min": 0, "y_max": 20 }
+        },
+        {
+          "room_id": "kitchen",
+          "area": 100,
+          "shape": "square",
+          "dimensions": { "length": 10, "width": 10 },
+          "features": ["modular kitchen", "granite countertops"],
+          "position": { "x_min": 5, "x_max": 15, "y_min": 20, "y_max": 30 }
+        },
+        {
+          "room_id": "dining_room",
+          "area": 80,
+          "shape": "rectangular",
+          "dimensions": { "length": 8, "width": 10 },
+          "features": ["wooden flooring", "minimalist decor"],
+          "position": { "x_min": 5, "x_max": 13, "y_min": 20, "y_max": 30 }
+        },
+        {
+          "room_id": "bedroom_1",
+          "area": 150,
+          "shape": "rectangular",
+          "dimensions": { "length": 12, "width": 12.5 },
+          "features": ["wooden flooring", "minimalist decor"],
+          "position": { "x_min": 15, "x_max": 27, "y_min": 0, "y_max": 12.5 }
+        },
+        {
+          "room_id": "bedroom_2",
+          "area": 150,
+          "shape": "rectangular",
+          "dimensions": { "length": 12, "width": 12.5 },
+          "features": ["wooden flooring", "minimalist decor"],
+          "position": { "x_min": 27, "x_max": 39, "y_min": 0, "y_max": 12.5 }
+        },
+        {
+          "room_id": "bedroom_3",
+          "area": 100,
+          "shape": "square",
+          "dimensions": { "length": 10, "width": 10 },
+          "features": ["wooden flooring", "minimalist decor"],
+          "position": { "x_min": 5, "x_max": 15, "y_min": 30, "y_max": 40 }
+        },
+        {
+          "room_id": "library",
+          "area": 80,
+          "shape": "rectangular",
+          "dimensions": { "length": 8, "width": 10 },
+          "features": ["wooden flooring", "minimalist decor"],
+          "position": { "x_min": 5, "x_max": 13, "y_min": 40, "y_max": 50 }
+        },
+        {
+          "room_id": "staircase",
+          "area": 20,
+          "shape": "rectangular",
+          "dimensions": { "length": 2, "width": 10 },
+          "features": ["wooden flooring", "minimalist decor"],
+          "position": { "x_min": 39, "x_max": 41, "y_min": 0, "y_max": 50 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 3.6, "width": 1.2 },
+          "position": { "x": 0, "y": 5 }
+        },
+        {
+          "opening_id": "living_to_kitchen",
+          "type": "door",
+          "dimensions": { "length": 0.9, "width": 2.1 },
+          "position": { "x": 10, "y": 20 }
+        },
+        {
+          "opening_id": "kitchen_to_dining",
+          "type": "door",
+          "dimensions": { "length": 0.9, "width": 2.1 },
+          "position": { "x": 15, "y": 25 }
+        },
+        {
+          "opening_id": "dining_to_library",
+          "type": "door",
+          "dimensions": { "length": 0.9, "width": 2.1 },
+          "position": { "x": 8, "y": 45 }
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_4",
+          "area": 100,
+          "shape": "square",
+          "dimensions": { "length": 10, "width": 10 },
+          "features": ["wooden flooring", "minimalist decor"],
+          "position": { "x_min": 5, "x_max": 15, "y_min": 30, "y_max": 40 }
+        },
+        {
+          "room_id": "study_room",
+          "area": 80,
+          "shape": "rectangular",
+          "dimensions": { "length": 8, "width": 10 },
+          "features": ["wooden flooring", "minimalist decor"],
+          "position": { "x_min": 5, "x_max": 13, "y_min": 40, "y_max": 50 }
+        },
+        {
+          "room_id": "balcony",
+          "area": 50,
+          "shape": "rectangular",
+          "dimensions": { "length": 5, "width": 10 },
+          "features": ["tile flooring", "minimalist decor"],
+          "position": { "x_min": 27, "x_max": 37, "y_min": 30, "y_max": 40 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase_upper",
+          "type": "door",
+          "dimensions": { "length": 0.9, "width": 2.1 },
+          "position": { "x": 40, "y": 35 }
+        },
+        {
+          "opening_id": "bedroom_4_to_balcony",
+          "type": "door",
+          "dimensions": { "length": 1.2, "width": 2.7 },
+          "position": { "x": 30, "y": 35 }
+        }
+      ]
+    }
+  ] }

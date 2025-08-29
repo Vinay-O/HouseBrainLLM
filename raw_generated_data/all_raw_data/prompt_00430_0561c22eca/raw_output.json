@@ -1,0 +1,48 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"room_type": "living_room", "area_sqft": 300, "position": "northeast"},
+        {"room_type": "kitchen", "area_sqft": 150, "position": "southwest"},
+        {"room_type": "master_bedroom", "area_sqft": 250, "position": "northwest"},
+        {"room_type": "bedroom_2", "area_sqft": 180, "position": "northeast"},
+        {"room_type": "bedroom_3", "area_sqft": 170, "position": "southwest"},
+        {"room_type": "guest_bathroom", "area_sqft": 45, "position": "south"},
+        {"room_type": "dining_room", "area_sqft": 200, "position": "east"}
+      ],
+      "openings": [
+        {"opening_type": "front_door", "position": "eastern_wall"},
+        {"opening_type": "window", "quantity": 5},
+        {"opening_type": "sliding_glass_doors", "quantity": 2}
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {"room_type": "bedroom_4", "area_sqft": 180, "position": "north"},
+        {"room_type": "bedroom_5", "area_sqft": 170, "position": "south"},
+        {"room_type": "study_room", "area_sqft": 200, "position": "east"}
+      ],
+      "openings": [
+        {"opening_type": "window", "quantity": 6},
+        {"opening_type": "balcony", "quantity": 2}
+      ]
+    },
+    {
+      "level_id": "basement",
+      "rooms": [
+        {"room_type": "garage", "area_sqft": 300, "position": "north"},
+        {"room_type": "storage_room", "area_sqft": 150, "position": "west"}
+      ],
+      "openings": [
+        {"opening_type": "window", "quantity": 2},
+        {"opening_type": "emergency_exit_door", "position": "western_wall"}
+      ]
+    }
+  ],
+  "outdoor_features": {
+    "swimming_pool": {"area_sqft": 1000, "position": "south"},
+    "garden": {"area_sqft": 2500, "plants": ["neem_tree", "banana_plant", "marigold"]}
+  }
+}

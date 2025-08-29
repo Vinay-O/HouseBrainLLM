@@ -1,0 +1,379 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 5,
+      "floors": 2,
+      "totalArea": 1200,
+      "style": "Traditional Contemporary"
+    },
+    "plot": {
+      "shape": "Rectangular",
+      "orientation": "West-facing for breeze capture",
+      "location": "Warangal Heritage Center"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3,
+        "area": 180
+      },
+      {
+        "type": "seasonal_worker_dorm",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 180
+      },
+      {
+        "type": "monsoon_retreat",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "veranda",
+        "count": 2,
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "area": 120
+      },
+      {
+        "type": "storage",
+        "count": 1,
+        "area": 80
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 20,
+              "type": "main_entrance"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "type": "jalousie"
+            },
+            {
+              "wall": "west",
+              "position": 30,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "type": "sliding"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "type": "double"
+            },
+            {
+              "wall": "west",
+              "position": 15,
+              "type": "double"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5,
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "type": "vent"
+            }
+          ]
+        },
+        {
+          "id": "dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5,
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 5,
+              "type": "double"
+            }
+          ]
+        },
+        {
+          "id": "monsoon_retreat",
+          "type": "monsoon_retreat",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "type": "folding"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 5,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5,
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_ground",
+          "type": "storage",
+          "bounds": {
+            "x": 40,
+            "y": 10,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5,
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "family_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7.5,
+              "type": "double"
+            }
+          ]
+        },
+        {
+          "id": "family_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 5,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "type": "double"
+            }
+          ]
+        },
+        {
+          "id": "worker_dorm",
+          "type": "seasonal_worker_dorm",
+          "bounds": {
+            "x": 30,
+            "y": 5,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "type": "double"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "type": "jalousie"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2.5,
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2.5,
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "upper_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 45,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 22.5,
+              "type": "french"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "type": "jalousie"
+            },
+            {
+              "wall": "west",
+              "position": 35,
+              "type": "jalousie"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

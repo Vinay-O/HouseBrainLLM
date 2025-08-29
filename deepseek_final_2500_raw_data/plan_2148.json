@@ -1,0 +1,282 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 450,
+      "style": "Japanese Zen"
+    },
+    "plot": {
+      "shoreline_length": 50,
+      "climate": "Temperate Maritime",
+      "orientation": "South-facing"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "description": "Primary suite for elderly couple and guest bedroom"
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "description": "Ensuite bathroom and guest bathroom"
+      },
+      {
+        "type": "spa",
+        "count": 1,
+        "description": "Home spa with massage tables"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Open plan living area with ravine views"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Kitchen with dining area"
+      },
+      {
+        "type": "guest_room",
+        "count": 1,
+        "description": "Accommodation for frequent visitors"
+      }
+    ]
+  },
+  "total_area": 450.0,
+  "construction_cost": 875000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_bridge",
+          "type": "bridge",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 2.5
+            },
+            {
+              "wall": "west",
+              "position": 2.5
+            }
+          ]
+        },
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2.5
+            },
+            {
+              "wall": "south",
+              "position": 12.5
+            },
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "guest_room",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3.75
+            },
+            {
+              "wall": "south",
+              "position": 11.25
+            },
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "ensuite_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 10,
+            "y": 12,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "id": "home_spa",
+          "type": "spa",
+          "bounds": {
+            "x": 18,
+            "y": 12,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "mechanical_room",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

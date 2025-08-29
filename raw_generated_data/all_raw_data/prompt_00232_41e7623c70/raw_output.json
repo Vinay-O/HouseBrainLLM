@@ -1,0 +1,60 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"name": "entrance_hall", "dimensions": {"length": 10, "width": 8}, "features": ["alcove", "storage space"], "direction": "northern"},
+        {"name": "living_room", "dimensions": {"length": 16, "width": 14}, "features": ["large windows", "exposed concrete elements", "open plan", "natural light emphasis"], "direction": "eastern"},
+        {"name": "dining_room", "dimensions": {"length": 10, "width": 8}, "features": ["concrete slab floors", "minimalist decor"], "direction": "southern"},
+        {"name": "kitchen", "dimensions": {"length": 12, "width": 10}, "features": ["brickwork", "exposed concrete beams", "efficient ventilation"], "direction": "western"},
+        {"name": "wet_area", "dimensions": {"length": 8, "width": 6}, "rooms_included": ["bathroom", "utility_room"], "features": ["waterproofing", "ample drainage"]},
+        {"name": "storage", "dimensions": {"length": 4, "width": 3}, "features": ["small storage closet"]}
+      ],
+      "openings": [
+        {"type": "entrance", "location": "north", "size": {"height": 8, "width": 6}},
+        {"type": "window", "location": "east", "size": {"height": 5, "width": 3}, "notes": "optimizes natural light"},
+        {"type": "window", "location": "south", "size": {"height": 4, "width": 2}},
+        {"type": "window", "location": "west", "size": {"height": 4, "width": 2}},
+        {"type": "ventilation", "location": "rear", "size": {"height": 3, "width": 1.5}}
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {"name": "master_bedroom", "dimensions": {"length": 14, "width": 12}, "features": [" ensuite bathroom", "large window facing east", "exposed concrete walls"]},
+        {"name": "bedroom_1", "dimensions": {"length": 10, "width": 8}, "features": ["window for ventilation", "minimalist design"]},
+        {"name": "bedroom_2", "dimensions": {"length": 10, "width": 8}, "features": ["small study area", "exposed brickwork"]},
+        {"name": "bedroom_3", "dimensions": {"length": 10, "width": 8}, "features": ["compact design", "ample light and ventilation"]},
+        {"name": "study", "dimensions": {"length": 8, "width": 6}, "features": ["quiet space", "adjacent to one of the bedrooms"]}
+      ],
+      "openings": [
+        {"type": "window", "location": "east", "size": {"height": 5, "width": 3}},
+        {"type": "window", "location": "west", "size": {"height": 4, "width": 2}},
+        {"type": "balcony", "location": "north", "size": {"length": 8, "width": 4}, "notes": "serves as a small terrace for the bedrooms"}
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {"name": "living_room_extension", "dimensions": {"length": 12, "width": 10}, "features": ["semi-open space", "large skylight"]},
+        {"name": "bedroom_4", "dimensions": {"length": 10, "width": 8}, "features": ["compact design with efficient lighting"]},
+        {"name": "guest_room", "dimensions": {"length": 10, "width": 8}, "features": ["functional space", "large window"]},
+        {"name": "storage", "dimensions": {"length": 4, "width": 3}, "features": ["additional storage area"]}
+      ],
+      "openings": [
+        {"type": "skylight", "location": "center", "size": {"height": 5, "width": 5}},
+        {"type": "window", "location": "east", "size": {"height": 4, "width": 2}},
+        {"type": "window", "location": "west", "size": {"height": 3, "width": 1.5}}
+      ]
+    },
+    {
+      "level_id": "rooftop",
+      "rooms": [
+        {"name": "terrace", "dimensions": {"length": 30, "width": 40}, "features": ["open space", "natural light", "exposed structure", "minimalist concrete design"], "notes": "Adheres to Vastu principles by ensuring a harmonious energy flow from the rooftop"}
+      ],
+      "openings": [
+        {"type": "entrance", "location": "north_east", "size": {"height": 8, "width": 4}}
+      ]
+    }
+  ]
+}

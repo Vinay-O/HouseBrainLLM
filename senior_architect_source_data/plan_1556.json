@@ -1,0 +1,220 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2400,
+      "style": "Alpine Chalet"
+    },
+    "plot": {
+      "topography": "sunken courtyard, natural contours",
+      "climate": "coastal with salt air exposure",
+      "flood_risk": "high"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 480,
+        "description": "Open-plan great room with high ceilings and large windows facing the courtyard and ocean views"
+      },
+      {
+        "type": "kitchen",
+        "area": 300,
+        "description": "Gourmet kitchen with premium finishes resistant to salt air corrosion"
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 400,
+        "description": "Master suite with private balcony and en-suite bathroom"
+      },
+      {
+        "type": "bedroom",
+        "area": 280,
+        "description": "Flexible guest room with Murphy bed system and convertible workspace"
+      },
+      {
+        "type": "studio",
+        "area": 360,
+        "description": "Art studio with northern light exposure and specialized ventilation"
+      },
+      {
+        "type": "utility",
+        "area": 180,
+        "description": "Mechanical room housing battery storage and water management systems"
+      },
+      {
+        "type": "outdoor",
+        "area": 400,
+        "description": "Protected sunken courtyard with salt-resistant landscaping and seating areas"
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 875000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "elevation": 8.5,
+      "description": "Elevated flood-resistant platform level with main living spaces and courtyard access",
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "outdoor",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 39,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 19
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "elevation": 12.5,
+      "description": "Upper sleeping level with art studio following natural contours",
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "guest_room",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 14,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "art_studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 34,
+            "height": 18
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 17
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 17,
+              "size": "extra-large"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "special_features": [
+    {
+      "type": "sustainable_energy",
+      "description": "Vertical axis wind turbine integrated into roof design for supplemental power generation"
+    },
+    {
+      "type": "architectural",
+      "description": "Stacked modular construction with salt-resistant materials and elevated flood-resistant foundation"
+    },
+    {
+      "type": "furniture",
+      "description": "Murphy bed system in guest room for flexible space utilization"
+    },
+    {
+      "type": "landscape",
+      "description": "Sunken courtyard designed for wind protection and outdoor living in coastal environment"
+    }
+  ]
+}

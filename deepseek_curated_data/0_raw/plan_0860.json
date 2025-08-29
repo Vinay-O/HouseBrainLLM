@@ -1,0 +1,229 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Farmhouse"
+    },
+    "plot": {
+      "width": 50,
+      "depth": 80,
+      "orientation": "West"
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "count": 1,
+        "description": "Open-plan living, dining, and kitchen area"
+      },
+      {
+        "type": "bedroom",
+        "count": 2,
+        "description": "Each with private spacious balcony"
+      },
+      {
+        "type": "home_office",
+        "count": 1,
+        "description": "Dedicated workspace"
+      },
+      {
+        "type": "rooftop_terrace",
+        "count": 1,
+        "description": "Accessible from second floor"
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "studio_main",
+          "type": "studio",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 40,
+            "height": 30
+          },
+          "doors": [
+            {
+              "type": "entry",
+              "wall": "west",
+              "position": 20
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "size": 8
+            },
+            {
+              "wall": "east",
+              "position": 25,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "bathroom_ground",
+          "type": "bathroom",
+          "bounds": {
+            "x": 5,
+            "y": 35,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 35,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "balcony_1",
+          "type": "balcony",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 20,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "sliding",
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 5,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "balcony_2",
+          "type": "balcony",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 20,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "sliding",
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 15,
+            "y": 25,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "bathroom_upper",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "rooftop_terrace",
+          "type": "rooftop_terrace",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 40,
+            "height": 30
+          },
+          "doors": [
+            {
+              "type": "stair_access",
+              "wall": "south",
+              "position": 20
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

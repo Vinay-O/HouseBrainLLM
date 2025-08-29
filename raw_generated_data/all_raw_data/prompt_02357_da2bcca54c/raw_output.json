@@ -1,0 +1,101 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Living Room",
+          "description": "Spacious living area with south-facing window for sunlight and ventilation.",
+          "dimensions_m2": 50,
+          "position": { "x": 5, "y": 10 },
+          "facing_direction": "south"
+        },
+        {
+          "name": "Master Bedroom",
+          "description": "Large bedroom featuring a spacious balcony with east-west orientation for morning and evening sun.",
+          "dimensions_m2": 40,
+          "position": { "x": 15, "y": 10 },
+          "facing_direction": "east"
+        },
+        {
+          "name": "Guest Bedroom",
+          "description": "Cozy bedroom with a balcony facing north for natural light and privacy.",
+          "dimensions_m2": 35,
+          "position": { "x": 15, "y": 5 },
+          "facing_direction": "north"
+        },
+        {
+          "name": "Kitchen",
+          "description": "Modern kitchen integrated with the dining area; optimized for Vastu by being in the southeast corner.",
+          "dimensions_m2": 25,
+          "position": { "x": 5, "y": 5 },
+          "facing_direction": "southeast"
+        },
+        {
+          "name": "Dining Area",
+          "description": "Open dining area adjoining the kitchen; positioned to ensure smooth flow with Vastu balance.",
+          "dimensions_m2": 20,
+          "position": { "x": 10, "y": 5 },
+          "facing_direction": "southeast"
+        }
+      ],
+      "openings": [
+        {
+          "name": "Main Entrance",
+          "description": "Vastu-aligned entrance facing east for positive energy.",
+          "dimensions_m2": 1.5,
+          "position": { "x": 10, "y": 0 },
+          "direction": "east"
+        },
+        {
+          "name": "Front Door Balcony",
+          "description": "Balcony near the living area for morning sun and fresh air.",
+          "dimensions_m2": 8,
+          "position": { "x": 10, "y": 15 },
+          "direction": "east"
+        },
+        {
+          "name": "Swimming Pool Access",
+          "description": "Garden entrance to the swimming pool area.",
+          "dimensions_m2": 1.5,
+          "position": { "x": 20, "y": 0 },
+          "direction": "west"
+        }
+      ],
+      "common_spaces": [
+        {
+          "name": "Garden",
+          "description": "Large garden integrated with the plot, enhancing aesthetics and providing a natural setting. Positioned to align with Vastu principles by avoiding north-west.",
+          "dimensions_m2": 100,
+          "position": { "x": 25, "y": 0 }
+        },
+        {
+          "name": "Swimming Pool",
+          "description": "Spacious swimming pool area near the garden, designed for relaxation and exercise while maintaining Vastu balance.",
+          "dimensions_m2": 30,
+          "position": { "x": 25, "y": -5 }
+        },
+        {
+          "name": "Balconies",
+          "description": "Each bedroom has a separate balcony with east-west exposure to ensure ample sunlight and privacy.",
+          "details": [
+            {
+              "bedroom": "Master Bedroom",
+              "dimensions_m2": 8
+            },
+            {
+              "bedroom": "Guest Bedroom",
+              "dimensions_m2": 7
+            }
+          ]
+        }
+      ],
+      "vastu_alignment": {
+        "entrance": "east",
+        "kitchen_position": "southeast",
+        "master_bedroom": "east",
+        "balcony_orientation": "east-west"
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["natural_light", "ventilation"],
+          "connected_to": ["dining_area", "home_office"]
+        },
+        {
+          "room_type": "dining_area",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["adjacent_to_kitchen"],
+          "connected_to": ["living_room", "kitchen"]
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 12, "width": 9 },
+          "features": ["modular", "ventilation"],
+          "connected_to": ["dining_area", "utility"]
+        },
+        {
+          "room_type": "home_office",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["dedicated_space", "natural_light"],
+          "connected_to": ["living_room"]
+        },
+        {
+          "room_type": "master_bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["attached_bathroom", "wardrobe"],
+          "connected_to": ["balcony"]
+        },
+        {
+          "room_type": "bedroom_2",
+          "dimensions": { "length": 10, "width": 9 },
+          "features": ["shared_bathroom"],
+          "connected_to": []
+        },
+        {
+          "room_type": "bedroom_3",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["shared_bathroom"],
+          "connected_to": []
+        },
+        {
+          "room_type": "home_theater",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["soundproof", "low_light"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "entrance",
+          "dimensions": { "width": 4 }
+        },
+        {
+          "type": "window",
+          "dimensions": { "length": 5, "width": 3 },
+          "features": ["large", "natural_light"]
+        },
+        {
+          "type": "ventilation",
+          "dimensions": { "length": 2, "width": 2 }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "terrace",
+          "dimensions": { "length": 15, "width": 10 },
+          "features": ["open_space", "natural_light"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

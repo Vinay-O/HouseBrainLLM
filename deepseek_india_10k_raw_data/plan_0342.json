@@ -1,0 +1,198 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 4200,
+      "style": "Heritage Himalayan"
+    },
+    "plot": {
+      "location": "Manali mountain resort, waterfront backwater property",
+      "orientation": "South-facing for solar optimization",
+      "terrain": "Mountainous, coastal edge"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "purpose": "Home tutoring and family reading"
+      },
+      {
+        "type": "puja_room",
+        "purpose": "Spiritual space"
+      },
+      {
+        "type": "jhula_pavilion",
+        "purpose": "Traditional swing in courtyard"
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 5250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "earth_sheltered_library",
+          "type": "library",
+          "bounds": {
+            "x": 5,
+            "y": 25,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_north_door"
+          ],
+          "windows": [
+            "south_library_window"
+          ]
+        },
+        {
+          "id": "earth_sheltered_study",
+          "type": "study",
+          "bounds": {
+            "x": 5,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "courtyard_northeast_door"
+          ],
+          "windows": [
+            "south_study_window"
+          ]
+        },
+        {
+          "id": "earth_bermed_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 15,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "internal_storage_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            "veranda_north_access",
+            "veranda_south_access"
+          ],
+          "windows": []
+        },
+        {
+          "id": "jhula_pavilion",
+          "type": "pavilion",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 25,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "veranda_north_door"
+          ],
+          "windows": [
+            "south_bedroom_window",
+            "east_bedroom_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 17,
+            "y": 25,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "veranda_north_door2"
+          ],
+          "windows": [
+            "south_bedroom2_window"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 17,
+            "y": 37,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "internal_hall_door"
+          ],
+          "windows": [
+            "east_bedroom3_window"
+          ]
+        },
+        {
+          "id": "family_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 40,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "veranda_south_door"
+          ],
+          "windows": [
+            "south_living_window",
+            "west_living_window"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 27,
+            "y": 40,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "internal_hall_door2"
+          ],
+          "windows": [
+            "east_puja_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": {"length": 12, "width": 15},
+          "description": "Central living area with modern finishes and ample natural light. Vastu-compliant placement for social interactions."
+        },
+        {
+          "room_type": "dining_area",
+          "dimensions": {"length": 8, "width": 10},
+          "description": "Adjacent to the kitchen and living room, ensuring a smooth flow according to Indian residential design norms."
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {"length": 10, "width": 12},
+          "description": "Functional kitchen with open layout, Vastu compliant placement towards the east for positive energy and natural light."
+        },
+        {
+          "room_type": "home_office",
+          "dimensions": {"length": 8, "width": 9},
+          "description": "Quiet, designated office space near living area to maintain a clear separation of work from relaxation zones. Windows aligned per Vastu for optimal concentration."
+        },
+        {
+          "room_type": "washroom",
+          "dimensions": {"length": 5, "width": 6},
+          "description": "Small utility washroom located conveniently near the kitchen and living room areas; designed to ensure minimal disturbance."
+        },
+        {
+          "room_type": "hallway/entrance_area",
+          "dimensions": {"length": 10, "width": 4},
+          "description": "Entrance hall acting as a transitional space from outside to interior spaces. Vastu compliant alignment ensures good energy flow."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "location": {"from_room": "entrance_area", "to_room": "living_room"},
+          "description": "Main entrance door ensuring smooth transition while maintaining privacy and security."
+        },
+        {
+          "opening_type": "window",
+          "location": {"room": "living_room", "wall_side": "south"},
+          "description": "Large south-facing window to enhance natural lighting while adhering to Vastu guidelines of having windows on the south side for energy balance."
+        },
+        {
+          "opening_type": "window",
+          "location": {"room": "home_office", "wall_side": "east"},
+          "description": "East facing window to bring in positive energy and light as per Vastu principles."
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom_1",
+          "dimensions": {"length": 12, "width": 15},
+          "description": "Master bedroom located in the north-west corner for Vastu compliance, ensuring privacy and calm ambiance."
+        },
+        {
+          "room_type": "bedroom_2",
+          "dimensions": {"length": 10, "width": 12},
+          "description": "Secondary bedroom placed adjacent to master bedroom with ample light; designed with budget considerations in mind."
+        },
+        {
+          "room_type": "bedroom_3",
+          "dimensions": {"length": 8, "width": 9},
+          "description": "Third bedroom or guest room allocated in a less central location, still ensuring privacy and comfort."
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": {"length": 5, "width": 6},
+          "description": "Shared bathroom for the bedrooms ensuring practical use; positioned to minimize noise transfer."
+        },
+        {
+          "room_type": "home_theater",
+          "dimensions": {"length": 12, "width": 15},
+          "description": "Dedicated entertainment area with sound insulation and optimal viewing angles. Placed in a separate section to avoid disturbance of living areas."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "location": {"from_level": "ground_floor", "to_level": "first_floor"},
+          "description": "Compact, well-lit staircase ensuring safe and efficient vertical circulation; placed according to Vastu guidelines."
+        },
+        {
+          "opening_type": "window",
+          "location": {"room": "bedroom_1", "wall_side": "north"},
+          "description": "North facing window in master bedroom for enhanced calmness and positive energy as per Vastu principles."
+        }
+      ]
+    }
+  ],
+  "budget_note": "Design optimized to adhere to a tight budget without compromising on essential features. Modern finishes, functional layouts, and efficient use of space ensure affordability.",
+  "vastu_compliance": "All placements have been considered based on traditional Vastu guidelines ensuring positive energy flow, privacy, and security in the design."
+}

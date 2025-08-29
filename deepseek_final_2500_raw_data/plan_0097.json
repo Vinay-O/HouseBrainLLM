@@ -1,0 +1,256 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 800,
+      "style": "Rajasthani Haveli with intricate stone carving"
+    },
+    "plot": {
+      "orientation": "north",
+      "area": 800,
+      "terrain": "sloping",
+      "flood_risk": true
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "master_bedroom",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "pavilion",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 320000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "elevation": 1.2,
+      "rooms": [
+        {
+          "id": "entrance_porch",
+          "type": "porch",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [],
+          "features": [
+            "carved_sandstone_pillars",
+            "ramp_access"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "east"
+          ],
+          "windows": [
+            "north",
+            "south"
+          ],
+          "features": [
+            "stone_carved_jali_walls",
+            "universal_access"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "east"
+          ],
+          "features": [
+            "compact_luxury_appliances",
+            "storage"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 12,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": [],
+          "features": [
+            "accessible_design"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 36,
+            "y": 12,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            "east"
+          ],
+          "windows": [],
+          "features": [
+            "laundry",
+            "storage"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "elevation": 0.0,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "east"
+          ],
+          "features": [
+            "stone_carvings",
+            "walk_in_closet"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "east"
+          ],
+          "features": [
+            "seasonal_worker_accommodation"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "west"
+          ],
+          "features": [
+            "seasonal_worker_accommodation"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [],
+          "features": [
+            "accessible_design"
+          ]
+        },
+        {
+          "id": "yoga_pavilion",
+          "type": "pavilion",
+          "bounds": {
+            "x": 10,
+            "y": 14,
+            "width": 30,
+            "height": 10
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "east",
+            "west"
+          ],
+          "features": [
+            "traditional_design",
+            "meditation_space",
+            "open_air"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2400,
+      "style": "Traditional"
+    },
+    "plot": {
+      "width": 40,
+      "height": 60,
+      "location": "Aligarh educational center"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "description": "Private bedrooms with built-in storage and Himalayan stone walls for humidity control"
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "description": "Attached bathrooms with slate flooring and traditional ventilation"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Efficient kitchen with waste segregation system and traditional cooking area"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Central living area opening to wraparound verandas"
+      },
+      {
+        "type": "storytelling_area",
+        "count": 1,
+        "description": "Amphitheater-style seating for traditional storytelling"
+      },
+      {
+        "type": "veranda",
+        "count": 1,
+        "description": "Wraparound thinnai with traditional seating and planters"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "description": "Recycling and storage area with rainwater harvesting system"
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 3600000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 20
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 30
+            }
+          ]
+        },
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 8,
+            "width": 24,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12
+            },
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 20
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 32,
+            "y": 8,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 32,
+            "y": 20,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_ground",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 28,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 8,
+            "y": 28,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 24,
+            "y": 28,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ]
+        },
+        {
+          "id": "bathroom_upper",
+          "type": "bathroom",
+          "bounds": {
+            "x": 24,
+            "y": 40,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storytelling_space",
+          "type": "storytelling_area",
+          "bounds": {
+            "x": 0,
+            "y": 36,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

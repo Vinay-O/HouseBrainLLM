@@ -1,0 +1,99 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "dimensions": {"length": 12, "width": 10},
+          "location": {"x": 5, "y": 5}
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": {"length": 18, "width": 14},
+          "location": {"x": 17, "y": 5},
+          "features": ["floor_to_ceiling_windows"]
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {"length": 10, "width": 8},
+          "location": {"x": 39, "y": 17}
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": {"length": 12, "width": 10},
+          "location": {"x": 45, "y": 18}
+        },
+        {
+          "room_type": "master_bedroom",
+          "dimensions": {"length": 12, "width": 10},
+          "location": {"x": 37, "y": 35},
+          "features": ["ensuite_bathroom"]
+        },
+        {
+          "room_type": "guest_bedroom_1",
+          "dimensions": {"length": 10, "width": 8},
+          "location": {"x": 52, "y": 40}
+        },
+        {
+          "room_type": "guest_bedroom_2",
+          "dimensions": {"length": 10, "width": 8},
+          "location": {"x": 60, "y": 37}
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "position": {"x": 5, "y": 5},
+          "orientation": "north"
+        },
+        {
+          "type": "window",
+          "position": {"x": 17, "y": 5},
+          "size": {"length": 18, "width": 6},
+          "features": ["floor_to_ceiling"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom_3",
+          "dimensions": {"length": 10, "width": 8},
+          "location": {"x": 52, "y": 40}
+        },
+        {
+          "room_type": "bedroom_4",
+          "dimensions": {"length": 10, "width": 8},
+          "location": {"x": 60, "y": 37}
+        },
+        {
+          "room_type": "study_room",
+          "dimensions": {"length": 12, "width": 10},
+          "location": {"x": 55, "y": 5}
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "position": {"x": 17, "y": 60},
+          "size": {"length": 18, "width": 6},
+          "features": ["floor_to_ceiling"]
+        },
+        {
+          "type": "door",
+          "position": {"x": 52, "y": 39}
+        }
+      ]
+    }
+  ],
+  "garden": {
+    "dimensions": {"length": 40, "width": 20},
+    "location": {"x": 10, "y": 65}
+  },
+  "terrace": {
+    "dimensions": {"length": 40, "width": 60},
+    "level_id": "first_floor"
+  }
+}

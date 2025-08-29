@@ -1,0 +1,125 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance",
+          "type": "foyer",
+          "dimensions": [3, 2],
+          "position": { "x": 0, "y": 0 },
+          "orientation": "north"
+        },
+        {
+          "room_id": "living_room",
+          "type": "living",
+          "dimensions": [15, 10],
+          "adjacent_to": ["entrance", "dining_room"]
+        },
+        {
+          "room_id": "dining_room",
+          "type": "dining",
+          "dimensions": [12, 8],
+          "adjacent_to": ["living_room", "kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": [10, 8],
+          "features": ["island", "pantry"],
+          "adjacent_to": ["dining_room"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "dimensions": [15, 12],
+          "features": ["walk_in_closet", "balcony"],
+          "adjacent_to": ["bathroom_1"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "dimensions": [14, 10],
+          "features": ["wardrobe"],
+          "adjacent_to": ["bathroom_2"]
+        },
+        {
+          "room_id": "home_theater",
+          "type": "entertainment",
+          "dimensions": [16, 12],
+          "features": ["acoustic_treatment", "projector_screen"]
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "bathroom",
+          "dimensions": [8, 5],
+          "adjacent_to": ["bedroom_1"]
+        },
+        {
+          "room_id": "bathroom_2",
+          "type": "bathroom",
+          "dimensions": [7, 6],
+          "adjacent_to": ["bedroom_2"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "front_door",
+          "type": "door",
+          "position": { "x": 0, "y": 0 },
+          "orientation": "north"
+        },
+        {
+          "opening_id": "garden_access",
+          "type": "door",
+          "room_id": "living_room",
+          "orientation": "south"
+        }
+      ],
+      "features": [
+        {
+          "feature_id": "staircase",
+          "type": "circular_staircase",
+          "material": "concrete",
+          "direction": "up_and_down"
+        },
+        {
+          "feature_id": "garden",
+          "type": "outdoor_space",
+          "area": 100,
+          "orientation": "south_east"
+        }
+      ],
+      "building_style": "brutalist",
+      "orientation": "north-facing",
+      "plot_shape": "irregular"
+    },
+    {
+      "level_id": "upper_level",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "type": "bedroom",
+          "dimensions": [12, 10],
+          "features": ["balcony"],
+          "adjacent_to": ["bathroom_3"]
+        },
+        {
+          "room_id": "bathroom_3",
+          "type": "bathroom",
+          "dimensions": [7, 5],
+          "adjacent_to": ["bedroom_3"]
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "feature_id": "roof_garden",
+      "type": "outdoor_space",
+      "area": 50
+    }
+  ],
+  "building_norm": "local_building_codes",
+  "vastu_principles_applied": true
+}

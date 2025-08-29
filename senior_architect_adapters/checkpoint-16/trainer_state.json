@@ -1,0 +1,48 @@
+{
+  "best_metric": 0.6168507933616638,
+  "best_model_checkpoint": "housebrain_v1_adapters/checkpoint-16",
+  "epoch": 0.9846153846153847,
+  "eval_steps": 500,
+  "global_step": 16,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.6153846153846154,
+      "grad_norm": 0.1714668571949005,
+      "learning_rate": 7.500000000000001e-05,
+      "loss": 0.7745,
+      "step": 10
+    },
+    {
+      "epoch": 0.9846153846153847,
+      "eval_loss": 0.6168507933616638,
+      "eval_runtime": 0.9633,
+      "eval_samples_per_second": 15.572,
+      "eval_steps_per_second": 2.076,
+      "step": 16
+    }
+  ],
+  "logging_steps": 10,
+  "max_steps": 16,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 1,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": true
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 2147271843594240.0,
+  "train_batch_size": 2,
+  "trial_name": null,
+  "trial_params": null
+}

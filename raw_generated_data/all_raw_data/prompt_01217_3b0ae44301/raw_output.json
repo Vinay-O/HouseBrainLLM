@@ -1,0 +1,130 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall / Verandah",
+          "description": "A spacious entrance area with natural light and ventilation leading to the main living areas, incorporating a small waiting space as per Vastu guidelines for positive energy.",
+          "dimensions": {"length": 15, "width": 10},
+          "adjacent_to": ["Living Room", "Dining Area"],
+          "vastu_compliance": true
+        },
+        {
+          "name": "Living Room",
+          "description": "Large living space for family gatherings with west-facing windows to capture the afternoon sun; designed per colonial aesthetics.",
+          "dimensions": {"length": 20, "width": 15},
+          "adjacent_to": ["Dining Area", "Entrance Hall"],
+          "vastu_compliance": true
+        },
+        {
+          "name": "Dining Room",
+          "description": "Cozy dining space adjacent to the living room and kitchen for ease of service; includes a small open window facing north.",
+          "dimensions": {"length": 10, "width": 8},
+          "adjacent_to": ["Living Room", "Kitchen"],
+          "vastu_compliance": true
+        },
+        {
+          "name": "Master Bedroom",
+          "description": "Largest bedroom with private balcony; positioned in the east to maximize morning sunlight as per Vastu principles, while ensuring privacy.",
+          "dimensions": {"length": 15, "width": 12},
+          "adjacent_to": ["Bathroom"],
+          "vastu_compliance": true
+        },
+        {
+          "name": "Guest Bedroom",
+          "description": "Cozy bedroom for guests with a window facing north to ensure ample light and ventilation.",
+          "dimensions": {"length": 10, "width": 8},
+          "adjacent_to": [],
+          "vastu_compliance": true
+        },
+        {
+          "name": "Kitchen",
+          "description": "Well-equipped kitchen located centrally with access from the dining room; designed for efficient workflow and energy as per Vastu.",
+          "dimensions": {"length": 12, "width": 10},
+          "adjacent_to": ["Dining Room", "Bathroom"],
+          "vastu_compliance": true
+        },
+        {
+          "name": "Utility / Storage",
+          "description": "Storage area for household items and pantry; designed to be easily accessible from the kitchen.",
+          "dimensions": {"length": 6, "width": 5},
+          "adjacent_to": ["Kitchen"],
+          "vastu_compliance": true
+        }
+      ],
+      "openings": [
+        {
+          "name": "Main Entrance",
+          "description": "The primary entrance door located in the north-west corner to ensure a balanced energy flow according to Vastu.",
+          "direction": "northwest"
+        },
+        {
+          "name": "Window - Living Room (West)",
+          "description": "Large west-facing window in the living room for natural light and cooling breezes; designed per colonial aesthetics.",
+          "direction": "west"
+        },
+        {
+          "name": "Window - Master Bedroom (East)",
+          "description": "East-facing window to invite morning sunlight as suggested by Vastu, ensuring a calm ambiance.",
+          "direction": "east"
+        },
+        {
+          "name": "Balcony Access - Master Bedroom",
+          "description": "Small balcony adjoining the master bedroom for private outdoor space and fresh air.",
+          "direction": "southwest"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "name": "Master Bedroom Upper",
+          "description": "Additional or extended sleeping area above the kitchen with privacy and ample natural light; designed to serve as a guest bedroom.",
+          "dimensions": {"length": 12, "width": 10},
+          "adjacent_to": [],
+          "vastu_compliance": true
+        },
+        {
+          "name": "Study / Home Office",
+          "description": "Functional workspace that can be used by the family; designed with good natural lighting and positioned to maximize productivity.",
+          "dimensions": {"length": 10, "width": 8},
+          "adjacent_to": ["Guest Bedroom"],
+          "vastu_compliance": true
+        }
+      ],
+      "openings": [
+        {
+          "name": "Rooftop Terrace Access",
+          "description": "Staircase leading to the rooftop terrace; designed with safety and ease of access in mind, incorporating local building norms.",
+          "direction": "north"
+        },
+        {
+          "name": "Window - Study (North)",
+          "description": "North-facing window in the study for a calm environment and consistent light, as per Vastu recommendations.",
+          "direction": "north"
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop",
+      "rooms": [
+        {
+          "name": "Rooftop Terrace",
+          "description": "Spacious terrace designed for relaxation and outdoor family activities; includes seating areas, a small garden section, and an area for sunbathing.",
+          "dimensions": {"length": 30, "width": 20},
+          "adjacent_to": [],
+          "vastu_compliance": true
+        }
+      ],
+      "openings": [
+        {
+          "name": "Balcony Access",
+          "description": "Access point from the first floor to the rooftop terrace; includes safety railings and an integrated drainage system per local building codes.",
+          "direction": "northeast"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Bauhaus Functional"
+    },
+    "plot": {
+      "shape": "circular",
+      "orientation": "south",
+      "climate": "continental harsh winter"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 300,
+        "features": [
+          "south-facing windows",
+          "360-degree views"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "area": 150,
+        "features": [
+          "south-facing windows",
+          "functional layout"
+        ]
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 200,
+        "features": [
+          "south-facing windows",
+          "earth-sheltered insulation"
+        ]
+      },
+      {
+        "type": "guest_room",
+        "area": 120,
+        "features": [
+          "murphy bed system",
+          "multi-functional space"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "area": 80,
+        "features": [
+          "natural ventilation",
+          "efficient fixtures"
+        ]
+      },
+      {
+        "type": "storage",
+        "area": 100,
+        "features": [
+          "climate-controlled",
+          "collections storage"
+        ]
+      },
+      {
+        "type": "mechanical",
+        "area": 50,
+        "features": [
+          "solar thermal system",
+          "HVAC"
+        ]
+      },
+      {
+        "type": "entry",
+        "area": 200,
+        "features": [
+          "airlock entry",
+          "thermal buffer zone"
+        ]
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 240000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "entry_hall",
+            "kitchen"
+          ],
+          "windows": [
+            "south_curved_wall",
+            "east_curved_wall",
+            "west_curved_wall"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "living_room",
+            "dining_area"
+          ],
+          "windows": [
+            "south_curved_wall"
+          ]
+        },
+        {
+          "id": "dining_area",
+          "type": "dining",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "kitchen"
+          ],
+          "windows": [
+            "south_curved_wall"
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 13.33
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": [
+            "south_curved_wall"
+          ]
+        },
+        {
+          "id": "guest_room",
+          "type": "guest_room",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 15,
+            "height": 13.33
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 10,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_room",
+          "type": "storage",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 13.33
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_room",
+          "type": "mechanical",
+          "bounds": {
+            "x": 0,
+            "y": 28.33,
+            "width": 15,
+            "height": 6.67
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry_hall",
+          "type": "entry",
+          "bounds": {
+            "x": 15,
+            "y": 28.33,
+            "width": 25,
+            "height": 6.67
+          },
+          "doors": [
+            "exterior_north",
+            "living_room",
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 15,
+            "y": 28.33,
+            "width": 25,
+            "height": 6.67
+          },
+          "doors": [
+            "primary_bedroom",
+            "guest_room",
+            "bathroom",
+            "storage_room",
+            "mechanical_room",
+            "entry_hall"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

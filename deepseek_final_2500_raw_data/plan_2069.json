@@ -1,0 +1,498 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 160,
+      "style": "Contemporary A-Frame with Glass Box Extensions"
+    },
+    "plot": {
+      "width": 4,
+      "depth": 20,
+      "climate": "Mediterranean (Dry Summers)",
+      "orientation": "North-Facing"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "area": 32
+      },
+      {
+        "type": "kitchen",
+        "area": 16
+      },
+      {
+        "type": "bathroom",
+        "area": 8
+      },
+      {
+        "type": "bedroom",
+        "area": 24
+      },
+      {
+        "type": "game_room",
+        "area": 32
+      },
+      {
+        "type": "study",
+        "area": 16
+      },
+      {
+        "type": "master_bedroom",
+        "area": 32
+      }
+    ]
+  },
+  "total_area": 160.0,
+  "construction_cost": 224000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 4
+              },
+              "to_room": "entry"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 2,
+                "y": 0
+              },
+              "size": "large",
+              "orientation": "north"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "wall": "bamboo_paneling",
+            "ceiling": "bamboo"
+          },
+          "features": [
+            "floor_to_ceiling_shelving",
+            "reading_nook",
+            "task_lighting"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 8
+              },
+              "to_room": "entry"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 2,
+                "y": 8
+              },
+              "size": "small",
+              "orientation": "north"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "wall": "bamboo_paneling",
+            "ceiling": "bamboo"
+          },
+          "features": [
+            "compact_appliances",
+            "open_shelving"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 2,
+            "height": 4
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 14
+              },
+              "to_room": "hall"
+            }
+          ],
+          "windows": [],
+          "finishes": {
+            "flooring": "cork",
+            "wall": "bamboo_paneling",
+            "ceiling": "bamboo"
+          },
+          "features": [
+            "water_efficient_fixtures",
+            "ventilation"
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 2,
+            "y": 12,
+            "width": 2,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 2,
+                "y": 12
+              },
+              "to_room": "hall"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 3,
+                "y": 12
+              },
+              "size": "medium",
+              "orientation": "north"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "wall": "bamboo_paneling",
+            "ceiling": "bamboo"
+          },
+          "features": [
+            "built_in_closet"
+          ]
+        },
+        {
+          "id": "entry",
+          "type": "entry",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 4,
+            "height": 2
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 2,
+                "y": 18
+              },
+              "to_room": "exterior"
+            }
+          ],
+          "windows": [],
+          "finishes": {
+            "flooring": "cork",
+            "wall": "bamboo_paneling",
+            "ceiling": "bamboo"
+          },
+          "features": [
+            "coat_closet"
+          ]
+        },
+        {
+          "id": "hall",
+          "type": "hall",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 4,
+            "height": 2
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 18
+              },
+              "to_room": "bathroom"
+            },
+            {
+              "position": {
+                "x": 2,
+                "y": 18
+              },
+              "to_room": "bedroom"
+            },
+            {
+              "position": {
+                "x": 4,
+                "y": 18
+              },
+              "to_room": "stair"
+            }
+          ],
+          "windows": [],
+          "finishes": {
+            "flooring": "cork",
+            "wall": "bamboo_paneling",
+            "ceiling": "bamboo"
+          },
+          "features": []
+        },
+        {
+          "id": "stair",
+          "type": "stair",
+          "bounds": {
+            "x": 4,
+            "y": 18,
+            "width": 2,
+            "height": 2
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 18
+              },
+              "to_room": "hall"
+            }
+          ],
+          "windows": [],
+          "finishes": {
+            "flooring": "cork",
+            "wall": "bamboo_paneling",
+            "ceiling": "bamboo"
+          },
+          "features": [
+            "spiral_staircase"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "game_room",
+          "type": "game_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 4
+              },
+              "to_room": "landing"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 2,
+                "y": 0
+              },
+              "size": "large",
+              "orientation": "north"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "wall": "bamboo_paneling",
+            "ceiling": "bamboo"
+          },
+          "features": [
+            "built_in_arcade_cabinets",
+            "seating_area",
+            "sound_system"
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 8
+              },
+              "to_room": "landing"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 2,
+                "y": 8
+              },
+              "size": "small",
+              "orientation": "north"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "wall": "bamboo_paneling",
+            "ceiling": "bamboo"
+          },
+          "features": [
+            "built_in_desk",
+            "bookshelves"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 4,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 12
+              },
+              "to_room": "landing"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 2,
+                "y": 12
+              },
+              "size": "large",
+              "orientation": "north"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "wall": "bamboo_paneling",
+            "ceiling": "bamboo"
+          },
+          "features": [
+            "walk_in_closet",
+            "en_suite"
+          ]
+        },
+        {
+          "id": "landing",
+          "type": "landing",
+          "bounds": {
+            "x": 4,
+            "y": 0,
+            "width": 2,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 4
+              },
+              "to_room": "game_room"
+            },
+            {
+              "position": {
+                "x": 4,
+                "y": 8
+              },
+              "to_room": "study"
+            },
+            {
+              "position": {
+                "x": 4,
+                "y": 12
+              },
+              "to_room": "master_bedroom"
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "to_room": "stair"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 10
+              },
+              "size": "skylight",
+              "orientation": "north"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "wall": "bamboo_paneling",
+            "ceiling": "bamboo"
+          },
+          "features": []
+        },
+        {
+          "id": "stair",
+          "type": "stair",
+          "bounds": {
+            "x": 4,
+            "y": 0,
+            "width": 1,
+            "height": 2
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 0
+              },
+              "to_room": "landing"
+            }
+          ],
+          "windows": [],
+          "finishes": {
+            "flooring": "cork",
+            "wall": "bamboo_paneling",
+            "ceiling": "bamboo"
+          },
+          "features": [
+            "spiral_staircase"
+          ]
+        }
+      ]
+    }
+  ]
+}

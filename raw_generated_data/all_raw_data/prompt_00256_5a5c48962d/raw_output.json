@@ -1,0 +1,133 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Entrance Lobby",
+          "area_sqft": 150,
+          "dimensions_ft": [20, 7.5],
+          "opening_to": ["Living Room", "Garage"],
+          "vastu_advice": "Ensure that the entrance is clean and inviting with a slight slope towards the outside to invite positive energy."
+        },
+        {
+          "room_name": "Living Room",
+          "area_sqft": 600,
+          "dimensions_ft": [30, 20],
+          "opening_to": ["Kitchen", "Dining Area"],
+          "vastu_advice": "Position the living room in the east or west to invite prosperity and good health."
+        },
+        {
+          "room_name": "Garage",
+          "area_sqft": 300,
+          "dimensions_ft": [25, 12],
+          "opening_to": ["Entrance Lobby"],
+          "vastu_advice": "Keep the garage area as far away from the living spaces to avoid pollution and noise."
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 300,
+          "dimensions_ft": [25, 12],
+          "opening_to": ["Dining Area", "Living Room"],
+          "vastu_advice": "Position the kitchen in the southeast corner for health and wealth."
+        },
+        {
+          "room_name": "Dining Area",
+          "area_sqft": 300,
+          "dimensions_ft": [25, 12],
+          "opening_to": ["Living Room", "Kitchen"],
+          "vastu_advice": "Ensure the dining area is placed to bring in prosperity and well-being."
+        },
+        {
+          "room_name": "Central Courtyard",
+          "area_sqft": 400,
+          "dimensions_ft": [20, 20],
+          "opening_to": ["Living Room", "Kitchen"],
+          "vastu_advice": "Position the courtyard in a central location to bring positive energy and ventilation."
+        }
+      ],
+      "openings": [
+        {
+          "type": "Door",
+          "from_room": "Entrance Lobby",
+          "to_room": "Living Room"
+        },
+        {
+          "type": "Window",
+          "room_name": "Living Room"
+        },
+        {
+          "type": "Garage Door",
+          "room_name": "Garage"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "area_sqft": 800,
+          "dimensions_ft": [25, 32],
+          "opening_to": ["Bathroom", "Balcony"],
+          "vastu_advice": "Position the master bedroom in the southwest for stability and security."
+        },
+        {
+          "room_name": "Study Room",
+          "area_sqft": 400,
+          "dimensions_ft": [25, 16],
+          "opening_to": ["Master Bedroom"],
+          "vastu_advice": "Ensure the study room is placed to support concentration and learning."
+        },
+        {
+          "room_name": "Balcony",
+          "area_sqft": 200,
+          "dimensions_ft": [25, 8],
+          "opening_to": ["Master Bedroom"],
+          "vastu_advice": "Position the balcony in a way to invite natural light and positive energy."
+        }
+      ],
+      "openings": [
+        {
+          "type": "Window",
+          "room_name": "Master Bedroom"
+        },
+        {
+          "type": "Door",
+          "from_room": "Master Bedroom",
+          "to_room": "Bathroom"
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_name": "Guest Room",
+          "area_sqft": 600,
+          "dimensions_ft": [25, 24],
+          "opening_to": ["Balcony"],
+          "vastu_advice": "Position the guest room in a way to ensure comfort and relaxation."
+        },
+        {
+          "room_name": "Balcony",
+          "area_sqft": 200,
+          "dimensions_ft": [25, 8],
+          "opening_to": ["Guest Room"],
+          "vastu_advice": "Ensure the balcony is placed to bring in natural light and positive energy."
+        }
+      ],
+      "openings": [
+        {
+          "type": "Window",
+          "room_name": "Guest Room"
+        },
+        {
+          "type": "Door",
+          "from_room": "Guest Room",
+          "to_room": "Balcony"
+        }
+      ]
+    }
+  ]
+}

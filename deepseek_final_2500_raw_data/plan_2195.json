@@ -1,0 +1,243 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 4200,
+      "style": "Prairie Style"
+    },
+    "plot": {
+      "topography": "terraced mountain slope",
+      "climate": "tropical with monsoons"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "count": 2,
+        "description": "Climate-controlled for rare books"
+      },
+      {
+        "type": "study",
+        "count": 2,
+        "description": "Private scholar workspaces"
+      },
+      {
+        "type": "game_room",
+        "count": 1,
+        "description": "Built-in arcade cabinets and gaming area"
+      }
+    ],
+    "specialFeatures": [
+      "Stacked modular units",
+      "Flood-resistant elevated design",
+      "Greywater recycling for irrigation",
+      "Following natural contours"
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 945000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "utility_level",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 15
+            }
+          ],
+          "windows": [],
+          "description": "Elevated foundation with flood-resistant construction, houses greywater recycling system"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "library_1",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "large"
+            }
+          ],
+          "description": "Climate-controlled rare book collection"
+        },
+        {
+          "id": "study_1",
+          "type": "study",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "medium"
+            }
+          ],
+          "description": "Private scholar workspace"
+        },
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 15,
+              "size": "large"
+            }
+          ],
+          "description": "Open plan living space with Prairie Style horizontal lines"
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "library_2",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "size": "medium"
+            }
+          ],
+          "description": "Additional climate-controlled collection space"
+        },
+        {
+          "id": "study_2",
+          "type": "study",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": "medium"
+            }
+          ],
+          "description": "Additional scholar workspace"
+        },
+        {
+          "id": "game_room",
+          "type": "recreation",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 15,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 15,
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 15,
+              "size": "large"
+            }
+          ],
+          "description": "Game room with built-in arcade cabinets and entertainment area"
+        }
+      ]
+    }
+  ]
+}

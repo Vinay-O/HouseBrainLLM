@@ -1,0 +1,424 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 2500,
+      "style": "Dravidian"
+    },
+    "plot": {
+      "width": 50,
+      "height": 50,
+      "orientation": "north"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 400,
+        "description": "Traditional baithak seating with low platforms"
+      },
+      {
+        "type": "library",
+        "area": 300,
+        "description": "Home library and tutoring space"
+      },
+      {
+        "type": "bedroom",
+        "area": 250,
+        "description": "Master bedroom with attached bathroom"
+      },
+      {
+        "type": "bedroom",
+        "area": 200,
+        "description": "Secondary bedroom"
+      },
+      {
+        "type": "bedroom",
+        "area": 200,
+        "description": "Secondary bedroom"
+      },
+      {
+        "type": "kitchen",
+        "area": 200,
+        "description": "Traditional kitchen with brass water storage"
+      },
+      {
+        "type": "spa",
+        "area": 250,
+        "description": "Home spa with traditional massage and ayurvedic treatments"
+      },
+      {
+        "type": "courtyard",
+        "area": 400,
+        "description": "Central courtyard with water bodies for evapotranspiration cooling"
+      },
+      {
+        "type": "utility",
+        "area": 100,
+        "description": "Traditional water cooling systems (matka and surahi storage)"
+      },
+      {
+        "type": "bathroom",
+        "area": 100,
+        "description": "Attached bathroom"
+      },
+      {
+        "type": "bathroom",
+        "area": 80,
+        "description": "Common bathroom"
+      },
+      {
+        "type": "bathroom",
+        "area": 80,
+        "description": "Common bathroom"
+      },
+      {
+        "type": "corridor",
+        "area": 140,
+        "description": "Connecting corridors with traditional motifs"
+      }
+    ]
+  },
+  "total_area": 2500.0,
+  "construction_cost": 625000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_entrance",
+          "type": "entrance",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 25
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 5,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 20
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 15
+            },
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 30,
+            "y": 5,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 40
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 15
+            },
+            {
+              "wall": "south",
+              "position": 35
+            }
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7
+            },
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 22
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 22
+            },
+            {
+              "wall": "south",
+              "position": 22
+            }
+          ]
+        },
+        {
+          "id": "bedroom3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 37
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 37
+            },
+            {
+              "wall": "south",
+              "position": 37
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 45
+            },
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "spa",
+          "type": "spa",
+          "bounds": {
+            "x": 15,
+            "y": 40,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 22
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 22
+            }
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 35
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 45
+            }
+          ]
+        },
+        {
+          "id": "bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 40,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 42
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 20
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 20
+            }
+          ]
+        },
+        {
+          "id": "bathroom3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 45
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "corridor1",
+          "type": "corridor",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "corridor2",
+          "type": "corridor",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "corridor3",
+          "type": "corridor",
+          "bounds": {
+            "x": 35,
+            "y": 5,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "corridor4",
+          "type": "corridor",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 45,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

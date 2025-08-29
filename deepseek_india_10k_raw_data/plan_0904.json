@@ -1,0 +1,315 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 4200,
+      "style": "Heritage-Inspired Traditional"
+    },
+    "plot": {
+      "area": 2,
+      "type": "Agricultural Conversion",
+      "location": "Delhi NCR",
+      "orientation": "West-facing for evening breeze capture",
+      "challenges": [
+        "Monsoon flooding and waterlogging"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 600
+      },
+      {
+        "type": "kitchen",
+        "area": 400
+      },
+      {
+        "type": "dining_room",
+        "area": 300
+      },
+      {
+        "type": "master_bedroom",
+        "area": 400
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "office",
+        "area": 500
+      },
+      {
+        "type": "puja_room",
+        "area": 150
+      },
+      {
+        "type": "storage",
+        "area": 150
+      },
+      {
+        "type": "utility",
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 10500000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_verandah",
+          "type": "other",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 10
+          },
+          "doors": [
+            "main_entrance"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            "to_verandah",
+            "to_dining",
+            "to_corridor"
+          ],
+          "windows": [
+            "west_wall",
+            "north_wall"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_living",
+            "to_kitchen"
+          ],
+          "windows": [
+            "west_wall"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_dining",
+            "to_utility",
+            "to_backyard"
+          ],
+          "windows": [
+            "east_wall"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 45,
+            "y": 25,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "to_kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "office_wing_entry",
+          "type": "other",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_verandah",
+            "to_office_corridor"
+          ],
+          "windows": []
+        },
+        {
+          "id": "office_1",
+          "type": "office",
+          "bounds": {
+            "x": 45,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_office_corridor"
+          ],
+          "windows": [
+            "west_wall"
+          ]
+        },
+        {
+          "id": "office_2",
+          "type": "office",
+          "bounds": {
+            "x": 60,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_office_corridor"
+          ],
+          "windows": [
+            "east_wall"
+          ]
+        },
+        {
+          "id": "private_corridor",
+          "type": "other",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 30,
+            "height": 5
+          },
+          "doors": [
+            "to_living",
+            "to_bedrooms",
+            "to_puja"
+          ],
+          "windows": []
+        },
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_corridor",
+            "to_bath"
+          ],
+          "windows": [
+            "west_wall",
+            "north_wall"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "north_wall"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 50,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "south_wall"
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 55,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "south_wall"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "other",
+          "bounds": {
+            "x": 35,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "east_wall"
+          ]
+        },
+        {
+          "id": "storage",
+          "type": "storage",
+          "bounds": {
+            "x": 35,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

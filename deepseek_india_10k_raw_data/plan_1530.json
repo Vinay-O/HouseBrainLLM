@@ -1,0 +1,351 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 4200,
+      "style": "Sustainable Vernacular Heritage Restoration"
+    },
+    "plot": {
+      "location": "Shimla colonial hills",
+      "waterfront": true,
+      "orientation": "north-facing main entrance"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 500
+      },
+      {
+        "type": "kitchen",
+        "area": 300
+      },
+      {
+        "type": "dining_room",
+        "area": 350
+      },
+      {
+        "type": "bedroom",
+        "area": 400,
+        "count": 4
+      },
+      {
+        "type": "bathroom",
+        "area": 180,
+        "count": 3
+      },
+      {
+        "type": "office",
+        "area": 350
+      },
+      {
+        "type": "archive",
+        "area": 200
+      },
+      {
+        "type": "otla",
+        "area": 300
+      },
+      {
+        "type": "garden",
+        "area": 600
+      },
+      {
+        "type": "storage",
+        "area": 120
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 10500000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_otla",
+          "type": "otla",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            "north_entrance"
+          ],
+          "windows": [
+            "north_window",
+            "east_window",
+            "west_window"
+          ],
+          "features": [
+            "traditional_swing_jhula",
+            "handcrafted_columns",
+            "stone_flooring"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "otla_door",
+            "dining_door"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ],
+          "features": [
+            "heritage_ceiling",
+            "artisan_crafted_fireplace",
+            "natural_ventilation"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 15,
+            "y": 8,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "living_door",
+            "kitchen_door"
+          ],
+          "windows": [
+            "south_window"
+          ],
+          "features": [
+            "reclaimed_wood_table",
+            "traditional_lighting"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "dining_door",
+            "garden_door"
+          ],
+          "windows": [
+            "east_window",
+            "south_window"
+          ],
+          "features": [
+            "copper_water_storage",
+            "traditional_brass_fixtures",
+            "organic_waste_management"
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "office",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "north_entrance"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ],
+          "features": [
+            "soundproofing",
+            "separate_entry",
+            "built_in_shelving"
+          ]
+        },
+        {
+          "id": "garden",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "kitchen_door"
+          ],
+          "windows": [],
+          "features": [
+            "organic_kitchen_garden",
+            "companion_planting",
+            "pergola_trellis",
+            "rainwater_harvesting"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "corridor_door"
+          ],
+          "windows": [
+            "north_window",
+            "east_window",
+            "waterfront_view"
+          ],
+          "features": [
+            "walk_in_closet",
+            "ensuite_bathroom",
+            "sitting_area"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "corridor_door"
+          ],
+          "windows": [
+            "south_window",
+            "east_window"
+          ],
+          "features": [
+            "built_in_storage",
+            "garden_view"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "corridor_door"
+          ],
+          "windows": [
+            "north_window",
+            "west_window"
+          ],
+          "features": [
+            "built_in_storage",
+            "waterfront_view"
+          ]
+        },
+        {
+          "id": "family_archive",
+          "type": "archive",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "corridor_door"
+          ],
+          "windows": [],
+          "features": [
+            "climate_controlled",
+            "fireproof_safe",
+            "acid_free_storage",
+            "digitization_station"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 15,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "corridor_door"
+          ],
+          "windows": [
+            "ventilation_window"
+          ],
+          "features": [
+            "water_efficient_fixtures",
+            "natural_lighting"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "corridor_door"
+          ],
+          "windows": [
+            "ventilation_window"
+          ],
+          "features": [
+            "water_efficient_fixtures",
+            "natural_ventilation"
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 28,
+            "y": 15,
+            "width": 7,
+            "height": 10
+          },
+          "doors": [
+            "corridor_door"
+          ],
+          "windows": [
+            "south_window",
+            "west_window"
+          ],
+          "features": [
+            "built_in_desk",
+            "garden_view"
+          ]
+        }
+      ]
+    }
+  ]
+}

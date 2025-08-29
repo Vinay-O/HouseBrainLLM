@@ -1,0 +1,195 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 3200,
+      "style": "Neo-Classical"
+    },
+    "plot": {
+      "shape": "elongated rectangle",
+      "orientation": "south-facing",
+      "climate": "desert extreme temperatures",
+      "hazards": [
+        "wildfire"
+      ],
+      "adjacency": [
+        "railway"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "office_pod_1",
+        "area": 300
+      },
+      {
+        "type": "office_pod_2",
+        "area": 300
+      },
+      {
+        "type": "living_pod",
+        "area": 900
+      },
+      {
+        "type": "indoor_pool",
+        "area": 600
+      },
+      {
+        "type": "master_bedroom",
+        "area": 400
+      },
+      {
+        "type": "bedroom_2",
+        "area": 250
+      },
+      {
+        "type": "bedroom_3",
+        "area": 250
+      },
+      {
+        "type": "kitchen",
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1280000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "office_pod_1",
+          "type": "office",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "south_entrance"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "office_pod_2",
+          "type": "office",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "south_entrance"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "living_pod",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            "to_kitchen",
+            "to_pool",
+            "to_bedroom_hall"
+          ],
+          "windows": [
+            "south_window_large"
+          ]
+        },
+        {
+          "id": "indoor_pool",
+          "type": "pool",
+          "bounds": {
+            "x": 55,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            "from_living_pod"
+          ],
+          "windows": [
+            "south_window_full"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 50,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 50,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 70,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_living_pod",
+            "pantry"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "shape": "rectangle",
+          "dimensions": { "length": 4.5, "width": 3.8 },
+          "features": ["wheelchair accessible entrance", "large windows for natural light"],
+          "position": "north-west"
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "L-shape",
+          "dimensions": { "length": 3, "width": 2.5 },
+          "features": ["wheelchair accessible layout", "gas stove with electric oven"],
+          "position": "south-east"
+        },
+        {
+          "room_id": "bedroom",
+          "shape": "square",
+          "dimensions": { "length": 3.8, "width": 3.8 },
+          "features": ["wheelchair accessible", "large window with curtains"],
+          "position": "north-east"
+        },
+        {
+          "room_id": "bathroom",
+          "shape": "rectangle",
+          "dimensions": { "length": 2, "width": 1.8 },
+          "features": ["wheelchair accessible", "walk-in shower"],
+          "position": "south-west"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "width": 1, "height": 2.1 },
+          "features": ["wheelchair ramp", "wooden door with glass panels"]
+        },
+        {
+          "opening_id": "patio_door",
+          "type": "door",
+          "dimensions": { "width": 1.5, "height": 2.1 },
+          "features": ["access to rooftop terrace", "sliding glass door"]
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_id": "terrace_access",
+          "type": "staircase",
+          "features": ["wheelchair accessible", "winding staircase with handrails"]
+        }
+      ]
+    }
+  ]
+}

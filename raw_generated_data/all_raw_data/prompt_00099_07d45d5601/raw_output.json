@@ -1,0 +1,35 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"room_type": "entrance_hall", "size": [10, 6], "location": [5, 1]},
+        {"room_type": "living_room", "size": [18, 12], "location": [5, 8], "adjacencies": ["dining_area"]},
+        {"room_type": "dining_area", "size": [10, 6], "location": [5, 23]},
+        {"room_type": "kitchen", "size": [14, 10], "location": [18, 1], "adjacencies": ["service_yard"]},
+        {"room_type": "guest_toilet", "size": [6, 4], "location": [5, 29]},
+        {"room_type": "study_room", "size": [10, 6], "location": [24, 8]},
+        {"room_type": "bedroom_1", "size": [12, 10], "location": [24, 23], "balcony_size": [5, 12], "balcony_location": [24, 36]},
+        {"room_type": "central_courtyard", "size": [10, 8], "location": [17, 16]}
+      ],
+      "openings": [
+        {"opening_type": "main_entrance", "size": [4, 9], "location": [5, 5]},
+        {"opening_type": "side_door_to_courtyard", "size": [3, 8], "location": [17, 16]}
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {"room_type": "bedroom_2", "size": [12, 10], "location": [5, 8], "balcony_size": [5, 12], "balcony_location": [5, 20]},
+        {"room_type": "bedroom_3", "size": [12, 10], "location": [5, 23], "balcony_size": [5, 12], "balcony_location": [5, 36]},
+        {"room_type": "bedroom_4", "size": [12, 10], "location": [24, 8], "balcony_size": [5, 12], "balcony_location": [24, 20]},
+        {"room_type": "bedroom_5", "size": [12, 10], "location": [24, 23], "balcony_size": [5, 12], "balcony_location": [24, 36]},
+        {"room_type": "home_theater", "size": [18, 12], "location": [13, 16]}
+      ],
+      "openings": [
+        {"opening_type": "staircase_to_ground_floor", "size": [5, 4], "location": [17, 5]},
+        {"opening_type": "terrace_access_from_home_theater", "size": [8, 2], "location": [13, 29]}
+      ]
+    }
+  ]
+}

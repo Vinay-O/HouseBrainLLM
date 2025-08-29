@@ -1,0 +1,171 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 1850,
+      "style": "Industrial Loft"
+    },
+    "plot": {
+      "shape": "triangular",
+      "climate": "humid subtropical",
+      "orientation": "diagonal to prevailing winds"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "specialFeatures": [
+          "chef's kitchen",
+          "wood-fired oven"
+        ]
+      },
+      {
+        "type": "system",
+        "specialFeatures": [
+          "rainwater harvesting",
+          "underground cisterns",
+          "earthquake-resistant construction"
+        ]
+      }
+    ]
+  },
+  "total_area": 1850.0,
+  "construction_cost": 425500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "pod1_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            "pod1_to_hall"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "pod1_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "pod1_to_hall"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "pod1_dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "pod1_to_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "pod2_teen1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "pod2_to_hall"
+          ],
+          "windows": [
+            "east_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "pod2_teen2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "pod2_to_hall"
+          ],
+          "windows": [
+            "south_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "pod3_parent",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "pod3_to_hall"
+          ],
+          "windows": [
+            "north_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "pod3_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "pod3_to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hall",
+          "type": "hall",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 30,
+            "height": 5
+          },
+          "doors": [
+            "pod1_to_hall",
+            "pod2_to_hall",
+            "pod3_to_hall"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

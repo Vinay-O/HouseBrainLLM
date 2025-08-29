@@ -1,0 +1,128 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "dimensions": {"length": 4.5, "width": 3},
+          "position": [0, 0],
+          "orientation": "east"
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": {"length": 6, "width": 5},
+          "position": [4.5, 0],
+          "orientation": "south",
+          "features": ["large_window", "central_ventilation"]
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": {"length": 3.5, "width": 4},
+          "position": [10.5, 2],
+          "orientation": "north"
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {"length": 4, "width": 3.5},
+          "position": [10.5, 6],
+          "orientation": "southwest"
+        },
+        {
+          "room_type": "master_bedroom",
+          "dimensions": {"length": 5, "width": 4},
+          "position": [15, 0],
+          "orientation": "east",
+          "features": ["attached_bathroom", "balcony"]
+        },
+        {
+          "room_type": "bedroom_2",
+          "dimensions": {"length": 3.5, "width": 4},
+          "position": [15, 6],
+          "orientation": "west"
+        },
+        {
+          "room_type": "private_gym",
+          "dimensions": {"length": 4, "width": 4},
+          "position": [0, 7.5],
+          "orientation": "north",
+          "features": ["ventilation_grill"]
+        },
+        {
+          "room_type": "guest_bedroom_3",
+          "dimensions": {"length": 3.5, "width": 4},
+          "position": [4.5, 7.5],
+          "orientation": "south"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "central_courtyard",
+          "dimensions": {"diameter": 6},
+          "position": [10.5, 3],
+          "features": ["water_feature", "natural_light"]
+        },
+        {
+          "opening_type": "window",
+          "dimensions": {"height": 2, "width": 1.5},
+          "room_reference": "living_room"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom_4",
+          "dimensions": {"length": 3.5, "width": 4},
+          "position": [15, 0],
+          "orientation": "east"
+        },
+        {
+          "room_type": "bedroom_5",
+          "dimensions": {"length": 3.5, "width": 4},
+          "position": [15, 6],
+          "orientation": "west"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "balcony",
+          "dimensions": {"length": 7, "width": 2},
+          "room_reference": "bedroom_4",
+          "features": ["ventilation_grill"]
+        },
+        {
+          "opening_type": "window",
+          "dimensions": {"height": 1.5, "width": 1},
+          "room_reference": "bedroom_5"
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_type": "study",
+          "dimensions": {"length": 4.5, "width": 3},
+          "position": [10.5, 3],
+          "orientation": "north"
+        },
+        {
+          "room_type": "guest_bedroom_6",
+          "dimensions": {"length": 3.5, "width": 4},
+          "position": [15, 0],
+          "orientation": "east"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "terrace",
+          "dimensions": {"length": 6, "width": 4},
+          "room_reference": "study",
+          "features": ["natural_light", "panoramic_view"]
+        }
+      ]
+    }
+  ]
+}

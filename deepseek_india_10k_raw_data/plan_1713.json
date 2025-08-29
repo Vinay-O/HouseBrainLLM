@@ -1,0 +1,543 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 8,
+      "floors": 3,
+      "totalArea": 4500,
+      "style": "Traditional Assamese with Coastal Chennai Heritage"
+    },
+    "plot": {
+      "shape": "Rectangular",
+      "size": "Large Inner Plot",
+      "location": "Chennai Coastal",
+      "terrain": "Flat with Heritage Bungalow Restoration",
+      "constraints": [
+        "Mountain Landslide Risks",
+        "Heavy Snow Load Considerations",
+        "Privacy Focus",
+        "Coastal Environment"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 8,
+        "description": "Hierarchical spaces for three generations including master suites and joint family rooms"
+      },
+      {
+        "type": "bathroom",
+        "count": 6,
+        "description": "Attached to bedrooms and common areas"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Spacious traditional kitchen with daylight optimization"
+      },
+      {
+        "type": "living_room",
+        "count": 2,
+        "description": "Formal living room and family gathering space"
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "description": "Large dining area for family meals"
+      },
+      {
+        "type": "games_room",
+        "count": 1,
+        "description": "Traditional games room for chess, carrom, and regional games"
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "description": "Prayer room with traditional elements"
+      },
+      {
+        "type": "storage",
+        "count": 3,
+        "description": "Adequate storage spaces throughout levels"
+      },
+      {
+        "type": "garden",
+        "count": 1,
+        "description": "Organic kitchen garden with traditional companion planting"
+      },
+      {
+        "type": "light_well",
+        "count": 4,
+        "description": "Traditional light wells for daylight optimization"
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 6750000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "location": "north",
+              "material": "wood_carved",
+              "hardware": "traditional_metalwork"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "formal_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "location": "east",
+              "material": "wood_carved",
+              "hardware": "traditional_metalwork"
+            }
+          ],
+          "windows": [
+            {
+              "location": "north",
+              "type": "traditional",
+              "glazing": "single"
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "location": "south",
+              "material": "wood_carved",
+              "hardware": "traditional_metalwork"
+            }
+          ],
+          "windows": [
+            {
+              "location": "east",
+              "type": "traditional",
+              "glazing": "single"
+            }
+          ]
+        },
+        {
+          "id": "bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 48,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "location": "west",
+              "material": "wood",
+              "hardware": "basic"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "light_well1",
+          "type": "light_well",
+          "bounds": {
+            "x": 20,
+            "y": 18,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "garden_court",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 20,
+            "height": 22
+          },
+          "doors": [
+            {
+              "location": "north",
+              "material": "wood",
+              "hardware": "basic"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "family_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 18,
+            "height": 16
+          },
+          "doors": [
+            {
+              "location": "south",
+              "material": "wood_carved",
+              "hardware": "traditional_metalwork"
+            }
+          ],
+          "windows": [
+            {
+              "location": "east",
+              "type": "traditional",
+              "glazing": "single"
+            }
+          ]
+        },
+        {
+          "id": "dining_area",
+          "type": "dining_room",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "location": "west",
+              "material": "wood",
+              "hardware": "basic"
+            }
+          ],
+          "windows": [
+            {
+              "location": "north",
+              "type": "traditional",
+              "glazing": "single"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_main",
+          "type": "kitchen",
+          "bounds": {
+            "x": 34,
+            "y": 0,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "location": "south",
+              "material": "wood",
+              "hardware": "basic"
+            }
+          ],
+          "windows": [
+            {
+              "location": "east",
+              "type": "traditional",
+              "glazing": "single"
+            }
+          ]
+        },
+        {
+          "id": "elder_bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            {
+              "location": "north",
+              "material": "wood_carved",
+              "hardware": "traditional_metalwork"
+            }
+          ],
+          "windows": [
+            {
+              "location": "west",
+              "type": "traditional",
+              "glazing": "single"
+            }
+          ]
+        },
+        {
+          "id": "elder_bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 14,
+            "y": 16,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            {
+              "location": "north",
+              "material": "wood_carved",
+              "hardware": "traditional_metalwork"
+            }
+          ],
+          "windows": [
+            {
+              "location": "east",
+              "type": "traditional",
+              "glazing": "single"
+            }
+          ]
+        },
+        {
+          "id": "bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 28,
+            "y": 16,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "location": "south",
+              "material": "wood",
+              "hardware": "basic"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "light_well2",
+          "type": "light_well",
+          "bounds": {
+            "x": 38,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "games_room",
+          "type": "games_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "location": "south",
+              "material": "wood_carved",
+              "hardware": "traditional_metalwork"
+            }
+          ],
+          "windows": [
+            {
+              "location": "north",
+              "type": "traditional",
+              "glazing": "single"
+            }
+          ]
+        },
+        {
+          "id": "youth_bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "location": "east",
+              "material": "wood",
+              "hardware": "basic"
+            }
+          ],
+          "windows": [
+            {
+              "location": "south",
+              "type": "traditional",
+              "glazing": "single"
+            }
+          ]
+        },
+        {
+          "id": "youth_bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 34,
+            "y": 0,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "location": "west",
+              "material": "wood",
+              "hardware": "basic"
+            }
+          ],
+          "windows": [
+            {
+              "location": "south",
+              "type": "traditional",
+              "glazing": "single"
+            }
+          ]
+        },
+        {
+          "id": "youth_bedroom3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "location": "north",
+              "material": "wood",
+              "hardware": "basic"
+            }
+          ],
+          "windows": [
+            {
+              "location": "west",
+              "type": "traditional",
+              "glazing": "single"
+            }
+          ]
+        },
+        {
+          "id": "youth_bedroom4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 14,
+            "y": 18,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "location": "north",
+              "material": "wood",
+              "hardware": "basic"
+            }
+          ],
+          "windows": [
+            {
+              "location": "east",
+              "type": "traditional",
+              "glazing": "single"
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 28,
+            "y": 18,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": "south",
+              "material": "wood_carved",
+              "hardware": "traditional_metalwork"
+            }
+          ],
+          "windows": [
+            {
+              "location": "east",
+              "type": "traditional",
+              "glazing": "single"
+            }
+          ]
+        },
+        {
+          "id": "bathroom3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 38,
+            "y": 18,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "location": "west",
+              "material": "wood",
+              "hardware": "basic"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "light_well3",
+          "type": "light_well",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "light_well4",
+          "type": "light_well",
+          "bounds": {
+            "x": 28,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

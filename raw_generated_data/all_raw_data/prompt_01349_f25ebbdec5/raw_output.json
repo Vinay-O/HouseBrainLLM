@@ -1,0 +1,75 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_hall",
+          "description": "A spacious entrance hall with a Vastu-compliant entry that avoids alignment with the main door and a separate guest lobby for privacy.",
+          "area_sqft": 150,
+          "position": "front"
+        },
+        {
+          "room_id": "living_room",
+          "description": "Open living area designed to promote family interaction, located adjacent to the entrance hall.",
+          "area_sqft": 300
+        },
+        {
+          "room_id": "dining_area",
+          "description": "Semi-open dining space integrated with kitchen for ease of movement, oriented towards north-east as per Vastu recommendations.",
+          "area_sqft": 150
+        },
+        {
+          "room_id": "kitchen",
+          "description": "Modern kitchen equipped with necessary appliances and storage, ensuring a separation from the living areas.",
+          "area_sqft": 200,
+          "amenities": ["sink", "oven", "refrigerator", "countertop space"]
+        },
+        {
+          "room_id": "garage",
+          "description": "Two-car garage designed with proper ventilation and accessibility, located towards the east to allow morning sunlight.",
+          "area_sqft": 400
+        },
+        {
+          "room_id": "library",
+          "description": "Dedicated library space with adjustable lighting and book storage shelves, positioned in a quiet corner as per Vastu principles for learning and creativity.",
+          "area_sqft": 100,
+          "furniture": ["bookshelf", "reading_table"]
+        },
+        {
+          "room_id": "bathroom",
+          "description": "Primary bathroom with essential fixtures and a small sink area, ensuring privacy and ease of maintenance.",
+          "area_sqft": 80
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "front_door",
+          "type": "main_entry",
+          "direction": "west", 
+          "description": "The main entry door placed on the west side to align with plot orientation and ensure proper sunlight penetration."
+        },
+        {
+          "opening_id": "windows_living_room",
+          "type": "window",
+          "room": "living_room",
+          "direction": "north",
+          "description": "Large windows for natural light and ventilation in the living room, placed according to Vastu norms."
+        },
+        {
+          "opening_id": "windows_kitchen",
+          "type": "window",
+          "room": "kitchen",
+          "direction": "south-east",
+          "description": "Windows in the kitchen area ensuring proper light without glare during peak hours."
+        },
+        {
+          "opening_id": "garage_door",
+          "type": "door",
+          "room": "garage",
+          "description": "Automatic garage door for easy access to both cars, designed with security features."
+        }
+      ]
+    }
+  ]
+}

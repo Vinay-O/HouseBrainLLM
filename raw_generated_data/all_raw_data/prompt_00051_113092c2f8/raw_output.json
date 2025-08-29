@@ -1,0 +1,44 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {"room_name": "Entrance Hall", "area_sqft": 250},
+      {"room_name": "Living Room", "area_sqft": 400},
+      {"room_name": "Dining Area", "area_sqft": 300},
+      {"room_name": "Kitchen", "area_sqft": 350},
+      {"room_name": "Guest Bedroom", "area_sqft": 300},
+      {"room_name": "Private Gym", "area_sqft": 250, "special_features": ["resilient flooring", "mirrored wall"] }
+    ],
+    "openings": [
+      {"type": "Front Door", "location": "main entrance"},
+      {"type": "Windows", "quantity": 4, "locations": ["living room", "dining area", "kitchen"]},
+      {"type": "Balcony Door", "location": "adjacent to living room"}
+    ]
+  },
+  {
+    "level_id": "first_floor",
+    "rooms": [
+      {"room_name": "Master Bedroom", "area_sqft": 350, "special_features": ["private balcony"]},
+      {"room_name": "Bedroom 2", "area_sqft": 250},
+      {"room_name": "Bedroom 3", "area_sqft": 250},
+      {"room_name": "Bathroom Suite", "area_sqft": 200, "special_features": [" ensuite", "walk-in shower"] },
+      {"room_name": "Study Room", "area_sqft": 150}
+    ],
+    "openings": [
+      {"type": "Staircase", "location": "connecting ground and first floor"},
+      {"type": "Balcony Door", "location": "master bedroom"},
+      {"type": "Windows", "quantity": 3, "locations": ["bedrooms", "study room"]}
+    ]
+  },
+  {
+    "level_id": "second_floor",
+    "rooms": [
+      {"room_name": "Attic Office", "area_sqft": 200},
+      {"room_name": "Storage loft", "area_sqft": 150}
+    ],
+    "openings": [
+      {"type": "Staircase", "location": "connecting first and second floor"},
+      {"type": "Balcony Door", "location": "attic office"}
+    ]
+  }
+]}

@@ -1,0 +1,78 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_hall",
+          "description": "Accessible entrance hall with a wide door and ramps for wheelchair accessibility. The space is designed in an Art Deco style with geometric patterns, streamlined furniture and metallic accents.",
+          "dimensions": { "length": 15, "width": 10 },
+          "access_points": ["north_entrance"],
+          "vastu_compatibility": true
+        },
+        {
+          "room_id": "living_room",
+          "description": "Open living room area with a large window facing the north for ample natural light and a view of the garden. Art Deco elements like bold geometric designs and reflective surfaces are incorporated.",
+          "dimensions": { "length": 20, "width": 15 },
+          "access_points": ["entrance_hall"],
+          "vastu_compatibility": true
+        },
+        {
+          "room_id": "dining_area",
+          "description": "Integrated dining area adjacent to the living room. Features a minimalist Art Deco design with polished surfaces and metallic finishes, ensuring easy wheelchair movement.",
+          "dimensions": { "length": 15, "width": 10 },
+          "access_points": ["living_room"],
+          "vastu_compatibility": true
+        },
+        {
+          "room_id": "kitchen",
+          "description": "Fully accessible kitchen with modern amenities designed in Art Deco style using streamlined cabinetry and reflective finishes. Layout ensures minimal obstructions for wheelchair access.",
+          "dimensions": { "length": 12, "width": 10 },
+          "access_points": ["living_room"],
+          "vastu_compatibility": true
+        },
+        {
+          "room_id": "bathroom",
+          "description": "Accessible bathroom featuring a roll-in shower, grab bars and other safety features, designed with Art Deco motifs for aesthetics.",
+          "dimensions": { "length": 8, "width": 6 },
+          "access_points": ["kitchen"],
+          "vastu_compatibility": true
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "north_entrance",
+          "description": "The main entrance facing north to align with Vastu principles and ensure ample natural light. Designed as a wheelchair-accessible entry point.",
+          "location": "north",
+          "dimensions": { "height": 8, "width": 6 }
+        },
+        {
+          "opening_id": "living_room_window",
+          "description": "Large north-facing window in the living room to enhance natural light and provide views of the garden. Adheres to Art Deco style with streamlined frames.",
+          "location": "north wall of living room",
+          "dimensions": { "height": 6, "width": 12 }
+        },
+        {
+          "opening_id": "garden_access",
+          "description": "Door opening leading directly to the garden from the living area for seamless integration with outdoor space. Includes a ramp for wheelchair accessibility.",
+          "location": "east wall of living room",
+          "dimensions": { "height": 8, "width": 6 }
+        },
+        {
+          "opening_id": "back_door",
+          "description": "Secondary entrance/back door providing additional access to the garden or service areas. Ensures compliance with accessibility standards.",
+          "location": "west wall of kitchen",
+          "dimensions": { "height": 8, "width": 6 }
+        }
+      ]
+    }
+  ],
+  "plot_dimensions": {
+    "length": 90,
+    "width": 60
+  },
+  "garden": {
+    "description": "Large garden space with diverse plantings and pathways designed for easy wheelchair access. Incorporates Art Deco landscaping elements such as geometric hardscaping and reflective water features.",
+    "area": 800
+  }
+}

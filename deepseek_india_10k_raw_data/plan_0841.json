@@ -1,0 +1,296 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 1200,
+      "style": "Goa Portuguese with Malwa Fort Influence"
+    },
+    "plot": {
+      "width": 30,
+      "height": 40,
+      "orientation": "south"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "area": 180
+      },
+      {
+        "type": "tutoring_space",
+        "area": 150
+      },
+      {
+        "type": "bedroom",
+        "area": 140
+      },
+      {
+        "type": "bedroom",
+        "area": 140
+      },
+      {
+        "type": "kitchen",
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "area": 80
+      },
+      {
+        "type": "courtyard",
+        "area": 240
+      },
+      {
+        "type": "rooftop_terrace",
+        "area": 150
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 288000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [],
+          "features": [
+            "traditional_baithak_seating",
+            "sandstone_flooring",
+            "rainwater_harvesting_inlet"
+          ]
+        },
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 18
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 9
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 4
+            }
+          ],
+          "features": [
+            "built_in_shelving",
+            "bamboo_lattice_windows",
+            "study_desk"
+          ]
+        },
+        {
+          "id": "tutoring_space",
+          "type": "study_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 4
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": 3
+            }
+          ],
+          "features": [
+            "flexible_seating",
+            "whiteboard_wall",
+            "natural_lighting"
+          ]
+        },
+        {
+          "id": "kitchen_ground",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 4
+            }
+          ],
+          "features": [
+            "traditional_goan_style",
+            "pantry_storage"
+          ]
+        },
+        {
+          "id": "bathroom_ground",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "features": [
+            "water_efficient_fixtures",
+            "skylight"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": 5
+            },
+            {
+              "wall": "west",
+              "position": 7,
+              "size": 4
+            }
+          ],
+          "features": [
+            "built_in_wardrobes",
+            "bamboo_lattice_balcony",
+            "cross_ventilation"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": 5
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": 4
+            }
+          ],
+          "features": [
+            "built_in_wardrobes",
+            "bamboo_lattice_balcony",
+            "cross_ventilation"
+          ]
+        },
+        {
+          "id": "rooftop_terrace",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 30,
+            "height": 26
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": [],
+          "features": [
+            "terrace_garden",
+            "rainwater_harvesting_tanks",
+            "solar_panels",
+            "wind_tower",
+            "thermal_chimney"
+          ]
+        }
+      ]
+    }
+  ]
+}

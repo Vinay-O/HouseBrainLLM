@@ -1,0 +1,156 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 1,
+      "totalArea": 450,
+      "style": "Japanese Zen"
+    },
+    "plot": {
+      "width": 30,
+      "depth": 15,
+      "orientation": "Diagonal to prevailing winds",
+      "climate": "Desert with extreme temperatures",
+      "constraints": [
+        "Compact urban balcony conversion",
+        "Budget-conscious",
+        "Tornado shelter required"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "pavilion_main",
+        "area": 240,
+        "purpose": "Primary culinary workspace and gathering area"
+      },
+      {
+        "type": "glass_connection",
+        "area": 60,
+        "purpose": "Climate-controlled transition space with heat recovery"
+      },
+      {
+        "type": "utility_core",
+        "area": 90,
+        "purpose": "HVAC, storm shelter, and mechanical systems"
+      },
+      {
+        "type": "pool_deck",
+        "area": 60,
+        "purpose": "Cantilevered infinity pool and relaxation area"
+      }
+    ]
+  },
+  "total_area": 450.0,
+  "construction_cost": 135000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "culinary_pavilion",
+          "type": "pavilion_main",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 8
+            },
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4,
+              "length": 8
+            },
+            {
+              "wall": "west",
+              "position": 4,
+              "length": 8
+            }
+          ]
+        },
+        {
+          "id": "glass_link_west",
+          "type": "glass_connection",
+          "bounds": {
+            "x": 16,
+            "y": 3,
+            "width": 4,
+            "height": 9
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4.5
+            },
+            {
+              "wall": "east",
+              "position": 4.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2,
+              "length": 4
+            },
+            {
+              "wall": "south",
+              "position": 2,
+              "length": 4
+            }
+          ]
+        },
+        {
+          "id": "mechanical_core",
+          "type": "utility_core",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 9
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "infinity_pool",
+          "type": "pool_deck",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 16,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "length": 8
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,593 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 800,
+      "style": "Chettinad with local limestone and ornate jharokhas"
+    },
+    "plot": {
+      "shape": "corner",
+      "area": 800,
+      "slope": "moderate",
+      "frontage": "dual"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3,
+        "level": [
+          0,
+          1
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "level": [
+          0,
+          1
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "veranda",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "puja",
+        "count": 1,
+        "level": [
+          1
+        ]
+      }
+    ]
+  },
+  "total_area": 1520.0,
+  "construction_cost": 273600.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "veranda_0",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 6
+              },
+              "to": "living_room_0"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 3
+              },
+              "to": "exterior"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 3
+              },
+              "to": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "type": "jharokha"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 0
+              },
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 20,
+            "height": 14
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "to": "veranda_0"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 7
+              },
+              "to": "dining_room_0"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 7
+              },
+              "to": "bedroom_0_0"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 14
+              },
+              "type": "large"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 14
+              },
+              "type": "large"
+            }
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 5
+              },
+              "to": "living_room_0"
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 10
+              },
+              "to": "kitchen_0"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 10,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "to": "dining_room_0"
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 10
+              },
+              "to": "utility_0"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 10,
+                "y": 5
+              },
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 10,
+            "y": 30,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 2.5
+              },
+              "to": "kitchen_0"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 10,
+                "y": 2.5
+              },
+              "type": "small"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_0_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 6,
+            "width": 15,
+            "height": 14
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 7
+              },
+              "to": "living_room_0"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 14
+              },
+              "to": "bathroom_0_0"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 0
+              },
+              "type": "jharokha"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 14
+              },
+              "type": "large"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_0_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 7.5,
+            "height": 7
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 3.5
+              },
+              "to": "bedroom_0_0"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 3.5
+              },
+              "type": "vent"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_0_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 27.5,
+            "y": 20,
+            "width": 7.5,
+            "height": 7
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 3.5
+              },
+              "to": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 3.5
+              },
+              "type": "vent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 14
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 7
+              },
+              "to": "corridor_1"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 14
+              },
+              "to": "bathroom_1_0"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 7
+              },
+              "type": "jharokha"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 0
+              },
+              "type": "large"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 14
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 7
+              },
+              "to": "corridor_1"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 14
+              },
+              "to": "bathroom_1_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 7
+              },
+              "type": "jharokha"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 0
+              },
+              "type": "large"
+            }
+          ]
+        },
+        {
+          "id": "corridor_1",
+          "type": "corridor",
+          "bounds": {
+            "x": 15,
+            "y": 14,
+            "width": 15,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 3
+              },
+              "to": "bedroom_1_0"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 3
+              },
+              "to": "bedroom_1_1"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 6
+              },
+              "to": "puja_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "puja_1",
+          "type": "puja",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 0
+              },
+              "to": "corridor_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "type": "jharokha"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 5
+              },
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 7.5,
+            "height": 7
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 3.5
+              },
+              "to": "bedroom_1_0"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 3.5
+              },
+              "type": "vent"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 7.5,
+            "y": 14,
+            "width": 7.5,
+            "height": 7
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 3.5
+              },
+              "to": "bedroom_1_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 3.5
+              },
+              "type": "vent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

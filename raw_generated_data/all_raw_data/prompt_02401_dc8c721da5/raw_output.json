@@ -1,0 +1,140 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_hall",
+          "dimensions": {"width": 8, "length": 12},
+          "description": "North-facing entrance with reception area, incorporating natural light and minimalistic Scandinavian aesthetics.",
+          "adjacent_rooms": ["living_room", "dining_area"]
+        },
+        {
+          "room_id": "living_room",
+          "dimensions": {"width": 15, "length": 20},
+          "description": "Spacious living room with large windows for natural light, accentuating Scandinavian simplicity.",
+          "adjacent_rooms": ["entrance_hall", "dining_area"]
+        },
+        {
+          "room_id": "dining_area",
+          "dimensions": {"width": 10, "length": 15},
+          "description": "Dining area integrated with the living room for seamless flow of space.",
+          "adjacent_rooms": ["living_room", "kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": {"width": 12, "length": 15},
+          "description": "Modern Scandinavian kitchen featuring open-plan design with clean lines and natural materials.",
+          "adjacent_rooms": ["dining_area", "utility_room"]
+        },
+        {
+          "room_id": "utility_room",
+          "dimensions": {"width": 8, "length": 10},
+          "description": "Service area for cleaning supplies and appliances as per local building norms.",
+          "adjacent_rooms": ["kitchen"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": {"width": 12, "length": 15},
+          "description": "Master bedroom with ample storage and a private balcony oriented according to Vastu for positive energy.",
+          "adjacent_rooms": ["bathroom_master"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": {"width": 10, "length": 12},
+          "description": "Secondary bedroom designed with Scandinavian minimalism.",
+          "adjacent_rooms": []
+        },
+        {
+          "room_id": "bedroom_3",
+          "dimensions": {"width": 10, "length": 12},
+          "description": "Additional bedroom featuring neutral tones and ample storage space.",
+          "adjacent_rooms": []
+        },
+        {
+          "room_id": "bathroom_master",
+          "dimensions": {"width": 6, "length": 8},
+          "description": "Private bathroom attached to the master bedroom.",
+          "adjacent_rooms": ["bedroom_1"]
+        },
+        {
+          "room_id": "open_plan_living_area",
+          "dimensions": {"width": 15, "length": 20},
+          "description": "Additional open space combining dining and living area for a cohesive Scandinavian style.",
+          "adjacent_rooms": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "front_door",
+          "type": "entrance",
+          "location": "north_facing"
+        },
+        {
+          "opening_id": "side_windows",
+          "type": "window",
+          "location": "living_room"
+        },
+        {
+          "opening_id": "kitchen_windows",
+          "type": "window",
+          "location": "kitchen"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_1_upper",
+          "dimensions": {"width": 12, "length": 15},
+          "description": "Master bedroom on upper floor with private balcony oriented per Vastu principles.",
+          "adjacent_rooms": ["bathroom_master_upper"]
+        },
+        {
+          "room_id": "bedroom_2_upper",
+          "dimensions": {"width": 10, "length": 12},
+          "description": "Secondary bedroom with Scandinavian minimalistic design and ample natural light.",
+          "adjacent_rooms": []
+        },
+        {
+          "room_id": "bedroom_3_upper",
+          "dimensions": {"width": 10, "length": 12},
+          "description": "Additional bedroom on the upper floor designed for comfort and space efficiency.",
+          "adjacent_rooms": []
+        },
+        {
+          "room_id": "bathroom_master_upper",
+          "dimensions": {"width": 6, "length": 8},
+          "description": "Private bathroom attached to the master bedroom on the upper floor.",
+          "adjacent_rooms": ["bedroom_1_upper"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "upper_floor_windows",
+          "type": "window",
+          "location": "bedrooms"
+        }
+      ]
+    },
+    {
+      "level_id": "private_gym",
+      "rooms": [
+        {
+          "room_id": "gym_space",
+          "dimensions": {"width": 15, "length": 20},
+          "description": "Private gym area designed with Scandinavian simplicity and ample natural light. Equipment storage integrated.",
+          "adjacent_rooms": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "gym_window",
+          "type": "window",
+          "location": "north_facing"
+        }
+      ]
+    }
+  ]
+}

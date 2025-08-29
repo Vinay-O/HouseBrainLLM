@@ -1,0 +1,278 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 800,
+      "style": "Chettinad with local limestone"
+    },
+    "plot": {
+      "shape": "cul-de-sac",
+      "area": 800,
+      "location": "coastal",
+      "landscaping": "xerophytic"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "area": 120
+      },
+      {
+        "type": "dining_room",
+        "area": 100
+      },
+      {
+        "type": "master_bedroom",
+        "area": 150
+      },
+      {
+        "type": "bedroom",
+        "area": 120
+      },
+      {
+        "type": "courtyard",
+        "area": 80
+      },
+      {
+        "type": "guest_house",
+        "area": 150
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            },
+            {
+              "wall": "south",
+              "position": 4
+            },
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            },
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6,
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            },
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "medium"
+            },
+            {
+              "wall": "north",
+              "position": 4,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            },
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "position": 4,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "guest_house",
+          "type": "guest_house",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "medium"
+            },
+            {
+              "wall": "east",
+              "position": 7.5,
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 12.5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6,
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 6.25,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 6.25,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 6,
+              "size": "large"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

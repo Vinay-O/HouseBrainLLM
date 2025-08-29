@@ -1,0 +1,502 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 4200,
+      "style": "Alpine Chalet with Modern Extensions"
+    },
+    "plot": {
+      "description": "Desert plateau with panoramic views, following natural contours for earthquake resistance and heavy snow load considerations.",
+      "contourFollowing": true,
+      "earthquakeResistant": true,
+      "heavySnowLoad": true
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "music_studio",
+        "count": 1
+      },
+      {
+        "type": "performance_space",
+        "count": 1
+      },
+      {
+        "type": "darkroom",
+        "count": 1
+      },
+      {
+        "type": "green_wall",
+        "count": 2
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 2850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_1",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_room",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry_hall",
+          "type": "hall",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "elevator_shaft",
+          "type": "utility",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "stairwell",
+          "type": "hall",
+          "bounds": {
+            "x": 46,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "great_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 15,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 12,
+              "size": "medium"
+            },
+            {
+              "wall": "west",
+              "position": 12,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 24,
+            "height": 18
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 9,
+              "size": "large"
+            },
+            {
+              "wall": "north",
+              "position": 12,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "green_wall_main",
+          "type": "green_wall",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 30,
+            "height": 5
+          },
+          "doors": [],
+          "windows": [],
+          "irrigation": true
+        },
+        {
+          "id": "performance_space",
+          "type": "performance_space",
+          "bounds": {
+            "x": 30,
+            "y": 18,
+            "width": 24,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "powder_room",
+          "type": "bathroom",
+          "bounds": {
+            "x": 54,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "elevator_l1",
+          "type": "utility",
+          "bounds": {
+            "x": 54,
+            "y": 10,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "stairwell_l1",
+          "type": "hall",
+          "bounds": {
+            "x": 54,
+            "y": 18,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "primary_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 9,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6,
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "size": "medium"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 48,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "size": "medium"
+            },
+            {
+              "wall": "west",
+              "position": 7,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "music_studio",
+          "type": "music_studio",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 30,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 15,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "darkroom",
+          "type": "darkroom",
+          "bounds": {
+            "x": 30,
+            "y": 14,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 42,
+            "y": 14,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "green_wall_upper",
+          "type": "green_wall",
+          "bounds": {
+            "x": 30,
+            "y": 24,
+            "width": 34,
+            "height": 4
+          },
+          "doors": [],
+          "windows": [],
+          "irrigation": true
+        },
+        {
+          "id": "elevator_l2",
+          "type": "utility",
+          "bounds": {
+            "x": 52,
+            "y": 14,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "stairwell_l2",
+          "type": "hall",
+          "bounds": {
+            "x": 52,
+            "y": 22,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

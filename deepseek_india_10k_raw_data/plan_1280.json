@@ -1,0 +1,318 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 4500,
+      "style": "Traditional"
+    },
+    "plot": {
+      "area": 2,
+      "type": "agricultural_conversion",
+      "location": "Bangalore IT corridor",
+      "considerations": [
+        "privacy_focus",
+        "mountain_landslide",
+        "heavy_snow_load"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4,
+        "description": "Family bedrooms with traditional carved wooden doors and metalwork"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Traditional baithak seating with low platforms"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Traditional kitchen with preservation techniques for food storage"
+      },
+      {
+        "type": "workshop",
+        "count": 1,
+        "description": "Handloom weaving workshop with natural lighting and storage"
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "description": "Central courtyard for family gatherings and natural ventilation"
+      },
+      {
+        "type": "storage",
+        "count": 2,
+        "description": "Traditional food storage areas without refrigeration"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "description": "Rainwater harvesting system and utilities"
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 6750000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            {
+              "location": "north_side",
+              "material": "wood",
+              "description": "Carved wooden door with traditional metalwork"
+            },
+            {
+              "location": "south_side",
+              "material": "wood",
+              "description": "Carved wooden door with traditional metalwork"
+            },
+            {
+              "location": "east_side",
+              "material": "wood",
+              "description": "Carved wooden door with traditional metalwork"
+            },
+            {
+              "location": "west_side",
+              "material": "wood",
+              "description": "Carved wooden door with traditional metalwork"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "main_baithak",
+          "type": "living_room",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": "east_wall",
+              "material": "wood",
+              "description": "Carved wooden door opening to courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "location": "north_wall",
+              "description": "Traditional jali windows for ventilation"
+            }
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "location": "west_wall",
+              "material": "wood",
+              "description": "Carved wooden door with metalwork"
+            }
+          ],
+          "windows": [
+            {
+              "location": "south_wall",
+              "description": "Large window with traditional shutters"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 50,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "location": "north_wall",
+              "material": "wood",
+              "description": "Carved wooden door with metalwork"
+            }
+          ],
+          "windows": [
+            {
+              "location": "east_wall",
+              "description": "Traditional jali window"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 50,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "location": "south_wall",
+              "material": "wood",
+              "description": "Carved wooden door with metalwork"
+            }
+          ],
+          "windows": [
+            {
+              "location": "west_wall",
+              "description": "Traditional jali window"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 70,
+            "y": 30,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "location": "east_wall",
+              "material": "wood",
+              "description": "Carved wooden door with metalwork"
+            }
+          ],
+          "windows": [
+            {
+              "location": "north_wall",
+              "description": "Traditional jali window"
+            }
+          ]
+        },
+        {
+          "id": "weaving_workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 70,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "location": "south_wall",
+              "material": "wood",
+              "description": "Large double doors for material access"
+            }
+          ],
+          "windows": [
+            {
+              "location": "north_wall",
+              "description": "Skylight and large windows for natural lighting"
+            },
+            {
+              "location": "east_wall",
+              "description": "Traditional jali windows for ventilation"
+            }
+          ]
+        },
+        {
+          "id": "traditional_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "location": "east_wall",
+              "material": "wood",
+              "description": "Carved wooden door to courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "location": "south_wall",
+              "description": "Ventilation windows with traditional shutters"
+            }
+          ]
+        },
+        {
+          "id": "food_storage_1",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": "south_wall",
+              "material": "wood",
+              "description": "Insulated traditional storage door"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "food_storage_2",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": "north_wall",
+              "material": "wood",
+              "description": "Insulated traditional storage door"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "rainwater_harvesting",
+          "type": "utility",
+          "bounds": {
+            "x": 70,
+            "y": 50,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": "west_wall",
+              "material": "metal",
+              "description": "Utility access door"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

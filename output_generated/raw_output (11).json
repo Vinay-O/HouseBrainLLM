@@ -1,0 +1,90 @@
+{
+    "levels": [
+        {
+            "level_id": "ground_floor",
+            "rooms": [
+                {
+                    "room_id": "main_bedroom",
+                    "width": 12,
+                    "length": 15,
+                    "doors": ["north"],
+                    "windows": ["east"]
+                },
+                {
+                    "room_id": "living_room_dining_area",
+                    "width": 18,
+                    "length": 20,
+                    "doors": ["south"],
+                    "windows": ["west"]
+                },
+                {
+                    "room_id": "kitchen",
+                    "width": 10,
+                    "length": 15,
+                    "doors": ["north"],
+                    "windows": []
+                }
+            ],
+            "openings": [
+                {
+                    "opening_type": "door",
+                    "location": "main_bedroom_north_door"
+                },
+                {
+                    "opening_type": "window",
+                    "location": "main_bedroom_east_window"
+                },
+                {
+                    "opening_type": "door",
+                    "location": "living_room_dining_area_south_door"
+                },
+                {
+                    "opening_type": "window",
+                    "location": "living_room_dining_area_west_window"
+                },
+                {
+                    "opening_type": "door",
+                    "location": "kitchen_north_door"
+                }
+            ],
+            "vastu_compliant_layout": true
+        },
+        {
+            "level_id": "first_floor",
+            "rooms": [
+                {
+                    "room_id": "home_theater",
+                    "width": 12,
+                    "length": 15,
+                    "doors": ["north"],
+                    "windows": ["east"]
+                }
+            ],
+            "openings": [
+                {
+                    "opening_type": "door",
+                    "location": "home_theater_north_door"
+                },
+                {
+                    "opening_type": "window",
+                    "location": "home_theater_east_window"
+                }
+            ]
+        },
+        {
+            "level_id": "second_floor",
+            "rooms": [],
+            "openings": []
+        }
+    ],
+    "features": [
+        {
+            "feature_name": "rooftop_terrace",
+            "width": 20,
+            "length": 30
+        },
+        {
+            "feature_name": "home_theater_screen_wall"
+        }
+    ]
+}

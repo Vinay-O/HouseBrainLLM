@@ -1,0 +1,77 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall",
+          "dimensions": {"width": 10, "length": 15},
+          "description": "Spacious area for greeting and receiving guests."
+        },
+        {
+          "name": "Living Room",
+          "dimensions": {"width": 20, "length": 25},
+          "description": "Lounge with floor-to-ceiling windows facing the garden.",
+          "features": ["floor_to_ceiling_windows"]
+        },
+        {
+          "name": "Dining Area",
+          "dimensions": {"width": 12, "length": 15},
+          "description": "Adjacent to living room, ideal for dining."
+        },
+        {
+          "name": "Kitchen",
+          "dimensions": {"width": 10, "length": 12},
+          "description": "Functional space with modern amenities.",
+          "features": ["servants_quarters_access"]
+        },
+        {
+          "name": "Master Bedroom",
+          "dimensions": {"width": 15, "length": 18},
+          "description": "Spacious bedroom on the ground floor for convenience and privacy.",
+          "features": ["en-suite_bathroom", "large_window"]
+        },
+        {
+          "name": "Guest Bedroom",
+          "dimensions": {"width": 12, "length": 14},
+          "description": "Additional room accommodating guests."
+        },
+        {
+          "name": "Servants Quarters",
+          "dimensions": {"width": 8, "length": 10},
+          "description": "Separate living space for household help."
+        }
+      ],
+      "openings": [
+        {
+          "type": "entrance_door",
+          "location": "north_wall",
+          "direction": "east"
+        },
+        {
+          "type": "front_window",
+          "location": "south_wall",
+          "description": "Large floor-to-ceiling windows enhancing natural light."
+        },
+        {
+          "type": "backdoor",
+          "location": "west_wall",
+          "description": "Provides access to the garden area."
+        }
+      ]
+    }
+  ],
+  "vastu": {
+    "principles": [
+      "Orientation of entrance should face east or north for positive energy.",
+      "Living areas with windows facing the garden ensure natural light and ventilation.",
+      "Placement of master bedroom in the southeast corner to promote harmony."
+    ]
+  },
+  "building_norms": {
+    "minimum_width": {"ground_floor": 30},
+    "max_plot_area": {"value": 1200, "unit": "sq ft"},
+    "duplex_design": true,
+    "garden_inclusion": true
+  }
+}

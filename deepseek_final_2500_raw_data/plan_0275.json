@@ -1,0 +1,288 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1500,
+      "style": "Punjabi Farmhouse"
+    },
+    "plot": {
+      "orientation": "south",
+      "view": "garden",
+      "location": "industrial city outskirts",
+      "constraints": [
+        "pollution",
+        "seismic",
+        "water table"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 300
+      },
+      {
+        "type": "kitchen",
+        "area": 200
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 250
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "study",
+        "area": 150
+      },
+      {
+        "type": "terrace",
+        "area": 300
+      }
+    ]
+  },
+  "total_area": 1500.0,
+  "construction_cost": 375000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_archway",
+          "type": "entryway",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "features": [
+            "heritage brick archway",
+            "air-lock vestibule"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 6,
+            "width": 28,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 14
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 14,
+              "type": "double-pane laminated"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "type": "double-pane laminated"
+            }
+          ],
+          "features": [
+            "high ceilings",
+            "seismic bracing",
+            "universal accessibility"
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 10,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "type": "double-pane laminated"
+            }
+          ],
+          "features": [
+            "open plan",
+            "accessible design",
+            "pollution-filtering vent hood"
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 22,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7,
+              "type": "double-pane laminated"
+            }
+          ],
+          "features": [
+            "walk-in closet",
+            "universal accessibility",
+            "seismic safety"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 22,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "type": "double-pane laminated"
+            }
+          ],
+          "features": [
+            "flexible use",
+            "seismic safety"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "features": [
+            "accessible design",
+            "water-efficient fixtures"
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 28,
+            "y": 26,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "type": "double-pane laminated"
+            }
+          ],
+          "features": [
+            "sound insulation",
+            "built-in shelving"
+          ]
+        },
+        {
+          "id": "internal_courtyard",
+          "type": "outdoor",
+          "bounds": {
+            "x": 38,
+            "y": 6,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            },
+            {
+              "wall": "west",
+              "position": 16
+            }
+          ],
+          "windows": [],
+          "features": [
+            "heritage brick archways",
+            "water-efficient landscaping",
+            "garden view"
+          ]
+        },
+        {
+          "id": "roof_terrace",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 36
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "accessible ramp",
+            "drought-resistant garden",
+            "city views",
+            "structural reinforcement"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 5000,
+      "style": "Odisha Temple-Inspired with Spiritual Geometry"
+    },
+    "plot": {
+      "orientation": "west",
+      "size": 5000,
+      "type": "urban_apartment_conversion",
+      "notes": "Evening light, dense metropolitan area, maximum height restrictions apply"
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "purpose": "Primary bedroom for urban professionals with ensuite bathroom",
+        "specialFeatures": [
+          "Elderly-friendly accessibility",
+          "West-facing windows for evening light"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "purpose": "Bedroom for elderly grandparents with accessibility features",
+        "specialFeatures": [
+          "Zero-threshold shower",
+          "Grab bars",
+          "Non-slip flooring"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "purpose": "Flexible room for guests/study",
+        "specialFeatures": [
+          "Convertible furniture",
+          "Pet-friendly features"
+        ]
+      },
+      {
+        "type": "servant_quarters",
+        "purpose": "Separate living space with dignity and privacy",
+        "specialFeatures": [
+          "Private entrance",
+          "Self-contained facilities"
+        ]
+      },
+      {
+        "type": "underground_cooling_chamber",
+        "purpose": "Natural temperature regulation system",
+        "specialFeatures": [
+          "Bamboo lattice ventilation",
+          "Thermal mass cooling"
+        ]
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 576000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "underground_cooling_1",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 35,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [],
+          "purpose": "Primary underground cooling chamber with bamboo lattice ventilation"
+        },
+        {
+          "id": "servant_quarters",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "purpose": "Self-contained servant quarters with private entrance"
+        },
+        {
+          "id": "servant_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 7,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 3.5
+            }
+          ],
+          "purpose": "Private bathroom for servant quarters"
+        },
+        {
+          "id": "pet_area",
+          "type": "utility",
+          "bounds": {
+            "x": 32,
+            "y": 15,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "purpose": "Designated pet-friendly space with easy outdoor access"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "purpose": "Main living area with spiritual geometry layout"
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "purpose": "Open kitchen with bamboo lattice accents"
+        },
+        {
+          "id": "dining_area",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "purpose": "Dining space connected to kitchen and living area"
+        },
+        {
+          "id": "elderly_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "purpose": "Accessible bedroom for elderly grandparents"
+        },
+        {
+          "id": "elderly_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "purpose": "Accessible bathroom with safety features"
+        },
+        {
+          "id": "meditation_space",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 23,
+            "width": 8,
+            "height": 7
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 3.5
+            }
+          ],
+          "purpose": "Spiritual meditation area with temple-inspired design"
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "purpose": "Primary bedroom for urban professionals"
+        },
+        {
+          "id": "master_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "purpose": "Ensuite bathroom for master bedroom"
+        },
+        {
+          "id": "guest_room",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "purpose": "Flexible guest room/study with pet-friendly features"
+        },
+        {
+          "id": "roof_terrace",
+          "type": "outdoor",
+          "bounds": {
+            "x": 12,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [],
+          "purpose": "West-facing rooftop terrace for evening relaxation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "purpose": "living",
+          "accessibility_features": ["ramp_access", "wide_doors"]
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "purpose": "dining"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "kitchen",
+          "features": ["modular", "wheelchair_accessible"]
+        },
+        {
+          "room_id": "master_bedroom_1",
+          "dimensions": { "length": 14, "width": 12 },
+          "purpose": "bedroom",
+          "features": ["attached_bathroom", "balcony"],
+          "accessibility_features": ["grab_bars", "lowered_countertops"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "bedroom"
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 8, "width": 7 },
+          "purpose": "study"
+        },
+        {
+          "room_id": "guest_bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "bedroom"
+        },
+        {
+          "room_id": "prayer_room",
+          "dimensions": { "length": 7, "width": 6 },
+          "purpose": "prayer"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "accessibility_features": ["ramp", "wide_entryway"]
+        },
+        {
+          "opening_id": "garden_access",
+          "type": "gate",
+          "dimensions": { "length": 8, "width": 6 }
+        }
+      ],
+      "outdoor_features": [
+        {
+          "feature_id": "garden",
+          "dimensions": { "length": 30, "width": 40 },
+          "features": ["wheelchair_accessible_paths", "seating_area"]
+        },
+        {
+          "feature_id": "parking",
+          "type": "covered_parking",
+          "capacity": 2,
+          "accessibility_features": ["ramp_access"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "master_bedroom_2",
+          "dimensions": { "length": 14, "width": 12 },
+          "purpose": "bedroom",
+          "features": ["attached_bathroom", "balcony"],
+          "accessibility_features": ["grab_bars"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "bedroom"
+        },
+        {
+          "room_id": "balcony",
+          "dimensions": { "length": 15, "width": 8 },
+          "purpose": "outdoor_space"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase",
+          "type": "staircase",
+          "accessibility_features": ["handrails", "wheelchair_lift"]
+        }
+      ]
+    }
+  ]
+}

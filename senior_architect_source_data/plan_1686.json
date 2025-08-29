@@ -1,0 +1,230 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 205.0,
+      "style": "Mid-Century Modern"
+    },
+    "plot": {
+      "width": 4.0,
+      "depth": 25.0,
+      "orientation": "north",
+      "climate": "tropical with monsoons",
+      "topography": "ravine"
+    },
+    "roomBreakdown": [
+      {
+        "type": "brewery",
+        "area": 25.0,
+        "features": [
+          "temperature control",
+          "stainless steel fermentation tanks",
+          "sink",
+          "utility hookups"
+        ]
+      },
+      {
+        "type": "storage",
+        "area": 12.0,
+        "features": [
+          "climate-controlled",
+          "humidity regulation",
+          "secure access"
+        ]
+      }
+    ]
+  },
+  "total_area": 205.0,
+  "construction_cost": 410000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "brewery_room",
+          "type": "brewery",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 6.25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2.0,
+              "size": 1.5
+            }
+          ]
+        },
+        {
+          "id": "storage_room",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 6.25,
+            "width": 4,
+            "height": 3.0
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.0
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 9.25,
+            "width": 4,
+            "height": 4.0
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.0,
+              "type": "overhead"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 6.0
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2.0,
+              "size": 3.0
+            },
+            {
+              "wall": "south",
+              "position": 2.0,
+              "size": 3.0
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 6.0,
+            "width": 4,
+            "height": 4.0
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2.0,
+              "size": 2.0
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 10.0,
+            "width": 4,
+            "height": 4.5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2.0,
+              "size": 2.5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 14.5,
+            "width": 4,
+            "height": 4.5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2.0,
+              "size": 2.5
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 19.0,
+            "width": 4,
+            "height": 2.5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2.0,
+              "size": 0.6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

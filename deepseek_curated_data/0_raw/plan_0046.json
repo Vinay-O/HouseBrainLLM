@@ -1,0 +1,306 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 5,
+      "floors": 3,
+      "totalArea": 1000,
+      "style": "Art Deco"
+    },
+    "plot": {
+      "orientation": "North-facing entrance"
+    },
+    "roomBreakdown": [
+      {
+        "type": "swimming_pool",
+        "count": 1
+      },
+      {
+        "type": "rooftop_terrace",
+        "count": 1
+      },
+      {
+        "type": "open_plan_kitchen_living",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1000.0,
+  "construction_cost": 1800000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "open_plan_ground",
+          "type": "open_plan_kitchen_living",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_ground",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1_ground",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 8,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_2_first",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3_first",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2_first",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "family_lounge_first",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 15,
+            "width": 25,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_4_second",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bedroom_5_second",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bathroom_3_second",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "rooftop_terrace",
+          "type": "rooftop_terrace",
+          "bounds": {
+            "x": 10,
+            "y": 15,
+            "width": 25,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 12
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "swimming_pool",
+          "type": "swimming_pool",
+          "bounds": {
+            "x": 5,
+            "y": 25,
+            "width": 15,
+            "height": 30
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

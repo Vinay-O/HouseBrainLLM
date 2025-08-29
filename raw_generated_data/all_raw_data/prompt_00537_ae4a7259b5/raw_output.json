@@ -1,0 +1,81 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wardrobe", "attached_bathroom"],
+          "position": { "direction": "North" }
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "dimensions": { "length": 10, "width": 10 },
+          "features": ["wardrobe", "attached_bathroom"],
+          "position": { "direction": "East" }
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "bedroom",
+          "dimensions": { "length": 10, "width": 9 },
+          "features": ["wardrobe", "attached_bathroom"],
+          "position": { "direction": "West" }
+        },
+        {
+          "room_id": "living_room",
+          "type": "common_space",
+          "dimensions": { "length": 12, "width": 14 },
+          "features": ["sofa", "TV_unit"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "utility_space",
+          "dimensions": { "length": 9, "width": 8 },
+          "features": ["modular_kitchen", "dining_table"]
+        },
+        {
+          "room_id": "home_office",
+          "type": "special_room",
+          "dimensions": { "length": 8, "width": 8 },
+          "features": ["work_desktop", "book_shelves"]
+        },
+        {
+          "room_id": "home_theater",
+          "type": "entertainment_space",
+          "dimensions": { "length": 10, "width": 9 },
+          "features": ["projector_screen", "recliner_chairs"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "position": { "direction": "North" },
+          "dimensions": { "length": 3.5, "width": 2.5 }
+        },
+        {
+          "opening_id": "living_window",
+          "type": "window",
+          "position": { "direction": "East" },
+          "dimensions": { "length": 4, "width": 3 }
+        },
+        {
+          "opening_id": "bedroom_1_window",
+          "type": "window",
+          "position": { "direction": "West" },
+          "dimensions": { "length": 4, "width": 3 }
+        }
+      ]
+    }
+  ],
+  "building_constraints": {
+    "budget": "tight",
+    "style": "minimalist",
+    "orientation": "North-facing entrance",
+    "vastu_compliance": true
+  },
+  "area": { "total": 800, "unit": "sqft" }
+}

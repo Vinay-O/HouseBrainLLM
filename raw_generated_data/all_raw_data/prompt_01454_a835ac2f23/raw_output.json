@@ -1,0 +1,69 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wardrobe", "attached_bathroom"],
+          "position": { "direction": "north" }
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["sofa_set", "dining_table", "TV_unit"],
+          "position": { "direction": "east" }
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["modular_kitchen", "pantry"],
+          "position": { "direction": "southeast" }
+        },
+        {
+          "room_type": "servant_quarters",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["bed", "attached_bathroom"],
+          "position": { "direction": "south" }
+        }
+      ],
+      "openings": [
+        {
+          "type": "floor_to_ceiling_windows",
+          "positions": ["living_room", "bedroom"],
+          "material": "glass"
+        },
+        {
+          "type": "main_entrance",
+          "direction": "west",
+          "features": ["wooden_door", "small_porch"]
+        }
+      ],
+      "outdoor_features": [
+        {
+          "type": "garden",
+          "position": "north_and_east"
+        },
+        {
+          "type": "parking",
+          "capacity": 2,
+          "position": "southwest"
+        }
+      ]
+    }
+  ],
+  "plot_details": {
+    "dimensions": { "length": 80, "width": 50 },
+    "orientation": "west-facing",
+    "local_norms": [
+      "Setbacks and FAR as per local building regulations.",
+      "Provision for water harvesting and solar panels."
+    ],
+    "vastu_principles": [
+      "Main entrance on the west is acceptable but not ideal; recommended to have a small porch or veranda to balance energies.",
+      "Kitchen in the southeast direction adheres to Vastu principles.",
+      "Bedroom in the north or west as per family's preference, but north is more auspicious."
+    ]
+  }
+}

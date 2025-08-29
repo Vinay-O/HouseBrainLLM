@@ -1,0 +1,121 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall",
+          "description": "A spacious entrance hall with a North-facing door leading directly to the courtyard. Designed in a Brutalist style, featuring exposed concrete structures and minimalistic finishes.",
+          "area_sqft": 250,
+          "adjacencies": ["Lobby", "Courtyard"],
+          "vastu_alignment": "North facing entrance as per Vastu is auspicious for prosperity."
+        },
+        {
+          "name": "Living Room",
+          "description": "A large living area featuring industrial materials and open space layout typical of Brutalist design. Large windows to the courtyard.",
+          "area_sqft": 350,
+          "adjacencies": ["Dining Area", "Courtyard"]
+        },
+        {
+          "name": "Dining Area",
+          "description": "Adjacent to the living room, offering an expansive dining space with a kitchenette.",
+          "area_sqft": 200,
+          "adjacencies": ["Living Room", "Kitchen"]
+        },
+        {
+          "name": "Master Bedroom Suite",
+          "description": "A deluxe bedroom suite including master bed, en-suite bathroom, and walk-in closet. Walls built in exposed concrete to reflect Brutalist style.",
+          "area_sqft": 400,
+          "adjacencies": ["Guest Bedrooms", "Hallway"]
+        },
+        {
+          "name": "Guest Bedroom 1",
+          "description": "One of the guest bedrooms with ample space and natural light from the courtyard.",
+          "area_sqft": 250,
+          "adjacencies": ["Master Bedroom Suite", "Hallway"]
+        },
+        {
+          "name": "Guest Bedroom 2",
+          "description": "Another guest bedroom designed in a similar style as Guest Bedroom 1, ensuring symmetry and balance.",
+          "area_sqft": 250,
+          "adjacencies": ["Master Bedroom Suite", "Hallway"]
+        }
+      ],
+      "openings": [
+        {
+          "name": "Main Entrance",
+          "location": "North wall",
+          "dimensions": {"width": 8, "height": 7},
+          "description": "A robust, North-facing entrance designed in a Brutalist style with reinforced concrete and minimalistic detailing."
+        },
+        {
+          "name": "Window to Courtyard",
+          "location": "South wall of living room and dining area",
+          "dimensions": {"width": 6, "height": 4},
+          "description": "Large windows that provide ample natural light from the central courtyard, ensuring a blend of indoor and outdoor spaces."
+        },
+        {
+          "name": "Courtyard Access",
+          "location": "Between living room and dining area",
+          "dimensions": {"width": null, "height": null},
+          "description": "An opening leading to the central courtyard for natural ventilation and communal space."
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "name": "Home Office",
+          "description": "A dedicated home office space located on the upper floor, designed with an open plan layout and soundproofing elements.",
+          "area_sqft": 300,
+          "adjacencies": ["Guest Bedroom Suite", "Study"]
+        },
+        {
+          "name": "Family Room",
+          "description": "A versatile room for family gatherings and leisure activities. Features a relaxed seating area with industrial design elements.",
+          "area_sqft": 400,
+          "adjacencies": ["Home Office", "Hallway"]
+        }
+      ],
+      "openings": [
+        {
+          "name": "Staircase",
+          "location": "Northwest corner of the upper floor",
+          "dimensions": {"width": 5, "height": null},
+          "description": "A central staircase connecting the ground and upper floors in a minimalistic design."
+        },
+        {
+          "name": "Upper Floor Balcony Access",
+          "location": "East side of home office",
+          "dimensions": {"width": null, "height": null},
+          "description": "Provides access to an external balcony for additional outdoor space."
+        }
+      ]
+    },
+    {
+      "level_id": "mezzanine",
+      "rooms": [
+        {
+          "name": "Study/Reading Area",
+          "description": "A quiet area designed for reading and studying. This zone complements the home office with a focus on light and air flow.",
+          "area_sqft": 150,
+          "adjacencies": ["Home Office", "Family Room"]
+        }
+      ],
+      "openings": [
+        {
+          "name": "Mezzanine Opening",
+          "location": "Between Home Office and Family Room",
+          "dimensions": {"width": null, "height": null},
+          "description": "An open walkway connecting the study area to other upper floor spaces."
+        }
+      ]
+    }
+  ],
+  "total_area_sqft": 5000,
+  "notes": {
+    "brutalist_design_elements": "Exposed concrete structure, monolithic forms, and industrial detailing.",
+    "vastu_principles": "The North-facing entrance is designed according to Vastu for prosperity and positive energy flow. Courtyard placement ensures balance in spatial orientation."
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Mudroom",
+          "dimensions": {"length": 8, "width": 6},
+          "adjacent_to": ["entrance", "common corridor"]
+        },
+        {
+          "name": "Entrance Hall",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["alcove for shoe storage"],
+          "adjacent_to": ["living room", "dining area", "servant's quarter"]
+        },
+        {
+          "name": "Living Room",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["large window facing east to capture morning sunlight"],
+          "adjacent_to": ["entrance hall"]
+        },
+        {
+          "name": "Dining Area",
+          "dimensions": {"length": 8, "width": 6},
+          "features": ["table", "window for natural light"],
+          "adjacent_to": ["entrance hall"]
+        },
+        {
+          "name": "Kitchen",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["island counter", "dual sink"],
+          "adjacent_to": ["servant's quarter", "storage room"],
+          "vastu_note": "Positioned on the northern side to ensure efficient energy flow"
+        },
+        {
+          "name": "Dining Hall",
+          "dimensions": {"length": 12, "width": 8},
+          "features": ["open seating arrangement", "window for ventilation"],
+          "adjacent_to": ["entrance hall", "dining area"]
+        },
+        {
+          "name": "Servant's Quarters",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["small kitchenette", "bedroom area"],
+          "vastu_note": "Separated from main living areas to maintain privacy while ensuring connectivity"
+        },
+        {
+          "name": "Storage Room",
+          "dimensions": {"length": 6, "width": 4},
+          "features": ["built-in shelves"],
+          "adjacent_to": ["kitchen", "closet"]
+        },
+        {
+          "name": "Closet",
+          "dimensions": {"length": 8, "width": 6},
+          "features": ["wardrobe", "shelves"],
+          "vastu_note": "Placed on the east wall to maintain positive energy"
+        }
+      ],
+      "openings": [
+        {
+          "type": "front_door",
+          "direction": "west",
+          "dimensions": {"height": 7, "width": 3},
+          "vastu_note": "Ensures a balanced entry as per Vastu guidelines for west-facing plots"
+        },
+        {
+          "type": "service entrance",
+          "direction": "north-east",
+          "dimensions": {"height": 6, "width": 2.5}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "name": "Master Bedroom",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["en-suite bathroom", "walk-in closet"],
+          "vastu_note": "Positioned on the eastern side for enhanced wellness"
+        },
+        {
+          "name": "Bedroom 2",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["adjacent to Master Bedroom"],
+          "vastu_note": "Ensures quiet environment and energy balance"
+        },
+        {
+          "name": "Bedroom 3",
+          "dimensions": {"length": 8, "width": 6},
+          "features": [],
+          "vastu_note": "Optimized for family living with sufficient privacy"
+        },
+        {
+          "name": "Bedroom 4",
+          "dimensions": {"length": 8, "width": 6},
+          "features": [],
+          "adjacent_to": ["bedroom 3"]
+        },
+        {
+          "name": "Guest Bedroom",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["small closet"],
+          "vastu_note": "Allocated a comfortable space for guests"
+        },
+        {
+          "name": "Balcony",
+          "dimensions": {"length": 15, "width": 4},
+          "features": ["balustrade", "window overlooking garden"],
+          "adjacent_to": ["master bedroom"]
+        },
+        {
+          "name": "En-suite Bathroom",
+          "dimensions": {"length": 6, "width": 5},
+          "features": ["bathtub", "shower area"],
+          "adjacent_to": ["Master Bedroom"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "balcony_door",
+          "direction": "north-east",
+          "dimensions": {"height": 6, "width": 3}
+        },
+        {
+          "type": "interior staircase",
+          "direction": "vertical",
+          "dimensions": {"height": 9, "width": 5},
+          "vastu_note": "Placed centrally to maintain structural balance"
+        }
+      ]
+    }
+  ]
+}

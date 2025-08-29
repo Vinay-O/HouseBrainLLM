@@ -1,0 +1,94 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 16, "width": 20},
+          "position": {"x_start": 40, "y_start": 0},
+          "door_openings": ["east"],
+          "windows": ["west"]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 12, "width": 16},
+          "position": {"x_start": 48, "y_start": 20},
+          "door_openings": ["south"],
+          "windows": []
+        },
+        {
+          "room_name": "Bedroom",
+          "dimensions": {"length": 14, "width": 16},
+          "position": {"x_start": 0, "y_start": 0},
+          "door_openings": ["east", "south"],
+          "windows": []
+        },
+        {
+          "room_name": "Bathroom",
+          "dimensions": {"length": 8, "width": 12},
+          "position": {"x_start": 76, "y_start": 0},
+          "door_openings": ["east"],
+          "windows": []
+        },
+        {
+          "room_name": "Garage",
+          "dimensions": {"length": 30, "width": 16},
+          "position": {"x_start": 80, "y_start": 24},
+          "door_openings": ["west"],
+          "windows": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "entrance",
+          "dimensions": {"width": 4},
+          "position": {"x_center": 56, "y_start": -2}
+        },
+        {
+          "opening_type": "window",
+          "dimensions": {"height": 8, "width": 10},
+          "position": {"x_center": 60, "y_end": 20}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": {"length": 18, "width": 24},
+          "position": {"x_start": 0, "y_start": 0},
+          "door_openings": ["south"],
+          "windows": []
+        },
+        {
+          "room_name": "Study Room",
+          "dimensions": {"length": 16, "width": 8},
+          "position": {"x_start": 24, "y_start": 32},
+          "door_openings": ["north", "west"],
+          "windows": []
+        },
+        {
+          "room_name": "Balcony",
+          "dimensions": {"length": 16, "width": 8},
+          "position": {"x_start": 40, "y_start": 32},
+          "door_openings": ["west"],
+          "windows": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "window",
+          "dimensions": {"height": 8, "width": 10},
+          "position": {"x_center": 60, "y_end": 40}
+        },
+        {
+          "opening_type": "entrance_staircase",
+          "dimensions": {"length": 3, "width": 3},
+          "position": {"x_start": 75, "y_start": 28}
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Entrance Hall",
+          "dimensions": {"length": 10, "width": 5},
+          "location": "near main entrance"
+        },
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": {"length": 12, "width": 8},
+          "location": "south-western corner",
+          "openings": ["balcony"]
+        },
+        {
+          "room_name": "Bedroom 2",
+          "dimensions": {"length": 10, "width": 6},
+          "location": "adjacent to master bedroom",
+          "openings": ["balcony"]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 8, "width": 5},
+          "location": "south-eastern corner"
+        },
+        {
+          "room_name": "Dining Room",
+          "dimensions": {"length": 12, "width": 6},
+          "location": "north of kitchen"
+        },
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 15, "width": 8},
+          "location": "east side near dining room"
+        },
+        {
+          "room_name": "Servant's Quarters",
+          "dimensions": {"length": 6, "width": 4},
+          "location": "north-western corner of the ground floor"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "location": ["Living Room", "Kitchen"]
+        },
+        {
+          "opening_type": "Door",
+          "location": ["Entrance Hall", "each Bedroom"]
+        },
+        {
+          "opening_type": "Central Courtyard",
+          "dimensions": {"length": 15, "width": 10},
+          "location": "center of the ground floor"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Bedroom 3",
+          "dimensions": {"length": 12, "width": 8},
+          "location": "south-western corner",
+          "openings": ["balcony"]
+        },
+        {
+          "room_name": "Bedroom 4",
+          "dimensions": {"length": 10, "width": 6},
+          "location": "adjacent to bedroom 3",
+          "openings": ["balcony"]
+        },
+        {
+          "room_name": "Study Room",
+          "dimensions": {"length": 8, "width": 5},
+          "location": "south-eastern corner"
+        },
+        {
+          "room_name": "Guest Bathroom",
+          "dimensions": {"length": 4, "width": 3},
+          "location": "east side near study room"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "location": ["Study Room", "each Bedroom"]
+        },
+        {
+          "opening_type": "Door",
+          "location": ["each Bedroom", "Study Room"]
+        }
+      ]
+    }
+  ]
+}

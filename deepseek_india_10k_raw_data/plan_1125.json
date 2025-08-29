@@ -1,0 +1,482 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 3,
+      "totalArea": 2400,
+      "style": "Goan Portuguese colonial with tropical adaptations"
+    },
+    "plot": {
+      "width": 20,
+      "depth": 40,
+      "orientation": "west",
+      "location": "Bhopal lake district",
+      "challenges": [
+        "narrow plot",
+        "monsoon flooding",
+        "waterlogging"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4,
+        "description": "Primary suite, two guest rooms, and grandparents' accessible bedroom"
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "description": "Ensuite bathrooms and accessible bathroom for grandparents"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Formal living area with high ceilings"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Modern kitchen with composting system integration"
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "description": "Family dining area adjacent to kitchen"
+      },
+      {
+        "type": "games_room",
+        "count": 1,
+        "description": "Traditional games room for chess, carrom, and regional games"
+      },
+      {
+        "type": "veranda",
+        "count": 2,
+        "description": "Wrap-around verandas with deep overhangs for passive cooling"
+      },
+      {
+        "type": "garden",
+        "count": 1,
+        "description": "Integrated kitchen garden with composting system"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "description": "Laundry and storage area"
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "description": "Small prayer room with traditional elements"
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 720000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 3
+            }
+          ],
+          "windows": [],
+          "description": "Sacred entrance with traditional kolam threshold designs and decorative elements"
+        },
+        {
+          "id": "grandparents_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 6,
+            "y": 0,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7,
+              "size": "large"
+            }
+          ],
+          "description": "Accessible ground floor bedroom for aging grandparents with ensuite bathroom"
+        },
+        {
+          "id": "grandparents_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 6,
+            "y": 12,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4,
+              "size": "small"
+            }
+          ],
+          "description": "Accessible bathroom with safety features for grandparents"
+        },
+        {
+          "id": "kitchen_ground",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 12,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 5,
+              "size": "medium"
+            }
+          ],
+          "description": "Ground floor kitchen with composting system access to garden"
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6,
+              "size": "large"
+            }
+          ],
+          "description": "Formal dining area adjacent to kitchen and living space"
+        },
+        {
+          "id": "garden_compost",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [],
+          "description": "Raised kitchen garden with integrated composting system and flood-resistant design"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "size": "extra-large"
+            }
+          ],
+          "description": "Main living area with high ceilings, capturing west-facing evening breezes"
+        },
+        {
+          "id": "veranda_main",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 20,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 4,
+              "size": "full-length"
+            }
+          ],
+          "description": "Wrap-around veranda with deep overhangs for solar passive design and monsoon protection"
+        },
+        {
+          "id": "games_room",
+          "type": "games_room",
+          "bounds": {
+            "x": 0,
+            "y": 24,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6,
+              "size": "medium"
+            }
+          ],
+          "description": "Traditional games room for chess, carrom, and regional games with heritage decor"
+        },
+        {
+          "id": "guest_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 24,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "size": "medium"
+            }
+          ],
+          "description": "Guest bedroom with ensuite bathroom"
+        },
+        {
+          "id": "guest_bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 34,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 3,
+              "size": "small"
+            }
+          ],
+          "description": "Ensuite bathroom for guest bedroom"
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 6,
+              "size": "large"
+            }
+          ],
+          "description": "Primary bedroom suite with sitting area and decorative chhatri elements"
+        },
+        {
+          "id": "primary_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "size": "medium"
+            }
+          ],
+          "description": "Luxury ensuite bathroom for primary bedroom"
+        },
+        {
+          "id": "guest_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 6,
+              "size": "medium"
+            }
+          ],
+          "description": "Second guest bedroom with heritage design elements"
+        },
+        {
+          "id": "guest_bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "size": "small"
+            }
+          ],
+          "description": "Shared bathroom for guest bedroom"
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 12,
+            "y": 18,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4,
+              "size": "stained-glass"
+            }
+          ],
+          "description": "Traditional prayer room with domed pavilion design"
+        },
+        {
+          "id": "roof_terrace",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 26,
+            "width": 20,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [],
+          "description": "Domestic pavilion terrace with panoramic views, decorative chhatris, and monsoon drainage system"
+        }
+      ]
+    }
+  ]
+}

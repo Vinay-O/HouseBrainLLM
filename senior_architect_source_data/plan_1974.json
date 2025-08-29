@@ -1,0 +1,266 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 240,
+      "style": "High-Tech Architecture"
+    },
+    "plot": {
+      "width": 4,
+      "depth": 30,
+      "orientation": "south",
+      "climate": "continental with harsh winters",
+      "constraints": [
+        "narrow urban infill",
+        "privacy from neighbors"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 30
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 12
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 20
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 40
+      },
+      {
+        "type": "garage",
+        "count": 1,
+        "area": 24
+      },
+      {
+        "type": "meditation_pavilion",
+        "count": 1,
+        "area": 16
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 8
+      }
+    ]
+  },
+  "total_area": 240.0,
+  "construction_cost": 720000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "overhead"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 4,
+            "height": 2
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "clerestory",
+              "size": "narrow"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "fixed",
+              "size": "full-height"
+            }
+          ]
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 4,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "fixed",
+              "size": "full-height"
+            }
+          ]
+        },
+        {
+          "id": "meditation_pavilion_0",
+          "type": "meditation_pavilion",
+          "bounds": {
+            "x": 0,
+            "y": 26,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "sliding"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "fixed",
+              "size": "full-height"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "clerestory",
+              "size": "narrow"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "clerestory",
+              "size": "narrow"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "clerestory",
+              "size": "narrow"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 800,
+      "style": "Minimalist Modern with Gujarati Pol influences"
+    },
+    "plot": {
+      "orientation": "north",
+      "area": 800,
+      "location": "coastal",
+      "frontage": "limited"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "home_office",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "count": 1,
+        "area": 60
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 40
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 150
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 1440000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_porch",
+          "type": "porch",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4.0,
+              "type": "main_entrance"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "intricate_jaali_screen",
+            "seismic_safe_frame"
+          ]
+        },
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6.0,
+              "type": "sliding"
+            },
+            {
+              "wall": "north",
+              "position": 6.0,
+              "type": "sliding"
+            },
+            {
+              "wall": "east",
+              "position": 7.5,
+              "type": "sliding"
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "type": "sliding"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "skylight",
+            "jaali_screens_north_wall",
+            "seismic_dampers"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4.0,
+              "type": "standard",
+              "to": "entrance_porch"
+            },
+            {
+              "wall": "east",
+              "position": 5.0,
+              "type": "sliding",
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 4.0,
+              "type": "fixed",
+              "features": [
+                "jaali_screen"
+              ]
+            }
+          ],
+          "features": [
+            "LED_lighting",
+            "seismic_resistant_walls"
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4.0,
+              "type": "standard",
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4.0,
+              "type": "fixed",
+              "features": [
+                "double_glazed",
+                "noise_reducing"
+              ]
+            },
+            {
+              "wall": "west",
+              "position": 6.0,
+              "type": "fixed",
+              "features": [
+                "jaali_screen"
+              ]
+            }
+          ],
+          "features": [
+            "built_in_desk",
+            "video_conferencing_setup",
+            "LED_task_lighting",
+            "acoustic_panels",
+            "seismic_safe_anchors"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5.0,
+              "type": "standard",
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5.0,
+              "type": "casement",
+              "features": [
+                "sea_breeze_ventilation"
+              ]
+            }
+          ],
+          "features": [
+            "minimalist_cabinetry",
+            "LED_under_cabinet_lighting",
+            "seismic_restraints_appliances"
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6.0,
+              "type": "standard",
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6.0,
+              "type": "casement",
+              "features": [
+                "sea_breeze_ventilation",
+                "blackout_blinds"
+              ]
+            },
+            {
+              "wall": "south",
+              "position": 5.0,
+              "type": "fixed",
+              "features": [
+                "jaali_screen"
+              ]
+            }
+          ],
+          "features": [
+            "built_in_wardrobe",
+            "LED_lighting",
+            "seismic_safe_furniture_anchors"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 22,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4.0,
+              "type": "pocket",
+              "to": "utility_area"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4.0,
+              "type": "high_vent",
+              "features": [
+                "frosted_glass",
+                "jaali_screen"
+              ]
+            }
+          ],
+          "features": [
+            "water_efficient_fixtures",
+            "LED_vanity_lighting",
+            "seismic_shutoff_valves"
+          ]
+        },
+        {
+          "id": "utility_area",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 22,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4.0,
+              "type": "standard",
+              "to": "central_courtyard"
+            },
+            {
+              "wall": "east",
+              "position": 4.0,
+              "type": "pocket",
+              "to": "bathroom"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "stacked_washer_dryer",
+            "storage_cabinets",
+            "seismic_restraints"
+          ]
+        }
+      ]
+    }
+  ]
+}

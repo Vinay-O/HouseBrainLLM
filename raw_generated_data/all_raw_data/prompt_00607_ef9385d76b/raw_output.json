@@ -1,0 +1,126 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 18, "width": 15},
+          "features": ["floor-to-ceiling windows", "wheelchair accessible"],
+          "position": {"x": 0, "y": 0}
+        },
+        {
+          "room_name": "Open-Plan Kitchen",
+          "dimensions": {"length": 12, "width": 15},
+          "features": ["floor-to-ceiling windows", "wheelchair accessible"],
+          "position": {"x": 30, "y": 0}
+        },
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["balcony with floor-to-ceiling windows", "wheelchair accessible"],
+          "position": {"x": 0, "y": 18}
+        },
+        {
+          "room_name": "Bedroom 2",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["balcony with floor-to-ceiling windows", "wheelchair accessible"],
+          "position": {"x": 0, "y": 30}
+        },
+        {
+          "room_name": "Bedroom 3",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["balcony with floor-to-ceiling windows", "wheelchair accessible"],
+          "position": {"x": 18, "y": 18}
+        },
+        {
+          "room_name": "Bedroom 4",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["balcony with floor-to-ceiling windows", "wheelchair accessible"],
+          "position": {"x": 18, "y": 30}
+        },
+        {
+          "room_name": "Guest Toilet",
+          "dimensions": {"length": 6, "width": 5},
+          "features": ["floor-to-ceiling windows", "wheelchair accessible"],
+          "position": {"x": 24, "y": 0}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "dimensions": {"height": 7, "width": 3},
+          "location": {"room_from": "Living Room", "room_to": "Master Bedroom"},
+          "position": {"x": 0, "y": 18}
+        },
+        {
+          "opening_type": "door",
+          "dimensions": {"height": 7, "width": 3},
+          "location": {"room_from": "Living Room", "room_to": "Bedroom 2"},
+          "position": {"x": 0, "y": 30}
+        },
+        {
+          "opening_type": "door",
+          "dimensions": {"height": 7, "width": 3},
+          "location": {"room_from": "Living Room", "room_to": "Bedroom 3"},
+          "position": {"x": 18, "y": 18}
+        },
+        {
+          "opening_type": "door",
+          "dimensions": {"height": 7, "width": 3},
+          "location": {"room_from": "Living Room", "room_to": "Bedroom 4"},
+          "position": {"x": 18, "y": 30}
+        },
+        {
+          "opening_type": "door",
+          "dimensions": {"height": 7, "width": 3},
+          "location": {"room_from": "Living Room", "room_to": "Open-Plan Kitchen"},
+          "position": {"x": 30, "y": 0}
+        },
+        {
+          "opening_type": "door",
+          "dimensions": {"height": 7, "width": 3},
+          "location": {"room_from": "Living Room", "room_to": "Guest Toilet"},
+          "position": {"x": 24, "y": 0}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Study Room",
+          "dimensions": {"length": 15, "width": 15},
+          "features": ["floor-to-ceiling windows", "wheelchair accessible"],
+          "position": {"x": 0, "y": 0}
+        },
+        {
+          "room_name": "Guest Bedroom",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["balcony with floor-to-ceiling windows", "wheelchair accessible"],
+          "position": {"x": 18, "y": 0}
+        },
+        {
+          "room_name": "Pantry",
+          "dimensions": {"length": 6, "width": 5},
+          "features": ["floor-to-ceiling windows", "wheelchair accessible"],
+          "position": {"x": 30, "y": 18}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "dimensions": {"height": 7, "width": 3},
+          "location": {"room_from": "Study Room", "room_to": "Guest Bedroom"},
+          "position": {"x": 18, "y": 0}
+        },
+        {
+          "opening_type": "door",
+          "dimensions": {"height": 7, "width": 3},
+          "location": {"room_from": "Study Room", "room_to": "Pantry"},
+          "position": {"x": 30, "y": 18}
+        }
+      ]
+    }
+  ]
+}

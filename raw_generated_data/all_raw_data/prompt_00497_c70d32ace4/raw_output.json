@@ -1,0 +1,68 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "area_sqft": 300,
+          "location": {"x": 25, "y": 50},
+          "orientation": "East"
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 150,
+          "location": {"x": 60, "y": 75},
+          "orientation": "South-East"
+        },
+        {
+          "room_name": "Bedroom 1",
+          "area_sqft": 200,
+          "location": {"x": 35, "y": 90},
+          "orientation": "North"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "direction": "East",
+          "room_connected_to": "Living Room"
+        },
+        {
+          "opening_type": "Door",
+          "direction": "South",
+          "room_connected_to": "Kitchen"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Bedroom 2",
+          "area_sqft": 175,
+          "location": {"x": 40, "y": 60},
+          "orientation": "North-East"
+        },
+        {
+          "room_name": "Bedroom 3",
+          "area_sqft": 175,
+          "location": {"x": 85, "y": 60},
+          "orientation": "South-West"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "direction": "North-East",
+          "room_connected_to": "Bedroom 2"
+        },
+        {
+          "opening_type": "Window",
+          "direction": "South-West",
+          "room_connected_to": "Bedroom 3"
+        }
+      ]
+    }
+  ]
+}

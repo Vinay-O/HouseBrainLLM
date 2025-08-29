@@ -1,0 +1,92 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "type": "entrance",
+          "dimensions": { "length": 10, "width": 6 },
+          "position": { "direction": "North" }
+        },
+        {
+          "type": "living_room",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["open_plan", "concrete_flooring"]
+        },
+        {
+          "type": "kitchen",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["open_plan", "modular_cabinetry"]
+        },
+        {
+          "type": "bedroom_1",
+          "dimensions": { "length": 18, "width": 14 },
+          "features": ["attached_bathroom", "large_windows"]
+        },
+        {
+          "type": "bedroom_2",
+          "dimensions": { "length": 16, "width": 13 },
+          "features": ["attached_bathroom", "wardrobe"]
+        },
+        {
+          "type": "swimming_pool",
+          "dimensions": { "length": 30, "width": 15 },
+          "features": ["concrete_decking", "outdoor_shower"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "entrance_gate",
+          "dimensions": { "height": 10, "width": 6 }
+        },
+        {
+          "type": "window",
+          "dimensions": { "length": 5, "height": 7 },
+          "position": { "room": "bedroom_1", "orientation": "East" }
+        },
+        {
+          "type": "window",
+          "dimensions": { "length": 4, "height": 6 },
+          "position": { "room": "kitchen", "orientation": "South" }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "type": "bedroom_3",
+          "dimensions": { "length": 18, "width": 14 },
+          "features": ["attached_bathroom", "balcony"]
+        },
+        {
+          "type": "study_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["large_windows", "built-in_shelves"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "balcony_door",
+          "dimensions": { "height": 7, "width": 4 }
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "features": ["outdoor_furniture", "green_spaces", "barbecue_area"],
+      "openings": [
+        {
+          "type": "staircase_access",
+          "dimensions": { "width": 4 }
+        }
+      ]
+    }
+  ],
+  "building_style": "Brutalist",
+  "plot_dimensions": { "length": 100, "width": 100 },
+  "orientation": "North-facing entrance",
+  "vastu_compliance": true,
+  "swimming_pool": true
+}

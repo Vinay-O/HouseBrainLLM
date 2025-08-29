@@ -1,0 +1,80 @@
+{"levels": [
+    {
+        "level_id": "ground_floor",
+        "rooms": [
+            {
+                "room_id": "living_room",
+                "dimensions": {"width": 20, "length": 25},
+                "purpose": "main living area",
+                "adjacent_to": ["dining_area", "entrance_hall"],
+                "vastu_alignment": "northern"
+            },
+            {
+                "room_id": "dining_area",
+                "dimensions": {"width": 15, "length": 20},
+                "purpose": "dining room",
+                "adjacent_to": ["living_room", "kitchen"],
+                "vastu_alignment": "eastern"
+            },
+            {
+                "room_id": "kitchen",
+                "dimensions": {"width": 15, "length": 20},
+                "purpose": "cooking area",
+                "adjacent_to": ["dining_area", "service_room"],
+                "vastu_alignment": "southern"
+            },
+            {
+                "room_id": "bedroom_1",
+                "dimensions": {"width": 15, "length": 20},
+                "purpose": "master bedroom",
+                "adjacent_to": ["bedroom_2", "bathroom"],
+                "vastu_alignment": "northwestern"
+            },
+            {
+                "room_id": "bedroom_2",
+                "dimensions": {"width": 15, "length": 20},
+                "purpose": "secondary bedroom",
+                "adjacent_to": ["bedroom_1", "bathroom"],
+                "vastu_alignment": "northeastern"
+            },
+            {
+                "room_id": "bathroom",
+                "dimensions": {"width": 8, "length": 10},
+                "purpose": "shared bathroom",
+                "adjacent_to": ["bedrooms", "utility_room"],
+                "vastu_alignment": "western"
+            },
+            {
+                "room_id": "study_office",
+                "dimensions": {"width": 15, "length": 20},
+                "purpose": "home office / study",
+                "adjacent_to": ["living_room"],
+                "vastu_alignment": "northwest"
+            },
+            {
+                "room_id": "service_room",
+                "dimensions": {"width": 10, "length": 12},
+                "purpose": "storage and laundry",
+                "vastu_alignment": "southeastern"
+            }
+        ],
+        "openings": [
+            {
+                "opening_type": "entrance_door",
+                "location": "northern_facade",
+                "dimensions": {"width": 4, "height": 7}
+            },
+            {
+                "opening_type": "windows",
+                "location": "living_room",
+                "dimensions": {"width": 5, "height": 6},
+                "vastu_alignment": "eastern"
+            },
+            {
+                "opening_type": "balcony_window",
+                "location": "bedroom_1",
+                "dimensions": {"width": 3, "height": 4}
+            }
+        ]
+    }
+]}

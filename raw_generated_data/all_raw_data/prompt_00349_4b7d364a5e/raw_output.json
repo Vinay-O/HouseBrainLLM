@@ -1,0 +1,101 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 12, "width": 15 },
+          "features": ["wheelchair accessible", "scandinavian decor"],
+          "adjacent_to": ["dining_room", "kitchen"]
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 10, "width": 12 },
+          "features": ["wheelchair accessible", "scandinavian decor"],
+          "adjacent_to": ["living_room", "kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wheelchair accessible", "modular", "scandinavian decor"],
+          "adjacent_to": ["dining_room", "utility"]
+        },
+        {
+          "room_id": "master_bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["wheelchair accessible", "attached bathroom", "scandinavian decor"],
+          "adjacent_to": ["balcony"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 10, "width": 10 },
+          "features": ["wheelchair accessible", "scandinavian decor"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wheelchair accessible", "scandinavian decor"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 10, "width": 12 },
+          "features": ["wheelchair accessible", "scandinavian decor"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "gym",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["private", "wheelchair accessible"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "utility",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["wheelchair accessible"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "garage",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["two-car", "wheelchair accessible"],
+          "adjacent_to": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 7 },
+          "accessibility": "wheelchair accessible"
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 7 },
+          "accessibility": "wheelchair accessible"
+        },
+        {
+          "opening_id": "garage_entrance",
+          "type": "door",
+          "dimensions": { "length": 8, "width": 7 },
+          "accessibility": "wheelchair accessible"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["scandinavian decor"],
+          "adjacent_to": []
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

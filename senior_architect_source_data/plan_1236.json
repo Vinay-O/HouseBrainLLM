@@ -1,0 +1,325 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1250,
+      "style": "Deconstructivist"
+    },
+    "plot": {
+      "topography": "rocky_outcrop",
+      "climate": "continental_harsh_winters",
+      "orientation": "south_facing",
+      "privacy_considerations": [
+        "neighboring_properties_north",
+        "natural_stone_formations_east_and_west"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "performance_space",
+        "area": 400
+      },
+      {
+        "type": "living_room",
+        "area": 250
+      },
+      {
+        "type": "kitchen",
+        "area": 150
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "guest_room",
+        "area": 150
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 1250.0,
+  "construction_cost": 225000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "performance_space",
+          "type": "performance_space",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "to_room": "glass_link_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "length": 10,
+              "orientation": "south"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 15
+              },
+              "length": 10,
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "glass_link_1",
+          "type": "glass_link",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 5,
+            "height": 4
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 2
+              },
+              "to_room": "performance_space"
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 2
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 2.5,
+                "y": 0
+              },
+              "length": 4,
+              "orientation": "south"
+            },
+            {
+              "position": {
+                "x": 2.5,
+                "y": 4
+              },
+              "length": 4,
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "to_room": "glass_link_1"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 7.5
+              },
+              "to_room": "glass_link_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 15
+              },
+              "length": 10,
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 10
+              },
+              "length": 5,
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 10
+              },
+              "length": 5,
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "glass_link_2",
+          "type": "glass_link",
+          "bounds": {
+            "x": 40,
+            "y": 8,
+            "width": 5,
+            "height": 4
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 2
+              },
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 2
+              },
+              "to_room": "guest_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 2.5,
+                "y": 0
+              },
+              "length": 4,
+              "orientation": "south"
+            },
+            {
+              "position": {
+                "x": 2.5,
+                "y": 4
+              },
+              "length": 4,
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "guest_room",
+          "type": "guest_room",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "to_room": "glass_link_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 15
+              },
+              "length": 5,
+              "orientation": "south"
+            }
+          ],
+          "features": [
+            "murphy_bed_system"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "to_room": "guest_room"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

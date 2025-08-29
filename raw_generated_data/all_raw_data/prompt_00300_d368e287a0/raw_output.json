@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "position": { "x": 5, "y": 10 },
+          "size": { "width": 4, "length": 6 },
+          "additional_features": ["Attached Bathroom", "Walk-in Closet"]
+        },
+        {
+          "room_name": "Guest Bedroom 1",
+          "position": { "x": 15, "y": 10 },
+          "size": { "width": 3, "length": 4 },
+          "additional_features": ["Shared Bathroom"]
+        },
+        {
+          "room_name": "Guest Bedroom 2",
+          "position": { "x": 19, "y": 10 },
+          "size": { "width": 3, "length": 4 },
+          "additional_features": ["Shared Bathroom"]
+        },
+        {
+          "room_name": "Living Room",
+          "position": { "x": 5, "y": 20 },
+          "size": { "width": 8, "length": 6 }
+        },
+        {
+          "room_name": "Kitchen",
+          "position": { "x": 14, "y": 20 },
+          "size": { "width": 4, "length": 4 },
+          "additional_features": ["Balcony"]
+        },
+        {
+          "room_name": "Dining Room",
+          "position": { "x": 9, "y": 25 },
+          "size": { "width": 6, "length": 3 }
+        },
+        {
+          "room_name": "Study/Office",
+          "position": { "x": 17, "y": 20 },
+          "size": { "width": 4, "length": 4 }
+        },
+        {
+          "room_name": "Utility Room",
+          "position": { "x": 18, "y": 25 },
+          "size": { "width": 3, "length": 3 }
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "from_room": "Living Room",
+          "to_room": "Dining Room"
+        },
+        {
+          "type": "window",
+          "location": { "x": 12, "y": 20 }
+        },
+        {
+          "type": "window",
+          "location": { "x": 6, "y": 25 }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom (Second Floor)",
+          "position": { "x": 5, "y": 10 },
+          "size": { "width": 4, "length": 6 },
+          "additional_features": ["Attached Bathroom", "Walk-in Closet"]
+        },
+        {
+          "room_name": "Guest Bedroom",
+          "position": { "x": 15, "y": 10 },
+          "size": { "width": 3, "length": 4 },
+          "additional_features": ["Shared Bathroom"]
+        },
+        {
+          "room_name": "Pantry",
+          "position": { "x": 20, "y": 15 },
+          "size": { "width": 3, "length": 2 }
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "from_room": "Master Bedroom (Second Floor)",
+          "to_room": "Guest Bedroom"
+        },
+        {
+          "type": "window",
+          "location": { "x": 10, "y": 20 }
+        }
+      ]
+    },
+    {
+      "level_id": "roof_terrace",
+      "rooms": [
+        {
+          "room_name": "Rooftop Terrace",
+          "position": { "x": 5, "y": 10 },
+          "size": { "width": 20, "length": 8 }
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

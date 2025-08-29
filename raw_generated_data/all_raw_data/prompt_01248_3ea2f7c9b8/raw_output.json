@@ -1,0 +1,105 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_foyer",
+          "dimensions": { "length": 10, "width": 6 },
+          "purpose": "entrance foyer",
+          "features": ["natural light", "ventilation"]
+        },
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 18, "width": 14 },
+          "purpose": "living room",
+          "features": ["natural light", "ventilation", "central courtyard view"],
+          "adjacent_to": ["dining_room", "kitchen"]
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "dining room",
+          "features": ["natural light", "ventilation"],
+          "adjacent_to": ["kitchen", "living_room"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "kitchen",
+          "features": ["natural light", "ventilation"],
+          "adjacent_to": ["dining_room"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 16, "width": 12 },
+          "purpose": "bedroom",
+          "features": ["natural light", "ventilation", "attached bathroom"],
+          "adjacent_to": ["central_courtyard"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 16, "width": 12 },
+          "purpose": "bedroom",
+          "features": ["natural light", "ventilation", "attached bathroom"],
+          "adjacent_to": ["central_courtyard"]
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "study room",
+          "features": ["natural light", "ventilation"],
+          "adjacent_to": ["central_courtyard"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 7, "width": 3 },
+          "location": "front of the house"
+        },
+        {
+          "opening_id": "courtyard_access_1",
+          "type": "archway",
+          "dimensions": { "length": 6, "width": 4 },
+          "location": "between living room and courtyard"
+        },
+        {
+          "opening_id": "courtyard_access_2",
+          "type": "archway",
+          "dimensions": { "length": 6, "width": 4 },
+          "location": "between bedroom 1 and courtyard"
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "dimensions": { "length": 7, "width": 3 },
+          "location": "back of the house, near kitchen"
+        }
+      ],
+      "central_courtyard": {
+        "dimensions": { "length": 16, "width": 12 },
+        "features": ["water feature", "landscaping", "seating area"]
+      }
+    },
+    {
+      "level_id": "upper_level",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 16, "width": 12 },
+          "purpose": "bedroom",
+          "features": ["natural light", "ventilation", "attached bathroom", "balcony overlooking courtyard"],
+          "adjacent_to": ["central_courtyard"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase",
+          "type": "staircase",
+          "dimensions": { "length": 6, "width": 4 },
+          "location": "near entrance foyer"
+        }
+      ]
+    }
+  ] }

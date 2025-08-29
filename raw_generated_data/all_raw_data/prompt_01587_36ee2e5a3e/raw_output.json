@@ -1,0 +1,34 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {"name": "living_room", "dimensions": {"length": 20, "width": 15}, "adjacent_to": ["entrance_hall"], "vastu_orientation": "north_east"},
+      {"name": "dining_area", "dimensions": {"length": 15, "width": 10}, "adjacent_to": ["kitchen"], "vastu_orientation": "south"},
+      {"name": "kitchen", "dimensions": {"length": 12, "width": 8}, "adjacent_to": ["dining_area"], "vastu_orientation": "west"},
+      {"name": "entrance_hall", "dimensions": {"length": 10, "width": 10}, "adjacent_to": ["living_room"], "vastu_orientation": "north"},
+      {"name": "balcony1", "dimensions": {"length": 6, "width": 4}, "adjacent_to": ["bedroom1"], "vastu_orientation": "east"},
+      {"name": "guest_room", "dimensions": {"length": 12, "width": 10}, "adjacent_to": ["balcony2"], "vastu_orientation": "west"}
+    ],
+    "openings": [
+      {"type": "entrance_door", "location": "front", "dimensions": {"height": 7, "width": 3}},
+      {"type": "windows", "location": "living_room", "dimensions": {"height": 4, "width": 2}}
+    ]
+  },
+  {
+    "level_id": "first_floor",
+    "rooms": [
+      {"name": "bedroom1", "dimensions": {"length": 15, "width": 12}, "balcony": "spacious_balcony1", "vastu_orientation": "north"},
+      {"name": "bedroom2", "dimensions": {"length": 15, "width": 12}, "balcony": "spacious_balcony2", "vastu_orientation": "south_east"},
+      {"name": "master_bedroom", "dimensions": {"length": 18, "width": 14}, "balcony": "spacious_balcony3", "vastu_orientation": "north_west"},
+      {"name": "ensuite", "dimensions": {"length": 8, "width": 6}, "adjacent_to": ["master_bedroom"], "vastu_orientation": "south"}
+    ],
+    "openings": [
+      {"type": "balcony_opening", "location": "bedroom1", "dimensions": {"height": 4, "width": 2}},
+      {"type": "balcony_opening", "location": "bedroom2", "dimensions": {"height": 4, "width": 2}},
+      {"type": "balcony_opening", "location": "master_bedroom", "dimensions": {"height": 5, "width": 3}}
+    ]
+  }
+],
+"external_features": [
+  {"feature": "swimming_pool", "dimensions": {"length": 30, "width": 15}, "location": "rear"}
+]}

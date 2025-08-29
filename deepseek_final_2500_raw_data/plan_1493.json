@@ -1,0 +1,626 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 4,
+      "totalArea": 5200,
+      "style": "Neo-Classical"
+    },
+    "plot": {
+      "shape": "elongated rectangle",
+      "orientation": "east-west linear",
+      "climate": "humid subtropical",
+      "adjacency": "railway",
+      "paving": "permeable materials"
+    },
+    "roomBreakdown": [
+      {
+        "type": "music_room",
+        "requirements": "acoustic isolation"
+      },
+      {
+        "type": "living_room",
+        "requirements": "panoramic views"
+      },
+      {
+        "type": "master_bedroom",
+        "requirements": "panoramic views"
+      },
+      {
+        "type": "bedroom",
+        "requirements": "natural lighting"
+      },
+      {
+        "type": "bedroom",
+        "requirements": "natural lighting"
+      },
+      {
+        "type": "bedroom",
+        "requirements": "natural lighting"
+      },
+      {
+        "type": "kitchen",
+        "requirements": "natural lighting"
+      },
+      {
+        "type": "dining_room",
+        "requirements": "panoramic views"
+      },
+      {
+        "type": "home_office",
+        "requirements": "natural lighting"
+      },
+      {
+        "type": "gym",
+        "requirements": "natural lighting"
+      },
+      {
+        "type": "media_room",
+        "requirements": "acoustic isolation"
+      },
+      {
+        "type": "garage",
+        "requirements": "permeable paving"
+      },
+      {
+        "type": "entry_hall",
+        "requirements": "grand entrance"
+      },
+      {
+        "type": "bathroom",
+        "requirements": "natural ventilation"
+      },
+      {
+        "type": "bathroom",
+        "requirements": "natural ventilation"
+      },
+      {
+        "type": "bathroom",
+        "requirements": "natural ventilation"
+      },
+      {
+        "type": "bathroom",
+        "requirements": "natural ventilation"
+      }
+    ]
+  },
+  "total_area": 5200.0,
+  "construction_cost": 3120000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_01",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "location": "north",
+              "size": "double"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry_hall_01",
+          "type": "entry_hall",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "main_entry",
+              "location": "south",
+              "size": "single"
+            },
+            {
+              "type": "internal",
+              "location": "east",
+              "size": "single"
+            },
+            {
+              "type": "internal",
+              "location": "west",
+              "size": "single"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "location": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "elevator_shaft_01",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "stairwell_01",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 10,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "location": "west",
+              "size": "single"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_01",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 30
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "location": "south",
+              "size": "double"
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "location": "north",
+              "size": "panoramic"
+            },
+            {
+              "type": "floor_to_ceiling",
+              "location": "east",
+              "size": "large"
+            },
+            {
+              "type": "floor_to_ceiling",
+              "location": "west",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "dining_room_01",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "location": "south",
+              "size": "single"
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "location": "north",
+              "size": "panoramic"
+            },
+            {
+              "type": "bay",
+              "location": "east",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_01",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "location": "north",
+              "size": "single"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "location": "east",
+              "size": "large"
+            },
+            {
+              "type": "skylight",
+              "location": "ceiling",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "elevator_shaft_02",
+          "type": "utility",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "stairwell_02",
+          "type": "utility",
+          "bounds": {
+            "x": 45,
+            "y": 10,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "location": "west",
+              "size": "single"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom_01",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "location": "south",
+              "size": "single"
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "location": "north",
+              "size": "panoramic"
+            },
+            {
+              "type": "floor_to_ceiling",
+              "location": "east",
+              "size": "large"
+            },
+            {
+              "type": "floor_to_ceiling",
+              "location": "west",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "master_bath_01",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "location": "west",
+              "size": "single"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "location": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_01",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "location": "north",
+              "size": "single"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "location": "south",
+              "size": "large"
+            },
+            {
+              "type": "casement",
+              "location": "east",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_02",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "location": "north",
+              "size": "single"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "location": "south",
+              "size": "large"
+            },
+            {
+              "type": "casement",
+              "location": "west",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_01",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 25,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "location": "north",
+              "size": "single"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "location": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "elevator_shaft_03",
+          "type": "utility",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "stairwell_03",
+          "type": "utility",
+          "bounds": {
+            "x": 40,
+            "y": 10,
+            "width": 10,
+            "height": 30
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "location": "west",
+              "size": "single"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "music_room_01",
+          "type": "music_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "type": "acoustic",
+              "location": "south",
+              "size": "single"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_glazed",
+              "location": "north",
+              "size": "fixed"
+            },
+            {
+              "type": "skylight",
+              "location": "ceiling",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "home_office_01",
+          "type": "home_office",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "location": "south",
+              "size": "single"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "location": "north",
+              "size": "large"
+            },
+            {
+              "type": "casement",
+              "location": "east",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "media_room_01",
+          "type": "media_room",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "location": "north",
+              "size": "single"
+            }
+          ],
+          "windows": [
+            {
+              "type": "blackout",
+              "location": "west",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "gym_01",
+          "type": "gym",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 15,
+            "height": 25
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "location": "north",
+              "size": "single"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "location": "south",
+              "size": "large"
+            },
+            {
+              "type": "skylight",
+              "location": "ceiling",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "elevator_shaft_04",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "stairwell_04",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 10,
+            "width": 10,
+            "height": 30
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "location": "west",
+              "size": "single"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

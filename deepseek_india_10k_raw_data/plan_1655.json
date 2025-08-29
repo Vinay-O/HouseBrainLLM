@@ -1,0 +1,320 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 800,
+      "style": "Traditional"
+    },
+    "plot": {
+      "width": 20,
+      "depth": 40,
+      "orientation": "east"
+    },
+    "roomBreakdown": [
+      {
+        "type": "prayer_room",
+        "area": 120
+      },
+      {
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "type": "bedroom",
+        "area": 120
+      },
+      {
+        "type": "bedroom",
+        "area": 100
+      },
+      {
+        "type": "living_room",
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "area": 80
+      },
+      {
+        "type": "bathroom",
+        "area": 50
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 240000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            },
+            {
+              "wall": "south",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "prayer_room",
+          "type": "prayer_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 2.5,
+              "size": 2
+            },
+            {
+              "wall": "east",
+              "position": 12.5,
+              "size": 2
+            }
+          ]
+        },
+        {
+          "id": "storytelling_amphitheater",
+          "type": "living_room",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 2.5,
+              "size": 2
+            },
+            {
+              "wall": "west",
+              "position": 12.5,
+              "size": 2
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 6,
+            "height": 12.5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 3,
+              "size": 3
+            },
+            {
+              "wall": "north",
+              "position": 3,
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 7,
+            "y": 15,
+            "width": 6,
+            "height": 12.5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 3,
+              "size": 3
+            },
+            {
+              "wall": "north",
+              "position": 3,
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 14,
+            "y": 15,
+            "width": 6,
+            "height": 12.5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 3,
+              "size": 3
+            },
+            {
+              "wall": "north",
+              "position": 3,
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 27.5,
+            "width": 8,
+            "height": 12.5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 3,
+              "size": 4
+            },
+            {
+              "wall": "south",
+              "position": 4,
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 8,
+            "y": 27.5,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2,
+              "size": 2
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 27.5,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2,
+              "size": 2
+            }
+          ]
+        },
+        {
+          "id": "utility_space",
+          "type": "storage",
+          "bounds": {
+            "x": 16,
+            "y": 27.5,
+            "width": 4,
+            "height": 12.5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 3,
+              "size": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Living Room",
+          "area_sqft": 400,
+          "location": "East",
+          "description": "Spacious living room with large windows to the courtyard."
+        },
+        {
+          "name": "Kitchen",
+          "area_sqft": 250,
+          "location": "South-East",
+          "description": "Modern kitchen with ample storage and direct access to dining area."
+        },
+        {
+          "name": "Dining Room",
+          "area_sqft": 300,
+          "location": "East",
+          "description": "Open plan dining room overlooking the living room and courtyard."
+        },
+        {
+          "name": "Bathroom",
+          "area_sqft": 150,
+          "location": "North-West",
+          "description": "Spacious bathroom with natural lighting from a skylight."
+        },
+        {
+          "name": "Master Bedroom",
+          "area_sqft": 350,
+          "location": "South-East",
+          "description": "Large bedroom with direct access to the courtyard and ensuite bathroom."
+        },
+        {
+          "name": "Courtyard",
+          "area_sqft": 600,
+          "location": "Center",
+          "description": "Central courtyard surrounded by living areas, providing natural light and ventilation."
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "connects_to": ["Living Room", "Dining Room"],
+          "size_ft": [3, 7],
+          "location": "East"
+        },
+        {
+          "type": "window",
+          "area_sqft": 50,
+          "location": "South-West"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "name": "Guest Bedroom",
+          "area_sqft": 300,
+          "location": "East",
+          "description": "Cozy guest bedroom with balcony overlooking the courtyard."
+        },
+        {
+          "name": "Study Room",
+          "area_sqft": 200,
+          "location": "South-East",
+          "description": "Quiet study room with large windows for natural lighting."
+        }
+      ],
+      "openings": [
+        {
+          "type": "staircase",
+          "connects_to": ["ground_floor"],
+          "size_ft": [4, 10],
+          "location": "North"
+        },
+        {
+          "type": "balcony",
+          "area_sqft": 250,
+          "location": "East"
+        }
+      ]
+    },
+    {
+      "level_id": "garage",
+      "rooms": [
+        {
+          "name": "Two-Car Garage",
+          "area_sqft": 600,
+          "description": "Ample space for two cars with storage area."
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

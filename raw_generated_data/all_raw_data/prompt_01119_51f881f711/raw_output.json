@@ -1,0 +1,117 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall",
+          "dimensions": {"length": 4.5, "width": 3.0},
+          "orientation": "North",
+          "description": "A spacious entrance with a north-facing door aligned with Vastu principles for positive energy flow."
+        },
+        {
+          "name": "Living Room",
+          "dimensions": {"length": 6.0, "width": 5.0},
+          "adjacent_to": ["Entrance Hall"],
+          "description": "A central living area designed to serve as a communal space with ample natural light."
+        },
+        {
+          "name": "Dining Area",
+          "dimensions": {"length": 4.0, "width": 3.5},
+          "adjacent_to": ["Living Room", "Kitchen"],
+          "description": "A dining area integrated with the living room to enhance social interaction."
+        },
+        {
+          "name": "Home Office",
+          "dimensions": {"length": 3.5, "width": 3.0},
+          "orientation": "East",
+          "description": "Dedicated home office located in an east-facing section to harness productive energy while minimizing distractions."
+        },
+        {
+          "name": "Kitchen",
+          "dimensions": {"length": 4.0, "width": 3.5},
+          "adjacent_to": ["Living Room", "Dining Area"],
+          "description": "A modern kitchen with efficient layout and essential amenities."
+        },
+        {
+          "name": "Utility & Service Area",
+          "dimensions": {"length": 2.5, "width": 3.0},
+          "description": "Includes storage spaces for utilities and household appliances."
+        }
+      ],
+      "openings": [
+        {
+          "type": "Front Door",
+          "location": "North Face",
+          "dimensions": {"height": 2.1, "width": 1.0},
+          "description": "Main entrance door ensuring north-facing entry in accordance with Vastu principles."
+        },
+        {
+          "type": "Windows",
+          "locations": ["Living Room", "Home Office", "Kitchen"],
+          "dimensions": {"height": 1.5, "width": 1.2},
+          "description": "Placed to allow natural light and proper ventilation while aligning with Vastu recommendations."
+        },
+        {
+          "type": "Balcony",
+          "location": "Living Room side",
+          "dimensions": {"length": 3.0, "width": 1.5},
+          "description": "Provides an outdoor space for relaxation and a view of the surroundings."
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "name": "Master Bedroom",
+          "dimensions": {"length": 4.0, "width": 3.5},
+          "orientation": "South-West",
+          "description": "A spacious master bedroom placed in the south-west quadrant for privacy and relaxation."
+        },
+        {
+          "name": "Bedroom 2",
+          "dimensions": {"length": 3.5, "width": 3.0},
+          "adjacent_to": ["Master Bedroom"],
+          "description": "Additional bedroom with similar layout for family members."
+        },
+        {
+          "name": "Bedroom 3",
+          "dimensions": {"length": 3.0, "width": 2.5},
+          "description": "A smaller bedroom suited for children or guests."
+        },
+        {
+          "name": "Guest Bedroom",
+          "dimensions": {"length": 3.0, "width": 2.5},
+          "description": "A dedicated guest room with essential amenities."
+        },
+        {
+          "name": "Library",
+          "dimensions": {"length": 4.5, "width": 3.0},
+          "orientation": "North-East",
+          "description": "A quiet library space designed for reading and study, aligned with Vastu guidelines for knowledge and creativity."
+        },
+        {
+          "name": "Bathroom",
+          "dimensions": {"length": 2.5, "width": 1.8},
+          "adjacent_to": ["Master Bedroom", "Guest Bedroom"],
+          "description": "A functional bathroom space with modern fixtures."
+        }
+      ],
+      "openings": [
+        {
+          "type": "Staircase",
+          "location": "Corner of ground floor and first floor transition",
+          "dimensions": {"width": 1.5, "depth": 2.0},
+          "description": "A staircase connecting the two floors ensuring smooth circulation."
+        },
+        {
+          "type": "Windows",
+          "locations": ["Master Bedroom", "Bedroom 2", "Library"],
+          "dimensions": {"height": 1.3, "width": 1.0},
+          "description": "Ensures privacy while providing natural light and ventilation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": { "width": 15, "length": 20 },
+          "location": "north-east corner"
+        },
+        {
+          "room_type": "dining_area",
+          "dimensions": { "width": 12, "length": 16 },
+          "location": "north-west corner"
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "width": 10, "length": 15 },
+          "location": "south-east corner"
+        },
+        {
+          "room_type": "balcony",
+          "dimensions": { "width": 4, "length": 8 },
+          "location": "east side"
+        },
+        {
+          "room_type": "bedroom",
+          "number_of_rooms": 3,
+          "dimensions": [
+            {"width": 10, "length": 12},
+            {"width": 9, "length": 11},
+            {"width": 8, "length": 10}
+          ],
+          "location": "north-west corner"
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": { "width": 5, "length": 6 },
+          "location": "south-east corner"
+        }
+      ],
+      "openings": [
+        {"type": "entrance", "direction": "north"},
+        {"type": "window", "direction": "east"},
+        {"type": "window", "direction": "west"}
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "number_of_rooms": 2,
+          "dimensions": [
+            {"width": 12, "length": 14},
+            {"width": 11, "length": 13}
+          ],
+          "location": "north-west corner"
+        },
+        {
+          "room_type": " ensuite_bathroom",
+          "dimensions": { "width": 6, "length": 8 },
+          "location": "south-east corner"
+        }
+      ],
+      "openings": [
+        {"type": "entrance", "direction": "east"},
+        {"type": "window", "direction": "west"}
+      ]
+    },
+    {
+      "level_id": "rooftop",
+      "rooms": [],
+      "openings": []
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "dimensions": [12, 10],
+          "location": [35, 40],
+          "windows": ["east", "south"],
+          "doors": [{"direction": "west"}]
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": [18, 10],
+          "location": [12, 40],
+          "windows": ["north", "east"],
+          "doors": [{"direction": "south"}]
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": [10, 10],
+          "location": [25, 30],
+          "windows": ["west"],
+          "doors": [{"direction": "north"}, {"direction": "east"}]
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": [7, 8],
+          "location": [15, 30],
+          "windows": [],
+          "doors": [{"direction": "south"}]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "size": [6, 20],
+          "location": [45, 40],
+          "orientation": "west"
+        },
+        {
+          "type": "door",
+          "size": [3, 7],
+          "location": [12, 50],
+          "direction": "north"
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "type": "window",
+          "size": [6, 30],
+          "location": [15, 45],
+          "orientation": "north"
+        },
+        {
+          "type": "opening",
+          "size": [28, 50],
+          "location": [5, 5],
+          "description": "open space with seating area"
+        }
+      ]
+    }
+  ]
+}

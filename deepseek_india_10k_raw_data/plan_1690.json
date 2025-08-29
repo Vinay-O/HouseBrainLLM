@@ -1,0 +1,282 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Heritage-Inspired Colonial British Bungalow with Haveli Courtyards"
+    },
+    "plot": {
+      "location": "Mysore Palace Vicinity, adjacent to IT Park",
+      "orientation": "West-facing for evening breeze capture",
+      "risks": "Forest fire risk in hill station location"
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "specialAttributes": [
+          "medical_accessible",
+          "ground_level"
+        ]
+      },
+      {
+        "type": "guest_bedroom",
+        "count": 1,
+        "specialAttributes": [
+          "medical_accessible"
+        ]
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "specialAttributes": [
+          "double_height",
+          "traditional_lighting"
+        ]
+      },
+      {
+        "type": "natural_dye_workspace",
+        "count": 1,
+        "specialAttributes": [
+          "preparation_area",
+          "wall_treatments"
+        ]
+      },
+      {
+        "type": "courtyard",
+        "count": 3,
+        "specialAttributes": [
+          "water_features",
+          "passive_cooling",
+          "mandana_floors"
+        ]
+      },
+      {
+        "type": "veranda",
+        "count": 2,
+        "specialAttributes": [
+          "period_design",
+          "west_facing"
+        ]
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 7680000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 8
+          },
+          "doors": [
+            "front_door"
+          ],
+          "windows": [
+            "west_window"
+          ]
+        },
+        {
+          "id": "main_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 8,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "north_door",
+            "south_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_door"
+          ],
+          "windows": [
+            "west_window"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 8,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "master_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 23,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            "bedroom_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 0,
+            "y": 23,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "living_room_door"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        },
+        {
+          "id": "dye_workspace",
+          "type": "workspace",
+          "bounds": {
+            "x": 0,
+            "y": 38,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "service_door"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 8,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "hall_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            "east_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "guest_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 23,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            "bedroom_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "upper_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 8
+          },
+          "doors": [],
+          "windows": [
+            "west_window"
+          ]
+        },
+        {
+          "id": "puja_upper",
+          "type": "puja_room",
+          "bounds": {
+            "x": 0,
+            "y": 23,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            "double_height_opening"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "north_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "kitchen_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "south_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 25,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "dining_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

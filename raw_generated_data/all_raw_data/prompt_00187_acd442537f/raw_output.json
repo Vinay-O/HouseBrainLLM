@@ -1,0 +1,210 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "garage",
+          "dimensions": { "length": 20, "width": 10 },
+          "accessibility_features": ["wheelchair-accessible entrance", "wide doorways"],
+          "position": { "side": "front" }
+        },
+        {
+          "room_type": "bedroom",
+          "bedroom_number": 1,
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["walk-in closet", "en-suite bathroom"],
+          "position": { "side": "front" }
+        },
+        {
+          "room_type": "bedroom",
+          "bedroom_number": 2,
+          "dimensions": { "length": 14, "width": 11 },
+          "features": ["wardrobe", "attached bathroom"],
+          "position": { "side": "front" }
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["modular kitchen with island", "pantry", "dining area"],
+          "position": { "side": "rear" }
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["minimalist furniture", "access to balcony"],
+          "position": { "side": "front" }
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["open to living room", "access to kitchen"],
+          "position": { "side": "front" }
+        },
+        {
+          "room_type": "bathroom",
+          "bathroom_number": 1,
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["wheelchair-accessible", "walk-in shower"],
+          "position": { "adjacent_to": "bedroom_1" }
+        },
+        {
+          "room_type": "bathroom",
+          "bathroom_number": 2,
+          "dimensions": { "length": 7, "width": 5 },
+          "features": ["attached to bedroom 2"],
+          "position": { "adjacent_to": "bedroom_2" }
+        },
+        {
+          "room_type": "utility_room",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["wash area", "storage"],
+          "position": { "side": "rear" }
+        },
+        {
+          "room_type": "study_room",
+          "dimensions": { "length": 10, "width": 9 },
+          "features": ["minimalist desk setup", "access to balcony"],
+          "position": { "side": "front" }
+        },
+        {
+          "room_type": "balcony",
+          "dimensions": { "length": 20, "width": 5 },
+          "features": ["outdoor seating", "minimalist railing"],
+          "position": { "adjacent_to": "living_room" }
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "main_entrance",
+          "dimensions": { "width": 4, "height": 8 },
+          "features": ["wheelchair-accessible ramp", "minimalist design"]
+        },
+        {
+          "opening_type": "garage_entrance",
+          "dimensions": { "width": 10, "height": 7 },
+          "features": ["automatic door", "wide enough for two cars"]
+        },
+        {
+          "opening_type": "window",
+          "quantity": 4,
+          "position": { "adjacent_to": "living_room" },
+          "dimensions": { "width": 5, "height": 6 }
+        },
+        {
+          "opening_type": "window",
+          "quantity": 2,
+          "position": { "adjacent_to": "bedroom_1" },
+          "dimensions": { "width": 4, "height": 5 }
+        },
+        {
+          "opening_type": "window",
+          "quantity": 2,
+          "position": { "adjacent_to": "bedroom_2" },
+          "dimensions": { "width": 4, "height": 5 }
+        },
+        {
+          "opening_type": "window",
+          "quantity": 1,
+          "position": { "adjacent_to": "study_room" },
+          "dimensions": { "width": 5, "height": 5 }
+        },
+        {
+          "opening_type": "door",
+          "quantity": 2,
+          "position": { "between": "living_room_and_kitchen" },
+          "dimensions": { "width": 3.5, "height": 7 }
+        }
+      ],
+      "accessibility_features": [
+        "wheelchair-accessible paths",
+        "grab bars in bathrooms",
+        "non-slip flooring"
+      ],
+      "vastu_compliance": {
+        "kitchen_position": "southeast",
+        "bedrooms_position": "south and west",
+        "toilet_position": "northwest",
+        "garage_position": "northeast"
+      }
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "bedroom_number": 3,
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["walk-in closet", "en-suite bathroom"],
+          "position": { "side": "front" }
+        },
+        {
+          "room_type": "bedroom",
+          "bedroom_number": 4,
+          "dimensions": { "length": 14, "width": 11 },
+          "features": ["wardrobe", "attached bathroom"],
+          "position": { "side": "front" }
+        },
+        {
+          "room_type": "bedroom",
+          "bedroom_number": 5,
+          "dimensions": { "length": 13, "width": 10 },
+          "features": ["wardrobe", "attached bathroom"],
+          "position": { "side": "front" }
+        },
+        {
+          "room_type": "bathroom",
+          "bathroom_number": 3,
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["walk-in shower", "minimalist design"],
+          "position": { "adjacent_to": "bedroom_3" }
+        },
+        {
+          "room_type": "bathroom",
+          "bathroom_number": 4,
+          "dimensions": { "length": 7, "width": 5 },
+          "features": ["attached to bedroom 4"],
+          "position": { "adjacent_to": "bedroom_4" }
+        },
+        {
+          "room_type": "bathroom",
+          "bathroom_number": 5,
+          "dimensions": { "length": 7, "width": 5 },
+          "features": ["attached to bedroom 5"],
+          "position": { "adjacent_to": "bedroom_5" }
+        },
+        {
+          "room_type": "balcony",
+          "dimensions": { "length": 20, "width": 5 },
+          "features": ["outdoor seating", "minimalist railing"],
+          "position": { "adjacent_to": "bedroom_3_and_4" }
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "window",
+          "quantity": 2,
+          "position": { "adjacent_to": "bedroom_3" },
+          "dimensions": { "width": 4, "height": 5 }
+        },
+        {
+          "opening_type": "window",
+          "quantity": 2,
+          "position": { "adjacent_to": "bedroom_4" },
+          "dimensions": { "width": 4, "height": 5 }
+        },
+        {
+          "opening_type": "window",
+          "quantity": 1,
+          "position": { "adjacent_to": "bedroom_5" },
+          "dimensions": { "width": 4, "height": 5 }
+        }
+      ],
+      "accessibility_features": [
+        "wheelchair-accessible paths",
+        "grab bars in bathrooms",
+        "non-slip flooring"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,442 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 2400.0,
+      "style": "Art Deco Revival"
+    },
+    "plot": {
+      "contour": "sloping",
+      "soil": "former_industrial",
+      "climate": "temperate_maritime"
+    },
+    "roomBreakdown": [
+      {
+        "type": "yoga_studio",
+        "count": 1,
+        "specialFeatures": [
+          "heated_floors"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "master_bedroom",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 432000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "overhead",
+              "position": {
+                "x": 6,
+                "y": 0
+              },
+              "to": "exterior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_0",
+          "type": "storage",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12,
+                "y": 5
+              },
+              "to": "staircase"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_0",
+          "type": "utility",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12,
+                "y": 15
+              },
+              "to": "staircase"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 15
+              },
+              "to": "dining_room_1"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "to": "staircase"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "dining_room_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12,
+                "y": 20
+              },
+              "to": "kitchen_1"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 6,
+                "y": 15
+              },
+              "to": "living_room_1"
+            }
+          ],
+          "windows": [
+            {
+              "type": "picture",
+              "position": {
+                "x": 6,
+                "y": 25
+              },
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 15,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12,
+                "y": 20
+              },
+              "to": "dining_room_1"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "position": {
+                "x": 16,
+                "y": 25
+              },
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 4
+              },
+              "to": "living_room_1"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "position": {
+                "x": 22.5,
+                "y": 0
+              },
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom_2",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 7.5,
+                "y": 15
+              },
+              "to": "hallway_2"
+            }
+          ],
+          "windows": [
+            {
+              "type": "corner",
+              "position": {
+                "x": 15,
+                "y": 7.5
+              },
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 15,
+                "y": 6
+              },
+              "to": "hallway_2"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "position": {
+                "x": 20,
+                "y": 12
+              },
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "yoga_studio_2",
+          "type": "yoga_studio",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 15
+              },
+              "to": "hallway_2"
+            }
+          ],
+          "windows": [
+            {
+              "type": "skylight",
+              "position": {
+                "x": 10,
+                "y": 25
+              },
+              "size": "large"
+            }
+          ],
+          "specialFeatures": [
+            "heated_floors"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 16
+              },
+              "to": "hallway_2"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "position": {
+                "x": 22.5,
+                "y": 12
+              },
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "hallway_2",
+          "type": "hallway",
+          "bounds": {
+            "x": 15,
+            "y": 12,
+            "width": 5,
+            "height": 3
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 15,
+                "y": 13.5
+              },
+              "to": "bedroom_2"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 17.5,
+                "y": 15
+              },
+              "to": "yoga_studio_2"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 13.5
+              },
+              "to": "bathroom_2"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 17.5,
+                "y": 12
+              },
+              "to": "staircase"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

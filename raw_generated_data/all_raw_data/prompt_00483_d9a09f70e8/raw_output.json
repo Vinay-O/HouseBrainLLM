@@ -1,0 +1,70 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "dimensions": [10, 8],
+          "location": [45, 35],
+          "features": ["wheelchair_ramp", "vestibule"]
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": [20, 15],
+          "location": [20, 35],
+          "features": []
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": [15, 10],
+          "location": [45, 10],
+          "features": ["wheelchair_access"]
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": [12, 10],
+          "location": [30, 15],
+          "features": []
+        },
+        {
+          "room_type": "master_bedroom",
+          "dimensions": [16, 12],
+          "location": [5, 55],
+          "features": ["attached_bathroom", "wheelchair_access"]
+        },
+        {
+          "room_type": "guest_bedroom",
+          "dimensions": [14, 10],
+          "location": [25, 55],
+          "features": ["attached_bathroom", "wheelchair_access"]
+        },
+        {
+          "room_type": "private_gym",
+          "dimensions": [18, 15],
+          "location": [55, 40],
+          "features": []
+        },
+        {
+          "room_type": "courtyard",
+          "dimensions": [25, 18],
+          "location": [30, 40],
+          "features": ["central_location"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "orientation": "north",
+          "from_room": "entrance_hall",
+          "to_room": "living_room"
+        },
+        {
+          "type": "window",
+          "orientation": "east",
+          "room": "master_bedroom"
+        }
+      ]
+    }
+  ]
+}

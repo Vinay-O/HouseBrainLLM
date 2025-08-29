@@ -1,0 +1,168 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "dimensions": { "length": 12, "width": 8 },
+          "vastu_alignment": "northwest",
+          "description": "A spacious entrance hall with traditional Chettinad style detailing and modern amenities."
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 20, "width": 15 },
+          "adjacent_to": ["dining_area", "kitchen"],
+          "vastu_alignment": "southeast",
+          "description": "A well-lit living room with large windows and traditional Chettinad architectural elements."
+        },
+        {
+          "room_type": "dining_area",
+          "dimensions": { "length": 12, "width": 10 },
+          "adjacent_to": ["living_room", "kitchen"],
+          "vastu_alignment": "southeast",
+          "description": "An integrated dining area that complements the living room."
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 15, "width": 10 },
+          "adjacent_to": ["dining_area"],
+          "vastu_alignment": "southwest",
+          "description": "A modern kitchen with traditional elements and optimal layout for functionality."
+        },
+        {
+          "room_type": "guest_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "vastu_alignment": "northeast",
+          "description": "Guest room with serene view towards the garden or courtyard."
+        },
+        {
+          "room_type": "master_bedroom",
+          "dimensions": { "length": 15, "width": 12 },
+          "adjacent_to": ["bedroom_2", " ensuite_bathroom"],
+          "vastu_alignment": "northwest",
+          "description": "Spacious master bedroom with a private balcony overlooking the courtyard."
+        },
+        {
+          "room_type": "bedroom_2",
+          "dimensions": { "length": 12, "width": 10 },
+          "adjacent_to": ["master_bedroom", " ensuite_bathroom"],
+          "vastu_alignment": "northwest",
+          "description": "Well-lit bedroom designed with a peaceful ambiance."
+        },
+        {
+          "room_type": "childrens_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "adjacent_to": ["play_area"],
+          "vastu_alignment": "east",
+          "description": "Room for children designed with safety and creativity in mind."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "entrance",
+          "location": "south",
+          "dimensions": { "width": 4, "height": 7 },
+          "vastu_alignment": "northwest"
+        },
+        {
+          "opening_type": "windows",
+          "locations": ["living_room", "dining_area", "kitchen"],
+          "dimensions": { "width": 3, "height": 5 },
+          "vastu_alignment": "southeast"
+        },
+        {
+          "opening_type": "balcony_door",
+          "location": "master_bedroom",
+          "dimensions": { "width": 3, "height": 4 },
+          "vastu_alignment": "northeast"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "dimensions": { "length": 12, "width": 8 },
+          "description": "Smaller entrance hall on first floor with minimalistic design and functional layout."
+        },
+        {
+          "room_type": "study_room",
+          "dimensions": { "length": 15, "width": 10 },
+          "vastu_alignment": "northwest",
+          "description": "A dedicated study room incorporating traditional motifs and modern ergonomics."
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 20, "width": 15 },
+          "adjacent_to": ["dining_area"],
+          "vastu_alignment": "southeast",
+          "description": "Lively living room that maximizes natural light and ventilation."
+        },
+        {
+          "room_type": "dining_area",
+          "dimensions": { "length": 12, "width": 10 },
+          "adjacent_to": ["living_room"],
+          "vastu_alignment": "southeast",
+          "description": "Elegant dining area with a view of the garden and courtyard."
+        },
+        {
+          "room_type": "guest_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "vastu_alignment": "east",
+          "description": "Cozy guest room designed for comfort and tranquility."
+        },
+        {
+          "room_type": "master_bedroom",
+          "dimensions": { "length": 15, "width": 12 },
+          "adjacent_to": ["bedroom_2", " ensuite_bathroom"],
+          "vastu_alignment": "northwest",
+          "description": "Spacious master bedroom with private balcony overlooking the central courtyard."
+        },
+        {
+          "room_type": "bedroom_2",
+          "dimensions": { "length": 12, "width": 10 },
+          "adjacent_to": ["master_bedroom", " ensuite_bathroom"],
+          "vastu_alignment": "northwest",
+          "description": "Well-ventilated bedroom with access to the central courtyard."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "entrance",
+          "location": "south",
+          "dimensions": { "width": 4, "height": 7 },
+          "vastu_alignment": "northwest"
+        },
+        {
+          "opening_type": "windows",
+          "locations": ["living_room", "dining_area", "study_room"],
+          "dimensions": { "width": 3, "height": 5 },
+          "vastu_alignment": "southeast"
+        },
+        {
+          "opening_type": "balcony_door",
+          "location": "master_bedroom",
+          "dimensions": { "width": 3, "height": 4 },
+          "vastu_alignment": "northeast"
+        }
+      ]
+    }
+  ],
+  "plot": {
+    "dimensions": {
+      "length": 90,
+      "width": 60
+    },
+    "garden": {
+      "area": { "length": 30, "width": 20 },
+      "description": "Large garden integrated with the Chettinad-style house, featuring a central courtyard as focal point."
+    },
+    "courtyard": {
+      "dimensions": { "length": 15, "width": 10 },
+      "location": "central",
+      "description": "A serene open space in the center of the plot promoting natural light and ventilation."
+    }
+  }
+}

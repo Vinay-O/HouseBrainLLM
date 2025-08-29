@@ -1,0 +1,276 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 900,
+      "style": "Minimalist"
+    },
+    "plot": {
+      "width": 30,
+      "length": 30,
+      "slope": "gentle",
+      "orientation": "south"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 240,
+        "description": "Open-plan living area with large glass walls facing south for natural light and connection to nature"
+      },
+      {
+        "type": "kitchen",
+        "area": 120,
+        "description": "Compact, efficient kitchen with sustainable bamboo cabinetry and energy-efficient appliances"
+      },
+      {
+        "type": "bedroom",
+        "area": 150,
+        "description": "Main bedroom with large window and natural ventilation"
+      },
+      {
+        "type": "bedroom",
+        "area": 120,
+        "description": "Second bedroom with efficient layout"
+      },
+      {
+        "type": "bathroom",
+        "area": 60,
+        "description": "Bathroom with composting toilet and water-saving fixtures"
+      },
+      {
+        "type": "utility",
+        "area": 60,
+        "description": "Mechanical room for rainwater harvesting system and electrical components"
+      },
+      {
+        "type": "deck",
+        "area": 150,
+        "description": "Wrap-around deck for outdoor living space"
+      }
+    ]
+  },
+  "total_area": 900.0,
+  "construction_cost": 185000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "position": {
+                "x": 0,
+                "y": 6,
+                "wall": "south"
+              }
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 12,
+                "wall": "north"
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_glass",
+              "position": {
+                "x": 5,
+                "y": 0,
+                "wall": "east"
+              }
+            },
+            {
+              "type": "fixed_glass",
+              "position": {
+                "x": 15,
+                "y": 0,
+                "wall": "west"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 5,
+                "y": 12,
+                "wall": "south"
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "position": {
+                "x": 0,
+                "y": 6,
+                "wall": "east"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 12,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 17,
+                "wall": "west"
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_hung",
+              "position": {
+                "x": 17,
+                "y": 12,
+                "wall": "south"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 6,
+                "wall": "west"
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_hung",
+              "position": {
+                "x": 25,
+                "y": 0,
+                "wall": "north"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 10,
+            "y": 22,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 15,
+                "y": 22,
+                "wall": "south"
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "vent",
+              "position": {
+                "x": 15,
+                "y": 0,
+                "wall": "east"
+              }
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 22,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 25,
+                "y": 28,
+                "wall": "north"
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "solar_panels": [
+    {
+      "location": "roof_south",
+      "area": 300,
+      "efficiency": 0.22
+    }
+  ],
+  "water_harvesting": {
+    "system_type": "rooftop_catchment",
+    "storage_capacity": 1000,
+    "filtration": "multi_stage"
+  },
+  "materials": {
+    "primary": "reclaimed_wood",
+    "secondary": "bamboo",
+    "insulation": "recycled_denim",
+    "flooring": "cork",
+    "roofing": "metal_reflective"
+  },
+  "special_features": [
+    "composting_toilet",
+    "large_glass_walls",
+    "passive_solar_design",
+    "natural_ventilation",
+    "energy_storage_system",
+    "greywater_recycling"
+  ]
+}

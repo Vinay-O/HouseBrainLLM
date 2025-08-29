@@ -1,0 +1,88 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "Living"
+        },
+        {
+          "room_id": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "Bedroom"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 8, "width": 6 },
+          "purpose": "Kitchen"
+        },
+        {
+          "room_id": "library",
+          "dimensions": { "length": 10, "width": 8 },
+          "purpose": "Library"
+        },
+        {
+          "room_id": "gym",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "Gym"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "entrance",
+          "type": "door",
+          "direction": "north",
+          "dimensions": { "length": 3.5, "width": 7 },
+          "accesses": "living_room"
+        },
+        {
+          "opening_id": "front_window_living",
+          "type": "window",
+          "direction": "west",
+          "dimensions": { "length": 6, "width": 4 },
+          "belongs_to": "living_room"
+        },
+        {
+          "opening_id": "back_window_bedroom",
+          "type": "window",
+          "direction": "east",
+          "dimensions": { "length": 6, "width": 4 },
+          "belongs_to": "bedroom"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "guest_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "Guest Room"
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 8, "width": 6 },
+          "purpose": "Study"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase",
+          "type": "staircase",
+          "direction": null,
+          "accesses": "ground_floor"
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [],
+      "openings": []
+    }
+  ],
+  "plot_dimensions": { "length": 30, "width": 40 },
+  "style": "Brutalist",
+  "additional_features": ["Library", "Private Gym"]
+}

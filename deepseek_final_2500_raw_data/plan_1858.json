@@ -1,0 +1,374 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Prairie"
+    },
+    "plot": {
+      "orientation": "east-west",
+      "climate": "Mediterranean",
+      "size": "compact urban balcony conversion"
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "home_theater",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "garden",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 385000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garden_courtyard",
+          "type": "garden",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 25
+              },
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 15
+              },
+              "to_room": "master_bedroom"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room_main",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 22
+              },
+              "to_room": "garden_courtyard"
+            },
+            {
+              "position": {
+                "x": 7,
+                "y": 15
+              },
+              "to_room": "kitchen_dining"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 22
+              },
+              "to_room": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 20
+              },
+              "length": 10,
+              "orientation": "east"
+            },
+            {
+              "position": {
+                "x": 7,
+                "y": 30
+              },
+              "length": 8,
+              "orientation": "south"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork"
+          }
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 7
+              },
+              "to_room": "garden_courtyard"
+            },
+            {
+              "position": {
+                "x": 7,
+                "y": 15
+              },
+              "to_room": "living_room_main"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 7
+              },
+              "length": 8,
+              "orientation": "east"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "cabinetry": "bamboo"
+          }
+        },
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 7
+              },
+              "to_room": "garden_courtyard"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 15
+              },
+              "to_room": "bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 7
+              },
+              "length": 8,
+              "orientation": "west"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork"
+          }
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 7
+              },
+              "to_room": "exterior"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 15
+              },
+              "to_room": "bathroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 40,
+                "y": 7
+              },
+              "length": 8,
+              "orientation": "west"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork"
+          }
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 22
+              },
+              "to_room": "exterior"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 15
+              },
+              "to_room": "bathroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 40,
+                "y": 22
+              },
+              "length": 8,
+              "orientation": "west"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork"
+          }
+        },
+        {
+          "id": "home_theater_room",
+          "type": "home_theater",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 35
+              },
+              "to_room": "living_room_main"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "fiber_optic_star_ceiling"
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "wall": "acoustic_panels"
+          }
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 17
+              },
+              "to_room": "master_bedroom"
+            }
+          ],
+          "windows": [],
+          "finishes": {
+            "flooring": "cork",
+            "vanity": "bamboo"
+          }
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 17
+              },
+              "to_room": "bedroom_1"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 17
+              },
+              "to_room": "bedroom_2"
+            }
+          ],
+          "windows": [],
+          "finishes": {
+            "flooring": "cork",
+            "vanity": "bamboo"
+          }
+        }
+      ]
+    }
+  ]
+}

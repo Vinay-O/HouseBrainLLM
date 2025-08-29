@@ -1,0 +1,97 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["floor-to-ceiling windows", "wheelchair accessible"],
+          "location": {"x": 0, "y": 0}
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 8, "width": 12},
+          "features": ["open to dining area", "wheelchair accessible"],
+          "location": {"x": 0, "y": 15}
+        },
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": {"length": 12, "width": 12},
+          "features": ["floor-to-ceiling windows", "ensuite bathroom", "wheelchair accessible"],
+          "location": {"x": 16, "y": 0}
+        },
+        {
+          "room_name": "Bedroom 2",
+          "dimensions": {"length": 8, "width": 12},
+          "features": ["floor-to-ceiling windows", "wheelchair accessible"],
+          "location": {"x": 16, "y": 15}
+        },
+        {
+          "room_name": "Bedroom 3",
+          "dimensions": {"length": 8, "width": 12},
+          "features": ["floor-to-ceiling windows", "wheelchair accessible"],
+          "location": {"x": 24, "y": 0}
+        },
+        {
+          "room_name": "Guest Bathroom",
+          "dimensions": {"length": 6, "width": 8},
+          "features": ["wheelchair accessible"],
+          "location": {"x": 24, "y": 15}
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "room_connection": ["Living Room", "Kitchen"],
+          "dimensions": {"length": 3, "width": 0.8},
+          "location": {"x": 7, "y": 15}
+        },
+        {
+          "type": "window",
+          "dimensions": {"length": 4, "height": 9},
+          "room_connection": ["Living Room"],
+          "location": {"x": 0, "y": 2}
+        },
+        {
+          "type": "door",
+          "features": ["entrance", "wheelchair accessible"],
+          "dimensions": {"length": 3, "width": 0.8},
+          "room_connection": [null, "Living Room"],
+          "location": {"x": 14, "y": -2}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Study Room",
+          "dimensions": {"length": 8, "width": 12},
+          "features": ["floor-to-ceiling windows", "wheelchair accessible"],
+          "location": {"x": 0, "y": 0}
+        },
+        {
+          "room_name": "Guest Bedroom",
+          "dimensions": {"length": 8, "width": 12},
+          "features": ["floor-to-ceiling windows", "ensuite bathroom", "wheelchair accessible"],
+          "location": {"x": 16, "y": 0}
+        }
+      ],
+      "openings": [
+        {
+          "type": "staircase",
+          "dimensions": {"length": 3, "width": 3},
+          "features": ["wheelchair accessible", "railing"],
+          "location": {"x": 12, "y": -2}
+        },
+        {
+          "type": "window",
+          "dimensions": {"length": 4, "height": 9},
+          "room_connection": ["Study Room"],
+          "location": {"x": 0, "y": 2}
+        }
+      ]
+    }
+  ]
+}

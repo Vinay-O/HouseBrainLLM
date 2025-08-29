@@ -1,0 +1,145 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 300,
+      "style": "Urban Townhouse"
+    },
+    "plot": {
+      "orientation": "south",
+      "climate": "coastal with salt air exposure",
+      "hazards": [
+        "wildfire zone"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "telecommuting_pod",
+        "description": "Sound-insulated pod with dedicated video conferencing setup and built-in desk"
+      },
+      {
+        "type": "bathroom",
+        "description": "Compact bathroom with composting toilet system and corrosion-resistant fixtures"
+      }
+    ]
+  },
+  "total_area": 300.0,
+  "construction_cost": 75000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_deck",
+          "type": "deck",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "telecommuting_pod",
+          "type": "office",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 10,
+            "height": 9
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2,
+              "size": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_sleeping",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 9
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 9,
+            "width": 5,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2,
+              "size": 1
+            }
+          ]
+        },
+        {
+          "id": "kitchenette",
+          "type": "kitchen",
+          "bounds": {
+            "x": 5,
+            "y": 9,
+            "width": 5,
+            "height": 6
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2,
+              "size": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "type": "bedroom",
+          "area": 300,
+          "dimensions": "15 x 20",
+          "features": ["wardrobe", "balcony"],
+          "position": "north-east"
+        },
+        {
+          "type": "kitchen",
+          "area": 150,
+          "dimensions": "10 x 15",
+          "features": ["modular", "gas_stove", "sink"],
+          "position": "south-east"
+        },
+        {
+          "type": "living_room",
+          "area": 200,
+          "dimensions": "14 x 15",
+          "features": ["sofa_set", "TV_unit", "dining_table"],
+          "position": "north-west"
+        },
+        {
+          "type": "library",
+          "area": 100,
+          "dimensions": "10 x 10",
+          "features": ["shelves", "reading_chair"],
+          "position": "south-west"
+        },
+        {
+          "type": "bathroom",
+          "area": 50,
+          "dimensions": "7 x 7",
+          "features": ["shower", "toilet", "sink"],
+          "position": "north-east (near bedroom)"
+        }
+      ],
+      "openings": [
+        {
+          "type": "entrance",
+          "dimensions": "8 x 4",
+          "material": "wooden_door",
+          "direction": "facing_east"
+        },
+        {
+          "type": "window",
+          "quantity": 4,
+          "dimensions": "5 x 5",
+          "position": "various_rooms"
+        }
+      ],
+      "garage": {
+        "area": 200,
+        "capacity": "two_car",
+        "features": ["electric_gate", "storage_shelves"],
+        "position": "north-side_of_cottage"
+      },
+      "staircase": {
+        "type": "spiral",
+        "material": "wrought_iron_and_wood",
+        "direction": "leading_to_upper_level"
+      }
+    },
+    {
+      "level_id": "upper_level",
+      "rooms": [
+        {
+          "type": "study_room",
+          "area": 100,
+          "dimensions": "10 x 10",
+          "features": ["desk", "chair", "book_shelves"],
+          "position": "above_living_room"
+        }
+      ]
+    }
+  ],
+  "style": "Art_Deco",
+  "total_area": "800_sqft",
+  "vastu_compliance": {
+    "bedroom_position": "north-east",
+    "kitchen_position": "south-east",
+    "library_position": "south-west"
+  },
+  "local_building_norms": {
+    "setback_distance": "maintained",
+    "height_restriction": "adhered_to",
+    "parking_requirement": "satisfied_with_two_car_garage"
+  }
+}

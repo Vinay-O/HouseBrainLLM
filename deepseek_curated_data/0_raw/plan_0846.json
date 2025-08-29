@@ -1,0 +1,124 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 1,
+      "totalArea": 750,
+      "style": "Eco-friendly"
+    },
+    "plot": {
+      "length": 50,
+      "width": 30
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "area": 400
+      },
+      {
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "type": "kitchen",
+        "area": 80
+      },
+      {
+        "type": "swimming_pool",
+        "area": 210
+      }
+    ]
+  },
+  "total_area": 750.0,
+  "construction_cost": 112500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_glazed",
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "type": "double_glazed",
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 5,
+            "width": 5,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "standard_interior",
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 17,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "standard_interior",
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_glazed",
+              "wall": "south",
+              "position": 2.5
+            }
+          ]
+        },
+        {
+          "id": "swimming_pool",
+          "type": "swimming_pool",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 20,
+            "height": 10.5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

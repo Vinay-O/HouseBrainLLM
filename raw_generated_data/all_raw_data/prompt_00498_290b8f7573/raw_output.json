@@ -1,0 +1,80 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "area_sqft": 1200,
+          "location": [50, 50],
+          "features": ["bohemian_decor", "large_window"],
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "bedroom",
+          "area_sqft": 800,
+          "location": [1350, 750],
+          "features": ["private_bathroom", "wardrobe"],
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "kitchen",
+          "area_sqft": 400,
+          "location": [250, 1350],
+          "features": ["modular_cabinetry", "energy_efficient_appliances"],
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "home_theater",
+          "area_sqft": 600,
+          "location": [750, 1350],
+          "features": ["soundproofing", "large_screen"],
+          "vastu_compliance": true
+        },
+        {
+          "room_type": "private_gym",
+          "area_sqft": 400,
+          "location": [850, 750],
+          "features": ["mirrored_wall", "equipment_storage"],
+          "vastu_compliance": true
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "location": [650, 1050],
+          "room_to_room": ["bedroom", "living_room"]
+        },
+        {
+          "opening_type": "window",
+          "location": [900, 850],
+          "room_to_exterior": true
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_type": "terrace",
+          "area_sqft": 600,
+          "location": [1300, 50],
+          "features": ["outdoor_seating", "water_feature"],
+          "vastu_compliance": true
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "location": [750, 1350],
+          "connects_to": ["ground_floor"]
+        },
+        {
+          "opening_type": "door",
+          "location": [850, 1450],
+          "room_to_terrace": true
+        }
+      ]
+    }
+  ]
+}

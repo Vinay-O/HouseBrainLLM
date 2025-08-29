@@ -1,0 +1,545 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 3,
+      "totalArea": 7500,
+      "style": "Modern Indian Contemporary with traditional element fusion"
+    },
+    "plot": {
+      "width": 50,
+      "length": 50,
+      "orientation": "south"
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_clinic",
+        "count": 1
+      },
+      {
+        "type": "patient_consultation",
+        "count": 2
+      },
+      {
+        "type": "bedroom",
+        "count": 4
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "home_office_pod",
+        "count": 1
+      },
+      {
+        "type": "puja_room",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 2
+      },
+      {
+        "type": "chabutra",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 7500.0,
+  "construction_cost": 48750000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "chabutra_platform",
+          "type": "chabutra",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 25
+            },
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "patient_waiting",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12.5
+            },
+            {
+              "wall": "south",
+              "position": 12.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "consultation_1",
+          "type": "patient_consultation",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 12.5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6.25
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "north",
+              "position": 6.25
+            }
+          ]
+        },
+        {
+          "id": "consultation_2",
+          "type": "patient_consultation",
+          "bounds": {
+            "x": 37.5,
+            "y": 15,
+            "width": 12.5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6.25
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "north",
+              "position": 6.25
+            }
+          ]
+        },
+        {
+          "id": "clinic_entry",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 30,
+            "width": 25,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "wind_tower_base",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 12.5,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "natural_filtration",
+          "type": "utility",
+          "bounds": {
+            "x": 12.5,
+            "y": 30,
+            "width": 12.5,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12.5
+            },
+            {
+              "wall": "east",
+              "position": 12.5
+            },
+            {
+              "wall": "west",
+              "position": 12.5
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12.5
+            },
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "traditional_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 25,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "thermal_chimney_1",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "home_office_pod",
+          "type": "home_office_pod",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 12.5
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "thermal_chimney_2",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 30,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

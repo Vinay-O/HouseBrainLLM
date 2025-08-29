@@ -1,0 +1,80 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 1,
+      "totalArea": 300,
+      "style": "Organic Architecture"
+    },
+    "plot": {
+      "climate": "desert with extreme temperatures",
+      "orientation": "south-facing for solar gain",
+      "size": "compact urban balcony conversion"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "description": "Space for book collectors and scholars with built-in shelving"
+      },
+      {
+        "type": "pottery_studio",
+        "description": "Studio with kilns and work surfaces for pottery creation"
+      }
+    ]
+  },
+  "total_area": 300.0,
+  "construction_cost": 67500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "pottery_studio",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

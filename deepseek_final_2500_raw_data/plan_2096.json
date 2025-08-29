@@ -1,0 +1,129 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 1,
+      "totalArea": 300,
+      "style": "Deconstructivist"
+    },
+    "plot": {
+      "width": 20,
+      "depth": 15,
+      "orientation": "south",
+      "climate": "tropical_monsoon"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "area": 100,
+        "purpose": "Culinary professional workspace with experimental curved shell structure"
+      },
+      {
+        "type": "recording_studio",
+        "area": 80,
+        "purpose": "Soundproofed recording studio for culinary content creation"
+      },
+      {
+        "type": "utility",
+        "area": 60,
+        "purpose": "Battery storage and solar system controls"
+      },
+      {
+        "type": "entry",
+        "area": 60,
+        "purpose": "Secure entrance with security features"
+      }
+    ]
+  },
+  "total_area": 300.0,
+  "construction_cost": 275000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "recording_studio",
+          "type": "recording_studio",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 2
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "secure_entry",
+          "type": "entry",
+          "bounds": {
+            "x": 6,
+            "y": 10,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3,
+              "security": "reinforced"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 1,
+              "size": "small",
+              "security": "reinforced"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

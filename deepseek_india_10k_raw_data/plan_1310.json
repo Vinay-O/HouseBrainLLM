@@ -1,0 +1,311 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 2800,
+      "style": "Colonial Heritage Restoration with Traditional Indian Elements"
+    },
+    "plot": {
+      "width": 40,
+      "height": 35,
+      "orientation": "West-facing veranda for evening breeze capture"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "count": 3,
+        "area": 900
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "area": 300
+      },
+      {
+        "type": "guest_house",
+        "count": 1,
+        "area": 350
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 400
+      }
+    ]
+  },
+  "total_area": 2800.0,
+  "construction_cost": 6720000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "veranda_west",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 40,
+            "height": 5
+          },
+          "doors": [
+            "main_entrance"
+          ],
+          "windows": [
+            "veranda_window_1",
+            "veranda_window_2",
+            "veranda_window_3"
+          ]
+        },
+        {
+          "id": "main_entrance_hall",
+          "type": "foyer",
+          "bounds": {
+            "x": 15,
+            "y": 5,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "veranda_door",
+            "living_room_door",
+            "courtyard_door_north"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "living_window_west",
+            "living_window_south"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "kitchen_door",
+            "courtyard_door_south"
+          ],
+          "windows": [
+            "dining_window_south"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "dining_door",
+            "utility_door"
+          ],
+          "windows": [
+            "kitchen_window_east"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 10,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "kitchen_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "bathroom_door_1",
+            "courtyard_door_west"
+          ],
+          "windows": [
+            "bedroom1_window_west",
+            "bedroom1_window_south"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "bedroom_door_1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bathroom_door_2",
+            "courtyard_door_east"
+          ],
+          "windows": [
+            "bedroom2_window_north",
+            "bedroom2_window_east"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "bedroom_door_2"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bathroom_door_3"
+          ],
+          "windows": [
+            "bedroom3_window_north",
+            "bedroom3_window_east"
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "bedroom_door_3"
+          ],
+          "windows": []
+        },
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "hall_door",
+            "dining_door",
+            "bedroom1_door",
+            "bedroom2_door"
+          ],
+          "windows": [],
+          "features": [
+            "tulsi_platform"
+          ]
+        },
+        {
+          "id": "guest_house",
+          "type": "guest_house",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "guest_exterior_entrance",
+            "guest_courtyard_door"
+          ],
+          "windows": [
+            "guest_window_1",
+            "guest_window_2"
+          ],
+          "features": [
+            "separate_entrance"
+          ]
+        },
+        {
+          "id": "underground_cooling",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 30,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "traditional_cooling_chamber"
+          ]
+        }
+      ]
+    }
+  ]
+}

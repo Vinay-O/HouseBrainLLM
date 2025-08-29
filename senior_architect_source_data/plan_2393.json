@@ -1,0 +1,318 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 2240,
+      "style": "Ultra-Modern Minimalist"
+    },
+    "plot": {
+      "location": "windswept coastal bluff",
+      "climate": "humid subtropical",
+      "orientation": "north-facing"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "sauna",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2240.0,
+  "construction_cost": 448000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "front_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall",
+            "to_kitchen"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "to_dining"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [],
+          "fixtures": [
+            "composting_toilet",
+            "sink",
+            "shower"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_stairs"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_stairs"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_stairs"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [],
+          "fixtures": [
+            "composting_toilet",
+            "sink",
+            "shower"
+          ]
+        },
+        {
+          "id": "sauna",
+          "type": "sauna",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "panoramic"
+            },
+            {
+              "wall": "west",
+              "size": "panoramic"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_sauna"
+          ],
+          "windows": [],
+          "fixtures": [
+            "composting_toilet",
+            "sink",
+            "shower"
+          ]
+        }
+      ]
+    }
+  ],
+  "security_features": [
+    "perimeter_fencing",
+    "access_control_system",
+    "security_cameras",
+    "motion_sensors",
+    "secure_entries"
+  ],
+  "materials": [
+    "cor-ten_steel",
+    "impact-resistant_glass",
+    "composite_decking",
+    "thermal_insulation"
+  ]
+}

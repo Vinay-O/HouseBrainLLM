@@ -1,0 +1,351 @@
+{"levels": [ {
+    "level_id": "ground_floor",
+    "rooms": [
+      {
+        "room_id": "entrance_porch",
+        "type": "porch",
+        "dimensions": {
+          "length": 10,
+          "width": 6
+        },
+        "position": {
+          "x_start": 0,
+          "y_start": 0,
+          "rotation": 0
+        }
+      },
+      {
+        "room_id": "living_room",
+        "type": "living_room",
+        "dimensions": {
+          "length": 16,
+          "width": 14
+        },
+        "position": {
+          "x_start": 10,
+          "y_start": 0,
+          "rotation": 0
+        }
+      },
+      {
+        "room_id": "dining_room",
+        "type": "dining_room",
+        "dimensions": {
+          "length": 12,
+          "width": 10
+        },
+        "position": {
+          "x_start": 26,
+          "y_start": 0,
+          "rotation": 0
+        }
+      },
+      {
+        "room_id": "kitchen",
+        "type": "kitchen",
+        "dimensions": {
+          "length": 14,
+          "width": 12
+        },
+        "position": {
+          "x_start": 38,
+          "y_start": 0,
+          "rotation": 0
+        }
+      },
+      {
+        "room_id": "bedroom_1",
+        "type": "bedroom",
+        "dimensions": {
+          "length": 16,
+          "width": 14
+        },
+        "position": {
+          "x_start": 0,
+          "y_start": 28,
+          "rotation": 0
+        }
+      },
+      {
+        "room_id": "bedroom_1_balcony",
+        "type": "balcony",
+        "dimensions": {
+          "length": 8,
+          "width": 6
+        },
+        "position": {
+          "x_start": -2,   "rotation": 0
+        }
+      },
+      {
+        "room_id": "bedroom_2",
+        "type": "bedroom",
+        "dimensions": {
+          "length": 14,
+          "width": 12
+        },
+        "position": {
+          "x_start": 0,
+          "y_start": 48,
+          "rotation": 0
+        }
+      },
+      {
+        "room_id": "bedroom_2_balcony",
+        "type": "balcony",
+        "dimensions": {
+          "length": 8,
+          "width": 6
+        },
+        "position": {
+          "x_start": -2,
+          "y_start": 48,
+          "rotation": 0
+        }
+      },
+      {
+        "room_id": "bathroom_1",
+        "type": "bathroom",
+        "dimensions": {
+          "length": 8,
+          "width": 6
+        },
+        "position": {
+          "x_start": 26,
+          "y_start": 28,
+          "rotation": 0
+        }
+      },
+      {
+        "room_id": "bathroom_2",
+        "type": "bathroom",
+        "dimensions": {
+          "length": 8,
+          "width": 6
+        },
+        "position": {
+          "x_start": 34,
+          "y_start": 48,
+          "rotation": 0
+        }
+      },
+      {
+        "room_id": "utility_room",
+        "type": "utility_room",
+        "dimensions": {
+          "length": 6,
+          "width": 6
+        },
+        "position": {
+          "x_start": 48,
+          "y_start": 28,
+          "rotation": 0
+        }
+      }
+    ],
+    "openings": [
+      {
+        "opening_id": "main_entrance",
+        "type": "door",
+        "dimensions": {
+          "length": 3.5,
+          "width": 1.2
+        },
+        "position": {
+          "x_start": 5,
+          "y_start": -0.5,
+          "rotation": 90
+        },
+        "connects_to": "entrance_porch"
+      },
+      {
+        "opening_id": "living_to_dining",
+        "type": "doorway",
+        "dimensions": {
+          "length": 3,
+          "width": 2.5
+        },
+        "position": {
+          "x_start": 24,
+          "y_start": -0.5,
+          "rotation": 90
+        },
+        "connects_to": [
+          "living_room",
+          "dining_room"
+        ]
+      },
+      {
+        "opening_id": "dining_to_kitchen",
+        "type": "doorway",
+        "dimensions": {
+          "length": 3,
+          "width": 2.5
+        },
+        "position": {
+          "x_start": 50,
+          "y_start": -0.5,
+          "rotation": 90
+        },
+        "connects_to": [
+          "dining_room",
+          "kitchen"
+        ]
+      },
+      {
+        "opening_id": "bedroom_1_entrance",
+        "type": "doorway",
+        "dimensions": {
+          "length": 3,
+          "width": 2.5
+        },
+        "position": {
+          "x_start": -0.5,
+          "y_start": 14,
+          "rotation": 0
+        },
+        "connects_to": [
+          "entrance_porch",
+          "bedroom_1"
+        ]
+      },
+      {
+        "opening_id": "bedroom_2_entrance",
+        "type": "doorway",
+        "dimensions": {
+          "length": 3,
+          "width": 2.5
+        },
+        "position": {
+          "x_start": -0.5,
+          "y_start": 48,
+          "rotation": 0
+        },
+        "connects_to": [
+          "entrance_porch",
+          "bedroom_2"
+        ]
+      },
+      {
+        "opening_id": "kitchen_to_utility",
+        "type": "doorway",
+        "dimensions": {
+          "length": 3,
+          "width": 2.5
+        },
+        "position": {
+          "x_start": 48,
+          "y_start": 14,
+          "rotation": 0
+        },
+        "connects_to": [
+          "kitchen",
+          "utility_room"
+        ]
+      },
+      {
+        "opening_id": "bedroom_1_to_bathroom_1",
+        "type": "doorway",
+        "dimensions": {
+          "length": 3,
+          "width": 2.5
+        },
+        "position": {
+          "x_start": 34,
+          "y_start": 14,
+          "rotation": 0
+        },
+        "connects_to": [
+          "bedroom_1",
+          "bathroom_1"
+        ]
+      },
+      {
+        "opening_id": "bedroom_2_to_bathroom_2",
+        "type": "doorway",
+        "dimensions": {
+          "length": 3,
+          "width": 2.5
+        },
+        "position": {
+          "x_start": 40,
+          "y_start": 48,
+          "rotation": 0
+        },
+        "connects_to": [
+          "bedroom_2",
+          "bathroom_2"
+        ]
+      },
+      {
+        "opening_id": "window_living",
+        "type": "window",
+        "dimensions": {
+          "length": 3,
+          "width": 4
+        },
+        "position": {
+          "x_start": 10,
+          "y_start": -2,
+          "rotation": 90
+        },
+        "connects_to": "living_room"
+      },
+      {
+        "opening_id": "window_dining",
+        "type": "window",
+        "dimensions": {
+          "length": 3,
+          "width": 4
+        },
+        "position": {
+          "x_start": 26,
+          "y_start": -2,
+          "rotation": 90
+        },
+        "connects_to": "dining_room"
+      },
+      {
+        "opening_id": "window_kitchen",
+        "type": "window",
+        "dimensions": {
+          "length": 3,
+          "width": 4
+        },
+        "position": {
+          "x_start": 38,
+          "y_start": -2,
+          "rotation": 90
+        },
+        "connects_to": "kitchen"
+      },
+      {
+        "opening_id": "window_bedroom_1",
+        "type": "window",
+        "dimensions": {
+          "length": 3,
+          "width": 4
+        },
+        "position": {
+          "x_start": -2,
+          "y_start": 20,
+          "rotation": 90
+        },
+        "connects_to": "bedroom_1"
+      },
+      {
+        "opening_id": "window_bedroom_2",
+        "type": "window",
+        "dimensions": {
+          "length": 3,
+          "width": 4
+        },
+        "position": {
+          "x_start": -2,
+          "y_start": 50,
+          "rotation": 90
+        },
+        "connects_to": "bedroom_2"
+      }
+    ]
+  }]}

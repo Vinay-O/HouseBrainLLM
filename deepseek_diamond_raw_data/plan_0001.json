@@ -1,0 +1,436 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 5,
+      "floors": 1,
+      "totalArea": 4200,
+      "style": "Ranch"
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "total_area": 4200.0,
+  "construction_cost": 840000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "great_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 15
+              },
+              "connects_to": "foyer"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 27
+              },
+              "connects_to": "dining_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 40
+              },
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "library",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 22
+              },
+              "connects_to": "foyer"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 15
+              },
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "master_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 50,
+                "y": 10
+              },
+              "connects_to": "hallway"
+            },
+            {
+              "position": {
+                "x": 70,
+                "y": 5
+              },
+              "connects_to": "master_patio"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 55,
+                "y": 0
+              },
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 37
+              },
+              "connects_to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 30
+              },
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 37
+              },
+              "connects_to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 20,
+                "y": 30
+              },
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 37
+              },
+              "connects_to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 30
+              },
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "bedroom_5",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 45,
+                "y": 37
+              },
+              "connects_to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 30
+              },
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 7
+              },
+              "connects_to": "dining_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 27,
+                "y": 0
+              },
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 40,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 47
+              },
+              "connects_to": "great_room"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 47
+              },
+              "connects_to": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 27,
+                "y": 55
+              },
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 70,
+            "y": 20,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 70,
+                "y": 30
+              },
+              "connects_to": "mudroom"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 7
+              },
+              "connects_to": "library"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 15
+              },
+              "connects_to": "great_room"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 45,
+            "width": 60,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 45
+              },
+              "connects_to": "bedroom_2"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 45
+              },
+              "connects_to": "bedroom_3"
+            },
+            {
+              "position": {
+                "x": 45,
+                "y": 45
+              },
+              "connects_to": "bedroom_4"
+            },
+            {
+              "position": {
+                "x": 60,
+                "y": 45
+              },
+              "connects_to": "bedroom_5"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 50
+              },
+              "connects_to": "master_suite"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mudroom",
+          "type": "mudroom",
+          "bounds": {
+            "x": 60,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 70,
+                "y": 25
+              },
+              "connects_to": "garage"
+            },
+            {
+              "position": {
+                "x": 60,
+                "y": 25
+              },
+              "connects_to": "kitchen"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "master_patio",
+          "type": "patio",
+          "bounds": {
+            "x": 70,
+            "y": 0,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 70,
+                "y": 2
+              },
+              "connects_to": "master_suite"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

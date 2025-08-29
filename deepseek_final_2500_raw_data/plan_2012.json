@@ -1,0 +1,289 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 1850,
+      "style": "Organic Architecture"
+    },
+    "plot": {
+      "description": "Rocky outcrop with natural stone formations in a continental climate with harsh winters",
+      "orientation": "North-facing for consistent light"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "area": 400
+      },
+      {
+        "type": "dining_room",
+        "area": 200
+      },
+      {
+        "type": "living_room",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "spa",
+        "area": 400
+      },
+      {
+        "type": "storage",
+        "area": 150
+      },
+      {
+        "type": "mechanical",
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 1850.0,
+  "construction_cost": 425500.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "spa_01",
+          "type": "spa",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "to_room": "corridor_01"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_01",
+          "type": "mechanical",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "to_room": "corridor_01"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_01",
+          "type": "storage",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 15
+              },
+              "to_room": "corridor_01"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "corridor_01",
+          "type": "corridor",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 30,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "kitchen_01",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "to_room": "dining_01"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 10
+              },
+              "size": "large",
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "dining_01",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "to_room": "kitchen_01"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 10
+              },
+              "to_room": "living_01"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 0
+              },
+              "size": "medium",
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "living_01",
+          "type": "living_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 10
+              },
+              "to_room": "dining_01"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 37.5,
+                "y": 0
+              },
+              "size": "large",
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_01",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 45,
+                "y": 5
+              },
+              "to_room": "corridor_02"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_01",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 45,
+                "y": 15
+              },
+              "to_room": "corridor_02"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 15
+              },
+              "size": "medium",
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "corridor_02",
+          "type": "corridor",
+          "bounds": {
+            "x": 45,
+            "y": 20,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

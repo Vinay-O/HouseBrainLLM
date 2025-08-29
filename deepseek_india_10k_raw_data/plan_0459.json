@@ -1,0 +1,412 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 15000,
+      "style": "Rajasthani Haveli"
+    },
+    "plot": {
+      "width": 100,
+      "length": 150,
+      "location": "Nellore coastal plains",
+      "orientation": "east-facing"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "purpose": "Master bedroom and guest bedroom for aging-in-place with medical accessibility"
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "purpose": "Accessible bathrooms with walk-in showers and grab bars"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "purpose": "Open kitchen with accessible counters and storage"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "purpose": "Main living area opening to central courtyard"
+      },
+      {
+        "type": "library",
+        "count": 1,
+        "purpose": "Heritage library with temperature-controlled manuscript storage"
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "purpose": "Central angan with tulsi platform and traditional seating"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "purpose": "Laundry and storage room"
+      },
+      {
+        "type": "veranda",
+        "count": 1,
+        "purpose": "Covered porch with jharokhas overlooking courtyard"
+      }
+    ]
+  },
+  "total_area": 6000.0,
+  "construction_cost": 1800000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard_center",
+          "type": "courtyard",
+          "bounds": {
+            "x": 25,
+            "y": 30,
+            "width": 50,
+            "height": 90
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 25
+            },
+            {
+              "wall": "south",
+              "position": 25
+            },
+            {
+              "wall": "east",
+              "position": 45
+            },
+            {
+              "wall": "west",
+              "position": 45
+            }
+          ],
+          "windows": [],
+          "features": [
+            "tulsi_platform",
+            "stone_carving",
+            "jharokhas",
+            "wooden_brackets"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 25,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 15
+            },
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12,
+              "type": "jharokha"
+            },
+            {
+              "wall": "west",
+              "position": 15,
+              "type": "wind_catcher"
+            }
+          ],
+          "features": [
+            "medical_accessible",
+            "zero_threshold",
+            "emergency_call"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 75,
+            "y": 30,
+            "width": 25,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 15
+            },
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12,
+              "type": "jharokha"
+            },
+            {
+              "wall": "east",
+              "position": 15,
+              "type": "wind_catcher"
+            }
+          ],
+          "features": [
+            "medical_accessible",
+            "zero_threshold"
+          ]
+        },
+        {
+          "id": "library_heritage",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 60,
+            "width": 25,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 15
+            },
+            {
+              "wall": "north",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 15,
+              "type": "double_glazed"
+            },
+            {
+              "wall": "south",
+              "position": 12,
+              "type": "ventilation"
+            }
+          ],
+          "features": [
+            "temperature_controlled",
+            "humidity_control",
+            "noise_insulated"
+          ]
+        },
+        {
+          "id": "kitchen_main",
+          "type": "kitchen",
+          "bounds": {
+            "x": 75,
+            "y": 60,
+            "width": 25,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 15
+            },
+            {
+              "wall": "north",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 15,
+              "type": "wind_catcher"
+            },
+            {
+              "wall": "south",
+              "position": 12,
+              "type": "jharokha"
+            }
+          ],
+          "features": [
+            "accessible_counters",
+            "pull_out_shelves",
+            "non_slip_flooring"
+          ]
+        },
+        {
+          "id": "living_main",
+          "type": "living_room",
+          "bounds": {
+            "x": 25,
+            "y": 120,
+            "width": 50,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 25
+            },
+            {
+              "wall": "east",
+              "position": 15
+            },
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 25,
+              "type": "noise_reducing"
+            },
+            {
+              "wall": "east",
+              "position": 35,
+              "type": "wind_catcher"
+            },
+            {
+              "wall": "west",
+              "position": 35,
+              "type": "wind_catcher"
+            }
+          ],
+          "features": [
+            "wide_passages",
+            "natural_light",
+            "traditional_seating"
+          ]
+        },
+        {
+          "id": "bathroom_master",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "type": "ventilation"
+            }
+          ],
+          "features": [
+            "walk_in_shower",
+            "grab_bars",
+            "wheelchair_accessible"
+          ]
+        },
+        {
+          "id": "bathroom_guest",
+          "type": "bathroom",
+          "bounds": {
+            "x": 85,
+            "y": 0,
+            "width": 15,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "type": "ventilation"
+            }
+          ],
+          "features": [
+            "walk_in_shower",
+            "grab_bars",
+            "non_slip_tiles"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10,
+              "type": "standard"
+            }
+          ],
+          "features": [
+            "laundry",
+            "storage",
+            "water_heater"
+          ]
+        },
+        {
+          "id": "veranda_front",
+          "type": "veranda",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 15,
+              "type": "jharokha"
+            },
+            {
+              "wall": "west",
+              "position": 15,
+              "type": "jharokha"
+            }
+          ],
+          "features": [
+            "covered_porch",
+            "stone_benches",
+            "coastal_view"
+          ]
+        }
+      ]
+    }
+  ]
+}

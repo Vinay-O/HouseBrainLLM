@@ -1,0 +1,153 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 600,
+      "style": "Neo-Classical"
+    },
+    "plot": {
+      "orientation": "east-west",
+      "climate": "desert_extreme_temperatures",
+      "size": "compact_urban_balcony"
+    },
+    "roomBreakdown": [
+      {
+        "type": "performance_space",
+        "area": 200,
+        "purpose": "Music performance and listening area"
+      },
+      {
+        "type": "pottery_studio",
+        "area": 150,
+        "purpose": "Clay work with kiln installation"
+      },
+      {
+        "type": "control_room",
+        "area": 80,
+        "purpose": "Audio equipment and recording"
+      },
+      {
+        "type": "storage",
+        "area": 70,
+        "purpose": "Instrument and material storage"
+      },
+      {
+        "type": "mechanical",
+        "area": 100,
+        "purpose": "HVAC with heat recovery ventilation"
+      }
+    ]
+  },
+  "total_area": 600.0,
+  "construction_cost": 285000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "performance_space",
+          "type": "performance_space",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "position": "north",
+              "size": 12
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "position": "south",
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "pottery_studio",
+          "type": "pottery_studio",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": "east",
+              "size": 3
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_glazed",
+              "position": "north",
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "control_room",
+          "type": "control_room",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": "south",
+              "size": 3
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage",
+          "type": "storage",
+          "bounds": {
+            "x": 15,
+            "y": 18,
+            "width": 5,
+            "height": 7
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": "north",
+              "size": 3
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical",
+          "type": "mechanical",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "service",
+              "position": "west",
+              "size": 4
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

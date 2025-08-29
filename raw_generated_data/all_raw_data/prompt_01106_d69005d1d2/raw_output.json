@@ -1,0 +1,360 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "Living Room",
+          "area": 300,
+          "dimensions": {
+            "length": 15,
+            "width": 20
+          },
+          "position": {
+            "direction": "North",
+            "adjacent_to": ["central_courtyard", "dining_room"]
+          }
+        },
+        {
+          "room_id": "dining_room",
+          "type": "Dining Room",
+          "area": 150,
+          "dimensions": {
+            "length": 10,
+            "width": 15
+          },
+          "position": {
+            "direction": "East",
+            "adjacent_to": ["living_room", "kitchen"]
+          }
+        },
+        {
+          "room_id": "kitchen",
+          "type": "Kitchen",
+          "area": 200,
+          "dimensions": {
+            "length": 15,
+            "width": 13.33
+          },
+          "position": {
+            "direction": "Southeast",
+            "adjacent_to": ["dining_room", "central_courtyard"]
+          }
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "Bedroom (Master)",
+          "area": 300,
+          "dimensions": {
+            "length": 15,
+            "width": 20
+          },
+          "position": {
+            "direction": "Southwest",
+            "adjacent_to": ["bathroom_1", "balcony"]
+          }
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "Bedroom (Second)",
+          "area": 200,
+          "dimensions": {
+            "length": 10,
+            "width": 20
+          },
+          "position": {
+            "direction": "Northwest",
+            "adjacent_to": ["bathroom_2", "balcony"]
+          }
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "Bedroom (Third)",
+          "area": 150,
+          "dimensions": {
+            "length": 10,
+            "width": 15
+          },
+          "position": {
+            "direction": "West",
+            "adjacent_to": ["bathroom_3", "balcony"]
+          }
+        },
+        {
+          "room_id": "central_courtyard",
+          "type": "Courtyard",
+          "area": 200,
+          "dimensions": {
+            "length": 14.14,
+            "width": 14.14
+          },
+          "position": {
+            "direction": "Center",
+            "adjacent_to": ["living_room", "kitchen", "staircase"]
+          }
+        },
+        {
+          "room_id": "staircase",
+          "type": "Staircase",
+          "area": 50,
+          "dimensions": {
+            "length": 5,
+            "width": 10
+          },
+          "position": {
+            "direction": "South",
+            "adjacent_to": ["central_courtyard", "upper_floor"]
+          }
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "Bathroom (Master)",
+          "area": 50,
+          "dimensions": {
+            "length": 7.07,
+            "width": 7.07
+          },
+          "position": {
+            "direction": "Southeast",
+            "adjacent_to": ["bedroom_1"]
+          }
+        },
+        {
+          "room_id": "bathroom_2",
+          "type": "Bathroom (Second)",
+          "area": 50,
+          "dimensions": {
+            "length": 7.07,
+            "width": 7.07
+          },
+          "position": {
+            "direction": "Southeast",
+            "adjacent_to": ["bedroom_2"]
+          }
+        },
+        {
+          "room_id": "bathroom_3",
+          "type": "Bathroom (Third)",
+          "area": 50,
+          "dimensions": {
+            "length": 7.07,
+            "width": 7.07
+          },
+          "position": {
+            "direction": "Southeast",
+            "adjacent_to": ["bedroom_3"]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "Entrance",
+          "dimensions": {
+            "length": 4,
+            "width": 7
+          },
+          "position": {
+            "direction": "North"
+          }
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "Window",
+          "dimensions": {
+            "length": 3,
+            "width": 3
+          },
+          "position": {
+            "room": "kitchen",
+            "direction": "East"
+          }
+        },
+        {
+          "opening_id": "living_window_1",
+          "type": "Window",
+          "dimensions": {
+            "length": 4,
+            "width": 4
+          },
+          "position": {
+            "room": "living_room",
+            "direction": "North"
+          }
+        },
+        {
+          "opening_id": "living_window_2",
+          "type": "Window",
+          "dimensions": {
+            "length": 3,
+            "width": 4
+          },
+          "position": {
+            "room": "living_room",
+            "direction": "East"
+          }
+        },
+        {
+          "opening_id": "bedroom_1_window",
+          "type": "Window",
+          "dimensions": {
+            "length": 3,
+            "width": 4
+          },
+          "position": {
+            "room": "bedroom_1",
+            "direction": "South"
+          }
+        },
+        {
+          "opening_id": "bedroom_2_window",
+          "type": "Window",
+          "dimensions": {
+            "length": 3,
+            "width": 4
+          },
+          "position": {
+            "room": "bedroom_2",
+            "direction": "North"
+          }
+        },
+        {
+          "opening_id": "bedroom_3_window",
+          "type": "Window",
+          "dimensions": {
+            "length": 3,
+            "width": 4
+          },
+          "position": {
+            "room": "bedroom_3",
+            "direction": "West"
+          }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_4",
+          "type": "Bedroom (Fourth)",
+          "area": 250,
+          "dimensions": {
+            "length": 12.5,
+            "width": 20
+          },
+          "position": {
+            "direction": "Southwest",
+            "adjacent_to": ["bathroom_4", "balcony"]
+          }
+        },
+        {
+          "room_id": "bedroom_5",
+          "type": "Bedroom (Fifth)",
+          "area": 200,
+          "dimensions": {
+            "length": 10,
+            "width": 20
+          },
+          "position": {
+            "direction": "Northwest",
+            "adjacent_to": ["bathroom_5", "balcony"]
+          }
+        },
+        {
+          "room_id": "study_room",
+          "type": "Study Room",
+          "area": 150,
+          "dimensions": {
+            "length": 12.25,
+            "width": 12.25
+          },
+          "position": {
+            "direction": "East",
+            "adjacent_to": ["balcony"]
+          }
+        },
+        {
+          "room_id": "bathroom_4",
+          "type": "Bathroom (Fourth)",
+          "area": 60,
+          "dimensions": {
+            "length": 8.49,
+            "width": 7.07
+          },
+          "position": {
+            "direction": "Southeast",
+            "adjacent_to": ["bedroom_4"]
+          }
+        },
+        {
+          "room_id": "bathroom_5",
+          "type": "Bathroom (Fifth)",
+          "area": 60,
+          "dimensions": {
+            "length": 8.49,
+            "width": 7.07
+          },
+          "position": {
+            "direction": "Southeast",
+            "adjacent_to": ["bedroom_5"]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "bedroom_4_window",
+          "type": "Window",
+          "dimensions": {
+            "length": 3,
+            "width": 4
+          },
+          "position": {
+            "room": "bedroom_4",
+            "direction": "South"
+          }
+        },
+        {
+          "opening_id": "bedroom_5_window",
+          "type": "Window",
+          "dimensions": {
+            "length": 3,
+            "width": 4
+          },
+          "position": {
+            "room": "bedroom_5",
+            "direction": "North"
+          }
+        },
+        {
+          "opening_id": "study_room_window",
+          "type": "Window",
+          "dimensions": {
+            "length": 3,
+            "width": 4
+          },
+          "position": {
+            "room": "study_room",
+            "direction": "East"
+          }
+        }
+      ]
+    }
+  ],
+  "building_details": {
+    "type": "Townhouse",
+    "floors": 2,
+    "bedrooms": 5,
+    "total_area": 1800,
+    "plot_facing": "West",
+    "courtyard": true,
+    "kitchen_type": "Open Plan"
+  },
+  "vastu_compliance": {
+    "main_entrance": "North facing entrance for positive energy flow.",
+    "bedrooms": "Master bedroom in Southwest, others in Northwest and West as per Vastu principles.",
+    "kitchen": "Kitchen in Southeast direction to enhance prosperity.",
+    "courtyard": "Central courtyard for balance and harmony."
+  }
+}

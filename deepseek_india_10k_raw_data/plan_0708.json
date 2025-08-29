@@ -1,0 +1,342 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 2500,
+      "style": "Chettinad Mansion"
+    },
+    "plot": {
+      "width": 50,
+      "height": 50,
+      "location": "Moradabad",
+      "orientation": "east-facing sunrise alignment"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3,
+        "description": "Master bedroom with ensuite, two future children's bedrooms"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Spacious living area opening to veranda"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Traditional kitchen with modern amenities"
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "description": "Master ensuite plus two shared bathrooms"
+      },
+      {
+        "type": "music_room",
+        "count": 1,
+        "description": "Acoustically designed room for classical instruments"
+      },
+      {
+        "type": "veranda",
+        "count": 1,
+        "description": "Wraparound thinnai with traditional seating"
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "description": "Central courtyard with traditional otla sit-out and swing"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "description": "Greywater recycling system for garden irrigation"
+      }
+    ]
+  },
+  "total_area": 2500.0,
+  "construction_cost": 625000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "veranda_1",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 15
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "veranda_2",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 42,
+            "width": 50,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 8,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 8
+            },
+            {
+              "wall": "north",
+              "position": 8
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 8,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 8,
+            "y": 30,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 30,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 39,
+            "y": 30,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ]
+        },
+        {
+          "id": "music_room",
+          "type": "music_room",
+          "bounds": {
+            "x": 30,
+            "y": 22,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 23,
+            "y": 8,
+            "width": 7,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 3
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 23,
+            "y": 30,
+            "width": 7,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 39,
+            "y": 22,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 42,
+            "y": 8,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Area",
+          "dimensions": {"length": 12, "width": 9},
+          "features": ["open-plan kitchen", "large windows for natural light"],
+          "position": {"x": 0, "y": 0}
+        },
+        {
+          "room_name": "Bedroom 1",
+          "dimensions": {"length": 8, "width": 6},
+          "features": ["wardrobe space", "attached bathroom"],
+          "position": {"x": 12, "y": 0}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "location": {"x": 8.5, "y": 6},
+          "orientation": "east"
+        },
+        {
+          "opening_type": "window",
+          "location": {"x": 1.5, "y": 0},
+          "orientation": "north"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Home Theater",
+          "dimensions": {"length": 12, "width": 9},
+          "features": ["soundproof walls", "movie projector and screen"],
+          "position": {"x": 0, "y": 0}
+        },
+        {
+          "room_name": "Bedroom 2",
+          "dimensions": {"length": 8, "width": 6},
+          "features": ["wardrobe space", "attached bathroom"],
+          "position": {"x": 12, "y": 0}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "window",
+          "location": {"x": 3.5, "y": 6},
+          "orientation": "east"
+        },
+        {
+          "opening_type": "window",
+          "location": {"x": 0.5, "y": 0},
+          "orientation": "north"
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_name": "Bedroom 3",
+          "dimensions": {"length": 12, "width": 9},
+          "features": ["wardrobe space", "attached bathroom"],
+          "position": {"x": 0, "y": 0}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "window",
+          "location": {"x": 5.5, "y": 6},
+          "orientation": "east"
+        },
+        {
+          "opening_type": "door_to_terrace",
+          "location": {"x": 0.5, "y": 9},
+          "orientation": "north"
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_type": "door_from_bedroom_3",
+          "location": {"x": 12.5, "y": -1},
+          "orientation": "south"
+        }
+      ]
+    }
+  ]
+}

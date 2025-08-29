@@ -1,0 +1,291 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 1850.0,
+      "style": "Mid-Century Modern"
+    },
+    "plot": {
+      "slope": 30.0,
+      "climate": "Continental with harsh winters",
+      "orientation": "South-facing for solar gain",
+      "hazards": "Wildfire zone"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "specialAttributes": [
+          "Aging-in-place accessibility",
+          "Smart home automation"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "specialAttributes": [
+          "Walk-in shower",
+          "Grab bars",
+          "Non-slip flooring"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "specialAttributes": [
+          "Aging-in-place design",
+          "Smart appliances"
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "specialAttributes": [
+          "South-facing windows",
+          "High thermal mass"
+        ]
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "specialAttributes": [
+          "Hydroponic system controls"
+        ]
+      },
+      {
+        "type": "garage",
+        "count": 1,
+        "specialAttributes": [
+          "EV charging capability"
+        ]
+      }
+    ]
+  },
+  "total_area": 1850.0,
+  "construction_cost": 425000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "location": "north"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "east"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom2_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 14,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "south",
+              "location": "south"
+            }
+          ]
+        },
+        {
+          "id": "bathroom2_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 44,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "south",
+              "location": "south"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "location": "south"
+            },
+            {
+              "type": "interior",
+              "location": "north"
+            }
+          ],
+          "windows": [
+            {
+              "type": "south_large",
+              "location": "south"
+            },
+            {
+              "type": "east",
+              "location": "east"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "south",
+              "location": "south"
+            }
+          ]
+        },
+        {
+          "id": "dining_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 24,
+            "y": 14,
+            "width": 16,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "south",
+              "location": "south"
+            }
+          ]
+        },
+        {
+          "id": "primary_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 18,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "south",
+              "location": "south"
+            },
+            {
+              "type": "east",
+              "location": "east"
+            }
+          ]
+        },
+        {
+          "id": "primary_bath_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 18,
+            "y": 20,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "south",
+              "location": "south"
+            }
+          ]
+        },
+        {
+          "id": "hydroponic_wall_1",
+          "type": "special",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 4,
+            "height": 24
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

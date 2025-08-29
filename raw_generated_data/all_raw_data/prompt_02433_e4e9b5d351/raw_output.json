@@ -1,0 +1,31 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {"name": "Entrance Hall", "dimensions": {"width": 15, "length": 10}},
+      {"name": "Living Room", "dimensions": {"width": 20, "length": 25}, "features": ["Art Deco motifs"]},
+      {"name": "Kitchen", "dimensions": {"width": 12, "length": 15}},
+      {"name": "Dining Area", "dimensions": {"width": 10, "length": 15}},
+      {"name": "Balcony", "dimensions": {"width": 8, "length": 20}, "adjacent_to": "Bedroom1"},
+      {"name": "Guest Bathroom", "dimensions": {"width": 6, "length": 8}}
+    ],
+    "openings": [
+      {"type": "Main Entrance", "location": "Front", "direction": "South"},
+      {"type": "Balcony Door", "location": "Bedroom1", "direction": "North"}
+    ]
+  },
+  {
+    "level_id": "first_floor",
+    "rooms": [
+      {"name": "Master Bedroom", "dimensions": {"width": 20, "length": 25}, "features": ["Spacious balcony", "Art Deco finishes"]},
+      {"name": "Bedroom2", "dimensions": {"width": 15, "length": 18}, "features": ["Balcony", "Vastu compliant layout"]},
+      {"name": "Home Theater", "dimensions": {"width": 25, "length": 30}, "features": ["Acoustic optimization", "Art Deco elements"]},
+      {"name": "Bathroom", "dimensions": {"width": 8, "length": 10}},
+      {"name": "Study Room", "dimensions": {"width": 12, "length": 15}}
+    ],
+    "openings": [
+      {"type": "Balcony Door", "location": "Master Bedroom", "direction": "East"},
+      {"type": "Balcony Door", "location": "Bedroom2", "direction": "West"}
+    ]
+  }
+]}

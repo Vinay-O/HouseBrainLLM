@@ -1,0 +1,93 @@
+{ "levels": [ {
+    "level_id": "ground_floor",
+    "rooms": [
+      {
+        "room_id": "bedroom_1",
+        "type": "bedroom",
+        "dimensions": { "length": 16, "width": 14 },
+        "features": ["wardrobe", "balcony", "wheelchair_accessible"],
+        "position": { "x": 0, "y": 16 }
+      },
+      {
+        "room_id": "library",
+        "type": "study",
+        "dimensions": { "length": 12, "width": 10 },
+        "features": ["bookshelves", "reading_nook"],
+        "position": { "x": 16, "y": 0 }
+      },
+      {
+        "room_id": "home_theater",
+        "type": "entertainment",
+        "dimensions": { "length": 12, "width": 10 },
+        "features": ["projector", "reclining_seats"],
+        "position": { "x": 16, "y": 10 }
+      },
+      {
+        "room_id": "kitchen",
+        "type": "kitchen",
+        "dimensions": { "length": 12, "width": 8 },
+        "features": ["open_plan", "eco_friendly_appliances"],
+        "position": { "x": 0, "y": 30 }
+      },
+      {
+        "room_id": "living_room",
+        "type": "living",
+        "dimensions": { "length": 25, "width": 16 },
+        "features": ["open_plan", "wheelchair_accessible"],
+        "position": { "x": 0, "y": 38 }
+      },
+      {
+        "room_id": "bathroom_1",
+        "type": "bathroom",
+        "dimensions": { "length": 8, "width": 7 },
+        "features": ["wheelchair_accessible"],
+        "position": { "x": 28, "y": 0 }
+      },
+      {
+        "room_id": "utility_room",
+        "type": "utility",
+        "dimensions": { "length": 10, "width": 6 },
+        "features": ["eco_friendly"],
+        "position": { "x": 28, "y": 7 }
+      }
+    ],
+    "openings": [
+      {
+        "opening_id": "main_entrance",
+        "type": "door",
+        "dimensions": { "length": 4, "width": 10 },
+        "position": { "x": 50, "y": 20 }
+      },
+      {
+        "opening_id": "balcony_door",
+        "type": "door",
+        "dimensions": { "length": 6, "width": 8 },
+        "position": { "x": 14, "y": 35 }
+      },
+      {
+        "opening_id": "kitchen_window",
+        "type": "window",
+        "dimensions": { "length": 6, "width": 6 },
+        "position": { "x": 0, "y": 25 }
+      }
+    ],
+    "features": [
+      {
+        "feature_id": "wheelchair_ramp",
+        "type": "accessibility",
+        "dimensions": { "length": 10, "width": 4 },
+        "position": { "x": 50, "y": 25 }
+      },
+      {
+        "feature_id": "solar_panels",
+        "type": "eco_friendly",
+        "count": 4,
+        "position": "roof"
+      },
+      {
+        "feature_id": "rainwater_harvesting",
+        "type": "eco_friendly",
+        "location": "utility_room"
+      }
+    ]
+  } ] }

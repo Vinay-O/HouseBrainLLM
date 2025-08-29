@@ -1,0 +1,326 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 2,
+      "totalArea": 3000,
+      "style": "Colonial Bungalow with period features and ultra-premium minimalist modern design"
+    },
+    "plot": {
+      "orientation": "north",
+      "size": 3000,
+      "location": "coastal",
+      "features": [
+        "sea breeze access",
+        "maximum height restrictions"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 450
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "home_office",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "count": 6,
+        "area": 1200
+      },
+      {
+        "type": "bathroom",
+        "count": 5,
+        "area": 400
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "veranda",
+        "count": 2,
+        "area": 300
+      }
+    ]
+  },
+  "total_area": 3000.0,
+  "construction_cost": 1350000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "grand_entrance",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "main_north_entrance"
+          ],
+          "windows": [
+            "north_jaali_screen"
+          ]
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 25,
+            "height": 18
+          },
+          "doors": [
+            "to_veranda",
+            "to_dining"
+          ],
+          "windows": [
+            "north_jaali_large",
+            "east_operable"
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 15,
+            "height": 14
+          },
+          "doors": [
+            "to_kitchen",
+            "to_veranda"
+          ],
+          "windows": [
+            "west_operable"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 24,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_utility",
+            "to_exterior"
+          ],
+          "windows": [
+            "south_operable"
+          ]
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 40,
+            "y": 24,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            "south_small"
+          ]
+        },
+        {
+          "id": "bedroom_1_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 28,
+            "width": 15,
+            "height": 14
+          },
+          "doors": [
+            "to_bathroom"
+          ],
+          "windows": [
+            "east_jaali",
+            "south_operable"
+          ]
+        },
+        {
+          "id": "bathroom_1_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 28,
+            "width": 10,
+            "height": 14
+          },
+          "doors": [],
+          "windows": [
+            "south_vent_jaali"
+          ]
+        },
+        {
+          "id": "veranda_wrap_0",
+          "type": "veranda",
+          "bounds": {
+            "x": -5,
+            "y": -5,
+            "width": 55,
+            "height": 5
+          },
+          "doors": [],
+          "windows": [
+            "full_perimeter_jaali"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "home_office_1",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "north_jaali_large",
+            "soundproofing"
+          ]
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            "to_bathroom"
+          ],
+          "windows": [
+            "north_jaali",
+            "east_operable"
+          ]
+        },
+        {
+          "id": "bathroom_2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 16
+          },
+          "doors": [],
+          "windows": [
+            "north_vent_jaali"
+          ]
+        },
+        {
+          "id": "bedroom_3_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 15,
+            "height": 14
+          },
+          "doors": [
+            "to_bathroom"
+          ],
+          "windows": [
+            "west_operable",
+            "south_jaali"
+          ]
+        },
+        {
+          "id": "bathroom_3_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 16,
+            "width": 10,
+            "height": 14
+          },
+          "doors": [],
+          "windows": [
+            "south_vent_jaali"
+          ]
+        },
+        {
+          "id": "bedroom_4_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 16,
+            "width": 20,
+            "height": 14
+          },
+          "doors": [
+            "to_bathroom"
+          ],
+          "windows": [
+            "east_operable",
+            "south_jaali"
+          ]
+        },
+        {
+          "id": "bathroom_4_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 16,
+            "width": 10,
+            "height": 14
+          },
+          "doors": [],
+          "windows": [
+            "south_vent_jaali"
+          ]
+        },
+        {
+          "id": "veranda_upper_1",
+          "type": "veranda",
+          "bounds": {
+            "x": -5,
+            "y": -5,
+            "width": 55,
+            "height": 5
+          },
+          "doors": [],
+          "windows": [
+            "full_perimeter_jaali"
+          ]
+        }
+      ]
+    }
+  ]
+}

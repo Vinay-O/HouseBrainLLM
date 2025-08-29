@@ -1,0 +1,126 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "area": 400,
+          "position": [25, 5],
+          "connected_to": ["kitchen", "balcony"]
+        },
+        {
+          "room_type": "open_plan_kitchen",
+          "area": 300,
+          "position": [65, 5],
+          "connected_to": ["living_room"]
+        },
+        {
+          "room_type": "master_bedroom",
+          "area": 250,
+          "position": [5, 170],
+          "has_bathroom": true
+        },
+        {
+          "room_type": "bedroom_2",
+          "area": 200,
+          "position": [300, 180],
+          "connected_to": ["bathroom_2"]
+        },
+        {
+          "room_type": "bedroom_3",
+          "area": 200,
+          "position": [500, 180],
+          "connected_to": ["bathroom_2"]
+        },
+        {
+          "room_type": "home_theater",
+          "area": 400,
+          "position": [630, 5],
+          "has_bathroom": false
+        },
+        {
+          "room_type": "bathroom_1",
+          "area": 120,
+          "position": [75, 180]
+        },
+        {
+          "room_type": "bathroom_2",
+          "area": 120,
+          "position": [390, 180],
+          "connected_to": ["bedroom_2", "bedroom_3"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "balcony",
+          "area": 250,
+          "position": [25, 6]
+        },
+        {
+          "type": "garden",
+          "area": 1000,
+          "position": [830, 6]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom_4",
+          "area": 250,
+          "position": [100, 270],
+          "has_bathroom": false
+        },
+        {
+          "room_type": "bedroom_5",
+          "area": 250,
+          "position": [300, 270],
+          "connected_to": ["bathroom_4"]
+        },
+        {
+          "room_type": "study_room",
+          "area": 180,
+          "position": [600, 270]
+        },
+        {
+          "room_type": "guest_bathroom",
+          "area": 120,
+          "position": [390, 270],
+          "connected_to": ["bedroom_5"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "balcony",
+          "area": 400,
+          "position": [510, 36]
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_type": "family_room",
+          "area": 400,
+          "position": [270, 520],
+          "connected_to": ["balcony_2"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "balcony",
+          "area": 300,
+          "position": [490, 510]
+        },
+        {
+          "type": "terrace",
+          "area": 600,
+          "position": [820, 510]
+        }
+      ]
+    }
+  ]
+}

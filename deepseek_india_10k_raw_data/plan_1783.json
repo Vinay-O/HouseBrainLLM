@@ -1,0 +1,315 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 2400,
+      "style": "Traditional (Andhra-Kerala fusion)"
+    },
+    "plot": {
+      "width": 20,
+      "depth": 40,
+      "orientation": "east",
+      "location": "Kochi backwaters, heritage restoration site",
+      "challenges": [
+        "monsoon flooding",
+        "waterlogging",
+        "heritage constraints"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "puja_room",
+        "level": 1,
+        "specialFeatures": [
+          "marble flooring",
+          "brass fittings",
+          "east-facing"
+        ]
+      },
+      {
+        "type": "home_archive",
+        "level": 2,
+        "specialFeatures": [
+          "climate-controlled",
+          "fire-resistant"
+        ]
+      },
+      {
+        "type": "step_well",
+        "level": 0,
+        "specialFeatures": [
+          "rainwater harvesting",
+          "traditional design"
+        ]
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 3600000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "purpose": "Utilities, parking, and monsoon resilience",
+      "rooms": [
+        {
+          "id": "car_port",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "step_well_courtyard",
+          "type": "utility",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "specialFeatures": [
+            "rainwater collection",
+            "permeable stone paving"
+          ]
+        },
+        {
+          "id": "pump_utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 10,
+            "y": 15,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "specialFeatures": [
+            "water management systems",
+            "elevated electrical panel"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "purpose": "Main living area for newlywed couple",
+      "rooms": [
+        {
+          "id": "living_dining",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 15
+            }
+          ],
+          "specialFeatures": [
+            "high ceilings",
+            "traditional stone and lime finish"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "specialFeatures": [
+            "solar water heating connection",
+            "copper pipe system"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 10,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "specialFeatures": [
+            "marble flooring",
+            "brass fittings",
+            "east-facing for sunrise"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "purpose": "Private bedrooms and family expansion space",
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            },
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "specialFeatures": [
+            "walk-in closet",
+            "private balcony"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ]
+        },
+        {
+          "id": "home_archive",
+          "type": "study",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "specialFeatures": [
+            "climate-controlled storage",
+            "heritage document preservation"
+          ]
+        },
+        {
+          "id": "future_nursery",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "specialFeatures": [
+            "flexible space for future expansion"
+          ]
+        }
+      ]
+    }
+  ]
+}

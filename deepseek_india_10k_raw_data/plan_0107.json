@@ -1,0 +1,270 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 1500,
+      "style": "Malwa Fort Heritage Restoration"
+    },
+    "plot": {
+      "width": 30,
+      "depth": 50
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "workshop",
+        "count": 1
+      },
+      {
+        "type": "baithak",
+        "count": 1
+      },
+      {
+        "type": "garden",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1500.0,
+  "construction_cost": 675000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_fortwall",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 15
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "courtyard_garden",
+          "type": "garden",
+          "bounds": {
+            "x": 5,
+            "y": 8,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 15
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "workshop_west",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "workshop_east",
+          "type": "workshop",
+          "bounds": {
+            "x": 25,
+            "y": 8,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "rainwater_tank",
+          "type": "utility",
+          "bounds": {
+            "x": 10,
+            "y": 23,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "kitchen_utility",
+          "type": "kitchen",
+          "bounds": {
+            "x": 10,
+            "y": 28,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "baithak_pavilion",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 8,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5
+            },
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "bedroom_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 28,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3
+            },
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bathroom_en",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 28,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 2.5
+            }
+          ]
+        },
+        {
+          "id": "bathroom_guest",
+          "type": "bathroom",
+          "bounds": {
+            "x": 5,
+            "y": 28,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 2.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

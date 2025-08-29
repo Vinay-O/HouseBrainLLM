@@ -1,0 +1,115 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 2,
+      "totalArea": 480,
+      "style": "Farmhouse Modern"
+    },
+    "plot": {
+      "climate": "temperate maritime",
+      "topography": "compact urban balcony, following natural contours"
+    },
+    "roomBreakdown": [
+      {
+        "type": "game_room",
+        "purpose": "built-in arcade for outdoor adventure enthusiasts"
+      },
+      {
+        "type": "utility",
+        "purpose": "storm shelter for tornado safety"
+      }
+    ]
+  },
+  "total_area": 480.0,
+  "construction_cost": 120000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "game_room",
+          "type": "game_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "utility_shelter",
+          "type": "utility",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "loft_lounge",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6
+            },
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "compact_kitchenette",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

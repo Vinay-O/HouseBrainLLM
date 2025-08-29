@@ -1,0 +1,97 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "area": "200 sq ft",
+          "location": "front-left-corner",
+          "opening_to": ["Courtyard"]
+        },
+        {
+          "room_name": "Kitchen",
+          "area": "150 sq ft",
+          "location": "rear-center",
+          "opening_to": ["Dining Room", "Back Garden"]
+        },
+        {
+          "room_name": "Bedroom",
+          "area": "250 sq ft",
+          "location": "front-right-corner",
+          "opening_to": ["Courtyard"]
+        },
+        {
+          "room_name": "Bathroom",
+          "area": "80 sq ft",
+          "location": "rear-left-corner",
+          "opening_to": ["Bedroom", "Dining Room"]
+        },
+        {
+          "room_name": "Dining Room",
+          "area": "150 sq ft",
+          "location": "center",
+          "opening_to": ["Living Room", "Kitchen", "Bathroom"]
+        },
+        {
+          "room_name": "Courtyard",
+          "area": "200 sq ft",
+          "location": "center-front",
+          "opening_to": ["Living Room", "Bedroom"]
+        },
+        {
+          "room_name": "Garage",
+          "area": "400 sq ft",
+          "location": "rear-right-corner",
+          "number_of_parking_spaces": 2
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "from_room": "Living Room",
+          "to_opening": "Courtyard"
+        },
+        {
+          "opening_type": "window",
+          "from_room": "Bedroom",
+          "orientation": "south"
+        },
+        {
+          "opening_type": "French Door",
+          "from_room": "Dining Room",
+          "to_opening": "Back Garden"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Private Gym",
+          "area": "300 sq ft",
+          "location": "center-front",
+          "opening_to": ["Balcony"]
+        },
+        {
+          "room_name": "Utility Room",
+          "area": "120 sq ft",
+          "location": "rear-left-corner",
+          "opening_to": ["Private Gym", "Balcony"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "from_room": "Private Gym",
+          "to_opening": "Balcony"
+        },
+        {
+          "opening_type": "window",
+          "from_room": "Utility Room",
+          "orientation": "north-west"
+        }
+      ]
+    }
+  ]
+}

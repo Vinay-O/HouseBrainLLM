@@ -1,0 +1,149 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200.0,
+      "style": "Mediterranean"
+    },
+    "plot": {
+      "width": 80,
+      "length": 100
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1,
+        "description": "Master bedroom with en-suite bathroom and private balcony"
+      },
+      {
+        "type": "bathroom",
+        "count": 1,
+        "description": "En-suite bathroom for master bedroom"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Open-plan kitchen integrated with living area"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Spacious living area open to kitchen and garden"
+      },
+      {
+        "type": "balcony",
+        "count": 1,
+        "description": "Private balcony accessible from bedroom"
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 240000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "kitchen_living",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 20
+            },
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 20,
+              "size": 15
+            },
+            {
+              "wall": "west",
+              "position": 15,
+              "size": 10
+            }
+          ]
+        },
+        {
+          "id": "bedroom_balcony",
+          "type": "balcony",
+          "bounds": {
+            "x": 40,
+            "y": -10,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

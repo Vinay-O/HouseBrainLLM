@@ -1,0 +1,149 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "High-Tech Architecture"
+    },
+    "plot": {
+      "location": "Elevated platform above wetlands",
+      "climate": "Humid subtropical",
+      "orientation": "South-facing for solar gain"
+    },
+    "roomBreakdown": [
+      {
+        "type": "artist_studio",
+        "area": 400,
+        "description": "North-facing clerestory windows for even, shadow-free light"
+      },
+      {
+        "type": "climate_controlled_storage",
+        "area": 200,
+        "description": "Insulated, humidity and temperature-controlled storage for collections"
+      },
+      {
+        "type": "bedroom",
+        "area": 150,
+        "description": "Compact sleeping quarters for frequent traveler"
+      },
+      {
+        "type": "bathroom",
+        "area": 80,
+        "description": "Efficient wet room design"
+      },
+      {
+        "type": "kitchen",
+        "area": 100,
+        "description": "Galley-style kitchenette"
+      },
+      {
+        "type": "living_area",
+        "area": 270,
+        "description": "Open plan living space with south-facing glazing"
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 288000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "artist_studio",
+          "type": "artist_studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "south_door"
+          ],
+          "windows": [
+            "north_clerestory"
+          ]
+        },
+        {
+          "id": "climate_storage",
+          "type": "climate_controlled_storage",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "west_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "north_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 7,
+            "height": 10
+          },
+          "doors": [
+            "west_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 22,
+            "y": 20,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "south_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "living_area",
+          "type": "living_area",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 30,
+            "height": 9
+          },
+          "doors": [
+            "north_door",
+            "south_door"
+          ],
+          "windows": [
+            "south_glazing"
+          ]
+        }
+      ]
+    }
+  ]
+}

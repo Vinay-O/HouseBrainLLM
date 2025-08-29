@@ -1,0 +1,285 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 650,
+      "style": "Traditional Craftsman"
+    },
+    "plot": {
+      "orientation": "east-west",
+      "climate": "desert",
+      "location": "urban rooftop"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "type": "office",
+        "area": 120
+      },
+      {
+        "type": "kitchen",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 80
+      },
+      {
+        "type": "living_room",
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 650.0,
+  "construction_cost": 125000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 7.5
+              },
+              "to_room": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double-hung",
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "size": {
+                "width": 4,
+                "height": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "office",
+          "type": "office",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 5
+              },
+              "to_room": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double-hung",
+              "position": {
+                "x": 16,
+                "y": 0
+              },
+              "size": {
+                "width": 4,
+                "height": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 20
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double-hung",
+              "position": {
+                "x": 5,
+                "y": 15
+              },
+              "size": {
+                "width": 4,
+                "height": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 14
+              },
+              "to_room": "hallway"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 22,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 11,
+                "y": 25
+              },
+              "to_room": "rooftop_deck"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 32.5
+              },
+              "to_room": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "type": "picture",
+              "position": {
+                "x": 11,
+                "y": 40
+              },
+              "size": {
+                "width": 8,
+                "height": 4
+              }
+            },
+            {
+              "type": "double-hung",
+              "position": {
+                "x": 22,
+                "y": 32.5
+              },
+              "size": {
+                "width": 4,
+                "height": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 18,
+            "y": 10,
+            "width": 4,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 18,
+                "y": 14
+              },
+              "to_room": "bathroom"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 18,
+                "y": 17.5
+              },
+              "to_room": "office"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 18,
+                "y": 22
+              },
+              "to_room": "bedroom"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 22,
+                "y": 17.5
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "type": "sustainability",
+      "name": "Living Roof with Native Wildflowers",
+      "description": "Extensive green roof system with drought-tolerant native wildflowers for insulation and stormwater management."
+    },
+    {
+      "type": "sustainability",
+      "name": "Vertical Hydroponic Garden Wall",
+      "description": "Interior hydroponic system integrated into the east-facing wall for growing herbs and vegetables."
+    },
+    {
+      "type": "architectural",
+      "name": "A-Frame with Modern Extensions",
+      "description": "Traditional A-frame structure with modern box-like extensions to maximize interior space and roof area."
+    },
+    {
+      "type": "pet",
+      "name": "Pet-Friendly Access",
+      "description": "Integrated pet door from living room to secured rooftop deck area."
+    }
+  ]
+}

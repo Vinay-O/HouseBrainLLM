@@ -1,0 +1,395 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Desert Contemporary"
+    },
+    "plot": {
+      "slope": 30,
+      "climate": "Humid Subtropical",
+      "orientation": "Diagonal to Prevailing Winds",
+      "privacy": "High from Neighbors"
+    },
+    "roomBreakdown": [
+      {
+        "type": "observatory",
+        "area": 400
+      },
+      {
+        "type": "master_bedroom",
+        "area": 350
+      },
+      {
+        "type": "guest_bedroom",
+        "area": 250
+      },
+      {
+        "type": "great_room",
+        "area": 600
+      },
+      {
+        "type": "kitchen",
+        "area": 300
+      },
+      {
+        "type": "dining_room",
+        "area": 200
+      },
+      {
+        "type": "study",
+        "area": 150
+      },
+      {
+        "type": "utility_room",
+        "area": 150
+      },
+      {
+        "type": "garage",
+        "area": 400
+      },
+      {
+        "type": "mechanical_room",
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1920000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "garage_lower",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "overhead",
+              "position": {
+                "x": 10,
+                "y": 0
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_room",
+          "type": "mechanical_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "solid_core",
+              "position": {
+                "x": 20,
+                "y": 10
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "solid_core",
+              "position": {
+                "x": 30,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "wine_cellar",
+          "type": "storage",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "solid_core",
+              "position": {
+                "x": 30,
+                "y": 17.5
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "great_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "position": {
+                "x": 15,
+                "y": 0
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "size": 8
+            },
+            {
+              "type": "triple_glazed_argon",
+              "position": {
+                "x": 25,
+                "y": 0
+              },
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "position": {
+                "x": 30,
+                "y": 7.5
+              },
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "position": {
+                "x": 37.5,
+                "y": 15
+              },
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "solid_wood",
+              "position": {
+                "x": 45,
+                "y": 5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "position": {
+                "x": 45,
+                "y": 0
+              },
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 10,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "solid_wood",
+              "position": {
+                "x": 45,
+                "y": 17.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "position": {
+                "x": 50,
+                "y": 10
+              },
+              "size": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 17.5
+          },
+          "doors": [
+            {
+              "type": "solid_wood",
+              "position": {
+                "x": 10,
+                "y": 0
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "size": 10
+            }
+          ]
+        },
+        {
+          "id": "master_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "solid_wood",
+              "position": {
+                "x": 20,
+                "y": 5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed_argon_obscured",
+              "position": {
+                "x": 25,
+                "y": 0
+              },
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "master_closet",
+          "type": "closet",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 10,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "type": "solid_wood",
+              "position": {
+                "x": 25,
+                "y": 10
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "observatory",
+          "type": "observatory",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 25,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "solid_wood",
+              "position": {
+                "x": 30,
+                "y": 8
+              }
+            }
+          ],
+          "windows": [],
+          "special_features": [
+            "retractable_dome"
+          ]
+        }
+      ]
+    }
+  ]
+}

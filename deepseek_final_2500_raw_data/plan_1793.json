@@ -1,0 +1,132 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 980,
+      "style": "Traditional Craftsman"
+    },
+    "plot": {
+      "description": "Windswept coastal bluff in an alpine climate with heavy snow loads"
+    },
+    "roomBreakdown": [
+      {
+        "room": "Main Pod",
+        "description": "Open-plan living, dining, and kitchen area with south-facing glazing for solar gain"
+      },
+      {
+        "room": "Guest Pod",
+        "description": "Flexible space with Murphy bed system for visiting international travelers"
+      },
+      {
+        "room": "Bathroom Pod",
+        "description": "Compact wet room with efficient fixtures"
+      },
+      {
+        "room": "Entry/Utility Pod",
+        "description": "Mudroom entry with storage for travel gear and mechanical systems"
+      }
+    ]
+  },
+  "total_area": 980.0,
+  "construction_cost": 285000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_pod",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "guest_pod",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_pod",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "entry_pod",
+          "type": "mudroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

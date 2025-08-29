@@ -1,0 +1,321 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 2400,
+      "style": "Brutalist Concrete"
+    },
+    "plot": {
+      "slope": "south-facing sloping vineyard",
+      "climate": "Mediterranean dry summers",
+      "features": [
+        "bioswales for stormwater management"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "music_room",
+        "requirements": [
+          "acoustic isolation",
+          "south-facing for natural light"
+        ]
+      },
+      {
+        "type": "garage",
+        "requirements": [
+          "storage for outdoor gear"
+        ]
+      },
+      {
+        "type": "great_room",
+        "requirements": [
+          "open plan",
+          "south-facing glazing"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "requirements": [
+          "open to great room"
+        ]
+      },
+      {
+        "type": "primary_bedroom",
+        "requirements": [
+          "south-facing",
+          "private terrace"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "requirements": []
+      },
+      {
+        "type": "bedroom",
+        "requirements": []
+      },
+      {
+        "type": "bathroom",
+        "requirements": []
+      },
+      {
+        "type": "bathroom",
+        "requirements": []
+      },
+      {
+        "type": "utility",
+        "requirements": []
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "overhead"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "music_room_0",
+          "type": "music_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "type": "solid_core"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "fixed"
+            }
+          ]
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 36,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 44,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "clerestory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "great_room_1",
+          "type": "great_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 28,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "sliding"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "full_height"
+            },
+            {
+              "wall": "east",
+              "type": "fixed"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "fixed"
+            }
+          ]
+        },
+        {
+          "id": "primary_bedroom_1",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "sliding"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "fixed"
+            },
+            {
+              "wall": "east",
+              "type": "fixed"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 16,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "clerestory"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "fixed"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 20,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "fixed"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 20,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "clerestory"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

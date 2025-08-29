@@ -1,0 +1,99 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall & Living Area",
+          "description": "Open-plan space featuring ample natural light from west-facing windows and cross ventilation. Incorporates Vastu principles with a welcoming entrance aligned to the north.",
+          "dimensions": {
+            "length_m": 5,
+            "width_m": 4
+          },
+          "adjacent_rooms": ["Living Room", "Kitchen"]
+        },
+        {
+          "name": "Kitchen",
+          "description": "Modern, compact kitchen with natural light from adjacent living area. Designed for efficient workflow and ventilation.",
+          "dimensions": {
+            "length_m": 3,
+            "width_m": 2
+          },
+          "adjacent_rooms": ["Living Area"]
+        },
+        {
+          "name": "Central Courtyard",
+          "description": "A private, landscaped courtyard providing natural light, fresh air and a visual focal point. Incorporates Vastu elements with water features and greenery.",
+          "dimensions": {
+            "length_m": 6,
+            "width_m": 4
+          },
+          "adjacent_rooms": ["Living Area", "Studio"]
+        },
+        {
+          "name": "Home Office",
+          "description": "Dedicated, quiet workspace designed with north-facing windows to maximize natural light and reduce glare. Incorporates ergonomic layout for productivity.",
+          "dimensions": {
+            "length_m": 3,
+            "width_m": 2
+          },
+          "adjacent_rooms": ["Living Area"]
+        },
+        {
+          "name": "Private Gym",
+          "description": "Well-ventilated gym space with natural light from west-facing windows and openable skylights. Equipped for a variety of fitness equipment.",
+          "dimensions": {
+            "length_m": 4,
+            "width_m": 3
+          },
+          "adjacent_rooms": ["Living Area", "Central Courtyard"]
+        },
+        {
+          "name": "Studio Apartment",
+          "description": "Multi-functional studio space designed for flexible use. It incorporates a split-level layout to provide separation between living and sleeping areas, with large windows maximizing natural light.",
+          "dimensions": {
+            "length_m": 6,
+            "width_m": 5
+          },
+          "adjacent_rooms": ["Living Area", "Home Office"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "Window",
+          "description": "Large, south-facing windows in the living area for maximum natural light and ventilation. West-facing windows are also incorporated to balance energy flows per Vastu.",
+          "location": "Living Area"
+        },
+        {
+          "type": "Door",
+          "description": "Main entrance door with a secure vestibule leading into the living space. Incorporates traditional Indian design elements.",
+          "location": "Entrance Hall"
+        },
+        {
+          "type": "Window",
+          "description": "Dedicated home office windows designed to minimize glare and optimize daylighting from north-facing exposures.",
+          "location": "Home Office"
+        },
+        {
+          "type": "Door",
+          "description": "Separation door between studio apartment and living area, ensuring privacy in multi-functional space.",
+          "location": "Studio Apartment"
+        }
+      ]
+    }
+  ],
+  "vastu_considerations": {
+    "plot_orientation": "West-facing",
+    "entrance_alignment": "North",
+    "room_placement": {
+      "kitchen": "East or North-East, away from entrance",
+      "bedroom/studio": "South-West to ensure calm environment",
+      "gym": "West side for energy and strength"
+    }
+  },
+  "local_building_norms": {
+    "irregular_plot_design": true,
+    "industrial_style_elements": true,
+    "split_level_layout": true
+  }
+}

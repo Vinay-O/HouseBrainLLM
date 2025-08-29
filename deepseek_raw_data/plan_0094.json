@@ -1,0 +1,130 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 5400,
+      "style": "Farmhouse"
+    },
+    "plot": {
+      "width": 60,
+      "length": 90,
+      "facing": "West",
+      "entranceDirection": "North"
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "count": 1
+      },
+      {
+        "type": "library",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 5400.0,
+  "construction_cost": 1620000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 60
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 20
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 15
+            },
+            {
+              "wall": "west",
+              "position": 45
+            }
+          ]
+        },
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 40,
+            "y": 30,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 50,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

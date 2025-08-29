@@ -1,0 +1,206 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 800,
+      "style": "Tropical Modernist"
+    },
+    "plot": {
+      "shape": "elongated_rectangle",
+      "orientation": "north_south",
+      "challenges": [
+        "railway_adjacent",
+        "heavy_snow_loads",
+        "flood_risk"
+      ],
+      "climate": "alpine"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "type": "kitchen",
+        "area": 80
+      },
+      {
+        "type": "living_room",
+        "area": 200
+      },
+      {
+        "type": "spa",
+        "area": 120
+      },
+      {
+        "type": "mechanical",
+        "area": 60
+      },
+      {
+        "type": "entry",
+        "area": 60
+      },
+      {
+        "type": "circulation",
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry",
+          "type": "entry",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 4,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3,
+              "width": 3
+            },
+            {
+              "wall": "south",
+              "position": 9,
+              "width": 3
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "width": 2
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 10,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "width": 2
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "spa",
+          "type": "spa",
+          "bounds": {
+            "x": 24,
+            "y": 10,
+            "width": 6,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3,
+              "width": 2
+            }
+          ]
+        },
+        {
+          "id": "mechanical",
+          "type": "mechanical",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 4,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 3000,
+      "style": "Malwa Traditional"
+    },
+    "plot": {
+      "size": 3000,
+      "orientation": "south",
+      "view": "garden",
+      "topography": "sloped",
+      "location": "hill station"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "count": 1,
+        "area": 80
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "terrace",
+        "count": 1,
+        "area": 350
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 2160000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "parking",
+          "type": "parking",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "orientation": "north"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 20,
+                "y": 4
+              },
+              "orientation": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 25,
+                "y": 0
+              },
+              "orientation": "north",
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "main_entry",
+              "position": {
+                "x": 12,
+                "y": 0
+              },
+              "orientation": "north"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 25,
+                "y": 6
+              },
+              "orientation": "east"
+            }
+          ],
+          "windows": [
+            {
+              "type": "large",
+              "position": {
+                "x": 0,
+                "y": 6
+              },
+              "orientation": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 25,
+                "y": 5
+              },
+              "orientation": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "position": {
+                "x": 35,
+                "y": 5
+              },
+              "orientation": "east",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "study_1",
+          "type": "study",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 25,
+                "y": 14
+              },
+              "orientation": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "position": {
+                "x": 35,
+                "y": 14
+              },
+              "orientation": "east",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 8,
+                "y": 16
+              },
+              "orientation": "east"
+            }
+          ],
+          "windows": [
+            {
+              "type": "high_vent",
+              "position": {
+                "x": 4,
+                "y": 12
+              },
+              "orientation": "north",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 8,
+            "y": 12,
+            "width": 17,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 8,
+                "y": 18
+              },
+              "orientation": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "large",
+              "position": {
+                "x": 12,
+                "y": 24
+              },
+              "orientation": "south",
+              "size": "large"
+            },
+            {
+              "type": "casement",
+              "position": {
+                "x": 25,
+                "y": 18
+              },
+              "orientation": "east",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "terrace_1",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 35,
+            "height": 24
+          },
+          "doors": [
+            {
+              "type": "external",
+              "position": {
+                "x": 17,
+                "y": 0
+              },
+              "orientation": "north"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

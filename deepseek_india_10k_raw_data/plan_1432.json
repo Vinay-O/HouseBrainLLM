@@ -1,0 +1,316 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 1200,
+      "style": "Heritage-Inspired (Odisha Temple)"
+    },
+    "plot": {
+      "shape": "Rectangle",
+      "width": 30,
+      "length": 40
+    },
+    "roomBreakdown": [
+      {
+        "type": "puja_room",
+        "area": 120
+      },
+      {
+        "type": "meditation_room",
+        "area": 100
+      },
+      {
+        "type": "home_spa",
+        "area": 150
+      },
+      {
+        "type": "master_bedroom",
+        "area": 180
+      },
+      {
+        "type": "bedroom",
+        "area": 140
+      },
+      {
+        "type": "bedroom",
+        "area": 140
+      },
+      {
+        "type": "living_room",
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "area": 100
+      },
+      {
+        "type": "dining_room",
+        "area": 90
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 300000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "treatment": "Double-glazed for noise insulation"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7,
+              "treatment": "Double-glazed for noise insulation"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7,
+              "treatment": "Double-glazed for noise insulation"
+            }
+          ]
+        },
+        {
+          "id": "water_storage",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "notes": "Copper or brass tank with traditional Odisha designs, positioned to capture west-facing evening breeze for natural cooling"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7,
+              "treatment": "Double-glazed for noise insulation"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 6,
+              "treatment": "Double-glazed for noise insulation"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 27,
+            "y": 0,
+            "width": 13,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 6,
+              "treatment": "Double-glazed for noise insulation"
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 20,
+            "height": 13
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "treatment": "Double-glazed for noise insulation"
+            }
+          ],
+          "notes": "West-facing for evening light, features spiritual geometric patterns (Yantras) on floor and walls"
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "meditation_room",
+          "type": "meditation_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "treatment": "Double-glazed for noise insulation"
+            }
+          ],
+          "notes": "Quiet top-floor retreat with west-facing windows to capture evening breeze, adorned with spiritual geometric patterns"
+        },
+        {
+          "id": "home_spa",
+          "type": "home_spa",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [],
+          "notes": "Includes space for traditional massage and Ayurvedic treatments; designed for tranquility with natural materials"
+        }
+      ]
+    }
+  ],
+  "materials": {
+    "primary": "Local stone, mud, and lime plaster",
+    "facade": "Carved regional stone varieties with Odisha temple-inspired motifs",
+    "roof": "Traditional slate or clay tiles",
+    "special_features": [
+      "Earthquake-resistant flexible joints in construction",
+      "Copper/brass water storage with traditional designs",
+      "Double-glazed windows throughout for urban noise pollution mitigation"
+    ]
+  }
+}

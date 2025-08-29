@@ -1,0 +1,584 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 2400,
+      "style": "Gujarati Pol Heritage"
+    },
+    "plot": {
+      "width": 40,
+      "height": 60
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1
+      },
+      {
+        "type": "children_bedroom",
+        "count": 2
+      },
+      {
+        "type": "domestic_help_room",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "handloom_workshop",
+        "count": 1
+      },
+      {
+        "type": "puja_room",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 4
+      },
+      {
+        "type": "courtyard",
+        "count": 1
+      },
+      {
+        "type": "verandah",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 2
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 4800000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 0
+              },
+              "to": "exterior"
+            },
+            {
+              "position": {
+                "x": 4,
+                "y": 40
+              },
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 8,
+            "y": 8,
+            "width": 24,
+            "height": 24
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 8,
+                "y": 20
+              },
+              "to": "entrance_verandah"
+            },
+            {
+              "position": {
+                "x": 32,
+                "y": 20
+              },
+              "to": "handloom_workshop"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 8
+              },
+              "to": "living_room"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 32
+              },
+              "to": "dining_room"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 14,
+                "y": 8
+              },
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 8,
+                "y": 4
+              },
+              "to": "exterior"
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 26,
+                "y": 8
+              },
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 6,
+                "y": 40
+              },
+              "to": "dining_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 50
+              },
+              "to": "exterior"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 12,
+            "y": 40,
+            "width": 16,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 40
+              },
+              "to": "central_courtyard"
+            },
+            {
+              "position": {
+                "x": 12,
+                "y": 50
+              },
+              "to": "kitchen"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "domestic_help_room",
+          "type": "domestic_help_room",
+          "bounds": {
+            "x": 28,
+            "y": 40,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 34,
+                "y": 40
+              },
+              "to": "dining_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 40,
+                "y": 50
+              },
+              "to": "exterior"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_ground_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 32,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 32
+              },
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_ground_1",
+          "type": "storage",
+          "bounds": {
+            "x": 32,
+            "y": 32,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 36,
+                "y": 32
+              },
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 14,
+                "y": 16
+              },
+              "to": "balcony"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 8,
+                "y": 8
+              },
+              "to": "exterior"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 8
+              },
+              "to": "central_courtyard"
+            }
+          ]
+        },
+        {
+          "id": "children_bedroom_1",
+          "type": "children_bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 26,
+                "y": 16
+              },
+              "to": "balcony"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 32,
+                "y": 8
+              },
+              "to": "exterior"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 8
+              },
+              "to": "central_courtyard"
+            }
+          ]
+        },
+        {
+          "id": "children_bedroom_2",
+          "type": "children_bedroom",
+          "bounds": {
+            "x": 8,
+            "y": 24,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 14,
+                "y": 24
+              },
+              "to": "balcony"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 8,
+                "y": 32
+              },
+              "to": "exterior"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 32
+              },
+              "to": "central_courtyard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_floor1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 24,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 23,
+                "y": 24
+              },
+              "to": "balcony"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_floor1_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 26,
+            "y": 24,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 29,
+                "y": 24
+              },
+              "to": "balcony"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_floor1",
+          "type": "storage",
+          "bounds": {
+            "x": 32,
+            "y": 24,
+            "width": 8,
+            "height": 16
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 36,
+                "y": 24
+              },
+              "to": "balcony"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "balcony",
+          "type": "verandah",
+          "bounds": {
+            "x": 8,
+            "y": 16,
+            "width": 24,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 14,
+                "y": 16
+              },
+              "to": "master_bedroom"
+            },
+            {
+              "position": {
+                "x": 26,
+                "y": 16
+              },
+              "to": "children_bedroom_1"
+            },
+            {
+              "position": {
+                "x": 14,
+                "y": 24
+              },
+              "to": "children_bedroom_2"
+            },
+            {
+              "position": {
+                "x": 23,
+                "y": 24
+              },
+              "to": "bathroom_floor1_1"
+            },
+            {
+              "position": {
+                "x": 29,
+                "y": 24
+              },
+              "to": "bathroom_floor1_2"
+            },
+            {
+              "position": {
+                "x": 36,
+                "y": 24
+              },
+              "to": "storage_floor1"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "handloom_workshop",
+          "type": "handloom_workshop",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 8,
+            "height": 32
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 32,
+                "y": 16
+              },
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 40,
+                "y": 8
+              },
+              "to": "exterior"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 24
+              },
+              "to": "exterior"
+            },
+            {
+              "position": {
+                "x": 36,
+                "y": 0
+              },
+              "to": "exterior"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{"levels": [
+    {
+        "level_id": "ground_floor",
+        "rooms": [
+            {
+                "room_type": "entrance_hall",
+                "dimensions": {"length": 10, "width": 8},
+                "description": "Scandinavian style entrance with modern minimalist design and ample natural light. Incorporates Vastu by aligning the entrance to the northeast for positive energy flow."
+            },
+            {
+                "room_type": "living_room",
+                "dimensions": {"length": 20, "width": 15},
+                "description": "Open-plan living area with seating arrangements that encourage conversation and connection. Includes integrated Scandinavian elements such as light color palettes and functional furniture."
+            },
+            {
+                "room_type": "kitchen",
+                "dimensions": {"length": 12, "width": 10},
+                "description": "Open kitchen design adjoining the living room with Scandinavian aesthetics, featuring clean lines, neutral colors, and efficient workstations. Vastu principles suggest placing the cooking area in the southeast for prosperity."
+            },
+            {
+                "room_type": "dining_area",
+                "dimensions": {"length": 12, "width": 10},
+                "description": "Adjacent to the kitchen, a dining space designed to promote family gatherings with subtle Nordic design elements and natural lighting."
+            },
+            {
+                "room_type": "library",
+                "dimensions": {"length": 12, "width": 10},
+                "description": "Quiet study area featuring Scandinavian minimalist decor, soft lighting, comfortable seating, and built-in bookshelves. Placed in the west as per Vastu to enhance creativity."
+            },
+            {
+                "room_type": "bathroom",
+                "dimensions": {"length": 6, "width": 5},
+                "description": "Compact bathroom with Scandinavian design emphasizing functionality and simplicity, incorporating modern fixtures and natural light where possible."
+            },
+            {
+                "room_type": "utility_room",
+                "dimensions": {"length": 8, "width": 6},
+                "description": "Small utility space for storage of cleaning supplies and maintenance equipment, designed in a Scandinavian style with concealed storage solutions."
+            }
+        ],
+        "openings": [
+            {
+                "type": "windows",
+                "locations": [
+                    {"room": "entrance_hall", "direction": "north"},
+                    {"room": "living_room", "direction": "west"},
+                    {"room": "kitchen", "direction": "southeast"}
+                ],
+                "description": "Large, energy-efficient windows designed to maximize natural light and provide ventilation in accordance with Scandinavian design principles."
+            },
+            {
+                "type": "doors",
+                "locations": [
+                    {"room": "entrance_hall", "to": "living_room"},
+                    {"room": "kitchen", "to": "dining_area"},
+                    {"room": "library", "to": "utility_room"}
+                ],
+                "description": "Minimalist doors that allow seamless transitions between spaces."
+            },
+            {
+                "type": "balcony",
+                "locations": [
+                    {"room": "living_room", "direction": "southwest"}
+                ],
+                "description": "Scandinavian-style balcony providing an outdoor extension for relaxation and natural light enhancement, adhering to local building norms."
+            }
+        ]
+    },
+    {
+        "level_id": "first_floor",
+        "rooms": [
+            {
+                "room_type": "master_bedroom",
+                "dimensions": {"length": 15, "width": 12},
+                "description": "Spacious master bedroom with Scandinavian design elements emphasizing comfort and tranquility. Features a private balcony aligned with the north for Vastu benefits."
+            },
+            {
+                "room_type": "bedroom",
+                "dimensions": {"length": 10, "width": 8},
+                "description": "Additional bedroom designed for privacy, following minimalist Scandinavian aesthetics and efficient use of space."
+            },
+            {
+                "room_type": "bedroom",
+                "dimensions": {"length": 10, "width": 8},
+                "description": "Another bedroom in the first floor with a functional layout and simple design consistent with Scandinavian style."
+            },
+            {
+                "room_type": "bathroom",
+                "dimensions": {"length": 6, "width": 5},
+                "description": "Private bathroom attached to the master bedroom with modern fixtures and efficient space utilization."
+            }
+        ],
+        "openings": [
+            {
+                "type": "windows",
+                "locations": [
+                    {"room": "master_bedroom", "direction": "north"},
+                    {"room": "bedroom", "direction": "east"}
+                ],
+                "description": "Large windows to ensure ample natural light and enhance the sense of space."
+            },
+            {
+                "type": "balcony",
+                "locations": [
+                    {"room": "master_bedroom", "direction": "north"}
+                ],
+                "description": "Private balcony extending from the master bedroom, designed for relaxation and natural light enhancement."
+            }
+        ]
+    }
+]}

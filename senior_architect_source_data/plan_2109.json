@@ -1,0 +1,323 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 4800,
+      "style": "Deconstructivist"
+    },
+    "plot": {
+      "terrain": "sloping_vineyard",
+      "climate": "tropical_monsoons"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "home_office",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "greenhouse",
+        "count": 1
+      },
+      {
+        "type": "mechanical_room",
+        "count": 1
+      },
+      {
+        "type": "wine_cellar",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 4800.0,
+  "construction_cost": 4320000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_hall",
+          "type": "hall",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            "north_exterior",
+            "south_to_living"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "south_to_hall",
+            "west_to_dining"
+          ],
+          "windows": [
+            "north_window_wall"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "east_to_living",
+            "south_to_kitchen"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 28,
+            "y": 14,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            "north_to_dining",
+            "east_to_pantry"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "pantry",
+          "type": "utility",
+          "bounds": {
+            "x": 44,
+            "y": 14,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "west_to_kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "office_1",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            "north_to_hall"
+          ],
+          "windows": [
+            "east_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "west_to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical",
+          "type": "mechanical_room",
+          "bounds": {
+            "x": 12,
+            "y": 20,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "north_to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "wine_cellar",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 26,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "north_to_hall"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 18,
+            "height": 16
+          },
+          "doors": [
+            "south_to_hall"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "master_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "west_to_bedroom"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "south_to_hall"
+          ],
+          "windows": [
+            "north_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 28,
+            "y": 12,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "north_to_hall"
+          ],
+          "windows": [
+            "south_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 42,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "south_to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "office_2",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "north_to_hall"
+          ],
+          "windows": [
+            "east_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "greenhouse",
+          "type": "greenhouse",
+          "bounds": {
+            "x": 12,
+            "y": 16,
+            "width": 16,
+            "height": 20
+          },
+          "doors": [
+            "west_to_hall"
+          ],
+          "windows": [
+            "north_glazing",
+            "east_glazing",
+            "south_glazing"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 750.0,
+      "style": "Japanese Zen Experimental"
+    },
+    "plot": {
+      "climate": "humid_subtropical",
+      "orientation": "diagonal_to_prevailing_winds",
+      "constraints": [
+        "compact_urban_balcony_conversion",
+        "flood_resistant_elevated"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "sunken_living_room",
+        "area": 180.0
+      },
+      {
+        "type": "master_bedroom",
+        "area": 120.0
+      },
+      {
+        "type": "teen_bedroom",
+        "area": 110.0
+      },
+      {
+        "type": "home_brewery",
+        "area": 90.0
+      },
+      {
+        "type": "bathroom",
+        "area": 60.0
+      },
+      {
+        "type": "kitchen",
+        "area": 80.0
+      },
+      {
+        "type": "zen_garden",
+        "area": 110.0
+      }
+    ]
+  },
+  "total_area": 750.0,
+  "construction_cost": 187500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "elevation": 1.2,
+      "rooms": [
+        {
+          "id": "sunken_living",
+          "type": "sunken_living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "flooring": "cork",
+          "finishes": [
+            "bamboo_wall_panels",
+            "shoji_screens"
+          ],
+          "doors": [
+            "entry_door_north",
+            "stairs_to_level1"
+          ],
+          "windows": [
+            "large_window_north",
+            "window_east"
+          ]
+        },
+        {
+          "id": "zen_garden",
+          "type": "zen_garden",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 10,
+            "height": 11
+          },
+          "flooring": "gravel_and_stone",
+          "finishes": [
+            "bamboo_fence",
+            "stone_lanterns"
+          ],
+          "doors": [
+            "sliding_door_from_living"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "elevation": 2.7,
+      "rooms": [
+        {
+          "id": "master_bed",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "flooring": "cork",
+          "finishes": [
+            "bamboo_closet_doors",
+            "neutral_tones"
+          ],
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": [
+            "window_south",
+            "window_west"
+          ]
+        },
+        {
+          "id": "teen_bed",
+          "type": "teen_bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 10,
+            "height": 11
+          },
+          "flooring": "cork",
+          "finishes": [
+            "bamboo_desk",
+            "bamboo_shelving"
+          ],
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": [
+            "window_south",
+            "window_east"
+          ]
+        },
+        {
+          "id": "brewery",
+          "type": "home_brewery",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 9,
+            "height": 10
+          },
+          "flooring": "cork",
+          "finishes": [
+            "bamboo_countertop",
+            "stainless_steel_brewing_system"
+          ],
+          "features": [
+            "temperature_control_system",
+            "insulated_walls"
+          ],
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": [
+            "vent_window_north"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 9,
+            "y": 12,
+            "width": 6,
+            "height": 10
+          },
+          "flooring": "waterproof_cork",
+          "finishes": [
+            "bamboo_vanity",
+            "stone_tile_walls"
+          ],
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": [
+            "opaque_window_north"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "flooring": "cork",
+          "finishes": [
+            "bamboo_cabinets",
+            "bamboo_breakfast_bar"
+          ],
+          "doors": [
+            "hallway_door",
+            "stairs_to_level0"
+          ],
+          "windows": [
+            "window_west"
+          ]
+        }
+      ]
+    }
+  ]
+}

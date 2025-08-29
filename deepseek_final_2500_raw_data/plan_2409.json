@@ -1,0 +1,341 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 2400.0,
+      "style": "Bauhaus Functional"
+    },
+    "plot": {
+      "slope": 30.0,
+      "climate": "tropical with monsoons",
+      "orientation": "east-west linear"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3,
+        "description": "Master suite for parent and two bedrooms for teenagers"
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "description": "Ensuite for master and shared bathroom for teenagers"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Functional kitchen with dining area"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Sunken living room with elevated views"
+      },
+      {
+        "type": "home_theater",
+        "count": 1,
+        "description": "Media room with fiber optic star ceiling"
+      },
+      {
+        "type": "storage",
+        "count": 1,
+        "description": "Climate-controlled storage for collections"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "description": "Housing rainwater harvesting system with underground cisterns"
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 384000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_utility",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "position": {
+                "x": 0,
+                "y": 6
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "climate_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 6
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "sunken_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 8
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "large_panel",
+              "position": {
+                "x": 0,
+                "y": 8
+              },
+              "orientation": "west"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 8
+              }
+            },
+            {
+              "type": "exterior",
+              "position": {
+                "x": 26,
+                "y": 16
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "strip",
+              "position": {
+                "x": 26,
+                "y": 0
+              },
+              "orientation": "east"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 16,
+                "y": 7
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "large_panel",
+              "position": {
+                "x": 0,
+                "y": 7
+              },
+              "orientation": "west"
+            }
+          ]
+        },
+        {
+          "id": "master_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 16,
+                "y": 4
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "high_vent",
+              "position": {
+                "x": 20,
+                "y": 0
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "teen_bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 24,
+                "y": 6
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "strip",
+              "position": {
+                "x": 30,
+                "y": 0
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "teen_bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 16,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 16,
+                "y": 19
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "large_panel",
+              "position": {
+                "x": 0,
+                "y": 19
+              },
+              "orientation": "west"
+            }
+          ]
+        },
+        {
+          "id": "shared_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 8,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 16,
+                "y": 11
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "high_vent",
+              "position": {
+                "x": 20,
+                "y": 8
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "home_theater",
+          "type": "home_theater",
+          "bounds": {
+            "x": 24,
+            "y": 12,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 24,
+                "y": 18
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

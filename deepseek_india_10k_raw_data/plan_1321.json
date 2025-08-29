@@ -1,0 +1,461 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 1500,
+      "style": "Traditional Gujarati Pol with Split-Level"
+    },
+    "plot": {
+      "width": 30,
+      "depth": 50,
+      "location": "Visakhapatnam",
+      "challenges": [
+        "cyclone",
+        "storm_surge",
+        "coastal_humidity"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "puja_room",
+        "count": 1,
+        "specialAttributes": [
+          "double_height",
+          "traditional_lighting",
+          "natural_ventilation"
+        ]
+      },
+      {
+        "type": "community_courtyard",
+        "count": 1,
+        "specialAttributes": [
+          "central",
+          "privacy_focus",
+          "natural_cooling"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "count": 3,
+        "specialAttributes": [
+          "cyclone_protected",
+          "natural_materials"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "specialAttributes": [
+          "traditional_wooden_doors",
+          "passive_solar"
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "specialAttributes": [
+          "bamboo_lattice",
+          "community_integration"
+        ]
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "specialAttributes": [
+          "wooden_carved_doors",
+          "natural_lighting"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "specialAttributes": [
+          "compact",
+          "functional"
+        ]
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "specialAttributes": [
+          "storage",
+          "cyclone_shelter"
+        ]
+      }
+    ]
+  },
+  "total_area": 1500.0,
+  "construction_cost": 2250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "community_courtyard",
+          "type": "community_courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "id": "d1",
+              "type": "wooden_carved",
+              "position": {
+                "x": 12,
+                "y": 10
+              }
+            },
+            {
+              "id": "d2",
+              "type": "wooden_carved",
+              "position": {
+                "x": 18,
+                "y": 15
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "puja_room_lower",
+          "type": "puja_room",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "id": "d3",
+              "type": "wooden_carved",
+              "position": {
+                "x": 20,
+                "y": 35
+              }
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "type": "wooden_lattice",
+              "position": {
+                "x": 25,
+                "y": 30
+              }
+            },
+            {
+              "id": "w2",
+              "type": "wooden_lattice",
+              "position": {
+                "x": 25,
+                "y": 40
+              }
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "id": "d4",
+              "type": "solid_wood",
+              "position": {
+                "x": 5,
+                "y": 10
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "id": "d5",
+              "type": "wooden_carved",
+              "position": {
+                "x": 5,
+                "y": 30
+              }
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "type": "bamboo_lattice",
+              "position": {
+                "x": 2,
+                "y": 35
+              }
+            },
+            {
+              "id": "w4",
+              "type": "bamboo_lattice",
+              "position": {
+                "x": 8,
+                "y": 35
+              }
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "id": "d6",
+              "type": "wooden_carved",
+              "position": {
+                "x": 5,
+                "y": 40
+              }
+            }
+          ],
+          "windows": [
+            {
+              "id": "w5",
+              "type": "bamboo_lattice",
+              "position": {
+                "x": 2,
+                "y": 45
+              }
+            },
+            {
+              "id": "w6",
+              "type": "bamboo_lattice",
+              "position": {
+                "x": 8,
+                "y": 45
+              }
+            }
+          ]
+        },
+        {
+          "id": "puja_room_upper",
+          "type": "puja_room",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "id": "d7",
+              "type": "wooden_carved",
+              "position": {
+                "x": 20,
+                "y": 35
+              }
+            }
+          ],
+          "windows": [
+            {
+              "id": "w7",
+              "type": "wooden_lattice",
+              "position": {
+                "x": 25,
+                "y": 30
+              }
+            },
+            {
+              "id": "w8",
+              "type": "wooden_lattice",
+              "position": {
+                "x": 25,
+                "y": 40
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "id": "d8",
+              "type": "wooden_carved",
+              "position": {
+                "x": 15,
+                "y": 10
+              }
+            }
+          ],
+          "windows": [
+            {
+              "id": "w9",
+              "type": "bamboo_lattice",
+              "position": {
+                "x": 12,
+                "y": 5
+              }
+            },
+            {
+              "id": "w10",
+              "type": "bamboo_lattice",
+              "position": {
+                "x": 18,
+                "y": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "id": "d9",
+              "type": "wooden_carved",
+              "position": {
+                "x": 15,
+                "y": 10
+              }
+            }
+          ],
+          "windows": [
+            {
+              "id": "w11",
+              "type": "bamboo_lattice",
+              "position": {
+                "x": 12,
+                "y": 20
+              }
+            },
+            {
+              "id": "w12",
+              "type": "bamboo_lattice",
+              "position": {
+                "x": 18,
+                "y": 20
+              }
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 10,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "id": "d10",
+              "type": "wooden_carved",
+              "position": {
+                "x": 15,
+                "y": 25
+              }
+            }
+          ],
+          "windows": [
+            {
+              "id": "w13",
+              "type": "bamboo_lattice",
+              "position": {
+                "x": 12,
+                "y": 30
+              }
+            },
+            {
+              "id": "w14",
+              "type": "bamboo_lattice",
+              "position": {
+                "x": 18,
+                "y": 30
+              }
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "id": "d11",
+              "type": "wooden_carved",
+              "position": {
+                "x": 20,
+                "y": 5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "id": "w15",
+              "type": "bamboo_lattice",
+              "position": {
+                "x": 25,
+                "y": 2
+              }
+            },
+            {
+              "id": "w16",
+              "type": "bamboo_lattice",
+              "position": {
+                "x": 25,
+                "y": 8
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

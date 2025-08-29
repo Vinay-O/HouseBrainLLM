@@ -1,0 +1,328 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 1600,
+      "style": "Desert Fort Heritage Restoration"
+    },
+    "plot": {
+      "width": 20,
+      "depth": 40,
+      "orientation": "east",
+      "location": "Chennai coastal"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "workshop",
+        "count": 1
+      },
+      {
+        "type": "courtyard",
+        "count": 1
+      },
+      {
+        "type": "verandah",
+        "count": 1
+      },
+      {
+        "type": "puja_room",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 2
+      }
+    ]
+  },
+  "total_area": 1600.0,
+  "construction_cost": 4800000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard_ground",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "north_verandah_door",
+            "south_verandah_door",
+            "east_living_door",
+            "west_dining_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "verandah_north",
+          "type": "verandah",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            "north_entrance",
+            "courtyard_north_door"
+          ],
+          "windows": [
+            "north_window_1",
+            "north_window_2"
+          ]
+        },
+        {
+          "id": "verandah_south",
+          "type": "verandah",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            "south_entrance",
+            "courtyard_south_door"
+          ],
+          "windows": [
+            "south_window_1",
+            "south_window_2"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "east_entrance",
+            "courtyard_east_door"
+          ],
+          "windows": [
+            "east_window_1",
+            "east_window_2"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "living_room_door"
+          ],
+          "windows": [
+            "east_window_puja"
+          ]
+        },
+        {
+          "id": "guest_bedroom_ground",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "living_room_door_guest",
+            "bathroom_door_guest"
+          ],
+          "windows": [
+            "south_window_guest"
+          ]
+        },
+        {
+          "id": "bathroom_guest",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 30,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "guest_bedroom_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "traditional_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "verandah_north_door"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "courtyard_lightwell",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "north_terrace_door",
+            "south_terrace_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "terrace_north",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            "master_bedroom_door",
+            "courtyard_north_door_up"
+          ],
+          "windows": []
+        },
+        {
+          "id": "terrace_south",
+          "type": "terrace",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            "workshop_door",
+            "courtyard_south_door_up"
+          ],
+          "windows": []
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "terrace_north_door",
+            "bathroom_master_door"
+          ],
+          "windows": [
+            "east_window_master"
+          ]
+        },
+        {
+          "id": "bathroom_master",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "master_bedroom_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "children_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "terrace_south_door",
+            "bathroom_children_door"
+          ],
+          "windows": [
+            "south_window_children"
+          ]
+        },
+        {
+          "id": "bathroom_children",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 30,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "children_bedroom_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "weaving_workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 5,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "terrace_south_door_workshop"
+          ],
+          "windows": [
+            "north_lightwell_window",
+            "south_lightwell_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

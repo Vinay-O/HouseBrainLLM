@@ -1,0 +1,46 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"name": "Living Room", "dimensions": {"width": 20, "length": 15}, "location": {"x": 0, "y": 0}},
+        {"name": "Kitchen", "dimensions": {"width": 15, "length": 10}, "location": {"x": 20, "y": 0}},
+        {"name": "Bedroom 1 (Master)", "dimensions": {"width": 14, "length": 13}, "location": {"x": 35, "y": 0}},
+        {"name": "Bathroom", "dimensions": {"width": 8, "length": 7}, "location": {"x": 20, "y": 10}},
+        {"name": "Storage Room", "dimensions": {"width": 7, "length": 5}, "location": {"x": 35, "y": 10}}
+      ],
+      "openings": [
+        {"type": "door", "size": {"height": 8, "width": 3.5}, "position": {"x": 27.5, "y": 7}},
+        {"type": "window", "size": {"height": 6, "width": 8}, "position": {"x": 10, "y": 14}},
+        {"type": "balcony", "size": {"length": 20, "depth": 5}, "position": {"x": 17.5, "y": -5}}
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {"name": "Bedroom 2 (Guest)", "dimensions": {"width": 14, "length": 13}, "location": {"x": 0, "y": 0}},
+        {"name": "Study Room", "dimensions": {"width": 15, "length": 10}, "location": {"x": 20, "y": 0}},
+        {"name": "Balcony", "dimensions": {"width": 35, "length": 4}, "location": {"x": 7.5, "y": -5}}
+      ],
+      "openings": [
+        {"type": "door", "size": {"height": 8, "width": 3.5}, "position": {"x": 12.5, "y": 7}},
+        {"type": "window", "size": {"height": 6, "width": 8}, "position": {"x": 20, "y": 14}}
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {"name": "Terrace", "dimensions": {"width": 50, "length": 70}, "location": {"x": 0, "y": -10}},
+        {"name": "Swimming Pool", "dimensions": {"width": 25, "length": 40}, "location": {"x": 12.5, "y": 30}}
+      ],
+      "openings": [
+        {"type": "staircase_access", "size": {"height": 8, "width": 4}, "position": {"x": 0, "y": -6}},
+        {"type": "window", "size": {"height": 6, "width": 10}, "position": {"x": 25, "y": 35}}
+      ]
+    }
+  ],
+  "accessibility_features": [
+    {"feature": "ramps", "location": [{"level_id": "ground_floor", "start_x": -4, "end_x": 0, "start_y": 18}]},
+    {"feature": "wide_doors", "locations": ["door between Living Room and Balcony"]}
+  ]
+}

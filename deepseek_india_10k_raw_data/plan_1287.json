@@ -1,0 +1,591 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 2000,
+      "style": "Bengali Traditional"
+    },
+    "plot": {
+      "shape": "rectangular",
+      "area": 2000,
+      "orientation": "north-south",
+      "location": "Aligarh",
+      "context": "educational center, inner plot with privacy focus, earthquake zone"
+    },
+    "roomBreakdown": [
+      {
+        "type": "otla_sitout",
+        "area": 150,
+        "level": 0
+      },
+      {
+        "type": "living_room",
+        "area": 250,
+        "level": 0
+      },
+      {
+        "type": "kitchen",
+        "area": 150,
+        "level": 0
+      },
+      {
+        "type": "dining_room",
+        "area": 120,
+        "level": 0
+      },
+      {
+        "type": "bedroom",
+        "area": 180,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 180,
+        "level": 1
+      },
+      {
+        "type": "heritage_library",
+        "area": 200,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 200,
+        "level": 2
+      },
+      {
+        "type": "production_space",
+        "area": 400,
+        "level": 2
+      },
+      {
+        "type": "water_storage",
+        "area": 80,
+        "level": -1
+      },
+      {
+        "type": "thermal_chimney",
+        "area": 30,
+        "level": 2
+      },
+      {
+        "type": "wind_tower",
+        "area": 30,
+        "level": 2
+      }
+    ]
+  },
+  "total_area": 2000.0,
+  "construction_cost": 5600000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "water_storage_1",
+          "type": "water_storage",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "rainwater_harvesting",
+            "traditional_storage"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "otla_sitout_1",
+          "type": "otla_sitout",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 10
+              },
+              "to": "living_room_1"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "swing_jhula",
+            "jaali_screens"
+          ]
+        },
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 25,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12.5,
+                "y": 10
+              },
+              "to": "otla_sitout_1"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 15
+              },
+              "to": "kitchen_1"
+            },
+            {
+              "position": {
+                "x": 12.5,
+                "y": 20
+              },
+              "to": "dining_room_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 15
+              },
+              "size": 5
+            }
+          ],
+          "features": [
+            "jaali_screens",
+            "traditional_decoration"
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 15
+              },
+              "to": "living_room_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 17.5
+              },
+              "size": 4
+            }
+          ],
+          "features": [
+            "traditional_setup"
+          ]
+        },
+        {
+          "id": "dining_room_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12.5,
+                "y": 20
+              },
+              "to": "living_room_1"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 24
+              },
+              "to": "staircase_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 24
+              },
+              "size": 5
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "staircase_1",
+          "type": "staircase",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 24
+              },
+              "to": "dining_room_1"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 24
+              },
+              "to": "level_1_landing"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "split_level_design"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "level_1_landing",
+          "type": "hallway",
+          "bounds": {
+            "x": 25,
+            "y": 20,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 24
+              },
+              "to": "staircase_1"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 24
+              },
+              "to": "staircase_2"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 20
+              },
+              "to": "bedroom_1"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 28
+              },
+              "to": "bedroom_2"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 22
+              },
+              "to": "heritage_library_1"
+            }
+          ],
+          "windows": [],
+          "features": []
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 20
+              },
+              "to": "level_1_landing"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "size": 6
+            }
+          ],
+          "features": [
+            "jaali_screens",
+            "wardrobe"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 28,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 28
+              },
+              "to": "level_1_landing"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 20,
+                "y": 34
+              },
+              "size": 6
+            }
+          ],
+          "features": [
+            "jaali_screens",
+            "wardrobe"
+          ]
+        },
+        {
+          "id": "heritage_library_1",
+          "type": "heritage_library",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 22
+              },
+              "to": "level_1_landing"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 30
+              },
+              "size": 8
+            }
+          ],
+          "features": [
+            "temperature_controlled_storage",
+            "manuscript_storage",
+            "jaali_screens"
+          ]
+        },
+        {
+          "id": "staircase_2",
+          "type": "staircase",
+          "bounds": {
+            "x": 35,
+            "y": 20,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 24
+              },
+              "to": "level_1_landing"
+            },
+            {
+              "position": {
+                "x": 45,
+                "y": 24
+              },
+              "to": "level_2_landing"
+            }
+          ],
+          "windows": [],
+          "features": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "level_2_landing",
+          "type": "hallway",
+          "bounds": {
+            "x": 45,
+            "y": 20,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 45,
+                "y": 24
+              },
+              "to": "staircase_2"
+            },
+            {
+              "position": {
+                "x": 55,
+                "y": 24
+              },
+              "to": "production_space_1"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 20
+              },
+              "to": "bedroom_3"
+            }
+          ],
+          "windows": [],
+          "features": []
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 50,
+                "y": 20
+              },
+              "to": "level_2_landing"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 10
+              },
+              "size": 8
+            }
+          ],
+          "features": [
+            "jaali_screens",
+            "wardrobe",
+            "attached_bathroom"
+          ]
+        },
+        {
+          "id": "production_space_1",
+          "type": "production_space",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 55,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 55,
+                "y": 24
+              },
+              "to": "level_2_landing"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 20
+              },
+              "size": 20
+            }
+          ],
+          "features": [
+            "weaving_handicraft_space",
+            "penthouse_terrace",
+            "jaali_screens"
+          ]
+        },
+        {
+          "id": "thermal_chimney_1",
+          "type": "thermal_chimney",
+          "bounds": {
+            "x": 55,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "natural_cooling"
+          ]
+        },
+        {
+          "id": "wind_tower_1",
+          "type": "wind_tower",
+          "bounds": {
+            "x": 55,
+            "y": 30,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "natural_ventilation"
+          ]
+        }
+      ]
+    }
+  ]
+}

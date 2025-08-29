@@ -1,0 +1,78 @@
+{
+  "levels": [
+    {
+      "level_id": "penthouse_level",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "shape": "rectangle",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["brutalist_furniture", "minimalist_decor"],
+          "connection": "corridor_to_other_rooms"
+        },
+        {
+          "room_id": "bedroom",
+          "shape": "rectangle",
+          "dimensions": { "length": 18, "width": 14 },
+          "features": ["king_size_bed", "walk_in_closet"],
+          "connection": "private_entrance_from_living_room"
+        },
+        {
+          "room_id": "home_theater",
+          "shape": "rectangle",
+          "dimensions": { "length": 16, "width": 12 },
+          "features": ["projector_screen", "reclining_seats"],
+          "connection": "adjacent_to_living_room"
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "L-shaped",
+          "dimensions": { "length": 14, "width": 10 },
+          "features": ["modular_cabinets", "island_counter"],
+          "connection": "open_to_dining_area"
+        },
+        {
+          "room_id": "dining_area",
+          "shape": "square",
+          "dimensions": { "length": 12, "width": 12 },
+          "features": ["extendable_dining_table", "chandelier"],
+          "connection": "adjacent_to_kitchen"
+        },
+        {
+          "room_id": "bathroom",
+          "shape": "rectangle",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["walk_in_shower", "double_sink"],
+          "connection": "private_to_bedroom"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "entrance",
+          "type": "main_door",
+          "dimensions": { "length": 3.5, "width": 2 },
+          "features": ["brutalist_design", "security_system"]
+        },
+        {
+          "opening_id": "balcony",
+          "type": "terrace_access",
+          "dimensions": { "length": 10, "width": 6 },
+          "features": ["outdoor_furniture", "glass_railings"]
+        }
+      ],
+      "rooftop_terrace": {
+        "area": 300,
+        "features": ["outdoor_lounge", "grill_pit", "greenery"],
+        "dimensions": { "length": 20, "width": 15 }
+      },
+      "vastu_compliance": {
+        "bedroom_position": "northwest",
+        "kitchen_position": "southeast",
+        "entrance_direction": "north"
+      }
+    }
+  ],
+  "architectural_style": "brutalist",
+  "total_area": 1800,
+  "unit": "sqft"
+}

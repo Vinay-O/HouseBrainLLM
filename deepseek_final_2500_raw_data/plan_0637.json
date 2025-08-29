@@ -1,0 +1,403 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 1500,
+      "style": "Contemporary Chettinad with sustainable focus"
+    },
+    "plot": {
+      "area": 1500,
+      "orientation": "west",
+      "location": "tribal area",
+      "constraints": [
+        "small plot",
+        "shared boundary walls",
+        "flood risk"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_clinic",
+        "count": 1
+      },
+      {
+        "type": "wine_cellar",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "terrace",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1500.0,
+  "construction_cost": 337500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "home_clinic_0",
+          "type": "home_clinic",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 10
+              },
+              "direction": "south",
+              "leads_to": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 0
+              },
+              "direction": "west",
+              "type": "large"
+            }
+          ]
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 5
+              },
+              "direction": "west",
+              "leads_to": "home_clinic_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "wine_cellar_0",
+          "type": "wine_cellar",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 15
+              },
+              "direction": "west",
+              "leads_to": "home_clinic_0"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 7.5
+              },
+              "direction": "east",
+              "leads_to": "dining_room_1"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "direction": "north",
+              "leads_to": "terrace_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "direction": "west",
+              "type": "full_length"
+            }
+          ]
+        },
+        {
+          "id": "terrace_1",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 15
+              },
+              "direction": "south",
+              "leads_to": "living_room_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 6
+              },
+              "direction": "west",
+              "leads_to": "dining_room_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 27.5,
+                "y": 0
+              },
+              "direction": "east",
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "dining_room_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 15,
+            "height": 13
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 18.5
+              },
+              "direction": "west",
+              "leads_to": "living_room_1"
+            },
+            {
+              "position": {
+                "x": 27.5,
+                "y": 25
+              },
+              "direction": "south",
+              "leads_to": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 27.5,
+                "y": 12
+              },
+              "direction": "east",
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 6
+              },
+              "direction": "west",
+              "leads_to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 42.5,
+                "y": 0
+              },
+              "direction": "east",
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 12,
+            "width": 7,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 16
+              },
+              "direction": "west",
+              "leads_to": "corridor"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 42,
+            "y": 12,
+            "width": 8,
+            "height": 13
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 42,
+                "y": 18.5
+              },
+              "direction": "west",
+              "leads_to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 46,
+                "y": 12
+              },
+              "direction": "east",
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 27.5
+              },
+              "direction": "west",
+              "leads_to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 42.5,
+                "y": 20
+              },
+              "direction": "east",
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 42,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 42,
+                "y": 6
+              },
+              "direction": "west",
+              "leads_to": "corridor"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

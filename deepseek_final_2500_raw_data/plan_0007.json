@@ -1,0 +1,206 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 800,
+      "style": "Gujarati Pol with Heritage and Modern Luxury"
+    },
+    "plot": {
+      "orientation": "south",
+      "area": 800,
+      "view": "garden",
+      "features": [
+        "mature trees",
+        "gated community",
+        "shared amenities"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 100
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "main_entrance",
+            "to_courtyard",
+            "to_bedroom1"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "from_living_room",
+            "to_kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "from_courtyard",
+            "to_dining"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "dining_area",
+          "type": "dining",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "from_kitchen",
+            "to_bedroom2"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "from_living_room"
+          ],
+          "windows": [
+            "east_window",
+            "north_window"
+          ],
+          "features": [
+            "elderly_accessibility",
+            "walk_in_closet"
+          ]
+        },
+        {
+          "id": "bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 12,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "from_dining"
+          ],
+          "windows": [
+            "west_window",
+            "north_window"
+          ],
+          "features": [
+            "adaptable_space"
+          ]
+        },
+        {
+          "id": "bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 24,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            "from_bedroom1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 18,
+            "y": 24,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            "from_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 24,
+            "y": 18,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            "from_hall"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

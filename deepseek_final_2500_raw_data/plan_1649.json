@@ -1,0 +1,359 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 7,
+      "floors": 2,
+      "totalArea": 4800,
+      "style": "Prairie"
+    },
+    "plot": {
+      "slope": "downslope",
+      "climate": "alpine_heavy_snow",
+      "wind_direction": "diagonal",
+      "privacy_requirements": "high"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 7
+      },
+      {
+        "type": "bathroom",
+        "count": 4
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "greenhouse",
+        "count": 1
+      },
+      {
+        "type": "herb_garden",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 4800.0,
+  "construction_cost": 960000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entryway",
+          "type": "foyer",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "front_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "great_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 40,
+            "height": 30
+          },
+          "doors": [
+            "to_kitchen",
+            "to_dining",
+            "to_hall"
+          ],
+          "windows": [
+            "north_wall_window",
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "kitchen_main",
+          "type": "kitchen",
+          "bounds": {
+            "x": 40,
+            "y": 8,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            "to_great_room",
+            "to_dining"
+          ],
+          "windows": [
+            "east_wall_window"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 40,
+            "y": 26,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            "to_kitchen",
+            "to_great_room"
+          ],
+          "windows": [
+            "east_wall_window"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 38,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 38,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 38,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 32,
+            "y": 48,
+            "width": 12,
+            "height": 6
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway_main",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 38,
+            "width": 32,
+            "height": 4
+          },
+          "doors": [
+            "to_great_room",
+            "to_bedroom_1",
+            "to_bedroom_2",
+            "to_bathroom_1",
+            "to_utility"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_hall_up"
+          ],
+          "windows": [
+            "north_wall_window",
+            "east_wall_window"
+          ]
+        },
+        {
+          "id": "bathroom_primary",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_primary_suite"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "to_hall_up"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 20,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "to_hall_up"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 20,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "to_hall_up"
+          ],
+          "windows": []
+        },
+        {
+          "id": "flex_space",
+          "type": "storage",
+          "bounds": {
+            "x": 32,
+            "y": 30,
+            "width": 12,
+            "height": 6
+          },
+          "doors": [
+            "to_hall_up"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway_upper",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 32,
+            "height": 4
+          },
+          "doors": [
+            "to_stairs",
+            "to_bedroom_3",
+            "to_bedroom_4",
+            "to_bathroom_2",
+            "to_flex"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "greenhouse_roof",
+          "type": "greenhouse",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            "access_stairs"
+          ],
+          "windows": [
+            "curved_glass_roof"
+          ]
+        },
+        {
+          "id": "herb_garden_roof",
+          "type": "herb_garden",
+          "bounds": {
+            "x": 40,
+            "y": 10,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "access_stairs"
+          ],
+          "windows": [
+            "curved_glass_roof"
+          ]
+        }
+      ]
+    }
+  ]
+}

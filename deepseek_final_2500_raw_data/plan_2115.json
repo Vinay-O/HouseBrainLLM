@@ -1,0 +1,88 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 1,
+      "totalArea": 300,
+      "style": "Desert Contemporary"
+    },
+    "plot": {
+      "orientation": "east-west",
+      "climate": "humid subtropical"
+    },
+    "roomBreakdown": [
+      {
+        "type": "music_room",
+        "area": 120,
+        "features": [
+          "acoustic isolation",
+          "triple-glazed windows with argon fill"
+        ]
+      },
+      {
+        "type": "outdoor",
+        "area": 60,
+        "features": [
+          "pet-friendly access",
+          "balcony conversion"
+        ]
+      }
+    ]
+  },
+  "total_area": 300.0,
+  "construction_cost": 125000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "music_room",
+          "type": "music_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "sliding",
+              "location": "south",
+              "to": "outdoor_deck"
+            }
+          ],
+          "windows": [
+            {
+              "type": "triple_glazed_argon",
+              "location": "north",
+              "size": "large"
+            },
+            {
+              "type": "triple_glazed_argon",
+              "location": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "outdoor_deck",
+          "type": "outdoor",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 12,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "pet_door",
+              "location": "north",
+              "to": "music_room"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

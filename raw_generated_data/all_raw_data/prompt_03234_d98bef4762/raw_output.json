@@ -1,0 +1,43 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {"name": "Main Entrance Hallway", "area_sqft": 300},
+      {"name": "Living Room", "area_sqft": 500},
+      {"name": "Dining Room", "area_sqft": 400},
+      {"name": "Kitchen", "area_sqft": 350, "special_features": ["Chettinad-style interior elements"]},
+      {"name": "Guest Bedroom 1", "area_sqft": 300},
+      {"name": "Guest Bedroom 2", "area_sqft": 300},
+      {"name": "Powder Room", "area_sqft": 150},
+      {"name": "Car Garage/Utility Area", "area_sqft": 250}
+    ],
+    "openings": [
+      {"type": "Main Entrance Door", "location": "Front", "direction": "South"},
+      {"type": "Windows", "count": 8, "locations": ["Living Room", "Dining Room", "Kitchen"]},
+      {"type": "Patio Door", "location": "Back Patio", "direction": "North"}
+    ]
+  },
+  {
+    "level_id": "first_floor",
+    "rooms": [
+      {"name": "Master Bedroom", "area_sqft": 600, "special_features": ["Vastu-compliant bed placement"]},
+      {"name": "Master Bathroom", "area_sqft": 200},
+      {"name": "Bedroom 3", "area_sqft": 350},
+      {"name": "Bedroom 4", "area_sqft": 350},
+      {"name": "Study Room/Office", "area_sqft": 250, "special_features": ["North-facing window"]},
+      {"name": "Additional Bathroom", "area_sqft": 150}
+    ],
+    "openings": [
+      {"type": "Staircase", "location": "Interior staircase connecting levels", "direction": "West"},
+      {"type": "Windows", "count": 6, "locations": ["Master Bedroom", "Bedroom 3", "Bedroom 4"]}
+    ]
+  },
+  {
+    "level_id": "rooftop_terraces",
+    "rooms": [],
+    "openings": [
+      {"type": "Rooftop Terrace Access", "location": "Central access from first floor"},
+      {"type": "Patio Doors", "count": 2, "locations": ["Roof Level"]}
+    ]
+  }
+]}

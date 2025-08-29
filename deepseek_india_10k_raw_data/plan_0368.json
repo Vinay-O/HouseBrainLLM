@@ -1,0 +1,566 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 9,
+      "floors": 2,
+      "totalArea": 7680,
+      "style": "Kashmiri Wooden Heritage"
+    },
+    "plot": {
+      "width": 80,
+      "length": 120,
+      "location": "Riverside Madurai",
+      "constraints": [
+        "Flood-prone",
+        "Earthquake",
+        "Landslide",
+        "Snow Load"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 9
+      },
+      {
+        "type": "bathroom",
+        "count": 11
+      },
+      {
+        "type": "kitchen",
+        "count": 2
+      },
+      {
+        "type": "living_room",
+        "count": 2
+      },
+      {
+        "type": "dining_room",
+        "count": 2
+      },
+      {
+        "type": "puja_room",
+        "count": 1
+      },
+      {
+        "type": "study_room",
+        "count": 2
+      },
+      {
+        "type": "spa",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 3
+      },
+      {
+        "type": "verandah",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 7680.0,
+  "construction_cost": 34560000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 40,
+            "height": 40
+          },
+          "doors": [
+            "north_verandah_door",
+            "south_verandah_door",
+            "east_verandah_door",
+            "west_verandah_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "tulsi_platform",
+          "type": "puja_platform",
+          "bounds": {
+            "x": 38,
+            "y": 38,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "north_verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 20,
+            "y": 60,
+            "width": 40,
+            "height": 10
+          },
+          "doors": [
+            "north_entrance"
+          ],
+          "windows": [
+            "north_verandah_window1",
+            "north_verandah_window2"
+          ]
+        },
+        {
+          "id": "south_verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 40,
+            "height": 10
+          },
+          "doors": [
+            "south_entrance"
+          ],
+          "windows": [
+            "south_verandah_window1",
+            "south_verandah_window2"
+          ]
+        },
+        {
+          "id": "east_verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 60,
+            "y": 20,
+            "width": 10,
+            "height": 40
+          },
+          "doors": [],
+          "windows": [
+            "east_verandah_window1",
+            "east_verandah_window2"
+          ]
+        },
+        {
+          "id": "west_verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 10,
+            "height": 40
+          },
+          "doors": [],
+          "windows": [
+            "west_verandah_window1",
+            "west_verandah_window2"
+          ]
+        },
+        {
+          "id": "grand_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 60,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "kitchen_verandah_door"
+          ],
+          "windows": [
+            "kitchen_window1",
+            "kitchen_window2"
+          ]
+        },
+        {
+          "id": "common_dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 80,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "dining_verandah_door"
+          ],
+          "windows": [
+            "dining_window1",
+            "dining_window2"
+          ]
+        },
+        {
+          "id": "senior_bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 60,
+            "y": 60,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "bedroom1_verandah_door",
+            "bedroom1_bathroom_door"
+          ],
+          "windows": [
+            "bedroom1_window1",
+            "bedroom1_window2"
+          ]
+        },
+        {
+          "id": "senior_bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 80,
+            "y": 60,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bathroom1_door"
+          ],
+          "windows": [
+            "bathroom1_window"
+          ]
+        },
+        {
+          "id": "senior_bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 60,
+            "y": 80,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "bedroom2_verandah_door",
+            "bedroom2_bathroom_door"
+          ],
+          "windows": [
+            "bedroom2_window1",
+            "bedroom2_window2"
+          ]
+        },
+        {
+          "id": "senior_bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 80,
+            "y": 90,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bathroom2_door"
+          ],
+          "windows": [
+            "bathroom2_window"
+          ]
+        },
+        {
+          "id": "main_entrance_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 30,
+            "y": 60,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "storage_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "water_cooling_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 30,
+            "y": 70,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "water_storage_door"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "family_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 60,
+            "width": 40,
+            "height": 20
+          },
+          "doors": [
+            "living_balcony_door"
+          ],
+          "windows": [
+            "living_window1",
+            "living_window2",
+            "living_window3"
+          ]
+        },
+        {
+          "id": "north_balcony",
+          "type": "balcony",
+          "bounds": {
+            "x": 20,
+            "y": 80,
+            "width": 40,
+            "height": 10
+          },
+          "doors": [
+            "living_balcony_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 60,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "bedroom3_door",
+            "bedroom3_bathroom_door"
+          ],
+          "windows": [
+            "bedroom3_window1",
+            "bedroom3_window2"
+          ]
+        },
+        {
+          "id": "bathroom3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 80,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bathroom3_door"
+          ],
+          "windows": [
+            "bathroom3_window"
+          ]
+        },
+        {
+          "id": "bedroom4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 90,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "bedroom4_door",
+            "bedroom4_bathroom_door"
+          ],
+          "windows": [
+            "bedroom4_window1",
+            "bedroom4_window2"
+          ]
+        },
+        {
+          "id": "bathroom4",
+          "type": "bathroom",
+          "bounds": {
+            "x": 10,
+            "y": 90,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bathroom4_door"
+          ],
+          "windows": [
+            "bathroom4_window"
+          ]
+        },
+        {
+          "id": "bedroom5",
+          "type": "bedroom",
+          "bounds": {
+            "x": 60,
+            "y": 60,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "bedroom5_door",
+            "bedroom5_bathroom_door"
+          ],
+          "windows": [
+            "bedroom5_window1",
+            "bedroom5_window2"
+          ]
+        },
+        {
+          "id": "bathroom5",
+          "type": "bathroom",
+          "bounds": {
+            "x": 80,
+            "y": 60,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bathroom5_door"
+          ],
+          "windows": [
+            "bathroom5_window"
+          ]
+        },
+        {
+          "id": "bedroom6",
+          "type": "bedroom",
+          "bounds": {
+            "x": 60,
+            "y": 80,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "bedroom6_door",
+            "bedroom6_bathroom_door"
+          ],
+          "windows": [
+            "bedroom6_window1",
+            "bedroom6_window2"
+          ]
+        },
+        {
+          "id": "bathroom6",
+          "type": "bathroom",
+          "bounds": {
+            "x": 80,
+            "y": 80,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bathroom6_door"
+          ],
+          "windows": [
+            "bathroom6_window"
+          ]
+        },
+        {
+          "id": "study_room1",
+          "type": "study_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "study1_door"
+          ],
+          "windows": [
+            "study1_window1",
+            "study1_window2"
+          ]
+        },
+        {
+          "id": "study_room2",
+          "type": "study_room",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "study2_door"
+          ],
+          "windows": [
+            "study2_window1",
+            "study2_window2"
+          ]
+        },
+        {
+          "id": "home_spa",
+          "type": "spa",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "spa_door",
+            "spa_treatment_door"
+          ],
+          "windows": [
+            "spa_window1",
+            "spa_window2"
+          ]
+        },
+        {
+          "id": "spa_treatment",
+          "type": "treatment_room",
+          "bounds": {
+            "x": 80,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "spa_treatment_door"
+          ],
+          "windows": [
+            "treatment_window"
+          ]
+        },
+        {
+          "id": "spa_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 80,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "spa_bathroom_door"
+          ],
+          "windows": [
+            "spa_bathroom_window"
+          ]
+        },
+        {
+          "id": "upper_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "upper_storage_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

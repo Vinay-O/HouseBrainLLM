@@ -1,0 +1,34 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"room_id": "living_room", "dimensions": {"length": 15, "width": 12}, "features": ["large windows for natural light", "ventilated"]},
+        {"room_id": "dining_room", "dimensions": {"length": 10, "width": 8}, "features": []},
+        {"room_id": "kitchen", "dimensions": {"length": 10, "width": 9}, "features": ["modular kitchen with ventilation"]},
+        {"room_id": "bedroom_1", "dimensions": {"length": 12, "width": 10}, "features": ["spacious balcony", "natural light"]},
+        {"room_id": "bedroom_2", "dimensions": {"length": 12, "width": 10}, "features": ["spacious balcony", "natural light"]},
+        {"room_id": "bathroom_1", "dimensions": {"length": 6, "width": 5}, "features": []},
+        {"room_id": "bathroom_2", "dimensions": {"length": 6, "width": 5}, "features": []},
+        {"room_id": "study_room", "dimensions": {"length": 8, "width": 7}, "features": ["natural light"]}
+      ],
+      "openings": [
+        {"opening_id": "front_garden", "type": "garden", "dimensions": {"length": 15, "width": 30}},
+        {"opening_id": "central_courtyard", "type": "courtyard", "dimensions": {"length": 8, "width": 8}, "features": ["open space for natural light and ventilation"]},
+        {"opening_id": "balcony_1", "type": "balcony", "associated_room": "bedroom_1"},
+        {"opening_id": "balcony_2", "type": "balcony", "associated_room": "bedroom_2"}
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {"room_id": "bedroom_3", "dimensions": {"length": 12, "width": 10}, "features": ["spacious balcony", "natural light"]},
+        {"room_id": "bedroom_4", "dimensions": {"length": 12, "width": 10}, "features": ["spacious balcony", "natural light"]},
+        {"room_id": "bathroom_3", "dimensions": {"length": 6, "width": 5}, "features": []},
+        {"room_id": "bathroom_4", "dimensions": {"length": 6, "width": 5}, "features": []}
+      ],
+      "openings": [
+        {"opening_id": "balcony_3", "type": "balcony", "associated_room": "bedroom_3"},
+        {"opening_id": "balcony_4", "type": "balcony", "associated_room": "bedroom_4"}
+      ]
+    }
+  ]}

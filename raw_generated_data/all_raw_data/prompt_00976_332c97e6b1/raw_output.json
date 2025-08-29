@@ -1,0 +1,113 @@
+{  
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Entrance Lobby",
+          "dimensions": {"length": 10, "width": 8},
+          "adjacent_to": ["Living Area"],
+          "description": "Spacious entrance with minimalistic design and natural light from large windows."
+        },
+        {
+          "room_name": "Open-Plan Living & Kitchen",
+          "dimensions": {"length": 30, "width": 20},
+          "adjacent_to": ["Dining Area", "Service Corridor"],
+          "description": "Modern open-plan design blending the living area with the kitchen. Large windows on the facade ensure ample natural light and ventilation. Vastu recommendations suggest east or north facing openings for positive energy."
+        },
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": {"length": 15, "width": 12},
+          "adjacent_to": [" ensuite Bathroom"],
+          "description": "Spacious master bedroom with south-east orientation to harness natural light and proper Vastu alignment. Includes built-in wardrobes."
+        },
+        {
+          "room_name": "Guest Bedroom",
+          "dimensions": {"length": 14, "width": 11},
+          "adjacent_to": ["Balcony"],
+          "description": "Cozy guest room with access to a private balcony for ventilation and light. Vastu alignment ensures energy balance."
+        },
+        {
+          "room_name": "Second Bedroom",
+          "dimensions": {"length": 14, "width": 11},
+          "adjacent_to": ["Balcony"],
+          "description": "Comfortable room designed with natural lighting in mind and a view for relaxation. Vastu-aligned east or north facing."
+        },
+        {
+          "room_name": "Dining Area",
+          "dimensions": {"length": 10, "width": 8},
+          "adjacent_to": ["Open-Plan Living & Kitchen"],
+          "description": "Compact dining area integrated with the living space. Vastu suggests placement in north-east sector to promote positive energy."
+        },
+        {
+          "room_name": "Service Corridor",
+          "dimensions": {"length": 12, "width": 5},
+          "adjacent_to": ["Open-Plan Living & Kitchen", "Bathrooms"],
+          "description": "Functional corridor connecting the kitchen, bathrooms and utility areas. Vastu guidelines recommend avoiding direct line of sight between service areas and main living spaces."
+        },
+        {
+          "room_name": "Guest Bathroom",
+          "dimensions": {"length": 8, "width": 6},
+          "adjacent_to": ["Service Corridor"],
+          "description": "Small guest bathroom designed for convenience. Vastu recommends north-west or west-facing openings for water-related spaces."
+        },
+        {
+          "room_name": "Ensuite Bathroom",
+          "dimensions": {"length": 10, "width": 7},
+          "adjacent_to": ["Master Bedroom"],
+          "description": "Private bathroom with modern fixtures and ample natural light from a skylight. Vastu suggests alignment to the north-east for optimal energy flow."
+        },
+        {
+          "room_name": "Utility Room",
+          "dimensions": {"length": 8, "width": 6},
+          "adjacent_to": ["Service Corridor"],
+          "description": "Space dedicated to storage and appliances. Vastu norms suggest placing utility areas in the south-west."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "location": "Front Facade",
+          "dimensions": {"height": 4, "width": 6},
+          "description": "Large window providing ample natural light and ventilation. Placed in the east or north facing as per Vastu recommendations."
+        },
+        {
+          "opening_type": "Door",
+          "location": "Entrance Lobby",
+          "dimensions": {"height": 7, "width": 3},
+          "description": "Main entrance door ensuring secure entry and adhering to modern design aesthetics."
+        },
+        {
+          "opening_type": "Balcony Door",
+          "location": "Guest Bedroom & Second Bedroom",
+          "dimensions": {"height": 6, "width": 2.5},
+          "description": "Access doors leading to private balconies for additional light and ventilation as per Vastu guidelines."
+        },
+        {
+          "opening_type": "Skylight",
+          "location": "Ensuite Bathroom & Utility Room",
+          "dimensions": {"height": 3, "width": 2},
+          "description": "Skylights to enhance natural lighting in enclosed spaces. Placement is designed considering Vastu and modern aesthetics."
+        }
+      ]
+    }
+  ],
+  "vastu_overview": {
+    "north": "Optimized for energy flow with open-plan living area and main entrance.",
+    "east": "Maximizes morning sunlight in the kitchen, dining area and guest bedrooms.",
+    "south": "Balances privacy with natural light, ideal for service corridor and utility room.",
+    "west": "Ensures ventilation through strategic placement of openings and balconies."
+  },
+  "building_norms": {
+    "plot_dimensions": {"length": 30, "width": 50},
+    "zoning": "Residential",
+    "compliance": [
+      "Indian Building Code for residential structures",
+      "Local municipal regulations"
+    ],
+    "structural_details": {
+      "foundation_type": "RCC slab with proper reinforcement",
+      "insulation": "Energy-efficient insulation adhering to modern design standards."
+    }
+  }
+}

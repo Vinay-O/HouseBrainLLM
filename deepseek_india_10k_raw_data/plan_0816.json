@@ -1,0 +1,544 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 2400,
+      "style": "Coastal stilted design with traditional Indian elements"
+    },
+    "plot": {
+      "width": 20,
+      "depth": 40,
+      "location": "Indore commercial center",
+      "constraints": [
+        "narrow urban plot",
+        "privacy focus",
+        "monsoon adaptations",
+        "earthquake-resistant",
+        "commercial center codes"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "area": 180
+      },
+      {
+        "type": "home_office",
+        "count": 2,
+        "area": 200
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 240
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "stilt_area",
+        "count": 1,
+        "area": 800
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 60
+      },
+      {
+        "type": "storage",
+        "count": 1,
+        "area": 50
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 720000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "purpose": "Earth-sheltered stilt level with parking, utilities, and rainwater harvesting",
+      "rooms": [
+        {
+          "id": "parking_stilt",
+          "type": "stilt_area",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "position": {
+                "x": 8,
+                "y": 0
+              },
+              "width": 10,
+              "height": 8
+            }
+          ],
+          "windows": [],
+          "features": [
+            "earth-sheltered walls",
+            "flexible joints",
+            "step-well inspired rainwater harvesting system"
+          ]
+        },
+        {
+          "id": "utility_ground",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "internal_door",
+              "position": {
+                "x": 5,
+                "y": 28
+              },
+              "width": 3,
+              "height": 7
+            }
+          ],
+          "windows": [],
+          "features": [
+            "water filtration system",
+            "rainwater storage tanks",
+            "earthquake-resistant foundation connections"
+          ]
+        },
+        {
+          "id": "storage_ground",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "internal_door",
+              "position": {
+                "x": 5,
+                "y": 28
+              },
+              "width": 3,
+              "height": 7
+            }
+          ],
+          "windows": [],
+          "features": [
+            "earth-sheltered cooling",
+            "secured storage"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "purpose": "Main living level with courtyard, jhula pavilion, and living spaces",
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "sliding_door",
+              "position": {
+                "x": 5,
+                "y": 15
+              },
+              "width": 10,
+              "height": 8
+            }
+          ],
+          "windows": [],
+          "features": [
+            "landscaped garden",
+            "traditional jhula swing pavilion",
+            "jaali screens for privacy",
+            "open to sky",
+            "rainwater channel to step-well"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "main_entry",
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "width": 4,
+              "height": 7
+            },
+            {
+              "type": "internal_door",
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "width": 3,
+              "height": 7
+            }
+          ],
+          "windows": [
+            {
+              "type": "jaali_window",
+              "position": {
+                "x": 0,
+                "y": 3
+              },
+              "width": 20,
+              "height": 4
+            }
+          ],
+          "features": [
+            "high ceilings",
+            "artisan-crafted details",
+            "view to courtyard"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "internal_door",
+              "position": {
+                "x": 10,
+                "y": 28
+              },
+              "width": 3,
+              "height": 7
+            }
+          ],
+          "windows": [
+            {
+              "type": "jaali_window",
+              "position": {
+                "x": 0,
+                "y": 28
+              },
+              "width": 10,
+              "height": 4
+            }
+          ],
+          "features": [
+            "modern appliances",
+            "traditional ventilation",
+            "breakfast bar"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 10,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "internal_door",
+              "position": {
+                "x": 10,
+                "y": 28
+              },
+              "width": 3,
+              "height": 7
+            }
+          ],
+          "windows": [
+            {
+              "type": "jaali_window",
+              "position": {
+                "x": 10,
+                "y": 28
+              },
+              "width": 10,
+              "height": 4
+            }
+          ],
+          "features": [
+            "open to kitchen",
+            "courtyard views"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "purpose": "Private sleeping and home office level",
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "internal_door",
+              "position": {
+                "x": 10,
+                "y": 12
+              },
+              "width": 3,
+              "height": 7
+            }
+          ],
+          "windows": [
+            {
+              "type": "jaali_window",
+              "position": {
+                "x": 0,
+                "y": 6
+              },
+              "width": 20,
+              "height": 4
+            }
+          ],
+          "features": [
+            "walk-in closet",
+            "private balcony",
+            "artisan-crafted details"
+          ]
+        },
+        {
+          "id": "master_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 5,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "internal_door",
+              "position": {
+                "x": 10,
+                "y": 12
+              },
+              "width": 3,
+              "height": 7
+            }
+          ],
+          "windows": [
+            {
+              "type": "jaali_window",
+              "position": {
+                "x": 5,
+                "y": 15
+              },
+              "width": 10,
+              "height": 3
+            }
+          ],
+          "features": [
+            "luxury fixtures",
+            "skylight",
+            "natural ventilation"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "internal_door",
+              "position": {
+                "x": 10,
+                "y": 25
+              },
+              "width": 3,
+              "height": 7
+            }
+          ],
+          "windows": [
+            {
+              "type": "jaali_window",
+              "position": {
+                "x": 0,
+                "y": 25
+              },
+              "width": 10,
+              "height": 4
+            }
+          ],
+          "features": [
+            "built-in storage",
+            "privacy screens"
+          ]
+        },
+        {
+          "id": "guest_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 10,
+            "y": 20,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "internal_door",
+              "position": {
+                "x": 10,
+                "y": 22
+              },
+              "width": 3,
+              "height": 7
+            }
+          ],
+          "windows": [
+            {
+              "type": "jaali_window",
+              "position": {
+                "x": 10,
+                "y": 23
+              },
+              "width": 5,
+              "height": 3
+            }
+          ],
+          "features": [
+            "efficient layout",
+            "natural light"
+          ]
+        },
+        {
+          "id": "home_office_1",
+          "type": "home_office",
+          "bounds": {
+            "x": 10,
+            "y": 28,
+            "width": 10,
+            "height": 7
+          },
+          "doors": [
+            {
+              "type": "internal_door",
+              "position": {
+                "x": 10,
+                "y": 30
+              },
+              "width": 3,
+              "height": 7
+            }
+          ],
+          "windows": [
+            {
+              "type": "jaali_window",
+              "position": {
+                "x": 10,
+                "y": 30
+              },
+              "width": 10,
+              "height": 4
+            }
+          ],
+          "features": [
+            "sound insulation",
+            "built-in desk",
+            "professional environment"
+          ]
+        },
+        {
+          "id": "home_office_2",
+          "type": "home_office",
+          "bounds": {
+            "x": 15,
+            "y": 28,
+            "width": 5,
+            "height": 7
+          },
+          "doors": [
+            {
+              "type": "internal_door",
+              "position": {
+                "x": 15,
+                "y": 30
+              },
+              "width": 3,
+              "height": 7
+            }
+          ],
+          "windows": [
+            {
+              "type": "jaali_window",
+              "position": {
+                "x": 15,
+                "y": 30
+              },
+              "width": 5,
+              "height": 4
+            }
+          ],
+          "features": [
+            "flexible space",
+            "meeting area",
+            "privacy focused"
+          ]
+        }
+      ]
+    }
+  ]
+}

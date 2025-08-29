@@ -1,0 +1,179 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Traditional Craftsman"
+    },
+    "plot": {
+      "orientation": "north",
+      "climate": "humid subtropical",
+      "location": "urban rooftop"
+    },
+    "roomBreakdown": [
+      {
+        "type": "primary_bedroom",
+        "area": 200
+      },
+      {
+        "type": "secondary_bedroom",
+        "area": 150
+      },
+      {
+        "type": "chefs_kitchen",
+        "area": 180
+      },
+      {
+        "type": "living_room",
+        "area": 220
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "utility",
+        "area": 50
+      },
+      {
+        "type": "deck",
+        "area": 300
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 275000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 14,
+            "height": 14.3
+          },
+          "doors": [
+            "north",
+            "east"
+          ],
+          "windows": [
+            "north",
+            "east"
+          ]
+        },
+        {
+          "id": "secondary_bedroom",
+          "type": "secondary_bedroom",
+          "bounds": {
+            "x": 14,
+            "y": 0,
+            "width": 10.7,
+            "height": 14
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "north",
+            "west"
+          ]
+        },
+        {
+          "id": "chefs_kitchen",
+          "type": "chefs_kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 14.3,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "south"
+          ],
+          "features": [
+            "wood_fired_oven",
+            "accessible_counters"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 15,
+            "y": 14,
+            "width": 15,
+            "height": 14.7
+          },
+          "doors": [
+            "south",
+            "west"
+          ],
+          "windows": [
+            "north",
+            "south",
+            "west"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 24.7,
+            "y": 0,
+            "width": 5.3,
+            "height": 9
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [],
+          "features": [
+            "walk_in_shower",
+            "grab_bars"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 24.7,
+            "y": 9,
+            "width": 5.3,
+            "height": 5
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": []
+        },
+        {
+          "id": "deck",
+          "type": "deck",
+          "bounds": {
+            "x": 0,
+            "y": 26.3,
+            "width": 30,
+            "height": 10
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [],
+          "features": [
+            "low_maintenance_planters",
+            "wind_turbine"
+          ]
+        }
+      ]
+    }
+  ]
+}

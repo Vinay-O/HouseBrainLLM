@@ -1,0 +1,393 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 2400,
+      "style": "Heritage Restoration (Kerala Nalukettu with Multi-Cultural Elements)"
+    },
+    "plot": {
+      "length": 60,
+      "width": 40,
+      "orientation": "West-facing for evening breeze capture",
+      "location": "Nashik wine country",
+      "specialConditions": [
+        "Industrial pollution impact reduction",
+        "Organic kitchen garden",
+        "Handloom workshop integration"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 480,
+        "description": "Central courtyard (Nadumuttam) with seating, surrounded by verandahs"
+      },
+      {
+        "type": "bedroom",
+        "area": 360,
+        "description": "Master bedroom with attached bathroom and traditional storage"
+      },
+      {
+        "type": "bedroom",
+        "area": 240,
+        "description": "Secondary bedroom with cultural design elements"
+      },
+      {
+        "type": "bedroom",
+        "area": 240,
+        "description": "Secondary bedroom with cultural design elements"
+      },
+      {
+        "type": "bedroom",
+        "area": 240,
+        "description": "Guest bedroom with flexible use"
+      },
+      {
+        "type": "kitchen",
+        "area": 240,
+        "description": "Traditional kitchen with organic garden access and pollution-filtering plants"
+      },
+      {
+        "type": "workshop",
+        "area": 300,
+        "description": "Handloom weaving workshop with north-facing skylights and storage"
+      },
+      {
+        "type": "garden",
+        "area": 300,
+        "description": "Organic kitchen garden with companion planting and vine trellises"
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 4800000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "nadumuttam",
+          "type": "living_room",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 15
+            },
+            {
+              "wall": "south",
+              "position": 15
+            },
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [],
+          "description": "Central open courtyard with traditional flooring, water feature, and surrounded by wooden columns"
+        },
+        {
+          "id": "verandah_north",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 30,
+            "width": 50,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 25
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 25,
+              "size": "large"
+            }
+          ],
+          "description": "Covered verandah with wooden lattice work for natural cooling and evening breeze capture"
+        },
+        {
+          "id": "verandah_south",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 50,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 25
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 25,
+              "size": "large"
+            }
+          ],
+          "description": "Covered verandah with bamboo screens and traditional seating areas"
+        },
+        {
+          "id": "verandah_east",
+          "type": "living_room",
+          "bounds": {
+            "x": 50,
+            "y": 5,
+            "width": 5,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 15,
+              "size": "medium"
+            }
+          ],
+          "description": "Side verandah with decorative chhatris and planters for air purification"
+        },
+        {
+          "id": "verandah_west",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 5,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 15,
+              "size": "large"
+            }
+          ],
+          "description": "Main entrance verandah with domed pavilion and intricate woodwork"
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 20,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "medium"
+            },
+            {
+              "wall": "west",
+              "position": 7,
+              "size": "small"
+            }
+          ],
+          "description": "Master bedroom with traditional wooden ceiling, attached bathroom, and cultural artifacts display"
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 20,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "medium"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": "small"
+            }
+          ],
+          "description": "Secondary bedroom with regional textile motifs and built-in storage"
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "medium"
+            },
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "small"
+            }
+          ],
+          "description": "Flexible use bedroom/study with traditional screening elements"
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 5,
+              "size": "medium"
+            },
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "small"
+            }
+          ],
+          "description": "Guest bedroom with cultural fusion design elements"
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 30,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 5,
+              "size": "medium"
+            }
+          ],
+          "description": "Traditional kitchen with organic garden access, clay oven, and pollution-filtering herb garden window boxes"
+        },
+        {
+          "id": "workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 30,
+            "y": 30,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            },
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": "skylight"
+            }
+          ],
+          "description": "Handloom weaving workshop with north-facing skylights, built-in yarn storage, and display walls"
+        },
+        {
+          "id": "garden",
+          "type": "garden",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 30,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 15
+            }
+          ],
+          "windows": [],
+          "description": "Organic kitchen garden with traditional companion planting, vine trellises, and pergola shading devices"
+        }
+      ]
+    }
+  ]
+}

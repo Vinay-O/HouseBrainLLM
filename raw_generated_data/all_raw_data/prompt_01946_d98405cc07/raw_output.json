@@ -1,0 +1,88 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "dimensions": {"length": 10, "width": 8},
+          "vastu_alignment": "north_east"
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": {"length": 15, "width": 12},
+          "vastu_alignment": "south_west"
+        },
+        {
+          "room_type": "dining_area",
+          "dimensions": {"length": 8, "width": 6},
+          "vastu_alignment": "north_east"
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {"length": 10, "width": 7},
+          "vastu_alignment": "south_west",
+          "adjacent_to": "dining_area"
+        },
+        {
+          "room_type": "master_bedroom",
+          "dimensions": {"length": 12, "width": 10},
+          "vastu_alignment": "north_east"
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"length": 10, "width": 8},
+          "vastu_alignment": "north_east"
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": {"length": 6, "width": 5},
+          "vastu_alignment": "south_west"
+        },
+        {
+          "room_type": "servants_quarters",
+          "dimensions": {"length": 8, "width": 7},
+          "vastu_alignment": "south_east",
+          "adjacent_to": "utility_area"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "main_entrance",
+          "direction": "north",
+          "description": "Large double doors with decorative motifs"
+        },
+        {
+          "opening_type": "service_entrance",
+          "direction": "east",
+          "description": "Smaller door for servants' access, integrated with courtyard"
+        },
+        {
+          "opening_type": "side_door",
+          "direction": "west",
+          "description": "Side entrance aligned to the west-facing plot"
+        }
+      ],
+      "features": [
+        {
+          "feature_type": "courtyard",
+          "dimensions": {"length": 12, "width": 8},
+          "vastu_alignment": "north_west",
+          "description": "Central open space connecting living areas and enhancing natural light."
+        },
+        {
+          "feature_type": "utility_area",
+          "dimensions": {"length": 6, "width": 5},
+          "description": "Service area adjacent to servant quarters"
+        }
+      ]
+    }
+  ],
+  "plot": {
+    "dimensions": {"length": 60, "width": 90},
+    "orientation": "west_facing",
+    "vastu_compliance": true
+  },
+  "design_style": "Chettinad_Style",
+  "building_type": "Penthouse_2BHK_Bungalow"
+}

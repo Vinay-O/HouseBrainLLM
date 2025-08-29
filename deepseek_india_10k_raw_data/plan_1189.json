@@ -1,0 +1,228 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1050,
+      "style": "Traditional Vernacular"
+    },
+    "plot": {
+      "slope": "mountain",
+      "terrain": "challenging",
+      "location": "inner plot with privacy focus"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 180,
+        "description": "Master bedroom with ensuite bathroom, walk-in closet, and private courtyard with jaali screens for security and ventilation."
+      },
+      {
+        "type": "workshop",
+        "area": 200,
+        "description": "Handloom weaving workshop with large north-facing windows for natural lighting, built-in storage shelves, and jaali screens for privacy."
+      },
+      {
+        "type": "living_room",
+        "area": 220,
+        "description": "Spacious living area opening to central courtyard, featuring carved sandstone pillars with traditional motifs and jaali screens."
+      },
+      {
+        "type": "kitchen",
+        "area": 120,
+        "description": "Organic kitchen with traditional companion planting garden access, natural stone countertops, and optimized ventilation."
+      },
+      {
+        "type": "bathroom",
+        "area": 60,
+        "description": "Ensuite bathroom with natural stone finishes and ventilation through jaali screens."
+      },
+      {
+        "type": "utility",
+        "area": 70,
+        "description": "Laundry and storage room with additional space for household utilities."
+      },
+      {
+        "type": "courtyard",
+        "area": 200,
+        "description": "Central courtyard providing cross-ventilation, light well, and space for organic kitchen garden with companion planting."
+      }
+    ]
+  },
+  "total_area": 1050.0,
+  "construction_cost": 2100000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 4,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "type": "jaali_screen"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 3,
+              "type": "jaali_screen"
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "type": "jaali_screen"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 8,
+            "y": 6,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2,
+              "type": "jaali_screen"
+            }
+          ]
+        },
+        {
+          "id": "workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 12,
+            "y": 8,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "type": "large_window"
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 3,
+              "type": "jaali_screen"
+            }
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 6,
+            "y": 10,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

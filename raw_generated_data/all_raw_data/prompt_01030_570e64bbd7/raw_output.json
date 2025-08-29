@@ -1,0 +1,126 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "shape": "rectangle",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["wheelchair accessible entrance", "large windows for natural light"]
+        },
+        {
+          "room_id": "dining_area",
+          "shape": "square",
+          "dimensions": { "length": 12, "width": 12 },
+          "features": ["adjustable height table", "proximity to kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "L-shape",
+          "dimensions": { "length": 15, "width": 10 },
+          "features": ["wheelchair accessible cabinets and appliances", "open shelving for easy access"]
+        },
+        {
+          "room_id": "study_bedroom",
+          "shape": "rectangle",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["convertible furniture", "large storage units"]
+        },
+        {
+          "room_id": "private_gym",
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 10 },
+          "features": ["accessible equipment", "ventilation system"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 3.5, "width": 1 },
+          "location": "front of the apartment"
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimensions": { "length": 6, "width": 4 },
+          "location": "north wall of living room"
+        }
+      ],
+      "additional_features": [
+        {
+          "feature_id": "ramps_and_railings",
+          "description": "wheelchair accessible ramps and railings throughout the apartment",
+          "location": "various"
+        },
+        {
+          "feature_id": "home_theater",
+          "description": "dedicated space with accessible seating and control panels",
+          "location": "lower level"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_level",
+      "rooms": [
+        {
+          "room_id": "master_bedroom",
+          "shape": "rectangle",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["wheelchair accessible bathroom", "walk-in closet"]
+        },
+        {
+          "room_id": "guest_room",
+          "shape": "square",
+          "dimensions": { "length": 12, "width": 12 },
+          "features": ["adjustable bed height", "private entrance to bathroom"]
+        },
+        {
+          "room_id": "terrace",
+          "shape": "rectangle",
+          "dimensions": { "length": 30, "width": 15 },
+          "features": ["accessible pathways", "outdoor seating area"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "upper_level_entrance",
+          "type": "staircase",
+          "dimensions": { "length": 8, "width": 4 },
+          "location": "connecting ground and upper levels"
+        },
+        {
+          "opening_id": "terrace_door",
+          "type": "sliding door",
+          "dimensions": { "length": 10, "width": 3 },
+          "location": "entrance to terrace"
+        }
+      ]
+    }
+  ],
+  "building_features": [
+    {
+      "feature_id": "brutalist_architecture",
+      "description": "exposed concrete and geometric design elements throughout the apartment",
+      "location": "various"
+    },
+    {
+      "feature_id": "split_level_design",
+      "description": "two distinct levels with a staircase connecting them, providing separation between private and public spaces",
+      "location": "throughout"
+    }
+  ],
+  "vastu_compliance": [
+    {
+      "principle_id": "directional_orientation",
+      "description": "main entrance facing east for positive energy flow according to Vastu principles",
+      "implementation": "orientation of the apartment"
+    },
+    {
+      "principle_id": "element_placement",
+      "description": "kitchen located in the southeast direction, as recommended by Vastu for fire element",
+      "implementation": "placement of kitchen on the ground floor"
+    }
+  ]
+}

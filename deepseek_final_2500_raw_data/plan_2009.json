@@ -1,0 +1,206 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Japanese Zen"
+    },
+    "plot": {
+      "size": 20000,
+      "topography": "ravine",
+      "climate": "alpine with heavy snow loads"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "area": 400,
+        "details": "Chef's kitchen with wood-fired oven"
+      },
+      {
+        "type": "living_room",
+        "area": 600,
+        "details": "Open plan with south-facing glazing"
+      },
+      {
+        "type": "bedroom",
+        "area": 350,
+        "details": "Master suite"
+      },
+      {
+        "type": "bedroom",
+        "area": 250,
+        "details": "Teenager bedroom"
+      },
+      {
+        "type": "bedroom",
+        "area": 250,
+        "details": "Teenager bedroom"
+      },
+      {
+        "type": "bathroom",
+        "area": 150,
+        "details": "Full bathroom"
+      },
+      {
+        "type": "bathroom",
+        "area": 100,
+        "details": "Powder room"
+      },
+      {
+        "type": "study",
+        "area": 200,
+        "details": "Zen study/meditation space"
+      },
+      {
+        "type": "deck",
+        "area": 900,
+        "details": "Wrap-around viewing decks"
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            "entry_door",
+            "deck_door"
+          ],
+          "windows": [
+            "south_window_wall"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "pantry_door"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "deck_main",
+          "type": "deck",
+          "bounds": {
+            "x": -5,
+            "y": 0,
+            "width": 50,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 23.33
+          },
+          "doors": [
+            "bathroom_door"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom_teen1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 12.5,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_teen2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 27.5,
+            "y": 0,
+            "width": 12.5,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            "west_window"
+          ]
+        },
+        {
+          "id": "bathroom_full",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 23.33,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "master_door",
+            "hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 10,
+            "y": 23.33,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "deck_upper",
+          "type": "deck",
+          "bounds": {
+            "x": -5,
+            "y": 0,
+            "width": 50,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

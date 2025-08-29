@@ -1,0 +1,289 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Heritage Restoration, Desert Fort"
+    },
+    "plot": {
+      "location": "Kochi Backwaters",
+      "type": "Market Area Commercial-Residential Mix",
+      "orientation": "Inner Plot with Privacy Focus"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "music_room",
+        "count": 1
+      },
+      {
+        "type": "otla",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 216000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "otla_sitout",
+          "type": "otla",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "type": "main_entrance"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "type": "sliding"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "type": "jalousie"
+            },
+            {
+              "wall": "west",
+              "position": 5,
+              "type": "jalousie"
+            }
+          ],
+          "features": [
+            "Traditional Swing (Jhula)",
+            "Evapotranspiration Planters",
+            "Water Body Feature"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10,
+              "type": "sliding",
+              "connects_to": "otla_sitout"
+            },
+            {
+              "wall": "north",
+              "position": 5,
+              "type": "standard",
+              "connects_to": "music_room"
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "type": "standard",
+              "connects_to": "bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "type": "jalousie"
+            },
+            {
+              "wall": "west",
+              "position": 15,
+              "type": "jalousie"
+            }
+          ],
+          "features": [
+            "Traditional Lime Plaster Walls",
+            "Natural Pigments",
+            "Energy-Efficient LED Lighting with Traditional Fixtures"
+          ]
+        },
+        {
+          "id": "music_room",
+          "type": "music_room",
+          "bounds": {
+            "x": 0,
+            "y": 23,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6,
+              "type": "standard",
+              "connects_to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6,
+              "type": "double_glazed_acoustic"
+            }
+          ],
+          "features": [
+            "Acoustic Wall Paneling",
+            "Instrument Storage",
+            "Specialized Ventilation for Air Quality"
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "type": "standard",
+              "connects_to": "living_room"
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "type": "standard",
+              "connects_to": "bathroom"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "type": "jalousie"
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "type": "jalousie"
+            }
+          ],
+          "features": [
+            "Walk-in Closet",
+            "Private Courtyard View",
+            "Enhanced Security Locks"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 23,
+            "width": 7,
+            "height": 7
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 3.5,
+              "type": "standard",
+              "connects_to": "bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3.5,
+              "type": "high_vent"
+            }
+          ],
+          "features": [
+            "Traditional Bathing Area",
+            "Natural Ventilation"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 27,
+            "y": 23,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4,
+              "type": "standard",
+              "connects_to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4,
+              "type": "jalousie"
+            }
+          ],
+          "features": [
+            "Energy-Efficient Appliances",
+            "Water Filtration System"
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "type": "standard",
+              "connects_to": "kitchen"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Central Water Body for Cooling",
+            "Air-Purifying Plants",
+            "High Perimeter Wall for Privacy"
+          ]
+        }
+      ]
+    }
+  ]
+}

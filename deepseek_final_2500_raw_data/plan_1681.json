@@ -1,0 +1,503 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 2,
+      "totalArea": 4500,
+      "style": "Urban Townhouse"
+    },
+    "plot": {
+      "size": 20000,
+      "terrain": "sloped",
+      "climate": "tropical with monsoons",
+      "noiseSources": [
+        "highway"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 6,
+        "area": 720
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "area": 240
+      },
+      {
+        "type": "kitchen",
+        "count": 2,
+        "area": 400
+      },
+      {
+        "type": "living_room",
+        "count": 2,
+        "area": 600
+      },
+      {
+        "type": "dining_room",
+        "count": 2,
+        "area": 400
+      },
+      {
+        "type": "brewery",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "pantry",
+        "count": 2,
+        "area": 200
+      },
+      {
+        "type": "utility",
+        "count": 2,
+        "area": 200
+      },
+      {
+        "type": "storage",
+        "count": 2,
+        "area": 200
+      },
+      {
+        "type": "office",
+        "count": 2,
+        "area": 240
+      },
+      {
+        "type": "deck",
+        "count": 4,
+        "area": 800
+      },
+      {
+        "type": "corridor",
+        "count": 2,
+        "area": 300
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 1350000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "pod1_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "pod1_dining_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod1_dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "pod1_kitchen_door",
+            "pod1_living_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod1_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "pod1_dining_door",
+            "pod1_deck_door"
+          ],
+          "windows": [
+            "pod1_living_window1",
+            "pod1_living_window2"
+          ]
+        },
+        {
+          "id": "pod1_deck",
+          "type": "deck",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            "pod1_living_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod2_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "pod2_dining_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod2_dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 8,
+            "y": 20,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "pod2_kitchen_door",
+            "pod2_living_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod2_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 16,
+            "y": 20,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "pod2_dining_door",
+            "pod2_deck_door"
+          ],
+          "windows": [
+            "pod2_living_window1",
+            "pod2_living_window2"
+          ]
+        },
+        {
+          "id": "pod2_deck",
+          "type": "deck",
+          "bounds": {
+            "x": 28,
+            "y": 20,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            "pod2_living_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "brewery",
+          "type": "brewery",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "brewery_entry_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "utility_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_room",
+          "type": "storage",
+          "bounds": {
+            "x": 15,
+            "y": 50,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "storage_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "corridor_ground",
+          "type": "corridor",
+          "bounds": {
+            "x": 25,
+            "y": 40,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            "pod1_corridor_door",
+            "pod2_corridor_door",
+            "brewery_corridor_door"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "pod1_bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "pod1_bed1_door"
+          ],
+          "windows": [
+            "pod1_bed1_window"
+          ]
+        },
+        {
+          "id": "pod1_bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "pod1_bed2_door"
+          ],
+          "windows": [
+            "pod1_bed2_window"
+          ]
+        },
+        {
+          "id": "pod1_bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            "pod1_bath1_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod1_office",
+          "type": "office",
+          "bounds": {
+            "x": 22,
+            "y": 0,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            "pod1_office_door"
+          ],
+          "windows": [
+            "pod1_office_window"
+          ]
+        },
+        {
+          "id": "pod1_deck_up",
+          "type": "deck",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            "pod1_office_deck_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod2_bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "pod2_bed1_door"
+          ],
+          "windows": [
+            "pod2_bed1_window"
+          ]
+        },
+        {
+          "id": "pod2_bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 8,
+            "y": 20,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "pod2_bed2_door"
+          ],
+          "windows": [
+            "pod2_bed2_window"
+          ]
+        },
+        {
+          "id": "pod2_bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 20,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            "pod2_bath1_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod2_office",
+          "type": "office",
+          "bounds": {
+            "x": 22,
+            "y": 20,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            "pod2_office_door"
+          ],
+          "windows": [
+            "pod2_office_window"
+          ]
+        },
+        {
+          "id": "pod2_deck_up",
+          "type": "deck",
+          "bounds": {
+            "x": 28,
+            "y": 20,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            "pod2_office_deck_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod1_bedroom3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "pod1_bed3_door"
+          ],
+          "windows": [
+            "pod1_bed3_window1",
+            "pod1_bed3_window2"
+          ]
+        },
+        {
+          "id": "pod1_bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 10,
+            "y": 40,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            "pod1_bath2_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod2_bedroom3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 40,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "pod2_bed3_door"
+          ],
+          "windows": [
+            "pod2_bed3_window1",
+            "pod2_bed3_window2"
+          ]
+        },
+        {
+          "id": "pod2_bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 40,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            "pod2_bath2_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "corridor_upper",
+          "type": "corridor",
+          "bounds": {
+            "x": 10,
+            "y": 48,
+            "width": 5,
+            "height": 12
+          },
+          "doors": [
+            "pod1_bed3_corridor_door",
+            "pod2_bed3_corridor_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {"room_type": "entrance_hallway", "dimensions": {"width": 3.0, "length": 5.0}, "vastu_alignment": "north-east"},
+      {"room_type": "living_room", "dimensions": {"width": 6.0, "length": 8.0}, "floor_to_ceiling_windows": true, "vastu_alignment": "south-west"},
+      {"room_type": "dining_area", "dimensions": {"width": 4.5, "length": 5.5}, "vastu_alignment": "north-east"},
+      {"room_type": "kitchen", "dimensions": {"width": 3.5, "length": 4.0}, "adjacent_to": ["dining_area"], "vastu_alignment": "south-west"},
+      {"room_type": "utility_room", "dimensions": {"width": 2.0, "length": 3.0}, "vastu_alignment": "north-east"}
+    ],
+    "openings": [
+      {"type": "entrance_door", "location": "front", "material": "reinforced_steel"},
+      {"type": "side_door", "location": "left", "material": "glass_reinforced_concrete"},
+      {"type": "garage_entry", "location": "right", "dimensions": {"width": 3.5, "height": 2.8}, "capacity": "two_car"}
+    ]
+  },
+  {
+    "level_id": "first_floor",
+    "rooms": [
+      {"room_type": "master_bedroom", "dimensions": {"width": 4.0, "length": 6.0}, "floor_to_ceiling_windows": true, "vastu_alignment": "north-east"},
+      {"room_type": "bedroom", "dimensions": {"width": 3.5, "length": 5.5}, "vastu_alignment": "south-west"},
+      {"room_type": "bedroom", "dimensions": {"width": 3.0, "length": 4.5}, "vastu_alignment": "north-east"},
+      {"room_type": "bedroom", "dimensions": {"width": 2.8, "length": 4.0}, "vastu_alignment": "south-west"},
+      {"room_type": "study_room", "dimensions": {"width": 3.5, "length": 4.5}, "vastu_alignment": "north-east"}
+    ],
+    "openings": [
+      {"type": "staircase", "location": "center", "dimensions": {"width": 1.2, "height": 3.0}},
+      {"type": "balcony_access", "location": "east", "floor_to_ceiling_windows": true}
+    ]
+  },
+  {
+    "level_id": "roof Terrace",
+    "rooms": [
+      {"room_type": "rooftop_terrace", "dimensions": {"width": 6.0, "length": 8.0}, "features": ["sun_deck"], "vastu_alignment": "north-east"}
+    ],
+    "openings": []
+  }
+]}

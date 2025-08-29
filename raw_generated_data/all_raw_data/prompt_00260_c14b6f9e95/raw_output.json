@@ -1,0 +1,116 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "Entry Hall",
+          "area_sqft": 100,
+          "location": {"x": 50, "y": 40},
+          "door_connections": ["living_dining_area"],
+          "features": ["carved wooden doors"]
+        },
+        {
+          "room_type": "Living_Dining_Area",
+          "area_sqft": 300,
+          "location": {"x": 150, "y": 40},
+          "door_connections": ["entry_hall", "kitchen"],
+          "features": ["open layout", "wooden flooring"]
+        },
+        {
+          "room_type": "Kitchen",
+          "area_sqft": 150,
+          "location": {"x": 270, "y": 40},
+          "door_connections": ["living_dining_area"],
+          "features": ["open plan", "traditional cooking hearth"]
+        },
+        {
+          "room_type": "Master_Bedroom",
+          "area_sqft": 150,
+          "location": {"x": 390, "y": 40},
+          "door_connections": [],
+          "features": ["attached bathroom", "balcony access"]
+        },
+        {
+          "room_type": "Bedroom_2",
+          "area_sqft": 120,
+          "location": {"x": 530, "y": 40},
+          "door_connections": [],
+          "features": ["shared bathroom", "balcony access"]
+        },
+        {
+          "room_type": "Bedroom_3",
+          "area_sqft": 120,
+          "location": {"x": 650, "y": 40},
+          "door_connections": [],
+          "features": ["shared bathroom", "balcony access"]
+        },
+        {
+          "room_type": "Bathroom_1",
+          "area_sqft": 30,
+          "location": {"x": 780, "y": 40},
+          "door_connections": ["bedroom_2", "bedroom_3"],
+          "features": []
+        },
+        {
+          "room_type": "Home_Theater",
+          "area_sqft": 150,
+          "location": {"x": 850, "y": 40},
+          "door_connections": [],
+          "features": ["soundproofing", "projector setup"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "Garage",
+          "area_sqft": 200,
+          "location": {"x": 15, "y": 15}
+        },
+        {
+          "type": "Balconies",
+          "area_sqft": 150,
+          "locations": [
+            {"x": 460, "y": 80},
+            {"x": 590, "y": 80}
+          ]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "Bedroom_4",
+          "area_sqft": 120,
+          "location": {"x": 390, "y": 100},
+          "door_connections": [],
+          "features": ["shared bathroom", "balcony access"]
+        },
+        {
+          "room_type": "Bedroom_5",
+          "area_sqft": 120,
+          "location": {"x": 530, "y": 100},
+          "door_connections": [],
+          "features": ["shared bathroom", "balcony access"]
+        },
+        {
+          "room_type": "Bathroom_2",
+          "area_sqft": 30,
+          "location": {"x": 780, "y": 100},
+          "door_connections": ["bedroom_4", "bedroom_5"],
+          "features": []
+        }
+      ],
+      "openings": [
+        {
+          "type": "Balconies",
+          "area_sqft": 120,
+          "locations": [
+            {"x": 390, "y": 150},
+            {"x": 530, "y": 150}
+          ]
+        }
+      ]
+    }
+  ]
+}

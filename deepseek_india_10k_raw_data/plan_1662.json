@@ -1,0 +1,641 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 12,
+      "floors": 2,
+      "totalArea": 18500,
+      "style": "Chettinad Heritage Restoration"
+    },
+    "plot": {
+      "shape": "rectangular",
+      "orientation": "north-south",
+      "area": 22000,
+      "width": 110,
+      "depth": 200,
+      "setbacks": {
+        "front": 15,
+        "rear": 20,
+        "sides": 10
+      }
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 2,
+        "area": 450
+      },
+      {
+        "type": "bedroom",
+        "count": 10,
+        "area": 3000
+      },
+      {
+        "type": "living_room",
+        "count": 2,
+        "area": 1200
+      },
+      {
+        "type": "dining_room",
+        "count": 2,
+        "area": 800
+      },
+      {
+        "type": "kitchen",
+        "count": 2,
+        "area": 600
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "study",
+        "count": 3,
+        "area": 450
+      },
+      {
+        "type": "cellar",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 1800
+      }
+    ]
+  },
+  "total_area": 18500.0,
+  "construction_cost": 83250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "grand_entrance",
+          "type": "foyer",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 55,
+                "y": 0
+              },
+              "to": "exterior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 50,
+            "height": 50
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 40
+              },
+              "to": "sitting_area"
+            },
+            {
+              "position": {
+                "x": 80,
+                "y": 40
+              },
+              "to": "dining_hall"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "tulsi_platform",
+          "type": "puja_room",
+          "bounds": {
+            "x": 52,
+            "y": 65,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 55,
+                "y": 65
+              },
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "main_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 27
+              },
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 27
+              },
+              "orientation": "west"
+            }
+          ]
+        },
+        {
+          "id": "formal_dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 80,
+            "y": 15,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 80,
+                "y": 27
+              },
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 110,
+                "y": 27
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "main_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 80,
+            "y": 40,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 80,
+                "y": 52
+              },
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 110,
+                "y": 52
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "cellar_access",
+          "type": "staircase",
+          "bounds": {
+            "x": 95,
+            "y": 65,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 100,
+                "y": 65
+              },
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "senior_bedroom_1",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 52
+              },
+              "to": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 52
+              },
+              "orientation": "west"
+            }
+          ]
+        },
+        {
+          "id": "study_1",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 65,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 72
+              },
+              "to": "senior_bedroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 72
+              },
+              "orientation": "west"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "family_lounge",
+          "type": "living_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 50,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 55,
+                "y": 15
+              },
+              "to": "upper_courtyard_gallery"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 7
+              },
+              "orientation": "north"
+            },
+            {
+              "position": {
+                "x": 80,
+                "y": 7
+              },
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "upper_courtyard_gallery",
+          "type": "balcony",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 50,
+            "height": 50
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 40
+              },
+              "to": "family_lounge"
+            },
+            {
+              "position": {
+                "x": 80,
+                "y": 40
+              },
+              "to": "dining_hall_upper"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "dining_hall_upper",
+          "type": "dining_room",
+          "bounds": {
+            "x": 80,
+            "y": 15,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 80,
+                "y": 27
+              },
+              "to": "upper_courtyard_gallery"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 110,
+                "y": 27
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_upper",
+          "type": "kitchen",
+          "bounds": {
+            "x": 80,
+            "y": 40,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 80,
+                "y": 52
+              },
+              "to": "upper_courtyard_gallery"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 110,
+                "y": 52
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 27
+              },
+              "to": "upper_courtyard_gallery"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 27
+              },
+              "orientation": "west"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 52
+              },
+              "to": "upper_courtyard_gallery"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 52
+              },
+              "orientation": "west"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 65,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 72
+              },
+              "to": "upper_courtyard_gallery"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 72
+              },
+              "orientation": "west"
+            }
+          ]
+        },
+        {
+          "id": "senior_bedroom_2",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 65,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 55,
+                "y": 65
+              },
+              "to": "upper_courtyard_gallery"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 72
+              },
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "study_2",
+          "type": "study",
+          "bounds": {
+            "x": 55,
+            "y": 65,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 55,
+                "y": 72
+              },
+              "to": "upper_courtyard_gallery"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 70,
+                "y": 72
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "study_3",
+          "type": "study",
+          "bounds": {
+            "x": 85,
+            "y": 65,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 85,
+                "y": 72
+              },
+              "to": "upper_courtyard_gallery"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 100,
+                "y": 72
+              },
+              "orientation": "east"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "wine_cellar",
+          "type": "cellar",
+          "bounds": {
+            "x": 40,
+            "y": 40,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 55,
+                "y": 40
+              },
+              "to": "cellar_stairs"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "cellar_stairs",
+          "type": "staircase",
+          "bounds": {
+            "x": 35,
+            "y": 35,
+            "width": 20,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 45,
+                "y": 40
+              },
+              "to": "wine_cellar"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

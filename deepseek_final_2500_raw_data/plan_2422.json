@@ -1,0 +1,548 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Mid-Century Modern"
+    },
+    "plot": {
+      "terrain": "sloping_vineyard",
+      "climate": "coastal_salt_air"
+    },
+    "roomBreakdown": [
+      {
+        "type": "primary_suite",
+        "count": 1,
+        "specialAttributes": [
+          "aging_in_place_modifications",
+          "private_balcony"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "count": 2,
+        "specialAttributes": [
+          "teen_focused_design",
+          "built_in_study"
+        ]
+      },
+      {
+        "type": "music_room",
+        "count": 1,
+        "specialAttributes": [
+          "acoustic_isolation",
+          "soundproofing",
+          "professional_equipment"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "specialAttributes": [
+          "smart_appliances",
+          "energy_efficient"
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "specialAttributes": [
+          "great_room_design",
+          "butterfly_roof_ceiling"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "specialAttributes": [
+          "accessible_design",
+          "premium_fixtures"
+        ]
+      },
+      {
+        "type": "garage",
+        "count": 1,
+        "specialAttributes": [
+          "electric_vehicle_charging"
+        ]
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_level0",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 22
+          },
+          "doors": [
+            {
+              "type": "overhead",
+              "location": "exterior",
+              "bounds": {
+                "x": 0,
+                "y": 8,
+                "width": 16,
+                "height": 8
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_level0",
+          "type": "utility",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "garage",
+              "bounds": {
+                "x": 24,
+                "y": 6,
+                "width": 3,
+                "height": 7
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "wine_storage_level0",
+          "type": "storage",
+          "bounds": {
+            "x": 24,
+            "y": 12,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "mechanical",
+              "bounds": {
+                "x": 30,
+                "y": 12,
+                "width": 3,
+                "height": 7
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "entry_level1",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "location": "front",
+              "bounds": {
+                "x": 4,
+                "y": 0,
+                "width": 4,
+                "height": 8
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "location": "front",
+              "bounds": {
+                "x": 8,
+                "y": 2,
+                "width": 3,
+                "height": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "great_room_level1",
+          "type": "living_room",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 28,
+            "height": 24
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "foyer",
+              "bounds": {
+                "x": 12,
+                "y": 6,
+                "width": 4,
+                "height": 7
+              }
+            },
+            {
+              "type": "exterior",
+              "location": "deck",
+              "bounds": {
+                "x": 36,
+                "y": 8,
+                "width": 4,
+                "height": 8
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "glass_wall",
+              "location": "rear",
+              "bounds": {
+                "x": 12,
+                "y": 0,
+                "width": 28,
+                "height": 6
+              }
+            },
+            {
+              "type": "clerestory",
+              "location": "butterfly_roof",
+              "bounds": {
+                "x": 15,
+                "y": 0,
+                "width": 22,
+                "height": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "kitchen_level1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "foyer",
+              "bounds": {
+                "x": 8,
+                "y": 10,
+                "width": 3,
+                "height": 7
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "location": "side",
+              "bounds": {
+                "x": 0,
+                "y": 16,
+                "width": 8,
+                "height": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "dining_level1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 24,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "kitchen",
+              "bounds": {
+                "x": 6,
+                "y": 24,
+                "width": 4,
+                "height": 7
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "sliding",
+              "location": "rear",
+              "bounds": {
+                "x": 2,
+                "y": 24,
+                "width": 8,
+                "height": 6
+              }
+            }
+          ]
+        },
+        {
+          "id": "music_room_level1",
+          "type": "music_room",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "hall",
+              "bounds": {
+                "x": 40,
+                "y": 8,
+                "width": 3,
+                "height": 7
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_pane",
+              "location": "side",
+              "bounds": {
+                "x": 56,
+                "y": 4,
+                "width": 3,
+                "height": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "bedroom1_level1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 16,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "hall",
+              "bounds": {
+                "x": 48,
+                "y": 16,
+                "width": 3,
+                "height": 7
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "location": "rear",
+              "bounds": {
+                "x": 42,
+                "y": 16,
+                "width": 8,
+                "height": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "bedroom2_level1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 54,
+            "y": 16,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "hall",
+              "bounds": {
+                "x": 60,
+                "y": 16,
+                "width": 3,
+                "height": 7
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "location": "rear",
+              "bounds": {
+                "x": 56,
+                "y": 16,
+                "width": 8,
+                "height": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "bath1_level1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "hall",
+              "bounds": {
+                "x": 45,
+                "y": 30,
+                "width": 3,
+                "height": 7
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "operable",
+              "location": "side",
+              "bounds": {
+                "x": 48,
+                "y": 32,
+                "width": 2,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "primary_suite_level1",
+          "type": "primary_suite",
+          "bounds": {
+            "x": 12,
+            "y": 24,
+            "width": 28,
+            "height": 22
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "private_hall",
+              "bounds": {
+                "x": 28,
+                "y": 24,
+                "width": 4,
+                "height": 7
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "sliding",
+              "location": "rear",
+              "bounds": {
+                "x": 16,
+                "y": 24,
+                "width": 10,
+                "height": 6
+              }
+            },
+            {
+              "type": "clerestory",
+              "location": "butterfly_roof",
+              "bounds": {
+                "x": 15,
+                "y": 0,
+                "width": 22,
+                "height": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "primary_bath_level1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 46,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "suite",
+              "bounds": {
+                "x": 18,
+                "y": 46,
+                "width": 3,
+                "height": 7
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "operable",
+              "location": "side",
+              "bounds": {
+                "x": 12,
+                "y": 50,
+                "width": 4,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "closet_level1",
+          "type": "closet",
+          "bounds": {
+            "x": 24,
+            "y": 46,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "suite",
+              "bounds": {
+                "x": 32,
+                "y": 46,
+                "width": 3,
+                "height": 7
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

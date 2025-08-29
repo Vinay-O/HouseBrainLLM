@@ -1,0 +1,564 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 2000,
+      "style": "Goa Portuguese with Tribal Adivasi influences"
+    },
+    "plot": {
+      "shape": "Irregular (L-shaped compound)",
+      "size": "Penthouse terrace",
+      "orientation": "North-facing main entrance",
+      "constraints": "Mountain landslide and heavy snow load considerations"
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "guest_house_bedroom",
+        "count": 1
+      },
+      {
+        "type": "artist_studio",
+        "count": 1
+      },
+      {
+        "type": "crafts_workshop",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "veranda",
+        "count": 2
+      },
+      {
+        "type": "organic_garden",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2000.0,
+  "construction_cost": 650000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_entrance_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "direction": "north",
+              "type": "main_entrance"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 2,
+                "y": 2
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 8,
+                "y": 2
+              },
+              "direction": "north"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 7
+              },
+              "direction": "west",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 0
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 7
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 6
+              },
+              "direction": "west",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 0
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 42,
+                "y": 6
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 12,
+            "width": 15,
+            "height": 13
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 18
+              },
+              "direction": "west",
+              "type": "standard"
+            },
+            {
+              "position": {
+                "x": 37,
+                "y": 25
+              },
+              "direction": "south",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 12
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 42,
+                "y": 18
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "guest_house",
+          "type": "guest_house_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 35
+              },
+              "direction": "west",
+              "type": "separate_entrance"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 25
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 7,
+                "y": 45
+              },
+              "direction": "south"
+            }
+          ]
+        },
+        {
+          "id": "workshop",
+          "type": "crafts_workshop",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 15,
+            "height": 30
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 30
+              },
+              "direction": "west",
+              "type": "double"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 22,
+                "y": 15
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 27,
+                "y": 30
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "garden_terrace",
+          "type": "organic_garden",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 20,
+            "height": 45
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 45,
+                "y": 22
+              },
+              "direction": "west",
+              "type": "sliding"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12,
+                "y": 0
+              },
+              "direction": "north",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 0
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 22,
+                "y": 7
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 6
+              },
+              "direction": "west",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 28,
+                "y": 0
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 34,
+                "y": 6
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 12,
+            "width": 12,
+            "height": 13
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 18
+              },
+              "direction": "west",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 28,
+                "y": 12
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 34,
+                "y": 18
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "artist_studio",
+          "type": "artist_studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 12
+              },
+              "direction": "east",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 3,
+                "y": 0
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 25
+              },
+              "direction": "south"
+            }
+          ]
+        },
+        {
+          "id": "upper_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 37,
+            "y": 0,
+            "width": 8,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 37,
+                "y": 12
+              },
+              "direction": "west",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 39,
+                "y": 0
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 42,
+                "y": 12
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 10,
+            "y": 15,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 17
+              },
+              "direction": "west",
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 17
+              },
+              "direction": "west",
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 17
+              },
+              "direction": "west",
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

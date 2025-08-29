@@ -1,0 +1,170 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 800,
+      "style": "Colonial"
+    },
+    "plot": {
+      "hasGarden": true,
+      "hasRooftopTerrace": true
+    },
+    "roomBreakdown": [
+      {
+        "roomType": "bedroom",
+        "count": 2,
+        "description": "Master and children's bedroom, both with floor-to-ceiling windows"
+      },
+      {
+        "roomType": "bathroom",
+        "count": 2,
+        "description": "One ensuite to master bedroom, one family bathroom"
+      },
+      {
+        "roomType": "living_room",
+        "count": 1,
+        "description": "Spacious living area with floor-to-ceiling windows opening to garden"
+      },
+      {
+        "roomType": "kitchen",
+        "count": 1,
+        "description": "Open plan kitchen with dining area"
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 144000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "sliding",
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "wall": "south",
+              "position": 5,
+              "length": 10
+            }
+          ]
+        },
+        {
+          "id": "kitchen_dining_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "wall": "east",
+              "position": 4,
+              "length": 8
+            }
+          ]
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "standard",
+              "wall": "east",
+              "position": 2,
+              "length": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "wall": "north",
+              "position": 5,
+              "length": 8
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "wall": "north",
+              "position": 5,
+              "length": 8
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "standard",
+              "wall": "east",
+              "position": 2,
+              "length": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

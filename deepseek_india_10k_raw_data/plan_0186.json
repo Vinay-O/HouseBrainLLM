@@ -1,0 +1,291 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 3200,
+      "style": "Malwa Fort-Style Haveli"
+    },
+    "plot": {
+      "slope": "east-facing hillside",
+      "location": "Vrindavan protected zone"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 350
+      },
+      {
+        "type": "courtyard",
+        "count": 3,
+        "area": 450
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1120000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "main_gate"
+          ],
+          "windows": []
+        },
+        {
+          "id": "guard_room",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "courtyard_door"
+          ],
+          "windows": [
+            "security_window"
+          ]
+        },
+        {
+          "id": "car_port",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "vehicle_entry"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "main_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 18
+          },
+          "doors": [
+            "courtyard_access",
+            "kitchen_door"
+          ],
+          "windows": [
+            "east_window_wall"
+          ]
+        },
+        {
+          "id": "traditional_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "living_access"
+          ],
+          "windows": [
+            "ventilation_window"
+          ]
+        },
+        {
+          "id": "inner_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            "living_access"
+          ],
+          "windows": []
+        },
+        {
+          "id": "dining_space",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 18,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            "courtyard_access"
+          ],
+          "windows": [
+            "garden_view"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            "private_hall"
+          ],
+          "windows": [
+            "east_sunrise",
+            "private_courtyard_view"
+          ]
+        },
+        {
+          "id": "master_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_access"
+          ],
+          "windows": [
+            "vent_window"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "hall_access"
+          ],
+          "windows": [
+            "hill_view"
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 18,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "bedroom_access"
+          ],
+          "windows": []
+        },
+        {
+          "id": "puja_room",
+          "type": "utility",
+          "bounds": {
+            "x": 26,
+            "y": 0,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "quiet_access"
+          ],
+          "windows": [
+            "east_sunrise_window"
+          ]
+        },
+        {
+          "id": "study_office",
+          "type": "study",
+          "bounds": {
+            "x": 26,
+            "y": 12,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            "private_access"
+          ],
+          "windows": [
+            "inspiring_view"
+          ]
+        },
+        {
+          "id": "roof_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 32,
+            "y": 26,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "study_access"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

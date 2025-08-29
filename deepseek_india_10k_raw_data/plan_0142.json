@@ -1,0 +1,274 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 3,
+      "totalArea": 4500,
+      "style": "Colonial British Bungalow"
+    },
+    "plot": {
+      "slope": "hillside",
+      "orientation": "north-facing entrance",
+      "location": "Coimbatore"
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_clinic",
+        "area": 400
+      },
+      {
+        "type": "consultation_room",
+        "area": 200
+      },
+      {
+        "type": "wine_cellar",
+        "area": 150
+      },
+      {
+        "type": "rainwater_harvesting",
+        "area": 300
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 1350000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_entrance",
+          "type": "entrance",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 4
+          },
+          "doors": [
+            "north_facing_main"
+          ],
+          "windows": []
+        },
+        {
+          "id": "veranda_front",
+          "type": "veranda",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 20,
+            "height": 5
+          },
+          "doors": [
+            "to_entrance",
+            "to_living"
+          ],
+          "windows": [
+            "lattice_north"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 4,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_veranda"
+          ],
+          "windows": [
+            "lattice_east"
+          ]
+        },
+        {
+          "id": "consultation_room",
+          "type": "office",
+          "bounds": {
+            "x": 15,
+            "y": 4,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "to_living"
+          ],
+          "windows": [
+            "lattice_south"
+          ]
+        },
+        {
+          "id": "home_clinic",
+          "type": "clinic",
+          "bounds": {
+            "x": 15,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "to_consultation"
+          ],
+          "windows": [
+            "lattice_south"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "lattice_north",
+            "lattice_east"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "lattice_south"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "lattice_east"
+          ]
+        },
+        {
+          "id": "family_hall",
+          "type": "living_room",
+          "bounds": {
+            "x": 12,
+            "y": 12,
+            "width": 13,
+            "height": 10
+          },
+          "doors": [
+            "to_bedrooms",
+            "to_veranda"
+          ],
+          "windows": [
+            "lattice_south"
+          ]
+        },
+        {
+          "id": "veranda_wrap_1",
+          "type": "veranda",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 5,
+            "height": 22
+          },
+          "doors": [
+            "to_hall",
+            "to_bedroom2"
+          ],
+          "windows": [
+            "lattice_wrap"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "lattice_north"
+          ]
+        },
+        {
+          "id": "wine_cellar",
+          "type": "cellar",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "to_storage"
+          ],
+          "windows": []
+        },
+        {
+          "id": "rainwater_harvesting",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            "external_access"
+          ],
+          "windows": []
+        },
+        {
+          "id": "veranda_wrap_2",
+          "type": "veranda",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 22
+          },
+          "doors": [
+            "to_stairs"
+          ],
+          "windows": [
+            "lattice_wrap"
+          ]
+        }
+      ]
+    }
+  ]
+}

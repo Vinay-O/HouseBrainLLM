@@ -1,0 +1,44 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        { "room_id": "entrance_hall", "description": " spacious and elegant entrance with a wheelchair-accessible ramp", "area_sqft": 200 },
+        { "room_id": "living_room", "description": "large open living area with bohemian décor, natural light, accessible layout", "area_sqft": 300 },
+        { "room_id": "dining_area", "description": "open dining space adjacent to the kitchen for social gatherings, designed with easy access", "area_sqft": 150 },
+        { "room_id": "kitchen", "description": "modern kitchen integrated into living area with accessible counter heights", "area_sqft": 250 },
+        { "room_id": "bedroom1", "description": "prime bedroom on ground floor for accessibility, with large windows and bohemian design elements", "area_sqft": 220 },
+        { "room_id": "bathroom1", "description": "wheelchair accessible bathroom adjacent to bedroom1", "area_sqft": 80 }
+      ],
+      "openings": [
+        { "opening_id": "main_entry", "type": "entrance door with ramp", "location": "front facade", "width_ft": 4, "accessibility": true },
+        { "opening_id": "living_room_window", "type": "large window", "location": "east wall", "dimensions_ft": [5,3], "accessibility": false },
+        { "opening_id": "dining_area_opening", "type": "open transition area to kitchen", "location": "interior partition", "description": "sliding glass door", "width_ft": 4 }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        { "room_id": "bedroom2", "description": "second bedroom designed with bohemian style, natural light and accessible layout", "area_sqft": 220 },
+        { "room_id": "bedroom3", "description": "third bedroom with en-suite bathroom", "area_sqft": 200 },
+        { "room_id": "bathroom2", "description": " ensuite bathroom for bedroom3, wheelchair-accessible design", "area_sqft": 80 },
+        { "room_id": "bedroom4", "description": "fourth bedroom with ample natural light and bohemian décor", "area_sqft": 200 },
+        { "room_id": "bathroom3", "description": "wheelchair accessible bathroom adjacent to bedroom4", "area_sqft": 80 }
+      ],
+      "openings": [
+        { "opening_id": "staircase", "type": "ramped staircase for wheelchair access between floors", "location": "central corridor", "dimensions_ft": [6,3], "accessibility": true },
+        { "opening_id": "first_floor_window", "type": "large windows for natural light", "location": "north wall", "dimensions_ft": [4,2], "accessibility": false }
+      ]
+    },
+    {
+      "level_id": "rooftop",
+      "rooms": [
+        { "room_id": "terrace", "description": "spacious rooftop terrace with seating areas and bohemian-style decor for luxury outdoor living", "area_sqft": 300 }
+      ],
+      "openings": [
+        { "opening_id": "roof_access", "type": "elevator access to rooftop terrace, ensuring wheelchair accessibility", "location": "central wall", "description": "accessible elevator shaft", "accessibility": true },
+        { "opening_id": "terrace_door", "type": "large opening door leading to the roof", "location": "south wall", "width_ft": 6 }
+      ]
+    }
+  ]
+}

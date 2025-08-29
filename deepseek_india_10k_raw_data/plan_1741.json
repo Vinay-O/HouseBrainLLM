@@ -1,0 +1,509 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 3,
+      "totalArea": 7500,
+      "style": "Punjabi farmhouse with rural Sikh architectural elements"
+    },
+    "plot": {
+      "width": 50,
+      "height": 50,
+      "location": "Mangalore coastal strip",
+      "orientation": "North-facing main entrance"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "subtype": "Vegetarian kitchen",
+        "area": 200
+      },
+      {
+        "type": "kitchen",
+        "subtype": "Non-vegetarian kitchen",
+        "area": 200
+      },
+      {
+        "type": "puja_room",
+        "subtype": "Home temple with daily ritual space",
+        "area": 300
+      },
+      {
+        "type": "living_room",
+        "subtype": "Main living area",
+        "area": 400
+      },
+      {
+        "type": "dining_room",
+        "subtype": "Family dining",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "subtype": "Master bedroom",
+        "area": 350
+      },
+      {
+        "type": "bedroom",
+        "subtype": "Standard bedroom",
+        "area": 250
+      },
+      {
+        "type": "utility",
+        "subtype": "Biomass energy system",
+        "area": 150
+      },
+      {
+        "type": "storage",
+        "subtype": "Copper/brass water storage",
+        "area": 100
+      },
+      {
+        "type": "veranda",
+        "subtype": "Deep overhangs",
+        "area": 600
+      }
+    ]
+  },
+  "total_area": 7500.0,
+  "construction_cost": 18750000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 25
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 12
+            },
+            {
+              "wall": "west",
+              "position": 12
+            }
+          ]
+        },
+        {
+          "id": "vegetarian_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "nonveg_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 37,
+            "y": 10,
+            "width": 13,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 25,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 12
+            },
+            {
+              "wall": "west",
+              "position": 12
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "water_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 15,
+            "y": 35,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 12
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7
+            },
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "family_lounge",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 15
+            },
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "balcony_1",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "balcony_2",
+          "type": "veranda",
+          "bounds": {
+            "x": 20,
+            "y": 35,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12
+            },
+            {
+              "wall": "east",
+              "position": 12
+            },
+            {
+              "wall": "west",
+              "position": 12
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bedroom_5",
+          "type": "bedroom",
+          "bounds": {
+            "x": 37,
+            "y": 0,
+            "width": 13,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6
+            },
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "bedroom_6",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 12
+            },
+            {
+              "wall": "west",
+              "position": 12
+            }
+          ]
+        },
+        {
+          "id": "terrace",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "solar_panels",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 35,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_hall",
+          "name": "Entrance Hall",
+          "description": "A spacious entrance hall with North-facing door, designed for a welcoming Vastu-compliant approach. Features elegant Art Deco elements.",
+          "dimensions": { "length": 4, "width": 3 },
+          "adjacent_to": ["living_room", "kitchen"]
+        },
+        {
+          "room_id": "open_plan_living_kitchen",
+          "name": "Living & Kitchen",
+          "description": "An open-plan area merging the living room and kitchen. The design includes Art Deco detailing with streamlined forms, a marble-tiled floor, modern appliances integrated into cabinetry.",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": [
+            "open to garden through large sliding glass doors",
+            "art deco style fixtures and furnishings"
+          ],
+          "adjacent_to": ["entrance_hall", "dining_area"]
+        },
+        {
+          "room_id": "master_bedroom",
+          "name": "Master Bedroom",
+          "description": "A comfortable master bedroom designed as a bachelor pad, incorporating Art Deco elements like geometric patterns and chrome accents. It includes built-in storage solutions.",
+          "dimensions": { "length": 6, "width": 5 },
+          "adjacent_to": ["entrance_hall"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "north_entrance",
+          "type": "door",
+          "location": "North-facing",
+          "description": "The main entrance door that adheres to Vastu principles, ensuring positive energy flow.",
+          "dimensions": { "width": 1, "height": 2.5 }
+        },
+        {
+          "opening_id": "living_area_garden_window",
+          "type": "sliding glass window",
+          "location": "East wall",
+          "description": "Large sliding windows that connect the living area to the garden, providing ample natural light and an outdoor feel.",
+          "dimensions": { "width": 2.5, "height": 4 }
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "fixed window",
+          "location": "South wall",
+          "description": "A fixed window in the kitchen area to enhance ventilation and natural light.",
+          "dimensions": { "width": 2, "height": 3 }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "upper_living_area",
+          "name": "Upper Living Area / Study",
+          "description": "A versatile space on the first floor that can serve as an additional living area or a study. It maintains the Art Deco aesthetic with streamlined furniture and modern lighting.",
+          "dimensions": { "length": 7, "width": 5 },
+          "features": ["built-in bookshelves", "art deco accents"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "first_floor_window",
+          "type": "casement window",
+          "location": "North wall",
+          "description": "Casement windows that allow cross-ventilation and enhanced natural lighting.",
+          "dimensions": { "width": 1.5, "height": 2 }
+        },
+        {
+          "opening_id": "balcony_door",
+          "type": "door",
+          "location": "East wall",
+          "description": "Door leading to a small balcony with garden views and fresh air.",
+          "dimensions": { "width": 1, "height": 2.2 }
+        }
+      ]
+    },
+    {
+      "level_id": "garden_level",
+      "rooms": [
+        {
+          "room_id": "garden_area",
+          "name": "Garden Area",
+          "description": "A large garden area complementing the duplex house, featuring a blend of landscaped zones with native plants and water features that follow Vastu principles for relaxation.",
+          "dimensions": { "length": 20, "width": 15 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "garden_entrance",
+          "type": "gateway",
+          "location": "Corner of the plot",
+          "description": "A stylish Art Deco gateway that provides access to the garden and enhances the overall aesthetic.",
+          "dimensions": { "width": 3, "height": 4 }
+        }
+      ]
+    }
+  ]
+}

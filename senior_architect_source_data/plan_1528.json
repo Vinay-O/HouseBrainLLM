@@ -1,0 +1,294 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2200.0,
+      "style": "Organic Architecture"
+    },
+    "plot": {
+      "shape": "triangular",
+      "location": "corner",
+      "climate": "Mediterranean dry summers"
+    },
+    "roomBreakdown": [
+      {
+        "type": "sunken_living_room",
+        "area": 350.0
+      },
+      {
+        "type": "kitchen",
+        "area": 300.0
+      },
+      {
+        "type": "dining_room",
+        "area": 250.0
+      },
+      {
+        "type": "master_bedroom",
+        "area": 300.0
+      },
+      {
+        "type": "bedroom",
+        "area": 250.0
+      },
+      {
+        "type": "bathroom",
+        "area": 120.0
+      },
+      {
+        "type": "bathroom",
+        "area": 100.0
+      },
+      {
+        "type": "utility",
+        "area": 80.0
+      },
+      {
+        "type": "entry",
+        "area": 100.0
+      },
+      {
+        "type": "staircase",
+        "area": 150.0
+      },
+      {
+        "type": "hydroponic_wall",
+        "area": 100.0
+      },
+      {
+        "type": "terrace",
+        "area": 100.0
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 495000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "sunken_living",
+          "type": "sunken_living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 17.5
+          },
+          "doors": [
+            "north_entrance",
+            "to_kitchen",
+            "to_dining"
+          ],
+          "windows": [
+            "south_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "kitchen_main",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "to_living",
+            "to_dining",
+            "to_utility"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "dining_area",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 17.5,
+            "width": 20,
+            "height": 12.5
+          },
+          "doors": [
+            "to_living",
+            "to_kitchen",
+            "to_terrace"
+          ],
+          "windows": [
+            "south_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "to_kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry",
+          "type": "entry",
+          "bounds": {
+            "x": 35,
+            "y": 10,
+            "width": 8,
+            "height": 12.5
+          },
+          "doors": [
+            "main_entry",
+            "to_stairs"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "staircase_1",
+          "type": "staircase",
+          "bounds": {
+            "x": 35,
+            "y": 22.5,
+            "width": 8,
+            "height": 7.5
+          },
+          "doors": [
+            "to_entry",
+            "to_upper"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bed",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_hall",
+            "to_bath"
+          ],
+          "windows": [
+            "south_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "north_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 45,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "to_master"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 45,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hydroponic_wall",
+          "type": "hydroponic_wall",
+          "bounds": {
+            "x": 22,
+            "y": 45,
+            "width": 13,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "staircase_2",
+          "type": "staircase",
+          "bounds": {
+            "x": 35,
+            "y": 30,
+            "width": 8,
+            "height": 7.5
+          },
+          "doors": [
+            "to_hall",
+            "to_lower"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 35,
+            "y": 37.5,
+            "width": 8,
+            "height": 7.5
+          },
+          "doors": [
+            "to_bed1",
+            "to_bed2",
+            "to_bath2",
+            "to_hydro",
+            "to_stairs"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

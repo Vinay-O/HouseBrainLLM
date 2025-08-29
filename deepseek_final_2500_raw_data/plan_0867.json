@@ -1,0 +1,372 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 4200,
+      "style": "Colonial Bungalow"
+    },
+    "plot": {
+      "size": 10000,
+      "orientation": "north",
+      "location": "heritage city",
+      "constraints": "strict building regulations, adaptive reuse, estate-sized"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4,
+        "special": "primary bedroom with accessibility features"
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "special": "one accessible bathroom with walk-in shower"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "special": "central living space with cross-ventilation"
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "special": "adjacent to living room and kitchen"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "special": "accessible design with traditional craft workshop space"
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "special": "quiet space for elderly member"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "special": "laundry and storage"
+      },
+      {
+        "type": "veranda",
+        "count": 1,
+        "special": "wrap-around veranda for outdoor access"
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 756000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 60,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 30
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 50
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 35,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 25,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "workshop",
+          "type": "utility",
+          "bounds": {
+            "x": 50,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "accessible_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 45,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            },
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "bedroom3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 22,
+            "y": 45,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            },
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 34,
+            "y": 45,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 42,
+            "y": 45,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 52,
+            "y": 45,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ]
+        },
+        {
+          "id": "circulation_hall",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            },
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

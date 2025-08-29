@@ -1,0 +1,89 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "dimensions": "15ft x 12ft",
+          "description": "Spacious area for family gatherings, well-lit with natural light from east side ensuring positive energy according to Vastu.",
+          "adjacent_to": ["dining_area", "kitchen"]
+        },
+        {
+          "room_name": "Dining Area",
+          "dimensions": "12ft x 10ft",
+          "description": "Connected seamlessly with the living room and kitchen; ideally positioned for social interaction.",
+          "adjacent_to": ["living_room", "kitchen"]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": "10ft x 8ft",
+          "description": "Functional layout ensuring efficient workflow, positioned in the south-east corner to harness auspicious energy according to Vastu.",
+          "adjacent_to": ["dining_area", "living_room"]
+        },
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": "12ft x 10ft",
+          "description": "Spacious and serene, facing north-east for calm energy. Ideal master suite with attached bathroom.",
+          "adjacent_to": ["bathroom_master"]
+        },
+        {
+          "room_name": "Bedroom 2",
+          "dimensions": "10ft x 8ft",
+          "description": "Cozy bedroom designed to maintain privacy, positioned adjacent to living spaces.",
+          "adjacent_to": []
+        },
+        {
+          "room_name": "Bedroom 3",
+          "dimensions": "9ft x 7ft",
+          "description": "Compact design suitable for smaller family members or guests; integrated with the main layout.",
+          "adjacent_to": []
+        },
+        {
+          "room_name": "Bedroom 4",
+          "dimensions": "10ft x 8ft",
+          "description": "Additional bedroom ensuring sufficient space allocation, oriented to receive positive energy from the west.",
+          "adjacent_to": []
+        },
+        {
+          "room_name": "Bathroom_Master",
+          "dimensions": "6ft x 5ft",
+          "description": "Personal bathroom attached to master bedroom, ensuring privacy and convenience. Designed for minimal water stagnation.",
+          "adjacent_to": ["master_bedroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_name": "Main Entrance",
+          "location": "North",
+          "description": "Primary entry facing north to welcome positive energy according to Vastu. Well-lit and inviting."
+        },
+        {
+          "opening_name": "Garage Entrance",
+          "location": "West",
+          "description": "Garage door for two-car capacity, positioned on the west side in accordance with plot orientation and ensuring clear traffic flow."
+        }
+      ]
+    }
+  ],
+  "garages": [
+    {
+      "garage_id": "two_car_garage",
+      "capacity": "2 cars",
+      "dimensions": "20ft x 15ft",
+      "description": "Dedicated two-car garage located on the west side of the plot, ensuring efficient access and storage."
+    }
+  ],
+  "vastu_compliance": {
+    "directions": {
+      "entrance": "North",
+      "kitchen": "South-East",
+      "master_bedroom": "North-East",
+      "living_room": "East"
+    },
+    "notes": "The design integrates Vastu principles by aligning key spaces with auspicious directions and ensuring proper circulation of energy."
+  },
+  "total_area_sqft": 800,
+  "building_type": "Industrial, single-story cottage",
+  "plot_orientation": "West-facing"
+}

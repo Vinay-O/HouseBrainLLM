@@ -1,0 +1,161 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Bauhaus Functional"
+    },
+    "plot": {
+      "shape": "Cul-de-sac",
+      "climate": "Coastal with salt air exposure",
+      "orientation": "South-facing for solar gain"
+    },
+    "roomBreakdown": [
+      {
+        "type": "yoga_studio",
+        "features": [
+          "heated_floors"
+        ]
+      },
+      {
+        "type": "storm_shelter",
+        "features": [
+          "tornado_safe"
+        ]
+      }
+    ],
+    "specialFeatures": [
+      "solar_panel_array",
+      "battery_storage",
+      "cluster_of_connected_pods"
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 360000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "pod1_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "pod2_connector"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "pod2_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "pod1_connector",
+            "pod3_connector"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "pod3_bed1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 36,
+            "y": 0,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            "pod2_connector"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "pod4_bed2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            "pod5_connector"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "pod5_bed3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 14,
+            "y": 16,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            "pod4_connector",
+            "pod6_connector"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "pod6_yoga",
+          "type": "yoga_studio",
+          "bounds": {
+            "x": 28,
+            "y": 16,
+            "width": 22,
+            "height": 18
+          },
+          "doors": [
+            "pod5_connector"
+          ],
+          "windows": [
+            "south_window"
+          ],
+          "features": [
+            "heated_floors"
+          ]
+        },
+        {
+          "id": "storm_shelter",
+          "type": "storm_shelter",
+          "bounds": {
+            "x": 36,
+            "y": 14,
+            "width": 14,
+            "height": 10
+          },
+          "doors": [
+            "pod3_connector"
+          ],
+          "windows": [],
+          "features": [
+            "tornado_safe"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": [15, 20],
+          "location": {"x_start": 10, "y_start": 5},
+          "features": ["high_ceiling", "large_window"]
+        },
+        {
+          "room_type": "open_plan_kitchen",
+          "dimensions": [12, 20],
+          "location": {"x_start": 35, "y_start": 5},
+          "features": ["modern_appliances", "glass_doors_to_pool_area"]
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": [15, 15],
+          "location": {"x_start": 20, "y_start": 30},
+          "features": ["chandelier", "large_window"]
+        },
+        {
+          "room_type": "guest_bathroom",
+          "dimensions": [8, 6],
+          "location": {"x_start": 45, "y_start": 15}
+        },
+        {
+          "room_type": "garage",
+          "dimensions": [20, 30],
+          "location": {"x_start": 5, "y_start": 35},
+          "features": ["automatic_gate"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "orientation": "east",
+          "dimensions": [4, 7],
+          "location": {"x": 20, "y": 15}
+        },
+        {
+          "type": "window",
+          "orientation": "north",
+          "dimensions": [6, 3],
+          "location": {"x": 38, "y": 25},
+          "features": ["natural_light"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "master_bedroom_suite",
+          "dimensions": [16, 20],
+          "location": {"x_start": 5, "y_start": 5},
+          "features": ["private_bathroom", "walk_in_closet"]
+        },
+        {
+          "room_type": "bedroom_2",
+          "dimensions": [12, 15],
+          "location": {"x_start": 20, "y_start": 15}
+        },
+        {
+          "room_type": "home_theater",
+          "dimensions": [20, 18],
+          "location": {"x_start": 37, "y_start": 20},
+          "features": ["sound_proof", "projector"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "orientation": "south",
+          "dimensions": [6, 3],
+          "location": {"x": 15, "y": 20},
+          "features": ["natural_light", "view_to_pool"]
+        },
+        {
+          "type": "balcony",
+          "dimensions": [40, 5],
+          "location": {"x_start": 5, "y_start": 30}
+        }
+      ]
+    }
+  ],
+  "additional_features": [
+    {
+      "feature_type": "swimming_pool",
+      "dimensions": [25, 10],
+      "location": {"x_start": 40, "y_start": 35},
+      "features": ["deck"]
+    },
+    {
+      "feature_type": "landscape_garden",
+      "location": {"plot_start_x": 5, "plot_end_y": 60}
+    }
+  ]
+}

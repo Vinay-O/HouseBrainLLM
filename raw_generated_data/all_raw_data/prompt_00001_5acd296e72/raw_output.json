@@ -1,0 +1,104 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["floor-to-ceiling windows", "wooden flooring"]
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["attached kitchen", "terrazzo flooring"]
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {"length": 12, "width": 9},
+          "features": ["modular storage", "granite countertops"]
+        },
+        {
+          "room_type": "master_bedroom",
+          "dimensions": {"length": 14, "width": 12},
+          "features": ["attached bathroom", "wooden flooring", "balcony"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["shared bathroom", "vinyl flooring"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["shared bathroom", "vinyl flooring"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["attached bathroom", "wooden flooring", "balcony"]
+        },
+        {
+          "room_type": "garage",
+          "dimensions": {"length": 18, "width": 9},
+          "features": ["two-car capacity", "concrete flooring"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "entrance",
+          "direction": "north",
+          "dimensions": {"width": 4}
+        },
+        {
+          "type": "window",
+          "room_id": "living_room",
+          "dimensions": {"length": 6, "height": 8},
+          "material": "wood"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "family_lounge",
+          "dimensions": {"length": 14, "width": 12},
+          "features": ["floor-to-ceiling windows", "terrazzo flooring"]
+        },
+        {
+          "room_type": "study_room",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["built-in shelves", "wooden flooring"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["attached bathroom", "vinyl flooring", "balcony"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "room_id": "family_lounge",
+          "dimensions": {"length": 6, "height": 8},
+          "material": "wood"
+        },
+        {
+          "type": "balcony",
+          "room_id": "bedroom",
+          "dimensions": {"length": 5, "width": 4}
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "type": "terrace_access",
+          "direction": "south",
+          "dimensions": {"length": 6, "width": 4}
+        }
+      ]
+    }
+  ]}

@@ -1,0 +1,97 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["floor-to-ceiling windows", "high ceiling"],
+          "position": "front"
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 10, "width": 10 },
+          "features": ["adjacent to kitchen"],
+          "position": "middle"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["modular", "gas stove", "sink"],
+          "position": "back"
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["attached bathroom", "wardrobe"],
+          "position": "front"
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["shared bathroom", "balcony"],
+          "position": "middle"
+        },
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 10, "width": 9 },
+          "features": ["attached bathroom"],
+          "position": "back"
+        },
+        {
+          "room_id": "staircase",
+          "dimensions": { "length": 5, "width": 4 },
+          "features": ["spiral or straight", "leading to first floor and terrace"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "position": "front",
+          "dimensions": { "length": 7, "width": 3 },
+          "features": ["wooden door", "decorative arch"]
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "position": "back",
+          "dimensions": { "length": 7, "width": 3 },
+          "features": ["wooden door", "leading to garden"]
+        },
+        {
+          "opening_id": "living_room_window_1",
+          "type": "window",
+          "position": "front",
+          "dimensions": { "length": 6, "width": 4 },
+          "features": ["floor-to-ceiling", "French window"]
+        }
+      ],
+      "garden": {
+        "area": 300,
+        "features": ["lawn", "flower beds", "sitting area"],
+        "position": "back"
+      }
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "terrace",
+          "dimensions": { "length": 30, "width": 50 },
+          "features": ["open space", "seating area", "garden view"],
+          "position": "roof"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "terrace_access",
+          "type": "door",
+          "dimensions": { "length": 7, "width": 3 },
+          "features": ["leading to terrace", "from staircase"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "dimensions": {"length": 10, "width": 8},
+          "location": {"x": 5, "y": 20}
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {"length": 14, "width": 10},
+          "location": {"x": 30, "y": 20}
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": {"length": 18, "width": 15},
+          "location": {"x": 15, "y": 30}
+        },
+        {
+          "room_type": "bedroom_1",
+          "dimensions": {"length": 12, "width": 10},
+          "location": {"x": 5, "y": 10}
+        },
+        {
+          "room_type": "balcony_1",
+          "dimensions": {"length": 8, "width": 4},
+          "location": {"x": 7.5, "y": 6},
+          "attached_to": "bedroom_1"
+        },
+        {
+          "room_type": "bathroom_1",
+          "dimensions": {"length": 6, "width": 6},
+          "location": {"x": 20, "y": 5}
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "size": {"height": 7, "width": 3},
+          "position": {"x": 10.5, "y": 24},
+          "from_room": "entrance_hall",
+          "to_room": "living_room"
+        },
+        {
+          "type": "window",
+          "size": {"height": 6, "width": 8},
+          "position": {"x": 32.5, "y": 20}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom_2",
+          "dimensions": {"length": 12, "width": 10},
+          "location": {"x": 5, "y": 10}
+        },
+        {
+          "room_type": "balcony_2",
+          "dimensions": {"length": 8, "width": 4},
+          "location": {"x": 7.5, "y": 6},
+          "attached_to": "bedroom_2"
+        },
+        {
+          "room_type": "home_theater",
+          "dimensions": {"length": 16, "width": 10},
+          "location": {"x": 30, "y": 25}
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "size": {"height": 6, "width": 8},
+          "position": {"x": 34.5, "y": 30}
+        },
+        {
+          "type": "staircase",
+          "dimensions": {"length": 5, "width": 4},
+          "location": {"x": 15, "y": 26}
+        }
+      ]
+    }
+  ]
+}

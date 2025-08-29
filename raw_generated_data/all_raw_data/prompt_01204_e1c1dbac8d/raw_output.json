@@ -1,0 +1,67 @@
+{
+  "levels": [
+    {
+      "level_id": "penthouse",
+      "rooms": [
+        {
+          "name": "entrance",
+          "dimensions": { "length": 6, "width": 10 },
+          "orientation": "north"
+        },
+        {
+          "name": "living_room",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["open_plan", "bohemian_decor"]
+        },
+        {
+          "name": "kitchen",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["open_plan", "modern_amenities"]
+        },
+        {
+          "name": "bedroom_1",
+          "dimensions": { "length": 18, "width": 14 },
+          "features": ["balcony", "bohemian_decor"],
+          "connected_to": "balcony_1"
+        },
+        {
+          "name": "bedroom_2",
+          "dimensions": { "length": 15, "width": 13 },
+          "features": ["balcony", "bohemian_decor"],
+          "connected_to": "balcony_2"
+        },
+        {
+          "name": "servant_quarters",
+          "dimensions": { "length": 10, "width": 8 }
+        },
+        {
+          "name": "balcony_1",
+          "dimensions": { "length": 6, "width": 4 },
+          "features": ["outdoor_seating", "bohemian_decor"],
+          "connected_to": "bedroom_1"
+        },
+        {
+          "name": "balcony_2",
+          "dimensions": { "length": 5, "width": 4 },
+          "features": ["outdoor_seating", "bohemian_decor"],
+          "connected_to": "bedroom_2"
+        }
+      ],
+      "openings": [
+        {
+          "name": "main_entrance",
+          "orientation": "north"
+        },
+        {
+          "name": "balcony_access_1",
+          "connected_to": "bedroom_1"
+        },
+        {
+          "name": "balcony_access_2",
+          "connected_to": "bedroom_2"
+        }
+      ],
+      "features": ["vastu_compliant", "modern_bohemian_style"]
+    }
+  ]
+}

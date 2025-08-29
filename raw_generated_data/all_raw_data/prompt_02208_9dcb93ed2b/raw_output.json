@@ -1,0 +1,115 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "common",
+          "description": "Open-plan living area integrated with the kitchen. Features Bohemian decor with artistic wall finishes, ambient lighting and natural textures.",
+          "dimensions": {"length": 20, "width": 15},
+          "features": ["open_plan", "cozy seating", "art installations"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "common",
+          "description": "Modern open-plan kitchen integrated with the living area. Equipped with state-of-the-art appliances, reclaimed wood countertops and a mix of vintage and modern decor.",
+          "dimensions": {"length": 15, "width": 10},
+          "features": ["open_plan", "chef's island", "natural lighting"]
+        },
+        {
+          "room_id": "living_area",
+          "type": "common",
+          "description": "Spacious area for relaxation and entertainment. Adorned with colorful Bohemian fabrics, eclectic furniture and indoor plants.",
+          "dimensions": {"length": 18, "width": 12},
+          "features": ["multifunctional space", "art installations", "ambient lighting"]
+        },
+        {
+          "room_id": "dining_area",
+          "type": "common",
+          "description": "Cozy dining space that seamlessly connects with the living and kitchen areas. Features a long wooden table for gatherings.",
+          "dimensions": {"length": 12, "width": 8},
+          "features": ["open seating", "vintage decor"]
+        },
+        {
+          "room_id": "private_gym",
+          "type": "fitness",
+          "description": "Private gym area designed with functional equipment layout. Includes space for cardio, strength training and yoga.",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["mirrored walls", "flooring suitable for exercise", "soundproofing"]
+        },
+        {
+          "room_id": "balcony",
+          "type": "exterior",
+          "description": "Open balcony overlooking the garden. Features planters and seating area to enjoy the outdoor views.",
+          "dimensions": {"length": 8, "width": 4},
+          "features": ["greenery", "seating"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "description": "Large main entrance aligned with Vastu principles ensuring positive energy flow. Complemented by a decorative facade.",
+          "location": {"level": "ground_floor", "side": "front"}
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "description": "Ample window in the kitchen area providing natural light and ventilation, promoting well-being as per Vastu guidelines.",
+          "location": {"level": "ground_floor", "side": "east"}
+        },
+        {
+          "opening_id": "balcony_door",
+          "type": "door",
+          "description": "Door leading to the balcony offering a seamless transition to the garden and fresh air.",
+          "location": {"level": "ground_floor", "side": "north"}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom",
+          "type": "private",
+          "description": "Spacious bedroom with Bohemian design elements, featuring comfortable seating and ample storage. Designed in accordance with Vastu to maximize energy flow.",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["large window", "cozy seating area"]
+        },
+        {
+          "room_id": "bathroom",
+          "type": "utility",
+          "description": "Well-ventilated bathroom with natural light and open design. Incorporates Vastu recommendations to ensure good flow.",
+          "dimensions": {"length": 8, "width": 6},
+          "features": ["exhaust vent", "natural lighting"]
+        },
+        {
+          "room_id": "study",
+          "type": "utility",
+          "description": "Compact study area with built-in shelves and a workspace designed for productivity. Features Bohemian accents and a relaxed atmosphere.",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["desk", "bookshelf"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "bedroom_window",
+          "type": "window",
+          "description": "Large window in the bedroom providing ample natural light and enhancing Vastu energy.",
+          "location": {"level": "first_floor", "side": "east"}
+        },
+        {
+          "opening_id": "study_door",
+          "type": "door",
+          "description": "Door connecting study with the rest of the floor for easy accessibility while maintaining privacy.",
+          "location": {"level": "first_floor", "side": "north"}
+        }
+      ]
+    }
+  ],
+  "garden": {
+    "dimensions": {"length": 40, "width": 60},
+    "description": "Large garden surrounding the bungalow with native plants, seating areas and pathways following a natural layout. Designed to complement the Bohemian aesthetic while respecting Vastu principles."
+  }
+}

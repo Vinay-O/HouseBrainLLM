@@ -1,0 +1,260 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1500,
+      "style": "Bengali Traditional"
+    },
+    "plot": {
+      "orientation": "north",
+      "area": 1500,
+      "location": "heritage city",
+      "constraints": "strict building regulations, mature trees preservation"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 200,
+        "description": "Master bedroom with attached bathroom"
+      },
+      {
+        "type": "bathroom",
+        "area": 80,
+        "description": "Attached bathroom with universal accessibility features"
+      },
+      {
+        "type": "living_room",
+        "area": 250,
+        "description": "Combined living and dining area"
+      },
+      {
+        "type": "kitchen",
+        "area": 150,
+        "description": "Traditional kitchen with modern amenities"
+      },
+      {
+        "type": "music_room",
+        "area": 180,
+        "description": "Soundproof music practice room"
+      },
+      {
+        "type": "study",
+        "area": 120,
+        "description": "Home office workspace"
+      },
+      {
+        "type": "utility",
+        "area": 60,
+        "description": "Laundry and storage area"
+      },
+      {
+        "type": "verandah",
+        "area": 200,
+        "description": "Covered porch with seating"
+      },
+      {
+        "type": "circulation",
+        "area": 260,
+        "description": "Hallways and accessible pathways"
+      }
+    ]
+  },
+  "total_area": 1500.0,
+  "construction_cost": 337500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "verandah_north",
+          "type": "verandah",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15,
+              "type": "main_entrance"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "type": "fixed"
+            },
+            {
+              "wall": "north",
+              "position": 20,
+              "type": "fixed"
+            }
+          ]
+        },
+        {
+          "id": "living_dining",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "type": "sliding"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7,
+              "type": "jalousie"
+            },
+            {
+              "wall": "west",
+              "position": 7,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6,
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7,
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7,
+              "type": "jalousie"
+            },
+            {
+              "wall": "south",
+              "position": 7,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4,
+              "type": "accessible"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "type": "ventilation"
+            }
+          ]
+        },
+        {
+          "id": "music_room",
+          "type": "music_room",
+          "bounds": {
+            "x": 20,
+            "y": 33,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7,
+              "type": "soundproof"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "type": "double_glazed"
+            }
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 33,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7,
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7,
+              "type": "jalousie"
+            },
+            {
+              "wall": "south",
+              "position": 7,
+              "type": "jalousie"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

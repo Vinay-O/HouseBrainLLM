@@ -1,0 +1,348 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 1800,
+      "style": "Dravidian"
+    },
+    "plot": {
+      "slope": "hillside",
+      "orientation": "south"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 120
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "cellar",
+        "count": 1,
+        "area": 80
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 60
+      },
+      {
+        "type": "puja",
+        "count": 1,
+        "area": 40
+      },
+      {
+        "type": "storage",
+        "count": 2,
+        "area": 80
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 2250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_lower",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "wall": "north"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "cellar",
+          "type": "cellar",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "solid",
+              "wall": "east"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_lower",
+          "type": "utility",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "solid",
+              "wall": "east"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "double",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "arched"
+            },
+            {
+              "wall": "south",
+              "type": "arched"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "east"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "casement"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "north"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "arched"
+            }
+          ]
+        },
+        {
+          "id": "puja",
+          "type": "puja",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "carved",
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "type": "jali"
+            }
+          ]
+        },
+        {
+          "id": "storage_main",
+          "type": "storage",
+          "bounds": {
+            "x": 32,
+            "y": 8,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "south"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_guest",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "west"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_primary",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "bay"
+            },
+            {
+              "wall": "east",
+              "type": "casement"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_primary",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "type": "vent"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_future",
+          "type": "bedroom",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "casement"
+            },
+            {
+              "wall": "west",
+              "type": "casement"
+            }
+          ]
+        },
+        {
+          "id": "storage_upper",
+          "type": "storage",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "south"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

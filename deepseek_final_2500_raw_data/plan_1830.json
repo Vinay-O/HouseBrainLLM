@@ -1,0 +1,341 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 5,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Experimental Scandinavian Hygge with Mediterranean influences"
+    },
+    "plot": {
+      "size": 20000,
+      "terrain": "rural",
+      "climate": "Mediterranean dry summers",
+      "orientation": "diagonal to prevailing winds",
+      "features": [
+        "bioswales for stormwater management",
+        "expansive rural estate"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 5
+      },
+      {
+        "type": "bathroom",
+        "count": 4
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "brewery",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "hallway",
+        "count": 1
+      },
+      {
+        "type": "staircase",
+        "count": 1
+      },
+      {
+        "type": "deck",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 485000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "front_door",
+            "to_living",
+            "to_brewery"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_hall",
+            "to_deck"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_dining"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 12,
+            "width": 15,
+            "height": 13
+          },
+          "doors": [
+            "to_kitchen",
+            "to_deck"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "brewery",
+          "type": "brewery",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 12,
+            "width": 7,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 52,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase",
+          "type": "staircase",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "deck",
+          "type": "deck",
+          "bounds": {
+            "x": 10,
+            "y": 15,
+            "width": 35,
+            "height": 10
+          },
+          "doors": [
+            "from_living",
+            "from_dining"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "upper_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 15,
+            "height": 5
+          },
+          "doors": [
+            "from_stairs",
+            "to_bed2",
+            "to_bed3",
+            "to_bed4",
+            "to_bath2"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_5",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 30,
+            "width": 7,
+            "height": 5
+          },
+          "doors": [
+            "to_bed5"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

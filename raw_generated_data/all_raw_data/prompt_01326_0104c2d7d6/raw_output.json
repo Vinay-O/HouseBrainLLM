@@ -1,0 +1,114 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 15, "width": 20 },
+          "purpose": "living",
+          "wheelchair_accessible": true,
+          "vasthu_compliance": { "direction": "north" }
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 12, "width": 15 },
+          "purpose": "dining",
+          "adjacent_to": ["living_room", "kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 15 },
+          "purpose": "cooking",
+          "vasthu_compliance": { "direction": "southeast" }
+        },
+        {
+          "room_id": "master_bedroom_1",
+          "dimensions": { "length": 15, "width": 18 },
+          "purpose": "bedroom",
+          "features": ["attached_bathroom", "wardrobe"],
+          "vasthu_compliance": { "direction": "southwest" }
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 12, "width": 15 },
+          "purpose": "bedroom",
+          "features": ["attached_bathroom"],
+          "vasthu_compliance": { "direction": "northwest" }
+        },
+        {
+          "room_id": "servant_quarters",
+          "dimensions": { "length": 10, "width": 12 },
+          "purpose": "servant_quarters",
+          "features": ["attached_bathroom"]
+        },
+        {
+          "room_id": "bathroom_1",
+          "dimensions": { "length": 6, "width": 8 },
+          "purpose": "bathroom",
+          "adjacent_to": ["master_bedroom_1", "bedroom_2"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "entrance",
+          "dimensions": { "width": 4, "height": 8 },
+          "direction": "north",
+          "wheelchair_accessible": true
+        },
+        {
+          "opening_id": "back_door",
+          "type": "exit",
+          "dimensions": { "width": 3, "height": 7 },
+          "direction": "south"
+        },
+        {
+          "opening_id": "window_1",
+          "type": "window",
+          "dimensions": { "width": 4, "height": 5 },
+          "room_id": "living_room",
+          "direction": "east"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "master_bedroom_2",
+          "dimensions": { "length": 15, "width": 18 },
+          "purpose": "bedroom",
+          "features": ["attached_bathroom", "balcony"],
+          "vasthu_compliance": { "direction": "southwest" }
+        },
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 12, "width": 15 },
+          "purpose": "bedroom",
+          "features": ["attached_bathroom"],
+          "vasthu_compliance": { "direction": "northwest" }
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 10, "width": 12 },
+          "purpose": "study"
+        },
+        {
+          "room_id": "bathroom_2",
+          "dimensions": { "length": 6, "width": 8 },
+          "purpose": "bathroom",
+          "adjacent_to": ["master_bedroom_2", "bedroom_3"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony_door_1",
+          "type": "door",
+          "dimensions": { "width": 4, "height": 7 },
+          "direction": "east",
+          "room_id": "master_bedroom_2"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 4,
+      "totalArea": 3200,
+      "style": "Farmhouse Modern"
+    },
+    "plot": {
+      "topography": "Elevated platform above wetlands",
+      "climate": "Alpine with heavy snow loads",
+      "orientation": "South-facing for solar gain"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "area": 600
+      },
+      {
+        "type": "study",
+        "area": 300
+      },
+      {
+        "type": "climate_controlled_storage",
+        "area": 400
+      },
+      {
+        "type": "bedroom",
+        "area": 250
+      },
+      {
+        "type": "bedroom",
+        "area": 250
+      },
+      {
+        "type": "kitchen",
+        "area": 200
+      },
+      {
+        "type": "living_room",
+        "area": 400
+      },
+      {
+        "type": "dining_room",
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "mechanical_utility",
+        "area": 200
+      },
+      {
+        "type": "entry",
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_hall",
+          "type": "entry",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "exterior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_utility_0",
+          "type": "mechanical_utility",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "floor_to_ceiling"
+            },
+            {
+              "wall": "east",
+              "type": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 15,
+            "height": 13
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 24
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "floor_to_ceiling"
+            },
+            {
+              "wall": "east",
+              "type": "floor_to_ceiling"
+            },
+            {
+              "wall": "north",
+              "type": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "study_1",
+          "type": "study",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "study_2",
+          "type": "study",
+          "bounds": {
+            "x": 25,
+            "y": 12,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "type": "standard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "floor_to_ceiling"
+            },
+            {
+              "wall": "east",
+              "type": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "floor_to_ceiling"
+            },
+            {
+              "wall": "west",
+              "type": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 10,
+            "height": 9
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "climate_storage",
+          "type": "climate_controlled_storage",
+          "bounds": {
+            "x": 10,
+            "y": 16,
+            "width": 20,
+            "height": 9
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

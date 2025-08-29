@@ -1,0 +1,178 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "area": 250,
+          "dimensions": [15.6, 16],
+          "features": ["sofa", "TV unit", "coffee table"],
+          "position": {"x_min": 0, "x_max": 15.6, "y_min": 0, "y_max": 16}
+        },
+        {
+          "room_type": "kitchen",
+          "area": 200,
+          "dimensions": [14, 14.3],
+          "features": ["modular kitchen", "dining table", "fridge"],
+          "position": {"x_min": 15.6, "x_max": 30, "y_min": 0, "y_max": 14}
+        },
+        {
+          "room_type": "bedroom",
+          "area": 250,
+          "dimensions": [12.5, 20],
+          "features": ["king bed", "wardrobe", "study desk"],
+          "position": {"x_min": 30, "x_max": 42.5, "y_min": 0, "y_max": 20}
+        },
+        {
+          "room_type": "bathroom",
+          "area": 80,
+          "dimensions": [16, 5],
+          "features": ["shower", "toilet", "sink"],
+          "position": {"x_min": 30, "x_max": 46, "y_min": 20, "y_max": 25}
+        },
+        {
+          "room_type": "library",
+          "area": 150,
+          "dimensions": [12, 12.5],
+          "features": ["bookshelves", "reading chair", "study lamp"],
+          "position": {"x_min": 46, "x_max": 58, "y_min": 0, "y_max": 12.5}
+        },
+        {
+          "room_type": "swimming_pool",
+          "area": 30,
+          "dimensions": [10, 3],
+          "features": ["pool filter", "sun loungers"],
+          "position": {"x_min": 46, "x_max": 56, "y_min": 20, "y_max": 23}
+        },
+        {
+          "room_type": "balcony",
+          "area": 100,
+          "dimensions": [10, 10],
+          "features": ["outdoor furniture", "potted plants"],
+          "position": {"x_min": 58, "x_max": 68, "y_min": 0, "y_max": 10}
+        }
+      ],
+      "openings": [
+        {
+          "type": "entrance",
+          "dimensions": [3, 7],
+          "position": {"x": 0, "y": 7.5},
+          "direction": "north"
+        },
+        {
+          "type": "window",
+          "dimensions": [4, 4],
+          "position": {"x": 20, "y": 10},
+          "room": "living_room"
+        },
+        {
+          "type": "door",
+          "dimensions": [3, 7],
+          "position": {"x": 58, "y": 6.25},
+          "room": "balcony"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "area": 300,
+          "dimensions": [15, 20],
+          "features": ["queen bed", "walk-in closet", "private balcony"],
+          "position": {"x_min": 0, "x_max": 15, "y_min": 0, "y_max": 20}
+        },
+        {
+          "room_type": "bathroom",
+          "area": 80,
+          "dimensions": [16, 5],
+          "features": ["jacuzzi", "double sink"],
+          "position": {"x_min": 0, "x_max": 16, "y_min": 20, "y_max": 25}
+        },
+        {
+          "room_type": "study_room",
+          "area": 150,
+          "dimensions": [12, 12.5],
+          "features": ["desk", "bookshelf", "ergonomic chair"],
+          "position": {"x_min": 16, "x_max": 28, "y_min": 0, "y_max": 12.5}
+        },
+        {
+          "room_type": "guest_room",
+          "area": 200,
+          "dimensions": [14, 14.3],
+          "features": ["twin beds", "wardrobe"],
+          "position": {"x_min": 28, "x_max": 42, "y_min": 0, "y_max": 14}
+        },
+        {
+          "room_type": "bathroom",
+          "area": 70,
+          "dimensions": [14, 5],
+          "features": ["shower", "toilet"],
+          "position": {"x_min": 28, "x_max": 42, "y_min": 14, "y_max": 19}
+        }
+      ],
+      "openings": [
+        {
+          "type": "staircase",
+          "dimensions": [3, 5],
+          "position": {"x": 0, "y": -2},
+          "direction": "down"
+        },
+        {
+          "type": "window",
+          "dimensions": [4, 4],
+          "position": {"x": 10, "y": 10},
+          "room": "bedroom"
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_type": "master_bedroom",
+          "area": 400,
+          "dimensions": [20, 20],
+          "features": ["king bed", "walk-in closet", "private terrace"],
+          "position": {"x_min": 0, "x_max": 20, "y_min": 0, "y_max": 20}
+        },
+        {
+          "room_type": "dressing_room",
+          "area": 100,
+          "dimensions": [10, 10],
+          "features": ["vanity table", "full-length mirror"],
+          "position": {"x_min": 20, "x_max": 30, "y_min": 0, "y_max": 10}
+        },
+        {
+          "room_type": "bathroom",
+          "area": 150,
+          "dimensions": [15, 10],
+          "features": ["walk-in shower", "bathtub", "double vanity"],
+          "position": {"x_min": 20, "x_max": 35, "y_min": 10, "y_max": 20}
+        },
+        {
+          "room_type": "terrace",
+          "area": 400,
+          "dimensions": [20, 20],
+          "features": ["outdoor furniture", "grill"],
+          "position": {"x_min": 35, "x_max": 55, "y_min": 0, "y_max": 20}
+        }
+      ],
+      "openings": [
+        {
+          "type": "staircase",
+          "dimensions": [3, 5],
+          "position": {"x": 0, "y": -2},
+          "direction": "down"
+        },
+        {
+          "type": "window",
+          "dimensions": [4, 6],
+          "position": {"x": 10, "y": 10},
+          "room": "master_bedroom"
+        }
+      ]
+    }
+  ]
+}

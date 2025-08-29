@@ -1,0 +1,232 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 800,
+      "style": "Kashmiri Wooden Architecture"
+    },
+    "plot": {
+      "orientation": "north",
+      "area": 800,
+      "constraints": [
+        "UNESCO Heritage Zone",
+        "Conservation Requirements",
+        "Compact Size",
+        "Mobility Access"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "area": 120
+      },
+      {
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "type": "bedroom",
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "type": "utility",
+        "area": 50
+      },
+      {
+        "type": "terrace",
+        "area": 120
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 1920000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_porch",
+          "type": "porch",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 20,
+            "height": 9
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 3
+            },
+            {
+              "wall": "north",
+              "position": 17
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 5,
+            "width": 12,
+            "height": 9
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 2
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3
+            },
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 14,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3
+            },
+            {
+              "wall": "south",
+              "position": 9
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 27,
+            "y": 14,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 27,
+            "y": 19,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "roof_terrace",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 32,
+            "height": 24
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 16
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

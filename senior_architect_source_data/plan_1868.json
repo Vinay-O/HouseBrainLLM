@@ -1,0 +1,309 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Deconstructivist"
+    },
+    "plot": {
+      "topography": "Ravine on coastal bluff",
+      "climate": "Continental with harsh winters",
+      "orientation": "East-west linear"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 180
+      },
+      {
+        "type": "bathroom",
+        "area": 90
+      },
+      {
+        "type": "kitchen",
+        "area": 150
+      },
+      {
+        "type": "living_room",
+        "area": 240
+      },
+      {
+        "type": "workshop",
+        "area": 360
+      },
+      {
+        "type": "entry_bridge",
+        "area": 180
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 288000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_bridge",
+          "type": "hall",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 15,
+              "type": "sliding_glass",
+              "to": "exterior"
+            },
+            {
+              "wall": "south",
+              "position": 15,
+              "type": "sliding_glass",
+              "to": "exterior"
+            },
+            {
+              "wall": "east",
+              "position": 3,
+              "type": "standard",
+              "to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 2
+            },
+            {
+              "wall": "north",
+              "position": 25,
+              "size": 2
+            },
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 2
+            },
+            {
+              "wall": "south",
+              "position": 25,
+              "size": 2
+            }
+          ],
+          "finishes": {
+            "flooring": "polished_concrete",
+            "notes": "Pet-friendly durable surface"
+          }
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6,
+              "type": "standard",
+              "to": "entry_bridge"
+            },
+            {
+              "wall": "east",
+              "position": 6,
+              "type": "standard",
+              "to": "bedroom"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "type": "sliding_glass",
+              "to": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": 4
+            },
+            {
+              "wall": "south",
+              "position": 3,
+              "size": 2
+            },
+            {
+              "wall": "south",
+              "position": 17,
+              "size": 2
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "walls": "bamboo_paneling",
+            "notes": "Minimalist decor"
+          }
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6,
+              "type": "standard",
+              "to": "living_room"
+            },
+            {
+              "wall": "east",
+              "position": 6,
+              "type": "standard",
+              "to": "bathroom"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": 4
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": 4
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "walls": "bamboo_paneling"
+          }
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 65,
+            "y": 0,
+            "width": 10,
+            "height": 9
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4.5,
+              "type": "standard",
+              "to": "bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 2
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "walls": "bamboo_paneling",
+            "notes": "Water-resistant finishes"
+          }
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 12,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "type": "standard",
+              "to": "living_room"
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "type": "sliding_glass",
+              "to": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": 3
+            },
+            {
+              "wall": "west",
+              "position": 5,
+              "size": 3
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "walls": "bamboo_paneling",
+            "notes": "Efficient galley layout"
+          }
+        },
+        {
+          "id": "workshop",
+          "type": "garage",
+          "bounds": {
+            "x": 45,
+            "y": 12,
+            "width": 30,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 15,
+              "type": "overhead",
+              "to": "exterior"
+            },
+            {
+              "wall": "west",
+              "position": 6,
+              "type": "standard",
+              "to": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": 4
+            },
+            {
+              "wall": "south",
+              "position": 20,
+              "size": 4
+            }
+          ],
+          "finishes": {
+            "flooring": "polished_concrete",
+            "notes": "Hydraulic car lift installed, reinforced structure"
+          }
+        }
+      ]
+    }
+  ]
+}

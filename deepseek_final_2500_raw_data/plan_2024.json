@@ -1,0 +1,210 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 96.0,
+      "style": "Scandinavian Hygge-inspired Rammed Earth"
+    },
+    "plot": {
+      "width": 4,
+      "length": 12,
+      "orientation": "east-west"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 24.0
+      },
+      {
+        "type": "kitchen",
+        "area": 12.0
+      },
+      {
+        "type": "study",
+        "area": 12.0
+      },
+      {
+        "type": "bedroom",
+        "area": 12.0
+      },
+      {
+        "type": "bathroom",
+        "area": 6.0
+      },
+      {
+        "type": "observatory",
+        "area": 30.0
+      }
+    ]
+  },
+  "total_area": 96.0,
+  "construction_cost": 230400.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 1.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 9,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 1.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2,
+              "size": "large"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 1.5,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 3,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 1.5,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 4,
+            "height": 1.5
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 0.75
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2,
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "observatory",
+          "type": "observatory",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 7.5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

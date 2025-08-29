@@ -1,0 +1,72 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Entrance Hall",
+          "dimensions": { "length": 10, "width": 8 },
+          "description": "A spacious entrance with a foyer that adheres to Vastu principles by ensuring the main entrance faces east.",
+          "adjacencies": ["Living Room", "Kitchen"]
+        },
+        {
+          "room_name": "Living Room",
+          "dimensions": { "length": 15, "width": 12 },
+          "description": "A well-lit living space with floor-to-ceiling windows that allow natural light, providing a welcoming atmosphere.",
+          "adjacencies": ["Entrance Hall", "Open Area"]
+        },
+        {
+          "room_name": "Dining Room",
+          "dimensions": { "length": 10, "width": 8 },
+          "description": "A comfortable dining area integrated with the living room for joint family gatherings.",
+          "adjacencies": ["Living Room"]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "description": "Functional and efficiently designed kitchen with modern appliances, placed adjacent to dining area per Vastu guidelines.",
+          "adjacencies": ["Entrance Hall", "Dining Room"]
+        },
+        {
+          "room_name": "Guest Bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "description": "A guest room designed for additional family members or guests with Vastu compliance in orientation.",
+          "adjacencies": ["Open Area", "Service Corridor"]
+        },
+        {
+          "room_name": "Guest Bathroom",
+          "dimensions": { "length": 8, "width": 6 },
+          "description": "A compact bathroom for guest convenience, ensuring privacy and proper ventilation.",
+          "adjacencies": ["Guest Bedroom"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "Main Entrance",
+          "dimensions": { "height": 8, "width": 4 },
+          "description": "East-facing entrance door complying with Vastu to invite positive energy.",
+          "location": "Entrance Hall"
+        },
+        {
+          "type": "Window",
+          "dimensions": { "height": 6, "width": 5 },
+          "description": "Floor-to-ceiling windows integrated into Living Room and Kitchen for ample natural light.",
+          "locations": ["Living Room", "Kitchen"]
+        },
+        {
+          "type": "Balcony Access",
+          "dimensions": { "length": 5, "width": 4 },
+          "description": "Provides access to the open patio area, ensuring a seamless connection with outdoor spaces.",
+          "location": "Open Area"
+        }
+      ],
+      "additional_elements": {
+        "service_corridor": {
+          "path": ["Kitchen", "Guest Bedroom", "Bathroom"],
+          "dimensions": { "length": 30, "width": 3 },
+          "description": "A narrow service corridor ensuring efficient circulation within the ground floor."
+        }
+      }
+    }
+  ]
+}

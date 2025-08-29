@@ -1,0 +1,65 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_hall",
+          "name": "Entrance Hall",
+          "dimensions": { "length": 4, "width": 3 },
+          "description": "Welcoming space aligned with the main entrance; designed for natural ventilation and adheres to Vastu principles by ensuring an unobstructed entry."
+        },
+        {
+          "room_id": "living_room",
+          "name": "Living Room",
+          "dimensions": { "length": 6, "width": 5 },
+          "description": "Spacious living room with access to the garden and balcony; designed for communal activities, ensuring a balanced flow of energy."
+        },
+        {
+          "room_id": "dining_area",
+          "name": "Dining Area",
+          "dimensions": { "length": 4, "width": 3.5 },
+          "description": "Adjacent to the living room; positioned for optimal natural light and view towards the garden."
+        },
+        {
+          "room_id": "kitchen",
+          "name": "Kitchen",
+          "dimensions": { "length": 5, "width": 4 },
+          "description": "Efficient kitchen area with modern amenities; placed in a manner that avoids direct alignment with the entrance as per Vastu guidelines."
+        },
+        {
+          "room_id": "balcony_bedroom_1",
+          "name": "Master Bedroom with Spacious Balcony",
+          "dimensions": { "length": 5, "width": 4.5 },
+          "description": "Primary bedroom on the ground floor; features a large balcony offering garden views and natural light."
+        },
+        {
+          "room_id": "home_theater",
+          "name": "Home Theater",
+          "dimensions": { "length": 6, "width": 5 },
+          "description": "Entertainment space integrated with audio-visual systems; designed to be acoustically optimized and separated from the living area."
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "name": "Main Entrance",
+          "location": { "level": "ground_floor", "coordinates": "corner_plot" },
+          "description": "Designated entrance aligning with Vastu principles; provides direct access to the garden."
+        },
+        {
+          "opening_id": "garden_access",
+          "name": "Garden Access",
+          "location": { "level": "ground_floor", "coordinates": "adjacent_to_living_room" },
+          "description": "Open passage leading from the living area to the large garden, ensuring natural ventilation and light."
+        },
+        {
+          "opening_id": "balcony_access_1",
+          "name": "Balcony Access for Master Bedroom",
+          "location": { "level": "ground_floor", "room": "Master Bedroom" },
+          "description": "Direct access from the master bedroom to its spacious balcony."
+        }
+      ]
+    }
+  ]
+}

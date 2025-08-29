@@ -1,0 +1,372 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 3200,
+      "style": "Experimental Earthship Bridge House"
+    },
+    "plot": {
+      "width": 80,
+      "depth": 40,
+      "orientation": "east-west",
+      "topography": "ravine",
+      "climate": "humid subtropical",
+      "flood_risk": "high"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 160
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "studio",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "pool",
+        "count": 1,
+        "area": 600
+      },
+      {
+        "type": "mechanical",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "greenhouse",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 240
+      },
+      {
+        "type": "circulation",
+        "count": 1,
+        "area": 400
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 875000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "north_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "south_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "north_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "south_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": 10
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 25,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": 12
+            },
+            {
+              "wall": "east",
+              "position": 7.5,
+              "size": 8
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "artist_studio",
+          "type": "studio",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": 16
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 12
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "size": 12
+            }
+          ]
+        },
+        {
+          "id": "lap_pool",
+          "type": "pool",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": 16
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 12
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "size": 12
+            }
+          ]
+        },
+        {
+          "id": "mechanical_room",
+          "type": "mechanical",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "greenhouse",
+          "type": "greenhouse",
+          "bounds": {
+            "x": 60,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 8
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "size": 8
+            },
+            {
+              "wall": "west",
+              "position": 5,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 60,
+            "y": 20,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "main_circulation",
+          "type": "circulation",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12.5
+            },
+            {
+              "wall": "south",
+              "position": 12.5
+            },
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

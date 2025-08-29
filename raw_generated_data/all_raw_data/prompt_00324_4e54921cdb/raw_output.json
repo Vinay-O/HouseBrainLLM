@@ -1,0 +1,79 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "entrance_hall",
+          "dimensions": {"length": 12, "width": 10},
+          "description": "A modest entrance hall leading to living areas and the kitchen."
+        },
+        {
+          "name": "living_room",
+          "dimensions": {"length": 18, "width": 15},
+          "description": "Spacious living room with natural lighting and open design for family gatherings. Adheres to Vastu by positioning windows on the east side."
+        },
+        {
+          "name": "dining_area",
+          "dimensions": {"length": 10, "width": 8},
+          "description": "Dining area adjacent to the living room with a view of the garden for social interactions."
+        },
+        {
+          "name": "kitchen",
+          "dimensions": {"length": 12, "width": 9},
+          "description": "Functional kitchen with essential appliances and storage, placed in the southeast corner per Vastu recommendations."
+        },
+        {
+          "name": "guest_room",
+          "dimensions": {"length": 10, "width": 8},
+          "description": "Guest bedroom equipped with a small balcony overlooking the garden."
+        },
+        {
+          "name": "primary_bedroom",
+          "dimensions": {"length": 14, "width": 12},
+          "description": "Spacious primary bedroom with a private balcony and ensuite bathroom for privacy."
+        },
+        {
+          "name": "study",
+          "dimensions": {"length": 10, "width": 8},
+          "description": "Small study room ideal for work or children's homework, located near the living area."
+        },
+        {
+          "name": "bathroom",
+          "dimensions": {"length": 6, "width": 4},
+          "description": "Functional bathroom serving the primary bedroom and guest areas."
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "location": "entrance_hall_to_living_room",
+          "dimensions": {"height": 7, "width": 3}
+        },
+        {
+          "type": "window",
+          "location": "living_room",
+          "dimensions": {"height": 4, "width": 2.5},
+          "vastu_alignment": "east"
+        },
+        {
+          "type": "door",
+          "location": "dining_area_to_kitchen",
+          "dimensions": {"height": 7, "width": 3}
+        }
+      ]
+    }
+  ],
+  "additional_features": [
+    {
+      "name": "swimming_pool",
+      "dimensions": {"length": 20, "width": 10},
+      "description": "Contemporary swimming pool integrated into the garden area with efficient water recycling system."
+    },
+    {
+      "name": "spacious balconies",
+      "locations": ["primary_bedroom", "guest_room"],
+      "description": "Each bedroom features a spacious balcony with seating and greenery, enhancing natural ventilation and views."
+    }
+  ]
+}

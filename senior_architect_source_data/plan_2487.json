@@ -1,0 +1,199 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 2150,
+      "style": "Alpine Chalet"
+    },
+    "plot": {
+      "slope": "south-facing sloping vineyard terrain",
+      "climate": "alpine with heavy snow loads",
+      "noiseSource": "highway"
+    },
+    "roomBreakdown": [
+      {
+        "type": "sunken_living_room",
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "area": 250
+      },
+      {
+        "type": "dining_room",
+        "area": 200
+      },
+      {
+        "type": "master_bedroom",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "utility_room",
+        "area": 100
+      },
+      {
+        "type": "greenhouse",
+        "area": 600
+      }
+    ]
+  },
+  "total_area": 2150.0,
+  "construction_cost": 645000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "sunken_living",
+          "type": "sunken_living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "north_wall_center"
+          ],
+          "windows": [
+            "south_wall_full"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "east_wall_center"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "west_wall_center"
+          ],
+          "windows": [
+            "south_wall_full"
+          ]
+        },
+        {
+          "id": "dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "east_wall_center"
+          ],
+          "windows": [
+            "south_wall_full"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "north_wall_center"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bed",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "west_wall_center"
+          ],
+          "windows": [
+            "south_wall_full",
+            "east_wall_partial"
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "east_wall_center"
+          ],
+          "windows": [
+            "south_wall_full"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "greenhouse",
+          "type": "greenhouse",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            "stair_access"
+          ],
+          "windows": [
+            "glass_roof_full",
+            "south_glass_wall"
+          ]
+        }
+      ]
+    }
+  ]
+}

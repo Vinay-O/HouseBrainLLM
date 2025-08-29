@@ -1,0 +1,56 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {
+        "room_id": "entrance_hall",
+        "description": "A welcoming entrance hall with a minimalist Scandinavian design featuring neutral colors and natural wood accents. Complies with Vastu principles by aligning the main entrance to the north-east.",
+        "area_sqft": 150
+      },
+      {
+        "room_id": "living_room",
+        "description": "Spacious living area combining modern Scandinavian aesthetics with functionality for a bachelor pad lifestyle, featuring modular seating and ample natural light. Vastu principles suggest placing the hearth in the southeast corner.",
+        "area_sqft": 300
+      },
+      {
+        "room_id": "kitchen",
+        "description": "Modern kitchen with clean lines and functional cabinetry. Uses energy-efficient appliances and natural lighting to align with sustainable design practices.",
+        "area_sqft": 200,
+        "adjacent_to": ["living_room"]
+      },
+      {
+        "room_id": "home_office",
+        "description": "Dedicated home office designed for productivity, featuring built-in shelves and ergonomic furniture. Placed in the north-west sector to harness positive energy.",
+        "area_sqft": 150
+      },
+      {
+        "room_id": "private_gym",
+        "description": "Private gym area with modern fitness equipment integrated into a flexible workout space. Designed for convenience while maintaining privacy and noise isolation, located towards the south-east corner per Vastu guidelines.",
+        "area_sqft": 200,
+        "special_requirements": ["soundproofing", "air ventilation"]
+      },
+      {
+        "room_id": "bathroom",
+        "description": "Full bathroom with Scandinavian-inspired fixtures. Incorporates eco-friendly water-saving faucets and a clear layout that respects privacy.",
+        "area_sqft": 80
+      }
+    ],
+    "openings": [
+      {
+        "opening_type": "entrance_door",
+        "location": "north-east",
+        "description": "Main entrance door aligned with Vastu principles."
+      },
+      {
+        "opening_type": "windows",
+        "locations": ["living_room", "kitchen", "home_office"],
+        "description": "Large windows to maximize natural light and ventilation, ensuring energy efficiency."
+      },
+      {
+        "opening_type": "balcony",
+        "location": "adjacent_to_living_room",
+        "description": "Balcony space providing a transition between indoor and outdoor living areas."
+      }
+    ]
+  }
+]}

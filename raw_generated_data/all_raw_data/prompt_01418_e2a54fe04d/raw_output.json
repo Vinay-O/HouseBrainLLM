@@ -1,0 +1,45 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "id": "studio_01",
+          "type": "studio_unit",
+          "dimensions": { "length": 25, "width": 32 },
+          "features": ["kitchenette", "wardrobe", "bathroom"]
+        },
+        {
+          "id": "servant_quarters",
+          "type": "bedroom",
+          "dimensions": { "length": 10, "width": 10 },
+          "features": ["attached_bathroom"]
+        },
+        {
+          "id": "swimming_pool",
+          "type": "outdoor_space",
+          "dimensions": { "length": 8, "width": 4 },
+          "features": ["deck_area", "shower"]
+        }
+      ],
+      "openings": [
+        {
+          "id": "main_entrance",
+          "type": "door",
+          "location": "front_facade"
+        },
+        {
+          "id": "terrace_access",
+          "type": "staircase",
+          "location": "studio_unit"
+        }
+      ],
+      "outdoor_spaces": [
+        {
+          "id": "rooftop_terrace",
+          "features": ["seating_area", "greenery"]
+        }
+      ]
+    }
+  ]
+}

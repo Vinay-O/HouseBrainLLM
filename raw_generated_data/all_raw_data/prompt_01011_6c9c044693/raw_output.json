@@ -1,0 +1,86 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_porch",
+          "type": "porch",
+          "dimensions": { "length": 2.0, "width": 2.0 },
+          "accessibility_features": ["wheelchair ramp"]
+        },
+        {
+          "room_id": "living_room",
+          "type": "living room",
+          "dimensions": { "length": 5.0, "width": 4.0 },
+          "adjacent_to": ["central_courtyard", "dining_area"],
+          "accessibility_features": ["wide doorways"]
+        },
+        {
+          "room_id": "dining_area",
+          "type": "dining area",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "adjacent_to": ["kitchen", "living_room"],
+          "accessibility_features": ["wheelchair accessible table"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "adjacent_to": ["dining_area", "utility_room"],
+          "accessibility_features": ["lowered countertops"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "dimensions": { "length": 4.5, "width": 4.0 },
+          "adjacent_to": ["bathroom_1", "central_courtyard"],
+          "accessibility_features": ["wheelchair accessible path"]
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "bathroom",
+          "dimensions": { "length": 3.0, "width": 2.5 },
+          "adjacent_to": ["bedroom_1"],
+          "accessibility_features": ["wheelchair accessible shower", "grab bars"]
+        },
+        {
+          "room_id": "central_courtyard",
+          "type": "courtyard",
+          "dimensions": { "length": 5.0, "width": 4.0 },
+          "adjacent_to": ["living_room", "bedroom_1"]
+        },
+        {
+          "room_id": "utility_room",
+          "type": "utility room",
+          "dimensions": { "length": 3.0, "width": 2.5 },
+          "adjacent_to": ["kitchen"],
+          "accessibility_features": ["wide doorways"]
+        },
+        {
+          "room_id": "two_car_garage",
+          "type": "garage",
+          "dimensions": { "length": 6.0, "width": 3.0 },
+          "adjacent_to": ["utility_room"],
+          "accessibility_features": ["wheelchair ramp access"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "location": "entrance_porch"
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "location": "living_room",
+          "direction": "north"
+        },
+        {
+          "opening_id": "kitchen_door",
+          "type": "door",
+          "location": "kitchen"
+        }
+      ]
+    }
+  ] }

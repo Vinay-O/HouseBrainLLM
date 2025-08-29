@@ -1,0 +1,408 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Ultra-Premium Heritage Restoration Split-Level"
+    },
+    "plot": {
+      "location": "Moradabad",
+      "orientation": "North-facing main entrance",
+      "context": "Commercial-residential mix, urban noise pollution, brass city heritage"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "area": 180
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 180
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "monsoon_retreat",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "central_courtyard",
+        "count": 1,
+        "area": 600
+      },
+      {
+        "type": "stilt_floor",
+        "count": 1,
+        "area": 800
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 80
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 9600000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "description": "Stilted ground floor with parking, monsoon retreat, and utility areas, elevated for flood protection and noise buffering.",
+      "rooms": [
+        {
+          "id": "stilt_parking",
+          "type": "stilt_floor",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "monsoon_retreat",
+          "type": "monsoon_retreat",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 25,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "description": "Main living level with north entrance, central courtyard (angan) with tulsi platform, ornate jharokhas, and primary living spaces designed for accessibility.",
+      "rooms": [
+        {
+          "id": "main_entrance_foyer",
+          "type": "corridor",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "central_angan",
+          "type": "central_courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 5,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5
+            },
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 5,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "description": "Private split-level with bedrooms, bathrooms, and study, featuring light wells, passive solar design, and full medical accessibility.",
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "master_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "guest_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "light_well",
+          "type": "corridor",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

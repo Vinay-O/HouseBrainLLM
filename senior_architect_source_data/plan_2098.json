@@ -1,0 +1,139 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Traditional Craftsman"
+    },
+    "plot": {
+      "shape": "circular",
+      "orientation": "south-facing",
+      "climate": "continental with harsh winters",
+      "privacy_requirements": "high from neighboring properties"
+    },
+    "roomBreakdown": [
+      {
+        "type": "chefs_kitchen",
+        "features": [
+          "wood_fired_oven"
+        ]
+      },
+      {
+        "type": "great_room",
+        "features": [
+          "360_degree_views",
+          "solar_gain"
+        ]
+      },
+      {
+        "type": "primary_suite",
+        "features": [
+          "privacy"
+        ]
+      },
+      {
+        "type": "guest_bedroom",
+        "features": [
+          "flexible_use"
+        ]
+      },
+      {
+        "type": "mechanical_room",
+        "features": [
+          "rammed_earth_systems"
+        ]
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 450000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "great_room",
+          "type": "great_room",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            "entry_door_south"
+          ],
+          "windows": [
+            "window_north",
+            "window_east",
+            "window_south",
+            "window_west"
+          ]
+        },
+        {
+          "id": "chefs_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 5,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "door_to_great_room"
+          ],
+          "windows": [
+            "window_south"
+          ]
+        },
+        {
+          "id": "primary_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 30,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "door_to_great_room"
+          ],
+          "windows": [
+            "window_east"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "door_to_great_room"
+          ],
+          "windows": [
+            "window_west"
+          ]
+        },
+        {
+          "id": "mechanical_room",
+          "type": "utility",
+          "bounds": {
+            "x": 40,
+            "y": 30,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "exterior_door_north"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

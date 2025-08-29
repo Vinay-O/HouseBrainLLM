@@ -1,0 +1,168 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Industrial"
+    },
+    "plot": {
+      "type": "corner"
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "details": "Open-plan living, sleeping, and kitchen area"
+      },
+      {
+        "type": "library",
+        "details": "Floor-to-ceiling bookshelves with reading nook"
+      },
+      {
+        "type": "home_office",
+        "details": "Dedicated workspace with soundproofing"
+      },
+      {
+        "type": "rooftop_terrace",
+        "details": "Expansive outdoor living space with city views"
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 300000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 15
+            },
+            {
+              "wall": "east",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 8
+            },
+            {
+              "wall": "east",
+              "position": 18,
+              "size": 10
+            }
+          ]
+        },
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 6
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 3,
+              "size": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "rooftop_terrace",
+          "type": "rooftop_terrace",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 45,
+            "height": 35
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 22
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

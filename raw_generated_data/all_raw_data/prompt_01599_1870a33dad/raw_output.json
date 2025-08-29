@@ -1,0 +1,144 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {
+        "room_type": "entrance_hall",
+        "dimensions": {"width": 4, "length": 6},
+        "adjacent": ["living_room", "dining_area"],
+        "vastu_alignment": "north"
+      },
+      {
+        "room_type": "living_room",
+        "dimensions": {"width": 7, "length": 10},
+        "adjacent": ["entrance_hall", "dining_area", "master_bedroom"],
+        "vastu_alignment": "east"
+      },
+      {
+        "room_type": "dining_area",
+        "dimensions": {"width": 5, "length": 6},
+        "adjacent": ["entrance_hall", "living_room", "kitchen"],
+        "vastu_alignment": "south"
+      },
+      {
+        "room_type": "kitchen",
+        "dimensions": {"width": 4.5, "length": 7},
+        "adjacent": ["dining_area", "servants_quarters"],
+        "vastu_alignment": "west"
+      },
+      {
+        "room_type": "master_bedroom_1",
+        "dimensions": {"width": 6, "length": 8},
+        "adjacent": ["living_room", "secondary_bedroom"],
+        "vastu_alignment": "north-east"
+      },
+      {
+        "room_type": "secondary_bedroom",
+        "dimensions": {"width": 5.5, "length": 7},
+        "adjacent": ["master_bedroom_1", "tertiary_bedroom"],
+        "vastu_alignment": "south-west"
+      },
+      {
+        "room_type": "tertiary_bedroom",
+        "dimensions": {"width": 5.5, "length": 7},
+        "adjacent": ["secondary_bedroom", "servants_quarters"],
+        "vastu_alignment": "east"
+      },
+      {
+        "room_type": "servants_quarters",
+        "dimensions": {"width": 4, "length": 6},
+        "adjacent": ["kitchen", "tertiary_bedroom"],
+        "vastu_alignment": "south-east"
+      }
+    ],
+    "openings": [
+      {
+        "type": "main_door",
+        "location": "north_east_corner",
+        "dimensions": {"width": 1.5, "height": 2}
+      },
+      {
+        "type": "front_window",
+        "location": "northern_wall",
+        "dimensions": {"width": 3, "height": 4}
+      },
+      {
+        "type": "side_windows",
+        "location": ["eastern_wall", "western_wall"],
+        "dimensions": {"width": 2.5, "height": 3}
+      }
+    ]
+  },
+  {
+    "level_id": "rooftop_terraces",
+    "rooms": [
+      {
+        "room_type": "roof_garden",
+        "dimensions": {"width": 12, "length": 14},
+        "features": ["water_feature", "indoor-outdoor seating"],
+        "vastu_alignment": "south"
+      }
+    ],
+    "openings": []
+  },
+  {
+    "level_id": "second_floor",
+    "rooms": [
+      {
+        "room_type": "bedroom_1",
+        "dimensions": {"width": 5.8, "length": 6.2},
+        "adjacent": ["master_bedroom"],
+        "vastu_alignment": "north-west"
+      },
+      {
+        "room_type": "bedroom_2",
+        "dimensions": {"width": 5.8, "length": 6.2},
+        "adjacent": ["bedroom_1", "hallway"],
+        "vastu_alignment": "south-east"
+      },
+      {
+        "room_type": "study_room",
+        "dimensions": {"width": 4, "length": 5},
+        "adjacent": ["hallway"],
+        "vastu_alignment": "north-west"
+      }
+    ],
+    "openings": [
+      {
+        "type": "balcony_access",
+        "location": "eastern_side",
+        "dimensions": {"width": 2, "height": 3}
+      }
+    ]
+  },
+  {
+    "level_id": "third_floor",
+    "rooms": [
+      {
+        "room_type": "bedroom_3",
+        "dimensions": {"width": 5.8, "length": 6.2},
+        "adjacent": ["study_room", "secondary_bedroom"],
+        "vastu_alignment": "north-east"
+      }
+    ],
+    "openings": [
+      {
+        "type": "balcony_access",
+        "location": "western_side",
+        "dimensions": {"width": 2, "height": 3}
+      }
+    ]
+  },
+  {
+    "level_id": "penthouse_roof",
+    "rooms": [
+      {
+        "room_type": "luxury_terrace",
+        "dimensions": {"width": 15, "length": 18},
+        "features": ["open_deck", "pool_area"],
+        "vastu_alignment": "central"
+      }
+    ],
+    "openings": []
+  }
+]}

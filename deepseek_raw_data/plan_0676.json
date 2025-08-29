@@ -1,0 +1,471 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 3,
+      "totalArea": 5000,
+      "style": "Art Deco"
+    },
+    "plot": {
+      "orientation": "North-facing entrance",
+      "features": [
+        "swimming pool",
+        "central courtyard"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4,
+        "level": [
+          1,
+          2
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "home_theater",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "level": [
+          2
+        ]
+      },
+      {
+        "type": "gym",
+        "count": 1,
+        "level": [
+          1
+        ]
+      },
+      {
+        "type": "bar",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "pool",
+        "count": 1,
+        "level": [
+          -1
+        ]
+      }
+    ]
+  },
+  "total_area": 5000.0,
+  "construction_cost": 1250000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "pool_area",
+          "type": "pool",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 20
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12
+            },
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "home_theater",
+          "type": "home_theater",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bar_lounge",
+          "type": "bar",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12
+            },
+            {
+              "wall": "south",
+              "position": 12
+            },
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 12
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "gym",
+          "type": "gym",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "courtyard_void",
+          "type": "void",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "courtyard_void_2",
+          "type": "void",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

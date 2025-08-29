@@ -1,0 +1,73 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "dimensions": {"length": 6, "width": 4},
+          "description": "Main entrance with a vestibule aligned to east for auspiciousness as per Vastu.",
+          "adjacent_rooms": ["living_room", "kitchen"]
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": {"length": 10, "width": 8},
+          "description": "Spacious living area designed with modern aesthetics; large windows on eastern side for sunlight.",
+          "adjacent_rooms": ["entrance_hall", "dining_area"]
+        },
+        {
+          "room_type": "dining_area",
+          "dimensions": {"length": 6, "width": 5},
+          "description": "Dining space adjacent to the kitchen and living room; integrates with open-plan layout.",
+          "adjacent_rooms": ["living_room", "kitchen"]
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {"length": 6, "width": 4},
+          "description": "Fully equipped kitchen placed on the north side for efficient workflow; includes storage and prep areas.",
+          "adjacent_rooms": ["dining_area", "service_quarters"]
+        },
+        {
+          "room_type": "servants_quarters",
+          "dimensions": {"length": 5, "width": 4},
+          "description": "Dedicated space for domestic help with essential facilities; positioned towards the rear to maintain privacy.",
+          "adjacent_rooms": ["kitchen", "utility_area"]
+        },
+        {
+          "room_type": "guest_room",
+          "dimensions": {"length": 8, "width": 6},
+          "description": "A guest bedroom located on the ground floor for ease of access; has an attached ensuite.",
+          "adjacent_rooms": ["entrance_hall", "open_to_garden"]
+        },
+        {
+          "room_type": "service_area",
+          "dimensions": {"length": 4, "width": 3},
+          "description": "Utility area with storage and laundry facilities; designed for efficient service operations.",
+          "adjacent_rooms": ["servants_quarters", "utility_area_exterior"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "main_entrance",
+          "location": "north_east",
+          "description": "Double door entry to accommodate vehicles and visitors; aligned with local traffic patterns."
+        },
+        {
+          "opening_type": "garden_gate",
+          "location": "south",
+          "description": "Large gate opening leading into the extensive garden area, providing natural light and ventilation."
+        },
+        {
+          "opening_type": "balcony_windows",
+          "location": "east",
+          "description": "Balconies attached to living room and guest room for improved cross-ventilation and Vastu compliance."
+        },
+        {
+          "opening_type": "service_entrance",
+          "location": "west",
+          "description": "Separate entry point for staff, ensuring smooth movement of goods and service personnel."
+        }
+      ]
+    }
+  ]
+}

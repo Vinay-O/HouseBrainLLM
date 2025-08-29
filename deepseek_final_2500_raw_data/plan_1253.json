@@ -1,0 +1,191 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Desert Contemporary"
+    },
+    "plot": {
+      "description": "Former industrial site with concrete foundations in an alpine climate with heavy snow loads, oriented diagonally to prevailing winds"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "brewery",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 216000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "pod1_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "pod1_kitchen_door",
+            "pod1_entry_door"
+          ],
+          "windows": [
+            "living_north_window",
+            "living_east_window"
+          ]
+        },
+        {
+          "id": "pod1_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "pod1_living_door"
+          ],
+          "windows": [
+            "kitchen_east_window"
+          ]
+        },
+        {
+          "id": "pod2_bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "pod2_hall_door"
+          ],
+          "windows": [
+            "bed1_south_window"
+          ]
+        },
+        {
+          "id": "pod2_bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 12,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "pod2_hall_door"
+          ],
+          "windows": [
+            "bed2_north_window"
+          ]
+        },
+        {
+          "id": "pod2_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 46,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "pod2_hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod2_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 46,
+            "y": 8,
+            "width": 8,
+            "height": 16
+          },
+          "doors": [
+            "pod2_bed1_door",
+            "pod2_bed2_door",
+            "pod2_bath_door",
+            "pod3_connector_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod3_brewery",
+          "type": "brewery",
+          "bounds": {
+            "x": 54,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "pod3_hall_door"
+          ],
+          "windows": [
+            "brewery_north_window"
+          ]
+        },
+        {
+          "id": "pod3_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 54,
+            "y": 16,
+            "width": 16,
+            "height": 8
+          },
+          "doors": [
+            "pod3_hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod3_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 70,
+            "y": 0,
+            "width": 6,
+            "height": 24
+          },
+          "doors": [
+            "pod2_connector_door",
+            "pod3_brewery_door",
+            "pod3_storage_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

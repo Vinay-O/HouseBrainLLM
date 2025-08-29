@@ -1,0 +1,82 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "area_sqft": 150,
+          "location": {"x": 10, "y": 10},
+          "natural_light": true
+        },
+        {
+          "room_type": "living_room",
+          "area_sqft": 300,
+          "location": {"x": 200, "y": 10},
+          "natural_light": true
+        },
+        {
+          "room_type": "kitchen_dining_area",
+          "area_sqft": 250,
+          "location": {"x": 380, "y": 10},
+          "natural_light": true,
+          "is_open_to_living_room": true
+        },
+        {
+          "room_type": "master_bedroom",
+          "area_sqft": 200,
+          "location": {"x": 560, "y": 10},
+          "en_suite_bathroom": true,
+          "natural_light": true
+        },
+        {
+          "room_type": "bedroom_2",
+          "area_sqft": 180,
+          "location": {"x": 780, "y": 10},
+          "bathroom_shared_with_bedroom_3": true,
+          "natural_light": true
+        },
+        {
+          "room_type": "bedroom_3",
+          "area_sqft": 180,
+          "location": {"x": 960, "y": 10},
+          "bathroom_shared_with_bedroom_2": true,
+          "natural_light": true
+        },
+        {
+          "room_type": "private_gym",
+          "area_sqft": 150,
+          "location": {"x": 1160, "y": 10},
+          "natural_light": true
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "from_room": "entrance_hall",
+          "to_room": "living_room"
+        },
+        {
+          "type": "sliding_door",
+          "from_room": "kitchen_dining_area",
+          "to_room": "living_room"
+        },
+        {
+          "type": "window",
+          "room": "master_bedroom",
+          "location": {"x": 590, "y": 10}
+        },
+        {
+          "type": "window",
+          "room": "bedroom_2",
+          "location": {"x": 830, "y": 10}
+        },
+        {
+          "type": "window",
+          "room": "bedroom_3",
+          "location": {"x": 990, "y": 10}
+        }
+      ]
+    }
+  ]
+}

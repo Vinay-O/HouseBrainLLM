@@ -1,0 +1,183 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 750,
+      "style": "Modern Indian Contemporary with Traditional Fusion"
+    },
+    "plot": {
+      "location": "Waterfront backwater property, Mysore palace vicinity",
+      "orientation": "South-facing for solar optimization",
+      "challenges": [
+        "Flood risk",
+        "Industrial pollution",
+        "Security and privacy needs"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 150,
+        "purpose": "Private sleeping quarters with enhanced security"
+      },
+      {
+        "type": "bathroom",
+        "area": 60,
+        "purpose": "Attached to bedroom"
+      },
+      {
+        "type": "kitchen",
+        "area": 90,
+        "purpose": "Integrated with composting and kitchen garden"
+      },
+      {
+        "type": "living_room",
+        "area": 180,
+        "purpose": "Open plan with traditional baithak seating"
+      },
+      {
+        "type": "archive_room",
+        "area": 50,
+        "purpose": "Climate-controlled for family photographs and heritage documents"
+      },
+      {
+        "type": "utility",
+        "area": 70,
+        "purpose": "Houses copper water storage and composting system"
+      },
+      {
+        "type": "verandah",
+        "area": 150,
+        "purpose": "Wraps south and east sides for solar gain and views"
+      }
+    ]
+  },
+  "total_area": 750.0,
+  "construction_cost": 1350000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "bedroom_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "living_room_door"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 5,
+            "height": 6
+          },
+          "doors": [
+            "bedroom_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 9
+          },
+          "doors": [
+            "living_room_door2"
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "main_entry",
+            "verandah_door1",
+            "verandah_door2"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "archive_0",
+          "type": "archive_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "living_room_door3"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 9,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            "exterior_door"
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "verandah_0",
+          "type": "verandah",
+          "bounds": {
+            "x": 0,
+            "y": -5,
+            "width": 50,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

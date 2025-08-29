@@ -1,0 +1,54 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 12, "width": 15},
+          "location": {"x": 0, "y": 0}
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 8, "width": 10},
+          "location": {"x": 0, "y": 15}
+        },
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": {"length": 12, "width": 10},
+          "location": {"x": 8, "y": 0}
+        },
+        {
+          "room_name": "Child's Room",
+          "dimensions": {"length": 10, "width": 10},
+          "location": {"x": 20, "y": 0}
+        },
+        {
+          "room_name": "Bathroom",
+          "dimensions": {"length": 8, "width": 5},
+          "location": {"x": 20, "y": 10}
+        },
+        {
+          "room_name": "Private Gym",
+          "dimensions": {"length": 12, "width": 10},
+          "location": {"x": 8, "y": 15}
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "from_room": "Living Room",
+          "to_room": "Kitchen"
+        },
+        {
+          "type": "window",
+          "room_name": "Master Bedroom"
+        },
+        {
+          "type": "window",
+          "room_name": "Child's Room"
+        }
+      ]
+    }
+  ]
+}

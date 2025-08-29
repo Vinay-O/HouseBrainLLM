@@ -1,0 +1,84 @@
+{ 
+  "levels": [
+    {
+      "level_id": "garage_level",
+      "description": "Two-car garage and utility area.",
+      "rooms": [],
+      "openings": []
+    },
+    {
+      "level_id": "ground_floor",
+      "description": "Split-level studio apartment with central courtyard, natural light, ventilation, open-plan living space and kitchen/dining area, and a dedicated balcony for each bedroom.",
+      "rooms": [
+        {
+          "room_id": "living_room_kitchen_dining",
+          "type": "combined_area",
+          "dimensions": {"length": 25, "width": 20},
+          "features": ["open plan", "central access to courtyard", "large windows for natural light"],
+          "balcony_access": false
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["spacious balcony", "north facing window for auspicious energy"],
+          "balcony_access": true
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["spacious balcony", "east facing window for balance and harmony"],
+          "balcony_access": true
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "bathroom",
+          "dimensions": {"length": 6, "width": 4},
+          "features": ["well-ventilated", "natural light window"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "entrance",
+          "location": "west façade",
+          "details": "large glass door for natural light"
+        },
+        {
+          "opening_type": "window",
+          "location": "living area",
+          "details": "floor-to-ceiling windows ensuring ventilation and sunlight"
+        },
+        {
+          "opening_type": "balcony_door",
+          "location": "bedroom_1",
+          "details": "exterior door to private balcony"
+        },
+        {
+          "opening_type": "balcony_door",
+          "location": "bedroom_2",
+          "details": "exterior door to private balcony"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "description": "Split-level design extension with open storage, closet areas, and additional living or working space.",
+      "rooms": [
+        {
+          "room_id": "study_office",
+          "type": "multipurpose_space",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["quiet area", "north-west exposure for positive energy"]
+        },
+        {
+          "room_id": "closet_area",
+          "type": "storage",
+          "dimensions": {"length": 5, "width": 4},
+          "features": ["organized storage solutions"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

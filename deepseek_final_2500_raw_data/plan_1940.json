@@ -1,0 +1,315 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 4,
+      "totalArea": 2400,
+      "style": "High-Tech Architecture"
+    },
+    "plot": {
+      "slope": "sunken courtyard",
+      "climate": "continental with harsh winters",
+      "orientation": "north-facing for consistent light"
+    },
+    "roomBreakdown": [
+      {
+        "type": "sunken_courtyard",
+        "area": 200,
+        "description": "Permeable paving, earthquake-resistant foundation, central gathering space"
+      },
+      {
+        "type": "indoor_climbing_wall",
+        "area": 150,
+        "description": "Structural climbing wall integrated into tower core, visible from multiple levels"
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard_entrance",
+          "type": "entryway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_utility",
+          "type": "utility",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 7,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 3
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 15,
+            "height": 9
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_main",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "climbing_wall_shaft",
+          "type": "recreation",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 20,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "teen_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "teen_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "shared_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4,
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "study_nook",
+          "type": "study",
+          "bounds": {
+            "x": 8,
+            "y": 12,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6,
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "primary_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": "panoramic"
+            }
+          ]
+        },
+        {
+          "id": "suite_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 2,
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "roof_terrace_access",
+          "type": "staircase",
+          "bounds": {
+            "x": 15,
+            "y": 8,
+            "width": 5,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

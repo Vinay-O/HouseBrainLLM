@@ -1,0 +1,85 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["sofa", "TV unit", "wheelchair ramp"],
+          "accessibility": true
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["dining table", "chairs"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["modular kitchen", "gas stove", "sink", "wheelchair accessible cabinets"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["double bed", "wardrobe", "balcony access"],
+          "accessibility": true,
+          "balcony": { "dimensions": { "length": 6, "width": 8 } }
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["single bed", "wardrobe", "balcony access"],
+          "accessibility": true,
+          "balcony": { "dimensions": { "length": 5, "width": 7 } }
+        },
+        {
+          "room_id": "bathroom_1",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["shower", "toilet", "sink", "wheelchair accessible"]
+        },
+        {
+          "room_id": "bathroom_2",
+          "dimensions": { "length": 7, "width": 5 },
+          "features": ["shower", "toilet", "sink", "wheelchair accessible"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 3.5, "width": 7 },
+          "accessibility": true
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 4 }
+        },
+        {
+          "opening_id": "bedroom_1_balcony_door",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 7 },
+          "accessibility": true
+        },
+        {
+          "opening_id": "bedroom_2_balcony_door",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 6 },
+          "accessibility": true
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["desk", "chair"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

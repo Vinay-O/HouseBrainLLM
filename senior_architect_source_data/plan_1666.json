@@ -1,0 +1,533 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 6500,
+      "style": "Art Deco Revival"
+    },
+    "plot": {
+      "terrain": "sloping_vineyard",
+      "climate": "continental_harsh_winters",
+      "orientation": "diagonal_to_prevailing_winds"
+    },
+    "roomBreakdown": [
+      {
+        "type": "workshop",
+        "features": [
+          "hydraulic_car_lift"
+        ]
+      },
+      {
+        "type": "energy",
+        "features": [
+          "solar_panel_array",
+          "battery_storage"
+        ]
+      }
+    ]
+  },
+  "total_area": 6500.0,
+  "construction_cost": 3850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_workshop",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "overhead"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "clerestory"
+            }
+          ],
+          "features": [
+            "hydraulic_car_lift",
+            "epoxy_flooring"
+          ]
+        },
+        {
+          "id": "wine_cellar",
+          "type": "storage",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "type": "solid"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "climate_controlled",
+            "rack_system"
+          ]
+        },
+        {
+          "id": "mud_room",
+          "type": "mudroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "exterior"
+            },
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "type": "double_pane"
+            }
+          ],
+          "features": [
+            "heated_floors",
+            "built_in_storage"
+          ]
+        },
+        {
+          "id": "mechanical_room",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 12,
+            "width": 10,
+            "height": 18
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "solid"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "battery_storage",
+            "solar_inverter",
+            "backup_generator"
+          ]
+        },
+        {
+          "id": "elevator_shaft",
+          "type": "circulation",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "elevator"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "residential_elevator"
+          ]
+        },
+        {
+          "id": "stairwell",
+          "type": "circulation",
+          "bounds": {
+            "x": 45,
+            "y": 6,
+            "width": 6,
+            "height": 24
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "clerestory"
+            }
+          ],
+          "features": [
+            "floating_stairs",
+            "skylight"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "great_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "floor_to_ceiling"
+            },
+            {
+              "wall": "south",
+              "type": "floor_to_ceiling"
+            },
+            {
+              "wall": "east",
+              "type": "corner"
+            },
+            {
+              "wall": "west",
+              "type": "corner"
+            }
+          ],
+          "features": [
+            "butterfly_roof_volume",
+            "double_sided_fireplace",
+            "motorized_shades"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 18
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "picture"
+            },
+            {
+              "wall": "east",
+              "type": "casement"
+            }
+          ],
+          "features": [
+            "professional_appliances",
+            "large_island",
+            "walk_in_pantry"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 18,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "picture"
+            },
+            {
+              "wall": "east",
+              "type": "casement"
+            }
+          ],
+          "features": [
+            "statement_lighting",
+            "wine_display"
+          ]
+        },
+        {
+          "id": "primary_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "floor_to_ceiling"
+            },
+            {
+              "wall": "west",
+              "type": "corner"
+            }
+          ],
+          "features": [
+            "private_terrace",
+            "walk_in_closet",
+            "double_sided_fireplace"
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "clerestory"
+            }
+          ],
+          "features": [
+            "soaking_tub",
+            "steam_shower",
+            "heated_floors"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "type": "picture"
+            },
+            {
+              "wall": "north",
+              "type": "casement"
+            }
+          ],
+          "features": [
+            "en_suite_bath",
+            "built_in_desk"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 45,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "type": "picture"
+            },
+            {
+              "wall": "south",
+              "type": "casement"
+            }
+          ],
+          "features": [
+            "en_suite_bath",
+            "walk_in_closet"
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 55,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "picture"
+            },
+            {
+              "wall": "west",
+              "type": "corner"
+            }
+          ],
+          "features": [
+            "built_in_shelving",
+            "soundproofing"
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 55,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "clerestory"
+            }
+          ],
+          "features": [
+            "heated_floors",
+            "accessible_design"
+          ]
+        },
+        {
+          "id": "laundry_room",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 55,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "double_pane"
+            }
+          ],
+          "features": [
+            "side_by_side_units",
+            "sink",
+            "drying_rack"
+          ]
+        },
+        {
+          "id": "elevator_lobby",
+          "type": "circulation",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "elevator"
+            }
+          ],
+          "windows": [],
+          "features": []
+        },
+        {
+          "id": "upper_stairwell",
+          "type": "circulation",
+          "bounds": {
+            "x": 45,
+            "y": 6,
+            "width": 6,
+            "height": 24
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "clerestory"
+            }
+          ],
+          "features": [
+            "skylight"
+          ]
+        }
+      ]
+    }
+  ]
+}

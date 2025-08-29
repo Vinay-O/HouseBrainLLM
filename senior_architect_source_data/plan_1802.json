@@ -1,0 +1,154 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 640,
+      "style": "Mid-Century Modern"
+    },
+    "plot": {
+      "shape": "Rectangular",
+      "width": 40,
+      "depth": 16,
+      "orientation": "East-West Linear",
+      "location": "Flood-Prone Riverside",
+      "climate": "Tropical with Monsoons",
+      "notes": "Earth-sheltered design for insulation and flood resilience, elevated structure, privacy considerations from neighbors"
+    },
+    "roomBreakdown": [
+      {
+        "roomType": "artist_studio",
+        "area": 320,
+        "description": "Primary workspace with north-facing clerestory windows for optimal natural light, elevated for flood protection"
+      },
+      {
+        "roomType": "office",
+        "area": 160,
+        "description": "Home-based business office space with privacy considerations"
+      },
+      {
+        "roomType": "living_area",
+        "area": 96,
+        "description": "Combined living space with Mid-Century Modern design elements"
+      },
+      {
+        "roomType": "kitchen",
+        "area": 64,
+        "description": "Compact kitchenette for basic food preparation"
+      }
+    ]
+  },
+  "total_area": 640.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "artist_studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 36,
+                "y": 8
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "position": "north_wall",
+              "size": "continuous"
+            }
+          ]
+        },
+        {
+          "id": "office",
+          "type": "office",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 20,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 12
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": "east_wall",
+              "size": "narrow"
+            }
+          ]
+        },
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 12
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": "west_wall",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 32,
+            "y": 8,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 32,
+                "y": 12
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": "west_wall",
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

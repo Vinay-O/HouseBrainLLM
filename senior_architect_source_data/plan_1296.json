@@ -1,0 +1,256 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 4200,
+      "style": "Prairie"
+    },
+    "plot": {
+      "slope": "terraced_mountain",
+      "climate": "alpine_heavy_snow",
+      "orientation": "north",
+      "hazards": [
+        "wildfire"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "workshop",
+        "features": [
+          "hydraulic_car_lift"
+        ]
+      },
+      {
+        "type": "primary_suite",
+        "features": []
+      },
+      {
+        "type": "guest_bedroom",
+        "features": []
+      },
+      {
+        "type": "office",
+        "features": []
+      },
+      {
+        "type": "great_room",
+        "features": [
+          "passive_solar",
+          "thermal_mass"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "features": []
+      },
+      {
+        "type": "garage",
+        "features": []
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 2850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "workshop_0",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "overhead"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "fixed"
+            }
+          ]
+        },
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "overhead"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_0",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry_0",
+          "type": "foyer",
+          "bounds": {
+            "x": 35,
+            "y": 10,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "main_entry"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "fixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "great_room_1",
+          "type": "great_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "sliding"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "curved_glass"
+            },
+            {
+              "wall": "south",
+              "type": "clerestory"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "casement"
+            }
+          ]
+        },
+        {
+          "id": "primary_suite_1",
+          "type": "primary_suite",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "casement"
+            }
+          ]
+        },
+        {
+          "id": "office_1",
+          "type": "office",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "picture"
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom_1",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 40,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "casement"
+            }
+          ]
+        },
+        {
+          "id": "bath_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 40,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "pocket"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

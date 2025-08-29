@@ -1,0 +1,202 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Organic Architecture"
+    },
+    "plot": {
+      "location": "suburban cul-de-sac",
+      "climate": "temperate maritime",
+      "orientation": "south-facing for solar gain",
+      "constraints": "privacy from neighbors"
+    },
+    "roomBreakdown": [
+      {
+        "type": "chef_kitchen",
+        "features": [
+          "wood-fired oven"
+        ]
+      },
+      {
+        "type": "primary_suite",
+        "features": [
+          "walk-in closet",
+          "accessible bathroom"
+        ]
+      },
+      {
+        "type": "guest_bedroom",
+        "features": [
+          "flex space"
+        ]
+      },
+      {
+        "type": "study",
+        "features": []
+      },
+      {
+        "type": "great_room",
+        "features": [
+          "central atrium access"
+        ]
+      },
+      {
+        "type": "dining_room",
+        "features": []
+      },
+      {
+        "type": "utility_room",
+        "features": []
+      },
+      {
+        "type": "atrium",
+        "features": [
+          "temperature regulation",
+          "natural ventilation"
+        ]
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 360000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "atrium",
+          "type": "atrium",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "north",
+            "south",
+            "east",
+            "west"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        },
+        {
+          "id": "chef_kitchen",
+          "type": "chef_kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "south_to_atrium"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "great_room",
+          "type": "great_room",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "south_to_atrium"
+          ],
+          "windows": [
+            "south",
+            "east"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "south_to_atrium"
+          ],
+          "windows": [
+            "south",
+            "west"
+          ]
+        },
+        {
+          "id": "primary_suite",
+          "type": "primary_suite",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "north_to_atrium"
+          ],
+          "windows": [
+            "north"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "north_to_atrium"
+          ],
+          "windows": [
+            "north"
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 35,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "north_to_atrium"
+          ],
+          "windows": [
+            "north"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "east_to_atrium"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

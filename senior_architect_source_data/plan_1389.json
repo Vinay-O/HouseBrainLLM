@@ -1,0 +1,123 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 320,
+      "style": "Scandinavian Hygge-inspired A-frame with Modern Extensions"
+    },
+    "plot": {
+      "orientation": "Diagonal to prevailing winds",
+      "climate": "Temperate maritime"
+    },
+    "roomBreakdown": [
+      {
+        "type": "yoga_studio",
+        "area": 200,
+        "features": [
+          "heated_floors",
+          "geothermal_heating_cooling",
+          "aging_in_place_modifications"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "area": 60,
+        "features": [
+          "aging_in_place_modifications",
+          "geothermal_heating_cooling"
+        ]
+      },
+      {
+        "type": "entry",
+        "area": 60,
+        "features": [
+          "aging_in_place_modifications"
+        ]
+      }
+    ]
+  },
+  "total_area": 320.0,
+  "construction_cost": 185000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "yoga_studio",
+          "type": "yoga_studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3,
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "entry",
+          "type": "entry",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

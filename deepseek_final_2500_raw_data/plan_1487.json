@@ -1,0 +1,204 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 2200,
+      "style": "Industrial Loft"
+    },
+    "plot": {
+      "orientation": "north",
+      "climate": "desert_extreme_temperatures",
+      "topography": "sunken_courtyard"
+    },
+    "roomBreakdown": [
+      {
+        "type": "artist_studio",
+        "specialFeatures": [
+          "north_facing_clerestory_windows"
+        ]
+      },
+      {
+        "type": "guest_accommodation",
+        "specialFeatures": [
+          "frequent_visitors"
+        ]
+      }
+    ],
+    "sustainability": [
+      "solar_panel_array",
+      "battery_storage"
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 330000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 16
+          },
+          "doors": [
+            "entry_door_north",
+            "door_to_hall"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            "door_to_hall",
+            "sliding_door_to_courtyard"
+          ],
+          "windows": []
+        },
+        {
+          "id": "artist_studio",
+          "type": "artist_studio",
+          "bounds": {
+            "x": 16,
+            "y": 16,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "north_clerestory_window"
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 36,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            "door_to_hall",
+            "door_to_bath"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 36,
+            "y": 16,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            "door_to_hall",
+            "door_to_bath"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 52,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            "door_to_primary_bedroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 52,
+            "y": 16,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "door_to_guest_bedroom",
+            "door_to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 52,
+            "y": 24,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "main_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 36,
+            "y": 28,
+            "width": 16,
+            "height": 8
+          },
+          "doors": [
+            "door_to_living",
+            "door_to_kitchen",
+            "door_to_dining",
+            "door_to_studio",
+            "door_to_primary",
+            "door_to_guest",
+            "door_to_guest_bath",
+            "door_to_utility"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 1,
+      "totalArea": 400,
+      "style": "Brutalist Concrete"
+    },
+    "plot": {
+      "orientation": "north",
+      "climate": "tropical_monsoon",
+      "size": "compact_urban_balcony"
+    },
+    "roomBreakdown": [
+      {
+        "roomType": "artist_studio",
+        "area": 200,
+        "description": "Primary workspace with north-facing clerestory windows for consistent natural light, Brutalist concrete finishes, and integrated storage."
+      },
+      {
+        "roomType": "outdoor_entertaining",
+        "area": 120,
+        "description": "Covered outdoor space for entertaining, accessible from the studio, with concrete seating and planters."
+      },
+      {
+        "roomType": "utility",
+        "area": 80,
+        "description": "Housing battery storage system, solar inverter, and rainwater collection tank for the prototype."
+      }
+    ]
+  },
+  "total_area": 400.0,
+  "construction_cost": 85000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "artist_studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "wall": "north",
+              "position": 5,
+              "size": 15
+            }
+          ]
+        },
+        {
+          "id": "outdoor_deck",
+          "type": "deck",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 20,
+            "height": 6
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "utility_closet",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 10,
+            "height": 4
+          },
+          "doors": [
+            {
+              "type": "solid",
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

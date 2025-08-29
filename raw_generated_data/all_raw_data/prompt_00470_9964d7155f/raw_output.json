@@ -1,0 +1,139 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Master_Bedroom",
+          "area_sqft": 300,
+          "features": ["attached_bathroom", "wardrobe_space"],
+          "location": {"x": 15, "y": 20},
+          "vastu_compliance": true
+        },
+        {
+          "room_name": "Bedroom_2",
+          "area_sqft": 200,
+          "features": ["attached_bathroom", "wardrobe_space"],
+          "location": {"x": 15, "y": 70},
+          "vastu_compliance": true
+        },
+        {
+          "room_name": "Bedroom_3",
+          "area_sqft": 200,
+          "features": ["attached_bathroom", "wardrobe_space"],
+          "location": {"x": 15, "y": 120},
+          "vastu_compliance": true
+        },
+        {
+          "room_name": "Living_Room",
+          "area_sqft": 300,
+          "features": ["large_window", "open_shelf"],
+          "location": {"x": 5, "y": 170},
+          "vastu_compliance": true
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 200,
+          "features": ["cooking_area", "dining_table"],
+          "location": {"x": 65, "y": 170},
+          "vastu_compliance": true
+        },
+        {
+          "room_name": "Pantry",
+          "area_sqft": 50,
+          "features": ["storage"],
+          "location": {"x": 90, "y": 170},
+          "vastu_compliance": true
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "room_connected_to": "Living_Room",
+          "location": {"x": 25, "y": 185}
+        },
+        {
+          "opening_type": "window",
+          "room_connected_to": "Master_Bedroom",
+          "location": {"x": 30, "y": 40}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Guest_Room",
+          "area_sqft": 250,
+          "features": ["attached_bathroom", "wardrobe_space"],
+          "location": {"x": 15, "y": 20},
+          "vastu_compliance": true
+        },
+        {
+          "room_name": "Study_Room",
+          "area_sqft": 200,
+          "features": ["book_shelf", "study_table"],
+          "location": {"x": 15, "y": 70},
+          "vastu_compliance": true
+        },
+        {
+          "room_name": "Game_Room",
+          "area_sqft": 250,
+          "features": ["pool_table", "TV"],
+          "location": {"x": 15, "y": 120},
+          "vastu_compliance": true
+        },
+        {
+          "room_name": "Balcony",
+          "area_sqft": 100,
+          "features": ["seating_area", "view"],
+          "location": {"x": 5, "y": 170},
+          "vastu_compliance": true
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "room_connected_to": "Guest_Room",
+          "location": {"x": 25, "y": 40}
+        },
+        {
+          "opening_type": "window",
+          "room_connected_to": "Study_Room",
+          "location": {"x": 30, "y": 85}
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [
+        {
+          "room_name": "Swimming_Pool_Area",
+          "area_sqft": 400,
+          "features": ["pool", "sun_deck"],
+          "location": {"x": 15, "y": 20},
+          "vastu_compliance": true
+        },
+        {
+          "room_name": "Garden_Area",
+          "area_sqft": 450,
+          "features": ["flower_beds", "seating_area"],
+          "location": {"x": 15, "y": 70},
+          "vastu_compliance": true
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "room_connected_to": "Swimming_Pool_Area",
+          "location": {"x": 25, "y": 40}
+        },
+        {
+          "opening_type": "entrance",
+          "room_connected_to": "Garden_Area",
+          "location": {"x": 30, "y": 85}
+        }
+      ]
+    }
+  ]
+}

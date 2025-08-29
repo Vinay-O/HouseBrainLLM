@@ -1,0 +1,101 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "area_sqft": 500,
+          "location": { "x": 10, "y": 10 },
+          "adjacent_rooms": ["Kitchen", "Bedroom 1"]
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 300,
+          "location": { "x": 650, "y": 200 },
+          "is_open_plan": true,
+          "adjacent_rooms": ["Living Room", "Dining Area"]
+        },
+        {
+          "room_name": "Bedroom 1",
+          "area_sqft": 350,
+          "location": { "x": 60, "y": 400 },
+          "adjacent_rooms": ["Bathroom 1", "Living Room"]
+        },
+        {
+          "room_name": "Dining Area",
+          "area_sqft": 200,
+          "location": { "x": 590, "y": 360 },
+          "is_open_plan": true
+        },
+        {
+          "room_name": "Bedroom 2",
+          "area_sqft": 350,
+          "location": { "x": 60, "y": 780 },
+          "adjacent_rooms": ["Bathroom 2", "Study Room"]
+        },
+        {
+          "room_name": "Study Room",
+          "area_sqft": 150,
+          "location": { "x": 420, "y": 790 }
+        },
+        {
+          "room_name": "Bedroom 3",
+          "area_sqft": 350,
+          "location": { "x": 60, "y": 1180 },
+          "adjacent_rooms": ["Bathroom 3"]
+        },
+        {
+          "room_name": "Bathroom 1",
+          "area_sqft": 75,
+          "location": { "x": 400, "y": 460 }
+        },
+        {
+          "room_name": "Bathroom 2",
+          "area_sqft": 75,
+          "location": { "x": 180, "y": 830 }
+        },
+        {
+          "room_name": "Bathroom 3",
+          "area_sqft": 75,
+          "location": { "x": 180, "y": 1230 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Door",
+          "from_room": "Living Room",
+          "to_room": "Kitchen"
+        },
+        {
+          "opening_type": "Door",
+          "from_room": "Living Room",
+          "to_room": "Bedroom 1"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Private Gym",
+          "area_sqft": 500,
+          "location": { "x": 60, "y": 470 }
+        },
+        {
+          "room_name": "Rooftop Terrace",
+          "area_sqft": 932,
+          "location": { "x": 10, "y": 10 },
+          "adjacent_rooms": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Staircase",
+          "from_level": "ground_floor",
+          "to_level": "first_floor"
+        }
+      ]
+    }
+  ]
+}

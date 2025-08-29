@@ -1,0 +1,183 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 1200,
+      "style": "Minimalist Farmhouse"
+    },
+    "plot": {
+      "type": "corner",
+      "features": [
+        "swimming pool"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "count": 1
+      },
+      {
+        "type": "open_plan_kitchen_living",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 1
+      },
+      {
+        "type": "rooftop_terrace",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 240000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "open_studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 3
+            },
+            {
+              "wall": "east",
+              "position": 15,
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "bathroom_ground",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 2
+            }
+          ]
+        },
+        {
+          "id": "pool_area",
+          "type": "exterior",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_loft",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": 3
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "bathroom_upper",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 5,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "size": 2
+            }
+          ]
+        },
+        {
+          "id": "rooftop_terrace",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

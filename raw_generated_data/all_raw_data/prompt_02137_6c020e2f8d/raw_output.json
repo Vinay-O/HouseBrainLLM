@@ -1,0 +1,115 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {
+        "room_id": "entrance_hall",
+        "description": "Large entrance hall with Scandinavian design elements and minimalistic decor.",
+        "dimensions": {"length": 12, "width": 8},
+        "vastu_compliance": true,
+        "adjacencies": ["living_room", "dining_area"]
+      },
+      {
+        "room_id": "living_room",
+        "description": "Spacious living room with natural light and Scandinavian minimalist furniture.",
+        "dimensions": {"length": 20, "width": 15},
+        "vastu_compliance": true,
+        "adjacencies": ["entrance_hall", "dining_area", "central_courtyard"]
+      },
+      {
+        "room_id": "dining_area",
+        "description": "Open dining area integrated with living space, featuring sleek Scandinavian furniture.",
+        "dimensions": {"length": 15, "width": 10},
+        "vastu_compliance": true,
+        "adjacencies": ["entrance_hall", "living_room"]
+      },
+      {
+        "room_id": "kitchen",
+        "description": "Fully equipped kitchen with Scandinavian design aesthetics, featuring energy-efficient appliances.",
+        "dimensions": {"length": 12, "width": 10},
+        "vastu_compliance": true,
+        "adjacencies": ["dining_area", "servants_quarters"]
+      },
+      {
+        "room_id": "master_bedroom",
+        "description": "Spacious master bedroom with built-in wardrobes and a private balcony.",
+        "dimensions": {"length": 16, "width": 12},
+        "vastu_compliance": true,
+        "adjacencies": ["bathroom"]
+      },
+      {
+        "room_id": "bedroom_1",
+        "description": "Child's bedroom with Scandinavian style decor and ample storage.",
+        "dimensions": {"length": 14, "width": 10},
+        "vastu_compliance": true,
+        "adjacencies": ["central_courtyard"]
+      },
+      {
+        "room_id": "bedroom_2",
+        "description": "Secondary bedroom with functional Scandinavian design.",
+        "dimensions": {"length": 14, "width": 10},
+        "vastu_compliance": true,
+        "adjacencies": ["central_courtyard"]
+      },
+      {
+        "room_id": "study_room",
+        "description": "Home office/study area designed with a Scandinavian aesthetic for productivity.",
+        "dimensions": {"length": 12, "width": 10},
+        "vastu_compliance": true,
+        "adjacencies": ["entrance_hall"]
+      },
+      {
+        "room_id": "guest_room",
+        "description": "Guest room with modern Scandinavian furnishing and privacy.",
+        "dimensions": {"length": 12, "width": 10},
+        "vastu_compliance": true,
+        "adjacencies": ["central_courtyard"]
+      },
+      {
+        "room_id": "bathroom_master",
+        "description": "Master bathroom with Scandinavian fixtures and ample storage space.",
+        "dimensions": {"length": 8, "width": 6},
+        "vastu_compliance": true,
+        "adjacencies": ["master_bedroom"]
+      },
+      {
+        "room_id": "bathroom_guest",
+        "description": "Guest bathroom designed with Scandinavian elegance.",
+        "dimensions": {"length": 8, "width": 6},
+        "vastu_compliance": true,
+        "adjacencies": ["guest_room", "study_room"]
+      }
+    ],
+    "openings": [
+      {
+        "opening_id": "front_door",
+        "description": "Main entrance door with Scandinavian design detailing.",
+        "location": {"x": 5, "y": 0}
+      },
+      {
+        "opening_id": "backdoor_to_courtyard",
+        "description": "Door opening leading to the central courtyard, ensuring natural light.",
+        "location": {"x": 45, "y": 10}
+      },
+      {
+        "opening_id": "servant_access",
+        "description": "Servants' quarter access door integrated into the kitchen area.",
+        "location": {"x": 40, "y": 12}
+      }
+    ],
+    "courtyard": {
+      "room_id": "central_courtyard",
+      "description": "Central open courtyard designed for relaxation and natural ventilation, incorporating Scandinavian minimalism.",
+      "dimensions": {"length": 20, "width": 20},
+      "vastu_compliance": true,
+      "adjacencies": ["living_room", "bedroom_1", "bedroom_2", "guest_room"]
+    },
+    "servants_quarters": {
+      "room_id": "servants_quarters",
+      "description": "Dedicated servant's quarters area with essential amenities.",
+      "dimensions": {"length": 12, "width": 8},
+      "vastu_compliance": true,
+      "adjacencies": ["kitchen"]
+    }
+  }
+]}

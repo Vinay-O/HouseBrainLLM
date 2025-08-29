@@ -1,0 +1,69 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "location": { "coordinates": [10, 25], "orientation": "east" },
+          "dimensions": { "width": 4.5, "depth": 6 }
+        },
+        {
+          "room_name": "Bedroom",
+          "location": { "coordinates": [30, 20], "orientation": "south-east" },
+          "dimensions": { "width": 4, "depth": 5 }
+        },
+        {
+          "room_name": "Kitchen",
+          "location": { "coordinates": [15, 45], "orientation": "north-west" },
+          "dimensions": { "width": 3.5, "depth": 4.5 }
+        },
+        {
+          "room_name": "Servant's Quarters",
+          "location": { "coordinates": [60, 10], "orientation": "west" },
+          "dimensions": { "width": 2.5, "depth": 3.5 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "location": { "room_name": "Living Room", "wall_side": "south" },
+          "dimensions": { "width": 1.5, "height": 2 }
+        },
+        {
+          "opening_type": "Door",
+          "location": { "room_name": "Bedroom", "wall_side": "east" },
+          "dimensions": { "width": 0.8, "height": 2 }
+        },
+        {
+          "opening_type": "Window",
+          "location": { "room_name": "Kitchen", "wall_side": "north-west" },
+          "dimensions": { "width": 1.5, "height": 2 }
+        },
+        {
+          "opening_type": "Door",
+          "location": { "room_name": "Servant's Quarters", "wall_side": "west" },
+          "dimensions": { "width": 0.8, "height": 2 }
+        }
+      ]
+    },
+    {
+      "level_id": "roof_level",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_type": "Terrace Entrance",
+          "location": { "coordinates": [35, 7], "wall_side": "north-east" },
+          "dimensions": { "width": 1.2, "height": 2 }
+        }
+      ]
+    }
+  ],
+  "exterior_features": [
+    {
+      "feature_name": "Garden",
+      "location": { "coordinates": [50, 40], "orientation": "south-east" },
+      "dimensions": { "width": 15, "depth": 20 }
+    }
+  ]
+}

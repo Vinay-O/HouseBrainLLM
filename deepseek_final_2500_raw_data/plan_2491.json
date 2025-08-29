@@ -1,0 +1,267 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 180,
+      "style": "Tropical Modernist"
+    },
+    "plot": {
+      "width": 4,
+      "depth": 22.5,
+      "orientation": "south"
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_theater",
+        "area": 30
+      },
+      {
+        "type": "bedroom",
+        "area": 20
+      },
+      {
+        "type": "bedroom",
+        "area": 20
+      },
+      {
+        "type": "kitchen",
+        "area": 15
+      },
+      {
+        "type": "living_room",
+        "area": 35
+      },
+      {
+        "type": "bathroom",
+        "area": 10
+      },
+      {
+        "type": "utility",
+        "area": 10
+      },
+      {
+        "type": "entry",
+        "area": 10
+      },
+      {
+        "type": "outdoor",
+        "area": 30
+      }
+    ]
+  },
+  "total_area": 180.0,
+  "construction_cost": 360000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_court",
+          "type": "outdoor",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2,
+              "type": "sliding_glass"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "home_theater",
+          "type": "home_theater",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 4,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2,
+              "type": "standard"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "fiber_optic_star_ceiling"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 12.5,
+            "width": 4,
+            "height": 2.5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2,
+              "type": "standard"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "solar_collector_mechanicals"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2,
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2,
+              "type": "clerestory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 8.75
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2,
+              "type": "sliding_glass"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2,
+              "type": "full_height"
+            }
+          ],
+          "features": [
+            "pet_access_door"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 8.75,
+            "width": 4,
+            "height": 3.75
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 12.5,
+            "width": 2,
+            "height": 2.5
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 1.25,
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 2,
+            "y": 12.5,
+            "width": 2,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 1,
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 1,
+              "type": "clerestory"
+            }
+          ]
+        },
+        {
+          "id": "roof_terrace",
+          "type": "outdoor",
+          "bounds": {
+            "x": 0,
+            "y": 17.5,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2,
+              "type": "sliding_glass"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "pet_access_door"
+          ]
+        }
+      ]
+    }
+  ],
+  "features": [
+    "partially_underground",
+    "south_orientation",
+    "radiant_floor_heating",
+    "solar_collectors",
+    "tropical_modernist_design",
+    "pet_friendly_access"
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 800.0,
+      "style": "Eco-friendly"
+    },
+    "plot": {
+      "shape": "irregular",
+      "description": "Irregular plot shape requiring adaptive design"
+    },
+    "roomBreakdown": [
+      {
+        "room": "Living Room",
+        "area": 200.0,
+        "description": "Open-plan living area with floor-to-ceiling windows"
+      },
+      {
+        "room": "Kitchen",
+        "area": 120.0,
+        "description": "Efficient galley kitchen with energy-efficient appliances"
+      },
+      {
+        "room": "Bedroom",
+        "area": 180.0,
+        "description": "Master bedroom with floor-to-ceiling windows and walk-in closet"
+      },
+      {
+        "room": "Bathroom",
+        "area": 80.0,
+        "description": "Water-efficient bathroom with low-flow fixtures"
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "floor-to-ceiling"
+            },
+            {
+              "wall": "east",
+              "position": 8,
+              "size": "floor-to-ceiling"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "size": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 2,
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "size": "floor-to-ceiling"
+            },
+            {
+              "wall": "west",
+              "position": 12,
+              "size": "floor-to-ceiling"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3,
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 15, "width": 20 },
+          "position": { "x": 0, "y": 0 }
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": { "length": 12, "width": 15 },
+          "position": { "x": 20, "y": 0 }
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 12, "width": 12 },
+          "position": { "x": 35, "y": 0 }
+        },
+        {
+          "room_type": "bedroom",
+          "bedroom_number": 1,
+          "dimensions": { "length": 15, "width": 15 },
+          "position": { "x": 0, "y": 20 }
+        },
+        {
+          "room_type": "bedroom",
+          "bedroom_number": 2,
+          "dimensions": { "length": 15, "width": 15 },
+          "position": { "x": 15, "y": 20 }
+        },
+        {
+          "room_type": "gym",
+          "dimensions": { "length": 15, "width": 15 },
+          "position": { "x": 30, "y": 20 }
+        },
+        {
+          "room_type": "library",
+          "dimensions": { "length": 10, "width": 15 },
+          "position": { "x": 45, "y": 20 }
+        },
+        {
+          "room_type": "bathroom",
+          "associated_room": "bedroom_1",
+          "dimensions": { "length": 5, "width": 8 },
+          "position": { "x": 0, "y": 35 }
+        },
+        {
+          "room_type": "bathroom",
+          "associated_room": "bedroom_2",
+          "dimensions": { "length": 5, "width": 8 },
+          "position": { "x": 15, "y": 35 }
+        },
+        {
+          "room_type": "utility",
+          "dimensions": { "length": 8, "width": 8 },
+          "position": { "x": 45, "y": 20 }
+        }
+      ],
+      "openings": [
+        {
+          "type": "main_entrance",
+          "dimensions": { "length": 6, "width": 10 },
+          "position": { "x": 0, "y": -5 }
+        },
+        {
+          "type": "back_door",
+          "dimensions": { "length": 4, "width": 7 },
+          "position": { "x": 50, "y": 35 }
+        },
+        {
+          "type": "window",
+          "associated_room": "living_room",
+          "dimensions": { "length": 5, "width": 5 },
+          "position": { "x": 10, "y": 5 }
+        },
+        {
+          "type": "window",
+          "associated_room": "bedroom_1",
+          "dimensions": { "length": 6, "width": 6 },
+          "position": { "x": 5, "y": 25 }
+        },
+        {
+          "type": "window",
+          "associated_room": "gym",
+          "dimensions": { "length": 4, "width": 7 },
+          "position": { "x": 35, "y": 25 }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "bedroom_number": 3,
+          "dimensions": { "length": 18, "width": 18 },
+          "position": { "x": 0, "y": 20 }
+        },
+        {
+          "room_type": "balcony",
+          "associated_room": "bedroom_3",
+          "dimensions": { "length": 5, "width": 18 },
+          "position": { "x": 0, "y": 40 }
+        },
+        {
+          "room_type": "bathroom",
+          "associated_room": "bedroom_3",
+          "dimensions": { "length": 6, "width": 9 },
+          "position": { "x": 18, "y": 25 }
+        },
+        {
+          "room_type": "study_room",
+          "dimensions": { "length": 10, "width": 12 },
+          "position": { "x": 30, "y": 20 }
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "associated_room": "bedroom_3",
+          "dimensions": { "length": 6, "width": 8 },
+          "position": { "x": 5, "y": 25 }
+        },
+        {
+          "type": "window",
+          "associated_room": "study_room",
+          "dimensions": { "length": 4, "width": 6 },
+          "position": { "x": 35, "y": 25 }
+        }
+      ]
+    }
+  ],
+  "plot_dimensions": {
+    "length": 80,
+    "width": 50
+  },
+  "design_style": "brutalist",
+  "bedrooms": 3,
+  "special_rooms": ["gym", "library"],
+  "vastu_compliance": true
+}

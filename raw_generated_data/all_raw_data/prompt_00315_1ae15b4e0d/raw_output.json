@@ -1,0 +1,85 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "dimensions": [15, 20],
+          "position": [0, 0]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": [12, 15],
+          "position": [38, 10]
+        },
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": [14, 16],
+          "position": [20, 40]
+        },
+        {
+          "room_name": "Bedroom 2",
+          "dimensions": [13, 15],
+          "position": [38, 45]
+        },
+        {
+          "room_name": "Bedroom 3",
+          "dimensions": [13, 15],
+          "position": [0, 45]
+        },
+        {
+          "room_name": "Home Theater",
+          "dimensions": [20, 16],
+          "position": [19, 0]
+        },
+        {
+          "room_name": "Private Gym",
+          "dimensions": [13, 15],
+          "position": [0, 10]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "location": ["Living Room", "east"]
+        },
+        {
+          "opening_type": "Door",
+          "location": ["Kitchen", "north-east"]
+        },
+        {
+          "opening_type": "Verandah",
+          "dimensions": [20, 15],
+          "position": [20, 0]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Guest Room",
+          "dimensions": [14, 16],
+          "position": [20, 30]
+        },
+        {
+          "room_name": "Bathroom",
+          "dimensions": [8, 10],
+          "position": [35, 20]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "location": ["Guest Room", "west"]
+        },
+        {
+          "opening_type": "Staircase",
+          "from": "Living Room",
+          "to": "Guest Room"
+        }
+      ]
+    }
+  ]
+}

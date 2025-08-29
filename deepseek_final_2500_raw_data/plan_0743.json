@@ -1,0 +1,410 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 6500,
+      "style": "Rajasthani Haveli"
+    },
+    "plot": {
+      "area": 10000,
+      "orientation": "south",
+      "view": "garden and river",
+      "constraints": [
+        "flood zone",
+        "high water table"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4,
+        "area": 800
+      },
+      {
+        "type": "home_office",
+        "count": 2,
+        "area": 500
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 600
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "area": 300
+      },
+      {
+        "type": "corridor",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "veranda",
+        "count": 1,
+        "area": 600
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 2000
+      }
+    ]
+  },
+  "total_area": 6500.0,
+  "construction_cost": 1625000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard_1",
+          "type": "courtyard",
+          "bounds": {
+            "x": 40,
+            "y": 30,
+            "width": 40,
+            "height": 50
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "veranda_1",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 40,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 25,
+            "height": 24
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5
+            },
+            {
+              "wall": "south",
+              "position": 19
+            }
+          ]
+        },
+        {
+          "id": "dining_room_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 40,
+            "width": 15,
+            "height": 24
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2
+            },
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 55,
+            "y": 40,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5
+            },
+            {
+              "wall": "south",
+              "position": 19
+            }
+          ]
+        },
+        {
+          "id": "utility_1",
+          "type": "utility",
+          "bounds": {
+            "x": 55,
+            "y": 60,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "home_office_1",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 64,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 8
+            }
+          ]
+        },
+        {
+          "id": "home_office_2",
+          "type": "home_office",
+          "bounds": {
+            "x": 20,
+            "y": 64,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 8
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 65,
+            "y": 60,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 80,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 5
+            },
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 80,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 80,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 60,
+            "y": 80,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 70,
+            "y": 80,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 60,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "corridor_1",
+          "type": "corridor",
+          "bounds": {
+            "x": 40,
+            "y": 70,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

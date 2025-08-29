@@ -1,0 +1,85 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 12 },
+          "position": { "x_start": 0, "y_start": 0 },
+          "features": ["floor-to-ceiling windows", "entrance to home office"]
+        },
+        {
+          "room_id": "home_office",
+          "shape": "rectangle",
+          "dimensions": { "length": 12, "width": 10 },
+          "position": { "x_start": 15, "y_start": 0 }
+        },
+        {
+          "room_id": "bedroom",
+          "shape": "rectangle",
+          "dimensions": { "length": 18, "width": 14 },
+          "position": { "x_start": 27, "y_start": 0 },
+          "features": ["floor-to-ceiling windows"]
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "rectangle",
+          "dimensions": { "length": 12, "width": 10 },
+          "position": { "x_start": 0, "y_start": 12 }
+        },
+        {
+          "room_id": "bathroom",
+          "shape": "square",
+          "dimensions": { "length": 8, "width": 8 },
+          "position": { "x_start": 12, "y_start": 12 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "entrance_door",
+          "type": "door",
+          "dimensions": { "length": 3.5, "width": 0.8 },
+          "position": { "x_start": 0, "y_start": 6 }
+        },
+        {
+          "opening_id": "living_to_kitchen",
+          "type": "passage",
+          "dimensions": { "length": 1.5, "width": 2 },
+          "position": { "x_start": 12, "y_start": 0 }
+        }
+      ],
+      "outdoor_spaces": [
+        {
+          "space_id": "garden",
+          "shape": "rectangle",
+          "dimensions": { "length": 50, "width": 40 },
+          "position": { "x_start": 0, "y_start": 22 }
+        }
+      ]
+    }
+  ],
+  "ecofriendly_features": [
+    {
+      "feature_id": "solar_panels",
+      "type": "renewable_energy",
+      "description": "Solar panels on the roof for electricity generation"
+    },
+    {
+      "feature_id": "rainwater_harvesting",
+      "type": "water_conservation",
+      "description": "System for collecting and storing rainwater"
+    }
+  ],
+  "vastu_compliance": [
+    {
+      "principle_id": "entrance_direction",
+      "description": "North-facing entrance as per Vastu Shastra for positive energy flow"
+    },
+    {
+      "principle_id": "kitchen_location",
+      "description": "Kitchen located in the southeast direction, ideal according to Vastu"
+    }
+  ]
+}

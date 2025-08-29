@@ -1,0 +1,101 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "dimensions": {"length": 10, "width": 8},
+          "direction": "North",
+          "description": "Main entrance hall with North-facing entry, providing ample natural light."
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": {"length": 15, "width": 12},
+          "adjacent_to": ["entrance_hall", "dining_area"],
+          "description": "Spacious living area with windows facing the central courtyard to ensure ventilation and natural light."
+        },
+        {
+          "room_type": "dining_area",
+          "dimensions": {"length": 10, "width": 8},
+          "adjacent_to": ["living_room", "kitchen"],
+          "description": "Dining space adjacent to the living room for family gatherings."
+        },
+        {
+          "room_type": "master_bedroom",
+          "dimensions": {"length": 12, "width": 10},
+          "location": "South-West quadrant",
+          "balcony": true,
+          "description": "Master bedroom with a private balcony overlooking the courtyard, designed per Vastu for calm energy."
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"length": 10, "width": 8},
+          "location": "North-West quadrant",
+          "description": "Additional bedroom ensuring privacy and adherence to local norms."
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"length": 10, "width": 8},
+          "location": "South-East quadrant",
+          "description": "Another additional bedroom positioned for energy flow as per Vastu guidelines."
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"length": 10, "width": 8},
+          "location": "North-East quadrant",
+          "description": "Third additional bedroom to complete the 5BHK layout while maintaining balance and privacy."
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {"length": 12, "width": 10},
+          "adjacent_to": ["dining_area", "storage"],
+          "description": "Well-lit kitchen with adequate ventilation and a small storage area for utensils."
+        },
+        {
+          "room_type": "library",
+          "dimensions": {"length": 8, "width": 6},
+          "location": "East side of courtyard",
+          "description": "Cozy library space designed with Vastu principles in mind to foster learning and tranquility."
+        },
+        {
+          "room_type": "storage",
+          "dimensions": {"length": 6, "width": 4},
+          "adjacent_to": ["kitchen"],
+          "description": "Utility storage area for kitchen and household items."
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": {"length": 5, "width": 3.5},
+          "location": "Adjacent to master bedroom",
+          "description": "Private bathroom for the master suite ensuring easy access and privacy."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "entrance_door",
+          "dimensions": {"height": 7, "width": 3},
+          "direction": "North",
+          "location": "front"
+        },
+        {
+          "opening_type": "window",
+          "dimensions": {"height": 4, "width": 3},
+          "direction": "South",
+          "location": "living_room_window_to_courtyard"
+        },
+        {
+          "opening_type": "alcove",
+          "dimensions": {"height": 7, "width": 2},
+          "direction": "East",
+          "location": "library_entrance"
+        }
+      ],
+      "courtyard": {
+        "type": "central_courtyard",
+        "area": {"length": 15, "width": 12},
+        "description": "Open central courtyard providing natural light and ventilation to surrounding rooms. Designed to align with Vastu principles, ensuring energy flow."
+      }
+    }
+  ]
+}

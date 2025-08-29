@@ -1,0 +1,101 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "dimensions": { "length": 10, "width": 8 },
+          "direction": "east",
+          "vastu_compliance": true,
+          "description": "A welcoming entrance hall with natural light and ventilation."
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "direction": "south",
+          "vastu_compliance": true,
+          "description": "Spacious living area that serves as the family gathering space, with ample natural light."
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "direction": "west",
+          "vastu_compliance": true,
+          "description": "Dining area designed for family meals and gatherings."
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "direction": "south-east",
+          "vastu_compliance": false,
+          "description": "Functional kitchen with modern amenities while ensuring proper ventilation."
+        },
+        {
+          "room_type": "bedroom_1",
+          "dimensions": { "length": 12, "width": 10 },
+          "direction": "north-west",
+          "vastu_compliance": true,
+          "description": "Primary bedroom with a private balcony and good orientation."
+        },
+        {
+          "room_type": "bedroom_2",
+          "dimensions": { "length": 12, "width": 10 },
+          "direction": "north-east",
+          "vastu_compliance": true,
+          "description": "Additional bedroom ensuring privacy and ample natural light."
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": { "length": 8, "width": 6 },
+          "direction": "south-west",
+          "vastu_compliance": false,
+          "description": "Functional bathroom with essential fixtures and proper ventilation."
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "location": { "room": "entrance_hall", "exit_to": "living_room" },
+          "dimensions": { "height": 7, "width": 3.5 }
+        },
+        {
+          "type": "window",
+          "location": { "room": "living_room", "side": "south" },
+          "dimensions": { "height": 4, "width": 6 }
+        },
+        {
+          "type": "door",
+          "location": { "room": "dining_room", "exit_to": "kitchen" },
+          "dimensions": { "height": 7, "width": 3.5 }
+        },
+        {
+          "type": "window",
+          "location": { "room": "kitchen", "side": "south-east" },
+          "dimensions": { "height": 4, "width": 6 }
+        },
+        {
+          "type": "door",
+          "location": { "room": "bedroom_1", "exit_to": "living_room" },
+          "dimensions": { "height": 7, "width": 3.5 }
+        },
+        {
+          "type": "window",
+          "location": { "room": "bedroom_2", "side": "north-east" },
+          "dimensions": { "height": 4, "width": 6 }
+        },
+        {
+          "type": "door",
+          "location": { "room": "bathroom", "exit_to": "entrance_hall" },
+          "dimensions": { "height": 7, "width": 3.5 }
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "The design incorporates Colonial aesthetics with a modern twist, ensuring both form and functionality.",
+    "The plot is West-facing; thus, living spaces are oriented to maximize sunlight in the morning while providing shade during hotter afternoons.",
+    "Vastu principles have been adhered to by aligning room orientations accordingly for prosperity and harmony.",
+    "Additional level details including the rooftop terrace design would be provided on a subsequent floor plan."
+  ]
+}

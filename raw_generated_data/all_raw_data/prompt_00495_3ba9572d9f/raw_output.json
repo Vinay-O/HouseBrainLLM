@@ -1,0 +1,79 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "area_sqft": 450,
+          "features": ["floor-to-ceiling windows", "art deco elements"],
+          "position": {"x": 10, "y": 10},
+          "adjacent_rooms": ["Kitchen"]
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 250,
+          "features": ["open-plan design", "luxury finishes"],
+          "position": {"x": 460, "y": 10},
+          "adjacent_rooms": ["Living Room"]
+        },
+        {
+          "room_name": "Bedroom",
+          "area_sqft": 350,
+          "features": ["ensuite bathroom", "wardrobe space"],
+          "position": {"x": 720, "y": 10},
+          "adjacent_rooms": []
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "position": {"x": 450, "y": 50}
+        },
+        {
+          "type": "window",
+          "position": {"x": 10, "y": 270},
+          "features": ["floor-to-ceiling"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "area_sqft": 450,
+          "features": ["ensuite bathroom", "balcony with floor-to-ceiling windows"],
+          "position": {"x": 10, "y": 10},
+          "adjacent_rooms": []
+        },
+        {
+          "room_name": "Guest Bedroom",
+          "area_sqft": 350,
+          "features": ["ensuite bathroom", "wardrobe space"],
+          "position": {"x": 470, "y": 10},
+          "adjacent_rooms": []
+        },
+        {
+          "room_name": "Study Room",
+          "area_sqft": 230,
+          "features": ["floor-to-ceiling windows", "art deco elements"],
+          "position": {"x": 830, "y": 10},
+          "adjacent_rooms": []
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "position": {"x": 10, "y": 270},
+          "features": ["floor-to-ceiling"]
+        },
+        {
+          "type": "balcony_window",
+          "position": {"x": 450, "y": 270},
+          "features": ["floor-to-ceiling"]
+        }
+      ]
+    }
+  ]
+}

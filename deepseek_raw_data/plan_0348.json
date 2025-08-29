@@ -1,0 +1,397 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 5,
+      "floors": 3,
+      "totalArea": 4500,
+      "style": "Brutalist"
+    },
+    "plot": {
+      "width": 30,
+      "height": 50
+    },
+    "roomBreakdown": [
+      {
+        "type": "garage",
+        "count": 1,
+        "description": "Two-car garage"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Open-plan kitchen integrated with living area"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Open-plan living area with floor-to-ceiling windows"
+      },
+      {
+        "type": "bedroom",
+        "count": 5,
+        "description": "Including master bedroom with ensuite"
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "description": "Including ensuite bathrooms"
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 1125000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry_0",
+          "type": "entryway",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 10,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 2
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 8
+            },
+            {
+              "wall": "south",
+              "position": 22,
+              "size": 8
+            },
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 8
+            },
+            {
+              "wall": "north",
+              "position": 22,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": 6
+            },
+            {
+              "wall": "west",
+              "position": 7,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "dining_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": 6
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 4,
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "staircase_1",
+          "type": "staircase",
+          "bounds": {
+            "x": 22,
+            "y": 35,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 18,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 9
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 8
+            },
+            {
+              "wall": "north",
+              "position": 13,
+              "size": 8
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "master_bath_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 6
+            },
+            {
+              "wall": "west",
+              "position": 7,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 6
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 4,
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "staircase_2",
+          "type": "staircase",
+          "bounds": {
+            "x": 22,
+            "y": 35,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

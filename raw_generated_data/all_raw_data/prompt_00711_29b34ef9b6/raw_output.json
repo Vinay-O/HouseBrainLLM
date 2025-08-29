@@ -1,0 +1,85 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_area",
+          "shape": "rectangle",
+          "dimensions": {"length": 5.0, "width": 4.0},
+          "position": {"x": 1.0, "y": 1.0},
+          "features": ["open_plan", "minimalist_furniture"],
+          "connected_to": ["kitchen", "dining_area", "terrace_access"]
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "square",
+          "dimensions": {"length": 3.0, "width": 3.0},
+          "position": {"x": 6.0, "y": 1.0},
+          "features": ["open_plan", "modular_cabinets", "gas_stove", "sink"],
+          "connected_to": ["living_area", "dining_area"]
+        },
+        {
+          "room_id": "bedroom",
+          "shape": "rectangle",
+          "dimensions": {"length": 4.0, "width": 3.5},
+          "position": {"x": 1.0, "y": 5.0},
+          "features": ["minimalist_furniture", "wardrobe"],
+          "connected_to": ["bathroom"]
+        },
+        {
+          "room_id": "bathroom",
+          "shape": "square",
+          "dimensions": {"length": 2.5, "width": 2.5},
+          "position": {"x": 4.0, "y": 5.0},
+          "features": ["shower", "toilet", "sink"]
+        },
+        {
+          "room_id": "dining_area",
+          "shape": "rectangle",
+          "dimensions": {"length": 3.0, "width": 2.5},
+          "position": {"x": 6.0, "y": 4.0},
+          "features": ["dining_table", "minimalist_seating"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "position": {"x": 0.5, "y": 2.0},
+          "dimensions": {"length": 1.0, "width": 2.0}
+        },
+        {
+          "opening_id": "garden_access",
+          "type": "door",
+          "position": {"x": 8.0, "y": 3.0},
+          "dimensions": {"length": 1.5, "width": 1.0}
+        },
+        {
+          "opening_id": "terrace_stairs_access",
+          "type": "staircase",
+          "position": {"x": 5.0, "y": 7.0},
+          "dimensions": {"length": 2.0, "width": 1.0}
+        },
+        {
+          "opening_id": "living_window",
+          "type": "window",
+          "position": {"x": 3.0, "y": 2.5},
+          "dimensions": {"length": 2.0, "width": 1.5}
+        }
+      ],
+      "outdoor_spaces": [
+        {
+          "space_id": "garden",
+          "type": "garden",
+          "dimensions": {"length": 10.0, "width": 8.0},
+          "features": ["lawn", "walking_path"]
+        },
+        {
+          "space_id": "terrace",
+          "type": "rooftop_terrace",
+          "dimensions": {"length": 8.0, "width": 6.0},
+          "features": ["outdoor_seating", "potted_plants"]
+        }
+      ]
+    }
+  ]}

@@ -1,0 +1,55 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living_Dining_Area",
+          "area_sqft": 300,
+          "features": ["floor_to_ceiling_windows", "vastu_compliant"],
+          "furniture": ["sofa_set", "dining_table", "TV_unit"]
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 150,
+          "features": ["efficient_storage", "modular_kitchen", "vastu_compliant"],
+          "appliances": ["refrigerator", "oven", "microwave"]
+        },
+        {
+          "room_name": "Bedroom_Master",
+          "area_sqft": 200,
+          "features": ["wardrobe_space", "en_suite_bathroom", "floor_to_ceiling_windows", "vastu_compliant"],
+          "furniture": ["king_size_bed", "dressing_table"]
+        },
+        {
+          "room_name": "Guest_Bedroom",
+          "area_sqft": 150,
+          "features": ["wardrobe_space", "en_suite_bathroom", "floor_to_ceiling_windows", "vastu_compliant"],
+          "furniture": ["queen_size_bed"]
+        },
+        {
+          "room_name": "Study/Office_Space",
+          "area_sqft": 100,
+          "features": ["built_in_shelves", "workdesk", "floor_to_ceiling_windows", "vastu_compliant"],
+          "furniture": ["computer_desk", "bookshelf"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "window",
+          "position": "north_east",
+          "size_sqft": 30,
+          "features": ["floor_to_ceiling_windows", "natural_lighting"],
+          "room_linked_to": "Living_Dining_Area"
+        },
+        {
+          "opening_type": "balcony",
+          "position": "south_west",
+          "size_sqft": 20,
+          "features": ["seating_area", "view_of_outside"],
+          "room_linked_to": "Bedroom_Master"
+        }
+      ]
+    }
+  ]
+}

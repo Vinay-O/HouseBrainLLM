@@ -1,0 +1,75 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "Living",
+          "features": ["natural_light", "ventilation"],
+          "position": "North"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 8, "width": 7 },
+          "purpose": "Kitchen",
+          "features": ["modular_kitchen", "natural_light"],
+          "position": "East"
+        },
+        {
+          "room_id": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "Bedroom",
+          "features": ["wardrobe", "balcony"],
+          "position": "West"
+        },
+        {
+          "room_id": "home_office",
+          "dimensions": { "length": 8, "width": 7 },
+          "purpose": "Home Office",
+          "features": ["natural_light", "ventilation"],
+          "position": "North-East"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "entrance",
+          "dimensions": { "width": 4, "height": 7 },
+          "direction": "North"
+        },
+        {
+          "opening_id": "garden_access",
+          "type": "access",
+          "dimensions": { "width": 3, "height": 6 },
+          "direction": "South"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_upper",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "Bedroom",
+          "features": ["wardrobe", "balcony"],
+          "position": "West"
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "outbuildings": [
+    {
+      "type": "garage",
+      "capacity": 2,
+      "dimensions": { "length": 15, "width": 10 }
+    },
+    {
+      "type": "garden",
+      "size": 300
+    }
+  ]
+}

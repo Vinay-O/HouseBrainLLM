@@ -1,0 +1,93 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "type": "entrance",
+          "dimensions": { "width": 10, "length": 6 },
+          "location": "North-facing"
+        },
+        {
+          "type": "living_room",
+          "dimensions": { "width": 20, "length": 15 },
+          "features": ["sofa", "TV unit", "dining area"]
+        },
+        {
+          "type": "kitchen",
+          "dimensions": { "width": 15, "length": 12 },
+          "features": ["modular kitchen", "pantry", "dishwasher"]
+        },
+        {
+          "type": "bedroom",
+          "bedroom_id": "master_bedroom",
+          "dimensions": { "width": 18, "length": 16 },
+          "features": ["king bed", "walk-in closet", "attached bathroom"]
+        },
+        {
+          "type": "bedroom",
+          "bedroom_id": "bedroom_2",
+          "dimensions": { "width": 15, "length": 14 },
+          "features": ["queen bed", "wardrobe", "attached bathroom"]
+        },
+        {
+          "type": "bedroom",
+          "bedroom_id": "bedroom_3",
+          "dimensions": { "width": 14, "length": 13 },
+          "features": ["twin beds", "wardrobe", "shared bathroom"]
+        },
+        {
+          "type": "bedroom",
+          "bedroom_id": "guest_bedroom",
+          "dimensions": { "width": 12, "length": 10 },
+          "features": ["queen bed", "wardrobe", "attached bathroom"]
+        },
+        {
+          "type": "library",
+          "dimensions": { "width": 16, "length": 14 },
+          "features": ["bookshelves", "reading nook", "study desk"]
+        },
+        {
+          "type": "bathroom",
+          "count": 4,
+          "features": ["shower", "toilet", "sink", "mirror"]
+        },
+        {
+          "type": "balcony",
+          "dimensions": { "width": 10, "length": 8 },
+          "features": ["outdoor furniture", "potted plants"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "count": 20,
+          "location": ["living room", "bedrooms", "kitchen"],
+          "features": ["large windows for natural light", "ventilation"]
+        },
+        {
+          "type": "door",
+          "count": 10,
+          "location": ["entrance", "bedrooms", "bathrooms", "kitchen", "library"],
+          "features": ["main entrance door", "bedroom doors", "bathroom doors", "kitchen door", "library door"]
+        }
+      ],
+      "vasth_principles_applied": [
+        {
+          "principle": "North-facing entrance",
+          "description": "As per Vastu, the main entrance should ideally face North to attract positive energies."
+        },
+        {
+          "principle": "Kitchen in Southeast",
+          "description": "The kitchen is placed in the Southeast direction as per Vastu to ensure harmony and prosperity."
+        },
+        {
+          "principle": "Master bedroom in Southwest",
+          "description": "The master bedroom is located in the Southwest direction for stability and strength."
+        },
+        {
+          "principle": "Library in West or Northwest",
+          "description": "The library is placed in the Northwest direction to enhance knowledge and wisdom."
+        }
+      ]
+    }
+  ]}

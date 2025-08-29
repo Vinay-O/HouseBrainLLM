@@ -1,0 +1,263 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 160,
+      "style": "Industrial Loft"
+    },
+    "plot": {
+      "width": 4,
+      "depth": 20,
+      "location": "Alpine",
+      "climate": "Heavy Snow Loads",
+      "orientation": "North-Facing"
+    },
+    "roomBreakdown": [
+      {
+        "type": "chefs_kitchen",
+        "description": "With wood-fired oven and industrial finishes"
+      },
+      {
+        "type": "living_room",
+        "description": "Open plan with high ceilings and north-facing windows"
+      },
+      {
+        "type": "bedroom",
+        "description": "Minimalist master suite with built-in storage"
+      },
+      {
+        "type": "bedroom",
+        "description": "Flexible guest room/office for travelers"
+      },
+      {
+        "type": "bathroom",
+        "description": "Spa-like with low-maintenance materials"
+      },
+      {
+        "type": "utility",
+        "description": "Compact laundry and storage for travel gear"
+      }
+    ]
+  },
+  "total_area": 160.0,
+  "construction_cost": 336000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_utility",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 2,
+            "height": 2
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 2,
+            "y": 0,
+            "width": 2,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_dining",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 2,
+            "width": 4,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 1,
+              "size": "large"
+            },
+            {
+              "wall": "north",
+              "position": 3,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "chefs_kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_ground",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 2,
+            "height": 2
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_guest",
+          "type": "bedroom",
+          "bounds": {
+            "x": 2,
+            "y": 16,
+            "width": 2,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 1,
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_master",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 1,
+              "size": "large"
+            },
+            {
+              "wall": "north",
+              "position": 3,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_master",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 2,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 1
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 1,
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "closet",
+          "type": "closet",
+          "bounds": {
+            "x": 2,
+            "y": 8,
+            "width": 2,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "loft_mezzanine",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 4,
+            "height": 8
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2,
+              "size": "large"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

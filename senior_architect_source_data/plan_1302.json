@@ -1,0 +1,324 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 2400,
+      "style": "Traditional Craftsman"
+    },
+    "plot": {
+      "slope": 30,
+      "orientation": "north",
+      "climate": "temperate maritime"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3,
+        "specialFeatures": [
+          "murphy bed system in guest room"
+        ]
+      },
+      {
+        "type": "roof",
+        "count": 1,
+        "specialFeatures": [
+          "living roof with native wildflowers"
+        ]
+      },
+      {
+        "type": "exterior",
+        "count": 1,
+        "specialFeatures": [
+          "low-maintenance landscaping"
+        ]
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 720000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "location": "south"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mudroom",
+          "type": "mudroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "location": "south"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "east"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_hung",
+              "location": "north"
+            }
+          ]
+        },
+        {
+          "id": "dining",
+          "type": "dining",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_hung",
+              "location": "north"
+            }
+          ]
+        },
+        {
+          "id": "living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 30,
+            "height": 18
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "location": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "picture",
+              "location": "north"
+            },
+            {
+              "type": "double_hung",
+              "location": "south"
+            }
+          ]
+        },
+        {
+          "id": "bath_half",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_hung",
+              "location": "north"
+            },
+            {
+              "type": "double_hung",
+              "location": "south"
+            }
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_hung",
+              "location": "north"
+            }
+          ]
+        },
+        {
+          "id": "teen_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "north"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_hung",
+              "location": "north"
+            }
+          ]
+        },
+        {
+          "id": "teen_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 14,
+            "y": 14,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "north"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_hung",
+              "location": "north"
+            }
+          ]
+        },
+        {
+          "id": "guest_room",
+          "type": "bedroom",
+          "bounds": {
+            "x": 26,
+            "y": 0,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_hung",
+              "location": "north"
+            }
+          ],
+          "specialFeatures": [
+            "murphy bed system"
+          ]
+        },
+        {
+          "id": "hall_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 26,
+            "y": 14,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "south"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

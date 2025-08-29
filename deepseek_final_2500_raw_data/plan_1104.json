@@ -1,0 +1,429 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 4200,
+      "style": "Alpine Chalet"
+    },
+    "plot": {
+      "terrain": "rocky outcrop with natural stone formations",
+      "climate": "alpine with heavy snow loads",
+      "orientation": "north-facing"
+    },
+    "roomBreakdown": [
+      {
+        "type": "observatory",
+        "area": 400
+      },
+      {
+        "type": "storm_shelter",
+        "area": 300
+      },
+      {
+        "type": "master_bedroom",
+        "area": 400
+      },
+      {
+        "type": "bedroom",
+        "area": 250
+      },
+      {
+        "type": "bedroom",
+        "area": 250
+      },
+      {
+        "type": "great_room",
+        "area": 800
+      },
+      {
+        "type": "kitchen",
+        "area": 300
+      },
+      {
+        "type": "dining_room",
+        "area": 250
+      },
+      {
+        "type": "office",
+        "area": 200
+      },
+      {
+        "type": "garage",
+        "area": 600
+      },
+      {
+        "type": "mechanical_room",
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "area": 150
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 3850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "wall": "south"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_0",
+          "type": "mechanical_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "east"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storm_shelter_0",
+          "type": "storm_shelter",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "security",
+              "wall": "east"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "great_room_1",
+          "type": "great_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "wall": "north"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dining_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "office_1",
+          "type": "office",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "glass_link_1",
+          "type": "connection",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 5,
+            "height": 30
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            },
+            {
+              "type": "interior",
+              "wall": "east"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "full"
+            },
+            {
+              "wall": "south",
+              "size": "full"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom_2",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "east"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "glass_link_2",
+          "type": "connection",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 5,
+            "height": 30
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            },
+            {
+              "type": "interior",
+              "wall": "east"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "full"
+            },
+            {
+              "wall": "south",
+              "size": "full"
+            }
+          ]
+        },
+        {
+          "id": "observatory_2",
+          "type": "observatory",
+          "bounds": {
+            "x": 65,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

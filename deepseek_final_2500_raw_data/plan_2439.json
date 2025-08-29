@@ -1,0 +1,160 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 1200,
+      "style": "Contemporary Glass Box"
+    },
+    "plot": {
+      "orientation": "north",
+      "climate": "Mediterranean dry summers",
+      "topography": "sunken courtyard",
+      "privacy_requirements": "high from neighboring properties"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "description": "Chef's kitchen with wood-fired oven"
+      },
+      {
+        "type": "courtyard",
+        "description": "Sunken courtyard with permeable paving"
+      },
+      {
+        "type": "bedroom",
+        "description": "Master bedroom with northern light"
+      },
+      {
+        "type": "office",
+        "description": "Tech workspace with natural light"
+      },
+      {
+        "type": "bathroom",
+        "description": "Full bathroom with ventilation"
+      },
+      {
+        "type": "storage",
+        "description": "Utility and storage space"
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 195000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "bedroom_01",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "courtyard_slider"
+          ],
+          "windows": [
+            "north_high_window"
+          ]
+        },
+        {
+          "id": "bathroom_01",
+          "type": "bathroom",
+          "bounds": {
+            "x": 14,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_01",
+          "type": "storage",
+          "bounds": {
+            "x": 14,
+            "y": 8,
+            "width": 8,
+            "height": 4
+          },
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "office_01",
+          "type": "office",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 14,
+            "height": 10
+          },
+          "doors": [
+            "courtyard_slider"
+          ],
+          "windows": [
+            "north_high_window"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "kitchen_01",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "courtyard_glass_door"
+          ],
+          "windows": [
+            "north_glass_wall"
+          ]
+        },
+        {
+          "id": "living_01",
+          "type": "living_room",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            "courtyard_glass_door"
+          ],
+          "windows": [
+            "north_glass_wall"
+          ]
+        },
+        {
+          "id": "courtyard_01",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 28,
+            "height": 18
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

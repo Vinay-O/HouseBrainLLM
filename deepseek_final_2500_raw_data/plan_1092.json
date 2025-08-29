@@ -1,0 +1,182 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 800,
+      "style": "Gujarati Pol House (Adaptive Reuse)"
+    },
+    "plot": {
+      "orientation": "south",
+      "area": 800,
+      "view": "garden",
+      "location": "riverfront",
+      "constraints": [
+        "flood_zone",
+        "high_water_table"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "area": 120
+      },
+      {
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "type": "bedroom",
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "type": "utility",
+        "area": 50
+      },
+      {
+        "type": "verandah",
+        "area": 120
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "elevation": 1.2,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "north_wall",
+            "east_wall_to_verandah"
+          ],
+          "windows": [
+            "south_wall_full_length"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "west_wall_to_living"
+          ],
+          "windows": [
+            "south_wall"
+          ]
+        },
+        {
+          "id": "bedroom_1_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "south_wall_to_verandah"
+          ],
+          "windows": [
+            "north_wall"
+          ]
+        },
+        {
+          "id": "bedroom_2_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 12,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "west_wall_to_hall"
+          ],
+          "windows": [
+            "south_wall"
+          ]
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 5,
+            "height": 6
+          },
+          "doors": [
+            "west_wall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 6,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "west_wall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "verandah_0",
+          "type": "verandah",
+          "bounds": {
+            "x": 0,
+            "y": 22,
+            "width": 25,
+            "height": 5
+          },
+          "doors": [
+            "north_wall_to_bedroom1",
+            "west_wall_entrance"
+          ],
+          "windows": []
+        },
+        {
+          "id": "carport_0",
+          "type": "garage",
+          "bounds": {
+            "x": 25,
+            "y": 16,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "north_wall_rollup"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

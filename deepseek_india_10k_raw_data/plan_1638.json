@@ -1,0 +1,342 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 2000,
+      "style": "Traditional Coastal Pavilion"
+    },
+    "plot": {
+      "location": "Kochi Backwaters",
+      "orientation": "North-facing main entrance",
+      "terrain": "Penthouse Terrace",
+      "constraints": "Heritage building regulations in protected zones"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "area": 300,
+        "purpose": "Home tutoring and reading"
+      },
+      {
+        "type": "puja_room",
+        "area": 200,
+        "purpose": "Double-height traditional worship space"
+      },
+      {
+        "type": "courtyard",
+        "area": 450,
+        "purpose": "Haveli-style with water features"
+      },
+      {
+        "type": "bedroom",
+        "area": 300,
+        "purpose": "Master bedroom"
+      },
+      {
+        "type": "bedroom",
+        "area": 250,
+        "purpose": "Children's bedroom"
+      },
+      {
+        "type": "bedroom",
+        "area": 200,
+        "purpose": "Guest bedroom"
+      },
+      {
+        "type": "living_room",
+        "area": 250,
+        "purpose": "Family gathering space"
+      },
+      {
+        "type": "kitchen",
+        "area": 150,
+        "purpose": "Cooking with waste segregation"
+      },
+      {
+        "type": "bathroom",
+        "area": 100,
+        "purpose": "Attached to master bedroom"
+      }
+    ]
+  },
+  "total_area": 2000.0,
+  "construction_cost": 3500000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_entrance",
+          "type": "entrance",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "wooden_carved",
+              "material": "wood_with_metalwork"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 15,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "water_feature",
+            "passive_cooling",
+            "monsoon_drainage"
+          ]
+        },
+        {
+          "id": "library_tutoring",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "sliding",
+              "material": "wood"
+            }
+          ],
+          "windows": [
+            {
+              "type": "louvered",
+              "orientation": "north"
+            },
+            {
+              "type": "louvered",
+              "orientation": "south"
+            }
+          ],
+          "features": [
+            "built_in_shelving",
+            "study_areas",
+            "cross_ventilation"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 45,
+            "y": 15,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "carved_wood",
+              "material": "wood"
+            }
+          ],
+          "windows": [
+            {
+              "type": "jali",
+              "orientation": "east"
+            },
+            {
+              "type": "jali",
+              "orientation": "west"
+            }
+          ],
+          "features": [
+            "double_height",
+            "traditional_lighting",
+            "natural_ventilation"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "panel",
+              "material": "wood"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "orientation": "west"
+            }
+          ],
+          "features": [
+            "walk_in_closet",
+            "attached_bathroom"
+          ]
+        },
+        {
+          "id": "children_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 45,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "panel",
+              "material": "wood"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "orientation": "south"
+            }
+          ],
+          "features": [
+            "built_in_storage",
+            "study_area"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 45,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "panel",
+              "material": "wood"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "orientation": "east"
+            }
+          ],
+          "features": [
+            "wardrobe",
+            "ventilation_window"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 15,
+            "y": 45,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "french",
+              "material": "wood_and_glass"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "orientation": "south"
+            }
+          ],
+          "features": [
+            "courtyard_access",
+            "seating_area"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "swing",
+              "material": "wood"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "orientation": "east"
+            }
+          ],
+          "features": [
+            "waste_segregation_system",
+            "recycling_station",
+            "ventilation"
+          ]
+        },
+        {
+          "id": "bathroom_master",
+          "type": "bathroom",
+          "bounds": {
+            "x": 60,
+            "y": 35,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "privacy",
+              "material": "wood"
+            }
+          ],
+          "windows": [
+            {
+              "type": "ventilation",
+              "orientation": "west"
+            }
+          ],
+          "features": [
+            "water_recycling",
+            "natural_lighting"
+          ]
+        },
+        {
+          "id": "utility_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 60,
+            "y": 45,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "rainwater_harvesting",
+            "composting_area",
+            "monsoon_adaptation"
+          ]
+        }
+      ]
+    }
+  ]
+}

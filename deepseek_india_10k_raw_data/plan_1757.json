@@ -1,0 +1,294 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 9600,
+      "style": "Ultra-Premium Heritage Restoration Linear Pavilion"
+    },
+    "plot": {
+      "width": 80,
+      "length": 120,
+      "location": "Indore Commercial Center",
+      "floodProne": true,
+      "cornerPlot": true,
+      "dualStreetFrontage": true,
+      "riverside": true
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 4
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "meditation_pavilion",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "heritage_gallery",
+        "count": 1
+      },
+      {
+        "type": "veranda",
+        "count": 2
+      }
+    ]
+  },
+  "total_area": 9600.0,
+  "construction_cost": 5280000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            "north_entrance",
+            "to_veranda",
+            "to_dining"
+          ],
+          "windows": [
+            "north_facade",
+            "east_facade"
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            "to_living",
+            "to_kitchen",
+            "to_south_veranda"
+          ],
+          "windows": [
+            "south_facade"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_dining",
+            "service_entry"
+          ],
+          "windows": [
+            "east_facade"
+          ]
+        },
+        {
+          "id": "bedroom_1_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_north_veranda",
+            "to_bathroom"
+          ],
+          "windows": [
+            "north_facade",
+            "east_facade"
+          ]
+        },
+        {
+          "id": "bathroom_1_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 45,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_bedroom_1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_north_veranda",
+            "to_bathroom"
+          ],
+          "windows": [
+            "north_facade"
+          ]
+        },
+        {
+          "id": "bathroom_2_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 45,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_bedroom_2"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_3_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 25,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_south_veranda",
+            "to_bathroom"
+          ],
+          "windows": [
+            "south_facade"
+          ]
+        },
+        {
+          "id": "bathroom_3_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 45,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_bedroom_3"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_4_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 60,
+            "y": 25,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_south_veranda"
+          ],
+          "windows": [
+            "south_facade",
+            "west_facade"
+          ]
+        },
+        {
+          "id": "heritage_gallery_0",
+          "type": "heritage_gallery",
+          "bounds": {
+            "x": 65,
+            "y": 0,
+            "width": 15,
+            "height": 25
+          },
+          "doors": [
+            "west_entrance",
+            "to_meditation_pavilion"
+          ],
+          "windows": [
+            "west_facade",
+            "north_facade"
+          ]
+        },
+        {
+          "id": "meditation_pavilion_0",
+          "type": "meditation_pavilion",
+          "bounds": {
+            "x": 65,
+            "y": 45,
+            "width": 15,
+            "height": 35
+          },
+          "doors": [
+            "to_gallery",
+            "to_garden"
+          ],
+          "windows": [
+            "full_height_lattice"
+          ]
+        },
+        {
+          "id": "north_veranda_0",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": -10,
+            "width": 40,
+            "height": 10
+          },
+          "doors": [
+            "to_living",
+            "to_bedroom_1",
+            "to_bedroom_2"
+          ],
+          "windows": []
+        },
+        {
+          "id": "south_veranda_0",
+          "type": "veranda",
+          "bounds": {
+            "x": 40,
+            "y": 45,
+            "width": 40,
+            "height": 10
+          },
+          "doors": [
+            "to_dining",
+            "to_bedroom_3",
+            "to_bedroom_4"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

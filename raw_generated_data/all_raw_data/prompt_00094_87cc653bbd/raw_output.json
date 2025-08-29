@@ -1,0 +1,106 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "width": 20, "length": 25 },
+          "features": ["floor-to-ceiling windows", "wheelchair accessible entrance"],
+          "orientation": "north-east"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "width": 15, "length": 20 },
+          "features": ["modular kitchen with wheelchair access"],
+          "orientation": "south-east"
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "width": 20, "length": 25 },
+          "features": ["floor-to-ceiling windows", "wheelchair accessible bathroom"],
+          "orientation": "north-west"
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "width": 20, "length": 25 },
+          "features": ["floor-to-ceiling windows", "wheelchair accessible bathroom"],
+          "orientation": "south-west"
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "width": 15, "length": 20 },
+          "orientation": "east"
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "width": 10, "length": 15 },
+          "features": ["natural light"],
+          "orientation": "north"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "width": 4, "height": 8 },
+          "orientation": "east"
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimensions": { "width": 10, "height": 15 },
+          "features": ["floor-to-ceiling"]
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimensions": { "width": 8, "height": 12 },
+          "orientation": "south"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "width": 20, "length": 25 },
+          "features": ["floor-to-ceiling windows", "wheelchair accessible bathroom"],
+          "orientation": "north-west"
+        },
+        {
+          "room_id": "balcony",
+          "dimensions": { "width": 15, "length": 20 },
+          "features": ["natural ventilation"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "bedroom_3_window",
+          "type": "window",
+          "dimensions": { "width": 10, "height": 15 },
+          "features": ["floor-to-ceiling"]
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_id": "terrace",
+          "dimensions": { "width": 20, "length": 30 },
+          "features": ["natural light", "ventilation"]
+        }
+      ]
+    }
+  ],
+  "plot_dimensions": {
+    "width": 60,
+    "length": 90
+  },
+  "design_style": "Brutalist",
+  "accessibility": "wheelchair accessible",
+  "focus": ["natural light", "ventilation"],
+  "vastu_compliance": true
+}

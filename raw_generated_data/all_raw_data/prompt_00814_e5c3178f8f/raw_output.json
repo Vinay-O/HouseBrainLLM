@@ -1,0 +1,87 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "entrance_hall",
+          "dimensions": {"length": 12, "width": 8},
+          "description": "Spacious entrance with foyer area and shoe cabinet."
+        },
+        {
+          "name": "living_room",
+          "dimensions": {"length": 16, "width": 14},
+          "description": "Lounge area integrated with Vastu principles for positivity; optimal for socializing."
+        },
+        {
+          "name": "dining_room",
+          "dimensions": {"length": 10, "width": 8},
+          "description": "Adjacent to the living room, designed according to Vastu guidelines for energy flow."
+        },
+        {
+          "name": "kitchen",
+          "dimensions": {"length": 12, "width": 10},
+          "description": "Modern kitchen layout with proper ventilation; east facing to harness morning light as per Vastu norms."
+        },
+        {
+          "name": "bathroom",
+          "dimensions": {"length": 6, "width": 5},
+          "description": "Guest bathroom located near the entrance for convenience."
+        }
+      ],
+      "openings": [
+        {
+          "type": "main_door",
+          "location": "entrance_hall"
+        },
+        {
+          "type": "windows",
+          "locations": ["living_room", "dining_room", "kitchen"],
+          "details": "South and east facing windows for natural light per Vastu."
+        }
+      ]
+    }
+  ],
+  "upper_floor": {
+    "level_id": "first_floor",
+    "rooms": [
+      {
+        "name": "master_bedroom",
+        "dimensions": {"length": 15, "width": 12},
+        "description": "South facing room for tranquility and energy flow. Includes walk-in closet."
+      },
+      {
+        "name": "bedroom_2",
+        "dimensions": {"length": 14, "width": 10},
+        "description": "North facing bedroom promoting calmness; includes study area integrated within the space."
+      }
+    ],
+    "openings": [
+      {
+        "type": "windows",
+        "locations": ["master_bedroom", "bedroom_2"],
+        "details": "Optimally placed windows per Vastu for proper light and air circulation."
+      },
+      {
+        "type": "balcony_access",
+        "location": "master_bedroom",
+        "description": "Balcony providing a view and fresh air, aligned with east for positive energy."
+      }
+    ],
+    "special_rooms": [
+      {
+        "name": "home_theater",
+        "dimensions": {"length": 14, "width": 10},
+        "description": "Fully soundproofed room on the upper floor dedicated to home theater, following Vastu guidelines for entertainment spaces."
+      }
+    ]
+  },
+  "vastu_considerations": {
+    "entrance_direction": "north",
+    "living_room_orientation": "south-east",
+    "kitchen_position": "east",
+    "master_bedroom_orientation": "south",
+    "bedroom_2_orientation": "north",
+    "home_theater_orientation": "west"
+  }
+}

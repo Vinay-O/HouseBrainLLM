@@ -1,0 +1,239 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 2,
+      "totalArea": 1200,
+      "style": "Chettinad"
+    },
+    "plot": {
+      "shape": "irregular",
+      "dimensions": {
+        "width": 25,
+        "height": 24
+      }
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "count": 1,
+        "area": 600
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "bathroom",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "verandah",
+        "count": 1,
+        "area": 350
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 2160000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "ground_studio",
+          "type": "studio",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "main_entry",
+              "position": {
+                "x": 5,
+                "y": 10,
+                "wall": "south"
+              }
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 20,
+                "y": 5,
+                "wall": "east"
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 5,
+                "y": 18,
+                "wall": "north"
+              }
+            },
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 18,
+                "y": 20,
+                "wall": "east"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ground_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 5,
+                "y": 5,
+                "wall": "east"
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 0,
+                "y": 5,
+                "wall": "south"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ground_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 5,
+                "y": 15,
+                "wall": "east"
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "ventilation",
+              "position": {
+                "x": 0,
+                "y": 15,
+                "wall": "south"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ground_verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 20,
+                "y": 5,
+                "wall": "west"
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "first_studio",
+          "type": "studio",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 20,
+                "y": 5,
+                "wall": "east"
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 5,
+                "y": 18,
+                "wall": "north"
+              }
+            },
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 18,
+                "y": 20,
+                "wall": "east"
+              }
+            }
+          ]
+        },
+        {
+          "id": "first_terrace",
+          "type": "terrace",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 20,
+                "y": 5,
+                "wall": "west"
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

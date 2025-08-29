@@ -1,0 +1,391 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Traditional Dravidian"
+    },
+    "plot": {
+      "location": "Warangal heritage center, forest clearing eco-sensitive zone",
+      "orientation": "West-facing for evening breeze capture",
+      "constraints": "Desert sandstorm and extreme heat management, earthquake-resistant construction"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "purpose": "Master bedroom and future expansion"
+      },
+      {
+        "type": "home_temple",
+        "count": 1,
+        "purpose": "Daily rituals with traditional architecture"
+      },
+      {
+        "type": "courtyard",
+        "count": 2,
+        "purpose": "Primary central courtyard and secondary private courtyard"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "purpose": "Family gathering and community interactions"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "purpose": "Traditional cooking with ventilation"
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "purpose": "Attached to bedrooms"
+      },
+      {
+        "type": "storage",
+        "count": 1,
+        "purpose": "Earth-sheltered for temperature regulation"
+      },
+      {
+        "type": "chabutra",
+        "count": 1,
+        "purpose": "Raised platform for community gatherings"
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 324000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [],
+          "features": [
+            "water_feature",
+            "stone_paving",
+            "traditional_plantings"
+          ]
+        },
+        {
+          "id": "secondary_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 50,
+            "y": 40,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [],
+          "features": [
+            "small_water_feature",
+            "private_garden"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "size": "large"
+            }
+          ],
+          "features": [
+            "high_ceilings",
+            "traditional_columns",
+            "cross_ventilation"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            },
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": "medium"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": "medium"
+            }
+          ],
+          "features": [
+            "earth_sheltered_north_wall",
+            "built_in_storage"
+          ]
+        },
+        {
+          "id": "future_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 55,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            },
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7,
+              "size": "medium"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": "medium"
+            }
+          ],
+          "features": [
+            "expandable_space",
+            "prepared_plumbing"
+          ]
+        },
+        {
+          "id": "home_temple",
+          "type": "home_temple",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10,
+              "size": "small"
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "size": "small"
+            }
+          ],
+          "features": [
+            "traditional_dravidian_motifs",
+            "stone_sculptures",
+            "ritual_space"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            },
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7,
+              "size": "medium"
+            },
+            {
+              "wall": "south",
+              "position": 7,
+              "size": "medium"
+            }
+          ],
+          "features": [
+            "traditional_chulha",
+            "stone_countertops",
+            "natural_ventilation"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 55,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "small"
+            }
+          ],
+          "features": [
+            "water_harvesting_fixtures",
+            "natural_lighting"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 55,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "small"
+            }
+          ],
+          "features": [
+            "water_harvesting_fixtures",
+            "natural_lighting"
+          ]
+        },
+        {
+          "id": "storage_room",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 50,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [],
+          "features": [
+            "earth_sheltered",
+            "temperature_regulated"
+          ]
+        },
+        {
+          "id": "chabutra_platform",
+          "type": "chabutra",
+          "bounds": {
+            "x": 15,
+            "y": 35,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "raised_stone_platform",
+            "shaded_area",
+            "community_seating"
+          ]
+        }
+      ]
+    }
+  ]
+}

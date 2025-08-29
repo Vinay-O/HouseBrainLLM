@@ -1,0 +1,152 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 750,
+      "style": "Mid-Century Modern"
+    },
+    "plot": {
+      "orientation": "east-west",
+      "climate": "humid subtropical",
+      "constraints": [
+        "compact urban balcony conversion",
+        "privacy from neighbors"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "purpose": "music performance and listening space with acoustic treatment"
+      },
+      {
+        "type": "bedroom",
+        "purpose": "private retreat with sound insulation"
+      },
+      {
+        "type": "kitchen",
+        "purpose": "compact galley kitchen with home brewery integration"
+      },
+      {
+        "type": "bathroom",
+        "purpose": "efficient wet room design"
+      },
+      {
+        "type": "utility",
+        "purpose": "home brewery temperature control system"
+      }
+    ]
+  },
+  "total_area": 750.0,
+  "construction_cost": 175000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_performance",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "bedroom_private",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "kitchen_brew",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "bathroom_wet",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "brewery_utility",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 12,
+            "width": 15,
+            "height": 13
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

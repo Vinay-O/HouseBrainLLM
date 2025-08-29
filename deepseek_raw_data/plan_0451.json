@@ -1,0 +1,168 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Mediterranean"
+    },
+    "plot": {
+      "width": 90,
+      "length": 60
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "count": 1
+      },
+      {
+        "type": "servant_quarters",
+        "count": 1
+      },
+      {
+        "type": "garage",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 324000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            "main_entry"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "open_plan",
+          "type": "living_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            "patio_door"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "kitchen_area",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            "south_window_kitchen"
+          ]
+        },
+        {
+          "id": "bathroom_main",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "bathroom_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "garage_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "servant_quarters",
+          "type": "servant_quarters",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "servant_entry"
+          ],
+          "windows": [
+            "west_window_servant"
+          ]
+        },
+        {
+          "id": "bathroom_servant",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "servant_bath_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 50,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "utility_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

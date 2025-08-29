@@ -1,0 +1,155 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1200.0,
+      "style": "Geodesic Dome"
+    },
+    "plot": {
+      "width": 50.0,
+      "depth": 40.0,
+      "shoreline": 50.0,
+      "climate": "Mediterranean"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 300.0
+      },
+      {
+        "type": "kitchen",
+        "area": 150.0
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 200.0
+      },
+      {
+        "type": "bedroom",
+        "area": 150.0
+      },
+      {
+        "type": "bathroom",
+        "area": 100.0
+      },
+      {
+        "type": "hydroponic_garden",
+        "area": 300.0
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 300000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "north_entrance",
+            "to_kitchen",
+            "to_garden"
+          ],
+          "windows": [
+            "north_window",
+            "east_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "to_living_room",
+            "to_dining"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hallway",
+            "to_bathroom"
+          ],
+          "windows": [
+            "east_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": [
+            "west_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hallway",
+            "to_primary_bedroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hydroponic_garden",
+          "type": "hydroponic_garden",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            "to_living_room",
+            "to_kitchen"
+          ],
+          "windows": [
+            "full_south_wall"
+          ]
+        }
+      ]
+    }
+  ]
+}

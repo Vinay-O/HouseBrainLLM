@@ -1,0 +1,81 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "area_sqft": 250,
+          "location": "North-West"
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 150,
+          "location": "South-East"
+        },
+        {
+          "room_name": "Dining Room",
+          "area_sqft": 120,
+          "location": "West"
+        },
+        {
+          "room_name": "Master Bedroom",
+          "area_sqft": 200,
+          "location": "North-East"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Door",
+          "connects_to": ["Living Room", "Dining Room"]
+        },
+        {
+          "opening_type": "Window",
+          "direction": "South-West"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Bedroom 1",
+          "area_sqft": 180,
+          "location": "North-East"
+        },
+        {
+          "room_name": "Bedroom 2",
+          "area_sqft": 180,
+          "location": "West"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "direction": "South-West"
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_name": "Bedroom 3",
+          "area_sqft": 180,
+          "location": "North-East"
+        },
+        {
+          "room_name": "Gym",
+          "area_sqft": 250,
+          "location": "South-West"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "direction": "West"
+        }
+      ]
+    }
+  ]
+}

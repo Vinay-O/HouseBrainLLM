@@ -1,0 +1,249 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1500,
+      "style": "Malwa Traditional"
+    },
+    "plot": {
+      "orientation": "west",
+      "area": 1500,
+      "terrain": "sloping",
+      "location": "heritage city"
+    },
+    "roomBreakdown": [
+      {
+        "roomType": "workshop",
+        "area": 300,
+        "description": "Spacious weaving workshop with natural light and storage"
+      },
+      {
+        "roomType": "otla",
+        "area": 150,
+        "description": "Traditional sit-out area facing west for evening light"
+      },
+      {
+        "roomType": "music_room",
+        "area": 120,
+        "description": "Soundproof practice room with acoustic treatment"
+      },
+      {
+        "roomType": "bedroom",
+        "area": 180,
+        "description": "Master bedroom with pet-friendly features"
+      },
+      {
+        "roomType": "bedroom",
+        "area": 150,
+        "description": "Secondary bedroom"
+      },
+      {
+        "roomType": "kitchen",
+        "area": 120,
+        "description": "Compact kitchen with traditional cooking space"
+      },
+      {
+        "roomType": "bathroom",
+        "area": 80,
+        "description": "Water-efficient bathroom"
+      },
+      {
+        "roomType": "storage",
+        "area": 100,
+        "description": "Weaving material storage"
+      },
+      {
+        "roomType": "utility",
+        "area": 100,
+        "description": "Monsoon water management system"
+      }
+    ]
+  },
+  "total_area": 1300.0,
+  "construction_cost": 1950000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "otla_sitout",
+          "type": "outdoor",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "weaving_workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "music_practice",
+          "type": "studio",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen_main",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 4,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 6,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 12,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 5,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_main",
+          "type": "bathroom",
+          "bounds": {
+            "x": 42,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_room",
+          "type": "storage",
+          "bounds": {
+            "x": 42,
+            "y": 8,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "water_management",
+          "type": "utility",
+          "bounds": {
+            "x": 42,
+            "y": 16,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

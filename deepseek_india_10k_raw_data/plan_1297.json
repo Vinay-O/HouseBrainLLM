@@ -1,0 +1,436 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 5500,
+      "style": "Malwa Fort-Style with Courtyard"
+    },
+    "plot": {
+      "size": 2,
+      "location": "Vijayawada Krishna delta",
+      "orientation": "West-facing for evening breeze",
+      "terrain": "Agricultural conversion, considerations for mountain landslide and snow load"
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_clinic",
+        "area": 600
+      },
+      {
+        "type": "patient_consultation",
+        "area": 400
+      },
+      {
+        "type": "wine_cellar",
+        "area": 300
+      },
+      {
+        "type": "traditional_storage",
+        "area": 250
+      },
+      {
+        "type": "courtyard",
+        "area": 900
+      }
+    ]
+  },
+  "total_area": 5500.0,
+  "construction_cost": 990000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance",
+          "type": "entrance",
+          "bounds": {
+            "x": 22,
+            "y": 0,
+            "width": 6,
+            "height": 4
+          },
+          "doors": [
+            {
+              "x": 24,
+              "y": 0,
+              "wall": "north"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "home_clinic",
+          "type": "home_clinic",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 15,
+              "wall": "east"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 10,
+              "wall": "west"
+            },
+            {
+              "x": 0,
+              "y": 20,
+              "wall": "west"
+            }
+          ]
+        },
+        {
+          "id": "patient_consultation",
+          "type": "patient_consultation",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 7,
+              "wall": "west"
+            },
+            {
+              "x": 30,
+              "y": 7,
+              "wall": "east"
+            }
+          ],
+          "windows": [
+            {
+              "x": 25,
+              "y": 0,
+              "wall": "north"
+            }
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            {
+              "x": 30,
+              "y": 15,
+              "wall": "west"
+            },
+            {
+              "x": 50,
+              "y": 15,
+              "wall": "east"
+            },
+            {
+              "x": 40,
+              "y": 0,
+              "wall": "north"
+            },
+            {
+              "x": 40,
+              "y": 30,
+              "wall": "south"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 50,
+              "y": 10,
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "x": 60,
+              "y": 0,
+              "wall": "north"
+            },
+            {
+              "x": 70,
+              "y": 10,
+              "wall": "east"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 50,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 50,
+              "y": 25,
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "x": 55,
+              "y": 20,
+              "wall": "north"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 60,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 60,
+              "y": 25,
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "x": 65,
+              "y": 20,
+              "wall": "north"
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 70,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 70,
+              "y": 25,
+              "wall": "west"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 7,
+              "wall": "east"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 7,
+              "wall": "west"
+            },
+            {
+              "x": 10,
+              "y": 0,
+              "wall": "north"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 22,
+              "wall": "east"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 22,
+              "wall": "west"
+            },
+            {
+              "x": 10,
+              "y": 30,
+              "wall": "south"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 50,
+              "y": 7,
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "x": 60,
+              "y": 0,
+              "wall": "north"
+            },
+            {
+              "x": 70,
+              "y": 7,
+              "wall": "east"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 50,
+              "y": 22,
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "x": 60,
+              "y": 30,
+              "wall": "south"
+            },
+            {
+              "x": 70,
+              "y": 22,
+              "wall": "east"
+            }
+          ]
+        },
+        {
+          "id": "terrace",
+          "type": "terrace",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 15,
+              "wall": "west"
+            },
+            {
+              "x": 50,
+              "y": 15,
+              "wall": "east"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "wine_cellar",
+          "type": "wine_cellar",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 25,
+              "y": 17,
+              "wall": "east"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "traditional_storage",
+          "type": "traditional_storage",
+          "bounds": {
+            "x": 30,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 30,
+              "y": 17,
+              "wall": "west"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

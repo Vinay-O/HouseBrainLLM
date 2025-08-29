@@ -1,0 +1,48 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"room_id": "living_room", "area": 300, "shape": "rectangle"},
+        {"room_id": "dining_room", "area": 200, "shape": "square"},
+        {"room_id": "kitchen", "area": 250, "shape": "L-shaped"},
+        {"room_id": "garage", "area": 300, "shape": "rectangle", "capacity": 2},
+        {"room_id": "bedroom_1", "area": 250, "shape": "square", "balcony_area": 80},
+        {"room_id": "bedroom_2", "area": 250, "shape": "rectangle", "balcony_area": 80},
+        {"room_id": "bedroom_3", "area": 250, "shape": "square", "balcony_area": 80}
+      ],
+      "openings": [
+        {"opening_id": "main_entrance", "direction": "north"},
+        {"opening_id": "backyard_access", "direction": "south"},
+        {"opening_id": "side_entrance", "direction": "east"}
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {"room_id": "bedroom_4", "area": 250, "shape": "rectangle", "balcony_area": 80},
+        {"room_id": "bedroom_5", "area": 250, "shape": "square", "balcony_area": 80},
+        {"room_id": "bedroom_6", "area": 300, "shape": "L-shaped", "balcony_area": 100},
+        {"room_id": "study_room", "area": 150, "shape": "rectangle"},
+        {"room_id": "guest_room", "area": 200, "shape": "square"}
+      ],
+      "openings": [
+        {"opening_id": "balcony_access_1", "direction": "north"},
+        {"opening_id": "balcony_access_2", "direction": "east"},
+        {"opening_id": "terrace_access", "direction": "west"}
+      ]
+    }
+  ],
+  "vastu_compliance": {
+    "main_entrance": "north",
+    "kitchen_position": "southeast",
+    "bedrooms_direction": ["north", "northeast", "east", "southwest"],
+    "toilet_bathroom_direction": "northwest"
+  },
+  "budget_constraints": {
+    "materials": "cost-effective and locally sourced",
+    "design": "minimalist with functional spaces",
+    "energy_efficiency": true,
+    "water_harvesting": true
+  }
+}

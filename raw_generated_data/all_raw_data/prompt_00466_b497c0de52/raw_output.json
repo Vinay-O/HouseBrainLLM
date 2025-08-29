@@ -1,0 +1,75 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Living Room",
+          "dimensions": {"length": 15, "width": 10},
+          "position": {"x": 0, "y": 0},
+          "vastu_adherence": true
+        },
+        {
+          "name": "Kitchen",
+          "dimensions": {"length": 12, "width": 8},
+          "position": {"x": 15, "y": 3},
+          "open_to_living_area": true,
+          "vastu_adherence": true
+        },
+        {
+          "name": "Master Bedroom",
+          "dimensions": {"length": 12, "width": 8},
+          "position": {"x": 0, "y": 15},
+          "adjoining_bathrooms": ["master_bathroom"],
+          "vastu_adherence": true
+        },
+        {
+          "name": "Bedroom 2",
+          "dimensions": {"length": 10, "width": 8},
+          "position": {"x": 15, "y": 15},
+          "adjoining_bathrooms": ["bathroom_2"],
+          "vastu_adherence": true
+        },
+        {
+          "name": "Master Bathroom",
+          "dimensions": {"length": 6, "width": 4},
+          "position": {"x": 8, "y": 15},
+          "shared_with_room": ["master_bedroom"],
+          "vastu_adherence": true
+        },
+        {
+          "name": "Bathroom 2",
+          "dimensions": {"length": 6, "width": 4},
+          "position": {"x": 20, "y": 15},
+          "shared_with_room": ["bedroom_2"],
+          "vastu_adherence": true
+        },
+        {
+          "name": "Dining Area",
+          "dimensions": {"length": 8, "width": 6},
+          "position": {"x": 0, "y": 5},
+          "open_to_living_area": true,
+          "vastu_adherence": true
+        },
+        {
+          "name": "Storage Room",
+          "dimensions": {"length": 12, "width": 4},
+          "position": {"x": 0, "y": 25},
+          "vastu_adherence": true
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "location": {"x": 7.5, "y": -1},
+          "direction": "north"
+        },
+        {
+          "type": "window",
+          "location": {"x": 23, "y": -1},
+          "direction": "north"
+        }
+      ]
+    }
+  ]
+}

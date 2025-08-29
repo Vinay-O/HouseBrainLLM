@@ -1,0 +1,197 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 1,
+      "totalArea": 450,
+      "style": "Ultra-Modern Minimalist"
+    },
+    "plot": {
+      "width": 30,
+      "depth": 15,
+      "orientation": "south",
+      "climate": "continental with harsh winters"
+    },
+    "roomBreakdown": [
+      {
+        "type": "workshop",
+        "area": 180
+      },
+      {
+        "type": "glass_connection",
+        "area": 90
+      },
+      {
+        "type": "living_roof",
+        "area": 180
+      }
+    ]
+  },
+  "total_area": 450.0,
+  "construction_cost": 135000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "workshop_main",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "type": "sliding_glass",
+              "to": "exterior"
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "type": "sliding_glass",
+              "to": "glass_connection_north"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "type": "fixed",
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 6,
+              "type": "fixed",
+              "size": "large"
+            }
+          ],
+          "features": [
+            "hydraulic_car_lift",
+            "polished_concrete_floor",
+            "industrial_lighting"
+          ]
+        },
+        {
+          "id": "glass_connection_north",
+          "type": "glass_connection",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 6,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 3,
+              "type": "sliding_glass",
+              "to": "workshop_main"
+            },
+            {
+              "wall": "south",
+              "position": 3,
+              "type": "sliding_glass",
+              "to": "glass_connection_south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "type": "fixed",
+              "size": "full_height"
+            },
+            {
+              "wall": "west",
+              "position": 6,
+              "type": "fixed",
+              "size": "full_height"
+            },
+            {
+              "wall": "ceiling",
+              "position": 3,
+              "type": "skylight",
+              "size": "large"
+            }
+          ],
+          "features": [
+            "heated_floor",
+            "minimalist_framing"
+          ]
+        },
+        {
+          "id": "glass_connection_south",
+          "type": "glass_connection",
+          "bounds": {
+            "x": 21,
+            "y": 0,
+            "width": 9,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4.5,
+              "type": "sliding_glass",
+              "to": "glass_connection_north"
+            },
+            {
+              "wall": "south",
+              "position": 4.5,
+              "type": "sliding_glass",
+              "to": "exterior"
+            },
+            {
+              "wall": "west",
+              "position": 2,
+              "type": "pet_door",
+              "to": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "type": "fixed",
+              "size": "full_height"
+            },
+            {
+              "wall": "ceiling",
+              "position": 4.5,
+              "type": "skylight",
+              "size": "large"
+            }
+          ],
+          "features": [
+            "heated_floor",
+            "built-in_bench",
+            "pet_access_ramp"
+          ]
+        },
+        {
+          "id": "living_roof",
+          "type": "living_roof",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "native_wildflowers",
+            "drought_tolerant_plants",
+            "integrated_drainage",
+            "walkable_surface"
+          ]
+        }
+      ]
+    }
+  ]
+}

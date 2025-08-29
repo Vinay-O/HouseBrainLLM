@@ -1,0 +1,542 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 2500,
+      "style": "Punjabi farmhouse with rural Sikh architectural elements"
+    },
+    "plot": {
+      "width": 50,
+      "length": 50,
+      "cornerPlot": true,
+      "dualFrontage": true
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 400
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "kitchen",
+        "area": 250
+      },
+      {
+        "type": "puja_room",
+        "area": 150
+      },
+      {
+        "type": "home_spa",
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "area": 120
+      },
+      {
+        "type": "utility",
+        "area": 100
+      },
+      {
+        "type": "biomass_energy_room",
+        "area": 100
+      },
+      {
+        "type": "courtyard",
+        "area": 360
+      }
+    ]
+  },
+  "total_area": 2500.0,
+  "construction_cost": 562500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard_central",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 25
+              },
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 35
+              },
+              "to_room": "corridor"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 25
+              },
+              "to_room": "bedroom_2"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 25
+              },
+              "to_room": "courtyard_central"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 15
+              },
+              "to_room": "baithak"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 25
+              },
+              "to_room": "main_entrance"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 20
+              },
+              "width": 5
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 30
+              },
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "baithak",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 15
+              },
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "to_room": "street_entrance"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 7.5
+              },
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 7.5
+              },
+              "to_room": "corridor"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 0
+              },
+              "to_room": "utility"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 20,
+                "y": 0
+              },
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 5
+              },
+              "to_room": "kitchen"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 5
+              },
+              "to_room": "biomass_energy_room"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "biomass_energy_room",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 5
+              },
+              "to_room": "utility"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 5
+              },
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 35
+              },
+              "to_room": "corridor"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 42.5
+              },
+              "to_room": "bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 40
+              },
+              "width": 5
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 45
+              },
+              "width": 5
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 50
+              },
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 50,
+            "width": 15,
+            "height": 0
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 50
+              },
+              "to_room": "bedroom_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "corridor",
+          "type": "corridor",
+          "bounds": {
+            "x": 15,
+            "y": 35,
+            "width": 20,
+            "height": 0
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 35
+              },
+              "to_room": "bedroom_1"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 35
+              },
+              "to_room": "courtyard_central"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 35
+              },
+              "to_room": "bedroom_2"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 35
+              },
+              "to_room": "puja_room"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 35
+              },
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 15,
+            "y": 50,
+            "width": 10,
+            "height": 0
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 50
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 50
+              },
+              "width": 5
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 50
+              },
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 42.5,
+                "y": 35
+              },
+              "to_room": "corridor"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 42.5
+              },
+              "to_room": "bathroom_2"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 42.5
+              },
+              "to_room": "home_spa"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 40
+              },
+              "width": 5
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 45
+              },
+              "width": 5
+            },
+            {
+              "position": {
+                "x": 42.5,
+                "y": 50
+              },
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 50,
+            "width": 15,
+            "height": 0
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 42.5,
+                "y": 50
+              },
+              "to_room": "bedroom_2"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "home_spa",
+          "type": "home_spa",
+          "bounds": {
+            "x": 50,
+            "y": 35,
+            "width": 0,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 50,
+                "y": 42.5
+              },
+              "to_room": "bedroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 40
+              },
+              "width": 5
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 45
+              },
+              "width": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 3,
+      "totalArea": 2800.0,
+      "style": "Postmodern Eclectic"
+    },
+    "plot": {
+      "slope": 30.0,
+      "orientation": "south",
+      "climate": "Mediterranean",
+      "privacy_requirements": "High"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "home_spa",
+        "count": 1
+      },
+      {
+        "type": "solar_collector_room",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2800.0,
+  "construction_cost": 560000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_entry",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "wall": "north"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_utility",
+          "type": "utility",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "east"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "solar_collector_room",
+          "type": "utility",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "east"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "panoramic"
+            },
+            {
+              "wall": "west",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_guest",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "north"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_teen1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            },
+            {
+              "wall": "east",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_teen2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 15,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            },
+            {
+              "wall": "west",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 18,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "panoramic"
+            },
+            {
+              "wall": "east",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_primary",
+          "type": "bathroom",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "home_spa",
+          "type": "spa",
+          "bounds": {
+            "x": 18,
+            "y": 8,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "panoramic"
+            }
+          ]
+        },
+        {
+          "id": "roof_terrace",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 28,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "wall": "south"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

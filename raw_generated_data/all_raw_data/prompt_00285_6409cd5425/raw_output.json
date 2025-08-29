@@ -1,0 +1,91 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": {"length": 15, "width": 20},
+          "features": ["floor-to-ceiling windows", " Bohemian decor", "Vastu compliant layout"],
+          "connected_to": ["dining_area", "bedroom"]
+        },
+        {
+          "room_id": "bedroom",
+          "dimensions": {"length": 15, "width": 20},
+          "features": ["attached bathroom", "wardrobe", "balcony"],
+          "connected_to": ["living_room", "bathroom"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": {"length": 10, "width": 12},
+          "features": ["modular kitchen", "pantry", "dining_area"],
+          "connected_to": ["dining_area"]
+        },
+        {
+          "room_id": "servants_quarters",
+          "dimensions": {"length": 8, "width": 10},
+          "features": ["attached bathroom", "storage space"],
+          "connected_to": []
+        },
+        {
+          "room_id": "dining_area",
+          "dimensions": {"length": 12, "width": 15},
+          "features": ["open kitchen concept", "Bohemian decor"],
+          "connected_to": ["living_room", "kitchen"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "location": "front",
+          "dimensions": {"length": 8, "width": 4}
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "location": "back",
+          "dimensions": {"length": 8, "width": 4}
+        },
+        {
+          "opening_id": "floor_to_ceiling_windows_living",
+          "type": "window",
+          "location": "living_room",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["Bohemian decor", "natural light"]
+        },
+        {
+          "opening_id": "floor_to_ceiling_windows_bedroom",
+          "type": "window",
+          "location": "bedroom",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["Bohemian decor", "natural light"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "rooftop_terrace",
+          "dimensions": {"length": 60, "width": 40},
+          "features": ["outdoor seating", "greenery", "Vastu compliant layout"],
+          "connected_to": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "terrace_access",
+          "type": "staircase",
+          "location": "living_room",
+          "dimensions": {"length": 4, "width": 2}
+        },
+        {
+          "opening_id": "terrace_windows",
+          "type": "window",
+          "location": "rooftop_terrace",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["natural light", "outdoor view"]
+        }
+      ]
+    }
+  ]}

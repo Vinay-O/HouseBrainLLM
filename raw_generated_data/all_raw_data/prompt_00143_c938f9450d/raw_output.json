@@ -1,0 +1,75 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "dimensions": { "length": 4.5, "width": 5 },
+          "features": ["spacious_balcony", "wardrobe", "en-suite_bathroom"],
+          "direction": "north"
+        },
+        {
+          "room_id": "living_room",
+          "type": "living_room",
+          "dimensions": { "length": 5, "width": 6 },
+          "features": ["swimming_pool_access", "home_theater", "dining_area"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": { "length": 3.5, "width": 4 },
+          "features": ["modular_wardrobes", "gas_stove", "water_purifier"]
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "bathroom",
+          "dimensions": { "length": 2.5, "width": 3 },
+          "features": ["shower", " toilet", "sink", "geyser"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "direction": "west",
+          "dimensions": { "length": 3, "width": 1.5 }
+        },
+        {
+          "opening_id": "balcony_door",
+          "type": "door",
+          "room_id": "bedroom_1",
+          "direction": "east",
+          "dimensions": { "length": 2, "width": 1.5 }
+        },
+        {
+          "opening_id": "swimming_pool_door",
+          "type": "door",
+          "room_id": "living_room",
+          "direction": "south",
+          "dimensions": { "length": 3, "width": 2 }
+        },
+        {
+          "opening_id": "home_theater_window",
+          "type": "window",
+          "room_id": "living_room",
+          "direction": "north",
+          "dimensions": { "length": 2.5, "width": 2 }
+        }
+      ],
+      "outdoor_features": [
+        {
+          "feature_id": "swimming_pool",
+          "type": "pool",
+          "dimensions": { "length": 8, "width": 4 },
+          "direction": "south"
+        }
+      ]
+    }
+  ],
+  "bohemian_style": true,
+  "corner_plot": true,
+  "west_facing": true,
+  "luxury_segment": true
+}

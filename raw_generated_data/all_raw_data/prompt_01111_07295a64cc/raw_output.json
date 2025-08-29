@@ -1,0 +1,59 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_hall",
+          "description": "A welcoming entrance area with a small reception area and coat closet. Incorporates Vastu principles by aligning the entrance to the northeast for positive energy flow.",
+          "dimensions": { "length": 4, "width": 3 },
+          "adjacencies": [ "living_area", "kitchen" ]
+        },
+        {
+          "room_id": "living_area",
+          "description": "A versatile living space that serves as a combined dining and entertainment area. Large window openings to the south for natural light.",
+          "dimensions": { "length": 6, "width": 4 },
+          "adjacencies": [ "entrance_hall", "bedroom_1" ]
+        },
+        {
+          "room_id": "kitchen",
+          "description": "Compact and efficient kitchen with modern fixtures. Placed adjacent to the living area to maintain a sense of continuity.",
+          "dimensions": { "length": 3, "width": 2 },
+          "adjacencies": [ "entrance_hall", "living_area" ]
+        },
+        {
+          "room_id": "bedroom_1",
+          "description": "Spacious studio bedroom with a dedicated balcony overlooking the garden. Positioned to maximize natural light and ventilation.",
+          "dimensions": { "length": 5, "width": 4 },
+          "balcony": true,
+          "adjacencies": [ "living_area" ]
+        },
+        {
+          "room_id": "studio_apartment_courtyard",
+          "description": "Central open space that doubles as a common living area and work studio. Features a large garden integrated into the design.",
+          "dimensions": { "length": 7, "width": 5 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entry",
+          "description": "Main entrance door located on the northeast side of the plot, in accordance with Vastu principles.",
+          "position": { "level": "ground_floor", "side": "northeast" },
+          "dimensions": { "height": 2.1, "width": 0.9 }
+        },
+        {
+          "opening_id": "balcony_entrance",
+          "description": "Balconies adjoining the studio bedroom for private outdoor space.",
+          "position": { "level": "ground_floor", "side": "northwest" },
+          "dimensions": { "height": 2, "width": 1 }
+        },
+        {
+          "opening_id": "garden_access",
+          "description": "Large opening leading to the garden area from the living studio.",
+          "position": { "level": "ground_floor", "side": "southwest" },
+          "dimensions": { "height": 2, "width": 1.5 }
+        }
+      ]
+    }
+  ]
+}

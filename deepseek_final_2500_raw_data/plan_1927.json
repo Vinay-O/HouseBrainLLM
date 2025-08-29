@@ -1,0 +1,294 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Ultra-Modern Minimalist"
+    },
+    "plot": {
+      "topography": "rocky_outcrop",
+      "climate": "humid_subtropical",
+      "orientation": "diagonal_to_prevailing_winds"
+    },
+    "roomBreakdown": [
+      {
+        "type": "workshop",
+        "area": 400
+      },
+      {
+        "type": "office",
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "kitchen",
+        "area": 150
+      },
+      {
+        "type": "living_room",
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 300000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "type": "overhead_garage_door"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 20
+              },
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "type": "clerestory"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 0
+              },
+              "type": "clerestory"
+            }
+          ],
+          "features": [
+            "hydraulic_car_lift",
+            "high_ceiling",
+            "epoxy_flooring"
+          ]
+        },
+        {
+          "id": "office",
+          "type": "office",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "type": "sliding_glass"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 10
+              },
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 0
+              },
+              "type": "fixed_glass_panel"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 20
+              },
+              "type": "fixed_glass_panel"
+            }
+          ],
+          "features": [
+            "built_in_shelving",
+            "data_ports"
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 7.5
+              },
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 0
+              },
+              "type": "fixed_glass_panel"
+            }
+          ],
+          "features": [
+            "walk_in_closet"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 17.5
+              },
+              "type": "pocket"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "wet_room",
+            "skylight"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 30
+              },
+              "type": "sliding_glass"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 25
+              },
+              "type": "fixed_glass_panel"
+            }
+          ],
+          "features": [
+            "island",
+            "energy_efficient_appliances"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 25,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 25
+              },
+              "type": "sliding_glass"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 25
+              },
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 27.5,
+                "y": 20
+              },
+              "type": "fixed_glass_panel"
+            }
+          ],
+          "features": [
+            "open_plan"
+          ]
+        }
+      ]
+    }
+  ],
+  "materials": {
+    "structure": [
+      "reinforced_concrete_shell",
+      "steel_frame"
+    ],
+    "exterior": [
+      "polished_concrete",
+      "local_stone_veneer"
+    ],
+    "insulation": [
+      "phase_change_material_panels"
+    ],
+    "roofing": [
+      "living_roof",
+      "integrated_solar_panels"
+    ],
+    "windows": [
+      "double_glazed_low_e"
+    ]
+  },
+  "features": [
+    "earthquake_resistant_foundation",
+    "passive_cooling_ventilation",
+    "rainwater_harvesting",
+    "greywater_system"
+  ]
+}

@@ -1,0 +1,138 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        { 
+          "room_type": "entrance_hall", 
+          "dimensions": {"length": 10, "width": 8}, 
+          "description": " spacious entryway with Vastu-aligned main entrance to the north."
+        },
+        { 
+          "room_type": "living_room", 
+          "dimensions": {"length": 15, "width": 12}, 
+          "description": "open-plan living area facing east for positive energy flow."
+        },
+        { 
+          "room_type": "dining_area",
+          "dimensions": {"length": 8, "width": 6},
+          "description": "adjacent to the living room, designed with ample natural light."
+        },
+        {
+          "room_type": "kitchen", 
+          "dimensions": {"length": 10, "width": 7}, 
+          "description": "modern kitchen adjacent to dining area, with south facing windows for light."
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"length": 12, "width": 10},
+          "description": "master bedroom on the east side with a spacious balcony overlooking the garden."
+        },
+        {
+          "room_type": "bedroom", 
+          "dimensions": {"length": 11, "width": 9}, 
+          "description": "secondary bedroom on the west side with a balcony facing south for privacy and light."
+        },
+        {
+          "room_type": "balcony",
+          "dimensions": {"length": 5, "width": 4},
+          "description": "attached to master bedroom for outdoor relaxation."
+        },
+        {
+          "room_type": "balcony",
+          "dimensions": {"length": 5, "width": 4},
+          "description": "attached to secondary bedroom with garden view."
+        },
+        {
+          "room_type": "storage_room", 
+          "dimensions": {"length": 6, "width": 5}, 
+          "description": "utility and storage space near kitchen."
+        }
+      ],
+      "openings": [
+        { "opening_type": "door", "location": "entrance_hall", "direction": "north" },
+        {
+          "opening_type": "window",
+          "room": "living_room",
+          "direction": "east"
+        },
+        {
+          "opening_type": "window",
+          "room": "dining_area",
+          "direction": "south"
+        },
+        {
+          "opening_type": "window",
+          "room": "kitchen",
+          "direction": "west"
+        },
+        { 
+          "opening_type": "door", 
+          "location": "bedroom_master", 
+          "direction": "east" 
+        },
+        {
+          "opening_type": "balcony_access", 
+          "room": "master_bedroom", 
+          "description": "Provides access to spacious balcony."
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        { 
+          "room_type": "bedroom", 
+          "dimensions": {"length": 12, "width": 10}, 
+          "description": "primary bedroom with north-facing window for good energy flow."
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {"length": 11, "width": 9},
+          "description": "secondary bedroom with east exposure and private balcony."
+        },
+        {
+          "room_type": "balcony",
+          "dimensions": {"length": 5, "width": 4},
+          "description": "attached to primary bedroom for fresh air."
+        },
+        {
+          "room_type": "study_room", 
+          "dimensions": {"length": 8, "width": 6}, 
+          "description": "small study or guest room near the bedrooms."
+        }
+      ],
+      "openings": [
+        { "opening_type": "door", "location": "bedroom_primary", "direction": "north" },
+        {
+          "opening_type": "window",
+          "room": "secondary_bedroom",
+          "direction": "east"
+        },
+        {
+          "opening_type": "balcony_access", 
+          "room": "primary_bedroom", 
+          "description": "Provides access to private balcony."
+        }
+      ]
+    },
+    {
+      "level_id": "garage_and_garden_level",
+      "rooms": [
+        {
+          "room_type": "garage",
+          "dimensions": {"length": 20, "width": 15},
+          "description": "two-car garage with ample parking space."
+        }
+      ],
+      "openings": [
+        { "opening_type": "door", "location": "garage", "direction": "north" },
+        {
+          "opening_type": "window",
+          "room": "garage",
+          "direction": "east"
+        }
+      ]
+    }
+  ]
+}

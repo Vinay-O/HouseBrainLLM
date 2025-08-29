@@ -1,0 +1,52 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Living Room",
+          "dimensions": {"width": 15, "depth": 20},
+          "location": {"x": 5, "y": 5},
+          "features": ["floor_to_ceiling_windows"]
+        },
+        {
+          "name": "Kitchen",
+          "dimensions": {"width": 12, "depth": 15},
+          "location": {"x": 40, "y": 5},
+          "features": []
+        },
+        {
+          "name": "Bedroom 1 (Master)",
+          "dimensions": {"width": 18, "depth": 20},
+          "location": {"x": 5, "y": 30},
+          "features": ["floor_to_ceiling_windows"]
+        },
+        {
+          "name": "Bathroom",
+          "dimensions": {"width": 8, "depth": 10},
+          "location": {"x": 24, "y": 30},
+          "features": []
+        },
+        {
+          "name": "Study Room",
+          "dimensions": {"width": 15, "depth": 15},
+          "location": {"x": 40, "y": 25},
+          "features": ["floor_to_ceiling_windows"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "room_name": "Living Room",
+          "opening_position": {"x": 10, "y": 5}
+        },
+        {
+          "type": "window",
+          "room_name": "Bedroom 1 (Master)",
+          "opening_position": {"x": 8, "y": 30},
+          "features": ["floor_to_ceiling"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Bohemian"
+    },
+    "plot": {
+      "width": 60,
+      "length": 90
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "kitchen_living",
+        "area": 500
+      },
+      {
+        "type": "courtyard",
+        "area": 300
+      },
+      {
+        "type": "terrace",
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 216000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen_living",
+          "type": "kitchen_living",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 60,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 30
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "north",
+              "position": 50
+            },
+            {
+              "wall": "east",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "terrace",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 70,
+            "width": 60,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 30
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

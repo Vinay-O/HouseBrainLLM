@@ -1,0 +1,66 @@
+{ "levels": [
+    {
+      "level_id": "penthouse",
+      "rooms": [
+        {
+          "room_id": "living_dining_kitchen",
+          "type": "combined_living_dining_kitchen",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["floor_to_ceiling_windows", "high_ceilings"],
+          "furnishings": ["bohemian_furniture", "indoor_plants"]
+        },
+        {
+          "room_id": "home_office",
+          "type": "office",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["natural_light", "ergonomic_furniture"],
+          "furnishings": ["desk", "chair", "bookshelf"]
+        },
+        {
+          "room_id": "library",
+          "type": "library",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["floor_to_ceiling_shelves", "reading_nook"],
+          "furnishings": ["books", "armchair"]
+        },
+        {
+          "room_id": "bedroom",
+          "type": "bedroom",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["large_window", "wardrobe"],
+          "furnishings": ["king_size_bed", "dressing_table"]
+        },
+        {
+          "room_id": "bathroom",
+          "type": "bathroom",
+          "dimensions": { "length": 8, "width": 5 },
+          "features": ["modern_fixtures", "shower"],
+          "furnishings": ["toilet", "sink"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony",
+          "type": "balcony",
+          "access_from": ["living_dining_kitchen", "bedroom"],
+          "dimensions": { "length": 10, "width": 5 }
+        },
+        {
+          "opening_id": "terrace",
+          "type": "terrace",
+          "access_from": ["living_dining_kitchen"],
+          "dimensions": { "length": 20, "width": 10 }
+        }
+      ],
+      "vasthu_compliance": [
+        {
+          "feature": "home_office",
+          "compliance": "Placed in the west direction as per Vastu for better focus and productivity."
+        },
+        {
+          "feature": "library",
+          "compliance": "Located in the south-west direction to enhance knowledge and wisdom according to Vastu principles."
+        }
+      ]
+    }
+  ] }

@@ -1,0 +1,183 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_area",
+          "shape": "rectangle",
+          "dimensions": {
+            "length": 4.5,
+            "width": 3.8
+          },
+          "position": {
+            "from_north": "front",
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "rectangle",
+          "dimensions": {
+            "length": 3.5,
+            "width": 2.8
+          },
+          "position": {
+            "from_north": "front",
+            "x": 4.5,
+            "y": 0
+          }
+        },
+        {
+          "room_id": "bedroom",
+          "shape": "rectangle",
+          "dimensions": {
+            "length": 4.2,
+            "width": 3.8
+          },
+          "position": {
+            "from_north": "front",
+            "x": 0,
+            "y": 3.8
+          }
+        },
+        {
+          "room_id": "bathroom",
+          "shape": "square",
+          "dimensions": {
+            "length": 2.5,
+            "width": 2.5
+          },
+          "position": {
+            "from_north": "front",
+            "x": 4.5,
+            "y": 3.8
+          }
+        },
+        {
+          "room_id": "servant_quarters",
+          "shape": "rectangle",
+          "dimensions": {
+            "length": 4.0,
+            "width": 2.8
+          },
+          "position": {
+            "from_north": "front",
+            "x": 0,
+            "y": 7.6
+          }
+        },
+        {
+          "room_id": "servant_bathroom",
+          "shape": "square",
+          "dimensions": {
+            "length": 2.5,
+            "width": 2.5
+          },
+          "position": {
+            "from_north": "front",
+            "x": 4.0,
+            "y": 7.6
+          }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": {
+            "length": 1.2,
+            "width": 2.4
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "from_north": true
+          }
+        },
+        {
+          "opening_id": "living_kitchen_passage",
+          "type": "passage",
+          "dimensions": {
+            "length": 1.2,
+            "width": 3.8
+          },
+          "position": {
+            "x": 4.5,
+            "y": 0,
+            "from_north": true
+          }
+        },
+        {
+          "opening_id": "bedroom_bathroom_passage",
+          "type": "passage",
+          "dimensions": {
+            "length": 1.2,
+            "width": 3.8
+          },
+          "position": {
+            "x": 0,
+            "y": 3.8,
+            "from_north": true
+          }
+        },
+        {
+          "opening_id": "servant_quarters_bathroom_passage",
+          "type": "passage",
+          "dimensions": {
+            "length": 1.2,
+            "width": 4.0
+          },
+          "position": {
+            "x": 0,
+            "y": 7.6,
+            "from_north": true
+          }
+        },
+        {
+          "opening_id": "servant_quarters_entrance",
+          "type": "door",
+          "dimensions": {
+            "length": 1.2,
+            "width": 2.4
+          },
+          "position": {
+            "x": 0,
+            "y": 7.6,
+            "from_north": false
+          }
+        },
+        {
+          "opening_id": "rooftop_terrace_stairs",
+          "type": "staircase",
+          "dimensions": {
+            "length": 1.5,
+            "width": 0.8
+          },
+          "position": {
+            "x": 4.2,
+            "y": 7.6,
+            "from_north": true
+          }
+        }
+      ],
+      "outdoor_spaces": [
+        {
+          "space_id": "rooftop_terrace",
+          "shape": "rectangle",
+          "dimensions": {
+            "length": 9.0,
+            "width": 8.4
+          },
+          "position": {
+            "from_north": "front",
+            "x": 0,
+            "y": 0,
+            "level_above": true
+          }
+        }
+      ]
+    }
+  ]
+}

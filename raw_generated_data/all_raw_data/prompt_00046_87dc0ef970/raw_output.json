@@ -1,0 +1,39 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"room_type": "entrance_hall", "area": "10x8 feet"},
+        {"room_type": "living_room", "area": "25x20 feet"},
+        {"room_type": "dining_room", "area": "20x15 feet"},
+        {"room_type": "kitchen", "area": "15x12 feet"},
+        {"room_type": "master_bedroom", "area": "18x16 feet", "balcony_area": "8x4 feet"},
+        {"room_type": "guest_room_1", "area": "15x12 feet", "balcony_area": "7x3.5 feet"}
+      ],
+      "openings": [
+        {"type": "floor_to_ceiling_window", "location": "living_room"},
+        {"type": "floor_to_ceiling_window", "location": "master_bedroom"},
+        {"type": "door", "location": "entrance_hall", "direction": "east"}
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {"room_type": "guest_room_2", "area": "15x12 feet", "balcony_area": "7x3.5 feet"},
+        {"room_type": "bedroom_for_servants_or_guests", "area": "14x10 feet", "balcony_area": "6x3 feet"}
+      ],
+      "openings": [
+        {"type": "floor_to_ceiling_window", "location": "guest_room_2"},
+        {"type": "door", "location": "servant_guest_bedroom", "direction": "west"}
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [],
+      "openings": [
+        {"type": "roof_terrace_opening", "area": "30x25 feet"},
+        {"type": "floor_to_ceiling_window", "location": "terrace"}
+      ]
+    }
+  ]
+}

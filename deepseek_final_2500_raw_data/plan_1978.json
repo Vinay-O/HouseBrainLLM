@@ -1,0 +1,205 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 2800,
+      "style": "Earthship Curved Shell"
+    },
+    "plot": {
+      "elevation": "elevated platform above wetlands",
+      "climate": "coastal with salt air exposure"
+    },
+    "roomBreakdown": [
+      {
+        "type": "primary_bedroom",
+        "area": 350
+      },
+      {
+        "type": "guest_bedroom",
+        "area": 250
+      },
+      {
+        "type": "brewery",
+        "area": 400
+      },
+      {
+        "type": "great_room",
+        "area": 600
+      },
+      {
+        "type": "kitchen",
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "area": 150
+      },
+      {
+        "type": "mechanical_room",
+        "area": 200
+      },
+      {
+        "type": "storm_shelter",
+        "area": 150
+      },
+      {
+        "type": "greenhouse",
+        "area": 400
+      }
+    ]
+  },
+  "total_area": 2800.0,
+  "construction_cost": 875000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "great_room",
+          "type": "great_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            "south_glasswall_access",
+            "to_kitchen",
+            "to_hallway"
+          ],
+          "windows": [
+            "south_curved_glasswall"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "to_great_room",
+            "to_brewery"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "brewery",
+          "type": "brewery",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_kitchen",
+            "exterior_access"
+          ],
+          "windows": []
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 17.5
+          },
+          "doors": [
+            "to_hallway",
+            "to_bathroom"
+          ],
+          "windows": [
+            "south_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 15,
+            "height": 17.5
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 20,
+            "width": 10,
+            "height": 17.5
+          },
+          "doors": [
+            "to_hallway",
+            "to_primary_bedroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "storm_shelter",
+          "type": "storm_shelter",
+          "bounds": {
+            "x": 45,
+            "y": 20,
+            "width": 10,
+            "height": 17.5
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_room",
+          "type": "mechanical_room",
+          "bounds": {
+            "x": 55,
+            "y": 20,
+            "width": 10,
+            "height": 17.5
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "greenhouse",
+          "type": "greenhouse",
+          "bounds": {
+            "x": 0,
+            "y": 37.5,
+            "width": 65,
+            "height": 10
+          },
+          "doors": [
+            "from_great_room"
+          ],
+          "windows": [
+            "south_glasswall",
+            "roof_glazing"
+          ]
+        }
+      ]
+    }
+  ]
+}

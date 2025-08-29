@@ -1,0 +1,389 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 2700,
+      "style": "Heritage-Inspired Gujarati Pol with Split-Level"
+    },
+    "plot": {
+      "width": 30,
+      "length": 50,
+      "location": "Jaipur Old City",
+      "description": "Compact 30x50 feet suburban lot requiring community integration and privacy focus."
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3,
+        "description": "Master bedroom with ensuite, and two future children's bedrooms"
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "description": "One ensuite, one shared family bathroom, one powder room near living area"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Modern Indian kitchen with traditional aesthetics and efficient layout"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Formal living area adjacent to central courtyard"
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "description": "Open plan dining area connected to kitchen and courtyard"
+      },
+      {
+        "type": "cellar",
+        "count": 1,
+        "description": "Wine and beverage cellar adapted for Indian climate with passive cooling"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "description": "Laundry and storage space"
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "description": "Central angan with tulsi platform, traditional water storage, and rainwater harvesting"
+      },
+      {
+        "type": "veranda",
+        "count": 1,
+        "description": "Covered outdoor sitting area with carved sandstone pillars"
+      }
+    ]
+  },
+  "total_area": 2700.0,
+  "construction_cost": 6750000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "description": "Semi-basement level containing cellar, utilities, and rainwater harvesting infrastructure",
+      "rooms": [
+        {
+          "id": "wine_cellar",
+          "type": "cellar",
+          "bounds": {
+            "x": 5,
+            "y": 35,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 35,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "water_harvesting",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [],
+          "windows": [],
+          "description": "Integrated rainwater harvesting system with traditional storage tanks"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "description": "Ground floor with central courtyard, living spaces, and traditional elements",
+      "rooms": [
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            },
+            {
+              "wall": "south",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [],
+          "description": "Angan with tulsi platform, carved sandstone pillars, and traditional motifs"
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "powder_room",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 2
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "description": "Upper floor with private bedrooms and family bathroom",
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7
+            },
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "master_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "family_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Postmodern Eclectic"
+    },
+    "plot": {
+      "climate": "desert with extreme temperatures",
+      "topography": "sunken courtyard",
+      "orientation": "diagonal to prevailing winds"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "specialAttributes": [
+          "aging-in-place modifications"
+        ]
+      },
+      {
+        "type": "game_room",
+        "specialAttributes": [
+          "built-in arcade"
+        ]
+      },
+      {
+        "type": "courtyard",
+        "specialAttributes": [
+          "greywater recycling for irrigation"
+        ]
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 285000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "bedroom_pod",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "to": "connector_1",
+              "position": {
+                "x": 16,
+                "y": 6
+              }
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": {
+                "x": 8,
+                "y": 0
+              }
+            },
+            {
+              "wall": "east",
+              "position": {
+                "x": 16,
+                "y": 3
+              }
+            }
+          ],
+          "specialAttributes": [
+            "aging-in-place modifications",
+            "accessible bathroom"
+          ]
+        },
+        {
+          "id": "office_pod",
+          "type": "office",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "to": "connector_2",
+              "position": {
+                "x": 0,
+                "y": 6
+              }
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": {
+                "x": 7,
+                "y": 12
+              }
+            },
+            {
+              "wall": "west",
+              "position": {
+                "x": 0,
+                "y": 3
+              }
+            }
+          ],
+          "specialAttributes": [
+            "remote work optimized",
+            "soundproofing"
+          ]
+        },
+        {
+          "id": "game_pod",
+          "type": "game_room",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "to": "connector_3",
+              "position": {
+                "x": 16,
+                "y": 9
+              }
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": {
+                "x": 8,
+                "y": 14
+              }
+            },
+            {
+              "wall": "east",
+              "position": {
+                "x": 16,
+                "y": 7
+              }
+            }
+          ],
+          "specialAttributes": [
+            "built-in arcade",
+            "media center"
+          ]
+        },
+        {
+          "id": "living_pod",
+          "type": "living_room",
+          "bounds": {
+            "x": 24,
+            "y": 18,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            {
+              "to": "connector_4",
+              "position": {
+                "x": 0,
+                "y": 7
+              }
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": {
+                "x": 7,
+                "y": 0
+              }
+            },
+            {
+              "wall": "west",
+              "position": {
+                "x": 0,
+                "y": 7
+              }
+            }
+          ],
+          "specialAttributes": [
+            "flexible seating",
+            "entertainment area"
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 16,
+            "y": 6,
+            "width": 8,
+            "height": 18
+          },
+          "doors": [],
+          "windows": [],
+          "specialAttributes": [
+            "sunken design",
+            "greywater recycling for irrigation",
+            "thermal mass"
+          ]
+        },
+        {
+          "id": "connector_1",
+          "type": "hallway",
+          "bounds": {
+            "x": 16,
+            "y": 5,
+            "width": 2,
+            "height": 2
+          },
+          "doors": [
+            {
+              "to": "bedroom_pod",
+              "position": {
+                "x": 0,
+                "y": 1
+              }
+            },
+            {
+              "to": "courtyard",
+              "position": {
+                "x": 1,
+                "y": 2
+              }
+            }
+          ],
+          "windows": [],
+          "specialAttributes": [
+            "covered walkway"
+          ]
+        },
+        {
+          "id": "connector_2",
+          "type": "hallway",
+          "bounds": {
+            "x": 22,
+            "y": 5,
+            "width": 2,
+            "height": 2
+          },
+          "doors": [
+            {
+              "to": "office_pod",
+              "position": {
+                "x": 2,
+                "y": 1
+              }
+            },
+            {
+              "to": "courtyard",
+              "position": {
+                "x": 1,
+                "y": 0
+              }
+            }
+          ],
+          "windows": [],
+          "specialAttributes": [
+            "covered walkway"
+          ]
+        },
+        {
+          "id": "connector_3",
+          "type": "hallway",
+          "bounds": {
+            "x": 16,
+            "y": 17,
+            "width": 2,
+            "height": 2
+          },
+          "doors": [
+            {
+              "to": "game_pod",
+              "position": {
+                "x": 0,
+                "y": 1
+              }
+            },
+            {
+              "to": "courtyard",
+              "position": {
+                "x": 1,
+                "y": 0
+              }
+            }
+          ],
+          "windows": [],
+          "specialAttributes": [
+            "covered walkway"
+          ]
+        },
+        {
+          "id": "connector_4",
+          "type": "hallway",
+          "bounds": {
+            "x": 22,
+            "y": 17,
+            "width": 2,
+            "height": 2
+          },
+          "doors": [
+            {
+              "to": "living_pod",
+              "position": {
+                "x": 2,
+                "y": 1
+              }
+            },
+            {
+              "to": "courtyard",
+              "position": {
+                "x": 1,
+                "y": 2
+              }
+            }
+          ],
+          "windows": [],
+          "specialAttributes": [
+            "covered walkway"
+          ]
+        }
+      ]
+    }
+  ]
+}

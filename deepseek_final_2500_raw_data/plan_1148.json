@@ -1,0 +1,147 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 650,
+      "style": "Desert Contemporary"
+    },
+    "plot": {
+      "slope": "Following natural contours",
+      "climate": "Mediterranean dry summers",
+      "location": "Urban rooftop"
+    },
+    "roomBreakdown": [
+      {
+        "type": "telecommuting_pod",
+        "area": 120
+      },
+      {
+        "type": "living_room",
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "area": 100
+      },
+      {
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "type": "utility",
+        "area": 40
+      }
+    ]
+  },
+  "total_area": 650.0,
+  "construction_cost": 195000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "east"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 12.5
+          },
+          "doors": [],
+          "windows": [
+            "east"
+          ]
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 12,
+            "y": 12.5,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "telecommuting_pod_1",
+          "type": "telecommuting_pod",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "west"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            "east"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

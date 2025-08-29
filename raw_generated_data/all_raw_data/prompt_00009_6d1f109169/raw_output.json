@@ -1,0 +1,114 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 4.5, "width": 3.5 },
+          "orientation": "north"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 3.0, "width": 2.8 },
+          "orientation": "southeast"
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 3.0, "width": 2.5 },
+          "adjacent_to": ["kitchen", "living_room"]
+        },
+        {
+          "room_id": "master_bedroom",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "orientation": "southwest"
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 3.5, "width": 3.0 },
+          "orientation": "northwest"
+        },
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 3.5, "width": 3.0 },
+          "orientation": "northeast"
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 2.8, "width": 2.5 },
+          "adjacent_to": ["bedroom_3"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "orientation": "west"
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "orientation": "east"
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "orientation": "north"
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "orientation": "southwest"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 3.5, "width": 3.0 },
+          "orientation": "northwest"
+        },
+        {
+          "room_id": "bedroom_5",
+          "dimensions": { "length": 3.5, "width": 3.0 },
+          "orientation": "southwest"
+        },
+        {
+          "room_id": "balcony",
+          "dimensions": { "length": 4.0, "width": 2.0 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "bedroom_4_window",
+          "type": "window",
+          "orientation": "northwest"
+        },
+        {
+          "opening_id": "bedroom_5_window",
+          "type": "window",
+          "orientation": "southwest"
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_id": "terrace_access",
+          "type": "staircase",
+          "from_level": "first_floor"
+        }
+      ]
+    }
+  ],
+  "features": {
+    "eco_friendly": true,
+    "plot_orientation": "west",
+    "vastu_compliant": true,
+    "budget": "tight"
+  }
+}

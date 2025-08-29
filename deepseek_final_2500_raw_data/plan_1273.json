@@ -1,0 +1,233 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Geodesic Dome"
+    },
+    "plot": {
+      "slope": "terraced mountain",
+      "climate": "continental with harsh winters",
+      "privacy": "high",
+      "waterManagement": "rainwater harvesting with underground cisterns"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "subtype": "chef's kitchen with wood-fired oven"
+      },
+      {
+        "type": "library",
+        "subtype": "scholarly collection"
+      },
+      {
+        "type": "study",
+        "subtype": "private research"
+      },
+      {
+        "type": "master_bedroom",
+        "subtype": "suite with view"
+      },
+      {
+        "type": "guest_bedroom",
+        "subtype": "scholar accommodation"
+      },
+      {
+        "type": "great_room",
+        "subtype": "central living space"
+      },
+      {
+        "type": "utility",
+        "subtype": "mechanical and cistern access"
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 875000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "great_room",
+          "type": "great_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 30
+          },
+          "doors": [
+            "entry_door_north",
+            "door_to_kitchen",
+            "door_to_library",
+            "stairs_up"
+          ],
+          "windows": [
+            "window_wall_south",
+            "oculus_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            "door_to_great_room",
+            "pantry_door"
+          ],
+          "windows": [
+            "window_east"
+          ]
+        },
+        {
+          "id": "pantry",
+          "type": "utility",
+          "bounds": {
+            "x": 40,
+            "y": 18,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "pantry_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical",
+          "type": "utility",
+          "bounds": {
+            "x": 50,
+            "y": 18,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "cistern_access"
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry_bridge",
+          "type": "utility",
+          "bounds": {
+            "x": -10,
+            "y": 12,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            "entry_door_north"
+          ],
+          "windows": [
+            "bridge_windows"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            "door_to_study",
+            "stairs_down"
+          ],
+          "windows": [
+            "reading_nook_window",
+            "dome_clerestory"
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "door_to_library"
+          ],
+          "windows": [
+            "desk_window"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "bathroom_door"
+          ],
+          "windows": [
+            "ravine_view_window"
+          ]
+        },
+        {
+          "id": "master_bath",
+          "type": "utility",
+          "bounds": {
+            "x": 45,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bathroom_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_bedroom_1",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            "guest_window"
+          ]
+        },
+        {
+          "id": "guest_bedroom_2",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            "guest_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

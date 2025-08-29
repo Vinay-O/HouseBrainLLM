@@ -1,0 +1,331 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 3200,
+      "style": "Scandinavian Hygge"
+    },
+    "plot": {
+      "location": "suburban cul-de-sac",
+      "climate": "temperate maritime",
+      "topography": "sloping"
+    },
+    "roomBreakdown": [
+      {
+        "type": "sunken_living_room",
+        "area": 450
+      },
+      {
+        "type": "kitchen",
+        "area": 300
+      },
+      {
+        "type": "dining_room",
+        "area": 250
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 350
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "primary_bath",
+        "area": 150
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "pottery_studio",
+        "area": 400
+      },
+      {
+        "type": "home_office",
+        "area": 300
+      },
+      {
+        "type": "mudroom",
+        "area": 100
+      },
+      {
+        "type": "utility",
+        "area": 100
+      },
+      {
+        "type": "thermal_chimney",
+        "area": 50
+      },
+      {
+        "type": "thermal_chimney",
+        "area": 50
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1280000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "sunken_living_room",
+          "type": "sunken_living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [
+            "entry_hall",
+            "dining_room"
+          ],
+          "windows": [
+            "north_wall",
+            "south_wall"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "sunken_living_room",
+            "kitchen"
+          ],
+          "windows": [
+            "east_wall"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "dining_room",
+            "mudroom"
+          ],
+          "windows": [
+            "east_wall"
+          ]
+        },
+        {
+          "id": "mudroom",
+          "type": "mudroom",
+          "bounds": {
+            "x": 45,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "kitchen",
+            "garage",
+            "exterior"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 55,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "mudroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "thermal_chimney_1",
+          "type": "thermal_chimney",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "hallway",
+            "primary_bath"
+          ],
+          "windows": [
+            "north_wall",
+            "south_wall"
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "primary_bath",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "primary_bedroom"
+          ],
+          "windows": [
+            "east_wall"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": [
+            "south_wall"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": [
+            "south_wall"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "thermal_chimney_2",
+          "type": "thermal_chimney",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "pottery_studio",
+          "type": "pottery_studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 16
+          },
+          "doors": [
+            "home_office",
+            "exterior"
+          ],
+          "windows": [
+            "north_wall",
+            "south_wall",
+            "east_wall"
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "pottery_studio"
+          ],
+          "windows": [
+            "north_wall",
+            "south_wall",
+            "east_wall"
+          ]
+        },
+        {
+          "id": "kiln_room",
+          "type": "utility",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            "pottery_studio"
+          ],
+          "windows": [
+            "ventilation_only"
+          ]
+        }
+      ]
+    }
+  ]
+}

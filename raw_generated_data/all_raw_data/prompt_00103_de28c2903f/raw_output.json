@@ -1,0 +1,120 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Entrance Hall",
+          "dimensions": {"width": 12, "depth": 8},
+          "position": {"x": 0, "y": 0},
+          "orientation": "North"
+        },
+        {
+          "room_name": "Living Room",
+          "dimensions": {"width": 18, "depth": 16},
+          "position": {"x": 12, "y": 0},
+          "connected_rooms": ["Kitchen", "Dining Room"]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"width": 14, "depth": 8},
+          "position": {"x": 30, "y": 8},
+          "orientation": "East"
+        },
+        {
+          "room_name": "Dining Room",
+          "dimensions": {"width": 12, "depth": 8},
+          "position": {"x": 26, "y": 0}
+        },
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": {"width": 14, "depth": 12},
+          "position": {"x": 0, "y": 16},
+          "en_suite_bathroom": true
+        },
+        {
+          "room_name": "Guest Bedroom 1",
+          "dimensions": {"width": 10, "depth": 8},
+          "position": {"x": 14, "y": 16}
+        },
+        {
+          "room_name": "Guest Bedroom 2",
+          "dimensions": {"width": 10, "depth": 8},
+          "position": {"x": 24, "y": 16}
+        },
+        {
+          "room_name": "Home Office",
+          "dimensions": {"width": 12, "depth": 10},
+          "position": {"x": 34, "y": 18}
+        },
+        {
+          "room_name": "Private Gym",
+          "dimensions": {"width": 16, "depth": 8},
+          "position": {"x": 24, "y": 24}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "location": ["Living Room", "Master Bedroom"],
+          "orientation": "West"
+        },
+        {
+          "opening_type": "Door",
+          "location": ["Entrance Hall", "Living Room"],
+          "width": 3,
+          "height": 8
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_name": "Bedroom 3",
+          "dimensions": {"width": 12, "depth": 8},
+          "position": {"x": 0, "y": 0}
+        },
+        {
+          "room_name": "Bedroom 4",
+          "dimensions": {"width": 12, "depth": 8},
+          "position": {"x": 12, "y": 0}
+        },
+        {
+          "room_name": "Bedroom 5",
+          "dimensions": {"width": 12, "depth": 8},
+          "position": {"x": 24, "y": 0}
+        },
+        {
+          "room_name": "Bedroom 6",
+          "dimensions": {"width": 12, "depth": 8},
+          "position": {"x": 36, "y": 0}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "location": ["Bedroom 3", "Bedroom 4"],
+          "orientation": "East"
+        },
+        {
+          "opening_type": "Window",
+          "location": ["Bedroom 5", "Bedroom 6"],
+          "orientation": "West"
+        }
+      ]
+    },
+    {
+      "level_id": "garden_level",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_type": "Garden Entrance",
+          "location": "Living Room",
+          "position": {"x": 30, "y": 18},
+          "width": 4
+        }
+      ]
+    }
+  ]
+}

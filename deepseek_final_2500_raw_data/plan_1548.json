@@ -1,0 +1,190 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 1850,
+      "style": "Neo-Classical"
+    },
+    "plot": {
+      "slope": "terraced_mountain",
+      "climate": "tropical_monsoon",
+      "orientation": "south"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "area": 300,
+        "description": "Professional culinary kitchen with high-end appliances, rammed earth walls for thermal mass, and south-facing windows for solar gain."
+      },
+      {
+        "type": "living_room",
+        "area": 350,
+        "description": "Open-plan living area with rammed earth feature walls, Neo-Classical symmetry, and large south-facing windows."
+      },
+      {
+        "type": "bedroom",
+        "area": 200,
+        "description": "Guest room with Murphy bed system, built-in storage, and pet-friendly access to outdoor terraces."
+      },
+      {
+        "type": "bathroom",
+        "area": 100,
+        "description": "Full bathroom with rammed earth accents and pet washing station."
+      },
+      {
+        "type": "dining_room",
+        "area": 250,
+        "description": "Formal dining space with Neo-Classical columns and panoramic mountain views."
+      },
+      {
+        "type": "utility",
+        "area": 150,
+        "description": "Stormwater management utility room with bioswale integration and storage."
+      },
+      {
+        "type": "terrace",
+        "area": 500,
+        "description": "Wraparound terraces with bioswales for stormwater management, pet-friendly access, and outdoor dining areas."
+      }
+    ]
+  },
+  "total_area": 1850.0,
+  "construction_cost": 425500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "south_terrace_door"
+          ],
+          "windows": [
+            "south_window_1",
+            "south_window_2"
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "south_terrace_door"
+          ],
+          "windows": [
+            "south_window_3",
+            "south_window_4"
+          ]
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "north_service_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "terrace_0",
+          "type": "terrace",
+          "bounds": {
+            "x": -5,
+            "y": -10,
+            "width": 50,
+            "height": 10
+          },
+          "doors": [
+            "south_terrace_door",
+            "north_service_door"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "south_balcony_door"
+          ],
+          "windows": [
+            "south_window_5",
+            "south_window_6"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "south_balcony_door"
+          ],
+          "windows": [
+            "south_window_7"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "terrace_1",
+          "type": "terrace",
+          "bounds": {
+            "x": -5,
+            "y": -10,
+            "width": 40,
+            "height": 10
+          },
+          "doors": [
+            "south_balcony_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

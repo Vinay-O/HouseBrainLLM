@@ -1,0 +1,219 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 1200.0,
+      "style": "Mediterranean Villa"
+    },
+    "plot": {
+      "climate": "Desert with extreme temperatures",
+      "orientation": "South-facing for solar gain",
+      "features": [
+        "Sunken courtyard",
+        "Privacy from neighbors"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "home_office",
+        "count": 1
+      },
+      {
+        "type": "music_room",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "living_room"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_1",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 8,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "music_room_1",
+          "type": "music_room",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "courtyard",
+            "hallway"
+          ],
+          "windows": [
+            "courtyard"
+          ]
+        },
+        {
+          "id": "hallway_1",
+          "type": "hallway",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 27
+          },
+          "doors": [
+            "bedroom_1",
+            "bathroom_1",
+            "utility_1",
+            "music_room_1",
+            "living_room_1",
+            "stairs"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "home_office_1",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "hallway",
+            "courtyard"
+          ],
+          "windows": [
+            "south",
+            "courtyard"
+          ]
+        },
+        {
+          "id": "courtyard_1",
+          "type": "courtyard",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "kitchen_1",
+            "living_room_1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway_2",
+          "type": "hallway",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 12
+          },
+          "doors": [
+            "home_office_1",
+            "kitchen_1",
+            "stairs"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

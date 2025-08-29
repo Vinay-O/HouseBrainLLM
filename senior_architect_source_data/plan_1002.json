@@ -1,0 +1,239 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1500,
+      "style": "Assamese Traditional with Bamboo Integration"
+    },
+    "plot": {
+      "orientation": "west",
+      "area": 1500,
+      "characteristics": [
+        "riverfront",
+        "flood_zone",
+        "evening_light"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 200
+      },
+      {
+        "type": "studio",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 100
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "chabutra",
+        "count": 1,
+        "area": 80
+      },
+      {
+        "type": "pool",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 1400.0,
+  "construction_cost": 280000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "north_entrance",
+            "south_entrance"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_door"
+          ],
+          "windows": [
+            "west_window"
+          ]
+        },
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_door"
+          ],
+          "windows": [
+            "north_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "west_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "west_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "courtyard_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "chabutra_platform",
+          "type": "chabutra",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "living_room_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "swimming_pool",
+          "type": "pool",
+          "bounds": {
+            "x": 15,
+            "y": 25,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "underground_utilities",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 25,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "exterior_access"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_hall",
+          "description": "Spacious entrance hall with decorative Art Deco elements.",
+          "dimensions": {"length": 6, "width": 4},
+          "adjacent_to": ["living_room", "balcony_1"]
+        },
+        {
+          "room_id": "living_room",
+          "description": "Large living room featuring bold geometric patterns and vibrant Art Deco detailing.",
+          "dimensions": {"length": 8, "width": 6},
+          "adjacent_to": ["entrance_hall", "dining_room"]
+        },
+        {
+          "room_id": "dining_room",
+          "description": "Open dining space with integrated lighting and decorative accents reflecting Art Deco style.",
+          "dimensions": {"length": 5, "width": 4},
+          "adjacent_to": ["living_room", "kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "description": "Modern kitchen designed with a fusion of traditional and modern elements, adhering to Indian building norms.",
+          "dimensions": {"length": 5, "width": 3},
+          "adjacent_to": ["dining_room", "utility_room"]
+        },
+        {
+          "room_id": "utility_room",
+          "description": "Compact utility area for cleaning and storage, positioned conveniently near the kitchen.",
+          "dimensions": {"length": 2, "width": 2}
+        },
+        {
+          "room_id": "bedroom_1",
+          "description": "Master bedroom with a spacious balcony emphasizing Art Deco style and Vastu aligned placement.",
+          "dimensions": {"length": 5, "width": 4},
+          "balcony": true,
+          "adjacent_to": ["entrance_hall", "living_room"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "description": "Second bedroom with its own spacious balcony, designed for joint family members.",
+          "dimensions": {"length": 4.5, "width": 3.5},
+          "balcony": true,
+          "adjacent_to": ["dining_room"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "description": "Third bedroom with a balcony offering panoramic views of the garden.",
+          "dimensions": {"length": 4, "width": 3.5},
+          "balcony": true,
+          "adjacent_to": ["entrance_hall"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "description": "Fourth bedroom with a balcony designed to integrate modern Art Deco aesthetics.",
+          "dimensions": {"length": 4, "width": 3.5},
+          "balcony": true,
+          "adjacent_to": ["kitchen"]
+        },
+        {
+          "room_id": "library",
+          "description": "Dedicated library space with custom built-ins and decorative lighting to suit the Art Deco style.",
+          "dimensions": {"length": 4, "width": 3},
+          "adjacent_to": ["living_room", "entrance_hall"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "front_door",
+          "description": "Main entrance door on the north side, designed with elegant Art Deco detailing.",
+          "location": "north"
+        },
+        {
+          "opening_id": "side_window",
+          "description": "Large windows providing ample light and air circulation on the east side.",
+          "location": "east"
+        },
+        {
+          "opening_id": "balcony_opening_1",
+          "description": "Balcony opening for bedroom 1 with a railing design in line with Vastu principles.",
+          "room": "bedroom_1",
+          "location": "southwest"
+        },
+        {
+          "opening_id": "balcony_opening_2",
+          "description": "Balcony opening for bedroom 2 offering a view of the garden, adhering to Art Deco aesthetics.",
+          "room": "bedroom_2",
+          "location": "southeast"
+        },
+        {
+          "opening_id": "balcony_opening_3",
+          "description": "Balcony opening for bedroom 3, ensuring proper sunlight and ventilation.",
+          "room": "bedroom_3",
+          "location": "southwest"
+        },
+        {
+          "opening_id": "balcony_opening_4",
+          "description": "Balcony opening for bedroom 4 with integrated privacy screens and decorative ironwork.",
+          "room": "bedroom_4",
+          "location": "southeast"
+        }
+      ]
+    }
+  ]
+}

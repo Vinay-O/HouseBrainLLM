@@ -1,0 +1,329 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 3,
+      "totalArea": 9600,
+      "style": "Traditional Artisan"
+    },
+    "plot": {
+      "width": 80,
+      "depth": 120,
+      "floodProne": true,
+      "orientation": "east"
+    },
+    "roomBreakdown": [
+      {
+        "type": "production_space",
+        "count": 1
+      },
+      {
+        "type": "music_room",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 4
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "stilt_base",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 9600.0,
+  "construction_cost": 2880000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "stilt_base",
+          "type": "stilt_base",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 80,
+            "height": 120
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 40
+            },
+            {
+              "wall": "south",
+              "position": 40
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "production_space",
+          "type": "production_space",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 80,
+            "height": 60
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 40
+            },
+            {
+              "wall": "south",
+              "position": 40
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 40
+            },
+            {
+              "wall": "west",
+              "position": 40
+            }
+          ]
+        },
+        {
+          "id": "music_room",
+          "type": "music_room",
+          "bounds": {
+            "x": 0,
+            "y": 60,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 30,
+            "y": 60,
+            "width": 50,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 25
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 25
+            },
+            {
+              "wall": "west",
+              "position": 25
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 90,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 90,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 105,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 12.5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 12.5
+            },
+            {
+              "wall": "west",
+              "position": 12.5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 40,
+            "height": 35
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 20
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 20
+            }
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 25,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

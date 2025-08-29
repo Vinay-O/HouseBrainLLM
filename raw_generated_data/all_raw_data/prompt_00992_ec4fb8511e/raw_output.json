@@ -1,0 +1,62 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["floor-to-ceiling windows", "scandinavian decor"],
+          "position": { "direction": "north" }
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["modern appliances", "open plan layout"],
+          "position": { "adjacent_to": "living_room" }
+        },
+        {
+          "room_id": "bedroom",
+          "dimensions": { "length": 16, "width": 14 },
+          "features": ["minimalist design", "walk-in closet"],
+          "position": { "direction": "east" }
+        },
+        {
+          "room_id": "bathroom",
+          "dimensions": { "length": 8, "width": 7 },
+          "features": ["luxury fixtures", "natural light"],
+          "position": { "adjacent_to": "bedroom" }
+        },
+        {
+          "room_id": "study",
+          "dimensions": { "length": 10, "width": 9 },
+          "features": ["ergonomic furniture", "calm ambiance"],
+          "position": { "direction": "south" }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "width": 3.5, "height": 8 },
+          "position": { "direction": "north" }
+        },
+        {
+          "opening_id": "window_living_room",
+          "type": "window",
+          "dimensions": { "width": 6, "height": 9 },
+          "features": ["floor-to-ceiling", "large"],
+          "position": { "adjacent_to": "living_room" }
+        },
+        {
+          "opening_id": "window_bedroom",
+          "type": "window",
+          "dimensions": { "width": 5, "height": 7 },
+          "features": ["floor-to-ceiling", "moderate"],
+          "position": { "adjacent_to": "bedroom" }
+        }
+      ],
+      "total_area": 800
+    }
+  ]
+}

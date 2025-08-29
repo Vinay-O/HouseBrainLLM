@@ -1,0 +1,413 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 3,
+      "totalArea": 10800,
+      "style": "Industrial"
+    },
+    "plot": {
+      "length": 90,
+      "width": 60
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 6,
+        "description": "Spacious master suites and family bedrooms with industrial finishes"
+      },
+      {
+        "type": "garage",
+        "count": 1,
+        "description": "Two-car garage with industrial-style roll-up door"
+      },
+      {
+        "type": "swimming_pool",
+        "count": 1,
+        "description": "Rectangular swimming pool with industrial concrete surround"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Open-concept double-height living area with exposed structural elements"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Industrial kitchen with stainless steel appliances and concrete countertops"
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "description": "Formal dining area with industrial lighting fixtures"
+      },
+      {
+        "type": "home_theater",
+        "count": 1,
+        "description": "Media room with premium audio-visual equipment"
+      },
+      {
+        "type": "gym",
+        "count": 1,
+        "description": "Fitness area with industrial-grade equipment"
+      },
+      {
+        "type": "bar",
+        "count": 1,
+        "description": "Entertainment bar with concrete counter and metal accents"
+      }
+    ]
+  },
+  "total_area": 10800.0,
+  "construction_cost": 3240000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_01",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "entrance_hall",
+          "type": "hall",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "gym_01",
+          "type": "gym",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "home_theater_01",
+          "type": "home_theater",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "pool_01",
+          "type": "swimming_pool",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 30,
+            "height": 35
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_01",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 40
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 15
+            },
+            {
+              "wall": "east",
+              "position": 20
+            }
+          ]
+        },
+        {
+          "id": "kitchen_01",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "dining_room_01",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bar_01",
+          "type": "bar",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bedroom_01",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 15,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom_01",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12
+            },
+            {
+              "wall": "east",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "bedroom_02",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bedroom_03",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bedroom_04",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "bedroom_05",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 25,
+            "height": 40
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 12
+            },
+            {
+              "wall": "east",
+              "position": 20
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

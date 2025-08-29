@@ -1,0 +1,225 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Contemporary"
+    },
+    "plot": {
+      "length": 80,
+      "width": 50
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "count": 1
+      },
+      {
+        "type": "home_office",
+        "count": 1
+      },
+      {
+        "type": "servant_quarters",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 640000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 40
+          },
+          "doors": [
+            {
+              "x": 5,
+              "y": 0,
+              "wall": "north"
+            }
+          ],
+          "windows": [
+            {
+              "x": 15,
+              "y": 0,
+              "wall": "north"
+            },
+            {
+              "x": 30,
+              "y": 10,
+              "wall": "east"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 30,
+              "y": 7,
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "x": 50,
+              "y": 5,
+              "wall": "east"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 30,
+              "y": 20,
+              "wall": "west"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "servant_quarters",
+          "type": "servant_quarters",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 10,
+            "height": 25
+          },
+          "doors": [
+            {
+              "x": 40,
+              "y": 15,
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "x": 50,
+              "y": 25,
+              "wall": "east"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            {
+              "x": 0,
+              "y": 15,
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "x": 20,
+              "y": 10,
+              "wall": "east"
+            },
+            {
+              "x": 10,
+              "y": 30,
+              "wall": "south"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 15,
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "x": 50,
+              "y": 10,
+              "wall": "east"
+            },
+            {
+              "x": 35,
+              "y": 30,
+              "wall": "south"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 10,
+              "y": 30,
+              "wall": "south"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

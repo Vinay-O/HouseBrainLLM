@@ -1,0 +1,123 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance",
+          "type": "foyer",
+          "dimensions": { "length": 10, "width": 6 },
+          "features": ["wheelchair ramp", "large welcome area"],
+          "position": "north-west"
+        },
+        {
+          "room_id": "living_room",
+          "type": "living room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["high ceilings", "skylight"],
+          "position": "north-east"
+        },
+        {
+          "room_id": "dining_room",
+          "type": "dining room",
+          "dimensions": { "length": 14, "width": 10 },
+          "features": ["adjacent to kitchen", "large windows"],
+          "position": "south-east"
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": { "length": 12, "width": 9 },
+          "features": ["island seating", "ventilation hood"],
+          "position": "south-west"
+        },
+        {
+          "room_id": "master_bedroom",
+          "type": "bedroom",
+          "dimensions": { "length": 15, "width": 13 },
+          "features": ["attached bathroom", "balcony with garden view"],
+          "position": "east"
+        },
+        {
+          "room_id": "guest_bedroom",
+          "type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["attached bathroom", "wheelchair accessible"],
+          "position": "west"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "front_entrance",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 7 },
+          "features": ["wheelchair ramp", "large wooden door with Chettinad carvings"]
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 6 },
+          "features": ["access to garden", "sliding glass door"]
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "features": ["large French windows for natural light and ventilation"]
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "dimensions": { "length": 13, "width": 11 },
+          "features": ["attached bathroom", "balcony"],
+          "position": "north"
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["attached bathroom", "large window"],
+          "position": "south"
+        },
+        {
+          "room_id": "study_room",
+          "type": "study room",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["natural light", "ventilation"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "upper_floor_window",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "features": ["large windows for natural light and ventilation"]
+        }
+      ]
+    },
+    {
+      "level_id": "garden",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_id": "garden_gate",
+          "type": "gate",
+          "dimensions": { "length": 3, "width": 6 },
+          "features": ["access from back door", "wheelchair accessible path"]
+        }
+      ]
+    }
+  ],
+  "features": {
+    "style": "Chettinad",
+    "total_area": 2000,
+    "garden": true,
+    "natural_light_ventilation_focus": true,
+    "wheelchair_accessible": true
+  }
+}

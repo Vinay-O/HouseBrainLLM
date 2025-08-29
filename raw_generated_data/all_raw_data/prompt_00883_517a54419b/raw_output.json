@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_porch",
+          "type": "porch",
+          "dimensions": { "length": 3.0, "width": 2.5 },
+          "location": "northwest"
+        },
+        {
+          "room_id": "living_room",
+          "type": "living room",
+          "dimensions": { "length": 4.5, "width": 4.0 },
+          "location": "northeast",
+          "features": ["high ceiling", "wooden flooring"]
+        },
+        {
+          "room_id": "dining_room",
+          "type": "dining room",
+          "dimensions": { "length": 3.5, "width": 3.0 },
+          "location": "east",
+          "features": ["adjacent to kitchen", "French doors to garden"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "location": "southeast",
+          "features": ["modular storage", "gas stove and electric oven"]
+        },
+        {
+          "room_id": "bedroom",
+          "type": "bedroom",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "location": "southwest",
+          "features": ["attached bathroom", "walk-in closet"]
+        },
+        {
+          "room_id": "bathroom",
+          "type": "bathroom",
+          "dimensions": { "length": 2.5, "width": 2.0 },
+          "location": "southwest",
+          "features": ["shower", "toilet", "sink"]
+        },
+        {
+          "room_id": "study_room",
+          "type": "study room",
+          "dimensions": { "length": 3.0, "width": 2.5 },
+          "location": "west",
+          "features": ["natural light", "French doors to garden"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 2.1, "width": 0.9 },
+          "location": "northwest"
+        },
+        {
+          "opening_id": "French_doors_living_room",
+          "type": "double door",
+          "dimensions": { "length": 2.0, "width": 1.5 },
+          "location": "east wall of living room"
+        },
+        {
+          "opening_id": "French_doors_study_room",
+          "type": "double door",
+          "dimensions": { "length": 2.0, "width": 1.5 },
+          "location": "south wall of study room"
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimensions": { "length": 1.5, "width": 1.2 },
+          "location": "east wall of kitchen"
+        }
+      ],
+      "central_courtyard": {
+        "dimensions": { "length": 3.0, "width": 3.0 },
+        "features": ["small water feature", "surrounded by greenery"]
+      },
+      "garden": {
+        "size": "large",
+        "location": "south and east sides of the bungalow"
+      }
+    },
+    {
+      "level_id": "upper_level",
+      "rooms": [
+        {
+          "room_id": "terrace",
+          "type": "terrace",
+          "dimensions": { "length": 6.0, "width": 5.0 },
+          "features": ["outdoor seating area", "views of the garden"]
+        }
+      ]
+    }
+  ],
+  "building_norm_compliance": {
+    "local_building_norm": "Complies with local building norms for height, setback, and FAR.",
+    "vastu_principles": [
+      "Main entrance is in the northwest direction for positive energy flow.",
+      "Bedroom is located in the southwest direction as per Vastu principles.",
+      "Kitchen is in the southeast direction to comply with Vastu guidelines."
+    ]
+  },
+  "design_style": "Colonial with split-level design and split-face stone exterior.",
+  "plot_type": "corner plot with large garden and central courtyard"
+}

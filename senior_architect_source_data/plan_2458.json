@@ -1,0 +1,291 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 1200.0,
+      "style": "A-Frame with Modern Extensions, Japanese Zen"
+    },
+    "plot": {
+      "location": "Desert Plateau",
+      "climate": "Mediterranean (Dry Summers)",
+      "orientation": "North-Facing",
+      "features": [
+        "Panoramic Views",
+        "Tornado Risk"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1,
+        "description": "Master suite with north-facing panoramic windows and Zen garden view"
+      },
+      {
+        "type": "bathroom",
+        "count": 1,
+        "description": "Features composting toilet system and natural materials"
+      },
+      {
+        "type": "sauna",
+        "count": 1,
+        "description": "With panoramic windows and natural stone finishes"
+      },
+      {
+        "type": "storm_shelter",
+        "count": 1,
+        "description": "Reinforced concrete safe room integrated into basement level"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Double-height A-frame space with minimalist Zen design"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Modern extension with efficient layout and composting system"
+      },
+      {
+        "type": "entry",
+        "count": 1,
+        "description": "Genkan-style entryway with shoe storage and view corridor"
+      },
+      {
+        "type": "deck",
+        "count": 1,
+        "description": "Wraparound deck with panoramic desert views"
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 285000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "storm_shelter",
+          "type": "storm_shelter",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "solid_core",
+              "position": "north"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical",
+          "type": "utility",
+          "bounds": {
+            "x": 16,
+            "y": 5,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "solid_core",
+              "position": "east"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_main",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "position": "north"
+            },
+            {
+              "type": "sliding_glass",
+              "position": "south"
+            },
+            {
+              "type": "interior",
+              "position": "east"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_panoramic",
+              "position": "north"
+            },
+            {
+              "type": "clerestory",
+              "position": "south"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_main",
+          "type": "kitchen",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": "north"
+            },
+            {
+              "type": "fixed",
+              "position": "east"
+            }
+          ]
+        },
+        {
+          "id": "entry_main",
+          "type": "entry",
+          "bounds": {
+            "x": 24,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "main_entry",
+              "position": "east"
+            },
+            {
+              "type": "interior",
+              "position": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": "north"
+            }
+          ]
+        },
+        {
+          "id": "bath_main",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "frosted",
+              "position": "east"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_loft",
+          "type": "bedroom",
+          "bounds": {
+            "x": 4,
+            "y": 4,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_panoramic",
+              "position": "north"
+            },
+            {
+              "type": "clerestory",
+              "position": "south"
+            }
+          ]
+        },
+        {
+          "id": "sauna_loft",
+          "type": "sauna",
+          "bounds": {
+            "x": 20,
+            "y": 4,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "solid_wood",
+              "position": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_panoramic",
+              "position": "north"
+            },
+            {
+              "type": "fixed",
+              "position": "east"
+            }
+          ]
+        },
+        {
+          "id": "deck_wrap",
+          "type": "deck",
+          "bounds": {
+            "x": -4,
+            "y": -4,
+            "width": 40,
+            "height": 4
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "position": "south"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

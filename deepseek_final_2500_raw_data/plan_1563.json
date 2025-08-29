@@ -1,0 +1,248 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 2200.0,
+      "style": "Farmhouse Modern"
+    },
+    "plot": {
+      "slope": "Following natural contours",
+      "climate": "Temperate maritime",
+      "location": "Urban rooftop conversion"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "sunken_living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "home_theater",
+        "count": 1
+      },
+      {
+        "type": "climate_storage",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 385000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "sunken_living",
+          "type": "sunken_living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 18,
+            "height": 24
+          },
+          "doors": [
+            "entry_door",
+            "kitchen_door"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 14,
+            "height": 16
+          },
+          "doors": [
+            "living_door",
+            "deck_door"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "deck",
+          "type": "deck",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            "kitchen_door"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        },
+        {
+          "id": "teen_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "teen_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 14,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "south_window",
+            "west_window"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "home_theater",
+          "type": "home_theater",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "stair_door"
+          ],
+          "windows": [],
+          "features": [
+            "fiber_optic_star_ceiling",
+            "acoustical_treatment"
+          ]
+        },
+        {
+          "id": "climate_storage",
+          "type": "climate_storage",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "stair_door"
+          ],
+          "windows": [],
+          "features": [
+            "humidity_control",
+            "temperature_control"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "stair_door"
+          ],
+          "windows": [],
+          "features": [
+            "wind_turbine_controls",
+            "HVAC"
+          ]
+        },
+        {
+          "id": "rooftop_turbine",
+          "type": "exterior",
+          "bounds": {
+            "x": 12,
+            "y": 16,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "wind_turbine"
+          ]
+        }
+      ]
+    }
+  ]
+}

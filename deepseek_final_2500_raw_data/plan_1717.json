@@ -1,0 +1,234 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Prairie"
+    },
+    "plot": {
+      "topography": "Elevated platform above wetlands",
+      "climate": "Mediterranean dry summers"
+    },
+    "roomBreakdown": [
+      {
+        "type": "work_pod",
+        "area": 300
+      },
+      {
+        "type": "living_pod",
+        "area": 400
+      },
+      {
+        "type": "sleeping_pod",
+        "area": 250
+      },
+      {
+        "type": "sauna",
+        "area": 150
+      },
+      {
+        "type": "connector",
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "work_pod",
+          "type": "work_pod",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": 4
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 4
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "living_pod",
+          "type": "living_pod",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": 6
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "sleeping_pod",
+          "type": "sleeping_pod",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 12.5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6.25,
+              "size": 3
+            },
+            {
+              "wall": "south",
+              "position": 6.25,
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "sauna",
+          "type": "sauna",
+          "bounds": {
+            "x": 62.5,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 8
+            },
+            {
+              "wall": "east",
+              "position": 7.5,
+              "size": 8
+            },
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "connector_north",
+          "type": "connector",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "connector_south",
+          "type": "connector",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "connector_east",
+          "type": "connector",
+          "bounds": {
+            "x": 57.5,
+            "y": 0,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

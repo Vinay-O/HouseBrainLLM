@@ -1,0 +1,233 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 480,
+      "style": "High-Tech Architecture"
+    },
+    "plot": {
+      "climate": "temperate maritime",
+      "orientation": "diagonal to prevailing winds"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 120
+      },
+      {
+        "type": "home_brewery",
+        "area": 80
+      },
+      {
+        "type": "living_room",
+        "area": 120
+      },
+      {
+        "type": "kitchen",
+        "area": 80
+      },
+      {
+        "type": "bathroom",
+        "area": 50
+      },
+      {
+        "type": "entryway",
+        "area": 30
+      }
+    ]
+  },
+  "total_area": 480.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entryway",
+          "type": "entryway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 2.5,
+                "y": 0
+              }
+            }
+          ],
+          "windows": [],
+          "flooring": "permeable_paving"
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 5,
+                "y": 6
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 10,
+                "y": 3
+              },
+              "size": 4
+            }
+          ],
+          "flooring": "polished_concrete"
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 15,
+                "y": 5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "awning",
+              "position": {
+                "x": 19,
+                "y": 2
+              },
+              "size": 3
+            }
+          ],
+          "flooring": "epoxy_resin"
+        },
+        {
+          "id": "home_brewery",
+          "type": "home_brewery",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 19,
+                "y": 10
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 19,
+                "y": 15
+              },
+              "size": 3
+            }
+          ],
+          "flooring": "stainless_steel_grating",
+          "features": [
+            "temperature_control_system",
+            "stainless_steel_fermenters"
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 5,
+                "y": 6
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "sliding",
+              "position": {
+                "x": 0,
+                "y": 9
+              },
+              "size": 6
+            }
+          ],
+          "flooring": "cork",
+          "features": [
+            "low_profile_closets",
+            "pet_resting_area"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 10,
+            "y": 12,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "pocket",
+              "position": {
+                "x": 10,
+                "y": 17
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "operable",
+              "position": {
+                "x": 12.5,
+                "y": 12
+              },
+              "size": 2
+            }
+          ],
+          "flooring": "non_slip_tile",
+          "features": [
+            "roll_in_shower",
+            "grab_bars",
+            "accessible_sink"
+          ]
+        }
+      ]
+    }
+  ]
+}

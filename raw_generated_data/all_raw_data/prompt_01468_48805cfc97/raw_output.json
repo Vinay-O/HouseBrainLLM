@@ -1,0 +1,253 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "Living Room",
+          "area": 200,
+          "shape": "rectangular",
+          "dimensions": { "length": 16, "width": 12.5 },
+          "location": { "direction": "North" },
+          "accessibility_features": true
+        },
+        {
+          "room_id": "dining_room",
+          "type": "Dining Room",
+          "area": 100,
+          "shape": "square",
+          "dimensions": { "length": 10, "width": 10 },
+          "location": { "direction": "East" }
+        },
+        {
+          "room_id": "kitchen",
+          "type": "Kitchen",
+          "area": 120,
+          "shape": "L-shaped",
+          "dimensions": { "length": 12, "width": 8, "projection": 4 },
+          "location": { "direction": "Southeast" }
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "Master Bedroom",
+          "area": 160,
+          "shape": "rectangular",
+          "dimensions": { "length": 12, "width": 13.33 },
+          "location": { "direction": "Southwest" }
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "Bedroom",
+          "area": 100,
+          "shape": "rectangular",
+          "dimensions": { "length": 10, "width": 10 },
+          "location": { "direction": "Northwest" }
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "Bedroom",
+          "area": 80,
+          "shape": "square",
+          "dimensions": { "length": 8.92, "width": 8.92 },
+          "location": { "direction": "North" }
+        },
+        {
+          "room_id": "study_room",
+          "type": "Study Room",
+          "area": 60,
+          "shape": "rectangular",
+          "dimensions": { "length": 10, "width": 6 },
+          "location": { "direction": "North" }
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "Bathroom",
+          "area": 40,
+          "shape": "rectangular",
+          "dimensions": { "length": 8, "width": 5 },
+          "location": { "direction": "Adjacent to Bedroom 1" }
+        },
+        {
+          "room_id": "bathroom_2",
+          "type": "Bathroom",
+          "area": 30,
+          "shape": "rectangular",
+          "dimensions": { "length": 7, "width": 4.29 },
+          "location": { "direction": "Adjacent to Bedroom 2" }
+        },
+        {
+          "room_id": "toilet_1",
+          "type": "Toilet",
+          "area": 30,
+          "shape": "rectangular",
+          "dimensions": { "length": 5, "width": 6 },
+          "location": { "direction": "Adjacent to Bathroom 1" }
+        },
+        {
+          "room_id": "toilet_2",
+          "type": "Toilet",
+          "area": 30,
+          "shape": "rectangular",
+          "dimensions": { "length": 5, "width": 6 },
+          "location": { "direction": "Adjacent to Bathroom 2" }
+        },
+        {
+          "room_id": "pantry",
+          "type": "Pantry",
+          "area": 40,
+          "shape": "rectangular",
+          "dimensions": { "length": 8, "width": 5 },
+          "location": { "direction": "Adjacent to Kitchen" }
+        },
+        {
+          "room_id": "store_room",
+          "type": "Store Room",
+          "area": 30,
+          "shape": "rectangular",
+          "dimensions": { "length": 7, "width": 4.29 },
+          "location": { "direction": "Adjacent to Pantry" }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "Door",
+          "dimensions": { "length": 3.5, "width": 1.2 },
+          "location": { "direction": "North", "room_id": "living_room" }
+        },
+        {
+          "opening_id": "kitchen_entrance",
+          "type": "Door",
+          "dimensions": { "length": 3, "width": 0.9 },
+          "location": { "direction": "from dining room", "room_id": "kitchen" }
+        },
+        {
+          "opening_id": "bedroom_1_door",
+          "type": "Door",
+          "dimensions": { "length": 3, "width": 0.9 },
+          "location": { "direction": "from living room", "room_id": "bedroom_1" }
+        },
+        {
+          "opening_id": "bedroom_2_door",
+          "type": "Door",
+          "dimensions": { "length": 3, "width": 0.9 },
+          "location": { "direction": "from living room", "room_id": "bedroom_2" }
+        },
+        {
+          "opening_id": "study_room_door",
+          "type": "Door",
+          "dimensions": { "length": 3, "width": 0.9 },
+          "location": { "direction": "from living room", "room_id": "study_room" }
+        },
+        {
+          "opening_id": "bathroom_1_door",
+          "type": "Door",
+          "dimensions": { "length": 2.5, "width": 0.8 },
+          "location": { "direction": "from bedroom 1", "room_id": "bathroom_1" }
+        },
+        {
+          "opening_id": "bathroom_2_door",
+          "type": "Door",
+          "dimensions": { "length": 2.5, "width": 0.8 },
+          "location": { "direction": "from bedroom 2", "room_id": "bathroom_2" }
+        },
+        {
+          "opening_id": "toilet_1_door",
+          "type": "Door",
+          "dimensions": { "length": 2, "width": 0.75 },
+          "location": { "direction": "from bathroom 1", "room_id": "toilet_1" }
+        },
+        {
+          "opening_id": "toilet_2_door",
+          "type": "Door",
+          "dimensions": { "length": 2, "width": 0.75 },
+          "location": { "direction": "from bathroom 2", "room_id": "toilet_2" }
+        },
+        {
+          "opening_id": "pantry_door",
+          "type": "Door",
+          "dimensions": { "length": 2, "width": 0.75 },
+          "location": { "direction": "from kitchen", "room_id": "pantry" }
+        },
+        {
+          "opening_id": "store_room_door",
+          "type": "Door",
+          "dimensions": { "length": 2, "width": 0.75 },
+          "location": { "direction": "from pantry", "room_id": "store_room" }
+        },
+        {
+          "opening_id": "living_dining_window",
+          "type": "Window",
+          "dimensions": { "length": 4, "width": 2 },
+          "location": { "direction": "North and East", "room_ids": ["living_room", "dining_room"] }
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "Window",
+          "dimensions": { "length": 4, "width": 2 },
+          "location": { "direction": "East and Southeast", "room_id": "kitchen" }
+        },
+        {
+          "opening_id": "bedroom_1_window",
+          "type": "Window",
+          "dimensions": { "length": 5, "width": 3 },
+          "location": { "direction": "Southwest", "room_id": "bedroom_1" }
+        },
+        {
+          "opening_id": "bedroom_2_window",
+          "type": "Window",
+          "dimensions": { "length": 4, "width": 2.5 },
+          "location": { "direction": "Northwest", "room_id": "bedroom_2" }
+        },
+        {
+          "opening_id": "study_room_window",
+          "type": "Window",
+          "dimensions": { "length": 4, "width": 2.5 },
+          "location": { "direction": "North", "room_id": "study_room" }
+        },
+        {
+          "opening_id": "bathroom_1_window",
+          "type": "High Window",
+          "dimensions": { "length": 3, "width": 1.5 },
+          "location": { "direction": "North", "room_id": "bathroom_1" }
+        },
+        {
+          "opening_id": "bathroom_2_window",
+          "type": "High Window",
+          "dimensions": { "length": 3, "width": 1.5 },
+          "location": { "direction": "North", "room_id": "bathroom_2" }
+        },
+        {
+          "opening_id": "toilet_1_window",
+          "type": "High Window",
+          "dimensions": { "length": 3, "width": 1.5 },
+          "location": { "direction": "North", "room_id": "toilet_1" }
+        },
+        {
+          "opening_id": "toilet_2_window",
+          "type": "High Window",
+          "dimensions": { "length": 3, "width": 1.5 },
+          "location": { "direction": "North", "room_id": "toilet_2" }
+        },
+        {
+          "opening_id": "pantry_window",
+          "type": "Window",
+          "dimensions": { "length": 3, "width": 1.5 },
+          "location": { "direction": "East", "room_id": "pantry" }
+        }
+      ],
+      "wheelchair_accessibility": true,
+      "vastu_compliance": {
+        "kitchen_direction": "Southeast",
+        "master_bedroom_direction": "Southwest",
+        "entrance_direction": "North"
+      },
+      "colonial_features": [
+        "High ceilings",
+        "Large windows with wooden frames",
+        "Wooden flooring in living areas",
+        "Architectural details like columns and arches",
+        "Verandah or porch at the entrance"
+      ]
+    }
+  ]}

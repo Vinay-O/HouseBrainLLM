@@ -1,0 +1,338 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 1800.0,
+      "style": "Prairie"
+    },
+    "plot": {
+      "topography": "ravine_coastal_bluff",
+      "climate": "temperate_maritime",
+      "orientation": "south_facing"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 300.0
+      },
+      {
+        "type": "kitchen",
+        "area": 180.0
+      },
+      {
+        "type": "dining_room",
+        "area": 150.0
+      },
+      {
+        "type": "bedroom",
+        "area": 200.0
+      },
+      {
+        "type": "bedroom",
+        "area": 200.0
+      },
+      {
+        "type": "bathroom",
+        "area": 100.0
+      },
+      {
+        "type": "bathroom",
+        "area": 80.0
+      },
+      {
+        "type": "meditation_pavilion",
+        "area": 250.0
+      },
+      {
+        "type": "garage",
+        "area": 200.0
+      },
+      {
+        "type": "utility",
+        "area": 80.0
+      },
+      {
+        "type": "entry",
+        "area": 60.0
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 360000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry",
+          "type": "entry",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            "front_door"
+          ],
+          "windows": [],
+          "finishes": [
+            "bamboo"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 18,
+            "height": 20
+          },
+          "doors": [
+            "to_entry",
+            "to_dining",
+            "to_deck"
+          ],
+          "windows": [
+            "south_window_wall"
+          ],
+          "finishes": [
+            "cork_flooring",
+            "bamboo"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 18,
+            "y": 10,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "to_living",
+            "to_kitchen"
+          ],
+          "windows": [
+            "south_window"
+          ],
+          "finishes": [
+            "cork_flooring",
+            "bamboo"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 10,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "to_dining",
+            "to_utility"
+          ],
+          "windows": [
+            "south_window"
+          ],
+          "finishes": [
+            "bamboo_cabinets",
+            "cork_flooring"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 25,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "to_kitchen",
+            "to_garage"
+          ],
+          "windows": [],
+          "finishes": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 42,
+            "y": 10,
+            "width": 12,
+            "height": 25
+          },
+          "doors": [
+            "garage_door",
+            "to_utility"
+          ],
+          "windows": [],
+          "finishes": []
+        },
+        {
+          "id": "deck",
+          "type": "deck",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 18,
+            "height": 10
+          },
+          "doors": [
+            "from_living"
+          ],
+          "windows": [],
+          "finishes": [
+            "composite_decking"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_window",
+            "east_window"
+          ],
+          "finishes": [
+            "cork_flooring",
+            "bamboo"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_window",
+            "west_window"
+          ],
+          "finishes": [
+            "cork_flooring",
+            "bamboo"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "skylight"
+          ],
+          "finishes": [
+            "bamboo_vanity"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 10,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "skylight"
+          ],
+          "finishes": [
+            "bamboo_vanity"
+          ]
+        },
+        {
+          "id": "hall",
+          "type": "hall",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 40,
+            "height": 5
+          },
+          "doors": [
+            "to_bedroom_1",
+            "to_bedroom_2",
+            "to_bathroom_1",
+            "to_bathroom_2",
+            "stairs"
+          ],
+          "windows": [
+            "south_clerestory"
+          ],
+          "finishes": [
+            "cork_flooring"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "meditation_pavilion",
+          "type": "meditation_pavilion",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [],
+          "windows": [
+            "south_window_wall",
+            "east_window",
+            "west_window",
+            "skylight"
+          ],
+          "finishes": [
+            "cork_flooring",
+            "bamboo_screens"
+          ],
+          "features": [
+            "reflecting_pond",
+            "fountain"
+          ]
+        }
+      ]
+    }
+  ]
+}

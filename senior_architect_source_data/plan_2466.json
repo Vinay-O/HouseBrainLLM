@@ -1,0 +1,579 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 3,
+      "totalArea": 4200.0,
+      "style": "Japanese Zen"
+    },
+    "plot": {
+      "topography": "desert plateau",
+      "orientation": "east-west linear",
+      "climate": "coastal with salt air exposure",
+      "hazards": [
+        "wildfire zone"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "wine_cellar",
+        "level": -1
+      },
+      {
+        "type": "tasting_room",
+        "level": -1
+      },
+      {
+        "type": "garage",
+        "level": 0
+      },
+      {
+        "type": "guest_suite",
+        "level": 0
+      },
+      {
+        "type": "kitchen",
+        "level": 1
+      },
+      {
+        "type": "dining_room",
+        "level": 1
+      },
+      {
+        "type": "living_room",
+        "level": 1
+      },
+      {
+        "type": "zen_garden",
+        "level": 1
+      },
+      {
+        "type": "primary_bedroom",
+        "level": 2
+      },
+      {
+        "type": "bedroom",
+        "level": 2,
+        "count": 3
+      },
+      {
+        "type": "study",
+        "level": 2
+      },
+      {
+        "type": "meditation_room",
+        "level": 2
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 1250000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "wine_cellar_1",
+          "type": "wine_cellar",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "tasting_room_1",
+          "type": "tasting_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              }
+            },
+            {
+              "type": "stair",
+              "position": {
+                "x": 10,
+                "y": 15
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_1",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "garage",
+              "position": {
+                "x": 10,
+                "y": 0
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_suite_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 30,
+                "y": 0
+              }
+            },
+            {
+              "type": "stair",
+              "position": {
+                "x": 30,
+                "y": 10
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 30,
+                "y": 15
+              },
+              "size": {
+                "width": 4,
+                "height": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 15,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "sliding",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "size": {
+                "width": 8,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "dining_room_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              }
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 7.5,
+                "y": 15
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 22.5,
+                "y": 0
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              }
+            },
+            {
+              "type": "exterior",
+              "position": {
+                "x": 40,
+                "y": 0
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "sliding",
+              "position": {
+                "x": 35,
+                "y": 15
+              },
+              "size": {
+                "width": 10,
+                "height": 6
+              }
+            }
+          ]
+        },
+        {
+          "id": "zen_garden_1",
+          "type": "other",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "sliding",
+              "position": {
+                "x": 20,
+                "y": 22.5
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "stairwell_1",
+          "type": "stairwell",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              }
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "primary_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 10
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "sliding",
+              "position": {
+                "x": 10,
+                "y": 20
+              },
+              "size": {
+                "width": 8,
+                "height": 5
+              }
+            },
+            {
+              "type": "fixed",
+              "position": {
+                "x": 0,
+                "y": 10
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 27.5,
+                "y": 0
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 42.5,
+                "y": 0
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 27.5,
+                "y": 15
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "study_1",
+          "type": "study",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 42.5,
+                "y": 15
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "meditation_room_1",
+          "type": "other",
+          "bounds": {
+            "x": 35,
+            "y": 25,
+            "width": 15,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 2.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 42.5,
+                "y": 25
+              },
+              "size": {
+                "width": 5,
+                "height": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "stairwell_2",
+          "type": "stairwell",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 5
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

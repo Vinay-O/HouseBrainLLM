@@ -1,0 +1,375 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 4800,
+      "style": "Geodesic Dome"
+    },
+    "plot": {
+      "description": "Forest clearing with mature oak trees in an alpine climate with heavy snow loads, ensuring privacy from neighbors.",
+      "orientation": "east-west linear"
+    },
+    "roomBreakdown": [
+      {
+        "type": "observatory",
+        "description": "Top-floor observatory with retractable dome for stargazing and panoramic views."
+      },
+      {
+        "type": "master_bedroom",
+        "description": "Luxury master suite with panoramic windows and phase-change material integration."
+      },
+      {
+        "type": "studio",
+        "description": "Spacious art studio with north-facing skylights for optimal natural light."
+      },
+      {
+        "type": "living_room",
+        "description": "Open-plan living area with high ceilings and expansive glass walls for forest views."
+      },
+      {
+        "type": "kitchen",
+        "description": "Gourmet kitchen with premium appliances and dining area."
+      },
+      {
+        "type": "library",
+        "description": "Cozy library with built-in shelving and reading nooks."
+      },
+      {
+        "type": "garage",
+        "description": "Heated two-car garage with storage for art supplies and outdoor gear."
+      }
+    ]
+  },
+  "total_area": 4800.0,
+  "construction_cost": 3850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_1",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "overhead",
+              "position": {
+                "x": 10,
+                "y": 0
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry",
+          "type": "foyer",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "main",
+              "position": {
+                "x": 25,
+                "y": 0
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mudroom",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 10,
+            "height": 4
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 25,
+                "y": 8
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 20,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 12
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12.5,
+                "y": 0
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "panoramic",
+              "position": {
+                "x": 12.5,
+                "y": 20
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 25,
+                "y": 6
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 32.5,
+                "y": 0
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "dining_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 12,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 32.5,
+                "y": 12
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "panoramic",
+              "position": {
+                "x": 32.5,
+                "y": 20
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "library_1",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 7.5,
+                "y": 20
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 7.5,
+                "y": 30
+              },
+              "orientation": "north"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom_1",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 0
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "panoramic",
+              "position": {
+                "x": 10,
+                "y": 18
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "skylight",
+              "position": {
+                "x": 25,
+                "y": 0
+              },
+              "orientation": "top"
+            }
+          ]
+        },
+        {
+          "id": "studio_1",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 18
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "skylight",
+              "position": {
+                "x": 10,
+                "y": 30
+              },
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "observatory_1",
+          "type": "observatory",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 20
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "retractable_dome",
+              "position": {
+                "x": 30,
+                "y": 20
+              },
+              "orientation": "top"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

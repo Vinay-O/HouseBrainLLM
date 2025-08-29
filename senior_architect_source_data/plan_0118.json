@@ -1,0 +1,320 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 800,
+      "style": "Contemporary with Kashmiri and Heritage elements"
+    },
+    "plot": {
+      "shape": "Cul-de-sac",
+      "area": 800,
+      "location": "Dense metropolitan",
+      "notes": "Compact plot with heritage brick archways, requires earthquake resistance and universal accessibility"
+    },
+    "roomBreakdown": [
+      {
+        "type": "underground_chamber",
+        "level": -1,
+        "area": 200
+      },
+      {
+        "type": "garage",
+        "level": -1,
+        "area": 150
+      },
+      {
+        "type": "studio",
+        "level": 0,
+        "area": 250
+      },
+      {
+        "type": "living_room",
+        "level": 0,
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "level": 0,
+        "area": 120
+      },
+      {
+        "type": "bedroom",
+        "level": 1,
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "level": 1,
+        "area": 180
+      },
+      {
+        "type": "bathroom",
+        "level": 1,
+        "area": 80
+      },
+      {
+        "type": "pavilion",
+        "level": 2,
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 1560.0,
+  "construction_cost": 780000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "cooling_chamber",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "artist_studio",
+          "type": "studio",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 17,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 13,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            },
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "accessible_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 8,
+            "y": 15,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "yoga_pavilion",
+          "type": "pavilion",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "area": 500,
+          "features": ["king bed", "wardrobe", "en-suite bathroom"]
+        },
+        {
+          "room_type": "kitchen",
+          "area": 300,
+          "features": ["modular kitchen", "dining space", "pantry"]
+        },
+        {
+          "room_type": "living_room",
+          "area": 400,
+          "features": ["sofa set", "TV unit", "dining table"]
+        },
+        {
+          "room_type": "swimming_pool",
+          "area": 500,
+          "features": ["outdoor pool", "deck area", "shower"]
+        },
+        {
+          "room_type": "garage",
+          "area": 300,
+          "features": ["two-car capacity", "storage space"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "entrance",
+          "direction": "north"
+        },
+        {
+          "type": "window",
+          "room": "bedroom",
+          "direction": "east"
+        },
+        {
+          "type": "door",
+          "room": "kitchen",
+          "direction": "south"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "study_room",
+          "area": 200,
+          "features": ["work desk", "bookshelf"]
+        },
+        {
+          "room_type": "guest_room",
+          "area": 300,
+          "features": ["queen bed", "wardrobe", "private bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "room": "study_room",
+          "direction": "west"
+        },
+        {
+          "type": "balcony",
+          "room": "guest_room",
+          "direction": "south"
+        }
+      ]
+    }
+  ],
+  "eco_features": [
+    {
+      "feature": "solar_panels",
+      "description": "Solar panels for renewable energy generation"
+    },
+    {
+      "feature": "rainwater_harvesting",
+      "description": "System to collect and store rainwater"
+    },
+    {
+      "feature": "green_roof",
+      "description": "Roof covered with vegetation for insulation and aesthetics"
+    }
+  ],
+  "vastu_compliance": [
+    {
+      "principle": "bedroom_in_northwest",
+      "description": "The main bedroom is located in the northwest direction as per Vastu principles"
+    },
+    {
+      "principle": "kitchen_in_southeast",
+      "description": "The kitchen is placed in the southeast direction for positive energy flow"
+    }
+  ]
+}

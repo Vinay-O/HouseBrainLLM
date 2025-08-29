@@ -1,0 +1,477 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Urban Townhouse"
+    },
+    "plot": {
+      "slope": "gentle",
+      "flood_risk": "high",
+      "climate": "desert_extreme_temps"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "pool",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "elevator",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 985000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "elevation": 8.5,
+      "rooms": [
+        {
+          "id": "pool_room",
+          "type": "pool",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 20
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 20,
+              "size": "large"
+            }
+          ],
+          "finishes": {
+            "flooring": "non_slip_tile",
+            "walls": "waterproof_plaster"
+          },
+          "features": [
+            "lap_pool",
+            "current_system",
+            "humidistat",
+            "dehumidifier"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "small"
+            }
+          ],
+          "finishes": {
+            "flooring": "concrete",
+            "walls": "paint"
+          },
+          "features": [
+            "flood_barrier_storage",
+            "elevator_mechanics",
+            "water_heater",
+            "HVAC"
+          ]
+        },
+        {
+          "id": "elevator_shaft",
+          "type": "elevator",
+          "bounds": {
+            "x": 40,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [],
+          "finishes": {
+            "flooring": "concrete",
+            "walls": "drywall"
+          },
+          "features": [
+            "elevator_cab"
+          ]
+        },
+        {
+          "id": "entryway",
+          "type": "hall",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            },
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "medium"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "walls": "bamboo_panel"
+          },
+          "features": [
+            "bench",
+            "coat_closet"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "small"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "walls": "bamboo_panel"
+          },
+          "features": [
+            "walk_in_shower",
+            "grab_bars",
+            "zero_threshold"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "elevation": 12.5,
+      "rooms": [
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 7.5,
+              "size": "large"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "walls": "bamboo_panel",
+            "cabinetry": "bamboo"
+          },
+          "features": [
+            "accessible_countertops",
+            "pull_out_shelves",
+            "induction_cooktop"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12.5,
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": "large"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "walls": "bamboo_panel"
+          },
+          "features": [
+            "built_in_seating",
+            "smart_lighting"
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 7.5,
+              "size": "large"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "walls": "bamboo_panel"
+          },
+          "features": [
+            "emergency_alert",
+            "blackout_blinds"
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "small"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "walls": "bamboo_panel"
+          },
+          "features": [
+            "walk_in_shower",
+            "grab_bars",
+            "zero_threshold",
+            "heated_floors"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "large"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "walls": "bamboo_panel"
+          },
+          "features": [
+            "emergency_alert",
+            "blackout_blinds"
+          ]
+        },
+        {
+          "id": "hallway",
+          "type": "hall",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 5,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.5
+            },
+            {
+              "wall": "east",
+              "position": 15
+            }
+          ],
+          "windows": [],
+          "finishes": {
+            "flooring": "cork",
+            "walls": "bamboo_panel"
+          },
+          "features": [
+            "elevator_door",
+            "chair_rail"
+          ]
+        },
+        {
+          "id": "elevator_lobby",
+          "type": "elevator",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "finishes": {
+            "flooring": "cork",
+            "walls": "bamboo_panel"
+          },
+          "features": [
+            "elevator_door"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 25,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 2.5,
+              "size": "small"
+            }
+          ],
+          "finishes": {
+            "flooring": "cork",
+            "walls": "bamboo_panel"
+          },
+          "features": [
+            "walk_in_shower",
+            "grab_bars",
+            "zero_threshold"
+          ]
+        }
+      ]
+    }
+  ]
+}

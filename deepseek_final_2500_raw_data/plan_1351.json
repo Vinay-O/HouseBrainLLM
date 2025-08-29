@@ -1,0 +1,317 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 2850,
+      "style": "Prairie"
+    },
+    "plot": {
+      "topography": "rocky_outcrop",
+      "climate": "continental_harsh_winters"
+    },
+    "roomBreakdown": [
+      {
+        "type": "sunken_living_room",
+        "area": 450
+      },
+      {
+        "type": "music_performance_space",
+        "area": 400
+      },
+      {
+        "type": "master_bedroom",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "kitchen",
+        "area": 200
+      },
+      {
+        "type": "dining_room",
+        "area": 180
+      },
+      {
+        "type": "darkroom",
+        "area": 120
+      },
+      {
+        "type": "climate_controlled_storage",
+        "area": 150
+      },
+      {
+        "type": "utility_room",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "entry_hall",
+        "area": 150
+      }
+    ]
+  },
+  "total_area": 2850.0,
+  "construction_cost": 598500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "sunken_living_room",
+          "type": "sunken_living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 18
+          },
+          "doors": [
+            "entry_hall",
+            "dining_room",
+            "music_performance_space"
+          ],
+          "windows": [
+            "north_wall",
+            "east_wall"
+          ]
+        },
+        {
+          "id": "music_performance_space",
+          "type": "music_performance_space",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "sunken_living_room",
+            "utility_room"
+          ],
+          "windows": [
+            "south_wall",
+            "east_wall"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility_room",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "music_performance_space"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "entry_hall",
+          "type": "entry_hall",
+          "bounds": {
+            "x": 10,
+            "y": 18,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "sunken_living_room",
+            "kitchen",
+            "dining_room",
+            "staircase_up",
+            "staircase_down"
+          ],
+          "windows": [
+            "west_wall"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "entry_hall",
+            "dining_room"
+          ],
+          "windows": [
+            "north_wall"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 18,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "entry_hall",
+            "kitchen",
+            "sunken_living_room"
+          ],
+          "windows": [
+            "south_wall",
+            "east_wall"
+          ]
+        },
+        {
+          "id": "darkroom",
+          "type": "darkroom",
+          "bounds": {
+            "x": 35,
+            "y": 18,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "climate_controlled_storage"
+          ],
+          "windows": []
+        },
+        {
+          "id": "climate_controlled_storage",
+          "type": "climate_controlled_storage",
+          "bounds": {
+            "x": 45,
+            "y": 18,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "darkroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "entry_hall"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": [
+            "north_wall",
+            "east_wall"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 13.33
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": [
+            "south_wall"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 13.33
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": [
+            "south_wall"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 13.33,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 50,
+            "height": 5
+          },
+          "doors": [
+            "master_bedroom",
+            "bedroom_2",
+            "bedroom_3",
+            "bathroom_2",
+            "staircase_down"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

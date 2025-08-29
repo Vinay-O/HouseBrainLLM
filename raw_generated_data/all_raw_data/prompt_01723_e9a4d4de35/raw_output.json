@@ -1,0 +1,140 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": {"length": "15 ft", "width": "12 ft"},
+          "adjacent_to": ["kitchen", "dining_area"],
+          "vastu_zone": "southeast"
+        },
+        {
+          "room_id": "dining_area",
+          "dimensions": {"length": "10 ft", "width": "8 ft"},
+          "adjacent_to": ["living_room"],
+          "vastu_zone": "southwest"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": {"length": "12 ft", "width": "8 ft"},
+          "adjacent_to": ["living_room"],
+          "vastu_zone": "northwest"
+        },
+        {
+          "room_id": "bathroom1",
+          "dimensions": {"length": "6 ft", "width": "4 ft"},
+          "adjacent_to": ["master_bedroom"],
+          "vastu_zone": "north"
+        },
+        {
+          "room_id": "bedroom2",
+          "dimensions": {"length": "14 ft", "width": "10 ft"},
+          "adjacent_to": ["bedroom3"],
+          "vastu_zone": "south"
+        },
+        {
+          "room_id": "bedroom3",
+          "dimensions": {"length": "12 ft", "width": "9 ft"},
+          "adjacent_to": ["bedroom2", "guest_bedroom"],
+          "vastu_zone": "east"
+        },
+        {
+          "room_id": "guest_bedroom",
+          "dimensions": {"length": "10 ft", "width": "8 ft"},
+          "adjacent_to": ["bedroom3"],
+          "vastu_zone": "west"
+        },
+        {
+          "room_id": "master_bedroom",
+          "dimensions": {"length": "16 ft", "width": "12 ft"},
+          "adjacent_to": ["bathroom1", "study_room"],
+          "vastu_zone": "north_east"
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": {"length": "10 ft", "width": "8 ft"},
+          "adjacent_to": ["master_bedroom"],
+          "vastu_zone": "south_east"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "front_door",
+          "location": "northwest_corner",
+          "direction": "northeast",
+          "description": "Main entrance with large glass doors for natural light, aligned with Vastu guidelines."
+        },
+        {
+          "opening_id": "backdoor",
+          "location": "southeast_corner",
+          "direction": "south",
+          "description": "Secondary exit and access to the swimming pool area."
+        }
+      ]
+    },
+    {
+      "level_id": "penthouse",
+      "rooms": [
+        {
+          "room_id": "master_bedroom_penthouse",
+          "dimensions": {"length": "18 ft", "width": "15 ft"},
+          "adjacent_to": [" ensuite_bathroom"],
+          "vastu_zone": "north_east"
+        },
+        {
+          "room_id": "ensuite_bathroom",
+          "dimensions": {"length": "8 ft", "width": "6 ft"},
+          "adjacent_to": ["master_bedroom_penthouse"],
+          "vastu_zone": "south"
+        },
+        {
+          "room_id": "living_area_penthouse",
+          "dimensions": {"length": "20 ft", "width": "15 ft"},
+          "adjacent_to": ["kitchenette"],
+          "vastu_zone": "northwest"
+        },
+        {
+          "room_id": "kitchenette",
+          "dimensions": {"length": "10 ft", "width": "8 ft"},
+          "adjacent_to": ["living_area_penthouse"],
+          "vastu_zone": "south_east"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_deck_access",
+          "location": "north_corner",
+          "direction": "northeast",
+          "description": "Access to the roof deck and panoramic views, with Vastu-compliant alignment."
+        },
+        {
+          "opening_id": "balcony_door",
+          "location": "east_side",
+          "direction": "south_east",
+          "description": "Balcony door leading to the living area penthouse."
+        }
+      ]
+    }
+  ],
+  "additional_features": [
+    {
+      "feature_id": "swimming_pool",
+      "dimensions": {"length": "10 ft", "width": "8 ft"},
+      "location": "backside of plot",
+      "description": "Indoor swimming pool integrated with the farmhouse design, ensuring proper alignment as per Vastu principles."
+    },
+    {
+      "feature_id": "industrial_elements",
+      "dimensions": {"length": "N/A", "width": "N/A"},
+      "location": "various areas",
+      "description": "Use of raw industrial materials like exposed brick, concrete finishes, and metal accents to create a farmhouse aesthetic while maintaining the industrial feel."
+    },
+    {
+      "feature_id": "landscaping",
+      "dimensions": {"length": "N/A", "width": "N/A"},
+      "location": "perimeter of plot",
+      "description": "Native greenery and water features integrated to balance industrial design with natural aesthetics, aligning with Vastu."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{  
+    "levels": [
+        {
+            "level_id": "ground_floor",
+            "rooms": [
+                {"name": "Entrance Hall", "area_sqft": 200, "description": "Large space for entry with reception area and living room integration."},
+                {"name": "Lobby", "area_sqft": 150, "description": "Reception lobby adjoining the entrance hall for guests."},
+                {"name": "Living Room", "area_sqft": 300, "description": "Open plan living area connected to dining space with a view towards the front balcony."},
+                {"name": "Dining Area", "area_sqft": 200, "description": "Adjacent to the kitchen and living room; designed for family gatherings."},
+                {"name": "Kitchen", "area_sqft": 180, "description": "Modern, functional kitchen with adjoining pantry space."},
+                {"name": "Family Room / Study", "area_sqft": 150, "description": "Multi-functional room for relaxation or work."},
+                {"name": "Guest Bedroom", "area_sqft": 220, "description": "Spacious bedroom with a dedicated balcony; designed according to Vastu principles (north-east facing) for positive energy."},
+                {"name": "Master Bedroom", "area_sqft": 280, "description": "Primary suite with an attached spacious master bath and private balcony; oriented to enhance comfort."},
+                {"name": "Balcony", "area_sqft": 120, "description": "Large, common balcony area accessible from the living room and guest bedroom for relaxation and gatherings."}
+            ],
+            "openings": [
+                {"type": "Main Entrance Door", "location": "Front facade", "size_sqft": 20},
+                {"type": "Secondary Entrance/Exit", "location": "Side wall", "size_sqft": 15},
+                {"type": "Sliding Glass Window", "location": "Living Room and Kitchen", "size_sqft": 25},
+                {"type": "French Doors", "location": "Balcony access", "size_sqft": 30}
+            ]
+        },
+        {
+            "level_id": "first_floor",
+            "rooms": [
+                {"name": "Master Bedroom", "area_sqft": 280, "description": "Primary suite with an attached spacious master bath and private balcony; aligned to ensure privacy and comfort."},
+                {"name": "Bedroom 2", "area_sqft": 250, "description": "Spacious bedroom with a dedicated balcony designed for optimal light and ventilation."},
+                {"name": "Bedroom 3", "area_sqft": 240, "description": "Additional bedroom featuring a private balcony; oriented to provide serene views."},
+                {"name": "Bedroom 4", "area_sqft": 230, "description": "Well-lit bedroom with its own balcony and storage space for personal items."},
+                {"name": "Guest Bedroom", "area_sqft": 220, "description": "Spacious room designed for visitors; includes a small balcony for fresh air."},
+                {"name": "Balcony", "area_sqft": 130, "description": "Common area on the first floor accessible from multiple bedrooms for relaxation and outdoor living."}
+            ],
+            "openings": [
+                {"type": "Balcony Door", "location": "Between Bedrooms", "size_sqft": 25},
+                {"type": "Staircase to Ground Floor", "location": "Corner of plot", "size_sqft": 10}
+            ]
+        }
+    ],
+    "building_features": {
+        "style": "Brutalist",
+        "plot_dimensions": {"length_ft": 50, "width_ft": 80},
+        "additional_details": [
+            {"feature": "Servants Quarters", "location": "Side rear of plot", "area_sqft": 300, "description": "Dedicated living space for staff; includes a small kitchenette and separate bathroom."}
+        ],
+        "vastu_considerations": {
+            "directions": {"entrance": "North facing", "main entrance door": "Northeast corner"},
+            "room_orientations": {
+                "Master Bedroom": "Southwest",
+                "Living Room": "West"
+            },
+            "open_spaces": ["Balconies are positioned to maximize sunlight and ventilation."]
+        }
+    }
+}

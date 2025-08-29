@@ -1,0 +1,317 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 4200,
+      "style": "Mid-Century Modern"
+    },
+    "plot": {
+      "slope": 30,
+      "orientation": "north",
+      "climate": "coastal with salt air exposure"
+    },
+    "roomBreakdown": [
+      {
+        "type": "primary_bedroom",
+        "count": 1,
+        "specialFeatures": [
+          "aging_in_place_accessibility",
+          "north_light_exposure"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "count": 1,
+        "specialFeatures": [
+          "north_light_exposure"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "specialFeatures": [
+          "accessible_design",
+          "walk_in_shower"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "specialFeatures": [
+          "open_plan",
+          "accessible_countertops"
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "specialFeatures": [
+          "north_facing_windows",
+          "garden_views"
+        ]
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "specialFeatures": [
+          "open_to_kitchen"
+        ]
+      },
+      {
+        "type": "pottery_studio",
+        "count": 1,
+        "specialFeatures": [
+          "kiln_ventilation",
+          "north_light",
+          "concrete_floor"
+        ]
+      },
+      {
+        "type": "storm_shelter",
+        "count": 1,
+        "specialFeatures": [
+          "tornado_rated",
+          "reinforced_concrete"
+        ]
+      },
+      {
+        "type": "garage",
+        "count": 2,
+        "specialFeatures": [
+          "accessible_entry"
+        ]
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 1890000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_1",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "location": "south"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storm_shelter",
+          "type": "storm_shelter",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "solid_core",
+              "location": "east"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "pottery_studio",
+          "type": "pottery_studio",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 24,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "location": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "location": "north"
+            },
+            {
+              "type": "fixed",
+              "location": "east"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 56,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "pocket",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "location": "north"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 56,
+            "y": 14,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "pocket",
+              "location": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "location": "north"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "type": "pocket",
+              "location": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "picture",
+              "location": "north"
+            },
+            {
+              "type": "casement",
+              "location": "east"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "pocket",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "location": "north"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "casement",
+              "location": "north"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 48,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "sliding_glass",
+              "location": "north"
+            },
+            {
+              "type": "sliding_glass",
+              "location": "east"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 32,
+            "y": 14,
+            "width": 32,
+            "height": 22
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "location": "south"
+            },
+            {
+              "type": "sliding_glass",
+              "location": "east"
+            }
+          ],
+          "windows": [
+            {
+              "type": "picture",
+              "location": "north"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

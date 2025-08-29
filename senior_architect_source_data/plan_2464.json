@@ -1,0 +1,178 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2200,
+      "style": "High-Tech Architecture"
+    },
+    "plot": {
+      "elevation": "elevated",
+      "terrain": "wetlands",
+      "climate": "Mediterranean dry summers",
+      "noise_sources": [
+        "highway"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "music_room",
+        "specialFeatures": [
+          "acoustic isolation",
+          "elevated platform",
+          "soundproofing"
+        ]
+      },
+      {
+        "type": "living_room",
+        "specialFeatures": [
+          "sunken",
+          "south-facing for solar gain"
+        ]
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 485000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_level",
+          "type": "entry_hall",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            "main_entry"
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen_dining",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 18,
+            "height": 16
+          },
+          "doors": [
+            "to_deck"
+          ],
+          "windows": [
+            {
+              "direction": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [],
+          "windows": [
+            {
+              "direction": "east",
+              "size": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 22,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "sunken_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "to_music_room"
+          ],
+          "windows": [
+            {
+              "direction": "south",
+              "size": "floor-to-ceiling"
+            }
+          ]
+        },
+        {
+          "id": "music_room",
+          "type": "music_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "double_acoustic"
+          ],
+          "windows": [
+            {
+              "direction": "north",
+              "size": "acoustic"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            {
+              "direction": "west",
+              "size": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 14,
+            "y": 16,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

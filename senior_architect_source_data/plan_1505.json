@@ -1,0 +1,391 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 240,
+      "style": "Industrial Loft"
+    },
+    "plot": {
+      "width": 4,
+      "length": 20,
+      "slope": "moderate",
+      "climate": "Mediterranean"
+    },
+    "roomBreakdown": [
+      {
+        "type": "wine_cellar",
+        "area": 30,
+        "level": -1
+      },
+      {
+        "type": "tasting_room",
+        "area": 30,
+        "level": -1
+      },
+      {
+        "type": "garage",
+        "area": 40,
+        "level": 0
+      },
+      {
+        "type": "living_room",
+        "area": 40,
+        "level": 1
+      },
+      {
+        "type": "kitchen",
+        "area": 20,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 25,
+        "level": 2
+      },
+      {
+        "type": "bedroom",
+        "area": 25,
+        "level": 2
+      },
+      {
+        "type": "bathroom",
+        "area": 10,
+        "level": 2
+      },
+      {
+        "type": "utility",
+        "area": 20,
+        "level": 0
+      }
+    ]
+  },
+  "total_area": 240.0,
+  "construction_cost": 432000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "wine_cellar_1",
+          "type": "wine_cellar",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 4,
+                "y": 3.75
+              },
+              "to_room": "tasting_room_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "tasting_room_1",
+          "type": "tasting_room",
+          "bounds": {
+            "x": 0,
+            "y": 7.5,
+            "width": 4,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 3.75
+              },
+              "to_room": "wine_cellar_1"
+            },
+            {
+              "type": "exterior",
+              "position": {
+                "x": 2,
+                "y": 7.5
+              },
+              "to_room": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 2,
+                "y": 0
+              },
+              "size": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_1",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "overhead",
+              "position": {
+                "x": 2,
+                "y": 0
+              },
+              "to_room": "exterior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_1",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 5
+              },
+              "to_room": "garage_1"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 2,
+                "y": 0
+              },
+              "to_room": "exterior"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 4,
+                "y": 5
+              },
+              "to_room": "kitchen_1"
+            }
+          ],
+          "windows": [
+            {
+              "type": "sliding",
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 2.5
+              },
+              "to_room": "living_room_1"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "position": {
+                "x": 2,
+                "y": 5
+              },
+              "size": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 6.25
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 6.25
+              },
+              "to_room": "hall_1"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "position": {
+                "x": 2,
+                "y": 0
+              },
+              "size": 1.5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 6.25,
+            "width": 4,
+            "height": 6.25
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 0
+              },
+              "to_room": "hall_1"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "position": {
+                "x": 2,
+                "y": 6.25
+              },
+              "size": 1.5
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 12.5,
+            "width": 4,
+            "height": 2.5
+          },
+          "doors": [
+            {
+              "type": "pocket",
+              "position": {
+                "x": 0,
+                "y": 1.25
+              },
+              "to_room": "hall_1"
+            }
+          ],
+          "windows": [
+            {
+              "type": "transom",
+              "position": {
+                "x": 2,
+                "y": 0
+              },
+              "size": 0.8
+            }
+          ]
+        },
+        {
+          "id": "hall_1",
+          "type": "hall",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 2.5
+              },
+              "to_room": "bedroom_1"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 4,
+                "y": 2.5
+              },
+              "to_room": "bedroom_2"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 5
+              },
+              "to_room": "bathroom_1"
+            },
+            {
+              "type": "stairs",
+              "position": {
+                "x": 2,
+                "y": 0
+              },
+              "to_room": "living_room_1"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

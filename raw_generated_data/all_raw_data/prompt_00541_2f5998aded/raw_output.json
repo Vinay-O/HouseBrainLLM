@@ -1,0 +1,103 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "shape": "rectangle",
+          "dimensions": { "length": 16, "width": 14 },
+          "position": { "x": 0, "y": 0 },
+          "features": ["minimalist_sofa", "TV_unit", "center_table"]
+        },
+        {
+          "room_id": "dining_room",
+          "shape": "square",
+          "dimensions": { "length": 12, "width": 12 },
+          "position": { "x": 16, "y": 0 },
+          "features": ["dining_table", "chairs"]
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "L-shaped",
+          "dimensions": { "length": 12, "width": 10 },
+          "position": { "x": 28, "y": 0 },
+          "features": ["modular_kitchen", "gas_stove", "fridge"]
+        },
+        {
+          "room_id": "master_bedroom",
+          "shape": "rectangle",
+          "dimensions": { "length": 16, "width": 14 },
+          "position": { "x": 0, "y": 20 },
+          "features": ["king_size_bed", "wardrobe", "balcony"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "shape": "rectangle",
+          "dimensions": { "length": 14, "width": 12 },
+          "position": { "x": 0, "y": 36 },
+          "features": ["queen_size_bed", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "shape": "rectangle",
+          "dimensions": { "length": 12, "width": 10 },
+          "position": { "x": 16, "y": 36 },
+          "features": ["twin_beds", "wardrobe"]
+        },
+        {
+          "room_id": "home_office",
+          "shape": "square",
+          "dimensions": { "length": 10, "width": 10 },
+          "position": { "x": 28, "y": 36 },
+          "features": ["desk", "chair", "bookshelf"]
+        },
+        {
+          "room_id": "garden",
+          "shape": "rectangle",
+          "dimensions": { "length": 40, "width": 15 },
+          "position": { "x": 0, "y": 48 },
+          "features": ["plants", "outdoor_furniture"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 7 },
+          "position": { "x": 0, "y": 0 }
+        },
+        {
+          "opening_id": "living_to_dining",
+          "type": "archway",
+          "dimensions": { "length": 4, "width": 3.5 },
+          "position": { "x": 16, "y": 7 }
+        },
+        {
+          "opening_id": "dining_to_kitchen",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 7 },
+          "position": { "x": 28, "y": 6 }
+        },
+        {
+          "opening_id": "master_bedroom_balcony",
+          "type": "sliding_door",
+          "dimensions": { "length": 4, "width": 7 },
+          "position": { "x": 16, "y": 20 }
+        },
+        {
+          "opening_id": "garden_access",
+          "type": "sliding_door",
+          "dimensions": { "length": 5, "width": 8 },
+          "position": { "x": 20, "y": 48 }
+        }
+      ],
+      "vaastu_compliance": {
+        "plot_facing": "west",
+        "kitchen_position": "southeast",
+        "master_bedroom_position": "southwest",
+        "toilet_position": "northwest"
+      }
+    }
+  ]
+}

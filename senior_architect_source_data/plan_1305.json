@@ -1,0 +1,221 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 2850,
+      "style": "Organic Architecture"
+    },
+    "plot": {
+      "description": "Desert plateau with panoramic views in an alpine climate with heavy snow loads, north-facing for consistent light."
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "area": 600
+      },
+      {
+        "type": "study",
+        "area": 300
+      },
+      {
+        "type": "artist_studio",
+        "area": 500
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 400
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "kitchen",
+        "area": 250
+      },
+      {
+        "type": "living_room",
+        "area": 400
+      }
+    ]
+  },
+  "total_area": 2850.0,
+  "construction_cost": 855000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "pod1_library",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            "pod1_connector_door"
+          ],
+          "windows": [
+            "north_window1",
+            "north_window2"
+          ]
+        },
+        {
+          "id": "pod1_study",
+          "type": "study",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "pod1_connector_door"
+          ],
+          "windows": [
+            "north_window3"
+          ]
+        },
+        {
+          "id": "pod2_artist_studio",
+          "type": "artist_studio",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            "pod2_connector_door"
+          ],
+          "windows": [
+            "north_clerestory1",
+            "north_clerestory2"
+          ]
+        },
+        {
+          "id": "pod3_primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "pod3_connector_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            "north_window4"
+          ]
+        },
+        {
+          "id": "pod3_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bathroom_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod3_bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "pod3_connector_door"
+          ],
+          "windows": [
+            "north_window5"
+          ]
+        },
+        {
+          "id": "pod4_bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 20,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "pod4_connector_door"
+          ],
+          "windows": [
+            "north_window6"
+          ]
+        },
+        {
+          "id": "pod5_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 50,
+            "y": 20,
+            "width": 12.5,
+            "height": 20
+          },
+          "doors": [
+            "pod5_connector_door"
+          ],
+          "windows": [
+            "north_window7"
+          ]
+        },
+        {
+          "id": "pod5_living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 62.5,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "pod5_connector_door",
+            "main_entry_door"
+          ],
+          "windows": [
+            "north_window8",
+            "north_window9"
+          ]
+        },
+        {
+          "id": "connector_hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 82.5,
+            "height": 5
+          },
+          "doors": [
+            "pod1_connector_door",
+            "pod2_connector_door",
+            "pod3_connector_door",
+            "pod4_connector_door",
+            "pod5_connector_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

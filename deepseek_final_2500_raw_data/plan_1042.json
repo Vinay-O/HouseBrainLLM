@@ -1,0 +1,496 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 1500,
+      "style": "Chettinad with limestone and bamboo lattice"
+    },
+    "plot": {
+      "shape": "cul-de-sac",
+      "area": 1500,
+      "setback_front": 15,
+      "setback_rear": 10,
+      "setback_sides": 8,
+      "heritage_constraints": "strict"
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "bedroom",
+        "count": 3,
+        "area": 450
+      },
+      {
+        "type": "artist_studio",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "servant_quarters",
+        "count": 1,
+        "area": 180
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 150
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 810000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard_entrance",
+          "type": "courtyard",
+          "bounds": {
+            "x": 8,
+            "y": 8,
+            "width": 20,
+            "height": 24
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 8,
+                "y": 20
+              },
+              "to_room": "verandah_front"
+            },
+            {
+              "position": {
+                "x": 28,
+                "y": 20
+              },
+              "to_room": "verandah_rear"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "verandah_front",
+          "type": "hall",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 20,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 18,
+                "y": 8
+              },
+              "to_room": "courtyard_entrance"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "to_room": "main_entrance"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 4
+              },
+              "length": 20,
+              "facing": "north"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 8,
+                "y": 14
+              },
+              "to_room": "courtyard_entrance"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 10
+              },
+              "length": 8,
+              "facing": "north"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 8,
+                "y": 26
+              },
+              "to_room": "courtyard_entrance"
+            },
+            {
+              "position": {
+                "x": 4,
+                "y": 20
+              },
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 22
+              },
+              "length": 8,
+              "facing": "north"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 32,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 32
+              },
+              "to_room": "dining_room"
+            },
+            {
+              "position": {
+                "x": 8,
+                "y": 36
+              },
+              "to_room": "servant_quarters"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 34
+              },
+              "length": 8,
+              "facing": "north"
+            }
+          ]
+        },
+        {
+          "id": "servant_quarters",
+          "type": "servant_quarters",
+          "bounds": {
+            "x": 8,
+            "y": 32,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 8,
+                "y": 36
+              },
+              "to_room": "kitchen"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 36
+              },
+              "to_room": "verandah_rear"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 14,
+                "y": 32
+              },
+              "length": 6,
+              "facing": "south"
+            }
+          ]
+        },
+        {
+          "id": "verandah_rear",
+          "type": "hall",
+          "bounds": {
+            "x": 28,
+            "y": 8,
+            "width": 20,
+            "height": 24
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 28,
+                "y": 20
+              },
+              "to_room": "courtyard_entrance"
+            },
+            {
+              "position": {
+                "x": 48,
+                "y": 20
+              },
+              "to_room": "garden"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 48,
+                "y": 14
+              },
+              "length": 20,
+              "facing": "south"
+            }
+          ]
+        },
+        {
+          "id": "artist_studio",
+          "type": "artist_studio",
+          "bounds": {
+            "x": 28,
+            "y": 32,
+            "width": 20,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 28,
+                "y": 36
+              },
+              "to_room": "verandah_rear"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 38,
+                "y": 32
+              },
+              "length": 10,
+              "facing": "south"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 8,
+                "y": 8
+              },
+              "to_room": "upper_balcony"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 12
+              },
+              "length": 16,
+              "facing": "north"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 8,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 22,
+                "y": 8
+              },
+              "to_room": "upper_balcony"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 16,
+                "y": 14
+              },
+              "length": 12,
+              "facing": "north"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 24,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 6,
+                "y": 24
+              },
+              "to_room": "upper_balcony"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 28
+              },
+              "length": 12,
+              "facing": "north"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 24,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 24
+              },
+              "to_room": "upper_balcony"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 12,
+                "y": 28
+              },
+              "length": 16,
+              "facing": "north"
+            }
+          ]
+        },
+        {
+          "id": "upper_balcony",
+          "type": "balcony",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 20,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 8,
+                "y": 8
+              },
+              "to_room": "master_bedroom"
+            },
+            {
+              "position": {
+                "x": 22,
+                "y": 8
+              },
+              "to_room": "bedroom_1"
+            },
+            {
+              "position": {
+                "x": 6,
+                "y": 8
+              },
+              "to_room": "bedroom_2"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 8
+              },
+              "to_room": "bedroom_3"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

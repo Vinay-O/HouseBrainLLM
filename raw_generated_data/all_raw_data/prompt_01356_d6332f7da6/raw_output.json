@@ -1,0 +1,170 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 5.0, "width": 4.0 },
+          "position": { "x": 0, "y": 12 }
+        },
+        {
+          "room_id": "dining_area",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "position": { "x": 5, "y": 12 }
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "position": { "x": 8.5, "y": 12 }
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "position": { "x": 0, "y": 8 },
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "position": { "x": 4.5, "y": 8 },
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "position": { "x": 9, "y": 8 },
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "position": { "x": 0, "y": 4 },
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_5",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "position": { "x": 4.5, "y": 4 },
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_6",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "position": { "x": 9, "y": 4 },
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "room_id": "library",
+          "dimensions": { "length": 3.0, "width": 2.5 },
+          "position": { "x": 13.5, "y": 8 }
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 3.0, "width": 2.5 },
+          "position": { "x": 13.5, "y": 4 }
+        },
+        {
+          "room_id": "guest_toilet",
+          "dimensions": { "length": 2.0, "width": 1.8 },
+          "position": { "x": 13.5, "y": 12 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 1.2, "width": 0.9 },
+          "position": { "x": -1, "y": 8 }
+        },
+        {
+          "opening_id": "garden_access",
+          "type": "door",
+          "dimensions": { "length": 1.5, "width": 1.2 },
+          "position": { "x": 0, "y": -1 }
+        },
+        {
+          "opening_id": "balcony_1",
+          "type": "window",
+          "dimensions": { "length": 2.0, "width": 1.5 },
+          "position": { "x": 4, "y": 8 }
+        },
+        {
+          "opening_id": "balcony_2",
+          "type": "window",
+          "dimensions": { "length": 2.0, "width": 1.5 },
+          "position": { "x": 9, "y": 8 }
+        },
+        {
+          "opening_id": "balcony_3",
+          "type": "window",
+          "dimensions": { "length": 2.0, "width": 1.5 },
+          "position": { "x": 4, "y": 4 }
+        },
+        {
+          "opening_id": "balcony_4",
+          "type": "window",
+          "dimensions": { "length": 2.0, "width": 1.5 },
+          "position": { "x": 9, "y": 4 }
+        }
+      ],
+      "features": {
+        "garden": true,
+        "balconies": ["attached to each bedroom"],
+        "library": true
+      }
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_7",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "position": { "x": 0, "y": 8 },
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_8",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "position": { "x": 4.5, "y": 8 },
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_9",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "position": { "x": 9, "y": 8 },
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_10",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "position": { "x": 0, "y": 4 },
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_11",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "position": { "x": 4.5, "y": 4 },
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_12",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "position": { "x": 9, "y": 4 },
+          "features": ["balcony", "wardrobe"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase",
+          "type": "staircase",
+          "dimensions": { "length": 1.2, "width": 0.9 },
+          "position": { "x": -1, "y": 8 }
+        }
+      ],
+      "features": {
+        "balconies": ["attached to each bedroom"]
+      }
+    }
+  ]
+}

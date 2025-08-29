@@ -1,0 +1,172 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall",
+          "dimensions_sqft": 200,
+          "purpose": "Entryway and reception",
+          "vastu": { "direction": "north", "element": "air", "note": "Promotes positive energy flow" }
+        },
+        {
+          "name": "Living Room",
+          "dimensions_sqft": 300,
+          "purpose": "Social gatherings, viewing area",
+          "adjacent_to": ["Entrance Hall"],
+          "vastu": { "direction": "south", "element": "fire", "note": "Enhances warmth and energy" }
+        },
+        {
+          "name": "Kitchen",
+          "dimensions_sqft": 250,
+          "purpose": "Culinary space",
+          "adjacent_to": ["Living Room"],
+          "vastu": { "direction": "south-east", "element": "fire", "note": "Optimizes cooking area for energy balance" }
+        },
+        {
+          "name": "Dining Area",
+          "dimensions_sqft": 200,
+          "purpose": "Meal preparation and dining",
+          "adjacent_to": ["Kitchen"],
+          "vastu": { "direction": "east", "element": "fire", "note": "Facilitates social interaction" }
+        },
+        {
+          "name": "Guest Bedroom",
+          "dimensions_sqft": 250,
+          "purpose": "Accommodation for guests",
+          "vastu": { "direction": "north-east", "element": "air", "note": "Ensures relaxation and calm energy" }
+        },
+        {
+          "name": "Master Bedroom",
+          "dimensions_sqft": 350,
+          "purpose": "Primary sleeping space",
+          "adjacent_to": ["Guest Bedroom"],
+          "vastu": { "direction": "north-west", "element": "air", "note": "Promotes restful sleep and mental clarity" }
+        },
+        {
+          "name": "Home Office / Study",
+          "dimensions_sqft": 200,
+          "purpose": "Work or study area",
+          "vastu": { "direction": "north-west", "element": "earth", "note": "Enhances focus and productivity" }
+        },
+        {
+          "name": "Central Courtyard",
+          "dimensions_sqft": 300,
+          "purpose": "Outdoor recreational space, natural light entry",
+          "vastu": { "direction": "center", "element": "water", "note": "Balances energies and connects with nature" }
+        },
+        {
+          "name": "Utility Room",
+          "dimensions_sqft": 150,
+          "purpose": "Laundry, storage",
+          "adjacent_to": ["Kitchen"],
+          "vastu": { "direction": "south-west", "element": "water", "note": "Optimizes functional efficiency" }
+        },
+        {
+          "name": "Bathroom",
+          "dimensions_sqft": 100,
+          "purpose": "Personal hygiene",
+          "adjacent_to": ["Master Bedroom"],
+          "vastu": { "direction": "south-west", "element": "water", "note": "Ensures proper drainage and flow" }
+        },
+        {
+          "name": "Storage Closet",
+          "dimensions_sqft": 50,
+          "purpose": "Additional storage",
+          "adjacent_to": ["Utility Room"],
+          "vastu": { "direction": "south-east", "element": "fire", "note": "Optimizes organization and energy" }
+        }
+      ],
+      "openings": [
+        {
+          "type": "Main Entrance Door",
+          "location": "north-west corner of entrance hall",
+          "dimensions_sqft": 20,
+          "vastu": { "direction": "east", "element": "air", "note": "Invites positive energy" }
+        },
+        {
+          "type": "Porch Door",
+          "location": "south side of living room",
+          "dimensions_sqft": 15,
+          "vastu": { "direction": "north", "element": "fire", "note": "Enhances natural lighting and ventilation" }
+        },
+        {
+          "type": "Balcony Door",
+          "location": "east side of master bedroom",
+          "dimensions_sqft": 10,
+          "vastu": { "direction": "south-east", "element": "fire", "note": "Provides access to outdoor space" }
+        },
+        {
+          "type": "Courtyard Gate",
+          "location": "center of courtyard",
+          "dimensions_sqft": 25,
+          "vastu": { "direction": "north-east", "element": "air", "note": "Maintains energy flow from outdoors" }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "name": "Bedroom 2",
+          "dimensions_sqft": 250,
+          "purpose": "Additional private sleeping area",
+          "vastu": { "direction": "north-west", "element": "air", "note": "Encourages peaceful rest" }
+        },
+        {
+          "name": "Bedroom 3",
+          "dimensions_sqft": 250,
+          "purpose": "Additional private sleeping area",
+          "adjacent_to": ["Bedroom 2"],
+          "vastu": { "direction": "north-west", "element": "air", "note": "Supports balanced energy" }
+        },
+        {
+          "name": "Guest Bathroom",
+          "dimensions_sqft": 80,
+          "purpose": "Private hygiene area for guests",
+          "adjacent_to": ["Bedroom 2"],
+          "vastu": { "direction": "south-west", "element": "water", "note": "Ensures proper drainage and serenity" }
+        },
+        {
+          "name": "Play/Recreational Area",
+          "dimensions_sqft": 200,
+          "purpose": "Family entertainment space",
+          "vastu": { "direction": "east", "element": "fire", "note": "Promotes lively atmosphere" }
+        },
+        {
+          "name": "Service Room",
+          "dimensions_sqft": 120,
+          "purpose": "Storage and utility access",
+          "adjacent_to": ["Guest Bathroom"],
+          "vastu": { "direction": "south-west", "element": "water", "note": "Facilitates efficient service operations" }
+        },
+        {
+          "name": "Rooftop Terrace",
+          "dimensions_sqft": 300,
+          "purpose": "Outdoor relaxation and viewing area",
+          "vastu": { "direction": "north-east", "element": "air", "note": "Enhances connectivity with nature" }
+        }
+      ],
+      "openings": [
+        {
+          "type": "Stairs",
+          "location": "east side of living room",
+          "dimensions_sqft": 15,
+          "vastu": { "direction": "south-east", "element": "fire", "note": "Ensures smooth vertical circulation" }
+        },
+        {
+          "type": "Balcony Door to Terrace",
+          "location": "north side of Bedroom 3",
+          "dimensions_sqft": 10,
+          "vastu": { "direction": "south-east", "element": "fire", "note": "Provides access to outdoor relaxation" }
+        },
+        {
+          "type": "Service Exit",
+          "location": "west side of service room",
+          "dimensions_sqft": 12,
+          "vastu": { "direction": "north-west", "element": "air", "note": "Ensures efficient service operations" }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 360,
+      "style": "High-Tech Architecture"
+    },
+    "plot": {
+      "shoreline_length": 50,
+      "climate": "desert_extreme_temperatures"
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_theater",
+        "area": 40
+      },
+      {
+        "type": "bioswale",
+        "area": 30
+      },
+      {
+        "type": "bedroom",
+        "area": 25
+      },
+      {
+        "type": "bedroom",
+        "area": 25
+      },
+      {
+        "type": "living_room",
+        "area": 50
+      },
+      {
+        "type": "kitchen",
+        "area": 30
+      },
+      {
+        "type": "bathroom",
+        "area": 20
+      },
+      {
+        "type": "utility",
+        "area": 20
+      },
+      {
+        "type": "void",
+        "area": 120
+      }
+    ]
+  },
+  "total_area": 360.0,
+  "construction_cost": 432000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "bioswale_north",
+          "type": "bioswale",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 6
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 10,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry_void",
+          "type": "void",
+          "bounds": {
+            "x": 10,
+            "y": 6,
+            "width": 10,
+            "height": 4
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 6,
+            "width": 10,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bioswale_south",
+          "type": "bioswale",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 50,
+            "height": 6
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12.5
+            },
+            {
+              "wall": "south",
+              "position": 12.5
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "deck",
+          "type": "deck",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "home_theater",
+          "type": "home_theater",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [],
+          "features": [
+            "fiber_optic_star_ceiling"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

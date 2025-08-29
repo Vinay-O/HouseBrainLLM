@@ -1,0 +1,456 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 2200,
+      "style": "Organic Architecture"
+    },
+    "plot": {
+      "size": "Large",
+      "topography": "Flat former industrial site with concrete foundations",
+      "climate": "Temperate maritime",
+      "orientation": "North-facing for consistent light"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3,
+        "area": 450
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 200
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 180
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "workshop",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "storage",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "thermal_chimney",
+        "count": 3,
+        "area": 150
+      },
+      {
+        "type": "outdoor_entertainment",
+        "count": 1,
+        "area": 300
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 485000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "workshop_lower",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 2,
+              "y": 0
+            },
+            {
+              "x": 18,
+              "y": 0
+            }
+          ],
+          "windows": [],
+          "features": [
+            "hydraulic_car_lift",
+            "concrete_floor",
+            "industrial_power"
+          ]
+        },
+        {
+          "id": "storage",
+          "type": "storage",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 5
+            }
+          ],
+          "windows": [],
+          "features": [
+            "shelving",
+            "secure_storage"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 15
+            }
+          ],
+          "windows": [],
+          "features": [
+            "HVAC",
+            "water_heater",
+            "electrical_panel"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 10
+            },
+            {
+              "x": 7,
+              "y": 20
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 10,
+              "width": 5
+            },
+            {
+              "x": 10,
+              "y": 0,
+              "width": 5
+            }
+          ],
+          "features": [
+            "north_lighting",
+            "thermal_mass_walls",
+            "open_plan"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 6
+            },
+            {
+              "x": 25,
+              "y": 6
+            }
+          ],
+          "windows": [
+            {
+              "x": 15,
+              "y": 0,
+              "width": 5
+            }
+          ],
+          "features": [
+            "island",
+            "energy_efficient_appliances",
+            "pantry"
+          ]
+        },
+        {
+          "id": "dining",
+          "type": "dining",
+          "bounds": {
+            "x": 15,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 16
+            },
+            {
+              "x": 25,
+              "y": 16
+            }
+          ],
+          "windows": [
+            {
+              "x": 25,
+              "y": 12,
+              "width": 5
+            }
+          ],
+          "features": [
+            "sliding_glass_doors",
+            "outdoor_access"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "x": 25,
+              "y": 6
+            }
+          ],
+          "windows": [
+            {
+              "x": 37,
+              "y": 3,
+              "width": 4
+            },
+            {
+              "x": 37,
+              "y": 9,
+              "width": 4
+            }
+          ],
+          "features": [
+            "built_in_desk",
+            "closet"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "x": 25,
+              "y": 16
+            }
+          ],
+          "windows": [
+            {
+              "x": 33,
+              "y": 14,
+              "width": 3
+            }
+          ],
+          "features": [
+            "skylight",
+            "water_saving_fixtures"
+          ]
+        },
+        {
+          "id": "thermal_chimney_1",
+          "type": "thermal_chimney",
+          "bounds": {
+            "x": 33,
+            "y": 12,
+            "width": 4,
+            "height": 8
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "passive_ventilation",
+            "heat_exchanger"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 14,
+            "height": 16
+          },
+          "doors": [
+            {
+              "x": 14,
+              "y": 8
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 8,
+              "width": 6
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "width": 6
+            }
+          ],
+          "features": [
+            "teenager_room",
+            "study_area",
+            "closet"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 14,
+            "y": 0,
+            "width": 14,
+            "height": 16
+          },
+          "doors": [
+            {
+              "x": 14,
+              "y": 8
+            },
+            {
+              "x": 28,
+              "y": 8
+            }
+          ],
+          "windows": [
+            {
+              "x": 14,
+              "y": 0,
+              "width": 6
+            },
+            {
+              "x": 22,
+              "y": 0,
+              "width": 6
+            }
+          ],
+          "features": [
+            "parent_room",
+            "walk_in_closet",
+            "private_balcony"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 28,
+              "y": 5
+            }
+          ],
+          "windows": [
+            {
+              "x": 36,
+              "y": 3,
+              "width": 4
+            }
+          ],
+          "features": [
+            "skylight",
+            "double_vanity",
+            "separate_shower"
+          ]
+        },
+        {
+          "id": "thermal_chimney_2",
+          "type": "thermal_chimney",
+          "bounds": {
+            "x": 28,
+            "y": 10,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "passive_ventilation",
+            "stack_effect"
+          ]
+        },
+        {
+          "id": "thermal_chimney_3",
+          "type": "thermal_chimney",
+          "bounds": {
+            "x": 32,
+            "y": 10,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "passive_ventilation",
+            "stack_effect"
+          ]
+        }
+      ]
+    }
+  ]
+}

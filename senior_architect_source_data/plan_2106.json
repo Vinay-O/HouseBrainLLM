@@ -1,0 +1,229 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Prairie"
+    },
+    "plot": {
+      "location": "Riverside, Flood-Prone",
+      "climate": "Mediterranean (Dry Summers)",
+      "orientation": "North-Facing",
+      "noiseSource": "Highway"
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "area": 300
+      },
+      {
+        "type": "guest_bedroom",
+        "area": 200
+      },
+      {
+        "type": "living_room",
+        "area": 350
+      },
+      {
+        "type": "kitchen",
+        "area": 200
+      },
+      {
+        "type": "brewery",
+        "area": 250
+      },
+      {
+        "type": "bathroom",
+        "area": 120
+      },
+      {
+        "type": "utility",
+        "area": 80
+      },
+      {
+        "type": "entry",
+        "area": 100
+      },
+      {
+        "type": "glass_link",
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 540000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "elevation": 2.5,
+      "rooms": [
+        {
+          "id": "entry_hall",
+          "type": "entry",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "north_exterior",
+            "south_to_living"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 20,
+            "height": 17.5
+          },
+          "doors": [
+            "west_from_entry",
+            "east_to_glass1"
+          ],
+          "windows": [
+            "north_window_large"
+          ]
+        },
+        {
+          "id": "glass_link_1",
+          "type": "glass_link",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 17.5
+          },
+          "doors": [
+            "west_from_living",
+            "east_to_brewery"
+          ],
+          "windows": [
+            "north_clerestory",
+            "south_clerestory"
+          ]
+        },
+        {
+          "id": "home_brewery",
+          "type": "brewery",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 12.5,
+            "height": 20
+          },
+          "doors": [
+            "west_from_glass1",
+            "south_to_utility"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 12.5,
+            "height": 6.4
+          },
+          "doors": [
+            "north_from_brewery"
+          ],
+          "windows": []
+        },
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "north_to_glass2",
+            "east_to_bath"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "glass_link_2",
+          "type": "glass_link",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 10,
+            "height": 7.5
+          },
+          "doors": [
+            "west_from_master",
+            "east_to_kitchen"
+          ],
+          "windows": [
+            "north_clerestory",
+            "south_clerestory"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 15,
+            "height": 17.5
+          },
+          "doors": [
+            "west_from_glass2",
+            "south_to_guest"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 27.5,
+            "width": 15,
+            "height": 12.5
+          },
+          "doors": [
+            "north_from_kitchen"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 17.5,
+            "width": 10,
+            "height": 12.5
+          },
+          "doors": [
+            "west_from_master"
+          ],
+          "windows": [
+            "south_high_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

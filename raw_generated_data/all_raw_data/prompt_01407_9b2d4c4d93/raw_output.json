@@ -1,0 +1,48 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {"room_name": "Entrance Hall & Living Room", "area_sqft": 350},
+      {"room_name": "Dining Area", "area_sqft": 250, "adjacent_to_courtyard": true},
+      {"room_name": "Kitchen", "area_sqft": 200},
+      {"room_name": "Guest Bedroom 1", "area_sqft": 300},
+      {"room_name": "Guest Bathroom", "area_sqft": 100}
+    ],
+    "openings": [
+      {"opening_type": "Entrance Door", "location": "front facade"},
+      {"opening_type": "Window", "location": "living room", "direction": "south"}
+    ]
+  },
+  {
+    "level_id": "first_floor",
+    "rooms": [
+      {"room_name": "Master Bedroom", "area_sqft": 400, "adjacent_to_courtyard": true},
+      {"room_name": "Primary Bathroom", "area_sqft": 150},
+      {"room_name": "Bedroom 2", "area_sqft": 300},
+      {"room_name": "Bedroom 3", "area_sqft": 250},
+      {"room_name": "Home Office", "area_sqft": 200}
+    ],
+    "openings": [
+      {"opening_type": "Balcony Access", "location": "master bedroom", "direction": "east"},
+      {"opening_type": "Window", "location": "bedroom 2", "direction": "south"}
+    ]
+  },
+  {
+    "level_id": "second_floor",
+    "rooms": [
+      {"room_name": "Studio/Extra Bedroom", "area_sqft": 250},
+      {"room_name": "Library/Reading Room", "area_sqft": 150}
+    ],
+    "openings": [
+      {"opening_type": "Window", "location": "studio", "direction": "north"}
+    ]
+  }
+],
+"courtyard": {
+  "dimensions_sqft": 800,
+  "elements": [
+    {"element_name": "Swimming Pool", "area_sqft": 250, "shape": "rectangle"},
+    {"element_name": "Green Space", "area_sqft": 300},
+    {"element_name": "Water Feature", "description": "Fountain in the center"}
+  ]
+}}

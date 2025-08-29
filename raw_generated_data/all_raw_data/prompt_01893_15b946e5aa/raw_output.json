@@ -1,0 +1,41 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {"name": "Entrance Lobby", "area_sqft": 200},
+      {"name": "Living Room", "area_sqft": 400, "features": ["large window", "Vastu-aligned entrance"]},
+      {"name": "Dining Area", "area_sqft": 250, "adjacent_to": "Kitchen"},
+      {"name": "Open Concept Kitchen", "area_sqft": 300, "features": ["modern appliances", "energy-efficient lighting"]},
+      {"name": "Guest Bathrooms", "count": 1, "area_sqft": 100, "location": "near living area"}
+    ],
+    "openings": [
+      {"type": "Main Entrance", "orientation": "north"},
+      {"type": "Windows", "locations": ["living room", "dining area", "kitchen"], "dimensions": "large"}
+    ]
+  },
+  {
+    "level_id": "first_floor",
+    "rooms": [
+      {"name": "Master Bedroom", "area_sqft": 350, "features": ["Vastu-aligned", "private balcony"]},
+      {"name": "Bedroom 1", "area_sqft": 300},
+      {"name": "Bedroom 2", "area_sqft": 250},
+      {"name": "Bathroom", "area_sqft": 150, "location": "attached to master bedroom"},
+      {"name": "Home Theater", "area_sqft": 200, "features": ["soundproof", "state-of-the-art AV system"]},
+      {"name": "Study / Library", "area_sqft": 100, "features": ["quiet", "Vastu-compliant"]}
+    ],
+    "openings": [
+      {"type": "Balcony", "locations": ["master bedroom"], "dimensions": "medium"},
+      {"type": "Staircase", "location": "split level transition", "details": "compact and elegant"}
+    ]
+  },
+  {
+    "level_id": "second_floor",
+    "rooms": [
+      {"name": "Additional Bedroom", "area_sqft": 200, "features": ["flexible design", "adjacent to study"]},
+      {"name": "Guest Bathroom", "area_sqft": 80}
+    ],
+    "openings": [
+      {"type": "Balcony", "locations": ["additional bedroom"], "dimensions": "small"}
+    ]
+  }
+]}

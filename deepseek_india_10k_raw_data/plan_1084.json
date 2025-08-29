@@ -1,0 +1,367 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 2800,
+      "style": "Tribal Adivasi Eco-Friendly"
+    },
+    "plot": {
+      "location": "Aligarh educational center, adjacent to IT park",
+      "orientation": "East-facing sunrise alignment",
+      "challenges": [
+        "monsoon flooding",
+        "waterlogging"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "main_house_bedroom",
+        "count": 3
+      },
+      {
+        "type": "guest_house_bedroom",
+        "count": 1
+      },
+      {
+        "type": "artist_studio",
+        "count": 1
+      },
+      {
+        "type": "craft_workshop",
+        "count": 1
+      },
+      {
+        "type": "natural_dye_preparation_area",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2800.0,
+  "construction_cost": 560000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 15
+            },
+            {
+              "wall": "south",
+              "position": 15
+            },
+            {
+              "wall": "east",
+              "position": 12.5
+            },
+            {
+              "wall": "west",
+              "position": 12.5
+            }
+          ],
+          "windows": [],
+          "features": [
+            "kolam_threshold_designs",
+            "copper_brass_water_storage",
+            "traditional_designs"
+          ]
+        },
+        {
+          "id": "main_entrance",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5,
+              "to_exterior": true
+            }
+          ],
+          "windows": [],
+          "features": [
+            "sacred_entrance",
+            "kolam_designs"
+          ]
+        },
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10,
+              "to_room": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 4
+            }
+          ],
+          "features": [
+            "natural_dye_wall_treatments"
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10,
+              "to_room": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 4
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "to_room": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 4
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 40,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5,
+              "to_room": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 3
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 30,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "to_room": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "size": 4
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "artist_studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10,
+              "to_room": "living_area"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 6
+            }
+          ],
+          "features": [
+            "north_lighting",
+            "storage_walls"
+          ]
+        },
+        {
+          "id": "craft_workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7.5,
+              "to_room": "kitchen_dining"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": 8
+            }
+          ],
+          "features": [
+            "heavy_duty_workbenches",
+            "tool_storage"
+          ]
+        },
+        {
+          "id": "natural_dye_area",
+          "type": "utility",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5,
+              "to_room": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": 6
+            }
+          ],
+          "features": [
+            "preparation_tables",
+            "drying_racks",
+            "water_supply"
+          ]
+        },
+        {
+          "id": "guest_house",
+          "type": "guest_house",
+          "bounds": {
+            "x": 30,
+            "y": 40,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10,
+              "to_exterior": true
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": 3
+            },
+            {
+              "wall": "west",
+              "position": 5,
+              "size": 3
+            }
+          ],
+          "features": [
+            "separate_entrance",
+            "private_bathroom"
+          ]
+        },
+        {
+          "id": "water_management",
+          "type": "utility",
+          "bounds": {
+            "x": 70,
+            "y": 0,
+            "width": 10,
+            "height": 50
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "monsoon_drainage_system",
+            "water_harvesting",
+            "sloped_roofs"
+          ]
+        }
+      ]
+    }
+  ]
+}

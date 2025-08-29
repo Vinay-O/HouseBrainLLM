@@ -1,0 +1,397 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 4500,
+      "style": "Art Deco"
+    },
+    "plot": {
+      "width": 30,
+      "length": 50
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "count": 1,
+        "level": 0
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "level": 0
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "level": 0
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "level": 0
+      },
+      {
+        "type": "bedroom",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "type": "family_lounge",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "type": "terrace",
+        "count": 1,
+        "level": 2
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 8100000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garden_north",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "main_entrance",
+          "type": "foyer",
+          "bounds": {
+            "x": 12,
+            "y": 15,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 15
+              },
+              "leads_to": "exterior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 20,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 20
+              },
+              "leads_to": "foyer"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 27
+              },
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12,
+                "y": 42
+              },
+              "leads_to": "dining_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 42
+              },
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 12,
+            "y": 35,
+            "width": 18,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12,
+                "y": 42
+              },
+              "leads_to": "kitchen"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 35
+              },
+              "leads_to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 35
+              },
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "puja_room_0",
+          "type": "puja_room",
+          "bounds": {
+            "x": 25,
+            "y": 20,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 27
+              },
+              "leads_to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 27,
+                "y": 20
+              },
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "staircase_0",
+          "type": "staircase",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 27
+              },
+              "leads_to": "living_room"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 20,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12,
+                "y": 27
+              },
+              "leads_to": "family_lounge"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 27
+              },
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 17,
+            "y": 20,
+            "width": 13,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 17,
+                "y": 27
+              },
+              "leads_to": "family_lounge"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 27
+              },
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "family_lounge_1",
+          "type": "family_lounge",
+          "bounds": {
+            "x": 12,
+            "y": 20,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12,
+                "y": 27
+              },
+              "leads_to": "bedroom_1"
+            },
+            {
+              "position": {
+                "x": 17,
+                "y": 27
+              },
+              "leads_to": "bedroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 14,
+                "y": 20
+              },
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "staircase_1",
+          "type": "staircase",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 27
+              },
+              "leads_to": "family_lounge"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "terrace_2",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 50
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 2,
+                "y": 0
+              },
+              "leads_to": "staircase"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase_2",
+          "type": "staircase",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 2
+              },
+              "leads_to": "terrace"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

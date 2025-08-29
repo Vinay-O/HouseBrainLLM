@@ -1,0 +1,122 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "area": 300,
+          "shape": "rectangle",
+          "features": ["floor_to_ceiling_windows", "scandinavian_decor"],
+          "adjacent_to": ["dining_room", "kitchen"]
+        },
+        {
+          "room_id": "dining_room",
+          "area": 200,
+          "shape": "square",
+          "features": ["scandinavian_decor"],
+          "adjacent_to": ["living_room", "kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "area": 180,
+          "shape": "L-shaped",
+          "features": ["modular_kitchen", "scandinavian_decor"],
+          "adjacent_to": ["dining_room", "utility_room"]
+        },
+        {
+          "room_id": "utility_room",
+          "area": 120,
+          "shape": "rectangle",
+          "features": ["washing_machine", "storage"],
+          "adjacent_to": ["kitchen", "bedroom"]
+        },
+        {
+          "room_id": "bedroom",
+          "area": 350,
+          "shape": "rectangle",
+          "features": ["scandinavian_decor", "wardrobe", "balcony"],
+          "adjacent_to": ["bathroom", "utility_room"]
+        },
+        {
+          "room_id": "bathroom",
+          "area": 150,
+          "shape": "rectangle",
+          "features": ["modern_fixtures", "shower"],
+          "adjacent_to": ["bedroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "location": "front_of_house",
+          "size": "double"
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "location": "back_of_house",
+          "size": "single"
+        },
+        {
+          "opening_id": "floor_to_ceiling_windows",
+          "type": "window",
+          "location": "living_room",
+          "material": "glass"
+        }
+      ],
+      "outdoor_features": [
+        {
+          "feature_id": "swimming_pool",
+          "location": "backyard",
+          "size": "10x20_feet",
+          "features": ["infinity_edge", "lighting"]
+        },
+        {
+          "feature_id": "terrace",
+          "location": "roof",
+          "features": ["outdoor_furniture", "BBQ_area"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "study_room",
+          "area": 150,
+          "shape": "rectangle",
+          "features": ["scandinavian_decor", "work_from_home_setup"],
+          "adjacent_to": ["balcony"]
+        },
+        {
+          "room_id": "guest_room",
+          "area": 200,
+          "shape": "square",
+          "features": ["scandinavian_decor", "wardrobe"],
+          "adjacent_to": ["guest_bathroom"]
+        },
+        {
+          "room_id": "guest_bathroom",
+          "area": 120,
+          "shape": "rectangle",
+          "features": ["modern_fixtures"],
+          "adjacent_to": ["guest_room"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "study_window",
+          "type": "window",
+          "location": "study_room",
+          "material": "glass"
+        },
+        {
+          "opening_id": "guest_balcony_door",
+          "type": "door",
+          "location": "guest_room",
+          "size": "single"
+        }
+      ]
+    }
+  ]}

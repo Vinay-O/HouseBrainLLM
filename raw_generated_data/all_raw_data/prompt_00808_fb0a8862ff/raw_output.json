@@ -1,0 +1,213 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": {
+            "length": 15,
+            "width": 12,
+            "unit": "feet"
+          },
+          "features": ["wheelchair_accessible", "large_window"],
+          "position": {
+            "relative_to": "entrance",
+            "direction": "right"
+          }
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {
+            "length": 12,
+            "width": 10,
+            "unit": "feet"
+          },
+          "features": ["wheelchair_accessible", "modern_appliances", "island_counter"],
+          "position": {
+            "relative_to": "living_room",
+            "direction": "adjacent"
+          }
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": {
+            "length": 15,
+            "width": 12,
+            "unit": "feet"
+          },
+          "features": ["wheelchair_accessible", "walk_in_closet", "private_bathroom"],
+          "position": {
+            "relative_to": "kitchen",
+            "direction": "left"
+          }
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": {
+            "length": 8,
+            "width": 7,
+            "unit": "feet"
+          },
+          "features": ["wheelchair_accessible", "walk_in_shower", "double_sink"],
+          "position": {
+            "relative_to": "bedroom",
+            "direction": "adjacent"
+          }
+        },
+        {
+          "room_type": "garden",
+          "dimensions": {
+            "length": 40,
+            "width": 60,
+            "unit": "feet"
+          },
+          "features": ["landscaped", "outdoor_furniture", "pathway"],
+          "position": {
+            "relative_to": "building",
+            "direction": "surrounding"
+          }
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "entrance",
+          "dimensions": {
+            "length": 8,
+            "width": 4,
+            "unit": "feet"
+          },
+          "position": {
+            "relative_to": "plot",
+            "direction": "front"
+          }
+        },
+        {
+          "opening_type": "window",
+          "dimensions": {
+            "length": 5,
+            "width": 3,
+            "unit": "feet"
+          },
+          "position": {
+            "relative_to": "living_room",
+            "direction": "front"
+          }
+        },
+        {
+          "opening_type": "door",
+          "dimensions": {
+            "length": 4,
+            "width": 2,
+            "unit": "feet"
+          },
+          "position": {
+            "relative_to": "bedroom",
+            "direction": "front"
+          }
+        }
+      ],
+      "additional_features": [
+        {
+          "feature_type": "wheelchair_ramp",
+          "dimensions": {
+            "length": 10,
+            "width": 4,
+            "unit": "feet"
+          },
+          "position": {
+            "relative_to": "entrance",
+            "direction": "left"
+          }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "dimensions": {
+            "length": 15,
+            "width": 12,
+            "unit": "feet"
+          },
+          "features": ["walk_in_closet", "private_bathroom"],
+          "position": {
+            "relative_to": "ground_floor_bedroom",
+            "direction": "above"
+          }
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": {
+            "length": 8,
+            "width": 7,
+            "unit": "feet"
+          },
+          "features": ["walk_in_shower", "double_sink"],
+          "position": {
+            "relative_to": "first_floor_bedroom",
+            "direction": "adjacent"
+          }
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "window",
+          "dimensions": {
+            "length": 5,
+            "width": 3,
+            "unit": "feet"
+          },
+          "position": {
+            "relative_to": "first_floor_bedroom",
+            "direction": "front"
+          }
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [
+        {
+          "room_type": "terrace",
+          "dimensions": {
+            "length": 60,
+            "width": 30,
+            "unit": "feet"
+          },
+          "features": ["outdoor_furniture", "landscaped"],
+          "position": {
+            "relative_to": "building",
+            "direction": "top"
+          }
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "dimensions": {
+            "length": 10,
+            "width": 4,
+            "unit": "feet"
+          },
+          "position": {
+            "relative_to": "first_floor",
+            "direction": "above"
+          }
+        }
+      ]
+    }
+  ],
+  "design_style": "Scandinavian",
+  "plot_dimensions": {
+    "length": 90,
+    "width": 60,
+    "unit": "feet"
+  },
+  "building_type": "G+2 bungalow",
+  "accessibility": "wheelchair_accessible",
+  "local_norms": "compliant",
+  "vastu_principles": "considered"
+}

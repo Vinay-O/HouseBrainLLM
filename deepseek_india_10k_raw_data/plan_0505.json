@@ -1,0 +1,452 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 2,
+      "totalArea": 12000,
+      "style": "Heritage Marathi Wada"
+    },
+    "plot": {
+      "location": "Mumbai Suburban",
+      "area": 2,
+      "terrain": "desert",
+      "water_scarcity": true,
+      "orientation": "west"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 6,
+        "description": "Family and guest bedrooms with traditional decor"
+      },
+      {
+        "type": "living_room",
+        "count": 2,
+        "description": "Formal and informal living areas opening to courtyard"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Traditional kitchen with modern amenities"
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "description": "Dining area adjacent to kitchen"
+      },
+      {
+        "type": "meditation_pavilion",
+        "count": 1,
+        "description": "Secluded pavilion with water features and garden views"
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "description": "Central angan with tulsi platform and traditional pillars"
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "description": "Bathrooms with solar water heating"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "description": "Rainwater harvesting and filtration systems"
+      }
+    ]
+  },
+  "total_area": 12000.0,
+  "construction_cost": 4800000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 40,
+            "height": 40
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 20
+            },
+            {
+              "wall": "south",
+              "position": 20
+            },
+            {
+              "wall": "east",
+              "position": 20
+            },
+            {
+              "wall": "west",
+              "position": 20
+            }
+          ],
+          "windows": [],
+          "description": "Central angan with tulsi platform, carved sandstone pillars, and traditional motifs"
+        },
+        {
+          "id": "living_room_ground",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "description": "Formal living area opening to courtyard"
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "description": "Dining area adjacent to kitchen"
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "description": "Traditional kitchen with modern amenities"
+        },
+        {
+          "id": "guest_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "description": "Guest bedroom with courtyard access"
+        },
+        {
+          "id": "bathroom_ground_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "description": "Ground floor bathroom with solar heating"
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 60,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "description": "Rainwater harvesting and filtration systems"
+        },
+        {
+          "id": "meditation_pavilion",
+          "type": "meditation_pavilion",
+          "bounds": {
+            "x": 60,
+            "y": 40,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "description": "Pavilion with water features and garden views"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "family_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "description": "Main family bedroom"
+        },
+        {
+          "id": "family_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "description": "Family bedroom"
+        },
+        {
+          "id": "family_bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "description": "Family bedroom"
+        },
+        {
+          "id": "guest_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "description": "Guest bedroom overlooking courtyard"
+        },
+        {
+          "id": "living_room_upper",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "description": "Informal living area with courtyard view"
+        },
+        {
+          "id": "guest_bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "description": "Guest bedroom"
+        },
+        {
+          "id": "bathroom_upper_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "description": "Upper floor bathroom with solar heating"
+        },
+        {
+          "id": "bathroom_upper_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 60,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "description": "Upper floor bathroom with solar heating"
+        }
+      ]
+    }
+  ]
+}

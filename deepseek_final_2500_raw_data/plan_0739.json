@@ -1,0 +1,260 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 800,
+      "style": "Goan Portuguese with Tropical Adaptations"
+    },
+    "plot": {
+      "orientation": "south",
+      "area": 800,
+      "view": "garden",
+      "constraints": [
+        "narrow",
+        "crowded city center",
+        "high water table"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "specialAttributes": [
+          "mobility access"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "specialAttributes": [
+          "wet room",
+          "grab bars"
+        ]
+      },
+      {
+        "type": "home_office",
+        "count": 1,
+        "specialAttributes": [
+          "video conferencing",
+          "acoustics"
+        ]
+      },
+      {
+        "type": "courtyard",
+        "count": 3,
+        "specialAttributes": [
+          "haveli-style",
+          "temperature regulation"
+        ]
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 144000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "main_entry"
+          ],
+          "windows": [],
+          "specialAttributes": [
+            "haveli-style",
+            "water-permeable paving"
+          ]
+        },
+        {
+          "id": "living_dining",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "entry_courtyard",
+            "central_courtyard"
+          ],
+          "windows": [
+            "south_garden_view"
+          ],
+          "specialAttributes": [
+            "open plan",
+            "wheelchair accessible"
+          ]
+        },
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "living_dining",
+            "kitchen",
+            "bedroom1",
+            "bedroom2"
+          ],
+          "windows": [],
+          "specialAttributes": [
+            "thermal chimney effect",
+            "planting"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "central_courtyard"
+          ],
+          "windows": [
+            "north_ventilation"
+          ],
+          "specialAttributes": [
+            "compact",
+            "accessible counters"
+          ]
+        },
+        {
+          "id": "bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "central_courtyard",
+            "bathroom1"
+          ],
+          "windows": [
+            "east_light"
+          ],
+          "specialAttributes": [
+            "elderly suite",
+            "zero-threshold"
+          ]
+        },
+        {
+          "id": "bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 10,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "bedroom1"
+          ],
+          "windows": [
+            "high_ventilation"
+          ],
+          "specialAttributes": [
+            "wet room",
+            "grab bars",
+            "roll-in shower"
+          ]
+        },
+        {
+          "id": "bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "central_courtyard",
+            "bathroom2"
+          ],
+          "windows": [
+            "west_light"
+          ],
+          "specialAttributes": [
+            "zero-threshold"
+          ]
+        },
+        {
+          "id": "bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 20,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "bedroom2"
+          ],
+          "windows": [
+            "high_ventilation"
+          ],
+          "specialAttributes": [
+            "wet room",
+            "grab bars"
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "rear_courtyard"
+          ],
+          "windows": [],
+          "specialAttributes": [
+            "acoustic insulation",
+            "dedicated data lines"
+          ]
+        },
+        {
+          "id": "rear_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "home_office"
+          ],
+          "windows": [],
+          "specialAttributes": [
+            "service area",
+            "rainwater harvesting"
+          ]
+        }
+      ]
+    }
+  ]
+}

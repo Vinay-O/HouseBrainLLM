@@ -1,0 +1,40 @@
+{ 
+    "levels": [
+        {
+            "level_id": "ground_floor",
+            "rooms": [
+                {"name": "Entrance Hall", "area_sqft": 50},
+                {"name": "Living Room", "area_sqft": 120},
+                {"name": "Dining Area", "area_sqft": 80},
+                {"name": "Kitchen", "area_sqft": 90, "details": {"ventilation": true}},
+                {"name": "Guest Bathroom", "area_sqft": 40}
+            ],
+            "openings": [
+                {"type": "main entrance", "location": "front facade"},
+                {"type": "side entrance", "location": "back facade"}
+            ]
+        },
+        {
+            "level_id": "first_floor",
+            "rooms": [
+                {"name": "Master Bedroom", "area_sqft": 100, "details": {"en-suite bathroom": true}},
+                {"name": "Bedroom 2", "area_sqft": 90},
+                {"name": "Bedroom 3", "area_sqft": 90},
+                {"name": "Bedroom 4", "area_sqft": 90},
+                {"name": "Bedroom 5", "area_sqft": 90},
+                {"name": "Study/Library", "area_sqft": 80, "details": {"bookshelf": true}},
+                {"name": "Family Bathroom", "area_sqft": 60}
+            ],
+            "openings": [
+                {"type": "balcony", "location": "east facade"}
+            ]
+        },
+        {
+            "level_id": "rooftop",
+            "rooms": [
+                {"name": "Rooftop Terrace", "area_sqft": 200, "details": {"pool": true}}
+            ],
+            "openings": []
+        }
+    ]
+}

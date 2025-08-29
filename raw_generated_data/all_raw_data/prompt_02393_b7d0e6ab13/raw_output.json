@@ -1,0 +1,109 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": {"width": 20, "length": 25},
+          "adjacent_to": ["dining_area", "family_room"],
+          "notes": "Central area for social gatherings; good north view with ample natural light."
+        },
+        {
+          "room_id": "dining_area",
+          "dimensions": {"width": 15, "length": 20},
+          "adjacent_to": ["kitchen", "living_room"],
+          "notes": "Spacious dining area overlooking the north façade for a harmonious atmosphere."
+        },
+        {
+          "room_id": "family_room",
+          "dimensions": {"width": 18, "length": 22},
+          "adjacent_to": ["living_room", "bedroom1"],
+          "notes": "Multi-functional room with built-in storage; Vastu alignment for family activities."
+        },
+        {
+          "room_id": "bedroom1",
+          "dimensions": {"width": 15, "length": 18},
+          "adjacent_to": ["family_room", "bedroom2"],
+          "notes": "Private master bedroom with a north-facing window to ensure positive energy flow as per Vastu."
+        },
+        {
+          "room_id": "bedroom2",
+          "dimensions": {"width": 15, "length": 18},
+          "adjacent_to": ["bedroom1", "guest_bedroom"],
+          "notes": "Additional bedroom ensuring privacy; maintains good north-south orientation."
+        },
+        {
+          "room_id": "guest_bedroom",
+          "dimensions": {"width": 14, "length": 16},
+          "adjacent_to": ["bedroom2", "study_room"],
+          "notes": "Guest bedroom with a view of the garden; designed to be quiet and peaceful."
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": {"width": 12, "length": 15},
+          "adjacent_to": ["guest_bedroom", "dining_area"],
+          "notes": "Functional space for work or study; placed away from noise with adequate light."
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": {"width": 12, "length": 15},
+          "adjacent_to": ["dining_area", "servants_quarters"],
+          "notes": "Modern kitchen designed with Vastu principles; east or north orientation for positive energy."
+        },
+        {
+          "room_id": "servants_quarters",
+          "dimensions": {"width": 10, "length": 12},
+          "adjacent_to": ["kitchen", "storage"],
+          "notes": "Service area integrated into the design with direct access to kitchen and storage."
+        },
+        {
+          "room_id": "storage",
+          "dimensions": {"width": 8, "length": 10},
+          "adjacent_to": ["servants_quarters"],
+          "notes": "Centralized storage room for household items; placed strategically according to Vastu guidelines."
+        },
+        {
+          "room_id": "bathroom",
+          "dimensions": {"width": 6, "length": 8},
+          "adjacent_to": ["bedrooms", "family_room"],
+          "notes": "Multiple bathrooms spread across the house for convenience; designed with water elements in mind."
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "entrance",
+          "location": {"x": 0, "y": 90},
+          "direction": "north",
+          "notes": "Primary entrance facing north as per request and Vastu principles for positive energy."
+        },
+        {
+          "opening_id": "side_entrance",
+          "location": {"x": 60, "y": 45},
+          "direction": "east",
+          "notes": "Secondary entry point for service purposes; designed with accessibility in mind."
+        }
+      ],
+      "additional_features": [
+        {
+          "feature_id": "private_gym",
+          "dimensions": {"width": 12, "length": 20},
+          "location": "west side of ground floor",
+          "notes": "Private gym area integrated into the design, ensuring privacy and adherence to Vastu principles."
+        },
+        {
+          "feature_id": "swimming_pool",
+          "dimensions": {"width": 15, "length": 25},
+          "location": "south-west corner of plot",
+          "notes": "Swimming pool designed with a view towards the west, complementing the overall layout and Vastu guidelines."
+        },
+        {
+          "feature_id": "exterior_deck",
+          "dimensions": {"width": 10, "length": 20},
+          "location": "north-west corner",
+          "notes": "Deck area for relaxation; designed with north exposure to maximize positive energy flow."
+        }
+      ]
+    }
+  ]
+}

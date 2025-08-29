@@ -1,0 +1,83 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "area_sqft": 450,
+          "location": { "x": 20, "y": 20 },
+          "orientation": "east"
+        },
+        {
+          "room_type": "kitchen",
+          "area_sqft": 150,
+          "location": { "x": 260, "y": 40 },
+          "orientation": "south-east"
+        },
+        {
+          "room_type": "master_bedroom",
+          "area_sqft": 300,
+          "location": { "x": 150, "y": 180 },
+          "orientation": "north-west"
+        },
+        {
+          "room_type": "bedroom_2",
+          "area_sqft": 200,
+          "location": { "x": 350, "y": 160 },
+          "orientation": "south-east"
+        },
+        {
+          "room_type": "home_theater",
+          "area_sqft": 300,
+          "location": { "x": 220, "y": 80 },
+          "orientation": "west"
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "size_ft": [3.5, 7],
+          "location": { "x": 160, "y": 240 },
+          "connects_to": "master_bedroom"
+        },
+        {
+          "type": "window",
+          "size_ft": [5, 4],
+          "location": { "x": 300, "y": 90 },
+          "orientation": "south-west"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom_3",
+          "area_sqft": 200,
+          "location": { "x": 150, "y": 80 },
+          "orientation": "north-west"
+        },
+        {
+          "room_type": "guest_bathroom",
+          "area_sqft": 75,
+          "location": { "x": 340, "y": 240 },
+          "orientation": "south-east"
+        }
+      ],
+      "openings": [
+        {
+          "type": "staircase",
+          "size_ft": [3.5, 8],
+          "location": { "x": 200, "y": 160 }
+        },
+        {
+          "type": "balcony",
+          "size_ft": [8, 4],
+          "location": { "x": 300, "y": 175 },
+          "orientation": "south"
+        }
+      ]
+    }
+  ]
+}

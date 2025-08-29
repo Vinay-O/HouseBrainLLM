@@ -1,0 +1,59 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 16, "width": 20 },
+          "purpose": "Living Room"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 14, "width": 15 },
+          "purpose": "Kitchen",
+          "features": ["Energy-efficient appliances", "Solar-powered water heater"]
+        },
+        {
+          "room_id": "bedroom",
+          "dimensions": { "length": 20, "width": 20 },
+          "purpose": "Bedroom"
+        },
+        {
+          "room_id": "library",
+          "dimensions": { "length": 15, "width": 16 },
+          "purpose": "Library",
+          "features": ["Natural lighting", "Vastu-compliant placement"]
+        },
+        {
+          "room_id": "home_office",
+          "dimensions": { "length": 14, "width": 15 },
+          "purpose": "Home Office"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "entrance",
+          "type": "Main Entrance",
+          "direction": "North-East (Vastu-compliant)"
+        },
+        {
+          "opening_id": "balcony",
+          "type": "Balcony",
+          "associated_room": "living_room"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "rooftop_terrace",
+          "dimensions": { "length": 30, "width": 25 },
+          "purpose": "Rooftop Terrace",
+          "features": ["Solar panels", "Rainwater harvesting system"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

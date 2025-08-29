@@ -1,0 +1,102 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "Living Area",
+          "dimensions": {"length": 20, "width": 15},
+          "location": {"x": 10, "y": 10}
+        },
+        {
+          "room_type": "Kitchen",
+          "dimensions": {"length": 15, "width": 10},
+          "location": {"x": 30, "y": 10}
+        },
+        {
+          "room_type": "Home Theater",
+          "dimensions": {"length": 15, "width": 12},
+          "location": {"x": 45, "y": 10}
+        },
+        {
+          "room_type": "Bedroom 1 (Master)",
+          "dimensions": {"length": 18, "width": 12},
+          "location": {"x": 10, "y": 30}
+        },
+        {
+          "room_type": "Bedroom 2",
+          "dimensions": {"length": 15, "width": 12},
+          "location": {"x": 28, "y": 30}
+        },
+        {
+          "room_type": "Bedroom 3",
+          "dimensions": {"length": 15, "width": 12},
+          "location": {"x": 43, "y": 30}
+        }
+      ],
+      "openings": [
+        {
+          "type": "Window",
+          "orientation": "North",
+          "room_id": "Living Area"
+        },
+        {
+          "type": "Window",
+          "orientation": "East",
+          "room_id": "Kitchen"
+        },
+        {
+          "type": "Door",
+          "direction": "South",
+          "room_id": "Home Theater"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "Bedroom 4 (Guest Room)",
+          "dimensions": {"length": 15, "width": 12},
+          "location": {"x": 30, "y": 38}
+        },
+        {
+          "room_type": "Balcony",
+          "dimensions": {"length": 30, "width": 6},
+          "location": {"x": 10, "y": 45}
+        }
+      ],
+      "openings": [
+        {
+          "type": "Window",
+          "orientation": "North",
+          "room_id": "Bedroom 4 (Guest Room)"
+        },
+        {
+          "type": "Door",
+          "direction": "South",
+          "room_id": "Balcony"
+        }
+      ]
+    }
+  ],
+  "outdoor_features": [
+    {
+      "feature_type": "Swimming Pool",
+      "dimensions": {"length": 25, "width": 10},
+      "location": {"x": 45, "y": 40}
+    }
+  ],
+  "accessibility_features": [
+    {
+      "type": "Ramp",
+      "start_point": {"x": 0, "y": 36},
+      "end_point": {"x": 12, "y": 38}
+    },
+    {
+      "type": "Accessible Bathroom",
+      "dimensions": {"length": 10, "width": 7},
+      "location": {"x": 15, "y": 46}
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Japanese Zen"
+    },
+    "plot": {
+      "terrain": "rocky outcrop with natural stone formations",
+      "climate": "desert with extreme temperatures",
+      "orientation": "north-facing"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "purpose": "Master suite for remote working professional"
+      },
+      {
+        "type": "game_room",
+        "purpose": "Entertainment space with built-in arcade"
+      },
+      {
+        "type": "living_room",
+        "purpose": "Zen-inspired living area"
+      },
+      {
+        "type": "kitchen",
+        "purpose": "Modern kitchen with dining area"
+      },
+      {
+        "type": "bathroom",
+        "purpose": "Spa-like bathroom"
+      },
+      {
+        "type": "entryway",
+        "purpose": "Main entrance with storage"
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 450000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entryway",
+          "type": "entryway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "main_entrance"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "to_entryway",
+            "to_kitchen",
+            "to_game_room"
+          ],
+          "windows": [
+            "north_wall_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_living_room"
+          ],
+          "windows": [
+            "north_wall_window"
+          ]
+        },
+        {
+          "id": "game_room",
+          "type": "game_room",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            "to_living_room"
+          ],
+          "windows": [
+            "north_wall_window"
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 16,
+            "width": 20,
+            "height": 14
+          },
+          "doors": [
+            "to_living_room",
+            "to_bathroom"
+          ],
+          "windows": [
+            "north_wall_window"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 28,
+            "y": 12,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            "to_bedroom"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

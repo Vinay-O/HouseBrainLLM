@@ -1,0 +1,168 @@
+{  
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_hall",
+          "description": "North-facing entrance hall with a modern open design featuring minimalistic finishes and ample natural light.",
+          "area_sqft": 150
+        },
+        {
+          "room_id": "living_room",
+          "description": "Spacious living room adjoining the entrance, designed for social interactions with floor-to-ceiling windows capturing western sunlight.",
+          "area_sqft": 200,
+          "adjacent_rooms": ["dining_area"],
+          "features": [
+            { "name": "floor_to_ceiling_windows", "direction": "west" }
+          ]
+        },
+        {
+          "room_id": "dining_area",
+          "description": "Integrated dining area adjacent to the living room, featuring a modern layout and ample space for furniture.",
+          "area_sqft": 150
+        },
+        {
+          "room_id": "kitchen",
+          "description": "Functional kitchen with an island counter, efficient storage solutions, and ventilation optimized per Vastu principles (preferably East or North)",
+          "area_sqft": 180,
+          "features": [
+            { "name": "modern_appliances", "details": "energy-efficient" },
+            { "name": "ventilation_system", "details": "northward window placements for optimal air flow" }
+          ]
+        },
+        {
+          "room_id": "bedroom_1",
+          "description": "Modern 4BHK townhouse includes four bedrooms. Bedroom 1 features a spacious balcony, designed with floor-to-ceiling windows to ensure maximum ventilation and daylight.",
+          "area_sqft": 200,
+          "balcony": true,
+          "features": [
+            { "name": "floor_to_ceiling_windows", "details": "allowing natural light" },
+            { "name": "balcony", "size_sqft": 50 }
+          ]
+        },
+        {
+          "room_id": "bedroom_2",
+          "description": "Second bedroom with a private balcony, offering a serene view and ample space for relaxation.",
+          "area_sqft": 200,
+          "balcony": true,
+          "features": [
+            { "name": "floor_to_ceiling_windows", "details": "enhancing daylight" },
+            { "name": "balcony", "size_sqft": 50 }
+          ]
+        },
+        {
+          "room_id": "bedroom_3",
+          "description": "Third bedroom with a dedicated balcony designed for privacy and additional outdoor space.",
+          "area_sqft": 200,
+          "balcony": true,
+          "features": [
+            { "name": "floor_to_ceiling_windows", "details": "for improved light" },
+            { "name": "balcony", "size_sqft": 50 }
+          ]
+        },
+        {
+          "room_id": "bedroom_4",
+          "description": "Fourth bedroom with a spacious balcony, ensuring each occupant has their own outdoor space.",
+          "area_sqft": 200,
+          "balcony": true,
+          "features": [
+            { "name": "floor_to_ceiling_windows", "details": "optimizing natural light" },
+            { "name": "balcony", "size_sqft": 50 }
+          ]
+        },
+        {
+          "room_id": "bathroom_1",
+          "description": "Primary bathroom for the ground floor, designed with modern fixtures and efficient water management.",
+          "area_sqft": 80
+        },
+        {
+          "room_id": "utility_room",
+          "description": "Dedicated utility area for storage of cleaning supplies and maintenance equipment, ensuring clutter-free common areas.",
+          "area_sqft": 60
+        }
+      ],
+      "openings": [
+        {
+          "name": "entrance_door",
+          "direction": "north"
+        },
+        {
+          "name": "main_windows",
+          "description": "Multiple floor-to-ceiling windows strategically placed to capture sunlight and provide natural ventilation, particularly oriented towards the west.",
+          "directions": ["west", "east"]
+        }
+      ],
+      "total_area_sqft": 1500,
+      "vastu_compliance": {
+         "entrance_direction": "north",
+         "preferred_direction_for_kitchen": "east_or_north",
+         "balcony_design": "spacious and private for each bedroom"
+      },
+      "duplex_details": {
+         "total_bedrooms": 4,
+         "level_distribution": {
+            "ground_floor": ["entrance_hall", "living_room", "dining_area", "kitchen", "bathroom_1", "utility_room"],
+            "upper_floor": ["bedroom_1", "bedroom_2", "bedroom_3", "bedroom_4"]
+         }
+      }
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_1",
+          "description": "First bedroom on the upper floor with a spacious balcony and floor-to-ceiling windows ensuring ample natural light.",
+          "area_sqft": 200,
+          "balcony": true,
+          "features": [
+            { "name": "floor_to_ceiling_windows", "details": "optimal lighting" },
+            { "name": "balcony", "size_sqft": 50 }
+          ]
+        },
+        {
+          "room_id": "bedroom_2",
+          "description": "Second bedroom with a private balcony designed to provide a quiet retreat.",
+          "area_sqft": 200,
+          "balcony": true,
+          "features": [
+            { "name": "floor_to_ceiling_windows", "details": "ensuring ample light" },
+            { "name": "balcony", "size_sqft": 50 }
+          ]
+        },
+        {
+          "room_id": "bedroom_3",
+          "description": "Third bedroom featuring a balcony and modern design elements.",
+          "area_sqft": 200,
+          "balcony": true,
+          "features": [
+            { "name": "floor_to_ceiling_windows", "details": "maximizing daylight" },
+            { "name": "balcony", "size_sqft": 50 }
+          ]
+        },
+        {
+          "room_id": "bedroom_4",
+          "description": "Fourth bedroom with a spacious balcony and modern design, ensuring comfort and style.",
+          "area_sqft": 200,
+          "balcony": true,
+          "features": [
+            { "name": "floor_to_ceiling_windows", "details": "enhancing natural light" },
+            { "name": "balcony", "size_sqft": 50 }
+          ]
+        },
+        {
+          "room_id": "bathroom_2",
+          "description": "Secondary bathroom on the upper floor for guest or family use.",
+          "area_sqft": 80
+        }
+      ],
+      "openings": [
+        {
+          "name": "balcony_windows",
+          "description": "Each bedroom features its own set of floor-to-ceiling windows integrated into the balcony design.",
+          "directions": ["north", "west"]
+        }
+      ]
+    }
+  ]
+}

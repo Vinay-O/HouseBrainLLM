@@ -1,0 +1,349 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 2,
+      "totalArea": 2700.0,
+      "style": "Brutalist"
+    },
+    "plot": {
+      "width": 60,
+      "depth": 90,
+      "orientation": "West"
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "area": 800.0
+      },
+      {
+        "type": "home_office",
+        "area": 300.0
+      },
+      {
+        "type": "home_theater",
+        "area": 400.0
+      },
+      {
+        "type": "gym",
+        "area": 300.0
+      },
+      {
+        "type": "kitchen",
+        "area": 200.0
+      },
+      {
+        "type": "bathroom",
+        "area": 150.0
+      },
+      {
+        "type": "utility",
+        "area": 100.0
+      },
+      {
+        "type": "circulation",
+        "area": 450.0
+      }
+    ]
+  },
+  "total_area": 2700.0,
+  "construction_cost": 675000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "gym",
+          "type": "gym",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 7.5
+              },
+              "to_room": "corridor_0"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "size": "large",
+              "orientation": "West"
+            }
+          ]
+        },
+        {
+          "id": "home_theater",
+          "type": "home_theater",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "to_room": "corridor_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 5
+              },
+              "to_room": "corridor_0"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 5
+              },
+              "size": "small",
+              "orientation": "East"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 15
+              },
+              "to_room": "corridor_0"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 15
+              },
+              "size": "small",
+              "orientation": "East"
+            }
+          ]
+        },
+        {
+          "id": "corridor_0",
+          "type": "circulation",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 25
+              },
+              "to_room": "staircase"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase",
+          "type": "circulation",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 35
+              },
+              "to_room": "corridor_0"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 35
+              },
+              "to_room": "corridor_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 30
+              },
+              "size": "tall",
+              "orientation": "North"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 20
+              },
+              "to_room": "corridor_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 20
+              },
+              "size": "full_height",
+              "orientation": "West"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 0
+              },
+              "size": "large",
+              "orientation": "North"
+            }
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 10
+              },
+              "to_room": "corridor_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 10
+              },
+              "size": "large",
+              "orientation": "East"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 0
+              },
+              "size": "large",
+              "orientation": "North"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 30
+              },
+              "to_room": "corridor_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 30
+              },
+              "size": "large",
+              "orientation": "East"
+            }
+          ]
+        },
+        {
+          "id": "corridor_1",
+          "type": "circulation",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 30
+              },
+              "to_room": "staircase"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

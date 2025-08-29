@@ -1,0 +1,426 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 2400.0,
+      "style": "Farmhouse Modern"
+    },
+    "plot": {
+      "topography": "Coastal Bluff",
+      "climate": "Tropical with Monsoons",
+      "orientation": "Diagonal to Prevailing Winds"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "area": 300.0,
+        "description": "Chef's kitchen with wood-fired oven and large island"
+      },
+      {
+        "type": "living_room",
+        "area": 400.0,
+        "description": "Sunken living room with high ceilings and panoramic coastal views"
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 250.0,
+        "description": "Primary bedroom suite with walk-in closet and private bathroom"
+      },
+      {
+        "type": "bedroom",
+        "area": 180.0,
+        "description": "Teenager bedroom with built-in study nook"
+      },
+      {
+        "type": "bedroom",
+        "area": 180.0,
+        "description": "Teenager bedroom with built-in storage"
+      },
+      {
+        "type": "bathroom",
+        "area": 100.0,
+        "description": "Shared bathroom with dual vanity"
+      },
+      {
+        "type": "bathroom",
+        "area": 90.0,
+        "description": "Primary ensuite bathroom"
+      },
+      {
+        "type": "dining_room",
+        "area": 200.0,
+        "description": "Open plan dining area adjacent to kitchen"
+      },
+      {
+        "type": "utility",
+        "area": 80.0,
+        "description": "Laundry and storage room"
+      },
+      {
+        "type": "garage",
+        "area": 400.0,
+        "description": "Single-car garage with additional storage"
+      },
+      {
+        "type": "outdoor",
+        "area": 220.0,
+        "description": "Covered patio for monsoon season outdoor living"
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 432000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "description": "Earth-sheltered lower level with garage and utility spaces",
+      "rooms": [
+        {
+          "id": "garage_lower",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "position": {
+                "x": 0,
+                "y": 10
+              },
+              "size": 16
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_lower",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 4
+              },
+              "size": 3
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_lower",
+          "type": "storage",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 25,
+                "y": 8
+              },
+              "size": 3
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "description": "Main entry level with sunken living room, kitchen, and dining",
+      "rooms": [
+        {
+          "id": "living_main",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "size": 4
+            }
+          ],
+          "windows": [
+            {
+              "type": "large_panoramic",
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "size": 15,
+              "orientation": "coastal_view"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_main",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 6
+              },
+              "size": 4
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 35,
+                "y": 3
+              },
+              "size": 4,
+              "orientation": "prevailing_winds"
+            }
+          ]
+        },
+        {
+          "id": "dining_main",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 16
+              },
+              "size": 4
+            }
+          ],
+          "windows": [
+            {
+              "type": "sliding_glass",
+              "position": {
+                "x": 35,
+                "y": 14
+              },
+              "size": 12,
+              "orientation": "patio"
+            }
+          ]
+        },
+        {
+          "id": "patio_main",
+          "type": "outdoor",
+          "bounds": {
+            "x": 35,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "position": {
+                "x": 35,
+                "y": 16
+              },
+              "size": 12
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "description": "Upper sleeping level with bedrooms and bathrooms",
+      "rooms": [
+        {
+          "id": "primary_bedroom_upper",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 15,
+                "y": 8
+              },
+              "size": 3
+            }
+          ],
+          "windows": [
+            {
+              "type": "large",
+              "position": {
+                "x": 0,
+                "y": 4
+              },
+              "size": 12,
+              "orientation": "coastal_view"
+            }
+          ]
+        },
+        {
+          "id": "bath_primary_upper",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 15,
+                "y": 5
+              },
+              "size": 3
+            }
+          ],
+          "windows": [
+            {
+              "type": "high_vent",
+              "position": {
+                "x": 23,
+                "y": 2
+              },
+              "size": 2,
+              "orientation": "prevailing_winds"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_teen1_upper",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12,
+                "y": 22
+              },
+              "size": 3
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 0,
+                "y": 20
+              },
+              "size": 6,
+              "orientation": "coastal_view"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_teen2_upper",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 16,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12,
+                "y": 22
+              },
+              "size": 3
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 24,
+                "y": 20
+              },
+              "size": 6,
+              "orientation": "side_yard"
+            }
+          ]
+        },
+        {
+          "id": "bath_shared_upper",
+          "type": "bathroom",
+          "bounds": {
+            "x": 23,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 23,
+                "y": 5
+              },
+              "size": 3
+            }
+          ],
+          "windows": [
+            {
+              "type": "high_vent",
+              "position": {
+                "x": 31,
+                "y": 2
+              },
+              "size": 2,
+              "orientation": "prevailing_winds"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

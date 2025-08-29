@@ -1,0 +1,79 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["sofa", "coffee_table", "TV_unit"]
+        },
+        {
+          "room_id": "bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["king_bed", "wardrobe", "study_table"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 8, "width": 8 },
+          "features": ["modular_kitchen", "dining_table", "gas_stove"]
+        },
+        {
+          "room_id": "bathroom",
+          "dimensions": { "length": 6, "width": 5 },
+          "features": ["shower", "toilet", "sink"]
+        },
+        {
+          "room_id": "servant_quarters",
+          "dimensions": { "length": 8, "width": 7 },
+          "features": ["single_bed", "wardrobe", "attached_bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 4, "width": 7 },
+          "location": "front"
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 6 },
+          "location": "back"
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 4 },
+          "location": "front"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["work_desks", "bookshelves"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "study_window",
+          "type": "window",
+          "dimensions": { "length": 3, "width": 4 },
+          "location": "side"
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "features": ["swimming_pool", "outdoor_furniture", "greenery"],
+      "dimensions": { "length": 30, "width": 40 }
+    }
+  ],
+  "building_norm": "Indian residential and commercial design norms",
+  "vastu_principles": "Applied for harmonious living environment"
+}

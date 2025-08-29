@@ -1,0 +1,255 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 5200,
+      "style": "Industrial Loft"
+    },
+    "plot": {
+      "size": 20000,
+      "climate": "humid subtropical",
+      "orientation": "east-west linear",
+      "features": [
+        "garden",
+        "bioswales",
+        "privacy screening"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "observatory",
+        "description": "Retractable dome for stargazing"
+      },
+      {
+        "type": "master_suite",
+        "description": "Private retreat with garden views"
+      },
+      {
+        "type": "pet_zone",
+        "description": "Dedicated area with wash station and indoor/outdoor access"
+      },
+      {
+        "type": "study",
+        "description": "Quiet workspace for urban professional"
+      },
+      {
+        "type": "great_room",
+        "description": "Open plan living with industrial loft features"
+      },
+      {
+        "type": "kitchen",
+        "description": "Gourmet kitchen with island and pantry"
+      }
+    ]
+  },
+  "total_area": 5200.0,
+  "construction_cost": 1560000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "great_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            "patio_door_south",
+            "hallway_door_north"
+          ],
+          "windows": [
+            "window_east",
+            "window_west"
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "patio_door_east",
+            "pantry_door"
+          ],
+          "windows": [
+            "window_south"
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": [
+            "window_north"
+          ]
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            "garage_door_east",
+            "entry_door_west"
+          ],
+          "windows": []
+        },
+        {
+          "id": "mudroom",
+          "type": "mudroom",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "garage_entry_door",
+            "yard_door_south"
+          ],
+          "windows": [
+            "window_east"
+          ]
+        },
+        {
+          "id": "pet_zone",
+          "type": "other",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "yard_door_south",
+            "house_door_north"
+          ],
+          "windows": [
+            "window_east",
+            "window_west"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 18,
+            "height": 20
+          },
+          "doors": [
+            "bathroom_door",
+            "closet_door"
+          ],
+          "windows": [
+            "window_north",
+            "window_east"
+          ]
+        },
+        {
+          "id": "master_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_door"
+          ],
+          "windows": [
+            "window_east"
+          ]
+        },
+        {
+          "id": "bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 14,
+            "height": 16
+          },
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": [
+            "window_north"
+          ]
+        },
+        {
+          "id": "bedroom3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 14,
+            "y": 20,
+            "width": 14,
+            "height": 16
+          },
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": [
+            "window_north"
+          ]
+        },
+        {
+          "id": "bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 28,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "observatory",
+          "type": "other",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "stair_access_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        { "room_name": "Entrance Hall", "dimensions": {"length": 6, "width": 4}, "vastu": "North-West" },
+        { "room_name": "Living Room", "dimensions": {"length": 10, "width": 8}, "facing_direction": "South", "vastu": "East" },
+        { "room_name": "Dining Area", "dimensions": {"length": 6, "width": 5}, "adjacent_to": "Living Room", "vastu": "West" },
+        { "room_name": "Kitchen", "dimensions": {"length": 8, "width": 5}, "facing_direction": "North-West", "vastu": "South-East" },
+        { "room_name": "Guest Bedroom 1", "dimensions": {"length": 7, "width": 6}, "location": "near living area", "vastu": "East" }
+      ],
+      "openings": [
+        { "type": "Main Entrance", "position": "North-West Corner", "size": {"height": 2.5, "width": 1.5} },
+        { "type": "Window", "location": "Living Room South Wall", "size": {"height": 1.8, "width": 1.0} },
+        { "type": "Window", "location": "Kitchen East Wall", "size": {"height": 2.0, "width": 1.5} }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        { "room_name": "Master Bedroom", "dimensions": {"length": 8, "width": 7}, "vastu": "North" },
+        { "room_name": "Bedroom 2", "dimensions": {"length": 6, "width": 5}, "location": "adjacent to Master Bedroom", "vastu": "East" },
+        { "room_name": "Bedroom 3", "dimensions": {"length": 6, "width": 5}, "vastu": "South-East" },
+        { "room_name": "Balcony", "dimensions": {"length": 4, "width": 2}, "location": "attached to Master Bedroom", "vastu": "North-West" }
+      ],
+      "openings": [
+        { "type": "Window", "location": "Master Bedroom North Wall", "size": {"height": 1.8, "width": 1.0} },
+        { "type": "Window", "location": "Bedroom 2 South Wall", "size": {"height": 2.0, "width": 1.5} },
+        { "type": "Balcony Door", "position": "Adjacent to Master Bedroom", "size": {"height": 2.3, "width": 0.8} }
+      ]
+    },
+    {
+      "level_id": "rooftop",
+      "rooms": [
+        { "room_name": "Rooftop Terrace", "dimensions": {"length": 12, "width": 10}, "vastu": "Central" }
+      ],
+      "openings": []
+    }
+  ]
+}

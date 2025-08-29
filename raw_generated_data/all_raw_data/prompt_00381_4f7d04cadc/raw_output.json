@@ -1,0 +1,100 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "location": {"x_start": 10, "y_start": 10, "x_end": 25, "y_end": 20},
+          "features": ["main_door", "bench"]
+        },
+        {
+          "room_type": "living_room",
+          "location": {"x_start": 30, "y_start": 10, "x_end": 70, "y_end": 35},
+          "features": ["fireplace", "large_window", "bohemian_decor"]
+        },
+        {
+          "room_type": "kitchen",
+          "location": {"x_start": 10, "y_start": 25, "x_end": 45, "y_end": 60},
+          "features": ["open_plan", "large_window"]
+        },
+        {
+          "room_type": "private_gym",
+          "location": {"x_start": 75, "y_start": 10, "x_end": 95, "y_end": 40},
+          "features": ["mirror_wall", "window"]
+        },
+        {
+          "room_type": "servants_quarters",
+          "location": {"x_start": 85, "y_start": 60, "x_end": 100, "y_end": 90},
+          "features": ["small_window"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "window",
+          "location": {"x_center": 20, "y_center": 35}
+        },
+        {
+          "opening_type": "door",
+          "location": {"x_center": 17.5, "y_center": 15},
+          "connects_to": "living_room"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "master_bedroom",
+          "location": {"x_start": 30, "y_start": 10, "x_end": 70, "y_end": 55},
+          "features": ["attached_bathroom", "large_window"]
+        },
+        {
+          "room_type": "guest_bedroom_1",
+          "location": {"x_start": 25, "y_start": 60, "x_end": 45, "y_end": 90},
+          "features": ["window"]
+        },
+        {
+          "room_type": "guest_bedroom_2",
+          "location": {"x_start": 75, "y_start": 60, "x_end": 95, "y_end": 90},
+          "features": ["window", "small_bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "window",
+          "location": {"x_center": 40, "y_center": 12}
+        },
+        {
+          "opening_type": "window",
+          "location": {"x_center": 85, "y_center": 65}
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_type": "study_room",
+          "location": {"x_start": 30, "y_start": 10, "x_end": 70, "y_end": 55},
+          "features": ["window", "bookshelf"]
+        },
+        {
+          "room_type": "guest_bedroom_3",
+          "location": {"x_start": 25, "y_start": 60, "x_end": 45, "y_end": 90},
+          "features": ["window", "small_bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "window",
+          "location": {"x_center": 35, "y_center": 12}
+        },
+        {
+          "opening_type": "window",
+          "location": {"x_center": 80, "y_center": 75}
+        }
+      ]
+    }
+  ]
+}

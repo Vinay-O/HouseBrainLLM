@@ -1,0 +1,386 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 3,
+      "totalArea": 800,
+      "style": "Marathi Wada with Modern Luxury"
+    },
+    "plot": {
+      "shape": "corner",
+      "area": 800,
+      "frontage": "dual",
+      "constraints": [
+        "flood_zone",
+        "heritage_proximity",
+        "compact"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "level": 2
+      },
+      {
+        "type": "bedroom",
+        "count": 2,
+        "level": 2
+      },
+      {
+        "type": "elderly_bedroom",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "level": 0
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "type": "guest_house",
+        "count": 1,
+        "level": 0
+      },
+      {
+        "type": "otla",
+        "count": 1,
+        "level": 0
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 7200000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "otla_sitout",
+          "type": "otla",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 5
+          },
+          "doors": [
+            "main_entrance_door"
+          ],
+          "windows": [
+            "front_window1",
+            "front_window2"
+          ]
+        },
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "corridor_door1",
+            "corridor_door2"
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_house",
+          "type": "guest_house",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "guest_entrance_door",
+            "courtyard_door"
+          ],
+          "windows": [
+            "guest_window1",
+            "guest_window2"
+          ]
+        },
+        {
+          "id": "elevator_shaft",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 15,
+            "width": 3,
+            "height": 3
+          },
+          "doors": [
+            "elevator_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "stair_door"
+          ],
+          "windows": [
+            "stair_window"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "hall_door",
+            "balcony_door"
+          ],
+          "windows": [
+            "living_window1",
+            "living_window2"
+          ]
+        },
+        {
+          "id": "elderly_bedroom",
+          "type": "elderly_bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "bedroom_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            "bedroom_window1",
+            "bedroom_window2"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "kitchen_door"
+          ],
+          "windows": [
+            "kitchen_window"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "puja_door"
+          ],
+          "windows": [
+            "puja_window"
+          ]
+        },
+        {
+          "id": "courtyard_opening",
+          "type": "open_space",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "elevator_l1",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 15,
+            "width": 3,
+            "height": 3
+          },
+          "doors": [
+            "elevator_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase_l1",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "stair_door"
+          ],
+          "windows": [
+            "stair_window"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "master_door",
+            "bathroom_door",
+            "balcony_door"
+          ],
+          "windows": [
+            "master_window1",
+            "master_window2"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_door"
+          ],
+          "windows": [
+            "bedroom_window"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "bedroom_door"
+          ],
+          "windows": [
+            "bedroom_window"
+          ]
+        },
+        {
+          "id": "family_lounge",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "lounge_door"
+          ],
+          "windows": [
+            "lounge_window1",
+            "lounge_window2"
+          ]
+        },
+        {
+          "id": "courtyard_opening_l2",
+          "type": "open_space",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "elevator_l2",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 15,
+            "width": 3,
+            "height": 3
+          },
+          "doors": [
+            "elevator_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase_l2",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "stair_door"
+          ],
+          "windows": [
+            "stair_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

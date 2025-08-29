@@ -1,0 +1,548 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 3200,
+      "style": "Traditional Colonial British Bungalow with Linear Pavilion"
+    },
+    "plot": {
+      "width": 40,
+      "length": 80,
+      "orientation": "east-facing sunrise alignment",
+      "location": "Lucknow nawabi area, gated community"
+    },
+    "roomBreakdown": [
+      {
+        "type": "veranda",
+        "area": 480
+      },
+      {
+        "type": "living_room",
+        "area": 400
+      },
+      {
+        "type": "dining_room",
+        "area": 240
+      },
+      {
+        "type": "kitchen",
+        "area": 200
+      },
+      {
+        "type": "pantry",
+        "area": 80
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "area": 120
+      },
+      {
+        "type": "puja_room",
+        "area": 200
+      },
+      {
+        "type": "storage",
+        "area": 120
+      },
+      {
+        "type": "utility",
+        "area": 120
+      }
+    ]
+  },
+  "total_area": 2680.0,
+  "construction_cost": 4824000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "front_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 12
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 6
+              },
+              "length": 40,
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 12,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 12
+              },
+              "to_room": "front_veranda"
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 32
+              },
+              "to_room": "dining_room"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 22
+              },
+              "to_room": "bedroom_1"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 26
+              },
+              "to_room": "bedroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 17
+              },
+              "length": 30,
+              "orientation": "north"
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 27
+              },
+              "length": 30,
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 5,
+            "y": 32,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 32
+              },
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 40
+              },
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 36
+              },
+              "length": 15,
+              "orientation": "north"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 36
+              },
+              "length": 16,
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 32,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 40
+              },
+              "to_room": "dining_room"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 40
+              },
+              "to_room": "back_veranda"
+            },
+            {
+              "position": {
+                "x": 27.5,
+                "y": 32
+              },
+              "to_room": "pantry"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 20,
+                "y": 36
+              },
+              "length": 15,
+              "orientation": "west"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 36
+              },
+              "length": 16,
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "pantry",
+          "type": "pantry",
+          "bounds": {
+            "x": 27.5,
+            "y": 28,
+            "width": 7.5,
+            "height": 4
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 27.5,
+                "y": 32
+              },
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 12,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 22
+              },
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 19.5
+              },
+              "to_room": "bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 19.5
+              },
+              "length": 15,
+              "orientation": "west"
+            },
+            {
+              "position": {
+                "x": 42.5,
+                "y": 12
+              },
+              "length": 15,
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 12,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 50,
+                "y": 19.5
+              },
+              "to_room": "bedroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 60,
+                "y": 19.5
+              },
+              "length": 15,
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 27,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 26
+              },
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 34.5
+              },
+              "to_room": "bathroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 34.5
+              },
+              "length": 15,
+              "orientation": "west"
+            },
+            {
+              "position": {
+                "x": 42.5,
+                "y": 42
+              },
+              "length": 15,
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 27,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 50,
+                "y": 34.5
+              },
+              "to_room": "bedroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 60,
+                "y": 34.5
+              },
+              "length": 15,
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 5,
+            "y": 48,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 56
+              },
+              "to_room": "back_veranda"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 52
+              },
+              "length": 15,
+              "orientation": "north"
+            },
+            {
+              "position": {
+                "x": 12.5,
+                "y": 48
+              },
+              "length": 16,
+              "orientation": "south"
+            },
+            {
+              "position": {
+                "x": 12.5,
+                "y": 64
+              },
+              "length": 16,
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "storage_utility",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 48,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 56
+              },
+              "to_room": "back_veranda"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 20,
+                "y": 52
+              },
+              "length": 15,
+              "orientation": "west"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 52
+              },
+              "length": 16,
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "back_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 64,
+            "width": 40,
+            "height": 16
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 64
+              },
+              "to_room": "puja_room"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 64
+              },
+              "to_room": "storage_utility"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 64
+              },
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 72
+              },
+              "length": 40,
+              "orientation": "west"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

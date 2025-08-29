@@ -1,0 +1,314 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 2,
+      "totalArea": 5200.0,
+      "style": "Traditional Craftsman"
+    },
+    "plot": {
+      "shape": "elongated rectangle",
+      "orientation": "north-facing",
+      "climate": "desert with extreme temperatures",
+      "adjacency": "railway"
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_theater",
+        "features": [
+          "fiber_optic_star_ceiling",
+          "acoustic_paneling",
+          "tiered_seating"
+        ]
+      },
+      {
+        "type": "primary_suite",
+        "features": [
+          "walk_in_closet",
+          "luxury_bath",
+          "private_terrace"
+        ]
+      },
+      {
+        "type": "guest_suite",
+        "features": [
+          "kitchenette",
+          "private_entry"
+        ]
+      },
+      {
+        "type": "great_room",
+        "features": [
+          "double_height_ceiling",
+          "north_glass_wall",
+          "fireplace"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "features": [
+          "professional_appliances",
+          "large_island",
+          "pantry"
+        ]
+      },
+      {
+        "type": "dining_room",
+        "features": [
+          "glass_connection",
+          "outdoor_access"
+        ]
+      },
+      {
+        "type": "study",
+        "features": [
+          "built_in_shelving",
+          "north_light"
+        ]
+      },
+      {
+        "type": "mud_room",
+        "features": [
+          "storage_lockers",
+          "laundry_chute"
+        ]
+      },
+      {
+        "type": "garage",
+        "features": [
+          "2_car",
+          "ev_charging",
+          "storage"
+        ]
+      }
+    ]
+  },
+  "total_area": 5200.0,
+  "construction_cost": 1560000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "great_room",
+          "type": "great_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 40
+          },
+          "doors": [
+            "north_glass_door"
+          ],
+          "windows": [
+            "north_wall_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "pantry_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 20,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "patio_door"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "guest_suite",
+          "type": "guest_suite",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "private_entry_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "mud_room",
+          "type": "mud_room",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "garage_door",
+            "exterior_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 50,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "garage_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "glass_connector_1",
+          "type": "corridor",
+          "bounds": {
+            "x": 40,
+            "y": 30,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [],
+          "windows": [
+            "full_glass_walls"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_suite",
+          "type": "primary_suite",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            "closet_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            "north_window",
+            "terrace_door"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "closet_door"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "closet_door"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "home_theater",
+          "type": "home_theater",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            "entry_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "entry_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "glass_connector_2",
+          "type": "corridor",
+          "bounds": {
+            "x": 25,
+            "y": 30,
+            "width": 15,
+            "height": 5
+          },
+          "doors": [],
+          "windows": [
+            "full_glass_walls"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 240,
+      "style": "Earthship"
+    },
+    "plot": {
+      "width": 4,
+      "depth": 60,
+      "location": "coastal urban infill",
+      "climate": "salt air exposure"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 80
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 40
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 30
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 50
+      },
+      {
+        "type": "studio",
+        "count": 1,
+        "area": 40
+      }
+    ]
+  },
+  "total_area": 240.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry",
+          "type": "entry",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 2,
+                "y": 0
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 3,
+            "width": 4,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 3
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 13,
+            "width": 4,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 13
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 2,
+                "y": 23
+              },
+              "size": {
+                "width": 2,
+                "height": 1.5
+              }
+            }
+          ]
+        },
+        {
+          "id": "bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 23,
+            "width": 2,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 23
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 2,
+            "y": 23,
+            "width": 2,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 23
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 3,
+                "y": 28
+              },
+              "size": {
+                "width": 1,
+                "height": 1.5
+              }
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 28,
+            "width": 4,
+            "height": 12.5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 28
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "south_glazing",
+              "position": {
+                "x": 0,
+                "y": 40.5
+              },
+              "size": {
+                "width": 4,
+                "height": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 40.5,
+            "width": 2,
+            "height": 7
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 40.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "south_glazing",
+              "position": {
+                "x": 0,
+                "y": 47.5
+              },
+              "size": {
+                "width": 2,
+                "height": 1.5
+              }
+            }
+          ]
+        },
+        {
+          "id": "bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 2,
+            "y": 40.5,
+            "width": 2,
+            "height": 7
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 40.5
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 47.5,
+            "width": 4,
+            "height": 12.5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 0,
+                "y": 47.5
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

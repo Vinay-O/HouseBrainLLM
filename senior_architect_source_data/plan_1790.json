@@ -1,0 +1,227 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 2850,
+      "style": "Bauhaus Functional"
+    },
+    "plot": {
+      "topography": "rocky outcrop with natural stone formations",
+      "climate": "humid subtropical",
+      "orientation": "south-facing for solar gain"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "description": "chef's kitchen with wood-fired oven"
+      },
+      {
+        "type": "bedroom",
+        "description": "primary suite"
+      },
+      {
+        "type": "bedroom",
+        "description": "guest bedroom"
+      },
+      {
+        "type": "bedroom",
+        "description": "guest bedroom"
+      },
+      {
+        "type": "living_room",
+        "description": "open plan living area"
+      },
+      {
+        "type": "dining_room",
+        "description": "integrated dining space"
+      },
+      {
+        "type": "bathroom",
+        "description": "primary bathroom"
+      },
+      {
+        "type": "bathroom",
+        "description": "guest bathroom"
+      },
+      {
+        "type": "utility",
+        "description": "mechanical room for wind turbine systems"
+      }
+    ]
+  },
+  "total_area": 2850.0,
+  "construction_cost": 1850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 30
+          },
+          "doors": [
+            "dining_room"
+          ],
+          "windows": [
+            "south_1",
+            "south_2"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "living_room",
+            "kitchen"
+          ],
+          "windows": [
+            "south_3"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "dining_room",
+            "utility"
+          ],
+          "windows": [
+            "south_4"
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "primary_bathroom",
+            "hallway"
+          ],
+          "windows": [
+            "south_5",
+            "east_1"
+          ]
+        },
+        {
+          "id": "primary_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "primary_bedroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "guest_bathroom",
+            "hallway"
+          ],
+          "windows": [
+            "south_6",
+            "west_1"
+          ]
+        },
+        {
+          "id": "guest_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "guest_bathroom",
+            "hallway"
+          ],
+          "windows": [
+            "south_7",
+            "west_2"
+          ]
+        },
+        {
+          "id": "guest_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 45,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "guest_bedroom_1",
+            "guest_bedroom_2"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 45,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 20,
+            "y": 40,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "primary_bedroom",
+            "guest_bedroom_1",
+            "guest_bedroom_2",
+            "living_room"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 1200.0,
+      "style": "Industrial Loft A-Frame"
+    },
+    "plot": {
+      "description": "Forest clearing with mature oak trees in a tropical monsoon climate. South-facing for solar gain. Highway noise is a concern.",
+      "size": "0.5 acres",
+      "orientation": "South-facing for solar gain",
+      "climate": "Tropical with monsoons",
+      "noise_factors": "Highway noise"
+    },
+    "roomBreakdown": [
+      {
+        "id": "library",
+        "type": "library",
+        "description": "Double-height library with spiral staircase and south-facing windows for natural light."
+      },
+      {
+        "id": "bedroom",
+        "type": "bedroom",
+        "description": "Minimalist loft bedroom overlooking the library with sound-insulated walls."
+      },
+      {
+        "id": "kitchen",
+        "type": "kitchen",
+        "description": "Open-plan industrial kitchen with concrete countertops and reclaimed wood accents."
+      },
+      {
+        "id": "bathroom",
+        "type": "bathroom",
+        "description": "Compact wet-room bathroom with monsoon-resistant finishes and industrial fixtures."
+      },
+      {
+        "id": "living",
+        "type": "living_room",
+        "description": "Open living area with high A-frame ceilings and views of the forest clearing."
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 195000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "id": "d1",
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 7.5
+              },
+              "to_room": "living"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w1",
+              "type": "large_panel",
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "id": "d2",
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "to_room": "living"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w2",
+              "type": "standard",
+              "position": {
+                "x": 25,
+                "y": 0
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "living",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "id": "d3",
+              "type": "exterior",
+              "position": {
+                "x": 27.5,
+                "y": 25
+              },
+              "to_room": "outside"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w3",
+              "type": "large_panel",
+              "position": {
+                "x": 27.5,
+                "y": 10
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "id": "d4",
+              "type": "interior",
+              "position": {
+                "x": 35,
+                "y": 5
+              },
+              "to_room": "library"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w4",
+              "type": "high_vent",
+              "position": {
+                "x": 40,
+                "y": 0
+              },
+              "orientation": "north"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "id": "d5",
+              "type": "interior",
+              "position": {
+                "x": 5,
+                "y": 5
+              },
+              "to_room": "library"
+            }
+          ],
+          "windows": [
+            {
+              "id": "w5",
+              "type": "standard",
+              "position": {
+                "x": 12.5,
+                "y": 0
+              },
+              "orientation": "south"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "name": "A-Frame Structure",
+      "description": "Budget-conscious A-frame main structure with industrial loft elements."
+    },
+    {
+      "name": "Living Roof",
+      "description": "Green roof with native wildflowers for stormwater management and insulation."
+    },
+    {
+      "name": "Sound Insulation",
+      "description": "Enhanced wall insulation and strategic window placement to mitigate highway noise."
+    },
+    {
+      "name": "Spiral Staircase",
+      "description": "Industrial-style spiral staircase connecting the double-height library to the bedroom loft."
+    },
+    {
+      "name": "Monsoon-Resistant Design",
+      "description": "Elevated foundation, large overhangs, and durable materials suited for tropical monsoon climate."
+    }
+  ]
+}

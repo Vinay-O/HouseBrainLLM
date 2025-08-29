@@ -1,0 +1,258 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Traditional Contemporary Kerala Nalukettu"
+    },
+    "plot": {
+      "shape": "Irregular L-shaped",
+      "location": "Kochi backwaters, inherited land",
+      "constraints": "Forest fire risk mitigation in hill station location, privacy focus on inner plot"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 120
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "area": 80
+      },
+      {
+        "type": "home_spa",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "underground_cooling_chamber",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "storage",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "verandah",
+        "count": 1,
+        "area": 400
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 3240000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "nadumuttam",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "north_wing_door",
+            "south_wing_door",
+            "east_wing_door",
+            "west_wing_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "main_entrance",
+            "nadumuttam"
+          ],
+          "windows": [
+            "living_window1",
+            "living_window2"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            "nadumuttam"
+          ],
+          "windows": [
+            "kitchen_window"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "nadumuttam"
+          ],
+          "windows": [
+            "bed1_window1",
+            "bed1_window2"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "nadumuttam"
+          ],
+          "windows": [
+            "bed2_window1",
+            "bed2_window2"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 18,
+            "y": 10,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            "bedroom_1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 8,
+            "y": 14,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            "bedroom_2"
+          ],
+          "windows": []
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 18,
+            "y": 15,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "nadumuttam"
+          ],
+          "windows": [
+            "puja_window"
+          ]
+        },
+        {
+          "id": "home_spa",
+          "type": "home_spa",
+          "bounds": {
+            "x": 6,
+            "y": 8,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "private_entrance"
+          ],
+          "windows": [
+            "spa_window"
+          ]
+        },
+        {
+          "id": "storage",
+          "type": "storage",
+          "bounds": {
+            "x": 14,
+            "y": 14,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            "external_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 0,
+            "y": 24,
+            "width": 20,
+            "height": 5
+          },
+          "doors": [
+            "garden_access"
+          ],
+          "windows": []
+        },
+        {
+          "id": "underground_cooling_chamber",
+          "type": "underground_cooling_chamber",
+          "bounds": {
+            "x": 12,
+            "y": 20,
+            "width": 6,
+            "height": 4
+          },
+          "doors": [
+            "access_hatch"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

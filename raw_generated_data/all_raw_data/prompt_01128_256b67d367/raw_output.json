@@ -1,0 +1,18 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+          {"room_name": "Entrance Hall", "dimensions": {"length": 10, "width": 8}, "direction": "North"},
+          {"room_name": "Living Room", "dimensions": {"length": 16, "width": 12}, "adjacent_to": ["Dining Area", "Balcony"]},
+          {"room_name": "Dining Area", "dimensions": {"length": 8, "width": 8}},
+          {"room_name": "Kitchen", "dimensions": {"length": 10, "width": 8}, "notes": "Adjacent to Dining Area; designed for energy efficiency and ventilation"},
+          {"room_name": "Master Bedroom", "dimensions": {"length": 12, "width": 12}, "balcony": true},
+          {"room_name": "Guest Room", "dimensions": {"length": 10, "width": 8}}
+      ],
+      "openings": [
+          {"opening_type": "Entrance", "direction": "North", "location": "Front"},
+          {"opening_type": "Balcony Entrance", "direction": "North", "location": "Master Bedroom Exterior"},
+          {"opening_type": "Balcony Entrance", "direction": "North", "location": "Guest Room Exterior"}
+      ]
+    }
+]}

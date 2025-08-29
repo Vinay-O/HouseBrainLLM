@@ -1,0 +1,171 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "Living Room",
+          "area": 150,
+          "shape": "rectangle",
+          "dimensions": [6, 7],
+          "features": ["open-plan", "access to balcony"],
+          "vasthu_compliance": true
+        },
+        {
+          "room_id": "kitchen",
+          "type": "Kitchen",
+          "area": 80,
+          "shape": "L-shaped",
+          "dimensions": [4, 5],
+          "features": ["open-plan", "modular"],
+          "vasthu_compliance": true
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "Bedroom (Master)",
+          "area": 200,
+          "shape": "rectangle",
+          "dimensions": [6, 7],
+          "features": ["attached bathroom", "wardrobe"],
+          "vasthu_compliance": true
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "Bedroom (Second)",
+          "area": 150,
+          "shape": "rectangle",
+          "dimensions": [6, 7],
+          "features": ["attached bathroom"],
+          "vasthu_compliance": true
+        },
+        {
+          "room_id": "home_theater",
+          "type": "Home Theater",
+          "area": 80,
+          "shape": "rectangle",
+          "dimensions": [6, 7],
+          "features": ["acoustic treatment", "projector screen"],
+          "vasthu_compliance": false
+        },
+        {
+          "room_id": "servant_quarters",
+          "type": "Servant Quarters",
+          "area": 50,
+          "shape": "rectangle",
+          "dimensions": [4, 5],
+          "features": ["attached bathroom"],
+          "vasthu_compliance": false
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "Bathroom (Master)",
+          "area": 20,
+          "shape": "square",
+          "dimensions": [3, 4],
+          "features": ["shower", "toilet"],
+          "vasthu_compliance": true
+        },
+        {
+          "room_id": "bathroom_2",
+          "type": "Bathroom (Second)",
+          "area": 15,
+          "shape": "square",
+          "dimensions": [3, 4],
+          "features": ["shower", "toilet"],
+          "vasthu_compliance": true
+        },
+        {
+          "room_id": "bathroom_3",
+          "type": "Bathroom (Servant)",
+          "area": 10,
+          "shape": "square",
+          "dimensions": [3, 4],
+          "features": ["shower", "toilet"],
+          "vasthu_compliance": false
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "location": "front",
+          "dimensions": [3, 7],
+          "direction": "north"
+        },
+        {
+          "opening_id": "balcony_doors",
+          "type": "door",
+          "location": "living room",
+          "dimensions": [2.5, 2.5],
+          "quantity": 2
+        },
+        {
+          "opening_id": "windows_living_room",
+          "type": "window",
+          "location": "living room",
+          "dimensions": [3, 4],
+          "quantity": 2,
+          "direction": "east"
+        },
+        {
+          "opening_id": "windows_bedroom_1",
+          "type": "window",
+          "location": "bedroom_1",
+          "dimensions": [3, 4],
+          "quantity": 1,
+          "direction": "west"
+        },
+        {
+          "opening_id": "windows_bedroom_2",
+          "type": "window",
+          "location": "bedroom_2",
+          "dimensions": [3, 4],
+          "quantity": 1,
+          "direction": "north"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "terrace",
+          "type": "Terrace",
+          "area": 200,
+          "shape": "rectangle",
+          "dimensions": [10, 7],
+          "features": ["outdoor seating", "greenery"],
+          "vasthu_compliance": true
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "terrace_access",
+          "type": "staircase",
+          "location": "ground floor to first floor",
+          "dimensions": [3, 7],
+          "quantity": 1
+        },
+        {
+          "opening_id": "terrace_doors",
+          "type": "door",
+          "location": "bedroom_1 and bedroom_2",
+          "dimensions": [2.5, 2.5],
+          "quantity": 2
+        }
+      ]
+    }
+  ],
+  "building_details": {
+    "style": "Brutalist",
+    "total_area": 800,
+    "floors": 2,
+    "bedrooms": 2,
+    "bathrooms": 3,
+    "additional_rooms": ["home theater", "servant quarters"],
+    "kitchen_type": "open-plan",
+    "local_norms_compliance": true,
+    "vasthu_compliance": true
+  }
+}

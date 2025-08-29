@@ -1,0 +1,335 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1500,
+      "style": "Traditional Kerala Nalukettu"
+    },
+    "plot": {
+      "orientation": "east",
+      "area": 1500,
+      "location": "industrial city outskirts",
+      "constraints": [
+        "pollution concerns",
+        "limited street frontage"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 300
+      },
+      {
+        "type": "kitchen",
+        "area": 200
+      },
+      {
+        "type": "master_bedroom",
+        "area": 250
+      },
+      {
+        "type": "guest_bedroom",
+        "area": 200
+      },
+      {
+        "type": "puja_room",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 80
+      },
+      {
+        "type": "bathroom",
+        "area": 80
+      },
+      {
+        "type": "children_play_area",
+        "area": 150
+      },
+      {
+        "type": "courtyard",
+        "area": 140
+      }
+    ]
+  },
+  "total_area": 1500.0,
+  "construction_cost": 487500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [],
+          "special_features": [
+            "open sky",
+            "water conservation system drainage",
+            "heat-resistant stone flooring"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "large"
+            }
+          ],
+          "special_features": [
+            "east entrance (Vastu-compliant)",
+            "wooden construction",
+            "air purification system"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "size": "medium"
+            }
+          ],
+          "special_features": [
+            "southeast placement (Vastu-compliant)",
+            "heat-resistant stone countertops",
+            "water conservation faucets"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 15,
+            "y": 35,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "small"
+            }
+          ],
+          "special_features": [
+            "northeast placement (Vastu-compliant)",
+            "wooden altar"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": "large"
+            }
+          ],
+          "special_features": [
+            "southwest placement (Vastu-compliant)",
+            "attached bathroom",
+            "walk-in closet",
+            "air purification system"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": "large"
+            }
+          ],
+          "special_features": [
+            "northwest placement (Vastu-compliant)",
+            "air purification system"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2.5,
+              "size": "small"
+            }
+          ],
+          "special_features": [
+            "master bathroom",
+            "water conservation fixtures"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 25,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2.5,
+              "size": "small"
+            }
+          ],
+          "special_features": [
+            "guest bathroom",
+            "water conservation fixtures"
+          ]
+        },
+        {
+          "id": "children_play_area",
+          "type": "children_play_area",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10,
+              "size": "large"
+            }
+          ],
+          "special_features": [
+            "adventure-themed climbing wall",
+            "soft flooring",
+            "east-facing for morning sun"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "shape": "rectangle",
+          "dimensions": { "length": 12, "width": 10 },
+          "position": { "x": 0, "y": 0 },
+          "orientation": "north"
+        },
+        {
+          "room_id": "dining_room",
+          "shape": "square",
+          "dimensions": { "length": 8, "width": 8 },
+          "position": { "x": 12, "y": 0 },
+          "orientation": "east"
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "rectangle",
+          "dimensions": { "length": 10, "width": 8 },
+          "position": { "x": 20, "y": 0 },
+          "orientation": "south"
+        },
+        {
+          "room_id": "garage",
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 8 },
+          "position": { "x": 0, "y": 10 },
+          "orientation": "west"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 3.5, "width": 2.5 },
+          "position": { "x": 0, "y": -1 }
+        },
+        {
+          "opening_id": "garage door 1",
+          "type": "door",
+          "dimensions": { "length": 8, "width": 7 },
+          "position": { "x": 2.5, "y": 10 }
+        },
+        {
+          "opening_id": "garage door 2",
+          "type": "door",
+          "dimensions": { "length": 8, "width": 7 },
+          "position": { "x": 6, "y": 10 }
+        },
+        {
+          "opening_id": "living_dining_window",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "position": { "x": 12, "y": -1 }
+        }
+      ]
+    },
+    {
+      "level_id": "upper_level",
+      "rooms": [
+        {
+          "room_id": "master_bedroom",
+          "shape": "rectangle",
+          "dimensions": { "length": 12, "width": 10 },
+          "position": { "x": 0, "y": 10 },
+          "orientation": "north"
+        },
+        {
+          "room_id": "bedroom_2",
+          "shape": "square",
+          "dimensions": { "length": 8, "width": 8 },
+          "position": { "x": 12, "y": 10 },
+          "orientation": "east"
+        },
+        {
+          "room_id": "bedroom_3",
+          "shape": "rectangle",
+          "dimensions": { "length": 10, "width": 8 },
+          "position": { "x": 20, "y": 10 },
+          "orientation": "south"
+        },
+        {
+          "room_id": "study_room",
+          "shape": "rectangle",
+          "dimensions": { "length": 8, "width": 6 },
+          "position": { "x": 20, "y": 18 },
+          "orientation": "south"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase",
+          "type": "stairs",
+          "dimensions": { "length": 3, "width": 4 },
+          "position": { "x": -1, "y": 5 }
+        },
+        {
+          "opening_id": "master_bedroom_window",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "position": { "x": 0, "y": 20 }
+        },
+        {
+          "opening_id": "bedroom_2_window",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "position": { "x": 12, "y": 20 }
+        },
+        {
+          "opening_id": "bedroom_3_window",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "position": { "x": 20, "y": 20 }
+        }
+      ]
+    }
+  ],
+  "garage": {
+    "location": "ground_floor",
+    "capacity": 2,
+    "dimensions": { "length": 30, "width": 8 },
+    "position": { "x": 0, "y": -5 }
+  },
+  "architecture_style": "Colonial",
+  "levels_count": 2
+}

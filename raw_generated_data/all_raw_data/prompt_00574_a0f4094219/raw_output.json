@@ -1,0 +1,83 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Entrance Hall",
+          "dimensions": {"length": 4.5, "width": 2},
+          "position": {"x": 0, "y": 0},
+          "orientation": "north"
+        },
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 6, "width": 4},
+          "position": {"x": 5, "y": 0},
+          "connected_to": ["Kitchen", "Entrance Hall"]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 5, "width": 3.5},
+          "position": {"x": 9, "y": -1.75},
+          "open_plan_with": "Living Room"
+        },
+        {
+          "room_name": "Home Office",
+          "dimensions": {"length": 4, "width": 3},
+          "position": {"x": 0, "y": 2},
+          "orientation": "east"
+        },
+        {
+          "room_name": "Bedroom",
+          "dimensions": {"length": 5, "width": 4.5},
+          "position": {"x": 14, "y": -2}
+        },
+        {
+          "room_name": "Bathroom",
+          "dimensions": {"length": 3.5, "width": 2.5},
+          "position": {"x": 19, "y": -2}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "window",
+          "dimensions": {"height": 2, "width": 1.5},
+          "position": {"room": "Living Room", "side": "west"}
+        },
+        {
+          "opening_type": "door",
+          "dimensions": {"height": 2, "width": 0.9},
+          "position": {"room": "Entrance Hall", "direction": "east"}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Balcony",
+          "dimensions": {"length": 5, "width": 2},
+          "position": {"x": 10, "y": -3.75}
+        },
+        {
+          "room_name": "Garage",
+          "dimensions": {"length": 8, "width": 4},
+          "position": {"x": 2, "y": -6},
+          "car_spaces": 2
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "dimensions": {"height": 2.1, "width": 3.5},
+          "position": {"room": "Garage", "direction": "south"}
+        },
+        {
+          "opening_type": "window",
+          "dimensions": {"height": 1.8, "width": 1.4},
+          "position": {"room": "Balcony", "side": "east"}
+        }
+      ]
+    }
+  ]
+}

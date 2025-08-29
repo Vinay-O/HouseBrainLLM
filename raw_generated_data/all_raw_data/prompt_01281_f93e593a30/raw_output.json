@@ -1,0 +1,92 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": {"length": 20, "width": 15},
+          "features": ["floor-to-ceiling windows", "art deco decor"],
+          "connected_to": ["dining_area", "home_theater"]
+        },
+        {
+          "room_id": "dining_area",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["vaastu compliant layout"],
+          "connected_to": ["kitchen", "living_room"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["modular storage", "vaastu compliant layout"],
+          "connected_to": ["dining_area", "servants_quarters"]
+        },
+        {
+          "room_id": "home_theater",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["acoustic insulation", "recliner seating"],
+          "connected_to": ["living_room"]
+        },
+        {
+          "room_id": "bedroom",
+          "dimensions": {"length": 16, "width": 14},
+          "features": ["walk-in closet", "vaastu compliant layout"],
+          "connected_to": ["bathroom"]
+        },
+        {
+          "room_id": "bathroom",
+          "dimensions": {"length": 8, "width": 7},
+          "features": ["modern fixtures", "vaastu compliant layout"],
+          "connected_to": ["bedroom"]
+        },
+        {
+          "room_id": "servants_quarters",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["basic amenities", "separate entrance"],
+          "connected_to": ["kitchen"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "front_door",
+          "type": "door",
+          "dimensions": {"length": 7, "width": 3},
+          "location": "front of the living room"
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "dimensions": {"length": 7, "width": 3},
+          "location": "back of the kitchen"
+        },
+        {
+          "opening_id": "floor_to_ceiling_windows_living_room",
+          "type": "window",
+          "dimensions": {"length": 10, "width": 8},
+          "location": "living room, facing north-east"
+        }
+      ],
+      "split_levels": [
+        {
+          "level_id": "upper_level",
+          "rooms": [
+            {
+              "room_id": "study_room",
+              "dimensions": {"length": 12, "width": 10},
+              "features": ["vaastu compliant layout"],
+              "connected_to": ["bedroom"]
+            }
+          ]
+        }
+      ],
+      "building_norm_compliance": [
+        {
+          "norm": "FAR (Floor Area Ratio)",
+          "compliance": "Within limits"
+        },
+        {
+          "norm": "setback regulations",
+          "compliance": "Observed"
+        }
+      ]
+    }
+  ]}

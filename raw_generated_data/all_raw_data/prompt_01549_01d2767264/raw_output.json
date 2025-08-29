@@ -1,0 +1,137 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "area": 300,
+          "shape": "rectangular",
+          "features": ["high ceiling", "exposed concrete walls"],
+          "access_to": ["central courtyard", "dining room"]
+        },
+        {
+          "room_id": "dining_room",
+          "area": 200,
+          "shape": "square",
+          "features": ["built-in cabinetry", "geometric lighting"],
+          "adjacent_to": "kitchen"
+        },
+        {
+          "room_id": "kitchen",
+          "area": 250,
+          "shape": "L-shaped",
+          "features": ["stainless steel appliances", "concrete countertops"],
+          "access_to": ["dining room", "utility area"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "area": 400,
+          "shape": "rectangular",
+          "features": ["walk-in closet", "private balcony"],
+          "access_to": ["bathroom_1", "central courtyard"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "area": 350,
+          "shape": "square",
+          "features": ["built-in storage", "exposed brick wall"],
+          "access_to": ["bathroom_2"]
+        },
+        {
+          "room_id": "central_courtyard",
+          "area": 250,
+          "shape": "circular",
+          "features": ["water feature", "landscaping", "skylight"]
+        },
+        {
+          "room_id": "utility_area",
+          "area": 150,
+          "shape": "rectangular",
+          "features": ["laundry machines", "storage"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "location": "front of house",
+          "material": "steel",
+          "access_to": "living room"
+        },
+        {
+          "opening_id": "courtyard_access_1",
+          "type": "door",
+          "location": "between living room and courtyard",
+          "material": "glass",
+          "access_to": "central courtyard"
+        },
+        {
+          "opening_id": "courtyard_access_2",
+          "type": "door",
+          "location": "between bedroom 1 and courtyard",
+          "material": "glass",
+          "access_to": "central courtyard"
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "location": "above countertop",
+          "material": "frosted glass",
+          "purpose": "natural light and ventilation"
+        }
+      ],
+      "additional_features": [
+        {
+          "feature_id": "split_level_stairs",
+          "description": "Exposed concrete stairs connecting ground floor to lower level",
+          "location": "adjacent to living room"
+        },
+        {
+          "feature_id": "brutalist_facade",
+          "description": "Raw concrete exterior with geometric patterns",
+          "location": "front and side elevations"
+        }
+      ]
+    },
+    {
+      "level_id": "lower_level",
+      "rooms": [
+        {
+          "room_id": "media_room",
+          "area": 300,
+          "shape": "rectangular",
+          "features": ["acoustic panels", "theatre seating"],
+          "access_to": "storage room"
+        },
+        {
+          "room_id": "gym",
+          "area": 250,
+          "shape": "square",
+          "features": ["equipment storage", "mirrored walls"],
+          "access_to": "bathroom_3"
+        },
+        {
+          "room_id": "storage_room",
+          "area": 200,
+          "shape": "rectangular",
+          "features": ["shelving units", "climate control"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "media_room_window",
+          "type": "window",
+          "location": "rear wall",
+          "material": "frosted glass",
+          "purpose": "natural light and ventilation"
+        },
+        {
+          "opening_id": "gym_window",
+          "type": "window",
+          "location": "side wall",
+          "material": "frosted glass",
+          "purpose": "natural light and ventilation"
+        }
+      ]
+    }
+  ] }

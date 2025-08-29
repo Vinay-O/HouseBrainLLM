@@ -1,0 +1,231 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Japanese Zen"
+    },
+    "plot": {
+      "slope": "sloping vineyard terrain",
+      "climate": "alpine with heavy snow loads",
+      "orientation": "diagonal to prevailing winds"
+    },
+    "roomBreakdown": [
+      {
+        "type": "yoga_studio",
+        "features": [
+          "heated_floors"
+        ]
+      },
+      {
+        "type": "home_office",
+        "features": [
+          "separate_entrance"
+        ]
+      },
+      {
+        "type": "library",
+        "features": [
+          "book_storage"
+        ]
+      },
+      {
+        "type": "bioswale",
+        "features": [
+          "stormwater_management"
+        ]
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 875000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "yoga_studio",
+          "type": "yoga_studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "library_east",
+          "type": "library",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bioswale_north",
+          "type": "bioswale",
+          "bounds": {
+            "x": 0,
+            "y": -5,
+            "width": 45,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "bioswale_south",
+          "type": "bioswale",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 45,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "library_west",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7.5
+            },
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

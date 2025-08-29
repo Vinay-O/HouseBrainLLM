@@ -1,0 +1,129 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "entrance_hall",
+          "dimensions": {"length": "4m", "width": "3m"},
+          "description": "Serves as the main entrance and circulation space."
+        },
+        {
+          "name": "living_room",
+          "dimensions": {"length": "6m", "width": "5m"},
+          "description": "Open plan area adjacent to dining space, designed with natural light in mind."
+        },
+        {
+          "name": "dining_area",
+          "dimensions": {"length": "4m", "width": "3m"},
+          "description": "Connected to the living room and kitchen via open circulation."
+        },
+        {
+          "name": "kitchen",
+          "dimensions": {"length": "5m", "width": "4m"},
+          "description": "Modern eco-friendly kitchen with energy-efficient appliances, ample storage and ventilation."
+        },
+        {
+          "name": "central_courtyard",
+          "dimensions": {"length": "8m", "width": "8m"},
+          "description": "Open green space at the center of the floor plan to promote natural ventilation and light."
+        },
+        {
+          "name": "guest_bathroom",
+          "dimensions": {"length": "3m", "width": "2.5m"},
+          "description": "Private bathroom for guests with water-saving fixtures."
+        }
+      ],
+      "openings": [
+        {
+          "type": "entrance_door",
+          "location": "front",
+          "features": ["wide access", "eco-friendly materials"]
+        },
+        {
+          "type": "window",
+          "location": "living_room",
+          "features": ["south-facing for maximum natural light", "insulated glass"]
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "name": "bedroom_1",
+          "dimensions": {"length": "4m", "width": "3.5m"},
+          "description": "Master bedroom with private balcony, overlooking the central courtyard.",
+          "balcony": true
+        },
+        {
+          "name": "bedroom_2",
+          "dimensions": {"length": "4m", "width": "3.5m"},
+          "description": "Spacious bedroom with a large balcony for relaxation and fresh air, adhering to Vastu principles.",
+          "balcony": true
+        },
+        {
+          "name": "bedroom_3",
+          "dimensions": {"length": "4m", "width": "3.5m"},
+          "description": "Additional bedroom with private balcony facing the courtyard."
+        },
+        {
+          "name": "bedroom_4",
+          "dimensions": {"length": "4m", "width": "3.5m"},
+          "description": "Functional bedroom that provides privacy and ample space, including a balcony."
+        }
+      ],
+      "openings": [
+        {
+          "type": "staircase",
+          "location": "connect_ground_and_upper",
+          "features": ["well-lit", "spatially integrated with design"]
+        },
+        {
+          "type": "window",
+          "location": "bedroom_1",
+          "features": ["east-facing for morning sunlight", "insulated glass"]
+        }
+      ]
+    },
+    {
+      "level_id": "basement_level",
+      "rooms": [
+        {
+          "name": "private_gym",
+          "dimensions": {"length": "6m", "width": "4.5m"},
+          "description": "Fully equipped, eco-friendly gym with sustainable materials and energy-efficient lighting."
+        },
+        {
+          "name": "storage_area",
+          "dimensions": {"length": "3m", "width": "2m"},
+          "description": "Utility storage for gardening tools and seasonal items."
+        }
+      ],
+      "openings": [
+        {
+          "type": "staircase",
+          "location": "connect_upper_and_basement",
+          "features": ["well-designed, integrated staircase", "compliant with safety norms"]
+        }
+      ]
+    },
+    {
+      "level_id": "mezzanine",
+      "rooms": [
+        {
+          "name": "study_room",
+          "dimensions": {"length": "4m", "width": "3.5m"},
+          "description": "Cozy study area with access to natural light and ventilation from a partially open ceiling."
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "location": "study_room",
+          "features": ["north-facing", "high insulation"]
+        }
+      ]
+    }
+  ]
+}

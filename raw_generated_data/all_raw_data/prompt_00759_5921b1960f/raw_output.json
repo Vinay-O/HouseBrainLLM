@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "type": "bedroom",
+          "size": "20x15",
+          "facing": "north",
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "type": "bedroom",
+          "size": "20x15",
+          "facing": "north-east",
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "type": "living_room",
+          "size": "20x20",
+          "adjacent_to": ["dining_area", "kitchen"],
+          "features": ["sofa_set", "coffee_table"]
+        },
+        {
+          "type": "dining_area",
+          "size": "15x15",
+          "adjacent_to": "kitchen"
+        },
+        {
+          "type": "kitchen",
+          "size": "20x15",
+          "facing": "east",
+          "features": ["modular_kitchen", "gas_stove", "sink"]
+        },
+        {
+          "type": "swimming_pool",
+          "size": "30x15",
+          "location": "backyard"
+        },
+        {
+          "type": "servant_quarters",
+          "size": "12x10",
+          "facing": "south-east",
+          "features": ["bed", "wardrobe"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "main_door",
+          "direction": "north",
+          "size": "8x4"
+        },
+        {
+          "type": "window",
+          "location": "living_room",
+          "direction": "east",
+          "size": "6x4"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "type": "bedroom",
+          "size": "20x15",
+          "facing": "north",
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "type": "bedroom",
+          "size": "20x15",
+          "facing": "north-east",
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "type": "living_room",
+          "size": "20x20",
+          "adjacent_to": ["dining_area", "kitchen"],
+          "features": ["sofa_set", "coffee_table"]
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "type": "bedroom",
+          "size": "20x15",
+          "facing": "north",
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "type": "bedroom",
+          "size": "20x15",
+          "facing": "north-east",
+          "features": ["balcony", "wardrobe"]
+        }
+      ]
+    }
+  ],
+  "open_space": {
+    "swimming_pool": {
+      "size": "30x15",
+      "location": "backyard"
+    },
+    "servant_quarters": {
+      "size": "12x10",
+      "facing": "south-east"
+    }
+  }
+}

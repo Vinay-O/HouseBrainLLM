@@ -1,0 +1,189 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Bauhaus Functional"
+    },
+    "plot": {
+      "terrain": "sloping vineyard",
+      "climate": "temperate maritime",
+      "orientation": "south-facing for solar gain",
+      "features": [
+        "wind turbine for supplemental power",
+        "privacy from neighbors"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 250
+      },
+      {
+        "type": "kitchen",
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "type": "telecommuting_pod",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "utility",
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 216000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_pod",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 25
+          },
+          "doors": [
+            "south_entrance"
+          ],
+          "windows": [
+            "south_window_wall"
+          ]
+        },
+        {
+          "id": "kitchen_pod",
+          "type": "kitchen",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "to_living_pod"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom_pod_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom_pod_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom_pod_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "telecommuting_pod",
+          "type": "telecommuting_pod",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "south_window"
+          ],
+          "features": [
+            "video_conferencing_setup"
+          ]
+        },
+        {
+          "id": "bathroom_pod",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_pod",
+          "type": "utility",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

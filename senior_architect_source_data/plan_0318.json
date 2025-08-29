@@ -1,0 +1,293 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 800,
+      "style": "Odisha Temple-Inspired with Spiritual Geometry"
+    },
+    "plot": {
+      "shape": "corner",
+      "area": 800,
+      "slope": "moderate",
+      "frontage": "dual"
+    },
+    "roomBreakdown": [
+      {
+        "type": "workshop",
+        "area": 200
+      },
+      {
+        "type": "living_room",
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "area": 100
+      },
+      {
+        "type": "bedroom",
+        "area": 120
+      },
+      {
+        "type": "bedroom",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 50
+      },
+      {
+        "type": "veranda",
+        "area": 50
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "workshop_0",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "to_room": "exterior",
+              "to_level": 0
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "rainwater_tank_0",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "stepped_well_0",
+          "type": "feature",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 6
+              },
+              "to_room": "veranda_1",
+              "to_level": 1
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 0
+              },
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 5
+              },
+              "to_room": "living_room_1",
+              "to_level": 1
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12,
+                "y": 5
+              },
+              "to_room": "living_room_1",
+              "to_level": 1
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 6,
+                "y": 10
+              },
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 12,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12,
+                "y": 17
+              },
+              "to_room": "living_room_1",
+              "to_level": 1
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 17,
+                "y": 10
+              },
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 22,
+            "y": 10,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 22,
+                "y": 13
+              },
+              "to_room": "kitchen_1",
+              "to_level": 1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "veranda_1",
+          "type": "veranda",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 5
+              },
+              "to_room": "living_room_1",
+              "to_level": 1
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 5
+              },
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 27.5,
+                "y": 0
+              },
+              "size": "large"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

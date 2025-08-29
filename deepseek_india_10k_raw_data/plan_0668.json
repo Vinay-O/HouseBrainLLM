@@ -1,0 +1,543 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 5000,
+      "style": "Modern Fusion (Chettinad Colonial)"
+    },
+    "plot": {
+      "width": 25,
+      "length": 100,
+      "shape": "elongated_rectangle",
+      "location": "corner_plot_dual_frontage",
+      "notes": "Railway-side plot in Shimla colonial hills, earthquake zone"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 450,
+        "level": 0
+      },
+      {
+        "type": "kitchen",
+        "area": 300,
+        "level": 0
+      },
+      {
+        "type": "dining_room",
+        "area": 300,
+        "level": 0
+      },
+      {
+        "type": "storytelling_amphitheater",
+        "area": 400,
+        "level": 0
+      },
+      {
+        "type": "bedroom",
+        "area": 350,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 350,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 300,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 300,
+        "level": 1
+      },
+      {
+        "type": "bathroom",
+        "area": 120,
+        "level": 0
+      },
+      {
+        "type": "bathroom",
+        "area": 120,
+        "level": 0
+      },
+      {
+        "type": "bathroom",
+        "area": 100,
+        "level": 1
+      },
+      {
+        "type": "bathroom",
+        "area": 100,
+        "level": 1
+      },
+      {
+        "type": "veranda",
+        "area": 800,
+        "level": 0
+      },
+      {
+        "type": "veranda",
+        "area": 600,
+        "level": 1
+      }
+    ]
+  },
+  "total_area": 5000.0,
+  "construction_cost": 11250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "veranda_ground",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 100
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12.5
+            },
+            {
+              "wall": "south",
+              "position": 12.5
+            },
+            {
+              "wall": "east",
+              "position": 50
+            },
+            {
+              "wall": "west",
+              "position": 50
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 3
+            },
+            {
+              "wall": "north",
+              "position": 20,
+              "size": 3
+            },
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 3
+            },
+            {
+              "wall": "south",
+              "position": 20,
+              "size": 3
+            },
+            {
+              "wall": "east",
+              "position": 25,
+              "size": 3
+            },
+            {
+              "wall": "east",
+              "position": 75,
+              "size": 3
+            },
+            {
+              "wall": "west",
+              "position": 25,
+              "size": 3
+            },
+            {
+              "wall": "west",
+              "position": 75,
+              "size": 3
+            }
+          ],
+          "notes": "Wraparound veranda (thinnai) with traditional seating, Athangudi tile flooring, and intricate jaali screens for privacy and ventilation"
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 15,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 15,
+              "size": 4
+            },
+            {
+              "wall": "west",
+              "position": 15,
+              "size": 4
+            }
+          ],
+          "notes": "Central living area opening to veranda"
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 5,
+            "y": 45,
+            "width": 10,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 15,
+              "size": 4
+            }
+          ],
+          "notes": "Traditional kitchen with modern appliances"
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 15,
+            "y": 45,
+            "width": 10,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 15,
+              "size": 4
+            }
+          ],
+          "notes": "Adjacent to kitchen, open to veranda"
+        },
+        {
+          "id": "storytelling_amphitheater",
+          "type": "storytelling_amphitheater",
+          "bounds": {
+            "x": 5,
+            "y": 80,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [],
+          "notes": "Sunken amphitheater-style seating for traditional storytelling, open to sky with jaali screen cover"
+        },
+        {
+          "id": "bathroom_ground_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": 2
+            }
+          ],
+          "notes": "Guest bathroom with traditional copper pipe system for solar water heating"
+        },
+        {
+          "id": "bathroom_ground_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": 2
+            }
+          ],
+          "notes": "Service bathroom with traditional copper pipe system"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "veranda_first",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 100
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12.5
+            },
+            {
+              "wall": "south",
+              "position": 12.5
+            },
+            {
+              "wall": "east",
+              "position": 50
+            },
+            {
+              "wall": "west",
+              "position": 50
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 3
+            },
+            {
+              "wall": "north",
+              "position": 20,
+              "size": 3
+            },
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 3
+            },
+            {
+              "wall": "south",
+              "position": 20,
+              "size": 3
+            },
+            {
+              "wall": "east",
+              "position": 25,
+              "size": 3
+            },
+            {
+              "wall": "east",
+              "position": 75,
+              "size": 3
+            },
+            {
+              "wall": "west",
+              "position": 25,
+              "size": 3
+            },
+            {
+              "wall": "west",
+              "position": 75,
+              "size": 3
+            }
+          ],
+          "notes": "Upper level wraparound veranda with jaali screens, overlooking storytelling area"
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 15,
+            "height": 35
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 17.5,
+              "size": 5
+            },
+            {
+              "wall": "west",
+              "position": 17.5,
+              "size": 5
+            }
+          ],
+          "notes": "Master bedroom with sitting area opening to veranda"
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 50,
+            "width": 10,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 12.5,
+              "size": 4
+            }
+          ],
+          "notes": "Secondary bedroom with veranda access"
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 50,
+            "width": 10,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 12.5,
+              "size": 4
+            }
+          ],
+          "notes": "Secondary bedroom with veranda access"
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 80,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "size": 3
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "size": 3
+            }
+          ],
+          "notes": "Bedroom overlooking storytelling amphitheater"
+        },
+        {
+          "id": "bathroom_first_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": 2
+            }
+          ],
+          "notes": "Ensuite bathroom with solar heated copper pipes"
+        },
+        {
+          "id": "bathroom_first_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": 2
+            }
+          ],
+          "notes": "Shared bathroom with solar heated copper pipes"
+        }
+      ]
+    }
+  ],
+  "notes": "Luxury artisan-crafted modern fusion design blending Chettinad and Shimla colonial traditions. Features earthquake-resistant construction with traditional flexible joints, solar water heating with copper pipe systems, Athangudi tiles, wraparound verandas with jaali screens, and a central storytelling amphitheater. Designed for a corner plot with dual street frontage on a 25x100 feet railway-side plot."
+}

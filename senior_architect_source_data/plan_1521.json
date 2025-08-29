@@ -1,0 +1,285 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2200.0,
+      "style": "Brutalist Concrete"
+    },
+    "plot": {
+      "shape": "triangular",
+      "location": "corner",
+      "climate": "temperate maritime"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "office",
+        "count": 1
+      },
+      {
+        "type": "gym",
+        "count": 1
+      },
+      {
+        "type": "pavilion",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 385000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_hall",
+          "type": "hall",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "front_door",
+            "door_to_living",
+            "door_to_utility"
+          ],
+          "windows": [
+            "window_north"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 18,
+            "height": 16
+          },
+          "doors": [
+            "door_to_hall",
+            "slider_to_patio"
+          ],
+          "windows": [
+            "window_east",
+            "window_south"
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_south",
+            "window_west"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "door_to_hall",
+            "door_exterior"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 14,
+            "y": 6,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_west"
+          ]
+        },
+        {
+          "id": "stairwell",
+          "type": "stairwell",
+          "bounds": {
+            "x": 20,
+            "y": 16,
+            "width": 6,
+            "height": 14
+          },
+          "doors": [],
+          "windows": [
+            "window_south"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_north",
+            "window_east"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 14,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_east",
+            "window_south"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_north"
+          ]
+        },
+        {
+          "id": "gym",
+          "type": "gym",
+          "bounds": {
+            "x": 8,
+            "y": 14,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_north",
+            "window_east"
+          ]
+        },
+        {
+          "id": "upper_hall",
+          "type": "hall",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            "door_to_bed1",
+            "door_to_bed2",
+            "door_to_bath",
+            "door_to_gym",
+            "door_to_office"
+          ],
+          "windows": [
+            "window_south"
+          ]
+        },
+        {
+          "id": "stairwell_top",
+          "type": "stairwell",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            "window_south"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "mezzanine_office",
+          "type": "office",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "door_to_stairs"
+          ],
+          "windows": [
+            "window_north",
+            "window_east",
+            "window_south"
+          ]
+        }
+      ]
+    }
+  ]
+}

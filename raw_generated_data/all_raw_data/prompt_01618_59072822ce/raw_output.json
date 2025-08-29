@@ -1,0 +1,88 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall & Lobby",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["Wheelchair accessible ramp", "Automatic doors"],
+          "adjacencies": ["Living Room", "Kitchen"]
+        },
+        {
+          "name": "Lobby / Reception Area",
+          "dimensions": {"length": 15, "width": 8},
+          "features": ["Central reception desk", "Wheelchair accessible design", "Vastu compliant positioning (east-west axis)"],
+          "adjacencies": ["Living Room", "Home Theatre"]
+        },
+        {
+          "name": "Kitchen",
+          "dimensions": {"length": 12, "width": 8},
+          "features": ["Wheelchair accessible counter", "Energy efficient appliances", "Vastu compliant (south-west quadrant)"],
+          "adjacencies": ["Dining Area", "Living Room"]
+        },
+        {
+          "name": "Dining Area",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["Wheelchair accessible design", "Vastu compliant (north-west quadrant)"],
+          "adjacencies": ["Kitchen", "Living Room"]
+        },
+        {
+          "name": "Master Bedroom",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["Wheelchair accessible bathroom", "Private balcony", "Vastu compliant (north-east quadrant)"],
+          "adjacencies": []
+        },
+        {
+          "name": "Guest Bathroom",
+          "dimensions": {"length": 6, "width": 4},
+          "features": ["Wheelchair accessible design"],
+          "adjacencies": ["Master Bedroom"]
+        },
+        {
+          "name": "Home Theatre / Media Room",
+          "dimensions": {"length": 14, "width": 12},
+          "features": ["Acoustic treatment", "Large screen projection area", "Vastu compliant (west quadrant)"],
+          "adjacencies": ["Lobby", "Living Room"]
+        },
+        {
+          "name": "Private Gym",
+          "dimensions": {"length": 10, "width": 8},
+          "features": ["Multipurpose space with retractable equipment", "Vastu compliant (south quadrant)"],
+          "adjacencies": []
+        },
+        {
+          "name": "Utility Room / Storage",
+          "dimensions": {"length": 8, "width": 6},
+          "features": ["Wheelchair accessible shelving", "Energy efficient lighting"],
+          "adjacencies": []
+        }
+      ],
+      "openings": [
+        { "type": "Main Entrance", "location": "south-facing", "size": {"height": 7.5, "width": 4} },
+        {
+          "type": "Balcony Access",
+          "location": "east-facing (Master Bedroom)",
+          "size": {"height": 6, "width": 3}
+        },
+        { "type": "Emergency Exit", "location": "north-east corner", "size": {"height": 7, "width": 2} },
+        {
+          "type": "Garden Entrance",
+          "location": "west-facing (adjacent to Private Gym)",
+          "size": {"height": 7, "width": 4}
+        }
+      ]
+    }
+  ],
+  "additional_features": [
+    {
+      "name": "Swimming Pool",
+      "dimensions": {"length": 15, "width": 8},
+      "location": "adjacent to garden area",
+      "features": ["Wheelchair accessible ramp", "Safety measures"],
+      "vastu_note": "Placed towards the north-west for auspiciousness."
+    }
+  ],
+  "budget_note": "Design optimized for cost efficiency while meeting accessibility and Vastu requirements.",
+  "plot_dimensions": {"length": 100, "width": 80}
+}

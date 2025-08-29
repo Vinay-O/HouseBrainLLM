@@ -1,0 +1,87 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+          {
+              "name": "Entrance Lobby",
+              "dimensions": {"width": 10, "length": 8},
+              "adjacencies": ["Courtyard", "Living Room"],
+              "vastu_direction": "South-West"
+          },
+          {
+              "name": "Kitchen",
+              "dimensions": {"width": 12, "length": 10},
+              "adjacencies": ["Dining Area"],
+              "vastu_direction": "North-East"
+          },
+          {
+              "name": "Living Room",
+              "dimensions": {"width": 18, "length": 16},
+              "adjacencies": ["Entrance Lobby", "Courtyard"],
+              "vastu_direction": "East"
+          },
+          {
+              "name": "Master Bedroom (1)",
+              "dimensions": {"width": 14, "length": 12},
+              "adjacencies": ["Bathroom", "Walk-in Closet"],
+              "vastu_direction": "North-West"
+          },
+          {
+              "name": "Bedroom (2)",
+              "dimensions": {"width": 13, "length": 10},
+              "adjacencies": ["Bathroom", "Balcony"],
+              "vastu_direction": "West"
+          },
+          {
+              "name": "Guest Bedroom",
+              "dimensions": {"width": 12, "length": 9},
+              "adjacencies": ["Hallway"],
+              "vastu_direction": "South-East"
+          },
+          {
+              "name": "Bathroom (Master)",
+              "dimensions": {"width": 6, "length": 5},
+              "adjacencies": ["Master Bedroom", "Walk-in Closet"],
+              "vastu_direction": "North"
+          },
+          {
+              "name": "Bathroom (Guest)",
+              "dimensions": {"width": 4, "length": 3.5},
+              "adjacencies": ["Bedroom (2)", "Guest Bedroom"],
+              "vastu_direction": "East"
+          }
+      ],
+      "openings": [
+          {
+              "type": "Main Entrance",
+              "location": "South",
+              "dimensions": {"width": 4, "height": 7}
+          },
+          {
+              "type": "Window",
+              "location": "Living Room",
+              "dimensions": {"width": 3, "height": 5}
+          },
+          {
+              "type": "Courtyard Opening",
+              "location": "Central Courtyard",
+              "dimensions": {"width": 8, "height": 10}
+          }
+      ],
+      "central_courtyard": {
+          "location": "center",
+          "dimensions": {"width": 15, "length": 20},
+          "features": [
+              {
+                  "type": "Water Feature",
+                  "description": "Reflecting pool"
+              },
+              {
+                  "type": "Garden Area",
+                  "description": "Native flora and seating arrangement following Vastu principles."
+              }
+          ]
+      }
+    }
+  ]
+}

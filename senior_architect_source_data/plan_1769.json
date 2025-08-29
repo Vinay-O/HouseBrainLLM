@@ -1,0 +1,169 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 600,
+      "style": "Urban Townhouse"
+    },
+    "plot": {
+      "orientation": "south",
+      "climate": "coastal with salt air exposure",
+      "size": "compact urban balcony conversion"
+    },
+    "roomBreakdown": [
+      {
+        "type": "meditation_pavilion",
+        "description": "A serene space with water features for meditation and relaxation"
+      },
+      {
+        "type": "living_area",
+        "description": "Open-plan living space with south-facing glazing for solar gain"
+      },
+      {
+        "type": "kitchenette",
+        "description": "Compact kitchen area with high-end finishes"
+      },
+      {
+        "type": "bedroom",
+        "description": "Compact sleeping quarters with built-in storage"
+      },
+      {
+        "type": "bathroom",
+        "description": "Wet room with coastal-resistant materials"
+      },
+      {
+        "type": "mechanical",
+        "description": "Housing for solar thermal collectors and radiant floor heating system"
+      }
+    ]
+  },
+  "total_area": 600.0,
+  "construction_cost": 285000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "meditation_pavilion",
+          "type": "meditation_pavilion",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "location": "north_wall",
+              "material": "corrosion-resistant_aluminum"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_glass",
+              "location": "south_wall",
+              "material": "low-iron_glass"
+            }
+          ]
+        },
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "location": "north_wall",
+              "material": "corrosion-resistant_aluminum"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_glass",
+              "location": "south_wall",
+              "material": "low-iron_glass"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "south_wall",
+              "material": "solid_core"
+            }
+          ],
+          "windows": [
+            {
+              "type": "awning",
+              "location": "south_wall",
+              "material": "marine-grade_aluminum"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "pocket",
+              "location": "west_wall",
+              "material": "fiberglass"
+            }
+          ],
+          "windows": [
+            {
+              "type": "transom",
+              "location": "south_wall",
+              "material": "frosted_glass"
+            }
+          ]
+        },
+        {
+          "id": "mechanical",
+          "type": "utility",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "access",
+              "location": "east_wall",
+              "material": "galvanized_steel"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

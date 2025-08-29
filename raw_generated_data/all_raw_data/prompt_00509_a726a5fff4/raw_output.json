@@ -1,0 +1,83 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 15, "width": 20},
+          "location": {"x": 30, "y": 45}
+        },
+        {
+          "room_name": "Bedroom",
+          "dimensions": {"length": 16, "width": 16},
+          "location": {"x": 40, "y": 15}
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 12, "width": 10},
+          "location": {"x": 55, "y": 60}
+        },
+        {
+          "room_name": "Dining Room",
+          "dimensions": {"length": 14, "width": 10},
+          "location": {"x": 30, "y": 70}
+        },
+        {
+          "room_name": "Bathrooms",
+          "dimensions": {"length": 8, "width": 5},
+          "location": [{"x": 42, "y": 65}, {"x": 10, "y": 30}]
+        },
+        {
+          "room_name": "Home Theater",
+          "dimensions": {"length": 18, "width": 15},
+          "location": {"x": 10, "y": 70}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "locations": [{"room_name": "Living Room", "coordinates": [{"x": 32, "y": 58}, {"x": 46, "y": 58}]},
+                       {"room_name": "Bedroom", "coordinates": [{"x": 40, "y": 27}, {"x": 40, "y": 39}]},
+                       {"room_name": "Home Theater", "coordinates": [{"x": 18, "y": 65}, {"x": 30, "y": 65}]}]
+        },
+        {
+          "opening_type": "Door",
+          "locations": [{"from_room": "Living Room", "to_room": "Bedroom", "coordinates": {"x": 47.5, "y": 45}},
+                       {"from_room": "Kitchen", "to_room": "Dining Room", "coordinates": {"x": 60, "y": 70}},
+                       {"from_room": "Living Room", "to_room": "Home Theater", "coordinates": {"x": 18, "y": 58}}]
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [
+        {
+          "room_name": "Rooftop Terrace",
+          "dimensions": {"length": 60, "width": 90},
+          "location": {"x": 0, "y": 0}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Staircase",
+          "locations": [{"from_room": "ground_floor", "to_room": "rooftop_terrace", "coordinates": {"x": 28, "y": 15}}]
+        },
+        {
+          "opening_type": "Balcony Door",
+          "locations": [{"room_name": "Rooftop Terrace", "coordinates": {"x": 30, "y": 45}}]
+        }
+      ]
+    }
+  ],
+  "central_courtyard": {
+    "dimensions": {"length": 20, "width": 20},
+    "location": {"x": 18, "y": 67}
+  },
+  "vastu_elements": [
+    {
+      "element_name": "Main Entrance",
+      "location": {"coordinates": {"x": -5, "y": 45}, "direction": "East"}
+    }
+  ]
+}

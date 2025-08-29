@@ -1,0 +1,36 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"room_id": "bedroom_1", "type": "master_bedroom", "area": 250, "dimensions": [15.43, 16.28], "features": ["attached_bathroom", "wardrobe", "balcony"]},
+        {"room_id": "bedroom_2", "type": "bedroom", "area": 200, "dimensions": [14.14, 14.14], "features": ["attached_bathroom", "wardrobe"]},
+        {"room_id": "bedroom_3", "type": "bedroom", "area": 150, "dimensions": [12.91, 11.67], "features": ["shared_bathroom", "wardrobe"]},
+        {"room_id": "bedroom_4", "type": "bedroom", "area": 150, "dimensions": [12.91, 11.67], "features": ["shared_bathroom", "wardrobe"]},
+        {"room_id": "bedroom_5", "type": "guest_bedroom", "area": 200, "dimensions": [14.14, 14.14], "features": ["attached_bathroom", "wardrobe"]},
+        {"room_id": "living_room", "type": "living_room", "area": 300, "dimensions": [24.62, 12.20], "features": ["dining_area", "kitchenette"]},
+        {"room_id": "kitchen", "type": "kitchen", "area": 250, "dimensions": [17.32, 14.43], "features": ["pantry", "utility_area"]},
+        {"room_id": "home_office", "type": "study_room", "area": 150, "dimensions": [12.91, 11.67], "features": ["storage", "workstation"]},
+        {"room_id": "home_theater", "type": "entertainment_room", "area": 200, "dimensions": [14.14, 14.14], "features": ["projector", "seating_area"]},
+        {"room_id": "bathrooms", "type": "bathroom", "count": 3, "features": ["geyser", "vanity"]},
+        {"room_id": "open_court", "type": "open_court", "area": 100, "dimensions": [12.91, 7.8], "features": ["garden", "outdoor_seating"]}
+      ],
+      "openings": [
+        {"opening_id": "main_entrance", "type": "entrance", "direction": "north", "size": [8, 7]},
+        {"opening_id": "back_yard", "type": "exit", "direction": "south", "size": [8, 7]}
+      ],
+      "ecofriendly_features": [
+        {"feature_id": "solar_panels", "type": "renewable_energy"},
+        {"feature_id": "rainwater_harvesting", "type": "water_conservation"},
+        {"feature_id": "natural_ventilation", "type": "air_flow_optimization"},
+        {"feature_id": "energy_efficient_appliances", "type": "electricity_saving"}
+      ],
+      "vastu_compliance": {
+        "direction": {
+          "bedrooms": ["north", "west"],
+          "kitchen": "southeast",
+          "living_room": "east",
+          "home_theater": "south"
+        }
+      }
+    }
+  ]}

@@ -1,0 +1,85 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {
+        "room_name": "Entrance Hall",
+        "dimensions": {"length": "20ft", "width": "10ft"},
+        "adjacent_to": ["Garden", "Courtyard"]
+      },
+      {
+        "room_name": "Living Room",
+        "dimensions": {"length": "30ft", "width": "15ft"},
+        "adjacent_to": ["Entrance Hall", "Kitchen", "Courtyard"]
+      },
+      {
+        "room_name": "Dining Area",
+        "dimensions": {"length": "20ft", "width": "12ft"},
+        "adjacent_to": ["Living Room", "Courtyard"]
+      },
+      {
+        "room_name": "Master Bedroom",
+        "dimensions": {"length": "15ft", "width": "12ft"},
+        "features": [" ensuite bathroom", "wardrobe"],
+        "adjacent_to": ["Hallway", "Servant's Quarters"]
+      },
+      {
+        "room_name": "Guest Room 1",
+        "dimensions": {"length": "15ft", "width": "12ft"},
+        "features": ["attached bathroom"],
+        "adjacent_to": ["Hallway"]
+      },
+      {
+        "room_name": "Guest Room 2",
+        "dimensions": {"length": "15ft", "width": "12ft"},
+        "features": ["attached bathroom"],
+        "adjacent_to": ["Hallway"]
+      },
+      {
+        "room_name": "Study/Office",
+        "dimensions": {"length": "12ft", "width": "10ft"},
+        "adjacent_to": ["Living Room", "Courtyard"]
+      },
+      {
+        "room_name": "Kitchen",
+        "dimensions": {"length": "15ft", "width": "10ft"},
+        "features": ["modern appliances"],
+        "adjacent_to": ["Entrance Hall", "Servant's Quarters"]
+      }
+    ],
+    "openings": [
+      {
+        "opening_type": "Main Entrance",
+        "location": "Front Face",
+        "description": "Large wooden door with glass windows, aligned with the eastern direction for Vastu compliance."
+      },
+      {
+        "opening_type": "Window",
+        "location": "Living Room and Bedrooms",
+        "description": "High windows offering natural light and views of the garden and courtyard, ensuring ventilation in accordance with Kerala design norms."
+      },
+      {
+        "opening_type": "Doorway",
+        "location": "Between Kitchen and Servant's Quarters",
+        "description": "Small door facilitating access for servants while maintaining privacy."
+      }
+    ],
+    "additional_features": {
+      "central_courtyard": {
+        "dimensions": {"length": "25ft", "width": "20ft"},
+        "features": ["pergola", "water feature"],
+        "adjacent_to": ["Living Room", "Dining Area"]
+      },
+      "garden": {
+        "area": "Remaining plot area",
+        "description": "Large garden with local flora, aligned with Vastu principles for a harmonious living environment."
+      },
+      "servants_quarters": {
+        "room_name": "Servant's Quarters",
+        "dimensions": {"length": "20ft", "width": "15ft"},
+        "features": ["compact kitchenette", "small bathroom"],
+        "location": "North-east corner of the ground floor"
+      }
+    }
+  }
+]}

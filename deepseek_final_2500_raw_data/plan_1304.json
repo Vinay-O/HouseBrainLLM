@@ -1,0 +1,251 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 3200,
+      "style": "Earthship"
+    },
+    "plot": {
+      "shape": "elongated",
+      "orientation": "south",
+      "climate": "coastal_salt_air",
+      "adjacency": "railway",
+      "privacy_requirements": "high"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3,
+        "specialFeatures": [
+          "radiant_floor_heating",
+          "soundproofing"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "specialFeatures": [
+          "radiant_floor_heating"
+        ]
+      },
+      {
+        "type": "home_theater",
+        "count": 1,
+        "specialFeatures": [
+          "fiber_optic_star_ceiling",
+          "acoustic_walls"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "specialFeatures": [
+          "energy_efficient_appliances"
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "specialFeatures": [
+          "south_glazing",
+          "thermal_mass_wall"
+        ]
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "specialFeatures": [
+          "solar_collector_loop",
+          "water_recycling"
+        ]
+      },
+      {
+        "type": "greenhouse",
+        "count": 1,
+        "specialFeatures": [
+          "food_production",
+          "greywater_filtration"
+        ]
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 18
+          },
+          "doors": [
+            "entry_door_south"
+          ],
+          "windows": [
+            "south_glazing_wall"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "door_to_living"
+          ],
+          "windows": []
+        },
+        {
+          "id": "home_theater_0",
+          "type": "home_theater",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_1_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_north"
+          ]
+        },
+        {
+          "id": "bedroom_2_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 18,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_north"
+          ]
+        },
+        {
+          "id": "primary_bedroom_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 18,
+            "width": 18,
+            "height": 16
+          },
+          "doors": [
+            "door_to_hall",
+            "door_to_bath"
+          ],
+          "windows": [
+            "window_north"
+          ]
+        },
+        {
+          "id": "bathroom_1_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "primary_bath_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 34,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "door_from_bedroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "exterior_access"
+          ],
+          "windows": []
+        },
+        {
+          "id": "greenhouse_0",
+          "type": "greenhouse",
+          "bounds": {
+            "x": 0,
+            "y": 32,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "door_from_living"
+          ],
+          "windows": [
+            "south_glazing_full"
+          ]
+        },
+        {
+          "id": "hall_0",
+          "type": "hallway",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 20,
+            "height": 3
+          },
+          "doors": [
+            "door_to_theater",
+            "door_to_bath",
+            "door_to_bed1",
+            "door_to_bed2",
+            "door_to_primary"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

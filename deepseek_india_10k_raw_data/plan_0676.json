@@ -1,0 +1,375 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2000,
+      "style": "Luxury Himalayan Artisan-Crafted"
+    },
+    "plot": {
+      "location": "Leh, High Altitude",
+      "size": 2000,
+      "orientation": "South-facing for solar optimization",
+      "notes": "Penthouse terrace, flooding and waterlogging concerns during monsoons addressed"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 150
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "monsoon_retreat",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "garden",
+        "count": 1,
+        "area": 600
+      }
+    ]
+  },
+  "total_area": 2000.0,
+  "construction_cost": 1200000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_vestibule",
+          "type": "entryway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "x": 5,
+              "y": 0,
+              "to": "exterior"
+            }
+          ],
+          "windows": [],
+          "notes": "Secure entry with privacy screen, Himalayan stone flooring"
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 10,
+              "y": 5,
+              "to": "entry_vestibule"
+            }
+          ],
+          "windows": [
+            {
+              "x": 24,
+              "y": 2,
+              "width": 1,
+              "height": 6
+            }
+          ],
+          "notes": "Private home office with built-in security system controls"
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 7,
+              "y": 8,
+              "to": "entry_vestibule"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 12,
+              "width": 15,
+              "height": 3
+            }
+          ],
+          "notes": "South-facing for solar heat gain, built-in wardrobe"
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 8,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 12,
+              "to": "bedroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "x": 24,
+              "y": 10,
+              "width": 1,
+              "height": 4
+            }
+          ],
+          "notes": "Ensuite to bedroom, slate flooring, brass fittings"
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 15,
+            "y": 16,
+            "width": 10,
+            "height": 7
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 19,
+              "to": "entry_vestibule"
+            }
+          ],
+          "windows": [
+            {
+              "x": 24,
+              "y": 17,
+              "width": 1,
+              "height": 3
+            }
+          ],
+          "notes": "Marble flooring, brass fittings, dedicated sacred space"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 12
+          },
+          "doors": [
+            {
+              "x": 12,
+              "y": 0,
+              "to": "staircase"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 6,
+              "width": 25,
+              "height": 6
+            }
+          ],
+          "notes": "Open plan, south-facing glazing for solar optimization, Himalayan stone feature wall"
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 7,
+              "y": 12,
+              "to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 15,
+              "width": 15,
+              "height": 4
+            }
+          ],
+          "notes": "Artisan-crafted cabinets, slate countertops"
+        },
+        {
+          "id": "dining_area",
+          "type": "dining_room",
+          "bounds": {
+            "x": 15,
+            "y": 12,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 17,
+              "to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "x": 24,
+              "y": 14,
+              "width": 1,
+              "height": 6
+            }
+          ],
+          "notes": "Open to kitchen and living room"
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 22,
+            "width": 15,
+            "height": 13
+          },
+          "doors": [
+            {
+              "x": 7,
+              "y": 22,
+              "to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 25,
+              "width": 15,
+              "height": 4
+            }
+          ],
+          "notes": "Private retreat, south-facing"
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 22,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 26,
+              "to": "bedroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "x": 24,
+              "y": 24,
+              "width": 1,
+              "height": 4
+            }
+          ],
+          "notes": "Ensuite to bedroom, slate flooring, brass fittings"
+        },
+        {
+          "id": "monsoon_retreat",
+          "type": "sunroom",
+          "bounds": {
+            "x": 15,
+            "y": 30,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 32,
+              "to": "dining_area"
+            }
+          ],
+          "windows": [
+            {
+              "x": 24,
+              "y": 31,
+              "width": 1,
+              "height": 3
+            }
+          ],
+          "notes": "Covered area for rainy season activities, elevated to prevent waterlogging"
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "terrace_garden",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 40
+          },
+          "doors": [
+            {
+              "x": 12,
+              "y": 0,
+              "to": "staircase"
+            }
+          ],
+          "windows": [],
+          "notes": "Integrated beekeeping stations, vine trellises and pergolas for shading, permeable slate paving for drainage, raised planting beds, south-facing for optimal sunlight"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 960.0,
+      "style": "Geodesic-Container"
+    },
+    "plot": {
+      "slope": 30.0,
+      "climate": "continental-harsh-winter",
+      "orientation": "south-facing"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "specialFeatures": [
+          "aging-in-place-accessible"
+        ]
+      },
+      {
+        "type": "brewery",
+        "count": 1,
+        "specialFeatures": [
+          "temperature-control"
+        ]
+      },
+      {
+        "type": "storm_shelter",
+        "count": 1,
+        "specialFeatures": [
+          "tornado-safe"
+        ]
+      }
+    ],
+    "specialFeatures": [
+      "greywater-recycling",
+      "solar-gain",
+      "geodesic-dome-principles"
+    ]
+  },
+  "total_area": 960.0,
+  "construction_cost": 168000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "brewery_0",
+          "type": "brewery",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 20
+          },
+          "doors": [
+            {
+              "to": "utility_0",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "to": "brewery_0",
+              "type": "interior"
+            },
+            {
+              "to": "exterior",
+              "type": "exterior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "shelter_0",
+          "type": "storm_shelter",
+          "bounds": {
+            "x": 8,
+            "y": 10,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "to": "staircase_0",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase_0",
+          "type": "staircase",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 4,
+            "height": 20
+          },
+          "doors": [
+            {
+              "to": "shelter_0",
+              "type": "interior"
+            },
+            {
+              "to": "exterior",
+              "type": "exterior"
+            },
+            {
+              "to": "living_1",
+              "type": "interior",
+              "leads_to_level": 1
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "to": "staircase_0",
+              "type": "interior",
+              "leads_to_level": 0
+            },
+            {
+              "to": "kitchen_1",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "to": "living_1",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "to": "living_1",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 4,
+            "height": 8
+          },
+          "doors": [
+            {
+              "to": "living_1",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 4,
+            "height": 12
+          },
+          "doors": [
+            {
+              "to": "living_1",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "dimensions": {
+            "length": 15,
+            "width": 12,
+            "unit": "feet"
+          },
+          "features": ["wardrobe", "balcony"],
+          " orientation": "north-east",
+          "area": 180
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {
+            "length": 10,
+            "width": 9,
+            "unit": "feet"
+          },
+          "features": ["modular", "gas_stove", "sink"],
+          "orientation": "south-east",
+          "area": 90
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": {
+            "length": 15,
+            "width": 12,
+            "unit": "feet"
+          },
+          "features": ["sofa", "tv_unit", "dining_table"],
+          "orientation": "north-west",
+          "area": 180
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": {
+            "length": 6,
+            "width": 5,
+            "unit": "feet"
+          },
+          "features": ["shower", "toilet", "sink"],
+          "orientation": "north-west",
+          "area": 30
+        }
+      ],
+      "openings": [
+        {
+          "type": "main_entrance",
+          "dimensions": {
+            "length": 6,
+            "width": 3,
+            "unit": "feet"
+          },
+          "orientation": "west"
+        },
+        {
+          "type": "balcony",
+          "associated_room": "bedroom",
+          "dimensions": {
+            "length": 8,
+            "width": 5,
+            "unit": "feet"
+          }
+        },
+        {
+          "type": "rooftop_terrace_access",
+          "dimensions": {
+            "length": 4,
+            "width": 3,
+            "unit": "feet"
+          }
+        }
+      ],
+      "additional_features": [
+        {
+          "feature_type": "solar_panels",
+          "description": "5kW solar panel system on the rooftop terrace"
+        },
+        {
+          "feature_type": "rainwater_harvesting",
+          "description": "Rainwater harvesting system to collect and store rainwater"
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "type": "staircase_access",
+          "dimensions": {
+            "length": 4,
+            "width": 3,
+            "unit": "feet"
+          }
+        }
+      ],
+      "additional_features": [
+        {
+          "feature_type": "outdoor_seating",
+          "description": "Seating area with a view"
+        },
+        {
+          "feature_type": "garden",
+          "description": "Small garden with local plants"
+        }
+      ]
+    }
+  ]
+}

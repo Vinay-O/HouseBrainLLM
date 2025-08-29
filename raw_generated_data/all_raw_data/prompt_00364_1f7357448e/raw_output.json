@@ -1,0 +1,138 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Entrance Lobby",
+          "dimensions": [10, 12],
+          "location": [5, 2]
+        },
+        {
+          "room_name": "Living Room",
+          "dimensions": [15, 18],
+          "location": [17, 2]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": [10, 12],
+          "location": [3, 16]
+        },
+        {
+          "room_name": "Dining Room",
+          "dimensions": [12, 15],
+          "location": [17, 16]
+        },
+        {
+          "room_name": "Guest Bathroom",
+          "dimensions": [4.5, 8],
+          "location": [10, 35]
+        },
+        {
+          "room_name": "Two-Car Garage",
+          "dimensions": [20, 10],
+          "location": [5, 36]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "room_connected_to": "Living Room",
+          "dimensions": [4, 7],
+          "location": [28, 9]
+        },
+        {
+          "opening_type": "Door",
+          "connected_rooms": ["Entrance Lobby", "Living Room"],
+          "dimensions": [3, 7.5],
+          "location": [17, 5]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": [12, 15],
+          "location": [3, 4]
+        },
+        {
+          "room_name": "Master Bathroom",
+          "dimensions": [8, 9],
+          "location": [16.5, 4]
+        },
+        {
+          "room_name": "Bedroom 2",
+          "dimensions": [10, 12],
+          "location": [3, 17]
+        },
+        {
+          "room_name": "Bedroom 3",
+          "dimensions": [10, 12],
+          "location": [15.5, 17]
+        },
+        {
+          "room_name": "Study Room",
+          "dimensions": [9, 12],
+          "location": [3, 30]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "room_connected_to": "Master Bedroom",
+          "dimensions": [4, 6.5],
+          "location": [8, 9]
+        },
+        {
+          "opening_type": "Balcony Door",
+          "connected_rooms": ["Study Room"],
+          "dimensions": [3, 7.5],
+          "location": [12, 30]
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_name": "Bedroom 4",
+          "dimensions": [10, 12],
+          "location": [3, 8]
+        },
+        {
+          "room_name": "Private Gym",
+          "dimensions": [15, 18],
+          "location": [15.5, 8]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "room_connected_to": "Bedroom 4",
+          "dimensions": [4, 6.5],
+          "location": [7, 9]
+        },
+        {
+          "opening_type": "Balcony Door",
+          "connected_rooms": ["Private Gym"],
+          "dimensions": [3, 7.5],
+          "location": [28, 10]
+        }
+      ]
+    }
+  ],
+  "exterior_features": [
+    {
+      "feature_name": "Swimming Pool",
+      "dimensions": [20, 10],
+      "location": [2, 36]
+    },
+    {
+      "feature_name": "Garden Area",
+      "dimensions": [18, 40],
+      "location": [25, 2]
+    }
+  ]
+}

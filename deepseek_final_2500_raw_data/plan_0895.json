@@ -1,0 +1,313 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 4500,
+      "style": "Odisha Temple-Inspired"
+    },
+    "plot": {
+      "size": 10000,
+      "orientation": "west",
+      "region": "arid desert",
+      "water_scarcity": true,
+      "water_table_constraints": true,
+      "prevailing_wind_utilization": true
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_theater",
+        "count": 1,
+        "acoustic_design": true
+      },
+      {
+        "type": "puja_room",
+        "count": 1
+      },
+      {
+        "type": "master_bedroom",
+        "count": 1
+      },
+      {
+        "type": "guest_bedroom",
+        "count": 2
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "study",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 1125000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "front_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            "to_foyer"
+          ],
+          "windows": [
+            "west_window"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 8,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_living"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 23,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_dining"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "guest_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 28,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 28,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "courtyard",
+          "type": "outdoor",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 40
+          },
+          "doors": [
+            "from_living"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "west_window"
+          ]
+        },
+        {
+          "id": "master_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_master"
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 15,
+            "y": 18,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "north_skylight"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "home_theater",
+          "type": "home_theater",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            "entry_door"
+          ],
+          "windows": [],
+          "acoustic_treatment": true
+        },
+        {
+          "id": "mechanical_room",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "service_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "water_tank",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "access_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "terrace",
+          "type": "outdoor",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 40,
+            "height": 20
+          },
+          "doors": [
+            "from_theater"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 2,
+      "totalArea": 320,
+      "style": "Neo-Classical"
+    },
+    "plot": {
+      "width": 16,
+      "depth": 10,
+      "orientation": "south",
+      "climate": "alpine",
+      "notes": "Compact urban balcony conversion with heavy snow loads, south-facing for solar gain"
+    },
+    "roomBreakdown": [
+      {
+        "type": "brewery",
+        "area": 96,
+        "level": 0
+      },
+      {
+        "type": "prep_kitchen",
+        "area": 64,
+        "level": 0
+      },
+      {
+        "type": "dining",
+        "area": 96,
+        "level": 1
+      },
+      {
+        "type": "storage",
+        "area": 64,
+        "level": 1
+      }
+    ]
+  },
+  "total_area": 320.0,
+  "construction_cost": 128000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "brewery_0",
+          "type": "brewery",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12,
+                "y": 4
+              },
+              "to_room": "prep_kitchen_0"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 4
+              },
+              "orientation": "south"
+            }
+          ],
+          "notes": "Temperature-controlled home brewery with insulated walls"
+        },
+        {
+          "id": "prep_kitchen_0",
+          "type": "prep_kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 8
+              },
+              "to_room": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 8,
+                "y": 4
+              },
+              "orientation": "south"
+            }
+          ],
+          "notes": "Compact culinary workspace with locally-sourced stone countertops"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "dining_1",
+          "type": "dining",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12,
+                "y": 4
+              },
+              "to_room": "storage_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 4
+              },
+              "orientation": "south"
+            },
+            {
+              "position": {
+                "x": 6,
+                "y": 0
+              },
+              "orientation": "south"
+            }
+          ],
+          "notes": "South-facing dining area with Neo-Classical columns and large windows for solar gain"
+        },
+        {
+          "id": "storage_1",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [],
+          "windows": [],
+          "notes": "Insulated storage for brewing supplies and culinary equipment"
+        }
+      ]
+    }
+  ]
+}

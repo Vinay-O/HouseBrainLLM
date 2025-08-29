@@ -1,0 +1,407 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2800,
+      "style": "Japanese Zen"
+    },
+    "plot": {
+      "width": 25,
+      "depth": 40,
+      "orientation": "east-west",
+      "topography": "ravine",
+      "climate": "humid subtropical",
+      "siteCondition": "former industrial with concrete foundations"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 160
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "home_theater",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "deck",
+        "count": 2,
+        "area": 560
+      }
+    ]
+  },
+  "total_area": 2800.0,
+  "construction_cost": 875000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "elevation": 3.5,
+      "rooms": [
+        {
+          "id": "support_piers",
+          "type": "structural",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 40
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "concrete foundations",
+            "flood-resistant elevated design",
+            "phase-change materials in structure"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "elevation": 4.0,
+      "rooms": [
+        {
+          "id": "main_deck_west",
+          "type": "deck",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 40
+          },
+          "doors": [
+            {
+              "to": "living_room",
+              "position": "east"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "engawa-style decking",
+            "zen garden integration"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 9,
+            "height": 20
+          },
+          "doors": [
+            {
+              "to": "main_deck_west",
+              "position": "west"
+            },
+            {
+              "to": "kitchen",
+              "position": "east"
+            },
+            {
+              "to": "east_deck",
+              "position": "east"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ],
+          "features": [
+            "tatami flooring",
+            "shoji screens",
+            "phase-change materials in walls"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 17,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "to": "living_room",
+              "position": "west"
+            },
+            {
+              "to": "east_deck",
+              "position": "east"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ],
+          "features": [
+            "minimalist design",
+            "integrated appliances",
+            "phase-change materials"
+          ]
+        },
+        {
+          "id": "east_deck",
+          "type": "deck",
+          "bounds": {
+            "x": 17,
+            "y": 12,
+            "width": 8,
+            "height": 28
+          },
+          "doors": [
+            {
+              "to": "kitchen",
+              "position": "west"
+            },
+            {
+              "to": "home_theater",
+              "position": "north"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "outdoor pet area",
+            "zen rock garden"
+          ]
+        },
+        {
+          "id": "home_theater",
+          "type": "home_theater",
+          "bounds": {
+            "x": 8,
+            "y": 20,
+            "width": 9,
+            "height": 20
+          },
+          "doors": [
+            {
+              "to": "east_deck",
+              "position": "east"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "fiber optic star ceiling",
+            "acoustic paneling",
+            "phase-change materials for temperature control"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "elevation": 8.0,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "to": "upper_deck",
+              "position": "west"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ],
+          "features": [
+            "shoji screens",
+            "phase-change materials",
+            "pet resting area"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "to": "master_bedroom",
+              "position": "west"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "small"
+            }
+          ],
+          "features": [
+            "ofuro soaking tub",
+            "natural stone finishes"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            },
+            {
+              "wall": "south",
+              "size": "medium"
+            }
+          ],
+          "features": [
+            "minimalist design",
+            "phase-change materials"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 15,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "to": "guest_bedroom",
+              "position": "west"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "small"
+            }
+          ],
+          "features": [
+            "water-efficient fixtures"
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 12,
+            "y": 23,
+            "width": 6,
+            "height": 7
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "medium"
+            }
+          ],
+          "features": [
+            "built-in shelving",
+            "phase-change materials"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 12,
+            "y": 30,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "small"
+            }
+          ],
+          "features": [
+            "HVAC with phase-change system",
+            "pet care station"
+          ]
+        },
+        {
+          "id": "upper_deck",
+          "type": "deck",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "to": "master_bedroom",
+              "position": "east"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "zen garden view",
+            "bridge perspective"
+          ]
+        }
+      ]
+    }
+  ]
+}

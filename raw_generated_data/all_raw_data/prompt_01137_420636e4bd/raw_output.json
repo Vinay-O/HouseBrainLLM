@@ -1,0 +1,211 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance",
+          "type": "entrance",
+          "dimensions": {"length": 3.0, "width": 2.5},
+          "position": {"direction": "north", "relative_to": "plot"},
+          "features": ["floor-to-ceiling windows"]
+        },
+        {
+          "room_id": "living_room",
+          "type": "living room",
+          "dimensions": {"length": 6.0, "width": 5.0},
+          "position": {"relative_to": "entrance", "direction": "east"},
+          "features": ["floor-to-ceiling windows"]
+        },
+        {
+          "room_id": "dining_room",
+          "type": "dining room",
+          "dimensions": {"length": 5.0, "width": 4.0},
+          "position": {"relative_to": "living_room", "direction": "south"},
+          "features": ["floor-to-ceiling windows"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": {"length": 5.0, "width": 4.0},
+          "position": {"relative_to": "dining_room", "direction": "west"},
+          "features": ["modular kitchen with island"]
+        },
+        {
+          "room_id": "private_gym",
+          "type": "gym",
+          "dimensions": {"length": 5.0, "width": 4.0},
+          "position": {"relative_to": "kitchen", "direction": "north"},
+          "features": ["mirrored walls", "treadmill", "dumbbells"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "dimensions": {"length": 6.0, "width": 5.0},
+          "position": {"relative_to": "private_gym", "direction": "east"},
+          "features": ["floor-to-ceiling windows", "walk-in closet"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "dimensions": {"length": 6.0, "width": "5.0"},
+          "position": {"relative_to": "bedroom_1", "direction": "south"},
+          "features": ["floor-to-ceiling windows", "walk-in closet"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "bedroom",
+          "dimensions": {"length": 6.0, "width": "5.0"},
+          "position": {"relative_to": "bedroom_2", "direction": "west"},
+          "features": ["floor-to-ceiling windows", "walk-in closet"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "type": "bedroom",
+          "dimensions": {"length": 6.0, "width": 5.0},
+          "position": {"relative_to": "bedroom_3", "direction": "north"},
+          "features": ["floor-to-ceiling windows", "walk-in closet"]
+        },
+        {
+          "room_id": "bedroom_5",
+          "type": "bedroom",
+          "dimensions": {"length": 6.0, "width": "5.0"},
+          "position": {"relative_to": "bedroom_4", "direction": "east"},
+          "features": ["floor-to-ceiling windows", "walk-in closet"]
+        },
+        {
+          "room_id": "bedroom_6",
+          "type": "bedroom",
+          "dimensions": {"length": 6.0, "width": "5.0"},
+          "position": {"relative_to": "bedroom_5", "direction": "south"},
+          "features": ["floor-to-ceiling windows", "walk-in closet"]
+        },
+        {
+          "room_id": "swimming_pool",
+          "type": "swimming pool",
+          "dimensions": {"length": 12.0, "width": 6.0},
+          "position": {"relative_to": "bedroom_6", "direction": "west"},
+          "features": ["outdoor showers", "cabanas"]
+        },
+        {
+          "room_id": "open_courtyard",
+          "type": "courtyard",
+          "dimensions": {"length": 10.0, "width": 8.0},
+          "position": {"relative_to": "swimming_pool", "direction": "south"},
+          "features": ["kerala-style landscaped garden"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": {"length": 2.5, "width": 1.0},
+          "position": {"relative_to": "plot", "direction": "north"}
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimensions": {"length": 3.0, "width": 2.5},
+          "position": {"relative_to": "entrance", "direction": "east"},
+          "features": ["floor-to-ceiling"]
+        },
+        {
+          "opening_id": "dining_room_window",
+          "type": "window",
+          "dimensions": {"length": 3.0, "width": 2.5},
+          "position": {"relative_to": "living_room", "direction": "south"},
+          "features": ["floor-to-ceiling"]
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimensions": {"length": 2.0, "width": 1.5},
+          "position": {"relative_to": "dining_room", "direction": "west"},
+          "features": ["ventilation"]
+        },
+        {
+          "opening_id": "gym_window",
+          "type": "window",
+          "dimensions": {"length": 3.0, "width": 2.5},
+          "position": {"relative_to": "kitchen", "direction": "north"},
+          "features": ["floor-to-ceiling"]
+        },
+        {
+          "opening_id": "bedroom_window_1",
+          "type": "window",
+          "dimensions": {"length": 3.0, "width": 2.5},
+          "position": {"relative_to": "private_gym", "direction": "east"},
+          "features": ["floor-to-ceiling"]
+        },
+        {
+          "opening_id": "bedroom_window_2",
+          "type": "window",
+          "dimensions": {"length": 3.0, "width": 2.5},
+          "position": {"relative_to": "bedroom_1", "direction": "south"},
+          "features": ["floor-to-ceiling"]
+        },
+        {
+          "opening_id": "bedroom_window_3",
+          "type": "window",
+          "dimensions": {"length": 3.0, "width": 2.5},
+          "position": {"relative_to": "bedroom_2", "direction": "west"},
+          "features": ["floor-to-ceiling"]
+        },
+        {
+          "opening_id": "bedroom_window_4",
+          "type": "window",
+          "dimensions": {"length": 3.0, "width": 2.5},
+          "position": {"relative_to": "bedroom_3", "direction": "north"},
+          "features": ["floor-to-ceiling"]
+        },
+        {
+          "opening_id": "bedroom_window_5",
+          "type": "window",
+          "dimensions": {"length": 3.0, "width": 2.5},
+          "position": {"relative_to": "bedroom_4", "direction": "east"},
+          "features": ["floor-to-ceiling"]
+        },
+        {
+          "opening_id": "bedroom_window_6",
+          "type": "window",
+          "dimensions": {"length": 3.0, "width": 2.5},
+          "position": {"relative_to": "bedroom_5", "direction": "south"},
+          "features": ["floor-to-ceiling"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "study_room",
+          "type": "study room",
+          "dimensions": {"length": 5.0, "width": 4.0},
+          "position": {"relative_to": "entrance", "direction": "above"},
+          "features": ["bookshelves"]
+        },
+        {
+          "room_id": "media_room",
+          "type": "media room",
+          "dimensions": {"length": 6.0, "width": 5.0},
+          "position": {"relative_to": "study_room", "direction": "east"},
+          "features": ["home theater system"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "study_window",
+          "type": "window",
+          "dimensions": {"length": 2.0, "width": 1.5},
+          "position": {"relative_to": "entrance", "direction": "above"},
+          "features": ["ventilation"]
+        },
+        {
+          "opening_id": "media_room_window",
+          "type": "window",
+          "dimensions": {"length": 3.0, "width": 2.5},
+          "position": {"relative_to": "study_room", "direction": "above east"},
+          "features": ["floor-to-ceiling"]
+        }
+      ]
+    }
+  ]}

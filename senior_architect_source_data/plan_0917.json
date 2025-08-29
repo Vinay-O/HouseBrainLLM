@@ -1,0 +1,642 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 5000,
+      "style": "Andhra Traditional with Haveli-style courtyards"
+    },
+    "plot": {
+      "orientation": "east",
+      "slope": "yes",
+      "size": 5000,
+      "location": "scenic hill station"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4,
+        "area": 600
+      },
+      {
+        "type": "bathroom",
+        "count": 5,
+        "area": 300
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "courtyard",
+        "count": 3,
+        "area": 900
+      },
+      {
+        "type": "therapy_pool",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "cooling_chamber",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "ramp",
+        "count": 2,
+        "area": 200
+      },
+      {
+        "type": "corridor",
+        "count": 1,
+        "area": 400
+      }
+    ]
+  },
+  "total_area": 4000.0,
+  "construction_cost": 1200000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "type": "main_entry"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 7.5
+              },
+              "type": "sliding"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 0
+              },
+              "type": "large_panoramic"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 15
+              },
+              "type": "clerestory"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 20
+              },
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 15
+              },
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 20
+              },
+              "type": "pocket"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 45,
+                "y": 15
+              },
+              "type": "counter"
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 25,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 27.5
+              },
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 32.5
+              },
+              "type": "wide"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 32.5
+              },
+              "type": "bay"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 40
+              },
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 45
+              },
+              "type": "outswing"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 45
+              },
+              "type": "high_vent"
+            }
+          ]
+        },
+        {
+          "id": "ramp_1",
+          "type": "ramp",
+          "bounds": {
+            "x": 15,
+            "y": 25,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "therapy_pool",
+          "type": "therapy_pool",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 35
+              },
+              "type": "sliding"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 35
+              },
+              "type": "full_height"
+            }
+          ]
+        },
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 45,
+                "y": 12.5
+              },
+              "type": "french"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "cooling_chamber",
+          "type": "cooling_chamber",
+          "bounds": {
+            "x": 65,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 65,
+                "y": 5
+              },
+              "type": "cellar"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 7.5
+              },
+              "type": "wide"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "type": "bay"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 15
+              },
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 20
+              },
+              "type": "outswing"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 20
+              },
+              "type": "high_vent"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 7.5
+              },
+              "type": "wide"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 7.5
+              },
+              "type": "bay"
+            },
+            {
+              "position": {
+                "x": 22.5,
+                "y": 15
+              },
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 20
+              },
+              "type": "outswing"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 20
+              },
+              "type": "high_vent"
+            }
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 45,
+                "y": 7.5
+              },
+              "type": "pocket"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 7.5
+              },
+              "type": "picture"
+            },
+            {
+              "position": {
+                "x": 37.5,
+                "y": 15
+              },
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 65,
+                "y": 7.5
+              },
+              "type": "wide"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 45,
+                "y": 7.5
+              },
+              "type": "bay"
+            },
+            {
+              "position": {
+                "x": 55,
+                "y": 15
+              },
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_4",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 55,
+                "y": 20
+              },
+              "type": "outswing"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 45,
+                "y": 20
+              },
+              "type": "high_vent"
+            }
+          ]
+        },
+        {
+          "id": "sky_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 55,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 65,
+                "y": 20
+              },
+              "type": "french"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "ramp_2",
+          "type": "ramp",
+          "bounds": {
+            "x": 65,
+            "y": 0,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "corridor",
+          "type": "corridor",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 20,
+            "height": 5
+          },
+          "doors": [],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 15
+              },
+              "type": "clerestory"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

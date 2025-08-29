@@ -1,0 +1,238 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 96.0,
+      "style": "Ultra-Modern Minimalist"
+    },
+    "plot": {
+      "width": 4.0,
+      "depth": 12.0,
+      "climate": "Humid Subtropical"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "subtype": "chef's kitchen with wood-fired oven"
+      },
+      {
+        "type": "office",
+        "subtype": "mezzanine office"
+      },
+      {
+        "type": "outdoor",
+        "subtype": "rooftop terrace"
+      },
+      {
+        "type": "outdoor",
+        "subtype": "rear courtyard"
+      }
+    ]
+  },
+  "total_area": 96.0,
+  "construction_cost": 385000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_courtyard",
+          "type": "outdoor",
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 4.0,
+            "height": 2.0
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.0
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 0.0,
+            "y": 2.0,
+            "width": 4.0,
+            "height": 3.0
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.0,
+              "type": "overhead"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0.0,
+            "y": 5.0,
+            "width": 4.0,
+            "height": 4.0
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 2.0,
+              "size": 2.0
+            }
+          ],
+          "features": [
+            "wood_fired_oven",
+            "island"
+          ]
+        },
+        {
+          "id": "living_dining",
+          "type": "living_room",
+          "bounds": {
+            "x": 0.0,
+            "y": 9.0,
+            "width": 4.0,
+            "height": 3.0
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 1.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 1.5,
+              "size": 2.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 4.0,
+            "height": 4.0
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 2.0,
+              "size": 2.0
+            },
+            {
+              "wall": "west",
+              "position": 2.0,
+              "size": 2.0
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0.0,
+            "y": 4.0,
+            "width": 4.0,
+            "height": 2.0
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 1.0,
+              "size": 0.5
+            }
+          ]
+        },
+        {
+          "id": "mezzanine_office",
+          "type": "office",
+          "bounds": {
+            "x": 0.0,
+            "y": 6.0,
+            "width": 4.0,
+            "height": 3.0
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 1.5,
+              "size": 2.5
+            },
+            {
+              "wall": "west",
+              "position": 1.5,
+              "size": 2.5
+            }
+          ],
+          "features": [
+            "open_to_below"
+          ]
+        },
+        {
+          "id": "rooftop_terrace",
+          "type": "outdoor",
+          "bounds": {
+            "x": 0.0,
+            "y": 9.0,
+            "width": 4.0,
+            "height": 3.0
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.0
+            }
+          ],
+          "windows": [],
+          "features": [
+            "outdoor_kitchen",
+            "planters"
+          ]
+        }
+      ]
+    }
+  ],
+  "systems": [
+    "geothermal_heating_cooling"
+  ],
+  "materials": [
+    "polished_concrete",
+    "glass_curtain_walls",
+    "reclaimed_wood"
+  ]
+}

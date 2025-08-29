@@ -1,0 +1,203 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 3,
+      "totalArea": 1200.0,
+      "style": "Mid-Century Modern"
+    },
+    "plot": {
+      "location": "Urban rooftop",
+      "climate": "Humid subtropical",
+      "contours": "Natural rooftop contours followed"
+    },
+    "roomBreakdown": [
+      {
+        "type": "pottery_studio",
+        "description": "Studio with kilns and worktables, oriented for northern light"
+      },
+      {
+        "type": "home_office",
+        "description": "Remote working space with panoramic views"
+      },
+      {
+        "type": "living_area",
+        "description": "Open plan living with thermal mass flooring"
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 385000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_studio",
+          "type": "pottery_studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_glass",
+              "wall": "north",
+              "position": 8,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "utility_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "east",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "wall": "south",
+              "position": 8,
+              "size": 12
+            },
+            {
+              "type": "floor_to_ceiling",
+              "wall": "west",
+              "position": 7,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 8,
+            "height": 14
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "casement",
+              "wall": "east",
+              "position": 4,
+              "size": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "wall": "north",
+              "position": 6,
+              "size": 10
+            },
+            {
+              "type": "floor_to_ceiling",
+              "wall": "east",
+              "position": 7,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "wall": "south",
+              "position": 6,
+              "size": 10
+            },
+            {
+              "type": "floor_to_ceiling",
+              "wall": "west",
+              "position": 7,
+              "size": 8
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

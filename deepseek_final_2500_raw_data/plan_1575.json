@@ -1,0 +1,612 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 4200,
+      "style": "Ultra-Modern Minimalist"
+    },
+    "plot": {
+      "shape": "circular",
+      "orientation": "east-west",
+      "climate": "temperate maritime"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "subtype": "chef's kitchen with wood-fired oven"
+      },
+      {
+        "type": "living_room",
+        "subtype": "great room"
+      },
+      {
+        "type": "primary_bedroom",
+        "subtype": "master suite"
+      },
+      {
+        "type": "bedroom",
+        "subtype": "guest suite"
+      },
+      {
+        "type": "bedroom",
+        "subtype": "guest suite"
+      },
+      {
+        "type": "bedroom",
+        "subtype": "study/guest"
+      },
+      {
+        "type": "bathroom",
+        "subtype": "en-suite"
+      },
+      {
+        "type": "bathroom",
+        "subtype": "en-suite"
+      },
+      {
+        "type": "bathroom",
+        "subtype": "en-suite"
+      },
+      {
+        "type": "bathroom",
+        "subtype": "powder room"
+      },
+      {
+        "type": "utility",
+        "subtype": "laundry/mudroom"
+      },
+      {
+        "type": "garage",
+        "subtype": "2-car"
+      },
+      {
+        "type": "hallway",
+        "subtype": "connecting corridor"
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 3780000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "pod1_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "pod1_dining",
+              "position": {
+                "x": 25,
+                "y": 10
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "wall": "north",
+              "position": {
+                "x": 5,
+                "y": 20
+              },
+              "size": {
+                "width": 5,
+                "height": 3
+              }
+            },
+            {
+              "type": "fixed",
+              "wall": "east",
+              "position": {
+                "x": 25,
+                "y": 5
+              },
+              "size": {
+                "width": 5,
+                "height": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "pod1_dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "pod1_kitchen",
+              "position": {
+                "x": 0,
+                "y": 10
+              }
+            },
+            {
+              "type": "interior",
+              "to_room": "corridor1",
+              "position": {
+                "x": 10,
+                "y": 20
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "sliding",
+              "wall": "east",
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "size": {
+                "width": 10,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "pod2_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "corridor1",
+              "position": {
+                "x": 75,
+                "y": 0
+              }
+            },
+            {
+              "type": "exterior",
+              "to_outdoor": "terrace",
+              "position": {
+                "x": 75,
+                "y": 25
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "wall": "south",
+              "position": {
+                "x": 65,
+                "y": 0
+              },
+              "size": {
+                "width": 20,
+                "height": 6
+              }
+            },
+            {
+              "type": "floor_to_ceiling",
+              "wall": "north",
+              "position": {
+                "x": 65,
+                "y": 25
+              },
+              "size": {
+                "width": 20,
+                "height": 6
+              }
+            }
+          ]
+        },
+        {
+          "id": "pod3_primary",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "pod3_bath",
+              "position": {
+                "x": 25,
+                "y": 50
+              }
+            },
+            {
+              "type": "interior",
+              "to_room": "corridor2",
+              "position": {
+                "x": 12.5,
+                "y": 40
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "wall": "west",
+              "position": {
+                "x": 0,
+                "y": 45
+              },
+              "size": {
+                "width": 10,
+                "height": 6
+              }
+            },
+            {
+              "type": "floor_to_ceiling",
+              "wall": "south",
+              "position": {
+                "x": 10,
+                "y": 20
+              },
+              "size": {
+                "width": 5,
+                "height": 6
+              }
+            }
+          ]
+        },
+        {
+          "id": "pod3_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 40,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "pod3_primary",
+              "position": {
+                "x": 0,
+                "y": 10
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "wall": "east",
+              "position": {
+                "x": 15,
+                "y": 15
+              },
+              "size": {
+                "width": 5,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "pod4_bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 40,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "pod4_bath1",
+              "position": {
+                "x": 20,
+                "y": 7.5
+              }
+            },
+            {
+              "type": "interior",
+              "to_room": "corridor2",
+              "position": {
+                "x": 25,
+                "y": 15
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "picture",
+              "wall": "east",
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "size": {
+                "width": 8,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "pod4_bath1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 70,
+            "y": 40,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "pod4_bedroom1",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod5_bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 90,
+            "y": 40,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "pod5_bath2",
+              "position": {
+                "x": 20,
+                "y": 7.5
+              }
+            },
+            {
+              "type": "interior",
+              "to_room": "corridor2",
+              "position": {
+                "x": 25,
+                "y": 15
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "picture",
+              "wall": "west",
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "size": {
+                "width": 8,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "pod5_bath2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 110,
+            "y": 40,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "pod5_bedroom2",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod6_utility",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 70,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "to_outdoor": "service_entry",
+              "position": {
+                "x": 7.5,
+                "y": 15
+              }
+            },
+            {
+              "type": "interior",
+              "to_room": "pod6_garage",
+              "position": {
+                "x": 15,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "pod6_garage",
+          "type": "garage",
+          "bounds": {
+            "x": 15,
+            "y": 70,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "overhead",
+              "to_outdoor": "driveway",
+              "position": {
+                "x": 27.5,
+                "y": 15
+              }
+            },
+            {
+              "type": "interior",
+              "to_room": "pod6_utility",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "corridor1",
+          "type": "hallway",
+          "bounds": {
+            "x": 45,
+            "y": 20,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "pod1_dining",
+              "position": {
+                "x": 0,
+                "y": 10
+              }
+            },
+            {
+              "type": "interior",
+              "to_room": "pod2_living",
+              "position": {
+                "x": 15,
+                "y": 0
+              }
+            },
+            {
+              "type": "interior",
+              "to_room": "corridor2",
+              "position": {
+                "x": 7.5,
+                "y": 20
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "wall": "north",
+              "position": {
+                "x": 5,
+                "y": 20
+              },
+              "size": {
+                "width": 5,
+                "height": 1
+              }
+            },
+            {
+              "type": "clerestory",
+              "wall": "south",
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "size": {
+                "width": 5,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "corridor2",
+          "type": "hallway",
+          "bounds": {
+            "x": 40,
+            "y": 55,
+            "width": 50,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "to_room": "corridor1",
+              "position": {
+                "x": 47.5,
+                "y": 0
+              }
+            },
+            {
+              "type": "interior",
+              "to_room": "pod3_primary",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              }
+            },
+            {
+              "type": "interior",
+              "to_room": "pod4_bedroom1",
+              "position": {
+                "x": 25,
+                "y": 0
+              }
+            },
+            {
+              "type": "interior",
+              "to_room": "pod5_bedroom2",
+              "position": {
+                "x": 75,
+                "y": 0
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "wall": "north",
+              "position": {
+                "x": 20,
+                "y": 15
+              },
+              "size": {
+                "width": 10,
+                "height": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

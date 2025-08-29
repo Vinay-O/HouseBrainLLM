@@ -1,0 +1,158 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 800.0,
+      "style": "Bohemian"
+    },
+    "plot": {
+      "shape": "irregular",
+      "dimensions": {
+        "width": 25,
+        "height": 32
+      }
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1,
+        "description": "Master bedroom for joint family with flexible sleeping arrangements"
+      },
+      {
+        "type": "home_office",
+        "count": 1,
+        "description": "Dedicated workspace with sound isolation"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Open plan living area with Bohemian decor"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Compact kitchen with dining area"
+      },
+      {
+        "type": "bathroom",
+        "count": 1,
+        "description": "Full bathroom serving all residents"
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 144000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_level",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "upper_level",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "kitchen_area",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 20,
+            "width": 13,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "bathroom_main",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 28,
+            "width": 8,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 2400,
+      "style": "Industrial"
+    },
+    "plot": {
+      "width": 40,
+      "length": 60,
+      "facing": "West"
+    },
+    "roomBreakdown": [
+      {
+        "roomType": "master_bedroom",
+        "count": 1,
+        "description": "Master bedroom with ensuite bathroom and walk-in closet"
+      },
+      {
+        "roomType": "bedroom",
+        "count": 1,
+        "description": "Secondary bedroom"
+      },
+      {
+        "roomType": "library",
+        "count": 1,
+        "description": "Dedicated library space with built-in shelving"
+      },
+      {
+        "roomType": "living_room",
+        "count": 1,
+        "description": "Open plan living area"
+      },
+      {
+        "roomType": "kitchen",
+        "count": 1,
+        "description": "Industrial-style kitchen with island"
+      },
+      {
+        "roomType": "bathroom",
+        "count": 2,
+        "description": "One ensuite and one common bathroom"
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 720000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "kitchen_zone",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "master_bed",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 8,
+              "size": 10
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 8,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "library_room",
+          "type": "library",
+          "bounds": {
+            "x": 20,
+            "y": 40,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 8,
+              "size": 12
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 45,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 10,
+            "y": 45,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

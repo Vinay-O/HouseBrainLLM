@@ -1,0 +1,109 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall",
+          "dimensions": {"length": 8, "width": 6},
+          "vastu": {"direction": "north", "note": "Encourages positive energy flow"}
+        },
+        {
+          "name": "Living Room",
+          "dimensions": {"length": 12, "width": 10},
+          "furniture": ["sofa", "coffee table", "TV unit"],
+          "vastu": {"direction": "south", "note": "Enhances relaxation and activity"}
+        },
+        {
+          "name": "Dining Room",
+          "dimensions": {"length": 8, "width": 6},
+          "furniture": ["dining table", "chairs"],
+          "vastu": {"direction": "east", "note": "Promotes social interaction and energy"}
+        },
+        {
+          "name": "Kitchen",
+          "dimensions": {"length": 10, "width": 8},
+          "furniture": ["countertop", "storage cabinetry"],
+          "vastu": {"direction": "south-east", "note": "Boosts harmony and organization"}
+        },
+        {
+          "name": "Private Gym",
+          "dimensions": {"length": 10, "width": 8},
+          "furniture": ["exercise equipment", "mirrors"],
+          "accessibility": true,
+          "vastu": {"direction": "west", "note": "Encourages strength and balance"}
+        },
+        {
+          "name": "Guest Bathroom",
+          "dimensions": {"length": 6, "width": 4},
+          "furniture": ["toilet", "sink"],
+          "vastu": {"direction": "south-west", "note": "Promotes cleanliness and purity"}
+        }
+      ],
+      "openings": [
+        {
+          "type": "Main Entrance",
+          "location": "front",
+          "width": 3.5,
+          "height": 7,
+          "accessibility": true
+        },
+        {
+          "type": "Window",
+          "location": "living room",
+          "dimensions": {"length": 4, "width": 1.5}
+        },
+        {
+          "type": "Door",
+          "location": "between living room and dining room",
+          "width": 3,
+          "height": 7
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "name": "Master Bedroom",
+          "dimensions": {"length": 12, "width": 10},
+          "furniture": ["bed", "wardrobe"],
+          "vastu": {"direction": "north", "note": "Enhances calm and relaxation"}
+        },
+        {
+          "name": "Guest Bedroom",
+          "dimensions": {"length": 8, "width": 6},
+          "furniture": ["bed", "study desk"],
+          "vastu": {"direction": "south", "note": "Promotes energy and activity"}
+        },
+        {
+          "name": "Bathroom",
+          "dimensions": {"length": 6, "width": 4},
+          "furniture": ["toilet", "sink", "shower"],
+          "vastu": {"direction": "east", "note": "Ensures cleanliness and purity"}
+        },
+        {
+          "name": "Balcony",
+          "dimensions": {"length": 8, "width": 2},
+          "furniture": [],
+          "vastu": {"direction": "north-east", "note": "Provides fresh air and light"}
+        }
+      ],
+      "openings": [
+        {
+          "type": "Staircase",
+          "location": "central",
+          "dimensions": {"length": 3, "width": 2},
+          "accessibility": true
+        },
+        {
+          "type": "Balcony Door",
+          "location": "master bedroom",
+          "width": 4,
+          "height": 6.5,
+          "accessibility": false
+        }
+      ]
+    }
+  ]
+}

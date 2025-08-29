@@ -1,0 +1,234 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 1200.0,
+      "style": "Art Deco Revival"
+    },
+    "plot": {
+      "width": 20,
+      "depth": 30,
+      "orientation": "north",
+      "climate": "coastal with salt air exposure",
+      "noiseSources": [
+        "highway"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "specialFeatures": [
+          "chef's kitchen",
+          "wood-fired oven"
+        ]
+      },
+      {
+        "type": "office",
+        "specialFeatures": [
+          "mezzanine level"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "specialFeatures": [
+          "composting toilet system"
+        ]
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 275000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_hall",
+          "type": "entry_hall",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            "front_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "to_hall",
+            "patio_door"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ],
+          "specialFeatures": [
+            "chef's kitchen",
+            "wood-fired oven"
+          ]
+        },
+        {
+          "id": "bathroom_ground",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 15,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [],
+          "specialFeatures": [
+            "composting toilet system"
+          ]
+        },
+        {
+          "id": "storage_utility",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 5
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_parent",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_teen1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_teen2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_upper",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "mezzanine_office",
+          "type": "office",
+          "bounds": {
+            "x": 12,
+            "y": 15,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ],
+          "specialFeatures": [
+            "mezzanine level",
+            "open to below"
+          ]
+        }
+      ]
+    }
+  ]
+}

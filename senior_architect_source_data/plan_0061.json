@@ -1,0 +1,281 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 800,
+      "style": "Marathi Wada with Haveli influence"
+    },
+    "plot": {
+      "shape": "corner",
+      "area": 800,
+      "slope": true,
+      "frontage": "dual"
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_theater",
+        "count": 1
+      },
+      {
+        "type": "courtyard",
+        "count": 3
+      },
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "study",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2160.0,
+  "construction_cost": 518400.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard_1",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "north_1",
+            "south_1",
+            "east_1",
+            "west_1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            "main_entry"
+          ],
+          "windows": [
+            "north_window_1"
+          ]
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "garage_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "utility_door"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_foyer",
+            "to_dining",
+            "to_courtyard"
+          ],
+          "windows": [
+            "north_window_2",
+            "east_window_1"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_living",
+            "to_kitchen"
+          ],
+          "windows": [
+            "east_window_2"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 15,
+            "height": 13
+          },
+          "doors": [
+            "to_dining",
+            "to_courtyard"
+          ],
+          "windows": [
+            "south_window_1"
+          ]
+        },
+        {
+          "id": "courtyard_2",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "from_living",
+            "from_kitchen"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 18,
+            "height": 15
+          },
+          "doors": [
+            "to_hall",
+            "to_bath_1"
+          ],
+          "windows": [
+            "north_window_3",
+            "east_window_3"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 17,
+            "height": 12
+          },
+          "doors": [
+            "to_hall",
+            "to_bath_2"
+          ],
+          "windows": [
+            "north_window_4"
+          ]
+        },
+        {
+          "id": "home_theater",
+          "type": "home_theater",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "theater_entry"
+          ],
+          "windows": []
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "study_entry"
+          ],
+          "windows": [
+            "south_window_2"
+          ]
+        },
+        {
+          "id": "courtyard_3",
+          "type": "courtyard",
+          "bounds": {
+            "x": 25,
+            "y": 12,
+            "width": 10,
+            "height": 13
+          },
+          "doors": [
+            "from_hall"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

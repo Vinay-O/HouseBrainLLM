@@ -1,0 +1,87 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance & Reception Area",
+          "dimensions": {"length": 6, "width": 4},
+          "description": "Provides a welcoming open space with minimalistic design and natural lighting. Vastu-aligned entrance facing North to harness positive energy."
+        },
+        {
+          "name": "Living Area",
+          "dimensions": {"length": 8, "width": 6},
+          "description": "Modern living area integrated with the dining area. Windows are strategically placed on the eastern and northern sides for natural light and Vastu compliance."
+        },
+        {
+          "name": "Kitchenette",
+          "dimensions": {"length": 4, "width": 3},
+          "description": "Compact kitchen designed to maximize efficiency in a limited space. Features modern appliances with an emphasis on sustainability. Located adjacent to the living area for ease of access."
+        },
+        {
+          "name": "Bathroom",
+          "dimensions": {"length": 2, "width": 1.5},
+          "description": "Functional bathroom incorporating minimalist design and natural ventilation. Placed in the southwest corner to adhere to Vastu guidelines."
+        },
+        {
+          "name": "Home Office",
+          "dimensions": {"length": 4, "width": 3},
+          "description": "Dedicated home office space with a quiet ambiance, designed for productivity and privacy. Windows oriented towards east for natural morning light."
+        }
+      ],
+      "openings": [
+        {
+          "type": "Main Entrance Door",
+          "location": {"x": 0, "y": 0},
+          "direction": "north"
+        },
+        {
+          "type": "Window",
+          "location": {"room": "Living Area", "side": "east"},
+          "description": "Large window ensuring ample natural light."
+        },
+        {
+          "type": "Door",
+          "location": {"room": "Kitchenette", "adjacent": "Living Area"},
+          "description": "Connecting door between kitchen and living area."
+        },
+        {
+          "type": "Window",
+          "location": {"room": "Home Office", "side": "east"},
+          "description": "Window to ensure morning light for a productive workspace."
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "name": "Master Bedroom",
+          "dimensions": {"length": 6, "width": 4},
+          "description": "Spacious master bedroom with an en-suite bathroom. Oriented towards the east for optimal morning light, in accordance with Vastu principles."
+        },
+        {
+          "name": "Secondary Bedrooms",
+          "dimensions": {"length": 3, "width": 2.5},
+          "description": "One or two smaller bedrooms designed to meet the requirements of an irregular plot. Placed on the southwestern side for balance and calm energy."
+        },
+        {
+          "name": "Storage / Utility Room",
+          "dimensions": {"length": 2, "width": 1.5},
+          "description": "Compact utility room for storage and additional functionalities. Optimized placement to maintain a clutter-free living space."
+        }
+      ],
+      "openings": [
+        {
+          "type": "Staircase",
+          "location": {"x": 4, "y": 2},
+          "description": "Central staircase connecting ground floor and first floor with safety railings and adherence to building norms."
+        },
+        {
+          "type": "Window",
+          "location": {"room": "Master Bedroom", "side": "east"},
+          "description": "Large window ensuring ample natural light and ventilation in the bedroom."
+        }
+      ]
+    }
+  ]
+}

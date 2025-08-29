@@ -1,0 +1,34 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {"name": "Entrance Lobby", "dimensions": {"length": 10, "width": 8}, "function": "entrance"},
+      {"name": "Living Room", "dimensions": {"length": 15, "width": 12}, "function": "common space", "balcony": false},
+      {"name": "Dining Area", "dimensions": {"length": 10, "width": 8}, "function": "dining"},
+      {"name": "Kitchen", "dimensions": {"length": 10, "width": 7}, "function": "kitchen", "adjacent_rooms": ["Living Room"]},
+      {"name": "Guest Bathroom", "dimensions": {"length": 6, "width": 5}, "function": "bathroom"},
+      {"name": "Service Area", "dimensions": {"length": 8, "width": 7}, "function": "service/laundry"}
+    ],
+    "openings": [
+      {"type": "Main Entrance Door", "position": "north", "size": {"height": 8, "width": 4}},
+      {"type": "Window", "position": "east", "size": {"height": 6, "width": 3}, "room": "Living Room"},
+      {"type": "Porch Window", "position": "south", "size": {"height": 5, "width": 2}, "room": "Entrance Lobby"}
+    ]
+  },
+  {
+    "level_id": "upper_floor",
+    "rooms": [
+      {"name": "Master Bedroom", "dimensions": {"length": 12, "width": 10}, "function": "bedroom", "balcony": true},
+      {"name": "Bedroom 2", "dimensions": {"length": 10, "width": 8}, "function": "bedroom", "balcony": true},
+      {"name": "Bedroom 3", "dimensions": {"length": 9, "width": 7}, "function": "bedroom", "balcony": true},
+      {"name": "Bedroom 4", "dimensions": {"length": 8, "width": 6}, "function": "bedroom", "balcony": true},
+      {"name": "Study Room", "dimensions": {"length": 7, "width": 5}, "function": "study"},
+      {"name": "Bathroom", "dimensions": {"length": 6, "width": 4}, "function": "bathroom"}
+    ],
+    "openings": [
+      {"type": "Staircase Window", "position": "west", "size": {"height": 5, "width": 2}},
+      {"type": "Window", "position": "south-east", "size": {"height": 6, "width": 3}, "room": "Master Bedroom"},
+      {"type": "Balcony Window", "position": "north-west", "size": {"height": 4, "width": 2}, "room": "Bedroom 2"}
+    ]
+  }
+]}

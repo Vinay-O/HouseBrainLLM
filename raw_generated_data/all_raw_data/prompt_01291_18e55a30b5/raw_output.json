@@ -1,0 +1,85 @@
+{
+  "levels": [
+    {
+      "level_id": "penthouse",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "shape": "rectangular",
+          "dimensions": { "length": 30, "width": 25 },
+          "features": ["open-plan", "floor-to-ceiling windows"],
+          "adjacent_rooms": ["dining_area", "kitchen"]
+        },
+        {
+          "room_id": "dining_area",
+          "shape": "square",
+          "dimensions": { "length": 15, "width": 15 },
+          "features": ["open-plan"],
+          "adjacent_rooms": ["living_room", "kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "rectangular",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["open-plan", "modern-appliances"],
+          "adjacent_rooms": ["dining_area", "utility"]
+        },
+        {
+          "room_id": "home_theater",
+          "shape": "rectangular",
+          "dimensions": { "length": 25, "width": 20 },
+          "features": ["acoustic-tile", "projector-screen"],
+          "adjacent_rooms": ["living_room"]
+        },
+        {
+          "room_id": "bedroom",
+          "shape": "rectangular",
+          "dimensions": { "length": 30, "width": 25 },
+          "features": ["walk-in-closet", "en-suite-bathroom"],
+          "adjacent_rooms": ["bathroom"]
+        },
+        {
+          "room_id": "bathroom",
+          "shape": "square",
+          "dimensions": { "length": 10, "width": 10 },
+          "features": ["modern-fixtures", "walk-in-shower"],
+          "adjacent_rooms": ["bedroom"]
+        },
+        {
+          "room_id": "utility_room",
+          "shape": "rectangular",
+          "dimensions": { "length": 15, "width": 10 },
+          "features": ["wash-area", "storage"],
+          "adjacent_rooms": ["kitchen"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "front_door",
+          "type": "door",
+          "dimensions": { "length": 3.5, "width": 1 },
+          "location": "living_room"
+        },
+        {
+          "opening_id": "balcony_access",
+          "type": "door",
+          "dimensions": { "length": 2.5, "width": 1 },
+          "location": "living_room"
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimensions": { "length": 3, "width": 2 },
+          "location": "kitchen"
+        },
+        {
+          "opening_id": "theater_entry",
+          "type": "door",
+          "dimensions": { "length": 2.5, "width": 1 },
+          "location": "home_theater"
+        }
+      ],
+      "total_area": 4000
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2200,
+      "style": "Tropical Modernist"
+    },
+    "plot": {
+      "topography": "Desert Plateau",
+      "climateZone": "Continental with Harsh Winters"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 1
+      },
+      {
+        "type": "greenhouse",
+        "count": 1
+      },
+      {
+        "type": "mechanical",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 495000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "living_room"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "living_room"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "climate_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "mechanical"
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical",
+          "type": "mechanical",
+          "bounds": {
+            "x": 20,
+            "y": 14,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 32,
+            "height": 20
+          },
+          "doors": [
+            "stairs",
+            "kitchen",
+            "hallway"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 32,
+            "y": 20,
+            "width": 10,
+            "height": 16
+          },
+          "doors": [
+            "living_room"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 36,
+            "width": 10,
+            "height": 14
+          },
+          "doors": [
+            "living_room"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 32,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bathroom_1",
+            "mechanical",
+            "living_room",
+            "stairs"
+          ],
+          "windows": []
+        },
+        {
+          "id": "stairs",
+          "type": "stairs",
+          "bounds": {
+            "x": 42,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "hallway",
+            "greenhouse"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "greenhouse",
+          "type": "greenhouse",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 20
+          },
+          "doors": [
+            "stairs"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "full-height"
+            },
+            {
+              "wall": "north",
+              "size": "full-height"
+            },
+            {
+              "wall": "east",
+              "size": "medium"
+            },
+            {
+              "wall": "west",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "herb_garden",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 50,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

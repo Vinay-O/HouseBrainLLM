@@ -1,0 +1,108 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["large window", "ceiling fan"],
+          "position": {"x": 0, "y": 18}
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 9, "width": 9},
+          "features": ["ventilation unit", "storage cabinets"],
+          "position": {"x": 12, "y": 0}
+        },
+        {
+          "room_name": "Bedroom 1",
+          "dimensions": {"length": 12, "width": 12},
+          "features": ["wardrobe space", "ceiling fan", "window"],
+          "position": {"x": 21, "y": 0}
+        },
+        {
+          "room_name": "Bathroom",
+          "dimensions": {"length": 6, "width": 9},
+          "features": ["ventilation unit", "shower area", "toilet"],
+          "position": {"x": 12, "y": 9}
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "direction": "east",
+          "location": {"x": 0, "y": 9},
+          "size": {"height": 7.5, "width": 3}
+        },
+        {
+          "type": "window",
+          "direction": "west",
+          "location": {"x": 21, "y": 18},
+          "size": {"height": 6, "width": 9}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["wardrobe space", "ceiling fan", "balcony"],
+          "position": {"x": 0, "y": 18}
+        },
+        {
+          "room_name": "Bedroom 2",
+          "dimensions": {"length": 9, "width": 9},
+          "features": ["wardrobe space", "ceiling fan", "window"],
+          "position": {"x": 15, "y": 0}
+        },
+        {
+          "room_name": "Study Room",
+          "dimensions": {"length": 9, "width": 9},
+          "features": ["bookshelf", "ceiling fan", "window"],
+          "position": {"x": 24, "y": 0}
+        },
+        {
+          "room_name": "Bathroom",
+          "dimensions": {"length": 6, "width": 9},
+          "features": ["ventilation unit", "shower area", "toilet"],
+          "position": {"x": 15, "y": 9}
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "direction": "south",
+          "location": {"x": 0, "y": 27},
+          "size": {"height": 6, "width": 15}
+        },
+        {
+          "type": "door",
+          "direction": "north",
+          "location": {"x": 9, "y": 30},
+          "size": {"height": 7.5, "width": 3}
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "type": "skylight",
+          "direction": "north",
+          "location": {"x": 15, "y": 30},
+          "size": {"height": 4, "width": 12}
+        },
+        {
+          "type": "terrace door",
+          "direction": "south",
+          "location": {"x": 9, "y": 36},
+          "size": {"height": 7.5, "width": 3}
+        }
+      ]
+    }
+  ]
+}

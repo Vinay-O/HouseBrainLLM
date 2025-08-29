@@ -1,0 +1,612 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 3200,
+      "style": "Traditional Kerala"
+    },
+    "plot": {
+      "width": 50,
+      "height": 80
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 400
+      },
+      {
+        "type": "dining_room",
+        "area": 225
+      },
+      {
+        "type": "kitchen",
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "library",
+        "area": 225
+      },
+      {
+        "type": "puja_room",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "verandah",
+        "area": 400
+      },
+      {
+        "type": "courtyard",
+        "area": 850
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 4800000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 25,
+            "height": 34
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 37
+              },
+              "connects_to": "living_room"
+            },
+            {
+              "position": {
+                "x": 45,
+                "y": 37
+              },
+              "connects_to": "dining_room"
+            },
+            {
+              "position": {
+                "x": 32.5,
+                "y": 20
+              },
+              "connects_to": "verandah_north"
+            },
+            {
+              "position": {
+                "x": 32.5,
+                "y": 54
+              },
+              "connects_to": "verandah_south"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 37
+              },
+              "connects_to": "courtyard"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 20
+              },
+              "connects_to": "verandah_north"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 40
+              },
+              "connects_to": "verandah_south"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 30
+              },
+              "connects_to": "bedroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 25
+              },
+              "size": 5
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 35
+              },
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 45,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 45,
+                "y": 27.5
+              },
+              "connects_to": "courtyard"
+            },
+            {
+              "position": {
+                "x": 52.5,
+                "y": 20
+              },
+              "connects_to": "verandah_north"
+            },
+            {
+              "position": {
+                "x": 52.5,
+                "y": 35
+              },
+              "connects_to": "verandah_south"
+            },
+            {
+              "position": {
+                "x": 60,
+                "y": 27.5
+              },
+              "connects_to": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 60,
+                "y": 22.5
+              },
+              "size": 5
+            },
+            {
+              "position": {
+                "x": 60,
+                "y": 32.5
+              },
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 45,
+            "y": 35,
+            "width": 15,
+            "height": 13.33
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 45,
+                "y": 41.665
+              },
+              "connects_to": "courtyard"
+            },
+            {
+              "position": {
+                "x": 52.5,
+                "y": 48.33
+              },
+              "connects_to": "verandah_south"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 60,
+                "y": 37.5
+              },
+              "size": 5
+            },
+            {
+              "position": {
+                "x": 60,
+                "y": 43.33
+              },
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 50
+              },
+              "connects_to": "living_room"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 40
+              },
+              "connects_to": "verandah_south"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 60
+              },
+              "connects_to": "bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 45
+              },
+              "size": 5
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 55
+              },
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 10
+              },
+              "connects_to": "library"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 0
+              },
+              "connects_to": "verandah_north"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 20
+              },
+              "connects_to": "bathroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "size": 5
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 15
+              },
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 7.5
+              },
+              "connects_to": "bedroom_2"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 7.5
+              },
+              "connects_to": "puja_room"
+            },
+            {
+              "position": {
+                "x": 22.5,
+                "y": 0
+              },
+              "connects_to": "verandah_north"
+            },
+            {
+              "position": {
+                "x": 22.5,
+                "y": 15
+              },
+              "connects_to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 2.5
+              },
+              "size": 5
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 12.5
+              },
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 5
+              },
+              "connects_to": "library"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 0
+              },
+              "connects_to": "verandah_north"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 40,
+                "y": 2.5
+              },
+              "size": 5
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 7.5
+              },
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 60,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 65
+              },
+              "connects_to": "bedroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 62.5
+              },
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 25
+              },
+              "connects_to": "bedroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 22.5
+              },
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "verandah_north",
+          "type": "verandah",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 5
+              },
+              "connects_to": "bedroom_2"
+            },
+            {
+              "position": {
+                "x": 22.5,
+                "y": 5
+              },
+              "connects_to": "library"
+            },
+            {
+              "position": {
+                "x": 32.5,
+                "y": 5
+              },
+              "connects_to": "courtyard"
+            },
+            {
+              "position": {
+                "x": 52.5,
+                "y": 5
+              },
+              "connects_to": "dining_room"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 5
+              },
+              "connects_to": "puja_room"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "verandah_south",
+          "type": "verandah",
+          "bounds": {
+            "x": 0,
+            "y": 75,
+            "width": 50,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 75
+              },
+              "connects_to": "bedroom_1"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 75
+              },
+              "connects_to": "living_room"
+            },
+            {
+              "position": {
+                "x": 32.5,
+                "y": 75
+              },
+              "connects_to": "courtyard"
+            },
+            {
+              "position": {
+                "x": 52.5,
+                "y": 75
+              },
+              "connects_to": "dining_room"
+            },
+            {
+              "position": {
+                "x": 52.5,
+                "y": 75
+              },
+              "connects_to": "kitchen"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

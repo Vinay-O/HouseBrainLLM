@@ -1,0 +1,41 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall",
+          "dimensions": {"width": 10, "length": 8},
+          "description": "Spacious entrance with a minimalistic design and raw concrete finishes."
+        },
+        {
+          "name": "Living & Kitchen Area (Open-Plan)",
+          "dimensions": {"width": 30, "length": 40},
+          "description": "Brutalist open-plan space combining living area and kitchen. Features exposed concrete walls and steel beams. Includes a built-in kitchen counter and dining area."
+        },
+        {
+          "name": "Bedroom",
+          "dimensions": {"width": 14, "length": 12},
+          "description": "Private bedroom with a view towards the east for positive Vastu alignment. Finishes include textured concrete surfaces and minimalist interior design."
+        }
+      ],
+      "openings": [
+        {
+          "type": "Entrance Door",
+          "location": {"direction": "north", "position": "center"},
+          "description": "Large reinforced door with minimalistic design."
+        },
+        {
+          "type": "Window",
+          "location": {"direction": "east", "room": "Bedroom"},
+          "description": "High window to maximize natural light and maintain positive Vastu flow."
+        },
+        {
+          "type": "Window",
+          "location": {"direction": "south", "room": "Living & Kitchen Area"},
+          "description": "Large window to balance the brightness of the open-plan space, ensuring proper ventilation."
+        }
+      ]
+    }
+  ]
+}

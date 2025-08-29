@@ -1,0 +1,82 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance",
+          "dimensions": { "length": 10, "width": 6 },
+          "orientation": "north",
+          "type": "entrance_porch"
+        },
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "adjacent_to": ["central_courtyard", "dining_area"],
+          "type": "living_room"
+        },
+        {
+          "room_id": "dining_area",
+          "dimensions": { "length": 10, "width": 8 },
+          "adjacent_to": ["kitchen", "living_room"],
+          "type": "dining_area"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["modular_cabinets", "gas_stove", "sink"],
+          "adjacent_to": ["dining_area", "bedroom_1"],
+          "type": "kitchen"
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["wardrobe", "balcony_access"],
+          "adjacent_to": ["bathroom_1", "kitchen"],
+          "type": "bedroom"
+        },
+        {
+          "room_id": "bathroom_1",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["shower", "toilet", "sink"],
+          "adjacent_to": ["bedroom_1"],
+          "type": "bathroom"
+        },
+        {
+          "room_id": "central_courtyard",
+          "dimensions": { "length": 12, "width": 12 },
+          "features": ["garden", "seating_area"],
+          "adjacent_to": ["living_room", "bedroom_1", "study_room"],
+          "type": "courtyard"
+        },
+        {
+          "room_id": "balcony_1",
+          "dimensions": { "length": 8, "width": 6 },
+          "adjacent_to": ["bedroom_1"],
+          "type": "balcony"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "orientation": "north",
+          "dimensions": { "length": 8, "width": 3 },
+          "location": "entrance"
+        },
+        {
+          "opening_id": "living_to_courtyard",
+          "type": "sliding_door",
+          "dimensions": { "length": 6, "width": 6 },
+          "location": "between_living_room_and_central_courtyard"
+        },
+        {
+          "opening_id": "bedroom_balcony_access",
+          "type": "french_doors",
+          "dimensions": { "length": 6, "width": 4 },
+          "location": "bedroom_1_to_balcony_1"
+        }
+      ]
+    }
+  ]
+}

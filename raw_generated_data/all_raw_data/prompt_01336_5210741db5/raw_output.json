@@ -1,0 +1,70 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_area",
+          "dimensions": { "length": 20, "width": 15 },
+          "position": { "x_min": 0, "y_min": 0, "z": 0 },
+          "features": ["open_plan", "high_ceiling"],
+          "materials": ["concrete", "exposed_brick"]
+        },
+        {
+          "room_id": "bedroom",
+          "dimensions": { "length": 15, "width": 12 },
+          "position": { "x_min": 20, "y_min": 0, "z": 0 },
+          "features": ["wardrobe", "attached_bathroom"],
+          "materials": ["concrete", "wood"]
+        },
+        {
+          "room_id": "open_plan_kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "position": { "x_min": 35, "y_min": 0, "z": 0 },
+          "features": ["island_counter", "modular_cabinets"],
+          "materials": ["concrete", "stainless_steel"]
+        },
+        {
+          "room_id": "servant_quarters",
+          "dimensions": { "length": 12, "width": 8 },
+          "position": { "x_min": 0, "y_min": 15, "z": 0 },
+          "features": ["attached_bathroom"],
+          "materials": ["concrete", "painted_walls"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "position": { "x": 0, "y": 0, "z": 0 },
+          "dimensions": { "width": 4, "height": 8 }
+        },
+        {
+          "opening_id": "bedroom_window",
+          "type": "window",
+          "position": { "x": 25, "y": 5, "z": 3 },
+          "dimensions": { "width": 5, "height": 5 }
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "position": { "x": 40, "y": 5, "z": 3 },
+          "dimensions": { "width": 5, "height": 5 }
+        }
+      ],
+      "outdoor_features": [
+        {
+          "feature_id": "rooftop_terrace",
+          "dimensions": { "length": 60, "width": 90 },
+          "position": { "z": 12 },
+          "features": ["outdoor_furniture", "bbq_area"]
+        }
+      ]
+    }
+  ],
+  "vastu_compliance": {
+    "main_entrance": { "direction": "north" },
+    "bedroom_direction": "southwest",
+    "kitchen_direction": "southeast"
+  }
+}

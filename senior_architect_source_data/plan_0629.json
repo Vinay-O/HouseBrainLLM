@@ -1,0 +1,222 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 800,
+      "style": "Punjabi Farmhouse with Rural Aesthetics"
+    },
+    "plot": {
+      "orientation": "north",
+      "area": 800,
+      "location": "tribal",
+      "restrictions": [
+        "maximum_height_restrictions",
+        "sustainable_development"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "area": 150,
+        "features": [
+          "elderly_accessible",
+          "smart_automation"
+        ]
+      },
+      {
+        "type": "grandparents_bedroom",
+        "area": 140,
+        "features": [
+          "ground_floor",
+          "elderly_accessible",
+          "smart_automation"
+        ]
+      },
+      {
+        "type": "living_room",
+        "area": 120,
+        "features": [
+          "open_plan",
+          "natural_light"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "area": 80,
+        "features": [
+          "compact_design",
+          "energy_efficient"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "area": 50,
+        "features": [
+          "accessible_design",
+          "water_saving"
+        ]
+      },
+      {
+        "type": "meditation_courtyard",
+        "area": 160,
+        "features": [
+          "stepped_well_inspired",
+          "traditional_design"
+        ]
+      },
+      {
+        "type": "utility",
+        "area": 50,
+        "features": [
+          "compact",
+          "multipurpose"
+        ]
+      },
+      {
+        "type": "green_roof",
+        "area": 50,
+        "features": [
+          "sustainable",
+          "insulation"
+        ]
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "grandparents_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 14
+          },
+          "doors": [
+            "north_wall"
+          ],
+          "windows": [
+            "east_wall"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "north_wall"
+          ],
+          "windows": [
+            "west_wall"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            "north_wall",
+            "courtyard"
+          ],
+          "windows": [
+            "north_wall"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 26,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "living_room"
+          ],
+          "windows": [
+            "south_wall"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 10,
+            "y": 26,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            "living_room"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 26,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            "living_room"
+          ],
+          "windows": []
+        },
+        {
+          "id": "meditation_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 30,
+            "width": 10,
+            "height": 16
+          },
+          "doors": [
+            "living_room"
+          ],
+          "windows": [],
+          "features": [
+            "stepped_well_inspired",
+            "traditional_design"
+          ]
+        },
+        {
+          "id": "green_roof",
+          "type": "roof",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 40
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "sustainable",
+            "insulation"
+          ]
+        }
+      ]
+    }
+  ]
+}

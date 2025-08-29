@@ -151,7 +151,9 @@ def main():
                 "Please act as a senior architect. The following JSON house plan was generated for a user request, but it contains one or more significant architectural, geometric, or functional flaws. Your task is to identify and fix the issues to make the plan compliant with the original request and sound architectural principles. Here is the original user request:\n\n"
                 f"--- USER REQUEST ---\n{user_prompt}\n\n"
                 "--- FLAWED JSON PLAN ---\n"
-                f"{json.dumps(flawed_plan, indent=2)}"
+                f"{json.dumps(flawed_plan, indent=2)}\n\n"
+                "--- CRITICAL INSTRUCTIONS ---\n"
+                "Your entire response MUST be a single, raw, valid JSON object that represents the corrected plan. Do not add any explanations, apologies, or any characters outside of the main JSON structure."
             )
 
             # The assistant's response is the original, correct plan
@@ -160,7 +162,7 @@ def main():
             # Create the final training record
             output_record = {
                 "messages": [
-                    {"role": "system", "content": "You are an expert architect who reviews and corrects flawed house plans."},
+                    {"role": "system", "content": "You are an expert AI architect. Your only task is to review a flawed house plan and output the corrected version as a single, raw JSON object. Do not add any conversational text or markdown."},
                     {"role": "user", "content": user_content},
                     {"role": "assistant", "content": assistant_content}
                 ]

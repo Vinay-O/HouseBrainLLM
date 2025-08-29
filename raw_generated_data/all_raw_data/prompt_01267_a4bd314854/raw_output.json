@@ -1,0 +1,86 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "area": 400,
+          "dimensions": { "length": 20, "width": 20 },
+          "features": ["wardrobe", "balcony"],
+          "direction": "north"
+        },
+        {
+          "room_type": "living_room",
+          "area": 350,
+          "dimensions": { "length": 17.5, "width": 20 },
+          "features": ["sofa", "TV unit"]
+        },
+        {
+          "room_type": "kitchen",
+          "area": 250,
+          "dimensions": { "length": 12.5, "width": 20 },
+          "features": ["modular_cabinets", "gas_stove", "sink"]
+        },
+        {
+          "room_type": "dining_room",
+          "area": 150,
+          "dimensions": { "length": 12.5, "width": 12 },
+          "features": ["dining_table"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "main_entrance",
+          "direction": "west"
+        },
+        {
+          "opening_type": "balcony",
+          "room_id": "bedroom",
+          "direction": "north"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "area": 400,
+          "dimensions": { "length": 20, "width": 20 },
+          "features": ["wardrobe", "balcony"],
+          "direction": "south"
+        },
+        {
+          "room_type": "study_room",
+          "area": 250,
+          "dimensions": { "length": 12.5, "width": 20 },
+          "features": ["desk", "shelf"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "balcony",
+          "room_id": "bedroom",
+          "direction": "south"
+        }
+      ]
+    },
+    {
+      "level_id": "terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_type": "roof_access",
+          "direction": "west"
+        }
+      ]
+    }
+  ],
+  "building_norm": {
+    "plot_direction": "west",
+    "vastu_compliance": true,
+    "minimalist_design": true
+  },
+  "total_area": 2500
+}

@@ -1,0 +1,58 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entry_hall",
+          "dimensions": {"length": 4.5, "width": 3.0},
+          "features": ["wheelchair_access", "vastu_entry"]
+        },
+        {
+          "room_id": "open_plan_kitchen_living_area",
+          "dimensions": {"length": 12.0, "width": 8.0},
+          "features": ["contemporary", "open_plan", "wheelchair_access", "vastu_living"],
+          "facilities": [
+            {
+              "facility_id": "swimming_pool",
+              "location": {"x": 6.5, "y": 7.0},
+              "dimensions": {"length": 10.0, "width": 4.0}
+            }
+          ]
+        },
+        {
+          "room_id": "bedroom",
+          "dimensions": {"length": 4.0, "width": 3.5},
+          "features": ["wheelchair_access", "vastu_bedroom"],
+          "access_to": ["open_plan_kitchen_living_area"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "entry_hall_window",
+          "type": "window",
+          "location": {"x": 1.0, "y": 2.5},
+          "dimensions": {"height": 3.0, "width": 1.5}
+        },
+        {
+          "opening_id": "kitchen_door_to_entry_hall",
+          "type": "door",
+          "location": {"x": 8.0, "y": 4.5},
+          "dimensions": {"height": 2.0, "width": 1.0}
+        },
+        {
+          "opening_id": "living_area_door_to_entry_hall",
+          "type": "door",
+          "location": {"x": 3.0, "y": 6.5},
+          "dimensions": {"height": 2.0, "width": 1.0}
+        },
+        {
+          "opening_id": "bedroom_door_to_open_plan_kitchen_living_area",
+          "type": "door",
+          "location": {"x": 3.0, "y": 4.5},
+          "dimensions": {"height": 2.0, "width": 1.0}
+        }
+      ]
+    }
+  ]
+}

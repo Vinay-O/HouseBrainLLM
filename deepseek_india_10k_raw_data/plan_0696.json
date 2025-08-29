@@ -1,0 +1,258 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 3200,
+      "style": "Heritage-Inspired Andhra Traditional"
+    },
+    "plot": {
+      "size": 3,
+      "location": "Moradabad",
+      "orientation": "South-facing"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3
+      },
+      {
+        "type": "production_space",
+        "count": 1
+      },
+      {
+        "type": "study_room",
+        "count": 1
+      },
+      {
+        "type": "courtyard",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "storage",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 576000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            "north_door",
+            "south_door",
+            "east_door",
+            "west_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_door",
+            "main_entry"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_door"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_door"
+          ],
+          "windows": [
+            "south_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_door"
+          ],
+          "windows": [
+            "south_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "study_room",
+          "type": "study_room",
+          "bounds": {
+            "x": 50,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_door"
+          ],
+          "windows": [
+            "north_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "production_space",
+          "type": "production_space",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 35,
+            "height": 15
+          },
+          "doors": [
+            "south_entry",
+            "courtyard_door"
+          ],
+          "windows": [
+            "south_window_bank"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 45,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_door",
+            "storage_door"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 45,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_door",
+            "kitchen_door"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 30,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "traditional_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 65,
+            "y": 45,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "kitchen_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

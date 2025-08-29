@@ -1,0 +1,101 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 5.0, "width": 4.5 },
+          "features": ["bohemian decor", "central courtyard view"],
+          "position": { "adjacent_to": ["dining_room", "central_courtyard"] }
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["dining table for 6", "open kitchen"],
+          "position": { "adjacent_to": ["living_room", "kitchen"] }
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 4.0, "width": 3.0 },
+          "features": ["modular storage", "gas stove", "sink"],
+          "position": { "adjacent_to": ["dining_room"] }
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 4.5, "width": 4.0 },
+          "features": ["king bed", "wardrobe", "private balcony"],
+          "position": { "adjacent_to": ["bathroom_1"] }
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["queen bed", "wardrobe"],
+          "position": { "adjacent_to": ["bathroom_2"] }
+        },
+        {
+          "room_id": "bathroom_1",
+          "dimensions": { "length": 3.0, "width": 2.5 },
+          "features": ["shower", "toilet", "sink"],
+          "position": { "adjacent_to": ["bedroom_1"] }
+        },
+        {
+          "room_id": "bathroom_2",
+          "dimensions": { "length": 3.0, "width": 2.5 },
+          "features": ["shower", "toilet", "sink"],
+          "position": { "adjacent_to": ["bedroom_2"] }
+        },
+        {
+          "room_id": "private_gym",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["treadmill", "dumbbells", "yoga mat"],
+          "position": { "adjacent_to": ["swimming_pool"] }
+        },
+        {
+          "room_id": "central_courtyard",
+          "dimensions": { "length": 6.0, "width": 5.0 },
+          "features": ["outdoor seating", "small water feature"],
+          "position": { "adjacent_to": ["living_room"] }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "entrance",
+          "dimensions": { "width": 2.0, "height": 3.0 },
+          "position": { "faces": "north" }
+        },
+        {
+          "opening_id": "swimming_pool_access",
+          "type": "staircase",
+          "dimensions": { "width": 1.5, "height": 2.5 },
+          "position": { "leads_to": ["first_floor", "swimming_pool"] }
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimensions": { "width": 3.0, "height": 2.5 },
+          "position": { "faces": "east" }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "swimming_pool",
+          "dimensions": { "length": 8.0, "width": 4.0 },
+          "features": ["outdoor pool", "deck area"],
+          "position": { "adjacent_to": ["private_gym"] }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "swimming_pool_staircase",
+          "type": "staircase",
+          "dimensions": { "width": 1.5, "height": 2.5 },
+          "position": { "leads_to": "ground_floor" }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 1850,
+      "style": "Industrial Loft A-Frame"
+    },
+    "plot": {
+      "contour": "sunken_courtyard",
+      "climate": "continental_harsh_winters",
+      "paving": "permeable"
+    },
+    "roomBreakdown": [
+      {
+        "type": "workshop",
+        "features": [
+          "hydraulic_car_lift",
+          "wheelchair_accessible"
+        ]
+      },
+      {
+        "type": "sunken_courtyard",
+        "features": [
+          "outdoor_adventure",
+          "permeable_paving"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "features": [
+          "wheelchair_accessible"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "features": [
+          "wheelchair_accessible"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "features": [
+          "open_plan",
+          "wheelchair_accessible"
+        ]
+      },
+      {
+        "type": "living_room",
+        "features": [
+          "double_height",
+          "loft_style"
+        ]
+      },
+      {
+        "type": "garage",
+        "features": [
+          "workshop_access"
+        ]
+      }
+    ]
+  },
+  "total_area": 1850.0,
+  "construction_cost": 325000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "sunken_courtyard",
+          "type": "sunken_courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "sliding",
+              "position": "north"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "workshop_garage",
+          "type": "workshop",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "overhead",
+              "position": "east"
+            }
+          ],
+          "windows": [
+            {
+              "type": "industrial",
+              "position": "south"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_pane",
+              "position": "south"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "pocket",
+              "position": "north"
+            }
+          ],
+          "windows": [
+            {
+              "type": "frosted",
+              "position": "east"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 20,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": "east"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_pane",
+              "position": "south"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 32,
+            "width": 25,
+            "height": 18
+          },
+          "doors": [
+            {
+              "type": "sliding",
+              "position": "north"
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "position": "south"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_loft",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "dormer",
+              "position": "south"
+            }
+          ]
+        },
+        {
+          "id": "open_loft",
+          "type": "loft",
+          "bounds": {
+            "x": 20,
+            "y": 5,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "skylight",
+              "position": "roof"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

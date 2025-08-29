@@ -1,0 +1,203 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 1200.0,
+      "style": "Japanese Zen"
+    },
+    "plot": {
+      "description": "Compact urban balcony conversion in a continental climate with harsh winters and tornado risk. Design follows natural contours."
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "description": "Minimalist design with tatami mats and shoji screens, oriented for tranquility."
+      },
+      {
+        "type": "home_theater",
+        "count": 1,
+        "description": "Soundproofed room with tiered seating, fiber optic star ceiling, and advanced audio-visual system."
+      },
+      {
+        "type": "storm_shelter",
+        "count": 1,
+        "description": "Reinforced concrete safe room meeting FEMA standards, located in basement level."
+      },
+      {
+        "type": "atrium",
+        "count": 1,
+        "description": "Central courtyard with Japanese garden, water feature, and retractable glass roof for winter protection."
+      },
+      {
+        "type": "living_roof",
+        "count": 1,
+        "description": "Extensive green roof with native wildflowers, providing insulation and stormwater management."
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 485000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "atrium",
+          "type": "atrium",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "location": "north_wall",
+              "to_room": "living_area"
+            },
+            {
+              "type": "sliding_glass",
+              "location": "south_wall",
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": [],
+          "description": "Central courtyard with Japanese Zen garden, stone path, and water feature. Retractable glass roof for climate control."
+        },
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "location": "south_wall",
+              "to_room": "atrium"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_pane",
+              "location": "north_wall",
+              "size": "large"
+            }
+          ],
+          "description": "Open concept living space with minimalist design, tatami mats, and views to the central atrium."
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "location": "north_wall",
+              "to_room": "atrium"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_pane",
+              "location": "east_wall",
+              "size": "medium"
+            }
+          ],
+          "description": "Japanese-inspired kitchen with natural wood finishes, efficient layout, and connection to atrium."
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "double_pane",
+              "location": "north_wall",
+              "size": "medium"
+            }
+          ],
+          "description": "Minimalist bedroom with tatami flooring, shoji screens, and view overlooking the atrium below."
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "double_pane",
+              "location": "south_wall",
+              "size": "medium"
+            }
+          ],
+          "description": "Second bedroom with Japanese design elements and connection to living roof garden."
+        },
+        {
+          "id": "home_theater",
+          "type": "home_theater",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [],
+          "description": "Dedicated theater room with tiered seating, acoustic treatment, and fiber optic star ceiling for immersive experience."
+        }
+      ]
+    },
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "storm_shelter",
+          "type": "storm_shelter",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "steel_reinforced",
+              "location": "east_wall",
+              "to_room": "stairwell"
+            }
+          ],
+          "windows": [],
+          "description": "FEMA-compliant safe room with reinforced concrete walls, emergency supplies, and communication equipment."
+        }
+      ]
+    }
+  ]
+}

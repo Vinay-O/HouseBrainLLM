@@ -1,0 +1,317 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2400,
+      "style": "Farmhouse Modern"
+    },
+    "plot": {
+      "size": 20000,
+      "rural": true,
+      "climate": "continental harsh winter",
+      "prevailingWindDirection": "northwest"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 1
+      },
+      {
+        "type": "spa",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "living_room"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 5,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "living_room"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 5,
+            "y": 22,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 22,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_1",
+          "type": "storage",
+          "bounds": {
+            "x": 35,
+            "y": 22,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 37,
+            "width": 40,
+            "height": 20
+          },
+          "doors": [
+            "staircase",
+            "bedroom_1",
+            "bedroom_2"
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase",
+          "type": "staircase",
+          "bounds": {
+            "x": 45,
+            "y": 37,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "living_room",
+            "upper_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 20,
+            "y": 22,
+            "width": 15,
+            "height": 5
+          },
+          "doors": [
+            "bathroom_1",
+            "utility_room",
+            "storage_1",
+            "living_room"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "dining_area"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "dining_area",
+          "type": "dining",
+          "bounds": {
+            "x": 25,
+            "y": 5,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "kitchen",
+            "upper_hall"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "upper_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "spa_room",
+          "type": "spa",
+          "bounds": {
+            "x": 5,
+            "y": 25,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            "upper_hall"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "small"
+            }
+          ],
+          "features": [
+            "massage_tables",
+            "steam_shower",
+            "hot_tub"
+          ]
+        },
+        {
+          "id": "mechanical_room",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 25,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "upper_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "thermal_chimney",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 40,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "natural_ventilation"
+          ]
+        },
+        {
+          "id": "upper_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 20,
+            "y": 5,
+            "width": 5,
+            "height": 40
+          },
+          "doors": [
+            "dining_area",
+            "bathroom_2",
+            "spa_room",
+            "mechanical_room",
+            "staircase"
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry",
+          "type": "entry",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            "exterior",
+            "upper_hall"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

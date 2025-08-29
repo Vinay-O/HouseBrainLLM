@@ -1,0 +1,252 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 2200,
+      "style": "Traditional"
+    },
+    "plot": {
+      "shape": "Rectangular",
+      "slope": "Hillside",
+      "orientation": "South"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "area": 250
+      },
+      {
+        "type": "dining_room",
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "area": 300,
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "area": 100,
+        "count": 2
+      },
+      {
+        "type": "study",
+        "area": 150
+      },
+      {
+        "type": "archive",
+        "area": 100
+      },
+      {
+        "type": "utility",
+        "area": 100
+      },
+      {
+        "type": "veranda",
+        "area": 300
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 495000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "main_entry"
+          ],
+          "windows": [
+            "south_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12.5,
+            "height": 20
+          },
+          "doors": [
+            "utility_door"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 32.5,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "living_room_door"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "north_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 12.5,
+            "height": 20
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_1_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 30,
+            "y": 40,
+            "width": 12.5,
+            "height": 10
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "archive",
+          "type": "archive",
+          "bounds": {
+            "x": 30,
+            "y": 50,
+            "width": 12.5,
+            "height": 10
+          },
+          "doors": [
+            "study_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "kitchen_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 50,
+            "width": 30,
+            "height": 10
+          },
+          "doors": [
+            "living_room_door",
+            "dining_room_door"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

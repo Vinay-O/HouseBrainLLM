@@ -1,0 +1,241 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2200,
+      "style": "Ultra-Modern Minimalist"
+    },
+    "plot": {
+      "shape": "triangular",
+      "terrain": "ravine",
+      "climate": "desert with extreme temperatures"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "sauna",
+        "count": 1
+      },
+      {
+        "type": "mechanical_room",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 875000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "front_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 24,
+            "height": 16
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large",
+              "type": "panoramic_insulated"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium",
+              "type": "double_pane"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "medium",
+              "type": "double_pane"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_room",
+          "type": "utility",
+          "bounds": {
+            "x": 44,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "exterior_access"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bridge_hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 30,
+            "height": 4
+          },
+          "doors": [
+            "stairs_from_0"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "continuous",
+              "type": "panoramic_insulated"
+            },
+            {
+              "wall": "south",
+              "size": "continuous",
+              "type": "panoramic_insulated"
+            }
+          ]
+        },
+        {
+          "id": "sauna",
+          "type": "sauna",
+          "bounds": {
+            "x": 10,
+            "y": 4,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "full_width",
+              "type": "panoramic_tempered"
+            },
+            {
+              "wall": "south",
+              "size": "full_width",
+              "type": "panoramic_tempered"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 26,
+            "y": 4,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large",
+              "type": "double_pane"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 4,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

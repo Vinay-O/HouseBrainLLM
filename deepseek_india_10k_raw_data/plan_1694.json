@@ -1,0 +1,330 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 4500,
+      "style": "Rajasthani Haveli"
+    },
+    "plot": {
+      "width": 30,
+      "depth": 50,
+      "location": "Vijayawada Krishna delta"
+    },
+    "roomBreakdown": [
+      {
+        "type": "otla_sitout",
+        "area": 150
+      },
+      {
+        "type": "storytelling_amphitheater",
+        "area": 200
+      },
+      {
+        "type": "courtyard_1",
+        "area": 225
+      },
+      {
+        "type": "courtyard_2",
+        "area": 225
+      },
+      {
+        "type": "kitchen",
+        "area": 180
+      },
+      {
+        "type": "kitchen_garden",
+        "area": 150
+      },
+      {
+        "type": "living_room",
+        "area": 300
+      },
+      {
+        "type": "dining_room",
+        "area": 200
+      },
+      {
+        "type": "master_bedroom",
+        "area": 300
+      },
+      {
+        "type": "bedroom_2",
+        "area": 225
+      },
+      {
+        "type": "bedroom_3",
+        "area": 225
+      },
+      {
+        "type": "puja_room",
+        "area": 100
+      },
+      {
+        "type": "study_future_nursery",
+        "area": 150
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 13500000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "otla_sitout",
+          "type": "outdoor",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 5
+          },
+          "doors": [
+            "south_entrance"
+          ],
+          "windows": [],
+          "description": "Traditional otla sit-out with a swing (jhula), featuring carved sandstone pillars with traditional motifs. South-facing for solar optimization."
+        },
+        {
+          "id": "storytelling_amphitheater",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "to_otla",
+            "to_courtyard_1"
+          ],
+          "windows": [
+            "south_wall"
+          ],
+          "description": "Traditional storytelling area with amphitheater-style stepped seating, south-facing for light and ventilation."
+        },
+        {
+          "id": "courtyard_1",
+          "type": "outdoor",
+          "bounds": {
+            "x": 20,
+            "y": 5,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "from_storytelling",
+            "from_kitchen"
+          ],
+          "windows": [],
+          "description": "Central courtyard for passive cooling and cross-ventilation. Integrated with the kitchen garden and composting system."
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            "to_courtyard_1",
+            "to_dining"
+          ],
+          "windows": [
+            "east_wall"
+          ],
+          "description": "Kitchen with integrated composting chute to the garden below. Designed for cross-ventilation."
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 26,
+            "width": 10,
+            "height": 9
+          },
+          "doors": [
+            "from_kitchen",
+            "to_living"
+          ],
+          "windows": [
+            "east_wall"
+          ],
+          "description": "Dining area adjacent to the kitchen and living room."
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "from_dining",
+            "to_courtyard_2"
+          ],
+          "windows": [
+            "south_wall",
+            "west_wall"
+          ],
+          "description": "Spacious living room with high ceilings and traditional Rajasthani stone carvings. Connects to the rear courtyard."
+        },
+        {
+          "id": "courtyard_2",
+          "type": "outdoor",
+          "bounds": {
+            "x": 20,
+            "y": 35,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "from_living"
+          ],
+          "windows": [],
+          "description": "Secondary courtyard for enhanced cross-ventilation and light. Features termite-resistant treated wood and traditional pest control herbs."
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "to_balcony"
+          ],
+          "windows": [
+            "south_wall",
+            "overlooking_courtyard_1"
+          ],
+          "description": "Luxury master bedroom with a private balcony overlooking the front otla. South-facing for solar heat gain in winter."
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            "east_wall",
+            "overlooking_courtyard_1"
+          ],
+          "description": "Bedroom with views into the central courtyard for light and passive cooling."
+        },
+        {
+          "id": "puja_room",
+          "type": "other",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 7,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            "east_wall"
+          ],
+          "description": "Traditional prayer room with intricate stone carvings."
+        },
+        {
+          "id": "study_future_nursery",
+          "type": "other",
+          "bounds": {
+            "x": 22,
+            "y": 15,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            "east_wall"
+          ],
+          "description": "Flexible space currently configured as a study, designed for easy conversion to a nursery."
+        },
+        {
+          "id": "void_over_courtyard_1",
+          "type": "outdoor",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 10,
+            "height": 25
+          },
+          "doors": [],
+          "windows": [],
+          "description": "Open void above the ground-floor courtyard, facilitating stack effect for passive cooling."
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_terrace"
+          ],
+          "windows": [
+            "south_wall",
+            "west_wall"
+          ],
+          "description": "Third bedroom with access to the rooftop terrace. South-facing for optimal sunlight."
+        },
+        {
+          "id": "terrace",
+          "type": "outdoor",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 30,
+            "height": 35
+          },
+          "doors": [
+            "from_bedroom_3"
+          ],
+          "windows": [],
+          "description": "Large rooftop terrace for future expansion, family activities, and solar panel installation. Surrounded by jali walls for privacy and cooling."
+        },
+        {
+          "id": "void_over_courtyard_2",
+          "type": "outdoor",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [],
+          "description": "Open void above the first-floor void, continuing the stack ventilation chimney for the entire house."
+        }
+      ]
+    }
+  ]
+}

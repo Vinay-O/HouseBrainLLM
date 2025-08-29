@@ -1,0 +1,59 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 20, "width": 15},
+          "location": [10, 40],
+          "features": ["Vastu compliant"]
+        },
+        {
+          "room_name": "Bedroom",
+          "dimensions": {"length": 15, "width": 12},
+          "location": [30, 60],
+          "features": ["Attached bathroom", "Balcony access"]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 15, "width": 10},
+          "location": [45, 10],
+          "features": ["Vastu compliant stove placement"]
+        },
+        {
+          "room_name": "Dining Room",
+          "dimensions": {"length": 12, "width": 8},
+          "location": [35, 10],
+          "features": []
+        },
+        {
+          "room_name": "Library",
+          "dimensions": {"length": 10, "width": 8},
+          "location": [5, 15],
+          "features": ["Vastu compliant"]
+        },
+        {
+          "room_name": "Home Theater Room",
+          "dimensions": {"length": 20, "width": 10},
+          "location": [35, 40],
+          "features": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "room_connection": ["Living Room", "Dining Room"],
+          "dimensions": {"height": 7.5, "width": 2.5},
+          "location": [34.5, 19]
+        },
+        {
+          "opening_type": "window",
+          "room_connection": "Library",
+          "dimensions": {"height": 6, "width": 8},
+          "location": [7.5, 12]
+        }
+      ]
+    }
+  ]
+}

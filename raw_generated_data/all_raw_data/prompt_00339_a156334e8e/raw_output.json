@@ -1,0 +1,84 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Master_Bedroom",
+          "area_sqft": 350,
+          "location": [120, 180],
+          "orientation": "north-east"
+        },
+        {
+          "room_name": "Guest_Room_1",
+          "area_sqft": 200,
+          "location": [400, 300],
+          "orientation": "south-west"
+        },
+        {
+          "room_name": "Guest_Room_2",
+          "area_sqft": 200,
+          "location": [180, 300],
+          "orientation": "south-east"
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 250,
+          "location": [420, 120],
+          "orientation": "north-west"
+        },
+        {
+          "room_name": "Living_Room",
+          "area_sqft": 350,
+          "location": [60, 280],
+          "orientation": "east"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "location": [190, 240],
+          "connects_to": ["Master_Bedroom", "Living_Room"]
+        },
+        {
+          "opening_type": "window",
+          "location": [50, 350],
+          "orientation": "south"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Bedroom_3",
+          "area_sqft": 250,
+          "location": [180, 160],
+          "orientation": "north-east"
+        },
+        {
+          "room_name": "Bedroom_4",
+          "area_sqft": 250,
+          "location": [350, 160],
+          "orientation": "south-west"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "location": [70, 240]
+        },
+        {
+          "opening_type": "window",
+          "location": [250, 350],
+          "orientation": "south"
+        }
+      ]
+    }
+  ],
+  "central_courtyard": {
+    "area_sqft": 500,
+    "location": [180, 40]
+  },
+  "vastu_compliance": true
+}

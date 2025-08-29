@@ -1,0 +1,362 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 1500,
+      "style": "Traditional Gujarati Pol"
+    },
+    "plot": {
+      "width": 30,
+      "length": 50,
+      "orientation": "east",
+      "location": "Chennai coastal"
+    },
+    "roomBreakdown": [
+      {
+        "type": "puja_room",
+        "area": 80,
+        "description": "East-facing prayer room for daily worship"
+      },
+      {
+        "type": "meditation_room",
+        "area": 60,
+        "description": "Quiet space for meditation adjacent to courtyard"
+      },
+      {
+        "type": "community_courtyard",
+        "area": 400,
+        "description": "Central shared courtyard for gatherings"
+      },
+      {
+        "type": "otla",
+        "area": 120,
+        "description": "Traditional sit-out with swing (jhula) facing east"
+      },
+      {
+        "type": "storytelling_amphitheater",
+        "area": 150,
+        "description": "Sunken seating area for community storytelling"
+      },
+      {
+        "type": "cooling_chamber",
+        "area": 90,
+        "description": "Underground cooling space using traditional techniques"
+      }
+    ]
+  },
+  "total_area": 1500.0,
+  "construction_cost": 225000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "community_courtyard",
+          "type": "community_courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 15
+              },
+              "direction": "north",
+              "to": "otla"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 35
+              },
+              "direction": "south",
+              "to": "storytelling_amphitheater"
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 25
+              },
+              "direction": "west",
+              "to": "bedroom_1"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 25
+              },
+              "direction": "east",
+              "to": "bedroom_2"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "otla",
+          "type": "otla",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 15
+              },
+              "direction": "south",
+              "to": "community_courtyard"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "direction": "north",
+              "to": "main_entrance"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 7
+              },
+              "direction": "west"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 7
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 5
+              },
+              "direction": "west",
+              "to": "otla"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 5
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "meditation_room",
+          "type": "meditation_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 5
+              },
+              "direction": "east",
+              "to": "otla"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "direction": "west"
+            }
+          ]
+        },
+        {
+          "id": "storytelling_amphitheater",
+          "type": "storytelling_amphitheater",
+          "bounds": {
+            "x": 5,
+            "y": 35,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 35
+              },
+              "direction": "north",
+              "to": "community_courtyard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 17
+              },
+              "direction": "east",
+              "to": "community_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 17
+              },
+              "direction": "west"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 32
+              },
+              "direction": "east",
+              "to": "community_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 32
+              },
+              "direction": "west"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 17
+              },
+              "direction": "west",
+              "to": "community_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 17
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 25,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 32
+              },
+              "direction": "west",
+              "to": "community_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 32
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "cooling_chamber",
+          "type": "cooling_chamber",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 45
+              },
+              "direction": "east",
+              "to": "storytelling_amphitheater"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

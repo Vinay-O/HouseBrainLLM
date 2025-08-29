@@ -1,0 +1,454 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 5,
+      "floors": 2,
+      "totalArea": 2400,
+      "style": "Scandinavian Hygge"
+    },
+    "plot": {
+      "slope": "sloping",
+      "terrain": "vineyard",
+      "climate": "humid subtropical",
+      "orientation": "east-west linear",
+      "noiseSource": "highway"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 5
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "spa",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 360000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            "living_room_0"
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            "kitchen_0",
+            "living_room_0"
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 24,
+            "height": 20
+          },
+          "doors": [
+            "dining_room_0",
+            "entry_0",
+            "deck_0"
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "size": "floor-to-ceiling"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_0_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            "hall_0"
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_0_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 20,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "hall_0"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 12,
+            "y": 30,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "hall_0"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_0_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 24,
+            "y": 20,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            "hall_0"
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "size": "standard"
+            }
+          ]
+        },
+        {
+          "id": "spa_0",
+          "type": "spa",
+          "bounds": {
+            "x": 36,
+            "y": 20,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            "hall_0"
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "size": "frosted"
+            }
+          ],
+          "features": [
+            "massage_tables",
+            "steam_shower"
+          ]
+        },
+        {
+          "id": "entry_0",
+          "type": "entryway",
+          "bounds": {
+            "x": 36,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "living_room_0",
+            "exterior"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hall_0",
+          "type": "hallway",
+          "bounds": {
+            "x": 24,
+            "y": 20,
+            "width": 24,
+            "height": 5
+          },
+          "doors": [
+            "bedroom_0_0",
+            "bathroom_0_0",
+            "utility_0",
+            "bedroom_0_1",
+            "spa_0",
+            "stairs_0"
+          ],
+          "windows": []
+        },
+        {
+          "id": "stairs_0",
+          "type": "stairs",
+          "bounds": {
+            "x": 48,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "entry_0",
+            "hall_1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "deck_0",
+          "type": "deck",
+          "bounds": {
+            "x": 24,
+            "y": -10,
+            "width": 24,
+            "height": 10
+          },
+          "doors": [
+            "living_room_0"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            "hall_1"
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "hall_1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "hall_1"
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            "hall_1"
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "size": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 36,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "hall_1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "flex_room_1",
+          "type": "flex_room",
+          "bounds": {
+            "x": 36,
+            "y": 10,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "hall_1"
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "size": "standard"
+            }
+          ]
+        },
+        {
+          "id": "hall_1",
+          "type": "hallway",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 24,
+            "height": 5
+          },
+          "doors": [
+            "bedroom_1_0",
+            "bathroom_1_0",
+            "bedroom_1_1",
+            "bedroom_1_2",
+            "bathroom_1_1",
+            "flex_room_1",
+            "stairs_1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "stairs_1",
+          "type": "stairs",
+          "bounds": {
+            "x": 48,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "hall_1",
+            "entry_0"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "materials": {
+    "exteriorWalls": [
+      "shipping_container",
+      "spray_foam_insulation",
+      "wood_cladding"
+    ],
+    "interiorWalls": [
+      "soundproof_drywall"
+    ],
+    "windows": [
+      "double_paned_low_e",
+      "acoustic_glass"
+    ],
+    "roofing": [
+      "green_roof"
+    ],
+    "flooring": [
+      "engineered_hardwood",
+      "heated_floors"
+    ]
+  },
+  "systems": {
+    "hvac": [
+      "energy_recovery_ventilator",
+      "mini_split_heat_pumps"
+    ],
+    "electrical": [
+      "smart_hub",
+      "automated_lighting",
+      "motorized_blinds",
+      "energy_monitoring"
+    ],
+    "plumbing": [
+      "tankless_water_heater",
+      "greywater_system"
+    ]
+  },
+  "site_features": [
+    "terraced_retaining_walls",
+    "pergola",
+    "native_landscaping"
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 2200,
+      "style": "Earthship"
+    },
+    "plot": {
+      "description": "Windswept coastal bluff in humid subtropical climate, following natural contours",
+      "size": "Moderate",
+      "terrain": "Sloping"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 160
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "atrium",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "fitness",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "home_office",
+        "count": 1,
+        "area": 240
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 385000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "central_atrium",
+          "type": "atrium",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "north_wing",
+            "south_wing",
+            "east_wing",
+            "west_wing"
+          ],
+          "windows": [
+            "skylight_roof"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "atrium_access",
+            "main_entry"
+          ],
+          "windows": [
+            "north_wall",
+            "west_wall"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "dining_access",
+            "patio_access"
+          ],
+          "windows": [
+            "south_wall",
+            "east_wall"
+          ]
+        },
+        {
+          "id": "dining_area",
+          "type": "dining",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "kitchen_access",
+            "atrium_access"
+          ],
+          "windows": [
+            "south_wall"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "atrium_access",
+            "bathroom_access"
+          ],
+          "windows": [
+            "east_wall",
+            "south_wall"
+          ]
+        },
+        {
+          "id": "master_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 35,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_access"
+          ],
+          "windows": [
+            "east_wall"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "atrium_access",
+            "bathroom_access"
+          ],
+          "windows": [
+            "west_wall",
+            "north_wall"
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 50,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_access",
+            "hall_access"
+          ],
+          "windows": [
+            "west_wall"
+          ]
+        },
+        {
+          "id": "fitness_room",
+          "type": "fitness",
+          "bounds": {
+            "x": 20,
+            "y": 35,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "atrium_access"
+          ],
+          "windows": [
+            "north_wall_climbing"
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 55,
+            "y": 0,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            "separate_entrance",
+            "main_house_access"
+          ],
+          "windows": [
+            "east_wall",
+            "south_wall"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 55,
+            "y": 20,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "main_house_access",
+            "exterior_access"
+          ],
+          "windows": [
+            "east_wall"
+          ]
+        }
+      ]
+    }
+  ]
+}

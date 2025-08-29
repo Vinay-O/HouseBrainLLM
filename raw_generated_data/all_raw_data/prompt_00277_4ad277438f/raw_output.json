@@ -1,0 +1,85 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "area_sqft": 500,
+          "location": { "x": 15, "y": 20 },
+          "adjacent_rooms": ["Kitchen", "Home Theater"],
+          "special_features": ["North-facing"]
+        },
+        {
+          "room_name": "Bedroom",
+          "area_sqft": 300,
+          "location": { "x": 85, "y": 12 },
+          "adjacent_rooms": ["Bathroom"],
+          "special_features": []
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 150,
+          "location": { "x": 15, "y": 5 },
+          "adjacent_rooms": ["Living Room", "Dining Area"],
+          "special_features": []
+        },
+        {
+          "room_name": "Home Theater",
+          "area_sqft": 200,
+          "location": { "x": 45, "y": 30 },
+          "adjacent_rooms": ["Living Room"],
+          "special_features": ["Soundproof"]
+        },
+        {
+          "room_name": "Dining Area",
+          "area_sqft": 150,
+          "location": { "x": 25, "y": 45 },
+          "adjacent_rooms": ["Kitchen"],
+          "special_features": []
+        },
+        {
+          "room_name": "Bathroom",
+          "area_sqft": 75,
+          "location": { "x": 80, "y": 12 },
+          "adjacent_rooms": ["Bedroom"],
+          "special_features": []
+        },
+        {
+          "room_name": "Central Courtyard",
+          "area_sqft": 400,
+          "location": { "x": 65, "y": 35 },
+          "adjacent_rooms": ["Living Room", "Dining Area"],
+          "special_features": ["Natural Light", "Ventilation"]
+        },
+        {
+          "room_name": "Garage",
+          "area_sqft": 400,
+          "location": { "x": 125, "y": 60 },
+          "adjacent_rooms": [],
+          "special_features": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Door",
+          "location": { "x": 20, "y": 48 },
+          "direction": "North",
+          "connected_to": "Living Room"
+        },
+        {
+          "opening_type": "Window",
+          "location": { "x": 50, "y": 37 },
+          "direction": "East",
+          "connected_to": "Home Theater"
+        },
+        {
+          "opening_type": "Window",
+          "location": { "x": 82, "y": 14 },
+          "direction": "South",
+          "connected_to": "Bedroom"
+        }
+      ]
+    }
+  ]
+}

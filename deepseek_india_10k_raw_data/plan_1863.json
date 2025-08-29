@@ -1,0 +1,367 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 3200,
+      "style": "Traditional Marathi Wada"
+    },
+    "plot": {
+      "width": 40,
+      "length": 80,
+      "orientation": "West-facing",
+      "location": "Meerut sugar belt",
+      "constraints": [
+        "Flooding and waterlogging during monsoons",
+        "Universal accessibility for specially-abled member",
+        "Gated community plot"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "Bedroom",
+        "count": 3,
+        "description": "Main family bedrooms with accessible features"
+      },
+      {
+        "type": "Master Bedroom",
+        "count": 1,
+        "description": "Primary bedroom with accessible ensuite"
+      },
+      {
+        "type": "Guest House",
+        "count": 1,
+        "description": "Separate entrance for privacy with bedroom, bathroom and small sitting area"
+      },
+      {
+        "type": "Baithak",
+        "count": 1,
+        "description": "Traditional seating area with low platforms"
+      },
+      {
+        "type": "Courtyard",
+        "count": 1,
+        "description": "Central open courtyard for ventilation and traditional activities"
+      },
+      {
+        "type": "Kitchen",
+        "count": 1,
+        "description": "Traditional kitchen with accessible design"
+      },
+      {
+        "type": "Puja Room",
+        "count": 1,
+        "description": "Prayer room facing east"
+      },
+      {
+        "type": "Bathroom",
+        "count": 3,
+        "description": "Accessible bathrooms with roll-in showers"
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 3840000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12.5
+            },
+            {
+              "wall": "south",
+              "position": 12.5
+            },
+            {
+              "wall": "east",
+              "position": 12.5
+            },
+            {
+              "wall": "west",
+              "position": 12.5
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Traditional stone inlay floor patterns",
+            "Water drainage system",
+            "Wind capture ventilation"
+          ]
+        },
+        {
+          "id": "main_entrance",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5,
+              "type": "main_entry"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "features": [
+            "Ramp access",
+            "Wheelchair turning space",
+            "Traditional threshold"
+          ]
+        },
+        {
+          "id": "living_baithak",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7.5,
+              "type": "capture_evening_breeze"
+            }
+          ],
+          "features": [
+            "Low platform seating",
+            "Traditional stone flooring",
+            "Universal accessibility"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "type": "evening_breeze"
+            }
+          ],
+          "features": [
+            "Wheelchair accessible",
+            "Emergency call system",
+            "Ensuite bathroom"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "features": [
+            "Accessible design",
+            "Built-in storage"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "features": [
+            "Accessible design",
+            "Natural ventilation"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 40,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "features": [
+            "Adaptive counter heights",
+            "Accessible storage",
+            "Traditional cooking area"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "prayer_room",
+          "bounds": {
+            "x": 30,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "features": [
+            "East facing",
+            "Traditional decor",
+            "Accessible entrance"
+          ]
+        },
+        {
+          "id": "guest_house",
+          "type": "guest_quarters",
+          "bounds": {
+            "x": 25,
+            "y": 50,
+            "width": 15,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "type": "separate_entrance"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5
+            },
+            {
+              "wall": "west",
+              "position": 15,
+              "type": "evening_breeze"
+            }
+          ],
+          "features": [
+            "Private entrance",
+            "Self-contained unit",
+            "Accessible bathroom"
+          ]
+        },
+        {
+          "id": "wind_pump_system",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2.5
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Wind-powered water pumping",
+            "Ventilation system",
+            "Water storage"
+          ]
+        }
+      ]
+    }
+  ]
+}

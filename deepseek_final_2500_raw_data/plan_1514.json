@@ -1,0 +1,238 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2200.0,
+      "style": "Art Deco Revival"
+    },
+    "plot": {
+      "shape": "Rectangular",
+      "slope": "Sunken Courtyard",
+      "climate": "Desert with Extreme Temperatures",
+      "prevailingWindDirection": "Diagonal to Plan",
+      "stormwaterManagement": "Bioswales"
+    },
+    "roomBreakdown": [
+      {
+        "type": "sunken_living_room",
+        "area": 350.0
+      },
+      {
+        "type": "kitchen",
+        "area": 200.0
+      },
+      {
+        "type": "dining_room",
+        "area": 180.0
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 300.0
+      },
+      {
+        "type": "guest_bedroom",
+        "area": 250.0
+      },
+      {
+        "type": "primary_bath",
+        "area": 150.0
+      },
+      {
+        "type": "guest_bath",
+        "area": 100.0
+      },
+      {
+        "type": "sauna",
+        "area": 120.0
+      },
+      {
+        "type": "yoga_studio",
+        "area": 250.0
+      },
+      {
+        "type": "garage",
+        "area": 300.0
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 330000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "sunken_living_room",
+          "type": "sunken_living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 14
+          },
+          "doors": [
+            "entry_door",
+            "to_dining"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "to_living",
+            "to_kitchen"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 37,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "to_dining",
+            "to_garage"
+          ],
+          "windows": [
+            "west_window"
+          ]
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 47,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "garage_door",
+            "to_kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_bath",
+          "type": "guest_bath",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "sauna",
+          "type": "sauna",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "panoramic_window_north",
+            "panoramic_window_east"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "primary_bath",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12.5
+          },
+          "doors": [
+            "to_bedroom"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 15,
+            "height": 16.67
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "yoga_studio",
+          "type": "yoga_studio",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 25,
+            "height": 10
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "north_window",
+            "east_window",
+            "skylight"
+          ]
+        }
+      ]
+    }
+  ]
+}

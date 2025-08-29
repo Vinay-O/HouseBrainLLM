@@ -1,0 +1,274 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 4200,
+      "style": "Organic Architecture"
+    },
+    "plot": {
+      "width": 60,
+      "depth": 70,
+      "orientation": "diagonal to prevailing winds",
+      "location": "flood-prone riverside",
+      "climate": "temperate maritime",
+      "topography": "ravine",
+      "privacy_requirements": "high privacy from neighboring properties"
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_brewery",
+        "requirements": "temperature control, ventilation, utility access"
+      },
+      {
+        "type": "master_bedroom",
+        "requirements": "privacy, views, ensuite bathroom"
+      },
+      {
+        "type": "office",
+        "requirements": "quiet, natural light, connectivity"
+      }
+    ],
+    "materialPreferences": [
+      "cork flooring",
+      "bamboo finishes",
+      "weather-resistant materials"
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 3850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "elevation": 8.5,
+      "rooms": [
+        {
+          "id": "great_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            "entry_door_north",
+            "door_to_kitchen",
+            "door_to_deck"
+          ],
+          "windows": [
+            "window_wall_south",
+            "window_east"
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "door_to_great_room",
+            "door_to_pantry",
+            "door_to_deck"
+          ],
+          "windows": [
+            "window_wall_south"
+          ]
+        },
+        {
+          "id": "pantry",
+          "type": "storage",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            "door_to_kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 40,
+            "y": 8,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "garage_door_east",
+            "door_to_utility"
+          ],
+          "windows": [
+            "window_north"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "door_to_garage",
+            "door_to_brewery"
+          ],
+          "windows": []
+        },
+        {
+          "id": "home_brewery",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 25,
+            "height": 10
+          },
+          "doors": [
+            "door_to_utility",
+            "exterior_access_door"
+          ],
+          "windows": [
+            "window_north",
+            "window_south"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "elevation": 11.0,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "door_to_hall",
+            "door_to_ensuite"
+          ],
+          "windows": [
+            "window_wall_south",
+            "window_east"
+          ]
+        },
+        {
+          "id": "ensuite_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "door_to_master"
+          ],
+          "windows": [
+            "window_north"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_south",
+            "window_west"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_south",
+            "window_east"
+          ]
+        },
+        {
+          "id": "office",
+          "type": "office",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_wall_north",
+            "window_east"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_north"
+          ]
+        },
+        {
+          "id": "flex_space",
+          "type": "recreation",
+          "bounds": {
+            "x": 30,
+            "y": 12,
+            "width": 30,
+            "height": 13
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "window_north",
+            "window_east",
+            "window_west"
+          ]
+        }
+      ]
+    }
+  ]
+}

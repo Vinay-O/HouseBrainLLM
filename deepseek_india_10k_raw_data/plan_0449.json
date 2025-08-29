@@ -1,0 +1,242 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 2500,
+      "style": "Heritage-Inspired Linear Pavilion"
+    },
+    "plot": {
+      "width": 25,
+      "length": 100,
+      "location": "Jammu",
+      "orientation": "North-South",
+      "frontage": "Dual Street (Corner Plot)",
+      "challenges": [
+        "Railway Proximity",
+        "Desert Sandstorms",
+        "Extreme Heat"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "production_space",
+        "area": 1000
+      },
+      {
+        "type": "heritage_library",
+        "area": 300
+      },
+      {
+        "type": "dye_preparation_area",
+        "area": 200
+      },
+      {
+        "type": "living_quarters",
+        "area": 1000
+      }
+    ],
+    "materials": [
+      "Assamese Bamboo",
+      "Wood",
+      "Natural Stone",
+      "Jaali Screens",
+      "Natural Pigments"
+    ],
+    "specialFeatures": [
+      "Temperature-Controlled Storage",
+      "Natural Ventilation Systems",
+      "Sandstorm Protection",
+      "Thermal Mass Construction"
+    ]
+  },
+  "total_area": 2500.0,
+  "construction_cost": 6250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "production_space_west",
+          "type": "production_space",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 80
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 10
+              },
+              "type": "double_wooden",
+              "to": "exterior"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 70
+              },
+              "type": "double_wooden",
+              "to": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 12,
+                "y": 20
+              },
+              "type": "jaali_screen",
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 12,
+                "y": 40
+              },
+              "type": "jaali_screen",
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 12,
+                "y": 60
+              },
+              "type": "jaali_screen",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "circulation_courtyard",
+          "type": "corridor",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 6,
+            "height": 80
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "dye_preparation_area",
+          "type": "utility",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 7,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 18,
+                "y": 12
+              },
+              "type": "single_wooden",
+              "to": "circulation_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 5
+              },
+              "type": "jaali_screen",
+              "size": "medium"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 15
+              },
+              "type": "jaali_screen",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "heritage_library",
+          "type": "library",
+          "bounds": {
+            "x": 18,
+            "y": 25,
+            "width": 7,
+            "height": 30
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 18,
+                "y": 40
+              },
+              "type": "single_wooden",
+              "to": "circulation_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 30
+              },
+              "type": "double_glazed",
+              "size": "small"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 40
+              },
+              "type": "double_glazed",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "living_quarters",
+          "type": "living_room",
+          "bounds": {
+            "x": 18,
+            "y": 55,
+            "width": 7,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 18,
+                "y": 67
+              },
+              "type": "single_wooden",
+              "to": "circulation_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 60
+              },
+              "type": "jaali_screen",
+              "size": "medium"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 70
+              },
+              "type": "jaali_screen",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

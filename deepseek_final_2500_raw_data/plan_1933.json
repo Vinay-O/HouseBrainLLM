@@ -1,0 +1,207 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Contemporary Glass Box"
+    },
+    "plot": {
+      "description": "Desert plateau with panoramic views, temperate maritime climate, natural contours",
+      "size": "Custom",
+      "orientation": "Views optimized",
+      "topography": "Sloping, natural contours"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "description": "Primary suite with accessible bathroom, secondary bedroom/study"
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "description": "Primary en-suite with walk-in shower, guest bathroom"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Open-plan kitchen with accessible design"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Great room with panoramic glass walls"
+      },
+      {
+        "type": "home_theater",
+        "count": 1,
+        "description": "Dedicated theater with fiber optic star ceiling"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "description": "Laundry and mechanical room"
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 285000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "primary_bathroom_door",
+            "exterior_door"
+          ],
+          "windows": [
+            "north_glass_wall",
+            "east_view_window"
+          ]
+        },
+        {
+          "id": "primary_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 10,
+            "height": 14
+          },
+          "doors": [
+            "primary_bedroom_door"
+          ],
+          "windows": [
+            "east_operable_window"
+          ]
+        },
+        {
+          "id": "secondary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 26,
+            "y": 0,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": [
+            "south_glass_wall"
+          ]
+        },
+        {
+          "id": "guest_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": [
+            "west_vent_window"
+          ]
+        },
+        {
+          "id": "great_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            "kitchen_pass_through",
+            "exterior_slider",
+            "hallway_door"
+          ],
+          "windows": [
+            "north_full_glass",
+            "south_full_glass",
+            "west_view_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 14,
+            "width": 18,
+            "height": 12
+          },
+          "doors": [
+            "great_room_pass_through",
+            "pantry_door"
+          ],
+          "windows": [
+            "south_operable_window"
+          ]
+        },
+        {
+          "id": "pantry_utility",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 26,
+            "width": 18,
+            "height": 8
+          },
+          "doors": [
+            "kitchen_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "home_theater",
+          "type": "home_theater",
+          "bounds": {
+            "x": 0,
+            "y": 34,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "hallway_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "circulation",
+          "type": "hallway",
+          "bounds": {
+            "x": 20,
+            "y": 34,
+            "width": 8,
+            "height": 16
+          },
+          "doors": [
+            "great_room_door",
+            "theater_door",
+            "bedroom_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        }
+      ]
+    }
+  ]
+}

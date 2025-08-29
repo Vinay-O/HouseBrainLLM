@@ -1,0 +1,338 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 2200,
+      "style": "Farmhouse Modern"
+    },
+    "plot": {
+      "size": "N/A",
+      "orientation": "Diagonal to prevailing winds",
+      "location": "Former industrial site with concrete foundations",
+      "climate": "Mediterranean dry summers",
+      "noiseSources": [
+        "Highway"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "music_room",
+        "requirements": "Acoustic isolation"
+      },
+      {
+        "type": "home_office",
+        "requirements": "Panoramic views, quiet"
+      },
+      {
+        "type": "master_bedroom",
+        "requirements": "Panoramic views, sound isolation"
+      },
+      {
+        "type": "guest_bedroom",
+        "requirements": "Sound isolation"
+      },
+      {
+        "type": "open_living",
+        "requirements": "Panoramic views, connection to outdoor"
+      },
+      {
+        "type": "kitchen",
+        "requirements": "Open to living, functional"
+      },
+      {
+        "type": "bathroom",
+        "requirements": "Functional"
+      },
+      {
+        "type": "utility",
+        "requirements": "Compact"
+      },
+      {
+        "type": "entry",
+        "requirements": "Welcoming"
+      },
+      {
+        "type": "outdoor_terrace",
+        "requirements": "Panoramic views, shaded"
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 385000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry",
+          "type": "entry",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "wall": "south"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "overhead",
+              "wall": "east"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "standard"
+            }
+          ]
+        },
+        {
+          "id": "dining",
+          "type": "dining",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "master_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "north"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "standard"
+            }
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "office",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "size": "large"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "music_room",
+          "type": "other",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "terrace",
+          "type": "outdoor",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "wall": "west"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

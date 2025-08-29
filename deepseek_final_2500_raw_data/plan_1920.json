@@ -1,0 +1,426 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 1920,
+      "style": "Japanese Zen"
+    },
+    "plot": {
+      "shape": "Rectangular",
+      "area": 5000,
+      "orientation": "East-West",
+      "topography": "Flood-prone riverside",
+      "climate": "Humid subtropical"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3,
+        "areaPerUnit": 120
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "areaPerUnit": 60
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "areaPerUnit": 200
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "areaPerUnit": 150
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "areaPerUnit": 250
+      },
+      {
+        "type": "storm_shelter",
+        "count": 1,
+        "areaPerUnit": 100
+      },
+      {
+        "type": "hydroponic_garden",
+        "count": 1,
+        "areaPerUnit": 200
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "areaPerUnit": 80
+      }
+    ]
+  },
+  "total_area": 1920.0,
+  "construction_cost": 288000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "elevation": 72,
+      "rooms": [
+        {
+          "id": "storm_shelter_0",
+          "type": "storm_shelter",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 10
+              },
+              "to_room": "living_room_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 10
+              },
+              "to_room": "dining_room_0"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "to_room": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 0
+              },
+              "length": 4
+            }
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "to_room": "kitchen_0"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 10
+              },
+              "to_room": "living_room_0"
+            },
+            {
+              "position": {
+                "x": 27.5,
+                "y": 20
+              },
+              "to_room": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 27.5,
+                "y": 0
+              },
+              "length": 6
+            }
+          ]
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 10
+              },
+              "to_room": "dining_room_0"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 10
+              },
+              "to_room": "hydroponic_garden_0"
+            },
+            {
+              "position": {
+                "x": 42.5,
+                "y": 20
+              },
+              "to_room": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 42.5,
+                "y": 0
+              },
+              "length": 8
+            }
+          ]
+        },
+        {
+          "id": "hydroponic_garden_0",
+          "type": "hydroponic_garden",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 50,
+                "y": 10
+              },
+              "to_room": "living_room_0"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 4
+              },
+              "to_room": "exterior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 60,
+            "y": 8,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 14
+              },
+              "to_room": "exterior"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "elevation": 144,
+      "rooms": [
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 16
+              },
+              "to_room": "hallway_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 0
+              },
+              "length": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 22.5,
+                "y": 16
+              },
+              "to_room": "hallway_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 22.5,
+                "y": 0
+              },
+              "length": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 37.5,
+                "y": 16
+              },
+              "to_room": "hallway_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 37.5,
+                "y": 0
+              },
+              "length": 5
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 52.5,
+                "y": 12
+              },
+              "to_room": "hallway_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway_1",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 60,
+            "height": 4
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 16
+              },
+              "to_room": "bedroom_1_1"
+            },
+            {
+              "position": {
+                "x": 22.5,
+                "y": 16
+              },
+              "to_room": "bedroom_2_1"
+            },
+            {
+              "position": {
+                "x": 37.5,
+                "y": 16
+              },
+              "to_room": "bedroom_3_1"
+            },
+            {
+              "position": {
+                "x": 52.5,
+                "y": 16
+              },
+              "to_room": "bathroom_1_1"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 20
+              },
+              "to_room": "stairs"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

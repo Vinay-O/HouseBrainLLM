@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "Living Room",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["natural light", "ventilation"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "Kitchen",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["ventilation", "storage"]
+        },
+        {
+          "room_id": "dining_room",
+          "type": "Dining Room",
+          "dimensions": { "length": 8, "width": 6 }
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "Bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["natural light"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "Bedroom",
+          "dimensions": { "length": 10, "width": 8 }
+        },
+        {
+          "room_id": "servant_quarters",
+          "type": "Servant Quarters",
+          "dimensions": { "length": 8, "width": 6 }
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "Bathroom",
+          "dimensions": { "length": 5, "width": 4 }
+        },
+        {
+          "room_id": "bathroom_2",
+          "type": "Bathroom",
+          "dimensions": { "length": 5, "width": 4 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "entrance",
+          "type": "Entrance",
+          "orientation": "North",
+          "features": ["natural light"]
+        },
+        {
+          "opening_id": "window_living_room",
+          "type": "Window",
+          "room_id": "living_room",
+          "features": ["ventilation", "natural light"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "type": "Bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["natural light"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "type": "Bedroom",
+          "dimensions": { "length": 10, "width": 8 }
+        },
+        {
+          "room_id": "bathroom_3",
+          "type": "Bathroom",
+          "dimensions": { "length": 5, "width": 4 }
+        },
+        {
+          "room_id": "balcony",
+          "type": "Balcony",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["natural light", "ventilation"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "window_bedroom_3",
+          "type": "Window",
+          "room_id": "bedroom_3",
+          "features": ["ventilation", "natural light"]
+        },
+        {
+          "opening_id": "window_bedroom_4",
+          "type": "Window",
+          "room_id": "bedroom_4",
+          "features": ["ventilation", "natural light"]
+        }
+      ]
+    }
+  ],
+  "building_type": "farmhouse",
+  "style": "Brutalist",
+  "orientation": "North-facing entrance",
+  "area": 1000,
+  "unit": "sqft"
+}

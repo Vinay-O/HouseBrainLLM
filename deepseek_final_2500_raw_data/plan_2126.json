@@ -1,0 +1,140 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 480,
+      "style": "Industrial Loft"
+    },
+    "plot": {
+      "orientation": "east-west",
+      "climate": "humid subtropical",
+      "constraints": [
+        "compact urban balcony",
+        "privacy from neighbors"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "type": "kitchen",
+        "area": 80
+      },
+      {
+        "type": "living_room",
+        "area": 120
+      },
+      {
+        "type": "utility",
+        "area": 100,
+        "specialFeatures": [
+          "home brewery",
+          "temperature control",
+          "heat recovery ventilation"
+        ]
+      }
+    ]
+  },
+  "total_area": 480.0,
+  "construction_cost": 175000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "entry_door_0"
+          ],
+          "windows": [
+            "north_window_0"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "patio_door_0"
+          ],
+          "windows": [
+            "south_window_0"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "hall_door_1"
+          ],
+          "windows": [
+            "east_window_1"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            "bath_door_1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "brewery_1",
+          "type": "utility",
+          "bounds": {
+            "x": 12,
+            "y": 5,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            "utility_door_1"
+          ],
+          "windows": [],
+          "specialFeatures": [
+            "home brewery",
+            "temperature control",
+            "heat recovery ventilation"
+          ]
+        }
+      ]
+    }
+  ]
+}

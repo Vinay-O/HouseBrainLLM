@@ -1,0 +1,88 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "area_sqft": 250,
+          "location": [10, 10],
+          "features": ["large_window", "open_shelving"]
+        },
+        {
+          "room_type": "kitchen",
+          "area_sqft": 150,
+          "location": [350, 10],
+          "features": ["built-in_cabinets", "utility_area"]
+        },
+        {
+          "room_type": "bedroom",
+          "area_sqft": 200,
+          "location": [10, 300],
+          "features": ["balcony"],
+          "orientation": "north"
+        },
+        {
+          "room_type": "bathroom",
+          "area_sqft": 50,
+          "location": [220, 300]
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "location": [175, 10],
+          "connects_to_room_type": "living_room"
+        },
+        {
+          "type": "window",
+          "location": [250, 10],
+          "view": ["garden"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "area_sqft": 200,
+          "location": [10, 10],
+          "features": ["balcony"],
+          "orientation": "east"
+        },
+        {
+          "room_type": "bedroom",
+          "area_sqft": 200,
+          "location": [350, 10],
+          "features": ["balcony"],
+          "orientation": "south"
+        },
+        {
+          "room_type": "bedroom",
+          "area_sqft": 200,
+          "location": [10, 300],
+          "features": ["balcony"],
+          "orientation": "west"
+        },
+        {
+          "room_type": "bathroom",
+          "area_sqft": 50,
+          "location": [220, 300]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "location": [175, 10],
+          "view": ["cityscape"]
+        },
+        {
+          "type": "window",
+          "location": [420, 10],
+          "view": ["cityscape"]
+        }
+      ]
+    }
+  ]
+}

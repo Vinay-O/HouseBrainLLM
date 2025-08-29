@@ -1,0 +1,313 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 2400,
+      "style": "Kashmiri wooden architecture"
+    },
+    "plot": {
+      "width": 40,
+      "length": 60,
+      "orientation": "north"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "area": 300
+      },
+      {
+        "type": "dining_room",
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "home_office",
+        "area": 200
+      },
+      {
+        "type": "home_theater",
+        "area": 250
+      },
+      {
+        "type": "puja_room",
+        "area": 100
+      },
+      {
+        "type": "garden",
+        "area": 350
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 4800000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "location": "north",
+              "type": "main_entrance"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 6,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "location": "north",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "location": "east",
+              "type": "bay_window"
+            },
+            {
+              "location": "south",
+              "type": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 6,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "location": "west",
+              "type": "internal"
+            },
+            {
+              "location": "south",
+              "type": "external"
+            }
+          ],
+          "windows": [
+            {
+              "location": "east",
+              "type": "double"
+            },
+            {
+              "location": "north",
+              "type": "small"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 26,
+            "width": 15,
+            "height": 14
+          },
+          "doors": [
+            {
+              "location": "north",
+              "type": "internal"
+            },
+            {
+              "location": "east",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "location": "south",
+              "type": "large"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 26,
+            "width": 15,
+            "height": 14
+          },
+          "doors": [
+            {
+              "location": "east",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "location": "north",
+              "type": "double"
+            },
+            {
+              "location": "west",
+              "type": "double"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "location": "east",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "location": "north",
+              "type": "double"
+            },
+            {
+              "location": "west",
+              "type": "double"
+            }
+          ]
+        },
+        {
+          "id": "home_office_1",
+          "type": "home_office",
+          "bounds": {
+            "x": 35,
+            "y": 21,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": "south",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "location": "east",
+              "type": "double"
+            }
+          ]
+        },
+        {
+          "id": "home_office_2",
+          "type": "home_office",
+          "bounds": {
+            "x": 35,
+            "y": 31,
+            "width": 5,
+            "height": 9
+          },
+          "doors": [
+            {
+              "location": "north",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "location": "east",
+              "type": "double"
+            }
+          ]
+        },
+        {
+          "id": "home_theater",
+          "type": "home_theater",
+          "bounds": {
+            "x": 10,
+            "y": 26,
+            "width": 10,
+            "height": 14
+          },
+          "doors": [
+            {
+              "location": "west",
+              "type": "internal"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            {
+              "location": "south",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "location": "east",
+              "type": "stained_glass"
+            }
+          ]
+        },
+        {
+          "id": "internal_garden",
+          "type": "garden",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            {
+              "location": "south",
+              "type": "internal"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

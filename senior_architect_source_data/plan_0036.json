@@ -1,0 +1,377 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 10000,
+      "style": "Marathi Wada with Sustainable Eco-Focus"
+    },
+    "plot": {
+      "size": 10000,
+      "orientation": "west",
+      "terrain": "sloping",
+      "locationContext": "tribal area with sustainable development focus"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4,
+        "specialAttributes": [
+          "elderly accessible",
+          "ground floor priority"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 5,
+        "specialAttributes": [
+          "elderly accessible",
+          "wet area drainage"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "specialAttributes": [
+          "traditional cooking space",
+          "pantry"
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "specialAttributes": [
+          "baithak seating area"
+        ]
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "specialAttributes": [
+          "family dining"
+        ]
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "specialAttributes": [
+          "home office"
+        ]
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "specialAttributes": [
+          "prayer space"
+        ]
+      },
+      {
+        "type": "yoga_pavilion",
+        "count": 1,
+        "specialAttributes": [
+          "traditional meditation space"
+        ]
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "specialAttributes": [
+          "laundry",
+          "storage"
+        ]
+      },
+      {
+        "type": "garage",
+        "count": 1,
+        "specialAttributes": [
+          "2-car capacity"
+        ]
+      }
+    ]
+  },
+  "total_area": 8500.0,
+  "construction_cost": 4250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            "north_wing",
+            "south_wing",
+            "east_wing",
+            "west_wing"
+          ],
+          "windows": []
+        },
+        {
+          "id": "grandparents_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 15,
+            "height": 18
+          },
+          "doors": [
+            "to_courtyard",
+            "to_bathroom"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "grandparents_bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_bedroom"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            "to_courtyard",
+            "to_dining",
+            "main_entry"
+          ],
+          "windows": [
+            "west_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 50,
+            "y": 35,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_living",
+            "to_kitchen"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 70,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_dining",
+            "to_utility"
+          ],
+          "windows": [
+            "south_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 70,
+            "y": 50,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "to_kitchen",
+            "to_exterior"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 5,
+            "y": 28,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_courtyard"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 45,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "main_garage_door",
+            "to_house"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_balcony",
+            "to_bathroom"
+          ],
+          "windows": [
+            "west_window",
+            "north_window"
+          ]
+        },
+        {
+          "id": "master_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 70,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_bedroom"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_balcony",
+            "to_bathroom"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_balcony",
+            "to_bathroom"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 5,
+            "y": 15,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "east_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "yoga_pavilion",
+          "type": "yoga_pavilion",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_terrace"
+          ],
+          "windows": [
+            "full_height_east",
+            "full_height_west"
+          ]
+        }
+      ]
+    }
+  ]
+}

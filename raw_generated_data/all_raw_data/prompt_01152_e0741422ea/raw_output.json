@@ -1,0 +1,111 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "garage1",
+          "room_name": "Garage Entrance 1",
+          "dimensions": { "length": 5, "width": 3 },
+          "description": "Vehicle parking area for car number one.",
+          "vastu_alignment": "South",
+          "brutalist_features": ["raw concrete", "exposed structure"],
+          "adjacent_to": ["garage2"]
+        },
+        {
+          "room_id": "garage2",
+          "room_name": "Garage Entrance 2",
+          "dimensions": { "length": 5, "width": 3 },
+          "description": "Vehicle parking area for car number two.",
+          "vastu_alignment": "South",
+          "brutalist_features": ["raw concrete", "exposed structure"],
+          "adjacent_to": ["garage1"]
+        },
+        {
+          "room_id": "courtyard1",
+          "room_name": "Central Courtyard",
+          "dimensions": { "length": 10, "width": 8 },
+          "description": "Open courtyard providing natural light and ventilation.",
+          "vastu_alignment": "North-East",
+          "brutalist_features": ["minimalistic landscaping", "concrete paving"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "living_room",
+          "room_name": "Living Room",
+          "dimensions": { "length": 8, "width": 6 },
+          "description": "Brutalist design living area with raw concrete elements and large windows.",
+          "vastu_alignment": "South-West",
+          "brutalist_features": ["exposed beams", "concrete walls"],
+          "adjacent_to": ["dining_room"]
+        },
+        {
+          "room_id": "dining_room",
+          "room_name": "Dining Room",
+          "dimensions": { "length": 6, "width": 4 },
+          "description": "Seating area for family meals with a minimalist design.",
+          "vastu_alignment": "South-West",
+          "brutalist_features": ["concrete finishes", "sparse decor"],
+          "adjacent_to": ["living_room"]
+        },
+        {
+          "room_id": "kitchen",
+          "room_name": "Kitchen",
+          "dimensions": { "length": 5, "width": 4 },
+          "description": "Modern kitchen with durable raw materials and a minimalist layout.",
+          "vastu_alignment": "South-West",
+          "brutalist_features": ["exposed structure", "raw concrete"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "master_bedroom",
+          "room_name": "Master Bedroom",
+          "dimensions": { "length": 6, "width": 5 },
+          "description": "Spacious bedroom with a focus on privacy and natural light.",
+          "vastu_alignment": "North-West",
+          "brutalist_features": ["concrete finishes", "minimalistic design"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "bedroom1",
+          "room_name": "Guest Bedroom",
+          "dimensions": { "length": 4, "width": 3.5 },
+          "description": "Additional bedroom for joint family usage.",
+          "vastu_alignment": "North-West",
+          "brutalist_features": ["raw concrete", "minimalist decor"],
+          "adjacent_to": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "location": "front facade",
+          "dimensions": { "width": 3, "height": 7 },
+          "description": "Main entrance with a robust design.",
+          "vastu_alignment": "South-East"
+        },
+        {
+          "opening_id": "service_entry",
+          "location": "rear facade",
+          "dimensions": { "width": 2, "height": 4 },
+          "description": "Service entrance for deliveries and utility access.",
+          "vastu_alignment": "North-West"
+        },
+        {
+          "opening_id": "window_living_room",
+          "location": "living room window",
+          "dimensions": { "width": 2, "height": 3.5 },
+          "description": "Large window for natural light in the living area.",
+          "vastu_alignment": "South-West"
+        },
+        {
+          "opening_id": "balcony_master_bedroom",
+          "location": "master bedroom facade",
+          "dimensions": { "width": 2, "height": 3.5 },
+          "description": "Balcony for the master bedroom.",
+          "vastu_alignment": "North-West"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 2200,
+      "style": "Prairie Style A-Frame"
+    },
+    "plot": {
+      "shape": "circular",
+      "slope": "gentle",
+      "climate": "desert_extreme_temperatures",
+      "features": [
+        "360_degree_views",
+        "natural_contours"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 200
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "pool",
+        "count": 1,
+        "area": 600
+      },
+      {
+        "type": "deck",
+        "count": 1,
+        "area": 300
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 385000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "south_deck",
+            "north_hall"
+          ],
+          "windows": [
+            "south_window_wall",
+            "east_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "east_hall"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "west_hall",
+            "south_deck"
+          ],
+          "windows": [
+            "east_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 14,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "north_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            "east_hall"
+          ],
+          "windows": [
+            "south_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 14,
+            "y": 20,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "north_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 22,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "south_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "lap_pool",
+          "type": "pool",
+          "bounds": {
+            "x": 0,
+            "y": 34,
+            "width": 40,
+            "height": 15
+          },
+          "doors": [
+            "north_hall"
+          ],
+          "windows": [
+            "north_window_wall",
+            "east_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "main_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 14,
+            "y": 14,
+            "width": 18,
+            "height": 6
+          },
+          "doors": [
+            "living_room",
+            "kitchen",
+            "primary_bedroom",
+            "primary_bath",
+            "guest_bedroom",
+            "guest_bath",
+            "utility_room",
+            "lap_pool"
+          ],
+          "windows": []
+        },
+        {
+          "id": "south_deck",
+          "type": "deck",
+          "bounds": {
+            "x": -5,
+            "y": -5,
+            "width": 30,
+            "height": 5
+          },
+          "doors": [
+            "living_room",
+            "primary_bedroom"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

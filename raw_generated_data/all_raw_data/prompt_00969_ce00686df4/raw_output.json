@@ -1,0 +1,88 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": {"length": 15, "width": 20},
+          "features": ["art_deco_ornaments", "high_ceilings"],
+          "position": {"relative_to": "main_entrance", "direction": "right"}
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": {"length": 12, "width": 15},
+          "features": ["art_deco_moulding", "chandelier"],
+          "position": {"relative_to": "living_room", "direction": "left"}
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["modular_kitchen", "art_deco_backsplash"],
+          "position": {"relative_to": "dining_room", "direction": "back"}
+        },
+        {
+          "room_id": "swimming_pool",
+          "dimensions": {"length": 20, "width": 15},
+          "features": ["rectangular_shape", "art_deco_tile_border"],
+          "position": {"relative_to": "kitchen", "direction": "right"}
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": {"length": 8, "width": 4},
+          "features": ["art_deco_door_design"]
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimensions": {"length": 6, "width": 6},
+          "features": ["art_deco_stained_glass"]
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_1",
+          "dimensions": {"length": 18, "width": 16},
+          "features": ["art_deco_headboard", "balcony"],
+          "position": {"relative_to": "living_room", "direction": "above"}
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": {"length": 14, "width": 12},
+          "features": ["art_deco_mirror", "walk_in_closet"],
+          "position": {"relative_to": "bedroom_1", "direction": "left"}
+        },
+        {
+          "room_id": "bathroom_1",
+          "dimensions": {"length": 8, "width": 6},
+          "features": ["art_deco_fixture", "jacuzzi"],
+          "position": {"relative_to": "bedroom_1", "direction": "back"}
+        },
+        {
+          "room_id": "bathroom_2",
+          "dimensions": {"length": 7, "width": 5},
+          "features": ["art_deco_tile", "shower"],
+          "position": {"relative_to": "bedroom_2", "direction": "back"}
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "bedroom_1_balcony_door",
+          "type": "door",
+          "dimensions": {"length": 7, "width": 3},
+          "features": ["art_deco_design"]
+        },
+        {
+          "opening_id": "bedroom_2_window",
+          "type": "window",
+          "dimensions": {"length": 5, "width": 5},
+          "features": ["art_deco_muntins"]
+        }
+      ]
+    }
+  ]}

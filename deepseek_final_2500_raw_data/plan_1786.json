@@ -1,0 +1,217 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 1850.0,
+      "style": "Traditional Craftsman"
+    },
+    "plot": {
+      "orientation": "north",
+      "climate": "Mediterranean",
+      "size": "compact urban balcony conversion"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "area": 350.0
+      },
+      {
+        "type": "sunken_living_room",
+        "area": 300.0
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 250.0
+      },
+      {
+        "type": "bedroom",
+        "area": 200.0
+      },
+      {
+        "type": "bathroom",
+        "area": 120.0
+      },
+      {
+        "type": "bathroom",
+        "area": 100.0
+      },
+      {
+        "type": "dining_room",
+        "area": 180.0
+      },
+      {
+        "type": "utility",
+        "area": 100.0
+      },
+      {
+        "type": "entryway",
+        "area": 150.0
+      }
+    ]
+  },
+  "total_area": 1850.0,
+  "construction_cost": 925000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entryway",
+          "type": "entryway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "front_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "sunken_living_room",
+          "type": "sunken_living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_entryway"
+          ],
+          "windows": [
+            "north_window_1",
+            "north_window_2"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_kitchen"
+          ],
+          "windows": [
+            "north_window_3"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "chefs_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 17.5
+          },
+          "doors": [
+            "to_dining_stairs"
+          ],
+          "windows": [
+            "north_window_4",
+            "north_window_5"
+          ],
+          "features": [
+            "wood_fired_oven",
+            "geothermal_vent"
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 16.67
+          },
+          "doors": [
+            "accessible_bathroom_door"
+          ],
+          "windows": [
+            "north_window_6"
+          ],
+          "features": [
+            "aging_in_place_mods"
+          ]
+        },
+        {
+          "id": "primary_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "from_primary_bedroom"
+          ],
+          "windows": [],
+          "features": [
+            "walk_in_shower",
+            "grab_bars"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 17.5,
+            "width": 15,
+            "height": 13.33
+          },
+          "doors": [],
+          "windows": [
+            "north_window_7"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 17.5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "walk_in_shower",
+            "grab_bars"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 17.5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "geothermal_system"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 15, "width": 20 },
+          "type": "open_plan_living",
+          "accessibility": true,
+          "features": ["wheelchair_access", "large_window"]
+        },
+        {
+          "room_id": "dining_area",
+          "dimensions": { "length": 10, "width": 12 },
+          "type": "dining",
+          "accessibility": true
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 15, "width": 12 },
+          "type": "open_plan_kitchen",
+          "features": ["wheelchair_access", "modular_layout"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 14, "width": 14 },
+          "type": "master_bedroom",
+          "accessibility": true,
+          "features": ["attached_bathroom", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 12, "width": 12 },
+          "type": "standard_bedroom"
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 10, "width": 10 },
+          "type": "study"
+        },
+        {
+          "room_id": "toilet_1",
+          "dimensions": { "length": 5, "width": 7 },
+          "type": "bathroom",
+          "accessibility": true
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 4.5, "width": 2 },
+          "accessibility": true,
+          "location": "front"
+        },
+        {
+          "opening_id": "garden_access",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 2 },
+          "location": "back"
+        },
+        {
+          "opening_id": "living_window",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "location": "front"
+        }
+      ],
+      "garden": {
+        "area": 100,
+        "features": ["lawn", "outdoor_seating"]
+      }
+    },
+    {
+      "level_id": "upper_level",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 12, "width": 12 },
+          "type": "standard_bedroom"
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 12, "width": 12 },
+          "type": "standard_bedroom"
+        },
+        {
+          "room_id": "toilet_2",
+          "dimensions": { "length": 5, "width": 7 },
+          "type": "bathroom"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony_access",
+          "type": "door",
+          "location": "bedroom_3"
+        }
+      ]
+    }
+  ]
+}

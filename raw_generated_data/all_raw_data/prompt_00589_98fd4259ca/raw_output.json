@@ -1,0 +1,97 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "Living Room",
+          "area_sqft": 600,
+          "location": "North-East",
+          "adjacent_rooms": ["Dining Area", "Kitchen"]
+        },
+        {
+          "room_type": "Master Bedroom",
+          "area_sqft": 500,
+          "location": "South-West",
+          "features": ["Attached Bathroom", "Balcony"],
+          "adjacent_rooms": ["Central Courtyard"]
+        },
+        {
+          "room_type": "Bedroom",
+          "area_sqft": 300,
+          "location": "West",
+          "features": ["Bathroom"],
+          "adjacent_rooms": []
+        },
+        {
+          "room_type": "Guest Bedroom",
+          "area_sqft": 250,
+          "location": "East",
+          "features": ["Shared Bathroom"],
+          "adjacent_rooms": ["Living Room"]
+        },
+        {
+          "room_type": "Study",
+          "area_sqft": 150,
+          "location": "North-West",
+          "adjacent_rooms": ["Kitchen", "Central Courtyard"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "direction": "South",
+          "room_adjacency": ["Living Room"]
+        },
+        {
+          "opening_type": "Door",
+          "direction": "North-East",
+          "room_adjacency": ["Dining Area", "Kitchen"]
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_type": "Bedroom",
+          "area_sqft": 400,
+          "location": "South-West",
+          "features": ["Attached Bathroom"],
+          "adjacent_rooms": []
+        },
+        {
+          "room_type": "Guest Bedroom",
+          "area_sqft": 350,
+          "location": "North-East",
+          "features": ["Bathroom", "Balcony"],
+          "adjacent_rooms": ["Study"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "direction": "East",
+          "room_adjacency": ["Bedroom"]
+        },
+        {
+          "opening_type": "Door",
+          "direction": "West",
+          "room_adjacency": ["Guest Bedroom"]
+        }
+      ]
+    }
+  ],
+  "special_features": [
+    {
+      "feature_type": "Central Courtyard",
+      "area_sqft": 600,
+      "location": "Center of the ground floor"
+    },
+    {
+      "feature_type": "Terrace Garden",
+      "area_sqft": 400,
+      "level_id": "upper_floor"
+    }
+  ]
+}

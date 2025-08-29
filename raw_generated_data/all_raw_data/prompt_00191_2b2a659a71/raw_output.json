@@ -1,0 +1,95 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "area_sqft": 400,
+          "location": {"x": 15, "y": 20},
+          "vastu_adherence": true
+        },
+        {
+          "room_type": "kitchen",
+          "area_sqft": 300,
+          "location": {"x": 45, "y": 40},
+          "vastu_adherence": true
+        },
+        {
+          "room_type": "bedroom_1",
+          "area_sqft": 250,
+          "location": {"x": 75, "y": 60},
+          "vastu_adherence": true
+        },
+        {
+          "room_type": "bathroom_1",
+          "area_sqft": 80,
+          "location": {"x": 90, "y": 70}
+        },
+        {
+          "room_type": "bedroom_2",
+          "area_sqft": 250,
+          "location": {"x": 130, "y": 60},
+          "vastu_adherence": true
+        },
+        {
+          "room_type": "bathroom_2",
+          "area_sqft": 80,
+          "location": {"x": 145, "y": 70}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "direction": "east",
+          "connected_room": "living_room"
+        },
+        {
+          "opening_type": "window",
+          "direction": "south",
+          "connected_room": "kitchen"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "master_bedroom",
+          "area_sqft": 450,
+          "location": {"x": 15, "y": 20},
+          "vastu_adherence": true
+        },
+        {
+          "room_type": "bathroom_3",
+          "area_sqft": 120,
+          "location": {"x": 45, "y": 30}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "direction": "south",
+          "connected_room": "master_bedroom"
+        },
+        {
+          "opening_type": "window",
+          "direction": "west",
+          "connected_room": "bathroom_3"
+        }
+      ]
+    },
+    {
+      "level_id": "basement",
+      "rooms": [
+        {
+          "room_type": "garage",
+          "area_sqft": 400,
+          "location": {"x": -25, "y": -10},
+          "vastu_adherence": false
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

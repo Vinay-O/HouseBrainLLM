@@ -1,0 +1,91 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": {"length": 14, "width": 12},
+          "purpose": "common_space"
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": {"length": 10, "width": 8},
+          "purpose": "dining"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["modular", "gas_stove", "sink"],
+          "purpose": "cooking"
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": {"length": 14, "width": 12},
+          "features": ["wardrobe", "balcony_access"],
+          "purpose": "bedroom"
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": {"length": 14, "width": 12},
+          "features": ["wardrobe", "balcony_access"],
+          "purpose": "bedroom"
+        },
+        {
+          "room_id": "swimming_pool",
+          "dimensions": {"length": 8, "width": 6},
+          "depth": 5,
+          "purpose": "recreation"
+        },
+        {
+          "room_id": "staircase",
+          "dimensions": {"length": 4, "width": 3},
+          "accesses": ["first_floor"],
+          "purpose": "circulation"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": {"length": 8, "width": 3},
+          "direction": "north"
+        },
+        {
+          "opening_id": "balcony_1",
+          "type": "window",
+          "dimensions": {"length": 6, "width": 4},
+          "associated_room": "bedroom_1"
+        },
+        {
+          "opening_id": "balcony_2",
+          "type": "window",
+          "dimensions": {"length": 6, "width": 4},
+          "associated_room": "bedroom_2"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["wardrobe", "balcony_access"],
+          "purpose": "bedroom"
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": {"length": 10, "width": 8},
+          "purpose": "work"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony_3",
+          "type": "window",
+          "dimensions": {"length": 6, "width": 4},
+          "associated_room": "bedroom_3"
+        }
+      ]
+    }
+  ]}

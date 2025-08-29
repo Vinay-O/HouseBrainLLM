@@ -1,0 +1,247 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 2400,
+      "style": "Deconstructivist"
+    },
+    "plot": {
+      "description": "Forest clearing with mature oak trees, humid subtropical climate",
+      "contours": true
+    },
+    "roomBreakdown": [
+      {
+        "type": "observatory",
+        "features": [
+          "retractable dome"
+        ]
+      },
+      {
+        "type": "system",
+        "features": [
+          "heat recovery ventilation"
+        ]
+      },
+      {
+        "type": "design",
+        "features": [
+          "natural lighting optimization",
+          "following natural contours"
+        ]
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "overhead"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry",
+          "type": "entry",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "main"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "fixed"
+            }
+          ]
+        },
+        {
+          "id": "mechanical",
+          "type": "utility",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "sliding"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "floor-to-ceiling"
+            },
+            {
+              "wall": "east",
+              "type": "clerestory"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "casement"
+            }
+          ]
+        },
+        {
+          "id": "dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 12,
+            "y": 15,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "casement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "primary_bed",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "floor-to-ceiling"
+            },
+            {
+              "wall": "east",
+              "type": "clerestory"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "casement"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "skylight"
+            }
+          ]
+        },
+        {
+          "id": "observatory",
+          "type": "special",
+          "bounds": {
+            "x": 8,
+            "y": 15,
+            "width": 17,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "standard"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

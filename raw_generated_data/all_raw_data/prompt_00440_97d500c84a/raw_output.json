@@ -1,0 +1,201 @@
+{"levels": [
+    {
+      "level_id": "ground",
+      "description": "Ground floor with living spaces and pool area",
+      "rooms": [
+        {
+          "room_id": "entrance_portico",
+          "type": "portico",
+          "dimensions": {"length": 4, "width": 3},
+          "position": {"x": 0, "y": 10},
+          "description": "Traditional Kerala-style entrance with a sloped roof and wooden columns"
+        },
+        {
+          "room_id": "living_room",
+          "type": "living",
+          "dimensions": {"length": 12, "width": 10},
+          "position": {"x": 4, "y": 5},
+          "description": "Spacious living room with traditional Kerala furniture and access to courtyard"
+        },
+        {
+          "room_id": "dining_area",
+          "type": "dining",
+          "dimensions": {"length": 8, "width": 6},
+          "position": {"x": 12, "y": 5},
+          "description": "Dining area with traditional Kerala dining table and chairs"
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": {"length": 8, "width": 6},
+          "position": {"x": 20, "y": 5},
+          "description": "Modern kitchen with traditional Kerala elements and storage space"
+        },
+        {
+          "room_id": "courtyard",
+          "type": "open_space",
+          "dimensions": {"length": 10, "width": 8},
+          "position": {"x": 6, "y": 15},
+          "description": "Central courtyard with landscaped garden and seating area"
+        },
+        {
+          "room_id": "pool_area",
+          "type": "swimming_pool",
+          "dimensions": {"length": 8, "width": 4},
+          "position": {"x": 0, "y": 5},
+          "description": "Small swimming pool with wooden decking and traditional Kerala-style tiles"
+        },
+        {
+          "room_id": "staircase",
+          "type": "staircase",
+          "dimensions": {"length": 4, "width": 3},
+          "position": {"x": 5, "y": 0},
+          "description": "Traditional Kerala-style staircase with wooden railing and red oxide flooring"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": {"length": 2, "width": 1},
+          "position": {"x": 0, "y": 8},
+          "connects_to": "entrance_portico"
+        },
+        {
+          "opening_id": "living_dining",
+          "type": "archway",
+          "dimensions": {"length": 2, "width": 1.5},
+          "position": {"x": 10, "y": 7},
+          "connects_to": "living_room"
+        },
+        {
+          "opening_id": "dining_kitchen",
+          "type": "archway",
+          "dimensions": {"length": 2, "width": 1.5},
+          "position": {"x": 18, "y": 7},
+          "connects_to": "dining_area"
+        },
+        {
+          "opening_id": "kitchen_courtyard",
+          "type": "door",
+          "dimensions": {"length": 2, "width": 1},
+          "position": {"x": 18, "y": 10},
+          "connects_to": "courtyard"
+        },
+        {
+          "opening_id": "living_courtyard",
+          "type": "door",
+          "dimensions": {"length": 2, "width": 1},
+          "position": {"x": 8, "y": 15},
+          "connects_to": "courtyard"
+        },
+        {
+          "opening_id": "pool_access",
+          "type": "gate",
+          "dimensions": {"length": 2, "width": 1},
+          "position": {"x": 4, "y": 5},
+          "connects_to": "pool_area"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "description": "First floor with bedrooms and terrace",
+      "rooms": [
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "dimensions": {"length": 12, "width": 10},
+          "position": {"x": 4, "y": 5},
+          "description": "Spacious bedroom with traditional Kerala-style four-poster bed and attached bathroom"
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "dimensions": {"length": 10, "width": 8},
+          "position": {"x": 16, "y": 5},
+          "description": "Guest bedroom with traditional Kerala-style furniture and attached bathroom"
+        },
+        {
+          "room_id": "study_room",
+          "type": "study",
+          "dimensions": {"length": 8, "width": 6},
+          "position": {"x": 24, "y": 5},
+          "description": "Study room with traditional Kerala-style writing desk and bookshelf"
+        },
+        {
+          "room_id": "terrace",
+          "type": "open_space",
+          "dimensions": {"length": 10, "width": 8},
+          "position": {"x": 6, "y": 15},
+          "description": "Terrace with landscaped garden and seating area, offering panoramic view of the surroundings"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase_access",
+          "type": "door",
+          "dimensions": {"length": 2, "width": 1},
+          "position": {"x": 5, "y": 0},
+          "connects_to": "staircase"
+        },
+        {
+          "opening_id": "bedroom_1_bathroom",
+          "type": "door",
+          "dimensions": {"length": 2, "width": 1},
+          "position": {"x": 4, "y": 3},
+          "connects_to": "bedroom_1"
+        },
+        {
+          "opening_id": "bedroom_2_bathroom",
+          "type": "door",
+          "dimensions": {"length": 2, "width": 1},
+          "position": {"x": 16, "y": 3},
+          "connects_to": "bedroom_2"
+        },
+        {
+          "opening_id": "study_terrace",
+          "type": "door",
+          "dimensions": {"length": 2, "width": 1},
+          "position": {"x": 24, "y": 5},
+          "connects_to": "terrace"
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "description": "Second floor with lounge and rooftop garden",
+      "rooms": [
+        {
+          "room_id": "lounge",
+          "type": "lounge",
+          "dimensions": {"length": 12, "width": 10},
+          "position": {"x": 4, "y": 5},
+          "description": "Lounge area with traditional Kerala-style seating and access to rooftop garden"
+        },
+        {
+          "room_id": "rooftop_garden",
+          "type": "open_space",
+          "dimensions": {"length": 10, "width": 8},
+          "position": {"x": 6, "y": 15},
+          "description": "Rooftop garden with landscaped plants and seating area"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase_access",
+          "type": "door",
+          "dimensions": {"length": 2, "width": 1},
+          "position": {"x": 5, "y": 0},
+          "connects_to": "staircase"
+        },
+        {
+          "opening_id": "lounge_garden",
+          "type": "door",
+          "dimensions": {"length": 2, "width": 1},
+          "position": {"x": 4, "y": 3},
+          "connects_to": "rooftop_garden"
+        }
+      ]
+    }
+  ]}

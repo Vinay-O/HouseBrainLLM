@@ -1,0 +1,48 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"room_type": "bedroom", "size_ft_sq": 300},
+        {"room_type": "bedroom", "size_ft_sq": 280},
+        {"room_type": "bedroom", "size_ft_sq": 250},
+        {"room_type": "bedroom", "size_ft_sq": 230},
+        {"room_type": "bedroom", "size_ft_sq": 400},
+        {"room_type": "living_room", "size_ft_sq": 600},
+        {"room_type": "kitchen", "size_ft_sq": 450},
+        {"room_type": "dining_room", "size_ft_sq": 300},
+        {"room_type": "home_office", "size_ft_sq": 250},
+        {"room_type": "utility_room", "size_ft_sq": 150},
+        {"room_type": "powder_room", "size_ft_sq": 80}
+      ],
+      "openings": [
+        {"opening_type": "entrance", "direction": "north"},
+        {"opening_type": "balcony", "associated_with": "bedroom", "direction": "east"},
+        {"opening_type": "terrace", "size_ft_sq": 500},
+        {"opening_type": "courtyard", "size_ft_sq": 200}
+      ]
+    },
+    {
+      "level_id": "upper_level",
+      "rooms": [
+        {"room_type": "bedroom", "size_ft_sq": 350},
+        {"room_type": "study_room", "size_ft_sq": 200},
+        {"room_type": "guest_room", "size_ft_sq": 280}
+      ],
+      "openings": [
+        {"opening_type": "balcony", "associated_with": "bedroom", "direction": "south"}
+      ]
+    }
+  ],
+  "design_features": {
+    "style": "Art Deco",
+    "levels": "split-level",
+    "plot_shape": "irregular",
+    "vastu_compliance": true
+  },
+  "utilities": {
+    "water_supply": "covered",
+    "sewage": "covered",
+    "electricity": "covered"
+  }
+}

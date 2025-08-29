@@ -1,0 +1,226 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 1800.0,
+      "style": "Brutalist"
+    },
+    "plot": {
+      "width": 80,
+      "length": 100
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1,
+        "description": "Master bedroom with ensuite bathroom and private balcony"
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "description": "Ensuite bathroom for bedroom and guest bathroom on main level"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Open-plan kitchen with island"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Spacious living area with high ceilings"
+      },
+      {
+        "type": "balcony",
+        "count": 1,
+        "description": "Private balcony accessible from bedroom"
+      },
+      {
+        "type": "swimming_pool",
+        "count": 1,
+        "description": "Infinity edge swimming pool"
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 675000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry",
+          "type": "entryway",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "pool",
+          "type": "swimming_pool",
+          "bounds": {
+            "x": 50,
+            "y": 40,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 20
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 20,
+              "size": 10
+            },
+            {
+              "wall": "east",
+              "position": 15,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "bathroom_guest",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_master",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 30,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "bathroom_master",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "balcony_master",
+          "type": "balcony",
+          "bounds": {
+            "x": 60,
+            "y": 30,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "shape": "rectangle",
+          "dimensions": {
+            "length": 16,
+            "width": 12,
+            "unit": "feet"
+          },
+          "position": {
+            "from": { "x": 0, "y": 0 },
+            "to": { "x": 16, "y": 12 }
+          }
+        },
+        {
+          "room_id": "bedroom",
+          "shape": "rectangle",
+          "dimensions": {
+            "length": 14,
+            "width": 12,
+            "unit": "feet"
+          },
+          "position": {
+            "from": { "x": 16, "y": 0 },
+            "to": { "x": 30, "y": 12 }
+          }
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "rectangle",
+          "dimensions": {
+            "length": 10,
+            "width": 8,
+            "unit": "feet"
+          },
+          "position": {
+            "from": { "x": 30, "y": 0 },
+            "to": { "x": 40, "y": 8 }
+          }
+        },
+        {
+          "room_id": "bathroom",
+          "shape": "rectangle",
+          "dimensions": {
+            "length": 6,
+            "width": 5,
+            "unit": "feet"
+          },
+          "position": {
+            "from": { "x": 40, "y": 8 },
+            "to": { "x": 46, "y": 13 }
+          }
+        },
+        {
+          "room_id": "central_courtyard",
+          "shape": "square",
+          "dimensions": {
+            "length": 10,
+            "width": 10,
+            "unit": "feet"
+          },
+          "position": {
+            "from": { "x": 5, "y": 20 },
+            "to": { "x": 15, "y": 30 }
+          }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": {
+            "length": 4,
+            "width": 8,
+            "unit": "feet"
+          },
+          "position": {
+            "x": 15,
+            "y": 0
+          },
+          "connects_to": "living_room"
+        },
+        {
+          "opening_id": "kitchen_entrance",
+          "type": "door",
+          "dimensions": {
+            "length": 3,
+            "width": 7,
+            "unit": "feet"
+          },
+          "position": {
+            "x": 30,
+            "y": 4
+          },
+          "connects_to": "kitchen"
+        },
+        {
+          "opening_id": "bedroom_entrance",
+          "type": "door",
+          "dimensions": {
+            "length": 3,
+            "width": 7,
+            "unit": "feet"
+          },
+          "position": {
+            "x": 20,
+            "y": 12
+          },
+          "connects_to": "bedroom"
+        },
+        {
+          "opening_id": "bathroom_entrance",
+          "type": "door",
+          "dimensions": {
+            "length": 3,
+            "width": 6,
+            "unit": "feet"
+          },
+          "position": {
+            "x": 40,
+            "y": 10
+          },
+          "connects_to": "bathroom"
+        }
+      ]
+    }
+  ]
+}

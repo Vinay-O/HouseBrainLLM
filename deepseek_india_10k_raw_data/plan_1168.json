@@ -1,0 +1,513 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Contemporary Dravidian with Universal Accessibility"
+    },
+    "plot": {
+      "orientation": "east",
+      "location": "Amritsar",
+      "challenges": [
+        "desert_sandstorm",
+        "extreme_heat",
+        "earthquake_risk"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 300,
+        "specialFeatures": [
+          "universal_access",
+          "sacred_entrance_kolam",
+          "mandana_floor_pattern"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "area": 180,
+        "specialFeatures": [
+          "universal_access",
+          "composting_system_integration"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "area": 200,
+        "specialFeatures": [
+          "universal_access",
+          "home_archive"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "area": 160,
+        "specialFeatures": [
+          "universal_access"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "area": 160,
+        "specialFeatures": [
+          "universal_access"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "area": 60,
+        "specialFeatures": [
+          "universal_access"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "area": 60,
+        "specialFeatures": [
+          "universal_access"
+        ]
+      },
+      {
+        "type": "utility",
+        "area": 80,
+        "specialFeatures": [
+          "kitchen_garden_access",
+          "composting_system"
+        ]
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 2160000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_porch",
+          "type": "porch",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 6
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [],
+          "specialFeatures": [
+            "kolam_threshold",
+            "east_facing"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 25,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "to_room": "entrance_porch"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 6
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 3
+              },
+              "length": 8
+            },
+            {
+              "position": {
+                "x": 17,
+                "y": 12
+              },
+              "length": 8
+            }
+          ],
+          "specialFeatures": [
+            "mandana_floor_pattern",
+            "universal_access_width",
+            "dravidian_motifs"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 9
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 3
+              },
+              "length": 6
+            }
+          ],
+          "specialFeatures": [
+            "roll_under_counter",
+            "compost_chute",
+            "universal_access"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 18,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 6
+              },
+              "to_room": "corridor"
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 12
+              },
+              "to_room": "garden"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "length": 4
+            }
+          ],
+          "specialFeatures": [
+            "composting_system",
+            "sandstorm_sealed"
+          ]
+        },
+        {
+          "id": "garden",
+          "type": "garden",
+          "bounds": {
+            "x": 15,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "to_room": "utility"
+            }
+          ],
+          "windows": [],
+          "specialFeatures": [
+            "kitchen_garden",
+            "heat_resistant_plants",
+            "drip_irrigation"
+          ]
+        },
+        {
+          "id": "corridor",
+          "type": "corridor",
+          "bounds": {
+            "x": 25,
+            "y": 6,
+            "width": 4,
+            "height": 24
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 12
+              },
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 4,
+                "y": 3
+              },
+              "to_room": "bedroom1"
+            },
+            {
+              "position": {
+                "x": 4,
+                "y": 12
+              },
+              "to_room": "bedroom2"
+            },
+            {
+              "position": {
+                "x": 4,
+                "y": 21
+              },
+              "to_room": "bedroom3"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 9
+              },
+              "to_room": "kitchen"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 18
+              },
+              "to_room": "utility"
+            },
+            {
+              "position": {
+                "x": 2,
+                "y": 24
+              },
+              "to_room": "bathroom1"
+            },
+            {
+              "position": {
+                "x": 2,
+                "y": 0
+              },
+              "to_room": "bathroom2"
+            }
+          ],
+          "windows": [],
+          "specialFeatures": [
+            "universal_access_width",
+            "rangoli_pattern"
+          ]
+        },
+        {
+          "id": "bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 29,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 6
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 3
+              },
+              "length": 8
+            },
+            {
+              "position": {
+                "x": 8,
+                "y": 12
+              },
+              "length": 6
+            }
+          ],
+          "specialFeatures": [
+            "home_archive",
+            "universal_access"
+          ]
+        },
+        {
+          "id": "bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 24,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 8,
+                "y": 3
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 4,
+                "y": 6
+              },
+              "length": 3
+            }
+          ],
+          "specialFeatures": [
+            "roll_in_shower",
+            "grab_bars",
+            "universal_access"
+          ]
+        },
+        {
+          "id": "bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 29,
+            "y": 12,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 6
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 3
+              },
+              "length": 8
+            },
+            {
+              "position": {
+                "x": 8,
+                "y": 12
+              },
+              "length": 6
+            }
+          ],
+          "specialFeatures": [
+            "universal_access"
+          ]
+        },
+        {
+          "id": "bedroom3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 29,
+            "y": 24,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 6
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 3
+              },
+              "length": 8
+            },
+            {
+              "position": {
+                "x": 8,
+                "y": 12
+              },
+              "length": 6
+            }
+          ],
+          "specialFeatures": [
+            "universal_access"
+          ]
+        },
+        {
+          "id": "bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 8,
+                "y": 3
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 4,
+                "y": 6
+              },
+              "length": 3
+            }
+          ],
+          "specialFeatures": [
+            "roll_in_shower",
+            "grab_bars",
+            "universal_access"
+          ]
+        }
+      ]
+    }
+  ]
+}

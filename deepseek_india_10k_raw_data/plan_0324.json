@@ -1,0 +1,548 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 3800,
+      "style": "Bengali Traditional Heritage Restoration"
+    },
+    "plot": {
+      "orientation": "North-facing main entrance",
+      "location": "IT park adjacent plot, Madurai",
+      "challenges": [
+        "desert sandstorms",
+        "extreme heat",
+        "flood risk"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "home_clinic",
+        "count": 1
+      },
+      {
+        "type": "consultation_room",
+        "count": 1
+      },
+      {
+        "type": "handloom_workshop",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "puja_room",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      }
+    ]
+  },
+  "total_area": 3800.0,
+  "construction_cost": 3420000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_entrance",
+          "type": "foyer",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 0
+              },
+              "to": "exterior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 8
+              },
+              "to": "main_entrance"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 20
+              },
+              "to": "dining_room"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 20
+              },
+              "to": "corridor_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 20,
+                "y": 15
+              },
+              "orientation": "West"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 15
+              },
+              "orientation": "East"
+            }
+          ]
+        },
+        {
+          "id": "dining_room_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 20
+              },
+              "to": "living_room"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 8
+              },
+              "to": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 15
+              },
+              "orientation": "West"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 23,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 23
+              },
+              "to": "dining_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 28
+              },
+              "orientation": "West"
+            }
+          ]
+        },
+        {
+          "id": "master_bedroom_1",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 45
+              },
+              "to": "corridor_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 45
+              },
+              "orientation": "West"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 35
+              },
+              "orientation": "South"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 45
+              },
+              "to": "corridor_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 20,
+                "y": 42
+              },
+              "orientation": "West"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 42
+              },
+              "orientation": "East"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 50,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 57
+              },
+              "to": "corridor_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 20,
+                "y": 57
+              },
+              "orientation": "West"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 57
+              },
+              "orientation": "East"
+            }
+          ]
+        },
+        {
+          "id": "home_clinic_1",
+          "type": "home_clinic",
+          "bounds": {
+            "x": 40,
+            "y": 33,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 40
+              },
+              "to": "corridor_1"
+            },
+            {
+              "position": {
+                "x": 60,
+                "y": 40
+              },
+              "to": "consultation_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 33
+              },
+              "orientation": "South"
+            }
+          ]
+        },
+        {
+          "id": "consultation_room_1",
+          "type": "consultation_room",
+          "bounds": {
+            "x": 60,
+            "y": 33,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 40
+              },
+              "to": "home_clinic"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 75,
+                "y": 40
+              },
+              "orientation": "East"
+            }
+          ]
+        },
+        {
+          "id": "handloom_workshop_1",
+          "type": "handloom_workshop",
+          "bounds": {
+            "x": 40,
+            "y": 48,
+            "width": 25,
+            "height": 22
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 59
+              },
+              "to": "corridor_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 65,
+                "y": 48
+              },
+              "orientation": "South"
+            },
+            {
+              "position": {
+                "x": 52,
+                "y": 70
+              },
+              "orientation": "North"
+            }
+          ]
+        },
+        {
+          "id": "puja_room_1",
+          "type": "puja_room",
+          "bounds": {
+            "x": 65,
+            "y": 48,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 65,
+                "y": 53
+              },
+              "to": "handloom_workshop"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 75,
+                "y": 53
+              },
+              "orientation": "East"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 35,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 39
+              },
+              "to": "corridor_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 50,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 54
+              },
+              "to": "corridor_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 55,
+            "y": 33,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 55,
+                "y": 37
+              },
+              "to": "home_clinic"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "corridor_1",
+          "type": "corridor",
+          "bounds": {
+            "x": 40,
+            "y": 8,
+            "width": 5,
+            "height": 62
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 20
+              },
+              "to": "living_room"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 45
+              },
+              "to": "master_bedroom"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 40
+              },
+              "to": "home_clinic"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 59
+              },
+              "to": "handloom_workshop"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 39
+              },
+              "to": "bathroom_1"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 54
+              },
+              "to": "bathroom_2"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

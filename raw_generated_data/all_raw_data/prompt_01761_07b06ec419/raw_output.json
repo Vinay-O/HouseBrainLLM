@@ -1,0 +1,63 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {
+        "name": "Entrance Hall & Living Area",
+        "dimensions": {"width": 12, "length": 18},
+        "description": "A welcoming space that serves as both an entrance hall and a combined living area with natural light from large windows, incorporating Mediterranean design elements such as terracotta tiles and arches. It adheres to Vastu by positioning the entrance on the east for energy flow."
+      },
+      {
+        "name": "Kitchen & Dining Area",
+        "dimensions": {"width": 10, "length": 15},
+        "description": "A compact yet functional kitchen area with dining space integrated into it. Designed with modern appliances and Mediterranean style cabinetry. Ventilation ensured through cross-ventilation from east-west facing windows."
+      },
+      {
+        "name": "Home Theater",
+        "dimensions": {"width": 8, "length": 10},
+        "description": "A dedicated home theater space designed for immersive viewing experience with soundproofing and optimized seating arrangement. Windows are strategically placed to avoid direct sunlight during screenings."
+      },
+      {
+        "name": "Servant Quarters",
+        "dimensions": {"width": 8, "length": 10},
+        "description": "A private area for staff including a small bedroom and storage space with natural ventilation and sufficient light. Adheres to Vastu by being located towards the north."
+      }
+    ],
+    "openings": [
+      {
+        "type": "Main Entrance",
+        "location": {"x": 0, "y": 0},
+        "description": "The main entrance is oriented east, aligning with Vastu principles for positive energy flow and natural light."
+      },
+      {
+        "type": "Window",
+        "location": {"level_id": "ground_floor", "room": "Entrance Hall & Living Area"},
+        "dimensions": {"width": 2, "height": 3},
+        "description": "Large windows providing ample daylight and cross ventilation."
+      }
+    ]
+  },
+  {
+    "level_id": "first_floor",
+    "rooms": [
+      {
+        "name": "Master Bedroom & Study",
+        "dimensions": {"width": 12, "length": 16},
+        "description": "A spacious master bedroom with an adjoining study area designed for relaxation and productivity. The layout ensures privacy while maximizing natural light from north-facing windows."
+      },
+      {
+        "name": "Bathroom",
+        "dimensions": {"width": 6, "length": 8},
+        "description": "A functional bathroom located adjacent to the master bedroom with ventilation and access to natural light through a skylight."
+      }
+    ],
+    "openings": [
+      {
+        "type": "Balcony",
+        "location": {"room": "Master Bedroom & Study", "side": "south"},
+        "dimensions": {"width": 4, "length": 6},
+        "description": "A balcony providing additional natural light and ventilation."
+      }
+    ]
+  }
+]}

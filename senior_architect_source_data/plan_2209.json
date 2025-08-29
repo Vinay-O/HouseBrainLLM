@@ -1,0 +1,358 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 900.0,
+      "style": "High-Tech Architecture"
+    },
+    "plot": {
+      "orientation": "east-west",
+      "climate": "continental with harsh winters",
+      "size": "compact urban balcony conversion",
+      "privacy_requirements": "high from neighboring properties"
+    },
+    "roomBreakdown": [
+      {
+        "type": "sunken_living_room",
+        "area": 180.0,
+        "description": "Split-level sunken living area with large east-facing insulated windows for winter sun, built-in seating with storage for adventure gear, and radiant floor heating."
+      },
+      {
+        "type": "kitchen",
+        "area": 90.0,
+        "description": "Compact high-tech galley kitchen with energy-efficient appliances, recycled glass countertops, and greywater collection system connection."
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 120.0,
+        "description": "Private bedroom with west-facing frosted glass windows for privacy, built-in wardrobe for outdoor equipment, and en-suite bathroom."
+      },
+      {
+        "type": "guest_bedroom",
+        "area": 100.0,
+        "description": "Multi-functional space with convertible furniture, storage solutions for adventure gear, and privacy glass windows."
+      },
+      {
+        "type": "telecommuting_pod",
+        "area": 60.0,
+        "description": "Sound-insulated pod with professional video conferencing setup, dedicated networking equipment, and separate climate control."
+      },
+      {
+        "type": "bathroom",
+        "area": 50.0,
+        "description": "Compact wet-room style bathroom with greywater recycling system, water-efficient fixtures, and heated towel rack."
+      },
+      {
+        "type": "utility_room",
+        "area": 40.0,
+        "description": "Housing for greywater recycling system, HVAC equipment with heat recovery, and storage for outdoor adventure maintenance."
+      },
+      {
+        "type": "entry_hall",
+        "area": 60.0,
+        "description": "Mudroom transition space with gear storage, boot drying system, and airlock-style entry for thermal efficiency."
+      },
+      {
+        "type": "outdoor_space",
+        "area": 200.0,
+        "description": "Converted balcony with automated privacy screens, cold-hardy irrigation system using recycled greywater, and sheltered adventure gear storage."
+      }
+    ]
+  },
+  "total_area": 900.0,
+  "construction_cost": 285000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "sunken_living",
+          "type": "sunken_living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12,
+                "y": 7
+              },
+              "leads_to": "entry_hall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_insulated",
+              "position": "east_wall",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_main",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 6,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12,
+                "y": 7
+              },
+              "leads_to": "entry_hall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "position": "south_wall",
+              "size": "narrow"
+            }
+          ]
+        },
+        {
+          "id": "entry_space",
+          "type": "entry_hall",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 21,
+                "y": 0
+              },
+              "leads_to": "exterior"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 18,
+                "y": 5
+              },
+              "leads_to": "sunken_living"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 18,
+                "y": 5
+              },
+              "leads_to": "kitchen_main"
+            },
+            {
+              "type": "staircase",
+              "position": {
+                "x": 21,
+                "y": 10
+              },
+              "leads_to": "level_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room_main",
+          "type": "utility_room",
+          "bounds": {
+            "x": 18,
+            "y": 10,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 18,
+                "y": 12
+              },
+              "leads_to": "entry_hall"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_bed",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12,
+                "y": 5
+              },
+              "leads_to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "type": "frosted_glass",
+              "position": "west_wall",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "guest_bed",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12,
+                "y": 15
+              },
+              "leads_to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "type": "privacy_glass",
+              "position": "west_wall",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "tele_pod",
+          "type": "telecommuting_pod",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12,
+                "y": 4
+              },
+              "leads_to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "position": "south_wall",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_upper",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 8,
+            "width": 6,
+            "height": 7
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12,
+                "y": 11
+              },
+              "leads_to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "type": "vented_opaque",
+              "position": "north_wall",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "hallway_upper",
+          "type": "hallway",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 6,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "staircase",
+              "position": {
+                "x": 21,
+                "y": 0
+              },
+              "leads_to": "level_0"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 18,
+                "y": 5
+              },
+              "leads_to": "primary_bed"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 18,
+                "y": 10
+              },
+              "leads_to": "guest_bed"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 18,
+                "y": 4
+              },
+              "leads_to": "tele_pod"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 18,
+                "y": 11
+              },
+              "leads_to": "bathroom_upper"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

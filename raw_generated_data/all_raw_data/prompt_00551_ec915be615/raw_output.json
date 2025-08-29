@@ -1,0 +1,139 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "area": 30,
+          "shape": "rectangular",
+          "position": { "x": 1, "y": 1 },
+          "orientation": "north"
+        },
+        {
+          "room_id": "kitchen",
+          "area": 20,
+          "shape": "L-shaped",
+          "position": { "x": 2, "y": 1 },
+          "orientation": "east"
+        },
+        {
+          "room_id": "bedroom_1",
+          "area": 35,
+          "shape": "rectangular",
+          "position": { "x": 1, "y": 2 },
+          "orientation": "west"
+        },
+        {
+          "room_id": "bathroom_1",
+          "area": 8,
+          "shape": "square",
+          "position": { "x": 3, "y": 2 }
+        },
+        {
+          "room_id": "home_office",
+          "area": 15,
+          "shape": "rectangular",
+          "position": { "x": 4, "y": 1 },
+          "orientation": "south"
+        },
+        {
+          "room_id": "swimming_pool",
+          "area": 50,
+          "shape": "irregular",
+          "position": { "x": 5, "y": 2 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimension": "3.6m x 2.1m",
+          "position": { "x": 0, "y": 1 },
+          "orientation": "north"
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimension": "1.8m x 1.2m",
+          "position": { "x": 1, "y": 0 },
+          "orientation": "north"
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimension": "1.5m x 1.5m",
+          "position": { "x": 2, "y": 0 },
+          "orientation": "east"
+        },
+        {
+          "opening_id": "bedroom_window",
+          "type": "window",
+          "dimension": "1.8m x 1.2m",
+          "position": { "x": 1, "y": 3 },
+          "orientation": "west"
+        },
+        {
+          "opening_id": "home_office_window",
+          "type": "window",
+          "dimension": "1.5m x 1.5m",
+          "position": { "x": 4, "y": 0 },
+          "orientation": "south"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_2",
+          "area": 35,
+          "shape": "rectangular",
+          "position": { "x": 1, "y": 4 },
+          "orientation": "east"
+        },
+        {
+          "room_id": "bathroom_2",
+          "area": 8,
+          "shape": "square",
+          "position": { "x": 3, "y": 4 }
+        },
+        {
+          "room_id": "balcony",
+          "area": 15,
+          "shape": "rectangular",
+          "position": { "x": 2, "y": 5 },
+          "orientation": "south"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "bedroom_2_window",
+          "type": "window",
+          "dimension": "1.8m x 1.2m",
+          "position": { "x": 1, "y": 5 },
+          "orientation": "east"
+        },
+        {
+          "opening_id": "balcony Door",
+          "type": "door",
+          "dimension": "2.4m x 1.2m",
+          "position": { "x": 2, "y": 6 },
+          "orientation": "south"
+        }
+      ]
+    }
+  ],
+  "additional_features": {
+    "swimming_pool": {
+      "depth": [1, 2],
+      "length": 10,
+      "width": 5
+    },
+    "natural_light_and_ventilation": {
+      "skylights": true,
+      "cross_ventilation": true,
+      "large_windows": true
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_area",
+          "description": "Open-plan living area that combines seating and dining areas with the kitchen space.",
+          "area_sqft": 200,
+          "adjacent_to": ["kitchen", "courtyard"],
+          "access": "wheelchair accessible"
+        },
+        {
+          "room_id": "kitchen",
+          "description": "Open-plan kitchen integrated within the living area, designed for efficient workflow and accessibility.",
+          "area_sqft": 100,
+          "adjacent_to": ["living_area", "storage"],
+          "access": "wheelchair accessible"
+        },
+        {
+          "room_id": "bedroom1",
+          "description": "First bedroom located on the ground floor with en-suite bathroom to ensure privacy and accessibility.",
+          "area_sqft": 150,
+          "adjacent_to": ["corridor", " ensuite_bathroom"],
+          "access": "wheelchair accessible"
+        },
+        {
+          "room_id": "bedroom2",
+          "description": "Second bedroom with built-in storage and space for a private gym within an adjoining multipurpose room.",
+          "area_sqft": 150,
+          "adjacent_to": ["corridor", "private_gym"],
+          "access": "wheelchair accessible"
+        },
+        {
+          "room_id": "en_suite_bathroom",
+          "description": "Bathroom attached to bedroom1, designed with accessibility features.",
+          "area_sqft": 50,
+          "adjacent_to": ["bedroom1"]
+        },
+        {
+          "room_id": "private_gym",
+          "description": "A dedicated gym space integrated within the apartment for personal exercise routines, featuring flexible equipment placement and ample space.",
+          "area_sqft": 100,
+          "adjacent_to": ["bedroom2", "corridor"],
+          "access": "wheelchair accessible"
+        },
+        {
+          "room_id": "storage",
+          "description": "Additional storage area within the kitchen zone, designed for easy access and organization.",
+          "area_sqft": 30,
+          "adjacent_to": ["kitchen"]
+        },
+        {
+          "room_id": "corridor",
+          "description": "Main circulation space connecting all rooms on the ground floor, designed with wide passages for wheelchair accessibility.",
+          "area_sqft": 20,
+          "access": "wheelchair accessible"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "entrance",
+          "location": "North-facing entrance",
+          "description": "Main entrance that adheres to Vastu principles by being positioned on the north side, ensuring positive energy flow.",
+          "width_meters": 1.2,
+          "height_meters": 2.0
+        },
+        {
+          "opening_id": "courtyard_window",
+          "location": "Adjacent to living area and central courtyard",
+          "description": "Window opening that provides natural light into the open-plan areas, enhancing connectivity with the central courtyard.",
+          "width_meters": 1.0,
+          "height_meters": 1.5
+        }
+      ],
+      "courtyard": {
+        "courtyard_id": "central_courtyard",
+        "description": "A central courtyard providing natural light and ventilation, acting as a communal space with garden elements.",
+        "area_sqft": 100,
+        "adjacent_to": ["living_area", "corridor"]
+      }
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom3",
+          "description": "Additional bedroom on the upper floor, designed with a private balcony for extra space and fresh air.",
+          "area_sqft": 100,
+          "adjacent_to": ["corridor", "private Bathroom"],
+          "access": "wheelchair accessible"
+        },
+        {
+          "room_id": "bedroom4",
+          "description": "Second additional bedroom with ample natural light, ideal for quiet relaxation or as a guest room.",
+          "area_sqft": 100,
+          "adjacent_to": ["corridor", "shared Bathroom"],
+          "access": "wheelchair accessible"
+        },
+        {
+          "room_id": "private_Bathroom",
+          "description": "Bathroom attached to bedroom3, designed with accessibility features and privacy.",
+          "area_sqft": 30,
+          "adjacent_to": ["bedroom3"]
+        },
+        {
+          "room_id": "shared_Bathroom",
+          "description": "Shared bathroom on the upper floor for use by the additional bedrooms.",
+          "area_sqft": 40,
+          "adjacent_to": ["bedroom4"]
+        },
+        {
+          "room_id": "corridor",
+          "description": "Main circulation space on the upper floor, with wide passages to ensure wheelchair accessibility and connectivity between rooms.",
+          "area_sqft": 20,
+          "access": "wheelchair accessible"
+        }
+      ]
+    }
+  ]
+}

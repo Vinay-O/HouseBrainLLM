@@ -1,0 +1,293 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 10000,
+      "style": "Luxury Minimalist Modern with Kashmiri Wooden Architecture"
+    },
+    "plot": {
+      "size": 10000,
+      "location": "cul-de-sac, heritage city",
+      "constraints": "strict building regulations, heritage brick archways required, earthquake resistance"
+    },
+    "roomBreakdown": [
+      {
+        "type": "primary_bedroom",
+        "area": 400
+      },
+      {
+        "type": "guest_bedroom",
+        "area": 300
+      },
+      {
+        "type": "art_gallery",
+        "area": 600
+      },
+      {
+        "type": "living_room",
+        "area": 500
+      },
+      {
+        "type": "kitchen",
+        "area": 300
+      },
+      {
+        "type": "dining_room",
+        "area": 250
+      },
+      {
+        "type": "study",
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "area": 150
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "future_expansion",
+        "area": 2000
+      }
+    ]
+  },
+  "total_area": 4800.0,
+  "construction_cost": 1920000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "main_entrance"
+          ],
+          "windows": [],
+          "features": [
+            "heritage_brick_archway",
+            "traditional_wood_carving"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            "to_foyer",
+            "to_gallery"
+          ],
+          "windows": [
+            "north_window",
+            "south_window"
+          ],
+          "features": [
+            "minimalist_design",
+            "cross_ventilation"
+          ]
+        },
+        {
+          "id": "art_gallery",
+          "type": "gallery",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            "to_living_room",
+            "to_dining"
+          ],
+          "windows": [
+            "skylight"
+          ],
+          "features": [
+            "controlled_lighting_system",
+            "heritage_display_walls"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_gallery",
+            "to_kitchen"
+          ],
+          "windows": [
+            "east_window"
+          ],
+          "features": [
+            "open_plan",
+            "wooden_ceiling"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 60,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_dining",
+            "service_entrance"
+          ],
+          "windows": [
+            "south_window"
+          ],
+          "features": [
+            "modern_appliances",
+            "craftsmanship_showcase"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "vent_window"
+          ],
+          "features": [
+            "minimalist_fixtures"
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "west_window"
+          ],
+          "features": [
+            "built_in_shelving",
+            "quiet_zone"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": [
+            "north_window",
+            "south_window"
+          ],
+          "features": [
+            "walk_in_closet",
+            "en_suite",
+            "cross_ventilation"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": [
+            "east_window",
+            "west_window"
+          ],
+          "features": [
+            "minimalist_design",
+            "shared_bathroom_access"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": [
+            "vent_window"
+          ],
+          "features": [
+            "modern_finishes"
+          ]
+        },
+        {
+          "id": "future_expansion",
+          "type": "expansion",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 40
+          },
+          "doors": [
+            "sealed_access"
+          ],
+          "windows": [],
+          "features": [
+            "pre_wired",
+            "plumbed_for_future_use"
+          ]
+        }
+      ]
+    }
+  ]
+}

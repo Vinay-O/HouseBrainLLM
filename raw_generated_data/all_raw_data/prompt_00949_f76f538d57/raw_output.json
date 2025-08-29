@@ -1,0 +1,95 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["open_plan", "high_ceiling", "wooden_flooring"]
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["adjacent_to_kitchen", "polished_wooden_floor"]
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["open_plan", "modular_storage", "granite_countertops"]
+        },
+        {
+          "room_type": "master_bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["attached_bathroom", "wardrobe", "private_balcony"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["shared_bathroom", "built_in_cupboards"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["shared_bathroom", "built_in_cupboards"]
+        },
+        {
+          "room_type": "study_room",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["natural_light", "wooden_flooring"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "entrance",
+          "direction": "north",
+          "features": ["grand_wooden_door", "verandah"]
+        },
+        {
+          "opening_type": "window",
+          "room": "living_room",
+          "direction": "east",
+          "features": ["large_wooden_frame", "glass_panels"]
+        },
+        {
+          "opening_type": "door",
+          "room": "kitchen",
+          "direction": "south",
+          "features": ["sliding_doors", "access_to_outside"]
+        }
+      ],
+      "special_features": [
+        {
+          "feature_type": "courtyard",
+          "dimensions": { "length": 10, "width": 10 },
+          "location": "center"
+        },
+        {
+          "feature_type": "verandah",
+          "dimensions": { "length": 20, "width": 5 },
+          "features": ["wooden_beams", "tiles"]
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_type": "master_bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["attached_bathroom", "wardrobe", "private_balcony"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "window",
+          "room": "master_bedroom",
+          "direction": "west",
+          "features": ["large_wooden_frame", "glass_panels"]
+        }
+      ]
+    }
+  ],
+  "vastu_compliance": true,
+  "local_building_norm_compliance": true
+}

@@ -1,0 +1,179 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1500,
+      "style": "Odisha Temple-Inspired Adaptive Reuse"
+    },
+    "plot": {
+      "orientation": "east",
+      "area": 1500,
+      "constraints": "heritage city regulations, mature trees preservation"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "puja_room",
+        "count": 1
+      },
+      {
+        "type": "wine_cellar",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1450.0,
+  "construction_cost": 362500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "north_entrance"
+          ],
+          "windows": [
+            "east_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "living_room_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_1_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "living_room_door"
+          ],
+          "windows": [
+            "east_window",
+            "north_window"
+          ]
+        },
+        {
+          "id": "bathroom_1_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 15,
+            "width": 8,
+            "height": 7
+          },
+          "doors": [
+            "bedroom_door"
+          ],
+          "windows": [
+            "jaali_vent"
+          ]
+        },
+        {
+          "id": "bedroom_2_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 22,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "corridor_door"
+          ],
+          "windows": [
+            "north_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "bathroom_2_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 24,
+            "y": 15,
+            "width": 8,
+            "height": 7
+          },
+          "doors": [
+            "corridor_door"
+          ],
+          "windows": [
+            "jaali_vent"
+          ]
+        },
+        {
+          "id": "puja_room_0",
+          "type": "other",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "living_room_door"
+          ],
+          "windows": [
+            "east_jaali"
+          ]
+        },
+        {
+          "id": "wine_cellar_0",
+          "type": "other",
+          "bounds": {
+            "x": 32,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "exterior_access"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,375 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 1200,
+      "style": "Brutalist Concrete"
+    },
+    "plot": {
+      "size": 20000,
+      "location": "rural",
+      "climate": "tropical with monsoons",
+      "orientation": "east-west linear",
+      "noiseSources": [
+        "highway"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "specialFeatures": [
+          "walk-in closet",
+          "private bathroom",
+          "sound insulation"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "count": 3,
+        "specialFeatures": [
+          "built-in desks",
+          "sound insulation"
+        ]
+      },
+      {
+        "type": "brewery",
+        "count": 1,
+        "specialFeatures": [
+          "temperature control",
+          "ventilation",
+          "sound insulation",
+          "concrete fermentation tanks"
+        ]
+      },
+      {
+        "type": "atrium",
+        "count": 1,
+        "specialFeatures": [
+          "open to sky",
+          "rainwater collection",
+          "tropical plants"
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "specialFeatures": [
+          "double-height ceiling",
+          "views to atrium"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "specialFeatures": [
+          "island",
+          "professional appliances"
+        ]
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "specialFeatures": [
+          "opens to atrium"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "specialFeatures": [
+          "rain showers",
+          "natural stone"
+        ]
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "specialFeatures": [
+          "laundry",
+          "storage"
+        ]
+      },
+      {
+        "type": "garage",
+        "count": 1,
+        "specialFeatures": [
+          "2-car capacity",
+          "EV charging"
+        ]
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 1850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "atrium_0",
+          "type": "atrium",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 12,
+            "height": 18
+          },
+          "doors": [
+            "north",
+            "south",
+            "east",
+            "west"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 32,
+            "y": 15,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": [
+            "north",
+            "south"
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 33,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 32,
+            "y": 25,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "east"
+          ],
+          "windows": [
+            "north",
+            "south"
+          ]
+        },
+        {
+          "id": "brewery_0",
+          "type": "brewery",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "east"
+          ],
+          "windows": [],
+          "specialFeatures": [
+            "temperature control",
+            "sound insulation"
+          ]
+        },
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "east"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_0_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 44,
+            "y": 15,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_0_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 44,
+            "y": 29,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "atrium_1",
+          "type": "atrium",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 12,
+            "height": 18
+          },
+          "doors": [],
+          "windows": [],
+          "specialFeatures": [
+            "open to below"
+          ]
+        },
+        {
+          "id": "master_bedroom_1",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 15,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            "north",
+            "south"
+          ],
+          "specialFeatures": [
+            "sound insulation"
+          ]
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            "east",
+            "west"
+          ],
+          "specialFeatures": [
+            "sound insulation"
+          ]
+        },
+        {
+          "id": "bedroom_1_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            "east",
+            "west"
+          ],
+          "specialFeatures": [
+            "sound insulation"
+          ]
+        },
+        {
+          "id": "bedroom_1_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 44,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            "east",
+            "west"
+          ],
+          "specialFeatures": [
+            "sound insulation"
+          ]
+        },
+        {
+          "id": "bathroom_1_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 44,
+            "y": 15,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 44,
+            "y": 29,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

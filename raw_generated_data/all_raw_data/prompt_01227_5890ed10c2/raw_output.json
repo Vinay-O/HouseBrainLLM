@@ -1,0 +1,94 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance",
+          "dimensions": { "length": 2.5, "width": 1.5 },
+          "position": { "direction": "north" }
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 4, "width": 3.5 },
+          "position": { "relative_to": "entrance", "direction": "east" }
+        },
+        {
+          "room_type": "dining_room",
+          "dimensions": { "length": 3.5, "width": 3 },
+          "position": { "adjacent_to": "living_room" }
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 4, "width": 3 },
+          "position": { "relative_to": "dining_room", "direction": "south" },
+          "features": ["sink", "stove", "cabinetry"]
+        },
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 4, "width": 3.5 },
+          "position": { "relative_to": "living_room", "direction": "west" }
+        },
+        {
+          "room_type": "home_office",
+          "dimensions": { "length": 3, "width": 2.5 },
+          "position": { "adjacent_to": "bedroom" }
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": { "length": 2.5, "width": 2 },
+          "position": { "adjacent_to": "bedroom", "direction": "north-west" }
+        },
+        {
+          "room_type": "garage",
+          "dimensions": { "length": 6, "width": 3 },
+          "position": { "direction": "west", "access": "from road" }
+        }
+      ],
+      "openings": [
+        {
+          "type": "main_entrance",
+          "dimensions": { "width": 1.2, "height": 2.5 },
+          "material": "wooden door with traditional carvings"
+        },
+        {
+          "type": "windows",
+          "quantity": 8,
+          "dimensions": { "width": 1.5, "height": 1.5 },
+          "position": "various walls for natural light and ventilation"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "dimensions": { "length": 4, "width": 3.5 },
+          "position": { "above": "ground_floor_bedroom" }
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": { "length": 2.5, "width": 2 },
+          "position": { "adjacent_to": "first_floor_bedroom", "direction": "north-west" }
+        },
+        {
+          "room_type": "rooftop_terrace",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["outdoor seating", "small garden"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "staircase",
+          "dimensions": { "width": 1.2 },
+          "position": { "near": "main_entrance" }
+        },
+        {
+          "type": "windows",
+          "quantity": 4,
+          "dimensions": { "width": 1.5, "height": 1.5 },
+          "position": "various walls for natural light and ventilation"
+        }
+      ]
+    }
+  ]}

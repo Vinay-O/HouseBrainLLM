@@ -1,0 +1,294 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 5000,
+      "style": "Indo-Islamic fusion with Mughal arch influences"
+    },
+    "plot": {
+      "width": 50,
+      "height": 50,
+      "orientation": "south"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "home_office",
+        "count": 2
+      },
+      {
+        "type": "music_room",
+        "count": 1
+      },
+      {
+        "type": "courtyard",
+        "count": 1
+      },
+      {
+        "type": "terrace",
+        "count": 1
+      },
+      {
+        "type": "kitchen_garden",
+        "count": 1
+      },
+      {
+        "type": "cooling_chamber",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 5000.0,
+  "construction_cost": 12500000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard_0",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            "north_1",
+            "east_1",
+            "south_1",
+            "west_1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "courtyard_north"
+          ],
+          "windows": [
+            "north_1",
+            "west_1"
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_east"
+          ],
+          "windows": [
+            "east_1",
+            "north_2"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_east"
+          ],
+          "windows": [
+            "east_2"
+          ]
+        },
+        {
+          "id": "home_office_0",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "courtyard_west"
+          ],
+          "windows": [
+            "west_2"
+          ]
+        },
+        {
+          "id": "music_room_0",
+          "type": "music_room",
+          "bounds": {
+            "x": 10,
+            "y": 30,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "courtyard_south"
+          ],
+          "windows": [
+            "south_2"
+          ]
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "external_east"
+          ],
+          "windows": []
+        },
+        {
+          "id": "cooling_chamber_0",
+          "type": "cooling_chamber",
+          "bounds": {
+            "x": 40,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "external_east"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "terrace_1",
+          "type": "terrace",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            "staircase"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "terrace_north"
+          ],
+          "windows": [
+            "north_1",
+            "west_1"
+          ]
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "terrace_east"
+          ],
+          "windows": [
+            "east_1",
+            "north_2"
+          ]
+        },
+        {
+          "id": "home_office_1_1",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "terrace_west"
+          ],
+          "windows": [
+            "west_2"
+          ]
+        },
+        {
+          "id": "bathroom_1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "hall"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

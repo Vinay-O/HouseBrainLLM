@@ -1,0 +1,203 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_foyer",
+          "dimensions": { "length": 10, "width": 8 },
+          "purpose": "foyer"
+        },
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 20, "width": 15 },
+          "purpose": "living room"
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "purpose": "dining room"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["modular", "gas_stove", "sink", "cabinet_storage"],
+          "purpose": "kitchen"
+        },
+        {
+          "room_id": "master_bedroom",
+          "dimensions": { "length": 18, "width": 15 },
+          "features": ["attached_bathroom", "wardrobe", "balcony"],
+          "purpose": "bedroom"
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 15, "width": 14 },
+          "features": ["attached_bathroom", "wardrobe"],
+          "purpose": "bedroom"
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "study room"
+        },
+        {
+          "room_id": "guest_bedroom",
+          "dimensions": { "length": 14, "width": 13 },
+          "features": ["attached_bathroom", "wardrobe"],
+          "purpose": "bedroom"
+        },
+        {
+          "room_id": "utility_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["washing_machine", "storage"],
+          "purpose": "utility room"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 6.5, "width": 3 },
+          "location": "front of the house"
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "dimensions": { "length": 6.5, "width": 3 },
+          "location": "back garden"
+        },
+        {
+          "opening_id": "living_room_window_1",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 4 },
+          "location": "front of the living room"
+        },
+        {
+          "opening_id": "living_room_window_2",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 4 },
+          "location": "side of the living room"
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimensions": { "length": 3, "width": 3 },
+          "location": "back of the kitchen"
+        },
+        {
+          "opening_id": "master_bedroom_window",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "location": "front and side of the master bedroom"
+        },
+        {
+          "opening_id": "garden_access",
+          "type": "gate",
+          "dimensions": { "length": 8, "width": 3 },
+          "location": "side of the house leading to the garden"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 16, "width": 14 },
+          "features": ["attached_bathroom", "wardrobe", "balcony"],
+          "purpose": "bedroom"
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 15, "width": 13 },
+          "features": ["attached_bathroom", "wardrobe", "balcony"],
+          "purpose": "bedroom"
+        },
+        {
+          "room_id": "upper_floor_terrace",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["outdoor_furniture", "plant_area"],
+          "purpose": "terrace"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "upper_floor_balcony_door_1",
+          "type": "door",
+          "dimensions": { "length": 6.5, "width": 3 },
+          "location": "balcony of bedroom 3"
+        },
+        {
+          "opening_id": "upper_floor_balcony_door_2",
+          "type": "door",
+          "dimensions": { "length": 6.5, "width": 3 },
+          "location": "balcony of bedroom 4"
+        },
+        {
+          "opening_id": "terrace_access",
+          "type": "door",
+          "dimensions": { "length": 7, "width": 3 },
+          "location": "access to the terrace"
+        },
+        {
+          "opening_id": "bedroom_3_window",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "location": "front and side of bedroom 3"
+        },
+        {
+          "opening_id": "bedroom_4_window",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 4 },
+          "location": "front and side of bedroom 4"
+        }
+      ]
+    }
+  ],
+  "outdoor_features": [
+    {
+      "feature_id": "garden",
+      "area": 1200,
+      "features": ["lawn", "flower_beds", "outdoor_seating_area"]
+    },
+    {
+      "feature_id": "parking",
+      "area": 300,
+      "capacity": 2
+    }
+  ],
+  "eco_features": [
+    {
+      "feature_id": "solar_panels",
+      "type": "energy",
+      "description": "Roof-mounted solar panels for electricity generation"
+    },
+    {
+      "feature_id": "rainwater_harvesting",
+      "type": "water",
+      "description": "System to collect and store rainwater for garden irrigation"
+    },
+    {
+      "feature_id": "natural_ventilation",
+      "type": "ventilation",
+      "description": "Design incorporating cross-ventilation and large windows for natural airflow"
+    }
+  ],
+  "vastu_compliance": [
+    {
+      "feature": "entrance_foyer",
+      "direction": "north-east",
+      "importance": "high"
+    },
+    {
+      "feature": "kitchen",
+      "direction": "south-east",
+      "importance": "medium"
+    },
+    {
+      "feature": "master_bedroom",
+      "direction": "south-west",
+      "importance": "high"
+    }
+  ]
+}

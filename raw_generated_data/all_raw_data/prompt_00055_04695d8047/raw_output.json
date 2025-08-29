@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "room_id": "master_bedroom",
+          "area": 500,
+          "dimensions": {
+            "length": 25,
+            "width": 20
+          },
+          "features": ["attached_bathroom", "wardrobe", "balcony"]
+        },
+        {
+          "room_type": "bedroom",
+          "room_id": "bedroom_2",
+          "area": 400,
+          "dimensions": {
+            "length": 20,
+            "width": 20
+          },
+          "features": ["attached_bathroom", "wardrobe"]
+        },
+        {
+          "room_type": "bedroom",
+          "room_id": "bedroom_3",
+          "area": 400,
+          "dimensions": {
+            "length": 20,
+            "width": 20
+          },
+          "features": ["attached_bathroom", "wardrobe"]
+        },
+        {
+          "room_type": "living_room",
+          "room_id": "living_room",
+          "area": 600,
+          "dimensions": {
+            "length": 30,
+            "width": 20
+          },
+          "features": ["dining_area", "tv_unit", "sofa_set"]
+        },
+        {
+          "room_type": "kitchen",
+          "room_id": "kitchen",
+          "area": 400,
+          "dimensions": {
+            "length": 20,
+            "width": 20
+          },
+          "features": ["modular_kitchen", "pantry", "dining_table"]
+        },
+        {
+          "room_type": "swimming_pool",
+          "room_id": "swimming_pool",
+          "area": 300,
+          "dimensions": {
+            "length": 25,
+            "width": 12
+          }
+        },
+        {
+          "room_type": "study_room",
+          "room_id": "study_room",
+          "area": 200,
+          "dimensions": {
+            "length": 20,
+            "width": 10
+          }
+        },
+        {
+          "room_type": "guest_room",
+          "room_id": "guest_room",
+          "area": 300,
+          "dimensions": {
+            "length": 20,
+            "width": 15
+          },
+          "features": ["attached_bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "entrance",
+          "size": "double_door",
+          "position": "north"
+        },
+        {
+          "type": "window",
+          "size": "large",
+          "position": "east",
+          "room_id": "living_room"
+        },
+        {
+          "type": "window",
+          "size": "medium",
+          "position": "west",
+          "room_id": "bedroom_2"
+        },
+        {
+          "type": "window",
+          "size": "small",
+          "position": "south",
+          "room_id": "kitchen"
+        }
+      ]
+    }
+  ]
+}

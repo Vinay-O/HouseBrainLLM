@@ -1,0 +1,142 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "living room",
+          "dimensions": { "length": 15, "width": 20 },
+          "features": ["open-plan kitchen", "access to garden"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": { "length": 10, "width": 12 },
+          "features": ["modular storage", "gas stove", "sink"]
+        },
+        {
+          "room_id": "master_bedroom",
+          "type": "bedroom (master)",
+          "dimensions": { "length": 15, "width": 14 },
+          "features": ["attached bathroom", "wardrobe", "balcony with garden view"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom (second)",
+          "dimensions": { "length": 13, "width": 12 },
+          "features": ["attached bathroom", "wardrobe"]
+        },
+        {
+          "room_id": "study_room",
+          "type": "study room",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["work desk", "bookshelf"]
+        },
+        {
+          "room_id": "guest_room",
+          "type": "bedroom (guest)",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["attached bathroom", "wardrobe"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "location": "front of the house",
+          "dimensions": { "width": 3.5, "height": 7 }
+        },
+        {
+          "opening_id": "garden_access",
+          "type": "door",
+          "location": "living room to garden",
+          "dimensions": { "width": 2.5, "height": 6.5 }
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "location": "kitchen wall facing garden",
+          "dimensions": { "width": 3, "height": 4 }
+        },
+        {
+          "opening_id": "bedroom_balcony",
+          "type": "door",
+          "location": "master bedroom to balcony",
+          "dimensions": { "width": 2.5, "height": 6.5 }
+        }
+      ],
+      "garden": {
+        "area": 500,
+        "features": ["outdoor seating", "small pond", "landscaping"]
+      },
+      "vastu_compliance": [
+        {
+          "feature": "main entrance",
+          "direction": "north-east",
+          "importance": "auspicious for positive energy flow"
+        },
+        {
+          "feature": "kitchen",
+          "direction": "south-east",
+          "importance": "traditional Vastu position for kitchen to avoid fire hazards"
+        },
+        {
+          "feature": "master bedroom",
+          "direction": "south-west",
+          "importance": "for stability and strength in family life"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "type": "bedroom (third)",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["attached bathroom", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "type": "bedroom (fourth)",
+          "dimensions": { "length": 13, "width": 10 },
+          "features": ["attached bathroom", "wardrobe"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "bedroom_3_window",
+          "type": "window",
+          "location": "north wall of bedroom 3",
+          "dimensions": { "width": 2.5, "height": 4 }
+        },
+        {
+          "opening_id": "bedroom_4_window",
+          "type": "window",
+          "location": "east wall of bedroom 4",
+          "dimensions": { "width": 2.5, "height": 4 }
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_id": "terrace_garden",
+          "type": "terrace garden",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["outdoor seating", "small water feature"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "terrace_access",
+          "type": "door",
+          "location": "access from first floor bedroom",
+          "dimensions": { "width": 2.5, "height": 6.5 }
+        }
+      ]
+    }
+  ]
+}

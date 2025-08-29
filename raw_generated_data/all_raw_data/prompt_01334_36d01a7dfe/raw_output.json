@@ -1,0 +1,118 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "type": "bedroom",
+          "area": 400,
+          "features": ["spacious balcony", "wardrobe", "attached bathroom"]
+        },
+        {
+          "type": "living_room",
+          "area": 500,
+          "features": ["sofa set", "TV unit", "dining table"]
+        },
+        {
+          "type": "kitchen",
+          "area": 400,
+          "features": ["modular cabinets", "gas stove", "sink"]
+        },
+        {
+          "type": "central_courtyard",
+          "area": 600,
+          "features": ["garden", "fountain", "outdoor seating"]
+        },
+        {
+          "type": "study_room",
+          "area": 300,
+          "features": ["work desk", "bookshelf"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "entrance",
+          "direction": "north",
+          "width": 10
+        },
+        {
+          "type": "window",
+          "room": "living_room",
+          "direction": "east",
+          "count": 4
+        },
+        {
+          "type": "door",
+          "room": "bedroom",
+          "direction": "west",
+          "count": 1
+        }
+      ],
+      "additional_features": [
+        {
+          "type": "balcony",
+          "associated_with": "bedroom",
+          "area": 200,
+          "features": ["railing", "outdoor furniture"]
+        },
+        {
+          "type": "parking",
+          "area": 500,
+          "capacity": 2
+        }
+      ],
+      "vastu_compliance": [
+        {
+          "feature": "central courtyard",
+          "direction": "center",
+          "purpose": "positive energy flow"
+        },
+        {
+          "feature": "bedroom",
+          "direction": "south-west",
+          "purpose": "good sleep and health"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "type": "bedroom",
+          "area": 400,
+          "features": ["spacious balcony", "wardrobe", "attached bathroom"]
+        },
+        {
+          "type": "living_room",
+          "area": 500,
+          "features": ["sofa set", "TV unit"]
+        },
+        {
+          "type": "kitchenette",
+          "area": 200,
+          "features": ["microwave", "mini fridge"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "room": "bedroom",
+          "direction": "east",
+          "count": 2
+        },
+        {
+          "type": "door",
+          "room": "living_room",
+          "direction": "north",
+          "count": 1
+        }
+      ],
+      "additional_features": [
+        {
+          "type": "balcony",
+          "associated_with": "bedroom",
+          "area": 200,
+          "features": ["railing", "outdoor furniture"]
+        }
+      ]
+    }
+  ] }

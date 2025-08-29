@@ -1,0 +1,228 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 1800.0,
+      "style": "Organic Architecture"
+    },
+    "plot": {
+      "slope": "terraced mountain slope",
+      "climate": "alpine with heavy snow loads",
+      "prevailingWindDirection": "diagonal"
+    },
+    "roomBreakdown": [
+      {
+        "id": "sunken_living_room",
+        "type": "living_room",
+        "level": 0,
+        "area": 300.0,
+        "features": [
+          "sunken",
+          "large windows for natural light"
+        ]
+      },
+      {
+        "id": "kitchen_dining",
+        "type": "kitchen",
+        "level": 1,
+        "area": 250.0,
+        "features": [
+          "open plan",
+          "skylight"
+        ]
+      },
+      {
+        "id": "master_bedroom",
+        "type": "bedroom",
+        "level": 1,
+        "area": 200.0,
+        "features": [
+          "walk-in closet",
+          "south-facing windows"
+        ]
+      },
+      {
+        "id": "guest_bedroom",
+        "type": "bedroom",
+        "level": 1,
+        "area": 150.0,
+        "features": [
+          "east-facing windows"
+        ]
+      },
+      {
+        "id": "game_room",
+        "type": "recreation",
+        "level": 2,
+        "area": 350.0,
+        "features": [
+          "built-in arcade",
+          "skylights",
+          "mountain views"
+        ]
+      },
+      {
+        "id": "utility_room",
+        "type": "utility",
+        "level": 0,
+        "area": 100.0,
+        "features": [
+          "greywater recycling system"
+        ]
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 324000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "sunken_living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "to": "utility_room",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            },
+            {
+              "wall": "west",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "to": "exterior",
+              "type": "exterior"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "to": "master_bedroom",
+              "type": "interior"
+            },
+            {
+              "to": "guest_bedroom",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "to": "bathroom",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "game_room",
+          "type": "recreation",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 14
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "panoramic"
+            },
+            {
+              "wall": "north",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living_Dining_Room",
+          "dimensions": {"length": 15, "width": 20},
+          "location": {"x": 5, "y": 0}
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 8, "width": 12},
+          "location": {"x": 32, "y": 0}
+        },
+        {
+          "room_name": "Master_Bedroom",
+          "dimensions": {"length": 15, "width": 15},
+          "location": {"x": 18, "y": 30}
+        },
+        {
+          "room_name": "Bathroom",
+          "dimensions": {"length": 7, "width": 8},
+          "location": {"x": 25, "y": 42}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Door",
+          "location": {"room_from": "Living_Dining_Room", "coordinates": [13, 0]}
+        },
+        {
+          "opening_type": "Window",
+          "location": {"wall_side": "north", "dimensions": {"length": 5, "width": 2}, "position": {"x": 14, "y": -1}}
+        },
+        {
+          "opening_type": "Courtyard_Opening",
+          "location": {"dimensions": {"length": 10, "width": 10}, "position": {"x": 15, "y": 20}}
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_name": "Guest_Bedroom_1",
+          "dimensions": {"length": 10, "width": 12},
+          "location": {"x": 5, "y": 5}
+        },
+        {
+          "room_name": "Guest_Bedroom_2",
+          "dimensions": {"length": 10, "width": 12},
+          "location": {"x": 23, "y": 5}
+        },
+        {
+          "room_name": "Balcony",
+          "dimensions": {"length": 8, "width": 15},
+          "location": {"x": 20, "y": 27}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Staircase_Opening",
+          "location": {"position": [4, 39], "dimensions": {"length": 6, "width": 15}}
+        },
+        {
+          "opening_type": "Window",
+          "location": {"wall_side": "south", "coordinates": [{"x": 28, "y": 40}, {"x": 30, "y": 45}]}
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Contemporary Vernacular"
+    },
+    "plot": {
+      "type": "inner_plot",
+      "location": "Hyderabad",
+      "climate": "composite",
+      "features": [
+        "privacy_focus",
+        "air_pollution_adaptation"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1
+      },
+      {
+        "type": "children_bedroom",
+        "count": 1
+      },
+      {
+        "type": "domestic_help_room",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "puja_room",
+        "count": 1
+      },
+      {
+        "type": "veranda",
+        "count": 1
+      },
+      {
+        "type": "garden",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 3000000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "veranda_1",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 5
+              },
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 5
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 5
+              },
+              "to_room": "veranda_1"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 5
+              },
+              "to_room": "veranda_1"
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 10
+              },
+              "to_room": "puja_room"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 10
+              },
+              "to_room": "master_bedroom"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 15
+              },
+              "to_room": "children_bedroom"
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 20
+              },
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 10
+              },
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 10
+              },
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 10
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 8
+              },
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 10
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 45,
+                "y": 8
+              },
+              "size": "medium"
+            },
+            {
+              "position": {
+                "x": 38,
+                "y": 5
+              },
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "children_bedroom",
+          "type": "children_bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 15
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 45,
+                "y": 18
+              },
+              "size": "medium"
+            },
+            {
+              "position": {
+                "x": 38,
+                "y": 20
+              },
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 20
+              },
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 25
+              },
+              "to_room": "utility_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 23
+              },
+              "size": "medium"
+            },
+            {
+              "position": {
+                "x": 8,
+                "y": 30
+              },
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "domestic_help_room",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 25
+              },
+              "to_room": "kitchen"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 25
+              },
+              "to_room": "garden"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 20,
+                "y": 20
+              },
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "garden",
+          "type": "garden",
+          "bounds": {
+            "x": 25,
+            "y": 20,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 25
+              },
+              "to_room": "utility_room"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 800,
+      "style": "Contemporary Assamese with bamboo integration"
+    },
+    "plot": {
+      "location": "Industrial city outskirts cul-de-sac",
+      "size": 800,
+      "shape": "Rectangular",
+      "orientation": "North-South",
+      "notes": "Pollution concerns, heritage building proximity, prevailing wind from northeast"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 180,
+        "level": 0
+      },
+      {
+        "type": "kitchen",
+        "area": 100,
+        "level": 0
+      },
+      {
+        "type": "dining_room",
+        "area": 80,
+        "level": 0
+      },
+      {
+        "type": "studio",
+        "area": 150,
+        "level": 0
+      },
+      {
+        "type": "bedroom",
+        "area": 120,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 120,
+        "level": 1
+      },
+      {
+        "type": "library",
+        "area": 150,
+        "level": 1
+      },
+      {
+        "type": "bathroom",
+        "area": 50,
+        "level": 0
+      },
+      {
+        "type": "bathroom",
+        "area": 50,
+        "level": 1
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 1920000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "north_wall",
+            "east_wall_to_dining"
+          ],
+          "windows": [
+            "north_wall_large",
+            "west_wall"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "south_wall_to_outdoor"
+          ],
+          "windows": [
+            "east_wall_vent"
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            "west_wall_to_living",
+            "north_wall_to_studio"
+          ],
+          "windows": [
+            "south_wall"
+          ]
+        },
+        {
+          "id": "studio_0",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            "south_wall_from_dining",
+            "east_wall_exit"
+          ],
+          "windows": [
+            "north_wall_large",
+            "east_wall_upper"
+          ]
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "west_wall_from_hall"
+          ],
+          "windows": [
+            "south_wall_high"
+          ]
+        },
+        {
+          "id": "chabutra_0",
+          "type": "platform",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "west_wall_from_kitchen"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "south_wall_to_hall"
+          ],
+          "windows": [
+            "north_wall",
+            "east_wall"
+          ]
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 13,
+            "height": 10
+          },
+          "doors": [
+            "south_wall_to_hall"
+          ],
+          "windows": [
+            "north_wall",
+            "west_wall"
+          ]
+        },
+        {
+          "id": "library_1",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            "north_wall_from_hall"
+          ],
+          "windows": [
+            "south_wall_full",
+            "east_wall",
+            "west_wall_nooks"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "east_wall_from_hall"
+          ],
+          "windows": [
+            "north_wall_high"
+          ]
+        }
+      ]
+    }
+  ]
+}

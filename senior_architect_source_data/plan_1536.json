@@ -1,0 +1,268 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 2800,
+      "style": "Desert Contemporary"
+    },
+    "plot": {
+      "description": "Windswept coastal bluff in a Mediterranean dry summers climate, following natural contours",
+      "size": "Large",
+      "terrain": "Sloping"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "description": "Primary suite with accessible bathroom and second bedroom for guests/caregivers"
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "description": "Primary en-suite with wheelchair accessible shower and powder room"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Open plan kitchen with accessible counters and appliances"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Great room with panoramic coastal views"
+      },
+      {
+        "type": "workshop",
+        "count": 1,
+        "description": "Workshop with hydraulic car lift and tool storage"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "description": "Mechanical room with HVAC, water systems, and storage"
+      },
+      {
+        "type": "entry",
+        "count": 1,
+        "description": "Main entrance with airlock security vestibule"
+      }
+    ]
+  },
+  "total_area": 2800.0,
+  "construction_cost": 875000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_vestibule",
+          "type": "entry",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "exterior"
+            },
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "great_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 30,
+            "height": 24
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "floor_to_ceiling"
+            },
+            {
+              "wall": "east",
+              "type": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 38,
+            "y": 0,
+            "width": 18,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "clerestory"
+            }
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "type": "horizontal_slot"
+            }
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 16,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "type": "horizontal_slot"
+            }
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 48,
+            "y": 16,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 28,
+            "height": 24
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "exterior_oversize"
+            },
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "type": "clerestory"
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 28,
+            "y": 30,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage",
+          "type": "utility",
+          "bounds": {
+            "x": 28,
+            "y": 44,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Coastal Stilted Linear Pavilion"
+    },
+    "plot": {
+      "slope": "hillside",
+      "orientation": "east",
+      "location": "Nainital"
+    },
+    "roomBreakdown": [
+      {
+        "type": "prayer_room",
+        "area": 300
+      },
+      {
+        "type": "meditation_pavilion",
+        "area": 250
+      },
+      {
+        "type": "courtyard",
+        "area": 600
+      },
+      {
+        "type": "step_well",
+        "area": 180
+      },
+      {
+        "type": "living_room",
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "area": 250
+      },
+      {
+        "type": "bedroom",
+        "area": 350
+      },
+      {
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 280
+      },
+      {
+        "type": "bathroom",
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "utility_room",
+        "area": 150
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 5760000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "stilt_base",
+          "type": "stilt_base",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 20
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "rainwater_tank",
+          "type": "utility_room",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "recycling_center",
+          "type": "utility_room",
+          "bounds": {
+            "x": 25,
+            "y": 5,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "main_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 15
+            },
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "step_well",
+          "type": "step_well",
+          "bounds": {
+            "x": 15,
+            "y": 8,
+            "width": 10,
+            "height": 4
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "prayer_room",
+          "type": "prayer_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 25,
+            "y": 8,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            },
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4
+            },
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "meditation_pavilion",
+          "type": "meditation_pavilion",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 3
+            },
+            {
+              "wall": "east",
+              "position": 7
+            },
+            {
+              "wall": "north",
+              "position": 5
+            },
+            {
+              "wall": "west",
+              "position": 3
+            },
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 14,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 26,
+            "y": 0,
+            "width": 14,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 5
+            },
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "upper_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 40,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 15
+            },
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 3
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 20,
+            "width": 14,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 26,
+            "y": 20,
+            "width": 7,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 33,
+            "y": 20,
+            "width": 7,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 3
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

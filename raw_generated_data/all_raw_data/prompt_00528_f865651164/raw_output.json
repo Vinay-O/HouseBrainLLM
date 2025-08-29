@@ -1,0 +1,77 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "area": 200,
+          "shape": "rectangular",
+          "features": ["open_plan_kitchen", "home_office_nook"]
+        },
+        {
+          "room_type": "kitchen",
+          "area": 100,
+          "shape": "L-shaped",
+          "features": ["modular_storage", "gas_stove", "sink"]
+        },
+        {
+          "room_type": "bedroom_1",
+          "area": 200,
+          "shape": "square",
+          "features": ["wardrobe", "balcony_access"]
+        },
+        {
+          "room_type": "bedroom_2",
+          "area": 150,
+          "shape": "rectangular",
+          "features": ["wardrobe", "study_desktop"]
+        },
+        {
+          "room_type": "bathroom_1",
+          "area": 50,
+          "shape": "square",
+          "features": ["shower", "toilet", "sink"]
+        },
+        {
+          "room_type": "bathroom_2",
+          "area": 40,
+          "shape": "rectangular",
+          "features": ["shower", "toilet", "sink"]
+        },
+        {
+          "room_type": "home_office",
+          "area": 60,
+          "shape": "square",
+          "features": ["desk", "chair", "shelving"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "entrance",
+          "direction": "north"
+        },
+        {
+          "type": "balcony",
+          "room": "bedroom_1",
+          "direction": "east"
+        },
+        {
+          "type": "terrace_access",
+          "direction": "west"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "terrace",
+          "area": 150,
+          "shape": "rectangular",
+          "features": ["outdoor_seating", "potted_plants"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

@@ -1,0 +1,586 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 3000,
+      "style": "Colonial Bungalow with period features"
+    },
+    "plot": {
+      "orientation": "east",
+      "size": 3000,
+      "location": "premium suburban villa community",
+      "specialFeatures": [
+        "underground utilities",
+        "prevailing wind utilization"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_clinic",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "baithak",
+        "count": 1
+      },
+      {
+        "type": "yoga_pavilion",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2800.0,
+  "construction_cost": 672000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "home_clinic_0",
+          "type": "home_clinic",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "internal",
+              "position": 10,
+              "connectsTo": "waiting_area"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 13
+            }
+          ]
+        },
+        {
+          "id": "waiting_area_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            },
+            {
+              "wall": "internal",
+              "position": 7,
+              "connectsTo": "home_clinic_0"
+            },
+            {
+              "wall": "internal",
+              "position": 7,
+              "connectsTo": "main_entrance"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 13
+            }
+          ]
+        },
+        {
+          "id": "main_entrance_0",
+          "type": "foyer",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            },
+            {
+              "wall": "internal",
+              "position": 5,
+              "connectsTo": "waiting_area_0"
+            },
+            {
+              "wall": "internal",
+              "position": 5,
+              "connectsTo": "living_room_0"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "internal",
+              "position": 10,
+              "connectsTo": "main_entrance_0"
+            },
+            {
+              "wall": "internal",
+              "position": 10,
+              "connectsTo": "dining_room_0"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 13
+            }
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 65,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            },
+            {
+              "wall": "internal",
+              "position": 7,
+              "connectsTo": "living_room_0"
+            },
+            {
+              "wall": "internal",
+              "position": 7,
+              "connectsTo": "kitchen_0"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 13
+            }
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 80,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            },
+            {
+              "wall": "internal",
+              "position": 7,
+              "connectsTo": "dining_room_0"
+            },
+            {
+              "wall": "internal",
+              "position": 7,
+              "connectsTo": "utility_0"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 13
+            }
+          ]
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 95,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            },
+            {
+              "wall": "internal",
+              "position": 5,
+              "connectsTo": "kitchen_0"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            },
+            {
+              "wall": "internal",
+              "position": 7,
+              "connectsTo": "bathroom_1_0"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7
+            },
+            {
+              "wall": "west",
+              "position": 13
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            },
+            {
+              "wall": "internal",
+              "position": 5,
+              "connectsTo": "bedroom_1_0"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 5
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            },
+            {
+              "wall": "internal",
+              "position": 7,
+              "connectsTo": "bathroom_2_0"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7
+            },
+            {
+              "wall": "west",
+              "position": 13
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            },
+            {
+              "wall": "internal",
+              "position": 5,
+              "connectsTo": "bedroom_2_0"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 5
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "primary_bedroom_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "internal",
+              "position": 10,
+              "connectsTo": "primary_bathroom_0"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7
+            },
+            {
+              "wall": "west",
+              "position": 13
+            }
+          ]
+        },
+        {
+          "id": "primary_bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 70,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            },
+            {
+              "wall": "internal",
+              "position": 7,
+              "connectsTo": "primary_bedroom_0"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7
+            },
+            {
+              "wall": "west",
+              "position": 13
+            }
+          ]
+        },
+        {
+          "id": "baithak_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 85,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "internal",
+              "position": 10,
+              "connectsTo": "garden"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7
+            },
+            {
+              "wall": "west",
+              "position": 13
+            }
+          ]
+        },
+        {
+          "id": "yoga_pavilion_0",
+          "type": "meditation_room",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12
+            },
+            {
+              "wall": "internal",
+              "position": 12,
+              "connectsTo": "garden"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 13
+            },
+            {
+              "wall": "east",
+              "position": 19
+            }
+          ]
+        },
+        {
+          "id": "storage_0",
+          "type": "storage",
+          "bounds": {
+            "x": 25,
+            "y": 30,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            },
+            {
+              "wall": "internal",
+              "position": 5,
+              "connectsTo": "utility_0"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

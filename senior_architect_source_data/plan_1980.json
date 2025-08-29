@@ -1,0 +1,213 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2800,
+      "style": "Brutalist Concrete"
+    },
+    "plot": {
+      "shape": "circular",
+      "slope": "ravine",
+      "climate": "alpine with heavy snow loads",
+      "features": [
+        "360-degree views"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "description": "Professional culinary space for chefs"
+      },
+      {
+        "type": "sauna",
+        "description": "With panoramic windows overlooking the ravine"
+      },
+      {
+        "type": "living_room",
+        "description": "Open plan with brutalist concrete finishes"
+      },
+      {
+        "type": "bedroom",
+        "description": "Master suite with mountain views"
+      },
+      {
+        "type": "bedroom",
+        "description": "Guest room with outdoor access"
+      },
+      {
+        "type": "bathroom",
+        "description": "Spa-like with radiant heating"
+      },
+      {
+        "type": "utility",
+        "description": "Housing solar thermal collectors and mechanical systems"
+      },
+      {
+        "type": "deck",
+        "description": "Wraparound outdoor space with pet access"
+      }
+    ]
+  },
+  "total_area": 2800.0,
+  "construction_cost": 875000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "south_door_to_deck"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            "south_door_to_deck"
+          ],
+          "windows": [
+            "south_window_wall",
+            "west_window"
+          ]
+        },
+        {
+          "id": "utility_mech",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "west_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "deck_main",
+          "type": "deck",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 45,
+            "height": 10
+          },
+          "doors": [
+            "living_room_door",
+            "kitchen_door",
+            "bedroom1_door"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "south_door_to_upper_deck",
+            "west_door_to_bath"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "east_door_to_bath"
+          ],
+          "windows": [
+            "south_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 45,
+            "y": 10,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "west_door_to_bed2",
+            "north_door_to_bed1"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "sauna",
+          "type": "sauna",
+          "bounds": {
+            "x": 5,
+            "y": 25,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "south_door"
+          ],
+          "windows": [
+            "north_window_wall",
+            "east_window"
+          ]
+        },
+        {
+          "id": "deck_upper",
+          "type": "deck",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 50,
+            "height": 10
+          },
+          "doors": [
+            "bedroom1_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

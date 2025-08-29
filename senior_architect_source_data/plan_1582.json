@@ -1,0 +1,311 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 4,
+      "totalArea": 2200,
+      "style": "Mediterranean Villa"
+    },
+    "plot": {
+      "width": 15,
+      "depth": 15,
+      "orientation": "north",
+      "climate": "tropical with monsoons",
+      "notes": "Compact urban balcony conversion, flood-resistant elevated design"
+    },
+    "roomBreakdown": [
+      {
+        "type": "wine_cellar",
+        "count": 1
+      },
+      {
+        "type": "tasting_room",
+        "count": 1
+      },
+      {
+        "type": "library",
+        "count": 2
+      },
+      {
+        "type": "study",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "balcony",
+        "count": 3
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 495000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "wine_cellar_1",
+          "type": "wine_cellar",
+          "bounds": {
+            "x": 2,
+            "y": 2,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "x": 5,
+              "y": 10,
+              "to_room": "tasting_room_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "tasting_room_1",
+          "type": "tasting_room",
+          "bounds": {
+            "x": 2,
+            "y": 10,
+            "width": 8,
+            "height": 3
+          },
+          "doors": [
+            {
+              "x": 5,
+              "y": 10,
+              "to_room": "wine_cellar_1"
+            },
+            {
+              "x": 5,
+              "y": 13,
+              "to_level": 0
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_hall_1",
+          "type": "hall",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 5,
+            "height": 3
+          },
+          "doors": [
+            {
+              "x": 7,
+              "y": 3,
+              "to_room": "living_room_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 3,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "x": 7,
+              "y": 3,
+              "to_room": "entry_hall_1"
+            },
+            {
+              "x": 7,
+              "y": 15,
+              "to_room": "kitchen_1"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 7,
+              "width": 1,
+              "height": 4
+            },
+            {
+              "x": 14,
+              "y": 7,
+              "width": 1,
+              "height": 4
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 5,
+            "y": 15,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 7,
+              "y": 15,
+              "to_room": "living_room_1"
+            }
+          ],
+          "windows": [
+            {
+              "x": 5,
+              "y": 24,
+              "width": 5,
+              "height": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "library_1",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 7,
+              "y": 10,
+              "to_room": "study_1"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 3,
+              "width": 1,
+              "height": 4
+            },
+            {
+              "x": 14,
+              "y": 3,
+              "width": 1,
+              "height": 4
+            }
+          ]
+        },
+        {
+          "id": "study_1",
+          "type": "study",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 7,
+              "y": 10,
+              "to_room": "library_1"
+            }
+          ],
+          "windows": [
+            {
+              "x": 5,
+              "y": 24,
+              "width": 5,
+              "height": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "x": 7,
+              "y": 12,
+              "to_room": "bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 4,
+              "width": 1,
+              "height": 4
+            },
+            {
+              "x": 14,
+              "y": 4,
+              "width": 1,
+              "height": 4
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 5,
+            "y": 12,
+            "width": 5,
+            "height": 13
+          },
+          "doors": [
+            {
+              "x": 7,
+              "y": 12,
+              "to_room": "bedroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "x": 5,
+              "y": 24,
+              "width": 5,
+              "height": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

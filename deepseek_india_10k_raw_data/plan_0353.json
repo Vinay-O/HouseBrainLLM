@@ -1,0 +1,346 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 1500,
+      "style": "Punjabi Farmhouse with Sikh Architectural Elements"
+    },
+    "plot": {
+      "width": 30,
+      "depth": 50,
+      "location": "Kochi backwaters",
+      "constraints": [
+        "compact",
+        "inner plot with privacy focus",
+        "flood-prone area"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3,
+        "specialFeatures": [
+          "universal accessibility"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "specialFeatures": [
+          "universal accessibility"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "specialFeatures": [
+          "biomass energy"
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "specialFeatures": [
+          "heritage brick archways"
+        ]
+      },
+      {
+        "type": "heritage_library",
+        "count": 1,
+        "specialFeatures": [
+          "temperature-controlled storage"
+        ]
+      },
+      {
+        "type": "courtyard",
+        "count": 2,
+        "specialFeatures": [
+          "water features"
+        ]
+      }
+    ]
+  },
+  "total_area": 1500.0,
+  "construction_cost": 425000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [
+            "main_gate"
+          ],
+          "windows": [],
+          "specialFeatures": [
+            "water feature",
+            "lime mortar joints",
+            "privacy walls"
+          ]
+        },
+        {
+          "id": "accessible_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_courtyard",
+            "to_bathroom"
+          ],
+          "windows": [
+            "north_wall"
+          ],
+          "specialFeatures": [
+            "wheelchair accessible",
+            "zero-threshold entry"
+          ]
+        },
+        {
+          "id": "accessible_bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 15,
+            "width": 6,
+            "height": 12
+          },
+          "doors": [
+            "to_bedroom"
+          ],
+          "windows": [
+            "east_wall"
+          ],
+          "specialFeatures": [
+            "roll-in shower",
+            "grab bars",
+            "wheelchair accessible"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 18,
+            "y": 15,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_courtyard",
+            "to_kitchen"
+          ],
+          "windows": [
+            "south_wall",
+            "east_wall"
+          ],
+          "specialFeatures": [
+            "heritage brick archways",
+            "lime mortar joints"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 27,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_living_room",
+            "to_inner_courtyard"
+          ],
+          "windows": [
+            "south_wall"
+          ],
+          "specialFeatures": [
+            "biomass cooking stove",
+            "biomass heating",
+            "universal design"
+          ]
+        },
+        {
+          "id": "dining_area",
+          "type": "dining",
+          "bounds": {
+            "x": 15,
+            "y": 27,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_kitchen",
+            "to_inner_courtyard"
+          ],
+          "windows": [
+            "south_wall"
+          ],
+          "specialFeatures": [
+            "family dining",
+            "accessible design"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "heritage_library",
+          "type": "heritage_library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 18,
+            "height": 15
+          },
+          "doors": [
+            "to_landing"
+          ],
+          "windows": [
+            "north_wall",
+            "east_wall"
+          ],
+          "specialFeatures": [
+            "temperature-controlled manuscript storage",
+            "natural ventilation",
+            "heritage shelves"
+          ]
+        },
+        {
+          "id": "accessible_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "to_landing",
+            "to_bathroom"
+          ],
+          "windows": [
+            "north_wall",
+            "east_wall"
+          ],
+          "specialFeatures": [
+            "wheelchair accessible",
+            "zero-threshold entry"
+          ]
+        },
+        {
+          "id": "accessible_bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 6,
+            "height": 12
+          },
+          "doors": [
+            "to_bedroom"
+          ],
+          "windows": [
+            "east_wall"
+          ],
+          "specialFeatures": [
+            "roll-in shower",
+            "grab bars",
+            "wheelchair accessible"
+          ]
+        },
+        {
+          "id": "meditation_room",
+          "type": "meditation",
+          "bounds": {
+            "x": 6,
+            "y": 15,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_landing"
+          ],
+          "windows": [
+            "south_wall",
+            "east_wall"
+          ],
+          "specialFeatures": [
+            "quiet space",
+            "natural light",
+            "view of courtyards"
+          ]
+        },
+        {
+          "id": "main_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 18,
+            "y": 15,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_landing",
+            "to_bathroom"
+          ],
+          "windows": [
+            "south_wall",
+            "east_wall"
+          ],
+          "specialFeatures": [
+            "walk-in closet",
+            "private balcony"
+          ]
+        },
+        {
+          "id": "main_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 18,
+            "y": 27,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_bedroom"
+          ],
+          "windows": [
+            "south_wall"
+          ],
+          "specialFeatures": [
+            "luxury fixtures",
+            "accessible design",
+            "natural ventilation"
+          ]
+        }
+      ]
+    }
+  ],
+  "special_features": [
+    "universal accessibility throughout",
+    "elevated flood-resistant plinth",
+    "advanced drainage system",
+    "biomass energy for cooking and heating",
+    "multiple haveli-style courtyards with water features",
+    "heritage brick archways with lime mortar joints",
+    "temperature-controlled manuscript storage",
+    "natural ventilation for pollution reduction",
+    "privacy-focused inner plot design",
+    "Punjabi farmhouse with Sikh architectural elements"
+  ]
+}

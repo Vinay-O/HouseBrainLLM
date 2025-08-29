@@ -1,0 +1,51 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {"name": "Entrance Hall", "area_sqft": 150},
+      {"name": "Living Room", "area_sqft": 250},
+      {"name": "Dining Area", "area_sqft": 100, "adjacent_to": "kitchen"},
+      {"name": "Kitchen", "area_sqft": 200, "features": ["eco-friendly appliances", "water recycling system"]},
+      {"name": "Guest Bedroom", "area_sqft": 150},
+      {"name": "Service Area", "area_sqft": 100}
+    ],
+    "openings": [
+      {"type": "entrance", "location": "front", "dimensions_cm": [180, 210]},
+      {"type": "window", "location": "living room", "dimensions_cm": [120, 150]},
+      {"type": "window", "location": "dining area", "dimensions_cm": [100, 120]},
+      {"type": "garage_access", "location": "side", "dimensions_cm": [200, 240]}
+    ]
+  },
+  {
+    "level_id": "upper_floor",
+    "rooms": [
+      {"name": "Master Bedroom", "area_sqft": 250},
+      {"name": "Child Bedroom", "area_sqft": 150},
+      {"name": "Shared Bathroom", "area_sqft": 100}
+    ],
+    "openings": [
+      {"type": "balcony", "location": "master bedroom", "dimensions_cm": [200, 120]},
+      {"type": "window", "location": "child bedroom", "dimensions_cm": [100, 150]}
+    ]
+  },
+  {
+    "level_id": "basement",
+    "rooms": [
+      {"name": "Storage Room", "area_sqft": 80},
+      {"name": "Utility Room", "area_sqft": 70}
+    ],
+    "openings": [
+      {"type": "service entrance", "location": "back", "dimensions_cm": [100, 150]}
+    ]
+  },
+  {
+    "level_id": "courtyard",
+    "rooms": [],
+    "openings": []
+  },
+  {
+    "level_id": "garden",
+    "rooms": [],
+    "openings": []
+  }
+]}

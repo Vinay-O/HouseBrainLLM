@@ -1,0 +1,37 @@
+{"levels": [
+    {
+        "level_id": "ground_floor",
+        "rooms": [
+            {"name": "Entrance Hallway", "dimensions": {"width": 10, "length": 15}, "direction": "North"},
+            {"name": "Living Room", "dimensions": {"width": 20, "length": 25}, "style": "Art Deco", "adjacent_to": ["Dining Area"]},
+            {"name": "Dining Area", "dimensions": {"width": 15, "length": 15}, "adjacent_to": ["Living Room"]},
+            {"name": "Library", "dimensions": {"width": 12, "length": 20}, "style": "Art Deco"},
+            {"name": "Studio Apartment (Duplex)", "dimensions": {"width": 25, "length": 30}, "adjacent_to": ["Entrance Hallway"], "description": "Shared living area and bedroom space with integrated bathroom facilities", "Vastu_compliance": true},
+            {"name": "Garage", "dimensions": {"width": 20, "length": 40}, "capacity": "2 cars"}
+        ],
+        "openings": [
+            {"type": "Entrance Door", "location": "North", "direction": "North"},
+            {"type": "Windows", "locations": ["East", "South"], "style": "Art Deco"}
+        ]
+    },
+    {
+        "level_id": "first_floor",
+        "rooms": [
+            {"name": "Master Bedroom", "dimensions": {"width": 15, "length": 20}, "style": "Art Deco"},
+            {"name": "Bedroom 2", "dimensions": {"width": 12, "length": 18}},
+            {"name": "Bathroom", "dimensions": {"width": 8, "length": 10}, "adjacent_to": ["Master Bedroom", "Bedroom 2"]},
+            {"name": "Balcony", "dimensions": {"width": 20, "length": 5}, "description": "Featuring Art Deco detailing and comfortable seating area"}
+        ],
+        "openings": [
+            {"type": "Staircase", "location": "Entrance Hallway"},
+            {"type": "Windows", "locations": ["East"], "style": "Art Deco"}
+        ]
+    },
+    {
+        "level_id": "roof",
+        "rooms": [
+            {"name": "Rooftop Terrace", "dimensions": {"width": 100, "length": 50}, "description": "Spacious terrace with Art Deco decor and outdoor seating arrangements"}
+        ],
+        "openings": []
+    }
+]}

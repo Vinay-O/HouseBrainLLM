@@ -1,0 +1,40 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"name": "entrance_hall", "dimensions": [5, 4], "vastu_score": 7},
+        {"name": "living_room", "dimensions": [12, 8], "vastu_score": 9, "special_features": ["floor_to_ceiling_windows"]},
+        {"name": "dining_area", "dimensions": [6, 5], "vastu_score": 7.5},
+        {"name": "kitchen", "dimensions": [8, 6], "vastu_score": 8.5},
+        {"name": "guest_bathroom", "dimensions": [4, 3], "vastu_score": 7.2}
+      ],
+      "openings": [
+        {"type": "window", "location": ["living_room"], "size": [10, 2], "orientation": "south"},
+        {"type": "door", "location": ["entrance_hall_to_living_room"], "size": [3, 8]}
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {"name": "master_bedroom", "dimensions": [12, 9], "vastu_score": 8.7},
+        {"name": "attached_bathroom_master", "dimensions": [6, 4], "vastu_score": 7.5},
+        {"name": "balcony", "dimensions": [5, 3], "vastu_score": 9, "special_features": ["floor_to_ceiling_windows"]}
+      ],
+      "openings": [
+        {"type": "window", "location": ["master_bedroom"], "size": [8, 2], "orientation": "east"}
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {"name": "home_theater", "dimensions": [15, 9], "vastu_score": 7.3},
+        {"name": "bedroom_2", "dimensions": [9, 6], "vastu_score": 8},
+        {"name": "bathroom_2", "dimensions": [4, 3], "vastu_score": 6.5}
+      ],
+      "openings": [
+        {"type": "window", "location": ["home_theater"], "size": [10, 2], "orientation": "north"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "area": 500,
+          "shape": "rectangle",
+          "dimensions": [10, 25],
+          "position": {"x": 0, "y": 0},
+          "features": ["fireplace", "open_plan"],
+          "connected_to": ["dining_room", "kitchen"]
+        },
+        {
+          "room_type": "dining_room",
+          "area": 300,
+          "shape": "square",
+          "dimensions": [15, 20],
+          "position": {"x": 25, "y": 0},
+          "features": ["open_plan"],
+          "connected_to": ["kitchen", "living_room"]
+        },
+        {
+          "room_type": "kitchen",
+          "area": 400,
+          "shape": "rectangle",
+          "dimensions": [16, 25],
+          "position": {"x": 0, "y": 50},
+          "features": ["open_plan", "island"],
+          "connected_to": ["dining_room"]
+        },
+        {
+          "room_type": "master_bedroom",
+          "area": 600,
+          "shape": "rectangle",
+          "dimensions": [20, 30],
+          "position": {"x": 50, "y": 10},
+          "features": ["walk_in_closet", "attached_bathroom"],
+          "connected_to": []
+        },
+        {
+          "room_type": "bedroom",
+          "area": 400,
+          "shape": "square",
+          "dimensions": [20, 20],
+          "position": {"x": 50, "y": 40},
+          "features": ["attached_bathroom"],
+          "connected_to": []
+        },
+        {
+          "room_type": "bedroom",
+          "area": 300,
+          "shape": "rectangle",
+          "dimensions": [15, 20],
+          "position": {"x": 75, "y": 60},
+          "features": ["attached_bathroom"],
+          "connected_to": []
+        },
+        {
+          "room_type": "study_room",
+          "area": 300,
+          "shape": "rectangle",
+          "dimensions": [15, 20],
+          "position": {"x": 75, "y": 80},
+          "features": [],
+          "connected_to": []
+        },
+        {
+          "room_type": "servant_quarters",
+          "area": 300,
+          "shape": "rectangle",
+          "dimensions": [15, 20],
+          "position": {"x": 75, "y": 100},
+          "features": ["attached_bathroom"],
+          "connected_to": []
+        },
+        {
+          "room_type": "swimming_pool",
+          "area": 800,
+          "shape": "rectangle",
+          "dimensions": [40, 20],
+          "position": {"x": 100, "y": 30},
+          "features": ["outdoor"],
+          "connected_to": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "main_entrance",
+          "area": 50,
+          "shape": "rectangle",
+          "dimensions": [10, 5],
+          "position": {"x": 0, "y": -5},
+          "connected_to": ["living_room"]
+        },
+        {
+          "opening_type": "back_door",
+          "area": 25,
+          "shape": "rectangle",
+          "dimensions": [5, 5],
+          "position": {"x": 100, "y": 30},
+          "connected_to": ["swimming_pool"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "area": 500,
+          "shape": "rectangle",
+          "dimensions": [20, 25],
+          "position": {"x": 25, "y": 10},
+          "features": ["balcony", "attached_bathroom"],
+          "connected_to": []
+        },
+        {
+          "room_type": "bedroom",
+          "area": 400,
+          "shape": "square",
+          "dimensions": [20, 20],
+          "position": {"x": 75, "y": 10},
+          "features": ["attached_bathroom"],
+          "connected_to": []
+        },
+        {
+          "room_type": "study_room",
+          "area": 300,
+          "shape": "rectangle",
+          "dimensions": [15, 20],
+          "position": {"x": 75, "y": 40},
+          "features": [],
+          "connected_to": []
+        },
+        {
+          "room_type": "terrace",
+          "area": 800,
+          "shape": "rectangle",
+          "dimensions": [40, 20],
+          "position": {"x": 50, "y": 70},
+          "features": ["outdoor"],
+          "connected_to": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "area": 100,
+          "shape": "rectangle",
+          "dimensions": [5, 20],
+          "position": {"x": -5, "y": 0},
+          "connected_to": ["ground_floor", "first_floor"]
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "area": 400,
+          "shape": "square",
+          "dimensions": [20, 20],
+          "position": {"x": 50, "y": 10},
+          "features": ["attached_bathroom"],
+          "connected_to": []
+        },
+        {
+          "room_type": "study_room",
+          "area": 300,
+          "shape": "rectangle",
+          "dimensions": [15, 20],
+          "position": {"x": 50, "y": 40},
+          "features": [],
+          "connected_to": []
+        },
+        {
+          "room_type": "terrace",
+          "area": 800,
+          "shape": "rectangle",
+          "dimensions": [40, 20],
+          "position": {"x": 50, "y": 70},
+          "features": ["outdoor"],
+          "connected_to": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "area": 100,
+          "shape": "rectangle",
+          "dimensions": [5, 20],
+          "position": {"x": -5, "y": 30},
+          "connected_to": ["first_floor", "second_floor"]
+        }
+      ]
+    }
+  ]
+}

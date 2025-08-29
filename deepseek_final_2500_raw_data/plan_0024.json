@@ -1,0 +1,284 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 3000,
+      "style": "Colonial Bungalow"
+    },
+    "plot": {
+      "orientation": "west",
+      "size": 3000,
+      "location": "industrial city outskirts",
+      "challenges": [
+        "pollution",
+        "noise pollution",
+        "flood risk"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 160
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 350
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "porch",
+        "count": 1,
+        "area": 320
+      }
+    ]
+  },
+  "total_area": 2000.0,
+  "construction_cost": 360000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "elevation": 3.0,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 60,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "living_hall_door"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ],
+          "features": [
+            "soundproofing",
+            "universal_access"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 60,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "living_hall_door"
+          ],
+          "windows": [
+            "north_window",
+            "west_window"
+          ],
+          "features": [
+            "soundproofing",
+            "universal_access"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 5,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_1_door"
+          ],
+          "windows": [],
+          "features": [
+            "universal_access",
+            "ventilation"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_2_door"
+          ],
+          "windows": [],
+          "features": [
+            "universal_access",
+            "ventilation"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 35,
+            "height": 20
+          },
+          "doors": [
+            "main_entry_door",
+            "courtyard_door",
+            "kitchen_door"
+          ],
+          "windows": [
+            "south_window",
+            "west_window"
+          ],
+          "features": [
+            "soundproofing",
+            "period_moldings",
+            "ceiling_fan"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "living_room_door",
+            "utility_door"
+          ],
+          "windows": [
+            "south_window"
+          ],
+          "features": [
+            "compact_layout",
+            "ventilation"
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "living_hall_door"
+          ],
+          "windows": [
+            "north_window"
+          ],
+          "features": [
+            "soundproofing",
+            "built_in_shelves"
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "living_room_door"
+          ],
+          "windows": [],
+          "features": [
+            "meditation_garden",
+            "water_feature",
+            "privacy_walls"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 55,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "kitchen_door",
+            "exterior_door"
+          ],
+          "windows": [],
+          "features": [
+            "laundry",
+            "storage"
+          ]
+        },
+        {
+          "id": "porch",
+          "type": "porch",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            "main_entry_door"
+          ],
+          "windows": [],
+          "features": [
+            "colonial_columns",
+            "ceiling_fan"
+          ]
+        }
+      ]
+    }
+  ],
+  "materials": {
+    "facade": "carved_limestone",
+    "roof": "metal_roof",
+    "windows": "double_glazed",
+    "insulation": "acoustic_insulation"
+  },
+  "features": [
+    "elevated_foundation",
+    "universal_design",
+    "noise_management",
+    "pollution_filters",
+    "colonial_details"
+  ]
+}

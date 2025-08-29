@@ -1,0 +1,68 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "description": "Large living area with an open floor plan adjoining the garden. Incorporates floor-to-ceiling windows on the north side to enhance natural light.",
+          "dimensions": {"width": 20, "length": 25},
+          "adjacencies": ["kitchen", "dining_area"]
+        },
+        {
+          "room_id": "dining_area",
+          "description": "Open dining space integrated with the living room for an extended communal area. Features north-facing windows.",
+          "dimensions": {"width": 15, "length": 20}
+        },
+        {
+          "room_id": "kitchen",
+          "description": "Modern kitchen located adjacent to the living and dining areas, with ample ventilation provided through north-facing windows and external vent.",
+          "dimensions": {"width": 12, "length": 15},
+          "adjacencies": ["living_room"]
+        },
+        {
+          "room_id": "master_bedroom",
+          "description": "Spacious master bedroom designed for privacy and relaxation. Incorporates natural light through north-facing windows and a balcony.",
+          "dimensions": {"width": 16, "length": 20},
+          "adjacencies": ["bathroom"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "description": "Second bedroom with south-facing orientation to balance interior lighting. Includes built-in storage for a functional space.",
+          "dimensions": {"width": 14, "length": 16}
+        },
+        {
+          "room_id": "guest_room",
+          "description": "Convertible guest room that can serve as an office or study area. Provides natural ventilation via strategically placed openings.",
+          "dimensions": {"width": 12, "length": 15},
+          "adjacencies": ["living_room"]
+        },
+        {
+          "room_id": "library",
+          "description": "A dedicated library space with bookshelves and comfortable seating, designed to encourage reading. Features north-facing windows for optimal natural light.",
+          "dimensions": {"width": 12, "length": 15}
+        },
+        {
+          "room_id": "bathroom_master",
+          "description": "Bathroom attached to the master bedroom providing en-suite convenience with efficient ventilation and modern fixtures.",
+          "dimensions": {"width": 8, "length": 10},
+          "adjacencies": ["master_bedroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "north_entrance",
+          "description": "North-facing entrance door that welcomes natural light and adheres to Vastu principles.",
+          "location": "front",
+          "dimensions": {"width": 4, "height": 7}
+        },
+        {
+          "opening_id": "garden_window",
+          "description": "Floor-to-ceiling window facing the garden area providing expansive views and enhanced natural ventilation.",
+          "location": "south-west_corner",
+          "dimensions": {"width": 8, "height": 12}
+        }
+      ]
+    }
+  ]
+}

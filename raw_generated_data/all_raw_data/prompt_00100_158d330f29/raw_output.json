@@ -1,0 +1,82 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["high ceiling", "fireplace", "wooden flooring"],
+          "orientation": "north"
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 10, "width": 9 },
+          "features": ["dining table", "chandelier", "ceramic tiles"],
+          "adjacent_to": ["kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["modular cabinets", "gas stove", "sink", "pantry"],
+          "orientation": "east"
+        },
+        {
+          "room_id": "master_bedroom",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["wardrobe", "attached bathroom", "balcony", "king bed"],
+          "orientation": "west"
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wardrobe", "attached bathroom", "queen bed"],
+          "orientation": "north"
+        },
+        {
+          "room_id": "home_theater",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["projector screen", "soundproof walls", "reclining seats"],
+          "adjacent_to": ["living_room"]
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 8, "width": 7 },
+          "features": ["work desk", "bookshelf", "ergonomic chair"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 7 },
+          "location": "north side"
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 7 },
+          "location": "south side"
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimensions": { "length": 4, "width": 5 },
+          "location": "east wall"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wardrobe", "attached bathroom", "twin beds"],
+          "orientation": "east"
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

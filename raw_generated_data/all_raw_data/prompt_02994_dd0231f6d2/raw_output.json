@@ -1,0 +1,104 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "description": "Spacious entrance with built-in storage and a seating area.",
+          "dimensions_m": {"length": 4, "width": 3}
+        },
+        {
+          "room_type": "living_room",
+          "description": "Open-plan living area that seamlessly integrates with the kitchen; designed in Bohemian style with warm earth tones and eclectic decor.",
+          "dimensions_m": {"length": 6, "width": 5},
+          "adjacent_to": ["kitchen"]
+        },
+        {
+          "room_type": "kitchen",
+          "description": "Modern open-plan kitchen featuring high-gloss finishes, vibrant mosaic backsplash, and ample storage. Includes a breakfast nook.",
+          "dimensions_m": {"length": 4, "width": 3},
+          "features": ["open_plan", "vibrant_backsplash", "breakfast_nook"]
+        },
+        {
+          "room_type": "master_bedroom",
+          "description": "Bohemian themed master bedroom with a private balcony and integrated dressing area.",
+          "dimensions_m": {"length": 5, "width": 4},
+          "features": ["private_balcony", "dressing_area"]
+        },
+        {
+          "room_type": "bedroom",
+          "description": "Guest bedroom designed in Bohemian style with ample natural light and storage.",
+          "dimensions_m": {"length": 4, "width": 3},
+          "features": ["storage"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "main_door",
+          "description": "Large entrance door with Vastu compliant positioning to welcome positive energy."
+        },
+        {
+          "opening_type": "windows",
+          "description": "Multiple strategically placed windows for optimal natural light and ventilation, aligning with local norms and Vastu guidelines."
+        },
+        {
+          "opening_type": "balcony_door",
+          "description": "Door leading to the private balcony of the master bedroom."
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "description": "Bohemian styled secondary bedroom with a skylight for natural illumination.",
+          "dimensions_m": {"length": 4, "width": 3},
+          "features": ["skylight"]
+        },
+        {
+          "room_type": "study",
+          "description": "Dedicated study space integrated within the residential area, featuring built-in shelves and ample light.",
+          "dimensions_m": {"length": 3, "width": 2.5}
+        },
+        {
+          "room_type": " ensuite_bathroom",
+          "description": "Private bathroom attached to one of the bedrooms, designed for convenience and comfort.",
+          "dimensions_m": {"length": 3, "width": 2},
+          "features": ["private"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "description": "Staircase connecting upper_floor to ground_floor with Vastu aligned placement ensuring smooth flow of energy."
+        },
+        {
+          "opening_type": "windows",
+          "description": "Strategically positioned windows for ventilation and natural light, adhering to local building norms."
+        }
+      ]
+    },
+    {
+      "level_id": "roof",
+      "rooms": [
+        {
+          "room_type": "rooftop_terrace",
+          "description": "Bohemian styled rooftop terrace with a mix of lounge seating, greenery, and an open view of the sky. Features sustainable elements like solar-powered lights.",
+          "dimensions_m": {"length": 8, "width": 6}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "access_ladder",
+          "description": "Sturdy access ladder to the rooftop terrace ensuring safety and ease of use."
+        },
+        {
+          "opening_type": "glass_enclosure",
+          "description": "Optional glass enclosure for enhanced comfort during cooler evenings while maintaining open views."
+        }
+      ]
+    }
+  ]
+}

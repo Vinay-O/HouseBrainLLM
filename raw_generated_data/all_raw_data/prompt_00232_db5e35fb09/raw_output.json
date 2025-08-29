@@ -1,0 +1,91 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 15, "width": 20 },
+          "features": ["floor-to-ceiling windows", "bohemian decor"],
+          "direction": "north"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 15 },
+          "features": ["modular kitchen", "breakfast bar"],
+          "direction": "east"
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 15, "width": 15 },
+          "features": ["king bed", "walk-in closet"],
+          "direction": "south-west"
+        },
+        {
+          "room_id": "bathroom_1",
+          "dimensions": { "length": 8, "width": 8 },
+          "features": ["modern fixtures", "shower"],
+          "direction": "north-west"
+        },
+        {
+          "room_id": "servant_quarters",
+          "dimensions": { "length": 10, "width": 12 },
+          "features": ["single bed", "attached bathroom"],
+          "direction": "north-east"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "dimensions": { "length": 4, "height": 8 },
+          "direction": "east"
+        },
+        {
+          "opening_id": "backyard_access",
+          "dimensions": { "length": 6, "height": 7 },
+          "direction": "west"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 15, "width": 15 },
+          "features": ["queen bed", "balcony"],
+          "direction": "south"
+        },
+        {
+          "room_id": "bathroom_2",
+          "dimensions": { "length": 8, "width": 8 },
+          "features": ["modern fixtures", "bathtub"],
+          "direction": "north-west"
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["work desk", "bookshelf"],
+          "direction": "east"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony_access",
+          "dimensions": { "length": 8, "height": 5 },
+          "direction": "south"
+        }
+      ]
+    }
+  ],
+  "outdoor_features": {
+    "garden": true,
+    "parking": "two-car",
+    "servant_quarters_outside": false
+  },
+  "vasthu_compliance": {
+    "kitchen_direction": "east",
+    "bedroom_directions": ["south-west", "south"],
+    "bathroom_directions": ["north-west"]
+  }
+}

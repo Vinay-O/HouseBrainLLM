@@ -1,0 +1,616 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 3,
+      "totalArea": 4500,
+      "style": "Rajasthani Haveli"
+    },
+    "plot": {
+      "type": "corner",
+      "width": 25,
+      "depth": 25,
+      "orientation": "north-south"
+    },
+    "roomBreakdown": [
+      {
+        "type": "production_space",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "retail_space",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "count": 4,
+        "area": 800
+      },
+      {
+        "type": "bathroom",
+        "count": 5,
+        "area": 250
+      },
+      {
+        "type": "storage",
+        "count": 2,
+        "area": 150
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "terrace",
+        "count": 1,
+        "area": 625
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 1350000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "production_space_0",
+          "type": "production_space",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 7.5
+              },
+              "direction": "south"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 15
+              },
+              "direction": "east"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 0
+              },
+              "direction": "west"
+            }
+          ]
+        },
+        {
+          "id": "retail_space_0",
+          "type": "retail_space",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 5
+              },
+              "direction": "south"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 5
+              },
+              "direction": "east"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 20,
+                "y": 0
+              },
+              "direction": "west"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 10
+              },
+              "direction": "north"
+            }
+          ]
+        },
+        {
+          "id": "storage_0",
+          "type": "storage",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "direction": "south"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 15
+              },
+              "direction": "north"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase_0",
+          "type": "staircase",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 20
+              },
+              "direction": "east"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 5
+              },
+              "direction": "west"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "direction": "east"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 10
+              },
+              "direction": "south"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 10
+              },
+              "direction": "south"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 15
+              },
+              "direction": "west"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 15
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "dining_room_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 15
+              },
+              "direction": "east"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 15
+              },
+              "direction": "west"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "direction": "north"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 2.5
+              },
+              "direction": "east"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 2.5
+              },
+              "direction": "west"
+            }
+          ]
+        },
+        {
+          "id": "staircase_1",
+          "type": "staircase",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 20
+              },
+              "direction": "east"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_2_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12.5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12.5,
+                "y": 5
+              },
+              "direction": "east"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 6.25,
+                "y": 0
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "direction": "west"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12.5,
+            "y": 0,
+            "width": 12.5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12.5,
+                "y": 5
+              },
+              "direction": "west"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 18.75,
+                "y": 0
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 5
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 12.5
+              },
+              "direction": "east"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 12.5
+              },
+              "direction": "west"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 12.5
+              },
+              "direction": "west"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 12.5
+              },
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "storage_2",
+          "type": "storage",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 7.5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12.5,
+                "y": 12.5
+              },
+              "direction": "east"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase_2",
+          "type": "staircase",
+          "bounds": {
+            "x": 12.5,
+            "y": 10,
+            "width": 7.5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12.5,
+                "y": 12.5
+              },
+              "direction": "west"
+            },
+            {
+              "position": {
+                "x": 16.25,
+                "y": 15
+              },
+              "direction": "south"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "terrace_access_2",
+          "type": "utility",
+          "bounds": {
+            "x": 12.5,
+            "y": 15,
+            "width": 7.5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 16.25,
+                "y": 15
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 16.25,
+                "y": 25
+              },
+              "direction": "south"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "terrace_3",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 16.25,
+                "y": 0
+              },
+              "direction": "north"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

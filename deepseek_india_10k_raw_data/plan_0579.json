@@ -1,0 +1,438 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 2,
+      "totalArea": 9000,
+      "style": "Coastal Heritage Contemporary"
+    },
+    "plot": {
+      "length": 150,
+      "width": 100,
+      "location": "Nellore coastal plains",
+      "characteristics": [
+        "beachside",
+        "coastal plains"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "primary_bedroom",
+        "count": 2,
+        "description": "Master suites for family"
+      },
+      {
+        "type": "guest_bedroom",
+        "count": 4,
+        "description": "For business partners accommodation"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Main gathering space"
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "description": "Formal dining area"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Main kitchen with traditional elements"
+      },
+      {
+        "type": "workshop",
+        "count": 1,
+        "description": "Traditional craft workshop for regional handicrafts"
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "description": "Sacred space with traditional entrance"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "description": "Laundry and storage"
+      },
+      {
+        "type": "bathroom",
+        "count": 6,
+        "description": "Ensuite and shared bathrooms"
+      }
+    ]
+  },
+  "total_area": 9000.0,
+  "construction_cost": 4050000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "stilt_base",
+          "type": "stilt_base",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 100,
+            "height": 150
+          },
+          "doors": [],
+          "windows": [],
+          "description": "Elevated stilt structure with monsoon adaptations and rainwater harvesting systems"
+        },
+        {
+          "id": "carport_1",
+          "type": "carport",
+          "bounds": {
+            "x": 10,
+            "y": 130,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [],
+          "description": "Covered parking area"
+        },
+        {
+          "id": "workshop_ground",
+          "type": "workshop",
+          "bounds": {
+            "x": 40,
+            "y": 130,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            {
+              "location": "north_wall",
+              "type": "traditional_wooden"
+            }
+          ],
+          "windows": [
+            {
+              "location": "east_wall",
+              "type": "double_glazed"
+            }
+          ],
+          "description": "Ground floor craft workshop with traditional tools storage"
+        },
+        {
+          "id": "garden_zone",
+          "type": "garden",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 60,
+            "height": 100
+          },
+          "doors": [],
+          "windows": [],
+          "description": "Central organic kitchen garden with traditional companion planting"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 40,
+            "y": 130,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": "south_wall",
+              "type": "wooden_carved",
+              "description": "Main entrance with traditional metalwork and sacred kolam threshold"
+            }
+          ],
+          "windows": [
+            {
+              "location": "east_wall",
+              "type": "double_glazed"
+            }
+          ],
+          "description": "Grand entrance with traditional craftsmanship and noise-buffering design"
+        },
+        {
+          "id": "living_main",
+          "type": "living_room",
+          "bounds": {
+            "x": 25,
+            "y": 100,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "location": "south_wall",
+              "type": "wooden_carved",
+              "description": "Connection to verandah"
+            }
+          ],
+          "windows": [
+            {
+              "location": "north_wall",
+              "type": "double_glazed",
+              "description": "Noise-reducing windows facing inner garden"
+            },
+            {
+              "location": "east_wall",
+              "type": "double_glazed",
+              "description": "Noise-reducing windows"
+            }
+          ],
+          "description": "Spacious living area with heritage restoration elements"
+        },
+        {
+          "id": "dining_main",
+          "type": "dining_room",
+          "bounds": {
+            "x": 50,
+            "y": 100,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "location": "west_wall",
+              "type": "wooden_carved",
+              "description": "Connection to living room"
+            }
+          ],
+          "windows": [
+            {
+              "location": "south_wall",
+              "type": "double_glazed",
+              "description": "Noise-reducing windows"
+            }
+          ],
+          "description": "Formal dining space with contemporary interpretation"
+        },
+        {
+          "id": "kitchen_main",
+          "type": "kitchen",
+          "bounds": {
+            "x": 70,
+            "y": 100,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "location": "west_wall",
+              "type": "wooden_carved",
+              "description": "Connection to dining room"
+            }
+          ],
+          "windows": [
+            {
+              "location": "north_wall",
+              "type": "double_glazed",
+              "description": "Noise-reducing windows"
+            }
+          ],
+          "description": "Modern kitchen with traditional elements and garden access"
+        },
+        {
+          "id": "master_bedroom_1",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 70,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "location": "east_wall",
+              "type": "wooden_carved",
+              "description": "Connection to corridor"
+            }
+          ],
+          "windows": [
+            {
+              "location": "north_wall",
+              "type": "double_glazed",
+              "description": "Noise-reducing windows facing inner garden"
+            },
+            {
+              "location": "west_wall",
+              "type": "double_glazed",
+              "description": "Noise-reducing windows"
+            }
+          ],
+          "description": "Primary bedroom with ensuite bathroom and privacy focus"
+        },
+        {
+          "id": "guest_bedroom_1",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 40,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "location": "east_wall",
+              "type": "wooden_carved",
+              "description": "Connection to corridor"
+            }
+          ],
+          "windows": [
+            {
+              "location": "north_wall",
+              "type": "double_glazed",
+              "description": "Noise-reducing windows facing inner garden"
+            },
+            {
+              "location": "west_wall",
+              "type": "double_glazed",
+              "description": "Noise-reducing windows"
+            }
+          ],
+          "description": "Guest accommodation with privacy focus"
+        },
+        {
+          "id": "guest_bedroom_2",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 10,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "location": "east_wall",
+              "type": "wooden_carved",
+              "description": "Connection to corridor"
+            }
+          ],
+          "windows": [
+            {
+              "location": "south_wall",
+              "type": "double_glazed",
+              "description": "Noise-reducing windows"
+            },
+            {
+              "location": "west_wall",
+              "type": "double_glazed",
+              "description": "Noise-reducing windows"
+            }
+          ],
+          "description": "Guest accommodation with privacy focus"
+        },
+        {
+          "id": "guest_bedroom_3",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 70,
+            "y": 70,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "location": "west_wall",
+              "type": "wooden_carved",
+              "description": "Connection to corridor"
+            }
+          ],
+          "windows": [
+            {
+              "location": "north_wall",
+              "type": "double_glazed",
+              "description": "Noise-reducing windows facing inner garden"
+            },
+            {
+              "location": "east_wall",
+              "type": "double_glazed",
+              "description": "Noise-reducing windows"
+            }
+          ],
+          "description": "Guest accommodation with privacy focus"
+        },
+        {
+          "id": "guest_bedroom_4",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 70,
+            "y": 40,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "location": "west_wall",
+              "type": "wooden_carved",
+              "description": "Connection to corridor"
+            }
+          ],
+          "windows": [
+            {
+              "location": "north_wall",
+              "type": "double_glazed",
+              "description": "Noise-reducing windows facing inner garden"
+            },
+            {
+              "location": "east_wall",
+              "type": "double_glazed",
+              "description": "Noise-reducing windows"
+            }
+          ],
+          "description": "Guest accommodation with privacy focus"
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 40,
+            "y": 70,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": "south_wall",
+              "type": "wooden_carved",
+              "description": "Sacred entrance with traditional threshold designs"
+            }
+          ],
+          "windows": [
+            {
+              "location": "east_wall",
+              "type": "stained_glass"
+            }
+          ],
+          "description": "Sacred space with traditional elements and privacy"
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 55,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "location": "north_wall",
+              "type": "standard"
+            }
+          ],
+          "windows": [],
+          "description": "Laundry and storage space"
+        }
+      ]
+    }
+  ]
+}

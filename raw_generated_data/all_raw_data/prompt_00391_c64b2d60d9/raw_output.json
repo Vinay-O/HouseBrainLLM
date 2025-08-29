@@ -1,0 +1,96 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": {"length": 15, "width": 12},
+          "features": ["brick feature wall", "concrete ceiling"],
+          "access_to": ["dining_area", "kitchen"]
+        },
+        {
+          "room_type": "dining_area",
+          "dimensions": {"length": 10, "width": 9},
+          "features": ["exposed concrete pillars"],
+          "adjacent_to": ["kitchen", "living_room"]
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["concrete countertops", "brick backsplash"],
+          "access_to": ["dining_area", "backyard"]
+        },
+        {
+          "room_type": "bedroom_1",
+          "dimensions": {"length": 14, "width": 12},
+          "features": ["concrete headboard", "minimalist design"],
+          "attached_to": "bathroom_1"
+        },
+        {
+          "room_type": "bedroom_2",
+          "dimensions": {"length": 13, "width": 11},
+          "features": ["exposed concrete walls", "large window"],
+          "attached_to": "bathroom_2"
+        },
+        {
+          "room_type": "library",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["brick shelving", "concrete flooring"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "front_entrance",
+          "material": "steel door with concrete frame"
+        },
+        {
+          "type": "backyard_access",
+          "material": "sliding glass doors"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom_3",
+          "dimensions": {"length": 13, "width": 12},
+          "features": ["concrete bed frame", "minimalist lighting"],
+          "attached_to": "bathroom_3"
+        },
+        {
+          "room_type": "bedroom_4",
+          "dimensions": {"length": 12, "width": 11},
+          "features": ["exposed concrete ceiling", "floor-to-ceiling window"],
+          "attached_to": "bathroom_4"
+        },
+        {
+          "room_type": "study_room",
+          "dimensions": {"length": 10, "width": 9},
+          "features": ["concrete desk", "brick accent wall"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "balcony_access",
+          "material": "steel-framed glass doors"
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "features": ["concrete flooring", "brick planters", "outdoor seating area"],
+      "openings": [
+        {
+          "type": "staircase_access",
+          "material": "steel and concrete staircase"
+        }
+      ]
+    }
+  ],
+  "building_style": "Brutalist",
+  "total_area": 1500,
+  "bedrooms": 6,
+  "library": true
+}

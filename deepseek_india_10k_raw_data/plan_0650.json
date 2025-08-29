@@ -1,0 +1,363 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 4500,
+      "style": "Rajasthani Haveli"
+    },
+    "plot": {
+      "type": "corner_plot",
+      "slope": "mountain",
+      "frontage": "dual_street",
+      "challenges": [
+        "monsoon_flooding",
+        "waterlogging",
+        "rocky_terrain"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "bedroom",
+        "count": 4,
+        "area": 1200
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "area": 300
+      },
+      {
+        "type": "ayurvedic_treatment",
+        "count": 1,
+        "area": 180
+      },
+      {
+        "type": "herbal_preparation",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "courtyard",
+        "count": 3,
+        "area": 1050
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "staircase",
+        "count": 2,
+        "area": 200
+      },
+      {
+        "type": "veranda",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "wind_pump_room",
+        "count": 1,
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 13500000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            "north_veranda_door",
+            "south_living_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "main_courtyard_door",
+            "north_entrance"
+          ],
+          "windows": [
+            "west_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 10,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            "main_courtyard_door",
+            "kitchen_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 24,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "dining_door",
+            "utility_door"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "herbal_room",
+          "type": "herbal_preparation",
+          "bounds": {
+            "x": 42,
+            "y": 24,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "kitchen_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 34,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            "kitchen_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "wind_pump_room",
+          "type": "wind_pump_room",
+          "bounds": {
+            "x": 40,
+            "y": 34,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            "external_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 10
+          },
+          "doors": [
+            "living_room_door",
+            "street_entrance"
+          ],
+          "windows": [
+            "north_arcade"
+          ]
+        },
+        {
+          "id": "staircase_1",
+          "type": "staircase",
+          "bounds": {
+            "x": 42,
+            "y": 10,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "dining_access",
+            "upper_level"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "upper_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            "bedroom1_door",
+            "bedroom2_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            "west_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 10,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "bedroom_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 25,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            "bedroom_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "ayurvedic_room",
+          "type": "ayurvedic_treatment",
+          "bounds": {
+            "x": 42,
+            "y": 10,
+            "width": 8,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 42,
+            "y": 25,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "ayurvedic_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase_2",
+          "type": "staircase",
+          "bounds": {
+            "x": 42,
+            "y": 33,
+            "width": 8,
+            "height": 7
+          },
+          "doors": [
+            "lower_level",
+            "terrace_access"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

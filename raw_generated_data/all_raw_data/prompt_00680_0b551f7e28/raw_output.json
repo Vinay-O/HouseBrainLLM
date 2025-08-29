@@ -1,0 +1,123 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "shape": "rectangular",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["art_deco_motifs", "high_ceilings", "large_windows"],
+          "connections": ["dining_area", "central_courtyard"]
+        },
+        {
+          "room_id": "dining_area",
+          "shape": "square",
+          "dimensions": { "length": 15, "width": 15 },
+          "features": ["open_plan_with_kitchen", "chandelier"],
+          "connections": ["living_room", "kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "rectangular",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["open_plan_design", "modern_appliances"],
+          "connections": ["dining_area"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "shape": "rectangular",
+          "dimensions": { "length": 18, "width": 15 },
+          "features": ["art_deco_details", "wardrobe", "balcony"],
+          "connections": ["central_courtyard"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "shape": "rectangular",
+          "dimensions": { "length": 18, "width": 15 },
+          "features": ["art_deco_details", "wardrobe", "balcony"],
+          "connections": ["central_courtyard"]
+        },
+        {
+          "room_id": "central_courtyard",
+          "shape": "square",
+          "dimensions": { "length": 20, "width": 20 },
+          "features": ["garden", "fountain", "seating_area"],
+          "connections": ["living_room", "bedroom_1", "bedroom_2"]
+        },
+        {
+          "room_id": "staircase",
+          "shape": "rectangular",
+          "dimensions": { "length": 8, "width": 5 },
+          "features": ["art_deco_design", "natural_light"],
+          "connections": ["ground_floor", "first_floor"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 8, "width": 4 },
+          "features": ["art_deco_design", "double_doors"]
+        },
+        {
+          "opening_id": "garden_access",
+          "type": "gate",
+          "dimensions": { "length": 10, "width": 5 },
+          "features": ["ornamental_design", "automated"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "shape": "rectangular",
+          "dimensions": { "length": 18, "width": 15 },
+          "features": ["art_deco_details", "wardrobe", "balcony"],
+          "connections": ["central_courtyard"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "shape": "rectangular",
+          "dimensions": { "length": 18, "width": 15 },
+          "features": ["art_deco_details", "wardrobe", "balcony"],
+          "connections": ["central_courtyard"]
+        },
+        {
+          "room_id": "study_room",
+          "shape": "square",
+          "dimensions": { "length": 15, "width": 15 },
+          "features": ["art_deco_details", "natural_light"],
+          "connections": ["central_courtyard"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony_1",
+          "type": "window",
+          "dimensions": { "length": 6, "width": 4 },
+          "features": ["art_deco_design", "French_windows"]
+        },
+        {
+          "opening_id": "balcony_2",
+          "type": "window",
+          "dimensions": { "length": 6, "width": 4 },
+          "features": ["art_deco_design", "French_windows"]
+        }
+      ]
+    }
+  ],
+  "garden": {
+    "area": 1000,
+    "features": ["manicured_lawn", "flower_beds", "walking_paths"],
+    "location": "front_and_back"
+  },
+  "vasthu_compliance": {
+    "kitchen_direction": "southeast",
+    "bedrooms_direction": "southwest_and_northwest",
+    "central_courtyard_direction": "center",
+    "main_entrance_direction": "north_or_east"
+  }
+}

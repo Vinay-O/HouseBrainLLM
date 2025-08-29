@@ -1,0 +1,386 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 8,
+      "floors": 2,
+      "totalArea": 8500,
+      "style": "Neo-Classical"
+    },
+    "plot": {
+      "terrain": "sloping_vineyard",
+      "climate": "mediterranean_dry_summers",
+      "orientation": "east_west_linear"
+    },
+    "roomBreakdown": [
+      {
+        "type": "primary_suite",
+        "count": 2,
+        "description": "Luxury master suites with en-suite bathrooms and walk-in closets"
+      },
+      {
+        "type": "bedroom",
+        "count": 6,
+        "description": "Spacious family bedrooms with ensuite or shared bathrooms"
+      },
+      {
+        "type": "bathroom",
+        "count": 8,
+        "description": "Luxury bathrooms with wheelchair accessible features"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Gourmet kitchen with premium appliances and large island"
+      },
+      {
+        "type": "living_room",
+        "count": 2,
+        "description": "Formal living room and family gathering space"
+      },
+      {
+        "type": "dining_room",
+        "count": 2,
+        "description": "Formal dining room and casual breakfast area"
+      },
+      {
+        "type": "office",
+        "count": 1,
+        "description": "Mezzanine office with panoramic views"
+      },
+      {
+        "type": "studio",
+        "count": 1,
+        "description": "Artist's studio with north-facing clerestory windows"
+      },
+      {
+        "type": "garage",
+        "count": 1,
+        "description": "4-car garage with workshop space"
+      },
+      {
+        "type": "utility",
+        "count": 2,
+        "description": "Laundry room and mechanical room with phase-change materials"
+      }
+    ]
+  },
+  "total_area": 8500.0,
+  "construction_cost": 4250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "location": "north"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry_0",
+          "type": "foyer",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "main_entry",
+              "location": "east"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "living_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "large",
+              "orientation": "west"
+            },
+            {
+              "type": "large",
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "dining_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "arched",
+              "orientation": "west"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "double",
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "bedroom1_0",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 18,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "double",
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "bath1_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 18,
+            "y": 30,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "high",
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "studio_0",
+          "type": "studio",
+          "bounds": {
+            "x": 30,
+            "y": 38,
+            "width": 30,
+            "height": 22
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "clerestory",
+              "orientation": "north"
+            },
+            {
+              "type": "picture",
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 50,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_suite_1",
+          "type": "primary_suite",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "balcony",
+              "orientation": "west"
+            },
+            {
+              "type": "double",
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "bath2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "skylight",
+              "orientation": "top"
+            }
+          ]
+        },
+        {
+          "id": "bedroom2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "double",
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "bedroom3_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "double",
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "bedroom4_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "double",
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "bath3_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "vent",
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "living_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 45,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "large",
+              "orientation": "west"
+            }
+          ]
+        },
+        {
+          "id": "office_mezzanine_1",
+          "type": "office",
+          "bounds": {
+            "x": 30,
+            "y": 45,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "panoramic",
+              "orientation": "east"
+            },
+            {
+              "type": "clerestory",
+              "orientation": "north"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

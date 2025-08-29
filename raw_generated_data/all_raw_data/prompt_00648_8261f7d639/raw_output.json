@@ -1,0 +1,170 @@
+{  
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_hall",
+          "description": "A spacious entrance hall with a foyer and a waiting area for guests.",
+          "area_sqft": 50,
+          "adjacent_rooms": ["living_room", "kitchen"],
+          "vastu_note": "Aligned on the south-east to promote positive energy entry."
+        },
+        {
+          "room_id": "living_room",
+          "description": "A large open living area suitable for social gatherings, with Vastu-aligned north-west direction.",
+          "area_sqft": 150,
+          "adjacent_rooms": ["entrance_hall", "dining_area"],
+          "vastu_note": "North-facing window for natural light."
+        },
+        {
+          "room_id": "dining_area",
+          "description": "An integrated dining space adjacent to the kitchen, designed with Vastu principles focusing on east-west alignment.",
+          "area_sqft": 100,
+          "adjacent_rooms": ["living_room", "kitchen"],
+          "vastu_note": "East-facing seating area for energy flow."
+        },
+        {
+          "room_id": "kitchen",
+          "description": "Modern kitchen with ample storage and island, following local building norms.",
+          "area_sqft": 120,
+          "adjacent_rooms": ["dining_area", "utility_room"],
+          "vastu_note": "South-west placement recommended for functional use."
+        },
+        {
+          "room_id": "family_room",
+          "description": "A multifunctional space that can serve as an office or a study, with Vastu guidelines encouraging calm and focus.",
+          "area_sqft": 80,
+          "adjacent_rooms": ["living_room", "entrance_hall"],
+          "vastu_note": "North-east direction for mental clarity."
+        },
+        {
+          "room_id": "garage",
+          "description": "Two-car garage integrated with the ground floor, designed to store vehicles and equipment.",
+          "area_sqft": 150,
+          "adjacent_rooms": ["entrance_hall"],
+          "vastu_note": "West facing for convenience."
+        },
+        {
+          "room_id": "utility_room",
+          "description": "A utility space including a small pantry, laundry area, and storage.",
+          "area_sqft": 50,
+          "adjacent_rooms": ["kitchen", "garage"],
+          "vastu_note": "South direction to maintain energy balance."
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "description": "The primary entrance leading into the ground floor, designed in a colonial style.",
+          "location": "south-east",
+          "dimensions": {"width_ft": 4, "height_ft": 7}
+        },
+        {
+          "opening_id": "balcony1",
+          "description": "Spacious balcony for bedroom 1 providing a view and fresh air.",
+          "room_adjacent": "bedroom_1",
+          "location": "north-west",
+          "dimensions": {"width_ft": 8, "depth_ft": 2}
+        },
+        {
+          "opening_id": "balcony2",
+          "description": "Spacious balcony for bedroom 2 offering a serene view.",
+          "room_adjacent": "bedroom_2",
+          "location": "north-east",
+          "dimensions": {"width_ft": 8, "depth_ft": 2}
+        },
+        {
+          "opening_id": "balcony3",
+          "description": "Spacious balcony for bedroom 3 ensuring ample natural light.",
+          "room_adjacent": "bedroom_3",
+          "location": "north-west",
+          "dimensions": {"width_ft": 8, "depth_ft": 2}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "master_bedroom",
+          "description": "The master bedroom with an attached en-suite bathroom, designed for privacy and luxury.",
+          "area_sqft": 200,
+          "adjacent_rooms": ["balcony1"],
+          "vastu_note": "North-east placement for prosperity and calm."
+        },
+        {
+          "room_id": "bedroom_2",
+          "description": "Second bedroom with a private balcony, following Vastu guidelines for balance.",
+          "area_sqft": 150,
+          "adjacent_rooms": ["balcony2"],
+          "vastu_note": "North-west alignment encourages positive energy."
+        },
+        {
+          "room_id": "bedroom_3",
+          "description": "Third bedroom, ideal for a guest or additional family member, with a balcony.",
+          "area_sqft": 150,
+          "adjacent_rooms": ["balcony3"],
+          "vastu_note": "North-east for mental clarity and peaceful sleep."
+        },
+        {
+          "room_id": "bathroom_master",
+          "description": "En-suite bathroom attached to the master bedroom, designed with colonial aesthetics.",
+          "area_sqft": 50,
+          "adjacent_rooms": ["master_bedroom"],
+          "vastu_note": "South-west placement for balance."
+        },
+        {
+          "room_id": "guest_bathroom",
+          "description": "A guest bathroom on the first floor for convenience, adhering to local building norms.",
+          "area_sqft": 40,
+          "adjacent_rooms": [],
+          "vastu_note": "East facing is beneficial."
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony1",
+          "description": "Continuation of the balcony for master bedroom.",
+          "room_adjacent": "master_bedroom",
+          "location": "north-east",
+          "dimensions": {"width_ft": 8, "depth_ft": 2}
+        },
+        {
+          "opening_id": "balcony2",
+          "description": "Continuation of the balcony for bedroom_2.",
+          "room_adjacent": "bedroom_2",
+          "location": "north-west",
+          "dimensions": {"width_ft": 8, "depth_ft": 2}
+        },
+        {
+          "opening_id": "balcony3",
+          "description": "Continuation of the balcony for bedroom_3.",
+          "room_adjacent": "bedroom_3",
+          "location": "north-west",
+          "dimensions": {"width_ft": 8, "depth_ft": 2}
+        }
+      ]
+    },
+    {
+      "level_id": "garden_level",
+      "rooms": [
+        {
+          "room_id": "garden",
+          "description": "Large garden area with landscaping elements and an open patio for relaxation.",
+          "area_sqft": 400,
+          "adjacent_rooms": [],
+          "vastu_note": "East-facing design to attract positive energy."
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "patio",
+          "description": "Open patio adjoining the garden area for seamless indoor-outdoor living.",
+          "location": "south-west",
+          "dimensions": {"width_ft": 10, "depth_ft": 5}
+        }
+      ]
+    }
+  ]
+}

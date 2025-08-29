@@ -1,0 +1,170 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 650,
+      "style": "Farmhouse Modern"
+    },
+    "plot": {
+      "width": 25,
+      "depth": 26,
+      "slope": "gentle",
+      "orientation": "south"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 180,
+        "description": "Main communal space with curved walls following natural contours"
+      },
+      {
+        "type": "kitchen",
+        "area": 120,
+        "description": "Compact galley kitchen with farmhouse modern finishes"
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 140,
+        "description": "Main bedroom with built-in storage"
+      },
+      {
+        "type": "bedroom",
+        "area": 110,
+        "description": "Secondary bedroom for family members"
+      },
+      {
+        "type": "guest_room",
+        "area": 100,
+        "description": "Flexible space with Murphy bed system"
+      }
+    ]
+  },
+  "total_area": 650.0,
+  "construction_cost": 195000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_pod",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "north_entrance",
+            "to_kitchen",
+            "to_hallway"
+          ],
+          "windows": [
+            "south_curved",
+            "east_fixed"
+          ]
+        },
+        {
+          "id": "kitchen_pod",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 15
+          },
+          "doors": [
+            "to_living",
+            "to_exterior"
+          ],
+          "windows": [
+            "south_operable"
+          ]
+        },
+        {
+          "id": "primary_bedroom_pod",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 14
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": [
+            "south_large",
+            "east_operable"
+          ]
+        },
+        {
+          "id": "bedroom_pod",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 15,
+            "width": 10,
+            "height": 11
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": [
+            "south_operable"
+          ]
+        },
+        {
+          "id": "guest_pod",
+          "type": "guest_room",
+          "bounds": {
+            "x": 10,
+            "y": 26,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": [
+            "north_fixed"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 5,
+            "height": 28
+          },
+          "doors": [
+            "to_living",
+            "to_kitchen",
+            "to_primary",
+            "to_bedroom",
+            "to_guest",
+            "to_bath"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

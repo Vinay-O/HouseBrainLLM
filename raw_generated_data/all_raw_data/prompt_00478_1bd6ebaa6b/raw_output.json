@@ -1,0 +1,93 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "area_sqft": 250,
+          "location": { "x": 10, "y": 10 },
+          "connected_to": ["Kitchen", "Library"]
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 200,
+          "location": { "x": 350, "y": 10 },
+          "open_plan_with": ["Living Room"],
+          "features": ["Open Plan"]
+        },
+        {
+          "room_name": "Library",
+          "area_sqft": 150,
+          "location": { "x": 10, "y": 300 }
+        },
+        {
+          "room_name": "Servant's Quarters",
+          "area_sqft": 120,
+          "location": { "x": 600, "y": 500 }
+        }
+      ],
+      "openings": [
+        {
+          "type": "Door",
+          "size_ft": [3, 7],
+          "location": { "x": 290, "y": 10 },
+          "connects_rooms": ["Living Room", "Kitchen"]
+        },
+        {
+          "type": "Window",
+          "size_ft": [5, 4],
+          "location": { "x": 350, "y": 60 }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "area_sqft": 280,
+          "location": { "x": 10, "y": 10 },
+          "features": ["Attached Bathroom"]
+        },
+        {
+          "room_name": "Bedroom_2",
+          "area_sqft": 240,
+          "location": { "x": 350, "y": 10 }
+        },
+        {
+          "room_name": "Bedroom_3",
+          "area_sqft": 240,
+          "location": { "x": 650, "y": 10 }
+        },
+        {
+          "room_name": "Bedroom_4",
+          "area_sqft": 240,
+          "location": { "x": 10, "y": 300 }
+        },
+        {
+          "room_name": "Bedroom_5",
+          "area_sqft": 240,
+          "location": { "x": 350, "y": 300 }
+        },
+        {
+          "room_name": "Bedroom_6",
+          "area_sqft": 240,
+          "location": { "x": 650, "y": 300 }
+        }
+      ],
+      "openings": [
+        {
+          "type": "Staircase",
+          "size_ft": [8, 10],
+          "location": { "x": 300, "y": 250 }
+        },
+        {
+          "type": "Window",
+          "size_ft": [5, 4],
+          "location": { "x": 370, "y": 60 }
+        }
+      ]
+    }
+  ]
+}

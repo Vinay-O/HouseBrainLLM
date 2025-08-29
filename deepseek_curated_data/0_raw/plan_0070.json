@@ -1,0 +1,335 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 5,
+      "floors": 2,
+      "totalArea": 3200,
+      "style": "Minimalist"
+    },
+    "plot": {
+      "width": 50,
+      "length": 80
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 5,
+        "description": "Master suite and 4 additional bedrooms"
+      },
+      {
+        "type": "garage",
+        "count": 1,
+        "description": "Two-car garage"
+      },
+      {
+        "type": "servant_quarters",
+        "count": 1,
+        "description": "Servant's quarters with private bathroom"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "Open-plan kitchen"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Open-plan living area"
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "description": "Ensuite bathrooms and powder room"
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 800000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_1",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "position": "front"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "main_entry",
+              "position": "front"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "servant_quarters",
+          "type": "servant_quarters",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": "private_entry"
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": "side"
+            }
+          ]
+        },
+        {
+          "id": "open_living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 50,
+            "height": 30
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "large_panoramic",
+              "position": "rear"
+            }
+          ]
+        },
+        {
+          "id": "open_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 50,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "standard",
+              "position": "side"
+            }
+          ]
+        },
+        {
+          "id": "dining_area",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 50,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 65,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": "hallway"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "type": "large",
+              "position": "rear"
+            }
+          ]
+        },
+        {
+          "id": "master_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": "bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": "side"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": "side"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": "rear"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 35,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": "side"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": "hallway"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 55,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "position": "hallway"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "upper_hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 25,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

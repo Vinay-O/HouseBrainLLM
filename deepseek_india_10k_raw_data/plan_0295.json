@@ -1,0 +1,259 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 2400,
+      "style": "Bengali Traditional"
+    },
+    "plot": {
+      "width": 40,
+      "height": 60
+    },
+    "roomBreakdown": [
+      {
+        "id": "puja_room",
+        "type": "prayer_room",
+        "area": 120,
+        "description": "Sacred space for daily prayer and meditation, facing north for prosperity, with traditional kolam designs at the threshold and carved stone facade."
+      },
+      {
+        "id": "study_room",
+        "type": "study",
+        "area": 100,
+        "description": "Quiet room designed for competitive exam preparation, located away from noise sources with enhanced acoustic insulation."
+      },
+      {
+        "id": "kitchen",
+        "type": "kitchen",
+        "area": 150,
+        "description": "Equipped with biomass energy system for cooking and heating, using sustainable fuel sources suitable for rural areas."
+      },
+      {
+        "id": "courtyard",
+        "type": "outdoor",
+        "area": 300,
+        "description": "Central courtyard with water bodies and plants for evapotranspiration cooling, creating a natural cooling system for the house."
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 3600000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance",
+          "type": "foyer",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "description": "North-facing main entrance with traditional kolam threshold designs and carved regional stone facades for prosperity."
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 6,
+            "width": 15,
+            "height": 18
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 9
+            },
+            {
+              "wall": "west",
+              "position": 9
+            }
+          ],
+          "description": "Main living area with traditional Bengali architectural elements and noise-reducing construction."
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "description": "Biomass energy equipped kitchen with traditional cooking hearth and sustainable heating system."
+        },
+        {
+          "id": "courtyard",
+          "type": "outdoor",
+          "bounds": {
+            "x": 10,
+            "y": 24,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [],
+          "description": "Central courtyard with small water pond and lush plants for evapotranspiration cooling system."
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "description": "Ground floor bedroom with noise-insulated walls facing away from street traffic."
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "puja_room",
+          "type": "prayer_room",
+          "bounds": {
+            "x": 15,
+            "y": 30,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "description": "North-facing sacred space for daily prayer and meditation with traditional decor and peaceful ambiance."
+        },
+        {
+          "id": "study_room",
+          "type": "study",
+          "bounds": {
+            "x": 25,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "description": "Quiet study room with enhanced acoustic insulation for exam preparation, located away from noise sources."
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "description": "Upper floor bedroom with traditional Bengali architectural details and noise reduction features."
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 45,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "description": "Master bedroom with traditional elements and views of the courtyard cooling system."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200.0,
+      "style": "Organic Architecture"
+    },
+    "plot": {
+      "topography": "Elevated platform above wetlands",
+      "climate": "Tropical with monsoons"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 180.0
+      },
+      {
+        "type": "bathroom",
+        "area": 90.0
+      },
+      {
+        "type": "kitchen",
+        "area": 120.0
+      },
+      {
+        "type": "living_room",
+        "area": 240.0
+      },
+      {
+        "type": "pottery_studio",
+        "area": 300.0
+      },
+      {
+        "type": "storage",
+        "area": 150.0
+      },
+      {
+        "type": "utility",
+        "area": 120.0
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 385000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_space",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 15
+          },
+          "doors": [
+            "main_entry",
+            "to_studio",
+            "to_bedroom"
+          ],
+          "windows": [
+            "north_glass_wall",
+            "south_operable"
+          ]
+        },
+        {
+          "id": "kitchen_area",
+          "type": "kitchen",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 8,
+            "height": 15
+          },
+          "doors": [
+            "to_living"
+          ],
+          "windows": [
+            "east_awning"
+          ]
+        },
+        {
+          "id": "bedroom_retreat",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_living",
+            "to_bath"
+          ],
+          "windows": [
+            "south_clerestory",
+            "west_louver"
+          ]
+        },
+        {
+          "id": "bathroom_wetland",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 15,
+            "width": 6,
+            "height": 12
+          },
+          "doors": [
+            "to_bedroom"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        },
+        {
+          "id": "studio_primary",
+          "type": "pottery_studio",
+          "bounds": {
+            "x": 18,
+            "y": 15,
+            "width": 18,
+            "height": 15
+          },
+          "doors": [
+            "to_living",
+            "exterior_double"
+          ],
+          "windows": [
+            "north_ribbon",
+            "south_ribbon"
+          ]
+        },
+        {
+          "id": "kiln_room",
+          "type": "utility",
+          "bounds": {
+            "x": 18,
+            "y": 30,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            "to_studio"
+          ],
+          "windows": []
+        },
+        {
+          "id": "greywater_plant",
+          "type": "utility",
+          "bounds": {
+            "x": 24,
+            "y": 30,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            "exterior_access"
+          ],
+          "windows": []
+        },
+        {
+          "id": "collection_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "to_studio"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

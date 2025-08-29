@@ -1,0 +1,96 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "shape": "rectangle",
+          "dimensions": [16, 12],
+          "features": ["open_plan", "floor_to_ceiling_windows"],
+          "connected_to": ["kitchen", "dining_area"]
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "rectangle",
+          "dimensions": [10, 8],
+          "features": ["open_plan", "modular_kitchen"],
+          "connected_to": ["living_room", "dining_area"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "shape": "square",
+          "dimensions": [14, 12],
+          "features": ["attached_bathroom", "wardrobe"],
+          "connected_to": ["balcony"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "shape": "rectangle",
+          "dimensions": [12, 10],
+          "features": ["attached_bathroom", "wardrobe"],
+          "connected_to": ["balcony"]
+        },
+        {
+          "room_id": "garage",
+          "shape": "rectangle",
+          "dimensions": [20, 10],
+          "features": ["two_car_capacity", "electric_gate"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "location": "front",
+          "dimensions": [8, 4]
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "location": "living_room",
+          "dimensions": [12, 8],
+          "features": ["floor_to_ceiling"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "shape": "rectangle",
+          "dimensions": [12, 10],
+          "features": ["attached_bathroom", "wardrobe"],
+          "connected_to": ["balcony"]
+        },
+        {
+          "room_id": "study_room",
+          "shape": "square",
+          "dimensions": [10, 10],
+          "features": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "first_floor_window",
+          "type": "window",
+          "location": "bedroom_3",
+          "dimensions": [8, 6]
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_id": "terrace",
+          "shape": "rectangle",
+          "dimensions": [20, 15],
+          "features": ["outdoor_seating", "garden"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

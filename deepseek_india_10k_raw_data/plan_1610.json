@@ -1,0 +1,299 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Punjabi farmhouse with rural Sikh architectural elements"
+    },
+    "plot": {
+      "orientation": "east-facing",
+      "location": "Vijayawada Krishna delta",
+      "hazards": [
+        "cyclone",
+        "forest_fire_risk"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "count": 1,
+        "area": 80
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 180
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "studio",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "entry_porch",
+        "count": 1,
+        "area": 140
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 2160000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_porch",
+          "type": "entry_porch",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5,
+              "type": "main_entry"
+            },
+            {
+              "wall": "south",
+              "position": 5,
+              "type": "standard",
+              "to": "courtyard"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "secure_gate",
+            "privacy_screen"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 18,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 9,
+              "type": "standard",
+              "to": "entry_porch"
+            },
+            {
+              "wall": "south",
+              "position": 9,
+              "type": "standard",
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 9,
+              "type": "jali",
+              "material": "bamboo_lattice"
+            }
+          ],
+          "features": [
+            "seating_area",
+            "natural_cooling"
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 14,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7,
+              "type": "standard",
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7,
+              "type": "jali",
+              "material": "bamboo_lattice"
+            },
+            {
+              "wall": "north",
+              "position": 7,
+              "type": "standard"
+            }
+          ],
+          "features": [
+            "wardrobe",
+            "security_shutters",
+            "private_access"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 42,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4,
+              "type": "standard",
+              "to": "bedroom"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "attached_to_bedroom",
+            "ventilation_skylight"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7,
+              "type": "standard",
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7,
+              "type": "jali",
+              "material": "bamboo_lattice"
+            }
+          ],
+          "features": [
+            "wood_fired_chulah",
+            "modern_appliances",
+            "storage",
+            "traditional_style"
+          ]
+        },
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 14,
+            "y": 14,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 8,
+              "type": "standard",
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 8,
+              "type": "jali",
+              "material": "bamboo_lattice"
+            }
+          ],
+          "features": [
+            "natural_dye_preparation",
+            "workbench",
+            "storage_shelves"
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 32,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 16,
+              "type": "standard",
+              "to": "entry_porch"
+            },
+            {
+              "wall": "west",
+              "position": 8,
+              "type": "standard",
+              "to": "living_room"
+            },
+            {
+              "wall": "west",
+              "position": 24,
+              "type": "standard",
+              "to": "bedroom"
+            },
+            {
+              "wall": "south",
+              "position": 8,
+              "type": "standard",
+              "to": "kitchen"
+            },
+            {
+              "wall": "south",
+              "position": 24,
+              "type": "standard",
+              "to": "studio"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "tulsi_platform",
+            "central_angan",
+            "open_sky",
+            "natural_light"
+          ]
+        }
+      ]
+    }
+  ]
+}

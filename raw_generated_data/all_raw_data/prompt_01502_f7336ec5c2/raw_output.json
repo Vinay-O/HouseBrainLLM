@@ -1,0 +1,80 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["spacious_balcony", "wardrobe"],
+          "orientation": "north-east"
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["spacious_balcony", "wardrobe"],
+          "orientation": "north-west"
+        },
+        {
+          "room_id": "living_room",
+          "type": "living_room",
+          "dimensions": { "length": 16, "width": 15 },
+          "features": ["dining_area", "TV_unit"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["modular_kitchen", "pantry"]
+        },
+        {
+          "room_id": "servant_quarters",
+          "type": "servant_quarters",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["attached_bathroom"]
+        },
+        {
+          "room_id": "study_room",
+          "type": "study_room",
+          "dimensions": { "length": 10, "width": 8 }
+        },
+        {
+          "room_id": "guest_toilet",
+          "type": "toilet",
+          "dimensions": { "length": 5, "width": 4 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "entrance",
+          "orientation": "north"
+        },
+        {
+          "opening_id": "balcony_1",
+          "type": "balcony",
+          "associated_room": "bedroom_1",
+          "dimensions": { "length": 5, "width": 8 }
+        },
+        {
+          "opening_id": "balcony_2",
+          "type": "balcony",
+          "associated_room": "bedroom_2",
+          "dimensions": { "length": 5, "width": 7 }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "terrace",
+          "type": "terrace",
+          "dimensions": { "length": 50, "width": 80 },
+          "features": ["outdoor_seating", "barbeque_area"]
+        }
+      ],
+      "openings": []
+    }
+  ]}

@@ -1,0 +1,186 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Prairie Style"
+    },
+    "plot": {
+      "environment": "Desert plateau with panoramic views, tropical with monsoons climate",
+      "orientation": "North-facing for consistent light"
+    },
+    "roomBreakdown": [
+      {
+        "roomType": "master_bedroom",
+        "description": "Wellness-focused retreat with bamboo finishes and north-facing windows for views"
+      },
+      {
+        "roomType": "guest_bedroom",
+        "description": "Fitness recovery room with cork flooring and wellness amenities"
+      },
+      {
+        "roomType": "home_brewery",
+        "description": "Temperature-controlled brewing space with specialized ventilation"
+      },
+      {
+        "roomType": "home_office",
+        "description": "Separate entrance office with sound insulation and north light"
+      },
+      {
+        "roomType": "fitness_area",
+        "description": "Open exercise space with panoramic desert views"
+      },
+      {
+        "roomType": "living_area",
+        "description": "Great room with horizontal Prairie Style lines and expansive north windows"
+      },
+      {
+        "roomType": "kitchen",
+        "description": "Efficient galley kitchen with bamboo cabinetry"
+      },
+      {
+        "roomType": "bathroom",
+        "description": "Spa-like bathroom with monsoon-resistant finishes"
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 285000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            "living_area"
+          ],
+          "windows": [
+            "north_wall"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": [
+            "north_wall"
+          ]
+        },
+        {
+          "id": "home_brewery",
+          "type": "utility",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "home_office",
+          "type": "office",
+          "bounds": {
+            "x": 36,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "exterior"
+          ],
+          "windows": [
+            "north_wall"
+          ]
+        },
+        {
+          "id": "fitness_area",
+          "type": "recreation",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 24,
+            "height": 20
+          },
+          "doors": [
+            "living_area"
+          ],
+          "windows": [
+            "north_wall",
+            "south_wall"
+          ]
+        },
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 24,
+            "y": 12,
+            "width": 24,
+            "height": 16
+          },
+          "doors": [
+            "fitness_area",
+            "kitchen",
+            "master_bedroom"
+          ],
+          "windows": [
+            "north_wall",
+            "south_wall"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 24,
+            "y": 28,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "living_area",
+            "home_brewery"
+          ],
+          "windows": [
+            "north_wall"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 36,
+            "y": 12,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

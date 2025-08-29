@@ -1,0 +1,421 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 320,
+      "style": "Desert Contemporary"
+    },
+    "plot": {
+      "width": 4,
+      "depth": 40,
+      "climate": "Humid Subtropical"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "area": 80
+      },
+      {
+        "type": "study",
+        "area": 30
+      },
+      {
+        "type": "bedroom",
+        "area": 40
+      },
+      {
+        "type": "bedroom",
+        "area": 40
+      },
+      {
+        "type": "darkroom",
+        "area": 20
+      },
+      {
+        "type": "living_room",
+        "area": 50
+      },
+      {
+        "type": "kitchen",
+        "area": 30
+      },
+      {
+        "type": "bathroom",
+        "area": 20
+      },
+      {
+        "type": "bathroom",
+        "area": 10
+      }
+    ]
+  },
+  "total_area": 320.0,
+  "construction_cost": 896000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_courtyard",
+          "type": "other",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 2,
+                "y": 6
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 4,
+            "height": 12.5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 2,
+                "y": 6
+              },
+              "to_room": "entry_courtyard"
+            },
+            {
+              "position": {
+                "x": 4,
+                "y": 9
+              },
+              "to_room": "kitchen"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 12
+              },
+              "to_room": "study"
+            },
+            {
+              "position": {
+                "x": 4,
+                "y": 15
+              },
+              "to_room": "elevator"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 9
+              },
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 4,
+                "y": 9
+              },
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 4,
+            "y": 6,
+            "width": 4,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 9
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 8,
+                "y": 9
+              },
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 12.5,
+            "width": 4,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 12
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 16
+              },
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "elevator",
+          "type": "other",
+          "bounds": {
+            "x": 4,
+            "y": 13.5,
+            "width": 2,
+            "height": 3
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 15
+              },
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 6,
+                "y": 15
+              },
+              "to_room": "bathroom_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 6,
+            "y": 13.5,
+            "width": 2,
+            "height": 3
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 6,
+                "y": 15
+              },
+              "to_room": "elevator"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 10
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 4,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 15
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 4,
+            "y": 10,
+            "width": 4,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 15
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "darkroom",
+          "type": "darkroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 22.5
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 4,
+            "y": 20,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 22.5
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "corridor",
+          "type": "other",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 8,
+            "height": 3
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 25
+              },
+              "to_room": "library"
+            },
+            {
+              "position": {
+                "x": 2,
+                "y": 28
+              },
+              "to_room": "bedroom_1"
+            },
+            {
+              "position": {
+                "x": 6,
+                "y": 28
+              },
+              "to_room": "bedroom_2"
+            },
+            {
+              "position": {
+                "x": 2,
+                "y": 28
+              },
+              "to_room": "darkroom"
+            },
+            {
+              "position": {
+                "x": 6,
+                "y": 28
+              },
+              "to_room": "bathroom_2"
+            },
+            {
+              "position": {
+                "x": 4,
+                "y": 28
+              },
+              "to_room": "elevator"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "elevator",
+          "type": "other",
+          "bounds": {
+            "x": 4,
+            "y": 28,
+            "width": 2,
+            "height": 3
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 28
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

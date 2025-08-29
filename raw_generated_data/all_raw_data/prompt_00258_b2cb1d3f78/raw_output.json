@@ -1,0 +1,128 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "area": 250,
+          "shape": "rectangle",
+          "dimensions": {"length": 12.5, "width": 20},
+          "features": ["open_plan", "high_ceiling", "wooden_floor"],
+          "position": {"side": "front", "orientation": "north"}
+        },
+        {
+          "room_id": "dining_room",
+          "area": 150,
+          "shape": "square",
+          "dimensions": {"length": 12.5, "width": 12.5},
+          "features": ["open_plan", "wooden_floor"],
+          "position": {"adjacent_to": "living_room"}
+        },
+        {
+          "room_id": "kitchen",
+          "area": 200,
+          "shape": "rectangle",
+          "dimensions": {"length": 12.5, "width": 16},
+          "features": ["open_plan", "modular_wardrobes", "granite_counter"],
+          "position": {"adjacent_to": "dining_room"}
+        },
+        {
+          "room_id": "master_bedroom",
+          "area": 300,
+          "shape": "rectangle",
+          "dimensions": {"length": 15, "width": 20},
+          "features": ["attached_bathroom", "wardrobe", "balcony"],
+          "position": {"side": "rear", "orientation": "south"}
+        },
+        {
+          "room_id": "bedroom_2",
+          "area": 250,
+          "shape": "rectangle",
+          "dimensions": {"length": 12.5, "width": 20},
+          "features": ["attached_bathroom", "wardrobe"],
+          "position": {"side": "rear"}
+        },
+        {
+          "room_id": "bedroom_3",
+          "area": 250,
+          "shape": "rectangle",
+          "dimensions": {"length": 12.5, "width": 20},
+          "features": ["attached_bathroom", "wardrobe"],
+          "position": {"side": "rear"}
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": {"length": 7, "width": 3},
+          "position": {"side": "front", "orientation": "east"}
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimensions": {"length": 5, "width": 5},
+          "position": {"room": "kitchen", "orientation": "north"}
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimensions": {"length": 8, "width": 4},
+          "count": 2,
+          "position": {"room": "living_room", "orientation": "north"}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_4",
+          "area": 300,
+          "shape": "rectangle",
+          "dimensions": {"length": 15, "width": 20},
+          "features": ["attached_bathroom", "wardrobe", "balcony"],
+          "position": {"side": "front", "orientation": "north"}
+        },
+        {
+          "room_id": "bedroom_5",
+          "area": 300,
+          "shape": "rectangle",
+          "dimensions": {"length": 15, "width": 20},
+          "features": ["attached_bathroom", "wardrobe", "balcony"],
+          "position": {"side": "front"}
+        },
+        {
+          "room_id": "bedroom_6",
+          "area": 300,
+          "shape": "rectangle",
+          "dimensions": {"length": 15, "width": 20},
+          "features": ["attached_bathroom", "wardrobe"],
+          "position": {"side": "rear"}
+        },
+        {
+          "room_id": "study_room",
+          "area": 200,
+          "shape": "square",
+          "dimensions": {"length": 14, "width": 14},
+          "features": ["wardrobe", "window"],
+          "position": {"adjacent_to": "bedroom_6"}
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "study_room_window",
+          "type": "window",
+          "dimensions": {"length": 5, "width": 5},
+          "position": {"room": "study_room", "orientation": "west"}
+        },
+        {
+          "opening_id": "bedroom_4_window",
+          "type": "window",
+          "dimensions": {"length": 8, "width": 4},
+          "count": 2,
+          "position": {"room": "bedroom_4", "orientation": "east"}
+        }
+      ]
+    }
+  ]}

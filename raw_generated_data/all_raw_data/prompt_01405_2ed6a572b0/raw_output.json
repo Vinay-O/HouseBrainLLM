@@ -1,0 +1,64 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"room_id": "bedroom_1", "type": "bedroom", "area": 300, "features": ["floor-to-ceiling windows", "spacious balcony"]},
+        {"room_id": "bedroom_2", "type": "bedroom", "area": 300, "features": ["floor-to-ceiling windows", "spacious balcony"]},
+        {"room_id": "bedroom_3", "type": "bedroom", "area": 300, "features": ["floor-to-ceiling windows", "spacious balcony"]},
+        {"room_id": "bedroom_4", "type": "bedroom", "area": 300, "features": ["floor-to-ceiling windows", "spacious balcony"]},
+        {"room_id": "bedroom_5", "type": "bedroom", "area": 300, "features": ["floor-to-ceiling windows", "spacious balcony"]},
+        {"room_id": "bedroom_6", "type": "bedroom", "area": 300, "features": ["floor-to-ceiling windows", "spacious balcony"]},
+        {"room_id": "library", "type": "library", "area": 200, "features": []}
+      ],
+      "openings": [
+        {"opening_id": "main_entrance", "type": "door", "direction": "north"},
+        {"opening_id": "bedroom1_window", "type": "window", "direction": "east"},
+        {"opening_id": "bedroom2_window", "type": "window", "direction": "west"},
+        {"opening_id": "library_window", "type": "window", "direction": "north"}
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {"room_id": "bedroom_7", "type": "bedroom", "area": 300, "features": ["floor-to-ceiling windows", "spacious balcony"]},
+        {"room_id": "bedroom_8", "type": "bedroom", "area": 300, "features": ["floor-to-ceiling windows", "spacious balcony"]}
+      ],
+      "openings": [
+        {"opening_id": "upper_entrance", "type": "staircase", "direction": "north"},
+        {"opening_id": "bedroom7_window", "type": "window", "direction": "east"},
+        {"opening_id": "bedroom8_window", "type": "window", "direction": "west"}
+      ]
+    }
+  ],
+  "total_area": 3000,
+  "design_features": ["split-level", "Industrial design", "floor-to-ceiling windows", "spacious balconies for each bedroom", "library"],
+  "vastu_compliance": {
+    "bedrooms": [
+      {"direction": "north-west", "room_id": "bedroom_1"},
+      {"direction": "north-east", "room_id": "bedroom_2"},
+      {"direction": "south-east", "room_id": "bedroom_3"},
+      {"direction": "south-west", "room_id": "bedroom_4"},
+      {"direction": "east", "room_id": "bedroom_5"},
+      {"direction": "west", "room_id": "bedroom_6"}
+    ],
+    "library": {
+      "direction": "north-east",
+      "reason": "For positive energy flow and knowledge enhancement"
+    }
+  },
+  "building_norm_compliance": [
+    {
+      "norm": "setback requirements",
+      "compliance": "The building adheres to the local setback requirements for residential buildings."
+    },
+    {
+      "norm": "height restrictions",
+      "compliance": "The split-level design complies with the local height restrictions for residential buildings."
+    },
+    {
+      "norm": "open space requirements",
+      "compliance": "The building provides adequate open space in the form of balconies and a library."
+    }
+  ]
+}

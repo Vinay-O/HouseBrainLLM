@@ -1,0 +1,314 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 4500,
+      "style": "Modern Minimalist with Odisha Temple Inspiration"
+    },
+    "plot": {
+      "area": 10000,
+      "type": "corner_plot",
+      "frontage": "dual",
+      "location": "smart_city_pilot",
+      "proximity": "heritage_building"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 600
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "area": 300
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 500
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "workshop",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 13500000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            "main_entrance",
+            "to_courtyard",
+            "to_kitchen"
+          ],
+          "windows": [
+            "north_facing_large",
+            "east_facing"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_utility",
+            "to_dining_nook"
+          ],
+          "windows": [
+            "south_facing"
+          ]
+        },
+        {
+          "id": "dining_nook_0",
+          "type": "dining",
+          "bounds": {
+            "x": 25,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "to_kitchen"
+          ],
+          "windows": [
+            "south_facing"
+          ]
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "to_kitchen",
+            "external_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_0",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 10,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "workshop_0",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "external_entry",
+            "to_courtyard"
+          ],
+          "windows": [
+            "north_facing_lattice",
+            "east_facing_lattice"
+          ]
+        },
+        {
+          "id": "courtyard_0",
+          "type": "outdoor",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "from_living",
+            "from_workshop"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            "to_balcony",
+            "to_bathroom"
+          ],
+          "windows": [
+            "north_facing",
+            "east_facing"
+          ]
+        },
+        {
+          "id": "primary_bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_bedroom"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        },
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_terrace",
+            "to_hall"
+          ],
+          "windows": [
+            "south_facing"
+          ]
+        },
+        {
+          "id": "bathroom_2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 18,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "study_1",
+          "type": "study",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_facing",
+            "west_facing"
+          ]
+        },
+        {
+          "id": "puja_room_1",
+          "type": "puja_room",
+          "bounds": {
+            "x": 23,
+            "y": 22,
+            "width": 12,
+            "height": 11
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "west_facing_jarokha"
+          ]
+        },
+        {
+          "id": "balcony_1",
+          "type": "outdoor",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 18
+          },
+          "doors": [
+            "from_bedroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "terrace_1",
+          "type": "outdoor",
+          "bounds": {
+            "x": 15,
+            "y": 33,
+            "width": 20,
+            "height": 7
+          },
+          "doors": [
+            "from_bedroom_2",
+            "stair_access"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

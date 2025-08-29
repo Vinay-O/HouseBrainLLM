@@ -1,0 +1,104 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "type": "bedroom",
+          "size": "12x14",
+          "features": ["balcony", "wardrobe", "attach_bath"]
+        },
+        {
+          "type": "bedroom",
+          "size": "12x14",
+          "features": ["balcony", "wardrobe", "attach_bath"]
+        },
+        {
+          "type": "kitchen",
+          "size": "10x12",
+          "features": ["open_plan", "modular_cabinetry"],
+          "adjacent_to": "dining_area"
+        },
+        {
+          "type": "living_room",
+          "size": "16x20",
+          "features": ["open_plan_with_kitchen"]
+        },
+        {
+          "type": "dining_area",
+          "size": "8x10",
+          "adjacent_to": "kitchen"
+        }
+      ],
+      "openings": [
+        {
+          "type": "balcony",
+          "associated_room": "bedroom_1"
+        },
+        {
+          "type": "balcony",
+          "associated_room": "bedroom_2"
+        },
+        {
+          "type": "entrance",
+          "features": ["colonial_style_foyer", "wooden_floor"]
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "type": "bedroom",
+          "size": "12x14",
+          "features": ["balcony", "wardrobe", "attach_bath"]
+        },
+        {
+          "type": "bedroom",
+          "size": "12x14",
+          "features": ["balcony", "wardrobe", "attach_bath"]
+        },
+        {
+          "type": "study_room",
+          "size": "8x10",
+          "features": ["natural_light"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "balcony",
+          "associated_room": "bedroom_3"
+        },
+        {
+          "type": "balcony",
+          "associated_room": "bedroom_4"
+        }
+      ]
+    }
+  ],
+  "additional_features": [
+    {
+      "type": "roof",
+      "style": "sloped_colonial",
+      "material": "terracotta_tiles"
+    },
+    {
+      "type": "garden",
+      "location": "front_and_back",
+      "features": ["manicured_lawn", "colonial_style_fencing"]
+    }
+  ],
+  "vastu_compliance": [
+    {
+      "feature": "kitchen",
+      "direction": "southeast"
+    },
+    {
+      "feature": "bedrooms",
+      "direction": "south_and_west"
+    },
+    {
+      "feature": "living_room",
+      "direction": "north"
+    }
+  ]
+}

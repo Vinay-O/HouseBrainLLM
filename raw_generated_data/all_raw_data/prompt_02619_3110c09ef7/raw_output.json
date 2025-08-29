@@ -1,0 +1,123 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        { 
+          "room_name": "Lobby / Entrance", 
+          "dimensions": {"length": 12.0, "width": 8.0}, 
+          "description": "Serves as the initial entry point with a small waiting area incorporating Vastu elements for positive energy flow."
+        },
+        {
+          "room_name": "Living Room", 
+          "dimensions": {"length": 18.0, "width": 14.0}, 
+          "description": "Open-plan living space that seamlessly connects to the kitchen; large windows on the south-east wall promote natural light and ventilation in accordance with Vastu."
+        },
+        {
+          "room_name": "Kitchen", 
+          "dimensions": {"length": 10.0, "width": 8.0}, 
+          "description": "Open-plan kitchen adjoining the living area; designed for functionality with modern appliances; incorporates an efficient storage solution and a window for ventilation on the north side."
+        },
+        {
+          "room_name": "Dining Area", 
+          "dimensions": {"length": 12.0, "width": 10.0}, 
+          "description": "Integrated dining area within the living space, ideally positioned near the kitchen for ease of service."
+        },
+        {
+          "room_name": "Guest Bedroom", 
+          "dimensions": {"length": 14.0, "width": 12.0}, 
+          "description": "A private guest room with ample natural light; includes access to a small balcony on the east side in line with Vastu principles."
+        },
+        {
+          "room_name": "Guest Bathroom", 
+          "dimensions": {"length": 6.0, "width": 4.5}, 
+          "description": "Bathroom attached to the guest bedroom for convenience."
+        },
+        {
+          "room_name": "Utility Room / Storage", 
+          "dimensions": {"length": 8.0, "width": 6.0}, 
+          "description": "Multipurpose storage space used for household utilities and supplies; placed in a less prominent area as per Vastu."
+        },
+        {
+          "room_name": "Garage", 
+          "dimensions": {"length": 20.0, "width": 12.0}, 
+          "description": "Two-car garage with dedicated parking spaces for vehicles; designed with ample space for maintenance and extra storage; includes direct access to the house."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Main Entrance",
+          "location": {"level": "ground_floor", "direction": "northwest"},
+          "description": "Well-illuminated entrance with a vestibule area promoting positive energy flow as per Vastu."
+        },
+        {
+          "opening_type": "Balcony Access",
+          "location": {"level": "ground_floor", "room": "Guest Bedroom", "direction": "east"},
+          "description": "Provides outdoor ventilation and natural light, enhancing the room's ambiance while adhering to Vastu principles."
+        },
+        {
+          "opening_type": "Window Opening",
+          "location": {"level": "ground_floor", "rooms": ["Living Room", "Kitchen"], "direction": "southeast"},
+          "description": "Large windows that maximize natural light and maintain proper air circulation in accordance with Vastu."
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        { 
+          "room_name": "Master Bedroom", 
+          "dimensions": {"length": 16.0, "width": 14.0}, 
+          "description": "Spacious master bedroom with private balcony on the south-west facing side to promote calm and restful energy as per Vastu."
+        },
+        {
+          "room_name": "Second Bedroom", 
+          "dimensions": {"length": 12.0, "width": 10.0}, 
+          "description": "Additional family bedroom designed for joint family members with natural light from the east side window; includes a small study area."
+        },
+        {
+          "room_name": "Third Bedroom", 
+          "dimensions": {"length": 12.0, "width": 10.0}, 
+          "description": "Room oriented on the north for balanced energy distribution; ideal for additional joint family members."
+        },
+        {
+          "room_name": "Fourth Bedroom", 
+          "dimensions": {"length": 12.0, "width": 10.0}, 
+          "description": "Further bedroom designed with a focus on privacy and comfort, placed in the west section to balance energy flow."
+        },
+        {
+          "room_name": "Fifth Bedroom", 
+          "dimensions": {"length": 10.0, "width": 8.0}, 
+          "description": "Smallest bedroom intended for children or extended family members; designed with a window on the east for positive light."
+        },
+        {
+          "room_name": "Sixth Bedroom", 
+          "dimensions": {"length": 10.0, "width": 8.0}, 
+          "description": "Additional bedroom to accommodate joint family needs; features natural lighting and a small private balcony aligned with Vastu principles."
+        },
+        {
+          "room_name": "Family Bathroom", 
+          "dimensions": {"length": 7.5, "width": 6.0}, 
+          "description": "Central bathroom on the first floor serving multiple bedrooms; designed for efficient circulation and privacy."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Staircase",
+          "location": {"level": "ground_floor", "direction": "west"},
+          "description": "Widely spaced staircase providing easy access between floors; placed away from the main entrance in accordance with Vastu."
+        },
+        {
+          "opening_type": "Balcony Access",
+          "location": {"level": "first_floor", "room": "Master Bedroom", "direction": "southwest"},
+          "description": "Balcony providing outdoor space and ventilation for the master bedroom, enhancing relaxation as per Vastu."
+        },
+        {
+          "opening_type": "Window Opening",
+          "location": {"level": "first_floor", "rooms": ["Second Bedroom", "Third Bedroom", "Fourth Bedroom"], "direction": "east"},
+          "description": "Strategically placed windows to maximize morning light and energy flow in the bedrooms."
+        }
+      ]
+    }
+  ]
+}

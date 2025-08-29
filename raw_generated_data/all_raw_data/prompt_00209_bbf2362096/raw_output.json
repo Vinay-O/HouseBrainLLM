@@ -1,0 +1,111 @@
+{  
+    "levels": [
+        {
+            "level_id": "ground_floor",
+            "rooms": [
+                {
+                    "name": "Entrance Hall",
+                    "dimensions": {"width": 4, "depth": 3},
+                    "description": "Large space with Mediterranean tiled floor and a decorative archway. Vastu-aligned entry to enhance positive energy."
+                },
+                {
+                    "name": "Living Room",
+                    "dimensions": {"width": 6, "depth": 5},
+                    "description": "Open plan living room featuring floor-to-ceiling windows overlooking the garden. Warm Mediterranean colors and rustic finishes are used."
+                },
+                {
+                    "name": "Dining Area",
+                    "dimensions": {"width": 4, "depth": 3},
+                    "description": "Separate dining area adjacent to the living room, incorporating an accent wall with Mediterranean patterns."
+                },
+                {
+                    "name": "Kitchen",
+                    "dimensions": {"width": 5, "depth": 4},
+                    "description": "Modern kitchen designed with functional layout and integrated pantry. Features Mediterranean-style cabinetry and a breakfast nook."
+                },
+                {
+                    "name": "Guest Bathroom",
+                    "dimensions": {"width": 3, "depth": 2},
+                    "description": "Compact guest bathroom for convenience, with simple yet elegant finishes."
+                },
+                {
+                    "name": "Home Office",
+                    "dimensions": {"width": 4, "depth": 3},
+                    "description": "Dedicated home office space located near the living room for minimal distractions. Equipped with ample natural light and built-in shelves."
+                }
+            ],
+            "openings": [
+                {
+                    "type": "Door",
+                    "location": {"from_room": "Entrance Hall", "to_room": "Living Room"},
+                    "description": "Mediterranean styled door with wood finish, aligning the flow of energy per Vastu."
+                },
+                {
+                    "type": "Window",
+                    "location": {"room": "Living Room"},
+                    "description": "Floor-to-ceiling windows that allow abundant natural light and offer views of the garden and swimming pool area."
+                },
+                {
+                    "type": "Door",
+                    "location": {"from_room": "Living Room", "to_room": "Dining Area"},
+                    "description": "Open plan transition door that supports fluid movement between spaces."
+                },
+                {
+                    "type": "Window",
+                    "location": {"room": "Kitchen"},
+                    "description": "Large window enhancing ventilation and connection to the outdoor garden, keeping with Mediterranean aesthetics."
+                },
+                {
+                    "type": "Door",
+                    "location": {"from_room": "Entrance Hall", "to_room": "Guest Bathroom"},
+                    "description": "Discreet door placement ensuring privacy while maintaining smooth flow."
+                }
+            ],
+            "exterior": [
+                {
+                    "name": "Swimming Pool Area",
+                    "dimensions": {"length": 10, "width": 5},
+                    "description": "A dedicated swimming pool area with tiled deck and built-in seating. The pool is positioned on the west side for optimum sunlight per Mediterranean design."
+                }
+            ]
+        },
+        {
+            "level_id": "first_floor",
+            "rooms": [
+                {
+                    "name": "Master Bedroom",
+                    "dimensions": {"width": 5, "depth": 4},
+                    "description": "Spacious master bedroom with an ensuite bathroom and a walk-in closet. Vastu-compliant orientation for restful sleep."
+                },
+                {
+                    "name": "Bedroom 2",
+                    "dimensions": {"width": 4, "depth": 3},
+                    "description": "Additional bedroom designed to maximize space on the irregular plot layout. Features built-in storage and a private balcony."
+                },
+                {
+                    "name": "Bedroom 3",
+                    "dimensions": {"width": 4, "depth": 3},
+                    "description": "Functional third bedroom with flexible seating area for study or relaxation. Windows are aligned to promote light and air flow as per Vastu."
+                },
+                {
+                    "name": "Ensuite Bathroom",
+                    "dimensions": {"width": 3, "depth": 2},
+                    "description": "Modern ensuite attached to the master bedroom with updated fixtures and natural stone finishes."
+                }
+            ],
+            "openings": [
+                {
+                    "type": "Staircase",
+                    "location": {"from_level": "ground_floor", "to_level": "first_floor"},
+                    "description": "Spiral staircase designed for space efficiency, ensuring a smooth transition between floors and aligning with Vastu."
+                }
+            ]
+        }
+    ],
+    "notes": [
+        {
+            "vastu_principle": "The entry is oriented towards the north-east for optimal energy flow. Bedrooms are positioned on the west side for restful sleep, while living spaces face east to maximize morning light.",
+            "building_norms": "This plan adheres to local building codes with attention to seismic safety and sustainable construction practices."
+        }
+    ]
+}

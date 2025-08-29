@@ -1,0 +1,126 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "area": 250,
+          "dimensions": [15.43, 16.28],
+          "features": ["scandinavian_minimalism", "large_windows", "neutral_color_palette"]
+        },
+        {
+          "room_type": "dining_room",
+          "area": 200,
+          "dimensions": [14.14, 14.14],
+          "features": ["wooden_furniture", "pendant_lighting", "open_kitchen_view"]
+        },
+        {
+          "room_type": "kitchen",
+          "area": 180,
+          "dimensions": [13.69, 13.23],
+          "features": ["modular_design", "quartz_countertops", "stainless_steel_appliances"]
+        },
+        {
+          "room_type": "bedroom",
+          "area": 200,
+          "dimensions": [14.14, 14.14],
+          "features": ["walk_in_closet", "en_suite_bathroom", "large_windows"]
+        },
+        {
+          "room_type": "bedroom",
+          "area": 200,
+          "dimensions": [14.14, 14.14],
+          "features": ["shared_bathroom", "study_nook"]
+        },
+        {
+          "room_type": "bedroom",
+          "area": 200,
+          "dimensions": [14.14, 14.14],
+          "features": ["shared_bathroom", "balcony_access"]
+        },
+        {
+          "room_type": "guest_room",
+          "area": 150,
+          "dimensions": [12.25, 12.25],
+          "features": ["attached_bathroom", "minimalist_design"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "entrance",
+          "direction": "north",
+          "dimensions": [6.78, 3.05]
+        },
+        {
+          "type": "window",
+          "room_id": "living_room",
+          "dimensions": [4.88, 2.44],
+          "count": 3
+        }
+      ],
+      "other_spaces": [
+        {
+          "space_type": "staircase",
+          "dimensions": [6.10, 3.05],
+          "direction": "up"
+        },
+        {
+          "space_type": "storage",
+          "area": 80,
+          "location": "under_stairs"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "area": 250,
+          "dimensions": [15.87, 15.87],
+          "features": ["private_balcony", "walk_in_closet", "en_suite_bathroom"]
+        },
+        {
+          "room_type": "study_room",
+          "area": 120,
+          "dimensions": [10.93, 11.07],
+          "features": ["large_window", "minimalist_design"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "balcony_door",
+          "room_id": "bedroom",
+          "dimensions": [2.44, 2.44]
+        },
+        {
+          "type": "window",
+          "room_id": "study_room",
+          "dimensions": [3.66, 1.83],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "area": 200,
+      "features": ["outdoor_furniture", "greenery", "bbq_area"],
+      "access": "via_staircase_from_upper_floor"
+    }
+  ],
+  "building_norm_compliance": {
+    "local_building_norm": true,
+    "vastu_principles": {
+      "main_entrance_direction": "north",
+      "bedroom_placement": "southwest",
+      "kitchen_placement": "southeast"
+    }
+  },
+  "scandinavian_elements": [
+    "light_color_palette",
+    "natural_materials",
+    "clean_lines",
+    "functional_design"
+  ]
+}

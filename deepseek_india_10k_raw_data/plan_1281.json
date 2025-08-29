@@ -1,0 +1,396 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 2,
+      "totalArea": 4500,
+      "style": "Heritage-Inspired Linear Pavilion"
+    },
+    "plot": {
+      "location": "Chennai Coastal",
+      "orientation": "East-Facing",
+      "constraints": "Cyclone and Storm Surge Protection Required"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 2
+      },
+      {
+        "type": "bedroom",
+        "count": 6
+      },
+      {
+        "type": "bathroom",
+        "count": 4
+      },
+      {
+        "type": "courtyard",
+        "count": 3
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "puja_room",
+        "count": 1
+      },
+      {
+        "type": "terrace",
+        "count": 1
+      },
+      {
+        "type": "earth_sheltered_space",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 13500000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "main_entrance"
+          ],
+          "windows": [
+            "jaali_screen_1"
+          ]
+        },
+        {
+          "id": "main_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            "to_living",
+            "to_dining"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_courtyard",
+            "to_terrace"
+          ],
+          "windows": [
+            "east_window_1",
+            "jaali_screen_2"
+          ]
+        },
+        {
+          "id": "kitchen_veg",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "to_utility"
+          ],
+          "windows": [
+            "jaali_screen_3"
+          ]
+        },
+        {
+          "id": "kitchen_nonveg",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "to_utility"
+          ],
+          "windows": [
+            "jaali_screen_4"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 8,
+            "height": 30
+          },
+          "doors": [
+            "from_kitchen_veg",
+            "from_kitchen_nonveg"
+          ],
+          "windows": []
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_courtyard",
+            "to_kitchens"
+          ],
+          "windows": [
+            "jaali_screen_5"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "east_window_2",
+            "jaali_screen_6"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 5,
+            "height": 12
+          },
+          "doors": [
+            "from_bedroom_1"
+          ],
+          "windows": []
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 55,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "east_window_3"
+          ]
+        },
+        {
+          "id": "earth_sheltered_space",
+          "type": "earth_sheltered_space",
+          "bounds": {
+            "x": 55,
+            "y": 15,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "east_window_4",
+            "jaali_screen_7"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            "from_bedroom_2"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "east_window_5",
+            "jaali_screen_8"
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "east_window_6",
+            "jaali_screen_9"
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            "from_bedroom_4"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_5",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "jaali_screen_10"
+          ]
+        },
+        {
+          "id": "bedroom_6",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "jaali_screen_11"
+          ]
+        },
+        {
+          "id": "bathroom_4",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 5,
+            "height": 15
+          },
+          "doors": [
+            "from_bedroom_6"
+          ],
+          "windows": []
+        },
+        {
+          "id": "courtyard_2",
+          "type": "courtyard",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "terrace_garden",
+          "type": "terrace",
+          "bounds": {
+            "x": 55,
+            "y": 0,
+            "width": 10,
+            "height": 30
+          },
+          "doors": [
+            "from_stairs"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

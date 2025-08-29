@@ -1,0 +1,109 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "Living Room",
+          "dimensions": { "length": 16, "width": 14 },
+          "features": ["open-plan", "large windows for natural light"],
+          "position": { "direction": "north" }
+        },
+        {
+          "room_id": "dining_area",
+          "type": "Dining Area",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["adjacent to kitchen", "natural ventilation"],
+          "position": { "direction": "east" }
+        },
+        {
+          "room_id": "kitchen",
+          "type": "Kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["open-plan", "large windows for natural light and ventilation"],
+          "position": { "direction": "southeast" }
+        },
+        {
+          "room_id": "master_bedroom",
+          "type": "Master Bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["attached bathroom", "balcony with garden view"],
+          "position": { "direction": "southwest" }
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "Bedroom 2",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["attached bathroom", "natural light and ventilation"],
+          "position": { "direction": "northwest" }
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "Bedroom 3",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["attached bathroom", "natural light and ventilation"],
+          "position": { "direction": "northeast" }
+        },
+        {
+          "room_id": "home_office",
+          "type": "Home Office",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["quiet location", "natural light and ventilation"],
+          "position": { "direction": "northwest" }
+        },
+        {
+          "room_id": "garden",
+          "type": "Garden",
+          "dimensions": { "length": 30, "width": 40 },
+          "features": ["large open space", "landscaped with local flora"],
+          "position": { "direction": "all sides" }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "Entrance",
+          "dimensions": { "width": 6, "height": 10 },
+          "position": { "direction": "north" }
+        },
+        {
+          "opening_id": "garden_gate",
+          "type": "Gate",
+          "dimensions": { "width": 8, "height": 12 },
+          "position": { "direction": "south" }
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "Window",
+          "dimensions": { "width": 6, "height": 6 },
+          "position": { "room_id": "living_room", "direction": "north" }
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "Window",
+          "dimensions": { "width": 5, "height": 5 },
+          "position": { "room_id": "kitchen", "direction": "east" }
+        },
+        {
+          "opening_id": "master_bedroom_balcony",
+          "type": "Balcony",
+          "dimensions": { "width": 6, "depth": 4 },
+          "position": { "room_id": "master_bedroom", "direction": "south" }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "terrace",
+          "type": "Terrace",
+          "dimensions": { "length": 30, "width": 40 },
+          "features": ["open space", "panoramic garden view"],
+          "position": { "direction": "all sides" }
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

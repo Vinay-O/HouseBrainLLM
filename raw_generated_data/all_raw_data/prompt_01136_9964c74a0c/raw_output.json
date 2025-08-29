@@ -1,0 +1,112 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": {"length": 15, "width": 12},
+          "purpose": "common_area"
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": {"length": 10, "width": 9},
+          "purpose": "common_area"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": {"length": 12, "width": 10},
+          "features": ["modular", "gas_stove", "water_purifier"],
+          "purpose": "utility"
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": {"length": 14, "width": 12},
+          "features": ["attached_bathroom", "wardrobe"],
+          "purpose": "private"
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": {"length": 13, "width": 11},
+          "features": ["attached_bathroom", "wardrobe"],
+          "purpose": "private"
+        },
+        {
+          "room_id": "servant_quarters",
+          "dimensions": {"length": 10, "width": 9},
+          "features": ["attached_bathroom"],
+          "purpose": "utility"
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": {"length": 12, "width": 8},
+          "purpose": "private"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": {"length": 3.5, "width": 1}
+        },
+        {
+          "opening_id": "living_to_dining",
+          "type": "archway",
+          "dimensions": {"length": 4, "width": 2}
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimensions": {"length": 3, "width": 2},
+          "features": ["ventilation", "natural_light"]
+        }
+      ],
+      "ecofeatures": [
+        {
+          "feature_id": "solar_panels",
+          "location": "rooftop"
+        },
+        {
+          "feature_id": "rainwater_harvesting",
+          "location": "backyard"
+        },
+        {
+          "feature_id": "terrace_garden",
+          "location": "first_floor"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": {"length": 14, "width": 12},
+          "features": ["attached_bathroom", "balcony"],
+          "purpose": "private"
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": {"length": 13, "width": 11},
+          "features": ["attached_bathroom", "balcony"],
+          "purpose": "private"
+        },
+        {
+          "room_id": "terrace_garden",
+          "dimensions": {"length": 20, "width": 15},
+          "purpose": "outdoor_space"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "bedroom_3_balcony",
+          "type": "sliding_door",
+          "dimensions": {"length": 4, "width": 2}
+        },
+        {
+          "opening_id": "bedroom_4_balcony",
+          "type": "sliding_door",
+          "dimensions": {"length": 4, "width": 2}
+        }
+      ]
+    }
+  ]}

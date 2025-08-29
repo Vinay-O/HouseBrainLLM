@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Entrance Hall",
+          "dimensions": {"length": 5.0, "width": 4.5},
+          "features": ["main door"]
+        },
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 7.0, "width": 6.5},
+          "features": ["Vastu compliant", "interior facing courtyard"]
+        },
+        {
+          "room_name": "Dining Room",
+          "dimensions": {"length": 4.8, "width": 3.2}
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 5.0, "width": 4.5},
+          "features": ["gas stove", "separate pantry"]
+        },
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": {"length": 6.2, "width": 3.8}
+        },
+        {
+          "room_name": "Bathroom (Guest)",
+          "dimensions": {"length": 4.0, "width": 2.5},
+          "features": ["shower", "bathtub"]
+        },
+        {
+          "room_name": "Servant's Quarters",
+          "dimensions": {"length": 3.5, "width": 2.5}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "location": ["Living Room", "Dining Room"],
+          "size": {"height": 1.8, "width": 1.0},
+          "features": ["sun protection"]
+        },
+        {
+          "opening_type": "Door",
+          "location": "Entrance Hall",
+          "size": {"height": 2.4, "width": 1.5}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Bedroom 2",
+          "dimensions": {"length": 6.0, "width": 3.5},
+          "features": ["balcony"]
+        },
+        {
+          "room_name": "Bedroom 3",
+          "dimensions": {"length": 6.0, "width": 4.0}
+        },
+        {
+          "room_name": "Bathroom (First Floor)",
+          "dimensions": {"length": 3.5, "width": 2.0},
+          "features": ["shower"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "location": ["Bedroom 2", "Bedroom 3"],
+          "size": {"height": 1.8, "width": 1.5}
+        },
+        {
+          "opening_type": "Balcony Door",
+          "location": "Bedroom 2",
+          "size": {"height": 2.0, "width": 1.2}
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_name": "Bedroom 4 (Guest Room)",
+          "dimensions": {"length": 5.5, "width": 3.0},
+          "features": ["private balcony"]
+        },
+        {
+          "room_name": "Private Gym",
+          "dimensions": {"length": 7.0, "width": 5.0}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "Window",
+          "location": "Bedroom 4 (Guest Room)",
+          "size": {"height": 1.8, "width": 1.2},
+          "features": ["sun protection"]
+        },
+        {
+          "opening_type": "Balcony Door",
+          "location": "Bedroom 4 (Guest Room)",
+          "size": {"height": 2.0, "width": 1.5}
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 3000,
+      "style": "Chettinad Heritage"
+    },
+    "plot": {
+      "orientation": "west",
+      "area": 3000,
+      "frontage": "limited",
+      "location": "riverfront",
+      "flood_risk": "high"
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "level": 0
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "level": 0
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "level": 0
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "level": 0
+      },
+      {
+        "type": "verandah",
+        "count": 1,
+        "level": 0
+      },
+      {
+        "type": "guest_house",
+        "count": 1,
+        "level": 0
+      }
+    ]
+  },
+  "total_area": 3000.0,
+  "construction_cost": 675000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "verandah_main",
+          "type": "verandah",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 25,
+              "type": "main_entrance"
+            },
+            {
+              "wall": "south",
+              "position": 25,
+              "type": "to_garden"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 15,
+              "type": "full_height"
+            },
+            {
+              "wall": "west",
+              "position": 35,
+              "type": "full_height"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12.5,
+              "type": "double"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "type": "to_dining"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 12.5,
+              "type": "bay"
+            },
+            {
+              "wall": "south",
+              "position": 12.5,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 35,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "type": "standard"
+            },
+            {
+              "wall": "west",
+              "position": 7.5,
+              "type": "to_living"
+            },
+            {
+              "wall": "east",
+              "position": 7.5,
+              "type": "to_kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7.5,
+              "type": "to_dining"
+            },
+            {
+              "wall": "east",
+              "position": 7.5,
+              "type": "service"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "type": "jalousie"
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 10,
+            "y": 30,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "type": "stained_glass"
+            }
+          ]
+        },
+        {
+          "id": "guest_house",
+          "type": "guest_house",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10,
+              "type": "external"
+            },
+            {
+              "wall": "south",
+              "position": 5,
+              "type": "to_garden"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "type": "jalousie"
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "type": "jalousie"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "type": "double"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "type": "bay"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "type": "jalousie"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "type": "jalousie"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 25,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "type": "standard"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "type": "jalousie"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "type": "jalousie"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

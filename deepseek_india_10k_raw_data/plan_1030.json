@@ -1,0 +1,280 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Tribal Adivasi Haveli"
+    },
+    "plot": {
+      "orientation": "south",
+      "location": "Vrindavan"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "home_office",
+        "count": 2
+      },
+      {
+        "type": "courtyard",
+        "count": 3
+      },
+      {
+        "type": "storytelling_area",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 288000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "north_entrance",
+            "south_entrance",
+            "east_entrance",
+            "west_entrance"
+          ],
+          "windows": [],
+          "features": [
+            "central_water_feature",
+            "jaali_screens"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_courtyard"
+          ],
+          "windows": [
+            "south_window"
+          ],
+          "features": [
+            "jaali_screens",
+            "traditional_cooling"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_courtyard"
+          ],
+          "windows": [
+            "south_window"
+          ],
+          "features": [
+            "jaali_screens",
+            "traditional_cooling"
+          ]
+        },
+        {
+          "id": "primary_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_courtyard"
+          ],
+          "windows": [
+            "north_window"
+          ],
+          "features": [
+            "built_in_shelving",
+            "quiet_space"
+          ]
+        },
+        {
+          "id": "secondary_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 35,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_courtyard"
+          ],
+          "windows": [
+            "north_window"
+          ],
+          "features": [
+            "built_in_shelving",
+            "quiet_space"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_courtyard",
+            "to_dining"
+          ],
+          "windows": [
+            "south_window"
+          ],
+          "features": [
+            "biomass_stove",
+            "traditional_storage"
+          ]
+        },
+        {
+          "id": "dining_area",
+          "type": "dining_room",
+          "bounds": {
+            "x": 15,
+            "y": 35,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "to_courtyard",
+            "to_kitchen"
+          ],
+          "windows": [
+            "north_window"
+          ],
+          "features": [
+            "family_dining",
+            "natural_light"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_bedroom"
+          ],
+          "windows": [
+            "ventilation_jaali"
+          ],
+          "features": [
+            "water_harvesting",
+            "natural_ventilation"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_bedroom"
+          ],
+          "windows": [
+            "ventilation_jaali"
+          ],
+          "features": [
+            "water_harvesting",
+            "natural_ventilation"
+          ]
+        },
+        {
+          "id": "storytelling_amphitheater",
+          "type": "storytelling_area",
+          "bounds": {
+            "x": 15,
+            "y": 50,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_courtyard"
+          ],
+          "windows": [],
+          "features": [
+            "amphitheater_seating",
+            "traditional_design",
+            "evening_lighting"
+          ]
+        },
+        {
+          "id": "entry_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 70,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "main_entry",
+            "to_storytelling"
+          ],
+          "windows": [],
+          "features": [
+            "welcome_garden",
+            "transition_space"
+          ]
+        },
+        {
+          "id": "service_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 50,
+            "y": 35,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "to_kitchen"
+          ],
+          "windows": [],
+          "features": [
+            "biomass_storage",
+            "utility_space"
+          ]
+        }
+      ]
+    }
+  ]
+}

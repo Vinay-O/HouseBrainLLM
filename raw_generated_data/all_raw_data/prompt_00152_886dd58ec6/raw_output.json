@@ -1,0 +1,77 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "central_courtyard",
+          "dimensions": { "length": 20, "width": 20 },
+          "position": "center"
+        },
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 15, "width": 20 },
+          "adjacent_to": ["central_courtyard", "dining_area"]
+        },
+        {
+          "room_type": "open_plan_kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "adjacent_to": ["living_room", "dining_area"]
+        },
+        {
+          "room_type": "dining_area",
+          "dimensions": { "length": 10, "width": 15 },
+          "adjacent_to": ["living_room", "open_plan_kitchen"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "main_entrance",
+          "direction": "east"
+        },
+        {
+          "type": "windows",
+          "quantity": 4,
+          "placement": "living_room"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "studio_bedroom",
+          "dimensions": { "length": 20, "width": 15 },
+          "adjacent_to": ["balcony"]
+        },
+        {
+          "room_type": "study_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "adjacent_to": ["studio_bedroom"]
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": { "length": 6, "width": 5 },
+          "adjacent_to": ["studio_bedroom"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "balcony",
+          "direction": "west"
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_type": "guest_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "adjacent_to": ["balcony"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

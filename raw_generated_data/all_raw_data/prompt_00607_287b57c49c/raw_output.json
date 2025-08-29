@@ -1,0 +1,89 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {
+        "room_id": "living_room",
+        "description": "Spacious living area with a central location for family gatherings. Features a large window facing the garden to promote natural light and positive Vastu energy.",
+        "area_sqft": 200,
+        "adjacent_to": ["dining_area", "kitchen"],
+        "windows": [
+          {"position": "south", "type": "large sliding"}
+        ]
+      },
+      {
+        "room_id": "dining_area",
+        "description": "Integrated dining space adjacent to the living room, designed with open layout for communal eating.",
+        "area_sqft": 100,
+        "adjacent_to": ["living_room"],
+        "windows": [
+          {"position": "east", "type": "standard"}
+        ]
+      },
+      {
+        "room_id": "kitchen",
+        "description": "Efficient kitchen space with island counter, ensuring ease of movement and safety. The entrance is aligned according to Vastu for energy flow.",
+        "area_sqft": 120,
+        "adjacent_to": ["living_room"],
+        "windows": [
+          {"position": "north", "type": "ventilation"}
+        ]
+      },
+      {
+        "room_id": "hallway",
+        "description": "Central corridor connecting the living room, kitchen, and bedrooms. Facilitates smooth movement within the home.",
+        "area_sqft": 50,
+        "adjacent_to": ["living_room", "kitchen"]
+      }
+    ],
+    "openings": [
+      {
+        "opening_id": "front_door",
+        "type": "entrance",
+        "description": "Main entrance with a wide doorway and traditional Indian design elements, ensuring proper Vastu alignment.",
+        "position": "south"
+      },
+      {
+        "opening_id": "back_door",
+        "type": "service_exit",
+        "description": "Service exit door providing access to the garden area, designed for utility purposes.",
+        "position": "north"
+      }
+    ]
+  },
+  {
+    "level_id": "upper_floor",
+    "rooms": [
+      {
+        "room_id": "master_bedroom_1bhk",
+        "description": "Spacious bedroom with an integrated balcony. The layout follows Vastu guidelines to ensure a restful environment.",
+        "area_sqft": 250,
+        "balcony": true,
+        "windows": [
+          {"position": "east", "type": "large"},
+          {"position": "south", "type": "standard"}
+        ]
+      },
+      {
+        "room_id": "master_bedroom_1bhk_balcony",
+        "description": "Balcony attached to the master bedroom, offering a private outdoor space with garden views. Complies with Vastu principles by promoting positive energy.",
+        "area_sqft": 50,
+        "openings": [
+          {"position": "south", "type": "balcony_access"}
+        ]
+      }
+    ],
+    "openings": []
+  },
+  {
+    "level_id": "basement",
+    "rooms": [
+      {
+        "room_id": "utility_room",
+        "description": "Functional space for storage and utility purposes. Designed to accommodate garden equipment and industrial design features.",
+        "area_sqft": 80
+      }
+    ],
+    "openings": []
+  }
+]}

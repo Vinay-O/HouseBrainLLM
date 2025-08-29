@@ -1,0 +1,130 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "living",
+          "dimensions": {
+            "length": 15,
+            "width": 20
+          },
+          "features": ["open_plan", "central_courtyard_access"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "open_kitcen",
+          "dimensions": {
+            "length": 12,
+            "width": 15
+          },
+          "features": ["modular_kitchen", "dining_area"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "master_bedroom",
+          "dimensions": {
+            "length": 18,
+            "width": 14
+          },
+          "features": ["attached_bathroom", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "guest_room",
+          "dimensions": {
+            "length": 12,
+            "width": 12
+          },
+          "features": ["shared_bathroom"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "children_room",
+          "dimensions": {
+            "length": 14,
+            "width": 12
+          },
+          "features": ["shared_bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": {
+            "length": 3.5,
+            "width": 0.9
+          },
+          "position": "front"
+        },
+        {
+          "opening_id": "courtyard_access",
+          "type": "archway",
+          "dimensions": {
+            "length": 4,
+            "width": 2
+          },
+          "position": "center"
+        }
+      ],
+      "outdoor_spaces": [
+        {
+          "space_id": "front_porch",
+          "type": "porch",
+          "features": ["colonial_pillars", "wooden_flooring"]
+        },
+        {
+          "space_id": "rooftop_terrace",
+          "type": "terrace",
+          "features": ["outdoor_seating", "greenery"]
+        }
+      ]
+    },
+    {
+      "level_id": "upper_level",
+      "rooms": [
+        {
+          "room_id": "bedroom_4",
+          "type": "bedroom",
+          "dimensions": {
+            "length": 12,
+            "width": 10
+          },
+          "features": ["balcony", "attached_bathroom"]
+        },
+        {
+          "room_id": "bedroom_5",
+          "type": "bedroom",
+          "dimensions": {
+            "length": 13,
+            "width": 11
+          },
+          "features": ["balcony", "attached_bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "upper_entrance",
+          "type": "staircase",
+          "dimensions": {
+            "length": 4,
+            "width": 1.5
+          },
+          "position": "front"
+        }
+      ]
+    }
+  ],
+  "vaastu_compliance": [
+    {
+      "feature_id": "central_courtyard",
+      "description": "The central courtyard is aligned with the North-East direction for positive energy flow."
+    },
+    {
+      "feature_id": "bedroom_placement",
+      "description": "Master bedroom is placed in the South-West direction as per Vastu principles."
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 4200,
+      "style": "Dravidian with South Indian temple motifs"
+    },
+    "plot": {
+      "size": 2,
+      "type": "agricultural conversion",
+      "location": "Trivandrum capital region",
+      "environment": "coastal"
+    },
+    "roomBreakdown": [
+      {
+        "type": "primary_bedroom",
+        "count": 1,
+        "specialAttributes": [
+          "medical_accessible",
+          "aging_in_place"
+        ]
+      },
+      {
+        "type": "guest_bedroom",
+        "count": 1,
+        "specialAttributes": [
+          "medical_accessible"
+        ]
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "specialAttributes": [
+          "double_height",
+          "traditional_lighting",
+          "traditional_ventilation"
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "study",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "specialAttributes": [
+          "medical_accessible",
+          "wet_room"
+        ]
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 3360000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 40
+          },
+          "doors": [
+            "south_archway"
+          ],
+          "windows": [],
+          "specialAttributes": [
+            "bamboo_lattice",
+            "heritage_brick_archways"
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            "courtyard_north",
+            "bathroom_1"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ],
+          "specialAttributes": [
+            "medical_accessible",
+            "aging_in_place",
+            "earth_sheltered_north"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 40,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "primary_bedroom"
+          ],
+          "windows": [],
+          "specialAttributes": [
+            "medical_accessible",
+            "wet_room",
+            "lime_mortar"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            "courtyard_east"
+          ],
+          "windows": [
+            "east_window",
+            "skylight"
+          ],
+          "specialAttributes": [
+            "double_height",
+            "traditional_lighting",
+            "traditional_ventilation",
+            "heritage_brick_archways"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 40,
+            "y": 25,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            "courtyard_south",
+            "dining_room"
+          ],
+          "windows": [
+            "south_window",
+            "west_window"
+          ],
+          "specialAttributes": [
+            "bamboo_lattice",
+            "earth_sheltered_west"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 40,
+            "y": 45,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "living_room",
+            "kitchen"
+          ],
+          "windows": [
+            "west_window"
+          ],
+          "specialAttributes": [
+            "heritage_brick_archways"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 60,
+            "y": 45,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "dining_room",
+            "utility"
+          ],
+          "windows": [
+            "north_window"
+          ],
+          "specialAttributes": [
+            "lime_mortar",
+            "traditional_ventilation"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 75,
+            "y": 45,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "kitchen"
+          ],
+          "windows": [],
+          "specialAttributes": []
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 60,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "courtyard_south",
+            "bathroom_2"
+          ],
+          "windows": [
+            "south_window",
+            "east_window"
+          ],
+          "specialAttributes": [
+            "medical_accessible",
+            "earth_sheltered_south"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 60,
+            "y": 60,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "guest_bedroom"
+          ],
+          "windows": [],
+          "specialAttributes": [
+            "medical_accessible",
+            "wet_room",
+            "lime_mortar"
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 70,
+            "y": 60,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "corridor"
+          ],
+          "windows": [
+            "east_window",
+            "south_window"
+          ],
+          "specialAttributes": [
+            "bamboo_lattice"
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 70,
+            "y": 75,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "corridor"
+          ],
+          "windows": [],
+          "specialAttributes": [
+            "lime_mortar"
+          ]
+        }
+      ]
+    }
+  ]
+}

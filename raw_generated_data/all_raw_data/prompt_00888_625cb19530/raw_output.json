@@ -1,0 +1,149 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 25, "width": 20 },
+          "features": ["high ceiling", "wooden floors", "exposed beams"],
+          "position": { "orientation": "north", "adjacent_to": ["dining_room", "garden"] }
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["wooden dining table", "chandelier"],
+          "position": { "orientation": "east", "adjacent_to": ["kitchen", "living_room"] }
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 20, "width": 18 },
+          "features": ["modular kitchen", "garden view", "pantry"],
+          "position": { "orientation": "south-east", "adjacent_to": ["dining_room", "utility"] }
+        },
+        {
+          "room_id": "master_bedroom",
+          "dimensions": { "length": 25, "width": 20 },
+          "features": ["wardrobe", "balcony with garden view"],
+          "position": { "orientation": "west", "adjacent_to": ["bathroom"] }
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["wardrobe", "balcony"],
+          "position": { "orientation": "north-west" }
+        },
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["wardrobe", "balcony"],
+          "position": { "orientation": "south-west" }
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["bookshelf", "writing desk"],
+          "position": { "orientation": "north-east" }
+        },
+        {
+          "room_id": "utility",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["washing machine", "drying area"],
+          "position": { "orientation": "south", "adjacent_to": ["kitchen"] }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 8, "width": 4 },
+          "position": { "orientation": "north", "faces": "garden" }
+        },
+        {
+          "opening_id": "french_windows_living",
+          "type": "window",
+          "dimensions": { "length": 10, "width": 6 },
+          "position": { "orientation": "west", "faces": "garden" }
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimensions": { "length": 8, "width": 5 },
+          "position": { "orientation": "south-east", "faces": "garden" }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 20, "width": 18 },
+          "features": ["wardrobe", "balcony"],
+          "position": { "orientation": "north" }
+        },
+        {
+          "room_id": "bedroom_5",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["wardrobe", "balcony"],
+          "position": { "orientation": "east" }
+        },
+        {
+          "room_id": "bedroom_6",
+          "dimensions": { "length": 20, "width": 18 },
+          "features": ["wardrobe", "balcony"],
+          "position": { "orientation": "south" }
+        },
+        {
+          "room_id": "family_lounge",
+          "dimensions": { "length": 30, "width": 25 },
+          "features": ["TV area", "sofa set"],
+          "position": { "orientation": "west", "adjacent_to": ["terrace"] }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "bedroom_4_balcony",
+          "type": "balcony",
+          "dimensions": { "length": 5, "width": 10 },
+          "position": { "orientation": "north", "faces": "garden" }
+        },
+        {
+          "opening_id": "bedroom_5_balcony",
+          "type": "balcony",
+          "dimensions": { "length": 5, "width": 8 },
+          "position": { "orientation": "east", "faces": "garden" }
+        },
+        {
+          "opening_id": "bedroom_6_balcony",
+          "type": "balcony",
+          "dimensions": { "length": 5, "width": 10 },
+          "position": { "orientation": "south", "faces": "garden" }
+        },
+        {
+          "opening_id": "terrace_access",
+          "type": "door",
+          "dimensions": { "length": 8, "width": 4 },
+          "position": { "orientation": "west", "faces": "terrace" }
+        }
+      ]
+    }
+  ],
+  "garden": {
+    "size": 600,
+    "features": ["courtyard", "fountain", "palm trees", "outdoor seating area"]
+  },
+  "vastu_compliance": {
+    "kitchen_position": "south-east",
+    "master_bedroom_position": "west",
+    "living_room_position": "north",
+    "toilet_positions_avoided": ["north", "east"],
+    "water_body_position": "north-east"
+  },
+  "local_building_norms_compliance": {
+    "setback_compliance": true,
+    "height_compliance": true,
+    "room_height_compliance": true,
+    "open_space_compliance": true
+  }
+}

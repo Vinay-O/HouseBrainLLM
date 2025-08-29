@@ -1,0 +1,496 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 4200,
+      "style": "Luxury Earthship"
+    },
+    "plot": {
+      "topography": "Elevated platform above wetlands",
+      "climate": "Temperate maritime",
+      "orientation": "East-west linear"
+    },
+    "roomBreakdown": [
+      {
+        "type": "chefs_kitchen",
+        "area": 800
+      },
+      {
+        "type": "great_room",
+        "area": 1000
+      },
+      {
+        "type": "primary_suite",
+        "area": 600
+      },
+      {
+        "type": "bedroom",
+        "area": 400
+      },
+      {
+        "type": "bedroom",
+        "area": 400
+      },
+      {
+        "type": "bathroom",
+        "area": 300
+      },
+      {
+        "type": "bathroom",
+        "area": 200
+      },
+      {
+        "type": "utility",
+        "area": 200
+      },
+      {
+        "type": "pantry",
+        "area": 150
+      },
+      {
+        "type": "outdoor_entertainment",
+        "area": 1150
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 3850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "great_room",
+          "type": "great_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 0
+              },
+              "to_room": "outdoor_deck"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 12
+              },
+              "to_room": "primary_suite"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 12
+              },
+              "to_room": "chefs_kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 10,
+                "y": 25
+              },
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 25
+              },
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "chefs_kitchen",
+          "type": "chefs_kitchen",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 12
+              },
+              "to_room": "great_room"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 0
+              },
+              "to_room": "pantry"
+            },
+            {
+              "position": {
+                "x": 60,
+                "y": 20
+              },
+              "to_room": "outdoor_kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 40
+              },
+              "size": "medium"
+            },
+            {
+              "position": {
+                "x": 60,
+                "y": 40
+              },
+              "size": "medium"
+            }
+          ],
+          "features": [
+            "wood_fired_oven",
+            "prep_islands",
+            "professional_appliances"
+          ]
+        },
+        {
+          "id": "pantry",
+          "type": "pantry",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 50,
+                "y": 0
+              },
+              "to_room": "chefs_kitchen"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "storage_shelving",
+            "cooling"
+          ]
+        },
+        {
+          "id": "primary_suite",
+          "type": "primary_suite",
+          "bounds": {
+            "x": -20,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 12
+              },
+              "to_room": "great_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": -10,
+                "y": 30
+              },
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": -20,
+                "y": 15
+              },
+              "size": "medium"
+            }
+          ],
+          "features": [
+            "walk_in_closet",
+            "private_access"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": -20,
+            "y": 30,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 40
+              },
+              "to_room": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": -10,
+                "y": 50
+              },
+              "size": "medium"
+            },
+            {
+              "position": {
+                "x": -20,
+                "y": 35
+              },
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 10
+              },
+              "to_room": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 70,
+                "y": 20
+              },
+              "size": "medium"
+            },
+            {
+              "position": {
+                "x": 80,
+                "y": 5
+              },
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": -20,
+            "y": 50,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": -5,
+                "y": 50
+              },
+              "to_room": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": -20,
+                "y": 55
+              },
+              "size": "small"
+            }
+          ],
+          "features": [
+            "shower",
+            "vanity"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 65,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 65,
+                "y": 20
+              },
+              "to_room": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 80,
+                "y": 25
+              },
+              "size": "small"
+            }
+          ],
+          "features": [
+            "bathtub",
+            "vanity"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 60,
+            "y": 30,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 35
+              },
+              "to_room": "hallway"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "laundry",
+            "storage",
+            "battery_storage_system"
+          ]
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 60,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 40
+              },
+              "to_room": "bedroom_2"
+            },
+            {
+              "position": {
+                "x": 60,
+                "y": 10
+              },
+              "to_room": "bedroom_3"
+            },
+            {
+              "position": {
+                "x": 60,
+                "y": 35
+              },
+              "to_room": "utility"
+            },
+            {
+              "position": {
+                "x": -5,
+                "y": 50
+              },
+              "to_room": "bathroom_1"
+            },
+            {
+              "position": {
+                "x": 65,
+                "y": 20
+              },
+              "to_room": "bathroom_2"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "outdoor_deck",
+          "type": "outdoor_entertainment",
+          "bounds": {
+            "x": 0,
+            "y": -25,
+            "width": 40,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 0
+              },
+              "to_room": "great_room"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "dining_area",
+            "lounge",
+            "wetlands_views"
+          ]
+        },
+        {
+          "id": "outdoor_kitchen",
+          "type": "outdoor_entertainment",
+          "bounds": {
+            "x": 60,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 20
+              },
+              "to_room": "chefs_kitchen"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "grill",
+            "counter_space",
+            "sink"
+          ]
+        }
+      ]
+    }
+  ],
+  "sustainability_features": [
+    "solar_panel_array",
+    "battery_storage",
+    "earthship_thermal_mass",
+    "water_recycling",
+    "green_roof"
+  ]
+}

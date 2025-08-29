@@ -1,0 +1,191 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 640,
+      "style": "Mid-Century Modern"
+    },
+    "plot": {
+      "description": "Windswept coastal bluff in a temperate maritime climate, following natural contours, with highway noise exposure."
+    },
+    "roomBreakdown": [
+      {
+        "id": "main_container",
+        "type": "living_space",
+        "area": 320,
+        "description": "Primary living area with open plan kitchen, dining, and living space."
+      },
+      {
+        "id": "bedroom_container",
+        "type": "bedroom",
+        "area": 160,
+        "description": "Main bedroom with minimalist design and built-in storage."
+      },
+      {
+        "id": "guest_container",
+        "type": "guest_room",
+        "area": 160,
+        "description": "Flexible guest room with Murphy bed system for space efficiency."
+      }
+    ]
+  },
+  "total_area": 640.0,
+  "construction_cost": 128000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "open_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "position": {
+                "wall": "north",
+                "offset": 8
+              },
+              "size": 8
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "wall": "south",
+                "offset": 4
+              },
+              "size": 4
+            },
+            {
+              "type": "fixed",
+              "position": {
+                "wall": "south",
+                "offset": 12
+              },
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "awning",
+              "position": {
+                "wall": "east",
+                "offset": 4
+              },
+              "size": 3
+            }
+          ]
+        },
+        {
+          "id": "main_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 16,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "wall": "north",
+                "offset": 8
+              },
+              "size": 3
+            }
+          ],
+          "windows": [
+            {
+              "type": "picture",
+              "position": {
+                "wall": "west",
+                "offset": 4
+              },
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 16,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "wall": "north",
+                "offset": 4
+              },
+              "size": 3
+            }
+          ],
+          "windows": [
+            {
+              "type": "transom",
+              "position": {
+                "wall": "east",
+                "offset": 2
+              },
+              "size": 2
+            }
+          ]
+        },
+        {
+          "id": "guest_room",
+          "type": "bedroom",
+          "bounds": {
+            "x": 24,
+            "y": 16,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "wall": "north",
+                "offset": 4
+              },
+              "size": 3
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "wall": "east",
+                "offset": 2
+              },
+              "size": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

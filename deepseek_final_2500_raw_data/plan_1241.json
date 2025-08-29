@@ -1,0 +1,386 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 4200,
+      "style": "Ultra-Modern Minimalist"
+    },
+    "plot": {
+      "shape": "elongated strip",
+      "adjacency": "railway",
+      "climate": "Mediterranean (dry summers)",
+      "solarOrientation": "south-facing"
+    },
+    "roomBreakdown": [
+      {
+        "type": "game_room",
+        "description": "Built-in arcade cabinets and open play area"
+      },
+      {
+        "type": "home_office",
+        "description": "Sound-insulated for business use"
+      },
+      {
+        "type": "primary_bedroom",
+        "description": "Aging-in-place accessible ensuite"
+      },
+      {
+        "type": "kitchen",
+        "description": "Open plan minimalist design"
+      },
+      {
+        "type": "living_room",
+        "description": "Great room with south-facing glazing"
+      },
+      {
+        "type": "utility_bunker",
+        "description": "Underground mechanical and storage"
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 1890000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "description": "Partially underground bunker level with utilities and recreation",
+      "rooms": [
+        {
+          "id": "game_room",
+          "type": "game_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            "entry_hall"
+          ],
+          "windows": [],
+          "description": "Built-in arcade cabinets, pool table area, and media wall"
+        },
+        {
+          "id": "utility_bunker",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "mechanical_access"
+          ],
+          "windows": [],
+          "description": "Mechanical systems, storage, and emergency provisions"
+        },
+        {
+          "id": "wine_cellar",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "game_room"
+          ],
+          "windows": [],
+          "description": "Temperature-controlled wine storage"
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "description": "Main living level with south-facing solar gain orientation",
+      "rooms": [
+        {
+          "id": "entry_hall",
+          "type": "hall",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "main_entry",
+            "living_room",
+            "elevator",
+            "stairs"
+          ],
+          "windows": [],
+          "description": "Grand entrance with accessible width"
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            "entry_hall",
+            "kitchen",
+            "patio"
+          ],
+          "windows": [
+            "south_wall"
+          ],
+          "description": "Open great room with triple-glazed argon-filled south-facing windows"
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "living_room",
+            "dining"
+          ],
+          "windows": [
+            "south_wall"
+          ],
+          "description": "Minimalist kitchen with premium appliances and island"
+        },
+        {
+          "id": "dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "kitchen",
+            "living_room"
+          ],
+          "windows": [
+            "south_wall"
+          ],
+          "description": "Formal dining area with panoramic views"
+        },
+        {
+          "id": "home_office",
+          "type": "office",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "entry_hall"
+          ],
+          "windows": [
+            "east_wall"
+          ],
+          "description": "Sound-insulated professional workspace"
+        },
+        {
+          "id": "elevator",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "entry_hall"
+          ],
+          "windows": [],
+          "description": "Aging-in-place residential elevator"
+        },
+        {
+          "id": "stairs",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 20,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "entry_hall"
+          ],
+          "windows": [],
+          "description": "Main staircase with accessibility features"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "description": "Private bedroom level with aging-in-place accommodations",
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            "hallway",
+            "primary_bath",
+            "closet"
+          ],
+          "windows": [
+            "south_wall",
+            "west_wall"
+          ],
+          "description": "Accessible primary suite with zero-threshold shower"
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "primary_bedroom"
+          ],
+          "windows": [
+            "south_wall"
+          ],
+          "description": "ADA-compliant bathroom with grab bars and roll-in shower"
+        },
+        {
+          "id": "closet",
+          "type": "storage",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            "primary_bedroom"
+          ],
+          "windows": [],
+          "description": "Walk-in closet with organization system"
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "hallway",
+            "bath_2"
+          ],
+          "windows": [
+            "south_wall"
+          ],
+          "description": "Guest bedroom with accessible features"
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "hallway",
+            "bath_2"
+          ],
+          "windows": [
+            "south_wall"
+          ],
+          "description": "Flex room/guest bedroom"
+        },
+        {
+          "id": "bath_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "hallway",
+            "bedroom_2",
+            "bedroom_3"
+          ],
+          "windows": [
+            "east_wall"
+          ],
+          "description": "Jack-and-Jill accessible bathroom"
+        },
+        {
+          "id": "hallway",
+          "type": "hall",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 60,
+            "height": 5
+          },
+          "doors": [
+            "primary_bedroom",
+            "bedroom_2",
+            "bedroom_3",
+            "bath_2",
+            "elevator",
+            "stairs"
+          ],
+          "windows": [],
+          "description": "Wide hallway with accessibility clearance"
+        },
+        {
+          "id": "elevator",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 23,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": [],
+          "description": "Upper level elevator access"
+        },
+        {
+          "id": "stairs",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 23,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            "hallway"
+          ],
+          "windows": [],
+          "description": "Upper level staircase access"
+        }
+      ]
+    }
+  ]
+}

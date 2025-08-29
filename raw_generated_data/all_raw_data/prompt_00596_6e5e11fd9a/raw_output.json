@@ -1,0 +1,78 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "area_sqft": 50,
+          "position": {"x": 0, "y": 0}
+        },
+        {
+          "room_type": "living_room",
+          "area_sqft": 120,
+          "position": {"x": 50, "y": 0},
+          "connecting_rooms": ["kitchen", "master_bedroom"]
+        },
+        {
+          "room_type": "open_plan_kitchen",
+          "area_sqft": 60,
+          "position": {"x": 170, "y": 0}
+        },
+        {
+          "room_type": "library",
+          "area_sqft": 80,
+          "position": {"x": 230, "y": 0}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "size_ft": [3, 7],
+          "location": {"x": 50, "y": 10},
+          "connects_to": "living_room"
+        },
+        {
+          "opening_type": "window",
+          "size_ft": [5, 3],
+          "location": {"x": 290, "y": 40}
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "master_bedroom",
+          "area_sqft": 150,
+          "position": {"x": 50, "y": 200},
+          "connecting_rooms": ["living_room"]
+        },
+        {
+          "room_type": "bedroom_2",
+          "area_sqft": 140,
+          "position": {"x": 230, "y": 200}
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "balcony",
+          "size_ft": [8, 5],
+          "location": {"x": 170, "y": 240},
+          "connects_to": "living_room"
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_type": "swimming_pool",
+          "size_ft": [30, 15],
+          "location": {"x": 75, "y": 400}
+        }
+      ]
+    }
+  ]
+}

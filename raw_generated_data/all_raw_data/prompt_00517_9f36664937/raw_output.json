@@ -1,0 +1,125 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Entrance Hall",
+          "position": {"x": 10, "y": 70},
+          "area_sqft": 80,
+          "description": "A spacious entrance with traditional colonial detailing."
+        },
+        {
+          "room_name": "Living Room",
+          "position": {"x": 30, "y": 40},
+          "area_sqft": 250,
+          "description": "Central living area open to the dining room, creating a large family space."
+        },
+        {
+          "room_name": "Dining Room",
+          "position": {"x": 60, "y": 30},
+          "area_sqft": 150,
+          "description": "Attached to the living area for easy flow during gatherings."
+        },
+        {
+          "room_name": "Kitchen",
+          "position": {"x": 40, "y": 20},
+          "area_sqft": 150,
+          "description": "Well-equipped kitchen with Vastu compliant layout."
+        },
+        {
+          "room_name": "Library",
+          "position": {"x": 70, "y": 60},
+          "area_sqft": 120,
+          "description": "A dedicated space for reading and study, aligned to enhance the learning environment."
+        },
+        {
+          "room_name": "Guest Bathroom",
+          "position": {"x": 50, "y": 10},
+          "area_sqft": 40,
+          "description": "Conveniently placed near the entrance for visitors."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "from_room": "Entrance Hall",
+          "to_room": "Living Room",
+          "position": {"x": 35, "y": 70}
+        },
+        {
+          "opening_type": "window",
+          "room_name": "Library",
+          "position": {"x": 80, "y": 60},
+          "description": "East-facing window to allow morning light and Vastu benefits."
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "position": {"x": 20, "y": 75},
+          "area_sqft": 180,
+          "description": "Spacious room with a large attached bathroom and wardrobe."
+        },
+        {
+          "room_name": "Bedroom 2",
+          "position": {"x": 60, "y": 75},
+          "area_sqft": 120,
+          "description": "Second bedroom with an attached bathroom for convenience."
+        },
+        {
+          "room_name": "Balcony",
+          "position": {"x": 40, "y": 80},
+          "area_sqft": 150,
+          "description": "A large balcony overlooking the front yard."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "from_floor": "ground_floor",
+          "to_floor": "first_floor"
+        },
+        {
+          "opening_type": "window",
+          "room_name": "Master Bedroom",
+          "position": {"x": 30, "y": 75},
+          "description": "South-facing window for afternoon light."
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_name": "Bedroom 3",
+          "position": {"x": 20, "y": 75},
+          "area_sqft": 120,
+          "description": "Third bedroom with an attached bathroom."
+        },
+        {
+          "room_name": "Bedroom 4",
+          "position": {"x": 60, "y": 75},
+          "area_sqft": 120,
+          "description": "Fourth bedroom sharing a common bathroom for flexibility."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "from_floor": "first_floor",
+          "to_floor": "second_floor"
+        },
+        {
+          "opening_type": "window",
+          "room_name": "Bedroom 3",
+          "position": {"x": 30, "y": 75},
+          "description": "South-facing window for afternoon light."
+        }
+      ]
+    }
+  ]
+}

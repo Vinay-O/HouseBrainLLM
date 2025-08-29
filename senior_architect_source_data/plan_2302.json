@@ -1,0 +1,413 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2200,
+      "style": "Deconstructivist"
+    },
+    "plot": {
+      "shape": "elongated_rectangle",
+      "orientation": "north_facing",
+      "climate": "mediterranean_dry_summers",
+      "adjacency": "railway"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "workshop",
+        "count": 1
+      },
+      {
+        "type": "greenhouse",
+        "count": 1
+      },
+      {
+        "type": "herb_garden",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 385000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 40
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 20
+            },
+            {
+              "wall": "east",
+              "position": 2,
+              "to": "living_room"
+            },
+            {
+              "wall": "east",
+              "position": 12,
+              "to": "bedroom_1"
+            },
+            {
+              "wall": "east",
+              "position": 22,
+              "to": "kitchen"
+            },
+            {
+              "wall": "east",
+              "position": 32,
+              "to": "workshop"
+            },
+            {
+              "wall": "west",
+              "position": 20,
+              "to": "bathroom_1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5,
+              "to": "entrance_hall"
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "to": "outdoor"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 10,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5,
+              "to": "entrance_hall"
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "to": "bathroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 5,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5,
+              "to": "entrance_hall"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": "medium"
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 5,
+            "y": 30,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5,
+              "to": "entrance_hall"
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "to": "outdoor"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2.5,
+              "to": "entrance_hall"
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "to": "bedroom_1"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2.5,
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5,
+              "to": "stairwell"
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "to": "bathroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5,
+              "to": "bedroom_2"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2.5,
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "stairwell",
+          "type": "staircase",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5,
+              "to": "bedroom_2"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "greenhouse",
+          "type": "greenhouse",
+          "bounds": {
+            "x": 5,
+            "y": 20,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5,
+              "to": "stairwell_access"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": "full_width"
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": "full_width"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": "full_height"
+            }
+          ]
+        },
+        {
+          "id": "herb_garden",
+          "type": "herb_garden",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2.5,
+              "size": "full_width"
+            },
+            {
+              "wall": "south",
+              "position": 2.5,
+              "size": "full_width"
+            }
+          ]
+        },
+        {
+          "id": "stairwell_access",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2.5,
+              "to": "stairwell"
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "to": "greenhouse"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

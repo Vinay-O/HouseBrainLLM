@@ -1,0 +1,378 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 1200,
+      "style": "Luxury Artisan-Crafted Split-Level"
+    },
+    "plot": {
+      "location": "Moradabad",
+      "orientation": "South-facing",
+      "area": 1200,
+      "notes": "Apartment conversion, Himalayan stone and slate construction, solar optimization, natural stone foundations, traditional techniques, raised chabutra platform, earth-sheltered spaces, heavy monsoon water management"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "subtype": "Traditional Wood-Fired",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "subtype": "Modern Dietary",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "subtype": "Master",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "subtype": "Standard",
+        "count": 3
+      },
+      {
+        "type": "living_room",
+        "subtype": "Main",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "subtype": "Full",
+        "count": 3
+      },
+      {
+        "type": "utility",
+        "subtype": "Monsoon Drainage",
+        "count": 1
+      },
+      {
+        "type": "outdoor",
+        "subtype": "Chabutra Platform",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 360000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "traditional_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "notes": "Wood-fired chulah (chulah), traditional ventilation, Himalayan stone counter, slate flooring"
+        },
+        {
+          "id": "modern_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "notes": "Modern appliances, separate dietary preparation zone, slate flooring"
+        },
+        {
+          "id": "utility_drainage",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "notes": "Earth-sheltered, houses monsoon water management systems and drainage sump"
+        },
+        {
+          "id": "puja_room",
+          "type": "other",
+          "bounds": {
+            "x": 10,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "notes": "Quiet space for family, Himalayan stone accents"
+        },
+        {
+          "id": "staircase_down",
+          "type": "staircase",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "notes": "Connects to lower-level gathering space and chabutra"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 18,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 9
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3
+            },
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "notes": "South-facing for solar gain, attached bathroom, slate floor"
+        },
+        {
+          "id": "master_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 18,
+            "y": 0,
+            "width": 7,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ],
+          "notes": "Ensuite to master bedroom, natural stone finishes"
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "notes": "South-facing window"
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 15,
+            "width": 13,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "notes": "South-facing window"
+        },
+        {
+          "id": "family_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2
+            }
+          ],
+          "windows": [],
+          "notes": "Serves upper-level bedrooms"
+        },
+        {
+          "id": "staircase_up",
+          "type": "staircase",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 2
+            }
+          ],
+          "windows": [],
+          "notes": "Connects to lower level"
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 25,
+            "y": 18,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "notes": "Open plan living area, south-facing for light, overlooks chabutra"
+        }
+      ]
+    },
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "gathering_hall",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "notes": "Earth-sheltered for natural cooling, large space for joint family gatherings"
+        },
+        {
+          "id": "chabutra_platform",
+          "type": "outdoor",
+          "bounds": {
+            "x": 10,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [],
+          "notes": "Raised platform for community gatherings, traditional stone construction, accessed from gathering hall"
+        }
+      ]
+    }
+  ]
+}

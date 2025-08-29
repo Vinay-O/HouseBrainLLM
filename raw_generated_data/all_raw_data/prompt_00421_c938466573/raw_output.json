@@ -1,0 +1,81 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "Living Room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["floor-to-ceiling windows", "wheelchair accessible entrance"],
+          "orientation": "North facing"
+        },
+        {
+          "room_id": "bedroom",
+          "type": "Bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["attached bathroom", "wheelchair accessible"],
+          "orientation": "East facing"
+        },
+        {
+          "room_id": "kitchen",
+          "type": "Kitchen",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["modular kitchen with wheelchair accessible workspace"],
+          "orientation": "Southeast corner"
+        },
+        {
+          "room_id": "gym",
+          "type": "Private Gym",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wheelchair accessible equipment", "ventilation system"],
+          "orientation": "West facing"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "Entrance",
+          "dimensions": { "width": 4, "height": 8 },
+          "features": ["wheelchair ramp", "traditional Kerala-style wooden door"]
+        },
+        {
+          "opening_id": "terrace_access",
+          "type": "Staircase to Rooftop Terrace",
+          "dimensions": { "width": 5, "height": 10 },
+          "features": ["wheelchair accessible", "covered with traditional Kerala tiles"]
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [
+        {
+          "room_id": "terrace",
+          "type": "Rooftop Terrace",
+          "dimensions": { "length": 30, "width": 20 },
+          "features": ["traditional Kerala-style tiled flooring", "wheelchair accessible pathway"],
+          "orientation": "Open-air space with partial shade"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "terrace_entrance",
+          "type": "Entrance from Staircase",
+          "dimensions": { "width": 5, "height": 10 },
+          "features": ["covered with traditional Kerala tiles"]
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "vastu_compliance": {
+      "kitchen": "Placed in the southeast corner as per Vastu principles",
+      "bedroom": "East-facing bedroom for positive energy flow"
+    },
+    "local_building_norm": {
+      "roofing": "Traditional Kerala-style sloping roof with terracotta tiles",
+      "materials": "Local laterite stone and wood used for construction",
+      "accessibility": "All rooms and common areas designed to be wheelchair accessible as per Indian accessibility norms"
+    }
+  }
+}

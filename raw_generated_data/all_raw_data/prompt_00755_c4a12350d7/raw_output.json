@@ -1,0 +1,34 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"name": "Entrance Hall", "area_sqft": 100},
+        {"name": "Living Area", "area_sqft": 150, "features": ["open-plan kitchen integration"]},
+        {"name": "Dining Area", "area_sqft": 80},
+        {"name": "Patio", "area_sqft": 50},
+        {"name": "Private Gym", "area_sqft": 100},
+        {"name": "Guest Bedroom", "area_sqft": 70},
+        {"name": "Master Bedroom", "area_sqft": 120},
+        {"name": "Bedroom", "area_sqft": 80},
+        {"name": "Bathroom (for master)", "area_sqft": 30}
+      ],
+      "openings": [
+        {"type": "Door", "location": "Entrance Hall", "direction": "north"},
+        {"type": "Window", "location": "Living Area", "direction": "east"},
+        {"type": "Door", "location": "Dining Area", "direction": "south"}
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {"name": "Master Bedroom", "area_sqft": 120},
+        {"name": "Bedroom", "area_sqft": 80},
+        {"name": "Study/Office", "area_sqft": 70},
+        {"name": "Bathroom (shared)", "area_sqft": 30}
+      ],
+      "openings": [
+        {"type": "Window", "location": "Master Bedroom", "direction": "west"},
+        {"type": "Door", "location": "Study/Office", "direction": "east"}
+      ]
+    }
+]}

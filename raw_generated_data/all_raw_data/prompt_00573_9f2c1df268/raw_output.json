@@ -1,0 +1,87 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "area_sqft": 450,
+          "location": { "x": 20, "y": 30 },
+          "features": ["floor_to_ceiling_windows", "open_plan"]
+        },
+        {
+          "room_type": "kitchen",
+          "area_sqft": 150,
+          "location": { "x": 20, "y": 70 },
+          "features": ["open_plan"]
+        },
+        {
+          "room_type": "courtyard",
+          "area_sqft": 300,
+          "location": { "x": 450, "y": 20 },
+          "features": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "orientation": "north",
+          "connects_rooms": ["living_room", "courtyard"]
+        },
+        {
+          "opening_type": "window",
+          "location": { "x": 150, "y": 30 },
+          "room": "living_room"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "master_bedroom",
+          "area_sqft": 400,
+          "location": { "x": 20, "y": 30 },
+          "features": ["floor_to_ceiling_windows"]
+        },
+        {
+          "room_type": "bedroom",
+          "area_sqft": 300,
+          "location": { "x": 500, "y": 30 }
+        },
+        {
+          "room_type": "bedroom",
+          "area_sqft": 300,
+          "location": { "x": 20, "y": 400 }
+        },
+        {
+          "room_type": "bedroom",
+          "area_sqft": 300,
+          "location": { "x": 500, "y": 400 }
+        },
+        {
+          "room_type": "bathroom",
+          "area_sqft": 150,
+          "location": { "x": 275, "y": 30 }
+        },
+        {
+          "room_type": "balcony",
+          "area_sqft": 150,
+          "location": { "x": 450, "y": 20 },
+          "features": ["floor_to_ceiling_windows"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "connects_levels": ["ground_floor", "first_floor"]
+        },
+        {
+          "opening_type": "window",
+          "location": { "x": 150, "y": 30 },
+          "room": "master_bedroom"
+        }
+      ]
+    }
+  ]
+}

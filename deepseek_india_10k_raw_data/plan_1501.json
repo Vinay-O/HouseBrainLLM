@@ -1,0 +1,487 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 3,
+      "totalArea": 4200,
+      "style": "Traditional Indian with Himalayan and Mughal influences"
+    },
+    "plot": {
+      "slope": "mountain",
+      "orientation": "east",
+      "challenges": [
+        "slope",
+        "monsoon",
+        "termites"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "prayer_room",
+        "area": 300,
+        "level": 1
+      },
+      {
+        "type": "meditation_room",
+        "area": 200,
+        "level": 1
+      },
+      {
+        "type": "festival_kitchen",
+        "area": 400,
+        "level": 0
+      },
+      {
+        "type": "bedroom",
+        "area": 200,
+        "level": 2,
+        "count": 4
+      },
+      {
+        "type": "living_room",
+        "area": 350,
+        "level": 0
+      },
+      {
+        "type": "dining_room",
+        "area": 250,
+        "level": 0
+      },
+      {
+        "type": "utility_room",
+        "area": 150,
+        "level": 0
+      },
+      {
+        "type": "bathroom",
+        "area": 100,
+        "level": 2,
+        "count": 3
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 945000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "festival_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "material": "wood_metal_carved",
+              "width": 1.2,
+              "height": 2.1
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "material": "wood",
+              "width": 1.5,
+              "height": 1.2
+            },
+            {
+              "wall": "east",
+              "position": 15,
+              "material": "wood",
+              "width": 1.5,
+              "height": 1.2
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 17.5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "material": "wood_metal_carved",
+              "width": 1.2,
+              "height": 2.1
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10,
+              "material": "wood",
+              "width": 2.0,
+              "height": 1.5
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 17.5,
+            "width": 12.5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10,
+              "material": "wood_metal_carved",
+              "width": 1.2,
+              "height": 2.1
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6,
+              "material": "wood",
+              "width": 1.5,
+              "height": 1.2
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 32.5,
+            "y": 17.5,
+            "width": 7.5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4,
+              "material": "wood",
+              "width": 0.9,
+              "height": 2.0
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "prayer_room",
+          "type": "prayer_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7.5,
+              "material": "wood_metal_carved",
+              "width": 1.2,
+              "height": 2.1
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "material": "stained_glass",
+              "width": 3.0,
+              "height": 2.5
+            },
+            {
+              "wall": "north",
+              "position": 7.5,
+              "material": "wood",
+              "width": 1.5,
+              "height": 1.2
+            }
+          ]
+        },
+        {
+          "id": "meditation_room",
+          "type": "meditation_room",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5,
+              "material": "wood_metal_carved",
+              "width": 1.0,
+              "height": 2.1
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "material": "wood",
+              "width": 2.0,
+              "height": 1.5
+            },
+            {
+              "wall": "north",
+              "position": 5,
+              "material": "wood",
+              "width": 1.5,
+              "height": 1.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 13.33
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "material": "wood_metal_carved",
+              "width": 0.9,
+              "height": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "material": "wood",
+              "width": 1.8,
+              "height": 1.5
+            },
+            {
+              "wall": "north",
+              "position": 7.5,
+              "material": "wood",
+              "width": 1.5,
+              "height": 1.2
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 13.33
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "material": "wood_metal_carved",
+              "width": 0.9,
+              "height": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "material": "wood",
+              "width": 1.8,
+              "height": 1.5
+            },
+            {
+              "wall": "north",
+              "position": 7.5,
+              "material": "wood",
+              "width": 1.5,
+              "height": 1.2
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 13.33,
+            "width": 15,
+            "height": 13.33
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "material": "wood_metal_carved",
+              "width": 0.9,
+              "height": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "material": "wood",
+              "width": 1.8,
+              "height": 1.5
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "material": "wood",
+              "width": 1.5,
+              "height": 1.2
+            }
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 13.33,
+            "width": 15,
+            "height": 13.33
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "material": "wood_metal_carved",
+              "width": 0.9,
+              "height": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7.5,
+              "material": "wood",
+              "width": 1.8,
+              "height": 1.5
+            },
+            {
+              "wall": "south",
+              "position": 7.5,
+              "material": "wood",
+              "width": 1.5,
+              "height": 1.2
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 7.5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 3.75,
+              "material": "wood",
+              "width": 0.8,
+              "height": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 3.75,
+              "material": "frosted_glass",
+              "width": 0.6,
+              "height": 0.6
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 10,
+            "width": 7.5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 3.75,
+              "material": "wood",
+              "width": 0.8,
+              "height": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3.75,
+              "material": "frosted_glass",
+              "width": 0.6,
+              "height": 0.6
+            }
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 7.5,
+            "height": 6.66
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 3.75,
+              "material": "wood",
+              "width": 0.8,
+              "height": 2.0
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3.75,
+              "material": "frosted_glass",
+              "width": 0.6,
+              "height": 0.6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

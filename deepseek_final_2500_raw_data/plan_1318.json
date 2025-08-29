@@ -1,0 +1,227 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 800,
+      "style": "Bauhaus Functional"
+    },
+    "plot": {
+      "width": 20,
+      "height": 20,
+      "orientation": "north"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "type": "kitchen",
+        "area": 80
+      },
+      {
+        "type": "living_room",
+        "area": 140
+      },
+      {
+        "type": "atrium",
+        "area": 100
+      },
+      {
+        "type": "fitness",
+        "area": 100
+      },
+      {
+        "type": "greenhouse",
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 168000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "atrium",
+          "type": "atrium",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 5,
+              "y": 10,
+              "to_room": "living_room"
+            },
+            {
+              "x": 10,
+              "y": 10,
+              "to_room": "fitness_room"
+            },
+            {
+              "x": 10,
+              "y": 5,
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 5,
+              "y": 10,
+              "to_room": "atrium"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 12,
+              "width": 2,
+              "height": 2,
+              "direction": "north"
+            }
+          ]
+        },
+        {
+          "id": "fitness_room",
+          "type": "fitness",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 10,
+              "y": 10,
+              "to_room": "atrium"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 10,
+              "y": 5,
+              "to_room": "atrium"
+            }
+          ],
+          "windows": [
+            {
+              "x": 15,
+              "y": 0,
+              "width": 2,
+              "height": 2,
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "x": 5,
+              "y": 2,
+              "to_room": "living_room"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 10,
+              "y": 0,
+              "to_room": "staircase"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 10,
+              "width": 2,
+              "height": 2,
+              "direction": "north"
+            }
+          ]
+        },
+        {
+          "id": "greenhouse",
+          "type": "greenhouse",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 10,
+              "y": 10,
+              "to_room": "bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "x": 5,
+              "y": 5,
+              "width": 10,
+              "height": 10,
+              "direction": "south"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

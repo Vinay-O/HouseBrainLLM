@@ -1,0 +1,91 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "area_sq_ft": 150,
+          "direction": "east"
+        },
+        {
+          "room_type": "living_room",
+          "area_sq_ft": 250,
+          "direction": "south-east"
+        },
+        {
+          "room_type": "kitchen",
+          "area_sq_ft": 130,
+          "direction": "north-west"
+        },
+        {
+          "room_type": "washroom",
+          "area_sq_ft": 60,
+          "direction": "west"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "location": "entrance_hall_to_living_room",
+          "width_ft": 3.5
+        },
+        {
+          "opening_type": "sliding_door",
+          "location": "living_room_to_outdoor_space",
+          "width_ft": 8,
+          "direction": "south"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom_1",
+          "area_sq_ft": 200,
+          "direction": "north-east"
+        },
+        {
+          "room_type": "bedroom_2",
+          "area_sq_ft": 180,
+          "direction": "south-west"
+        },
+        {
+          "room_type": "bathroom_1",
+          "area_sq_ft": 75,
+          "direction": "north-west"
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "location": "bedroom_1_to_bathroom_1",
+          "width_ft": 3
+        },
+        {
+          "opening_type": "window",
+          "location": "bedroom_2",
+          "width_ft": 4,
+          "direction": "south"
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_type": "stairs",
+          "location": "from_first_floor_to_rooftop",
+          "width_ft": 4
+        },
+        {
+          "opening_type": "balcony",
+          "location": "eastern_side_of_terrace",
+          "direction": "east"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 4,
+      "totalArea": 4200.0,
+      "style": "High-Tech Architecture"
+    },
+    "plot": {
+      "topography": "Elevated platform above wetlands",
+      "climate": "Humid subtropical",
+      "orientation": "East-west linear"
+    },
+    "roomBreakdown": [
+      {
+        "type": "outdoor_entertaining",
+        "description": "Expansive deck with panoramic views, outdoor kitchen, and lounge area"
+      },
+      {
+        "type": "greenhouse",
+        "description": "Rooftop greenhouse and herb garden with automated climate control"
+      },
+      {
+        "type": "fitness_room",
+        "description": "Well-equipped fitness center with mirrored walls and rubber flooring"
+      },
+      {
+        "type": "wellness_room",
+        "description": "Spa-like wellness room with sauna, steam shower, and meditation area"
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 2850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_entry",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mech_utility",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "elevator_stairs",
+          "type": "staircase",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_main",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12,
+              "size": "floor-to-ceiling"
+            },
+            {
+              "wall": "south",
+              "position": 3,
+              "size": "floor-to-ceiling"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_main",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "deck_entertain",
+          "type": "outdoor_entertaining",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 40,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 20
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "stair_elevator_1",
+          "type": "staircase",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "floor-to-ceiling"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": "floor-to-ceiling"
+            }
+          ]
+        },
+        {
+          "id": "master_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7,
+              "size": "floor-to-ceiling"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": "floor-to-ceiling"
+            }
+          ]
+        },
+        {
+          "id": "fitness_room",
+          "type": "fitness_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "floor-to-ceiling"
+            }
+          ]
+        },
+        {
+          "id": "wellness_room",
+          "type": "wellness_room",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7,
+              "size": "frosted"
+            }
+          ]
+        },
+        {
+          "id": "stair_elevator_2",
+          "type": "staircase",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "greenhouse_roof",
+          "type": "greenhouse",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 15,
+              "size": "full-glass"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": "full-glass"
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "size": "full-glass"
+            }
+          ]
+        },
+        {
+          "id": "mechanical_roof",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "stair_elevator_3",
+          "type": "staircase",
+          "bounds": {
+            "x": 30,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

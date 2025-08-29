@@ -1,0 +1,158 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 3,
+      "totalArea": 2400,
+      "style": "Chettinad"
+    },
+    "plot": {
+      "width": 40,
+      "height": 60
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "type": "home_office",
+        "count": 1,
+        "level": 2
+      },
+      {
+        "type": "library",
+        "count": 1,
+        "level": 2
+      },
+      {
+        "type": "garden",
+        "count": 1,
+        "level": 0
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garden_1",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 60
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "studio_1",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 60
+          },
+          "doors": [
+            {
+              "type": "main",
+              "position": {
+                "x": 20,
+                "y": 0
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "large",
+              "position": {
+                "x": 0,
+                "y": 30
+              }
+            },
+            {
+              "type": "large",
+              "position": {
+                "x": 40,
+                "y": 30
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "home_office_1",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 60
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 20,
+                "y": 30
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 0,
+                "y": 30
+              }
+            }
+          ]
+        },
+        {
+          "id": "library_1",
+          "type": "library",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 60
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 20,
+                "y": 30
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 40,
+                "y": 30
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

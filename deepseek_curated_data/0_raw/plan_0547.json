@@ -1,0 +1,149 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Minimalist Farmhouse"
+    },
+    "plot": {
+      "width": 50,
+      "length": 80
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "count": 1
+      },
+      {
+        "type": "library",
+        "count": 1
+      },
+      {
+        "type": "gym",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 216000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "studio_main",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 5
+              },
+              "to_room": "library"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 15
+              },
+              "to_room": "gym"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 10
+              },
+              "length": 5
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 0
+              },
+              "length": 5
+            }
+          ]
+        },
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "to_room": "studio_main"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 5
+              },
+              "length": 4
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 0
+              },
+              "length": 4
+            }
+          ]
+        },
+        {
+          "id": "gym",
+          "type": "gym",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "to_room": "studio_main"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 5
+              },
+              "length": 4
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 15
+              },
+              "length": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

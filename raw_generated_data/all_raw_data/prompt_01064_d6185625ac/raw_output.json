@@ -1,0 +1,79 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Lobby & Living Area",
+          "dimensions": {"length": 15, "width": 12},
+          "description": "Spacious entrance with integrated living area featuring contemporary design elements."
+        },
+        {
+          "name": "Kitchen & Dining",
+          "dimensions": {"length": 10, "width": 8},
+          "description": "Modern kitchen layout with adjoining dining space, optimized for efficient workflow and ample storage."
+        },
+        {
+          "name": "Master Bedroom",
+          "dimensions": {"length": 12, "width": 10},
+          "description": "Expansive master bedroom with a large balcony designed per Vastu principles ensuring positive energy flow.",
+          "balcony": {
+            "dimensions": {"length": 6, "width": 4},
+            "orientation": "South-East",
+            "features": ["Privacy screens", "Greenery"]
+          }
+        },
+        {
+          "name": "Guest Bedroom",
+          "dimensions": {"length": 10, "width": 8},
+          "description": "Cozy guest bedroom with ample space and a balcony for relaxation and fresh air.",
+          "balcony": {
+            "dimensions": {"length": 4, "width": 3},
+            "orientation": "North-West",
+            "features": ["Privacy screens"]
+          }
+        },
+        {
+          "name": "Bathroom",
+          "dimensions": {"length": 6, "width": 5},
+          "description": "Fully functional bathroom with contemporary fixtures and adequate storage."
+        },
+        {
+          "name": "Garage",
+          "dimensions": {"length": 15, "width": 10},
+          "description": "Dedicated two-car garage space with additional utility area for tools and equipment.",
+          "openings": [
+            {
+              "type": "Car Door",
+              "location": "Front"
+            }
+          ]
+        },
+        {
+          "name": "Garden Courtyard",
+          "dimensions": {"length": 15, "width": 10},
+          "description": "Large garden area with landscaped greenery and a water feature to enhance aesthetics and Vastu balance."
+        }
+      ],
+      "openings": [
+        {
+          "type": "Main Entrance Door",
+          "location": "South-West corner"
+        },
+        {
+          "type": "Balcony Access",
+          "rooms": ["Master Bedroom", "Guest Bedroom"]
+        },
+        {
+          "type": "Garage Exit",
+          "location": "North-East side"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Design incorporates contemporary aesthetics with Vastu principles ensuring positive energy flow.",
+    "The ground floor plan prioritizes ease of movement and natural light while maintaining privacy in the residential areas.",
+    "Each bedroom features a spacious balcony to provide personal space for relaxation and a connection with nature."
+  ]
+}

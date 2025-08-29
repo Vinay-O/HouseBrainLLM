@@ -1,0 +1,372 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 3500,
+      "style": "Odisha Temple-Inspired Contemporary"
+    },
+    "plot": {
+      "size": 10000,
+      "location": "cul-de-sac",
+      "zone": "UNESCO Heritage with Conservation Requirements",
+      "proximity": "Heritage Buildings"
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_office",
+        "requirements": "Video conferencing, modern technology integration"
+      },
+      {
+        "type": "living_room",
+        "requirements": "Spiritual geometry, thermal mass"
+      },
+      {
+        "type": "kitchen",
+        "requirements": "Efficient layout"
+      },
+      {
+        "type": "dining_room",
+        "requirements": "Open to living area"
+      },
+      {
+        "type": "primary_bedroom",
+        "requirements": "Ensuite, spiritual orientation"
+      },
+      {
+        "type": "bedroom",
+        "requirements": "Guest room"
+      },
+      {
+        "type": "bedroom",
+        "requirements": "Flex space"
+      },
+      {
+        "type": "puja_room",
+        "requirements": "Sandstone pillars, sacred geometry"
+      }
+    ]
+  },
+  "total_area": 3500.0,
+  "construction_cost": 787500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            "front_door",
+            "door_to_living",
+            "door_to_puja"
+          ],
+          "windows": []
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "door_from_foyer"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 24,
+            "height": 20
+          },
+          "doors": [
+            "door_from_foyer",
+            "patio_door"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 24,
+            "y": 8,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "door_to_kitchen"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 24,
+            "y": 22,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            "door_from_dining",
+            "door_to_garage"
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 40,
+            "y": 22,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            "garage_door",
+            "door_from_kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "powder_room",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 8,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "door_from_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 40,
+            "y": 16,
+            "width": 12,
+            "height": 16
+          },
+          "doors": [
+            "door_from_hall"
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "large"
+            },
+            {
+              "wall": "south",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_bedroom",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            "door_from_hall"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "door_from_bedroom"
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "walk_in_closet",
+          "type": "closet",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "door_from_bedroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 15,
+            "height": 14
+          },
+          "doors": [
+            "door_from_hall"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium"
+            },
+            {
+              "wall": "east",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 18,
+            "width": 15,
+            "height": 14
+          },
+          "doors": [
+            "door_from_hall"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium"
+            },
+            {
+              "wall": "west",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 18,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "door_from_hall"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "laundry",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 28,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "door_from_hall"
+          ],
+          "windows": []
+        },
+        {
+          "id": "flex_space",
+          "type": "flex",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            "door_from_hall"
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

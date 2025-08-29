@@ -1,0 +1,401 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 1500,
+      "style": "Rajasthani Haveli with intricate stone carving"
+    },
+    "plot": {
+      "orientation": "east",
+      "size": 1500,
+      "location": "riverfront",
+      "special_conditions": [
+        "flood_zone",
+        "sunrise_view"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "workshop",
+        "area": 300,
+        "level": 0
+      },
+      {
+        "type": "living_room",
+        "area": 250,
+        "level": 0
+      },
+      {
+        "type": "kitchen",
+        "area": 150,
+        "level": 0
+      },
+      {
+        "type": "bedroom",
+        "area": 200,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 200,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 200,
+        "level": 1
+      },
+      {
+        "type": "basement_storage",
+        "area": 200,
+        "level": -1
+      }
+    ]
+  },
+  "total_area": 1500.0,
+  "construction_cost": 337500.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "basement_storage_1",
+          "type": "basement_storage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 5,
+              "to": "stairs_up"
+            }
+          ],
+          "windows": [],
+          "special_features": [
+            "climate_control",
+            "flood_proofing",
+            "smart_inventory"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "workshop_1",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 30,
+              "y": 5,
+              "to": "courtyard"
+            },
+            {
+              "x": 15,
+              "y": 0,
+              "to": "stairs_up"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 5,
+              "orientation": "east"
+            },
+            {
+              "x": 15,
+              "y": 10,
+              "orientation": "south"
+            }
+          ],
+          "special_features": [
+            "natural_lighting",
+            "weaving_loom_zones",
+            "smart_automation",
+            "traditional_floor_pattern"
+          ]
+        },
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 25,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 25,
+              "y": 5,
+              "to": "courtyard"
+            },
+            {
+              "x": 12.5,
+              "y": 0,
+              "to": "stairs_up"
+            },
+            {
+              "x": 0,
+              "y": 5,
+              "to": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 5,
+              "orientation": "east"
+            },
+            {
+              "x": 12.5,
+              "y": 10,
+              "orientation": "south"
+            }
+          ],
+          "special_features": [
+            "stone_carving_details",
+            "jali_windows",
+            "traditional_floor_pattern",
+            "smart_lighting"
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 5,
+              "to": "courtyard"
+            },
+            {
+              "x": 0,
+              "y": 5,
+              "to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 5,
+              "orientation": "east"
+            },
+            {
+              "x": 7.5,
+              "y": 10,
+              "orientation": "south"
+            }
+          ],
+          "special_features": [
+            "traditional_chulha",
+            "modern_amenities",
+            "smart_appliances"
+          ]
+        },
+        {
+          "id": "courtyard_1",
+          "type": "courtyard",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 30
+          },
+          "doors": [
+            {
+              "x": 25,
+              "y": 5,
+              "to": "workshop"
+            },
+            {
+              "x": 25,
+              "y": 15,
+              "to": "living_room"
+            },
+            {
+              "x": 25,
+              "y": 25,
+              "to": "kitchen"
+            }
+          ],
+          "windows": [],
+          "special_features": [
+            "underground_cooling_chamber",
+            "water_harvesting",
+            "traditional_floor_pattern",
+            "traffic_circulation"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 5,
+              "to": "verandah"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 5,
+              "orientation": "east"
+            },
+            {
+              "x": 10,
+              "y": 10,
+              "orientation": "south"
+            }
+          ],
+          "special_features": [
+            "stone_carving_details",
+            "jali_windows",
+            "smart_climate_control"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 15,
+              "to": "verandah"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 15,
+              "orientation": "east"
+            },
+            {
+              "x": 10,
+              "y": 10,
+              "orientation": "north"
+            },
+            {
+              "x": 10,
+              "y": 20,
+              "orientation": "south"
+            }
+          ],
+          "special_features": [
+            "stone_carving_details",
+            "jali_windows",
+            "smart_climate_control"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 25,
+              "to": "verandah"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 25,
+              "orientation": "east"
+            },
+            {
+              "x": 10,
+              "y": 20,
+              "orientation": "north"
+            }
+          ],
+          "special_features": [
+            "stone_carving_details",
+            "jali_windows",
+            "smart_climate_control"
+          ]
+        },
+        {
+          "id": "verandah_1",
+          "type": "verandah",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 30
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 5,
+              "to": "bedroom_1"
+            },
+            {
+              "x": 20,
+              "y": 15,
+              "to": "bedroom_2"
+            },
+            {
+              "x": 20,
+              "y": 25,
+              "to": "bedroom_3"
+            },
+            {
+              "x": 30,
+              "y": 15,
+              "to": "stairs_down"
+            }
+          ],
+          "windows": [],
+          "special_features": [
+            "overlooking_courtyard",
+            "stone_railing",
+            "traffic_circulation"
+          ]
+        }
+      ]
+    }
+  ]
+}

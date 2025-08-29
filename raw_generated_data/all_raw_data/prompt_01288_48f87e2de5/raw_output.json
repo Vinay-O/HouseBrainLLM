@@ -1,0 +1,164 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "living_room",
+          "area": 200,
+          "dimensions": [14, 14.29],
+          "features": ["traditional Kerala-style furniture", "wooden floor", "sliding doors to courtyard"],
+          "position": {
+            "relative_to": "entrance",
+            "direction": "right"
+          }
+        },
+        {
+          "room_id": "dining_room",
+          "type": "dining_room",
+          "area": 150,
+          "dimensions": [12, 12.5],
+          "features": ["traditional Kerala wooden dining table", "terrazzo floor", "adjacent to kitchen"],
+          "position": {
+            "relative_to": "living_room",
+            "direction": "left"
+          }
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "area": 150,
+          "dimensions": [12, 12.5],
+          "features": ["traditional Kerala kitchen with stone counter", "stainless steel appliances", "ventilation to courtyard"],
+          "position": {
+            "relative_to": "dining_room",
+            "direction": "left"
+          }
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "area": 250,
+          "dimensions": [16, 15.63],
+          "features": ["king-size bed with traditional Kerala wooden frame", "attached bathroom", "balcony overlooking courtyard"],
+          "position": {
+            "relative_to": "entrance",
+            "direction": "straight"
+          }
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "area": 200,
+          "dimensions": [14, 14.29],
+          "features": ["queen-size bed with traditional Kerala wooden frame", "attached bathroom"],
+          "position": {
+            "relative_to": "bedroom_1",
+            "direction": "right"
+          }
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "bedroom",
+          "area": 200,
+          "dimensions": [14, 14.29],
+          "features": ["queen-size bed with traditional Kerala wooden frame", "attached bathroom"],
+          "position": {
+            "relative_to": "living_room",
+            "direction": "left"
+          }
+        },
+        {
+          "room_id": "bedroom_4",
+          "type": "bedroom",
+          "area": 200,
+          "dimensions": [14, 14.29],
+          "features": ["queen-size bed with traditional Kerala wooden frame", "attached bathroom"],
+          "position": {
+            "relative_to": "bedroom_3",
+            "direction": "left"
+          }
+        },
+        {
+          "room_id": "home_office",
+          "type": "home_office",
+          "area": 100,
+          "dimensions": [10, 10],
+          "features": ["wooden desk and chair", "high-speed internet connection", "natural light"],
+          "position": {
+            "relative_to": "living_room",
+            "direction": "straight"
+          }
+        },
+        {
+          "room_id": "library",
+          "type": "library",
+          "area": 100,
+          "dimensions": [10, 10],
+          "features": ["traditional Kerala wooden bookshelves", "reading nook with comfortable seating"],
+          "position": {
+            "relative_to": "home_office",
+            "direction": "right"
+          }
+        },
+        {
+          "room_id": "gym",
+          "type": "private_gym",
+          "area": 150,
+          "dimensions": [12, 12.5],
+          "features": ["treadmill", "weight bench", "yoga mat area"],
+          "position": {
+            "relative_to": "bedroom_4",
+            "direction": "left"
+          }
+        },
+        {
+          "room_id": "courtyard",
+          "type": "courtyard",
+          "area": 200,
+          "features": ["traditional Kerala-style open courtyard", "plants and water feature", "seating area"],
+          "position": {
+            "relative_to": "living_room",
+            "direction": "right"
+          }
+        },
+        {
+          "room_id": "bathrooms",
+          "type": "bathroom",
+          "count": 4,
+          "features": ["traditional Kerala-style with stone floor", "walk-in shower", "separate toilet"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "position": {
+            "relative_to": "living_room",
+            "direction": "outside"
+          },
+          "features": ["traditional Kerala wooden door", "covered porch"]
+        },
+        {
+          "opening_id": "courtyard_access",
+          "type": "door",
+          "position": {
+            "relative_to": "living_room",
+            "direction": "right"
+          },
+          "features": ["sliding doors", "direct access to courtyard"]
+        },
+        {
+          "opening_id": "balcony_access",
+          "type": "door",
+          "position": {
+            "relative_to": "bedroom_1",
+            "direction": "outside"
+          },
+          "features": ["French doors", "access to balcony overlooking courtyard"]
+        }
+      ]
+    }
+  ]
+}

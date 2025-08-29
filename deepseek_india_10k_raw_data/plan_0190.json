@@ -1,0 +1,591 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 4800,
+      "style": "Coastal Stilted with Traditional Indian Elements"
+    },
+    "plot": {
+      "width": 60,
+      "length": 80,
+      "orientation": "West-facing for evening breeze capture",
+      "specialCharacteristics": [
+        "Sacred temple vicinity",
+        "Agricultural belt",
+        "Requires monsoon and desert sandstorm adaptations"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 500
+      },
+      {
+        "type": "guest_suite",
+        "count": 1,
+        "area": 350
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "area": 200
+      },
+      {
+        "type": "jhula_pavilion",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "stilt_space",
+        "count": 1,
+        "area": 1200
+      },
+      {
+        "type": "verandah",
+        "count": 1,
+        "area": 300
+      }
+    ]
+  },
+  "total_area": 4800.0,
+  "construction_cost": 8640000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "description": "Stilted ground level with parking, storage, and monsoon adaptation space",
+      "rooms": [
+        {
+          "id": "stilt_parking",
+          "type": "stilt_space",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 60,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "type": "sliding",
+              "material": "reinforced_aluminum",
+              "opens_to": "exterior"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Elevated foundation for flood protection",
+            "Sandstorm-resistant mesh panels",
+            "Natural ventilation channels"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "description": "Main living level with family spaces, guest accommodation, and sacred entrance",
+      "rooms": [
+        {
+          "id": "main_entrance",
+          "type": "foyer",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 0
+              },
+              "type": "decorative_wooden",
+              "material": "teak",
+              "opens_to": "exterior"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Traditional kolam threshold design",
+            "Sacred entrance alignment",
+            "Coastal-inspired stilted staircase access"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 15,
+            "y": 8,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 8
+              },
+              "type": "double",
+              "material": "teak",
+              "opens_to": "foyer"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 18
+              },
+              "type": "french",
+              "material": "aluminum",
+              "opens_to": "verandah"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 45,
+                "y": 18
+              },
+              "type": "large",
+              "material": "glass",
+              "orientation": "west"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 23
+              },
+              "type": "jalousie",
+              "material": "wood",
+              "orientation": "east"
+            }
+          ],
+          "features": [
+            "Mandana floor patterns",
+            "High ceilings for heat dissipation",
+            "Evening breeze capture windows"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 15
+              },
+              "type": "standard",
+              "material": "wood",
+              "opens_to": "dining"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 15
+              },
+              "type": "casement",
+              "material": "aluminum",
+              "orientation": "north"
+            }
+          ],
+          "features": [
+            "Traditional clay tile flooring",
+            "Sandstorm-proof cabinets",
+            "Cross-ventilation design"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 23,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 25
+              },
+              "type": "archway",
+              "material": "plaster",
+              "opens_to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 28
+              },
+              "type": "bay",
+              "material": "glass",
+              "orientation": "north"
+            }
+          ],
+          "features": [
+            "Rangoli-inspired floor centerpiece",
+            "Integrated garden view windows",
+            "Bee-friendly flowering plants outside"
+          ]
+        },
+        {
+          "id": "guest_suite",
+          "type": "guest_suite",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 15,
+            "height": 28
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 45,
+                "y": 14
+              },
+              "type": "private",
+              "material": "wood",
+              "opens_to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 60,
+                "y": 10
+              },
+              "type": "double",
+              "material": "glass",
+              "orientation": "west"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 0
+              },
+              "type": "small",
+              "material": "glass",
+              "orientation": "south"
+            }
+          ],
+          "features": [
+            "Private bathroom",
+            "Business-friendly workspace",
+            "Evening breeze optimization"
+          ]
+        },
+        {
+          "id": "courtyard_verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 15,
+            "y": 28,
+            "width": 30,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 32
+              },
+              "type": "sliding",
+              "material": "glass",
+              "opens_to": "living_room"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Traditional jhula swing pavilion",
+            "Landscaped garden integration",
+            "Shaded outdoor seating"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "description": "Private family level with bedrooms, puja room, and study",
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "type": "double",
+              "material": "wood",
+              "opens_to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 15
+              },
+              "type": "jalousie",
+              "material": "wood",
+              "orientation": "east"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "type": "casement",
+              "material": "glass",
+              "orientation": "south"
+            }
+          ],
+          "features": [
+            "Ensuite bathroom",
+            "Walk-in closet",
+            "Private balcony with garden view"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 7
+              },
+              "type": "standard",
+              "material": "wood",
+              "opens_to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 10
+              },
+              "type": "double",
+              "material": "glass",
+              "orientation": "west"
+            }
+          ],
+          "features": [
+            "Built-in study desk",
+            "Cross-ventilation design",
+            "Bee-friendly window boxes"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 7
+              },
+              "type": "standard",
+              "material": "wood",
+              "opens_to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 10
+              },
+              "type": "double",
+              "material": "glass",
+              "orientation": "west"
+            }
+          ],
+          "features": [
+            "Shared bathroom access",
+            "High-level windows for heat control",
+            "Traditional textile motifs"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 22
+              },
+              "type": "carved",
+              "material": "wood",
+              "opens_to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 25
+              },
+              "type": "stained_glass",
+              "material": "glass",
+              "orientation": "east"
+            }
+          ],
+          "features": [
+            "Sacred geometry floor pattern",
+            "Traditional oil lamp niche",
+            "Peaceful courtyard view"
+          ]
+        },
+        {
+          "id": "study_room",
+          "type": "study",
+          "bounds": {
+            "x": 10,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 25
+              },
+              "type": "standard",
+              "material": "wood",
+              "opens_to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 20
+              },
+              "type": "picture",
+              "material": "glass",
+              "orientation": "south"
+            }
+          ],
+          "features": [
+            "Built-in bookshelves",
+            "Natural lighting optimization",
+            "Sound-insulated walls"
+          ]
+        },
+        {
+          "id": "family_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 25
+              },
+              "type": "pocket",
+              "material": "waterproof",
+              "opens_to": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 22
+              },
+              "type": "frosted",
+              "material": "glass",
+              "orientation": "west"
+            }
+          ],
+          "features": [
+            "Ventilation skylight",
+            "Monsoon-resistant flooring",
+            "Water conservation fixtures"
+          ]
+        }
+      ]
+    }
+  ]
+}

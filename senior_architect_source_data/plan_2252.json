@@ -1,0 +1,243 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 450,
+      "style": "Minimalist Earthship"
+    },
+    "plot": {
+      "width": 30,
+      "length": 25,
+      "orientation": "south",
+      "climate": "Mediterranean"
+    },
+    "roomBreakdown": [
+      {
+        "id": "yoga_studio",
+        "type": "specialty",
+        "purpose": "yoga and meditation",
+        "area": 180,
+        "features": [
+          "heated_floor",
+          "south_glazing"
+        ]
+      },
+      {
+        "id": "guest_room",
+        "type": "bedroom",
+        "purpose": "guest_accommodation",
+        "area": 120,
+        "features": [
+          "foldaway_bed",
+          "privacy_screen"
+        ]
+      },
+      {
+        "id": "living_space",
+        "type": "living_room",
+        "purpose": "multifunctional_living",
+        "area": 100,
+        "features": [
+          "convertible_furniture",
+          "minimal_storage"
+        ]
+      },
+      {
+        "id": "wet_cell",
+        "type": "bathroom",
+        "purpose": "compact_bathing",
+        "area": 50,
+        "features": [
+          "water_recycling",
+          "composting_toilet"
+        ]
+      }
+    ]
+  },
+  "total_area": 450.0,
+  "construction_cost": 185000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "yoga_studio",
+          "type": "specialty",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 6
+              },
+              "to_room": "garden_court"
+            },
+            {
+              "position": {
+                "x": 7.5,
+                "y": 0
+              },
+              "to_room": "living_space"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 3
+              },
+              "length": 12,
+              "direction": "south"
+            }
+          ]
+        },
+        {
+          "id": "guest_room",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 6
+              },
+              "to_room": "garden_court"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 6
+              },
+              "to_room": "wet_cell"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 3
+              },
+              "length": 6,
+              "direction": "east"
+            }
+          ]
+        },
+        {
+          "id": "living_space",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 7.5,
+                "y": 12
+              },
+              "to_room": "yoga_studio"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 17
+              },
+              "to_room": "garden_court"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 15
+              },
+              "length": 10,
+              "direction": "south"
+            }
+          ]
+        },
+        {
+          "id": "wet_cell",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 12,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 17
+              },
+              "to_room": "garden_court"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 17
+              },
+              "to_room": "guest_room"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "garden_court",
+          "type": "outdoor",
+          "bounds": {
+            "x": 15,
+            "y": 12,
+            "width": 10,
+            "height": 13
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 17
+              },
+              "to_room": "living_space"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 18.5
+              },
+              "to_room": "wet_cell"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 6
+              },
+              "to_room": "yoga_studio"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 6
+              },
+              "to_room": "guest_room"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

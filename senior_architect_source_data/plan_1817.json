@@ -1,0 +1,337 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 4,
+      "totalArea": 3200,
+      "style": "Earthship"
+    },
+    "plot": {
+      "description": "Former industrial site with concrete foundations in an alpine climate with heavy snow loads",
+      "size": 10000,
+      "orientation": "North-facing for consistent light"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "description": "Master suite with panoramic views and climate-controlled storage for art collections"
+      },
+      {
+        "type": "brewery",
+        "count": 1,
+        "description": "Home brewery with precise temperature control and fermentation stations"
+      },
+      {
+        "type": "storage",
+        "count": 1,
+        "description": "Climate-controlled storage for art collections with humidity control"
+      },
+      {
+        "type": "cistern",
+        "count": 1,
+        "description": "Underground rainwater harvesting cistern with filtration system"
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "underground_cistern",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [],
+          "description": "Underground rainwater harvesting cistern with filtration system"
+        },
+        {
+          "id": "storage_level0",
+          "type": "storage",
+          "bounds": {
+            "x": 25,
+            "y": 5,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "description": "Climate-controlled art storage with humidity control"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "brewery_room",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": 3
+            }
+          ],
+          "description": "Home brewery with temperature-controlled fermentation and brewing stations"
+        },
+        {
+          "id": "mechanical_room",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 5,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "description": "HVAC and building systems room with Earthship thermal mass controls"
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 4
+            },
+            {
+              "wall": "north",
+              "position": 15,
+              "size": 4
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 4
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "size": 4
+            }
+          ],
+          "description": "Great room with panoramic views and north-facing windows for consistent light"
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 5,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": 3
+            }
+          ],
+          "description": "Gourmet kitchen with brewery access and recycled materials"
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7,
+              "size": 3
+            }
+          ],
+          "description": "Formal dining area with panoramic mountain views"
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 4
+            },
+            {
+              "wall": "north",
+              "position": 15,
+              "size": 4
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": 3
+            },
+            {
+              "wall": "west",
+              "position": 7,
+              "size": 3
+            }
+          ],
+          "description": "Master bedroom suite with panoramic views and art display areas"
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 5,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": 4
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": 3
+            }
+          ],
+          "description": "Guest bedroom/studio space with north light for art creation"
+        },
+        {
+          "id": "bathroom_master",
+          "type": "bathroom",
+          "bounds": {
+            "x": 5,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 2
+            }
+          ],
+          "description": "Luxury master bathroom with heated floors and rainwater fixtures"
+        },
+        {
+          "id": "bathroom_guest",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 25,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "size": 2
+            }
+          ],
+          "description": "Guest bathroom with sustainable fixtures and materials"
+        }
+      ]
+    }
+  ]
+}

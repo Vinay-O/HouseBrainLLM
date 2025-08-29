@@ -1,0 +1,83 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "area_sqft": 300,
+          "description": "Includes a walk-in closet and an attached bathroom. Positioned to follow Vastu principles for prosperity."
+        },
+        {
+          "room_name": "Guest Bedroom",
+          "area_sqft": 200,
+          "description": "Includes wardrobe space and is adjacent to the shared bathroom."
+        },
+        {
+          "room_name": "Servant's Quarters",
+          "area_sqft": 150,
+          "description": "Includes a small bedroom, storage area, and a basic bathroom facility."
+        },
+        {
+          "room_name": "Home Office",
+          "area_sqft": 200,
+          "description": "Equipped with ample natural light and storage space for work-related materials. Positioned to align with the northeast direction as per Vastu."
+        },
+        {
+          "room_name": "Living Room",
+          "area_sqft": 350,
+          "description": "Includes seating arrangements, a small dining area, and windows that allow natural light into the space."
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 180,
+          "description": "Modern kitchen layout with gas stove positioned towards southeast as per Vastu principles."
+        },
+        {
+          "room_name": "Home Theater",
+          "area_sqft": 250,
+          "description": "Includes seating for up to six people, a large screen TV wall, and soundproofing materials."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "connected_rooms": ["Living Room", "Home Theater"],
+          "description": "Sliding glass door to allow natural light from the living area into the home theater when not in use."
+        },
+        {
+          "opening_type": "window",
+          "connected_room": "Kitchen",
+          "description": "Larger window placed above the sink to ensure good ventilation and view of the outside, complying with Vastu principles."
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Bedroom 3",
+          "area_sqft": 200,
+          "description": "Includes a wardrobe and an attached bathroom. Positioned in the southwest corner for stability."
+        },
+        {
+          "room_name": "Bedroom 4",
+          "area_sqft": 180,
+          "description": "Includes a wardrobe and is adjacent to another shared bathroom."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "connected_rooms": ["ground_floor", "first_floor"],
+          "description": "Stairs positioned in the center of the house for easy access, following Vastu norms for central positioning."
+        },
+        {
+          "opening_type": "balcony",
+          "connected_room": "Bedroom 3",
+          "description": "Small balcony with seating to enjoy a view of the surroundings and natural light into the room."
+        }
+      ]
+    }
+  ]
+}

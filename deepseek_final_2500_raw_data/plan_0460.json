@@ -1,0 +1,307 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 5000,
+      "style": "Traditional Kerala Nalukettu"
+    },
+    "plot": {
+      "size": 5000,
+      "orientation": "west",
+      "location": "industrial city outskirts",
+      "notes": "evening light, pollution concerns"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 600
+      },
+      {
+        "type": "kitchen",
+        "area": 300
+      },
+      {
+        "type": "dining_room",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 350,
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "area": 120,
+        "count": 3
+      },
+      {
+        "type": "artist_studio",
+        "area": 800
+      },
+      {
+        "type": "courtyard",
+        "area": 900,
+        "count": 2
+      },
+      {
+        "type": "swimming_pool",
+        "area": 400
+      },
+      {
+        "type": "utility_room",
+        "area": 150
+      },
+      {
+        "type": "storage",
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 4220.0,
+  "construction_cost": 1055000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "north_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            "south_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "south_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 40,
+            "y": 70,
+            "width": 30,
+            "height": 30
+          },
+          "doors": [
+            "north_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 40,
+            "height": 20
+          },
+          "doors": [
+            "east_door",
+            "south_door"
+          ],
+          "windows": [
+            "north_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 50,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "north_door",
+            "east_door"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 50,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "west_door"
+          ],
+          "windows": [
+            "east_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 30
+          },
+          "doors": [
+            "south_door"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "south_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 70,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            "south_door"
+          ],
+          "windows": [
+            "north_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 70,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "north_door"
+          ],
+          "windows": [
+            "west_window"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 85,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "west_door"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "artist_studio",
+          "type": "artist_studio",
+          "bounds": {
+            "x": 70,
+            "y": 50,
+            "width": 30,
+            "height": 40
+          },
+          "doors": [
+            "north_door",
+            "west_door"
+          ],
+          "windows": [
+            "north_window",
+            "east_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 70,
+            "y": 40,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "south_door"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility_room",
+          "bounds": {
+            "x": 85,
+            "y": 40,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "west_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "swimming_pool",
+          "type": "swimming_pool",
+          "bounds": {
+            "x": 40,
+            "y": 30,
+            "width": 30,
+            "height": 40
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "storage",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 70,
+            "width": 40,
+            "height": 30
+          },
+          "doors": [
+            "north_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

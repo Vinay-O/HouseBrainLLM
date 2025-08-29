@@ -1,0 +1,289 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 3,
+      "totalArea": 5000,
+      "style": "Assamese Traditional with Bamboo Integration"
+    },
+    "plot": {
+      "area": 5000,
+      "orientation": "south",
+      "view": "garden",
+      "location": "heritage city with strict building regulations",
+      "specialConsiderations": "shared boundary walls, thermal mass utilization, LED lighting throughout"
+    },
+    "roomBreakdown": [
+      {
+        "type": "puja_room",
+        "requirements": "brass fittings"
+      },
+      {
+        "type": "artist_studio",
+        "requirements": "north light, spacious"
+      },
+      {
+        "type": "yoga_pavilion",
+        "requirements": "traditional, meditation space"
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 1350000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            "main_entrance"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 22,
+            "height": 18
+          },
+          "doors": [
+            "to_garden"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 12,
+            "width": 14,
+            "height": 10
+          },
+          "doors": [
+            "service_entry"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            "east_window"
+          ],
+          "specialFeatures": [
+            "brass_fittings"
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "guest_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 16,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "family_lounge",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [],
+          "windows": [
+            "south_window",
+            "north_window"
+          ]
+        },
+        {
+          "id": "main_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 16,
+            "height": 18
+          },
+          "doors": [],
+          "windows": [
+            "south_window"
+          ],
+          "specialFeatures": [
+            "walk_in_closet"
+          ]
+        },
+        {
+          "id": "main_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "shared_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 8,
+            "y": 14,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "artist_studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            "north_light_window",
+            "skylight"
+          ],
+          "specialFeatures": [
+            "high_ceiling"
+          ]
+        },
+        {
+          "id": "storage_room",
+          "type": "storage",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "yoga_pavilion",
+          "type": "pavilion",
+          "bounds": {
+            "x": 24,
+            "y": 10,
+            "width": 24,
+            "height": 14
+          },
+          "doors": [
+            "to_terrace"
+          ],
+          "windows": [
+            "full_height_south",
+            "east_window",
+            "west_window"
+          ],
+          "specialFeatures": [
+            "traditional_assamese_design",
+            "bamboo_screens"
+          ]
+        }
+      ]
+    }
+  ]
+}

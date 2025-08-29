@@ -90,7 +90,14 @@ def generate_and_save_draft(prompt: str, output_file: Path, model: str, wrap_in_
 
 # --- Basic Prompt Templates (reverted) ---
 STAGE_1_PROMPT_TEMPLATE = "Generate a JSON layout for the following prompt, focusing on levels and rooms. User prompt: {user_prompt}"
-STAGE_2_PROMPT_TEMPLATE = "Add doors and windows to the following JSON layout. Existing layout: {existing_layout}. Original prompt: {user_prompt}"
+STAGE_2_PROMPT_TEMPLATE = """
+Add doors and windows to the following JSON layout.
+**Crucially, you must preserve the exact 'bounds' object for every room from the original layout.**
+Do not change or remove the 'bounds' field.
+
+Existing layout: {existing_layout}
+Original prompt: {user_prompt}
+"""
 
 
 # --- Stage Functions ---
@@ -113,26 +120,79 @@ def stage_2_openings(layout_file, prompt, output_file, model):
     generation_prompt = STAGE_2_PROMPT_TEMPLATE.format(existing_layout=layout_content, user_prompt=prompt)
     return generate_and_save_draft(prompt=generation_prompt, output_file=output_file, model=model, wrap_in_levels=True)
 
-def stage_3_finalize(layout_file, prompt, output_file):
-    logger.info("--- Stage 3: Finalizing Plan ---")
+def stage_3_finalize(base_layout_file, openings_layout_file, prompt, output_file):
+    logger.info("--- Stage 3: Finalizing and Merging Plan ---")
     try:
-        with open(layout_file, 'r', encoding='utf-8') as f:
-            final_layout = json.load(f)
+        with open(base_layout_file, 'r', encoding='utf-8') as f:
+            base_layout = json.load(f)
+        with open(openings_layout_file, 'r', encoding='utf-8') as f:
+            openings_layout = json.load(f)
 
-        if "levels" not in final_layout:
-            logger.error("Stage 3 Error: Input JSON is missing 'levels' key.")
-            return False
+        # Create a lookup for rooms from the openings layout
+        openings_rooms_map = {
+            room['id']: room
+            for level in openings_layout.get("levels", [])
+            for room in level.get("rooms", [])
+            if 'id' in room
+        }
 
-        total_area_sqft = sum(r['bounds']['width'] * r['bounds']['height'] for l in final_layout.get("levels", []) for r in l.get("rooms", []))
+        # Iterate through the base layout and merge data
+        final_levels = []
+        total_area_sqft = 0
+        for i, level in enumerate(base_layout.get("levels", [])):
+            final_rooms = []
+            for room in level.get("rooms", []):
+                # Critical: Ensure room has bounds to prevent the original error
+                if 'bounds' not in room or not all(k in room['bounds'] for k in ['width', 'height']):
+                    logger.warning(f"Skipping room {room.get('id', 'Unknown')} in Stage 3 as it lacks valid 'bounds'.")
+                    continue
+                
+                # Use the base room as the source of truth for id, type, and bounds
+                final_room = {
+                    "id": room["id"],
+                    "type": room["type"],
+                    "bounds": room["bounds"],
+                    "doors": [],
+                    "windows": [],
+                    "furniture": [],
+                    "features": []
+                }
+
+                # If we find a matching room in the openings data, copy doors and windows
+                if room["id"] in openings_rooms_map:
+                    openings_room = openings_rooms_map[room["id"]]
+                    final_room["doors"] = openings_room.get("doors", [])
+                    final_room["windows"] = openings_room.get("windows", [])
+
+                final_rooms.append(final_room)
+                total_area_sqft += final_room['bounds']['width'] * final_room['bounds']['height']
+            
+            level['rooms'] = final_rooms
+            # FIX: Add the level_number sequentially
+            level['level_number'] = i
+            final_levels.append(level)
+            
         construction_cost = total_area_sqft * 150.0
+
+        # FIX: Add all required fields to basicDetails before validation
+        basic_details = {
+            "prompt": prompt,
+            "totalArea": total_area_sqft,
+            "unit": "sqft",  # Add default unit
+            "floors": len(final_levels),
+            "bedrooms": 0, # Placeholder, could be parsed from prompt in future
+            "bathrooms": 0, # Placeholder
+            "style": "unknown", # Placeholder
+            "budget": 0 # Placeholder
+        }
 
         final_plan = {
             "input": {
-                "basicDetails": {"prompt": prompt, "totalArea": total_area_sqft},
+                "basicDetails": basic_details,
                 "plot": {},
                 "roomBreakdown": []
             },
-            "levels": final_layout.get("levels", []),
+            "levels": final_levels,
             "total_area": round(total_area_sqft, 2),
             "construction_cost": round(construction_cost, 2),
             "materials": {}, "render_paths": {}
@@ -140,10 +200,10 @@ def stage_3_finalize(layout_file, prompt, output_file):
 
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(final_plan, f, indent=2)
-        logger.info(f"✅ Stage 3: Final plan saved to {output_file}")
+        logger.info(f"✅ Stage 3: Final merged plan saved to {output_file}")
         return True
     except Exception as e:
-        logger.error(f"Error in Stage 3: {e}")
+        logger.error(f"Error in Stage 3 merge: {e}", exc_info=True)
         return False
 
 def validate_output(file_to_validate):
@@ -195,7 +255,7 @@ def assembly_line_pipeline(prompt: str, output_dir: Path, model: str, run_name: 
             raise Exception("Assembly line failed at Stage 2.")
 
         final_output = work_dir / "3_final_plan.json"
-        if not stage_3_finalize(stage_2_output, prompt, final_output):
+        if not stage_3_finalize(stage_1_output, stage_2_output, prompt, final_output):
              raise Exception("Assembly line failed at Stage 3.")
 
         if validate_output(final_output):

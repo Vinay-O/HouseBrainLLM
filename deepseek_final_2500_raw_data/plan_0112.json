@@ -1,0 +1,262 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 10000,
+      "style": "Chettinad with Industrial Adaptive Reuse"
+    },
+    "plot": {
+      "size": 10000,
+      "orientation": "west",
+      "location": "industrial city outskirts",
+      "challenges": [
+        "pollution",
+        "flood risk"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_office",
+        "count": 3,
+        "area": 600
+      },
+      {
+        "type": "bedroom",
+        "count": 4,
+        "area": 800
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "veranda",
+        "count": 1,
+        "area": 500
+      },
+      {
+        "type": "utility",
+        "count": 2,
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 3100.0,
+  "construction_cost": 620000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "veranda_0",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 10
+          },
+          "doors": [
+            "main_entry"
+          ],
+          "windows": [
+            "west_facing_lattice"
+          ]
+        },
+        {
+          "id": "living_room_0",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_veranda",
+            "to_dining"
+          ],
+          "windows": [
+            "north_facing"
+          ]
+        },
+        {
+          "id": "home_office_0_1",
+          "type": "home_office",
+          "bounds": {
+            "x": 30,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_facing_filtered"
+          ]
+        },
+        {
+          "id": "home_office_0_2",
+          "type": "home_office",
+          "bounds": {
+            "x": 30,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_facing_filtered"
+          ]
+        },
+        {
+          "id": "kitchen_0",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_dining",
+            "service_entry"
+          ],
+          "windows": [
+            "east_facing"
+          ]
+        },
+        {
+          "id": "dining_room_0",
+          "type": "dining_room",
+          "bounds": {
+            "x": 15,
+            "y": 30,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_living",
+            "to_kitchen"
+          ],
+          "windows": [
+            "west_facing_lattice"
+          ]
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_exterior"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "west_facing_lattice",
+            "north_facing"
+          ]
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_facing_filtered"
+          ]
+        },
+        {
+          "id": "bedroom_1_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "south_facing_filtered"
+          ]
+        },
+        {
+          "id": "home_office_1",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": [
+            "east_facing"
+          ]
+        },
+        {
+          "id": "utility_1",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_hall"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

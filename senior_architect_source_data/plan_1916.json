@@ -1,0 +1,428 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 320,
+      "style": "Brutalist Concrete"
+    },
+    "plot": {
+      "width": 4,
+      "length": 40,
+      "climate": "Temperate Maritime",
+      "orientation": "North-Facing"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 80
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 30
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 25
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 60
+      },
+      {
+        "type": "climbing_wall",
+        "count": 1,
+        "area": 50
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 25
+      },
+      {
+        "type": "entry",
+        "count": 1,
+        "area": 25
+      },
+      {
+        "type": "glass_link",
+        "count": 2,
+        "area": 25
+      }
+    ]
+  },
+  "total_area": 320.0,
+  "construction_cost": 960000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_vestibule",
+          "type": "entry",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "material": "reinforced_steel",
+              "position": {
+                "wall": "south",
+                "at": 2
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 3,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "material": "solid_core",
+              "position": {
+                "wall": "south",
+                "at": 2
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "material": "sectional",
+              "position": {
+                "wall": "south",
+                "at": 2
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "glass_link_1",
+          "type": "glass_link",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "material": "glass",
+              "position": {
+                "wall": "north",
+                "at": 2
+              }
+            },
+            {
+              "type": "interior",
+              "material": "glass",
+              "position": {
+                "wall": "south",
+                "at": 2
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "material": "insulated_glass",
+              "position": {
+                "wall": "east",
+                "from": 0,
+                "to": 4
+              }
+            },
+            {
+              "type": "fixed",
+              "material": "insulated_glass",
+              "position": {
+                "wall": "west",
+                "from": 0,
+                "to": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "climbing_wall",
+          "type": "climbing_wall",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 4,
+            "height": 12.5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "material": "glass",
+              "position": {
+                "wall": "south",
+                "at": 2
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "material": "insulated_glass",
+              "position": {
+                "wall": "north",
+                "from": 0,
+                "to": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "glass_link_2",
+          "type": "glass_link",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "material": "glass",
+              "position": {
+                "wall": "north",
+                "at": 2
+              }
+            },
+            {
+              "type": "interior",
+              "material": "glass",
+              "position": {
+                "wall": "south",
+                "at": 2
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "material": "insulated_glass",
+              "position": {
+                "wall": "east",
+                "from": 0,
+                "to": 4
+              }
+            },
+            {
+              "type": "fixed",
+              "material": "insulated_glass",
+              "position": {
+                "wall": "west",
+                "from": 0,
+                "to": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 3,
+            "width": 4,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "material": "glass",
+              "position": {
+                "wall": "south",
+                "at": 2
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "material": "insulated_glass",
+              "position": {
+                "wall": "north",
+                "from": 0,
+                "to": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 13,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "material": "solid_core",
+              "position": {
+                "wall": "south",
+                "at": 2
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "material": "insulated_glass",
+              "position": {
+                "wall": "north",
+                "from": 0,
+                "to": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 19,
+            "width": 4,
+            "height": 7
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "material": "solid_core",
+              "position": {
+                "wall": "south",
+                "at": 2
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "material": "insulated_glass",
+              "position": {
+                "wall": "north",
+                "from": 0,
+                "to": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 26,
+            "width": 2,
+            "height": 4
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "material": "solid_core",
+              "position": {
+                "wall": "south",
+                "at": 1
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 4,
+            "height": 7
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "material": "solid_core",
+              "position": {
+                "wall": "south",
+                "at": 2
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "material": "insulated_glass",
+              "position": {
+                "wall": "north",
+                "from": 0,
+                "to": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 37,
+            "width": 2,
+            "height": 3
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "material": "solid_core",
+              "position": {
+                "wall": "south",
+                "at": 1
+              }
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

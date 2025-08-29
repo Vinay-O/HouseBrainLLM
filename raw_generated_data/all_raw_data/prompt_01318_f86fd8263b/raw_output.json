@@ -1,0 +1,88 @@
+{
+    "levels": [
+        {
+            "level_id": "ground_floor",
+            "rooms": [
+                {
+                    "room_id": "living_room",
+                    "area": 500,
+                    "dimensions": { "length": 25, "width": 20 },
+                    "features": ["floor-to-ceiling windows", "balcony access"]
+                },
+                {
+                    "room_id": "dining_room",
+                    "area": 300,
+                    "dimensions": { "length": 15, "width": 20 },
+                    "features": []
+                },
+                {
+                    "room_id": "kitchen",
+                    "area": 400,
+                    "dimensions": { "length": 20, "width": 20 },
+                    "features": ["modular", "pantry"]
+                },
+                {
+                    "room_id": "bedroom_1",
+                    "area": 600,
+                    "dimensions": { "length": 24, "width": 25 },
+                    "features": ["floor-to-ceiling windows", "spacious balcony", "private gym access"]
+                },
+                {
+                    "room_id": "bedroom_2",
+                    "area": 600,
+                    "dimensions": { "length": 24, "width": 25 },
+                    "features": ["floor-to-ceiling windows", "spacious balcony"]
+                },
+                {
+                    "room_id": "bedroom_3",
+                    "area": 600,
+                    "dimensions": { "length": 24, "width": 25 },
+                    "features": ["floor-to-ceiling windows", "spacious balcony"]
+                },
+                {
+                    "room_id": "gym",
+                    "area": 300,
+                    "dimensions": { "length": 15, "width": 20 },
+                    "features": []
+                }
+            ],
+            "openings": [
+                {
+                    "opening_id": "main_entrance",
+                    "type": "door",
+                    "dimensions": { "height": 10, "width": 4 }
+                },
+                {
+                    "opening_id": "balcony_door_1",
+                    "type": "door",
+                    "dimensions": { "height": 7, "width": 3.5 },
+                    "associated_room": "bedroom_1"
+                },
+                {
+                    "opening_id": "balcony_door_2",
+                    "type": "door",
+                    "dimensions": { "height": 7, "width": 3.5 },
+                    "associated_room": "bedroom_2"
+                },
+                {
+                    "opening_id": "balcony_door_3",
+                    "type": "door",
+                    "dimensions": { "height": 7, "width": 3.5 },
+                    "associated_room": "bedroom_3"
+                }
+            ]
+        },
+        {
+            "level_id": "upper_floor",
+            "rooms": [
+                {
+                    "room_id": "study_room",
+                    "area": 200,
+                    "dimensions": { "length": 14, "width": 14.28 },
+                    "features": []
+                }
+            ],
+            "openings": []
+        }
+    ]
+}

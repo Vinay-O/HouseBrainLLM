@@ -1,0 +1,476 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 1500,
+      "style": "Goan Portuguese with Tropical Adaptations"
+    },
+    "plot": {
+      "shape": "narrow rectangle",
+      "location": "cul-de-sac",
+      "area": 1500,
+      "constraints": [
+        "maximum height restrictions",
+        "crowded city center"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "specialFeatures": [
+          "accessible bathroom",
+          "aging-friendly"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "count": 2,
+        "specialFeatures": []
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "specialFeatures": [
+          "heritage elements"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "specialFeatures": [
+          "modern amenities"
+        ]
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "specialFeatures": [
+          "connected to veranda"
+        ]
+      },
+      {
+        "type": "veranda",
+        "count": 1,
+        "specialFeatures": [
+          "antique swing (jhula)",
+          "carved sandstone pillars"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "specialFeatures": [
+          "accessible design"
+        ]
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 288000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "veranda_front",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 6
+              },
+              "connects_to": "living_room"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 6
+              },
+              "connects_to": "dining_room"
+            }
+          ],
+          "windows": [],
+          "specialFeatures": [
+            "carved sandstone pillars",
+            "antique swing (jhula)",
+            "covered"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 6,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 6
+              },
+              "connects_to": "veranda_front"
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 15
+              },
+              "connects_to": "corridor_main"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 10
+              },
+              "facing": "front"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "facing": "side"
+            }
+          ],
+          "specialFeatures": [
+            "high ceilings",
+            "heritage restoration details"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 6,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 12
+              },
+              "connects_to": "corridor_main"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 6
+              },
+              "connects_to": "veranda_front"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 9
+              },
+              "connects_to": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 6
+              },
+              "facing": "side"
+            }
+          ],
+          "specialFeatures": [
+            "open plan to living area"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 9,
+            "width": 10,
+            "height": 9
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 13.5
+              },
+              "connects_to": "corridor_main"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 40,
+                "y": 9
+              },
+              "facing": "rear"
+            }
+          ],
+          "specialFeatures": [
+            "modern appliances",
+            "accessible design"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 21,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 12.5,
+                "y": 21
+              },
+              "connects_to": "corridor_main"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 28.5
+              },
+              "facing": "front"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 28.5
+              },
+              "facing": "side"
+            }
+          ],
+          "specialFeatures": [
+            "aging-friendly design",
+            "attached bathroom",
+            "zero-step entry"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 21,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 26,
+                "y": 21
+              },
+              "connects_to": "corridor_main"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 20,
+                "y": 27
+              },
+              "facing": "side"
+            },
+            {
+              "position": {
+                "x": 27,
+                "y": 33
+              },
+              "facing": "rear"
+            }
+          ],
+          "specialFeatures": []
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 21,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 38,
+                "y": 21
+              },
+              "connects_to": "corridor_main"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 32,
+                "y": 27
+              },
+              "facing": "side"
+            },
+            {
+              "position": {
+                "x": 39,
+                "y": 33
+              },
+              "facing": "rear"
+            }
+          ],
+          "specialFeatures": []
+        },
+        {
+          "id": "bathroom_master",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 21,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 25
+              },
+              "connects_to": "master_bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 17.5,
+                "y": 21
+              },
+              "facing": "side"
+            }
+          ],
+          "specialFeatures": [
+            "accessible design",
+            "walk-in shower",
+            "grab bars"
+          ]
+        },
+        {
+          "id": "bathroom_common",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 33,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 32,
+                "y": 36
+              },
+              "connects_to": "corridor_main"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 36,
+                "y": 33
+              },
+              "facing": "rear"
+            }
+          ],
+          "specialFeatures": [
+            "accessible design"
+          ]
+        },
+        {
+          "id": "corridor_main",
+          "type": "corridor",
+          "bounds": {
+            "x": 5,
+            "y": 21,
+            "width": 35,
+            "height": 3
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 22.5
+              },
+              "connects_to": "living_room"
+            },
+            {
+              "position": {
+                "x": 12.5,
+                "y": 21
+              },
+              "connects_to": "master_bedroom"
+            },
+            {
+              "position": {
+                "x": 26,
+                "y": 21
+              },
+              "connects_to": "bedroom_2"
+            },
+            {
+              "position": {
+                "x": 38,
+                "y": 21
+              },
+              "connects_to": "bedroom_3"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 22.5
+              },
+              "connects_to": "dining_room"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 22.5
+              },
+              "connects_to": "kitchen"
+            },
+            {
+              "position": {
+                "x": 32,
+                "y": 22.5
+              },
+              "connects_to": "bathroom_common"
+            }
+          ],
+          "windows": [],
+          "specialFeatures": [
+            "wide clearance",
+            "non-slip flooring"
+          ]
+        }
+      ]
+    }
+  ]
+}

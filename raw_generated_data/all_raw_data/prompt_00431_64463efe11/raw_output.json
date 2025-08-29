@@ -1,0 +1,81 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": { "length": 15, "width": 20 },
+          "features": ["open_plan", "large_window"]
+        },
+        {
+          "room_type": "dining_area",
+          "dimensions": { "length": 10, "width": 10 },
+          "features": ["adjacent_to_kitchen"]
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["open_plan", "gas_stove", "sink"]
+        },
+        {
+          "room_type": "bedroom_1",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["wardrobe", "attached_bathroom"]
+        },
+        {
+          "room_type": "bedroom_2",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wardrobe", "shared_bathroom"]
+        },
+        {
+          "room_type": "bedroom_3",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["wardrobe", "attached_bathroom"]
+        },
+        {
+          "room_type": "library",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["shelving_units", "reading_nook"]
+        },
+        {
+          "room_type": "bathroom_1",
+          "dimensions": { "length": 6, "width": 5 },
+          "features": ["shower", "toilet"]
+        },
+        {
+          "room_type": "bathroom_2",
+          "dimensions": { "length": 6, "width": 5 },
+          "features": ["shower", "toilet"]
+        },
+        {
+          "room_type": "staircase",
+          "dimensions": { "length": 4, "width": 8 },
+          "features": ["access_to_upper_floor"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "main_entrance",
+          "dimensions": { "length": 3.5, "width": 7 },
+          "location": "front"
+        },
+        {
+          "type": "balcony",
+          "dimensions": { "length": 10, "width": 4 },
+          "location": "bedroom_1"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_type": "terrace",
+          "dimensions": { "length": 30, "width": 25 },
+          "features": ["outdoor_seating", "grill_area"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

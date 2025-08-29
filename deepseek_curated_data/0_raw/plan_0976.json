@@ -1,0 +1,152 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200.0,
+      "style": "Brutalist"
+    },
+    "plot": {
+      "width": 60,
+      "length": 90
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1,
+        "area": 300.0
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 400.0
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 200.0
+      },
+      {
+        "type": "bathroom",
+        "count": 1,
+        "area": 100.0
+      },
+      {
+        "type": "balcony",
+        "count": 1,
+        "area": 200.0
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 216000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "sliding",
+              "wall": "north",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "wall": "south",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "kitchen_area",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "type": "horizontal_slot",
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "standard",
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "wall": "east",
+              "position": 8
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "pocket",
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "main_balcony",
+          "type": "balcony",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 40,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "sliding",
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

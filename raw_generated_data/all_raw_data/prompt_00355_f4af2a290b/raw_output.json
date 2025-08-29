@@ -1,0 +1,44 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"room_type": "entrance_hall", "area_sqft": 100},
+        {"room_type": "drawing_room", "area_sqft": 250, "vastu_advice": "Positioned to welcome natural light and maintain balance"},
+        {"room_type": "dining_room", "area_sqft": 200},
+        {"room_type": "kitchen", "area_sqft": 150, "vastu_advice": "Located in southeast for auspicious energy flow"},
+        {"room_type": "master_bedroom", "area_sqft": 300, "floor_to_ceiling_windows": true},
+        {"room_type": "guest_room", "area_sqft": 250}
+      ],
+      "openings": [
+        {"opening_type": "door", "location": "entrance_hall_dining_room"},
+        {"opening_type": "door", "location": "dining_room_kitchen"},
+        {"opening_type": "floor_to_ceiling_windows", "room": "master_bedroom"},
+        {"opening_type": "window", "room": "drawing_room"}
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {"room_type": "bedroom", "area_sqft": 250, "floor_to_ceiling_windows": true},
+        {"room_type": "bedroom", "area_sqft": 250, "floor_to_ceiling_windows": true},
+        {"room_type": "study_room", "area_sqft": 180}
+      ],
+      "openings": [
+        {"opening_type": "staircase", "location": "ground_floor_first_floor"},
+        {"opening_type": "window", "room": "bedroom"}
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {"room_type": "bedroom", "area_sqft": 250, "floor_to_ceiling_windows": true},
+        {"room_type": "loft_storage", "area_sqft": 170}
+      ],
+      "openings": [
+        {"opening_type": "staircase", "location": "first_floor_second_floor"},
+        {"opening_type": "window", "room": "bedroom"}
+      ]
+    }
+  ]
+}

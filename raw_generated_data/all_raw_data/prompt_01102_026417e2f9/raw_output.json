@@ -1,0 +1,125 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "purpose": "common_area"
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "purpose": "common_area"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 9 },
+          "features": ["modular_cabinets", "gas_stove", "sink"],
+          "purpose": "utility"
+        },
+        {
+          "room_id": "master_bedroom",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["attached_bathroom", "wardrobe"],
+          "purpose": "private"
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "private"
+        },
+        {
+          "room_id": "home_office",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["work_desks", "book_shelves"],
+          "purpose": "utility"
+        },
+        {
+          "room_id": "home_theater",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["projector", "seating_area"],
+          "purpose": "entertainment"
+        },
+        {
+          "room_id": "bathroom_1",
+          "dimensions": { "length": 6, "width": 5 },
+          "features": ["shower", "toilet"],
+          "purpose": "utility"
+        },
+        {
+          "room_id": "bathroom_2",
+          "dimensions": { "length": 6, "width": 5 },
+          "features": ["shower", "toilet"],
+          "purpose": "utility"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 7, "width": 3 },
+          "location": "front_facade"
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "dimensions": { "length": 7, "width": 3 },
+          "location": "backyard"
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimensions": { "length": 6, "width": 4 },
+          "location": "living_room"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "private"
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 12, "width": 10 },
+          "purpose": "private"
+        },
+        {
+          "room_id": "balcony",
+          "dimensions": { "length": 15, "width": 8 },
+          "purpose": "outdoor"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "first_floor_window_1",
+          "type": "window",
+          "dimensions": { "length": 6, "width": 4 },
+          "location": "bedroom_3"
+        },
+        {
+          "opening_id": "first_floor_window_2",
+          "type": "window",
+          "dimensions": { "length": 6, "width": 4 },
+          "location": "bedroom_4"
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_id": "terrace",
+          "dimensions": { "length": 50, "width": 80 },
+          "purpose": "outdoor"
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

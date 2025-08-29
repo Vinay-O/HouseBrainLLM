@@ -1,0 +1,70 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "living_room",
+          "area": 300,
+          "dimensions": { "length": 15, "width": 20 },
+          "walls": [ "north", "south" ],
+          "floor_to_ceiling_windows": true
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "area": 200,
+          "dimensions": { "length": 10, "width": 20 },
+          "walls": [ "east" ],
+          "floor_to_ceiling_windows": false
+        },
+        {
+          "room_id": "bedroom",
+          "type": "bedroom",
+          "area": 300,
+          "dimensions": { "length": 15, "width": 20 },
+          "walls": [ "west" ],
+          "floor_to_ceiling_windows": true
+        },
+        {
+          "room_id": "bathroom",
+          "type": "bathroom",
+          "area": 100,
+          "dimensions": { "length": 10, "width": 10 },
+          "walls": [ "north", "west" ],
+          "floor_to_ceiling_windows": false
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "front_door",
+          "type": "door",
+          "location": { "room_id": null, "wall": "south" },
+          "dimensions": { "width": 3.6, "height": 2.4 }
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "location": { "room_id": null, "wall": "north" },
+          "dimensions": { "width": 3.6, "height": 2.4 }
+        },
+        {
+          "opening_id": "garden_access",
+          "type": "gate",
+          "location": { "room_id": null, "wall": "east" },
+          "dimensions": { "width": 10, "height": 2.5 }
+        }
+      ],
+      "garden": {
+        "area": 700,
+        "type": "private_outdoor_space",
+        "features": [ "large_garden", "outdoor_seating" ]
+      },
+      "notes": [
+        "Designed with Vastu principles in mind: main entrance on the south, kitchen on the east, and bedroom on the west.",
+        "Floor-to-ceiling windows in living room and bedroom for natural light and garden views."
+      ]
+    }
+  ]
+}

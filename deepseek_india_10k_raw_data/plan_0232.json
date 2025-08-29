@@ -1,0 +1,459 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 8,
+      "floors": 1,
+      "totalArea": 3500,
+      "style": "Traditional Assamese with modern sustainable elements"
+    },
+    "plot": {
+      "shape": "rectangular",
+      "size": 2,
+      "orientation": "east-west for breeze capture",
+      "location": "Bangalore IT corridor",
+      "terrain": "flat agricultural land"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4,
+        "purpose": "Family bedrooms"
+      },
+      {
+        "type": "dormitory",
+        "count": 1,
+        "purpose": "Seasonal worker accommodation"
+      },
+      {
+        "type": "workshop",
+        "count": 1,
+        "purpose": "Handloom weaving"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "purpose": "Main living area"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "purpose": "Family kitchen"
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "purpose": "Family dining"
+      },
+      {
+        "type": "bathroom",
+        "count": 3,
+        "purpose": "Shared facilities"
+      },
+      {
+        "type": "storage",
+        "count": 2,
+        "purpose": "Agricultural and weaving storage"
+      },
+      {
+        "type": "veranda",
+        "count": 1,
+        "purpose": "Circulation and sitting area"
+      },
+      {
+        "type": "otla",
+        "count": 1,
+        "purpose": "Traditional sit-out with swing"
+      }
+    ]
+  },
+  "total_area": 3500.0,
+  "construction_cost": 5250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Matka water cooling system",
+            "Surahi water storage",
+            "Traditional plants",
+            "Water percolation pit"
+          ]
+        },
+        {
+          "id": "otla_sitout",
+          "type": "otla",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            },
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7,
+              "size": 4
+            }
+          ],
+          "features": [
+            "Traditional swing (jhula)",
+            "Lime plaster walls with natural pigments",
+            "Deep overhangs"
+          ]
+        },
+        {
+          "id": "main_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7,
+              "size": 4
+            },
+            {
+              "wall": "north",
+              "position": 7,
+              "size": 4
+            }
+          ],
+          "features": [
+            "Assamese bamboo construction",
+            "Natural lime plaster",
+            "Cross ventilation"
+          ]
+        },
+        {
+          "id": "family_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 35,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            },
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 3
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "size": 3
+            }
+          ],
+          "features": [
+            "Traditional cooking area",
+            "Matka cooling",
+            "Solar chimney"
+          ]
+        },
+        {
+          "id": "dining_area",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 35,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            },
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": 3
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "size": 3
+            }
+          ],
+          "features": [
+            "Family dining space",
+            "Connected to courtyard"
+          ]
+        },
+        {
+          "id": "weaving_workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": 5
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": 5
+            }
+          ],
+          "features": [
+            "North-facing skylights",
+            "Storage shelves",
+            "Natural lighting",
+            "Ventilation windows"
+          ]
+        },
+        {
+          "id": "family_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6,
+              "size": 3
+            },
+            {
+              "wall": "west",
+              "position": 7,
+              "size": 3
+            }
+          ],
+          "features": [
+            "Bamboo construction",
+            "Natural ventilation"
+          ]
+        },
+        {
+          "id": "family_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6,
+              "size": 3
+            }
+          ],
+          "features": [
+            "Bamboo construction",
+            "Natural ventilation"
+          ]
+        },
+        {
+          "id": "worker_dormitory",
+          "type": "dormitory",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 16,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 8
+            },
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "size": 4
+            },
+            {
+              "wall": "east",
+              "position": 8,
+              "size": 4
+            }
+          ],
+          "features": [
+            "Shared sleeping area",
+            "Storage space",
+            "Separate access"
+          ]
+        },
+        {
+          "id": "bathroom_block",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 2
+            }
+          ],
+          "features": [
+            "Water-efficient fixtures",
+            "Greywater system",
+            "Ventilation"
+          ]
+        },
+        {
+          "id": "storage_room",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Agricultural storage",
+            "Secure access"
+          ]
+        },
+        {
+          "id": "circulation_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "Deep overhangs",
+            "West breeze capture",
+            "Circulation space"
+          ]
+        }
+      ]
+    }
+  ]
+}

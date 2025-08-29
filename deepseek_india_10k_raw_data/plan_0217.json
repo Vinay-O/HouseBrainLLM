@@ -1,0 +1,687 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 4500,
+      "style": "Ultra-Premium Heritage Restoration Modern Fusion"
+    },
+    "plot": {
+      "location": "Waterfront backwater property in Calicut trading port",
+      "plotType": "Corner plot with dual street frontage",
+      "considerations": [
+        "Universal accessibility",
+        "Mountain landslide",
+        "Heavy snow load",
+        "Passive solar heating",
+        "Rainwater harvesting"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4,
+        "special": [
+          "Primary bedroom with universal accessibility features"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "special": [
+          "All with universal accessibility design"
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "special": [
+          "Adapted for wheelchair access"
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "special": [
+          "Opening to central courtyard"
+        ]
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "special": [
+          "Adjacent to kitchen and courtyard"
+        ]
+      },
+      {
+        "type": "storytelling_area",
+        "count": 1,
+        "special": [
+          "Amphitheater-style seating"
+        ]
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "special": [
+          "Traditional prayer space"
+        ]
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "special": [
+          "Quiet workspace"
+        ]
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "special": [
+          "Laundry and storage"
+        ]
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 2250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 25,
+              "to": "living_room"
+            },
+            {
+              "x": 25,
+              "y": 15,
+              "to": "dining_room"
+            },
+            {
+              "x": 25,
+              "y": 35,
+              "to": "storytelling_area"
+            },
+            {
+              "x": 15,
+              "y": 35,
+              "to": "passage"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 25,
+              "to": "courtyard"
+            },
+            {
+              "x": 0,
+              "y": 25,
+              "to": "main_entry"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 20,
+              "width": 5
+            },
+            {
+              "x": 0,
+              "y": 30,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 25,
+              "y": 15,
+              "to": "courtyard"
+            },
+            {
+              "x": 15,
+              "y": 7,
+              "to": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "x": 35,
+              "y": 5,
+              "width": 5
+            },
+            {
+              "x": 35,
+              "y": 10,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 7,
+              "to": "dining_room"
+            },
+            {
+              "x": 7,
+              "y": 0,
+              "to": "utility"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 5,
+              "width": 5
+            },
+            {
+              "x": 0,
+              "y": 10,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": -10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 7,
+              "y": 0,
+              "to": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": -5,
+              "width": 3
+            }
+          ]
+        },
+        {
+          "id": "bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 35,
+              "y": 7,
+              "to": "passage"
+            }
+          ],
+          "windows": [
+            {
+              "x": 50,
+              "y": 5,
+              "width": 5
+            },
+            {
+              "x": 50,
+              "y": 10,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": -10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 35,
+              "y": -5,
+              "to": "passage"
+            }
+          ],
+          "windows": [
+            {
+              "x": 45,
+              "y": -5,
+              "width": 3
+            }
+          ]
+        },
+        {
+          "id": "passage",
+          "type": "passage",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 35,
+              "y": 25,
+              "to": "courtyard"
+            },
+            {
+              "x": 35,
+              "y": 7,
+              "to": "bedroom1"
+            },
+            {
+              "x": 35,
+              "y": -5,
+              "to": "bathroom1"
+            },
+            {
+              "x": 45,
+              "y": 25,
+              "to": "staircase"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase",
+          "type": "staircase",
+          "bounds": {
+            "x": 45,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 45,
+              "y": 25,
+              "to": "passage"
+            },
+            {
+              "x": 45,
+              "y": 15,
+              "to": "exterior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storytelling_area",
+          "type": "storytelling_area",
+          "bounds": {
+            "x": 35,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 35,
+              "y": 42,
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "x": 50,
+              "y": 40,
+              "width": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "courtyard_opening",
+          "type": "open_area",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 25,
+              "to": "passage_upper"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 20,
+              "width": 5
+            },
+            {
+              "x": 0,
+              "y": 30,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "primary_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 40,
+              "to": "passage_upper"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 40,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 35,
+              "y": 7,
+              "to": "passage_upper"
+            }
+          ],
+          "windows": [
+            {
+              "x": 50,
+              "y": 5,
+              "width": 5
+            },
+            {
+              "x": 50,
+              "y": 10,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 35,
+              "y": 42,
+              "to": "passage_upper"
+            }
+          ],
+          "windows": [
+            {
+              "x": 50,
+              "y": 40,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": -10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 35,
+              "y": -5,
+              "to": "passage_upper"
+            }
+          ],
+          "windows": [
+            {
+              "x": 45,
+              "y": -5,
+              "width": 3
+            }
+          ]
+        },
+        {
+          "id": "bathroom3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 50,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 35,
+              "y": 55,
+              "to": "passage_upper"
+            }
+          ],
+          "windows": [
+            {
+              "x": 45,
+              "y": 55,
+              "width": 3
+            }
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 7,
+              "to": "passage_upper"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 5,
+              "width": 5
+            },
+            {
+              "x": 0,
+              "y": 10,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 0,
+            "y": 45,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 52,
+              "to": "passage_upper"
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 50,
+              "width": 5
+            }
+          ]
+        },
+        {
+          "id": "passage_upper",
+          "type": "passage",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 20,
+            "height": 50
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 7,
+              "to": "study"
+            },
+            {
+              "x": 15,
+              "y": 25,
+              "to": "primary_bedroom"
+            },
+            {
+              "x": 15,
+              "y": 40,
+              "to": "primary_bathroom"
+            },
+            {
+              "x": 15,
+              "y": 52,
+              "to": "puja_room"
+            },
+            {
+              "x": 35,
+              "y": 7,
+              "to": "bedroom2"
+            },
+            {
+              "x": 35,
+              "y": -5,
+              "to": "bathroom2"
+            },
+            {
+              "x": 35,
+              "y": 42,
+              "to": "bedroom3"
+            },
+            {
+              "x": 35,
+              "y": 55,
+              "to": "bathroom3"
+            },
+            {
+              "x": 25,
+              "y": 0,
+              "to": "staircase_upper"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "staircase_upper",
+          "type": "staircase",
+          "bounds": {
+            "x": 25,
+            "y": -10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 25,
+              "y": 0,
+              "to": "passage_upper"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

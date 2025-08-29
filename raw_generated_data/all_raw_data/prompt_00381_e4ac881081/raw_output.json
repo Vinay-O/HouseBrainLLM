@@ -1,0 +1,71 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "dimensions": {"length": 12, "width": 10},
+          "adjacent_rooms": ["dining_area", "servants_quarters"],
+          "description": "Spacious area with Bohemian decor, natural lighting and open layout."
+        },
+        {
+          "room_type": "dining_area",
+          "dimensions": {"length": 8, "width": 6},
+          "adjacent_rooms": ["living_room", "kitchen"],
+          "description": "Cozy dining space that flows into the living room."
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": {"length": 10, "width": 8},
+          "adjacent_rooms": ["dining_area"],
+          "description": "Modern kitchen with ample counter space and storage, designed following Vastu principles to ensure a harmonious energy flow."
+        },
+        {
+          "room_type": "bedroom_1",
+          "dimensions": {"length": 12, "width": 10},
+          "adjacent_rooms": ["bathroom"],
+          "description": "Master bedroom with ample storage and natural ventilation, placed in the north-east direction to align with Vastu."
+        },
+        {
+          "room_type": "bedroom_2",
+          "dimensions": {"length": 10, "width": 8},
+          "adjacent_rooms": [],
+          "description": "Secondary bedroom designed for additional space and privacy, incorporating Bohemian elements."
+        },
+        {
+          "room_type": "bathroom",
+          "dimensions": {"length": 6, "width": 5},
+          "adjacent_rooms": ["bedroom_1"],
+          "description": "Private bathroom attached to the master bedroom."
+        },
+        {
+          "room_type": "servants_quarters",
+          "dimensions": {"length": 10, "width": 8},
+          "adjacent_rooms": [],
+          "description": "Dedicated living space for domestic staff with basic amenities."
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "location": "front_entry",
+          "direction": "north",
+          "description": "Main entrance aligned in the north following Vastu norms to welcome positive energy."
+        },
+        {
+          "opening_type": "window",
+          "location": "living_room_window",
+          "dimensions": {"height": 4, "width": 5},
+          "description": "Large windows for natural light and ventilation."
+        },
+        {
+          "opening_type": "door",
+          "location": "garage_entry",
+          "direction": "west",
+          "description": "Access door to the two-car garage located on the west side of the villa."
+        }
+      ]
+    }
+  ]
+}

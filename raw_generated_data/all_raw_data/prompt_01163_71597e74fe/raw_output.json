@@ -1,0 +1,82 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "Living Room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["open_plan", "balcony_access"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "Kitchen",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["open_plan", "modular"]
+        },
+        {
+          "room_id": "dining_room",
+          "type": "Dining Room",
+          "dimensions": { "length": 8, "width": 8 }
+        },
+        {
+          "room_id": "master_bedroom",
+          "type": "Bedroom (Master)",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["balcony", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "Bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["balcony"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "Bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["balcony"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "Entrance",
+          "dimensions": { "width": 4 }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_4",
+          "type": "Bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["balcony"]
+        },
+        {
+          "room_id": "bedroom_5",
+          "type": "Bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["balcony"]
+        }
+      ]
+    }
+  ],
+  "constraints": [
+    {
+      "type": "budget",
+      "description": "Tight budget, prioritizing cost-effective materials and space optimization"
+    },
+    {
+      "type": "building_norm",
+      "description": "Adhering to local building norms for structural integrity and safety"
+    },
+    {
+      "type": "vastu",
+      "description": "Vastu-compliant layout ensuring harmony with nature"
+    }
+  ]
+}

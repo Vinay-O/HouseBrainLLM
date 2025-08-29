@@ -1,0 +1,487 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 2,
+      "totalArea": 4500,
+      "style": "Contemporary Glass Box"
+    },
+    "plot": {
+      "slope": "flat",
+      "size": "large",
+      "orientation": "east-west linear",
+      "climate": "Mediterranean dry summers",
+      "locationContext": "urban rooftop conversion"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 6,
+        "area": 720
+      },
+      {
+        "type": "bathroom",
+        "count": 5,
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 600
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "telecommuting_pod",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "climate_controlled_storage",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "bioswale",
+        "count": 4,
+        "area": 280
+      },
+      {
+        "type": "terrace",
+        "count": 2,
+        "area": 1150
+      }
+    ]
+  },
+  "total_area": 4500.0,
+  "construction_cost": 2250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_entrance",
+          "type": "entryway",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 22.5,
+                "y": 0
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "grand_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 25,
+            "height": 24
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12.5,
+                "y": 8
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 0,
+                "y": 16
+              },
+              "orientation": "south"
+            },
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 25,
+                "y": 16
+              },
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "formal_dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 8,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 25,
+                "y": 16
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 40,
+                "y": 16
+              },
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "gourmet_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 24,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 32.5,
+                "y": 24
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 40,
+                "y": 30
+              },
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "terrace_west",
+          "type": "terrace",
+          "bounds": {
+            "x": 0,
+            "y": 32,
+            "width": 40,
+            "height": 18
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 12.5,
+                "y": 32
+              }
+            },
+            {
+              "type": "exterior",
+              "position": {
+                "x": 32.5,
+                "y": 32
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bioswale_west",
+          "type": "bioswale",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "bioswale_east",
+          "type": "bioswale",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "primary_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 20
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 0,
+                "y": 10
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 6
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "position": {
+                "x": 25,
+                "y": 0
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 37.5,
+                "y": 16
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 30,
+                "y": 8
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 16,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 37.5,
+                "y": 16
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 30,
+                "y": 24
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 17
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "position": {
+                "x": 25,
+                "y": 12
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "tele_pod",
+          "type": "telecommuting_pod",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12,
+                "y": 26
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 0,
+                "y": 26
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "collection_storage",
+          "type": "climate_controlled_storage",
+          "bounds": {
+            "x": 12,
+            "y": 20,
+            "width": 18,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 21,
+                "y": 20
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "terrace_east_upper",
+          "type": "terrace",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 15,
+            "height": 32
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 45,
+                "y": 16
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bioswale_upper_west",
+          "type": "bioswale",
+          "bounds": {
+            "x": 0,
+            "y": 32,
+            "width": 20,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "bioswale_upper_east",
+          "type": "bioswale",
+          "bounds": {
+            "x": 40,
+            "y": 32,
+            "width": 20,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

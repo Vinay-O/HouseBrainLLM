@@ -1,0 +1,53 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "studio_living_area",
+          "shape": "rectangle",
+          "dimensions": { "length": 40, "width": 30 },
+          "features": ["floor-to-ceiling windows", "natural light", "ventilation"]
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "square",
+          "dimensions": { "length": 10, "width": 10 },
+          "features": ["modular kitchen", "ventilation hood"]
+        },
+        {
+          "room_id": "bathroom",
+          "shape": "rectangle",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["shower", "toilet", "sink"]
+        },
+        {
+          "room_id": "servant_quarters",
+          "shape": "rectangle",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["bed", "wardrobe", "ventilation"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 8, "width": 3 },
+          "location": "front_facade"
+        },
+        {
+          "opening_id": "terrace_access",
+          "type": "staircase",
+          "dimensions": { "height": 10 },
+          "location": "back_of_studio_living_area"
+        }
+      ],
+      "outdoor_spaces": [
+        {
+          "space_id": "rooftop_terrace",
+          "shape": "rectangle",
+          "dimensions": { "length": 40, "width": 60 },
+          "features": ["seating_area", "plants"]
+        }
+      ]
+    }
+  ]}

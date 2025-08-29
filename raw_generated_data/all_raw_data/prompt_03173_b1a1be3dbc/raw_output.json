@@ -1,0 +1,112 @@
+{"levels": [
+  {
+    "level_id": "ground_floor",
+    "rooms": [
+      {
+        "room_name": "entrance_hall",
+        "dimensions": {"width": 10, "length": 8},
+        "position": {"direction": "north", "proximity": "front"},
+        "features": ["Vastu compliant", "North-facing entrance"]
+      },
+      {
+        "room_name": "living_room",
+        "dimensions": {"width": 20, "length": 15},
+        "position": {"adjacent_to": "entrance_hall", "orientation": "east-west"},
+        "features": ["open plan", "large windows", "natural light"]
+      },
+      {
+        "room_name": "kitchen",
+        "dimensions": {"width": 12, "length": 10},
+        "position": {"adjacent_to": "living_room", "orientation": "south-east"},
+        "features": ["open plan with living area", "modern appliances", "efficient layout"]
+      },
+      {
+        "room_name": "bedroom_1",
+        "dimensions": {"width": 14, "length": 12},
+        "position": {"location": "back", "orientation": "north"},
+        "features": ["spacious", "private balcony"]
+      },
+      {
+        "room_name": "bedroom_2",
+        "dimensions": {"width": 12, "length": 10},
+        "position": {"location": "side", "orientation": "east"},
+        "features": ["cozy", "en-suite bathroom option"]
+      },
+      {
+        "room_name": "home_theater",
+        "dimensions": {"width": 15, "length": 12},
+        "position": {"location": "back", "orientation": "west"},
+        "features": ["soundproof", "state-of-the-art audio-visual systems", "ambient lighting"]
+      },
+      {
+        "room_name": "bathroom",
+        "dimensions": {"width": 8, "length": 6},
+        "position": {"location": "adjacent to bedroom_1 and bedroom_2"},
+        "features": ["well ventilated", "ensures privacy"]
+      }
+    ],
+    "openings": [
+      {
+        "opening_name": "main_door",
+        "dimensions": {"width": 4, "height": 7},
+        "position": {"direction": "north", "location": "entrance_hall"},
+        "features": ["double door", "Vastu compliant", "security features"]
+      },
+      {
+        "opening_name": "living_area_windows",
+        "dimensions": {"width": 5, "height": 6},
+        "position": {"directions": ["east", "west"], "location": "living_room"},
+        "features": ["large glass panes", "natural light enhancement"]
+      },
+      {
+        "opening_name": "kitchen_opening",
+        "dimensions": {"width": 3, "height": 6},
+        "position": {"direction": "south-east", "location": "kitchen"},
+        "features": ["open plan connection with living area"]
+      }
+    ]
+  },
+  {
+    "level_id": "first_floor",
+    "rooms": [
+      {
+        "room_name": "bedroom_master",
+        "dimensions": {"width": 16, "length": 14},
+        "position": {"location": "back", "orientation": "north-west"},
+        "features": ["spacious", "en-suite bathroom", "walk-in closet"]
+      },
+      {
+        "room_name": "bedroom_child_1",
+        "dimensions": {"width": 12, "length": 10},
+        "position": {"location": "side", "orientation": "east"},
+        "features": ["cozy", "study nook option"]
+      },
+      {
+        "room_name": "bedroom_child_2",
+        "dimensions": {"width": 12, "length": 10},
+        "position": {"location": "side", "orientation": "west"},
+        "features": ["cozy", "en-suite bathroom option"]
+      }
+    ],
+    "openings": [
+      {
+        "opening_name": "staircase",
+        "dimensions": {"width": 4, "height": 8},
+        "position": {"direction": "center", "location": "entrance_hall"},
+        "features": ["well lit", "emergency exit"]
+      }
+    ]
+  },
+  {
+    "level_id": "roof_deck",
+    "rooms": [
+      {
+        "room_name": "recreation_area",
+        "dimensions": {"width": 40, "length": 60},
+        "position": {"location": "entire roof", "orientation": "north-facing"},
+        "features": ["open-air, expansive view", "ideal for gatherings", "complies with local building norms"]
+      }
+    ],
+    "openings": []
+  }
+]}

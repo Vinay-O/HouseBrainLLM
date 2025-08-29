@@ -1,0 +1,218 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 800,
+      "style": "Andhra Traditional with Modern Innovation"
+    },
+    "plot": {
+      "area": 800,
+      "orientation": "west",
+      "features": [
+        "evening light",
+        "monsoon water management",
+        "setback requirements"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "puja_room",
+        "count": 1
+      },
+      {
+        "type": "yoga_pavilion",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 1280000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            "main_entry",
+            "to_kitchen",
+            "to_corridor"
+          ],
+          "windows": [
+            "west_wall_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_living_room",
+            "to_utility"
+          ],
+          "windows": [
+            "north_wall_window"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "to_corridor",
+            "to_bathroom"
+          ],
+          "windows": [
+            "east_wall_window"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 16,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "west_wall_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 16,
+            "height": 10
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 30,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 24,
+            "y": 30,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "to_master_bedroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 32,
+            "y": 16,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "to_corridor"
+          ],
+          "windows": [
+            "east_wall_window"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 32,
+            "y": 26,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            "to_kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "yoga_pavilion",
+          "type": "yoga_pavilion",
+          "bounds": {
+            "x": 20,
+            "y": 38,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            "to_garden"
+          ],
+          "windows": [
+            "north_wall_window",
+            "south_wall_window",
+            "east_wall_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

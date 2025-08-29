@@ -1,0 +1,183 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 800,
+      "style": "Rajasthani Haveli"
+    },
+    "plot": {
+      "orientation": "north",
+      "area": 800,
+      "region": "arid desert"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 180
+      },
+      {
+        "type": "kitchen",
+        "area": 100
+      },
+      {
+        "type": "master_bedroom",
+        "area": 140
+      },
+      {
+        "type": "children_bedroom",
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "type": "tulsi_platform",
+        "area": 20
+      },
+      {
+        "type": "guest_house",
+        "area": 180
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "north_entrance",
+            "to_kitchen",
+            "to_courtyard"
+          ],
+          "windows": [
+            "north_window",
+            "east_jali_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_living_room",
+            "to_courtyard"
+          ],
+          "windows": [
+            "south_jali_window"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 14,
+            "height": 10
+          },
+          "doors": [
+            "to_courtyard"
+          ],
+          "windows": [
+            "west_jali_window"
+          ]
+        },
+        {
+          "id": "children_bedroom",
+          "type": "children_bedroom",
+          "bounds": {
+            "x": 14,
+            "y": 12,
+            "width": 11,
+            "height": 10
+          },
+          "doors": [
+            "to_courtyard"
+          ],
+          "windows": [
+            "east_jali_window"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 5,
+            "height": 12
+          },
+          "doors": [
+            "to_courtyard"
+          ],
+          "windows": []
+        },
+        {
+          "id": "tulsi_platform",
+          "type": "tulsi_platform",
+          "bounds": {
+            "x": 10,
+            "y": 22,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 22,
+            "width": 15,
+            "height": 18
+          },
+          "doors": [
+            "from_living_room",
+            "from_kitchen",
+            "from_master_bedroom",
+            "from_children_bedroom",
+            "from_bathroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_house",
+          "type": "guest_house",
+          "bounds": {
+            "x": 25,
+            "y": 12,
+            "width": 10,
+            "height": 18
+          },
+          "doors": [
+            "private_entrance"
+          ],
+          "windows": [
+            "east_jali_window",
+            "south_jali_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

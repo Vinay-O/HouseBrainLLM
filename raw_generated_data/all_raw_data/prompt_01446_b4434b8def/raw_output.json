@@ -1,0 +1,91 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "Living Room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["floor-to-ceiling windows", "wooden flooring", "traditional Kerala furniture"],
+          "connected_to": ["dining_room", "entrance"]
+        },
+        {
+          "room_id": "dining_room",
+          "type": "Dining Room",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["traditional Kerala dining table", "ceramic tiling", "overhead fan"],
+          "connected_to": ["kitchen", "living_room"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "Kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["modular kitchen with granite countertop", "stainless steel sink", "gas stove and oven"],
+          "connected_to": ["dining_room"]
+        },
+        {
+          "room_id": "master_bedroom",
+          "type": "Master Bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["wooden flooring", "wardrobe", "attached bathroom"],
+          "connected_to": ["balcony"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "Bedroom 2",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wooden flooring", "wardrobe", "attached bathroom"],
+          "connected_to": []
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "Bedroom 3",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wooden flooring", "wardrobe", "attached bathroom"],
+          "connected_to": []
+        },
+        {
+          "room_id": "home_theater",
+          "type": "Home Theater",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["acoustic soundproofing", "projector and screen", "recliners"],
+          "connected_to": []
+        },
+        {
+          "room_id": "home_theater_bathroom",
+          "type": "Bathroom",
+          "dimensions": { "length": 6, "width": 5 },
+          "features": ["shower", "toilet", "sink"],
+          "connected_to": ["home_theater"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "entrance",
+          "type": "Entrance",
+          "dimensions": { "length": 6, "width": 3 },
+          "features": ["wooden door", "traditional Kerala threshold"]
+        },
+        {
+          "opening_id": "balcony",
+          "type": "Balcony",
+          "dimensions": { "length": 8, "width": 4 },
+          "features": ["wrought iron railing", "potted plants"]
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [
+        {
+          "room_id": "terrace",
+          "type": "Terrace",
+          "dimensions": { "length": 30, "width": 40 },
+          "features": [" ceramic tiles", "outdoor furniture", "garden space"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

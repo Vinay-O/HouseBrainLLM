@@ -1,0 +1,52 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {"room_id": "entrance_foyer", "shape": "rectangle", "dimensions": {"length": 10, "width": 8}, "purpose": "foyer"},
+        {"room_id": "living_room", "shape": "square", "dimensions": {"length": 20, "width": 20}, "purpose": "living"},
+        {"room_id": "dining_area", "shape": "rectangle", "dimensions": {"length": 15, "width": 12}, "purpose": "dining"},
+        {"room_id": "kitchen", "shape": "L-shaped", "dimensions": {"length": 18, "width": 10}, "purpose": "cooking"},
+        {"room_id": "bedroom_1", "shape": "rectangle", "dimensions": {"length": 20, "width": 15}, "purpose": "sleeping"},
+        {"room_id": "bathroom_1", "shape": "square", "dimensions": {"length": 8, "width": 8}, "purpose": "bathroom"},
+        {"room_id": "home_theater", "shape": "rectangle", "dimensions": {"length": 20, "width": 16}, "purpose": "entertainment"},
+        {"room_id": "library", "shape": "rectangle", "dimensions": {"length": 18, "width": 14}, "purpose": "study"},
+        {"room_id": "central_courtyard", "shape": "square", "dimensions": {"length": 20, "width": 20}, "purpose": "courtyard"},
+        {"room_id": "staircase", "shape": "rectangle", "dimensions": {"length": 8, "width": 5}, "purpose": "access"}
+      ],
+      "openings": [
+        {"opening_id": "main_entrance", "type": "door", "location": "entrance_foyer"},
+        {"opening_id": "living_to_dining", "type": "archway", "location": "living_room,dining_area"},
+        {"opening_id": "kitchen_access", "type": "door", "location": "dining_area,kitchen"},
+        {"opening_id": "bedroom_entrance", "type": "door", "location": "living_room,bedroom_1"},
+        {"opening_id": "theater_access", "type": "door", "location": "living_room,home_theater"},
+        {"opening_id": "library_access", "type": "door", "location": "living_room,library"},
+        {"opening_id": "courtyard_access", "type": "archway", "location": "central_courtyard"}
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {"room_id": "bedroom_2", "shape": "rectangle", "dimensions": {"length": 20, "width": 15}, "purpose": "sleeping"},
+        {"room_id": "bathroom_2", "shape": "square", "dimensions": {"length": 8, "width": 8}, "purpose": "bathroom"},
+        {"room_id": "study_room", "shape": "rectangle", "dimensions": {"length": 15, "width": 12}, "purpose": "work"},
+        {"room_id": "balcony", "shape": "rectangle", "dimensions": {"length": 10, "width": 8}, "purpose": "outdoor"}
+      ],
+      "openings": [
+        {"opening_id": "bedroom_2_access", "type": "door", "location": "staircase,bedroom_2"},
+        {"opening_id": "study_access", "type": "door", "location": "staircase,study_room"},
+        {"opening_id": "balcony_access", "type": "door", "location": "bedroom_2,balcony"}
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {"room_id": "guest_room", "shape": "rectangle", "dimensions": {"length": 18, "width": 14}, "purpose": "sleeping"},
+        {"room_id": "bathroom_3", "shape": "square", "dimensions": {"length": 8, "width": 8}, "purpose": "bathroom"},
+        {"room_id": "terrace", "shape": "rectangle", "dimensions": {"length": 25, "width": 15}, "purpose": "outdoor"}
+      ],
+      "openings": [
+        {"opening_id": "guest_room_access", "type": "door", "location": "staircase,guest_room"},
+        {"opening_id": "terrace_access", "type": "door", "location": "guest_room,terrace"}
+      ]
+    }
+  ]}

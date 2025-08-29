@@ -1,0 +1,70 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "direction": "north-west",
+          "features": ["wardrobe", "attached bathroom"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 8, "width": 7 },
+          "direction": "south-east",
+          "features": ["modular kitchen", "dining area"]
+        },
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 14, "width": 10 },
+          "direction": "north-east",
+          "features": ["sofa set", "TV unit"]
+        },
+        {
+          "room_id": "gym",
+          "dimensions": { "length": 10, "width": 8 },
+          "direction": "south-west",
+          "features": ["equipment area", "mirrored wall"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "direction": "north",
+          "dimensions": { "length": 3.5, "width": 1.2 }
+        },
+        {
+          "opening_id": "garden_access",
+          "type": "door",
+          "direction": "east",
+          "dimensions": { "length": 2.5, "width": 0.9 }
+        },
+        {
+          "opening_id": "terrace_access",
+          "type": "staircase",
+          "direction": "north-east",
+          "details": "Spiral staircase leading to rooftop terrace"
+        }
+      ],
+      "outdoor_spaces": [
+        {
+          "space_id": "garden",
+          "dimensions": { "length": 25, "width": 15 },
+          "features": ["lawn", "flower beds"]
+        },
+        {
+          "space_id": "terrace",
+          "type": "rooftop",
+          "features": ["seating area", "small garden"]
+        }
+      ]
+    }
+  ],
+  "vastu_compliance": {
+    "bedroom_direction": "north-west (recommended for health and prosperity)",
+    "kitchen_direction": "south-east (recommended for kitchen to avoid negative energy)",
+    "living_room_direction": "north-east (recommended for living room to promote positivity)"
+  }
+}

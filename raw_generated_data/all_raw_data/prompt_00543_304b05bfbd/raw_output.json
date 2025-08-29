@@ -1,0 +1,125 @@
+{ "levels": [
+
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["sofa", "TV unit"],
+          "adjacent_to": ["dining_room", "central_courtyard"]
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["dining table", "cabinet"],
+          "adjacent_to": ["kitchen", "living_room"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["modular_kitchen", "gas_stove", "fridge"],
+          "adjacent_to": ["dining_room", "utensil_room"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["double_bed", "wardrobe", "attached_bathroom"],
+          "adjacent_to": ["central_courtyard"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["double_bed", "wardrobe", "attached_bathroom"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "garage",
+          "dimensions": { "length": 18, "width": 10 },
+          "features": ["two_car_parking", "storage"],
+          "adjacent_to": ["utility_room"]
+        },
+        {
+          "room_id": "utility_room",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["washbasin", "shelves"],
+          "adjacent_to": ["garage", "kitchen"]
+        },
+        {
+          "room_id": "staircase",
+          "dimensions": { "length": 4, "width": 8 },
+          "features": ["wooden_handrail"],
+          "adjacent_to": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 7 },
+          "location": "front"
+        },
+        {
+          "opening_id": "central_courtyard_entry",
+          "type": "archway",
+          "dimensions": { "length": 5, "width": 4 },
+          "location": "center"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["double_bed", "wardrobe", "attached_bathroom"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["twin_beds", "wardrobe", "attached_bathroom"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["desk", "bookshelf"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "balcony",
+          "dimensions": { "length": 10, "width": 4 },
+          "features": ["outdoor_furniture"],
+          "adjacent_to": ["study_room"]
+        }
+      ],
+      "openings": []
+    },
+    {
+      "level_id": "lower_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_5",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["double_bed", "wardrobe", "attached_bathroom"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "bedroom_6",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["king_size_bed", "wardrobe", "attached_bathroom"],
+          "adjacent_to": []
+        },
+        {
+          "room_id": "meditation_room",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["mat", "decorative_lights"],
+          "adjacent_to": ["central_courtyard"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

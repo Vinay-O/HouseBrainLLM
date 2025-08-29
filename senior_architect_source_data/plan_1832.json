@@ -1,0 +1,295 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 3200,
+      "style": "Contemporary Glass Box"
+    },
+    "plot": {
+      "climate": "humid_subtropical",
+      "orientation": "south",
+      "topography": "sunken_courtyard",
+      "privacy_requirements": "high"
+    },
+    "roomBreakdown": [
+      {
+        "type": "pottery_studio",
+        "requirements": "kilns, ventilation, north light"
+      },
+      {
+        "type": "primary_suite",
+        "requirements": "privacy, courtyard access"
+      },
+      {
+        "type": "guest_bedroom",
+        "requirements": "privacy"
+      },
+      {
+        "type": "great_room",
+        "requirements": "open plan, south glass wall"
+      },
+      {
+        "type": "kitchen",
+        "requirements": "open to great room"
+      },
+      {
+        "type": "dining",
+        "requirements": "open to courtyard"
+      },
+      {
+        "type": "study",
+        "requirements": "quiet space"
+      },
+      {
+        "type": "utility",
+        "requirements": "laundry, storage"
+      },
+      {
+        "type": "garage",
+        "requirements": "2-car"
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1280000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "great_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 24
+          },
+          "doors": [
+            "courtyard_slider"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 14,
+            "width": 16,
+            "height": 10
+          },
+          "doors": [
+            "courtyard_slider"
+          ],
+          "windows": [
+            "south_wall_window"
+          ]
+        },
+        {
+          "id": "primary_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 24,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            "courtyard_slider",
+            "bathroom_door"
+          ],
+          "windows": [
+            "east_wall_window"
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 24,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "primary_suite_door"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        },
+        {
+          "id": "primary_closet",
+          "type": "closet",
+          "bounds": {
+            "x": 20,
+            "y": 36,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            "primary_suite_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 46,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "north_wall_window"
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 46,
+            "y": 14,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 56,
+            "y": 14,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": [
+            "north_wall_window"
+          ]
+        },
+        {
+          "id": "pottery_studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 42,
+            "width": 28,
+            "height": 20
+          },
+          "doors": [
+            "exterior_door",
+            "kiln_room_door"
+          ],
+          "windows": [
+            "north_clerestory"
+          ]
+        },
+        {
+          "id": "kiln_room",
+          "type": "utility",
+          "bounds": {
+            "x": 28,
+            "y": 42,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "studio_door"
+          ],
+          "windows": [
+            "ventilation_duct"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 28,
+            "y": 54,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 40,
+            "y": 24,
+            "width": 24,
+            "height": 20
+          },
+          "doors": [
+            "garage_door",
+            "entry_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 40,
+            "y": 44,
+            "width": 8,
+            "height": 16
+          },
+          "doors": [
+            "garage_door",
+            "great_room_door",
+            "hall_bath_door",
+            "studio_hall_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "hall_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 48,
+            "y": 44,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "hall_door"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

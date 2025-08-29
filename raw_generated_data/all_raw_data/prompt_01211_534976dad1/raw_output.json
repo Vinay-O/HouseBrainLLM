@@ -1,0 +1,111 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 15, "width": 12 },
+          "orientation": "north-east"
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 10, "width": 9 },
+          "orientation": "east"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "orientation": "south-east",
+          "features": ["modular", "gas_stove", "water_purifier"]
+        },
+        {
+          "room_id": "swimming_pool",
+          "dimensions": { "length": 8, "width": 6 },
+          "orientation": "west"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "orientation": "north",
+          "size": { "width": 4, "height": 7 }
+        },
+        {
+          "opening_id": "living_to_dining",
+          "type": "archway",
+          "orientation": "east"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["balcony", "wardrobe"],
+          "orientation": "north-west"
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 13, "width": 11 },
+          "features": ["balcony", "study_area"],
+          "orientation": "north-east"
+        },
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["balcony", "attached_bathroom"],
+          "orientation": "south-east"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase",
+          "type": "staircase",
+          "orientation": "central",
+          "size": { "width": 4, "height": 3.5 }
+        },
+        {
+          "opening_id": "bedroom_1_balcony",
+          "type": "balcony",
+          "orientation": "west"
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 15, "width": 13 },
+          "features": ["balcony", "walk_in_closet"],
+          "orientation": "north-west"
+        },
+        {
+          "room_id": "bedroom_5",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["balcony", "attached_bathroom"],
+          "orientation": "south-east"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "terrace",
+          "type": "terrace",
+          "orientation": "top",
+          "size": { "length": 20, "width": 15 }
+        }
+      ]
+    }
+  ],
+  "features": {
+    "swimming_pool": true,
+    "balconies": ["each_bedroom"],
+    "plot_facing": "west",
+    "segment": "luxury"
+  },
+  "total_area": "800 sqft"
+}

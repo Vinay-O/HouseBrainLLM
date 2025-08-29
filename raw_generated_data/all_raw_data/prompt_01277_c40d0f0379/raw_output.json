@@ -1,0 +1,115 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_dining",
+          "area": 250,
+          "shape": "rectangle",
+          "dimensions": {"length": 16, "width": 15.625},
+          "position": {"x_min": 0, "y_min": 0, "x_max": 16, "y_max": 15.625},
+          "features": ["floor-to-ceiling windows", "high ceiling", "wooden flooring"],
+          "connected_to": ["kitchen", "bedroom_1", "staircase"]
+        },
+        {
+          "room_id": "kitchen",
+          "area": 120,
+          "shape": "square",
+          "dimensions": {"length": 9.6, "width": 12.5},
+          "position": {"x_min": 16, "y_min": 0, "x_max": 25.6, "y_max": 12.5},
+          "features": ["modular kitchen", "breakfast counter", "ventilation"],
+          "connected_to": ["living_dining", "bedroom_2"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "area": 200,
+          "shape": "rectangle",
+          "dimensions": {"length": 14, "width": 14.2857},
+          "position": {"x_min": 0, "y_min": 15.625, "x_max": 14, "y_max": 29.9107},
+          "features": ["wardrobe", "attached bathroom", "balcony"],
+          "connected_to": ["living_dining", "staircase"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "area": 180,
+          "shape": "rectangle",
+          "dimensions": {"length": 9.6, "width": 18.75},
+          "position": {"x_min": 14, "y_min": 15.625, "x_max": 23.6, "y_max": 34.375},
+          "features": ["wardrobe", "attached bathroom"],
+          "connected_to": ["kitchen"]
+        },
+        {
+          "room_id": "staircase",
+          "area": 40,
+          "shape": "rectangle",
+          "dimensions": {"length": 8, "width": 5},
+          "position": {"x_min": 23.6, "y_min": 15.625, "x_max": 31.6, "y_max": 20.625},
+          "features": ["spiral staircase", "natural light"],
+          "connected_to": ["living_dining", "upper_floor"]
+        },
+        {
+          "room_id": "servant_quarters",
+          "area": 150,
+          "shape": "rectangle",
+          "dimensions": {"length": 12, "width": 12.5},
+          "position": {"x_min": 31.6, "y_min": 0, "x_max": 43.6, "y_max": 12.5},
+          "features": ["attached bathroom", "kitchenette"],
+          "connected_to": ["staircase"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "position": {"x": 0, "y": 7.8125},
+          "dimensions": {"width": 4, "height": 8}
+        },
+        {
+          "opening_id": "living_window",
+          "type": "window",
+          "position": {"x": 8, "y": 7.8125},
+          "dimensions": {"width": 6, "height": 10}
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "area": 200,
+          "shape": "rectangle",
+          "dimensions": {"length": 14, "width": 14.2857},
+          "position": {"x_min": 0, "y_min": 0, "x_max": 14, "y_max": 14.2857},
+          "features": ["wardrobe", "attached bathroom", "balcony"],
+          "connected_to": ["staircase", "terrace"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "area": 180,
+          "shape": "rectangle",
+          "dimensions": {"length": 9.6, "width": 18.75},
+          "position": {"x_min": 14, "y_min": 0, "x_max": 23.6, "y_max": 18.75},
+          "features": ["wardrobe", "attached bathroom"],
+          "connected_to": ["staircase"]
+        },
+        {
+          "room_id": "terrace",
+          "area": 400,
+          "shape": "rectangle",
+          "dimensions": {"length": 50, "width": 8},
+          "position": {"x_min": 23.6, "y_min": 0, "x_max": 73.6, "y_max": 8},
+          "features": ["outdoor seating", "garden"],
+          "connected_to": ["bedroom_3"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "terrace_window",
+          "type": "window",
+          "position": {"x": 40, "y": 4},
+          "dimensions": {"width": 6, "height": 10}
+        }
+      ]
+    }
+  ]}

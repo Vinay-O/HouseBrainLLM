@@ -1,0 +1,106 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "type": "living room",
+          "dimensions": { "length": 15, "width": 20 },
+          "features": ["open-plan", "floor-to-ceiling windows"],
+          "connected_to": ["dining_area", "kitchen"]
+        },
+        {
+          "room_id": "dining_area",
+          "type": "dining area",
+          "dimensions": { "length": 10, "width": 12 },
+          "features": ["open-plan"],
+          "connected_to": ["living_room", "kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["open-plan", "modern appliances"],
+          "connected_to": ["dining_area", "utility"]
+        },
+        {
+          "room_id": "library",
+          "type": "library",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["quiet space", "built-in shelves"],
+          "connected_to": ["study_room"]
+        },
+        {
+          "room_id": "study_room",
+          "type": "study room",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["workspace", "ergonomic furniture"],
+          "connected_to": ["library"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "entrance",
+          "dimensions": { "length": 4, "width": 8 },
+          "direction": "north"
+        },
+        {
+          "opening_id": "backyard_access",
+          "type": "access",
+          "dimensions": { "length": 6, "width": 6 },
+          "connected_to": ["backyard"]
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_1",
+          "type": "master bedroom",
+          "dimensions": { "length": 16, "width": 14 },
+          "features": ["walk-in closet", "private balcony"],
+          "connected_to": ["bathroom_1"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["built-in wardrobe"],
+          "connected_to": ["bathroom_2"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "type": "bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["built-in wardrobe"],
+          "connected_to": ["bathroom_3"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["built-in wardrobe"],
+          "connected_to": ["bathroom_4"]
+        },
+        {
+          "room_id": "bedroom_5",
+          "type": "bedroom",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["built-in wardrobe"],
+          "connected_to": ["bathroom_5"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "staircase_access",
+          "type": "access",
+          "dimensions": { "length": 4, "width": 6 },
+          "connected_to": ["ground_floor"]
+        }
+      ]
+    }
+  ]
+}

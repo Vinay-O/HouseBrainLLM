@@ -1,0 +1,403 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 2200,
+      "style": "High-Tech"
+    },
+    "plot": {
+      "contours": "natural",
+      "climate": "temperate maritime",
+      "features": [
+        "sunken courtyard",
+        "rainwater harvesting",
+        "underground cisterns"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "performance_space",
+        "count": 1
+      },
+      {
+        "type": "listening_room",
+        "count": 1
+      },
+      {
+        "type": "darkroom",
+        "count": 1
+      },
+      {
+        "type": "mechanical_room",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 385000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "pavilion_1_performance",
+          "type": "performance_space",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12.5,
+              "type": "sliding_glass",
+              "to_exterior": true,
+              "to_courtyard": true
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12.5,
+              "length": 10,
+              "type": "fixed_glass"
+            }
+          ]
+        },
+        {
+          "id": "glass_link_1",
+          "type": "connection",
+          "bounds": {
+            "x": 25,
+            "y": 5,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5,
+              "type": "sliding_glass",
+              "to_exterior": false,
+              "to_room": "pavilion_1_performance"
+            },
+            {
+              "wall": "east",
+              "position": 2.5,
+              "type": "sliding_glass",
+              "to_exterior": false,
+              "to_room": "pavilion_2_living"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2.5,
+              "length": 5,
+              "type": "fixed_glass"
+            },
+            {
+              "wall": "south",
+              "position": 2.5,
+              "length": 5,
+              "type": "fixed_glass"
+            }
+          ]
+        },
+        {
+          "id": "pavilion_2_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10,
+              "type": "sliding_glass",
+              "to_exterior": true,
+              "to_courtyard": true,
+              "pet_door": true
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "length": 8,
+              "type": "fixed_glass"
+            }
+          ]
+        },
+        {
+          "id": "glass_link_2",
+          "type": "connection",
+          "bounds": {
+            "x": 50,
+            "y": 5,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5,
+              "type": "sliding_glass",
+              "to_exterior": false,
+              "to_room": "pavilion_2_living"
+            },
+            {
+              "wall": "east",
+              "position": 2.5,
+              "type": "sliding_glass",
+              "to_exterior": false,
+              "to_room": "pavilion_3_private"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2.5,
+              "length": 5,
+              "type": "fixed_glass"
+            },
+            {
+              "wall": "south",
+              "position": 2.5,
+              "length": 5,
+              "type": "fixed_glass"
+            }
+          ]
+        },
+        {
+          "id": "pavilion_3_private",
+          "type": "bedroom",
+          "bounds": {
+            "x": 55,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "type": "sliding_glass",
+              "to_exterior": true,
+              "to_courtyard": true,
+              "pet_door": true
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "length": 6,
+              "type": "fixed_glass"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 70,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6,
+              "type": "standard",
+              "to_exterior": false,
+              "to_room": "pavilion_3_private"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6,
+              "length": 4,
+              "type": "operable"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 70,
+            "y": 12,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3,
+              "type": "standard",
+              "to_exterior": false,
+              "to_room": "pavilion_3_private"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "darkroom",
+          "type": "darkroom",
+          "bounds": {
+            "x": 76,
+            "y": 12,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3,
+              "type": "light_sealed",
+              "to_exterior": false,
+              "to_room": "pavilion_3_private"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "listening_room",
+          "type": "listening_room",
+          "bounds": {
+            "x": 55,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "type": "acoustic_sealed",
+              "to_exterior": false,
+              "to_room": "pavilion_3_private"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6,
+              "type": "standard",
+              "to_exterior": false,
+              "to_room": "pavilion_2_living"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6,
+              "length": 4,
+              "type": "operable"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 42,
+            "y": 15,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4,
+              "type": "standard",
+              "to_exterior": false,
+              "to_room": "pavilion_2_living"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_cistern",
+          "type": "mechanical_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5,
+              "type": "utility",
+              "to_exterior": false,
+              "to_room": "pavilion_1_performance"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_1",
+          "type": "storage",
+          "bounds": {
+            "x": 10,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5,
+              "type": "standard",
+              "to_exterior": false,
+              "to_room": "pavilion_1_performance"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

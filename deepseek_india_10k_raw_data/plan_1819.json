@@ -1,0 +1,363 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 2200,
+      "style": "Traditional Heritage"
+    },
+    "plot": {
+      "slope": "hillside",
+      "orientation": "west",
+      "location": "Vrindavan",
+      "challenges": [
+        "sloping terrain",
+        "urban noise pollution",
+        "cyclone risk"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 300
+      },
+      {
+        "type": "kitchen",
+        "area": 180
+      },
+      {
+        "type": "bedroom",
+        "area": 200,
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "area": 90,
+        "count": 2
+      },
+      {
+        "type": "workshop",
+        "area": 450
+      },
+      {
+        "type": "drying_area",
+        "area": 200
+      },
+      {
+        "type": "kiln_room",
+        "area": 120
+      },
+      {
+        "type": "storage",
+        "area": 160
+      },
+      {
+        "type": "entrance",
+        "area": 50
+      },
+      {
+        "type": "archway",
+        "area": 60,
+        "count": 2
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 385000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "pottery_workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 18
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 8
+            },
+            {
+              "wall": "west",
+              "position": 16
+            }
+          ]
+        },
+        {
+          "id": "drying_area",
+          "type": "drying_area",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5
+            },
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "kiln_room",
+          "type": "kiln_room",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "storage_ground",
+          "type": "storage",
+          "bounds": {
+            "x": 15,
+            "y": 18,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "entrance_archway",
+          "type": "archway",
+          "bounds": {
+            "x": 25,
+            "y": 20,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 5
+            },
+            {
+              "wall": "west",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 13
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 7
+            },
+            {
+              "wall": "north",
+              "position": 7
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 10,
+            "height": 13
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 10,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 21,
+            "width": 10,
+            "height": 7
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_upper",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 28,
+            "width": 10,
+            "height": 7
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "upper_archway",
+          "type": "archway",
+          "bounds": {
+            "x": 25,
+            "y": 28,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

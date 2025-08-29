@@ -1,0 +1,175 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "room_type": "Living Room",
+          "dimensions": { "length": 5.0, "width": 4.0 },
+          "features": ["sofa", "TV unit", "center table"],
+          "position": { "orientation": "north-east", "adjacent_to": "dining_room" }
+        },
+        {
+          "room_id": "dining_room",
+          "room_type": "Dining Room",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["dining table", "chairs"],
+          "position": { "orientation": "east", "adjacent_to": "kitchen" }
+        },
+        {
+          "room_id": "kitchen",
+          "room_type": "Kitchen",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["modular kitchen", "refrigerator", "gas stove"],
+          "position": { "orientation": "south-east", "adjacent_to": "dining_room" }
+        },
+        {
+          "room_id": "bedroom_1",
+          "room_type": "Master Bedroom",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["double bed", "wardrobe", "attached bathroom"],
+          "position": { "orientation": "north-west", "adjacent_to": "balcony" }
+        },
+        {
+          "room_id": "bedroom_2",
+          "room_type": "Bedroom 2",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["single bed", "wardrobe", "attached bathroom"],
+          "position": { "orientation": "north-east", "adjacent_to": "balcony" }
+        },
+        {
+          "room_id": "bedroom_3",
+          "room_type": "Bedroom 3",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["single bed", "wardrobe", "attached bathroom"],
+          "position": { "orientation": "south-west", "adjacent_to": "balcony" }
+        },
+        {
+          "room_id": "bedroom_4",
+          "room_type": "Bedroom 4",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["single bed", "wardrobe", "attached bathroom"],
+          "position": { "orientation": "south-east", "adjacent_to": "balcony" }
+        },
+        {
+          "room_id": "home_theater",
+          "room_type": "Home Theater",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["projector", "sound system", "seating area"],
+          "position": { "orientation": "north-west" }
+        },
+        {
+          "room_id": "library",
+          "room_type": "Library",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["bookshelves", "reading area", "writing desk"],
+          "position": { "orientation": "south-east" }
+        },
+        {
+          "room_id": "staircase",
+          "room_type": "Staircase",
+          "dimensions": { "length": 2.0, "width": 1.5 },
+          "features": ["wooden railing", "lighting"],
+          "position": { "orientation": "central" }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 2.0, "width": 1.0 },
+          "position": { "orientation": "north" }
+        },
+        {
+          "opening_id": "back_door",
+          "type": "door",
+          "dimensions": { "length": 2.0, "width": 1.0 },
+          "position": { "orientation": "south" }
+        },
+        {
+          "opening_id": "front_window",
+          "type": "window",
+          "dimensions": { "length": 2.5, "width": 1.5 },
+          "position": { "orientation": "north" }
+        },
+        {
+          "opening_id": "back_window",
+          "type": "window",
+          "dimensions": { "length": 2.5, "width": 1.5 },
+          "position": { "orientation": "south" }
+        },
+        {
+          "opening_id": "east_window",
+          "type": "window",
+          "dimensions": { "length": 2.0, "width": 1.5 },
+          "position": { "orientation": "east" }
+        },
+        {
+          "opening_id": "west_window",
+          "type": "window",
+          "dimensions": { "length": 2.0, "width": 1.5 },
+          "position": { "orientation": "west" }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_5",
+          "room_type": "Bedroom 5",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["single bed", "wardrobe", "attached bathroom"],
+          "position": { "orientation": "north-west" }
+        },
+        {
+          "room_id": "study_room",
+          "room_type": "Study Room",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["desk", "chair", "bookshelf"],
+          "position": { "orientation": "south-east" }
+        },
+        {
+          "room_id": "balcony_1",
+          "room_type": "Balcony",
+          "dimensions": { "length": 3.0, "width": 2.5 },
+          "features": ["seating area", "potted plants"],
+          "position": { "orientation": "north-east" }
+        },
+        {
+          "room_id": "balcony_2",
+          "room_type": "Balcony",
+          "dimensions": { "length": 3.0, "width": 2.5 },
+          "features": ["seating area", "potted plants"],
+          "position": { "orientation": "south-west" }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "first_floor_window",
+          "type": "window",
+          "dimensions": { "length": 2.5, "width": 1.5 },
+          "position": { "orientation": "north" }
+        },
+        {
+          "opening_id": "first_floor_window_2",
+          "type": "window",
+          "dimensions": { "length": 2.5, "width": 1.5 },
+          "position": { "orientation": "south" }
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_id": "terrace",
+          "room_type": "Terrace",
+          "dimensions": { "length": 10.0, "width": 8.0 },
+          "features": ["seating area", "outdoor furniture"],
+          "position": { "orientation": "top" }
+        }
+      ],
+      "openings": []
+    }
+  ]}

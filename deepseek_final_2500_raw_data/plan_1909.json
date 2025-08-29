@@ -1,0 +1,219 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 650,
+      "style": "Deconstructivist"
+    },
+    "plot": {
+      "climate": "alpine with heavy snow loads",
+      "orientation": "north-facing for consistent light",
+      "constraints": [
+        "compact urban balcony conversion",
+        "budget-conscious",
+        "permeable paving materials"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "game_room",
+        "features": [
+          "built-in arcade"
+        ]
+      },
+      {
+        "type": "home_office",
+        "features": [
+          "separate entrance"
+        ]
+      }
+    ]
+  },
+  "total_area": 650.0,
+  "construction_cost": 130000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "game_room",
+          "type": "game_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10,
+              "type": "interior",
+              "to_room": "living_area"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "type": "fixed",
+              "size": "large"
+            }
+          ],
+          "features": [
+            "built-in arcade"
+          ]
+        },
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7,
+              "type": "interior",
+              "to_room": "game_room"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "type": "interior",
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "type": "fixed",
+              "size": "medium"
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7,
+              "type": "interior",
+              "to_room": "living_area"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "type": "fixed",
+              "size": "small"
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7,
+              "type": "interior",
+              "to_room": "bathroom"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "type": "fixed",
+              "size": "medium"
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7,
+              "type": "interior",
+              "to_room": "bedroom"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "type": "interior",
+              "to_room": "home_office"
+            }
+          ],
+          "windows": [],
+          "features": []
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10,
+              "type": "interior",
+              "to_room": "bathroom"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "type": "exterior",
+              "to_room": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "type": "fixed",
+              "size": "large"
+            }
+          ],
+          "features": [
+            "separate entrance"
+          ]
+        }
+      ]
+    }
+  ]
+}

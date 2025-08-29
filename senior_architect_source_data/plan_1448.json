@@ -1,0 +1,144 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 1200.0,
+      "style": "Modern A-Frame with Earthship"
+    },
+    "plot": {
+      "width": 20,
+      "depth": 20,
+      "orientation": "south"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "sauna",
+        "count": 1
+      },
+      {
+        "type": "mechanical",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 485000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_main",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "entry_door_south"
+          ],
+          "windows": [
+            "south_window_large"
+          ]
+        },
+        {
+          "id": "kitchen_open",
+          "type": "kitchen",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            "south_window_kitchen"
+          ]
+        },
+        {
+          "id": "mechanical_hrv",
+          "type": "mechanical",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            "door_mechanical"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_loft",
+          "type": "bedroom",
+          "bounds": {
+            "x": 2,
+            "y": 2,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            "north_window_bedroom",
+            "east_window_bedroom"
+          ]
+        },
+        {
+          "id": "bathroom_main",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 2,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            "door_bathroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "sauna_panoramic",
+          "type": "sauna",
+          "bounds": {
+            "x": 12,
+            "y": 10,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            "door_sauna"
+          ],
+          "windows": [
+            "south_window_panoramic"
+          ]
+        }
+      ]
+    }
+  ]
+}

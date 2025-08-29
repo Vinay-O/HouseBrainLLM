@@ -1,0 +1,122 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 15, "width": 20 },
+          "features": ["open_plan", "wheelchair_accessible"],
+          "furniture": ["sofa_set", "coffee_table", "TV_unit"]
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 12, "width": 15 },
+          "features": ["wheelchair_accessible"],
+          "furniture": ["dining_table_with_6_chairs"]
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["open_plan", "wheelchair_accessible", "modular"],
+          "appliances": ["refrigerator", "microwave", "induction_stove"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["wheelchair_accessible"],
+          "furniture": ["king_bed", "wardrobe", "study_table"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 14, "width": 13 },
+          "features": ["wheelchair_accessible"],
+          "furniture": ["queen_bed", "wardrobe"]
+        },
+        {
+          "room_id": "gym",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wheelchair_accessible"],
+          "equipment": ["treadmill", "dumbbells", "yoga_mat"]
+        },
+        {
+          "room_id": "bathroom_1",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["wheelchair_accessible", "walk_in_shower", "handrails"],
+          "fixtures": ["toilet", "sink", "mirror"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "dimensions": { "length": 4, "width": 7 },
+          "features": ["wheelchair_accessible", "double_doors"]
+        },
+        {
+          "opening_id": "balcony_1",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["access_from_living_room"],
+          "view": "garden"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["wheelchair_accessible"],
+          "furniture": ["king_bed", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 14, "width": 13 },
+          "features": ["wheelchair_accessible"],
+          "furniture": ["queen_bed", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_5",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["wheelchair_accessible"],
+          "furniture": ["single_bed", "wardrobe"]
+        },
+        {
+          "room_id": "bedroom_6",
+          "dimensions": { "length": 13, "width": 12 },
+          "features": ["wheelchair_accessible"],
+          "furniture": ["single_bed", "wardrobe"]
+        },
+        {
+          "room_id": "bathroom_2",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["wheelchair_accessible", "walk_in_shower"],
+          "fixtures": ["toilet", "sink", "mirror"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony_2",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["access_from_bedroom_3"],
+          "view": "garden"
+        },
+        {
+          "opening_id": "terrace_access",
+          "dimensions": { "length": 4, "width": 7 },
+          "features": ["staircase_to_rooftop"]
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_id": "terrace_door",
+          "dimensions": { "length": 4, "width": 7 },
+          "features": ["access_from_upper_floor"]
+        }
+      ],
+      "features": ["outdoor_furniture", "grill_area", "view_of_city"]
+    }
+  ]}

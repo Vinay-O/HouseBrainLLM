@@ -1,0 +1,88 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 5000,
+      "style": "Scandinavian"
+    },
+    "plot": {},
+    "roomBreakdown": []
+  },
+  "total_area": 5000.0,
+  "construction_cost": 750000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "open_plan_living_kitchen",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 40
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "size": "floor_to_ceiling"
+            },
+            {
+              "wall": "east",
+              "size": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 40,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "servants_quarters",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 55,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "east",
+              "size": "standard"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

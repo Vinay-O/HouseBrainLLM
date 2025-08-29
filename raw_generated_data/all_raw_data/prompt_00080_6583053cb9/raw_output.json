@@ -1,0 +1,180 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 5.0, "width": 4.0 },
+          "features": ["wheelchair accessible", "eco-friendly materials"],
+          "position": "north-west"
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["wheelchair accessible", "adjacent to kitchen"],
+          "position": "south-east"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": [
+            "wheelchair accessible",
+            "eco-friendly appliances",
+            "modular storage"
+          ],
+          "position": "south-west"
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": [
+            "wheelchair accessible",
+            "master bedroom",
+            "attached bathroom"
+          ],
+          "position": "north-east"
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["wheelchair accessible", "guest bedroom"],
+          "position": "south-west"
+        },
+        {
+          "room_id": "garage",
+          "dimensions": { "length": 6.0, "width": 3.0 },
+          "features": [
+            "two-car capacity",
+            "eco-friendly lighting",
+            "wheelchair accessible entrance"
+          ],
+          "position": "south"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "garden_gate",
+          "type": "gate",
+          "dimensions": { "length": 2.0, "width": 1.5 },
+          "position": "north-east"
+        },
+        {
+          "opening_id": "rooftop_terrace_stairs",
+          "type": "stairs",
+          "features": ["wheelchair accessible ramp"],
+          "position": "north-west"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["wheelchair accessible", "private balcony"],
+          "position": "north-east"
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["wheelchair accessible", "shared bathroom"],
+          "position": "south-west"
+        },
+        {
+          "room_id": "bedroom_5",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["wheelchair accessible", "private balcony"],
+          "position": "north-west"
+        },
+        {
+          "room_id": "bedroom_6",
+          "dimensions": { "length": 4.0, "width": 3.5 },
+          "features": ["wheelchair accessible", "shared bathroom"],
+          "position": "south-east"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "terrace_access",
+          "type": "door",
+          "dimensions": { "length": 1.0, "width": 0.8 },
+          "features": ["wheelchair accessible"],
+          "position": "north"
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [
+        {
+          "room_id": "terrace_lounge",
+          "dimensions": { "length": 6.0, "width": 4.0 },
+          "features": ["wheelchair accessible", "outdoor furniture"],
+          "position": "central"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "terrace_garden_access",
+          "type": "gate",
+          "dimensions": { "length": 1.5, "width": 1.0 },
+          "features": ["wheelchair accessible"],
+          "position": "east"
+        }
+      ]
+    }
+  ],
+  "gardens": [
+    {
+      "garden_id": "front_garden",
+      "dimensions": { "length": 8.0, "width": 4.0 },
+      "features": ["native plants", "permeable paving"],
+      "position": "north"
+    }
+  ],
+  "garage_details": {
+    "capacity": 2,
+    "features": [
+      "electric vehicle charging point",
+      "bicycle storage"
+    ]
+  },
+  "wheelchair_accessibility": {
+    "features": [
+      "ramped entrances",
+      "wide doorways",
+      "accessible bathrooms"
+    ]
+  },
+  "eco_features": [
+    "solar panels",
+    "rainwater harvesting",
+    "energy-efficient lighting"
+  ],
+  "vastu_compliance": {
+    "features": [
+      {
+        "feature_id": "kitchen_position",
+        "description": "Kitchen in the south-east direction as per Vastu principles"
+      },
+      {
+        "feature_id": "bedroom_orientation",
+        "description": "Master bedroom in the north-west direction for positive energy flow"
+      }
+    ]
+  },
+  "building_norm_compliance": {
+    "features": [
+      {
+        "norm_id": "setback",
+        "description": "Adhering to local setback norms for corner plot"
+      },
+      {
+        "norm_id": "height_restriction",
+        "description": "Complying with local height restrictions for residential buildings"
+      }
+    ]
+  }
+}

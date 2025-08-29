@@ -1,0 +1,197 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 960,
+      "style": "Traditional Craftsman"
+    },
+    "plot": {
+      "terrain": "sloping vineyard",
+      "climate": "alpine with heavy snow loads"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "area": 160,
+        "description": "Minimalist master bedroom with built-in storage"
+      },
+      {
+        "type": "bathroom",
+        "area": 80,
+        "description": "Compact bathroom with water-efficient fixtures"
+      },
+      {
+        "type": "kitchen",
+        "area": 120,
+        "description": "Efficient galley kitchen with energy-saving appliances"
+      },
+      {
+        "type": "living_room",
+        "area": 240,
+        "description": "Open living space with south-facing windows for solar gain"
+      },
+      {
+        "type": "home_office",
+        "area": 120,
+        "description": "Dedicated workspace with separate exterior entrance"
+      },
+      {
+        "type": "utility",
+        "area": 80,
+        "description": "Mechanical room housing rainwater harvesting system components"
+      },
+      {
+        "type": "meditation_pavilion",
+        "area": 160,
+        "description": "Detached meditation space with water features and panoramic views"
+      }
+    ]
+  },
+  "total_area": 960.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 12,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 8,
+              "size": "large"
+            },
+            {
+              "wall": "north",
+              "position": 8,
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

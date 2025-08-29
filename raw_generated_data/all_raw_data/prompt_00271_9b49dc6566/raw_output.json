@@ -1,0 +1,142 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_dining",
+          "type": "combined_living_and_dining",
+          "dimensions": {
+            "length": 15,
+            "width": 20
+          },
+          "features": ["high_ceiling", "wooden_floor"]
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": {
+            "length": 12,
+            "width": 15
+          },
+          "features": ["modular_kitchen", "pantry"]
+        },
+        {
+          "room_id": "servants_quarters",
+          "type": "bedroom",
+          "dimensions": {
+            "length": 10,
+            "width": 12
+          },
+          "features": ["attached_bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "entrance",
+          "dimensions": {
+            "length": 3,
+            "width": 7
+          }
+        },
+        {
+          "opening_id": "backdoor",
+          "type": "exit",
+          "dimensions": {
+            "length": 3,
+            "width": 7
+          }
+        }
+      ],
+      "outdoor_features": [
+        {
+          "feature_id": "courtyard",
+          "type": "open_space"
+        },
+        {
+          "feature_id": "driveway",
+          "type": "parking"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_id": "master_bedroom",
+          "type": "bedroom",
+          "dimensions": {
+            "length": 15,
+            "width": 20
+          },
+          "features": ["walk_in_closet", "attached_bathroom"]
+        },
+        {
+          "room_id": "bedroom_two",
+          "type": "bedroom",
+          "dimensions": {
+            "length": 12,
+            "width": 15
+          }
+        },
+        {
+          "room_id": "bedroom_three",
+          "type": "bedroom",
+          "dimensions": {
+            "length": 10,
+            "width": 12
+          }
+        },
+        {
+          "room_id": "study_room",
+          "type": "study",
+          "dimensions": {
+            "length": 10,
+            "width": 10
+          }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony_one",
+          "type": "balcony",
+          "associated_room": "master_bedroom"
+        },
+        {
+          "opening_id": "balcony_two",
+          "type": "balcony",
+          "associated_room": "bedroom_two"
+        }
+      ]
+    }
+  ],
+  "additional_features": [
+    {
+      "feature_id": "terrace_garden",
+      "type": "outdoor_space"
+    },
+    {
+      "feature_id": "swimming_pool",
+      "type": "recreational"
+    }
+  ],
+  "design_notes": {
+    "style": "Chettinad",
+    "levels": "split-level",
+    "bedrooms": 3,
+    "servants_quarters": true,
+    "bachelor_pad_features": ["home_theater", "gym"]
+  },
+  "building_norms": {
+    "local_regulations": {
+      "setback_lines": "complied_with",
+      "height_restrictions": "within_limits"
+    },
+    "vastu_principles": {
+      "entrance_direction": "north_east",
+      "kitchen_position": "southeast",
+      "bedroom_positions": "southwest_northwest"
+    }
+  }
+}

@@ -1,0 +1,624 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 2,
+      "totalArea": 8500,
+      "style": "Marathi Wada with Modern Luxury"
+    },
+    "plot": {
+      "shape": "rectangular",
+      "area": 5000,
+      "orientation": "south",
+      "view": "garden and river",
+      "considerations": [
+        "flood zone",
+        "privacy from neighbors"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 6,
+        "special": [
+          "master suite",
+          "elderly accessible ground floor suite"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 7
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "special": [
+          "modern appliances",
+          "traditional pantry"
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 2
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "study",
+        "count": 2
+      },
+      {
+        "type": "puja_room",
+        "count": 1
+      },
+      {
+        "type": "yoga_meditation_pavilion",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 2
+      },
+      {
+        "type": "garage",
+        "count": 1,
+        "capacity": 3
+      }
+    ]
+  },
+  "total_area": 8500.0,
+  "construction_cost": 4250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 15
+            },
+            {
+              "wall": "south",
+              "position": 15
+            },
+            {
+              "wall": "east",
+              "position": 12.5
+            },
+            {
+              "wall": "west",
+              "position": 12.5
+            }
+          ],
+          "windows": [],
+          "special_features": [
+            "traditional fountain",
+            "sandstone paving"
+          ]
+        },
+        {
+          "id": "grand_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "large"
+            }
+          ],
+          "special_features": [
+            "carved sandstone pillars",
+            "high thermal mass walls"
+          ]
+        },
+        {
+          "id": "dining_main",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": "medium"
+            }
+          ],
+          "special_features": [
+            "open to courtyard"
+          ]
+        },
+        {
+          "id": "kitchen_main",
+          "type": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            },
+            {
+              "wall": "west",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": "medium"
+            }
+          ],
+          "special_features": [
+            "smart appliances",
+            "traditional chulha style"
+          ]
+        },
+        {
+          "id": "elderly_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 7.5,
+              "size": "medium"
+            }
+          ],
+          "special_features": [
+            "accessible bathroom",
+            "zero-step entry",
+            "emergency call system"
+          ]
+        },
+        {
+          "id": "elderly_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "small"
+            }
+          ],
+          "special_features": [
+            "walk-in shower",
+            "grab bars",
+            "heated floors"
+          ]
+        },
+        {
+          "id": "study_ground",
+          "type": "study",
+          "bounds": {
+            "x": 10,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "medium"
+            }
+          ],
+          "special_features": [
+            "built-in shelving",
+            "soundproofing"
+          ]
+        },
+        {
+          "id": "puja",
+          "type": "puja_room",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": "small"
+            }
+          ],
+          "special_features": [
+            "sandstone altar",
+            "east facing"
+          ]
+        },
+        {
+          "id": "utility_ground",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 30,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": "small"
+            }
+          ],
+          "special_features": [
+            "laundry",
+            "storage"
+          ]
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10,
+              "type": "overhead"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "small"
+            }
+          ],
+          "special_features": [
+            "3-car capacity",
+            "EV charging"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "large"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": "medium"
+            }
+          ],
+          "special_features": [
+            "walk-in closet",
+            "private balcony overlooking river"
+          ]
+        },
+        {
+          "id": "master_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": "medium"
+            }
+          ],
+          "special_features": [
+            "spa tub",
+            "steam shower",
+            "smart mirrors"
+          ]
+        },
+        {
+          "id": "bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": "large"
+            }
+          ],
+          "special_features": [
+            "built-in desk"
+          ]
+        },
+        {
+          "id": "bedroom3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5,
+              "size": "large"
+            }
+          ],
+          "special_features": [
+            "window seat"
+          ]
+        },
+        {
+          "id": "bathroom_upper",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5,
+              "size": "small"
+            }
+          ],
+          "special_features": [
+            "double vanity"
+          ]
+        },
+        {
+          "id": "family_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 10,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "large"
+            }
+          ],
+          "special_features": [
+            "open plan",
+            "overlooks courtyard"
+          ]
+        },
+        {
+          "id": "study_upper",
+          "type": "study",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7.5,
+              "size": "medium"
+            }
+          ],
+          "special_features": [
+            "quiet corner",
+            "river view"
+          ]
+        },
+        {
+          "id": "bridge",
+          "type": "hallway",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "full-length"
+            }
+          ],
+          "special_features": [
+            "connecting bridge over courtyard",
+            "gallery wall"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "yoga_pavilion",
+          "type": "yoga_meditation_pavilion",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": "full-height"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": "full-height"
+            },
+            {
+              "wall": "west",
+              "position": 10,
+              "size": "full-height"
+            }
+          ],
+          "special_features": [
+            "360-degree garden and river views",
+            "traditional carved pillars",
+            "retractable shades"
+          ]
+        }
+      ]
+    }
+  ]
+}

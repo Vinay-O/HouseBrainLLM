@@ -1,0 +1,352 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 2400,
+      "style": "Neo-Classical"
+    },
+    "plot": {
+      "location": "windswept coastal bluff",
+      "climate": "temperate maritime",
+      "prevailingWindDirection": "southwest"
+    },
+    "roomBreakdown": [
+      {
+        "type": "game_room",
+        "description": "Built-in arcade and recreational space"
+      },
+      {
+        "type": "fitness_room",
+        "description": "Wellness and exercise area"
+      },
+      {
+        "type": "master_bedroom",
+        "description": "Primary bedroom with wellness focus"
+      },
+      {
+        "type": "guest_bedroom",
+        "description": "Secondary bedroom"
+      },
+      {
+        "type": "kitchen",
+        "description": "Open kitchen area"
+      },
+      {
+        "type": "living_room",
+        "description": "Main living space"
+      },
+      {
+        "type": "bathroom",
+        "description": "Full bathroom"
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 485000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "game_room",
+          "type": "game_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 10
+              },
+              "direction": "east",
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "direction": "south",
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 15
+              },
+              "direction": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 10
+              },
+              "direction": "west",
+              "to_room": "game_room"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 20
+              },
+              "direction": "north",
+              "to_room": "kitchen"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 20
+              },
+              "direction": "north",
+              "to_room": "fitness_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 5
+              },
+              "direction": "east",
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 15
+              },
+              "direction": "east",
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 0
+              },
+              "direction": "south",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 20
+              },
+              "direction": "south",
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 27
+              },
+              "direction": "west",
+              "to_room": "bathroom"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 40,
+                "y": 35
+              },
+              "direction": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "fitness_room",
+          "type": "fitness_room",
+          "bounds": {
+            "x": 40,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 20
+              },
+              "direction": "south",
+              "to_room": "living_room"
+            },
+            {
+              "position": {
+                "x": 55,
+                "y": 27
+              },
+              "direction": "east",
+              "to_room": "master_bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 47,
+                "y": 35
+              },
+              "direction": "north",
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 55,
+                "y": 27
+              },
+              "direction": "east",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 55,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 55,
+                "y": 27
+              },
+              "direction": "west",
+              "to_room": "fitness_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 70,
+                "y": 27
+              },
+              "direction": "east",
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 62,
+                "y": 35
+              },
+              "direction": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 27
+              },
+              "direction": "east",
+              "to_room": "bathroom"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 27
+              },
+              "direction": "west",
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 7,
+                "y": 35
+              },
+              "direction": "north",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 27
+              },
+              "direction": "west",
+              "to_room": "guest_bedroom"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 27
+              },
+              "direction": "east",
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 20,
+                "y": 35
+              },
+              "direction": "north",
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

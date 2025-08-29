@@ -1,0 +1,674 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 2,
+      "totalArea": 3800.0,
+      "style": "Brutalist Concrete"
+    },
+    "plot": {
+      "topography": "desert plateau",
+      "climate": "Mediterranean dry summers",
+      "views": "panoramic",
+      "floodRisk": true
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 6
+      },
+      {
+        "type": "bathroom",
+        "count": 4
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "workshop",
+        "count": 1
+      },
+      {
+        "type": "office",
+        "count": 1
+      },
+      {
+        "type": "garage",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 3800.0,
+  "construction_cost": 532000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "workshop_0",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "position": {
+                "x": 10,
+                "y": 0
+              }
+            },
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 30,
+                "y": 10
+              }
+            }
+          ],
+          "windows": [],
+          "features": [
+            "hydraulic_car_lift",
+            "concrete_floor",
+            "utility_sink"
+          ]
+        },
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "position": {
+                "x": 40,
+                "y": 0
+              }
+            },
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 30,
+                "y": 10
+              }
+            }
+          ],
+          "windows": [],
+          "features": [
+            "concrete_floor",
+            "overhead_storage"
+          ]
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 50,
+                "y": 5
+              }
+            }
+          ],
+          "windows": [],
+          "features": [
+            "washer_dryer_hookups",
+            "sink",
+            "storage_cabinets"
+          ]
+        },
+        {
+          "id": "storage_0",
+          "type": "storage",
+          "bounds": {
+            "x": 50,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 50,
+                "y": 15
+              }
+            }
+          ],
+          "windows": [],
+          "features": [
+            "shelving",
+            "concrete_walls"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 25,
+                "y": 10
+              }
+            },
+            {
+              "type": "exterior_door",
+              "position": {
+                "x": 12.5,
+                "y": 0
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "size": 10
+            },
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 0,
+                "y": 15
+              },
+              "size": 10
+            }
+          ],
+          "features": [
+            "exposed_concrete_walls",
+            "double_height_ceiling",
+            "view_windows"
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 25,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 40,
+                "y": 7.5
+              },
+              "size": 4
+            }
+          ],
+          "features": [
+            "concrete_countertops",
+            "energy_efficient_appliances",
+            "pantry"
+          ]
+        },
+        {
+          "id": "dining_room_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 25,
+                "y": 22.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 40,
+                "y": 15
+              },
+              "size": 10
+            }
+          ],
+          "features": [
+            "exposed_concrete",
+            "open_to_living_room",
+            "view_windows"
+          ]
+        },
+        {
+          "id": "bedroom1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 40,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 55,
+                "y": 7.5
+              },
+              "size": 5
+            }
+          ],
+          "features": [
+            "built_in_closet",
+            "concrete_walls"
+          ]
+        },
+        {
+          "id": "bathroom1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 40,
+                "y": 20
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "high_window",
+              "position": {
+                "x": 45,
+                "y": 15
+              },
+              "size": 3
+            }
+          ],
+          "features": [
+            "water_efficient_fixtures",
+            "concrete_sink",
+            "shower"
+          ]
+        },
+        {
+          "id": "bathroom2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 50,
+                "y": 20
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "high_window",
+              "position": {
+                "x": 55,
+                "y": 15
+              },
+              "size": 3
+            }
+          ],
+          "features": [
+            "water_efficient_fixtures",
+            "concrete_sink",
+            "shower"
+          ]
+        },
+        {
+          "id": "bedroom2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 55,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 55,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 70,
+                "y": 7.5
+              },
+              "size": 5
+            }
+          ],
+          "features": [
+            "built_in_closet",
+            "concrete_walls"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom3_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 15,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "size": 5
+            }
+          ],
+          "features": [
+            "built_in_closet",
+            "concrete_walls"
+          ]
+        },
+        {
+          "id": "bedroom4_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 15,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 30,
+                "y": 7.5
+              },
+              "size": 5
+            }
+          ],
+          "features": [
+            "built_in_closet",
+            "concrete_walls"
+          ]
+        },
+        {
+          "id": "bathroom3_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 30,
+                "y": 5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "high_window",
+              "position": {
+                "x": 35,
+                "y": 0
+              },
+              "size": 3
+            }
+          ],
+          "features": [
+            "water_efficient_fixtures",
+            "concrete_sink",
+            "shower"
+          ]
+        },
+        {
+          "id": "bedroom5_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 40,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 55,
+                "y": 7.5
+              },
+              "size": 5
+            }
+          ],
+          "features": [
+            "built_in_closet",
+            "concrete_walls"
+          ]
+        },
+        {
+          "id": "bedroom6_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 55,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 55,
+                "y": 7.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "standard",
+              "position": {
+                "x": 70,
+                "y": 7.5
+              },
+              "size": 5
+            }
+          ],
+          "features": [
+            "built_in_closet",
+            "concrete_walls"
+          ]
+        },
+        {
+          "id": "bathroom4_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 70,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 70,
+                "y": 5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "high_window",
+              "position": {
+                "x": 75,
+                "y": 0
+              },
+              "size": 3
+            }
+          ],
+          "features": [
+            "water_efficient_fixtures",
+            "concrete_sink",
+            "shower"
+          ]
+        },
+        {
+          "id": "office_mezzanine_2",
+          "type": "office",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior_door",
+              "position": {
+                "x": 30,
+                "y": 22.5
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "floor_to_ceiling",
+              "position": {
+                "x": 0,
+                "y": 20
+              },
+              "size": 10
+            }
+          ],
+          "features": [
+            "mezzanine_overlook",
+            "exposed_concrete",
+            "view_of_living_room"
+          ]
+        }
+      ]
+    }
+  ]
+}

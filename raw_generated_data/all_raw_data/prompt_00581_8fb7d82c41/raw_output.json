@@ -1,0 +1,70 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "Master_Bedroom",
+          "coordinates": [10, 15],
+          "dimensions": [20, 20],
+          "features": ["attached_bathroom", "walk-in_closet"]
+        },
+        {
+          "room_type": "Guest_Bedroom_1",
+          "coordinates": [40, 15],
+          "dimensions": [15, 15]
+        },
+        {
+          "room_type": "Guest_Bedroom_2",
+          "coordinates": [65, 15],
+          "dimensions": [15, 15]
+        },
+        {
+          "room_type": "Living_Room",
+          "coordinates": [10, 40],
+          "dimensions": [35, 20]
+        },
+        {
+          "room_type": "Dining_Room",
+          "coordinates": [45, 45],
+          "dimensions": [20, 15]
+        },
+        {
+          "room_type": "Kitchen",
+          "coordinates": [65, 55],
+          "dimensions": [15, 15],
+          "features": ["utility_area"]
+        },
+        {
+          "room_type": "Servant_Quarters",
+          "coordinates": [70, 25],
+          "dimensions": [10, 10]
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "door",
+          "coordinates": [35, 40],
+          "connected_rooms": ["Living_Room", "Master_Bedroom"]
+        },
+        {
+          "opening_type": "window",
+          "coordinates": [18, 15],
+          "aspect": "east"
+        },
+        {
+          "opening_type": "window",
+          "coordinates": [40, 27],
+          "aspect": "south"
+        }
+      ]
+    }
+  ],
+  "outdoor_features": [
+    {
+      "feature_type": "Rooftop_Terrace",
+      "level_id": "roof",
+      "dimensions": [80, 100]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 1,
+      "totalArea": 450,
+      "style": "Art Deco Revival"
+    },
+    "plot": {
+      "climate": "desert with extreme temperatures",
+      "notes": "compact urban balcony conversion, diagonal to prevailing winds, flood-resistant elevated design"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "area": 200,
+        "notes": "For book collectors and scholars"
+      },
+      {
+        "type": "yoga_studio",
+        "area": 150,
+        "notes": "With heated floors"
+      },
+      {
+        "type": "garden",
+        "area": 100,
+        "notes": "L-shaped design wraps around this central garden"
+      }
+    ]
+  },
+  "total_area": 450.0,
+  "construction_cost": 112500.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 5
+            },
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "yoga_studio",
+          "type": "yoga_studio",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "garden",
+          "type": "garden",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,395 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Art Deco Mumbai with maritime influences"
+    },
+    "plot": {
+      "orientation": "east-facing",
+      "location": "Kanpur industrial area, commercial-residential mix",
+      "challenges": [
+        "monsoon flooding",
+        "waterlogging"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "area": 200
+      },
+      {
+        "type": "guest_bedroom",
+        "area": 150
+      },
+      {
+        "type": "home_office",
+        "area": 120
+      },
+      {
+        "type": "puja_room",
+        "area": 80
+      },
+      {
+        "type": "handloom_workshop",
+        "area": 250
+      },
+      {
+        "type": "living_room",
+        "area": 220
+      },
+      {
+        "type": "kitchen",
+        "area": 150
+      },
+      {
+        "type": "dining_room",
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "area": 60,
+        "count": 2
+      },
+      {
+        "type": "utility_room",
+        "area": 50
+      },
+      {
+        "type": "storage",
+        "area": 100
+      },
+      {
+        "type": "courtyard",
+        "area": 200
+      },
+      {
+        "type": "chabutra_platform",
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 3600000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "chabutra_platform",
+          "type": "outdoor",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": [],
+          "description": "Raised platform for community gatherings with traditional design"
+        },
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "description": "Grand entrance with Art Deco motifs and maritime influences"
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 6,
+            "width": 15,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 3
+            },
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "description": "Spacious living area with cross-ventilation and sunrise alignment"
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 6,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "description": "Adjacent to kitchen and living room for easy access"
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 16,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "description": "Modern kitchen with traditional elements and efficient layout"
+        },
+        {
+          "id": "courtyard_1",
+          "type": "outdoor",
+          "bounds": {
+            "x": 37,
+            "y": 6,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ],
+          "windows": [],
+          "description": "Central courtyard for passive cooling and natural light"
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 20,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "description": "Master bedroom with ensuite bathroom and wardrobe"
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 22,
+            "y": 26,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "description": "Guest bedroom with adjacent bathroom"
+        },
+        {
+          "id": "home_office",
+          "type": "office",
+          "bounds": {
+            "x": 10,
+            "y": 32,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "description": "Quiet home office with sound insulation and professional setup"
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 20,
+            "y": 36,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "description": "Dedicated prayer room with brass fittings and marble flooring"
+        },
+        {
+          "id": "handloom_workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 28,
+            "y": 36,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7
+            },
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ],
+          "description": "Handloom weaving workshop with natural lighting and storage solutions"
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 22,
+            "y": 20,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 3
+            }
+          ],
+          "windows": [],
+          "description": "Ensuite bathroom for master bedroom"
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 34,
+            "y": 26,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 3
+            }
+          ],
+          "windows": [],
+          "description": "Guest bathroom"
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 37,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "description": "Utility room with storage and laundry facilities"
+        },
+        {
+          "id": "main_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "description": "General storage area accessible from courtyard"
+        }
+      ]
+    }
+  ]
+}

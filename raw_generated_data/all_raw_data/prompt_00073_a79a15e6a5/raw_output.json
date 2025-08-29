@@ -1,0 +1,77 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom_1",
+          "dimensions": { "length": 15, "width": 10 },
+          "location": { "x": 20, "y": 30 },
+          "balcony": true
+        },
+        {
+          "room_type": "bedroom_2",
+          "dimensions": { "length": 14, "width": 9 },
+          "location": { "x": 65, "y": 30 },
+          "balcony": true
+        },
+        {
+          "room_type": "bedroom_3",
+          "dimensions": { "length": 12, "width": 8 },
+          "location": { "x": 40, "y": 70 },
+          "balcony": true
+        },
+        {
+          "room_type": "kitchen",
+          "dimensions": { "length": 16, "width": 12 },
+          "location": { "x": 35, "y": 10 }
+        },
+        {
+          "room_type": "living_area",
+          "dimensions": { "length": 24, "width": 18 },
+          "location": { "x": 10, "y": 50 },
+          "open_plan_with_kitchen": true
+        },
+        {
+          "room_type": "private_gym",
+          "dimensions": { "length": 12, "width": 10 },
+          "location": { "x": 85, "y": 65 }
+        },
+        {
+          "room_type": "bathrooms",
+          "count": 3,
+          "locations": [
+            {"x": 45, "y": 15},
+            {"x": 70, "y": 28},
+            {"x": 52, "y": 76}
+          ]
+        }
+      ],
+      "openings": [
+        {
+          "type": "window",
+          "location": { "x": 25, "y": 10 },
+          "dimension": { "width": 3, "height": 4 }
+        },
+        {
+          "type": "door",
+          "location": { "x": 67.5, "y": 90 },
+          "dimension": { "width": 2, "height": 8 }
+        },
+        {
+          "type": "window",
+          "location": { "x": 75, "y": 70 },
+          "dimension": { "width": 3, "height": 4 }
+        },
+        {
+          "type": "balcony",
+          "locations": [
+            {"room_type": "bedroom_1", "dimensions": {"length": 6, "width": 4}, "location": {"x": 20, "y": 35}},
+            {"room_type": "bedroom_2", "dimensions": {"length": 6, "width": 4}, "location": {"x": 65, "y": 35}},
+            {"room_type": "bedroom_3", "dimensions": {"length": 6, "width": 4}, "location": {"x": 40, "y": 78}}
+          ]
+        }
+      ]
+    }
+  ]
+}

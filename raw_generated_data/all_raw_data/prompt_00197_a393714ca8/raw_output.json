@@ -1,0 +1,69 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "area_sqft": 250,
+          "description": "Open-plan living space with ample natural light, featuring floor-to-ceiling windows and minimalistic Bohemian decor.",
+          "adjacent_rooms": ["dining_area"],
+          "vastu_orientation": "North-East"
+        },
+        {
+          "room_type": "dining_area",
+          "area_sqft": 80,
+          "description": "Adjacent to the living room, designed for casual dining and social gatherings. Incorporates Bohemian art pieces and indoor plants.",
+          "adjacent_rooms": ["kitchen"],
+          "vastu_orientation": "North-West"
+        },
+        {
+          "room_type": "kitchen",
+          "area_sqft": 100,
+          "description": "Modern open kitchen with state-of-the-art appliances, featuring an island counter. Bohemian elements are introduced through artisanal fixtures and natural materials.",
+          "adjacent_rooms": ["living_room"],
+          "vastu_orientation": "South-East"
+        },
+        {
+          "room_type": "master_bedroom",
+          "area_sqft": 300,
+          "description": "Spacious master bedroom with floor-to-ceiling windows, a balcony for relaxation, Bohemian style decor, and ample storage.",
+          "adjacent_rooms": ["bathroom", "corridor"],
+          "balcony": true,
+          "vastu_orientation": "South-West"
+        },
+        {
+          "room_type": "bathroom",
+          "area_sqft": 60,
+          "description": "Private bathroom for the master bedroom, incorporating sustainable fixtures and a serene ambiance.",
+          "adjacent_rooms": ["master_bedroom"],
+          "vastu_orientation": "South-East"
+        }
+      ],
+      "openings": [
+        {
+          "type": "floor_to_ceiling_window",
+          "location": "living_room",
+          "details": "Large, unobstructed windows providing ample natural light and views of the cityscape."
+        },
+        {
+          "type": "balcony_opening",
+          "location": "master_bedroom",
+          "details": "Spacious balcony offering outdoor space and privacy."
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "type": "balcony_access",
+          "location": "entire_terraces",
+          "details": "Seamless access to the penthouse's rooftop terrace, designed for relaxation and gatherings."
+        }
+      ],
+      "description": "A fully furnished rooftop terrace with seating areas, an outdoor kitchenette, and lush greenery. Adheres to Vastu principles by aligning with the North-East direction for prosperity."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{"levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+          {"name": "Entrance Hall", "area_sqft": 150},
+          {"name": "Living Room", "area_sqft": 300},
+          {"name": "Kitchen", "area_sqft": 200},
+          {"name": "Guest Bedroom", "area_sqft": 200},
+          {"name": "Master Bedroom", "area_sqft": 250},
+          {"name": "Balcony/Veranda", "area_sqft": 100}
+      ],
+      "openings": [
+          {"type": "Front Door", "location": "Entrance Hall", "direction": "North"},
+          {"type": "Window", "location": "Living Room", "direction": "East"},
+          {"type": "Window", "location": "Kitchen", "direction": "South"},
+          {"type": "Door", "location": "Guest Bedroom", "direction": "West"},
+          {"type": "Balcony Access Door", "location": "Master Bedroom", "direction": "North"}
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+          {"name": "Attic Storage", "area_sqft": 200},
+          {"name": "Utility Room", "area_sqft": 100}
+      ],
+      "openings": [
+          {"type": "Staircase", "location": "Entrance Hall", "direction": "Vertical"},
+          {"type": "Door", "location": "Attic Storage", "direction": "North"}
+      ]
+    }
+]}

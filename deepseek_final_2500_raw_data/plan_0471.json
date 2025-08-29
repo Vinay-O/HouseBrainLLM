@@ -1,0 +1,433 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 800,
+      "style": "Chettinad Modern Fusion"
+    },
+    "plot": {
+      "shape": "Cul-de-sac",
+      "area": 800,
+      "location": "IT Hub Suburban Development"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1,
+        "area": 180
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 120
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "area": 50
+      },
+      {
+        "type": "basement_storage",
+        "count": 1,
+        "area": 150
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_porch",
+          "type": "porch",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 4,
+                "y": 6
+              },
+              "to": "exterior"
+            },
+            {
+              "position": {
+                "x": 8,
+                "y": 3
+              },
+              "to": "living_room"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Kolam patterned floor",
+            "Limestone columns"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 16,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 8,
+                "y": 3
+              },
+              "to": "entrance_porch"
+            },
+            {
+              "position": {
+                "x": 24,
+                "y": 7.5
+              },
+              "to": "kitchen"
+            },
+            {
+              "position": {
+                "x": 16,
+                "y": 15
+              },
+              "to": "staircase"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "wall": "south",
+              "size": "large"
+            }
+          ],
+          "features": [
+            "Smart lighting automation",
+            "Limestone accent wall"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 24,
+                "y": 5
+              },
+              "to": "living_room"
+            },
+            {
+              "position": {
+                "x": 36,
+                "y": 10
+              },
+              "to": "utility"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 0
+              },
+              "wall": "north",
+              "size": "medium"
+            }
+          ],
+          "features": [
+            "Smart appliances",
+            "Compact efficient layout"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 24,
+            "y": 10,
+            "width": 12,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 36,
+                "y": 0
+              },
+              "to": "kitchen"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 5
+              },
+              "to": "exterior"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Laundry facilities",
+            "Storage"
+          ]
+        },
+        {
+          "id": "staircase",
+          "type": "staircase",
+          "bounds": {
+            "x": 8,
+            "y": 15,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 16,
+                "y": 0
+              },
+              "to": "living_room"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "to": "level_1_hall"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Limestone steps",
+            "Safety railings"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "level_1_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 8,
+                "y": 3
+              },
+              "to": "staircase"
+            },
+            {
+              "position": {
+                "x": 4,
+                "y": 6
+              },
+              "to": "bedroom"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 3
+              },
+              "to": "bathroom"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Smart climate control",
+            "LED lighting"
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 8,
+                "y": 0
+              },
+              "to": "level_1_hall"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 8,
+                "y": 14
+              },
+              "wall": "south",
+              "size": "large"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 7
+              },
+              "wall": "west",
+              "size": "medium"
+            }
+          ],
+          "features": [
+            "Walk-in closet",
+            "Smart home control panel",
+            "Workspace nook"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 3
+              },
+              "to": "level_1_hall"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 4,
+                "y": 6
+              },
+              "wall": "south",
+              "size": "small"
+            }
+          ],
+          "features": [
+            "Modern fixtures",
+            "Ventilation system"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 8,
+            "height": 6
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 0,
+                "y": 3
+              },
+              "to": "level_1_hall"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 4,
+                "y": 6
+              },
+              "wall": "south",
+              "size": "small"
+            }
+          ],
+          "features": [
+            "Traditional decor",
+            "Quiet meditation space"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "basement_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 15
+              },
+              "to": "exterior_stairs"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "Climate-controlled",
+            "Smart inventory system",
+            "Waterproofing"
+          ]
+        }
+      ]
+    }
+  ],
+  "features": {
+    "exterior": [
+      "Green roof system with drought-resistant plants",
+      "Local limestone facade and detailing",
+      "Cul-de-sac traffic management with designated parking",
+      "Rainwater harvesting system",
+      "Energy-efficient windows and insulation"
+    ],
+    "automation": [
+      "Whole-house smart automation system",
+      "Climate control with zoning",
+      "Security and surveillance system",
+      "Energy monitoring and management",
+      "Voice-controlled lighting and appliances"
+    ]
+  }
+}

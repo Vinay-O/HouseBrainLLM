@@ -1,0 +1,437 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 1600,
+      "style": "Ultra-Premium Heritage Restoration Modern Fusion"
+    },
+    "plot": {
+      "width": 20,
+      "depth": 40,
+      "orientation": "east",
+      "location": "Visakhapatnam",
+      "challenges": [
+        "narrow_plot",
+        "monsoon_flooding"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4,
+        "level": [
+          0,
+          1
+        ]
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "level": [
+          0,
+          1
+        ]
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "courtyard",
+        "count": 3,
+        "level": [
+          0,
+          1
+        ]
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "level": [
+          1
+        ]
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "storage",
+        "count": 1,
+        "level": [
+          0
+        ]
+      },
+      {
+        "type": "jhula_pavilion",
+        "count": 1,
+        "level": [
+          0
+        ]
+      }
+    ],
+    "specialFeatures": [
+      "tribal_adivasi_eco_construction",
+      "lime_plaster_walls",
+      "natural_pigments",
+      "haveli_style_courtyards",
+      "water_features",
+      "wind_powered_water_pumping",
+      "wind_powered_ventilation",
+      "underground_cooling_chambers",
+      "east_facing_sunrise_alignment",
+      "monsoon_flooding_solutions"
+    ]
+  },
+  "total_area": 1600.0,
+  "construction_cost": 4800000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 4
+          },
+          "doors": [
+            "main_entry_north"
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "to_foyer",
+            "to_front_courtyard"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "front_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 4,
+            "width": 5,
+            "height": 8
+          },
+          "doors": [
+            "to_living_room"
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            "to_inner_courtyard"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "guest_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 22,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            "to_guest_bedroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 8,
+            "y": 12,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            "to_dining",
+            "to_utility"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 14,
+            "y": 12,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            "to_kitchen",
+            "to_inner_courtyard"
+          ],
+          "windows": []
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 8,
+            "y": 20,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            "to_inner_courtyard"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 14,
+            "y": 20,
+            "width": 6,
+            "height": 4
+          },
+          "doors": [
+            "to_kitchen"
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage",
+          "type": "storage",
+          "bounds": {
+            "x": 14,
+            "y": 24,
+            "width": 6,
+            "height": 4
+          },
+          "doors": [
+            "to_utility"
+          ],
+          "windows": []
+        },
+        {
+          "id": "inner_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 4,
+            "y": 22,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_guest_bedroom",
+            "to_dining",
+            "to_puja_room",
+            "to_jhula_pavilion"
+          ],
+          "windows": []
+        },
+        {
+          "id": "jhula_pavilion",
+          "type": "jhula_pavilion",
+          "bounds": {
+            "x": 4,
+            "y": 34,
+            "width": 12,
+            "height": 6
+          },
+          "doors": [
+            "to_inner_courtyard"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_upper_courtyard"
+          ],
+          "windows": [
+            "east_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "master_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 5,
+            "height": 6
+          },
+          "doors": [
+            "to_master_bedroom"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_upper_courtyard"
+          ],
+          "windows": [
+            "east_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 5,
+            "height": 6
+          },
+          "doors": [
+            "to_bedroom2"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "to_upper_courtyard"
+          ],
+          "windows": [
+            "east_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "bathroom3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 28,
+            "width": 5,
+            "height": 6
+          },
+          "doors": [
+            "to_bedroom3"
+          ],
+          "windows": []
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 10,
+            "y": 16,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "to_upper_courtyard"
+          ],
+          "windows": [
+            "east_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "upper_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 12,
+            "width": 10,
+            "height": 16
+          },
+          "doors": [
+            "to_master_bedroom",
+            "to_bedroom2",
+            "to_bedroom3",
+            "to_study"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

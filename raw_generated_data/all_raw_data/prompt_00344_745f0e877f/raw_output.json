@@ -1,0 +1,56 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        { 
+          "name": "Entry Hall", 
+          "description": "Serves as the entrance and transition space, with a west-facing reception area to embrace natural light.", 
+          "dimensions": {"length": 5.0, "width": 3.0},
+          "adjacent_rooms": ["Living Area"]
+        },
+        { 
+          "name": "Library", 
+          "description": "A quiet study space with east-west oriented windows for balanced natural light and privacy.", 
+          "dimensions": {"length": 4.5, "width": 3.0},
+          "adjacent_rooms": ["Home Office"]
+        },
+        { 
+          "name": "Living Area", 
+          "description": "Central area for relaxation with a west-facing balcony that enhances natural light and ventilation, designed following Vastu principles.", 
+          "dimensions": {"length": 6.0, "width": 4.5},
+          "adjacent_rooms": ["Kitchen", "Dining"]
+        },
+        { 
+          "name": "Home Office", 
+          "description": "A dedicated workspace with a north-facing window for optimum natural light and reduced glare, ensuring privacy.", 
+          "dimensions": {"length": 3.5, "width": 2.5},
+          "adjacent_rooms": ["Library"]
+        },
+        { 
+          "name": "Bedroom", 
+          "description": "Master bedroom with a spacious west-facing balcony for natural light and fresh air, designed in a split-level arrangement.", 
+          "dimensions": {"length": 4.0, "width": 3.5},
+          "adjacent_rooms": ["Bathroom"]
+        },
+        { 
+          "name": "Bathroom", 
+          "description": "Connected to the master bedroom with an emphasis on privacy and natural ventilation from a west-facing window.", 
+          "dimensions": {"length": 2.0, "width": 1.5}
+        }
+      ],
+      "openings": [
+        {
+          "type": "Window",
+          "location": "West side of Living Area and Bedroom balcony",
+          "description": "Large windows to allow ample natural light and ventilation, following Vastu guidelines."
+        },
+        {
+          "type": "Door",
+          "location": "Entrance",
+          "description": "Secure entry door with sufficient threshold space for smooth movement."
+        }
+      ]
+    }
+  ]
+}

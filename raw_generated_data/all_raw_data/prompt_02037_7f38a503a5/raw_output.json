@@ -1,0 +1,108 @@
+{"levels": [
+    {
+        "level_id": "ground_floor",
+        "rooms": [
+            {
+                "room_type": "living_dining_area",
+                "area_sqft": 200,
+                "description": "A combined living and dining area with floor-to-ceiling windows on the west side to embrace natural light, following Vastu principles by aligning seating areas to the east for harmony.",
+                "vastu_alignment": {
+                    "direction": "east",
+                    "notes": "Seating arrangements are oriented towards the east for positive energy."
+                }
+            },
+            {
+                "room_type": "kitchen",
+                "area_sqft": 100,
+                "description": "Modern kitchen with integrated storage, placed in the northeast to maintain a balance as per Vastu norms.",
+                "vastu_alignment": {
+                    "direction": "northeast",
+                    "notes": "Placing the kitchen in the northeast helps stimulate digestion."
+                }
+            },
+            {
+                "room_type": "bedroom",
+                "area_sqft": 150,
+                "description": "Primary bedroom located in the southwest to maintain privacy and ensure a calm environment.",
+                "vastu_alignment": {
+                    "direction": "southwest",
+                    "notes": "This location supports relaxation and restful sleep."
+                }
+            },
+            {
+                "room_type": "bathroom",
+                "area_sqft": 50,
+                "description": "Functional bathroom with efficient layout near the bedroom for privacy.",
+                "vastu_alignment": {}
+            }
+        ],
+        "openings": [
+            {
+                "type": "floor_to_ceiling_window",
+                "location": "west",
+                "dimensions_cm": {"width": 300, "height": 2500},
+                "description": "Large windows on the west-facing wall to maximize natural light and offer garden views."
+            },
+            {
+                "type": "doorway",
+                "location": "entrance",
+                "dimensions_cm": {"width": 100, "height": 200},
+                "description": "Main entrance door leading from the garden into the living area."
+            }
+        ],
+        "garden": {
+            "area_sqft": 150,
+            "description": "Expansive garden space designed for relaxation and outdoor activities, featuring a water element in the northeast to balance Vastu energies.",
+            "elements": [
+                {"element_type": "water_feature", "location": "northeast"}
+            ]
+        }
+    },
+    {
+        "level_id": "first_floor",
+        "rooms": [
+            {
+                "room_type": "bedroom",
+                "area_sqft": 150,
+                "description": "Secondary bedroom to maximize space and comfort, maintaining privacy with minimal shared corridors.",
+                "vastu_alignment": {
+                    "direction": "northwest",
+                    "notes": "Northwest is suitable for secondary living spaces ensuring a calm atmosphere."
+                }
+            },
+            {
+                "room_type": "bathroom",
+                "area_sqft": 50,
+                "description": "Bathroom serving the first floor bedroom, designed with efficient drainage and ventilation.",
+                "vastu_alignment": {}
+            }
+        ],
+        "openings": [
+            {
+                "type": "balcony_doorway",
+                "location": "east",
+                "dimensions_cm": {"width": 90, "height": 210},
+                "description": "Balcony door providing access to an external terrace overlooking the garden."
+            }
+        ]
+    },
+    {
+        "level_id": "second_floor",
+        "rooms": [
+            {
+                "room_type": "loft_space",
+                "area_sqft": 100,
+                "description": "Loft area that can serve as a study or additional living space, designed with ample storage and open layout.",
+                "vastu_alignment": {}
+            }
+        ],
+        "openings": [
+            {
+                "type": "service_door",
+                "location": "north",
+                "dimensions_cm": {"width": 80, "height": 200},
+                "description": "Service door for maintenance access and ventilation."
+            }
+        ]
+    }
+]}

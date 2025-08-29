@@ -1,0 +1,748 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 3200,
+      "style": "Contemporary Colonial British Bungalow"
+    },
+    "plot": {
+      "size": 2,
+      "location": "Srinagar Dal Lake",
+      "type": "Agricultural Conversion"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 400
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "area": 200
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 450
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "study",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "veranda",
+        "count": 2,
+        "area": 600
+      },
+      {
+        "type": "jhula_pavilion",
+        "count": 1,
+        "area": 225
+      },
+      {
+        "type": "circulation",
+        "count": 1,
+        "area": 525
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 960000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "main_entry",
+              "position": {
+                "x": 25,
+                "y": 0
+              }
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 20,
+                "y": 4
+              },
+              "connects_to": "living_room"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 30,
+                "y": 4
+              },
+              "connects_to": "courtyard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 25,
+            "height": 18
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 20,
+                "y": 8
+              },
+              "connects_to": "entrance_foyer"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 0,
+                "y": 17
+              },
+              "connects_to": "front_veranda"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 25,
+                "y": 17
+              },
+              "connects_to": "dining_room"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 12.5,
+                "y": 26
+              },
+              "connects_to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 0,
+                "y": 13
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            },
+            {
+              "type": "fixed",
+              "position": {
+                "x": 20,
+                "y": 13
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "front_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": -5,
+            "y": 8,
+            "width": 30,
+            "height": 9
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 0,
+                "y": 8
+              },
+              "connects_to": "living_room"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 8,
+            "width": 15,
+            "height": 18
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 25,
+                "y": 17
+              },
+              "connects_to": "living_room"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 40,
+                "y": 17
+              },
+              "connects_to": "kitchen"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 32.5,
+                "y": 26
+              },
+              "connects_to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 25,
+                "y": 13
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            },
+            {
+              "type": "fixed",
+              "position": {
+                "x": 35,
+                "y": 13
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 40,
+            "y": 8,
+            "width": 15,
+            "height": 18
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 40,
+                "y": 17
+              },
+              "connects_to": "dining_room"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 55,
+                "y": 17
+              },
+              "connects_to": "rear_veranda"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 47.5,
+                "y": 8
+              },
+              "connects_to": "utility"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 40,
+                "y": 13
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            },
+            {
+              "type": "fixed",
+              "position": {
+                "x": 50,
+                "y": 13
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 47.5,
+                "y": 8
+              },
+              "connects_to": "kitchen"
+            },
+            {
+              "type": "external",
+              "position": {
+                "x": 47.5,
+                "y": 0
+              }
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 42.5,
+                "y": 4
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            },
+            {
+              "type": "fixed",
+              "position": {
+                "x": 52.5,
+                "y": 4
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 26,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 10,
+                "y": 26
+              },
+              "connects_to": "courtyard"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 20,
+                "y": 36
+              },
+              "connects_to": "primary_bathroom"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 0,
+                "y": 31
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            },
+            {
+              "type": "fixed",
+              "position": {
+                "x": 15,
+                "y": 31
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            },
+            {
+              "type": "fixed",
+              "position": {
+                "x": 10,
+                "y": 46
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "primary_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 26,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 20,
+                "y": 36
+              },
+              "connects_to": "primary_bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 25,
+                "y": 31
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 26,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 40,
+                "y": 26
+              },
+              "connects_to": "courtyard"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 30,
+                "y": 36
+              },
+              "connects_to": "guest_bathroom"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 30,
+                "y": 31
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            },
+            {
+              "type": "fixed",
+              "position": {
+                "x": 45,
+                "y": 31
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            },
+            {
+              "type": "fixed",
+              "position": {
+                "x": 40,
+                "y": 46
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "guest_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 26,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 50,
+                "y": 36
+              },
+              "connects_to": "guest_bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 55,
+                "y": 31
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "study",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 46,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 15,
+                "y": 51
+              },
+              "connects_to": "rear_veranda"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 0,
+                "y": 49
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            },
+            {
+              "type": "fixed",
+              "position": {
+                "x": 10,
+                "y": 49
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 15,
+            "y": 46,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 15,
+                "y": 51
+              },
+              "connects_to": "rear_veranda"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 20,
+                "y": 49
+              },
+              "size": {
+                "width": 5,
+                "height": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "rear_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 25,
+            "y": 46,
+            "width": 35,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 25,
+                "y": 51
+              },
+              "connects_to": "study"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 35,
+                "y": 51
+              },
+              "connects_to": "puja_room"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 55,
+                "y": 51
+              },
+              "connects_to": "kitchen"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 30,
+            "height": 18
+          },
+          "doors": [
+            {
+              "type": "internal",
+              "position": {
+                "x": 30,
+                "y": 8
+              },
+              "connects_to": "entrance_foyer"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 12.5,
+                "y": 26
+              },
+              "connects_to": "living_room"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 32.5,
+                "y": 26
+              },
+              "connects_to": "dining_room"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 10,
+                "y": 26
+              },
+              "connects_to": "primary_bedroom"
+            },
+            {
+              "type": "internal",
+              "position": {
+                "x": 40,
+                "y": 26
+              },
+              "connects_to": "guest_bedroom"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "jhula_pavilion",
+          "type": "jhula_pavilion",
+          "bounds": {
+            "x": 25,
+            "y": 26,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

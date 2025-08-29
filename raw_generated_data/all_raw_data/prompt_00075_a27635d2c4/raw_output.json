@@ -1,0 +1,85 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Entrance Hall",
+          "dimensions": {"length": 12, "width": 8},
+          "location": [0, 0]
+        },
+        {
+          "room_name": "Living Room",
+          "dimensions": {"length": 36, "width": 24},
+          "location": [15, 0],
+          "features": ["floor-to-ceiling windows"]
+        },
+        {
+          "room_name": "Kitchen",
+          "dimensions": {"length": 18, "width": 9},
+          "location": [75, 15]
+        },
+        {
+          "room_name": "Dining Room",
+          "dimensions": {"length": 24, "width": 15},
+          "location": [60, 35],
+          "features": ["floor-to-ceiling windows"]
+        },
+        {
+          "room_name": "Library",
+          "dimensions": {"length": 20, "width": 18},
+          "location": [75, 45]
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "position": ["Living Room", "Kitchen"]
+        },
+        {
+          "type": "door",
+          "position": ["Dining Room", "Library"]
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Master Bedroom",
+          "dimensions": {"length": 24, "width": 18},
+          "location": [0, 30],
+          "features": ["floor-to-ceiling windows"]
+        },
+        {
+          "room_name": "Bathroom",
+          "dimensions": {"length": 9, "width": 6},
+          "location": [25, 40]
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "position": ["Master Bedroom", "Bathroom"]
+        }
+      ]
+    },
+    {
+      "level_id": "second_floor",
+      "rooms": [
+        {
+          "room_name": "Guest Bedroom",
+          "dimensions": {"length": 18, "width": 15},
+          "location": [30, 45],
+          "features": ["floor-to-ceiling windows"]
+        },
+        {
+          "room_name": "Study Room",
+          "dimensions": {"length": 24, "width": 18},
+          "location": [60, 45]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_room",
+          "area_sqft": 200,
+          "location": {"x": 10, "y": 10},
+          "features": ["floor_to_ceiling_windows", "wheelchair_accessible"]
+        },
+        {
+          "room_type": "kitchen",
+          "area_sqft": 150,
+          "location": {"x": 320, "y": 40},
+          "features": ["floor_to_ceiling_windows", "wheelchair_accessible"]
+        },
+        {
+          "room_type": "home_theater",
+          "area_sqft": 250,
+          "location": {"x": 10, "y": 360},
+          "features": ["floor_to_ceiling_windows", "wheelchair_accessible"]
+        },
+        {
+          "room_type": "master_bedroom",
+          "area_sqft": 200,
+          "location": {"x": 480, "y": 10},
+          "features": [
+            "balcony",
+            "floor_to_ceiling_windows",
+            "wheelchair_accessible"
+          ]
+        },
+        {
+          "room_type": "bedroom",
+          "area_sqft": 150,
+          "location": {"x": 480, "y": 230},
+          "features": [
+            "balcony",
+            "floor_to_ceiling_windows",
+            "wheelchair_accessible"
+          ]
+        },
+        {
+          "room_type": "bedroom",
+          "area_sqft": 150,
+          "location": {"x": 480, "y": 360},
+          "features": [
+            "balcony",
+            "floor_to_ceiling_windows",
+            "wheelchair_accessible"
+          ]
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "location": {"x": 120, "y": 65},
+          "connects_rooms": ["living_room", "kitchen"],
+          "features": ["wheelchair_accessible"]
+        },
+        {
+          "type": "window",
+          "location": {"x": 35, "y": 50},
+          "room_connected_to": "living_room"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_floor",
+      "rooms": [
+        {
+          "room_type": "bedroom",
+          "area_sqft": 120,
+          "location": {"x": 10, "y": 10},
+          "features": [
+            "balcony",
+            "floor_to_ceiling_windows",
+            "wheelchair_accessible"
+          ]
+        },
+        {
+          "room_type": "bedroom",
+          "area_sqft": 120,
+          "location": {"x": 135, "y": 10},
+          "features": [
+            "balcony",
+            "floor_to_ceiling_windows",
+            "wheelchair_accessible"
+          ]
+        },
+        {
+          "room_type": "bedroom",
+          "area_sqft": 120,
+          "location": {"x": 260, "y": 10},
+          "features": [
+            "balcony",
+            "floor_to_ceiling_windows",
+            "wheelchair_accessible"
+          ]
+        },
+        {
+          "room_type": "bathroom",
+          "area_sqft": 80,
+          "location": {"x": 35, "y": 170},
+          "features": ["floor_to_ceiling_windows", "wheelchair_accessible"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "staircase",
+          "location": {"x": 280, "y": 65},
+          "connects_levels": ["ground_floor", "upper_floor"],
+          "features": ["wheelchair_accessible"]
+        },
+        {
+          "type": "window",
+          "location": {"x": 15, "y": 35},
+          "room_connected_to": "bedroom"
+        }
+      ]
+    }
+  ]
+}

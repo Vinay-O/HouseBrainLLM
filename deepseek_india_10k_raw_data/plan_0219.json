@@ -1,0 +1,597 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 8,
+      "floors": 1,
+      "totalArea": 5200,
+      "style": "Heritage-inspired traditional with Marathi Wada and Nawabi elements"
+    },
+    "plot": {
+      "shape": "Rectangular",
+      "orientation": "East-facing",
+      "environment": "Forest clearing eco-sensitive zone in Lucknow",
+      "area": 10000
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 8,
+        "area": 3200
+      },
+      {
+        "type": "living_room",
+        "count": 2,
+        "area": 800
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "bathroom",
+        "count": 6,
+        "area": 300
+      },
+      {
+        "type": "workshop",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 800
+      }
+    ]
+  },
+  "total_area": 5200.0,
+  "construction_cost": 9360000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "otla_sitout",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 10,
+              "y": 10,
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "x": 5,
+              "y": 0,
+              "type": "jharokha"
+            },
+            {
+              "x": 15,
+              "y": 0,
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 40,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 0,
+              "y": 15,
+              "to": "otla_sitout"
+            },
+            {
+              "x": 10,
+              "y": 30,
+              "to": "main_living"
+            },
+            {
+              "x": 20,
+              "y": 30,
+              "to": "dining_room"
+            },
+            {
+              "x": 30,
+              "y": 30,
+              "to": "workshop"
+            },
+            {
+              "x": 40,
+              "y": 15,
+              "to": "elder_bedroom1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "main_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 10,
+              "y": 35,
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "x": 5,
+              "y": 45,
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 10,
+            "y": 30,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 35,
+              "to": "courtyard"
+            },
+            {
+              "x": 15,
+              "y": 30,
+              "to": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "x": 15,
+              "y": 45,
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 10,
+            "y": 45,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 45,
+              "to": "dining_room"
+            }
+          ],
+          "windows": [
+            {
+              "x": 15,
+              "y": 55,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 30,
+              "y": 35,
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "x": 25,
+              "y": 45,
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "dye_preparation_area",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 45,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 25,
+              "y": 45,
+              "to": "workshop"
+            }
+          ],
+          "windows": [
+            {
+              "x": 25,
+              "y": 55,
+              "type": "ventilation"
+            }
+          ]
+        },
+        {
+          "id": "elder_bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 40,
+              "y": 15,
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "x": 47,
+              "y": 0,
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "elder_bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 40,
+              "y": 15,
+              "to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "x": 47,
+              "y": 30,
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "elder_bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 55,
+            "y": 0,
+            "width": 5,
+            "height": 7
+          },
+          "doors": [
+            {
+              "x": 55,
+              "y": 7,
+              "to": "elder_bedroom1"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "elder_bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 55,
+            "y": 8,
+            "width": 5,
+            "height": 7
+          },
+          "doors": [
+            {
+              "x": 55,
+              "y": 8,
+              "to": "elder_bedroom2"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "family_bedroom1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 40,
+              "y": 35,
+              "to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "x": 45,
+              "y": 40,
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "family_bedroom2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 50,
+              "y": 35,
+              "to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "x": 55,
+              "y": 40,
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "family_bedroom3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 40,
+              "y": 45,
+              "to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "x": 45,
+              "y": 50,
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "family_bedroom4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 50,
+              "y": 45,
+              "to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "x": 55,
+              "y": 50,
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "family_bedroom5",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 50,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 40,
+              "y": 55,
+              "to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "x": 45,
+              "y": 60,
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "family_bedroom6",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 50,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 50,
+              "y": 55,
+              "to": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "x": 55,
+              "y": 60,
+              "type": "jharokha"
+            }
+          ]
+        },
+        {
+          "id": "corridor",
+          "type": "corridor",
+          "bounds": {
+            "x": 60,
+            "y": 30,
+            "width": 5,
+            "height": 30
+          },
+          "doors": [
+            {
+              "x": 60,
+              "y": 35,
+              "to": "family_bedroom1"
+            },
+            {
+              "x": 60,
+              "y": 40,
+              "to": "family_bedroom2"
+            },
+            {
+              "x": 60,
+              "y": 45,
+              "to": "family_bedroom3"
+            },
+            {
+              "x": 60,
+              "y": 50,
+              "to": "family_bedroom4"
+            },
+            {
+              "x": 60,
+              "y": 55,
+              "to": "family_bedroom5"
+            },
+            {
+              "x": 60,
+              "y": 60,
+              "to": "family_bedroom6"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "family_bathroom1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 65,
+            "y": 30,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "x": 65,
+              "y": 35,
+              "to": "corridor"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "family_bathroom2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 65,
+            "y": 35,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "x": 65,
+              "y": 40,
+              "to": "corridor"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "family_bathroom3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 65,
+            "y": 40,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "x": 65,
+              "y": 45,
+              "to": "corridor"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "family_bathroom4",
+          "type": "bathroom",
+          "bounds": {
+            "x": 65,
+            "y": 45,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "x": 65,
+              "y": 50,
+              "to": "corridor"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

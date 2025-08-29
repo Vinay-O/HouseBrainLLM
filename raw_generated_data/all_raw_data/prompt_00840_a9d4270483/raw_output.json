@@ -1,0 +1,105 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "living_area",
+          "description": "Modern living space with open-plan design integrating the kitchen and dining area. Vastu compliant by facing the east for positive energy.",
+          "dimensions": {
+            "length": 40,
+            "width": 30
+          },
+          "adjacencies": [
+            "kitchen_area",
+            "dining_area"
+          ],
+          "vastu_elements": {
+            "entrance_direction": "east",
+            "energy_flow": "positive"
+          }
+        },
+        {
+          "room_type": "bedroom",
+          "description": "Spacious single bedroom designed for modern lifestyle. Vastu aligned with north-west direction to promote calmness.",
+          "dimensions": {
+            "length": 20,
+            "width": 15
+          },
+          "adjacencies": [
+            "living_area"
+          ],
+          "vastu_elements": {
+            "entrance_direction": "northwest",
+            "energy_flow": "calm"
+          }
+        },
+        {
+          "room_type": "bathroom",
+          "description": "Modern bathroom with minimalistic fixtures, placed near the bedroom for convenience.",
+          "dimensions": {
+            "length": 8,
+            "width": 6
+          },
+          "adjacencies": [
+            "bedroom"
+          ],
+          "vastu_elements": {
+            "entrance_direction": "southwest",
+            "energy_flow": "balanced"
+          }
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "front_door",
+          "description": "Main entry door on the east side of the living area, ensuring positive Vastu energy.",
+          "location": {
+            "side": "east",
+            "wall_length": 4,
+            "height": 7
+          }
+        },
+        {
+          "opening_type": "window",
+          "description": "Large windows in the bedroom and living area for natural light.",
+          "location": [
+            {
+              "room": "bedroom",
+              "side": "north"
+            },
+            {
+              "room": "living_area",
+              "side": "west"
+            }
+          ]
+        },
+        {
+          "opening_type": "back_door",
+          "description": "Secondary exit near the kitchen area.",
+          "location": {
+            "side": "south",
+            "wall_length": 3,
+            "height": 7
+          }
+        }
+      ],
+      "additional_features": [
+        {
+          "feature": "rooftop_terrace",
+          "description": "A modern rooftop terrace providing an outdoor living space with views, designed to comply with building norms and Vastu by being elevated for spiritual energy.",
+          "dimensions": {
+            "length": 40,
+            "width": 60
+          },
+          "access_points": [
+            {
+              "from_room": "living_area",
+              "via_staircase": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_lobby",
+          "dimensions": { "length": 10, "width": 8 },
+          "purpose": "entrance lobby",
+          "location": { "x_start": 0, "y_start": 0, "x_end": 10, "y_end": 8 }
+        },
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 20, "width": 16 },
+          "purpose": "living room",
+          "location": { "x_start": 10, "y_start": 0, "x_end": 30, "y_end": 16 }
+        },
+        {
+          "room_id": "dining_room",
+          "dimensions": { "length": 12, "width": 12 },
+          "purpose": "dining room",
+          "location": { "x_start": 30, "y_start": 0, "x_end": 42, "y_end": 12 }
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 15, "width": 12 },
+          "purpose": "kitchen",
+          "location": { "x_start": 42, "y_start": 0, "x_end": 57, "y_end": 12 }
+        },
+        {
+          "room_id": "central_courtyard",
+          "dimensions": { "length": 20, "width": 20 },
+          "purpose": "central courtyard",
+          "location": { "x_start": 57, "y_start": 0, "x_end": 77, "y_end": 20 }
+        },
+        {
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 16, "width": 14 },
+          "purpose": "master bedroom",
+          "location": { "x_start": 0, "y_start": 20, "x_end": 16, "y_end": 34 }
+        },
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 14, "width": 14 },
+          "purpose": "bedroom",
+          "location": { "x_start": 16, "y_start": 20, "x_end": 30, "y_end": 34 }
+        },
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 15, "width": 15 },
+          "purpose": "bedroom",
+          "location": { "x_start": 30, "y_start": 20, "x_end": 45, "y_end": 35 }
+        },
+        {
+          "room_id": "study_room",
+          "dimensions": { "length": 10, "width": 10 },
+          "purpose": "study room",
+          "location": { "x_start": 45, "y_start": 20, "x_end": 55, "y_end": 30 }
+        },
+        {
+          "room_id": "utility_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "purpose": "utility room",
+          "location": { "x_start": 55, "y_start": 20, "x_end": 65, "y_end": 28 }
+        },
+        {
+          "room_id": "guest_room",
+          "dimensions": { "length": 14, "width": 14 },
+          "purpose": "guest room",
+          "location": { "x_start": 0, "y_start": 34, "x_end": 14, "y_end": 48 }
+        },
+        {
+          "room_id": "pooja_room",
+          "dimensions": { "length": 8, "width": 8 },
+          "purpose": "pooja room",
+          "location": { "x_start": 14, "y_start": 34, "x_end": 22, "y_end": 42 }
+        },
+        {
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 15, "width": 15 },
+          "purpose": "bedroom",
+          "location": { "x_start": 22, "y_start": 34, "x_end": 37, "y_end": 49 }
+        },
+        {
+          "room_id": "balcony_1",
+          "dimensions": { "length": 8, "width": 6 },
+          "purpose": "balcony",
+          "location": { "x_start": 37, "y_start": 34, "x_end": 45, "y_end": 40 }
+        },
+        {
+          "room_id": "terrace",
+          "dimensions": { "length": 20, "width": 16 },
+          "purpose": "terrace",
+          "location": { "x_start": 45, "y_start": 34, "x_end": 65, "y_end": 50 }
+        },
+        {
+          "room_id": "staircase",
+          "dimensions": { "length": 8, "width": 6 },
+          "purpose": "staircase",
+          "location": { "x_start": 65, "y_start": 20, "x_end": 73, "y_end": 26 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "location": { "x_start": 5, "y_start": 4, "x_end": 5, "y_end": 8 },
+          "connects_to": "outside"
+        },
+        {
+          "opening_id": "living_to_dining",
+          "type": "doorway",
+          "location": { "x_start": 30, "y_start": 8, "x_end": 30, "y_end": 12 },
+          "connects_to": "dining_room"
+        },
+        {
+          "opening_id": "dining_to_kitchen",
+          "type": "doorway",
+          "location": { "x_start": 42, "y_start": 6, "x_end": 42, "y_end": 12 },
+          "connects_to": "kitchen"
+        },
+        {
+          "opening_id": "bedroom_1_to_balcony",
+          "type": "door",
+          "location": { "x_start": 8, "y_start": 34, "x_end": 8, "y_end": 20 },
+          "connects_to": "balcony_1"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_5",
+          "dimensions": { "length": 16, "width": 14 },
+          "purpose": "bedroom",
+          "location": { "x_start": 0, "y_start": 50, "x_end": 16, "y_end": 64 }
+        },
+        {
+          "room_id": "balcony_2",
+          "dimensions": { "length": 8, "width": 6 },
+          "purpose": "balcony",
+          "location": { "x_start": 16, "y_start": 50, "x_end": 24, "y_end": 56 }
+        },
+        {
+          "room_id": "bedroom_6",
+          "dimensions": { "length": 14, "width": 14 },
+          "purpose": "bedroom",
+          "location": { "x_start": 24, "y_start": 50, "x_end": 38, "y_end": 64 }
+        },
+        {
+          "room_id": "study_room_2",
+          "dimensions": { "length": 10, "width": 10 },
+          "purpose": "study room",
+          "location": { "x_start": 38, "y_start": 50, "x_end": 48, "y_end": 60 }
+        },
+        {
+          "room_id": "terrace_2",
+          "dimensions": { "length": 15, "width": 15 },
+          "purpose": "terrace",
+          "location": { "x_start": 48, "y_start": 50, "x_end": 63, "y_end": 65 }
+        },
+        {
+          "room_id": "staircase_2",
+          "dimensions": { "length": 8, "width": 6 },
+          "purpose": "staircase",
+          "location": { "x_start": 63, "y_start": 40, "x_end": 71, "y_end": 50 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "first_floor_staircase",
+          "type": "doorway",
+          "location": { "x_start": 68, "y_start": 43, "x_end": 68, "y_end": 50 },
+          "connects_to": "ground_floor"
+        }
+      ]
+    }
+  ],
+  "additional_features": {
+    "central_courtyard": true,
+    "vaastu_compliance": true,
+    "local_building_norms": {
+      "setback_rules": "complied",
+      "FAR_utilization": "optimal",
+      "parking_provision": "as per local norms"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "shape": "rectangle",
+          "dimensions": { "length": 15, "width": 12 },
+          "position": { "x": 0, "y": 0 }
+        },
+        {
+          "room_id": "bedroom_1",
+          "shape": "rectangle",
+          "dimensions": { "length": 14, "width": 13 },
+          "position": { "x": 15, "y": 0 },
+          "attached": {
+            "balcony": {
+              "shape": "rectangle",
+              "dimensions": { "length": 8, "width": 6 },
+              "position": { "x": 29, "y": 0 }
+            }
+          }
+        },
+        {
+          "room_id": "kitchen",
+          "shape": "rectangle",
+          "dimensions": { "length": 12, "width": 10 },
+          "position": { "x": 0, "y": 12 }
+        },
+        {
+          "room_id": "dining_room",
+          "shape": "square",
+          "dimensions": { "length": 8, "width": 8 },
+          "position": { "x": 12, "y": 12 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "dimensions": { "length": 3.5, "width": 7 },
+          "position": { "x": -0.5, "y": 15 } },
+        {
+          "opening_id": "bedroom_door",
+          "type": "door",
+          "dimensions": { "length": 3.5, "width": 7 },
+          "position": { "x": 29, "y": -0.5 }
+        },
+        {
+          "opening_id": "balcony_door",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 6 },
+          "position": { "x": 14.5, "y": -0.5 }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_2",
+          "shape": "rectangle",
+          "dimensions": { "length": 14, "width": 13 },
+          "position": { "x": 0, "y": 25 }
+        },
+        {
+          "room_id": "balcony_2",
+          "shape": "rectangle",
+          "dimensions": { "length": 8, "width": 6 },
+          "position": { "x": 14, "y": 30 }
+        },
+        {
+          "room_id": "study_room",
+          "shape": "square",
+          "dimensions": { "length": 8, "width": 8 },
+          "position": { "x": 25, "y": 25 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "bedroom_2_door",
+          "type": "door",
+          "dimensions": { "length": 3.5, "width": 7 },
+          "position": { "x": -0.5, "y": 25 }
+        },
+        {
+          "opening_id": "balcony_2_door",
+          "type": "door",
+          "dimensions": { "length": 3, "width": 6 },
+          "position": { "x": 14, "y": 24.5 }
+        }
+      ]
+    }
+  ],
+  "plot_dimensions": {
+    "length": 40,
+    "width": 60
+  },
+  "orientation": "north-facing",
+  "style": "colonial"
+}

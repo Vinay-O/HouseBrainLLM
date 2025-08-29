@@ -1,0 +1,122 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "entrance_lobby",
+          "type": "lobby",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["natural light", "ventilation"],
+          "accessibility": "public"
+        },
+        {
+          "room_id": "living_dining",
+          "type": "combined living and dining",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["natural light", "ventilation", "open kitchen"],
+          "accessibility": "private"
+        },
+        {
+          "room_id": "kitchen",
+          "type": "modular kitchen",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["ventilation", "storage", "energy-efficient appliances"],
+          "accessibility": "private"
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "master bedroom",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["natural light", "ventilation", "walk-in closet", "attached bathroom"],
+          "accessibility": "private"
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "guest bedroom",
+          "dimensions": { "length": 15, "width": 10 },
+          "features": ["natural light", "ventilation", "attached bathroom"],
+          "accessibility": "private"
+        },
+        {
+          "room_id": "gym",
+          "type": "private gym",
+          "dimensions": { "length": 20, "width": 15 },
+          "features": ["ventilation", "natural light", "equipment storage"],
+          "accessibility": "private"
+        },
+        {
+          "room_id": "library",
+          "type": "library",
+          "dimensions": { "length": 15, "width": 10 },
+          "features": ["natural light", "ventilation", "bookshelves", "reading nook"],
+          "accessibility": "private"
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "attached to master bedroom",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["natural light", "ventilation", "modern fixtures"],
+          "accessibility": "private"
+        },
+        {
+          "room_id": "bathroom_2",
+          "type": "attached to guest bedroom",
+          "dimensions": { "length": 8, "width": 6 },
+          "features": ["natural light", "ventilation", "modern fixtures"],
+          "accessibility": "private"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "entrance",
+          "dimensions": { "length": 8, "width": 10 },
+          "direction": "north"
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "dimensions": { "length": 6, "width": 6 },
+          "room": "living_dining",
+          "direction": "east"
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "dimensions": { "length": 5, "width": 5 },
+          "room": "kitchen",
+          "direction": "south"
+        },
+        {
+          "opening_id": "bedroom_1_window",
+          "type": "window",
+          "dimensions": { "length": 8, "width": 6 },
+          "room": "bedroom_1",
+          "direction": "east"
+        },
+        {
+          "opening_id": "bedroom_2_window",
+          "type": "window",
+          "dimensions": { "length": 7, "width": 5 },
+          "room": "bedroom_2",
+          "direction": "north"
+        },
+        {
+          "opening_id": "gym_window",
+          "type": "window",
+          "dimensions": { "length": 8, "width": 6 },
+          "room": "gym",
+          "direction": "west"
+        },
+        {
+          "opening_id": "library_window",
+          "type": "window",
+          "dimensions": { "length": 7, "width": 5 },
+          "room": "library",
+          "direction": "north"
+        }
+      ]
+    }
+  ]
+}

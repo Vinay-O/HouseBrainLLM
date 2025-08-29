@@ -1,0 +1,249 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 3200,
+      "style": "Mediterranean Villa"
+    },
+    "plot": {
+      "shape": "circular",
+      "slope": "gentle",
+      "orientation": "south"
+    },
+    "roomBreakdown": [
+      {
+        "type": "primary_suite",
+        "count": 1,
+        "details": "Aging-in-place accessibility, walk-in shower, zero-threshold entry"
+      },
+      {
+        "type": "bedroom",
+        "count": 1,
+        "details": "Guest bedroom with accessible features"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "details": "Chef's kitchen with wood-fired oven, accessible design"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "details": "Great room with high thermal mass and panoramic views"
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "details": "Open to kitchen and living areas"
+      },
+      {
+        "type": "bathroom",
+        "count": 2,
+        "details": "Primary ensuite and guest bathroom, both accessible"
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "details": "Laundry and mechanical room"
+      },
+      {
+        "type": "pavilion",
+        "count": 2,
+        "details": "Glass-connected living pavilion and bedroom pavilion"
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1280000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "primary_suite",
+          "type": "primary_suite",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 8
+            },
+            {
+              "wall": "east",
+              "position": 9,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "bedroom_guest",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "size": 6
+            },
+            {
+              "wall": "west",
+              "position": 7,
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "bath_primary",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "bath_guest",
+          "type": "bathroom",
+          "bounds": {
+            "x": 26,
+            "y": 14,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 5,
+              "size": 4
+            }
+          ]
+        },
+        {
+          "id": "kitchen_chef",
+          "type": "kitchen",
+          "bounds": {
+            "x": 10,
+            "y": 30,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 8,
+              "size": 10
+            }
+          ]
+        },
+        {
+          "id": "living_great",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 10,
+            "height": 24
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 8
+            },
+            {
+              "wall": "east",
+              "position": 12,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 26,
+            "y": 24,
+            "width": 10,
+            "height": 14
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 36,
+            "y": 24,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2200,
+      "style": "Urban Townhouse"
+    },
+    "plot": {
+      "shape": "circular",
+      "orientation": "north",
+      "climate": "desert_extreme_temperatures",
+      "landscaping": "low_maintenance_xeriscaping"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "purpose": "culinary_professional"
+      },
+      {
+        "type": "pottery_studio",
+        "features": [
+          "kilns"
+        ]
+      },
+      {
+        "type": "living_room",
+        "features": [
+          "360_degree_views"
+        ]
+      },
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "utility",
+        "features": [
+          "smart_home_automation_hub"
+        ]
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 385000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "storage_utility",
+          "type": "utility",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "door_to_stairs"
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 5,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "door_to_stairs"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "pottery_studio",
+          "type": "pottery_studio",
+          "bounds": {
+            "x": 5,
+            "y": 40,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "door_to_hall",
+            "exterior_door_to_patio"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 40,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "door_to_dining",
+            "pantry_door"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 50,
+            "y": 40,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "door_to_kitchen",
+            "door_to_living"
+          ],
+          "windows": [
+            "north_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "living",
+          "type": "living_room",
+          "bounds": {
+            "x": 65,
+            "y": 40,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "door_to_dining",
+            "door_to_entry"
+          ],
+          "windows": [
+            "north_window",
+            "west_window",
+            "south_window"
+          ]
+        },
+        {
+          "id": "entry",
+          "type": "foyer",
+          "bounds": {
+            "x": 65,
+            "y": 25,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "main_entry_door",
+            "door_to_living",
+            "stairs_door"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 75,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 5,
+            "y": 40,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "door_to_hall",
+            "closet_door"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 40,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "door_to_hall",
+            "closet_door"
+          ],
+          "windows": [
+            "north_window",
+            "west_window"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 40,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "skylight"
+          ]
+        },
+        {
+          "id": "study_nook",
+          "type": "study",
+          "bounds": {
+            "x": 65,
+            "y": 40,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            "door_to_hall"
+          ],
+          "windows": [
+            "north_window",
+            "west_window",
+            "south_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

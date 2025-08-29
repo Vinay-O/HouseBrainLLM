@@ -1,0 +1,267 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Eco-friendly Farmhouse"
+    },
+    "plot": {
+      "length": 40,
+      "width": 30
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1,
+        "area": 180
+      },
+      {
+        "type": "library",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 240
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "bathroom",
+        "count": 1,
+        "area": 80
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "balcony",
+        "count": 1,
+        "area": 130
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 216000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 10,
+            "y": 10,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 10
+              },
+              "connects_to": "living_room"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 17.5
+              },
+              "connects_to": "library"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 10
+              },
+              "connects_to": "courtyard"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "connects_to": "kitchen"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 5
+              },
+              "connects_to": "bedroom"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "size": 8
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 5
+              },
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 5
+              },
+              "connects_to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 0
+              },
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 5
+              },
+              "connects_to": "living_room"
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 10
+              },
+              "connects_to": "bedroom_balcony"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "bedroom_balcony",
+          "type": "balcony",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 5,
+                "y": 10
+              },
+              "connects_to": "bedroom"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 17.5
+              },
+              "connects_to": "courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 20
+              },
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 10,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 27.5
+              },
+              "connects_to": "courtyard"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

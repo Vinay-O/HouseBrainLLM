@@ -1,0 +1,403 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 4200,
+      "style": "Contemporary Glass Box"
+    },
+    "plot": {
+      "slope": 30,
+      "orientation": "east-west",
+      "climate": "coastal with salt air exposure"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "home_theater",
+        "count": 1
+      },
+      {
+        "type": "storm_shelter",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "garage",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "pet_area",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 3150000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "location": "exterior",
+              "material": "aluminum"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "north"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storm_shelter_0",
+          "type": "storm_shelter",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "security",
+              "location": "west"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 18
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "location": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_glass",
+              "location": "south",
+              "material": "laminated_glass"
+            },
+            {
+              "type": "fixed_glass",
+              "location": "north",
+              "material": "laminated_glass"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "location": "south",
+              "material": "aluminum_clad"
+            }
+          ]
+        },
+        {
+          "id": "dining_room_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 14,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "sliding_glass",
+              "location": "south",
+              "material": "laminated_glass"
+            }
+          ]
+        },
+        {
+          "id": "home_theater_1",
+          "type": "home_theater",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "east"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "fiber_optic_star_ceiling",
+            "acoustic_wall_panels"
+          ]
+        },
+        {
+          "id": "bedroom_1_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 18,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_glass",
+              "location": "north",
+              "material": "laminated_glass"
+            },
+            {
+              "type": "casement",
+              "location": "east",
+              "material": "aluminum_clad"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 18,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "operable",
+              "location": "north",
+              "material": "aluminum_clad"
+            }
+          ]
+        },
+        {
+          "id": "pet_area_1",
+          "type": "pet_area",
+          "bounds": {
+            "x": 40,
+            "y": 28,
+            "width": 12,
+            "height": 6
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "north"
+            },
+            {
+              "type": "pet_door",
+              "location": "east"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "location": "east",
+              "material": "aluminum_clad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_2_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_glass",
+              "location": "south",
+              "material": "laminated_glass"
+            },
+            {
+              "type": "casement",
+              "location": "east",
+              "material": "aluminum_clad"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "operable",
+              "location": "north",
+              "material": "aluminum_clad"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed_glass",
+              "location": "south",
+              "material": "laminated_glass"
+            },
+            {
+              "type": "casement",
+              "location": "west",
+              "material": "aluminum_clad"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "north"
+            }
+          ],
+          "windows": [
+            {
+              "type": "operable",
+              "location": "east",
+              "material": "aluminum_clad"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

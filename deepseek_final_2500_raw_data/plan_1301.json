@@ -1,0 +1,404 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 4200,
+      "style": "High-Tech Architecture"
+    },
+    "plot": {
+      "description": "Desert plateau with panoramic views, alpine climate with heavy snow loads, north-facing orientation for consistent light",
+      "size": "Large",
+      "terrain": "Plateau"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "description": "Double-height library with spiral staircase, cork flooring, bamboo finishes, and acoustic paneling"
+      },
+      {
+        "type": "performance_space",
+        "description": "Open performance and rehearsal area with high ceilings and professional acoustic treatment"
+      },
+      {
+        "type": "master_bedroom",
+        "description": "Primary suite with panoramic views, walk-in closet, and en-suite bathroom"
+      },
+      {
+        "type": "guest_bedroom",
+        "description": "Two guest bedrooms with shared bathroom and views of the garden"
+      },
+      {
+        "type": "kitchen",
+        "description": "High-tech kitchen with premium appliances and bamboo cabinetry"
+      },
+      {
+        "type": "living_room",
+        "description": "Open living area with floor-to-ceiling windows and cork flooring"
+      },
+      {
+        "type": "recording_studio",
+        "description": "Soundproofed recording studio with professional equipment"
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 2850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "performance_space",
+          "type": "performance_space",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 12.5
+              },
+              "to_room": "library"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 25
+              },
+              "to_room": "garden"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 12.5
+              },
+              "size": "large",
+              "orientation": "north"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 0
+              },
+              "size": "large",
+              "orientation": "west"
+            }
+          ]
+        },
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 12.5
+              },
+              "to_room": "performance_space"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 12.5
+              },
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 50,
+                "y": 12.5
+              },
+              "size": "large",
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 50,
+                "y": 7.5
+              },
+              "to_room": "library"
+            },
+            {
+              "position": {
+                "x": 65,
+                "y": 7.5
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 57.5,
+                "y": 0
+              },
+              "size": "medium",
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 65,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 65,
+                "y": 7.5
+              },
+              "to_room": "kitchen"
+            },
+            {
+              "position": {
+                "x": 85,
+                "y": 7.5
+              },
+              "to_room": "garden"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 72.5,
+                "y": 15
+              },
+              "size": "large",
+              "orientation": "south"
+            },
+            {
+              "position": {
+                "x": 85,
+                "y": 7.5
+              },
+              "size": "large",
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "recording_studio",
+          "type": "recording_studio",
+          "bounds": {
+            "x": 65,
+            "y": 15,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 65,
+                "y": 20
+              },
+              "to_room": "living_room"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 32.5
+              },
+              "to_room": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 32.5
+              },
+              "size": "large",
+              "orientation": "north"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 40
+              },
+              "size": "medium",
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom_1",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 32.5
+              },
+              "to_room": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 27.5,
+                "y": 40
+              },
+              "size": "medium",
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom_2",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 32.5
+              },
+              "to_room": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 42.5,
+                "y": 40
+              },
+              "size": "medium",
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "hallway",
+          "type": "hallway",
+          "bounds": {
+            "x": 20,
+            "y": 40,
+            "width": 30,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 42.5
+              },
+              "to_room": "master_bedroom"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 42.5
+              },
+              "to_room": "guest_bedroom_1"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 42.5
+              },
+              "to_room": "guest_bedroom_2"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 40
+              },
+              "to_room": "staircase"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "library_mezzanine",
+          "type": "library",
+          "bounds": {
+            "x": 50,
+            "y": 25,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 50,
+                "y": 32.5
+              },
+              "to_room": "hallway"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 70,
+                "y": 25
+              },
+              "size": "large",
+              "orientation": "north"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

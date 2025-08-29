@@ -1,0 +1,248 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 2200,
+      "style": "Japanese Zen"
+    },
+    "plot": {
+      "shoreline_length": 50,
+      "climate": "Continental with harsh winters"
+    },
+    "roomBreakdown": [
+      {
+        "type": "observatory",
+        "description": "Zen-inspired observatory with retractable dome for stargazing and waterfront views, accessible via no-step entry"
+      },
+      {
+        "type": "thermal_chimney",
+        "description": "Strategic thermal chimney placement for passive cooling and natural ventilation, integrated with rammed earth thermal mass"
+      },
+      {
+        "type": "master_bedroom",
+        "description": "Aging-in-place primary suite with zero-threshold shower, grab bars, and emergency call system"
+      },
+      {
+        "type": "guest_bedroom",
+        "description": "Accessible secondary bedroom with wide doorways for potential caregiver use"
+      },
+      {
+        "type": "open_living",
+        "description": "Open-plan living/dining area with heated rammed earth floors and panoramic waterfront views"
+      },
+      {
+        "type": "kitchen",
+        "description": "Universal design kitchen with adjustable countertops, pull-down shelves, and lever-handle fixtures"
+      },
+      {
+        "type": "bathroom",
+        "description": "Wheelchair-accessible bathroom with roll-in shower, comfort-height toilet, and non-slip flooring"
+      },
+      {
+        "type": "utility",
+        "description": "Laundry/mudroom with front-loading appliances and built-in seating for dressing"
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 485000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "observatory",
+          "type": "observatory",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "type": "retractable_dome"
+            }
+          ]
+        },
+        {
+          "id": "living_dining",
+          "type": "living_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12,
+              "type": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 45,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7,
+              "type": "casement"
+            }
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 18,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 9,
+              "type": "double_glazed"
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 18,
+            "y": 15,
+            "width": 14,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "type": "double_glazed"
+            }
+          ]
+        },
+        {
+          "id": "main_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 15,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "type": "frosted"
+            }
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 32,
+            "y": 25,
+            "width": 12,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "thermal_chimney_1",
+          "type": "other",
+          "bounds": {
+            "x": 44,
+            "y": 25,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "thermal_chimney_2",
+          "type": "other",
+          "bounds": {
+            "x": 48,
+            "y": 15,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "entry_courtyard",
+          "type": "other",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 12,
+            "height": 11
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 6
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

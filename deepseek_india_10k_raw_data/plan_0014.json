@@ -1,0 +1,367 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 1,
+      "totalArea": 1500,
+      "style": "Traditional Kashmiri with Courtyard"
+    },
+    "plot": {
+      "width": 30,
+      "depth": 50,
+      "location": "Nellore coastal plains"
+    },
+    "roomBreakdown": [
+      {
+        "type": "courtyard",
+        "area": 600,
+        "purpose": "Central open space for festivals, gatherings, and natural light/ventilation"
+      },
+      {
+        "type": "veranda",
+        "area": 480,
+        "purpose": "Wraparound thinnai with traditional seating for social interactions"
+      },
+      {
+        "type": "workshop",
+        "area": 180,
+        "purpose": "Traditional craft workshop for regional handicraft production"
+      },
+      {
+        "type": "utility",
+        "area": 60,
+        "purpose": "Waste segregation and recycling station for zero-waste living"
+      }
+    ]
+  },
+  "total_area": 1500.0,
+  "construction_cost": 2250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "north_entrance",
+          "type": "entrance",
+          "bounds": {
+            "x": 13,
+            "y": 0,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 1.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 20,
+            "height": 40
+          },
+          "doors": [],
+          "windows": [],
+          "features": [
+            "traditional mandana/rangoli floor patterns",
+            "drainage system for monsoon water management"
+          ]
+        },
+        {
+          "id": "veranda_north",
+          "type": "veranda",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 20,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "features": [
+            "traditional seating",
+            "wooden columns",
+            "cyclone-resistant construction"
+          ]
+        },
+        {
+          "id": "veranda_south",
+          "type": "veranda",
+          "bounds": {
+            "x": 5,
+            "y": 45,
+            "width": 20,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "features": [
+            "traditional seating",
+            "wooden columns",
+            "cyclone-resistant construction"
+          ]
+        },
+        {
+          "id": "veranda_east",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 5,
+            "height": 40
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 20
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 20
+            }
+          ],
+          "features": [
+            "traditional seating",
+            "wooden columns",
+            "cyclone-resistant construction"
+          ]
+        },
+        {
+          "id": "veranda_west",
+          "type": "veranda",
+          "bounds": {
+            "x": 25,
+            "y": 5,
+            "width": 5,
+            "height": 40
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 20
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 20
+            }
+          ],
+          "features": [
+            "traditional seating",
+            "wooden columns",
+            "cyclone-resistant construction"
+          ]
+        },
+        {
+          "id": "workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2.5
+            }
+          ],
+          "features": [
+            "craft storage",
+            "work benches",
+            "natural lighting"
+          ]
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2.5
+            }
+          ],
+          "features": [
+            "waste segregation bins",
+            "recycling station",
+            "composting area"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 45,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2.5
+            }
+          ],
+          "features": [
+            "built-in storage",
+            "earthquake-resistant construction"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 45,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2.5
+            }
+          ],
+          "features": [
+            "built-in storage",
+            "earthquake-resistant construction"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 5,
+            "y": 45,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "features": [
+            "traditional cooking area",
+            "storage",
+            "ventilation"
+          ]
+        },
+        {
+          "id": "dining",
+          "type": "dining",
+          "bounds": {
+            "x": 17,
+            "y": 45,
+            "width": 8,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "features": [
+            "extendable seating",
+            "family gatherings"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 13,
+            "y": 45,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2
+            }
+          ],
+          "windows": [],
+          "features": [
+            "water-efficient fixtures",
+            "ventilation"
+          ]
+        }
+      ]
+    }
+  ]
+}

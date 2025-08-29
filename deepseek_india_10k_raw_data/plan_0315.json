@@ -1,0 +1,474 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 5400,
+      "style": "Gujarati Pol with Luxury Artisan Crafting"
+    },
+    "plot": {
+      "width": 60,
+      "length": 90,
+      "location": "Bareilly",
+      "considerations": [
+        "solar optimization (south-facing)",
+        "mountain landslide mitigation",
+        "heavy snow load structural design",
+        "prevailing wind utilization"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "description": "For nuclear family parents"
+      },
+      {
+        "type": "bedroom",
+        "count": 2,
+        "description": "For children"
+      },
+      {
+        "type": "bedroom",
+        "count": 1,
+        "description": "For visiting elderly parents with accessibility features"
+      },
+      {
+        "type": "home_office",
+        "count": 1,
+        "description": "Sound-insulated pod for video conferencing"
+      },
+      {
+        "type": "community_courtyard",
+        "count": 1,
+        "description": "Central open courtyard for family gatherings"
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "description": "Sacred space with traditional threshold designs"
+      },
+      {
+        "type": "traditional_storage",
+        "count": 2,
+        "description": "Food storage using preservation techniques without refrigeration"
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "description": "Main family living area"
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "description": "With traditional cooking space"
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "description": "Family dining area"
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "description": "Including accessible bathroom for elderly"
+      }
+    ]
+  },
+  "total_area": 5400.0,
+  "construction_cost": 1620000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": "north"
+            }
+          ],
+          "windows": [],
+          "description": "Sacred entrance with kolam/threshold designs and ornate jharokhas"
+        },
+        {
+          "id": "community_courtyard",
+          "type": "community_courtyard",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 36,
+            "height": 30
+          },
+          "doors": [
+            {
+              "position": "north"
+            },
+            {
+              "position": "east"
+            },
+            {
+              "position": "south"
+            },
+            {
+              "position": "west"
+            }
+          ],
+          "windows": [],
+          "description": "Central courtyard for community integration, south-facing for solar optimization"
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 20,
+            "height": 22
+          },
+          "doors": [
+            {
+              "position": "east"
+            }
+          ],
+          "windows": [
+            {
+              "position": "south"
+            },
+            {
+              "position": "west"
+            }
+          ],
+          "description": "Main living area with carved wooden brackets and jharokhas"
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 15,
+            "height": 18
+          },
+          "doors": [
+            {
+              "position": "north"
+            }
+          ],
+          "windows": [
+            {
+              "position": "south"
+            },
+            {
+              "position": "east"
+            }
+          ],
+          "description": "Traditional kitchen with strategic window placement for ventilation"
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 35,
+            "y": 30,
+            "width": 13,
+            "height": 18
+          },
+          "doors": [
+            {
+              "position": "north"
+            }
+          ],
+          "windows": [
+            {
+              "position": "south"
+            }
+          ],
+          "description": "Family dining area adjacent to kitchen"
+        },
+        {
+          "id": "traditional_storage_1",
+          "type": "traditional_storage",
+          "bounds": {
+            "x": 48,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": "west"
+            }
+          ],
+          "windows": [
+            {
+              "position": "north"
+            }
+          ],
+          "description": "Food storage using traditional preservation techniques without refrigeration"
+        },
+        {
+          "id": "elderly_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 48,
+            "y": 12,
+            "width": 12,
+            "height": 18
+          },
+          "doors": [
+            {
+              "position": "west"
+            }
+          ],
+          "windows": [
+            {
+              "position": "south"
+            },
+            {
+              "position": "east"
+            }
+          ],
+          "description": "Ground floor bedroom for visiting elderly parents with accessibility features"
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 48,
+            "y": 30,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": "west"
+            }
+          ],
+          "windows": [
+            {
+              "position": "east"
+            }
+          ],
+          "description": "Accessible bathroom for elderly parents"
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 54,
+            "y": 30,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": "west"
+            }
+          ],
+          "windows": [
+            {
+              "position": "east"
+            }
+          ],
+          "description": "Guest bathroom"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "position": "south"
+            }
+          ],
+          "windows": [
+            {
+              "position": "north"
+            },
+            {
+              "position": "west"
+            },
+            {
+              "position": "south"
+            }
+          ],
+          "description": "Master bedroom with ornate jharokhas and carved wooden brackets"
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 16,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": "south"
+            }
+          ],
+          "windows": [
+            {
+              "position": "north"
+            },
+            {
+              "position": "east"
+            }
+          ],
+          "description": "Children's bedroom with strategic window placement"
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 36,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": "south"
+            }
+          ],
+          "windows": [
+            {
+              "position": "north"
+            },
+            {
+              "position": "east"
+            }
+          ],
+          "description": "Children's bedroom"
+        },
+        {
+          "id": "home_office_pod",
+          "type": "home_office",
+          "bounds": {
+            "x": 48,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": "south"
+            }
+          ],
+          "windows": [
+            {
+              "position": "north"
+            },
+            {
+              "position": "east"
+            }
+          ],
+          "description": "Sound-insulated pod for video conferencing with international clients"
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": "north"
+            }
+          ],
+          "windows": [
+            {
+              "position": "east"
+            }
+          ],
+          "description": "Sacred space with traditional designs and spiritual ambiance"
+        },
+        {
+          "id": "traditional_storage_2",
+          "type": "traditional_storage",
+          "bounds": {
+            "x": 12,
+            "y": 18,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": "north"
+            }
+          ],
+          "windows": [
+            {
+              "position": "east"
+            }
+          ],
+          "description": "Additional food storage space using traditional techniques"
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 24,
+            "y": 15,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": "south"
+            }
+          ],
+          "windows": [
+            {
+              "position": "east"
+            }
+          ],
+          "description": "Family bathroom"
+        },
+        {
+          "id": "bathroom_4",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 15,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": "south"
+            }
+          ],
+          "windows": [
+            {
+              "position": "west"
+            }
+          ],
+          "description": "Ensuite bathroom for master bedroom"
+        }
+      ]
+    }
+  ]
+}

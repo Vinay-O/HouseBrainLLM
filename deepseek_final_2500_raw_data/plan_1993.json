@@ -1,0 +1,202 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1800,
+      "style": "Japanese Zen"
+    },
+    "plot": {
+      "shoreline_length": 50,
+      "orientation": "north",
+      "climate": "coastal with salt air exposure"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "telecommuting_pod",
+        "count": 1
+      },
+      {
+        "type": "entryway",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 1800.0,
+  "construction_cost": 450000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entryway",
+          "type": "entryway",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4,
+              "type": "sliding_glass",
+              "leads_to": "exterior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 28,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 14,
+              "type": "sliding_glass",
+              "leads_to": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 14,
+              "type": "fixed",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 28,
+            "y": 8,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "type": "casement",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 28,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8,
+              "type": "sliding_glass",
+              "leads_to": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "type": "fixed",
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 28,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 24,
+            "y": 28,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "type": "fixed",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 24,
+            "y": 40,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "telecommuting_pod",
+          "type": "telecommuting_pod",
+          "bounds": {
+            "x": 32,
+            "y": 20,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "type": "fixed",
+              "size": "small"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

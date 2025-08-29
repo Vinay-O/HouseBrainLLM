@@ -1,0 +1,202 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Organic Architecture"
+    },
+    "plot": {
+      "shape": "L-shaped",
+      "location": "urban rooftop",
+      "climate": "continental with harsh winters"
+    },
+    "roomBreakdown": [
+      {
+        "type": "primary_suite",
+        "area": 250,
+        "description": "Master bedroom with ensuite bathroom and walk-in closet for the retired artist couple"
+      },
+      {
+        "type": "guest_room",
+        "area": 180,
+        "description": "Multi-functional room with Murphy bed system that converts to studio space"
+      },
+      {
+        "type": "living_room",
+        "area": 280,
+        "description": "Open living area with diagonal orientation to prevailing winds and garden views"
+      },
+      {
+        "type": "kitchen",
+        "area": 150,
+        "description": "Efficient galley kitchen with breakfast bar and organic flowing design"
+      },
+      {
+        "type": "studio",
+        "area": 240,
+        "description": "Artist studio with northern light exposure and integrated green walls"
+      },
+      {
+        "type": "bathroom",
+        "area": 100,
+        "description": "Guest bathroom with accessibility features"
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 216000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "primary_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12.5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "south",
+              "to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_pane",
+              "location": "north"
+            },
+            {
+              "type": "double_pane",
+              "location": "east"
+            }
+          ]
+        },
+        {
+          "id": "guest_room",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12.5,
+            "y": 0,
+            "width": 9,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "south",
+              "to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_pane",
+              "location": "east"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 21.5,
+            "height": 13
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "location": "south",
+              "to": "garden"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_pane",
+              "location": "south"
+            },
+            {
+              "type": "double_pane",
+              "location": "west"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 21.5,
+            "y": 20,
+            "width": 7.5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "west",
+              "to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_pane",
+              "location": "east"
+            }
+          ]
+        },
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 33,
+            "width": 12,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "north",
+              "to": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "type": "north_light",
+              "location": "north"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 33,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "location": "south",
+              "to": "studio"
+            }
+          ],
+          "windows": [
+            {
+              "type": "ventilation",
+              "location": "east"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

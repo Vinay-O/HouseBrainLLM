@@ -1,0 +1,323 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 1,
+      "totalArea": 1080,
+      "style": "Mediterranean"
+    },
+    "plot": {
+      "length": 90,
+      "width": 60
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "area": 400
+      },
+      {
+        "type": "home_office",
+        "area": 150
+      },
+      {
+        "type": "library",
+        "area": 120
+      },
+      {
+        "type": "kitchen",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "type": "entry",
+        "area": 50
+      },
+      {
+        "type": "covered_terrace",
+        "area": 200
+      }
+    ]
+  },
+  "total_area": 1080.0,
+  "construction_cost": 216000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 27.5
+              },
+              "direction": "south",
+              "to": "entry"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 27.5
+              },
+              "direction": "south",
+              "to": "covered_terrace"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 40
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 20
+              },
+              "direction": "east"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 20
+              },
+              "direction": "west"
+            }
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 5,
+            "y": 5,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "direction": "east",
+              "to": "entry"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 12.5
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 12.5,
+                "y": 5
+              },
+              "direction": "south"
+            }
+          ]
+        },
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 5,
+            "y": 30,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 34
+              },
+              "direction": "east",
+              "to": "entry"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 34
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 12.5,
+                "y": 30
+              },
+              "direction": "south"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 5,
+            "y": 43,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 17,
+                "y": 47
+              },
+              "direction": "east",
+              "to": "entry"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 47
+              },
+              "direction": "north"
+            },
+            {
+              "position": {
+                "x": 11,
+                "y": 43
+              },
+              "direction": "south"
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 5,
+            "y": 56,
+            "width": 10,
+            "height": 4
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 58
+              },
+              "direction": "east",
+              "to": "entry"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 10,
+                "y": 56
+              },
+              "direction": "south"
+            }
+          ]
+        },
+        {
+          "id": "entry",
+          "type": "entry",
+          "bounds": {
+            "x": 20,
+            "y": 5,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 5
+              },
+              "direction": "south",
+              "to": "exterior"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "direction": "west",
+              "to": "home_office"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 27.5
+              },
+              "direction": "west",
+              "to": "studio"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 34
+              },
+              "direction": "west",
+              "to": "library"
+            },
+            {
+              "position": {
+                "x": 17,
+                "y": 47
+              },
+              "direction": "west",
+              "to": "kitchen"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 58
+              },
+              "direction": "west",
+              "to": "bathroom"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "covered_terrace",
+          "type": "covered_terrace",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 15,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 50,
+                "y": 27.5
+              },
+              "direction": "west",
+              "to": "studio"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

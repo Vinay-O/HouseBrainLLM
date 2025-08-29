@@ -1,0 +1,90 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_1",
+          "type": "bedroom",
+          "dimensions": { "length": 16, "width": 14 },
+          "features": ["wardrobe", "balcony"],
+          "position": { "direction": "north" }
+        },
+        {
+          "room_id": "home_office",
+          "type": "home_office",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["workdesk", "storage"]
+        },
+        {
+          "room_id": "servant_quarters",
+          "type": "servant_quarters",
+          "dimensions": { "length": 12, "width": 8 }
+        },
+        {
+          "room_id": "living_room",
+          "type": "living_room",
+          "dimensions": { "length": 16, "width": 14 },
+          "features": ["sofa", "TV_unit"]
+        },
+        {
+          "room_id": "dining_room",
+          "type": "dining_room",
+          "dimensions": { "length": 12, "width": 10 }
+        },
+        {
+          "room_id": "kitchen",
+          "type": "kitchen",
+          "dimensions": { "length": 12, "width": 8 },
+          "features": ["modular_cabinets", "gas_stove"]
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "bathroom",
+          "dimensions": { "length": 8, "width": 6 }
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "bedroom",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["wardrobe", "balcony"],
+          "position": { "direction": "east" }
+        },
+        {
+          "room_id": "bathroom_2",
+          "type": "bathroom",
+          "dimensions": { "length": 8, "width": 6 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entry",
+          "type": "door",
+          "position": { "direction": "south" },
+          "features": ["foyer"]
+        },
+        {
+          "opening_id": "balcony_door_1",
+          "type": "door",
+          "connected_to": "bedroom_1"
+        },
+        {
+          "opening_id": "balcony_door_2",
+          "type": "door",
+          "connected_to": "bedroom_2"
+        }
+      ]
+    },
+    {
+      "level_id": "upper_level",
+      "rooms": [
+        {
+          "room_id": "study_room",
+          "type": "study_room",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["bookshelf"]
+        }
+      ],
+      "openings": []
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 240,
+      "style": "Scandinavian Hygge"
+    },
+    "plot": {
+      "width": 4,
+      "length": 30,
+      "slope": "ravine",
+      "orientation": "south-facing",
+      "climate": "continental with harsh winters",
+      "stormwaterManagement": "bioswales",
+      "privacyRequirements": "high from neighbors"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "area": 40,
+        "description": "Professional kitchen for culinary experts with high-end appliances and ample prep space"
+      },
+      {
+        "type": "living_room",
+        "area": 50,
+        "description": "Hygge-inspired living area with fireplace, comfortable seating, and connection to outdoor views"
+      },
+      {
+        "type": "pool",
+        "area": 60,
+        "description": "Indoor lap pool with current system for exercise, located to capture solar gain"
+      },
+      {
+        "type": "bedroom",
+        "area": 30,
+        "description": "Master bedroom with privacy considerations and warm materials"
+      },
+      {
+        "type": "bedroom",
+        "area": 20,
+        "description": "Guest bedroom/study with flexible use"
+      },
+      {
+        "type": "bathroom",
+        "area": 20,
+        "description": "Spa-like bathroom with natural materials and luxury fixtures"
+      },
+      {
+        "type": "utility",
+        "area": 20,
+        "description": "Mechanical room for pool equipment and building systems"
+      }
+    ]
+  },
+  "total_area": 240.0,
+  "construction_cost": 685000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "pool_level",
+          "type": "pool",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 15
+              },
+              "leads_to": "staircase"
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "size": {
+                "width": 4,
+                "height": 2
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "mechanical_level",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 2,
+                "y": 15
+              },
+              "leads_to": "exterior"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "kitchen_main",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 0
+              },
+              "leads_to": "living_main"
+            }
+          ],
+          "windows": [
+            {
+              "type": "casement",
+              "position": {
+                "x": 0,
+                "y": 5
+              },
+              "size": {
+                "width": 4,
+                "height": 2
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "living_main",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 4,
+            "height": 12.5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 10
+              },
+              "leads_to": "kitchen_main"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 22.5
+              },
+              "leads_to": "bedroom_master"
+            }
+          ],
+          "windows": [
+            {
+              "type": "picture",
+              "position": {
+                "x": 0,
+                "y": 16.25
+              },
+              "size": {
+                "width": 4,
+                "height": 3
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_master",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 22.5,
+            "width": 4,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 22.5
+              },
+              "leads_to": "living_main"
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "position": {
+                "x": 0,
+                "y": 26.25
+              },
+              "size": {
+                "width": 4,
+                "height": 1
+              },
+              "orientation": "south"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_guest",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 0
+              },
+              "leads_to": "staircase"
+            }
+          ],
+          "windows": [
+            {
+              "type": "awning",
+              "position": {
+                "x": 0,
+                "y": 2.5
+              },
+              "size": {
+                "width": 4,
+                "height": 1.5
+              },
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_upper",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 2,
+                "y": 5
+              },
+              "leads_to": "staircase"
+            }
+          ],
+          "windows": [
+            {
+              "type": "frosted",
+              "position": {
+                "x": 0,
+                "y": 7.5
+              },
+              "size": {
+                "width": 4,
+                "height": 1
+              },
+              "orientation": "north"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

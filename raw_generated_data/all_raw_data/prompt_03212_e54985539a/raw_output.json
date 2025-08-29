@@ -1,0 +1,95 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "name": "Living Room",
+          "area_sqft": 200,
+          "description": "A spacious living room with floor-to-ceiling windows facing east to maximize morning light. Vastu compliant.",
+          "adjacent_rooms": ["dining_area", "entrance_hall"],
+          "furniture": ["sofa_set", "TV_unit", "coffee_table"]
+        },
+        {
+          "room_id": "dining_area",
+          "name": "Dining Area",
+          "area_sqft": 100,
+          "description": "A modest dining area adjoining the living room, with natural light via floor-to-ceiling windows on one side. Designed per Vastu guidelines for south-eastern placement.",
+          "adjacent_rooms": ["living_room", "kitchen"]
+        },
+        {
+          "room_id": "kitchen",
+          "name": "Kitchen",
+          "area_sqft": 100,
+          "description": "A modern kitchen with ample storage and floor-to-ceiling windows on the southern side, ensuring good ventilation according to Vastu.",
+          "adjacent_rooms": ["dining_area", "utility_space"],
+          "furniture": ["kitchen_cabinets", "countertop", "oven"]
+        },
+        {
+          "room_id": "master_bedroom",
+          "name": "Master Bedroom",
+          "area_sqft": 150,
+          "description": "A large master bedroom with floor-to-ceiling windows on the north wall, ensuring a cool environment and privacy. Positioned according to Vastu for health and prosperity.",
+          "adjacent_rooms": ["entrance_hall", "master_bathroom"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "name": "Bedroom 2",
+          "area_sqft": 100,
+          "description": "Second bedroom designed with floor-to-ceiling windows facing east for a balanced energy flow. Adjacent to the master bedroom.",
+          "adjacent_rooms": ["master_bedroom", "entrance_hall"]
+        },
+        {
+          "room_id": "bedroom_3",
+          "name": "Bedroom 3",
+          "area_sqft": 100,
+          "description": "Third bedroom with floor-to-ceiling windows facing west for optimum natural light and ventilation. Adheres to Vastu guidelines.",
+          "adjacent_rooms": ["entrance_hall", "utility_space"]
+        },
+        {
+          "room_id": "master_bathroom",
+          "name": "Master Bathroom",
+          "area_sqft": 50,
+          "description": "Private bathroom adjoining the master bedroom with efficient layout and ample natural light from windows.",
+          "adjacent_rooms": ["master_bedroom", "utility_space"]
+        },
+        {
+          "room_id": "guest_bathroom",
+          "name": "Guest Bathroom",
+          "area_sqft": 30,
+          "description": "Accessible guest bathroom designed for privacy with Vastu-compliant placement.",
+          "adjacent_rooms": ["entrance_hall", "utility_space"]
+        },
+        {
+          "room_id": "study_office",
+          "name": "Study/Office",
+          "area_sqft": 80,
+          "description": "A compact study or home office area positioned in the north-west corner, with floor-to-ceiling windows ensuring ample light.",
+          "adjacent_rooms": ["entrance_hall"]
+        },
+        {
+          "room_id": "utility_space",
+          "name": "Utility Space",
+          "area_sqft": 60,
+          "description": "A functional utility room for laundry and storage, strategically located in the south-east to avoid disruption of energy flow.",
+          "adjacent_rooms": ["kitchen", "bedroom_3", "master_bathroom", "guest_bathroom"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "entrance",
+          "type": "Entrance Doorway",
+          "description": "Main entrance door aligned with the north side of the house, following Vastu guidelines for positive energy flow.",
+          "location": "north"
+        },
+        {
+          "opening_id": "backdoor",
+          "type": "Back Entrance",
+          "description": "Service entrance located on the south-west corner, ensuring minimal disturbance to the primary living areas.",
+          "location": "southwest"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,631 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 2,
+      "totalArea": 8500,
+      "style": "Rajasthani Haveli"
+    },
+    "plot": {
+      "size": 10000,
+      "type": "corner_plot",
+      "frontage": "dual"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "area": 350
+      },
+      {
+        "type": "bedroom",
+        "count": 3,
+        "area": 900
+      },
+      {
+        "type": "bathroom",
+        "count": 4,
+        "area": 400
+      },
+      {
+        "type": "utility_room",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "storage",
+        "count": 2,
+        "area": 200
+      },
+      {
+        "type": "verandah",
+        "count": 2,
+        "area": 600
+      },
+      {
+        "type": "courtyard",
+        "count": 1,
+        "area": 1200
+      },
+      {
+        "type": "guest_house_living",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "guest_bedroom",
+        "count": 2,
+        "area": 400
+      },
+      {
+        "type": "guest_bathroom",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "copper_water_tank",
+        "count": 2,
+        "area": 300
+      }
+    ]
+  },
+  "total_area": 8500.0,
+  "construction_cost": 1275000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 30,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 15
+              },
+              "to": "verandah_north"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "verandah_north",
+          "type": "verandah",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 15
+              },
+              "to": "main_courtyard"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 7
+              },
+              "to": "entrance"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 7
+              },
+              "wall": "north"
+            }
+          ]
+        },
+        {
+          "id": "verandah_east",
+          "type": "verandah",
+          "bounds": {
+            "x": 45,
+            "y": 15,
+            "width": 15,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 45,
+                "y": 35
+              },
+              "to": "main_courtyard"
+            },
+            {
+              "position": {
+                "x": 52,
+                "y": 55
+              },
+              "to": "guest_house"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 52,
+                "y": 0
+              },
+              "wall": "east"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 25
+              },
+              "to": "verandah_north"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 7,
+                "y": 0
+              },
+              "wall": "west"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 45
+              },
+              "to": "main_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 7,
+                "y": 55
+              },
+              "wall": "west"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 55,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 62
+              },
+              "to": "main_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 7,
+                "y": 70
+              },
+              "wall": "west"
+            }
+          ]
+        },
+        {
+          "id": "copper_tank_1",
+          "type": "copper_water_tank",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "guest_house",
+          "type": "guest_house_living",
+          "bounds": {
+            "x": 45,
+            "y": 55,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 45,
+                "y": 62
+              },
+              "to": "verandah_east"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 52,
+                "y": 62
+              },
+              "wall": "east"
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom_1",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 60,
+            "y": 55,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 62
+              },
+              "to": "guest_house"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 65,
+                "y": 62
+              },
+              "wall": "east"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 25
+              },
+              "to": "upper_verandah"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 22,
+                "y": 15
+              },
+              "wall": "south"
+            },
+            {
+              "position": {
+                "x": 22,
+                "y": 35
+              },
+              "wall": "north"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 25
+              },
+              "to": "upper_verandah"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 37,
+                "y": 15
+              },
+              "wall": "south"
+            },
+            {
+              "position": {
+                "x": 37,
+                "y": 35
+              },
+              "wall": "north"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 35,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 45
+              },
+              "to": "upper_verandah"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 22,
+                "y": 35
+              },
+              "wall": "south"
+            },
+            {
+              "position": {
+                "x": 22,
+                "y": 55
+              },
+              "wall": "north"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 35,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 45
+              },
+              "to": "upper_verandah"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 37,
+                "y": 35
+              },
+              "wall": "south"
+            },
+            {
+              "position": {
+                "x": 37,
+                "y": 55
+              },
+              "wall": "north"
+            }
+          ]
+        },
+        {
+          "id": "upper_verandah",
+          "type": "verandah",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 40
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 25
+              },
+              "to": "master_bedroom"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 25
+              },
+              "to": "bedroom_1"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 45
+              },
+              "to": "bedroom_2"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 45
+              },
+              "to": "bedroom_3"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 15
+              },
+              "wall": "south"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 55
+              },
+              "wall": "north"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 20
+              },
+              "to": "upper_verandah"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 25,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 30
+              },
+              "to": "upper_verandah"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 45,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 50
+              },
+              "to": "upper_verandah"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "copper_tank_2",
+          "type": "copper_water_tank",
+          "bounds": {
+            "x": 60,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility_room",
+          "bounds": {
+            "x": 60,
+            "y": 30,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 37
+              },
+              "to": "upper_verandah"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{  
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall",
+          "description": "A spacious foyer designed in Art Deco style featuring geometric patterns and metallic finishes.",
+          "dimensions": {"width": 10, "length": 8},
+          "adjacent_rooms": ["living_room", "dining_area"]
+        },
+        {
+          "name": "Living Room",
+          "description": "Open concept living area with elegant Art Deco detailing, comfortable seating and decorative moldings.",
+          "dimensions": {"width": 12, "length": 16},
+          "adjacent_rooms": ["entrance_hall", "dining_area"]
+        },
+        {
+          "name": "Dining Area",
+          "description": "Formal dining space with a statement chandelier and Art Deco inspired furniture layout.",
+          "dimensions": {"width": 8, "length": 10},
+          "adjacent_rooms": ["entrance_hall", "kitchen"]
+        },
+        {
+          "name": "Kitchen",
+          "description": "Modern kitchen designed with efficiency in mind, incorporating retro Art Deco finishes and energy-efficient appliances.",
+          "dimensions": {"width": 10, "length": 12},
+          "adjacent_rooms": ["dining_area", "utility_room"]
+        },
+        {
+          "name": "Utility Room",
+          "description": "Service area housing laundry, storage, and additional utilities in a functional layout with Art Deco accents.",
+          "dimensions": {"width": 6, "length": 8},
+          "adjacent_rooms": ["kitchen", "private_gym"]
+        },
+        {
+          "name": "Private Gym",
+          "description": "Spacious, well-ventilated gym equipped with modern fitness equipment and designed to ensure privacy.",
+          "dimensions": {"width": 10, "length": 12},
+          "adjacent_rooms": ["utility_room", "open_space"]
+        },
+        {
+          "name": "Open Space",
+          "description": "Multi-purpose area that can serve as a home office or leisure space, integrated with the private gym and designed in Art Deco style.",
+          "dimensions": {"width": 12, "length": 15},
+          "adjacent_rooms": ["private_gym", "entrance_hall"]
+        },
+        {
+          "name": "Guest Bathroom",
+          "description": "Compact guest bathroom featuring modern fixtures with a nod to Art Deco detailing.",
+          "dimensions": {"width": 4, "length": 6},
+          "adjacent_rooms": ["open_space"]
+        }
+      ],
+      "openings": [
+        {
+          "name": "Main Entrance",
+          "description": "Large double door with geometric Art Deco patterns, offering ease of access and a welcoming atmosphere.",
+          "location": "north_facing"
+        },
+        {
+          "name": "Balcony Access",
+          "description": "Glass railing balcony providing outdoor space and light ventilation, aligning with Vastu principles for positive energy flow.",
+          "location": "east_facing"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "name": "Master Bedroom",
+          "description": "Spacious master suite featuring Art Deco-inspired decor, en-suite bathroom, and ample storage.",
+          "dimensions": {"width": 12, "length": 14},
+          "adjacent_rooms": ["master_bedroom_bathroom"]
+        },
+        {
+          "name": "Master Bedroom Bathroom",
+          "description": "Luxury ensuite bath featuring modern fixtures with Art Deco accents.",
+          "dimensions": {"width": 6, "length": 8},
+          "adjacent_rooms": ["master_bedroom"]
+        },
+        {
+          "name": "Secondary Bedroom",
+          "description": "Comfortable bedroom for a guest or child, integrating Art Deco elements in its design and layout.",
+          "dimensions": {"width": 10, "length": 12}
+        }
+      ],
+      "openings": [
+        {
+          "name": "Balcony Access to Master Bedroom",
+          "description": "Private balcony providing outdoor access for the master bedroom with Vastu alignment in mind.",
+          "location": "south_facing"
+        },
+        {
+          "name": "Balcony Access to Secondary Bedroom",
+          "description": "Small balcony that offers light and fresh air, enhancing the overall ambiance of the room.",
+          "location": "west_facing"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2400,
+      "style": "Geodesic Dome"
+    },
+    "plot": {
+      "shape": "Elongated Rectangle",
+      "orientation": "East-West",
+      "climate": "Alpine with Heavy Snow Loads",
+      "adjacency": "Railway"
+    },
+    "roomBreakdown": [
+      {
+        "type": "artist_studio",
+        "area": 600
+      },
+      {
+        "type": "performance_space",
+        "area": 800
+      },
+      {
+        "type": "climate_controlled_storage",
+        "area": 300
+      },
+      {
+        "type": "bedroom",
+        "area": 250
+      },
+      {
+        "type": "bedroom",
+        "area": 200
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "kitchen",
+        "area": 150
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 720000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "performance_space",
+          "type": "performance_space",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "sliding_glass",
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "type": "fixed",
+              "wall": "south",
+              "position": 25
+            }
+          ]
+        },
+        {
+          "id": "bathroom_ground",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [],
+          "fixtures": [
+            "composting_toilet"
+          ]
+        },
+        {
+          "id": "storage_ground",
+          "type": "climate_controlled_storage",
+          "bounds": {
+            "x": 40,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "wall": "east",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "artist_studio",
+          "type": "artist_studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "type": "clerestory",
+              "wall": "north",
+              "position": 15
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 12.5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_hung",
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 12.5,
+            "width": 10,
+            "height": 7.5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_hung",
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "type": "double_hung",
+              "wall": "east",
+              "position": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

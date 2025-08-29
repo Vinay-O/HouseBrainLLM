@@ -1,0 +1,459 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 4800,
+      "style": "Luxury Artisan-Crafted Linear Pavilion with Marathi Wada influence"
+    },
+    "plot": {
+      "width": 40,
+      "length": 60,
+      "cornerPlot": true,
+      "dualStreetFrontage": true,
+      "location": "Calicut trading port",
+      "challenges": [
+        "flooding",
+        "mountain_landslide",
+        "heavy_snow_load"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_clinic",
+        "count": 1
+      },
+      {
+        "type": "patient_consultation",
+        "count": 2
+      },
+      {
+        "type": "home_spa",
+        "count": 1
+      },
+      {
+        "type": "massage_room",
+        "count": 1
+      },
+      {
+        "type": "ayurvedic_treatment",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "bedroom",
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "count": 4
+      },
+      {
+        "type": "courtyard",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 1
+      },
+      {
+        "type": "composting_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen_garden",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 4800.0,
+  "construction_cost": 1920000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entrance_foyer",
+          "type": "foyer",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "east"
+          ]
+        },
+        {
+          "id": "patient_waiting",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "east",
+            "north"
+          ]
+        },
+        {
+          "id": "consultation_1",
+          "type": "patient_consultation",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": [
+            "north"
+          ]
+        },
+        {
+          "id": "clinic_procedure",
+          "type": "home_clinic",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "east"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "consultation_2",
+          "type": "patient_consultation",
+          "bounds": {
+            "x": 15,
+            "y": 12,
+            "width": 15,
+            "height": 11
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "east"
+          ]
+        },
+        {
+          "id": "utility_storage",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 12,
+            "width": 10,
+            "height": 11
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": []
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 23,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            "north",
+            "east",
+            "south",
+            "west"
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 23,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "east"
+          ],
+          "windows": [
+            "south",
+            "west"
+          ]
+        },
+        {
+          "id": "dining",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 15,
+            "height": 13
+          },
+          "doors": [
+            "east"
+          ],
+          "windows": [
+            "south",
+            "west"
+          ]
+        },
+        {
+          "id": "composting_room",
+          "type": "composting_room",
+          "bounds": {
+            "x": 40,
+            "y": 35,
+            "width": 10,
+            "height": 13
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": []
+        },
+        {
+          "id": "garden",
+          "type": "kitchen_garden",
+          "bounds": {
+            "x": 40,
+            "y": 23,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_main",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "spa_room",
+          "type": "home_spa",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "east"
+          ]
+        },
+        {
+          "id": "massage_room",
+          "type": "massage_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "east"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "ayurvedic_treatment",
+          "type": "ayurvedic_treatment",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": [
+            "north",
+            "east"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "east",
+            "south"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 30,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "west",
+            "south"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 30,
+            "width": 10,
+            "height": 9
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": []
+        },
+        {
+          "id": "bathroom_4",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 39,
+            "width": 10,
+            "height": 9
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": []
+        },
+        {
+          "id": "storage_upper",
+          "type": "storage",
+          "bounds": {
+            "x": 30,
+            "y": 30,
+            "width": 10,
+            "height": 9
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

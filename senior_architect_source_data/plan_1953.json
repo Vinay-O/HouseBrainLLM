@@ -1,0 +1,491 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 3,
+      "totalArea": 3200,
+      "style": "Experimental Geodesic Dome"
+    },
+    "plot": {
+      "shape": "elongated rectangle",
+      "orientation": "south-facing",
+      "climate": "desert extreme temperatures",
+      "adjacency": "railway"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 4
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "workshop",
+        "count": 1
+      },
+      {
+        "type": "guest_room",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 785000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "workshop_0",
+          "type": "workshop",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 12,
+              "size": "large"
+            }
+          ],
+          "features": [
+            "hydraulic_car_lift",
+            "heavy_duty_wiring",
+            "phase_change_materials"
+          ]
+        },
+        {
+          "id": "garage_0",
+          "type": "garage",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 12
+            }
+          ],
+          "windows": [],
+          "features": [
+            "vehicle_access"
+          ]
+        },
+        {
+          "id": "utility_0",
+          "type": "utility",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 8,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "features": [
+            "HVAC",
+            "solar_thermal_storage",
+            "phase_change_materials"
+          ]
+        },
+        {
+          "id": "storage_0",
+          "type": "storage",
+          "bounds": {
+            "x": 32,
+            "y": 12,
+            "width": 8,
+            "height": 13
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "features": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "panoramic"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": "standard"
+            }
+          ],
+          "features": [
+            "double_height_ceiling",
+            "phase_change_materials"
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6,
+              "size": "standard"
+            }
+          ],
+          "features": [
+            "energy_efficient_appliances"
+          ]
+        },
+        {
+          "id": "dining_room_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 12,
+            "height": 13
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6,
+              "size": "standard"
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "bathroom_1_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "size": "small"
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "pantry_1",
+          "type": "storage",
+          "bounds": {
+            "x": 32,
+            "y": 8,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "features": []
+        },
+        {
+          "id": "staircase_1",
+          "type": "staircase",
+          "bounds": {
+            "x": 32,
+            "y": 16,
+            "width": 8,
+            "height": 9
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "features": [
+            "central_spiral"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "primary_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 8,
+              "size": "panoramic"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": "standard"
+            }
+          ],
+          "features": [
+            "walk_in_closet",
+            "phase_change_materials"
+          ]
+        },
+        {
+          "id": "bathroom_2_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 4,
+              "size": "small"
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "teen_bedroom_1_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 8,
+              "size": "panoramic"
+            },
+            {
+              "wall": "west",
+              "position": 6,
+              "size": "standard"
+            }
+          ],
+          "features": [
+            "phase_change_materials"
+          ]
+        },
+        {
+          "id": "teen_bedroom_2_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 16,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 8,
+              "size": "panoramic"
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "standard"
+            }
+          ],
+          "features": [
+            "phase_change_materials"
+          ]
+        },
+        {
+          "id": "guest_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 10,
+            "width": 24,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12,
+              "size": "panoramic"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "size": "standard"
+            }
+          ],
+          "features": [
+            "en_suite",
+            "phase_change_materials"
+          ]
+        },
+        {
+          "id": "bathroom_2_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 25,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 4,
+              "size": "small"
+            }
+          ],
+          "features": []
+        },
+        {
+          "id": "staircase_2",
+          "type": "staircase",
+          "bounds": {
+            "x": 24,
+            "y": 25,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4
+            }
+          ],
+          "windows": [],
+          "features": [
+            "central_spiral"
+          ]
+        }
+      ]
+    }
+  ]
+}

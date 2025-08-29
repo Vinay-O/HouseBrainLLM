@@ -1,0 +1,235 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 2400,
+      "style": "Experimental Scandinavian Minimalist"
+    },
+    "plot": {
+      "shape": "triangular",
+      "orientation": "east-west linear",
+      "climate": "desert extreme temperatures"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 400,
+        "level": 0,
+        "sunken": true
+      },
+      {
+        "type": "kitchen",
+        "area": 200,
+        "level": 1
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 250,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 180,
+        "level": 1
+      },
+      {
+        "type": "bedroom",
+        "area": 180,
+        "level": 1
+      },
+      {
+        "type": "spa",
+        "area": 300,
+        "level": 0,
+        "features": [
+          "massage_tables"
+        ]
+      },
+      {
+        "type": "bathroom",
+        "area": 120,
+        "level": 1
+      },
+      {
+        "type": "bathroom",
+        "area": 100,
+        "level": 0
+      },
+      {
+        "type": "utility",
+        "area": 80,
+        "level": 0,
+        "features": [
+          "greywater_recycling"
+        ]
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 480000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "sunken_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "north",
+            "east"
+          ],
+          "windows": [
+            "south",
+            "west"
+          ],
+          "sunken": true
+        },
+        {
+          "id": "spa_room",
+          "type": "spa",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": [
+            "north"
+          ],
+          "features": [
+            "massage_tables",
+            "steam_shower"
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 35,
+            "y": 10,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [],
+          "features": [
+            "greywater_recycling"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "primary_bed",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "guest_bed1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "guest_bed2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "main_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,628 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 6,
+      "floors": 2,
+      "totalArea": 4200,
+      "style": "Traditional Marathi Wada"
+    },
+    "plot": {
+      "shape": "L-shaped",
+      "slope": "hillside",
+      "orientation": "west-facing",
+      "terrain": "sloping hillside in Pune hills",
+      "challenges": [
+        "mountain landslide",
+        "heavy snow load"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "courtyard",
+        "area": 400,
+        "level": 0
+      },
+      {
+        "type": "otla_sitout",
+        "area": 180,
+        "level": 0
+      },
+      {
+        "type": "kitchen_vegetarian",
+        "area": 150,
+        "level": 0
+      },
+      {
+        "type": "kitchen_nonvegetarian",
+        "area": 150,
+        "level": 0
+      },
+      {
+        "type": "baithak_seating",
+        "area": 120,
+        "level": 0
+      },
+      {
+        "type": "bedroom",
+        "area": 180,
+        "level": 1,
+        "count": 4
+      },
+      {
+        "type": "master_bedroom",
+        "area": 200,
+        "level": 1
+      },
+      {
+        "type": "puja_room",
+        "area": 100,
+        "level": 1
+      },
+      {
+        "type": "bathroom",
+        "area": 80,
+        "level": 1,
+        "count": 3
+      }
+    ]
+  },
+  "total_area": 4200.0,
+  "construction_cost": 7560000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "central_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 25
+              },
+              "to_room": "otla_sitout"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 15
+              },
+              "to_room": "kitchen_vegetarian"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 25
+              },
+              "to_room": "baithak_seating"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 35
+              },
+              "to_room": "kitchen_nonvegetarian"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "traditional flooring",
+            "central drainage",
+            "plants"
+          ]
+        },
+        {
+          "id": "otla_sitout",
+          "type": "sitout",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 25
+              },
+              "to_room": "central_courtyard"
+            },
+            {
+              "position": {
+                "x": 0,
+                "y": 27
+              },
+              "to_room": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 20
+              },
+              "size": "large",
+              "orientation": "west"
+            }
+          ],
+          "features": [
+            "swing_jhula",
+            "traditional_columns",
+            "west_capture"
+          ]
+        },
+        {
+          "id": "kitchen_vegetarian",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 15
+              },
+              "to_room": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 7
+              },
+              "size": "medium",
+              "orientation": "east"
+            }
+          ],
+          "features": [
+            "separate_stove",
+            "storage",
+            "vegetarian_only"
+          ]
+        },
+        {
+          "id": "kitchen_nonvegetarian",
+          "type": "kitchen",
+          "bounds": {
+            "x": 15,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 35
+              },
+              "to_room": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 42
+              },
+              "size": "medium",
+              "orientation": "east"
+            }
+          ],
+          "features": [
+            "separate_stove",
+            "storage",
+            "nonvegetarian_only",
+            "exhaust"
+          ]
+        },
+        {
+          "id": "baithak_seating",
+          "type": "living_room",
+          "bounds": {
+            "x": 35,
+            "y": 15,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 25
+              },
+              "to_room": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 20
+              },
+              "size": "large",
+              "orientation": "west"
+            }
+          ],
+          "features": [
+            "low_platforms",
+            "traditional_cushions",
+            "communal_seating"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 7,
+                "y": 20
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 35
+              },
+              "size": "medium",
+              "orientation": "west"
+            }
+          ],
+          "features": [
+            "built-in_wardrobe",
+            "led_lighting"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 22,
+                "y": 15
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 7
+              },
+              "size": "medium",
+              "orientation": "east"
+            }
+          ],
+          "features": [
+            "built-in_wardrobe",
+            "led_lighting"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 42,
+                "y": 15
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 7
+              },
+              "size": "medium",
+              "orientation": "east"
+            }
+          ],
+          "features": [
+            "built-in_wardrobe",
+            "led_lighting"
+          ]
+        },
+        {
+          "id": "bedroom_4",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 22,
+                "y": 35
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 42
+              },
+              "size": "medium",
+              "orientation": "east"
+            }
+          ],
+          "features": [
+            "built-in_wardrobe",
+            "led_lighting"
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 35,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 42,
+                "y": 35
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 42
+              },
+              "size": "large",
+              "orientation": "west"
+            }
+          ],
+          "features": [
+            "walk-in_wardrobe",
+            "ensuite",
+            "led_lighting"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 25
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 35,
+                "y": 20
+              },
+              "size": "stained_glass",
+              "orientation": "west"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 15
+              },
+              "size": "ventilation",
+              "orientation": "skylight"
+            }
+          ],
+          "features": [
+            "double_height",
+            "traditional_altar",
+            "ventilation_shaft",
+            "led_lighting"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 40
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "water_heater",
+            "ventilation"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 20
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "water_heater",
+            "ventilation"
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 40,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 40,
+                "y": 45
+              },
+              "to_room": "corridor"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "water_heater",
+            "ventilation",
+            "ensuite"
+          ]
+        },
+        {
+          "id": "corridor",
+          "type": "corridor",
+          "bounds": {
+            "x": 15,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 25
+              },
+              "to_room": "staircase"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 25
+              },
+              "to_room": "staircase"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 25,
+                "y": 15
+              },
+              "size": "open",
+              "orientation": "courtyard"
+            }
+          ],
+          "features": [
+            "overlooks_courtyard",
+            "led_lighting"
+          ]
+        },
+        {
+          "id": "staircase",
+          "type": "staircase",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 7
+              },
+              "to_room": "ground_hall"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 7
+              },
+              "size": "narrow",
+              "orientation": "east"
+            }
+          ],
+          "features": [
+            "traditional_wooden",
+            "landing"
+          ]
+        }
+      ]
+    }
+  ]
+}

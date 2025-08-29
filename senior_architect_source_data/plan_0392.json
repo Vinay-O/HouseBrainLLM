@@ -1,0 +1,214 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1500,
+      "style": "Rajasthani Haveli"
+    },
+    "plot": {
+      "orientation": "south",
+      "view": "garden",
+      "region": "arid desert",
+      "waterScarcity": true,
+      "area": 1500
+    },
+    "roomBreakdown": [
+      {
+        "type": "otla",
+        "area": 150
+      },
+      {
+        "type": "living_room",
+        "area": 200
+      },
+      {
+        "type": "kitchen",
+        "area": 120
+      },
+      {
+        "type": "bedroom",
+        "area": 180
+      },
+      {
+        "type": "bathroom",
+        "area": 80
+      },
+      {
+        "type": "cooling_chamber",
+        "area": 120
+      },
+      {
+        "type": "swimming_pool",
+        "area": 200
+      },
+      {
+        "type": "water_harvesting",
+        "area": 150
+      },
+      {
+        "type": "circulation",
+        "area": 300
+      }
+    ]
+  },
+  "total_area": 1500.0,
+  "construction_cost": 225000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "otla",
+          "type": "otla",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 15,
+            "height": 13.33
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 23.33,
+            "width": 7.5,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3.75
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 7.5,
+            "y": 23.33,
+            "width": 7.5,
+            "height": 24
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 3.75
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 3.75
+            },
+            {
+              "wall": "east",
+              "position": 12
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 7.5,
+            "y": 47.33,
+            "width": 7.5,
+            "height": 10.67
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 3.75
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "cooling_chamber",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 39.33,
+            "width": 7.5,
+            "height": 18.67
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 9.33
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "swimming_pool",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [],
+          "windows": []
+        },
+        {
+          "id": "water_harvesting",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 2850.0,
+      "style": "Japanese Zen Experimental"
+    },
+    "plot": {
+      "size": "Irregular",
+      "terrain": "Flat former industrial site",
+      "climate": "Desert with extreme temperatures"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 1
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "office",
+        "count": 1
+      },
+      {
+        "type": "pool",
+        "count": 1
+      },
+      {
+        "type": "mechanical",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2850.0,
+  "construction_cost": 875000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_courtyard",
+          "type": "other",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "type": "sliding",
+              "to_room": "exterior"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "type": "sliding",
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [],
+          "name": "Permeable Paving Entry Courtyard"
+        },
+        {
+          "id": "garage_mech",
+          "type": "mechanical",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7,
+              "type": "overhead",
+              "to_room": "exterior"
+            },
+            {
+              "wall": "west",
+              "position": 12,
+              "type": "standard",
+              "to_room": "interior_hall"
+            }
+          ],
+          "windows": [],
+          "name": "Garage & Mechanical Room"
+        },
+        {
+          "id": "pool",
+          "type": "pool",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 25,
+            "height": 30
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 15,
+              "type": "sliding",
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 12,
+              "width": 8,
+              "type": "fixed"
+            },
+            {
+              "wall": "north",
+              "position": 12,
+              "width": 8,
+              "type": "fixed"
+            }
+          ],
+          "name": "Indoor Lap Pool with Current System"
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10,
+              "type": "sliding",
+              "to_room": "pool"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "type": "sliding",
+              "to_room": "entry_courtyard"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "type": "standard",
+              "to_room": "interior_hall"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "width": 8,
+              "type": "clerestory"
+            }
+          ],
+          "name": "Double-Height Living Room"
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 35,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7,
+              "type": "standard",
+              "to_room": "interior_hall"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7,
+              "width": 6,
+              "type": "fixed"
+            }
+          ],
+          "name": "Kitchen"
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 35,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7,
+              "type": "standard",
+              "to_room": "interior_hall"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7,
+              "width": 6,
+              "type": "fixed"
+            }
+          ],
+          "name": "Primary Bedroom"
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 25,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4,
+              "type": "standard",
+              "to_room": "interior_hall"
+            }
+          ],
+          "windows": [],
+          "name": "Bathroom"
+        },
+        {
+          "id": "interior_hall",
+          "type": "other",
+          "bounds": {
+            "x": 35,
+            "y": 25,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10,
+              "type": "standard",
+              "to_room": "living_room"
+            },
+            {
+              "wall": "south",
+              "position": 2,
+              "type": "standard",
+              "to_room": "bathroom_1"
+            },
+            {
+              "wall": "south",
+              "position": 18,
+              "type": "standard",
+              "to_room": "garage_mech"
+            },
+            {
+              "wall": "north",
+              "position": 2,
+              "type": "standard",
+              "to_room": "kitchen"
+            },
+            {
+              "wall": "north",
+              "position": 18,
+              "type": "standard",
+              "to_room": "bedroom"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "type": "standard",
+              "to_room": "elevator"
+            }
+          ],
+          "windows": [],
+          "name": "Main Hallway"
+        },
+        {
+          "id": "elevator",
+          "type": "other",
+          "bounds": {
+            "x": 55,
+            "y": 25,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2,
+              "type": "sliding",
+              "to_room": "interior_hall"
+            }
+          ],
+          "windows": [],
+          "name": "Aging-in-Place Elevator"
+        },
+        {
+          "id": "storage",
+          "type": "storage",
+          "bounds": {
+            "x": 55,
+            "y": 30,
+            "width": 5,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2,
+              "type": "standard",
+              "to_room": "interior_hall"
+            }
+          ],
+          "windows": [],
+          "name": "Storage Closet"
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "mezzanine_office",
+          "type": "office",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10,
+              "type": "standard",
+              "to_room": "upper_hall"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "width": 8,
+              "type": "clerestory"
+            }
+          ],
+          "name": "Mezzanine Office overlooking Living Room"
+        },
+        {
+          "id": "upper_hall",
+          "type": "other",
+          "bounds": {
+            "x": 45,
+            "y": 15,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10,
+              "type": "standard",
+              "to_room": "mezzanine_office"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "type": "standard",
+              "to_room": "elevator"
+            }
+          ],
+          "windows": [],
+          "name": "Upper Hallway"
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 4,
+              "type": "standard",
+              "to_room": "upper_hall"
+            }
+          ],
+          "windows": [],
+          "name": "Upper Floor Bathroom"
+        }
+      ]
+    }
+  ]
+}

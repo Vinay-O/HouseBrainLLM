@@ -1,0 +1,115 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_type": "entrance_hall",
+          "area_sqft": 100,
+          "description": "A welcoming entrance with ample storage and display area, aligned with Vastu principles of positive energy entry.",
+          "adjacencies": ["living_room", "kitchen"]
+        },
+        {
+          "room_type": "living_room",
+          "area_sqft": 200,
+          "description": "Open space living area that incorporates Brutalist design aesthetics with exposed concrete structures. Vastu principles are maintained with central seating and clear directional alignments.",
+          "adjacencies": ["entrance_hall", "dining_area"]
+        },
+        {
+          "room_type": "dining_area",
+          "area_sqft": 150,
+          "description": "Dining space adjacent to the kitchen, providing a modern yet functional layout with robust design elements characteristic of Brutalism.",
+          "adjacencies": ["living_room", "kitchen"]
+        },
+        {
+          "room_type": "kitchen",
+          "area_sqft": 120,
+          "description": "Fully equipped kitchen featuring industrial-grade finishes and fixtures, designed for efficiency with a focus on Vastu principles regarding the east or north facing wall.",
+          "adjacencies": ["dining_area", "entrance_hall"]
+        },
+        {
+          "room_type": "master_bedroom",
+          "area_sqft": 180,
+          "description": "Spacious master bedroom with ample natural light and privacy, featuring a private balcony to align with Vastu guidelines on sleep areas.",
+          "adjacencies": ["bathroom", "storage_closet"]
+        },
+        {
+          "room_type": "bedroom",
+          "area_sqft": 150,
+          "description": "Secondary bedroom designed for guest use or family, maintaining a similar aesthetic to the master bedroom with attention to natural light and Vastu alignment.",
+          "adjacencies": ["bathroom", "storage_closet"]
+        },
+        {
+          "room_type": "home_office",
+          "area_sqft": 100,
+          "description": "Dedicated home office space designed with functional minimalism in mind, ensuring a quiet and well-lit environment for productivity.",
+          "adjacencies": []
+        },
+        {
+          "room_type": "servants_quarters",
+          "area_sqft": 80,
+          "description": "Compact living area provided for the servants, designed to be comfortable yet efficient, following local building norms and Vastu guidelines for supportive spaces.",
+          "adjacencies": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "main_door",
+          "location": "entrance_hall",
+          "description": "Reinforced steel door with secure lock mechanism, ensuring durability in line with Brutalist aesthetics."
+        },
+        {
+          "opening_type": "windows",
+          "locations": ["living_room", "kitchen", "master_bedroom"],
+          "description": "Large fenestrations to maximize natural light and ventilation, designed in a utilitarian style that complements the Brutalist design language."
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_type": "master_bedroom",
+          "area_sqft": 180,
+          "description": "Enhanced master bedroom with a dedicated balcony for relaxation, maintaining Vastu principles regarding private spaces.",
+          "adjacencies": ["bathroom"]
+        },
+        {
+          "room_type": "bedroom",
+          "area_sqft": 150,
+          "description": "Secondary bedroom providing sufficient space and light. The design ensures alignment with both local norms and Brutalist aesthetics.",
+          "adjacencies": ["bathroom"]
+        },
+        {
+          "room_type": "guest Bathroom",
+          "area_sqft": 50,
+          "description": "Functional guest bathroom ensuring privacy for visitors, following local building regulations.",
+          "adjacencies": []
+        }
+      ],
+      "openings": [
+        {
+          "opening_type": "staircase",
+          "location": "entrance_hall",
+          "description": "Sturdy staircase connecting the ground floor to the first floor, designed with safety and durability in mind."
+        },
+        {
+          "opening_type": "windows",
+          "locations": ["master_bedroom", "bedroom"],
+          "description": "Expansive windows for enhanced natural lighting and ventilation on the upper level."
+        }
+      ]
+    },
+    {
+      "level_id": "rooftop_terrace",
+      "rooms": [],
+      "openings": [
+        {
+          "opening_type": "access_ladder",
+          "location": "first_floor",
+          "description": "Sturdy ladder or staircase for access to the rooftop terrace, ensuring compliance with safety standards."
+        }
+      ]
+    }
+  ]
+}

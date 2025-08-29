@@ -1,0 +1,272 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 2,
+      "totalArea": 2850.0,
+      "style": "Experimental Geodesic Dome"
+    },
+    "plot": {
+      "topography": "Elevated platform above wetlands",
+      "climate": "Alpine with heavy snow loads",
+      "noiseSources": [
+        "Highway"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "office",
+        "count": 1
+      },
+      {
+        "type": "pool",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "storage",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2850.0,
+  "construction_cost": 875000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_vestibule",
+          "type": "entryway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "exterior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mech_utility",
+          "type": "utility",
+          "bounds": {
+            "x": 10,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage_storage",
+          "type": "storage",
+          "bounds": {
+            "x": 22,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "type": "exterior"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 28,
+            "height": 24
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "exterior_to_deck"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "floor_to_ceiling"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_dining",
+          "type": "kitchen",
+          "bounds": {
+            "x": 28,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 24,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "east",
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 24,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "indoor_pool",
+          "type": "pool",
+          "bounds": {
+            "x": 28,
+            "y": 16,
+            "width": 16,
+            "height": 22
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "floor_to_ceiling"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "mezzanine_office",
+          "type": "office",
+          "bounds": {
+            "x": 8,
+            "y": 8,
+            "width": 24,
+            "height": 20
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "type": "clerestory"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "type": "interior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "type": "standard"
+            }
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "type": "interior"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

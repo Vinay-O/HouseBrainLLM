@@ -1,0 +1,36 @@
+{"levels": [
+  {
+    "level_id": "garage",
+    "description": "Garage level with two-car capacity and utility storage.",
+    "rooms": [],
+    "openings": []
+  },
+  {
+    "level_id": "ground_floor",
+    "description": "Ground floor designed as a living space, kitchen, dining, and communal areas.",
+    "rooms": [
+      {"name": "Entrance Hall", "area_sqft": 200, "adjacent_to": ["Living Room"], "vastu_alignment": "North"},
+      {"name": "Living Room", "area_sqft": 300, "adjacent_to": ["Dining Area", "Kitchen"], "vastu_alignment": "East"},
+      {"name": "Dining Area", "area_sqft": 150, "adjacent_to": ["Kitchen"], "vastu_alignment": "South"},
+      {"name": "Open Kitchen", "area_sqft": 200, "adjacent_to": ["Dining Area"], "vastu_alignment": "West"}
+    ],
+    "openings": [
+      {"name": "Front Door", "location": "North", "size": "3x7 feet"},
+      {"name": "Balcony Access", "location": "East", "size": "5x10 feet"}
+    ]
+  },
+  {
+    "level_id": "upper_floor",
+    "description": "Upper floor featuring five bedrooms each with a private balcony, incorporating Brutalist aesthetics and adherence to Vastu principles.",
+    "rooms": [
+      {"name": "Master Bedroom", "area_sqft": 250, "adjacent_to": ["En suite Bathroom"], "vastu_alignment": "North"},
+      {"name": "Bedroom 2", "area_sqft": 220, "adjacent_to": [], "vastu_alignment": "North"},
+      {"name": "Bedroom 3", "area_sqft": 210, "adjacent_to": [], "vastu_alignment": "East"},
+      {"name": "Bedroom 4", "area_sqft": 200, "adjacent_to": ["Balcony"], "vastu_alignment": "South"},
+      {"name": "Bedroom 5", "area_sqft": 210, "adjacent_to": ["Balcony"], "vastu_alignment": "West"}
+    ],
+    "openings": [
+      {"name": "Balconies", "location": "Each Bedroom", "size": "4x8 feet each"}
+    ]
+  }
+]}

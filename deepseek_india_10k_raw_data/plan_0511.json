@@ -1,0 +1,282 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 2200,
+      "style": "Rajasthani Haveli"
+    },
+    "plot": {
+      "location": "Chennai coastal forest clearing",
+      "orientation": "West-facing for evening breeze capture",
+      "constraints": "Eco-sensitive zone, forest fire risk"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 400,
+        "description": "Central courtyard with heritage brick archways"
+      },
+      {
+        "type": "kitchen",
+        "area": 250,
+        "description": "Traditional with wood-fired chulah and modern appliances"
+      },
+      {
+        "type": "bedroom",
+        "area": 300,
+        "description": "Primary bedroom with universal accessibility"
+      },
+      {
+        "type": "bedroom",
+        "area": 250,
+        "description": "Secondary bedroom"
+      },
+      {
+        "type": "bedroom",
+        "area": 200,
+        "description": "Guest bedroom"
+      },
+      {
+        "type": "bathroom",
+        "area": 150,
+        "description": "Accessible bathroom with grab bars"
+      },
+      {
+        "type": "bathroom",
+        "area": 100,
+        "description": "Secondary bathroom"
+      },
+      {
+        "type": "utility",
+        "area": 150,
+        "description": "Greywater recycling system"
+      },
+      {
+        "type": "pavilion",
+        "area": 400,
+        "description": "Domed pavilion with chhatris for outdoor living"
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 495000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "courtyard",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 10,
+              "y": 0
+            },
+            {
+              "x": 20,
+              "y": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "kitchen_01",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12.5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 10
+            }
+          ],
+          "windows": [
+            {
+              "x": 32.5,
+              "y": 5
+            },
+            {
+              "x": 32.5,
+              "y": 15
+            }
+          ]
+        },
+        {
+          "id": "primary_bed",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 0,
+              "y": 30
+            }
+          ],
+          "windows": [
+            {
+              "x": 5,
+              "y": 40
+            },
+            {
+              "x": 10,
+              "y": 40
+            }
+          ]
+        },
+        {
+          "id": "bedroom_02",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 12.5,
+            "height": 16
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 28
+            }
+          ],
+          "windows": [
+            {
+              "x": 20,
+              "y": 36
+            },
+            {
+              "x": 25,
+              "y": 36
+            }
+          ]
+        },
+        {
+          "id": "bedroom_03",
+          "type": "bedroom",
+          "bounds": {
+            "x": 27.5,
+            "y": 20,
+            "width": 10,
+            "height": 16
+          },
+          "doors": [
+            {
+              "x": 27.5,
+              "y": 28
+            }
+          ],
+          "windows": [
+            {
+              "x": 32.5,
+              "y": 36
+            },
+            {
+              "x": 35,
+              "y": 36
+            }
+          ]
+        },
+        {
+          "id": "bathroom_01",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 36,
+            "width": 7.5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 15,
+              "y": 41
+            }
+          ],
+          "windows": [
+            {
+              "x": 20,
+              "y": 41
+            }
+          ]
+        },
+        {
+          "id": "bathroom_02",
+          "type": "bathroom",
+          "bounds": {
+            "x": 22.5,
+            "y": 36,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 22.5,
+              "y": 41
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 27.5,
+            "y": 36,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 27.5,
+              "y": 41
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "pavilion_01",
+          "type": "pavilion",
+          "bounds": {
+            "x": 32.5,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 32.5,
+              "y": 10
+            }
+          ],
+          "windows": [
+            {
+              "x": 40,
+              "y": 0
+            },
+            {
+              "x": 50,
+              "y": 10
+            },
+            {
+              "x": 40,
+              "y": 20
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

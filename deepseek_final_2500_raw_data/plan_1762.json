@@ -1,0 +1,538 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 1,
+      "totalArea": 3200,
+      "style": "Mediterranean-Japanese Fusion Rambling Ranch"
+    },
+    "plot": {
+      "orientation": "east-west linear",
+      "climate": "Mediterranean dry summers",
+      "features": [
+        "sunken courtyard"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "area": 450
+      },
+      {
+        "type": "primary_bedroom",
+        "area": 400
+      },
+      {
+        "type": "guest_bedroom",
+        "area": 300
+      },
+      {
+        "type": "home_office",
+        "area": 250
+      },
+      {
+        "type": "living_room",
+        "area": 450
+      },
+      {
+        "type": "kitchen",
+        "area": 300
+      },
+      {
+        "type": "dining_room",
+        "area": 200
+      },
+      {
+        "type": "wellness_wing",
+        "area": 400
+      },
+      {
+        "type": "garage",
+        "area": 250
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1280000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "sunken_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 30,
+            "height": 40
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 15,
+              "to_room": "library"
+            },
+            {
+              "wall": "east",
+              "position": 20,
+              "to_room": "living_room"
+            },
+            {
+              "wall": "south",
+              "position": 15,
+              "to_room": "zen_garden"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 40,
+            "y": 40,
+            "width": 30,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15,
+              "to_room": "sunken_courtyard"
+            },
+            {
+              "wall": "west",
+              "position": 7,
+              "to_room": "living_room"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": 5
+            },
+            {
+              "wall": "north",
+              "position": 20,
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "spiral_staircase",
+          "type": "staircase",
+          "bounds": {
+            "x": 55,
+            "y": 55,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5,
+              "to_room": "library"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 40,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 20,
+              "to_room": "sunken_courtyard"
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "to_room": "library"
+            },
+            {
+              "wall": "south",
+              "position": 20,
+              "to_room": "dining_room"
+            },
+            {
+              "wall": "west",
+              "position": 20,
+              "to_room": "primary_suite"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": 8
+            },
+            {
+              "wall": "north",
+              "position": 30,
+              "size": 8
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 55,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12,
+              "to_room": "living_room"
+            },
+            {
+              "wall": "east",
+              "position": 7,
+              "to_room": "kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 55,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7,
+              "to_room": "dining_room"
+            },
+            {
+              "wall": "south",
+              "position": 7,
+              "to_room": "mudroom"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7,
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "mudroom",
+          "type": "mudroom",
+          "bounds": {
+            "x": 25,
+            "y": 70,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 7,
+              "to_room": "kitchen"
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "to_room": "garage"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 40,
+            "y": 70,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10,
+              "to_room": "mudroom"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "to_room": "exterior"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "primary_suite",
+          "type": "primary_bedroom",
+          "bounds": {
+            "x": -20,
+            "y": 30,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10,
+              "to_room": "living_room"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "to_room": "primary_bath"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "size": 8
+            },
+            {
+              "wall": "north",
+              "position": 10,
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": -20,
+            "y": 50,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "to_room": "primary_suite"
+            },
+            {
+              "wall": "east",
+              "position": 5,
+              "to_room": "wellness_wing"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "wellness_wing",
+          "type": "gym",
+          "bounds": {
+            "x": -20,
+            "y": 60,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "to_room": "primary_bath"
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "to_room": "zen_garden"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "to_room": "sauna"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "size": 10
+            },
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "sauna",
+          "type": "sauna",
+          "bounds": {
+            "x": -20,
+            "y": 80,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "to_room": "wellness_wing"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "west",
+              "position": 10,
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "zen_garden",
+          "type": "garden",
+          "bounds": {
+            "x": 0,
+            "y": 80,
+            "width": 40,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 20,
+              "to_room": "sunken_courtyard"
+            },
+            {
+              "wall": "west",
+              "position": 20,
+              "to_room": "wellness_wing"
+            },
+            {
+              "wall": "east",
+              "position": 20,
+              "to_room": "guest_wing"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "guest_wing",
+          "type": "guest_bedroom",
+          "bounds": {
+            "x": 40,
+            "y": 80,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10,
+              "to_room": "zen_garden"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "to_room": "guest_bath"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 8
+            },
+            {
+              "wall": "south",
+              "position": 5,
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 40,
+            "y": 100,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10,
+              "to_room": "guest_wing"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "home_office",
+          "type": "office",
+          "bounds": {
+            "x": 70,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 10,
+              "to_room": "exterior"
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "to_room": "exterior"
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 10,
+              "size": 8
+            },
+            {
+              "wall": "east",
+              "position": 10,
+              "size": 8
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

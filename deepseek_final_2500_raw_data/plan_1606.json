@@ -1,0 +1,266 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 4,
+      "totalArea": 2400.0,
+      "style": "Deconstructivist"
+    },
+    "plot": {
+      "shape": "circular",
+      "orientation": "east-west",
+      "climate": "temperate maritime",
+      "views": "360-degree",
+      "noiseSource": "highway"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "studio",
+        "count": 1
+      },
+      {
+        "type": "climbing_wall",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 576000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": []
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            "east"
+          ],
+          "windows": []
+        },
+        {
+          "id": "entry",
+          "type": "entry",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "north",
+            "south"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "east"
+          ],
+          "windows": [
+            "south",
+            "west"
+          ]
+        },
+        {
+          "id": "dining",
+          "type": "dining",
+          "bounds": {
+            "x": 10,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": [
+            "south",
+            "east"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": []
+        },
+        {
+          "id": "climbing_wall",
+          "type": "climbing_wall",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "east",
+            "west"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 15
+          },
+          "doors": [
+            "south"
+          ],
+          "windows": [
+            "north",
+            "east",
+            "west"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            "west"
+          ],
+          "windows": []
+        },
+        {
+          "id": "artist_studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "north"
+          ],
+          "windows": [
+            "north",
+            "east",
+            "south",
+            "west"
+          ]
+        }
+      ]
+    }
+  ]
+}

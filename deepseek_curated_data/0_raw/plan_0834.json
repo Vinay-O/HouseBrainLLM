@@ -1,0 +1,191 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 0,
+      "floors": 3,
+      "totalArea": 1200,
+      "style": "Minimalist"
+    },
+    "plot": {
+      "type": "corner"
+    },
+    "roomBreakdown": [
+      {
+        "type": "studio",
+        "description": "Open-plan living, dining, and sleeping area"
+      },
+      {
+        "type": "home_office",
+        "description": "Dedicated workspace"
+      },
+      {
+        "type": "kitchen",
+        "description": "Minimalist kitchen"
+      },
+      {
+        "type": "bathroom",
+        "description": "Full bathroom"
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 240000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "studio",
+          "type": "studio",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 12,
+              "length": 8
+            },
+            {
+              "wall": "south",
+              "position": 10,
+              "length": 8
+            }
+          ]
+        },
+        {
+          "id": "bathroom_ground",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "home_office",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 8,
+              "length": 6
+            },
+            {
+              "wall": "north",
+              "position": 10,
+              "length": 6
+            }
+          ]
+        },
+        {
+          "id": "bathroom_first",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 7,
+              "length": 5
+            },
+            {
+              "wall": "north",
+              "position": 7,
+              "length": 5
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "length": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

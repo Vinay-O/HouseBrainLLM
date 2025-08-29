@@ -1,0 +1,230 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 3200,
+      "style": "Goan Portuguese Colonial with Tropical Adaptations"
+    },
+    "plot": {
+      "slope": "hillside",
+      "orientation": "north-facing main entrance",
+      "location": "Goa Portuguese quarters",
+      "terrain": "coastal hillside"
+    },
+    "roomBreakdown": [
+      {
+        "type": "library",
+        "purpose": "home tutoring and reading"
+      },
+      {
+        "type": "home_theater",
+        "purpose": "traditional entertainment"
+      },
+      {
+        "type": "courtyard",
+        "purpose": "humidity control and natural lighting"
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 672000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_entrance",
+          "type": "entrance",
+          "bounds": {
+            "x": 8,
+            "y": 0,
+            "width": 4,
+            "height": 3
+          },
+          "doors": [
+            "north_facing_main_door"
+          ],
+          "windows": [
+            "side_ventilation_windows"
+          ]
+        },
+        {
+          "id": "courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 0,
+            "y": 3,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            "to_living_area",
+            "to_library"
+          ],
+          "windows": []
+        },
+        {
+          "id": "greywater_tank",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 6,
+            "height": 6
+          },
+          "doors": [
+            "service_access"
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            "to_courtyard",
+            "to_dining"
+          ],
+          "windows": [
+            "north_facing_large",
+            "east_ventilation"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 16,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "to_living",
+            "to_kitchen"
+          ],
+          "windows": [
+            "west_facing"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 16,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            "to_dining",
+            "service_entry"
+          ],
+          "windows": [
+            "south_ventilation"
+          ]
+        },
+        {
+          "id": "library_study",
+          "type": "study",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_courtyard",
+            "to_hallway"
+          ],
+          "windows": [
+            "north_reading_niche",
+            "east_light"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 14,
+            "height": 16
+          },
+          "doors": [
+            "to_hallway",
+            "to_balcony"
+          ],
+          "windows": [
+            "north_facing",
+            "east_morning"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 14,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": [
+            "west_facing"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": [
+            "south_facing"
+          ]
+        },
+        {
+          "id": "home_theater",
+          "type": "entertainment",
+          "bounds": {
+            "x": 14,
+            "y": 12,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            "to_hallway"
+          ],
+          "windows": [
+            "acoustic_treated"
+          ]
+        }
+      ]
+    }
+  ]
+}

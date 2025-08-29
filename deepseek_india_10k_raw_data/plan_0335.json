@@ -1,0 +1,273 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 1,
+      "totalArea": 2200,
+      "style": "Goan Portuguese Colonial with Tropical Adaptations"
+    },
+    "plot": {
+      "terrain": "mountain slope",
+      "location": "Kochi backwaters",
+      "orientation": "south-facing"
+    },
+    "roomBreakdown": [
+      {
+        "type": "living_room",
+        "area": 400
+      },
+      {
+        "type": "dining_hall",
+        "area": 300
+      },
+      {
+        "type": "kitchen",
+        "area": 200
+      },
+      {
+        "type": "master_bedroom",
+        "area": 250
+      },
+      {
+        "type": "bedroom",
+        "area": 180
+      },
+      {
+        "type": "bedroom",
+        "area": 180
+      },
+      {
+        "type": "bedroom",
+        "area": 180
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 100
+      },
+      {
+        "type": "bathroom",
+        "area": 80
+      },
+      {
+        "type": "home_archive",
+        "area": 120
+      },
+      {
+        "type": "veranda",
+        "area": 210
+      }
+    ]
+  },
+  "total_area": 2200.0,
+  "construction_cost": 330000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "dining_hall_1"
+          ],
+          "windows": [
+            "south",
+            "east"
+          ]
+        },
+        {
+          "id": "dining_hall_1",
+          "type": "dining_hall",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            "living_room_1",
+            "veranda_1",
+            "kitchen_1"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "dining_hall_1"
+          ],
+          "windows": [
+            "north"
+          ]
+        },
+        {
+          "id": "master_bedroom_1",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 12.5,
+            "height": 20
+          },
+          "doors": [
+            "veranda_1",
+            "bathroom_1"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12.5,
+            "y": 20,
+            "width": 12.5,
+            "height": 10
+          },
+          "doors": [
+            "bathroom_2"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12.5,
+            "y": 30,
+            "width": 12.5,
+            "height": 10
+          },
+          "doors": [
+            "bathroom_2"
+          ],
+          "windows": [
+            "north"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 20,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            "bathroom_3"
+          ],
+          "windows": [
+            "south"
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "master_bedroom_1"
+          ],
+          "windows": [
+            "east"
+          ]
+        },
+        {
+          "id": "bathroom_2",
+          "type": "bathroom",
+          "bounds": {
+            "x": 12.5,
+            "y": 40,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_1",
+            "bedroom_2"
+          ],
+          "windows": [
+            "east"
+          ]
+        },
+        {
+          "id": "bathroom_3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 40,
+            "width": 4,
+            "height": 10
+          },
+          "doors": [
+            "bedroom_3"
+          ],
+          "windows": [
+            "west"
+          ]
+        },
+        {
+          "id": "home_archive_1",
+          "type": "home_archive",
+          "bounds": {
+            "x": 35,
+            "y": 20,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "veranda_1"
+          ],
+          "windows": [
+            "north"
+          ]
+        },
+        {
+          "id": "veranda_1",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 50,
+            "width": 45,
+            "height": 7
+          },
+          "doors": [
+            "dining_hall_1",
+            "master_bedroom_1",
+            "home_archive_1"
+          ],
+          "windows": [
+            "south"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 2,
+      "totalArea": 2800,
+      "style": "High-Tech Architecture"
+    },
+    "plot": {
+      "description": "Desert plateau with panoramic views, tropical with monsoons climate, diagonal orientation to prevailing winds"
+    },
+    "roomBreakdown": [
+      {
+        "id": "master_bedroom",
+        "type": "bedroom",
+        "description": "Primary suite with panoramic desert views and minimalist luxury finishes"
+      },
+      {
+        "id": "guest_bedroom_1",
+        "type": "bedroom",
+        "description": "Minimalist guest accommodation with desert views"
+      },
+      {
+        "id": "guest_bedroom_2",
+        "type": "bedroom",
+        "description": "Secondary guest room with efficient layout"
+      },
+      {
+        "id": "main_living",
+        "type": "living_room",
+        "description": "Open concept living space with floor-to-ceiling windows facing prevailing winds"
+      },
+      {
+        "id": "gourmet_kitchen",
+        "type": "kitchen",
+        "description": "High-tech kitchen with integrated hydroponic herb garden and smart appliances"
+      },
+      {
+        "id": "main_bath",
+        "type": "bathroom",
+        "description": "Spa-like primary bathroom with rainfall shower"
+      },
+      {
+        "id": "guest_bath",
+        "type": "bathroom",
+        "description": "Efficient guest bathroom serving both guest rooms"
+      },
+      {
+        "id": "hydroponic_wall",
+        "type": "other",
+        "description": "Vertical hydroponic garden wall for fresh produce, integrated into structure"
+      },
+      {
+        "id": "security_room",
+        "type": "other",
+        "description": "Centralized security monitoring with surveillance systems and access control"
+      },
+      {
+        "id": "mechanical_room",
+        "type": "other",
+        "description": "Housing for battery storage, water management, and HVAC systems"
+      }
+    ]
+  },
+  "total_area": 2800.0,
+  "construction_cost": 1850000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_living",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 30,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 15
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 15,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "gourmet_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 10,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 7
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 7,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "guest_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "hydroponic_wall",
+          "type": "other",
+          "bounds": {
+            "x": 40,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "size": "full"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 12
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 12,
+              "size": "panoramic"
+            }
+          ]
+        },
+        {
+          "id": "main_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "security_room",
+          "type": "other",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 7
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_room",
+          "type": "other",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 25,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 12
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

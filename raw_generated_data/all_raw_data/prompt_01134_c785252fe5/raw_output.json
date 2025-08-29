@@ -1,0 +1,82 @@
+{  
+  "levels": [  
+    {  
+      "level_id": "ground_floor",  
+      "rooms": [  
+          {  
+            "name": "Entrance Hall",  
+            "description": "A minimalistic entrance area with clean lines and ample natural lighting to greet visitors.",  
+            "dimensions_m2": 12,  
+            "vastu_elements": ["north-east", "positive"]  
+          },  
+          {  
+            "name": "Living Room",  
+            "description": "Open-plan living space that doubles as a dining area with large windows for ventilation and sunlight.",  
+            "dimensions_m2": 30,  
+            "adjacent_rooms": [ "dining_area" ],  
+            "vastu_elements": ["south-west", "negative"]  
+          },  
+          {  
+            "name": "Dining Area",  
+            "description": "Integrated dining area within the living space, featuring a minimalist design with functional furniture.",  
+            "dimensions_m2": 15,  
+            "adjacent_rooms": [ "living_room" ],  
+            "vastu_elements": ["east"]  
+          },  
+          {  
+            "name": "Master Bedroom",  
+            "description": "A spacious master bedroom with a walk-in closet and minimalistic decor for enhanced privacy.",  
+            "dimensions_m2": 25,  
+            "adjacent_rooms": [ " ensuite_bathroom" ],  
+            "vastu_elements": ["north"]  
+          },  
+          {  
+            "name": "Guest Bedroom",  
+            "description": "A comfortable guest bedroom featuring simple design and ample storage space.",  
+            "dimensions_m2": 20,  
+            "adjacent_rooms": [ "shared_bathroom" ],  
+            "vastu_elements": ["west"]  
+          },  
+          {  
+            "name": "Ensuite Bathroom",  
+            "description": "Private bathroom adjacent to the master bedroom designed for comfort and functionality.",  
+            "dimensions_m2": 10,  
+            "adjacent_rooms": [ "master_bedroom" ],  
+            "vastu_elements": ["south-east"]  
+          },  
+          {  
+            "name": "Shared Bathroom",  
+            "description": "Bathroom shared between the guest bedroom and other common areas, designed for efficiency.",  
+            "dimensions_m2": 10,  
+            "adjacent_rooms": [ "guest_bedroom" ],  
+            "vastu_elements": ["south-west"]  
+          }  
+      ],  
+      "openings": [  
+          {  
+            "type": "Main Entrance",  
+            "location": "north-east",  
+            "description": "A modern, minimalist entrance door aligned with Vastu principles for positive energy."  
+          },  
+          {  
+            "type": "Living Room Window",  
+            "location": "south-west",  
+            "description": "Large windows to allow ample natural light and ventilation in the living area."  
+          },  
+          {  
+            "type": "Garage Door",  
+            "location": "north",  
+            "description": "Double garage door for two-car parking, ensuring ease of access while maintaining security."  
+          }  
+      ],  
+      "garage": [  
+         {  
+           "name": "Two-Car Garage",  
+           "dimensions_m2": 30,  
+           "layout": "linear",  
+           "description": "A spacious two-car garage designed for easy vehicle access and storage of vehicles."  
+         }  
+       ]  
+    }  
+  ]  
+}

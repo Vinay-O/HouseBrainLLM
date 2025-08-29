@@ -1,0 +1,633 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 12,
+      "floors": 2,
+      "totalArea": 12000,
+      "style": "Gujarati Pol House"
+    },
+    "plot": {
+      "size": 2,
+      "location": "Varanasi ghats",
+      "orientation": "east-facing sunrise alignment",
+      "challenges": [
+        "monsoon flooding",
+        "waterlogging"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "family_bedroom",
+        "count": 6,
+        "area": 480
+      },
+      {
+        "type": "seasonal_worker_bedroom",
+        "count": 6,
+        "area": 360
+      },
+      {
+        "type": "community_courtyard",
+        "count": 1,
+        "area": 2000
+      },
+      {
+        "type": "otla_sitout",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "chabutra_platform",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "storytelling_amphitheater",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "count": 2,
+        "area": 400
+      },
+      {
+        "type": "bathroom",
+        "count": 8,
+        "area": 320
+      },
+      {
+        "type": "storage",
+        "count": 4,
+        "area": 200
+      },
+      {
+        "type": "light_well",
+        "count": 4,
+        "area": 200
+      },
+      {
+        "type": "utility",
+        "count": 2,
+        "area": 150
+      }
+    ]
+  },
+  "total_area": 12000.0,
+  "construction_cost": 2400000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "central_courtyard",
+          "type": "community_courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 40,
+            "height": 50
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 45
+              },
+              "to_room": "otla_sitout"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 20
+              },
+              "to_room": "family_wing_hall"
+            },
+            {
+              "position": {
+                "x": 45,
+                "y": 70
+              },
+              "to_room": "workers_wing_hall"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "otla_sitout",
+          "type": "otla_sitout",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 45
+              },
+              "to_room": "central_courtyard"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "orientation": "east"
+            },
+            {
+              "position": {
+                "x": 15,
+                "y": 0
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "chabutra_platform",
+          "type": "chabutra_platform",
+          "bounds": {
+            "x": 25,
+            "y": 70,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 70
+              },
+              "to_room": "central_courtyard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "storytelling_amphitheater",
+          "type": "storytelling_amphitheater",
+          "bounds": {
+            "x": 60,
+            "y": 20,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 32
+              },
+              "to_room": "central_courtyard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "family_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 10
+              },
+              "to_room": "family_wing_hall"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 10
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "family_wing_hall",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 10
+              },
+              "to_room": "family_kitchen"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 0
+              },
+              "to_room": "family_bedroom_1"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 20
+              },
+              "to_room": "family_bathroom_1"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "to_room": "central_courtyard"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "family_bedroom_1",
+          "type": "family_bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "to_room": "family_wing_hall"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 0
+              },
+              "orientation": "north"
+            },
+            {
+              "position": {
+                "x": 40,
+                "y": 10
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "family_bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 25
+              },
+              "to_room": "family_wing_hall"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 20
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "light_well_1",
+          "type": "light_well",
+          "bounds": {
+            "x": 30,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "family_bedroom_2",
+          "type": "family_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "to_room": "upper_hall_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 0,
+                "y": 10
+              },
+              "orientation": "east"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "family_bedroom_3",
+          "type": "family_bedroom",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "to_room": "upper_hall_1"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 40,
+                "y": 10
+              },
+              "orientation": "east"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 0
+              },
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "upper_hall_1",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 10
+              },
+              "to_room": "family_bedroom_2"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 10
+              },
+              "to_room": "family_bedroom_3"
+            },
+            {
+              "position": {
+                "x": 22.5,
+                "y": 20
+              },
+              "to_room": "courtyard_overlook"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "courtyard_overlook",
+          "type": "utility",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 40,
+            "height": 5
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 22.5,
+                "y": 20
+              },
+              "to_room": "upper_hall_1"
+            },
+            {
+              "position": {
+                "x": 57.5,
+                "y": 20
+              },
+              "to_room": "upper_hall_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 30,
+                "y": 25
+              },
+              "orientation": "south"
+            },
+            {
+              "position": {
+                "x": 50,
+                "y": 25
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "workers_bedroom_1",
+          "type": "seasonal_worker_bedroom",
+          "bounds": {
+            "x": 60,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 10
+              },
+              "to_room": "upper_hall_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 70,
+                "y": 0
+              },
+              "orientation": "north"
+            },
+            {
+              "position": {
+                "x": 80,
+                "y": 10
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "workers_bedroom_2",
+          "type": "seasonal_worker_bedroom",
+          "bounds": {
+            "x": 80,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 80,
+                "y": 10
+              },
+              "to_room": "upper_hall_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 90,
+                "y": 0
+              },
+              "orientation": "north"
+            },
+            {
+              "position": {
+                "x": 100,
+                "y": 10
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "upper_hall_2",
+          "type": "utility",
+          "bounds": {
+            "x": 80,
+            "y": 0,
+            "width": 5,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 80,
+                "y": 10
+              },
+              "to_room": "workers_bedroom_1"
+            },
+            {
+              "position": {
+                "x": 85,
+                "y": 10
+              },
+              "to_room": "workers_bedroom_2"
+            },
+            {
+              "position": {
+                "x": 82.5,
+                "y": 20
+              },
+              "to_room": "courtyard_overlook"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "workers_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 60,
+            "y": 20,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 60,
+                "y": 30
+              },
+              "to_room": "upper_hall_2"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 70,
+                "y": 40
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "light_well_2",
+          "type": "light_well",
+          "bounds": {
+            "x": 40,
+            "y": 25,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

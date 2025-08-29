@@ -1,0 +1,91 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall",
+          "dimensions": {"length": 12, "width": 10},
+          "description": "A small lobby that aligns with Vastu guidelines, ensuring a welcoming energy.",
+          "adjacent_to": ["Living Room", "Dining Area"]
+        },
+        {
+          "name": "Kitchen",
+          "dimensions": {"length": 14, "width": 12},
+          "description": "Modern minimalist kitchen design following local building norms, with efficient work triangle and proper ventilation.",
+          "adjacent_to": ["Dining Area", "Service Corridor"]
+        },
+        {
+          "name": "Living Room",
+          "dimensions": {"length": 16, "width": 14},
+          "description": "Open space for living activities that incorporates natural light and Vastu principles of balance.",
+          "adjacent_to": ["Entrance Hall", "Dining Area"]
+        },
+        {
+          "name": "Dining Area",
+          "dimensions": {"length": 8, "width": 8},
+          "description": "Spacious dining area near the living room and kitchen for a cohesive space.",
+          "adjacent_to": ["Living Room", "Kitchen"]
+        },
+        {
+          "name": "Guest Bedroom",
+          "dimensions": {"length": 10, "width": 12},
+          "description": "Comfortable guest bedroom with a spacious balcony attached.",
+          "balcony": true,
+          "adjacent_to": ["Service Corridor"]
+        },
+        {
+          "name": "Master Bedroom 1",
+          "dimensions": {"length": 14, "width": 16},
+          "description": "Principal master bedroom with ample space and a private balcony, ensuring privacy and adherence to Vastu.",
+          "balcony": true,
+          "adjacent_to": ["Private Bathroom", "Service Corridor"]
+        },
+        {
+          "name": "Master Bedroom 2",
+          "dimensions": {"length": 12, "width": 14},
+          "description": "Additional master bedroom with a spacious balcony and integrated closet space.",
+          "balcony": true,
+          "adjacent_to": ["Ensuite Bathroom", "Service Corridor"]
+        },
+        {
+          "name": "Bedroom 3",
+          "dimensions": {"length": 10, "width": 12},
+          "description": "Third bedroom ensuring functional use of space with an attached balcony.",
+          "balcony": true,
+          "adjacent_to": ["Service Corridor"]
+        },
+        {
+          "name": "Bedroom 4",
+          "dimensions": {"length": 10, "width": 12},
+          "description": "Fourth bedroom designed for additional space with a balcony to enhance natural lighting.",
+          "balcony": true,
+          "adjacent_to": ["Service Corridor"]
+        },
+        {
+          "name": "Service Area",
+          "dimensions": {"length": 6, "width": 8},
+          "description": "Dedicated service area for storage and utilities, ensuring compliance with local building norms.",
+          "adjacent_to": []
+        }
+      ],
+      "openings": [
+        {
+          "name": "Front Entrance",
+          "dimensions": {"height": 7, "width": 3},
+          "description": "Main entrance aligning with Vastu principles for positive energy flow."
+        },
+        {
+          "name": "Side Entrance",
+          "dimensions": {"height": 6, "width": 2.5},
+          "description": "Secondary entrance providing easy access to the garden and service area."
+        },
+        {
+          "name": "Balcony Openings",
+          "count": 4,
+          "description": "Each bedroom has a spacious balcony designed for relaxation and improved natural ventilation."
+        }
+      ]
+    }
+  ]
+}

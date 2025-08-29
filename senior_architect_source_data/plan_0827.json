@@ -1,0 +1,273 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 800,
+      "style": "Traditional Kerala Nalukettu"
+    },
+    "plot": {
+      "shape": "cul-de-sac",
+      "area": 800,
+      "location": "tribal area",
+      "constraints": [
+        "monsoon water management",
+        "privacy from neighbors",
+        "sustainable development"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "purpose": "Aging parents bedroom with accessibility"
+      },
+      {
+        "type": "bedroom",
+        "purpose": "Nuclear family bedroom"
+      },
+      {
+        "type": "bedroom",
+        "purpose": "Children's bedroom"
+      },
+      {
+        "type": "living_room",
+        "purpose": "Family gathering space"
+      },
+      {
+        "type": "kitchen",
+        "purpose": "Cooking area"
+      },
+      {
+        "type": "bathroom",
+        "purpose": "Main bathroom"
+      },
+      {
+        "type": "bathroom",
+        "purpose": "Ensuite for aging parents"
+      },
+      {
+        "type": "workshop",
+        "purpose": "Traditional craft workshop"
+      },
+      {
+        "type": "otla",
+        "purpose": "Traditional sit-out space"
+      },
+      {
+        "type": "storage",
+        "purpose": "Sustainable water management system"
+      }
+    ]
+  },
+  "total_area": 800.0,
+  "construction_cost": 192000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "otla_sitout",
+          "type": "otla",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            },
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 10
+            },
+            {
+              "wall": "west",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 6
+            },
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "workshop",
+          "type": "workshop",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 12,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 6
+            },
+            {
+              "wall": "east",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 24,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6
+            },
+            {
+              "wall": "west",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 16,
+            "y": 24,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 8
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 8
+            },
+            {
+              "wall": "west",
+              "position": 8
+            }
+          ]
+        },
+        {
+          "id": "family_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "ensuite_bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 32,
+            "y": 8,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "water_management",
+          "type": "storage",
+          "bounds": {
+            "x": 32,
+            "y": 16,
+            "width": 8,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 4
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

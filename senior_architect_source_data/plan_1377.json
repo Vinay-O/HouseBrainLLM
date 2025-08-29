@@ -1,0 +1,426 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 240,
+      "style": "Desert Contemporary"
+    },
+    "plot": {
+      "width": 4,
+      "length": 20,
+      "climate": "desert with extreme temperatures",
+      "terrain": "urban infill with natural contours"
+    },
+    "roomBreakdown": [
+      {
+        "type": "music_room",
+        "specialFeatures": [
+          "acoustic isolation"
+        ]
+      },
+      {
+        "type": "system",
+        "specialFeatures": [
+          "rainwater harvesting with underground cisterns",
+          "earthquake-resistant construction"
+        ]
+      }
+    ]
+  },
+  "total_area": 240.0,
+  "construction_cost": 720000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_entry",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mech_utility",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 6,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 2
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "stairwell_0",
+          "type": "stairwell",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 2,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "elevator_0",
+          "type": "elevator",
+          "bounds": {
+            "x": 2,
+            "y": 10,
+            "width": 2,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "cistern_access",
+          "type": "utility",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 4,
+            "height": 6
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "living_dining",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "stairwell_1",
+          "type": "stairwell",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 2,
+            "height": 3
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 1.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "elevator_1",
+          "type": "elevator",
+          "bounds": {
+            "x": 2,
+            "y": 15,
+            "width": 2,
+            "height": 3
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 1.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "powder_room",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 2,
+            "height": 2
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 1
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "primary_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2,
+              "size": "large"
+            }
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 8,
+            "width": 2,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 1
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 2,
+              "size": "small"
+            }
+          ]
+        },
+        {
+          "id": "primary_closet",
+          "type": "closet",
+          "bounds": {
+            "x": 2,
+            "y": 8,
+            "width": 2,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "stairwell_2",
+          "type": "stairwell",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 2,
+            "height": 3
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 1.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "elevator_2",
+          "type": "elevator",
+          "bounds": {
+            "x": 2,
+            "y": 12,
+            "width": 2,
+            "height": 3
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 1.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 4,
+            "height": 5
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "position": 2,
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "music_room",
+          "type": "other",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": [
+            {
+              "wall": "north",
+              "position": 2,
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "id": "stairwell_3",
+          "type": "stairwell",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 2,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "east",
+              "position": 2
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "elevator_3",
+          "type": "elevator",
+          "bounds": {
+            "x": 2,
+            "y": 12,
+            "width": 2,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "west",
+              "position": 2
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "roof_terrace",
+          "type": "outdoor",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 4,
+            "height": 4
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 2
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

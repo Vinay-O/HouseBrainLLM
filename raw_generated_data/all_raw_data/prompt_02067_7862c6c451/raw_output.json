@@ -1,0 +1,77 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall",
+          "dimensions": {"length": "10ft", "width": "10ft"},
+          "description": "Spacious entrance with wheelchair ramp ensuring accessibility. Incorporates Art Deco motifs in the facade detailing.",
+          "access": ["main"]
+        },
+        {
+          "name": "Living Room",
+          "dimensions": {"length": "25ft", "width": "20ft"},
+          "description": "Open space with Art Deco accents, ample natural light through large windows; includes a wheelchair-accessible sofa area.",
+          "access": ["entrance_hall"]
+        },
+        {
+          "name": "Dining Area",
+          "dimensions": {"length": "15ft", "width": "12ft"},
+          "description": "Adjacent to the living room with Vastu-aligned seating arrangement. Wheelchair accessible layout ensuring easy movement.",
+          "access": ["living_room"]
+        },
+        {
+          "name": "Kitchen",
+          "dimensions": {"length": "20ft", "width": "15ft"},
+          "description": "Modern kitchen with Art Deco inspired cabinetry and countertops, designed for joint family use with accessible design elements.",
+          "access": ["entrance_hall"]
+        },
+        {
+          "name": "Master Bedroom",
+          "dimensions": {"length": "20ft", "width": "15ft"},
+          "description": "Spacious bedroom with built-in wheelchair-accessible closet. Art Deco detailing in the decor, Vastu-compliant placement.",
+          "access": ["entrance_hall"]
+        },
+        {
+          "name": "Guest Bedroom",
+          "dimensions": {"length": "15ft", "width": "12ft"},
+          "description": "Cozy guest bedroom with accessible design and Art Deco touches, Vastu-aligned orientation for positive energy.",
+          "access": ["entrance_hall"]
+        },
+        {
+          "name": "Bathroom",
+          "dimensions": {"length": "10ft", "width": "8ft"},
+          "description": "Universal bathroom designed with accessibility features including grab bars and wheelchair access. Vastu compliant fixtures placement.",
+          "access": ["master_bedroom", "guest_bedroom"]
+        },
+        {
+          "name": "Utility Room",
+          "dimensions": {"length": "10ft", "width": "8ft"},
+          "description": "Compact utility space with accessible storage, ensuring efficient joint family usage.",
+          "access": ["kitchen", "dining_area"]
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "location": "entrance_hall",
+          "dimensions": {"height": "7ft", "width": "3ft"},
+          "description": "Wheelchair-accessible main entrance door with Art Deco detailing."
+        },
+        {
+          "type": "window",
+          "location": "living_room",
+          "dimensions": {"height": "5ft", "width": "4ft"},
+          "description": "Large window for natural lighting, Vastu aligned eastward."
+        },
+        {
+          "type": "door",
+          "location": "kitchen",
+          "dimensions": {"height": "7ft", "width": "3ft"},
+          "description": "Accessible door ensuring wheelchair passage between kitchen and dining area."
+        }
+      ]
+    }
+  ]
+}

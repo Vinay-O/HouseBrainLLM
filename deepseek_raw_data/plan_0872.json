@@ -1,0 +1,200 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 1,
+      "totalArea": 1050.0,
+      "style": "Chettinad"
+    },
+    "plot": {
+      "width": 30,
+      "depth": 50,
+      "orientation": "North-facing entrance"
+    },
+    "roomBreakdown": [
+      {
+        "type": "garage",
+        "count": 1,
+        "description": "Two-car garage"
+      },
+      {
+        "type": "library",
+        "count": 1,
+        "description": "Dedicated library space"
+      }
+    ]
+  },
+  "total_area": 1050.0,
+  "construction_cost": 210000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "South",
+              "position": 10
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "entrance_porch",
+          "type": "porch",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "North",
+              "position": 5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "library",
+          "type": "library",
+          "bounds": {
+            "x": 20,
+            "y": 8,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "South",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "East",
+              "position": 6
+            }
+          ]
+        },
+        {
+          "id": "living_dining",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "South",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "West",
+              "position": 10
+            },
+            {
+              "wall": "East",
+              "position": 10
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 20,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "North",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "East",
+              "position": 5
+            }
+          ]
+        },
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "wall": "North",
+              "position": 7.5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "West",
+              "position": 7.5
+            },
+            {
+              "wall": "South",
+              "position": 7.5
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 15,
+            "y": 35,
+            "width": 15,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "North",
+              "position": 7.5
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 15,
+            "y": 43,
+            "width": 15,
+            "height": 7
+          },
+          "doors": [
+            {
+              "wall": "South",
+              "position": 7.5
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}

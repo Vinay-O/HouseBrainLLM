@@ -1,0 +1,329 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 1,
+      "totalArea": 1200,
+      "style": "Heritage-Inspired Courtyard Haveli"
+    },
+    "plot": {
+      "shape": "Rectangular",
+      "orientation": "South-Facing",
+      "location": "Leh, High Altitude"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "dining_room",
+        "count": 1
+      },
+      {
+        "type": "cellar",
+        "count": 1
+      },
+      {
+        "type": "courtyard",
+        "count": 2
+      }
+    ]
+  },
+  "total_area": 1200.0,
+  "construction_cost": 312000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "main_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 30,
+            "height": 25
+          },
+          "doors": [
+            "north_wing_door",
+            "south_wing_door",
+            "east_wing_door",
+            "west_wing_door"
+          ],
+          "windows": [],
+          "features": [
+            "Central Water Feature",
+            "Traditional Stone Pavers"
+          ]
+        },
+        {
+          "id": "secondary_courtyard",
+          "type": "courtyard",
+          "bounds": {
+            "x": 60,
+            "y": 15,
+            "width": 15,
+            "height": 25
+          },
+          "doors": [
+            "parent_suite_door",
+            "kitchen_garden_door"
+          ],
+          "windows": [],
+          "features": [
+            "Kitchen Garden",
+            "Companion Planting",
+            "Light Well"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "main_entry_door",
+            "courtyard_door"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ],
+          "features": [
+            "Jaali Screens",
+            "Himalayan Stone Flooring"
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            "living_room_door",
+            "kitchen_door"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium"
+            }
+          ],
+          "features": [
+            "Slate Table Feature"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 40,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            "dining_room_door",
+            "garden_door"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "medium"
+            }
+          ],
+          "features": [
+            "Solar-Optimized Layout",
+            "Traditional Storage"
+          ]
+        },
+        {
+          "id": "primary_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 0,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            "hallway_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ],
+          "features": [
+            "Jaali Screens",
+            "Built-In Wardrobes"
+          ]
+        },
+        {
+          "id": "children_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 50,
+            "y": 40,
+            "width": 25,
+            "height": 15
+          },
+          "doors": [
+            "hallway_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ],
+          "features": [
+            "Jaali Screens",
+            "Built-In Study"
+          ]
+        },
+        {
+          "id": "parent_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 75,
+            "y": 15,
+            "width": 25,
+            "height": 25
+          },
+          "doors": [
+            "private_entry_door",
+            "courtyard_door",
+            "bathroom_door"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "large"
+            }
+          ],
+          "features": [
+            "Elderly-Accessible",
+            "Jaali Screens",
+            "Private Sitting Area"
+          ]
+        },
+        {
+          "id": "primary_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 15,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "primary_bedroom_door"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "small"
+            }
+          ],
+          "features": [
+            "Slate Flooring",
+            "Ventilation Jaali"
+          ]
+        },
+        {
+          "id": "children_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 50,
+            "y": 30,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            "children_bedroom_door"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "small"
+            }
+          ],
+          "features": [
+            "Slate Flooring",
+            "Ventilation Jaali"
+          ]
+        },
+        {
+          "id": "parent_bath",
+          "type": "bathroom",
+          "bounds": {
+            "x": 75,
+            "y": 40,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "parent_suite_door"
+          ],
+          "windows": [
+            {
+              "wall": "south",
+              "size": "small"
+            }
+          ],
+          "features": [
+            "Accessible Design",
+            "Slate Flooring",
+            "Ventilation Jaali"
+          ]
+        },
+        {
+          "id": "wine_cellar",
+          "type": "cellar",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "staircase_door"
+          ],
+          "windows": [],
+          "features": [
+            "Climate-Controlled",
+            "Indian Climate Adaptation",
+            "Stone Walls"
+          ]
+        }
+      ]
+    }
+  ]
+}

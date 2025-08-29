@@ -1,0 +1,444 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 4800,
+      "style": "Alpine Chalet"
+    },
+    "plot": {
+      "terrain": "sloping_vineyard",
+      "climate": "tropical_monsoon",
+      "solarOrientation": "south"
+    },
+    "roomBreakdown": [
+      {
+        "type": "kitchen",
+        "subtype": "chef_kitchen",
+        "features": [
+          "wood_fired_oven"
+        ]
+      },
+      {
+        "type": "office",
+        "subtype": "mezzanine",
+        "level": 1
+      },
+      {
+        "type": "security",
+        "features": [
+          "gated_entry",
+          "surveillance_system",
+          "secure_rooms"
+        ]
+      },
+      {
+        "type": "sustainability",
+        "features": [
+          "solar_panel_array",
+          "battery_storage"
+        ]
+      }
+    ]
+  },
+  "total_area": 4800.0,
+  "construction_cost": 2250000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "elevation": 0.0,
+      "rooms": [
+        {
+          "id": "entry_vestibule",
+          "type": "entryway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 5,
+            "height": 4
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 2.5,
+                "y": 0
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "great_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 5,
+            "y": 0,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 5,
+                "y": 10
+              },
+              "connects_to": "entry_vestibule"
+            }
+          ],
+          "windows": [
+            {
+              "type": "south",
+              "position": {
+                "x": 12.5,
+                "y": 20
+              }
+            }
+          ]
+        },
+        {
+          "id": "chefs_kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 20,
+                "y": 7.5
+              },
+              "connects_to": "great_room"
+            }
+          ],
+          "windows": [
+            {
+              "type": "south",
+              "position": {
+                "x": 27.5,
+                "y": 15
+              }
+            }
+          ],
+          "features": [
+            "wood_fired_oven"
+          ]
+        },
+        {
+          "id": "dining_area",
+          "type": "dining_room",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 27.5,
+                "y": 15
+              },
+              "connects_to": "chefs_kitchen"
+            }
+          ],
+          "windows": [
+            {
+              "type": "south",
+              "position": {
+                "x": 27.5,
+                "y": 25
+              }
+            }
+          ]
+        },
+        {
+          "id": "primary_suite",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 4,
+            "width": 15,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 7.5,
+                "y": 4
+              },
+              "connects_to": "entry_vestibule"
+            }
+          ],
+          "windows": [
+            {
+              "type": "south",
+              "position": {
+                "x": 7.5,
+                "y": 20
+              }
+            }
+          ],
+          "features": [
+            "secure_room"
+          ]
+        },
+        {
+          "id": "garage",
+          "type": "garage",
+          "bounds": {
+            "x": 35,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 41,
+                "y": 0
+              }
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mud_room",
+          "type": "mudroom",
+          "bounds": {
+            "x": 35,
+            "y": 10,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 35,
+                "y": 12.5
+              },
+              "connects_to": "garage"
+            },
+            {
+              "type": "interior",
+              "position": {
+                "x": 41,
+                "y": 12.5
+              },
+              "connects_to": "utility_room"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_room",
+          "type": "utility",
+          "bounds": {
+            "x": 41,
+            "y": 10,
+            "width": 6,
+            "height": 5
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 41,
+                "y": 12.5
+              },
+              "connects_to": "mud_room"
+            }
+          ],
+          "windows": [],
+          "features": [
+            "battery_storage"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "elevation": 10.0,
+      "rooms": [
+        {
+          "id": "teen_bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 6,
+                "y": 0
+              },
+              "connects_to": "upper_hall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "south",
+              "position": {
+                "x": 6,
+                "y": 14
+              }
+            }
+          ]
+        },
+        {
+          "id": "teen_bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 18,
+                "y": 0
+              },
+              "connects_to": "upper_hall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "south",
+              "position": {
+                "x": 18,
+                "y": 14
+              }
+            }
+          ]
+        },
+        {
+          "id": "guest_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 12,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 30,
+                "y": 0
+              },
+              "connects_to": "upper_hall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "south",
+              "position": {
+                "x": 30,
+                "y": 14
+              }
+            }
+          ]
+        },
+        {
+          "id": "upper_hall",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 36,
+            "height": 4
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 18,
+                "y": 14
+              },
+              "connects_to": "staircase"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mezzanine_office",
+          "type": "office",
+          "bounds": {
+            "x": 0,
+            "y": 18,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 18
+              },
+              "connects_to": "upper_hall"
+            }
+          ],
+          "windows": [
+            {
+              "type": "south",
+              "position": {
+                "x": 10,
+                "y": 30
+              }
+            }
+          ]
+        },
+        {
+          "id": "media_room",
+          "type": "media",
+          "bounds": {
+            "x": 20,
+            "y": 18,
+            "width": 16,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 28,
+                "y": 18
+              },
+              "connects_to": "upper_hall"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ],
+  "sustainability_features": [
+    "solar_panel_array",
+    "battery_storage",
+    "south_orientation"
+  ],
+  "security_features": [
+    "gated_entry",
+    "perimeter_wall",
+    "surveillance_system",
+    "secure_rooms"
+  ]
+}

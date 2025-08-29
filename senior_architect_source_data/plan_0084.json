@@ -1,0 +1,253 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 3,
+      "totalArea": 2400,
+      "style": "Odisha Temple-Inspired"
+    },
+    "plot": {
+      "area": 800,
+      "location": "Industrial city outskirts",
+      "challenges": [
+        "Compact size",
+        "Pollution concerns",
+        "Privacy from neighbors"
+      ]
+    },
+    "roomBreakdown": [
+      {
+        "type": "home_office",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "workshop",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "stepped_well",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "bedroom",
+        "count": 3,
+        "area": 450
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "puja_room",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "water_harvesting",
+        "count": 1,
+        "area": 100
+      }
+    ]
+  },
+  "total_area": 2400.0,
+  "construction_cost": 7200000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "stepped_well_courtyard",
+          "type": "stepped_well",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 20
+          },
+          "doors": [
+            "north_entrance"
+          ],
+          "windows": []
+        },
+        {
+          "id": "workshop_ground",
+          "type": "workshop",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            "courtyard_access"
+          ],
+          "windows": [
+            "north_window"
+          ]
+        },
+        {
+          "id": "water_harvesting_system",
+          "type": "water_harvesting",
+          "bounds": {
+            "x": 20,
+            "y": 15,
+            "width": 15,
+            "height": 5
+          },
+          "doors": [],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "home_office_1",
+          "type": "home_office",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "internal_corridor"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "home_office_2",
+          "type": "home_office",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            "internal_corridor"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 24,
+            "height": 15
+          },
+          "doors": [
+            "internal_corridor",
+            "courtyard_view"
+          ],
+          "windows": [
+            "north_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 24,
+            "y": 0,
+            "width": 11,
+            "height": 10
+          },
+          "doors": [
+            "internal_corridor"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            "internal_corridor"
+          ],
+          "windows": [
+            "south_window",
+            "east_window"
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "internal_corridor"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "bedroom_3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 25,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            "internal_corridor"
+          ],
+          "windows": [
+            "south_window"
+          ]
+        },
+        {
+          "id": "puja_room",
+          "type": "puja_room",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            "internal_corridor"
+          ],
+          "windows": [
+            "east_window"
+          ]
+        }
+      ]
+    }
+  ]
+}

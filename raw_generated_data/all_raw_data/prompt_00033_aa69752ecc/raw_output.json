@@ -1,0 +1,104 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_name": "Living Room",
+          "area_sqft": 300,
+          "location": {"X":5,"Y":15},
+          "features": ["floor-to-ceiling windows"]
+        },
+        {
+          "room_name": "Kitchen",
+          "area_sqft": 200,
+          "location": {"X":5,"Y":10}
+        },
+        {
+          "room_name": "Dining Room",
+          "area_sqft": 250,
+          "location": {"X":15,"Y":10},
+          "features": ["floor-to-ceiling windows"]
+        },
+        {
+          "room_name": "Bedroom_1",
+          "area_sqft": 300,
+          "location": {"X":30,"Y":10},
+          "features": ["spacious balcony", "floor-to-ceiling windows"]
+        },
+        {
+          "room_name": "Bedroom_2",
+          "area_sqft": 300,
+          "location": {"X":45,"Y":10},
+          "features": ["spacious balcony", "floor-to-ceiling windows"]
+        },
+        {
+          "room_name": "Bathroom_1",
+          "area_sqft": 75,
+          "location": {"X":30,"Y":5}
+        },
+        {
+          "room_name": "Bathroom_2",
+          "area_sqft": 75,
+          "location": {"X":45,"Y":5}
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "from_room": "Living Room",
+          "to_room": "Kitchen"
+        },
+        {
+          "type": "door",
+          "from_room": "Dining Room",
+          "to_room": "Living Room"
+        },
+        {
+          "type": "door",
+          "from_room": "Bedroom_1",
+          "to_room": "Bathroom_1"
+        },
+        {
+          "type": "door",
+          "from_room": "Bedroom_2",
+          "to_room": "Bathroom_2"
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_name": "Study Room",
+          "area_sqft": 300,
+          "location": {"X":5,"Y":15},
+          "features": ["floor-to-ceiling windows"]
+        },
+        {
+          "room_name": "Guest Bedroom",
+          "area_sqft": 300,
+          "location": {"X":15,"Y":15},
+          "features": ["spacious balcony", "floor-to-ceiling windows"]
+        },
+        {
+          "room_name": "Bathroom_3",
+          "area_sqft": 75,
+          "location": {"X":15,"Y":10}
+        }
+      ],
+      "openings": [
+        {
+          "type": "door",
+          "from_room": "Study Room",
+          "to_room": "Guest Bedroom"
+        },
+        {
+          "type": "door",
+          "from_room": "Guest Bedroom",
+          "to_room": "Bathroom_3"
+        }
+      ]
+    }
+  ]
+}

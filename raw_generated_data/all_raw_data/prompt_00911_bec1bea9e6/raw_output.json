@@ -1,0 +1,122 @@
+{ "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room",
+          "dimensions": { "length": 15, "width": 20 },
+          "purpose": "common living space"
+        },
+        {
+          "room_id": "dining_area",
+          "dimensions": { "length": 10, "width": 12 },
+          "purpose": "dining space adjacent to kitchen"
+        },
+        {
+          "room_id": "kitchen",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["modular storage", "gas stove", "sink"],
+          "purpose": "cooking and food preparation"
+        },
+        {
+          "room_id": "master_bedroom",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["attached bathroom", "wardrobe"],
+          "purpose": "private bedroom with ensuite bathroom"
+        },
+        {
+          "room_id": "library",
+          "dimensions": { "length": 10, "width": 10 },
+          "features": ["bookshelves", "reading nook"],
+          "purpose": "space for books and quiet reading"
+        },
+        {
+          "room_id": "servant_quarters",
+          "dimensions": { "length": 10, "width": 8 },
+          "features": ["attached bathroom"],
+          "purpose": "accommodation for domestic help"
+        },
+        {
+          "room_id": "home_office",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["work desk", "ergonomic chair", "storage cabinets"],
+          "purpose": "dedicated workspace"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "door",
+          "location": "front of the apartment",
+          "dimensions": { "length": 3.5, "width": 1 }
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "window",
+          "location": "living room, front side",
+          "dimensions": { "length": 6, "width": 4 }
+        },
+        {
+          "opening_id": "kitchen_window",
+          "type": "window",
+          "location": "kitchen, back side",
+          "dimensions": { "length": 5, "width": 3 }
+        },
+        {
+          "opening_id": "library_window",
+          "type": "window",
+          "location": "library, side",
+          "dimensions": { "length": 4, "width": 4 }
+        },
+        {
+          "opening_id": "home_office_window",
+          "type": "window",
+          "location": "home office, back side",
+          "dimensions": { "length": 5, "width": 3 }
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_2",
+          "dimensions": { "length": 14, "width": 10 },
+          "features": ["attached bathroom", "wardrobe"],
+          "purpose": "second bedroom"
+        },
+        {
+          "room_id": "bedroom_3",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["attached bathroom", "wardrobe"],
+          "purpose": "third bedroom"
+        },
+        {
+          "room_id": "balcony",
+          "dimensions": { "length": 30, "width": 8 },
+          "purpose": "outdoor space for relaxation"
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "bedroom_2_window",
+          "type": "window",
+          "location": "bedroom 2, front side",
+          "dimensions": { "length": 5, "width": 3 }
+        },
+        {
+          "opening_id": "bedroom_3_window",
+          "type": "window",
+          "location": "bedroom 3, back side",
+          "dimensions": { "length": 5, "width": 3 }
+        },
+        {
+          "opening_id": "balcony_door",
+          "type": "door",
+          "location": "balcony, accessible from bedroom 2 and bedroom 3",
+          "dimensions": { "length": 7, "width": 2 }
+        }
+      ]
+    }
+  ]
+}

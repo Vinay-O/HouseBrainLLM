@@ -1,0 +1,420 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 3,
+      "floors": 4,
+      "totalArea": 3200,
+      "style": "Mediterranean Villa"
+    },
+    "plot": {
+      "slope": 30,
+      "climate": "humid subtropical",
+      "orientation": "east-west linear"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 3
+      },
+      {
+        "type": "bathroom",
+        "count": 3
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "utility",
+        "count": 1
+      },
+      {
+        "type": "garage",
+        "count": 1
+      },
+      {
+        "type": "pool",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 1750000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "garage_l0",
+          "type": "garage",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "garage_door",
+              "position": {
+                "x": 0,
+                "y": 4
+              },
+              "orientation": "north"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "utility_l0",
+          "type": "utility",
+          "bounds": {
+            "x": 12,
+            "y": 0,
+            "width": 8,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 12,
+                "y": 4
+              },
+              "orientation": "west"
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "entry_l1",
+          "type": "entryway",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "exterior",
+              "position": {
+                "x": 3,
+                "y": 0
+              },
+              "orientation": "south"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "bedroom1_l1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 6,
+            "y": 0,
+            "width": 14,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 6,
+                "y": 6
+              },
+              "orientation": "west"
+            },
+            {
+              "type": "exterior",
+              "position": {
+                "x": 13,
+                "y": 12
+              },
+              "orientation": "north"
+            }
+          ],
+          "windows": [
+            {
+              "type": "sliding_glass",
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "orientation": "south"
+            }
+          ]
+        },
+        {
+          "id": "bathroom1_l1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 6,
+            "height": 8
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 6,
+                "y": 14
+              },
+              "orientation": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "window",
+              "position": {
+                "x": 0,
+                "y": 14
+              },
+              "orientation": "east"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 2,
+      "rooms": [
+        {
+          "id": "living_l2",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 16
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 10,
+                "y": 0
+              },
+              "orientation": "south"
+            },
+            {
+              "type": "exterior",
+              "position": {
+                "x": 20,
+                "y": 8
+              },
+              "orientation": "east"
+            }
+          ],
+          "windows": [
+            {
+              "type": "sliding_glass",
+              "position": {
+                "x": 5,
+                "y": 16
+              },
+              "orientation": "north"
+            },
+            {
+              "type": "sliding_glass",
+              "position": {
+                "x": 15,
+                "y": 16
+              },
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "kitchen_l2",
+          "type": "kitchen",
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 5,
+                "y": 16
+              },
+              "orientation": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "window",
+              "position": {
+                "x": 0,
+                "y": 22
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "dining_l2",
+          "type": "dining_room",
+          "bounds": {
+            "x": 10,
+            "y": 16,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 15,
+                "y": 16
+              },
+              "orientation": "south"
+            }
+          ],
+          "windows": [
+            {
+              "type": "sliding_glass",
+              "position": {
+                "x": 15,
+                "y": 28
+              },
+              "orientation": "north"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 3,
+      "rooms": [
+        {
+          "id": "primary_bedroom_l3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 14
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 8,
+                "y": 0
+              },
+              "orientation": "south"
+            },
+            {
+              "type": "exterior",
+              "position": {
+                "x": 16,
+                "y": 7
+              },
+              "orientation": "east"
+            }
+          ],
+          "windows": [
+            {
+              "type": "sliding_glass",
+              "position": {
+                "x": 4,
+                "y": 14
+              },
+              "orientation": "north"
+            },
+            {
+              "type": "sliding_glass",
+              "position": {
+                "x": 12,
+                "y": 14
+              },
+              "orientation": "north"
+            }
+          ]
+        },
+        {
+          "id": "bathroom2_l3",
+          "type": "bathroom",
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 8,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 8,
+                "y": 19
+              },
+              "orientation": "west"
+            }
+          ],
+          "windows": [
+            {
+              "type": "window",
+              "position": {
+                "x": 0,
+                "y": 19
+              },
+              "orientation": "east"
+            }
+          ]
+        },
+        {
+          "id": "bedroom3_l3",
+          "type": "bedroom",
+          "bounds": {
+            "x": 8,
+            "y": 14,
+            "width": 12,
+            "height": 10
+          },
+          "doors": [
+            {
+              "type": "interior",
+              "position": {
+                "x": 8,
+                "y": 19
+              },
+              "orientation": "east"
+            }
+          ],
+          "windows": [
+            {
+              "type": "sliding_glass",
+              "position": {
+                "x": 14,
+                "y": 24
+              },
+              "orientation": "north"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "systems": {
+    "hvac": "heat_recovery_ventilation",
+    "special_features": [
+      "cantilevered_infinity_pool",
+      "pet_access_ramps",
+      "panoramic_windows"
+    ]
+  }
+}

@@ -1,0 +1,664 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 4,
+      "floors": 2,
+      "totalArea": 4000,
+      "style": "Dravidian Heritage"
+    },
+    "plot": {
+      "width": 50,
+      "height": 50,
+      "location": "Bareilly",
+      "type": "premium_corner"
+    },
+    "roomBreakdown": [
+      {
+        "type": "master_bedroom",
+        "count": 1,
+        "area": 250
+      },
+      {
+        "type": "bedroom",
+        "count": 2,
+        "area": 400
+      },
+      {
+        "type": "elderly_suite",
+        "count": 1,
+        "area": 300
+      },
+      {
+        "type": "living_room",
+        "count": 1,
+        "area": 400
+      },
+      {
+        "type": "kitchen",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "dining_room",
+        "count": 1,
+        "area": 200
+      },
+      {
+        "type": "home_temple",
+        "count": 1,
+        "area": 150
+      },
+      {
+        "type": "baithak",
+        "count": 1,
+        "area": 120
+      },
+      {
+        "type": "veranda",
+        "count": 2,
+        "area": 300
+      },
+      {
+        "type": "utility",
+        "count": 1,
+        "area": 100
+      },
+      {
+        "type": "garden",
+        "count": 1,
+        "area": 500
+      }
+    ]
+  },
+  "total_area": 4000.0,
+  "construction_cost": 9200000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "veranda_entrance",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 25,
+                "y": 0
+              },
+              "to_room": "exterior",
+              "type": "main_entry"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 8
+              },
+              "to_room": "living_room",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "type": "jalied"
+            },
+            {
+              "position": {
+                "x": 45,
+                "y": 0
+              },
+              "type": "jalied"
+            }
+          ]
+        },
+        {
+          "id": "living_room",
+          "type": "living_room",
+          "bounds": {
+            "x": 10,
+            "y": 8,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 10,
+                "y": 13
+              },
+              "to_room": "veranda_entrance",
+              "type": "internal"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 13
+              },
+              "to_room": "dining_room",
+              "type": "internal"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 26
+              },
+              "to_room": "garden_court",
+              "type": "french"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 8
+              },
+              "type": "jalied"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 8
+              },
+              "type": "jalied"
+            }
+          ]
+        },
+        {
+          "id": "dining_room",
+          "type": "dining_room",
+          "bounds": {
+            "x": 30,
+            "y": 8,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 15
+              },
+              "to_room": "living_room",
+              "type": "internal"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 23
+              },
+              "to_room": "kitchen",
+              "type": "internal"
+            },
+            {
+              "position": {
+                "x": 45,
+                "y": 15
+              },
+              "to_room": "garden_court",
+              "type": "french"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 32,
+                "y": 8
+              },
+              "type": "jalied"
+            },
+            {
+              "position": {
+                "x": 43,
+                "y": 8
+              },
+              "type": "jalied"
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 30,
+            "y": 23,
+            "width": 15,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 23
+              },
+              "to_room": "dining_room",
+              "type": "internal"
+            },
+            {
+              "position": {
+                "x": 30,
+                "y": 28
+              },
+              "to_room": "utility",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 32,
+                "y": 35
+              },
+              "type": "jalied"
+            },
+            {
+              "position": {
+                "x": 43,
+                "y": 35
+              },
+              "type": "jalied"
+            }
+          ]
+        },
+        {
+          "id": "utility",
+          "type": "utility",
+          "bounds": {
+            "x": 25,
+            "y": 23,
+            "width": 5,
+            "height": 12
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 30,
+                "y": 28
+              },
+              "to_room": "kitchen",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 27,
+                "y": 35
+              },
+              "type": "jalied"
+            }
+          ]
+        },
+        {
+          "id": "elderly_suite",
+          "type": "elderly_suite",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 30
+              },
+              "to_room": "garden_court",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 20
+              },
+              "type": "jalied"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 20
+              },
+              "type": "jalied"
+            },
+            {
+              "position": {
+                "x": 5,
+                "y": 40
+              },
+              "type": "jalied"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 40
+              },
+              "type": "jalied"
+            }
+          ]
+        },
+        {
+          "id": "garden_court",
+          "type": "garden",
+          "bounds": {
+            "x": 15,
+            "y": 20,
+            "width": 10,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 30
+              },
+              "to_room": "elderly_suite",
+              "type": "internal"
+            },
+            {
+              "position": {
+                "x": 20,
+                "y": 40
+              },
+              "to_room": "veranda_garden",
+              "type": "internal"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 26
+              },
+              "to_room": "living_room",
+              "type": "french"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 15
+              },
+              "to_room": "dining_room",
+              "type": "french"
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "veranda_garden",
+          "type": "veranda",
+          "bounds": {
+            "x": 15,
+            "y": 40,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 20,
+                "y": 40
+              },
+              "to_room": "garden_court",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 45
+              },
+              "type": "jalied"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 45
+              },
+              "type": "jalied"
+            }
+          ]
+        },
+        {
+          "id": "home_temple",
+          "type": "home_temple",
+          "bounds": {
+            "x": 35,
+            "y": 35,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 40
+              },
+              "to_room": "veranda_garden",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 37,
+                "y": 35
+              },
+              "type": "jalied"
+            },
+            {
+              "position": {
+                "x": 43,
+                "y": 35
+              },
+              "type": "jalied"
+            }
+          ]
+        },
+        {
+          "id": "baithak",
+          "type": "baithak",
+          "bounds": {
+            "x": 45,
+            "y": 35,
+            "width": 5,
+            "height": 10
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 45,
+                "y": 40
+              },
+              "to_room": "veranda_garden",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 47,
+                "y": 35
+              },
+              "type": "jalied"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "master_bedroom",
+          "type": "master_bedroom",
+          "bounds": {
+            "x": 10,
+            "y": 8,
+            "width": 20,
+            "height": 18
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 8
+              },
+              "to_room": "upper_veranda",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 15,
+                "y": 26
+              },
+              "type": "jalied"
+            },
+            {
+              "position": {
+                "x": 25,
+                "y": 26
+              },
+              "type": "jalied"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 30,
+            "y": 8,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 35,
+                "y": 8
+              },
+              "to_room": "upper_veranda",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 32,
+                "y": 23
+              },
+              "type": "jalied"
+            },
+            {
+              "position": {
+                "x": 43,
+                "y": 23
+              },
+              "type": "jalied"
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 7,
+                "y": 20
+              },
+              "to_room": "upper_veranda",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 40
+              },
+              "type": "jalied"
+            },
+            {
+              "position": {
+                "x": 10,
+                "y": 40
+              },
+              "type": "jalied"
+            }
+          ]
+        },
+        {
+          "id": "upper_veranda",
+          "type": "veranda",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 8
+          },
+          "doors": [
+            {
+              "position": {
+                "x": 15,
+                "y": 8
+              },
+              "to_room": "master_bedroom",
+              "type": "internal"
+            },
+            {
+              "position": {
+                "x": 35,
+                "y": 8
+              },
+              "to_room": "bedroom_1",
+              "type": "internal"
+            },
+            {
+              "position": {
+                "x": 7,
+                "y": 8
+              },
+              "to_room": "bedroom_2",
+              "type": "internal"
+            }
+          ],
+          "windows": [
+            {
+              "position": {
+                "x": 5,
+                "y": 0
+              },
+              "type": "jalied"
+            },
+            {
+              "position": {
+                "x": 45,
+                "y": 0
+              },
+              "type": "jalied"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

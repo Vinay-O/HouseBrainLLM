@@ -1,0 +1,216 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 1,
+      "floors": 2,
+      "totalArea": 960.0,
+      "style": "Farmhouse Modern"
+    },
+    "plot": {
+      "description": "Desert plateau with panoramic views, alpine climate with heavy snow loads, following natural contours"
+    },
+    "roomBreakdown": [
+      {
+        "id": "bedroom",
+        "type": "bedroom",
+        "area": 160.0,
+        "description": "Minimalist sleeping quarters with built-in storage"
+      },
+      {
+        "id": "bathroom",
+        "type": "bathroom",
+        "area": 80.0,
+        "description": "Efficient wet room design"
+      },
+      {
+        "id": "kitchen",
+        "type": "kitchen",
+        "area": 120.0,
+        "description": "Compact galley kitchen with minimalist appliances"
+      },
+      {
+        "id": "living_area",
+        "type": "living_room",
+        "area": 240.0,
+        "description": "Open plan living/dining space with panoramic views"
+      },
+      {
+        "id": "spa",
+        "type": "other",
+        "area": 200.0,
+        "description": "Home spa with massage tables and relaxation area"
+      },
+      {
+        "id": "mechanical",
+        "type": "utility",
+        "area": 160.0,
+        "description": "HVAC, water systems, and wind turbine power storage"
+      }
+    ]
+  },
+  "total_area": 960.0,
+  "construction_cost": 275000.0,
+  "levels": [
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "living_area",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            },
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 6,
+              "length": 8
+            },
+            {
+              "wall": "west",
+              "position": 6,
+              "length": 8
+            }
+          ]
+        },
+        {
+          "id": "kitchen",
+          "type": "kitchen",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 10,
+            "height": 12
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4,
+              "length": 4
+            }
+          ]
+        },
+        {
+          "id": "mechanical",
+          "type": "utility",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 8,
+            "height": 20
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 12,
+            "width": 20,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "south",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 4,
+              "length": 8
+            },
+            {
+              "wall": "west",
+              "position": 4,
+              "length": 8
+            }
+          ]
+        },
+        {
+          "id": "bathroom",
+          "type": "bathroom",
+          "bounds": {
+            "x": 20,
+            "y": 12,
+            "width": 10,
+            "height": 8
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 5
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 2,
+              "length": 2
+            }
+          ]
+        },
+        {
+          "id": "spa",
+          "type": "other",
+          "bounds": {
+            "x": 0,
+            "y": 20,
+            "width": 20,
+            "height": 10
+          },
+          "doors": [
+            {
+              "wall": "north",
+              "position": 10
+            }
+          ],
+          "windows": [
+            {
+              "wall": "east",
+              "position": 5,
+              "length": 8
+            },
+            {
+              "wall": "west",
+              "position": 5,
+              "length": 8
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

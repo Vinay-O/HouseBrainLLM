@@ -1,0 +1,142 @@
+{
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "room_id": "living_room_1",
+          "type": "Living Room",
+          "dimensions": { "length": 15, "width": 12 },
+          "features": ["floor-to-ceiling windows", "bohemian decor"]
+        },
+        {
+          "room_id": "kitchen_1",
+          "type": "Kitchen",
+          "dimensions": { "length": 10, "width": 9 },
+          "features": ["modular kitchen", "dining area"]
+        },
+        {
+          "room_id": "dining_room_1",
+          "type": "Dining Room",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["adjacent to kitchen", "bohemian decor"]
+        },
+        {
+          "room_id": "bedroom_1",
+          "type": "Bedroom (Master)",
+          "dimensions": { "length": 14, "width": 12 },
+          "features": ["attached bathroom", "walk-in closet", "floor-to-ceiling windows"]
+        },
+        {
+          "room_id": "bedroom_2",
+          "type": "Bedroom (Second)",
+          "dimensions": { "length": 13, "width": 10 },
+          "features": ["attached bathroom", "floor-to-ceiling windows"]
+        },
+        {
+          "room_id": "library_1",
+          "type": "Library",
+          "dimensions": { "length": 12, "width": 9 },
+          "features": ["reading nook", "bookshelves", "natural light"]
+        },
+        {
+          "room_id": "bathroom_1",
+          "type": "Bathroom (Master)",
+          "dimensions": { "length": 8, "width": 6 }
+        },
+        {
+          "room_id": "bathroom_2",
+          "type": "Bathroom (Second)",
+          "dimensions": { "length": 7, "width": 5 }
+        },
+        {
+          "room_id": "guest_bathroom_1",
+          "type": "Guest Bathroom",
+          "dimensions": { "length": 6, "width": 5 }
+        },
+        {
+          "room_id": "storage_room_1",
+          "type": "Storage Room",
+          "dimensions": { "length": 8, "width": 7 }
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "main_entrance",
+          "type": "Entrance",
+          "direction": "North",
+          "dimensions": { "length": 3, "width": 7 }
+        },
+        {
+          "opening_id": "back_door",
+          "type": "Exit",
+          "direction": "South",
+          "dimensions": { "length": 3, "width": 7 }
+        },
+        {
+          "opening_id": "living_room_window",
+          "type": "Window",
+          "room_id": "living_room_1",
+          "dimensions": { "length": 6, "width": 4 },
+          "count": 2
+        },
+        {
+          "opening_id": "bedroom_window",
+          "type": "Window",
+          "room_id": "bedroom_1",
+          "dimensions": { "length": 6, "width": 5 },
+          "count": 3
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "room_id": "bedroom_3",
+          "type": "Bedroom (Third)",
+          "dimensions": { "length": 12, "width": 10 },
+          "features": ["attached bathroom", "floor-to-ceiling windows"]
+        },
+        {
+          "room_id": "bedroom_4",
+          "type": "Bedroom (Fourth)",
+          "dimensions": { "length": 11, "width": 9 },
+          "features": ["attached bathroom", "balcony", "floor-to-ceiling windows"]
+        },
+        {
+          "room_id": "bathroom_3",
+          "type": "Bathroom (Third)",
+          "dimensions": { "length": 7, "width": 5 }
+        },
+        {
+          "room_id": "bathroom_4",
+          "type": "Bathroom (Fourth)",
+          "dimensions": { "length": 6, "width": 5 }
+        },
+        {
+          "room_id": "study_room_1",
+          "type": "Study Room",
+          "dimensions": { "length": 9, "width": 8 },
+          "features": ["workspace", "natural light"]
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "balcony_door_3",
+          "type": "Balcony Door",
+          "room_id": "bedroom_4",
+          "dimensions": { "length": 6, "width": 3 },
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "features": {
+    "style": "Bohemian",
+    "vastu_compliance": true,
+    "floor_to_ceiling_windows": true,
+    "library": true,
+    "total_area": "3000 sqft"
+  }
+}

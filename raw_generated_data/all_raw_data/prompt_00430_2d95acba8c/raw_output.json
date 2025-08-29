@@ -1,0 +1,120 @@
+{ 
+  "levels": [
+    {
+      "level_id": "ground_floor",
+      "rooms": [
+        {
+          "name": "Entrance Hall",
+          "dimensions": { "length": 12, "width": 8 },
+          "adjacencies": ["Living Room", "Dining Area", "Garage"],
+          "description": "An open area welcoming visitors with minimalistic design and ample natural light."
+        },
+        {
+          "name": "Lobby / Reception",
+          "dimensions": { "length": 10, "width": 6 },
+          "adjacencies": ["Living Room", "Dining Area"],
+          "description": "A transitional space between the entrance and the main living areas."
+        },
+        {
+          "name": "Open Living/Dining Area",
+          "dimensions": { "length": 18, "width": 12 },
+          "adjacencies": ["Kitchen", "Balcony"],
+          "description": "Spacious area combining a modern dining setup and comfortable seating for relaxation."
+        },
+        {
+          "name": "Minimalist Kitchen",
+          "dimensions": { "length": 10, "width": 8 },
+          "adjacencies": ["Living/Dining Area", "Utility Room"],
+          "description": "Streamlined kitchen design with modern appliances and efficient layout, incorporating Vastu principles for energy flow."
+        },
+        {
+          "name": "Garage",
+          "dimensions": { "length": 20, "width": 10 },
+          "adjacencies": ["Entrance Hall"],
+          "description": "Dual-car garage with ample space and secure storage."
+        },
+        {
+          "name": "Utility Room",
+          "dimensions": { "length": 8, "width": 6 },
+          "adjacencies": ["Kitchen", "Bathroom"],
+          "description": "Dedicated space for laundry and other household utilities."
+        },
+        {
+          "name": "Master Bedroom A",
+          "dimensions": { "length": 12, "width": 10 },
+          "adjacencies": ["Balcony", "Bathroom A"],
+          "description": "Spacious master bedroom with ample balcony space for morning views and Vastu-compliant orientation."
+        },
+        {
+          "name": "Guest Bedroom B",
+          "dimensions": { "length": 12, "width": 10 },
+          "adjacencies": ["Balcony", "Bathroom B"],
+          "description": "Comfortable bedroom with a private balcony and Vastu-aligned design."
+        }
+      ],
+      "openings": [
+        {
+          "name": "Main Entrance Door",
+          "dimensions": { "width": 3.5, "height": 7 },
+          "adjacencies": ["Entrance Hall"],
+          "description": "Large opening ensuring a welcoming entry with Vastu-aligned approach."
+        },
+        {
+          "name": "Balcony Door (Master Bedroom)",
+          "dimensions": { "width": 4, "height": 6.5 },
+          "adjacencies": ["Master Bedroom A"],
+          "description": "Open balcony door providing access to the master bedroom's private outdoor space."
+        },
+        {
+          "name": "Balcony Door (Guest Bedroom)",
+          "dimensions": { "width": 4, "height": 6.5 },
+          "adjacencies": ["Guest Bedroom B"],
+          "description": "Open balcony door leading to the guest bedroom's private outdoor space."
+        },
+        {
+          "name": "Garage Door",
+          "dimensions": { "width": 12, "height": 8 },
+          "adjacencies": ["Garage"],
+          "description": "Dual-opening garage door for convenient car access and adherence to Vastu guidelines on entry points."
+        }
+      ]
+    },
+    {
+      "level_id": "first_floor",
+      "rooms": [
+        {
+          "name": "Master Bedroom A (Upper)",
+          "dimensions": { "length": 12, "width": 10 },
+          "adjacencies": ["Balcony"],
+          "description": "Spacious master bedroom on the first floor with enhanced privacy and a balcony for relaxation."
+        },
+        {
+          "name": "Guest Bedroom B (Upper)",
+          "dimensions": { "length": 12, "width": 10 },
+          "adjacencies": ["Balcony"],
+          "description": "Cozy guest bedroom on the first floor with private balcony access and a Vastu-friendly layout."
+        },
+        {
+          "name": "Master Bathroom A",
+          "dimensions": { "length": 8, "width": 6 },
+          "adjacencies": ["Master Bedroom A"],
+          "description": "Well-equipped master bathroom ensuring comfort and privacy."
+        },
+        {
+          "name": "Guest Bathroom B",
+          "dimensions": { "length": 7, "width": 5 },
+          "adjacencies": ["Guest Bedroom B"],
+          "description": "Functional guest bathroom designed with a minimalist approach."
+        }
+      ],
+      "openings": [
+        {
+          "name": "Staircase",
+          "dimensions": { "width": 4, "height": 12 },
+          "adjacencies": ["Ground Floor", "First Floor"],
+          "description": "Secure and elegantly designed staircase connecting the two floors."
+        }
+      ]
+    }
+  ]
+}

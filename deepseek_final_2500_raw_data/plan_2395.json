@@ -1,0 +1,645 @@
+{
+  "input": {
+    "basicDetails": {
+      "bedrooms": 2,
+      "floors": 3,
+      "totalArea": 3200,
+      "style": "Alpine Chalet"
+    },
+    "plot": {
+      "slope": "moderate",
+      "terrain": "vineyard",
+      "climate": "continental with harsh winters"
+    },
+    "roomBreakdown": [
+      {
+        "type": "bedroom",
+        "count": 2
+      },
+      {
+        "type": "bathroom",
+        "count": 2
+      },
+      {
+        "type": "music_studio",
+        "count": 1
+      },
+      {
+        "type": "listening_room",
+        "count": 1
+      },
+      {
+        "type": "wine_cellar",
+        "count": 1
+      },
+      {
+        "type": "tasting_room",
+        "count": 1
+      },
+      {
+        "type": "kitchen",
+        "count": 1
+      },
+      {
+        "type": "living_room",
+        "count": 1
+      },
+      {
+        "type": "mechanical_room",
+        "count": 1
+      },
+      {
+        "type": "entry",
+        "count": 1
+      }
+    ]
+  },
+  "total_area": 3200.0,
+  "construction_cost": 485000.0,
+  "levels": [
+    {
+      "level_number": -1,
+      "rooms": [
+        {
+          "id": "wine_cellar_1",
+          "type": "wine_cellar",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "x": 10,
+              "y": 25,
+              "to_room": "tasting_room_1",
+              "to_level": -1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "tasting_room_1",
+          "type": "tasting_room",
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 20,
+            "height": 25
+          },
+          "doors": [
+            {
+              "x": 20,
+              "y": 12.5,
+              "to_room": "wine_cellar_1",
+              "to_level": -1
+            },
+            {
+              "x": 40,
+              "y": 12.5,
+              "to_room": "stairwell",
+              "to_level": -1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "mechanical_room_1",
+          "type": "mechanical_room",
+          "bounds": {
+            "x": 0,
+            "y": 25,
+            "width": 20,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 10,
+              "y": 25,
+              "to_room": "stairwell",
+              "to_level": -1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "stairwell",
+          "type": "stairwell",
+          "bounds": {
+            "x": 20,
+            "y": 25,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 25,
+              "y": 25,
+              "to_room": "mechanical_room_1",
+              "to_level": -1
+            },
+            {
+              "x": 25,
+              "y": 40,
+              "to_room": "elevator",
+              "to_level": -1
+            },
+            {
+              "x": 30,
+              "y": 32.5,
+              "to_room": "tasting_room_1",
+              "to_level": -1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "elevator",
+          "type": "elevator",
+          "bounds": {
+            "x": 30,
+            "y": 25,
+            "width": 10,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 30,
+              "y": 32.5,
+              "to_room": "stairwell",
+              "to_level": -1
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 0,
+      "rooms": [
+        {
+          "id": "entry_1",
+          "type": "entry",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 7.5,
+              "y": 10,
+              "to_room": "living_room_1",
+              "to_level": 0
+            },
+            {
+              "x": 15,
+              "y": 5,
+              "to_room": "stairwell",
+              "to_level": 0
+            }
+          ],
+          "windows": [
+            {
+              "x": 7.5,
+              "y": 0,
+              "width": 3,
+              "height": 1.5
+            }
+          ]
+        },
+        {
+          "id": "living_room_1",
+          "type": "living_room",
+          "bounds": {
+            "x": 0,
+            "y": 10,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 12.5,
+              "y": 10,
+              "to_room": "entry_1",
+              "to_level": 0
+            },
+            {
+              "x": 25,
+              "y": 15,
+              "to_room": "kitchen_1",
+              "to_level": 0
+            },
+            {
+              "x": 12.5,
+              "y": 30,
+              "to_room": "deck",
+              "to_level": 0
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 15,
+              "width": 4,
+              "height": 2
+            },
+            {
+              "x": 0,
+              "y": 20,
+              "width": 4,
+              "height": 2
+            },
+            {
+              "x": 25,
+              "y": 15,
+              "width": 4,
+              "height": 2
+            },
+            {
+              "x": 25,
+              "y": 20,
+              "width": 4,
+              "height": 2
+            }
+          ]
+        },
+        {
+          "id": "kitchen_1",
+          "type": "kitchen",
+          "bounds": {
+            "x": 25,
+            "y": 10,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 25,
+              "y": 17.5,
+              "to_room": "living_room_1",
+              "to_level": 0
+            },
+            {
+              "x": 32.5,
+              "y": 25,
+              "to_room": "dining_1",
+              "to_level": 0
+            }
+          ],
+          "windows": [
+            {
+              "x": 32.5,
+              "y": 10,
+              "width": 4,
+              "height": 2
+            }
+          ]
+        },
+        {
+          "id": "dining_1",
+          "type": "dining_room",
+          "bounds": {
+            "x": 25,
+            "y": 25,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 32.5,
+              "y": 25,
+              "to_room": "kitchen_1",
+              "to_level": 0
+            },
+            {
+              "x": 40,
+              "y": 32.5,
+              "to_room": "stairwell",
+              "to_level": 0
+            }
+          ],
+          "windows": [
+            {
+              "x": 32.5,
+              "y": 40,
+              "width": 4,
+              "height": 2
+            }
+          ]
+        },
+        {
+          "id": "stairwell",
+          "type": "stairwell",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 40
+          },
+          "doors": [
+            {
+              "x": 40,
+              "y": 5,
+              "to_room": "entry_1",
+              "to_level": 0
+            },
+            {
+              "x": 45,
+              "y": 40,
+              "to_room": "deck",
+              "to_level": 0
+            },
+            {
+              "x": 50,
+              "y": 32.5,
+              "to_room": "dining_1",
+              "to_level": 0
+            },
+            {
+              "x": 45,
+              "y": 0,
+              "to_room": "elevator",
+              "to_level": 0
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "elevator",
+          "type": "elevator",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 45,
+              "y": 10,
+              "to_room": "stairwell",
+              "to_level": 0
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "deck",
+          "type": "deck",
+          "bounds": {
+            "x": 0,
+            "y": 30,
+            "width": 50,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 12.5,
+              "y": 30,
+              "to_room": "living_room_1",
+              "to_level": 0
+            },
+            {
+              "x": 45,
+              "y": 30,
+              "to_room": "stairwell",
+              "to_level": 0
+            }
+          ],
+          "windows": []
+        }
+      ]
+    },
+    {
+      "level_number": 1,
+      "rooms": [
+        {
+          "id": "bedroom_1",
+          "type": "bedroom",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 7.5,
+              "y": 15,
+              "to_room": "hallway_1",
+              "to_level": 1
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 7.5,
+              "width": 4,
+              "height": 2
+            }
+          ]
+        },
+        {
+          "id": "bedroom_2",
+          "type": "bedroom",
+          "bounds": {
+            "x": 15,
+            "y": 0,
+            "width": 15,
+            "height": 15
+          },
+          "doors": [
+            {
+              "x": 22.5,
+              "y": 15,
+              "to_room": "hallway_1",
+              "to_level": 1
+            }
+          ],
+          "windows": [
+            {
+              "x": 30,
+              "y": 7.5,
+              "width": 4,
+              "height": 2
+            }
+          ]
+        },
+        {
+          "id": "bathroom_1",
+          "type": "bathroom",
+          "bounds": {
+            "x": 30,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 30,
+              "y": 5,
+              "to_room": "hallway_1",
+              "to_level": 1
+            }
+          ],
+          "windows": [
+            {
+              "x": 35,
+              "y": 0,
+              "width": 3,
+              "height": 1
+            }
+          ]
+        },
+        {
+          "id": "music_studio_1",
+          "type": "music_studio",
+          "bounds": {
+            "x": 0,
+            "y": 15,
+            "width": 25,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 12.5,
+              "y": 15,
+              "to_room": "hallway_1",
+              "to_level": 1
+            }
+          ],
+          "windows": [
+            {
+              "x": 0,
+              "y": 25,
+              "width": 5,
+              "height": 2
+            }
+          ]
+        },
+        {
+          "id": "listening_room_1",
+          "type": "listening_room",
+          "bounds": {
+            "x": 25,
+            "y": 15,
+            "width": 15,
+            "height": 20
+          },
+          "doors": [
+            {
+              "x": 32.5,
+              "y": 15,
+              "to_room": "hallway_1",
+              "to_level": 1
+            }
+          ],
+          "windows": [
+            {
+              "x": 40,
+              "y": 25,
+              "width": 4,
+              "height": 2
+            }
+          ]
+        },
+        {
+          "id": "hallway_1",
+          "type": "hallway",
+          "bounds": {
+            "x": 0,
+            "y": 35,
+            "width": 40,
+            "height": 5
+          },
+          "doors": [
+            {
+              "x": 7.5,
+              "y": 35,
+              "to_room": "bedroom_1",
+              "to_level": 1
+            },
+            {
+              "x": 22.5,
+              "y": 35,
+              "to_room": "bedroom_2",
+              "to_level": 1
+            },
+            {
+              "x": 30,
+              "y": 35,
+              "to_room": "bathroom_1",
+              "to_level": 1
+            },
+            {
+              "x": 12.5,
+              "y": 35,
+              "to_room": "music_studio_1",
+              "to_level": 1
+            },
+            {
+              "x": 32.5,
+              "y": 35,
+              "to_room": "listening_room_1",
+              "to_level": 1
+            },
+            {
+              "x": 20,
+              "y": 40,
+              "to_room": "stairwell",
+              "to_level": 1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "stairwell",
+          "type": "stairwell",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 40
+          },
+          "doors": [
+            {
+              "x": 40,
+              "y": 20,
+              "to_room": "hallway_1",
+              "to_level": 1
+            },
+            {
+              "x": 45,
+              "y": 0,
+              "to_room": "elevator",
+              "to_level": 1
+            }
+          ],
+          "windows": []
+        },
+        {
+          "id": "elevator",
+          "type": "elevator",
+          "bounds": {
+            "x": 40,
+            "y": 0,
+            "width": 10,
+            "height": 10
+          },
+          "doors": [
+            {
+              "x": 45,
+              "y": 10,
+              "to_room": "stairwell",
+              "to_level": 1
+            }
+          ],
+          "windows": []
+        }
+      ]
+    }
+  ]
+}
